@@ -1,0 +1,25 @@
+{
+  "input" : {
+    "queue" : {
+      "path" : "/data/alephxml/export/update/",
+      "pattern" : "test-input-01.xml",
+      "sort_by" : "lastmodified",
+      "order" : "desc",
+      "max" : 1
+    }
+  },
+  "output": {
+    "elasticsearch": {
+      "cluster": "elasticsearch-01",
+      "host": ["localhost:9300"],
+      "index" : {
+        "name" : "testindex-01",
+        "settings": "classpath:src/test/resources/elasticsearch/hbztitle-settings.json",
+        "mapping": "classpath:src/test/resources/elasticsearch/hbztitle-mapping.json"
+      }
+    }
+  },
+  "transformation-rules" : "classpath:src/test/resources/test-transformation-rules-01.xml",
+  "catalogid" : "DE-605-test",
+  "collection" : "HBZ-Test"
+}
