@@ -1,7 +1,7 @@
 {
   "input" : {
     "queue" : {
-      "path" : "/data/alephxml/export/update/",
+      "path" : "classpath:src/test/resources/",
       "pattern" : "test-input-01.xml",
       "sort_by" : "lastmodified",
       "order" : "desc",
