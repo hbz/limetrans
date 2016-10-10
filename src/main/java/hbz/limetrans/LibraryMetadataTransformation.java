@@ -2,8 +2,11 @@ package hbz.limetrans;
 
 import org.apache.commons.validator.routines.UrlValidator;
 import org.culturegraph.mf.morph.Metamorph;
+import org.culturegraph.mf.stream.converter.JsonEncoder;
+import org.culturegraph.mf.stream.converter.JsonToElasticsearchBulk;
 import org.culturegraph.mf.stream.converter.xml.MarcXmlHandler;
 import org.culturegraph.mf.stream.converter.xml.XmlDecoder;
+import org.culturegraph.mf.stream.sink.ObjectWriter;
 import org.culturegraph.mf.stream.source.FileOpener;
 
 import org.xbib.common.settings.*;
@@ -25,7 +28,12 @@ public final class LibraryMetadataTransformation {
         final XmlDecoder decoder = new XmlDecoder();
         final MarcXmlHandler marcHandler = new MarcXmlHandler();
         final Metamorph morph = new Metamorph(settings.get("transformation-rules"));
-
+        final JsonEncoder encoder = new JsonEncoder();
+        encoder.setPrettyPrinting(true);
+        final ObjectWriter<String> writer = new ObjectWriter<>(settings.get(""));
+        final JsonToElasticsearchBulk esBulk = new JsonToElasticsearchBulk("id",
+                settings.get("output.elasticsearch.index.type"),
+                settings.get("output.elasticsearch.index.name"));
         // Setup transformation pipeline
         opener
                 .setReceiver(decoder)

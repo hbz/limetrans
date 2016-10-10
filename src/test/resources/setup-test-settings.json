@@ -9,13 +9,14 @@
     }
   },
   "output": {
-    "elasticsearch": {
+    "elasticsearch" : {
       "cluster": "elasticsearch-01",
       "host": ["localhost:9300"],
       "index" : {
         "name" : "testindex-01",
-        "settings": "classpath:src/test/resources/elasticsearch/hbztitle-settings.json",
-        "mapping": "classpath:src/test/resources/elasticsearch/hbztitle-mapping.json"
+        "type" : "titel",
+        "settings" : "classpath:src/test/resources/elasticsearch/hbztitle-settings.json",
+        "mapping" : "classpath:src/test/resources/elasticsearch/hbztitle-mapping.json"
       }
     }
   },

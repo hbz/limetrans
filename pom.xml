@@ -29,17 +29,17 @@
 
     <repositories>
         <repository>
-            <id>xbib-repo</id>
-            <url>http://xbib.org/repository</url>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.culturegraph</groupId>
-			<artifactId>metafacture-core</artifactId>
-			<version>3.0.0</version>
-		</dependency>
+        <dependency>
+            <groupId>com.github.hbz</groupId>
+            <artifactId>metafacture-core</artifactId>
+            <version>ea0fbaf720d4277590ce5716c22155c9f675f3e5</version>
+        </dependency>
         <dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
