@@ -1,448 +1,1743 @@
-<OAI-PMH
-        xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd" xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <ListRecords>
-        <record>
-            <header>
-                <identifier>aleph-publish:020989889</identifier>
-            </header>
-            <metadata>
-                <record xmlns="http://www.ddb.de/professionell/mabxml/mabxml-1.xsd">
-                    <leader>00000nM2.01200024------h</leader>
-                    <controlfield tag="LDR">00000nM2.01200024------h</controlfield>
-                    <controlfield tag="FMT">MH</controlfield>
-                    <datafield ind2="1" ind1="-" tag="001">
-                        <subfield code="a">HT018819975</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="a" tag="002">
-                        <subfield code="a">20151201</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="003">
-                        <subfield code="a">20160804</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="a" tag="020">
-                        <subfield code="a">2841320-9</subfield>
-                        <subfield code="b">DNB</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="a" tag="025">
-                        <subfield code="a">1079532129</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="z" tag="025">
-                        <subfield code="a">2841320-9</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="026">
-                        <subfield code="a">ZDB2841320-9</subfield>
-                    </datafield>
-                    <controlfield tag="030">a||dr||||||27</controlfield>
-                    <datafield ind2="1" ind1="a" tag="036">
-                        <subfield code="a">XA-DE</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="b" tag="037">
-                        <subfield code="a">ger</subfield>
-                    </datafield>
-                    <controlfield tag="050">||||||||g|||||</controlfield>
-                    <controlfield tag="052">pst||||aa||||||</controlfield>
-                    <controlfield tag="058">cr||||||||||||</controlfield>
-                    <datafield ind2="1" ind1="-" tag="060">
-                        <subfield code="b">txt</subfield>
-                        <subfield code="a">Text</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="061">
-                        <subfield code="b">c</subfield>
-                        <subfield code="a">Computermedien</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="062">
-                        <subfield code="b">cr</subfield>
-                        <subfield code="a">Online-Ressource</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="a" tag="064">
-                        <subfield code="a">Zeitschrift</subfield>
-                        <subfield code="9">(DE-588)4067488-5</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="070">
-                        <subfield code="a">0929</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="a" tag="070">
-                        <subfield code="a">DNB</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="b" tag="070">
-                        <subfield code="a">HBZ/Setup</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="c" tag="076">
-                        <subfield code="a">la</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="z" tag="078">
-                        <subfield code="a">lzZDB</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="080">
-                        <subfield code="a">90</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="x" tag="085">
-                        <subfield code="l">O</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="x" tag="085">
-                        <subfield code="l">II</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="x" tag="085">
-                        <subfield code="a">
-                            Strukturdaten zu Privathaushalten in den Planungsfragen
-                        </subfield>
-                        <subfield code="d">Ergebnisse des Mikrozensus ...</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="200">
-                        <subfield code="g">Rheinland-Pfalz</subfield>
-                        <subfield code="9">(DE-588)4049795-1</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="201">
-                        <subfield code="g">Rhineland-Palatinate</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="201">
-                        <subfield code="g">RhÃ©nanie-Palatinat</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="201">
-                        <subfield code="g">Renania-Palatinado</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="201">
-                        <subfield code="g">RP</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="b" tag="204">
-                        <subfield code="k">Rheinland-Pfalz</subfield>
-                        <subfield code="b">Statistisches Landesamt</subfield>
-                        <subfield code="4">isb</subfield>
-                        <subfield code="3">Herausgebendes Organ</subfield>
-                        <subfield code="9">(DE-588)36467-8</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="205">
-                        <subfield code="k">Statistisches Landesamt</subfield>
-                        <subfield code="h">Rheinland-Pfalz</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="205">
-                        <subfield code="k">Statistisches Landesamt Rheinland-Pfalz</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="331">
-                        <subfield code="a">Statistische Berichte</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="359">
-                        <subfield code="a">
-                            Herausgeber: Statistisches Landesamt Rheinland-pfalz
-                        </subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="360">
-                        <subfield code="a">O</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="360">
-                        <subfield code="a">II</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="360">
-                        <subfield code="a">
-                            Strukturdaten zu Privathaushalten in den Planungsfragen : Ergebnisse des Mikrozensus ...
-                        </subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="405">
-                        <subfield code="a">2011/2014-</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="419">
-                        <subfield code="a">Bad Ems</subfield>
-                        <subfield code="b">Statistisches Landesamt Rheinland-Pfalz</subfield>
-                        <subfield code="c">2015-</subfield>
-                        <subfield code="A">3</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="b" tag="425">
-                        <subfield code="a">2015</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="433">
-                        <subfield code="a">Online-Ressource</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="b" tag="451">
-                        <subfield code="a">Statistik nutzen</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="501">
-                        <subfield code="a">Gesehen am 01.12.2015</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="501">
-                        <subfield code="a">Bestell-Nr. O 2043</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="523">
-                        <subfield code="a">
-                            2011/14 mit vierjÃ¤hrigem Erhebungszeitraum, ab 2012 mit einjÃ¤hrigem Erhebungszeitraum
-                        </subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="a" tag="545">
-                        <subfield code="d">1863-1770</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="b" tag="552">
-                        <subfield code="a">urn:nbn:de:hbz:929:02-edoweb:70025308</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="e" tag="655">
-                        <subfield code="u">
-                            http://www.statistik.rlp.de/veroeffentlichungen/statistische-berichte/
-                        </subfield>
-                        <subfield code="x">Verlag</subfield>
-                        <subfield code="z">kostenfrei</subfield>
-                        <subfield code="A">0</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="e" tag="655">
-                        <subfield code="u">https://www.edoweb-rlp.de/resource/edoweb:7002530</subfield>
-                        <subfield code="x">Archivierte Online-Ressource</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="659">
-                        <subfield code="a">
-                            Langzeitarchivierung gewÃ¤hrleistet : durch das LBZ Rheinland-Pfalz, LZA
-                        </subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="700">
-                        <subfield code="a">310</subfield>
-                        <subfield code="2">ZDB</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="l" tag="700">
-                        <subfield code="a">810 ; 650 ; 106 ; 130 ; 131 ; 139 ; 140</subfield>
-                    </datafield>
-                    <controlfield tag="SYS">020989889</controlfield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">A5</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">B5</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">C5</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">D0</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">E0</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">F0</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">G5</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">H7</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">K0001</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">K7</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">KD</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">KH</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">KM</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">L0</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">L5</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">M0</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">N5</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">P0001</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">R0</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">R1</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">R2</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">R3</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">RL</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">T0011</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">T0012</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">V0</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">X0</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">X5</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">X7</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">R0001</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="GKZ">
-                        <subfield code="a">KF</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">A5001</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">N5001</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">L5001</subfield>
-                    </datafield>
-                    <datafield ind2=" " ind1=" " tag="088">
-                        <subfield code="a">929</subfield>
-                        <subfield code="b">Online-Zugang</subfield>
-                        <subfield code="d">2011/14(2015); 2012(2015) -</subfield>
-                    </datafield>
-                    <datafield ind2=" " ind1=" " tag="088">
-                        <subfield code="a">38</subfield>
-                    </datafield>
-                    <datafield ind2=" " ind1=" " tag="088">
-                        <subfield code="a">466</subfield>
-                    </datafield>
-                    <datafield ind2=" " ind1=" " tag="088">
-                        <subfield code="a">385</subfield>
-                    </datafield>
-                    <datafield ind2=" " ind1=" " tag="088">
-                        <subfield code="a">Tr 5</subfield>
-                    </datafield>
-                    <datafield ind2=" " ind1=" " tag="088">
-                        <subfield code="a">A 96</subfield>
-                    </datafield>
-                    <datafield ind2=" " ind1=" " tag="088">
-                        <subfield code="a">829</subfield>
-                    </datafield>
-                    <datafield ind2=" " ind1=" " tag="088">
-                        <subfield code="a">743</subfield>
-                    </datafield>
-                    <datafield ind2="9" ind1="a" tag="652">
-                        <subfield code="a">Online-Ressource</subfield>
-                        <subfield code="2">R0001</subfield>
-                    </datafield>
-                    <datafield ind2="9" ind1="e" tag="655">
-                        <subfield code="u">
-                            http://www.statistik.rlp.de/veroeffentlichungen/statistische-berichte/
-                        </subfield>
-                        <subfield code="x">H</subfield>
-                        <subfield code="z">LF</subfield>
-                        <subfield code="2">R0001</subfield>
-                    </datafield>
-                </record>
-                <record xmlns="http://www.ddb.de/professionell/mabxml/mabxml-1.xsd">
-                    <leader>------M2.01200024------h</leader>
-                    <controlfield tag="LDR">------M2.01200024------h</controlfield>
-                    <controlfield tag="FMT">MH</controlfield>
-                    <datafield ind2="1" ind1="-" tag="001">
-                        <subfield code="a">HT019098669</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="a" tag="002">
-                        <subfield code="a">20160921</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="003">
-                        <subfield code="a">20160927</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="026">
-                        <subfield code="a">HBZHT019098669</subfield>
-                    </datafield>
-                    <controlfield tag="030">a|1ur||||||27</controlfield>
-                    <datafield ind2="1" ind1="a" tag="036">
-                        <subfield code="a">DE</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="b" tag="037">
-                        <subfield code="a">ger</subfield>
-                    </datafield>
-                    <controlfield tag="050">||||||||g|||||</controlfield>
-                    <controlfield tag="051">mw|||||||||||||</controlfield>
-                    <datafield ind2="1" ind1="-" tag="060">
-                        <subfield code="b">txt</subfield>
-                        <subfield code="a">Text</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="061">
-                        <subfield code="b">c</subfield>
-                        <subfield code="a">Computermedien</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="062">
-                        <subfield code="b">cr</subfield>
-                        <subfield code="a">Online-Ressource</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="a" tag="064">
-                        <subfield code="a">Website</subfield>
-                        <subfield code="9">(DE-588)4596172-4</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="070">
-                        <subfield code="a">107</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="b" tag="078">
-                        <subfield code="a">Mindestkatalogisat</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="r" tag="078">
-                        <subfield code="a">107: edoweb</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="080">
-                        <subfield code="a">60</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="200">
-                        <subfield code="k">Verkehrsverein</subfield>
-                        <subfield code="h">Speyer</subfield>
-                        <subfield code="9">(DE-588)1025440-7</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="331">
-                        <subfield code="a">Speyerer Brezelfest</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="-" tag="419">
-                        <subfield code="a">[Speyer]</subfield>
-                        <subfield code="c">[2016?]-</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="b" tag="425">
-                        <subfield code="a">2016</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="b" tag="552">
-                        <subfield code="a">urn:nbn:de:hbz:929:02-edoweb:70046237</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="e" tag="655">
-                        <subfield code="u">http://www.speyerer-brezelfest.de/</subfield>
-                        <subfield code="z">Archivierte Online-Ressource</subfield>
-                        <subfield code="x">kostenfrei</subfield>
-                        <subfield code="z">Langzeitarchivierung</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="e" tag="655">
-                        <subfield code="u">https://www.edoweb-rlp.de/resource/edoweb:7004623</subfield>
-                        <subfield code="x">Archivierte Online-Ressource</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="l" tag="700">
-                        <subfield code="a">rpb734000</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="l" tag="700">
-                        <subfield code="a">630</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="l" tag="700">
-                        <subfield code="a">131</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="l" tag="700">
-                        <subfield code="a">106</subfield>
-                    </datafield>
-                    <datafield ind2="1" ind1="b" tag="700">
-                        <subfield code="a">790</subfield>
-                    </datafield>
-                    <controlfield tag="SYS">021360321</controlfield>
-                    <datafield ind2="1" ind1="-" tag="LOW">
-                        <subfield code="a">R0003</subfield>
-                    </datafield>
-                    <datafield ind2=" " ind1=" " tag="088">
-                        <subfield code="a">107</subfield>
-                    </datafield>
-                </record>
-            </metadata>
-        </record>
-    </ListRecords>
-</OAI-PMH>
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+    <record type="Authority">
+        <leader>04821nz  a2200961n  4500</leader>
+        <controlfield tag="001">11862444X</controlfield>
+        <controlfield tag="003">DE-101</controlfield>
+        <controlfield tag="005">20150204004934.0</controlfield>
+        <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+        <datafield tag="024" ind1="7" ind2=" ">
+            <subfield code="a">http://d-nb.info/gnd/11862444X</subfield>
+            <subfield code="2">uri</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(DE-101)11862444X</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(DE-588)11862444X</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588)141300256</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)141300256</subfield>
+            <subfield code="9">v:zg</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)11862444X</subfield>
+            <subfield code="9">v:zg</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)13458970X</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)12711131X</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-101c)310279704</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588c)4061142-5</subfield>
+            <subfield code="9">v:zg</subfield>
+        </datafield>
+        <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">DE-101</subfield>
+            <subfield code="9">r:DE-101</subfield>
+            <subfield code="b">ger</subfield>
+            <subfield code="d">9999</subfield>
+        </datafield>
+        <datafield tag="043" ind1=" " ind2=" ">
+            <subfield code="c">XA-DE</subfield>
+            <subfield code="c">XA-FR</subfield>
+            <subfield code="c">XA-SE</subfield>
+        </datafield>
+        <datafield tag="065" ind1=" " ind2=" ">
+            <subfield code="a">12.2p</subfield>
+            <subfield code="2">sswd</subfield>
+        </datafield>
+        <datafield tag="065" ind1=" " ind2=" ">
+            <subfield code="a">2.3p</subfield>
+            <subfield code="2">sswd</subfield>
+        </datafield>
+        <datafield tag="079" ind1=" " ind2=" ">
+            <subfield code="a">g</subfield>
+            <subfield code="b">p</subfield>
+            <subfield code="c">1</subfield>
+            <subfield code="q">s</subfield>
+            <subfield code="q">f</subfield>
+            <subfield code="q">z</subfield>
+            <subfield code="q">l</subfield>
+            <subfield code="q">m</subfield>
+            <subfield code="u">v</subfield>
+            <subfield code="u">w</subfield>
+            <subfield code="u">k</subfield>
+            <subfield code="u">m</subfield>
+            <subfield code="u">z</subfield>
+            <subfield code="u">e</subfield>
+            <subfield code="u">o</subfield>
+            <subfield code="v">pip</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Tucholsky, Kurt</subfield>
+            <subfield code="d">1890-1935</subfield>
+        </datafield>
+        <datafield tag="375" ind1=" " ind2=" ">
+            <subfield code="a">1</subfield>
+            <subfield code="2">iso5218</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Grotius, Hugo</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="9">4:pseu</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Pseudonym</subfield>
+            <subfield code="e">Pseudonym</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Tucholsky, ...</subfield>
+            <subfield code="d">1890-1935</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Tucholʹskij, Kurt</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="9">v:Russ. Vorlageform, RAK-WB</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Tukholʹskiĭ, Kurt</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="9">v:Russ. Vorlageform, AACR</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Tûkôlsqî, Qûrṭ</subfield>
+            <subfield code="d">1890-1935</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Tukôlsqî, Qûrṭ</subfield>
+            <subfield code="d">1890-1935</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Bünzly, Paulus</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="9">4:pseu</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Pseudonym</subfield>
+            <subfield code="e">Pseudonym</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Körner, Theobald</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="9">4:pseu</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Pseudonym</subfield>
+            <subfield code="e">Pseudonym</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="a">Old Shatterhand</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="9">4:pseu</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Pseudonym</subfield>
+            <subfield code="e">Pseudonym</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Hauser, Kaspar</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="9">4:pseu</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Pseudonym</subfield>
+            <subfield code="e">Pseudonym</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Panter, Peter</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="9">4:pseu</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Pseudonym</subfield>
+            <subfield code="e">Pseudonym</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Tiger, Theobald</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="9">4:pseu</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Pseudonym</subfield>
+            <subfield code="e">Pseudonym</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Wrobel, Ignaz</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="9">4:pseu</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Pseudonym</subfield>
+            <subfield code="e">Pseudonym</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Cyrl</subfield>
+            <subfield code="a">Тухольский, Курт</subfield>
+            <subfield code="d">1890-1935</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Hebr</subfield>
+            <subfield code="a">טוכולסקי, קורט</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="9">U:Jpan</subfield>
+            <subfield code="a">クルト・トゥホルスキー</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)116841508</subfield>
+            <subfield code="0">(DE-588)116841508</subfield>
+            <subfield code="a">Matthias, Lisa</subfield>
+            <subfield code="d">1894-1982</subfield>
+            <subfield code="9">4:beza</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Bekanntschaft</subfield>
+            <subfield code="e">Bekanntschaft</subfield>
+            <subfield code="9">v:Geliebte</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)1059793806</subfield>
+            <subfield code="0">(DE-588)1059793806</subfield>
+            <subfield code="a">Wrobel, Ignaz</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="9">4:pseu</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Pseudonym</subfield>
+            <subfield code="e">Pseudonym</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)1059783169</subfield>
+            <subfield code="0">(DE-588)1059783169</subfield>
+            <subfield code="a">Tiger, Theobald</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="9">4:pseu</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Pseudonym</subfield>
+            <subfield code="e">Pseudonym</subfield>
+        </datafield>
+        <datafield tag="548" ind1=" " ind2=" ">
+            <subfield code="a">1890-1935</subfield>
+            <subfield code="9">4:datl</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Lebensdaten</subfield>
+        </datafield>
+        <datafield tag="548" ind1=" " ind2=" ">
+            <subfield code="a">09.01.1890-21.12.1935</subfield>
+            <subfield code="9">4:datx</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Exakte Lebensdaten</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040287815</subfield>
+            <subfield code="0">(DE-588)4028781-6</subfield>
+            <subfield code="a">Journalist</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)940630869</subfield>
+            <subfield code="0">(DE-588)4333843-4</subfield>
+            <subfield code="a">Satiriker</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)041778278</subfield>
+            <subfield code="0">(DE-588)4177827-3</subfield>
+            <subfield code="a">Republikaner</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)041657756</subfield>
+            <subfield code="0">(DE-588)4165775-5</subfield>
+            <subfield code="a">Kritiker</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040290506</subfield>
+            <subfield code="0">(DE-588)4029050-5</subfield>
+            <subfield code="a">Jurist</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040554090</subfield>
+            <subfield code="0">(DE-588)4055409-0</subfield>
+            <subfield code="a">Soldat</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)041373847</subfield>
+            <subfield code="0">(DE-588)4137384-4</subfield>
+            <subfield code="a">Pazifist</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040533093</subfield>
+            <subfield code="0">(DE-588)4053309-8</subfield>
+            <subfield code="a">Schriftsteller</subfield>
+            <subfield code="9">4:berc</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Charakteristischer Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="a">Bühnenautor</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="a">s</subfield>
+            <subfield code="9">4:funk</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Funktion</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="a">Text</subfield>
+            <subfield code="9">4:funk</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Funktion</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="a">Dr. jur.</subfield>
+            <subfield code="9">4:akad</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Akademischer Grad</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040057283</subfield>
+            <subfield code="0">(DE-588)4005728-8</subfield>
+            <subfield code="a">Berlin</subfield>
+            <subfield code="9">4:ortg</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Geburtsort</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)006660606</subfield>
+            <subfield code="0">(DE-588)666060-5</subfield>
+            <subfield code="a">Hindås</subfield>
+            <subfield code="9">4:orts</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Sterbeort</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)04028557x</subfield>
+            <subfield code="0">(DE-588)4028557-1</subfield>
+            <subfield code="a">Jena</subfield>
+            <subfield code="9">4:ortw</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Wirkungsort</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040057283</subfield>
+            <subfield code="0">(DE-588)4005728-8</subfield>
+            <subfield code="a">Berlin</subfield>
+            <subfield code="9">4:ortw</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Wirkungsort</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040446603</subfield>
+            <subfield code="0">(DE-588)4044660-8</subfield>
+            <subfield code="a">Paris</subfield>
+            <subfield code="9">4:ortw</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Wirkungsort</subfield>
+        </datafield>
+        <datafield tag="667" ind1=" " ind2=" ">
+            <subfield code="a">Basic Heading</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">DbA (WBIS); Wikipedia</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">M</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">B 2006</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">LCAuth</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">NUC pre 56</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">DBE</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">Kürschner Lit./Nekr. (1936-1970)</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">Biogr. H Emigr.</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">Archiv der American Guild for German Cultural Freedom, New York im Deutschen Exilarchiv 1933 – 1945</subfield>
+        </datafield>
+        <datafield tag="678" ind1=" " ind2=" ">
+            <subfield code="b">1915-1918 Soldat an der Ostfront, ab 1916 Herausgeber der Feldzeitung "Der Flieger"; 1924-1926 Korrespondent der "Weltbühne" und der "Vossischen Zeitung" in Paris; 1929 Emigration nach Schweden, 1933 ausgebürgert; starb an einer Überdosis von Barbituraten</subfield>
+        </datafield>
+        <datafield tag="680" ind1=" " ind2=" ">
+            <subfield code="a">Weitere Titel ggf. auch unter dem Pseudonym bzw. dem wirklichen Namen</subfield>
+        </datafield>
+        <datafield tag="692" ind1=" " ind2=" ">
+            <subfield code="a">Fromme Gesänge. - 1919</subfield>
+        </datafield>
+        <datafield tag="692" ind1=" " ind2=" ">
+            <subfield code="a">Das Kurt-Tucholsky-Chanson-Buch. - 1983</subfield>
+        </datafield>
+        <datafield tag="692" ind1=" " ind2=" ">
+            <subfield code="a">Schloß Gripsholm. - 1931</subfield>
+        </datafield>
+        <datafield tag="692" ind1=" " ind2=" ">
+            <subfield code="a">Träumereien an preussischen Kaminen. - 1920</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2="7">
+            <subfield code="a">Tucholsky, Kurt</subfield>
+            <subfield code="d">1890-1935</subfield>
+            <subfield code="0">(DLC)n 50081889</subfield>
+            <subfield code="2">naf</subfield>
+            <subfield code="9">v:1890-1935.</subfield>
+        </datafield>
+        <datafield tag="913" ind1=" " ind2=" ">
+            <subfield code="S">pnd</subfield>
+            <subfield code="i">a</subfield>
+            <subfield code="a">Tucholsky, Kurt</subfield>
+            <subfield code="0">(DE-588a)11862444X</subfield>
+        </datafield>
+        <datafield tag="913" ind1=" " ind2=" ">
+            <subfield code="S">pnd</subfield>
+            <subfield code="i">a</subfield>
+            <subfield code="a">Tucholsky, Kurt</subfield>
+            <subfield code="0">(DE-588a)141300256</subfield>
+        </datafield>
+    </record>
+    <record type="Authority">
+        <leader>06418nz  a2201189n  4500</leader>
+        <controlfield tag="001">118577166</controlfield>
+        <controlfield tag="003">DE-101</controlfield>
+        <controlfield tag="005">20150216191025.0</controlfield>
+        <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+        <datafield tag="024" ind1="7" ind2=" ">
+            <subfield code="a">http://d-nb.info/gnd/118577166</subfield>
+            <subfield code="2">uri</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(DE-101)118577166</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(DE-588)118577166</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)118577166</subfield>
+            <subfield code="9">v:zg</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)131015370</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)135162408</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)130998109</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)127143467</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)127143475</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-101c)310852404</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588c)4037361-7</subfield>
+            <subfield code="9">v:zg</subfield>
+        </datafield>
+        <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">DE-101</subfield>
+            <subfield code="9">r:DE-101</subfield>
+            <subfield code="b">ger</subfield>
+            <subfield code="d">9999</subfield>
+        </datafield>
+        <datafield tag="043" ind1=" " ind2=" ">
+            <subfield code="c">XA-DE</subfield>
+            <subfield code="c">XA-CH</subfield>
+            <subfield code="c">XD-US</subfield>
+        </datafield>
+        <datafield tag="065" ind1=" " ind2=" ">
+            <subfield code="a">12.2p</subfield>
+            <subfield code="2">sswd</subfield>
+        </datafield>
+        <datafield tag="079" ind1=" " ind2=" ">
+            <subfield code="a">g</subfield>
+            <subfield code="b">p</subfield>
+            <subfield code="c">1</subfield>
+            <subfield code="q">s</subfield>
+            <subfield code="q">f</subfield>
+            <subfield code="q">z</subfield>
+            <subfield code="q">l</subfield>
+            <subfield code="q">h</subfield>
+            <subfield code="u">v</subfield>
+            <subfield code="u">w</subfield>
+            <subfield code="u">k</subfield>
+            <subfield code="u">e</subfield>
+            <subfield code="u">m</subfield>
+            <subfield code="u">z</subfield>
+            <subfield code="u">o</subfield>
+            <subfield code="v">piz</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Mann, Thomas</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="375" ind1=" " ind2=" ">
+            <subfield code="a">1</subfield>
+            <subfield code="2">iso5218</subfield>
+        </datafield>
+        <datafield tag="377" ind1=" " ind2="7">
+            <subfield code="a">ger</subfield>
+            <subfield code="2">iso639-2b</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Mann, Paul Thomas</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Mann, Th.</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Mann, T.</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Māna, Tamāsa</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Mani, T'omas</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Mān, Tūmās</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="a">Tuomasi-Man</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Man, Tuomasi</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Man, Tômasu</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Man, T'omasu</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Man, T'omasŭ</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Mân, Tômas</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Man, Tomas</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Manas, Tomas</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Mann, Tomasz</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Mann, Tōmas</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Mann, Tomas</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Manns, Tomass</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Mān, Tōmās</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Man, Tômas</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="a">Tuo ma si Man</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="a">Tuomasi-Man</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Man, Tuomasi</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Mann, Paul Thomas</subfield>
+            <subfield code="d">1875-1955</subfield>
+            <subfield code="9">4:nawi</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Wirklicher Name</subfield>
+            <subfield code="e">Wirklicher Name</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Cyrl</subfield>
+            <subfield code="9">L:rus</subfield>
+            <subfield code="a">Манн, Томас</subfield>
+            <subfield code="d">1875-1955</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Hebr</subfield>
+            <subfield code="a">מאן, תומס</subfield>
+            <subfield code="d">1875-1955</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Jpan</subfield>
+            <subfield code="a">マン, トーマス</subfield>
+            <subfield code="d">1875-1955</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="9">U:Arab</subfield>
+            <subfield code="a">مان، توماس</subfield>
+            <subfield code="d">1875-1955</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Hans</subfield>
+            <subfield code="a">曼, 托马斯</subfield>
+            <subfield code="d">1875-1955</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Hant</subfield>
+            <subfield code="a">曼, 托瑪斯</subfield>
+            <subfield code="d">1875-1955</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)11857714X</subfield>
+            <subfield code="0">(DE-588)11857714X</subfield>
+            <subfield code="a">Mann, Katia</subfield>
+            <subfield code="d">1883-1980</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Ehefrau</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)118747436</subfield>
+            <subfield code="0">(DE-588)118747436</subfield>
+            <subfield code="a">Mann, Erika</subfield>
+            <subfield code="d">1905-1969</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Tochter</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)118577158</subfield>
+            <subfield code="0">(DE-588)118577158</subfield>
+            <subfield code="a">Mann, Klaus</subfield>
+            <subfield code="d">1906-1949</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Sohn</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)118577123</subfield>
+            <subfield code="0">(DE-588)118577123</subfield>
+            <subfield code="a">Mann, Golo</subfield>
+            <subfield code="d">1909-1994</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Sohn</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)116733721</subfield>
+            <subfield code="0">(DE-588)116733721</subfield>
+            <subfield code="a">Mann, Monika</subfield>
+            <subfield code="d">1910-1992</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Tochter</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)119141612</subfield>
+            <subfield code="0">(DE-588)119141612</subfield>
+            <subfield code="a">Mann-Borgese, Elisabeth</subfield>
+            <subfield code="d">1918-2002</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Tochter</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)118577115</subfield>
+            <subfield code="0">(DE-588)118577115</subfield>
+            <subfield code="a">Mann, Michael</subfield>
+            <subfield code="d">1919-1977</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Sohn</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)137501102</subfield>
+            <subfield code="0">(DE-588)137501102</subfield>
+            <subfield code="a">Mann, Stefan</subfield>
+            <subfield code="d">1968-</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Urenkel</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)116290706</subfield>
+            <subfield code="0">(DE-588)116290706</subfield>
+            <subfield code="a">Pringsheim, Peter</subfield>
+            <subfield code="d">1881-1963</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Schwager</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)118577131</subfield>
+            <subfield code="0">(DE-588)118577131</subfield>
+            <subfield code="a">Mann, Heinrich</subfield>
+            <subfield code="d">1871-1950</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Bruder</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)11673356X</subfield>
+            <subfield code="0">(DE-588)11673356X</subfield>
+            <subfield code="a">Mann, Viktor</subfield>
+            <subfield code="d">1890-1949</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Bruder</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)119007290</subfield>
+            <subfield code="0">(DE-588)119007290</subfield>
+            <subfield code="a">Mann, Julia</subfield>
+            <subfield code="d">1851-1925</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Mutter</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)137103603</subfield>
+            <subfield code="0">(DE-588)137103603</subfield>
+            <subfield code="a">Mann, Carla</subfield>
+            <subfield code="d">1881-1910</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Schwester</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)116736488</subfield>
+            <subfield code="0">(DE-588)116736488</subfield>
+            <subfield code="a">Mann, Frido</subfield>
+            <subfield code="d">1940-</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Enkel</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)118542850</subfield>
+            <subfield code="0">(DE-588)118542850</subfield>
+            <subfield code="a">Gründgens, Gustaf</subfield>
+            <subfield code="d">1899-1963</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:Schwiegersohn</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)116759305</subfield>
+            <subfield code="0">(DE-588)116759305</subfield>
+            <subfield code="a">Herz, Ida</subfield>
+            <subfield code="d">1894-1984</subfield>
+            <subfield code="9">4:beza</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Bekanntschaft</subfield>
+            <subfield code="e">Bekanntschaft</subfield>
+            <subfield code="9">v:Archivarin</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)120271354</subfield>
+            <subfield code="0">(DE-588)120271354</subfield>
+            <subfield code="a">Reach, Hilde</subfield>
+            <subfield code="d">1917-</subfield>
+            <subfield code="9">4:beza</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Bekanntschaft</subfield>
+            <subfield code="e">Bekanntschaft</subfield>
+            <subfield code="9">v:Sekretärin</subfield>
+        </datafield>
+        <datafield tag="548" ind1=" " ind2=" ">
+            <subfield code="a">1875-1955</subfield>
+            <subfield code="9">4:datl</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Lebensdaten</subfield>
+        </datafield>
+        <datafield tag="548" ind1=" " ind2=" ">
+            <subfield code="a">06.06.1875-12.08.1955</subfield>
+            <subfield code="9">4:datx</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Exakte Lebensdaten</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040533093</subfield>
+            <subfield code="0">(DE-588)4053309-8</subfield>
+            <subfield code="a">Schriftsteller</subfield>
+            <subfield code="9">4:berc</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Charakteristischer Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040272494</subfield>
+            <subfield code="0">(DE-588)4027249-7</subfield>
+            <subfield code="a">Intellektueller</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040424219</subfield>
+            <subfield code="0">(DE-588)4042421-2</subfield>
+            <subfield code="a">Nobelpreisträger</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="a">i</subfield>
+            <subfield code="9">4:funk</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Funktion</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="a">Sprechst.</subfield>
+            <subfield code="9">4:istr</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Instrument</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040364836</subfield>
+            <subfield code="0">(DE-588)4036483-5</subfield>
+            <subfield code="a">Lübeck</subfield>
+            <subfield code="9">4:ortg</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Geburtsort</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)04068038X</subfield>
+            <subfield code="0">(DE-588)4068038-1</subfield>
+            <subfield code="a">Zürich</subfield>
+            <subfield code="9">4:orts</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Sterbeort</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)041277937</subfield>
+            <subfield code="0">(DE-588)4127793-4</subfield>
+            <subfield code="a">München</subfield>
+            <subfield code="9">4:ortw</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Wirkungsort</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)00726318X</subfield>
+            <subfield code="0">(DE-588)2076742-0</subfield>
+            <subfield code="a">Küsnacht</subfield>
+            <subfield code="9">4:ortw</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Wirkungsort</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)041033000</subfield>
+            <subfield code="0">(DE-588)4103300-0</subfield>
+            <subfield code="a">Princeton, NJ</subfield>
+            <subfield code="9">4:ortw</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Wirkungsort</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040538818</subfield>
+            <subfield code="0">(DE-588)4053881-3</subfield>
+            <subfield code="a">Schweiz</subfield>
+            <subfield code="9">4:ortx</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Exil</subfield>
+            <subfield code="9">Z:1933</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040787044</subfield>
+            <subfield code="0">(DE-588)4078704-7</subfield>
+            <subfield code="a">USA</subfield>
+            <subfield code="9">4:ortx</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Exil</subfield>
+            <subfield code="9">Z:1938</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040538818</subfield>
+            <subfield code="0">(DE-588)4053881-3</subfield>
+            <subfield code="a">Schweiz</subfield>
+            <subfield code="9">4:ortx</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Exil</subfield>
+            <subfield code="9">Z:1952</subfield>
+        </datafield>
+        <datafield tag="667" ind1=" " ind2=" ">
+            <subfield code="a">NDSBIO</subfield>
+        </datafield>
+        <datafield tag="667" ind1=" " ind2=" ">
+            <subfield code="a">7</subfield>
+        </datafield>
+        <datafield tag="667" ind1=" " ind2=" ">
+            <subfield code="a">384</subfield>
+        </datafield>
+        <datafield tag="667" ind1=" " ind2=" ">
+            <subfield code="a">12</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">DbA (WBIS); Wikipedia</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">M</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">LCAuth</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">Biogr. H Emigr.</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">Archiv der American Guild for German Cultural Freedom, New York im Deutschen Exilarchiv 1933 - 1945</subfield>
+        </datafield>
+        <datafield tag="678" ind1=" " ind2=" ">
+            <subfield code="b">1914-1918 patriotische Einstellung, später Distanzierung davon; 1929 Nobelpreis für Literatur</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2="7">
+            <subfield code="a">Mann, Thomas</subfield>
+            <subfield code="d">1875-1955</subfield>
+            <subfield code="0">(DLC)n 78095625</subfield>
+            <subfield code="2">naf</subfield>
+            <subfield code="9">v:1875-1955</subfield>
+        </datafield>
+        <datafield tag="700" ind1="0" ind2="4">
+            <subfield code="9">U:Hans</subfield>
+            <subfield code="a">托马斯·曼</subfield>
+            <subfield code="5">DE-576</subfield>
+            <subfield code="9">v:Original</subfield>
+        </datafield>
+        <datafield tag="913" ind1=" " ind2=" ">
+            <subfield code="S">pnd</subfield>
+            <subfield code="i">a</subfield>
+            <subfield code="a">Mann, Thomas</subfield>
+            <subfield code="0">(DE-588a)118577166</subfield>
+        </datafield>
+    </record>
+    <record type="Authority">
+        <leader>03669nz  a2200889n  4500</leader>
+        <controlfield tag="001">118541579</controlfield>
+        <controlfield tag="003">DE-101</controlfield>
+        <controlfield tag="005">20150414095325.0</controlfield>
+        <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+        <datafield tag="024" ind1="7" ind2=" ">
+            <subfield code="a">http://d-nb.info/gnd/118541579</subfield>
+            <subfield code="2">uri</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(DE-101)118541579</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(DE-588)118541579</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588)1020430370</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)1020430370</subfield>
+            <subfield code="9">v:zg</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)118541579</subfield>
+            <subfield code="9">v:zg</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)135186056</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-101c)310876052</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588c)4021866-1</subfield>
+            <subfield code="9">v:zg</subfield>
+        </datafield>
+        <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">DE-101</subfield>
+            <subfield code="9">r:DE-101</subfield>
+            <subfield code="b">ger</subfield>
+            <subfield code="d">0384</subfield>
+            <subfield code="e">rda</subfield>
+        </datafield>
+        <datafield tag="043" ind1=" " ind2=" ">
+            <subfield code="c">XA-DE</subfield>
+        </datafield>
+        <datafield tag="065" ind1=" " ind2=" ">
+            <subfield code="a">12.2p</subfield>
+            <subfield code="2">sswd</subfield>
+        </datafield>
+        <datafield tag="065" ind1=" " ind2=" ">
+            <subfield code="a">13.4p</subfield>
+            <subfield code="2">sswd</subfield>
+        </datafield>
+        <datafield tag="079" ind1=" " ind2=" ">
+            <subfield code="a">g</subfield>
+            <subfield code="b">p</subfield>
+            <subfield code="c">1</subfield>
+            <subfield code="q">s</subfield>
+            <subfield code="q">f</subfield>
+            <subfield code="q">z</subfield>
+            <subfield code="q">h</subfield>
+            <subfield code="q">l</subfield>
+            <subfield code="u">v</subfield>
+            <subfield code="u">w</subfield>
+            <subfield code="u">k</subfield>
+            <subfield code="u">m</subfield>
+            <subfield code="u">h</subfield>
+            <subfield code="u">z</subfield>
+            <subfield code="u">o</subfield>
+            <subfield code="v">piz</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Grass, Günter</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="375" ind1=" " ind2=" ">
+            <subfield code="a">1</subfield>
+            <subfield code="2">iso5218</subfield>
+        </datafield>
+        <datafield tag="377" ind1=" " ind2="7">
+            <subfield code="a">ger</subfield>
+            <subfield code="2">iso639-2b</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Grass, Günther</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Grass, Ginters</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Grass, Gjunter</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Grass, Gunterus</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Gras, Ginṭer</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Gras, Gjunter</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Grâs, Gînter</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Grās, Gūntir</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Ğrās, Ğūntar</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Gras, Gynter</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Grasas, G.</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Gkras, Gkynter</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Gkrass, Gkynter</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Gurasu, Gyuntā</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Gelasi, Junte</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="a">Junte-Gelasi</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kŭrasŭ, Kwint'ô</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Grasi, Giunter</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Knoff, Artur</subfield>
+            <subfield code="d">1927-2015</subfield>
+            <subfield code="9">4:pseu</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Pseudonym</subfield>
+            <subfield code="e">Pseudonym</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="a">Jun te Ge la si</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="a">Junte-Gelasi</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Gelasi, Junte</subfield>
+            <subfield code="d">1927-2015</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="9">U:Arab</subfield>
+            <subfield code="a">جراس، جونتر</subfield>
+            <subfield code="d">1927-2015</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Kore</subfield>
+            <subfield code="a">그라스, 귄터</subfield>
+            <subfield code="d">1927-2015</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Hebr</subfield>
+            <subfield code="a">גראס, גינטר</subfield>
+            <subfield code="d">1927-2015</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="9">U:Hans</subfield>
+            <subfield code="a">君特・格拉斯</subfield>
+            <subfield code="d">1927-2015</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="9">U:Jpan</subfield>
+            <subfield code="a">ギュンター・グラス</subfield>
+            <subfield code="d">1927-2015</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Hans</subfield>
+            <subfield code="a">格拉斯, 君特</subfield>
+            <subfield code="d">1927-2015</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)133726711</subfield>
+            <subfield code="0">(DE-588)133726711</subfield>
+            <subfield code="a">Grass, Anna</subfield>
+            <subfield code="d">1932-</subfield>
+            <subfield code="9">4:bezf</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beziehung familiaer</subfield>
+            <subfield code="e">Beziehung familiaer</subfield>
+            <subfield code="9">v:1. Ehefrau</subfield>
+        </datafield>
+        <datafield tag="548" ind1=" " ind2=" ">
+            <subfield code="a">1927-2015</subfield>
+            <subfield code="9">4:datl</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Lebensdaten</subfield>
+        </datafield>
+        <datafield tag="548" ind1=" " ind2=" ">
+            <subfield code="a">16.10.1927-13.04.2015</subfield>
+            <subfield code="9">4:datx</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Exakte Lebensdaten</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040533093</subfield>
+            <subfield code="0">(DE-588)4053309-8</subfield>
+            <subfield code="a">Schriftsteller</subfield>
+            <subfield code="9">4:berc</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Charakteristischer Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)041402413</subfield>
+            <subfield code="0">(DE-588)4140241-8</subfield>
+            <subfield code="a">Dramatiker</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)041251733</subfield>
+            <subfield code="0">(DE-588)4125173-8</subfield>
+            <subfield code="a">Graphiker</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)041395506</subfield>
+            <subfield code="0">(DE-588)4139550-5</subfield>
+            <subfield code="a">Bildhauer</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040372154</subfield>
+            <subfield code="0">(DE-588)4037215-7</subfield>
+            <subfield code="a">Maler</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040334236</subfield>
+            <subfield code="0">(DE-588)4033423-5</subfield>
+            <subfield code="a">Künstler</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="a">s</subfield>
+            <subfield code="9">4:funk</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Funktion</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="a">Text</subfield>
+            <subfield code="9">4:funk</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Funktion</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040110397</subfield>
+            <subfield code="0">(DE-588)4011039-4</subfield>
+            <subfield code="a">Danzig</subfield>
+            <subfield code="9">4:ortg</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Geburtsort</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040364836</subfield>
+            <subfield code="0">(DE-588)4036483-5</subfield>
+            <subfield code="a">Lübeck</subfield>
+            <subfield code="9">4:orts</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Sterbeort</subfield>
+        </datafield>
+        <datafield tag="667" ind1=" " ind2=" ">
+            <subfield code="a">12</subfield>
+        </datafield>
+        <datafield tag="667" ind1=" " ind2=" ">
+            <subfield code="a">OENAK</subfield>
+        </datafield>
+        <datafield tag="667" ind1=" " ind2=" ">
+            <subfield code="a">18.14.00</subfield>
+            <subfield code="5">BDSL</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">LCAuth</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">M</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">SPON</subfield>
+            <subfield code="b">Stand: 13.04.2015</subfield>
+            <subfield code="u">http://www.spiegel.de/kultur/literatur/guenter-grass-ist-tot-a-1028275.html</subfield>
+        </datafield>
+        <datafield tag="678" ind1=" " ind2=" ">
+            <subfield code="b">Nobelpreis für Literatur 1999,</subfield>
+        </datafield>
+        <datafield tag="678" ind1=" " ind2=" ">
+            <subfield code="b">Georg-Büchner-Preisträger 1965</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2="7">
+            <subfield code="a">Grass, Günter, 1927-</subfield>
+            <subfield code="d">1927-2015</subfield>
+            <subfield code="0">(uri)http://lccn.loc.gov/n80085270</subfield>
+            <subfield code="2">naf</subfield>
+        </datafield>
+        <datafield tag="913" ind1=" " ind2=" ">
+            <subfield code="S">pnd</subfield>
+            <subfield code="i">a</subfield>
+            <subfield code="a">Grass, Günter</subfield>
+            <subfield code="0">(DE-588a)118541579</subfield>
+        </datafield>
+    </record>
+    <record xmlns="http://www.loc.gov/MARC21/slim" type="Authority">
+        <leader>04014nz  a2201045n  4500</leader>
+        <controlfield tag="001">118559230</controlfield>
+        <controlfield tag="003">DE-101</controlfield>
+        <controlfield tag="005">20150218114838.0</controlfield>
+        <controlfield tag="008">880701n||azznnaabn           | aaa    |c</controlfield>
+        <datafield tag="024" ind1="7" ind2=" ">
+            <subfield code="a">http://d-nb.info/gnd/118559230</subfield>
+            <subfield code="2">uri</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(DE-101)118559230</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(DE-588)118559230</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588)127133585</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)127133585</subfield>
+            <subfield code="9">v:zg</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588)1028182384</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588)1022122517</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)118559230</subfield>
+            <subfield code="9">v:zg</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)160009154</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)127266623</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)134676912</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588a)127133593</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-101c)310366917</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="z">(DE-588c)4029205-8</subfield>
+            <subfield code="9">v:zg</subfield>
+        </datafield>
+        <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">DE-101</subfield>
+            <subfield code="9">r:DE-101</subfield>
+            <subfield code="b">ger</subfield>
+            <subfield code="d">1140</subfield>
+        </datafield>
+        <datafield tag="043" ind1=" " ind2=" ">
+            <subfield code="c">XA-CZ</subfield>
+            <subfield code="c">XA-AT</subfield>
+            <subfield code="c">XA-DE</subfield>
+        </datafield>
+        <datafield tag="065" ind1=" " ind2=" ">
+            <subfield code="a">12.2p</subfield>
+            <subfield code="2">sswd</subfield>
+        </datafield>
+        <datafield tag="079" ind1=" " ind2=" ">
+            <subfield code="a">g</subfield>
+            <subfield code="b">p</subfield>
+            <subfield code="c">1</subfield>
+            <subfield code="q">s</subfield>
+            <subfield code="q">f</subfield>
+            <subfield code="q">z</subfield>
+            <subfield code="q">l</subfield>
+            <subfield code="u">v</subfield>
+            <subfield code="u">w</subfield>
+            <subfield code="u">k</subfield>
+            <subfield code="u">m</subfield>
+            <subfield code="u">e</subfield>
+            <subfield code="u">z</subfield>
+            <subfield code="u">o</subfield>
+            <subfield code="v">piz</subfield>
+        </datafield>
+        <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Kafka, Franz</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="375" ind1=" " ind2=" ">
+            <subfield code="a">1</subfield>
+            <subfield code="2">iso5218</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kafka, Franc</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kafka, Francas</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kafka, Francs</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kafka, Frank</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kāfkā, Frānts</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kāfka, Frānts</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Ḳafḳa, Frants</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kāfkā, Frānz</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kafka, F.</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kafka, ...</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kafkos, Franzo</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kafuka, Furantsu</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kafuka, ...</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kaphka, Phrants</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kāp̱hkā, Phrāntsa</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kavka, Fr.</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Qafqâ, Franṣ</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="a">Ka fu ka</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="a">Ka-fu-ka</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="a">Kafuka</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="a">Kafuka, ...</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="9">U:Arab</subfield>
+            <subfield code="a">كافكا، فرانتس</subfield>
+            <subfield code="d">1883-1924</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Grek</subfield>
+            <subfield code="a">Κάφκα, Φραντς</subfield>
+            <subfield code="d">1883-1924</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="9">U:Hans</subfield>
+            <subfield code="a">弗兰茨·卡夫卡</subfield>
+            <subfield code="d">1883-1924</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Hans</subfield>
+            <subfield code="a">卡夫卡, 弗兰茨</subfield>
+            <subfield code="d">1883-1924</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Hebr</subfield>
+            <subfield code="a">קאפקא, פרנץ</subfield>
+            <subfield code="d">1883-1924</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="0" ind2=" ">
+            <subfield code="9">U:Jpan</subfield>
+            <subfield code="a">フランツ・カフカ</subfield>
+            <subfield code="d">1883-1924</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Jpan</subfield>
+            <subfield code="a">カフカ, フランツ</subfield>
+            <subfield code="d">1883-1924</subfield>
+            <subfield code="5">DE-576</subfield>
+        </datafield>
+        <datafield tag="400" ind1="1" ind2=" ">
+            <subfield code="9">U:Arab</subfield>
+            <subfield code="a">كافكا, فرانز</subfield>
+            <subfield code="d">1883-1924</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)118515624</subfield>
+            <subfield code="0">(DE-588)118515624</subfield>
+            <subfield code="a">Brod, Max</subfield>
+            <subfield code="d">1884-1968</subfield>
+            <subfield code="9">4:beza</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Bekanntschaft</subfield>
+            <subfield code="e">Bekanntschaft</subfield>
+            <subfield code="9">v:Freund</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)1017957134</subfield>
+            <subfield code="0">(DE-588)1017957134</subfield>
+            <subfield code="a">Bloch, Grete</subfield>
+            <subfield code="d">1892-1944</subfield>
+            <subfield code="9">4:beza</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Bekanntschaft</subfield>
+            <subfield code="e">Bekanntschaft</subfield>
+            <subfield code="9">v:Korrespondentin</subfield>
+        </datafield>
+        <datafield tag="500" ind1="1" ind2=" ">
+            <subfield code="0">(DE-101)118653695</subfield>
+            <subfield code="0">(DE-588)118653695</subfield>
+            <subfield code="a">Bauer, Felice</subfield>
+            <subfield code="d">1887-1960</subfield>
+            <subfield code="9">4:beza</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Bekanntschaft</subfield>
+            <subfield code="e">Bekanntschaft</subfield>
+            <subfield code="9">v:Verlobte</subfield>
+        </datafield>
+        <datafield tag="548" ind1=" " ind2=" ">
+            <subfield code="a">1883-1924</subfield>
+            <subfield code="9">4:datl</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Lebensdaten</subfield>
+        </datafield>
+        <datafield tag="548" ind1=" " ind2=" ">
+            <subfield code="a">03.07.1883-03.06.1924</subfield>
+            <subfield code="9">4:datx</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Exakte Lebensdaten</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040533093</subfield>
+            <subfield code="0">(DE-588)4053309-8</subfield>
+            <subfield code="a">Schriftsteller</subfield>
+            <subfield code="9">4:berc</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Charakteristischer Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040290506</subfield>
+            <subfield code="0">(DE-588)4029050-5</subfield>
+            <subfield code="a">Jurist</subfield>
+            <subfield code="9">4:beru</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Beruf</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="a">s</subfield>
+            <subfield code="9">4:funk</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Funktion</subfield>
+        </datafield>
+        <datafield tag="550" ind1=" " ind2=" ">
+            <subfield code="a">Text</subfield>
+            <subfield code="9">4:funk</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Funktion</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)040763102</subfield>
+            <subfield code="0">(DE-588)4076310-9</subfield>
+            <subfield code="a">Prag</subfield>
+            <subfield code="9">4:ortg</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Geburtsort</subfield>
+        </datafield>
+        <datafield tag="551" ind1=" " ind2=" ">
+            <subfield code="0">(DE-101)954101561</subfield>
+            <subfield code="0">(DE-588)4508720-9</subfield>
+            <subfield code="a">Klosterneuburg-Kierling</subfield>
+            <subfield code="9">4:orts</subfield>
+            <subfield code="w">r</subfield>
+            <subfield code="i">Sterbeort</subfield>
+        </datafield>
+        <datafield tag="667" ind1=" " ind2=" ">
+            <subfield code="a">NDSBIO</subfield>
+        </datafield>
+        <datafield tag="667" ind1=" " ind2=" ">
+            <subfield code="a">7</subfield>
+        </datafield>
+        <datafield tag="667" ind1=" " ind2=" ">
+            <subfield code="a">12</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">M</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">B 1986</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">DMA</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">LCAuth</subfield>
+        </datafield>
+        <datafield tag="670" ind1=" " ind2=" ">
+            <subfield code="a">Wikipedia</subfield>
+        </datafield>
+        <datafield tag="692" ind1=" " ind2=" ">
+            <subfield code="a">Amerika. - 1927</subfield>
+        </datafield>
+        <datafield tag="692" ind1=" " ind2=" ">
+            <subfield code="a">Der Heizer. - 1913</subfield>
+        </datafield>
+        <datafield tag="692" ind1=" " ind2=" ">
+            <subfield code="a">Ein Hungerkünstler. - 1924</subfield>
+        </datafield>
+        <datafield tag="692" ind1=" " ind2=" ">
+            <subfield code="a">In der Strafkolonie. - 1919</subfield>
+        </datafield>
+        <datafield tag="692" ind1=" " ind2=" ">
+            <subfield code="a">Ein Landarzt. - 1919</subfield>
+        </datafield>
+        <datafield tag="692" ind1=" " ind2=" ">
+            <subfield code="a">Perigraphē henos agōna. - 1982</subfield>
+        </datafield>
+        <datafield tag="692" ind1=" " ind2=" ">
+            <subfield code="a">Der Prozeß. - 1925</subfield>
+        </datafield>
+        <datafield tag="692" ind1=" " ind2=" ">
+            <subfield code="a">Das Schloß. - 1926</subfield>
+        </datafield>
+        <datafield tag="692" ind1=" " ind2=" ">
+            <subfield code="a">Das Urteil. - 1916</subfield>
+        </datafield>
+        <datafield tag="692" ind1=" " ind2=" ">
+            <subfield code="a">Die Verwandlung. - 1917</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2="7">
+            <subfield code="a">Kafka, Franz</subfield>
+            <subfield code="d">1883-1924</subfield>
+            <subfield code="0">(DLC)n  81063091</subfield>
+            <subfield code="2">naf</subfield>
+            <subfield code="9">v:1883-1924</subfield>
+        </datafield>
+        <datafield tag="913" ind1=" " ind2=" ">
+            <subfield code="S">pnd</subfield>
+            <subfield code="i">a</subfield>
+            <subfield code="a">Kafka, Franz</subfield>
+            <subfield code="0">(DE-588a)118559230</subfield>
+        </datafield>
+        <datafield tag="913" ind1=" " ind2=" ">
+            <subfield code="S">pnd</subfield>
+            <subfield code="i">a</subfield>
+            <subfield code="a">Kafka, ...</subfield>
+            <subfield code="0">(DE-588a)127133585</subfield>
+        </datafield>
+    </record>
+</collection>
