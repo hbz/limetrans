@@ -1,1 +1,29 @@
-<!-- TODO: INSERT MORPH RULES -->
+<?xml version="1.0" encoding="UTF-8"?>
+<metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
+    <rules>
+        <data source="001" name="id" />
+        <data source="1001 .a" name="name" />
+
+        <!-- The extraction of yearOfBirth and yearOfDeath
+             demonstrate two methods for splitting a string. -->
+        <data source="1001 .d" name="yearOfBirth">
+            <regexp match="(\d\d\d\d)-.*" format="${1}" />
+        </data>
+
+        <data source="1001 .d" name="yearOfDeath">
+            <split delimiter="-" />
+            <occurrence only="2" />
+        </data>
+
+        <!-- The entity collector collects all locations in an
+             entity. This is necessary in order to enable the
+              PojoEncoder to place the locations in a Java list. -->
+        <entity name="locations" flushWith="record">
+            <combine name="location" value="${ORT} (${TYP})" reset="true">
+                <data source="551  .a" name="ORT" />
+                <data source="551  .i" name="TYP" />
+            </combine>
+        </entity>
+
+    </rules>
+</metamorph>
