@@ -56,11 +56,6 @@ public final class LibraryMetadataTransformation {
         Reader reader = new InputStreamReader(in, "UTF-8");
         SettingsLoader settingsLoader = SettingsLoaderFactory.loaderFromResource(aUrl.toString());
 
-        Settings.Builder builder = Settings.settingsBuilder();
-        String source = IOUtils.toString(aUrl);
-        builder.loadFromString(source);
-        Settings s2 = builder.build();
-
         Settings settings = Settings.settingsBuilder()
                 .put(settingsLoader.load(IOUtils.toString(aUrl)))
                 .replacePropertyPlaceholders()
