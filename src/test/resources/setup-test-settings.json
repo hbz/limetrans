@@ -9,6 +9,7 @@
     }
   },
   "output": {
+    "json" : "classpath:src/test/resources/output/test-transformed.json",
     "elasticsearch" : {
       "cluster": "elasticsearch-01",
       "host": ["localhost:9300"],

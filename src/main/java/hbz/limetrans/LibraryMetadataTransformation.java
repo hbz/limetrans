@@ -1,6 +1,6 @@
 package hbz.limetrans;
 
-import org.apache.commons.validator.routines.UrlValidator;
+import org.apache.commons.io.IOUtils;
 import org.culturegraph.mf.morph.Metamorph;
 import org.culturegraph.mf.stream.converter.JsonEncoder;
 import org.culturegraph.mf.stream.converter.JsonToElasticsearchBulk;
@@ -8,20 +8,21 @@ import org.culturegraph.mf.stream.converter.xml.MarcXmlHandler;
 import org.culturegraph.mf.stream.converter.xml.XmlDecoder;
 import org.culturegraph.mf.stream.sink.ObjectWriter;
 import org.culturegraph.mf.stream.source.FileOpener;
-
-import org.xbib.common.settings.*;
+import org.xbib.common.settings.Settings;
 import org.xbib.common.settings.loader.SettingsLoader;
 import org.xbib.common.settings.loader.SettingsLoaderFactory;
 
-import java.io.*;
-import java.net.MalformedURLException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.net.URL;
 
 public final class LibraryMetadataTransformation {
 
     public static void main(final String[] args) throws IOException {
 
-        String configUrl = getConfigUrl(args);
+        URL configUrl = ConfigurationChecker.getConfigUrlFrom(args);
         Settings settings = getSettings(configUrl);
 
         final FileOpener opener = new FileOpener();
@@ -30,15 +31,19 @@ public final class LibraryMetadataTransformation {
         final Metamorph morph = new Metamorph(settings.get("transformation-rules"));
         final JsonEncoder encoder = new JsonEncoder();
         encoder.setPrettyPrinting(true);
-        final ObjectWriter<String> writer = new ObjectWriter<>(settings.get(""));
         final JsonToElasticsearchBulk esBulk = new JsonToElasticsearchBulk("id",
                 settings.get("output.elasticsearch.index.type"),
                 settings.get("output.elasticsearch.index.name"));
+        final ObjectWriter<String> writer = new ObjectWriter<>(settings.get("output.json"));
+
         // Setup transformation pipeline
         opener
                 .setReceiver(decoder)
                 .setReceiver(marcHandler)
-                .setReceiver(morph);
+                .setReceiver(morph)
+                .setReceiver(encoder)
+                .setReceiver(esBulk)
+                .setReceiver(writer);
 
         // Process transformation
         String input = null; // TODO: = settings.get("input") ==> to unified String
@@ -46,38 +51,21 @@ public final class LibraryMetadataTransformation {
         opener.closeStream();
     }
 
-    private static Settings getSettings(String aUrl) throws IOException {
-        InputStream in = System.in;
-        try {
-            URL url = new URL(aUrl);
-            in = url.openStream();
-        } catch (MalformedURLException e) {
-            in = new FileInputStream(aUrl);
-        }
+    private static Settings getSettings(URL aUrl) throws IOException {
+        InputStream in = aUrl.openStream();
         Reader reader = new InputStreamReader(in, "UTF-8");
-        SettingsLoader settingsLoader = SettingsLoaderFactory.loaderFromResource(aUrl);
+        SettingsLoader settingsLoader = SettingsLoaderFactory.loaderFromResource(aUrl.toString());
+
+        Settings.Builder builder = Settings.settingsBuilder();
+        String source = IOUtils.toString(aUrl);
+        builder.loadFromString(source);
+        Settings s2 = builder.build();
+
         Settings settings = Settings.settingsBuilder()
-                .put(settingsLoader.load(Settings.copyToString(reader)))
+                .put(settingsLoader.load(IOUtils.toString(aUrl)))
                 .replacePropertyPlaceholders()
                 .build();
         return settings;
-    }
-
-    private static String getConfigUrl(String[] aArgs) {
-        if (aArgs.length < 1){
-            throw new IllegalArgumentException("Could not process limetrans: configuration missing.");
-        }
-        if (aArgs.length > 1){
-            throw new IllegalArgumentException("Could not process limetrans: too many arguments: ".concat(aArgs.toString()));
-        }
-        String trimmed = aArgs[0].trim();
-        if (trimmed.isEmpty()){
-            throw new IllegalArgumentException("Could not process limetrans: empty configuration argument.");
-        }
-        if (!new UrlValidator(new String[] {"http", "https", "ftp", "file"}).isValid(trimmed)){
-            throw new IllegalArgumentException("Could not process limetrans: invalid configuration argument: ".concat(trimmed));
-        }
-        return trimmed;
     }
 
 }
