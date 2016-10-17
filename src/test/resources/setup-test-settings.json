@@ -9,7 +9,7 @@
     }
   },
   "output": {
-    "json" : "src/test/resources/output/test-transformed.json",
+    "json" : "src/test/resources/output/test-transformed.jsonl",
     "elasticsearch" : {
       "cluster": "elasticsearch-01",
       "host": ["localhost:9300"],

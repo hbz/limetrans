@@ -13,9 +13,6 @@ import org.xbib.common.settings.loader.SettingsLoader;
 import org.xbib.common.settings.loader.SettingsLoaderFactory;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
 import java.net.URL;
 
 public final class LibraryMetadataTransformation {
@@ -46,14 +43,13 @@ public final class LibraryMetadataTransformation {
                 .setReceiver(writer);
 
         // Process transformation
-        String input = null; // TODO: = settings.get("input") ==> to unified String
-        opener.process(input);
+        Settings inputQueue = settings.getGroups("input").get("queue");
+        String inputPath = inputQueue.get("path").concat(inputQueue.get("pattern"));
+        opener.process(inputPath);
         opener.closeStream();
     }
 
     private static Settings getSettings(URL aUrl) throws IOException {
-        InputStream in = aUrl.openStream();
-        Reader reader = new InputStreamReader(in, "UTF-8");
         SettingsLoader settingsLoader = SettingsLoaderFactory.loaderFromResource(aUrl.toString());
 
         Settings settings = Settings.settingsBuilder()
