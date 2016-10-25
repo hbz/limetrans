@@ -36,9 +36,19 @@
 
 	<dependencies>
         <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.6.5</version>
+        </dependency>
+        <dependency>
             <groupId>com.github.hbz</groupId>
             <artifactId>metafacture-core</artifactId>
             <version>ea0fbaf720d4277590ce5716c22155c9f675f3e5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>2.4.0</version>
         </dependency>
         <dependency>
 			<groupId>org.slf4j</groupId>
@@ -64,6 +74,11 @@
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>hbz.introx.xbib</groupId>
+            <artifactId>tools</artifactId>
+            <version>2.0.0</version>
         </dependency>
     </dependencies>
 
