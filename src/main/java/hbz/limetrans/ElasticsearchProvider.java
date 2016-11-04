@@ -73,6 +73,10 @@ public class ElasticsearchProvider {
         refreshAllIndices();
     }
 
+    public void close() {
+        mClient.close();
+    }
+
     private static void deleteIndex(final Client client, final String index) {
         client.admin().cluster().prepareHealth().setWaitForYellowStatus().execute()
                 .actionGet();
