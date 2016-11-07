@@ -30,6 +30,7 @@ public final class LibraryMetadataTransformation {
         final ElasticsearchProvider esProvider = new ElasticsearchProvider(aSettings.getAsSettings("output").getAsSettings("elasticsearch"));
         esProvider.initializeIndex(aSettings.get("output.elasticsearch.index.name"));
         esProvider.bulkIndex(aElasticsearchInputDataFile, aSettings.get("output.elasticsearch.index.name"));
+        esProvider.close();
     }
 
     private static String transform(Settings aSettings) {
