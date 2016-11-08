@@ -22,19 +22,17 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by pvb on 17.10.16.
- */
 public class ElasticsearchProvider {
 
     final private Client mClient;
     final private Map<String, String> mCommonSettings;
 
-    public ElasticsearchProvider(org.xbib.common.settings.Settings aElasticsearchSettings){
+    public ElasticsearchProvider(final org.xbib.common.settings.Settings aElasticsearchSettings) {
         mCommonSettings = new HashMap<>();
         mCommonSettings.put("index.name", aElasticsearchSettings.get("index.name"));
         mCommonSettings.put("index.type", aElasticsearchSettings.get("index.type"));
         mCommonSettings.put("cluster.name", aElasticsearchSettings.get("cluster"));
+
         final Builder clientSettingsBuilder = Settings.settingsBuilder().put(mCommonSettings);
 
         // TODO: enable multiple server, according to array under "output.elasticsearch.host"
@@ -44,32 +42,40 @@ public class ElasticsearchProvider {
 
         try {
             mClient = TransportClient.builder().settings(clientSettingsBuilder).build().addTransportAddress(
-                    new InetSocketTransportAddress(InetAddress.getByName(serverName), serverPort));
+                new InetSocketTransportAddress(InetAddress.getByName(serverName), serverPort));
         } catch (UnknownHostException ex) {
             throw new RuntimeException(ex);
         }
     }
 
-    public void initializeIndex(final String aIndexName) throws IOException {
-        deleteIndex(mClient, aIndexName);
-        CreateIndexRequestBuilder cirb = mClient.admin().indices().prepareCreate(aIndexName);
-            Builder indexSettingsBuilder = Settings.builder()
-                .put("number_of_shards", 1)
-                .put("number_of_replicas", 1);
-            mCommonSettings.forEach((key, value) -> indexSettingsBuilder.put(key, value));
+    public void initializeIndex() throws IOException {
+        deleteIndex();
+
+        final CreateIndexRequestBuilder cirb = mClient.admin().indices()
+            .prepareCreate(mCommonSettings.get("index.name"));
+
+        final Builder indexSettingsBuilder = Settings.builder()
+            .put("number_of_shards", 1)
+            .put("number_of_replicas", 1);
+
+        mCommonSettings.forEach((key, value) -> indexSettingsBuilder.put(key, value));
+
         cirb.setSettings(indexSettingsBuilder.build());
         cirb.execute().actionGet();
+
         refreshAllIndices();
     }
 
-    public void bulkIndex(final String aIndexFile, final String aIndex) throws IOException {
+    public void bulkIndex(final String aIndexFile) throws IOException {
         final BulkRequestBuilder bulkRequest = mClient.prepareBulk();
-        try (BufferedReader br =
-                     new BufferedReader(new InputStreamReader(new FileInputStream(aIndexFile),
-                             StandardCharsets.UTF_8))) {
-            readData(bulkRequest, br, aIndex);
+
+        try (final BufferedReader br = new BufferedReader(new InputStreamReader(
+                new FileInputStream(aIndexFile), StandardCharsets.UTF_8))) {
+            readData(bulkRequest, br);
         }
+
         bulkRequest.execute().actionGet();
+
         refreshAllIndices();
     }
 
@@ -77,19 +83,23 @@ public class ElasticsearchProvider {
         mClient.close();
     }
 
-    private static void deleteIndex(final Client client, final String index) {
-        client.admin().cluster().prepareHealth().setWaitForYellowStatus().execute()
-                .actionGet();
-        if (client.admin().indices().prepareExists(index).execute().actionGet()
-                .isExists()) {
-            client.admin().indices().delete(new DeleteIndexRequest(index))
-                    .actionGet();
+    private void deleteIndex() {
+        final String indexName = mCommonSettings.get("index.name");
+
+        mClient.admin().cluster().prepareHealth()
+            .setWaitForYellowStatus().execute().actionGet();
+
+        if (mClient.admin().indices()
+                .prepareExists(indexName).execute().actionGet().isExists()) {
+            mClient.admin().indices()
+                .delete(new DeleteIndexRequest(indexName)).actionGet();
         }
     }
 
     private void readData(final BulkRequestBuilder aBulkRequest,
-                          final BufferedReader aBufferedReader, final String aIndex)
-            throws IOException {
+                          final BufferedReader aBufferedReader) throws IOException {
+        final String indexType = mCommonSettings.get("index.type");
+        final String indexName = mCommonSettings.get("index.name");
         final ObjectMapper mapper = new ObjectMapper();
         String line;
         int currentLine = 1;
@@ -100,6 +110,7 @@ public class ElasticsearchProvider {
         // First line: index with id, second line: source
         while ((line = aBufferedReader.readLine()) != null) {
             JsonNode rootNode = mapper.readValue(line, JsonNode.class);
+
             if (currentLine % 2 != 0) {
                 JsonNode index = rootNode.get("index");
                 idUriParts = index.findValue("_id").asText().split("/");
@@ -107,12 +118,14 @@ public class ElasticsearchProvider {
             } else {
                 organisationData = line;
                 JsonNode libType = rootNode.get("type");
+
                 if (libType == null || !libType.textValue().equals("Collection")) {
                     aBulkRequest.add(mClient
-                            .prepareIndex(aIndex, mCommonSettings.get("index.type"), organisationId)
-                            .setSource(organisationData));
+                        .prepareIndex(indexName, indexType, organisationId)
+                        .setSource(organisationData));
                 }
             }
+
             currentLine++;
         }
     }
