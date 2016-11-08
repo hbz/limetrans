@@ -6,6 +6,7 @@ import org.culturegraph.mf.stream.converter.JsonEncoder;
 import org.culturegraph.mf.stream.converter.JsonToElasticsearchBulk;
 import org.culturegraph.mf.stream.converter.xml.MarcXmlHandler;
 import org.culturegraph.mf.stream.converter.xml.XmlDecoder;
+import org.culturegraph.mf.stream.pipe.ObjectTee;
 import org.culturegraph.mf.stream.sink.ObjectWriter;
 import org.culturegraph.mf.stream.source.FileOpener;
 import org.xbib.common.settings.Settings;
@@ -27,26 +28,28 @@ public final class LibraryMetadataTransformation {
         final Settings outputSettings = settings.getAsSettings("output");
 
         Settings elasticsearchSettings = null;
+        String esPath = null;
         if (outputSettings.containsSetting("elasticsearch")) {
             elasticsearchSettings = outputSettings.getAsSettings("elasticsearch");
+
+            esPath = elasticsearchSettings.get("path");
+            if (esPath == null) {
+                final File tempFile = File.createTempFile("limetrans", ".jsonl");
+                esPath = tempFile.getPath();
+                tempFile.deleteOnExit();
+            }
         }
 
-        String outputPath = outputSettings.get("json");
-        if (outputPath == null) {
-            if (elasticsearchSettings == null) {
-                throw new IllegalArgumentException("Could not process limetrans: no output specified.");
-            }
-
-            final File tempFile = File.createTempFile("limetrans", ".jsonl");
-            outputPath = tempFile.getPath();
-            tempFile.deleteOnExit();
+        final String outputPath = outputSettings.get("json");
+        if (outputPath == null && elasticsearchSettings == null) {
+            throw new IllegalArgumentException("Could not process limetrans: no output specified.");
         }
 
         final String rulesPath = settings.get("transformation-rules");
-        transform(inputPath, outputPath, rulesPath, elasticsearchSettings);
+        transform(inputPath, outputPath, rulesPath, elasticsearchSettings, esPath);
 
         if (elasticsearchSettings != null) {
-            index(elasticsearchSettings, outputPath);
+            index(elasticsearchSettings, esPath);
         }
     }
 
@@ -60,31 +63,34 @@ public final class LibraryMetadataTransformation {
     }
 
     private static void transform(final String aInputPath, final String aOutputPath,
-            final String aRulesPath, final Settings aElasticsearchSettings) {
+            final String aRulesPath, final Settings aElasticsearchSettings, final String esPath) {
         final FileOpener opener = new FileOpener();
         final XmlDecoder decoder = new XmlDecoder();
         final MarcXmlHandler marcHandler = new MarcXmlHandler();
         final Metamorph morph = new Metamorph(aRulesPath);
         final JsonEncoder encoder = new JsonEncoder();
-        final ObjectWriter<String> writer = new ObjectWriter<>(aOutputPath);
+        final ObjectTee tee = new ObjectTee();
 
         // Setup transformation pipeline
         opener
                 .setReceiver(decoder)
                 .setReceiver(marcHandler)
                 .setReceiver(morph)
-                .setReceiver(encoder);
+                .setReceiver(encoder)
+                .setReceiver(tee);
+
+        if (aOutputPath != null) {
+            //encoder.setPrettyPrinting(true);
+            tee.addReceiver(new ObjectWriter<>(aOutputPath));
+        }
 
         if (aElasticsearchSettings != null) {
             final JsonToElasticsearchBulk esBulk = new JsonToElasticsearchBulk("id",
                     aElasticsearchSettings.get("index.type"),
                     aElasticsearchSettings.get("index.name"));
 
-            encoder.setReceiver(esBulk);
-            esBulk.setReceiver(writer);
-        }
-        else {
-            encoder.setReceiver(writer);
+            tee.addReceiver(esBulk);
+            esBulk.setReceiver(new ObjectWriter<>(esPath));
         }
 
         // Process transformation
