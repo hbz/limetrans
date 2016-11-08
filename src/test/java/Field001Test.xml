@@ -1,0 +1,41 @@
+<metamorph-test version="1.0"
+                xmlns="http://www.culturegraph.org/metamorph-test">
+
+    <test-case name="001">
+
+        <input type="text/x-cg+xml">
+            <collection xmlns="http://www.loc.gov/MARC21/slim">
+                <record id="001">
+                    <controlfield tag="001">11862444X</controlfield>
+                </record>
+            </collection>
+        </input>
+
+        <transformation type="text/x-metamorph+xml" src="./src/main/resources/transformation-rules-DE-836.xml" />
+
+        <result type="text/x-marc21">
+            <collection xmlns="http://www.loc.gov/MARC21/slim">
+                <records>
+                    <record id="RecordIdentifier">
+                        <literal name="identifierForTheRecord" value="11862444X" />
+                    </record>
+                </records>
+            </collection>
+        </result>
+
+        <!-- TODO: expect result as Json. Currently not implemented, as a JsonReader would be required in the
+                       underlying metafacure-core version - see https://github.com/culturegraph/metafacture-core/wiki/Testing-Framework-for-Metamorph:
+                       "As of Metafacture 3.0.0 arbitrary data formats can be used to define the input and the expected
+                       result. The only requirement is that a reader for the specified mime-type is registered in
+                       src/main/resources/metastream-readers.properties."
+
+            {
+                "RecordIdentifier": {
+                    "identifierForTheRecord": "11862444X"
+                }
+            }
+         -->
+
+    </test-case>
+
+</metamorph-test>
