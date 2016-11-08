@@ -13,62 +13,91 @@ import org.xbib.common.settings.loader.SettingsLoader;
 import org.xbib.common.settings.loader.SettingsLoaderFactory;
 
 import java.io.IOException;
+import java.io.File;
 import java.net.URL;
 
 public final class LibraryMetadataTransformation {
 
     public static void main(final String[] args) throws IOException {
+        final Settings settings = setup(args);
 
-        Settings settings = setup(args);
+        final Settings inputQueue = settings.getGroups("input").get("queue");
+        final String inputPath = inputQueue.get("path").concat(inputQueue.get("pattern"));
 
-        String transformedPath = transform(settings);
+        final Settings outputSettings = settings.getAsSettings("output");
 
-        index(settings, transformedPath);
+        Settings elasticsearchSettings = null;
+        if (outputSettings.containsSetting("elasticsearch")) {
+            elasticsearchSettings = outputSettings.getAsSettings("elasticsearch");
+        }
+
+        String outputPath = outputSettings.get("json");
+        if (outputPath == null) {
+            if (elasticsearchSettings == null) {
+                throw new IllegalArgumentException("Could not process limetrans: no output specified.");
+            }
+
+            final File tempFile = File.createTempFile("limetrans", ".jsonl");
+            outputPath = tempFile.getPath();
+            tempFile.deleteOnExit();
+        }
+
+        final String rulesPath = settings.get("transformation-rules");
+        transform(inputPath, outputPath, rulesPath, elasticsearchSettings);
+
+        if (elasticsearchSettings != null) {
+            index(elasticsearchSettings, outputPath);
+        }
     }
 
-    private static void index(Settings aSettings, String aElasticsearchInputDataFile) throws IOException {
-        final ElasticsearchProvider esProvider = new ElasticsearchProvider(aSettings.getAsSettings("output").getAsSettings("elasticsearch"));
-        esProvider.initializeIndex(aSettings.get("output.elasticsearch.index.name"));
-        esProvider.bulkIndex(aElasticsearchInputDataFile, aSettings.get("output.elasticsearch.index.name"));
+    private static void index(final Settings aSettings, final String aInputPath) throws IOException {
+        final ElasticsearchProvider esProvider = new ElasticsearchProvider(aSettings);
+        final String indexName = aSettings.get("index.name");
+
+        esProvider.initializeIndex(indexName);
+        esProvider.bulkIndex(aInputPath, indexName);
         esProvider.close();
     }
 
-    private static String transform(Settings aSettings) {
+    private static void transform(final String aInputPath, final String aOutputPath,
+            final String aRulesPath, final Settings aElasticsearchSettings) {
         final FileOpener opener = new FileOpener();
         final XmlDecoder decoder = new XmlDecoder();
         final MarcXmlHandler marcHandler = new MarcXmlHandler();
-        final Metamorph morph = new Metamorph(aSettings.get("transformation-rules"));
+        final Metamorph morph = new Metamorph(aRulesPath);
         final JsonEncoder encoder = new JsonEncoder();
-        encoder.setPrettyPrinting(true);
-        final JsonToElasticsearchBulk esBulk = new JsonToElasticsearchBulk("id",
-                aSettings.get("output.elasticsearch.index.type"),
-                aSettings.get("output.elasticsearch.index.name"));
-        final String outputFile = aSettings.get("output.json");
-        final ObjectWriter<String> writer = new ObjectWriter<>(outputFile);
+        final ObjectWriter<String> writer = new ObjectWriter<>(aOutputPath);
 
         // Setup transformation pipeline
         opener
                 .setReceiver(decoder)
                 .setReceiver(marcHandler)
                 .setReceiver(morph)
-                .setReceiver(encoder)
-                .setReceiver(esBulk)
-                .setReceiver(writer);
+                .setReceiver(encoder);
+
+        if (aElasticsearchSettings != null) {
+            final JsonToElasticsearchBulk esBulk = new JsonToElasticsearchBulk("id",
+                    aElasticsearchSettings.get("index.type"),
+                    aElasticsearchSettings.get("index.name"));
+
+            encoder.setReceiver(esBulk);
+            esBulk.setReceiver(writer);
+        }
+        else {
+            encoder.setReceiver(writer);
+        }
 
         // Process transformation
-        Settings inputQueue = aSettings.getGroups("input").get("queue");
-        String inputPath = inputQueue.get("path").concat(inputQueue.get("pattern"));
-        opener.process(inputPath);
+        opener.process(aInputPath);
         opener.closeStream();
-        return outputFile;
     }
 
-    private static Settings setup(String[] args) throws IOException {
+    private static Settings setup(final String[] args) throws IOException {
         URL configUrl = ConfigurationChecker.getConfigUrlFrom(args);
         return getSettings(configUrl);
     }
 
-    private static Settings getSettings(URL aUrl) throws IOException {
+    private static Settings getSettings(final URL aUrl) throws IOException {
         SettingsLoader settingsLoader = SettingsLoaderFactory.loaderFromResource(aUrl.toString());
 
         Settings settings = Settings.settingsBuilder()
