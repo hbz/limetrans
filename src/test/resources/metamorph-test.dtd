@@ -1,0 +1,10 @@
+<!ATTLIST input
+  type    CDATA "application/marcxml+xml"
+  src     CDATA "test-input-01.xml">
+
+<!ATTLIST transformation
+  type    CDATA "text/x-metamorph+xml"
+  src     CDATA "src/main/resources/transformation-rules-DE-836.xml">
+
+<!ATTLIST result
+  type    CDATA "text/x-formeta">

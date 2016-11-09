@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE metamorph-test SYSTEM "metamorph-test.dtd">
+<metamorph-test version="1.0" xmlns="http://www.culturegraph.org/metamorph-test">
+
+  <test-case name="if-none-100_700">
+    <input src="test-if-none-100_700.xml" />
+    <transformation/>
+    <result src="test-if-none-100_700.formeta" />
+  </test-case>
+
+</metamorph-test>
