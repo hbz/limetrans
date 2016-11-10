@@ -1,348 +1,358 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
-    <macros>
-		<macro name="regex-del-punctuation-end"> <!-- regex notwendig? -->
-				<data source="$[dsource]" name="$[dname]">
-					<regexp match="^(.*?) ?[,.:;/]?$" format="${1}" />
-				</data>
-		</macro>
-		
-	</macros>
-	
-	<rules>
-		
-		<!-- java -jar limetrans-1.0-SNAPSHOT-jar-with-dependencies.jar src/test/resources/setup-test-settings.json -->
-		<!-- FACETTEN -->
-		<!-- Auswertung von Leader Pos. 06 und 07 für Facetten -->
-		<data source="leader" name="@LeaderPos06">
-			<substring start="06" end="07" />
-		</data>
-		<data source="leader" name="@LeaderPos07">
-			<substring start="07" end="08" />
-		</data>
-		<data source="006" name="@006Pos00">
-			<substring start="00" end="01" />
-		</data>
-		<data source="006" name="@006Pos09">
-			<substring start="09" end="10" />
-		</data>
-		<data source="007" name="@007Pos00">
-			<substring start="00" end="01" />
-		</data>
-		<data source="007" name="@007Pos01">
-			<substring start="01" end="02" />
-		</data>
-		<data source="008" name="@008Pos26">
-			<substring start="26" end="27" />
-		</data>
-		<data source="008" name="@008Pos33">
-			<substring start="33" end="34" />
-		</data>
-		<data source="008" name="@008Pos34">
-			<substring start="34" end="35" />
-		</data>
-		
-		<data source="@LeaderPos06" name="@type">
-			<lookup in="typeLeader06"/>
-		</data> 
-		<combine name="@type" value="B">
-			<if>
-				<all>
-					<data source="@LeaderPos06">
-						<equals string="a"/>
-					</data>
-					<any>
-						<data source="@LeaderPos07">
-							<equals string="a"/>
-						</data>
-						<data source="@LeaderPos07">
-							<equals string="c"/>
-						</data>
-						<data source="@LeaderPos07">
-							<equals string="d"/>
-						</data>
-						<data source="@LeaderPos07">
-							<equals string="m"/>
-						</data>
-					</any>
-				</all>
-			</if>
-			<data source="001" />
-		</combine>
-		<combine name="@type" value="CR">
-			<if>
-				<all>
-					<data source="@LeaderPos06">
-						<equals string="a"/>
-					</data>
-					<any>
-						<data source="@LeaderPos07">
-							<equals string="b"/>
-						</data>
-						<data source="@LeaderPos07">
-							<equals string="i"/>
-						</data>
-					</any>
-				</all>
-			</if>
-			<data source="001" />
-		</combine>
-		<!-- Mapping FORMAT -->
-		<entity name="dc" flushWith="@*">
-			<combine name="format" value="Audio" >
-				<if>
-					<any>
-						<data source="@LeaderPos06">
-							<equals string="i"/>
-						</data>
-						<data source="@LeaderPos06">
-							<equals string="j"/>
-						</data>
-						<data source="@006Pos00">
-							<equals string="i"/>
-						</data>
-						<data source="@006Pos00">
-							<equals string="j"/>
-						</data>
-						<data source="@007Pos00">
-							<equals string="s"/>
-						</data>
-						<all>
-							<data source="@type">
-								<equals string="CF"/>
-							</data>
-							<data source="@008Pos26">
-								<equals string="h"/>
-							</data>
-						</all>
-						<all>
-							<data source="@006Pos00">
-								<equals string="m"/>
-							</data>
-							<data source="@006Pos09">
-								<equals string="h"/>
-							</data>
-						</all>
-					</any>
-				</if>
-				<data source="001" />
-			</combine>
-			<combine name="format" value="Bild" >
-				<if>
-					<any>
-						<all>
-							<data source="@007Pos00">
-								<equals string="k"/>
-							</data>
-							<data source="@007Pos01">
-								<regexp match="[cdefhijklnpqrsuvz]"/>
-							</data>
-						</all>
-						<data source="@007Pos00">
-							<equals string="r"/>
-						</data>
-						<all>
-							<data source="@type">
-								<equals string="M"/>
-							</data>
-							<any>
-								<data source="@008Pos3[34]">
-									<regexp match="[jo]"/>
-								</data>
-							</any>
-						</all>
-						<all>
-							<data source="@006Pos00">
-								<regexp match="[ef]"/>
-							</data>
-							
-						</all>
-					</any>
-				</if>
-				<data source="001" />
-			</combine>
-		</entity> <!-- name="dc" -->
-		<!-- ENDE Mapping FORMAT -->
-		<!-- MAPPING NACH FELDERN (ohne Facetten) -->
-		
-		<!-- Mapping Fields: 0xx -->
-		<entity name="RecordIdentifier" flushWith= "001" >
-			<data source="001" name="identifierForTheRecord" />
-		</entity>
+  <macros>
 
-		<data source="008" name="@language">
-			<substring start="35" end="38" />
-			<lookup in="language"/>
-		</data> 
-		
-		<entity name="Language" flushWith= "@language" >
-			<data source="@language" name="languageSource" />
-			<data source="@language" name="language" />
-		</entity>
-		<entity name="IdentifierISBN" flushWith= "020  .a">
-			<data source="020  .a" name="identifierISBN" />
-		</entity>
-		
-		<!-- Mapping Fields: 1xx -->
-		<entity name="Person" sameEntity="true" >
-			<combine name="personName" value="${100a}">
-				<if>
-					<none>
-						<data source="1001 .e" />
-						<data source="1001 .4" />
-					</none>
-				</if>
-				<data source="1001 .a" name="100a" />
-			</combine>
-		</entity>
-		
-		<!-- Mapping Fields: 2xx -->
-		<entity name="TitleStatement" >
-			<call-macro name="regex-del-punctuation-end" dsource="245??.a" dname="titleMain" />
-		</entity>
-		<entity name="TitleAddendum" >
-			<call-macro name="regex-del-punctuation-end" dsource="245??.b" dname="title" />
-		</entity>
-		<entity name="Edition" >
-			<data source="250  .a" name="edition" />
-		</entity>
-			
-		<entity name="PublicationPlace" >
-			<call-macro name="regex-del-punctuation-end" dsource="260  .a|2603 .a" dname="printingPlace" />
-		</entity>
-		<entity name="PublisherName" >
-			<call-macro name="regex-del-punctuation-end" dsource="260  .b|2603 .b" dname="name" />
-		</entity>
-		<entity name="DateProper" >
-			<call-macro name="regex-del-punctuation-end" dsource="260  .c|2603 .c" dname="date" />
-		</entity>
-		
-		<!-- Mapping Field: 300 -->
-		<data source="300  .a" name="@300a">
-			<regexp match="^(.*?) ?[:;]?$" format="${1}" />
-		</data>
-		<data source="300  .b" name="@300b">
-			<regexp match="^(.*?) ?[:;]?$" format="${1}" />
-		</data>
-		
-		<combine name="@300b_punct" value=" : ${b1}">
-			<if>
-				<all>
-					<data source="@300b"/>
-					<data source="@300a"/>
-				</all>
-			</if>
-			<data source="@300b" name = "b1"/>
-		</combine>
-		<combine name="@300c_punct" value=" ; ${c1}">
-			<if>
-				<all>
-					<data source="300  .c"/>
-					<data source="300  .a|300  .b"/>
-				</all>
-			</if>
-			<data source="300  .c" name = "c1"/>
-		</combine>
-		<entity name="Extent" >
-			<combine name="extent" value="${a}${b}${c}">
-				<choose name="a">
-					<data source="@300a"/>
-					<data source="300*">
-						<constant value=""/>
-					</data>
-				</choose>
-				<choose name="b">
-					<data source="@300b_punct"/>
-					<data source="@300b"/>
-					<data source="300*">
-						<constant value=""/>
-					</data>
-				</choose>
-				<choose name="c">
-					<data source="@300c_punct"/>
-					<data source="300  .c"/>
-					<data source="300*">
-						<constant value=""/>
-					</data>
-				</choose>
-			</combine>
-		</entity>
-		<!-- END Mapping Field: 300 -->
-		
-		<!-- Mapping Field: 301-399 -->
-		
-		
-		<!-- Mapping Fields: 4xx -->
-		
-		
-		
-		<!-- Mapping Fields: 5xx -->
-		<entity name="Description" >
-			<data source="500  .a" name="description" />
-		</entity>
-		<!-- Mapping Fields: 6xx -->
-		
-		<entity name="RSWK" sameEntity="true">
-			<combine name="subjectTopicName" value="${a}" >
-				<if>
-					<data source="650??.2">
-						<equals string="gnd"/>
-					</data>
-				</if>
-				<data source="650??.a" name = "a">
-					<regexp match="^(.*?).?$" format="${1}" />
-				</data>
-			</combine>
-			<combine name="subjectIdentifier" value="${sf0}" >
-				<if>
-					<data source="650??.2">
-						<equals string="gnd"/>
-					</data>
-				</if>
-				<data source="650??.0" name = "sf0"/>
-			</combine>
-		</entity>
-		
-		<!-- Mapping Fields: 7xx -->
-		
-		
-		
-		<entity name="IdentifierISBNParallel" flushWith= "776??.z">
-			<data source="776??.z" name="identifierISBN" />
-		</entity>
+    <macro name="regex-del-punctuation-end">
+      <data source="$[dsource]" name="$[dname]">
+        <regexp match="^(.*?) ?[,.:;/]?$" format="${1}" />
+      </data>
+    </macro>
 
-		<!-- Mapping Fields: 8xx -->
-		<entity name="SeriesAddedEntryUniformTitle" flushWith= "830 0.v">
-			<data source="830 0.a" name="title" />
-			<data source="830 0.v" name="volume" />
-		</entity>
-		<entity name="OnlineAccess" flushWith= "8304?.u">
-			<data source="8304?.u" name="uri" />
-		</entity>
-		
-	</rules>
-	<maps>
-		<!-- Quelle: http://www.loc.gov/marc/languages/language_code.html -->
-		<map name="language"> 
-			<entry name="ger" value="Deutsch" />
-			<entry name="eng" value="Englisch" />
-			<entry name="fre" value="Französich" />
-		</map>
-		<map name="typeLeader06"> 
-		<!-- CF = Computer files; Mu = Music; M = Map; CR = Continuing Resources; VM = Visual materials; MX = Mixed materials; B = Book -->
-			<entry name="m" value="CF" />
-			<entry name="c" value="Mu" />
-			<entry name="d" value="Mu" />
-			<entry name="i" value="Mu" />
-			<entry name="j" value="Mu" />
-			<entry name="e" value="M" />
-			<entry name="f" value="M" />
-			<entry name="g" value="VM" />
-			<entry name="k" value="VM" />
-			<entry name="o" value="VM" />
-			<entry name="r" value="VM" />
-			<entry name="p" value="VM" />
-			<entry name="t" value="B" />
-		</map>
-	</maps>
+  </macros>
+  <rules>
+
+    <!-- FACETS -->
+
+    <data source="leader" name="@LeaderPos06">
+      <substring start="06" end="07" />
+    </data>
+    <data source="leader" name="@LeaderPos07">
+      <substring start="07" end="08" />
+    </data>
+    <data source="006" name="@006Pos00">
+      <substring start="00" end="01" />
+    </data>
+    <data source="006" name="@006Pos09">
+      <substring start="09" end="10" />
+    </data>
+    <data source="007" name="@007Pos00">
+      <substring start="00" end="01" />
+    </data>
+    <data source="007" name="@007Pos01">
+      <substring start="01" end="02" />
+    </data>
+    <data source="008" name="@008Pos26">
+      <substring start="26" end="27" />
+    </data>
+    <data source="008" name="@008Pos33">
+      <substring start="33" end="34" />
+    </data>
+    <data source="008" name="@008Pos34">
+      <substring start="34" end="35" />
+    </data>
+
+    <data source="@LeaderPos06" name="@type">
+      <lookup in="typeLeader06" />
+    </data>
+    <combine name="@type" value="B">
+      <if>
+        <all>
+          <data source="@LeaderPos06">
+            <equals string="a" />
+          </data>
+          <any>
+            <data source="@LeaderPos07">
+              <equals string="a" />
+            </data>
+            <data source="@LeaderPos07">
+              <equals string="c" />
+            </data>
+            <data source="@LeaderPos07">
+              <equals string="d" />
+            </data>
+            <data source="@LeaderPos07">
+              <equals string="m" />
+            </data>
+          </any>
+        </all>
+      </if>
+      <data source="001" />
+    </combine>
+    <combine name="@type" value="CR">
+      <if>
+        <all>
+          <data source="@LeaderPos06">
+            <equals string="a" />
+          </data>
+          <any>
+            <data source="@LeaderPos07">
+              <equals string="b" />
+            </data>
+            <data source="@LeaderPos07">
+              <equals string="i" />
+            </data>
+          </any>
+        </all>
+      </if>
+      <data source="001" />
+    </combine>
+
+    <!-- format -->
+    <entity name="dc" flushWith="@*">
+      <combine name="format" value="Audio">
+        <if>
+          <any>
+            <data source="@LeaderPos06">
+              <equals string="i" />
+            </data>
+            <data source="@LeaderPos06">
+              <equals string="j" />
+            </data>
+            <data source="@006Pos00">
+              <equals string="i" />
+            </data>
+            <data source="@006Pos00">
+              <equals string="j" />
+            </data>
+            <data source="@007Pos00">
+              <equals string="s" />
+            </data>
+            <all>
+              <data source="@type">
+                <equals string="CF" />
+              </data>
+              <data source="@008Pos26">
+                <equals string="h" />
+              </data>
+            </all>
+            <all>
+              <data source="@006Pos00">
+                <equals string="m" />
+              </data>
+              <data source="@006Pos09">
+                <equals string="h" />
+              </data>
+            </all>
+          </any>
+        </if>
+        <data source="001" />
+      </combine>
+      <combine name="format" value="Bild">
+        <if>
+          <any>
+            <all>
+              <data source="@007Pos00">
+                <equals string="k" />
+              </data>
+              <data source="@007Pos01">
+                <regexp match="[cdefhijklnpqrsuvz]" />
+              </data>
+            </all>
+            <data source="@007Pos00">
+              <equals string="r" />
+            </data>
+            <all>
+              <data source="@type">
+                <equals string="M" />
+              </data>
+              <any>
+                <data source="@008Pos3[34]">
+                  <regexp match="[jo]" />
+                </data>
+              </any>
+            </all>
+            <all>
+              <data source="@006Pos00">
+                <regexp match="[ef]" />
+              </data>
+
+            </all>
+          </any>
+        </if>
+        <data source="001" />
+      </combine>
+    </entity> <!-- name="dc" -->
+    <!-- END format -->
+
+    <!-- END FACETS -->
+
+    <!-- FIELDS -->
+
+    <!-- 0xx -->
+    <entity name="RecordIdentifier" flushWith="001">
+      <data source="001" name="identifierForTheRecord" />
+    </entity>
+
+    <data source="008" name="@language">
+      <substring start="35" end="38" />
+      <lookup in="language" />
+    </data>
+
+    <entity name="Language" flushWith="@language">
+      <data source="@language" name="languageSource" />
+      <data source="@language" name="language" />
+    </entity>
+    <entity name="IdentifierISBN" flushWith="020  .a">
+      <data source="020  .a" name="identifierISBN" />
+    </entity>
+
+    <!-- 1xx -->
+    <entity name="Person" sameEntity="true">
+      <combine name="personName" value="${100a}">
+        <if>
+          <none>
+            <data source="1001 .e" />
+            <data source="1001 .4" />
+          </none>
+        </if>
+        <data source="1001 .a" name="100a" />
+      </combine>
+    </entity>
+
+    <!-- 2xx -->
+    <entity name="TitleStatement">
+      <call-macro name="regex-del-punctuation-end" dsource="245??.a" dname="titleMain" />
+    </entity>
+    <entity name="TitleAddendum">
+      <call-macro name="regex-del-punctuation-end" dsource="245??.b" dname="title" />
+    </entity>
+    <entity name="Edition">
+      <data source="250  .a" name="edition" />
+    </entity>
+
+    <entity name="PublicationPlace">
+      <call-macro name="regex-del-punctuation-end" dsource="260  .a|2603 .a" dname="printingPlace" />
+    </entity>
+    <entity name="PublisherName">
+      <call-macro name="regex-del-punctuation-end" dsource="260  .b|2603 .b" dname="name" />
+    </entity>
+    <entity name="DateProper">
+      <call-macro name="regex-del-punctuation-end" dsource="260  .c|2603 .c" dname="date" />
+    </entity>
+
+    <!-- 300 -->
+    <data source="300  .a" name="@300a">
+      <regexp match="^(.*?) ?[:;]?$" format="${1}" />
+    </data>
+    <data source="300  .b" name="@300b">
+      <regexp match="^(.*?) ?[:;]?$" format="${1}" />
+    </data>
+
+    <combine name="@300b_punct" value=" : ${b1}">
+      <if>
+        <all>
+          <data source="@300b" />
+          <data source="@300a" />
+        </all>
+      </if>
+      <data source="@300b" name="b1" />
+    </combine>
+    <combine name="@300c_punct" value=" ; ${c1}">
+      <if>
+        <all>
+          <data source="300  .c" />
+          <data source="300  .a|300  .b" />
+        </all>
+      </if>
+      <data source="300  .c" name="c1" />
+    </combine>
+    <entity name="Extent">
+      <combine name="extent" value="${a}${b}${c}">
+        <choose name="a">
+          <data source="@300a" />
+          <data source="300*">
+            <constant value="" />
+          </data>
+        </choose>
+        <choose name="b">
+          <data source="@300b_punct" />
+          <data source="@300b" />
+          <data source="300*">
+            <constant value="" />
+          </data>
+        </choose>
+        <choose name="c">
+          <data source="@300c_punct" />
+          <data source="300  .c" />
+          <data source="300*">
+            <constant value="" />
+          </data>
+        </choose>
+      </combine>
+    </entity>
+    <!-- END 300 -->
+
+    <!-- 301-399 -->
+
+    <!-- 4xx -->
+
+    <!-- 5xx -->
+    <entity name="Description">
+      <data source="500  .a" name="description" />
+    </entity>
+
+    <!-- 6xx -->
+    <entity name="RSWK" sameEntity="true">
+      <combine name="subjectTopicName" value="${a}">
+        <if>
+          <data source="650??.2">
+            <equals string="gnd" />
+          </data>
+        </if>
+        <data source="650??.a" name="a">
+          <regexp match="^(.*?).?$" format="${1}" />
+        </data>
+      </combine>
+      <combine name="subjectIdentifier" value="${sf0}">
+        <if>
+          <data source="650??.2">
+            <equals string="gnd" />
+          </data>
+        </if>
+        <data source="650??.0" name="sf0" />
+      </combine>
+    </entity>
+
+    <!-- 7xx -->
+    <entity name="IdentifierISBNParallel" flushWith="776??.z">
+      <data source="776??.z" name="identifierISBN" />
+    </entity>
+
+    <!-- 8xx -->
+    <entity name="SeriesAddedEntryUniformTitle" flushWith="830 0.v">
+      <data source="830 0.a" name="title" />
+      <data source="830 0.v" name="volume" />
+    </entity>
+    <entity name="OnlineAccess" flushWith="8304?.u">
+      <data source="8304?.u" name="uri" />
+    </entity>
+
+    <!-- END FIELDS -->
+
+  </rules>
+  <maps>
+
+    <!-- Quelle: http://www.loc.gov/marc/languages/language_code.html -->
+    <map name="language">
+      <entry name="ger" value="Deutsch" />
+      <entry name="eng" value="Englisch" />
+      <entry name="fre" value="Französich" />
+    </map>
+
+    <!--
+      CF = Computer files
+      Mu = Music
+      M  = Map
+      CR = Continuing Resources
+      VM = Visual materials
+      MX = Mixed materials
+      B  = Book
+    -->
+    <map name="typeLeader06">
+      <entry name="m" value="CF" />
+      <entry name="c" value="Mu" />
+      <entry name="d" value="Mu" />
+      <entry name="i" value="Mu" />
+      <entry name="j" value="Mu" />
+      <entry name="e" value="M" />
+      <entry name="f" value="M" />
+      <entry name="g" value="VM" />
+      <entry name="k" value="VM" />
+      <entry name="o" value="VM" />
+      <entry name="r" value="VM" />
+      <entry name="p" value="VM" />
+      <entry name="t" value="B" />
+    </map>
+
+  </maps>
 </metamorph>
