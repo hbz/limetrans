@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules xmlns="http://www.culturegraph.org/metamorph">
+  <!-- 0xx -->
+  <entity name="RecordIdentifier" flushWith="001">
+    <data source="001" name="identifierForTheRecord" />
+  </entity>
+
+  <data source="008" name="@language">
+    <substring start="35" end="38" />
+    <lookup in="language" />
+  </data>
+
+  <entity name="Language" flushWith="@language">
+    <data source="@language" name="languageSource" />
+    <data source="@language" name="language" />
+  </entity>
+  <entity name="IdentifierISBN" flushWith="020  .a">
+    <data source="020  .a" name="identifierISBN" />
+  </entity>
+
+  <!-- 1xx -->
+  <entity name="Person" sameEntity="true">
+    <combine name="personName" value="${100a}">
+      <if>
+        <none>
+          <data source="1001 .e" />
+          <data source="1001 .4" />
+        </none>
+      </if>
+      <data source="1001 .a" name="100a" />
+    </combine>
+  </entity>
+
+  <!-- 2xx -->
+  <entity name="TitleStatement">
+    <call-macro name="regex-del-punctuation-end" dsource="245??.a" dname="titleMain" />
+  </entity>
+  <entity name="TitleAddendum">
+    <call-macro name="regex-del-punctuation-end" dsource="245??.b" dname="title" />
+  </entity>
+  <entity name="Edition">
+    <data source="250  .a" name="edition" />
+  </entity>
+
+  <entity name="PublicationPlace">
+    <call-macro name="regex-del-punctuation-end" dsource="260  .a|2603 .a" dname="printingPlace" />
+  </entity>
+  <entity name="PublisherName">
+    <call-macro name="regex-del-punctuation-end" dsource="260  .b|2603 .b" dname="name" />
+  </entity>
+  <entity name="DateProper">
+    <call-macro name="regex-del-punctuation-end" dsource="260  .c|2603 .c" dname="date" />
+  </entity>
+
+  <!-- 300 -->
+  <data source="300  .a" name="@300a">
+    <regexp match="^(.*?) ?[:;]?$" format="${1}" />
+  </data>
+  <data source="300  .b" name="@300b">
+    <regexp match="^(.*?) ?[:;]?$" format="${1}" />
+  </data>
+
+  <combine name="@300b_punct" value=" : ${b1}">
+    <if>
+      <all>
+        <data source="@300b" />
+        <data source="@300a" />
+      </all>
+    </if>
+    <data source="@300b" name="b1" />
+  </combine>
+  <combine name="@300c_punct" value=" ; ${c1}">
+    <if>
+      <all>
+        <data source="300  .c" />
+        <data source="300  .a|300  .b" />
+      </all>
+    </if>
+    <data source="300  .c" name="c1" />
+  </combine>
+  <entity name="Extent">
+    <combine name="extent" value="${a}${b}${c}">
+      <choose name="a">
+        <data source="@300a" />
+        <data source="300*">
+          <constant value="" />
+        </data>
+      </choose>
+      <choose name="b">
+        <data source="@300b_punct" />
+        <data source="@300b" />
+        <data source="300*">
+          <constant value="" />
+        </data>
+      </choose>
+      <choose name="c">
+        <data source="@300c_punct" />
+        <data source="300  .c" />
+        <data source="300*">
+          <constant value="" />
+        </data>
+      </choose>
+    </combine>
+  </entity>
+  <!-- END 300 -->
+
+  <!-- 301-399 -->
+
+  <!-- 4xx -->
+
+  <!-- 5xx -->
+  <entity name="Description">
+    <data source="500  .a" name="description" />
+  </entity>
+
+  <!-- 6xx -->
+  <entity name="RSWK" sameEntity="true">
+    <combine name="subjectTopicName" value="${a}">
+      <if>
+        <data source="650??.2">
+          <equals string="gnd" />
+        </data>
+      </if>
+      <data source="650??.a" name="a">
+        <regexp match="^(.*?).?$" format="${1}" />
+      </data>
+    </combine>
+    <combine name="subjectIdentifier" value="${sf0}">
+      <if>
+        <data source="650??.2">
+          <equals string="gnd" />
+        </data>
+      </if>
+      <data source="650??.0" name="sf0" />
+    </combine>
+  </entity>
+
+  <!-- 7xx -->
+  <entity name="IdentifierISBNParallel" flushWith="776??.z">
+    <data source="776??.z" name="identifierISBN" />
+  </entity>
+
+  <!-- 8xx -->
+  <entity name="SeriesAddedEntryUniformTitle" flushWith="830 0.v">
+    <data source="830 0.a" name="title" />
+    <data source="830 0.v" name="volume" />
+  </entity>
+  <entity name="OnlineAccess" flushWith="8304?.u">
+    <data source="8304?.u" name="uri" />
+  </entity>
+</rules>
