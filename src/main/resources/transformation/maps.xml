@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maps xmlns="http://www.culturegraph.org/metamorph">
+
+  <!-- Quelle: http://www.loc.gov/marc/languages/language_code.html -->
+  <map name="language">
+    <entry name="ger" value="Deutsch" />
+    <entry name="eng" value="Englisch" />
+    <entry name="fre" value="Französich" />
+  </map>
+
+  <!--
+    CF = Computer files
+    Mu = Music
+    M  = Map
+    CR = Continuing Resources
+    VM = Visual materials
+    MX = Mixed materials
+    B  = Book
+  -->
+  <map name="typeLeader06">
+    <entry name="m" value="CF" />
+    <entry name="c" value="Mu" />
+    <entry name="d" value="Mu" />
+    <entry name="i" value="Mu" />
+    <entry name="j" value="Mu" />
+    <entry name="e" value="M" />
+    <entry name="f" value="M" />
+    <entry name="g" value="VM" />
+    <entry name="k" value="VM" />
+    <entry name="o" value="VM" />
+    <entry name="r" value="VM" />
+    <entry name="p" value="VM" />
+    <entry name="t" value="B" />
+  </map>
+
+</maps>

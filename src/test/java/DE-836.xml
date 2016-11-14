@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE metamorph-test SYSTEM "metamorph-test.dtd" [<!ENTITY isil "DE-836">]>
+<metamorph-test version="1.0" xmlns="http://www.culturegraph.org/metamorph-test">
+
+  <test-case name="person-creator-contributor">
+    <input src="&base;/person-creator-contributor.xml" />
+    <transformation />
+    <result src="&base;/person-creator-contributor.formeta" />
+  </test-case>
+
+</metamorph-test>

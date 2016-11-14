@@ -1,81 +1,116 @@
 package hbz.limetrans;
 
-import org.apache.commons.io.IOUtils;
+import org.culturegraph.mf.formeta.formatter.FormatterStyle;
 import org.culturegraph.mf.morph.Metamorph;
+import org.culturegraph.mf.stream.converter.FormetaEncoder;
 import org.culturegraph.mf.stream.converter.JsonEncoder;
 import org.culturegraph.mf.stream.converter.JsonToElasticsearchBulk;
 import org.culturegraph.mf.stream.converter.xml.MarcXmlHandler;
 import org.culturegraph.mf.stream.converter.xml.XmlDecoder;
+import org.culturegraph.mf.stream.pipe.ObjectTee;
+import org.culturegraph.mf.stream.pipe.StreamTee;
 import org.culturegraph.mf.stream.sink.ObjectWriter;
 import org.culturegraph.mf.stream.source.FileOpener;
 import org.xbib.common.settings.Settings;
-import org.xbib.common.settings.loader.SettingsLoader;
-import org.xbib.common.settings.loader.SettingsLoaderFactory;
 
 import java.io.IOException;
-import java.net.URL;
+import java.io.File;
 
-public final class LibraryMetadataTransformation {
+public class LibraryMetadataTransformation {
 
-    public static void main(final String[] args) throws IOException {
+    private final Settings mElasticsearchSettings;
+    private final String mFormetaPath;
+    private final String mInputPath;
+    private final String mJsonPath;
+    private final String mRulesPath;
 
-        Settings settings = setup(args);
+    private String mElasticsearchPath;
 
-        String transformedPath = transform(settings);
+    public LibraryMetadataTransformation(final Settings aSettings) throws IOException {
+        final Settings inputQueue = aSettings.getGroups("input").get("queue");
+        mInputPath = inputQueue.get("path").concat(inputQueue.get("pattern"));
 
-        index(settings, transformedPath);
+        final Settings outputSettings = aSettings.getAsSettings("output");
+
+        if (outputSettings.containsSetting("elasticsearch")) {
+            mElasticsearchSettings = outputSettings.getAsSettings("elasticsearch");
+
+            mElasticsearchPath = mElasticsearchSettings.get("path");
+            if (mElasticsearchPath == null) {
+                final File tempFile = File.createTempFile("limetrans", ".jsonl");
+                mElasticsearchPath = tempFile.getPath();
+                tempFile.deleteOnExit();
+            }
+        }
+        else {
+          mElasticsearchSettings = null;
+          mElasticsearchPath = null;
+        }
+
+        mFormetaPath = outputSettings.get("formeta");
+        mJsonPath = outputSettings.get("json");
+        if (mFormetaPath == null && mJsonPath == null && mElasticsearchSettings == null) {
+            throw new IllegalArgumentException("Could not process limetrans: no output specified.");
+        }
+
+        mRulesPath = aSettings.get("transformation-rules");
     }
 
-    private static void index(Settings aSettings, String aElasticsearchInputDataFile) throws IOException {
-        final ElasticsearchProvider esProvider = new ElasticsearchProvider(aSettings.getAsSettings("output").getAsSettings("elasticsearch"));
-        esProvider.initializeIndex(aSettings.get("output.elasticsearch.index.name"));
-        esProvider.bulkIndex(aElasticsearchInputDataFile, aSettings.get("output.elasticsearch.index.name"));
-        esProvider.close();
-    }
-
-    private static String transform(Settings aSettings) {
+    public void transform() {
         final FileOpener opener = new FileOpener();
         final XmlDecoder decoder = new XmlDecoder();
         final MarcXmlHandler marcHandler = new MarcXmlHandler();
-        final Metamorph morph = new Metamorph(aSettings.get("transformation-rules"));
-        final JsonEncoder encoder = new JsonEncoder();
-        encoder.setPrettyPrinting(true);
-        final JsonToElasticsearchBulk esBulk = new JsonToElasticsearchBulk("id",
-                aSettings.get("output.elasticsearch.index.type"),
-                aSettings.get("output.elasticsearch.index.name"));
-        final String outputFile = aSettings.get("output.json");
-        final ObjectWriter<String> writer = new ObjectWriter<>(outputFile);
+        final Metamorph morph = new Metamorph(mRulesPath);
+        final StreamTee streamTee = new StreamTee();
 
-        // Setup transformation pipeline
         opener
                 .setReceiver(decoder)
                 .setReceiver(marcHandler)
                 .setReceiver(morph)
-                .setReceiver(encoder)
-                .setReceiver(esBulk)
-                .setReceiver(writer);
+                .setReceiver(streamTee);
 
-        // Process transformation
-        Settings inputQueue = aSettings.getGroups("input").get("queue");
-        String inputPath = inputQueue.get("path").concat(inputQueue.get("pattern"));
-        opener.process(inputPath);
+        if (mFormetaPath != null) {
+            final FormetaEncoder formetaEncoder = new FormetaEncoder();
+
+            streamTee.addReceiver(formetaEncoder);
+            formetaEncoder.setStyle(FormatterStyle.MULTILINE);
+            formetaEncoder.setReceiver(new ObjectWriter<>(mFormetaPath));
+        }
+
+        if (mJsonPath != null || mElasticsearchSettings != null) {
+            final JsonEncoder jsonEncoder = new JsonEncoder();
+            final ObjectTee objectTee = new ObjectTee();
+
+            streamTee.addReceiver(jsonEncoder);
+            jsonEncoder.setReceiver(objectTee);
+
+            if (mJsonPath != null) {
+                //jsonEncoder.setPrettyPrinting(true);
+                objectTee.addReceiver(new ObjectWriter<>(mJsonPath));
+            }
+
+            if (mElasticsearchSettings != null) {
+                final JsonToElasticsearchBulk esBulk = new JsonToElasticsearchBulk("id",
+                        mElasticsearchSettings.get("index.type"),
+                        mElasticsearchSettings.get("index.name"));
+
+                objectTee.addReceiver(esBulk);
+                esBulk.setReceiver(new ObjectWriter<>(mElasticsearchPath));
+            }
+        }
+
+        opener.process(mInputPath);
         opener.closeStream();
-        return outputFile;
     }
 
-    private static Settings setup(String[] args) throws IOException {
-        URL configUrl = ConfigurationChecker.getConfigUrlFrom(args);
-        return getSettings(configUrl);
-    }
+    public void index() throws IOException {
+        if (mElasticsearchSettings != null) {
+            final ElasticsearchProvider esProvider = new ElasticsearchProvider(mElasticsearchSettings);
 
-    private static Settings getSettings(URL aUrl) throws IOException {
-        SettingsLoader settingsLoader = SettingsLoaderFactory.loaderFromResource(aUrl.toString());
-
-        Settings settings = Settings.settingsBuilder()
-                .put(settingsLoader.load(IOUtils.toString(aUrl)))
-                .replacePropertyPlaceholders()
-                .build();
-        return settings;
+            esProvider.initializeIndex();
+            esProvider.bulkIndex(mElasticsearchPath);
+            esProvider.close();
+        }
     }
 
 }

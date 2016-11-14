@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules xmlns="http://www.culturegraph.org/metamorph">
+  <data source="leader" name="@LeaderPos06">
+    <substring start="06" end="07" />
+  </data>
+  <data source="leader" name="@LeaderPos07">
+    <substring start="07" end="08" />
+  </data>
+  <data source="006" name="@006Pos00">
+    <substring start="00" end="01" />
+  </data>
+  <data source="006" name="@006Pos09">
+    <substring start="09" end="10" />
+  </data>
+  <data source="007" name="@007Pos00">
+    <substring start="00" end="01" />
+  </data>
+  <data source="007" name="@007Pos01">
+    <substring start="01" end="02" />
+  </data>
+  <data source="008" name="@008Pos26">
+    <substring start="26" end="27" />
+  </data>
+  <data source="008" name="@008Pos33">
+    <substring start="33" end="34" />
+  </data>
+  <data source="008" name="@008Pos34">
+    <substring start="34" end="35" />
+  </data>
+
+  <data source="@LeaderPos06" name="@type">
+    <lookup in="typeLeader06" />
+  </data>
+  <combine name="@type" value="B">
+    <if>
+      <all>
+        <data source="@LeaderPos06">
+          <equals string="a" />
+        </data>
+        <any>
+          <data source="@LeaderPos07">
+            <equals string="a" />
+          </data>
+          <data source="@LeaderPos07">
+            <equals string="c" />
+          </data>
+          <data source="@LeaderPos07">
+            <equals string="d" />
+          </data>
+          <data source="@LeaderPos07">
+            <equals string="m" />
+          </data>
+        </any>
+      </all>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@type" value="CR">
+    <if>
+      <all>
+        <data source="@LeaderPos06">
+          <equals string="a" />
+        </data>
+        <any>
+          <data source="@LeaderPos07">
+            <equals string="b" />
+          </data>
+          <data source="@LeaderPos07">
+            <equals string="i" />
+          </data>
+        </any>
+      </all>
+    </if>
+    <data source="001" />
+  </combine>
+
+  <!-- format -->
+  <entity name="dc" flushWith="@*">
+    <combine name="format" value="Audio">
+      <if>
+        <any>
+          <data source="@LeaderPos06">
+            <equals string="i" />
+          </data>
+          <data source="@LeaderPos06">
+            <equals string="j" />
+          </data>
+          <data source="@006Pos00">
+            <equals string="i" />
+          </data>
+          <data source="@006Pos00">
+            <equals string="j" />
+          </data>
+          <data source="@007Pos00">
+            <equals string="s" />
+          </data>
+          <all>
+            <data source="@type">
+              <equals string="CF" />
+            </data>
+            <data source="@008Pos26">
+              <equals string="h" />
+            </data>
+          </all>
+          <all>
+            <data source="@006Pos00">
+              <equals string="m" />
+            </data>
+            <data source="@006Pos09">
+              <equals string="h" />
+            </data>
+          </all>
+        </any>
+      </if>
+      <data source="001" />
+    </combine>
+    <combine name="format" value="Bild">
+      <if>
+        <any>
+          <all>
+            <data source="@007Pos00">
+              <equals string="k" />
+            </data>
+            <data source="@007Pos01">
+              <regexp match="[cdefhijklnpqrsuvz]" />
+            </data>
+          </all>
+          <data source="@007Pos00">
+            <equals string="r" />
+          </data>
+          <all>
+            <data source="@type">
+              <equals string="M" />
+            </data>
+            <any>
+              <data source="@008Pos3[34]">
+                <regexp match="[jo]" />
+              </data>
+            </any>
+          </all>
+          <all>
+            <data source="@006Pos00">
+              <regexp match="[ef]" />
+            </data>
+
+          </all>
+        </any>
+      </if>
+      <data source="001" />
+    </combine>
+  </entity>
+  <!-- END format -->
+</rules>

@@ -1,0 +1,12 @@
+<!ENTITY base "transformation/&isil;">
+
+<!ATTLIST input
+  type CDATA "application/marcxml+xml"
+  src  CDATA "&isil;.xml">
+
+<!ATTLIST transformation
+  type CDATA "text/x-metamorph+xml"
+  src  CDATA "src/main/resources/&base;.xml">
+
+<!ATTLIST result
+  type CDATA "text/x-formeta">

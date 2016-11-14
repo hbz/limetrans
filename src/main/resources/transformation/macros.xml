@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macros xmlns="http://www.culturegraph.org/metamorph">
+
+  <macro name="regex-del-punctuation-end">
+    <data source="$[dsource]" name="$[dname]">
+      <regexp match="^(.*?) ?[,.:;/]?$" format="${1}" />
+    </data>
+  </macro>
+
+</macros>
