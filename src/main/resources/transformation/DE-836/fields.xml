@@ -2,20 +2,20 @@
 <rules xmlns="http://www.culturegraph.org/metamorph">
   <!-- 0xx -->
   <entity name="RecordIdentifier" flushWith="001">
-    <data source="001" name="identifierForTheRecord" />
+    <data name="identifierForTheRecord" source="001" />
   </entity>
 
-  <data source="008" name="@language">
+  <data name="@language" source="008">
     <substring start="35" end="38" />
     <lookup in="language" />
   </data>
 
   <entity name="Language" flushWith="@language">
-    <data source="@language" name="languageSource" />
-    <data source="@language" name="language" />
+    <data name="languageSource" source="@language" />
+    <data name="language" source="@language" />
   </entity>
   <entity name="IdentifierISBN" flushWith="020  .a">
-    <data source="020  .a" name="identifierISBN" />
+    <data name="identifierISBN" source="020  .a" />
   </entity>
 
   <!-- 1xx -->
@@ -27,7 +27,7 @@
           <data source="1001 .4" />
         </none>
       </if>
-      <data source="1001 .a" name="100a" />
+      <data name="100a" source="1001 .a" />
     </combine>
   </entity>
 
@@ -39,7 +39,7 @@
     <call-macro name="regex-del-punctuation-end" dsource="245??.b" dname="title" />
   </entity>
   <entity name="Edition">
-    <data source="250  .a" name="edition" />
+    <data name="edition" source="250  .a" />
   </entity>
 
   <entity name="PublicationPlace">
@@ -53,10 +53,10 @@
   </entity>
 
   <!-- 300 -->
-  <data source="300  .a" name="@300a">
+  <data name="@300a" source="300  .a">
     <regexp match="^(.*?) ?[:;]?$" format="${1}" />
   </data>
-  <data source="300  .b" name="@300b">
+  <data name="@300b" source="300  .b">
     <regexp match="^(.*?) ?[:;]?$" format="${1}" />
   </data>
 
@@ -67,7 +67,7 @@
         <data source="@300a" />
       </all>
     </if>
-    <data source="@300b" name="b1" />
+    <data name="b1" source="@300b" />
   </combine>
   <combine name="@300c_punct" value=" ; ${c1}">
     <if>
@@ -76,7 +76,7 @@
         <data source="300  .a|300  .b" />
       </all>
     </if>
-    <data source="300  .c" name="c1" />
+    <data name="c1" source="300  .c" />
   </combine>
   <entity name="Extent">
     <combine name="extent" value="${a}${b}${c}">
@@ -110,7 +110,7 @@
 
   <!-- 5xx -->
   <entity name="Description">
-    <data source="500  .a" name="description" />
+    <data name="description" source="500  .a" />
   </entity>
 
   <!-- 6xx -->
@@ -121,7 +121,7 @@
           <equals string="gnd" />
         </data>
       </if>
-      <data source="650??.a" name="a">
+      <data name="a" source="650??.a">
         <regexp match="^(.*?).?$" format="${1}" />
       </data>
     </combine>
@@ -131,21 +131,21 @@
           <equals string="gnd" />
         </data>
       </if>
-      <data source="650??.0" name="sf0" />
+      <data name="sf0" source="650??.0" />
     </combine>
   </entity>
 
   <!-- 7xx -->
   <entity name="IdentifierISBNParallel" flushWith="776??.z">
-    <data source="776??.z" name="identifierISBN" />
+    <data name="identifierISBN" source="776??.z" />
   </entity>
 
   <!-- 8xx -->
   <entity name="SeriesAddedEntryUniformTitle" flushWith="830 0.v">
-    <data source="830 0.a" name="title" />
-    <data source="830 0.v" name="volume" />
+    <data name="title" source="830 0.a" />
+    <data name="volume" source="830 0.v" />
   </entity>
   <entity name="OnlineAccess" flushWith="8304?.u">
-    <data source="8304?.u" name="uri" />
+    <data name="uri" source="8304?.u" />
   </entity>
 </rules>
