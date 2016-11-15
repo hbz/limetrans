@@ -28,13 +28,13 @@
 	},
 	'PersonCreator[]' {
 		'' {
-			'personName': 'Nygaard, Kristen',
-			'personBio': '1926-'
-		},
-		'' {
 			'personName': 'Gjessing, S.',
 			'personBio': '1950-',
 			'personRole': 'author'
+		},
+		'' {
+			'personName': 'Nygaard, Kristen',
+			'personBio': '1926-'
 		}
 	}
 }
@@ -46,15 +46,15 @@
 		'personName': 'Trollope, Anthony',
 		'personBio': '1815-1882'
 	},
-	'PersonContributor[]' {
-		'' {
-			'personName': 'Gjessing, S.'
-		}
-	},
 	'PersonCreator[]' {
 		'' {
 			'personName': 'Nygaard, Kristen',
 			'personBio': '1926-'
+		}
+	},
+	'PersonContributor[]' {
+		'' {
+			'personName': 'Gjessing, S.'
 		}
 	}
 }
@@ -62,20 +62,20 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '4'
 	},
-	'PersonContributor[]' {
-		'' {
-			'personName': 'Trollope, Anthony',
-			'personBio': '1815-1882',
-			'personRole': 'editor'
-		},
-		'' {
-			'personName': 'Nygaard, Kristen'
-		}
-	},
 	'PersonCreator[]' {
 		'' {
 			'personName': 'Gjessing, S.',
 			'personBio': '1950-'
+		}
+	},
+	'PersonContributor[]' {
+		'' {
+			'personName': 'Nygaard, Kristen'
+		},
+		'' {
+			'personName': 'Trollope, Anthony',
+			'personBio': '1815-1882',
+			'personRole': 'editor'
 		}
 	}
 }

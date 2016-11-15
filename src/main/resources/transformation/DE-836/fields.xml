@@ -19,16 +19,26 @@
   </entity>
 
   <!-- 1xx -->
-  <entity name="Person" sameEntity="true">
-    <combine name="personName" value="${100a}">
-      <if>
-        <none>
-          <data source="1001 .e" />
-          <data source="1001 .4" />
-        </none>
-      </if>
-      <data name="100a" source="1001 .a" />
-    </combine>
+  <entity name="Person" flushWith="record">
+    <if>
+      <none flushWith="record">
+        <data source="1001 .e">
+          <equals string="editor" />
+        </data>
+      </none>
+    </if>
+    <data name="personName" source="1001 .a">
+      <replace pattern="[,]$" with="" />
+    </data>
+    <entity name="personTitle[]" flushWith="record">
+      <data name="" source="1001 .c">
+        <replace pattern="[,]$" with="" />
+      </data>
+    </entity>
+    <data name="personBio" source="1001 .d">
+      <replace pattern="[.]$" with="" />
+    </data>
+    <data name="personRole" source="1001 .e" />
   </entity>
 
   <!-- 2xx -->
@@ -136,6 +146,73 @@
   </entity>
 
   <!-- 7xx -->
+  <entity name="PersonCreator[]" flushWith="record">
+    <entity name="" flushWith="7001 " sameEntity="true">
+      <if>
+        <none flushWith="7001 " sameEntity="true">
+          <data source="7001 .4">
+            <equals string="edt." />
+          </data>
+        </none>
+      </if>
+      <data name="personName" source="7001 .a">
+        <replace pattern="[,]$" with="" />
+      </data>
+      <entity name="personTitle[]">
+        <data name="" source="7001 .c">
+          <replace pattern="[,]$" with="" />
+        </data>
+      </entity>
+      <data name="personBio" source="7001 .d">
+        <replace pattern="[.]$" with="" />
+      </data>
+      <data name="personRole" source="7001 .e" />
+    </entity>
+  </entity>
+  <entity name="PersonContributor[]" flushWith="record">
+    <entity name="" flushWith="7001 " sameEntity="true">
+      <if>
+        <all flushWith="7001 " sameEntity="true">
+          <data source="7001 .4">
+            <equals string="edt." />
+          </data>
+        </all>
+      </if>
+      <data name="personName" source="7001 .a">
+        <replace pattern="[,]$" with="" />
+      </data>
+      <entity name="personTitle[]">
+        <data name="" source="7001 .c">
+          <replace pattern="[,]$" with="" />
+        </data>
+      </entity>
+      <data name="personBio" source="7001 .d">
+        <replace pattern="[.]$" with="" />
+      </data>
+      <data name="personRole" source="7001 .e" />
+    </entity>
+    <entity name="" flushWith="record">
+      <if>
+        <all flushWith="record">
+          <data source="1001 .e">
+            <equals string="editor" />
+          </data>
+        </all>
+      </if>
+      <data name="personName" source="1001 .a">
+        <replace pattern="[,]$" with="" />
+      </data>
+      <entity name="personTitle[]">
+        <data name="" source="1001 .c">
+          <replace pattern="[,]$" with="" />
+        </data>
+      </entity>
+      <data name="personBio" source="1001 .d">
+        <replace pattern="[.]$" with="" />
+      </data>
+      <data name="personRole" source="1001 .e" />
+    </entity>
+  </entity>
   <entity name="IdentifierISBNParallel" flushWith="776??.z">
     <data name="identifierISBN" source="776??.z" />
   </entity>
