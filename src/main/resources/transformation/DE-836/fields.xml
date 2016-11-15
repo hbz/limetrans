@@ -14,8 +14,10 @@
     <data name="languageSource" source="@language" />
     <data name="language" source="@language" />
   </entity>
-  <entity name="IdentifierISBN" flushWith="020  .a">
-    <data name="identifierISBN" source="020  .a" />
+  <entity name="IdentifierISBN">
+    <entity name="identifierISBN[]" flushWith="record">
+      <data name="" source="020  .a" />
+    </entity>
   </entity>
 
   <!-- 1xx -->
@@ -28,7 +30,7 @@
       </none>
     </if>
     <data name="personName" source="1001 .a">
-      <replace pattern="[,]$" with="" />
+      <replace pattern="(?&lt;!\p{Upper})\.$|[,]$" with="" />
     </data>
     <entity name="personTitle[]" flushWith="record">
       <data name="" source="1001 .c">
@@ -47,6 +49,11 @@
   </entity>
   <entity name="TitleAddendum">
     <call-macro name="regex-del-punctuation-end" dsource="245??.b" dname="title" />
+  </entity>
+  <entity name="CreatorStatement">
+    <data name="creatorStatement" source="245[01]?.c">
+      <replace pattern="[.]$" with="" />
+    </data>
   </entity>
   <entity name="Edition">
     <data name="edition" source="250  .a" />
@@ -213,8 +220,10 @@
       <data name="personRole" source="1001 .e" />
     </entity>
   </entity>
-  <entity name="IdentifierISBNParallel" flushWith="776??.z">
-    <data name="identifierISBN" source="776??.z" />
+  <entity name="IdentifierISBNParallel">
+    <entity name="identifierISBN[]" flushWith="record">
+      <data name="" source="776??.z" />
+    </entity>
   </entity>
 
   <!-- 8xx -->
@@ -222,7 +231,11 @@
     <data name="title" source="830 0.a" />
     <data name="volume" source="830 0.v" />
   </entity>
-  <entity name="OnlineAccess" flushWith="8304?.u">
-    <data name="uri" source="8304?.u" />
+  <entity name="OnlineAccess">
+    <entity name="uri[]" flushWith="record">
+      <data name="" source="856??.u">
+        <unique />
+      </data>
+    </entity>
   </entity>
 </rules>
