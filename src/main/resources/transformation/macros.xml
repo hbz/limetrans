@@ -8,4 +8,28 @@
     </data>
   </macro>
 
+  <macro name="personName">
+    <data name="$[name]" source="$[field]1 .a">
+      <replace pattern="(?&lt;!\p{Upper})\.$|[,]$" with="" />
+    </data>
+  </macro>
+
+  <macro name="personTitle">
+    <entity name="$[name][]" flushWith="record">
+      <data name="" source="$[field]1 .c">
+        <replace pattern="[,]$" with="" />
+      </data>
+    </entity>
+  </macro>
+
+  <macro name="personBio">
+    <data name="$[name]" source="$[field]1 .d">
+      <replace pattern="[.]$" with="" />
+    </data>
+  </macro>
+
+  <macro name="personRole">
+    <data name="$[name]" source="$[field]1 .e" />
+  </macro>
+
 </macros>

@@ -29,18 +29,10 @@
         </data>
       </none>
     </if>
-    <data name="personName" source="1001 .a">
-      <replace pattern="(?&lt;!\p{Upper})\.$|[,]$" with="" />
-    </data>
-    <entity name="personTitle[]" flushWith="record">
-      <data name="" source="1001 .c">
-        <replace pattern="[,]$" with="" />
-      </data>
-    </entity>
-    <data name="personBio" source="1001 .d">
-      <replace pattern="[.]$" with="" />
-    </data>
-    <data name="personRole" source="1001 .e" />
+    <call-macro name="personName"  field="100" />
+    <call-macro name="personTitle" field="100" />
+    <call-macro name="personBio"   field="100" />
+    <call-macro name="personRole"  field="100" />
   </entity>
 
   <!-- 2xx -->
@@ -162,18 +154,10 @@
           </data>
         </none>
       </if>
-      <data name="personName" source="7001 .a">
-        <replace pattern="[,]$" with="" />
-      </data>
-      <entity name="personTitle[]">
-        <data name="" source="7001 .c">
-          <replace pattern="[,]$" with="" />
-        </data>
-      </entity>
-      <data name="personBio" source="7001 .d">
-        <replace pattern="[.]$" with="" />
-      </data>
-      <data name="personRole" source="7001 .e" />
+      <call-macro name="personName"  field="700" />
+      <call-macro name="personTitle" field="700" />
+      <call-macro name="personBio"   field="700" />
+      <call-macro name="personRole"  field="700" />
     </entity>
   </entity>
   <entity name="PersonContributor[]" flushWith="record">
@@ -185,18 +169,10 @@
           </data>
         </all>
       </if>
-      <data name="personName" source="7001 .a">
-        <replace pattern="[,]$" with="" />
-      </data>
-      <entity name="personTitle[]">
-        <data name="" source="7001 .c">
-          <replace pattern="[,]$" with="" />
-        </data>
-      </entity>
-      <data name="personBio" source="7001 .d">
-        <replace pattern="[.]$" with="" />
-      </data>
-      <data name="personRole" source="7001 .e" />
+      <call-macro name="personName"  field="700" />
+      <call-macro name="personTitle" field="700" />
+      <call-macro name="personBio"   field="700" />
+      <call-macro name="personRole"  field="700" />
     </entity>
     <entity name="" flushWith="record">
       <if>
@@ -206,18 +182,10 @@
           </data>
         </all>
       </if>
-      <data name="personName" source="1001 .a">
-        <replace pattern="[,]$" with="" />
-      </data>
-      <entity name="personTitle[]">
-        <data name="" source="1001 .c">
-          <replace pattern="[,]$" with="" />
-        </data>
-      </entity>
-      <data name="personBio" source="1001 .d">
-        <replace pattern="[.]$" with="" />
-      </data>
-      <data name="personRole" source="1001 .e" />
+      <call-macro name="personName"  field="100" />
+      <call-macro name="personTitle" field="100" />
+      <call-macro name="personBio"   field="100" />
+      <call-macro name="personRole"  field="100" />
     </entity>
   </entity>
   <entity name="IdentifierISBNParallel">
