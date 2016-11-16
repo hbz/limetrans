@@ -17,7 +17,8 @@
         "name" : "de-836-introx-limetrans-20161115",
         "type" : "titel",
         "settings" : "src/test/resources/elasticsearch/hbztitle-settings.json",
-        "mapping" : "src/test/resources/elasticsearch/hbztitle-mapping.json"
+        "mapping" : "src/test/resources/elasticsearch/hbztitle-mapping.json",
+        "ignoreErrors" : "true"
       }
     }
   },

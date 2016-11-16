@@ -31,6 +31,7 @@ public class ElasticsearchProvider {
     final private Client mClient;
     final private Map<String, String> mCommonSettings;
     final private org.xbib.common.settings.Settings mElasticsearchSettings;
+    final private boolean mIgnoreErrors;
 
     public ElasticsearchProvider(final org.xbib.common.settings.Settings aElasticsearchSettings) {
         mElasticsearchSettings = aElasticsearchSettings;
@@ -53,6 +54,8 @@ public class ElasticsearchProvider {
         } catch (UnknownHostException ex) {
             throw new RuntimeException(ex);
         }
+
+        mIgnoreErrors = mElasticsearchSettings.getAsBoolean("index.ignoreErrors", false);
     }
 
     public void initializeIndex() throws IOException {
@@ -69,8 +72,17 @@ public class ElasticsearchProvider {
 
         cirb.setSettings(indexSettingsBuilder.build());
         addMappings(cirb);
-        cirb.execute().actionGet();
-
+        try{
+            cirb.execute().actionGet();
+        }
+        catch(Exception e) {
+            if (!mIgnoreErrors) {
+                throw new IOException(e);
+            } else {
+                System.out.println("error while creating index '" + mCommonSettings.get("index.name")
+                        + "', but configured to ignore: " + e.getMessage());
+            }
+        }
         refreshAllIndices();
     }
 
