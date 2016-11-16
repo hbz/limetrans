@@ -6,13 +6,15 @@
 		'personName': 'Trollope, Anthony',
 		'personBio': '1815-1882',
 		'personTitle[]' {
-			'_': 'grandson of James II, King of England',
-			'_': 'Prince'
+			'': 'grandson of James II, King of England',
+			'': 'Prince'
 		}
 	},
-	'PersonCreator' {
-		'personName': 'Gjessing, S.',
-		'personBio': '1950-'
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Gjessing, S.',
+			'personBio': '1950-'
+		}
 	}
 }
 '' {
@@ -24,15 +26,17 @@
 		'personBio': '1815-1882',
 		'personRole': 'author'
 	},
-	'PersonCreator': [{
-		'personName': 'Nygaard, Kristen',
-		'personBio': '1926-'
-	},
-	{
-		'personName': 'Gjessing, S.',
-		'personBio': '1950-',
-		'personRole': 'author'
-	}]
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Gjessing, S.',
+			'personBio': '1950-',
+			'personRole': 'author'
+		},
+		'' {
+			'personName': 'Nygaard, Kristen',
+			'personBio': '1926-'
+		}
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -42,27 +46,36 @@
 		'personName': 'Trollope, Anthony',
 		'personBio': '1815-1882'
 	},
-	'PersonContributor' {
-		'personName': 'Gjessing, S.',
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Nygaard, Kristen',
+			'personBio': '1926-'
+		}
 	},
-	'PersonCreator' {
-		'personName': 'Nygaard, Kristen',
-		'personBio': '1926-'
+	'PersonContributor[]' {
+		'' {
+			'personName': 'Gjessing, S.'
+		}
 	}
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '4'
 	},
-	'PersonContributor': [{
-		'personName': 'Trollope, Anthony',
-		'personBio': '1815-1882',
-		'personRole': 'editor'
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Gjessing, S.',
+			'personBio': '1950-'
+		}
 	},
-	{
-		'personName': 'Nygaard, Kristen',
-	},
-		'personName': 'Gjessing, S.',
-		'personBio': '1950-'
-	}]
+	'PersonContributor[]' {
+		'' {
+			'personName': 'Nygaard, Kristen'
+		},
+		'' {
+			'personName': 'Trollope, Anthony',
+			'personBio': '1815-1882',
+			'personRole': 'editor'
+		}
+	}
 }

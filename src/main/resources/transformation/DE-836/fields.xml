@@ -14,21 +14,25 @@
     <data name="languageSource" source="@language" />
     <data name="language" source="@language" />
   </entity>
-  <entity name="IdentifierISBN" flushWith="020  .a">
-    <data name="identifierISBN" source="020  .a" />
+  <entity name="IdentifierISBN">
+    <entity name="identifierISBN[]" flushWith="record">
+      <data name="" source="020  .a" />
+    </entity>
   </entity>
 
   <!-- 1xx -->
-  <entity name="Person" sameEntity="true">
-    <combine name="personName" value="${100a}">
-      <if>
-        <none>
-          <data source="1001 .e" />
-          <data source="1001 .4" />
-        </none>
-      </if>
-      <data name="100a" source="1001 .a" />
-    </combine>
+  <entity name="Person" flushWith="record">
+    <if>
+      <none flushWith="record">
+        <data source="1001 .e">
+          <equals string="editor" />
+        </data>
+      </none>
+    </if>
+    <call-macro name="personName"  field="100" />
+    <call-macro name="personTitle" field="100" />
+    <call-macro name="personBio"   field="100" />
+    <call-macro name="personRole"  field="100" />
   </entity>
 
   <!-- 2xx -->
@@ -37,6 +41,11 @@
   </entity>
   <entity name="TitleAddendum">
     <call-macro name="regex-del-punctuation-end" dsource="245??.b" dname="title" />
+  </entity>
+  <entity name="CreatorStatement">
+    <data name="creatorStatement" source="245[01]?.c">
+      <replace pattern="[.]$" with="" />
+    </data>
   </entity>
   <entity name="Edition">
     <data name="edition" source="250  .a" />
@@ -136,8 +145,53 @@
   </entity>
 
   <!-- 7xx -->
-  <entity name="IdentifierISBNParallel" flushWith="776??.z">
-    <data name="identifierISBN" source="776??.z" />
+  <entity name="PersonCreator[]" flushWith="record">
+    <entity name="" flushWith="7001 " sameEntity="true">
+      <if>
+        <none flushWith="7001 " sameEntity="true">
+          <data source="7001 .4">
+            <equals string="edt." />
+          </data>
+        </none>
+      </if>
+      <call-macro name="personName"  field="700" />
+      <call-macro name="personTitle" field="700" />
+      <call-macro name="personBio"   field="700" />
+      <call-macro name="personRole"  field="700" />
+    </entity>
+  </entity>
+  <entity name="PersonContributor[]" flushWith="record">
+    <entity name="" flushWith="7001 " sameEntity="true">
+      <if>
+        <all flushWith="7001 " sameEntity="true">
+          <data source="7001 .4">
+            <equals string="edt." />
+          </data>
+        </all>
+      </if>
+      <call-macro name="personName"  field="700" />
+      <call-macro name="personTitle" field="700" />
+      <call-macro name="personBio"   field="700" />
+      <call-macro name="personRole"  field="700" />
+    </entity>
+    <entity name="" flushWith="record">
+      <if>
+        <all flushWith="record">
+          <data source="1001 .e">
+            <equals string="editor" />
+          </data>
+        </all>
+      </if>
+      <call-macro name="personName"  field="100" />
+      <call-macro name="personTitle" field="100" />
+      <call-macro name="personBio"   field="100" />
+      <call-macro name="personRole"  field="100" />
+    </entity>
+  </entity>
+  <entity name="IdentifierISBNParallel">
+    <entity name="identifierISBN[]" flushWith="record">
+      <data name="" source="776??.z" />
+    </entity>
   </entity>
 
   <!-- 8xx -->
@@ -145,7 +199,11 @@
     <data name="title" source="830 0.a" />
     <data name="volume" source="830 0.v" />
   </entity>
-  <entity name="OnlineAccess" flushWith="8304?.u">
-    <data name="uri" source="8304?.u" />
+  <entity name="OnlineAccess">
+    <entity name="uri[]" flushWith="record">
+      <data name="" source="856??.u">
+        <unique />
+      </data>
+    </entity>
   </entity>
 </rules>

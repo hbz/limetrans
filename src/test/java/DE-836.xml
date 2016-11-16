@@ -2,6 +2,12 @@
 <!DOCTYPE metamorph-test SYSTEM "metamorph-test.dtd" [<!ENTITY isil "DE-836">]>
 <metamorph-test version="1.0" xmlns="http://www.culturegraph.org/metamorph-test">
 
+  <test-case name="single-record">
+    <input src="&base;/single-record.xml" />
+    <transformation />
+    <result src="&base;/single-record.formeta" />
+  </test-case>
+
   <test-case name="person-creator-contributor">
     <input src="&base;/person-creator-contributor.xml" />
     <transformation />
