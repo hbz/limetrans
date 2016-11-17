@@ -76,7 +76,7 @@
     <data source="001" />
   </combine>
 
-  <!-- format -->
+  <!-- @facette_format -->
   <combine name="@facette_format" value="Audio" >
     <if>
       <any>
@@ -522,15 +522,36 @@
     <data source="001" />
   </combine>
   <!-- END format -->
-  
-  <entity name="dc" flushWith="@*">
-    <data name="format" source="@facette_format" />
-  </entity>
-  <entity name="dc">
+  <call-macro name="regex-del-punctuation-end" dsource="260  .c|2603 .c" dname="@facet_date" />
+
+  <entity name="dc" flushWith="record">
+	<entity name="format[]" flushWith="record">
+	  <data name="" source="@facette_format" />
+	</entity>
     <combine name="format" value="keine Angabe">
       <if>
         <none>
           <data source="@facette_format"></data>
+        </none>
+      </if>
+      <data source="001">
+      </data>
+    </combine>
+	<data name="language" source="@language" />
+	<combine name="language" value="keine Angabe">
+      <if>
+        <none>
+          <data source="@language"></data>
+        </none>
+      </if>
+      <data source="001">
+      </data>
+    </combine>
+	<data name="date" source="@facet_date" />
+	<combine name="date" value="keine Angabe">
+      <if>
+        <none>
+          <data source="@facet_date"></data>
         </none>
       </if>
       <data source="001">
