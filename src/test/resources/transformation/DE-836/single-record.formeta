@@ -18,9 +18,6 @@
 	'DateProper' {
 		'date': '1993'
 	},
-	'Description' {
-		'description': '"A Bradford book."'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'date': '1993',
@@ -48,6 +45,11 @@
 	},
 	'Extent' {
 		'extent': '1 online resource (x, 466 pages) : illustrations'
+	},
+	'Description' {
+		'description[]' {
+			'': '"A Bradford book."'
+		}
 	},
 	'IdentifierISBNParallel' {
 		'identifierISBN[]' {

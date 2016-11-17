@@ -523,7 +523,7 @@
   </combine>
   <!-- END format -->
   <data name="@facet_date" source="260  .c|2603 .c">
-    <replace pattern=" ?[-,.:;/]?$|,.*$|^[©]" with="" />
+    <replace pattern=" ?[-,.:;/\]]?$|,.*$|^[©c\[] *" with="" />
   </data>
 
   <entity name="dc" flushWith="record">

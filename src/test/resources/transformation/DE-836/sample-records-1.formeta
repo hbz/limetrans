@@ -15,9 +15,6 @@
 	'DateProper' {
 		'date': '1960-'
 	},
-	'Description' {
-		'description': 'Title from contents screen (ScienceDirect, viewed Feb. 28, 2007).'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'date': '1960',
@@ -31,6 +28,11 @@
 		'printingPlace[]' {
 			'': 'Oxford',
 			'': 'New York'
+		}
+	},
+	'Description' {
+		'description[]' {
+			'': 'Title from contents screen (ScienceDirect, viewed Feb. 28, 2007).'
 		}
 	},
 	'OnlineAccess' {
@@ -94,7 +96,7 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '[199-?]',
+		'date': '199-?',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -148,9 +150,6 @@
 	'DateProper' {
 		'date': '1999'
 	},
-	'Description' {
-		'description': 'Available in multiple electronic file formats.'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'date': '1999',
@@ -176,6 +175,11 @@
 	},
 	'Extent' {
 		'extent': '1 online resource.'
+	},
+	'Description' {
+		'description[]' {
+			'': 'Available in multiple electronic file formats.'
+		}
 	},
 	'OnlineAccess' {
 		'uri[]' {
@@ -205,7 +209,7 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '[199-?]',
+		'date': '199-?',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -258,7 +262,7 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '[199-?]',
+		'date': '199-?',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -421,12 +425,9 @@
 	'DateProper' {
 		'date': '[199-?]'
 	},
-	'Description' {
-		'description': '"Originally written in Icelandic sometime between 1250 - 1300 A.D. although parts may be based on a now lost 12th century saga."'
-	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '[199-?]',
+		'date': '199-?',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -446,6 +447,11 @@
 	},
 	'Extent' {
 		'extent': '1 online resource.'
+	},
+	'Description' {
+		'description[]' {
+			'': '"Originally written in Icelandic sometime between 1250 - 1300 A.D. although parts may be based on a now lost 12th century saga."'
+		}
 	},
 	'PersonCreator[]' {
 		'' {
@@ -484,7 +490,7 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '[199-?]',
+		'date': '199-?',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',

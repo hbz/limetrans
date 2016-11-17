@@ -121,7 +121,9 @@
 
   <!-- 5xx -->
   <entity name="Description">
-    <data name="description" source="500  .a" />
+    <entity name="description[]" flushWith="record">
+      <data name="" source="500  .a" />
+    </entity>
   </entity>
 
   <!-- 6xx -->

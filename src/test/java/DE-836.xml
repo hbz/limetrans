@@ -14,6 +14,12 @@
     <result src="&base;/sample-records-1.formeta" />
   </test-case>
 
+  <test-case name="sample-records-2">
+    <input src="&base;/sample-records-2.xml" />
+    <transformation />
+    <result src="&base;/sample-records-2.formeta" />
+  </test-case>
+
   <test-case name="person-creator-contributor">
     <input src="&base;/person-creator-contributor.xml" />
     <transformation />
