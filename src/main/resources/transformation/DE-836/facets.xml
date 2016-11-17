@@ -53,10 +53,10 @@
     <if>
       <all>
         <data source="@LeaderPos06">
-          <equals string="a"/>
+          <equals string="a" />
         </data>
         <data source="@LeaderPos07">
-          <regexp match="[acdm]"/>
+          <regexp match="[acdm]" />
         </data>
       </all>
     </if>
@@ -66,10 +66,10 @@
     <if>
       <all>
         <data source="@LeaderPos06">
-          <equals string="a"/>
+          <equals string="a" />
         </data>
         <data source="@LeaderPos07">
-          <regexp match="[bi]"/>
+          <regexp match="[bi]" />
         </data>
       </all>
     </if>
@@ -77,444 +77,444 @@
   </combine>
 
   <!-- @facette_format -->
-  <combine name="@facette_format" value="Audio" >
+  <combine name="@facette_format" value="Audio">
     <if>
       <any>
         <data source="@LeaderPos06">
-          <regexp match="[ij]"/>
+          <regexp match="[ij]" />
         </data>
         <data source="@006Pos00">
-          <regexp match="[ijk]"/>
+          <regexp match="[ijk]" />
         </data>
         <all>
           <data source="@type">
-            <equals string="CF"/>
+            <equals string="CF" />
           </data>
           <data source="@008Pos26">
-            <equals string="h"/>
+            <equals string="h" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <equals string="m"/>
+            <equals string="m" />
           </data>
           <data source="@006Pos09">
-            <equals string="h"/>
+            <equals string="h" />
           </data>
         </all>
       </any>
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Bild" >
+  <combine name="@facette_format" value="Bild">
     <if>
       <any>
         <all>
           <data source="@007Pos00">
-            <equals string="k"/>
+            <equals string="k" />
           </data>
           <data source="@007Pos01">
-            <regexp match="[cdefhijklnpqrsuvz]"/>
+            <regexp match="[cdefhijklnpqrsuvz]" />
           </data>
         </all>
         <data source="@007Pos00">
-          <equals string="r"/>
+          <equals string="r" />
         </data>
         <all>
           <data source="@type">
-            <equals string="M"/>
+            <equals string="M" />
           </data>
           <data source="@008Pos3[34]">
-            <regexp match="[jo]"/>
+            <regexp match="[jo]" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[ef]"/>
+            <regexp match="[ef]" />
           </data>
           <data source="@006Pos1[67]">
-            <regexp match="[jo]"/>
+            <regexp match="[jo]" />
           </data>
         </all>
         <all>
           <data source="@type">
-            <equals string="VM"/>
+            <equals string="VM" />
           </data>
           <data source="@008Pos33">
-            <regexp match="[dikln]"/>
+            <regexp match="[dikln]" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[gkor]"/>
+            <regexp match="[gkor]" />
           </data>
           <data source="@006Pos16">
-            <regexp match="[dikln]"/>
+            <regexp match="[dikln]" />
           </data>
         </all>
       </any>
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Elektronische Ressource" >
+  <combine name="@facette_format" value="Elektronische Ressource">
     <if>
       <any>
         <data source="@LeaderPos06">
-          <equals string="m"/>
+          <equals string="m" />
         </data>
         <data source="@006Pos00">
-          <equals string="m"/>
+          <equals string="m" />
         </data>
         <data source="@007Pos00">
-          <equals string="c"/>
+          <equals string="c" />
         </data>
         <all>
           <data source="@type">
-            <regexp match="^(B|Mu|CR|MX)$"/>
+            <regexp match="^(B|Mu|CR|MX)$" />
           </data>
           <data source="@008Pos23">
-            <regexp match="[sq]"/>
+            <regexp match="[sq]" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[acdijpst]"/>
+            <regexp match="[acdijpst]" />
           </data>
           <data source="@006Pos06">
-            <regexp match="[qs]"/>
+            <regexp match="[qs]" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[efgkor]"/>
+            <regexp match="[efgkor]" />
           </data>
           <data source="@006Pos12">
-            <regexp match="[qs]"/>
+            <regexp match="[qs]" />
           </data>
         </all>
         <all>
           <data source="@type">
-            <regexp match="^(M|VM)$"/>
+            <regexp match="^(M|VM)$" />
           </data>
           <data source="@008Pos29">
-            <regexp match="[sq]"/>
+            <regexp match="[sq]" />
           </data>
         </all>
       </any>
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Film, Dia, Video" >
+  <combine name="@facette_format" value="Film, Dia, Video">
     <if>
       <any>
         <data source="@007Pos00">
-          <regexp match="[gmv]"/>
+          <regexp match="[gmv]" />
         </data>
         <all>
           <data source="@type">
-            <equals string="VM"/>
+            <equals string="VM" />
           </data>
           <data source="@008Pos33">
-            <regexp match="[fvtsm]"/>
+            <regexp match="[fvtsm]" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[gkor]"/>
+            <regexp match="[gkor]" />
           </data>
           <data source="@006Pos16">
-            <regexp match="[fvtsm]"/>
+            <regexp match="[fvtsm]" />
           </data>
         </all>
       </any>
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Gedruckte Ressource" >
+  <combine name="@facette_format" value="Gedruckte Ressource">
     <if>
       <any>
         <data source="@LeaderPos06|@006Pos00">
-          <regexp match="[op]"/>
+          <regexp match="[op]" />
         </data>
         <all>
           <data source="@007Pos00">
-            <equals string="k"/>
+            <equals string="k" />
           </data>
           <data source="@007Pos01">
-            <regexp match="[fjs]"/>
+            <regexp match="[fjs]" />
           </data>
         </all>
         <data source="@007Pos00">
-          <equals string="o"/>
+          <equals string="o" />
         </data>
         <all>
           <data source="@007Pos00">
-            <equals string="t"/>
+            <equals string="t" />
           </data>
           <data source="@007Pos01">
-            <regexp match="[ab]"/>
+            <regexp match="[ab]" />
           </data>
         </all>
         <all>
           <data source="@type">
-            <regexp match="^(B|Mu|CR|MX)$"/>
+            <regexp match="^(B|Mu|CR|MX)$" />
           </data>
           <data source="@008Pos23">
-            <regexp match="[dr]"/>
+            <regexp match="[dr]" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[acdijpst]"/> 
+            <regexp match="[acdijpst]" />
           </data>
           <data source="@006Pos06">
-            <regexp match="[dr]"/>
+            <regexp match="[dr]" />
           </data>
         </all>
         <all>
           <data source="@type">
-            <regexp match="^(M|VM)$"/>
+            <regexp match="^(M|VM)$" />
           </data>
           <data source="@008Pos29">
-            <regexp match="[dr]"/>
+            <regexp match="[dr]" />
           </data>
         </all>
         <all>
           <data source="@type">
-            <regexp match="^(M|VM)$"/>
+            <regexp match="^(M|VM)$" />
           </data>
           <data source="@008Pos29">
-            <regexp match="[dr]"/>
+            <regexp match="[dr]" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[efgkor]"/>
+            <regexp match="[efgkor]" />
           </data>
           <data source="@006Pos12">
-            <regexp match="[dr]"/>
+            <regexp match="[dr]" />
           </data>
         </all>
         <all>
           <data source="@type">
-            <equals string="VM"/>
+            <equals string="VM" />
           </data>
           <data source="@008Pos33">
-            <equals string="b"/>
+            <equals string="b" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[gkor]"/>
+            <regexp match="[gkor]" />
           </data>
           <data source="@006Pos16">
-            <equals string="b"/>
+            <equals string="b" />
           </data>
-        </all>            
+        </all>
       </any>
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Landkarte" >
+  <combine name="@facette_format" value="Landkarte">
     <if>
       <any>
         <data source="@LeaderPos06">
-          <regexp match="[ef]"/>
+          <regexp match="[ef]" />
         </data>
         <data source="@006Pos00">
-          <regexp match="[ef]"/>
+          <regexp match="[ef]" />
         </data>
         <data source="@007Pos00">
-          <regexp match="[ad]"/>
+          <regexp match="[ad]" />
         </data>
       </any>
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Mikroform" >
+  <combine name="@facette_format" value="Mikroform">
     <if>
       <any>
         <data source="@007Pos00">
-          <equals string="h"/>
+          <equals string="h" />
         </data>
         <all>
           <data source="@type">
-            <regexp match="^(M|VM)$"/>
+            <regexp match="^(M|VM)$" />
           </data>
           <data source="@008Pos29">
-            <regexp match="[abc]"/>
+            <regexp match="[abc]" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[efgkor]"/>
+            <regexp match="[efgkor]" />
           </data>
           <data source="@006Pos12">
-            <regexp match="[abc]"/>
+            <regexp match="[abc]" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[acdijpst]"/>
+            <regexp match="[acdijpst]" />
           </data>
           <data source="@006Pos06">
-            <regexp match="[abc]"/>
+            <regexp match="[abc]" />
           </data>
         </all>
         <all>
           <data source="@type">
-            <regexp match="^(B|Mu|CR|MX)$"/>
+            <regexp match="^(B|Mu|CR|MX)$" />
           </data>
           <data source="@008Pos23">
-            <regexp match="[abc]"/>
+            <regexp match="[abc]" />
           </data>
         </all>
       </any>
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Online-Ressource" >
+  <combine name="@facette_format" value="Online-Ressource">
     <if>
       <any>
         <all>
           <data source="@type">
-            <regexp match="^(B|Mu|CF|CR|MX)$"/>
+            <regexp match="^(B|Mu|CF|CR|MX)$" />
           </data>
           <data source="@008Pos23">
-            <equals string="o"/>
+            <equals string="o" />
           </data>
         </all>
         <all>
           <data source="@type">
-            <regexp match="^(M|VM)$"/>
+            <regexp match="^(M|VM)$" />
           </data>
           <data source="@008Pos29">
-            <equals string="o"/>
+            <equals string="o" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[acdijpstm]"/>
+            <regexp match="[acdijpstm]" />
           </data>
           <data source="@006Pos06">
-            <equals string="o"/>
+            <equals string="o" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[efgkor]"/>
+            <regexp match="[efgkor]" />
           </data>
           <data source="@006Pos12">
-            <equals string="o"/>
+            <equals string="o" />
           </data>
         </all>
       </any>
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Sonstiges" >
+  <combine name="@facette_format" value="Sonstiges">
     <if>
       <any>
         <data source="@LeaderPos06|@006Pos00">
-          <equals string="r"/>
+          <equals string="r" />
         </data>
         <data source="@007Pos00">
-          <equals string="f"/>
-        </data>  
+          <equals string="f" />
+        </data>
         <all>
           <data source="@007Pos00">
-            <equals string="k"/>
+            <equals string="k" />
           </data>
           <data source="@007Pos01">
-            <regexp match="[ago]"/>
+            <regexp match="[ago]" />
           </data>
         </all>
         <all>
           <data source="@007Pos00">
-            <regexp match="[fz]"/>
+            <regexp match="[fz]" />
           </data>
           <data source="@007Pos01">
-            <regexp match="[cuz]"/>
+            <regexp match="[cuz]" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[acdijpst]"/>
+            <regexp match="[acdijpst]" />
           </data>
           <data source="@006Pos06">
-            <regexp match="[f#]"/>
+            <regexp match="[f#]" />
           </data>
         </all>
         <all>
           <data source="@type">
-            <regexp match="^(B|CR|Mu|MX)$"/>
+            <regexp match="^(B|CR|Mu|MX)$" />
           </data>
           <data source="@008Pos23">
-            <regexp match="[f#]"/>
+            <regexp match="[f#]" />
           </data>
         </all>
         <all>
           <data source="@type">
-            <regexp match="^(M|VM)$"/>
+            <regexp match="^(M|VM)$" />
           </data>
           <data source="@008Pos29">
-            <regexp match="[f#]"/>
+            <regexp match="[f#]" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[efgkor]"/>
+            <regexp match="[efgkor]" />
           </data>
           <data source="@006Pos12">
-            <regexp match="[f#]"/>
+            <regexp match="[f#]" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <equals string="m"/>
+            <equals string="m" />
           </data>
           <data source="@006Pos09">
-            <regexp match="[acdfgijmuz]"/>
+            <regexp match="[acdfgijmuz]" />
           </data>
         </all>
         <all>
           <data source="@type">
-            <equals string="CF"/>
+            <equals string="CF" />
           </data>
           <data source="@008Pos26">
-            <regexp match="[acdfgijmuz]"/>
+            <regexp match="[acdfgijmuz]" />
           </data>
         </all>
         <all>
           <data source="@type">
-            <equals string="M"/>
+            <equals string="M" />
           </data>
           <data source="@008Pos3[43]">
-            <regexp match="[#lnprz]"/>
+            <regexp match="[#lnprz]" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[ef]"/>
+            <regexp match="[ef]" />
           </data>
           <data source="@006Pos1[67]">
-            <regexp match="[#lnprz]"/>
+            <regexp match="[#lnprz]" />
           </data>
         </all>
         <all>
           <data source="@type">
-            <equals string="VM"/>
+            <equals string="VM" />
           </data>
           <data source="@008Pos33">
-            <regexp match="[acgpoqrwz]"/>
+            <regexp match="[acgpoqrwz]" />
           </data>
         </all>
         <all>
           <data source="@006Pos00">
-            <regexp match="[gkor]"/>
+            <regexp match="[gkor]" />
           </data>
           <data source="@006Pos16">
-            <regexp match="[acgpoqrwz]"/>
+            <regexp match="[acgpoqrwz]" />
           </data>
         </all>
       </any>
@@ -525,37 +525,34 @@
   <call-macro name="regex-del-punctuation-end" dsource="260  .c|2603 .c" dname="@facet_date" />
 
   <entity name="dc" flushWith="record">
-	<entity name="format[]" flushWith="record">
-	  <data name="" source="@facette_format" />
-	</entity>
+    <entity name="format[]" flushWith="record">
+      <data name="" source="@facette_format" />
+    </entity>
     <combine name="format" value="keine Angabe">
       <if>
         <none>
-          <data source="@facette_format"></data>
+          <data source="@facette_format" />
         </none>
       </if>
-      <data source="001">
-      </data>
+      <data source="001" />
     </combine>
-	<data name="language" source="@language" />
-	<combine name="language" value="keine Angabe">
+    <data name="language" source="@language" />
+    <combine name="language" value="keine Angabe">
       <if>
         <none>
-          <data source="@language"></data>
+          <data source="@language" />
         </none>
       </if>
-      <data source="001">
-      </data>
+      <data source="001" />
     </combine>
-	<data name="date" source="@facet_date" />
-	<combine name="date" value="keine Angabe">
+    <data name="date" source="@facet_date" />
+    <combine name="date" value="keine Angabe">
       <if>
         <none>
-          <data source="@facet_date"></data>
+          <data source="@facet_date" />
         </none>
       </if>
-      <data source="001">
-      </data>
+      <data source="001" />
     </combine>
   </entity>
 </rules>
