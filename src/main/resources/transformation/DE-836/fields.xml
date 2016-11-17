@@ -161,19 +161,6 @@
     </entity>
   </entity>
   <entity name="PersonContributor[]" flushWith="record">
-    <entity name="" flushWith="7001 " sameEntity="true">
-      <if>
-        <all flushWith="7001 " sameEntity="true">
-          <data source="7001 .4">
-            <equals string="edt." />
-          </data>
-        </all>
-      </if>
-      <call-macro name="personName"  field="700" />
-      <call-macro name="personTitle" field="700" />
-      <call-macro name="personBio"   field="700" />
-      <call-macro name="personRole"  field="700" />
-    </entity>
     <entity name="" flushWith="record">
       <if>
         <all flushWith="record">
@@ -186,6 +173,19 @@
       <call-macro name="personTitle" field="100" />
       <call-macro name="personBio"   field="100" />
       <call-macro name="personRole"  field="100" />
+    </entity>
+    <entity name="" flushWith="7001 " sameEntity="true">
+      <if>
+        <all flushWith="7001 " sameEntity="true">
+          <data source="7001 .4">
+            <equals string="edt." />
+          </data>
+        </all>
+      </if>
+      <call-macro name="personName"  field="700" />
+      <call-macro name="personTitle" field="700" />
+      <call-macro name="personBio"   field="700" />
+      <call-macro name="personRole"  field="700" />
     </entity>
   </entity>
   <entity name="IdentifierISBNParallel">
