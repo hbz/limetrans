@@ -24,6 +24,15 @@
 	'Description' {
 		'description': '"A Bradford book."'
 	},
+	'dc' {
+		'language': 'Englisch',
+		'date': '1993',
+		'format[]' {
+			'': 'Elektronische Ressource',
+			'': 'Online-Ressource',
+			'': 'Sonstiges'
+		}
+	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
 			'': '0585020531',
