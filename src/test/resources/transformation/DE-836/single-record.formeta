@@ -12,9 +12,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'Barbara Von Eckardt'
 	},
-	'PublicationPlace' {
-		'printingPlace': 'Cambridge, Mass.'
-	},
 	'PublisherName' {
 		'name': 'MIT Press'
 	},
@@ -43,6 +40,11 @@
 	},
 	'Person' {
 		'personName': 'Von Eckardt, Barbara'
+	},
+	'PublicationPlace' {
+		'printingPlace[]' {
+			'': 'Cambridge, Mass.'
+		}
 	},
 	'Extent' {
 		'extent': '1 online resource (x, 466 pages) : illustrations'
