@@ -29,7 +29,9 @@
   </macro>
 
   <macro name="personRole">
-    <data name="$[name]" source="$[field]1 .e" />
+    <entity name="$[name][]" flushWith="$[field]1 " sameEntity="true">
+      <data name="" source="$[field]1 .e" />
+    </entity>
   </macro>
 
 </macros>

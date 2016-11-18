@@ -38,13 +38,17 @@
 	'Person' {
 		'personName': 'Trollope, Anthony',
 		'personBio': '1815-1882',
-		'personRole': 'author'
+		'personRole[]' {
+			'': 'author'
+		}
 	},
 	'PersonCreator[]' {
 		'' {
 			'personName': 'Gjessing, S.',
 			'personBio': '1950-',
-			'personRole': 'author'
+			'personRole[]' {
+				'': 'author'
+			}
 		},
 		'' {
 			'personName': 'Nygaard, Kristen',
@@ -103,7 +107,10 @@
 		'' {
 			'personName': 'Trollope, Anthony',
 			'personBio': '1815-1882',
-			'personRole': 'editor'
+			'personRole[]' {
+				'': 'editor',
+				'': 'translator'
+			}
 		}
 	}
 }
