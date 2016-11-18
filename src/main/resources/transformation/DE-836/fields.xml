@@ -3,7 +3,7 @@
 
   <!-- leads to the redundant entry "id" (doubling the value of RecordIdentifier.identifierForTheRecord).
        TODO: Modify JsonToElasticsearchBulk so that it can read from nested field keys like RecordIdentifier.identifierForTheRecord -->
-  <data source="001" name="id"/>
+  <data source="001" name="id" />
 
   <!-- 0xx -->
   <entity name="RecordIdentifier" flushWith="001">
