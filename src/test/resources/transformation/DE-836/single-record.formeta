@@ -12,17 +12,11 @@
 	'CreatorStatement' {
 		'creatorStatement': 'Barbara Von Eckardt'
 	},
-	'PublicationPlace' {
-		'printingPlace': 'Cambridge, Mass.'
-	},
 	'PublisherName' {
 		'name': 'MIT Press'
 	},
 	'DateProper' {
 		'date': '1993'
-	},
-	'Description' {
-		'description': '"A Bradford book."'
 	},
 	'dc' {
 		'language': 'Englisch',
@@ -44,8 +38,18 @@
 	'Person' {
 		'personName': 'Von Eckardt, Barbara'
 	},
+	'PublicationPlace' {
+		'printingPlace[]' {
+			'': 'Cambridge, Mass.'
+		}
+	},
 	'Extent' {
 		'extent': '1 online resource (x, 466 pages) : illustrations'
+	},
+	'Description' {
+		'description[]' {
+			'': '"A Bradford book."'
+		}
 	},
 	'IdentifierISBNParallel' {
 		'identifierISBN[]' {

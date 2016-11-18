@@ -522,7 +522,9 @@
     <data source="001" />
   </combine>
   <!-- END format -->
-  <call-macro name="regex-del-punctuation-end" dsource="260  .c|2603 .c" dname="@facet_date" />
+  <data name="@facet_date" source="260  .c|2603 .c">
+    <replace pattern=" ?[-,.:;/\]]?$|,.*$|^[©c\[] *" with="" />
+  </data>
 
   <entity name="dc" flushWith="record">
     <entity name="format[]" flushWith="record">

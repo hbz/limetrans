@@ -52,7 +52,9 @@
   </entity>
 
   <entity name="PublicationPlace">
-    <call-macro name="regex-del-punctuation-end" dsource="260  .a|2603 .a" dname="printingPlace" />
+    <entity name="printingPlace[]" flushWith="record">
+      <call-macro name="regex-del-punctuation-end" dsource="260  .a|2603 .a" dname="" />
+    </entity>
   </entity>
   <entity name="PublisherName">
     <call-macro name="regex-del-punctuation-end" dsource="260  .b|2603 .b" dname="name" />
@@ -119,7 +121,9 @@
 
   <!-- 5xx -->
   <entity name="Description">
-    <data name="description" source="500  .a" />
+    <entity name="description[]" flushWith="record">
+      <data name="" source="500  .a" />
+    </entity>
   </entity>
 
   <!-- 6xx -->
@@ -196,8 +200,8 @@
 
   <!-- 8xx -->
   <entity name="SeriesAddedEntryUniformTitle" flushWith="830 0.v">
-    <data name="title" source="830 0.a" />
-    <data name="volume" source="830 0.v" />
+    <call-macro name="regex-del-punctuation-end" dsource="830 0.a" dname="title" />
+    <call-macro name="regex-del-punctuation-end" dsource="830 0.v" dname="volume" />
   </entity>
   <entity name="OnlineAccess">
     <entity name="uri[]" flushWith="record">
