@@ -3,7 +3,9 @@
 		'identifierForTheRecord': '1'
 	},
 	'dc' {
-		'format': 'keine Angabe',
+		'format[]' {
+			'': 'keine Angabe'
+		},
 		'language': 'keine Angabe',
 		'date': 'keine Angabe'
 	},
@@ -23,7 +25,9 @@
 		'identifierForTheRecord': '2'
 	},
 	'dc' {
-		'format': 'keine Angabe',
+		'format[]' {
+			'': 'keine Angabe'
+		},
 		'language': 'keine Angabe',
 		'date': 'keine Angabe'
 	},
@@ -47,7 +51,9 @@
 		'identifierForTheRecord': '3'
 	},
 	'dc' {
-		'format': 'keine Angabe',
+		'format[]' {
+			'': 'keine Angabe'
+		},
 		'language': 'keine Angabe',
 		'date': 'keine Angabe'
 	},

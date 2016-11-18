@@ -8,7 +8,9 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'format': 'keine Angabe',
+		'format[]' {
+			'': 'keine Angabe'
+		},
 		'date': 'keine Angabe'
 	}
 }
@@ -22,7 +24,9 @@
 	},
 	'dc' {
 		'language': 'Deutsch',
-		'format': 'keine Angabe',
+		'format[]' {
+			'': 'keine Angabe'
+		},
 		'date': 'keine Angabe'
 	}
 }
@@ -36,7 +40,9 @@
 	},
 	'dc' {
 		'language': 'Französisch',
-		'format': 'keine Angabe',
+		'format[]' {
+			'': 'keine Angabe'
+		},
 		'date': 'keine Angabe'
 	}
 }
