@@ -528,14 +528,16 @@
     <entity name="format[]" flushWith="record">
       <data name="" source="@facette_format" />
     </entity>
-    <combine name="format" value="keine Angabe">
+    <entity name="format[]">
       <if>
         <none>
           <data source="@facette_format" />
         </none>
       </if>
-      <data source="001" />
-    </combine>
+      <data name="" source="001">
+        <constant value="keine Angabe" />
+      </data>
+    </entity>
     <data name="language" source="@language" />
     <combine name="language" value="keine Angabe">
       <if>
