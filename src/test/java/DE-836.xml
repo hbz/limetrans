@@ -19,13 +19,11 @@
     <transformation />
     <result src="&base;/IdentifierISBN-IdentifierISBNParallel.formeta" />
   </test-case>
-  
+
   <test-case name="Language">
     <input src="&base;/Language.xml" />
     <transformation />
     <result src="&base;/Language.formeta" />
   </test-case>
-  
 
-  
 </metamorph-test>
