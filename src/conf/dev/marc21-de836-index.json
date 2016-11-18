@@ -1,0 +1,28 @@
+{
+  "input" : {
+    "queue" : {
+      "path" : "src/test/resources/transformation/DE-836/",
+      "pattern" : "person-creator-contributor.xml",
+      "sort_by" : "lastmodified",
+      "order" : "desc",
+      "max" : 1
+    }
+  },
+  "output": {
+    "json" : "src/test/resources/transformation/DE-836/person-creator-contributor.jsonl",
+    "elasticsearch" : {
+      "cluster": "elasticsearch-01",
+      "host": ["localhost:9300"],
+      "index" : {
+        "name" : "de-836-introx-limetrans-20161115",
+        "type" : "titel",
+        "settings" : "src/test/resources/elasticsearch/hbztitle-settings.json",
+        "mapping" : "src/test/resources/elasticsearch/hbztitle-mapping.json",
+        "ignoreErrors" : "true"
+      }
+    }
+  },
+  "transformation-rules" : "src/main/resources/transformation/DE-836.xml",
+  "catalogid" : "DE-605-test",
+  "collection" : "HBZ-Test"
+}

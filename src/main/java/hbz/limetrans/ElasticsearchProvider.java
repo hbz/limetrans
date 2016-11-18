@@ -2,6 +2,7 @@ package hbz.limetrans;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.elasticsearch.action.admin.indices.create.CreateIndexAction;
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.action.admin.indices.refresh.RefreshRequest;
@@ -11,6 +12,8 @@ import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.settings.Settings.Builder;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
+import org.xbib.common.xcontent.XContentHelper;
+import org.xbib.common.xcontent.XContentService;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -20,14 +23,19 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class ElasticsearchProvider {
 
     final private Client mClient;
     final private Map<String, String> mCommonSettings;
+    final private org.xbib.common.settings.Settings mElasticsearchSettings;
+    final private boolean mIgnoreErrors;
 
     public ElasticsearchProvider(final org.xbib.common.settings.Settings aElasticsearchSettings) {
+        mElasticsearchSettings = aElasticsearchSettings;
+
         mCommonSettings = new HashMap<>();
         mCommonSettings.put("index.name", aElasticsearchSettings.get("index.name"));
         mCommonSettings.put("index.type", aElasticsearchSettings.get("index.type"));
@@ -46,24 +54,45 @@ public class ElasticsearchProvider {
         } catch (UnknownHostException ex) {
             throw new RuntimeException(ex);
         }
+
+        mIgnoreErrors = mElasticsearchSettings.getAsBoolean("index.ignoreErrors", false);
     }
 
     public void initializeIndex() throws IOException {
         deleteIndex();
 
-        final CreateIndexRequestBuilder cirb = mClient.admin().indices()
-            .prepareCreate(mCommonSettings.get("index.name"));
+        final CreateIndexRequestBuilder cirb =
+                (new CreateIndexRequestBuilder(mClient, CreateIndexAction.INSTANCE))
+                        .setIndex(mCommonSettings.get("index.name"));
 
         final Builder indexSettingsBuilder = Settings.builder()
             .put("number_of_shards", 1)
             .put("number_of_replicas", 1);
-
         mCommonSettings.forEach((key, value) -> indexSettingsBuilder.put(key, value));
 
         cirb.setSettings(indexSettingsBuilder.build());
-        cirb.execute().actionGet();
-
+        addMappings(cirb);
+        try{
+            cirb.execute().actionGet();
+        }
+        catch(Exception e) {
+            if (!mIgnoreErrors) {
+                throw new IOException(e);
+            } else {
+                System.out.println("error while creating index '" + mCommonSettings.get("index.name")
+                        + "', but configured to ignore: " + e.getMessage());
+            }
+        }
         refreshAllIndices();
+    }
+
+    private void addMappings(CreateIndexRequestBuilder createIndexRequestBuilder) throws IOException {
+        final Map<String, String> mappings = mappingsFromFile(mElasticsearchSettings.get("index.mapping"));
+        Iterator it = mappings.keySet().iterator();
+        while(it.hasNext()) {
+            String type = (String)it.next();
+            createIndexRequestBuilder.addMapping(type, mappings.get(type));
+        }
     }
 
     public void bulkIndex(final String aIndexFile) throws IOException {
@@ -132,6 +161,16 @@ public class ElasticsearchProvider {
 
     private void refreshAllIndices() {
         mClient.admin().indices().refresh(new RefreshRequest()).actionGet();
+    }
+
+    private Map<String, String> mappingsFromFile(String aFile) throws IOException {
+        Map<String,String> mapping = new HashMap<>();
+        Map<String, Object> map = XContentHelper.convertFromJsonToMap(new InputStreamReader(
+                new FileInputStream(aFile)));
+        for (Map.Entry<String, Object> entry : ((Map<String, Object>) map.get("properties")).entrySet()) {
+            mapping.put(entry.getKey(), XContentService.jsonBuilder().map((Map) entry.getValue()).string());
+        }
+        return mapping;
     }
 
 }
