@@ -46,6 +46,9 @@
 		'' {
 			'personName': 'Gjessing, S.',
 			'personBio': '1950-',
+			'personTitle[]' {
+				'': 'Emperor'
+			},
 			'personRole[]' {
 				'': 'author'
 			}
