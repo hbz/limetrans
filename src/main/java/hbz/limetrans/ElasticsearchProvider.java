@@ -58,13 +58,9 @@ public class ElasticsearchProvider {
 
         final IndicesAdminClient indicesAdminClient = mClient.admin().indices();
 
-        final Builder indexSettingsBuilder = Settings.builder()
-            .put("number_of_shards", 1)
-            .put("number_of_replicas", 1);
-        mCommonSettings.forEach((key, value) -> indexSettingsBuilder.put(key, value));
-
         indicesAdminClient.prepareCreate(mCommonSettings.get("index.name"))
-            .setSettings(indexSettingsBuilder)
+            .setSettings(new String(Files.readAllBytes(Paths.get(
+                                mElasticsearchSettings.get("index.settings")))))
             .get();
 
         indicesAdminClient.preparePutMapping(mCommonSettings.get("index.name"))
