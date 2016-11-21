@@ -6,7 +6,6 @@ import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.action.admin.indices.refresh.RefreshRequest;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.client.Client;
-import org.elasticsearch.client.IndicesAdminClient;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.settings.Settings.Builder;
@@ -56,16 +55,11 @@ public class ElasticsearchProvider {
     public void initializeIndex() throws IOException {
         deleteIndex();
 
-        final IndicesAdminClient indicesAdminClient = mClient.admin().indices();
-
-        indicesAdminClient.prepareCreate(mCommonSettings.get("index.name"))
+        mClient.admin().indices().prepareCreate(mCommonSettings.get("index.name"))
             .setSettings(new String(Files.readAllBytes(Paths.get(
                                 mElasticsearchSettings.get("index.settings")))))
-            .get();
-
-        indicesAdminClient.preparePutMapping(mCommonSettings.get("index.name"))
-            .setType(mCommonSettings.get("index.type"))
-            .setSource(new String(Files.readAllBytes(Paths.get(
+            .addMapping(mCommonSettings.get("index.type"),
+                    new String(Files.readAllBytes(Paths.get(
                                 mElasticsearchSettings.get("index.mapping")))))
             .get();
 
