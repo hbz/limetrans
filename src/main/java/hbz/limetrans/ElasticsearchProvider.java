@@ -20,24 +20,19 @@ import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.Map;
 
 public class ElasticsearchProvider {
 
     final private Client mClient;
-    final private Map<String, String> mCommonSettings;
     final private org.xbib.common.settings.Settings mElasticsearchSettings;
 
     public ElasticsearchProvider(final org.xbib.common.settings.Settings aElasticsearchSettings) {
         mElasticsearchSettings = aElasticsearchSettings;
 
-        mCommonSettings = new HashMap<>();
-        mCommonSettings.put("index.name", aElasticsearchSettings.get("index.name"));
-        mCommonSettings.put("index.type", aElasticsearchSettings.get("index.type"));
-        mCommonSettings.put("cluster.name", aElasticsearchSettings.get("cluster"));
-
-        final Builder clientSettingsBuilder = Settings.settingsBuilder().put(mCommonSettings);
+        final Builder clientSettingsBuilder = Settings.settingsBuilder();
+        clientSettingsBuilder.put("index.name", aElasticsearchSettings.get("index.name"));
+        clientSettingsBuilder.put("index.type", aElasticsearchSettings.get("index.type"));
+        clientSettingsBuilder.put("cluster.name", aElasticsearchSettings.get("cluster"));
 
         // TODO: enable multiple server, according to array under "output.elasticsearch.host"
         final String[] host = aElasticsearchSettings.get("host.0").split(":");
@@ -55,10 +50,10 @@ public class ElasticsearchProvider {
     public void initializeIndex() throws IOException {
         deleteIndex();
 
-        mClient.admin().indices().prepareCreate(mCommonSettings.get("index.name"))
+        mClient.admin().indices().prepareCreate(mElasticsearchSettings.get("index.name"))
             .setSettings(new String(Files.readAllBytes(Paths.get(
                                 mElasticsearchSettings.get("index.settings")))))
-            .addMapping(mCommonSettings.get("index.type"),
+            .addMapping(mElasticsearchSettings.get("index.type"),
                     new String(Files.readAllBytes(Paths.get(
                                 mElasticsearchSettings.get("index.mapping")))))
             .get();
@@ -84,7 +79,7 @@ public class ElasticsearchProvider {
     }
 
     private void deleteIndex() {
-        final String indexName = mCommonSettings.get("index.name");
+        final String indexName = mElasticsearchSettings.get("index.name");
 
         mClient.admin().cluster().prepareHealth()
             .setWaitForYellowStatus().execute().actionGet();
@@ -98,8 +93,8 @@ public class ElasticsearchProvider {
 
     private void readData(final BulkRequestBuilder aBulkRequest,
                           final BufferedReader aBufferedReader) throws IOException {
-        final String indexType = mCommonSettings.get("index.type");
-        final String indexName = mCommonSettings.get("index.name");
+        final String indexType = mElasticsearchSettings.get("index.type");
+        final String indexName = mElasticsearchSettings.get("index.name");
         final ObjectMapper mapper = new ObjectMapper();
         String line;
         int currentLine = 1;
