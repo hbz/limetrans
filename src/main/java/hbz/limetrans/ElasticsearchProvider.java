@@ -22,14 +22,18 @@ import java.nio.file.Paths;
 public class ElasticsearchProvider {
 
     final private Client mClient;
-    final private org.xbib.common.settings.Settings mElasticsearchSettings;
+    final private org.xbib.common.settings.Settings mIndexSettings;
+    final private String mIndexName;
+    final private String mIndexType;
 
     public ElasticsearchProvider(final org.xbib.common.settings.Settings aElasticsearchSettings) {
-        mElasticsearchSettings = aElasticsearchSettings;
+        mIndexSettings = aElasticsearchSettings.getAsSettings("index");
+        mIndexName = mIndexSettings.get("name");
+        mIndexType = mIndexSettings.get("type");
 
         final Builder clientSettingsBuilder = Settings.settingsBuilder();
-        clientSettingsBuilder.put("index.name", aElasticsearchSettings.get("index.name"));
-        clientSettingsBuilder.put("index.type", aElasticsearchSettings.get("index.type"));
+        clientSettingsBuilder.put("index.name", mIndexName);
+        clientSettingsBuilder.put("index.type", mIndexType);
         clientSettingsBuilder.put("cluster.name", aElasticsearchSettings.get("cluster"));
 
         // TODO: enable multiple server, according to array under "output.elasticsearch.host"
@@ -48,10 +52,9 @@ public class ElasticsearchProvider {
     public void initializeIndex() throws IOException {
         deleteIndex();
 
-        mClient.admin().indices().prepareCreate(mElasticsearchSettings.get("index.name"))
-            .setSettings(slurpFile(mElasticsearchSettings.get("index.settings")))
-            .addMapping(mElasticsearchSettings.get("index.type"),
-                    slurpFile(mElasticsearchSettings.get("index.mapping")))
+        mClient.admin().indices().prepareCreate(mIndexName)
+            .setSettings(slurpFile(mIndexSettings.get("settings")))
+            .addMapping(mIndexType, slurpFile(mIndexSettings.get("mapping")))
             .get();
 
         refreshIndex();
@@ -75,22 +78,18 @@ public class ElasticsearchProvider {
     }
 
     private void deleteIndex() {
-        final String indexName = mElasticsearchSettings.get("index.name");
-
         mClient.admin().cluster().prepareHealth()
             .setWaitForYellowStatus().get();
 
         if (mClient.admin().indices()
-                .prepareExists(indexName).get().isExists()) {
+                .prepareExists(mIndexName).get().isExists()) {
             mClient.admin().indices()
-                .prepareDelete(indexName).get();
+                .prepareDelete(mIndexName).get();
         }
     }
 
     private void readData(final BulkRequestBuilder aBulkRequest,
                           final BufferedReader aBufferedReader) throws IOException {
-        final String indexType = mElasticsearchSettings.get("index.type");
-        final String indexName = mElasticsearchSettings.get("index.name");
         final ObjectMapper mapper = new ObjectMapper();
         String line;
         int currentLine = 1;
@@ -112,7 +111,7 @@ public class ElasticsearchProvider {
 
                 if (libType == null || !libType.textValue().equals("Collection")) {
                     aBulkRequest.add(mClient
-                        .prepareIndex(indexName, indexType, organisationId)
+                        .prepareIndex(mIndexName, mIndexType, organisationId)
                         .setSource(organisationData));
                 }
             }
@@ -123,7 +122,7 @@ public class ElasticsearchProvider {
 
     private void refreshIndex() {
         mClient.admin().indices()
-            .prepareRefresh(mElasticsearchSettings.get("index.name")).get();
+            .prepareRefresh(mIndexName).get();
     }
 
     private String slurpFile(final String aPath) throws IOException {
