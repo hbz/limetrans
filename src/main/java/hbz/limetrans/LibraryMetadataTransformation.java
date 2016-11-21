@@ -107,9 +107,13 @@ public class LibraryMetadataTransformation {
         if (mElasticsearchSettings != null) {
             final ElasticsearchProvider esProvider = new ElasticsearchProvider(mElasticsearchSettings);
 
-            esProvider.initializeIndex();
-            esProvider.bulkIndex(mElasticsearchPath);
-            esProvider.close();
+            try {
+                esProvider.initializeIndex();
+                esProvider.bulkIndex(mElasticsearchPath);
+            }
+            finally {
+                esProvider.close();
+            }
         }
     }
 
