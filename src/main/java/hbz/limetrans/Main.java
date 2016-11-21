@@ -11,12 +11,13 @@ import java.io.File;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.util.concurrent.ExecutionException;
 
 public final class Main {
 
     private static final String[] PROTOCOLS = new String[] {"http", "https", "ftp", "file"};
 
-    public static void main(final String[] args) throws IOException {
+    public static void main(final String[] args) throws IOException, ExecutionException, InterruptedException {
         final LibraryMetadataTransformation limetrans =
             new LibraryMetadataTransformation(setup(args));
 

@@ -18,7 +18,8 @@
         "type" : "titel",
         "settings" : "src/test/resources/elasticsearch/hbztitle-settings.json",
         "mapping" : "src/test/resources/elasticsearch/hbztitle-mapping.json"
-      }
+      },
+      "update" : false
     }
   },
   "transformation-rules" : "src/main/resources/transformation/DE-836.xml",

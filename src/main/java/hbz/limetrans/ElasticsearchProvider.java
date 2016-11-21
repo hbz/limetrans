@@ -2,6 +2,7 @@ package hbz.limetrans;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsRequest;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
@@ -18,6 +19,7 @@ import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.concurrent.ExecutionException;
 
 public class ElasticsearchProvider {
 
@@ -47,6 +49,11 @@ public class ElasticsearchProvider {
         } catch (UnknownHostException ex) {
             throw new RuntimeException(ex);
         }
+    }
+
+    public void checkIndex() throws ExecutionException, InterruptedException {
+        mClient.admin().indices().exists(new IndicesExistsRequest(mIndexName)).get().isExists();
+        refreshIndex();
     }
 
     public void initializeIndex() throws IOException {

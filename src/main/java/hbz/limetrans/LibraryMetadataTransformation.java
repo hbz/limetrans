@@ -15,6 +15,7 @@ import org.xbib.common.settings.Settings;
 
 import java.io.IOException;
 import java.io.File;
+import java.util.concurrent.ExecutionException;
 
 public class LibraryMetadataTransformation {
 
@@ -23,6 +24,7 @@ public class LibraryMetadataTransformation {
     private final String mInputPath;
     private final String mJsonPath;
     private final String mRulesPath;
+    private final boolean mIsUpdate;
 
     private String mElasticsearchPath;
 
@@ -41,10 +43,12 @@ public class LibraryMetadataTransformation {
                 mElasticsearchPath = tempFile.getPath();
                 tempFile.deleteOnExit();
             }
+            mIsUpdate = mElasticsearchSettings.getAsBoolean("update", false);
         }
         else {
-          mElasticsearchSettings = null;
-          mElasticsearchPath = null;
+            mElasticsearchSettings = null;
+            mElasticsearchPath = null;
+            mIsUpdate = false;
         }
 
         mFormetaPath = outputSettings.get("formeta");
@@ -103,12 +107,17 @@ public class LibraryMetadataTransformation {
         opener.closeStream();
     }
 
-    public void index() throws IOException {
+    public void index() throws IOException, ExecutionException, InterruptedException {
         if (mElasticsearchSettings != null) {
             final ElasticsearchProvider esProvider = new ElasticsearchProvider(mElasticsearchSettings);
 
             try {
-                esProvider.initializeIndex();
+                if (mIsUpdate){
+                    esProvider.checkIndex();
+                } //
+                else{
+                    esProvider.initializeIndex();
+                }
                 esProvider.bulkIndex(mElasticsearchPath);
             }
             finally {
