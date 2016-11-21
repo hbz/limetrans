@@ -3,7 +3,6 @@ package hbz.limetrans;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
-import org.elasticsearch.action.admin.indices.refresh.RefreshRequest;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
@@ -56,7 +55,7 @@ public class ElasticsearchProvider {
                     slurpFile(mElasticsearchSettings.get("index.mapping")))
             .get();
 
-        refreshAllIndices();
+        refreshIndex();
     }
 
     public void bulkIndex(final String aIndexFile) throws IOException {
@@ -69,7 +68,7 @@ public class ElasticsearchProvider {
 
         bulkRequest.execute().actionGet();
 
-        refreshAllIndices();
+        refreshIndex();
     }
 
     public void close() {
@@ -123,8 +122,9 @@ public class ElasticsearchProvider {
         }
     }
 
-    private void refreshAllIndices() {
-        mClient.admin().indices().refresh(new RefreshRequest()).actionGet();
+    private void refreshIndex() {
+        mClient.admin().indices()
+            .prepareRefresh(mElasticsearchSettings.get("index.name")).get();
     }
 
     private String slurpFile(final String aPath) throws IOException {
