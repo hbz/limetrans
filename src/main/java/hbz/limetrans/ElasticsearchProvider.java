@@ -51,11 +51,9 @@ public class ElasticsearchProvider {
         deleteIndex();
 
         mClient.admin().indices().prepareCreate(mElasticsearchSettings.get("index.name"))
-            .setSettings(new String(Files.readAllBytes(Paths.get(
-                                mElasticsearchSettings.get("index.settings")))))
+            .setSettings(slurpFile(mElasticsearchSettings.get("index.settings")))
             .addMapping(mElasticsearchSettings.get("index.type"),
-                    new String(Files.readAllBytes(Paths.get(
-                                mElasticsearchSettings.get("index.mapping")))))
+                    slurpFile(mElasticsearchSettings.get("index.mapping")))
             .get();
 
         refreshAllIndices();
@@ -127,6 +125,10 @@ public class ElasticsearchProvider {
 
     private void refreshAllIndices() {
         mClient.admin().indices().refresh(new RefreshRequest()).actionGet();
+    }
+
+    private String slurpFile(final String aPath) throws IOException {
+        return new String(Files.readAllBytes(Paths.get(aPath)));
     }
 
 }
