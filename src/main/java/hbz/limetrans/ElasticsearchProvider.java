@@ -2,7 +2,6 @@ package hbz.limetrans;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
@@ -66,7 +65,7 @@ public class ElasticsearchProvider {
             readData(bulkRequest, br);
         }
 
-        bulkRequest.execute().actionGet();
+        bulkRequest.get();
 
         refreshIndex();
     }
@@ -79,12 +78,12 @@ public class ElasticsearchProvider {
         final String indexName = mElasticsearchSettings.get("index.name");
 
         mClient.admin().cluster().prepareHealth()
-            .setWaitForYellowStatus().execute().actionGet();
+            .setWaitForYellowStatus().get();
 
         if (mClient.admin().indices()
-                .prepareExists(indexName).execute().actionGet().isExists()) {
+                .prepareExists(indexName).get().isExists()) {
             mClient.admin().indices()
-                .delete(new DeleteIndexRequest(indexName)).actionGet();
+                .prepareDelete(indexName).get();
         }
     }
 
