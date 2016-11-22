@@ -24,7 +24,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Map;
-import java.util.concurrent.ExecutionException;
 
 public class ElasticsearchProvider {
 
@@ -56,7 +55,7 @@ public class ElasticsearchProvider {
         }
     }
 
-    public Map<String, Object> getDocument(String aId) throws ExecutionException, InterruptedException {
+    public Map<String, Object> getDocument(String aId) {
         final GetResponse get = mClient.prepareGet(mIndexName, mIndexType, aId).execute().actionGet();
         if (!get.isExists()){
             return null;
@@ -64,7 +63,7 @@ public class ElasticsearchProvider {
         return get.getSource();
     }
 
-    public void checkIndex() throws ExecutionException, InterruptedException {
+    public void checkIndex() {
         if (!mClient.admin().indices().prepareExists(mIndexName).get().isExists()){
             throw new IndexNotFoundException(mIndexName);
         }

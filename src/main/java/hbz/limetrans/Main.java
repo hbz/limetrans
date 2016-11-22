@@ -6,13 +6,12 @@ import org.xbib.common.settings.Settings;
 import java.io.IOException;
 import java.io.File;
 import java.net.URL;
-import java.util.concurrent.ExecutionException;
 
 public final class Main {
 
     private static final String[] PROTOCOLS = new String[] {"http", "https", "ftp", "file"};
 
-    public static void main(final String[] args) throws IOException, ExecutionException, InterruptedException {
+    public static void main(final String[] args) throws IOException {
         final LibraryMetadataTransformation limetrans =
             new LibraryMetadataTransformation(setup(args));
 

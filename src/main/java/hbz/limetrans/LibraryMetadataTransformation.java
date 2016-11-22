@@ -15,7 +15,6 @@ import org.xbib.common.settings.Settings;
 
 import java.io.IOException;
 import java.io.File;
-import java.util.concurrent.ExecutionException;
 
 public class LibraryMetadataTransformation {
 
@@ -107,7 +106,7 @@ public class LibraryMetadataTransformation {
         opener.closeStream();
     }
 
-    public void index() throws IOException, ExecutionException, InterruptedException {
+    public void index() throws IOException {
         if (mElasticsearchSettings != null) {
             final ElasticsearchProvider esProvider = new ElasticsearchProvider(mElasticsearchSettings);
 

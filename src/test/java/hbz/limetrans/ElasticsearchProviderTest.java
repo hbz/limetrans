@@ -10,7 +10,6 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ExecutionException;
 
 import static org.junit.Assert.assertEquals;
 
@@ -29,7 +28,7 @@ public class ElasticsearchProviderTest {
     }
 
     @Test
-    public void testUpdate() throws IOException, ExecutionException, InterruptedException {
+    public void testUpdate() throws IOException {
         mEsProvider.bulkIndex("./src/test/resources/elasticsearch/update-test-new.jsonl");
         final Map<String, Object> documentNew = mEsProvider.getDocument("3");
         String newValue = ((HashMap<String, Object>)((List<?>) documentNew.get("PersonCreator")).get(0)).get("personBio").toString();
