@@ -7,7 +7,6 @@ import org.xbib.common.settings.Settings;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -26,15 +25,36 @@ public class ElasticsearchProviderTest {
 
     @Test
     public void testUpdate() throws IOException {
+        Map<String, Object> document;
+
         mEsProvider.bulkIndex("./src/test/resources/elasticsearch/update-test-new.jsonl");
-        final Map<String, Object> documentNew = mEsProvider.getDocument("3");
-        String newValue = ((HashMap<String, Object>)((List<?>) documentNew.get("PersonCreator")).get(0)).get("personBio").toString();
-        assertEquals("Error on bulking updated data.", newValue, "1925-");
+        document = mEsProvider.getDocument("3");
+        assertField("Error on bulking new data", "Trollope, Anthony", document, "Person", "personName");
+        assertField("Error on bulking new data", "1925-", document, "PersonCreator", 0, "personBio");
 
         mEsProvider.bulkIndex("./src/test/resources/elasticsearch/update-test-update.jsonl");
-        final Map<String, Object> documentUpdate = mEsProvider.getDocument("3");
-        String updateValue = ((HashMap<String, Object>)((List<?>) documentUpdate.get("PersonCreator")).get(0)).get("personBio").toString();
-        assertEquals("Error on bulking updated data.", updateValue, "1926-");
+        document = mEsProvider.getDocument("3");
+        assertField("Error on bulking updated data", "Trollope, Anthony", document, "Person", "personName");
+        assertField("Error on bulking updated data", "1926-", document, "PersonCreator", 0, "personBio");
+    }
+
+    private void assertField(final String aMsg, final String aExpected,
+            final String aActual, final String... aPath) {
+        assertEquals(aMsg + ": " + String.join(".", aPath), aExpected, aActual);
+    }
+
+    private void assertField(final String aMsg, final String aExpected,
+            final Map<String, Object> document, final String aEntity, final String aField) {
+        final String actual = ((Map<String, String>) document.get(aEntity)).get(aField);
+
+        assertField(aMsg, aExpected, actual, aEntity, aField);
+    }
+
+    private void assertField(final String aMsg, final String aExpected,
+            final Map<String, Object> document, final String aEntity, final int aIndex, final String aField) {
+        final String actual = ((List<Map<String, String>>) document.get(aEntity)).get(aIndex).get(aField);
+
+        assertField(aMsg, aExpected, actual, aEntity, aField);
     }
 
 }
