@@ -2,8 +2,11 @@ package hbz.limetrans;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.elasticsearch.action.ActionFuture;
 import org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsRequest;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
+import org.elasticsearch.action.get.GetRequest;
+import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;
@@ -19,6 +22,7 @@ import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 public class ElasticsearchProvider {
@@ -49,6 +53,15 @@ public class ElasticsearchProvider {
         } catch (UnknownHostException ex) {
             throw new RuntimeException(ex);
         }
+    }
+
+    public Map<String, Object> getDocument(String aId) throws ExecutionException, InterruptedException {
+        final GetRequest getRequest = new GetRequest(mIndexName, mIndexType, aId);
+        final ActionFuture<GetResponse> get = mClient.get(getRequest);
+        if (get == null){
+            return null;
+        }
+        return get.get().getSource();
     }
 
     public void checkIndex() throws ExecutionException, InterruptedException {
