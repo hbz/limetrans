@@ -7,10 +7,12 @@ import org.xbib.common.settings.Settings;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by boeselager on 22.11.16.
@@ -30,10 +32,13 @@ public class ElasticsearchProviderTest {
     public void testUpdate() throws IOException, ExecutionException, InterruptedException {
         mEsProvider.bulkIndex("./src/test/resources/elasticsearch/update-test-new.jsonl");
         final Map<String, Object> documentNew = mEsProvider.getDocument("3");
-        assertTrue("Error on bulking new data.", documentNew.get("PersonCreator").toString().contains("1925-"));
+        String newValue = ((HashMap<String, Object>)((List<?>) documentNew.get("PersonCreator")).get(0)).get("personBio").toString();
+        assertEquals("Error on bulking updated data.", newValue, "1925-");
+
         mEsProvider.bulkIndex("./src/test/resources/elasticsearch/update-test-update.jsonl");
         final Map<String, Object> documentUpdate = mEsProvider.getDocument("3");
-        assertTrue("Error on bulking updated data.", documentUpdate.get("PersonCreator").toString().contains("1926-"));
+        String updateValue = ((HashMap<String, Object>)((List<?>) documentUpdate.get("PersonCreator")).get(0)).get("personBio").toString();
+        assertEquals("Error on bulking updated data.", updateValue, "1926-");
     }
 
 }
