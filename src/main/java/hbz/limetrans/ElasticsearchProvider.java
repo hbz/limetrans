@@ -12,6 +12,7 @@ import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.settings.Settings.Builder;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
+import org.elasticsearch.index.IndexNotFoundException;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -56,17 +57,17 @@ public class ElasticsearchProvider {
     }
 
     public Map<String, Object> getDocument(String aId) throws ExecutionException, InterruptedException {
-        final GetRequest getRequest = new GetRequest(mIndexName, mIndexType, aId);
-        final ActionFuture<GetResponse> get = mClient.get(getRequest);
-        if (get == null){
+        final GetResponse get = mClient.prepareGet(mIndexName, mIndexType, aId).execute().actionGet();
+        if (!get.isExists()){
             return null;
         }
-        return get.get().getSource();
+        return get.getSource();
     }
 
     public void checkIndex() throws ExecutionException, InterruptedException {
-        mClient.admin().indices().exists(new IndicesExistsRequest(mIndexName)).get().isExists();
-        refreshIndex();
+        if (!mClient.admin().indices().prepareExists(mIndexName).get().isExists()){
+            throw new IndexNotFoundException(mIndexName);
+        }
     }
 
     public void initializeIndex() throws IOException {
