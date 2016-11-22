@@ -2,7 +2,6 @@ package hbz.limetrans;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
-
 import org.xbib.common.settings.Settings;
 
 import java.io.File;
@@ -11,7 +10,7 @@ import java.net.URL;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by boeselager on 22.11.16.
@@ -31,10 +30,10 @@ public class ElasticsearchProviderTest {
     public void testUpdate() throws IOException, ExecutionException, InterruptedException {
         mEsProvider.bulkIndex("./src/test/resources/elasticsearch/update-test-new.jsonl");
         final Map<String, Object> documentNew = mEsProvider.getDocument("3");
-        documentNew.get("PersonCreator").toString().contains("1925-");
+        assertTrue("Error on bulking new data.", documentNew.get("PersonCreator").toString().contains("1925-"));
         mEsProvider.bulkIndex("./src/test/resources/elasticsearch/update-test-update.jsonl");
         final Map<String, Object> documentUpdate = mEsProvider.getDocument("3");
-        documentUpdate.get("PersonCreator").toString().contains("1926-");
+        assertTrue("Error on bulking updated data.", documentUpdate.get("PersonCreator").toString().contains("1926-"));
     }
 
 }
