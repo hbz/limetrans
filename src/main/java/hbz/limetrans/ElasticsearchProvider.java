@@ -53,11 +53,8 @@ public class ElasticsearchProvider {
     }
 
     public Map<String, Object> getDocument(String aId) {
-        final GetResponse get = mClient.prepareGet(mIndexName, mIndexType, aId).execute().actionGet();
-        if (!get.isExists()){
-            return null;
-        }
-        return get.getSource();
+        final GetResponse response = mClient.prepareGet(mIndexName, mIndexType, aId).get();
+        return response.getSource();
     }
 
     public void checkIndex() {
