@@ -13,9 +13,6 @@ import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by boeselager on 22.11.16.
- */
 public class ElasticsearchProviderTest {
 
     private static ElasticsearchProvider mEsProvider;

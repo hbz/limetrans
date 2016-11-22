@@ -9,9 +9,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.nio.charset.Charset;
 
-/**
- * Created by boeselager on 22.11.16.
- */
 public class Helpers {
 
     public static Settings getSettingsFromUrl(final URL aUrl) throws IOException {

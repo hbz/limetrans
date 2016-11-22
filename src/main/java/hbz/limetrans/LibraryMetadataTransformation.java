@@ -42,6 +42,7 @@ public class LibraryMetadataTransformation {
                 mElasticsearchPath = tempFile.getPath();
                 tempFile.deleteOnExit();
             }
+
             mIsUpdate = mElasticsearchSettings.getAsBoolean("update", false);
         }
         else {
@@ -111,12 +112,13 @@ public class LibraryMetadataTransformation {
             final ElasticsearchProvider esProvider = new ElasticsearchProvider(mElasticsearchSettings);
 
             try {
-                if (mIsUpdate){
+                if (mIsUpdate) {
                     esProvider.checkIndex();
-                } //
-                else{
+                }
+                else {
                     esProvider.initializeIndex();
                 }
+
                 esProvider.bulkIndex(mElasticsearchPath);
             }
             finally {

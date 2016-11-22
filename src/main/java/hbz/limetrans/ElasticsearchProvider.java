@@ -64,7 +64,7 @@ public class ElasticsearchProvider {
     }
 
     public void checkIndex() {
-        if (!mClient.admin().indices().prepareExists(mIndexName).get().isExists()){
+        if (!mClient.admin().indices().prepareExists(mIndexName).get().isExists()) {
             throw new IndexNotFoundException(mIndexName);
         }
     }

@@ -1,8 +1,6 @@
 {
   "cluster": "elasticsearch-01",
-  "host": [
-    "localhost:9300"
-  ],
+  "host": ["localhost:9300"],
   "index": {
     "name": "testindex-update",
     "type": "titel",
