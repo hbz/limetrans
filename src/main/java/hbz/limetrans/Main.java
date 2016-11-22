@@ -1,16 +1,11 @@
 package hbz.limetrans;
 
-import org.apache.commons.io.IOUtils;
 import org.apache.commons.validator.routines.UrlValidator;
 import org.xbib.common.settings.Settings;
-import org.xbib.common.settings.loader.SettingsLoader;
-import org.xbib.common.settings.loader.SettingsLoaderFactory;
 
 import java.io.IOException;
 import java.io.File;
 import java.net.URL;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import java.util.concurrent.ExecutionException;
 
 public final class Main {
@@ -54,18 +49,7 @@ public final class Main {
             }
         }
 
-        return getSettings(configUrl);
-    }
-
-    private static Settings getSettings(final URL aUrl) throws IOException {
-        final SettingsLoader settingsLoader = SettingsLoaderFactory.loaderFromResource(aUrl.toString());
-
-        final Settings settings = Settings.settingsBuilder()
-                .put(settingsLoader.load(IOUtils.toString(aUrl, Charset.defaultCharset())))
-                .replacePropertyPlaceholders()
-                .build();
-
-        return settings;
+        return Helpers.getSettingsFromUrl(configUrl);
     }
 
 }
