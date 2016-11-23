@@ -4,4 +4,4 @@ import org.junit.runner.RunWith;
 
 @RunWith(MetamorphTestSuite.class)
 @TestDefinitions({"transformation/DE-836.xml"})
-public final class FieldUnitTest {}
+public final class TransformationTest {}
