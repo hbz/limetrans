@@ -1,0 +1,42 @@
+'' {
+	'id': '1',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '1'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'Description' {
+		'description[]' {
+			'': 'Shipping list no.: 91-620-P.'
+		}
+	}
+}
+'' {
+	'id': '2',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '2'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'Description' {
+		'description[]' {
+			'': 'Shipping list no.: 91-620-P.',
+			'': '"3-12-91"--P. i.',
+			'': 'Includes index.'
+		}
+	}
+}

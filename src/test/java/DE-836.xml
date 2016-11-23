@@ -38,4 +38,28 @@
     <result src="&base;/Language.formeta" />
   </test-case>
 
+  <test-case name="Extent">
+    <input src="&base;/Extent.xml" />
+    <transformation />
+    <result src="&base;/Extent.formeta" />
+  </test-case>
+
+  <test-case name="Title-statment-of-resp">
+    <input src="&base;/Title-statment-of-resp.xml" />
+    <transformation />
+    <result src="&base;/Title-statment-of-resp.formeta" />
+  </test-case>
+
+  <test-case name="Edition">
+    <input src="&base;/Edition.xml" />
+    <transformation />
+    <result src="&base;/Edition.formeta" />
+  </test-case>
+
+  <test-case name="Description">
+    <input src="&base;/Description.xml" />
+    <transformation />
+    <result src="&base;/Description.formeta" />
+  </test-case>
+
 </metamorph-test>

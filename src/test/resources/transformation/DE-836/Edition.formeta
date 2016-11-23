@@ -1,0 +1,41 @@
+'' {
+	'id': '1',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '1'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'Edition' {
+		'edition[]' {
+			'': '1st ed.'
+		}
+	}
+}
+'' {
+	'id': '2',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '2'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'Edition' {
+		'edition[]' {
+			'': '1st ed.',
+			'': '2nd ed.'
+		}
+	}
+}

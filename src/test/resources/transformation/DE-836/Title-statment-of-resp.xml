@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">1 </controlfield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Deviant bodies :</subfield>
+      <subfield code="b">critical perspectives on difference in science and popular culture /</subfield>
+      <subfield code="c">edited by Jennifer Terry and Jacqueline Urla.</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">2 </controlfield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Deviant bodies :</subfield>
+      <subfield code="b">critical perspectives on difference in science and popular culture.</subfield>
+    </datafield>
+  </record>  
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">3 </controlfield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Deviant bodies /</subfield>
+      <subfield code="c">edited by Jennifer Terry and Jacqueline Urla.</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">4 </controlfield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Deviant bodies.</subfield>
+    </datafield>
+  </record>
+</collection>
