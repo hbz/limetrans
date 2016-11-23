@@ -53,7 +53,11 @@
     </data>
   </entity>
   <entity name="Edition">
-    <data name="edition" source="250  .a" />
+    <entity name="edition[]" flushWith="record">
+	  <data name="" source="250  .a">
+	    <regexp match="^(.*?) ?[=/]?$" format="${1}" />
+	  </data>
+	</entity>
   </entity>
 
   <entity name="PublicationPlace">
@@ -70,10 +74,13 @@
 
   <!-- 300 -->
   <data name="@300a" source="300  .a">
-    <regexp match="^(.*?) ?[:;]?$" format="${1}" />
+    <regexp match="^(.*?) ?[:;+]?$" format="${1}" />
   </data>
   <data name="@300b" source="300  .b">
-    <regexp match="^(.*?) ?[:;]?$" format="${1}" />
+    <regexp match="^(.*?) ?[:;+]?$" format="${1}" />
+  </data>
+  <data name="@300c" source="300  .c">
+    <regexp match="^(.*?) ?[+]?$" format="${1}" />
   </data>
 
   <combine name="@300b_punct" value=" : ${b1}">
@@ -88,14 +95,23 @@
   <combine name="@300c_punct" value=" ; ${c1}">
     <if>
       <all>
-        <data source="300  .c" />
+        <data source="@300c" />
         <data source="300  .a|300  .b" />
       </all>
     </if>
-    <data name="c1" source="300  .c" />
+    <data name="c1" source="@300c" />
+  </combine>
+  <combine name="@300e_punct" value=" + ${e1}">
+    <if>
+      <all>
+        <data source="300  .e" />
+        <data source="300  .a|300  .b|300  .c" />
+      </all>
+    </if>
+    <data name="e1" source="300  .e" />
   </combine>
   <entity name="Extent">
-    <combine name="extent" value="${a}${b}${c}">
+    <combine name="extent" value="${a}${b}${c}${e}">
       <choose name="a">
         <data source="@300a" />
         <data source="300*">
@@ -111,7 +127,14 @@
       </choose>
       <choose name="c">
         <data source="@300c_punct" />
-        <data source="300  .c" />
+        <data source="@300c" />
+        <data source="300*">
+          <constant value="" />
+        </data>
+      </choose>
+      <choose name="e">
+        <data source="@300e_punct" />
+        <data source="300  .e" />
         <data source="300*">
           <constant value="" />
         </data>

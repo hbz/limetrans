@@ -8,7 +8,9 @@
 			'': 'keine Angabe'
 		},
 		'language': 'keine Angabe',
-		'date': 'keine Angabe'
+		'date[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -31,7 +33,9 @@
 			'': 'keine Angabe'
 		},
 		'language': 'keine Angabe',
-		'date': 'keine Angabe'
+		'date[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -58,7 +62,9 @@
 			'': 'keine Angabe'
 		},
 		'language': 'keine Angabe',
-		'date': 'keine Angabe'
+		'date[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'IdentifierISBNParallel' {
 		'identifierISBN[]' {

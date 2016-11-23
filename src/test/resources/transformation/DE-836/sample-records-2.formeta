@@ -10,9 +10,6 @@
 	'TitleStatement' {
 		'titleMain': 'U.S. courts design guide'
 	},
-	'Edition' {
-		'edition': '[3rd ed.].'
-	},
 	'PublisherName' {
 		'name': 'Administrative Office of the U.S. Courts, Space and Facilities Division'
 	},
@@ -21,10 +18,17 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '1991',
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'date[]' {
+			'': '1991'
+		}
+	},
+	'Edition' {
+		'edition[]' {
+			'': '[3rd ed.].'
+		}
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {
@@ -57,9 +61,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'Janet Kauffman'
 	},
-	'Edition' {
-		'edition': '1st ed.'
-	},
 	'PublisherName' {
 		'name': 'New Issues/Western Michigan University'
 	},
@@ -68,10 +69,12 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '2001',
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'date[]' {
+			'': '2001'
+		}
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -81,6 +84,11 @@
 	},
 	'Person' {
 		'personName': 'Kauffman, Janet'
+	},
+	'Edition' {
+		'edition[]' {
+			'': '1st ed.'
+		}
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {
@@ -119,9 +127,11 @@
 	},
 	'dc' {
 		'language': 'Deutsch',
-		'date': '2006',
 		'format[]' {
 			'': 'Landkarte'
+		},
+		'date[]' {
+			'': '2006'
 		}
 	},
 	'IdentifierISBN' {
@@ -172,7 +182,9 @@
 		'format[]' {
 			'': 'keine Angabe'
 		},
-		'date': 'keine Angabe'
+		'date[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {
@@ -201,9 +213,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'Jesus Castagnetto ...'
 	},
-	'Edition' {
-		'edition': 'Repr.'
-	},
 	'PublisherName' {
 		'name': 'Wrox Press'
 	},
@@ -212,15 +221,22 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '2000',
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'date[]' {
+			'': '2000'
+		}
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
 			'': '1861002963',
 			'': '9781861002969'
+		}
+	},
+	'Edition' {
+		'edition[]' {
+			'': 'Repr.'
 		}
 	},
 	'PublicationPlace' {
@@ -264,10 +280,12 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '2004',
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'date[]' {
+			'': '2004'
+		}
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -311,9 +329,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'by Dave Thomas and Michael Seid'
 	},
-	'Edition' {
-		'edition': '2nd ed.'
-	},
 	'PublisherName' {
 		'name': 'Wiley'
 	},
@@ -322,10 +337,12 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '2006',
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'date[]' {
+			'': '2006'
+		}
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -335,6 +352,11 @@
 	},
 	'Person' {
 		'personName': 'Thomas, Dave'
+	},
+	'Edition' {
+		'edition[]' {
+			'': '2nd ed.'
+		}
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {
@@ -379,9 +401,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'by Jean-Michel Claverie and Cedric Notredame'
 	},
-	'Edition' {
-		'edition': '2nd ed.'
-	},
 	'PublisherName' {
 		'name': 'Wiley'
 	},
@@ -390,10 +409,12 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '2007',
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'date[]' {
+			'': '2007'
+		}
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -403,6 +424,11 @@
 	},
 	'Person' {
 		'personName': 'Claverie, Jean-Michel'
+	},
+	'Edition' {
+		'edition[]' {
+			'': '2nd ed.'
+		}
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {
@@ -442,7 +468,9 @@
 		'format[]' {
 			'': 'Gedruckte Ressource'
 		},
-		'date': 'keine Angabe'
+		'date[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'Description' {
 		'description[]' {
@@ -479,10 +507,12 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '2012',
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'date[]' {
+			'': '2012'
+		}
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {

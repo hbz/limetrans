@@ -21,11 +21,13 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '1993',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
+		},
+		date[]' {
+			'': '1993'
 		}
 	},
 	'IdentifierISBN' {

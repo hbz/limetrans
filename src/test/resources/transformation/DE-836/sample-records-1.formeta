@@ -18,11 +18,13 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '1960',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
+		},
+		'date[]' {
+			'': '1960'
 		}
 	},
 	'PublicationPlace' {
@@ -64,7 +66,9 @@
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
 		},
-		'date': 'keine Angabe'
+		'date[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'OnlineAccess' {
 		'uri[]' {
@@ -99,11 +103,13 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '199-?',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
+		},
+		'date[]' {
+			'': '199-?'
 		}
 	},
 	'IdentifierISBN' {
@@ -156,11 +162,13 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '1999',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
+		},
+		'date[]' {
+			'': '1999'
 		}
 	},
 	'IdentifierISBN' {
@@ -214,11 +222,13 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '199-?',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
+		},
+		'date[]' {
+			'': '199-?'
 		}
 	},
 	'IdentifierISBN' {
@@ -268,11 +278,13 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '199-?',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
+		},
+		'date[]' {
+			'': '199-?'
 		}
 	},
 	'IdentifierISBN' {
@@ -314,9 +326,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'edited by Alison M. Jaggar and Iris Marion Young'
 	},
-	'Edition' {
-		'edition': '[1st pbk. ed., 2000].'
-	},
 	'PublisherName' {
 		'name': 'Blackwell'
 	},
@@ -329,11 +338,13 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '2000',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
+		},
+		'date[]' {
+			'': '2000'
 		}
 	},
 	'IdentifierISBN' {
@@ -342,6 +353,11 @@
 			'': '9780631227649',
 			'': '9781405164498',
 			'': '1405164492'
+		}
+	},
+	'Edition' {
+		'edition[]' {
+			'': '[1st pbk. ed., 2000].'
 		}
 	},
 	'PublicationPlace' {
@@ -395,7 +411,9 @@
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
 		},
-		'date': 'keine Angabe'
+		'date[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {
@@ -436,11 +454,13 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '199-?',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
+		},
+		'date[]' {
+			'': '199-?'
 		}
 	},
 	'IdentifierISBN' {
@@ -500,11 +520,13 @@
 	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '199-?',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
+		},
+		'date[]' {
+			'': '199-?'
 		}
 	},
 	'IdentifierISBN' {
