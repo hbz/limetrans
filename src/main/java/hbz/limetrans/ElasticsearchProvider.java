@@ -2,12 +2,13 @@ package hbz.limetrans;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsResponse;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
-import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.settings.Settings.Builder;
+import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.elasticsearch.index.IndexNotFoundException;
 
@@ -101,10 +102,10 @@ public class ElasticsearchProvider {
     }
 
     private boolean indexIsExists() {
-        final GetResponse response = mClient.admin().indices()
+        final IndicesExistsResponse response = mClient.admin().indices()
             .prepareExists(mIndexName).get();
 
-        return response == null ? null : response.isExists();
+        return response != null && response.isExists();
     }
 
     private void readData(final BulkRequestBuilder aBulkRequest,
