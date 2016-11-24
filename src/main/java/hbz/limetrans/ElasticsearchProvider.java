@@ -54,11 +54,11 @@ public class ElasticsearchProvider {
 
     public Map<String, Object> getDocument(String aId) {
         final GetResponse response = mClient.prepareGet(mIndexName, mIndexType, aId).get();
-        return response.getSource();
+        return response == null ? null : response.getSource();
     }
 
     public void checkIndex() {
-        if (!mClient.admin().indices().prepareExists(mIndexName).get().isExists()) {
+        if (!indexIsExists()) {
             throw new IndexNotFoundException(mIndexName);
         }
     }
@@ -95,11 +95,16 @@ public class ElasticsearchProvider {
         mClient.admin().cluster().prepareHealth()
             .setWaitForYellowStatus().get();
 
-        if (mClient.admin().indices()
-                .prepareExists(mIndexName).get().isExists()) {
-            mClient.admin().indices()
-                .prepareDelete(mIndexName).get();
+        if (indexIsExists()) {
+            mClient.admin().indices().prepareDelete(mIndexName).get();
         }
+    }
+
+    private boolean indexIsExists() {
+        final GetResponse response = mClient.admin().indices()
+            .prepareExists(mIndexName).get();
+
+        return response == null ? null : response.isExists();
     }
 
     private void readData(final BulkRequestBuilder aBulkRequest,
