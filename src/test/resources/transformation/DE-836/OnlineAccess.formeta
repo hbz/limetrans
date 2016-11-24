@@ -1,0 +1,62 @@
+'' {
+	'id': '1',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '1'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'OnlineAccess' {
+		'uri[]' {
+			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795'
+		}
+	}
+}
+'' {
+	'id': '2',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '2'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'OnlineAccess' {
+		'uri[]' {
+			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795',
+			'': 'http://cognet.mit.edu/library/books/view?isbn=0262220466'
+		}
+	}
+}
+'' {
+	'id': '3',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '3'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'OnlineAccess' {
+		'uri[]' {
+			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795',
+			'': 'http://cognet.mit.edu/library/books/view?isbn=0262220466'
+		}
+	}
+}

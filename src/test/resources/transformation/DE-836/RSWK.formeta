@@ -1,0 +1,91 @@
+'' {
+	'id': '1',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '1'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': 'keine Angabe'
+		}
+	}
+}
+'' {
+	'id': '2',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '2'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectTopicName': 'Volkstheater',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4130623-5'
+			}
+		}
+	}
+}
+'' {
+	'id': '3',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '3'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectTopicName': 'Volkstheater',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4130623-5'
+			}
+		},
+		'' {
+			'subjectTopicName': 'Massenkultur',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4125858-7'
+			}
+		}
+	}
+}
+'' {
+	'id': '4',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '4'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectTopicName': 'Volkstheater',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4130623-5',
+				'': '(DE-588)4125858-8'
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">1 </controlfield>
+    <datafield tag="856" ind1="4" ind2="0">
+      <subfield code="3">EBSCOhost</subfield>
+      <subfield code="u">http://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=1795</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">2 </controlfield>
+    <datafield tag="856" ind1="4" ind2="0">
+      <subfield code="3">EBSCOhost</subfield>
+      <subfield code="u">http://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=1795</subfield>
+      <subfield code="u">http://cognet.mit.edu/library/books/view?isbn=0262220466</subfield>
+      <subfield code="z">Full text available from MIT CogNet</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">3 </controlfield>
+    <datafield tag="856" ind1="4" ind2="2">
+      <subfield code="3">EBSCOhost</subfield>
+      <subfield code="u">http://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=1795</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="2">
+      <subfield code="u">http://cognet.mit.edu/library/books/view?isbn=0262220466</subfield>
+      <subfield code="z">Full text available from MIT CogNet</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2=" ">
+      <subfield code="u">http://cognet.mit.edu/library/books/view?isbn=0262220466</subfield>
+    </datafield>
+  </record>
+</collection>
