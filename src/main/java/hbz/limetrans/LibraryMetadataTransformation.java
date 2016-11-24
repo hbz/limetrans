@@ -23,6 +23,7 @@ public class LibraryMetadataTransformation {
     private final String mInputPath;
     private final String mJsonPath;
     private final String mRulesPath;
+    private final boolean mIsUpdate;
 
     private String mElasticsearchPath;
 
@@ -41,10 +42,13 @@ public class LibraryMetadataTransformation {
                 mElasticsearchPath = tempFile.getPath();
                 tempFile.deleteOnExit();
             }
+
+            mIsUpdate = mElasticsearchSettings.getAsBoolean("update", false);
         }
         else {
-          mElasticsearchSettings = null;
-          mElasticsearchPath = null;
+            mElasticsearchSettings = null;
+            mElasticsearchPath = null;
+            mIsUpdate = false;
         }
 
         mFormetaPath = outputSettings.get("formeta");
@@ -108,7 +112,13 @@ public class LibraryMetadataTransformation {
             final ElasticsearchProvider esProvider = new ElasticsearchProvider(mElasticsearchSettings);
 
             try {
-                esProvider.initializeIndex();
+                if (mIsUpdate) {
+                    esProvider.checkIndex();
+                }
+                else {
+                    esProvider.initializeIndex();
+                }
+
                 esProvider.bulkIndex(mElasticsearchPath);
             }
             finally {

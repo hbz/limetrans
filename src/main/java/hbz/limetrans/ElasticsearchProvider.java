@@ -2,12 +2,15 @@ package hbz.limetrans;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsResponse;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
+import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
-import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.settings.Settings.Builder;
+import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
+import org.elasticsearch.index.IndexNotFoundException;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -18,6 +21,7 @@ import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Map;
 
 public class ElasticsearchProvider {
 
@@ -46,6 +50,17 @@ public class ElasticsearchProvider {
                 new InetSocketTransportAddress(InetAddress.getByName(serverName), serverPort));
         } catch (UnknownHostException ex) {
             throw new RuntimeException(ex);
+        }
+    }
+
+    public Map<String, Object> getDocument(String aId) {
+        final GetResponse response = mClient.prepareGet(mIndexName, mIndexType, aId).get();
+        return response == null ? null : response.getSource();
+    }
+
+    public void checkIndex() {
+        if (!indexIsExists()) {
+            throw new IndexNotFoundException(mIndexName);
         }
     }
 
@@ -81,11 +96,16 @@ public class ElasticsearchProvider {
         mClient.admin().cluster().prepareHealth()
             .setWaitForYellowStatus().get();
 
-        if (mClient.admin().indices()
-                .prepareExists(mIndexName).get().isExists()) {
-            mClient.admin().indices()
-                .prepareDelete(mIndexName).get();
+        if (indexIsExists()) {
+            mClient.admin().indices().prepareDelete(mIndexName).get();
         }
+    }
+
+    private boolean indexIsExists() {
+        final IndicesExistsResponse response = mClient.admin().indices()
+            .prepareExists(mIndexName).get();
+
+        return response != null && response.isExists();
     }
 
     private void readData(final BulkRequestBuilder aBulkRequest,
