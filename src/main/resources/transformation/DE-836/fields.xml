@@ -54,33 +54,37 @@
   </entity>
   <entity name="Edition">
     <entity name="edition[]" flushWith="record">
-	  <data name="" source="250  .a">
-	    <regexp match="^(.*?) ?[=/]?$" format="${1}" />
-	  </data>
-	</entity>
+      <data name="" source="250  .a">
+        <replace pattern="\s?[=/]$" with="" />
+      </data>
+    </entity>
   </entity>
 
   <entity name="PublicationPlace">
     <entity name="printingPlace[]" flushWith="record">
-      <call-macro name="regex-del-punctuation-end" dsource="260  .a|2603 .a" dname="" />
+      <call-macro name="regex-del-punctuation-end" dsource="260[ 23] .a" dname="" />
     </entity>
   </entity>
   <entity name="PublisherName">
-    <call-macro name="regex-del-punctuation-end" dsource="260  .b|2603 .b" dname="name" />
+    <entity name="name[]" flushWith="record">
+      <call-macro name="regex-del-punctuation-end" dsource="260[ 23] .b" dname="" />
+    </entity>
   </entity>
   <entity name="DateProper">
-    <call-macro name="regex-del-punctuation-end" dsource="260  .c|2603 .c" dname="date" />
+    <entity name="date[]" flushWith="record">
+      <call-macro name="regex-del-punctuation-end" dsource="260[ 23] .c" dname="" />
+    </entity>
   </entity>
 
   <!-- 300 -->
   <data name="@300a" source="300  .a">
-    <regexp match="^(.*?) ?[:;+]?$" format="${1}" />
+    <replace pattern="\s?[:;+]?$" with="" />
   </data>
   <data name="@300b" source="300  .b">
-    <regexp match="^(.*?) ?[:;+]?$" format="${1}" />
+    <replace pattern="\s?[:;+]?$" with="" />
   </data>
   <data name="@300c" source="300  .c">
-    <regexp match="^(.*?) ?[+]?$" format="${1}" />
+    <replace pattern="\s?[+]?$" with="" />
   </data>
 
   <combine name="@300b_punct" value=" : ${b1}">
@@ -155,27 +159,23 @@
   </entity>
 
   <!-- 6xx -->
-  <entity name="RSWK" sameEntity="true">
-    <combine name="subjectTopicName" value="${a}">
+  <entity name="RSWK[]" flushWith="record">
+    <entity name="" flushWith="650??" sameEntity="true">
       <if>
-        <data source="650??.2">
-          <equals string="gnd" />
-        </data>
+        <all flushWith="650??" sameEntity="true">
+          <data source="650??.2">
+            <equals string="gnd" />
+          </data>
+        </all>
       </if>
-      <data name="a" source="650??.a">
-        <regexp match="^(.*?).?$" format="${1}" />
+      <data name="subjectTopicName" source="650??.a">
+        <replace pattern="\.?$" with="" />
       </data>
-    </combine>
-    <combine name="subjectIdentifier" value="${sf0}">
-      <if>
-        <data source="650??.2">
-          <equals string="gnd" />
-        </data>
-      </if>
-      <data name="sf0" source="650??.0" />
-    </combine>
+      <entity name="subjectIdentifier[]" flushWith="650??" sameEntity="true">
+        <data name="" source="650??.0" />
+      </entity>
+    </entity>
   </entity>
-
   <!-- 7xx -->
   <entity name="PersonCreator[]" flushWith="record">
     <entity name="" flushWith="7001 " sameEntity="true">

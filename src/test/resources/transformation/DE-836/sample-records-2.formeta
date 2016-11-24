@@ -10,12 +10,6 @@
 	'TitleStatement' {
 		'titleMain': 'U.S. courts design guide'
 	},
-	'PublisherName' {
-		'name': 'Administrative Office of the U.S. Courts, Space and Facilities Division'
-	},
-	'DateProper' {
-		'date': '[1991-'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -35,6 +29,16 @@
 			'': 'Washington, D.C.'
 		}
 	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Administrative Office of the U.S. Courts, Space and Facilities Division'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '[1991-'
+		}
+	}
 	'Extent' {
 		'extent': '1 v. (loose-leaf) : ill. ; 30 cm.'
 	},
@@ -60,12 +64,6 @@
 	},
 	'CreatorStatement' {
 		'creatorStatement': 'Janet Kauffman'
-	},
-	'PublisherName' {
-		'name': 'New Issues/Western Michigan University'
-	},
-	'DateProper' {
-		'date': '2001'
 	},
 	'dc' {
 		'language': 'Englisch',
@@ -95,6 +93,16 @@
 			'': 'Kalamazoo, MI'
 		}
 	},
+	'PublisherName' {
+		'name[]' {
+			'': 'New Issues/Western Michigan University'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '2001'
+		}
+	},
 	'Extent' {
 		'extent': '89 pages : illustrations ; 20 cm.'
 	},
@@ -119,12 +127,6 @@
 	'TitleAddendum' {
 		'title': 'die schönsten Motorradziele'
 	},
-	'PublisherName' {
-		'name': 'Publicpress'
-	},
-	'DateProper' {
-		'date': '2006, [2006]'
-	},
 	'dc' {
 		'language': 'Deutsch',
 		'format[]' {
@@ -143,6 +145,16 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Geseke'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Publicpress'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '2006, [2006]'
 		}
 	},
 	'Extent' {
@@ -174,9 +186,6 @@
 	'TitleAddendum' {
 		'title': 'a publication of the American Society for Nutrition, Inc'
 	},
-	'PublisherName' {
-		'name': 'ASN'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -189,6 +198,11 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Bethesda, Md.'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'ASN'
 		}
 	},
 	'Description' {
@@ -212,12 +226,6 @@
 	},
 	'CreatorStatement' {
 		'creatorStatement': 'Jesus Castagnetto ...'
-	},
-	'PublisherName' {
-		'name': 'Wrox Press'
-	},
-	'DateProper' {
-		'date': '2000'
 	},
 	'dc' {
 		'language': 'Englisch',
@@ -244,6 +252,16 @@
 			'': 'Birmingham'
 		}
 	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Wrox Press'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '2000'
+		}
+	},
 	'Extent' {
 		'extent': 'XXI, 909 S : Ill., graph. Darst.'
 	},
@@ -268,16 +286,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'Dave W. Mercer ..'
 	},
-	'PublisherName' {
-		'name': 'Wiley'
-	},
-	'DateProper' {
-		'date': '2004'
-	},
-	'RSWK' {
-		'subjectTopicName': 'PHP 5.0',
-		'subjectIdentifier': '(DE-588)4763174-0'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -298,8 +306,26 @@
 			'': 'Indianapolis, Ind.'
 		}
 	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Wiley'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '2004'
+		}
+	},
 	'Extent' {
 		'extent': 'XXVII, 859 S : ill., graph. Darst ; 24 cm.'
+	},
+	'RSWK[]' {
+		'' {
+			'subjectTopicName': 'PHP 5.0',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4763174-0'
+			}
+		}
 	},
 	'PersonCreator[]' {
 		'' {
@@ -329,12 +355,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'by Dave Thomas and Michael Seid'
 	},
-	'PublisherName' {
-		'name': 'Wiley'
-	},
-	'DateProper' {
-		'date': '2006'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -361,6 +381,16 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Hoboken, N.J.'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Wiley'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '2006'
 		}
 	},
 	'Extent' {
@@ -401,12 +431,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'by Jean-Michel Claverie and Cedric Notredame'
 	},
-	'PublisherName' {
-		'name': 'Wiley'
-	},
-	'DateProper' {
-		'date': 'c 2007'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -433,6 +457,16 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Hoboken, NJ'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Wiley'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': 'c 2007'
 		}
 	},
 	'Extent' {
@@ -499,12 +533,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'Katherine Murray'
 	},
-	'PublisherName' {
-		'name': 'Que'
-	},
-	'DateProper' {
-		'date': '[2012]'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -527,6 +555,16 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Indianapolis, Indiana'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Que'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '[2012]'
 		}
 	},
 	'Extent' {

@@ -10,12 +10,6 @@
 	'TitleStatement' {
 		'titleMain': 'International journal of heat and mass transfer'
 	},
-	'PublisherName' {
-		'name': 'Pergamon Press'
-	},
-	'DateProper' {
-		'date': '1960-'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -31,6 +25,16 @@
 		'printingPlace[]' {
 			'': 'Oxford',
 			'': 'New York'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Pergamon Press'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '1960-'
 		}
 	},
 	'Description' {
@@ -95,12 +99,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'by L. Frank Baum'
 	},
-	'PublisherName' {
-		'name': 'Project Gutenberg'
-	},
-	'DateProper' {
-		'date': '[199-?]'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -109,7 +107,7 @@
 			'': 'Sonstiges'
 		},
 		'date[]' {
-			'': '199-?'
+			'': 'keine Angabe'
 		}
 	},
 	'IdentifierISBN' {
@@ -125,6 +123,16 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Champaign, Ill.'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Project Gutenberg'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '[199-?]'
 		}
 	},
 	'Extent' {
@@ -154,12 +162,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'Eliza Burt Gamble'
 	},
-	'PublisherName' {
-		'name': 'Project Gutenberg'
-	},
-	'DateProper' {
-		'date': '1999'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -183,6 +185,16 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Champaign, Ill.'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Project Gutenberg'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '1999'
 		}
 	},
 	'Extent' {
@@ -214,12 +226,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'William McGuffey'
 	},
-	'PublisherName' {
-		'name': 'Project Gutenberg'
-	},
-	'DateProper' {
-		'date': '[199-?]'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -228,7 +234,7 @@
 			'': 'Sonstiges'
 		},
 		'date[]' {
-			'': '199-?'
+			'': 'keine Angabe'
 		}
 	},
 	'IdentifierISBN' {
@@ -244,6 +250,16 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Champaign, Ill.'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Project Gutenberg'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '[199-?]'
 		}
 	},
 	'Extent' {
@@ -270,12 +286,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'by Henry Fielding'
 	},
-	'PublisherName' {
-		'name': 'Project Gutenberg'
-	},
-	'DateProper' {
-		'date': '[199-?]'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -284,7 +294,7 @@
 			'': 'Sonstiges'
 		},
 		'date[]' {
-			'': '199-?'
+			'': 'keine Angabe'
 		}
 	},
 	'IdentifierISBN' {
@@ -300,6 +310,16 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Champaign, Ill.'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Project Gutenberg'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '[199-?]'
 		}
 	},
 	'Extent' {
@@ -326,12 +346,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'edited by Alison M. Jaggar and Iris Marion Young'
 	},
-	'PublisherName' {
-		'name': 'Blackwell'
-	},
-	'DateProper' {
-		'date': '2000, 1998'
-	},
 	'SeriesAddedEntryUniformTitle' {
 		'title': 'Blackwell companions to philosophy',
 		'volume': '13'
@@ -344,7 +358,8 @@
 			'': 'Sonstiges'
 		},
 		'date[]' {
-			'': '2000'
+			'': '2000',
+			'': '1998'
 		}
 	},
 	'IdentifierISBN' {
@@ -363,6 +378,16 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Malden, Mass.'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Blackwell'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '2000, 1998'
 		}
 	},
 	'Extent' {
@@ -401,9 +426,6 @@
 	'TitleStatement' {
 		'titleMain': 'Nuclear law bulletin'
 	},
-	'PublisherName' {
-		'name': 'Organisation for Economic Co-Operation and Development'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -418,6 +440,11 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Paris'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Organisation for Economic Co-Operation and Development'
 		}
 	},
 	'OnlineAccess' {
@@ -446,12 +473,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'author unknown ; translation by W.G. Collingwood & J. Stefansson (Ulverston, 1901)'
 	},
-	'PublisherName' {
-		'name': 'Project Gutenberg'
-	},
-	'DateProper' {
-		'date': '[199-?]'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -460,7 +481,7 @@
 			'': 'Sonstiges'
 		},
 		'date[]' {
-			'': '199-?'
+			'': 'keine Angabe'
 		}
 	},
 	'IdentifierISBN' {
@@ -472,6 +493,16 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Champaign, Ill.'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Project Gutenberg'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '[199-?]'
 		}
 	},
 	'Extent' {
@@ -512,12 +543,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'by Rudyard Kipling'
 	},
-	'PublisherName' {
-		'name': 'Project Gutenberg'
-	},
-	'DateProper' {
-		'date': '[199-?]'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -526,7 +551,7 @@
 			'': 'Sonstiges'
 		},
 		'date[]' {
-			'': '199-?'
+			'': 'keine Angabe'
 		}
 	},
 	'IdentifierISBN' {
@@ -542,6 +567,16 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Champaign, Ill.'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Project Gutenberg'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '[199-?]'
 		}
 	},
 	'Extent' {
