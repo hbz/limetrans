@@ -62,4 +62,22 @@
     <result src="&base;/Description.formeta" />
   </test-case>
 
+  <test-case name="Publishingname-place-date">
+    <input src="&base;/Publishingname-place-date.xml" />
+    <transformation />
+    <result src="&base;/Publishingname-place-date.formeta" />
+  </test-case>
+
+  <test-case name="OnlineAccess">
+    <input src="&base;/OnlineAccess.xml" />
+    <transformation />
+    <result src="&base;/OnlineAccess.formeta" />
+  </test-case>
+
+  <test-case name="RSWK">
+    <input src="&base;/RSWK.xml" />
+    <transformation />
+    <result src="&base;/RSWK.formeta" />
+  </test-case>
+  
 </metamorph-test>
