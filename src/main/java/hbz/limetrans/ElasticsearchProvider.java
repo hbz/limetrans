@@ -6,6 +6,7 @@ import org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsRespon
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.action.bulk.BulkResponse;
 import org.elasticsearch.action.get.GetResponse;
+import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings.Builder;
@@ -57,6 +58,11 @@ public class ElasticsearchProvider {
     public Map<String, Object> getDocument(String aId) {
         final GetResponse response = mClient.prepareGet(mIndexName, mIndexType, aId).get();
         return response == null ? null : response.getSource();
+    }
+
+    public long getCount() {
+        final SearchResponse response = mClient.prepareSearch(mIndexName).setSize(0).get();
+        return response == null ? null : response.getHits().getTotalHits();
     }
 
     public void checkIndex() {
