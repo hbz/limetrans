@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsResponse;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
+import org.elasticsearch.action.bulk.BulkResponse;
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
@@ -83,7 +84,11 @@ public class ElasticsearchProvider {
             readData(bulkRequest, br);
         }
 
-        bulkRequest.get();
+        final BulkResponse response = bulkRequest.get();
+
+        if (response != null && response.hasFailures()) {
+            throw new RuntimeException(response.buildFailureMessage());
+        }
 
         refreshIndex();
     }
