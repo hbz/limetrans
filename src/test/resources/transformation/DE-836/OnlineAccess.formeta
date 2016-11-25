@@ -1,5 +1,5 @@
 '' {
-  'id': '1',
+	'id': '1',
 	'RecordIdentifier' {
 		'identifierForTheRecord': '1'
 	},
@@ -12,19 +12,14 @@
 			'': 'keine Angabe'
 		}
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '0585020531'
-		}
-	},
-	'IdentifierISBNParallel' {
-		'identifierISBN[]' {
-			'': '0262220466'
+	'OnlineAccess' {
+		'uri[]' {
+			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795'
 		}
 	}
 }
 '' {
-  'id': '2',
+	'id': '2',
 	'RecordIdentifier' {
 		'identifierForTheRecord': '2'
 	},
@@ -37,23 +32,15 @@
 			'': 'keine Angabe'
 		}
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '0585020531',
-			'': '9780585020532',
-			'': '9780262220460'
-		}
-	},
-	'IdentifierISBNParallel' {
-		'identifierISBN[]' {
-			'': '0262220466',
-			'': '3540500537',
-			'': '0387500537'
+	'OnlineAccess' {
+		'uri[]' {
+			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795',
+			'': 'http://cognet.mit.edu/library/books/view?isbn=0262220466'
 		}
 	}
 }
 '' {
-  'id': '3',
+	'id': '3',
 	'RecordIdentifier' {
 		'identifierForTheRecord': '3'
 	},
@@ -66,11 +53,10 @@
 			'': 'keine Angabe'
 		}
 	},
-	'IdentifierISBNParallel' {
-		'identifierISBN[]' {
-			'': '0262220466',
-			'': '3540500537',
-			'': '0387500537'
+	'OnlineAccess' {
+		'uri[]' {
+			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795',
+			'': 'http://cognet.mit.edu/library/books/view?isbn=0262220466'
 		}
 	}
 }

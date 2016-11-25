@@ -76,8 +76,8 @@
     <data source="001" />
   </combine>
 
-  <!-- @facette_format -->
-  <combine name="@facette_format" value="Audio">
+  <!-- @facet_format -->
+  <combine name="@facet_format" value="Audio">
     <if>
       <any>
         <data source="@LeaderPos06">
@@ -106,7 +106,7 @@
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Bild">
+  <combine name="@facet_format" value="Bild">
     <if>
       <any>
         <all>
@@ -156,7 +156,7 @@
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Elektronische Ressource">
+  <combine name="@facet_format" value="Elektronische Ressource">
     <if>
       <any>
         <data source="@LeaderPos06">
@@ -204,7 +204,7 @@
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Film, Dia, Video">
+  <combine name="@facet_format" value="Film, Dia, Video">
     <if>
       <any>
         <data source="@007Pos00">
@@ -230,7 +230,7 @@
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Gedruckte Ressource">
+  <combine name="@facet_format" value="Gedruckte Ressource">
     <if>
       <any>
         <data source="@LeaderPos06|@006Pos00">
@@ -315,7 +315,7 @@
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Landkarte">
+  <combine name="@facet_format" value="Landkarte">
     <if>
       <any>
         <data source="@LeaderPos06">
@@ -331,7 +331,7 @@
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Mikroform">
+  <combine name="@facet_format" value="Mikroform">
     <if>
       <any>
         <data source="@007Pos00">
@@ -373,7 +373,7 @@
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Online-Ressource">
+  <combine name="@facet_format" value="Online-Ressource">
     <if>
       <any>
         <all>
@@ -412,7 +412,7 @@
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facette_format" value="Sonstiges">
+  <combine name="@facet_format" value="Sonstiges">
     <if>
       <any>
         <data source="@LeaderPos06|@006Pos00">
@@ -522,24 +522,29 @@
     <data source="001" />
   </combine>
   <!-- END format -->
-  <data name="@facet_date" source="260  .c|2603 .c">
-    <replace pattern=" ?[-,.:;/\]]?$|,.*$|^[©c\[] *" with="" />
+  <data name="@facet_date" source="260[ 23] .c">
+    <split delimiter="[,-]" />
+    <trim />
+    <replace pattern="^[©c\[]\s*|\s?[-,.:;/\]]?$" with="" />
+    <regexp match="\d{4}" />
+    <unique in="record" />
   </data>
 
   <entity name="dc" flushWith="record">
     <entity name="format[]" flushWith="record">
-      <data name="" source="@facette_format" />
+      <data name="" source="@facet_format" />
     </entity>
     <entity name="format[]">
       <if>
         <none>
-          <data source="@facette_format" />
+          <data source="@facet_format" />
         </none>
       </if>
       <data name="" source="001">
         <constant value="keine Angabe" />
       </data>
     </entity>
+
     <data name="language" source="@language" />
     <combine name="language" value="keine Angabe">
       <if>
@@ -549,14 +554,19 @@
       </if>
       <data source="001" />
     </combine>
-    <data name="date" source="@facet_date" />
-    <combine name="date" value="keine Angabe">
+
+    <entity name="date[]" flushWith="record">
+      <data name="" source="@facet_date" />
+    </entity>
+    <entity name="date[]" >
       <if>
         <none>
           <data source="@facet_date" />
         </none>
       </if>
-      <data source="001" />
-    </combine>
+      <data name="" source="001">
+        <constant value="keine Angabe" />
+      </data>
+    </entity>
   </entity>
 </rules>

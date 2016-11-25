@@ -1,0 +1,123 @@
+'' {
+	'id': '1',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '1'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': '2010'
+		}
+	},
+	'PublicationPlace' {
+		'printingPlace[]' {
+			'': 'New Delhi'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'SAGE'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '[2010]'
+		}
+	}
+}
+'' {
+	'id': '2',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '2'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'PublicationPlace' {
+		'printingPlace[]' {
+			'': 'New Delhi'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'SAGE'
+		}
+	}
+}
+'' {
+	'id': '3',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '3'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': '2011'
+		}
+	},
+	'PublicationPlace' {
+		'printingPlace[]' {
+			'': 'New Delhi',
+			'': 'Thousand Oaks, Calif.'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'SAGE',
+			'': '[Sage Publications]'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '201-?',
+			'': '2011'
+		}
+	}
+}
+'' {
+	'id': '4',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '4'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe',
+		'date[]' {
+			'': '2010',
+			'': '2011',
+			'': '2012'
+		}
+	},
+	'PublicationPlace' {
+		'printingPlace[]' {
+			'': 'New Delhi',
+			'': 'Thousand Oaks, Calif.'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'SAGE',
+			'': '[Sage Publications]'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '2010-2011',
+			'': '2010-[2012]'
+		}
+	}
+}

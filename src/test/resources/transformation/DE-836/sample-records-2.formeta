@@ -10,27 +10,35 @@
 	'TitleStatement' {
 		'titleMain': 'U.S. courts design guide'
 	},
-	'Edition' {
-		'edition': '[3rd ed.].'
-	},
-	'PublisherName' {
-		'name': 'Administrative Office of the U.S. Courts, Space and Facilities Division'
-	},
-	'DateProper' {
-		'date': '[1991-'
-	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '1991',
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'date[]' {
+			'': '1991'
+		}
+	},
+	'Edition' {
+		'edition[]' {
+			'': '[3rd ed.].'
+		}
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Washington, D.C.'
 		}
 	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Administrative Office of the U.S. Courts, Space and Facilities Division'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '[1991-'
+		}
+	}
 	'Extent' {
 		'extent': '1 v. (loose-leaf) : ill. ; 30 cm.'
 	},
@@ -57,21 +65,14 @@
 	'CreatorStatement' {
 		'creatorStatement': 'Janet Kauffman'
 	},
-	'Edition' {
-		'edition': '1st ed.'
-	},
-	'PublisherName' {
-		'name': 'New Issues/Western Michigan University'
-	},
-	'DateProper' {
-		'date': '2001'
-	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '2001',
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'date[]' {
+			'': '2001'
+		}
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -82,9 +83,24 @@
 	'Person' {
 		'personName': 'Kauffman, Janet'
 	},
+	'Edition' {
+		'edition[]' {
+			'': '1st ed.'
+		}
+	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Kalamazoo, MI'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'New Issues/Western Michigan University'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '2001'
 		}
 	},
 	'Extent' {
@@ -111,17 +127,13 @@
 	'TitleAddendum' {
 		'title': 'die schönsten Motorradziele'
 	},
-	'PublisherName' {
-		'name': 'Publicpress'
-	},
-	'DateProper' {
-		'date': '2006, [2006]'
-	},
 	'dc' {
 		'language': 'Deutsch',
-		'date': '2006',
 		'format[]' {
 			'': 'Landkarte'
+		},
+		'date[]' {
+			'': '2006'
 		}
 	},
 	'IdentifierISBN' {
@@ -133,6 +145,16 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Geseke'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Publicpress'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '2006, [2006]'
 		}
 	},
 	'Extent' {
@@ -164,19 +186,23 @@
 	'TitleAddendum' {
 		'title': 'a publication of the American Society for Nutrition, Inc'
 	},
-	'PublisherName' {
-		'name': 'ASN'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
-		'date': 'keine Angabe'
+		'date[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Bethesda, Md.'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'ASN'
 		}
 	},
 	'Description' {
@@ -201,21 +227,14 @@
 	'CreatorStatement' {
 		'creatorStatement': 'Jesus Castagnetto ...'
 	},
-	'Edition' {
-		'edition': 'Repr.'
-	},
-	'PublisherName' {
-		'name': 'Wrox Press'
-	},
-	'DateProper' {
-		'date': '2000'
-	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '2000',
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'date[]' {
+			'': '2000'
+		}
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -223,9 +242,24 @@
 			'': '9781861002969'
 		}
 	},
+	'Edition' {
+		'edition[]' {
+			'': 'Repr.'
+		}
+	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Birmingham'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Wrox Press'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '2000'
 		}
 	},
 	'Extent' {
@@ -252,22 +286,14 @@
 	'CreatorStatement' {
 		'creatorStatement': 'Dave W. Mercer ..'
 	},
-	'PublisherName' {
-		'name': 'Wiley'
-	},
-	'DateProper' {
-		'date': '2004'
-	},
-	'RSWK' {
-		'subjectTopicName': 'PHP 5.0',
-		'subjectIdentifier': '(DE-588)4763174-0'
-	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '2004',
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'date[]' {
+			'': '2004'
+		}
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -280,8 +306,26 @@
 			'': 'Indianapolis, Ind.'
 		}
 	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Wiley'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '2004'
+		}
+	},
 	'Extent' {
 		'extent': 'XXVII, 859 S : ill., graph. Darst ; 24 cm.'
+	},
+	'RSWK[]' {
+		'' {
+			'subjectTopicName': 'PHP 5.0',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4763174-0'
+			}
+		}
 	},
 	'PersonCreator[]' {
 		'' {
@@ -311,21 +355,14 @@
 	'CreatorStatement' {
 		'creatorStatement': 'by Dave Thomas and Michael Seid'
 	},
-	'Edition' {
-		'edition': '2nd ed.'
-	},
-	'PublisherName' {
-		'name': 'Wiley'
-	},
-	'DateProper' {
-		'date': '2006'
-	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '2006',
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'date[]' {
+			'': '2006'
+		}
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -336,9 +373,24 @@
 	'Person' {
 		'personName': 'Thomas, Dave'
 	},
+	'Edition' {
+		'edition[]' {
+			'': '2nd ed.'
+		}
+	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Hoboken, N.J.'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Wiley'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '2006'
 		}
 	},
 	'Extent' {
@@ -379,21 +431,14 @@
 	'CreatorStatement' {
 		'creatorStatement': 'by Jean-Michel Claverie and Cedric Notredame'
 	},
-	'Edition' {
-		'edition': '2nd ed.'
-	},
-	'PublisherName' {
-		'name': 'Wiley'
-	},
-	'DateProper' {
-		'date': 'c 2007'
-	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '2007',
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'date[]' {
+			'': '2007'
+		}
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -404,9 +449,24 @@
 	'Person' {
 		'personName': 'Claverie, Jean-Michel'
 	},
+	'Edition' {
+		'edition[]' {
+			'': '2nd ed.'
+		}
+	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Hoboken, NJ'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Wiley'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': 'c 2007'
 		}
 	},
 	'Extent' {
@@ -442,7 +502,9 @@
 		'format[]' {
 			'': 'Gedruckte Ressource'
 		},
-		'date': 'keine Angabe'
+		'date[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'Description' {
 		'description[]' {
@@ -471,18 +533,14 @@
 	'CreatorStatement' {
 		'creatorStatement': 'Katherine Murray'
 	},
-	'PublisherName' {
-		'name': 'Que'
-	},
-	'DateProper' {
-		'date': '[2012]'
-	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '2012',
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'date[]' {
+			'': '2012'
+		}
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -497,6 +555,16 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Indianapolis, Indiana'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Que'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '[2012]'
 		}
 	},
 	'Extent' {

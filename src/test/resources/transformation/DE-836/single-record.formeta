@@ -13,19 +13,15 @@
 	'CreatorStatement' {
 		'creatorStatement': 'Barbara Von Eckardt'
 	},
-	'PublisherName' {
-		'name': 'MIT Press'
-	},
-	'DateProper' {
-		'date': '1993'
-	},
 	'dc' {
 		'language': 'Englisch',
-		'date': '1993',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
+		},
+		'date[]' {
+			'': '1993'
 		}
 	},
 	'IdentifierISBN' {
@@ -42,6 +38,16 @@
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Cambridge, Mass.'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'MIT Press'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '1993'
 		}
 	},
 	'Extent' {

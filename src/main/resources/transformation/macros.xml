@@ -3,8 +3,7 @@
 
   <macro name="regex-del-punctuation-end">
     <data source="$[dsource]" name="$[dname]">
-      <regexp match="^(.*?) ?[,.:;/=]?$" format="${1}" />
-      <replace pattern="^[©]" with="" />
+      <replace pattern="^[©]|\s?[,.:;/=]?$" with="" />
     </data>
   </macro>
 
