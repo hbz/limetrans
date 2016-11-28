@@ -68,63 +68,88 @@ public class LibraryMetadataTransformation {
         final StreamTee streamTee = new StreamTee();
 
         opener
-                .setReceiver(decoder)
-                .setReceiver(marcHandler)
-                .setReceiver(morph)
-                .setReceiver(streamTee);
+            .setReceiver(decoder)
+            .setReceiver(marcHandler)
+            .setReceiver(morph)
+            .setReceiver(streamTee);
 
-        if (mFormetaPath != null) {
-            final FormetaEncoder formetaEncoder = new FormetaEncoder();
+        final ObjectTee objectTee = prepareJson(streamTee);
 
-            streamTee.addReceiver(formetaEncoder);
-            formetaEncoder.setStyle(FormatterStyle.MULTILINE);
-            formetaEncoder.setReceiver(new ObjectWriter<>(mFormetaPath));
-        }
-
-        if (mJsonPath != null || mElasticsearchSettings != null) {
-            final JsonEncoder jsonEncoder = new JsonEncoder();
-            final ObjectTee objectTee = new ObjectTee();
-
-            streamTee.addReceiver(jsonEncoder);
-            jsonEncoder.setReceiver(objectTee);
-
-            if (mJsonPath != null) {
-                //jsonEncoder.setPrettyPrinting(true);
-                objectTee.addReceiver(new ObjectWriter<>(mJsonPath));
-            }
-
-            if (mElasticsearchSettings != null) {
-                final JsonToElasticsearchBulk esBulk = new JsonToElasticsearchBulk("id",
-                        mElasticsearchSettings.get("index.type"),
-                        mElasticsearchSettings.get("index.name"));
-
-                objectTee.addReceiver(esBulk);
-                esBulk.setReceiver(new ObjectWriter<>(mElasticsearchPath));
-            }
-        }
+        transformJson(objectTee);
+        transformFormeta(streamTee);
+        transformElasticsearch(objectTee);
 
         opener.process(mInputPath);
         opener.closeStream();
     }
 
     public void index() throws IOException {
-        if (mElasticsearchSettings != null) {
-            final ElasticsearchProvider esProvider = new ElasticsearchProvider(mElasticsearchSettings);
-
-            try {
-                if (mIsUpdate) {
-                    esProvider.checkIndex();
-                }
-                else {
-                    esProvider.initializeIndex();
-                }
-
-                esProvider.bulkIndex(mElasticsearchPath);
-            }
-            finally {
-                esProvider.close();
-            }
+        if (mElasticsearchSettings == null) {
+            return;
         }
+
+        final ElasticsearchProvider esProvider = new ElasticsearchProvider(mElasticsearchSettings);
+
+        try {
+            if (mIsUpdate) {
+                esProvider.checkIndex();
+            }
+            else {
+                esProvider.initializeIndex();
+            }
+
+            esProvider.bulkIndex(mElasticsearchPath);
+        }
+        finally {
+            esProvider.close();
+        }
+    }
+
+    private ObjectTee prepareJson(final StreamTee aTee) {
+        if (mJsonPath == null && mElasticsearchSettings == null) {
+            return null;
+        }
+
+        final JsonEncoder jsonEncoder = new JsonEncoder();
+        final ObjectTee objectTee = new ObjectTee();
+
+        aTee.addReceiver(jsonEncoder);
+        jsonEncoder.setReceiver(objectTee);
+
+        return objectTee;
+    }
+
+    private void transformFormeta(final StreamTee aTee) {
+        if (mFormetaPath == null) {
+            return;
+        }
+
+        final FormetaEncoder formetaEncoder = new FormetaEncoder();
+
+        aTee.addReceiver(formetaEncoder);
+        formetaEncoder.setStyle(FormatterStyle.MULTILINE);
+        formetaEncoder.setReceiver(new ObjectWriter<>(mFormetaPath));
+    }
+
+    private void transformJson(final ObjectTee aTee) {
+        if (mJsonPath == null) {
+            return;
+        }
+
+        aTee.addReceiver(new ObjectWriter<>(mJsonPath));
+    }
+
+    private void transformElasticsearch(final ObjectTee aTee) {
+        if (mElasticsearchSettings == null) {
+            return;
+        }
+
+        final JsonToElasticsearchBulk esBulk = new JsonToElasticsearchBulk("id",
+                mElasticsearchSettings.get("index.type"),
+                mElasticsearchSettings.get("index.name"));
+
+        aTee.addReceiver(esBulk);
+        esBulk.setReceiver(new ObjectWriter<>(mElasticsearchPath));
     }
 
 }
