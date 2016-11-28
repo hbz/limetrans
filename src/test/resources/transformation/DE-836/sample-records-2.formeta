@@ -3,10 +3,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm24514712'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'U.S. courts design guide'
 	},
@@ -18,6 +14,10 @@
 		'date[]' {
 			'': '1991'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'Edition' {
 		'edition[]' {
@@ -55,10 +55,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm47770357'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'Rot'
 	},
@@ -73,6 +69,10 @@
 		'date[]' {
 			'': '2001'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -111,15 +111,19 @@
 			'': '"A green rose book"--Ser. title page.'
 		}
 	}
+	'SeriesAddedEntryUniformTitle[]' {
+		'' {
+			'title': 'New Issues poetry & prose'
+		},
+		'' {
+			'title': 'Inland seas book'
+		}
+	}
 }
 '' {
 	'id': 'ocn181570042',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn181570042'
-	},
-	'Language' {
-		'languageSource': 'Deutsch',
-		'language': 'Deutsch'
 	},
 	'TitleStatement' {
 		'titleMain': 'Rhön, Spessart, Vogelsberg'
@@ -135,6 +139,10 @@
 		'date[]' {
 			'': '2006'
 		}
+	},
+	'Language' {
+		'language': 'Deutsch',
+		'languageSource': 'ger'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -160,6 +168,11 @@
 	'Extent' {
 		'extent': '1 Kt. : mehrfarb. ; 80 x 59 cm, gefaltet, 70 gr.'
 	},
+	'SeriesAddedEntryUniformTitle[]' {
+		'' {
+			'title': 'Motorradkarte'
+		}
+	},
 	'Description' {
 		'description[]' {
 			'': 'Mit Bildern, Texten und 1 Nebenkt. - Mit Schummerung'
@@ -176,10 +189,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn231013554'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'The American journal of clinical nutrition'
 	},
@@ -190,10 +199,11 @@
 		'language': 'Englisch',
 		'format[]' {
 			'': 'keine Angabe'
-		},
-		'date[]' {
-			'': 'keine Angabe'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {
@@ -217,10 +227,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn248656983'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'Professional PHP Programming'
 	},
@@ -235,6 +241,10 @@
 		'date[]' {
 			'': '2000'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -270,15 +280,16 @@
 			'personName': 'Castagnetto, Jesus'
 		}
 	}
+	'SeriesAddedEntryUniformTitle[]' {
+		'' {
+			'title': 'Programmer to programmer'
+		}
+	}
 }
 '' {
 	'id': 'ocn249962072',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn249962072'
-	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
 	},
 	'TitleStatement' {
 		'titleMain': 'Beginning PHP 5'
@@ -294,6 +305,10 @@
 		'date[]' {
 			'': '2004'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -332,6 +347,11 @@
 			'personName': 'Mercer, Dave W.'
 		}
 	},
+	'SeriesAddedEntryUniformTitle[]' {
+		'' {
+			'title': 'Programmer to programmer'
+		}
+	},
 	'OnlineAccess' {
 		'uri[]' {
 			'': 'http://catdir.loc.gov/catdir/enhancements/fy0620/2004301758-b.html',
@@ -344,10 +364,6 @@
 	'id': 'ocn255413311',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn255413311'
-	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
 	},
 	'TitleStatement' {
 		'titleMain': 'Franchising for dummies'
@@ -363,6 +379,10 @@
 		'date[]' {
 			'': '2006'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -421,10 +441,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn255680877'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'Bioinformatics for dummies'
 	},
@@ -439,6 +455,10 @@
 		'date[]' {
 			'': '2007'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -490,10 +510,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn696257569'
 	},
-	'Language' {
-		'languageSource': 'Deutsch',
-		'language': 'Deutsch'
-	},
 	'TitleStatement' {
 		'titleMain': 'Broadacre City und die Zwischenstadt'
 	},
@@ -501,10 +517,11 @@
 		'language': 'Deutsch',
 		'format[]' {
 			'': 'Gedruckte Ressource'
-		},
-		'date[]' {
-			'': 'keine Angabe'
 		}
+	},
+	'Language' {
+		'language': 'Deutsch',
+		'languageSource': 'ger'
 	},
 	'Description' {
 		'description[]' {
@@ -523,10 +540,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn758397903'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'My Evernote'
 	},
@@ -541,6 +554,10 @@
 		'date[]' {
 			'': '2012'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {

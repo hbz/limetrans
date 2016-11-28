@@ -3,10 +3,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm42328784'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'What is cognitive science?'
 	},
@@ -23,6 +19,10 @@
 		'date[]' {
 			'': '1993'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {

@@ -3,10 +3,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm38995695'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'International journal of heat and mass transfer'
 	},
@@ -20,6 +16,10 @@
 		'date[]' {
 			'': '1960'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {
@@ -53,10 +53,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm43310902'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'Archiv der Mathematik'
 	},
@@ -69,10 +65,11 @@
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
-		},
-		'date[]' {
-			'': 'keine Angabe'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'OnlineAccess' {
 		'uri[]' {
@@ -89,10 +86,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm44954079'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'A kidnapped Santa Claus'
 	},
@@ -105,10 +98,11 @@
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
-		},
-		'date[]' {
-			'': 'keine Angabe'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -138,6 +132,12 @@
 	'Extent' {
 		'extent': '1 online resource.'
 	},
+	'SeriesAddedEntryUniformTitle[]' {
+		'' {
+			'title': 'Project Gutenberg etext',
+			'volume': 'no. 519'
+		}
+	},
 	'OnlineAccess' {
 		'uri[]' {
 			'': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/kdsta10.txt',
@@ -151,10 +151,6 @@
 	'id': 'ocm44959477',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm44959477'
-	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
 	},
 	'TitleStatement' {
 		'titleMain': 'The god-idea of the ancients or sex in religion'
@@ -172,6 +168,10 @@
 		'date[]' {
 			'': '1999'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -216,10 +216,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm44960649'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'The new McGuffey first reader'
 	},
@@ -232,10 +228,11 @@
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
-		},
-		'date[]' {
-			'': 'keine Angabe'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -276,10 +273,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm44961551'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'A journey from this world to the next'
 	},
@@ -292,10 +285,11 @@
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
-		},
-		'date[]' {
-			'': 'keine Angabe'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -336,19 +330,11 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm47011858'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'A companion to feminist philosophy'
 	},
 	'CreatorStatement' {
 		'creatorStatement': 'edited by Alison M. Jaggar and Iris Marion Young'
-	},
-	'SeriesAddedEntryUniformTitle' {
-		'title': 'Blackwell companions to philosophy',
-		'volume': '13'
 	},
 	'dc' {
 		'language': 'Englisch',
@@ -361,6 +347,10 @@
 			'': '2000',
 			'': '1998'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -407,6 +397,12 @@
 			'': '0631220674'
 		}
 	},
+	'SeriesAddedEntryUniformTitle[]' {
+		'' {
+			'title': 'Blackwell companions to philosophy',
+			'volume': '13'
+		}
+	},
 	'OnlineAccess' {
 		'uri[]' {
 			'': 'http://www.blackwellreference.com/subscriber/uid=3/book?show=all&id=g9780631220671_9780631220671',
@@ -419,10 +415,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm48498937'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'Nuclear law bulletin'
 	},
@@ -432,10 +424,11 @@
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
-		},
-		'date[]' {
-			'': 'keine Angabe'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {
@@ -460,10 +453,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm49293189'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'The life and death of Cormac the Skald'
 	},
@@ -479,10 +468,11 @@
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
-		},
-		'date[]' {
-			'': 'keine Angabe'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -507,6 +497,12 @@
 	},
 	'Extent' {
 		'extent': '1 online resource.'
+	},
+	'SeriesAddedEntryUniformTitle[]' {
+		'' {
+			'title': 'Project Gutenberg etext',
+			'volume': 'no. 265'
+		}
 	},
 	'Description' {
 		'description[]' {
@@ -533,10 +529,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm49293748'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'TitleStatement' {
 		'titleMain': 'Rewards and fairies'
 	},
@@ -549,10 +541,11 @@
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
-		},
-		'date[]' {
-			'': 'keine Angabe'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	},
 	'IdentifierISBN' {
 		'identifierISBN[]' {
@@ -581,6 +574,12 @@
 	},
 	'Extent' {
 		'extent': '1 online resource.'
+	},
+	'SeriesAddedEntryUniformTitle[]' {
+		'' {
+			'title': 'Project Gutenberg etext',
+			'volume': 'no. 556'
+		}
 	},
 	'OnlineAccess' {
 		'uri[]' {
