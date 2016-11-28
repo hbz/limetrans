@@ -24,6 +24,12 @@ public class ElasticsearchProviderTest {
     }
 
     @Test
+    public void testAllDocumentsAreIndexed() throws IOException {
+        mEsProvider.bulkIndex("./src/test/resources/elasticsearch/update-test-new.jsonl");
+        assertEquals("Document count mismatch", 4, mEsProvider.getCount());
+    }
+
+    @Test
     public void testUpdate() throws IOException {
         Map<String, Object> document;
 
