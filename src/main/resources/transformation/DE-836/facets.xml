@@ -524,9 +524,7 @@
   <!-- END format -->
   <data name="@facet_date" source="260[ 23] .c">
     <split delimiter="[,-]" />
-    <trim />
-    <replace pattern="^[©c\[]\s*|\s?[-,.:;/\]]?$" with="" />
-    <regexp match="\d{4}" />
+    <regexp match="^.*?(\d{4}).*$" format="${1}" />
     <unique in="record" />
   </data>
 
