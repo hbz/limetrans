@@ -92,11 +92,14 @@ public class ElasticsearchProvider {
 
         final BulkResponse response = bulkRequest.get();
 
-        if (response != null && response.hasFailures()) {
-            throw new RuntimeException(response.buildFailureMessage());
+        try {
+            if (response != null && response.hasFailures()) {
+                throw new RuntimeException(response.buildFailureMessage());
+            }
         }
-
-        refreshIndex();
+        finally {
+            refreshIndex();
+        }
     }
 
     public void close() {
