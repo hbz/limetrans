@@ -543,11 +543,11 @@
       </data>
     </entity>
 
-    <data name="language" source="@language" />
+    <data name="language" source="@language_long" />
     <combine name="language" value="keine Angabe">
       <if>
         <none>
-          <data source="@language" />
+          <data source="@language_long" />
         </none>
       </if>
       <data source="001" />
@@ -555,16 +555,6 @@
 
     <entity name="date[]" flushWith="record">
       <data name="" source="@facet_date" />
-    </entity>
-    <entity name="date[]" >
-      <if>
-        <none>
-          <data source="@facet_date" />
-        </none>
-      </if>
-      <data name="" source="001">
-        <constant value="keine Angabe" />
-      </data>
     </entity>
   </entity>
 </rules>

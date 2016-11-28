@@ -3,18 +3,15 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '1'
 	},
-	'Language' {
-		'languageSource': 'Englisch',
-		'language': 'Englisch'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
 			'': 'keine Angabe'
-		},
-		'date[]' {
-			'': 'keine Angabe'
 		}
+	},
+	'Language' {
+		'language': 'Englisch',
+		'languageSource': 'eng'
 	}
 }
 '' {
@@ -22,18 +19,15 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '2'
 	},
-	'Language' {
-		'languageSource': 'Deutsch',
-		'language': 'Deutsch'
-	},
 	'dc' {
 		'language': 'Deutsch',
 		'format[]' {
 			'': 'keine Angabe'
-		},
-		'date[]' {
-			'': 'keine Angabe'
 		}
+	},
+	'Language' {
+		'language': 'Deutsch',
+		'languageSource': 'ger'
 	}
 }
 '' {
@@ -41,17 +35,14 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '3'
 	},
-	'Language' {
-		'languageSource': 'Französisch',
-		'language': 'Französisch'
-	},
 	'dc' {
 		'language': 'Französisch',
 		'format[]' {
 			'': 'keine Angabe'
-		},
-		'date[]' {
-			'': 'keine Angabe'
 		}
+	},
+	'Language' {
+		'language': 'Französisch',
+		'languageSource': 'fre'
 	}
 }

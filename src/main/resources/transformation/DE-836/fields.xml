@@ -9,15 +9,15 @@
   <entity name="RecordIdentifier" flushWith="001">
     <data name="identifierForTheRecord" source="001" />
   </entity>
-
-  <data name="@language" source="008">
+  <data name="@language_short" source="008">
     <substring start="35" end="38" />
+  </data>
+  <data name="@language_long" source="@language_short">
     <lookup in="language" />
   </data>
-
-  <entity name="Language" flushWith="@language">
-    <data name="languageSource" source="@language" />
-    <data name="language" source="@language" />
+  <entity name="Language" flushWith="record">
+    <data name="languageSource" source="@language_short" />
+    <data name="language" source="@language_long" />
   </entity>
   <entity name="IdentifierISBN">
     <entity name="identifierISBN[]" flushWith="record">
@@ -150,6 +150,17 @@
   <!-- 301-399 -->
 
   <!-- 4xx -->
+  <entity name="SeriesAddedEntryUniformTitle[]" flushWith="record">
+    <if>
+      <none flushWith="record">
+        <data source="830??" />
+      </none>
+    </if>
+    <entity name="" flushWith="490[01] " sameEntity="true">
+      <call-macro name="regex-del-punctuation-end" dsource="490[01] .a" dname="title" />
+      <call-macro name="regex-del-punctuation-end" dsource="490[01] .v" dname="volume" />
+    </entity>
+  </entity>
 
   <!-- 5xx -->
   <entity name="Description">
@@ -176,6 +187,7 @@
       </entity>
     </entity>
   </entity>
+
   <!-- 7xx -->
   <entity name="PersonCreator[]" flushWith="record">
     <entity name="" flushWith="7001 " sameEntity="true">
@@ -227,10 +239,13 @@
   </entity>
 
   <!-- 8xx -->
-  <entity name="SeriesAddedEntryUniformTitle" flushWith="830 0.v">
-    <call-macro name="regex-del-punctuation-end" dsource="830 0.a" dname="title" />
-    <call-macro name="regex-del-punctuation-end" dsource="830 0.v" dname="volume" />
+  <entity name="SeriesAddedEntryUniformTitle[]" flushWith="record">
+    <entity name="" flushWith="830 0" sameEntity="true">
+      <call-macro name="regex-del-punctuation-end" dsource="830 0.a" dname="title" />
+      <call-macro name="regex-del-punctuation-end" dsource="830 0.v" dname="volume" />
+    </entity>
   </entity>
+
   <entity name="OnlineAccess">
     <entity name="uri[]" flushWith="record">
       <data name="" source="856??.u">
