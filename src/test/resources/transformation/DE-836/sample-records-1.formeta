@@ -104,10 +104,12 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '058509988X',
-			'': '9780585099880'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '058509988X'
+		},
+		'' {
+			'identifierISBN': '9780585099880'
 		}
 	},
 	'Person' {
@@ -173,10 +175,12 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '0585103844',
-			'': '9780585103846'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '0585103844'
+		},
+		'' {
+			'identifierISBN': '9780585103846'
 		}
 	},
 	'Person' {
@@ -234,10 +238,12 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '0585151970',
-			'': '9780585151977'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '0585151970'
+		},
+		'' {
+			'identifierISBN': '9780585151977'
 		}
 	},
 	'Person' {
@@ -291,10 +297,12 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '0585007136',
-			'': '9780585007137'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '0585007136'
+		},
+		'' {
+			'identifierISBN': '9780585007137'
 		}
 	},
 	'Person' {
@@ -352,12 +360,18 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '0631227644',
-			'': '9780631227649',
-			'': '9781405164498',
-			'': '1405164492'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '0631227644'
+		},
+		'' {
+			'identifierISBN': '9780631227649'
+		},
+		'' {
+			'identifierISBN': '9781405164498'
+		},
+		'' {
+			'identifierISBN': '1405164492'
 		}
 	},
 	'Edition' {
@@ -392,9 +406,11 @@
 			'personBio': '1949-'
 		}
 	},
-	'IdentifierISBNParallel' {
-		'identifierISBN[]' {
-			'': '0631220674'
+	'IdentifierISBNParalle[]' {
+		'' {
+			'identifierISBN[]' {
+				'': '0631220674'
+			}
 		}
 	},
 	'SeriesAddedEntryUniformTitle[]' {
@@ -474,10 +490,12 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '0585152306',
-			'': '9780585152301'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '0585152306'
+		},
+		'' {
+			'identifierISBN': '9780585152301'
 		}
 	},
 	'PublicationPlace' {
@@ -547,10 +565,12 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '0585012814',
-			'': '9780585012810'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '0585012814'
+		},
+		'' {
+			'identifierISBN': '9780585012810'
 		}
 	},
 	'Person' {

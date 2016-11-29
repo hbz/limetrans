@@ -38,7 +38,7 @@
 		'date[]' {
 			'': '[1991-'
 		}
-	}
+	},
 	'Extent' {
 		'extent': '1 v. (loose-leaf) : ill. ; 30 cm.'
 	},
@@ -74,10 +74,12 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '1930974027',
-			'': '9781930974029'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '1930974027'
+		},
+		'' {
+			'identifierISBN': '9781930974029'
 		}
 	},
 	'Person' {
@@ -110,7 +112,7 @@
 		'description[]' {
 			'': '"A green rose book"--Ser. title page.'
 		}
-	}
+	},
 	'SeriesAddedEntryUniformTitle[]' {
 		'' {
 			'title': 'New Issues poetry & prose'
@@ -144,10 +146,12 @@
 		'language': 'Deutsch',
 		'languageSource': 'ger'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '3899202899',
-			'': '9783899202892'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '3899202899'
+		},
+		'' {
+			'identifierISBN': '9783899202892'
 		}
 	},
 	'PublicationPlace' {
@@ -246,10 +250,12 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '1861002963',
-			'': '9781861002969'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '1861002963'
+		},
+		'' {
+			'identifierISBN': '9781861002969'
 		}
 	},
 	'Edition' {
@@ -279,7 +285,7 @@
 		'' {
 			'personName': 'Castagnetto, Jesus'
 		}
-	}
+	},
 	'SeriesAddedEntryUniformTitle[]' {
 		'' {
 			'title': 'Programmer to programmer'
@@ -310,10 +316,12 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '0764557831',
-			'': '9780764557835'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '0764557831'
+		},
+		'' {
+			'identifierISBN': '9780764557835'
 		}
 	},
 	'PublicationPlace' {
@@ -339,6 +347,9 @@
 			'subjectTopicName': 'PHP 5.0',
 			'subjectIdentifier[]' {
 				'': '(DE-588)4763174-0'
+			},
+			'identifierGND[]' {
+				'': '4763174-0'
 			}
 		}
 	},
@@ -384,10 +395,12 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '0470045817',
-			'': '9780470045817'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '0470045817'
+		},
+		'' {
+			'identifierISBN': '9780470045817'
 		}
 	},
 	'Person' {
@@ -460,10 +473,12 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '0470089857',
-			'': '9780470089859'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '0470089857'
+		},
+		'' {
+			'identifierISBN': '9780470089859'
 		}
 	},
 	'Person' {
@@ -559,10 +574,12 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '9780789749260',
-			'': '0789749262'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '9780789749260'
+		},
+		'' {
+			'identifierISBN': '0789749262'
 		}
 	},
 	'Person' {

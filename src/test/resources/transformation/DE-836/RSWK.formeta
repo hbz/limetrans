@@ -26,6 +26,9 @@
 			'subjectTopicName': 'Volkstheater',
 			'subjectIdentifier[]' {
 				'': '(DE-588)4130623-5'
+			},
+			'identifierGND[]' {
+				'': '4130623-5'
 			}
 		}
 	}
@@ -46,12 +49,18 @@
 			'subjectTopicName': 'Volkstheater',
 			'subjectIdentifier[]' {
 				'': '(DE-588)4130623-5'
+			},
+			'identifierGND[]' {
+				'': '4130623-5'
 			}
 		},
 		'' {
 			'subjectTopicName': 'Massenkultur',
 			'subjectIdentifier[]' {
 				'': '(DE-588)4125858-7'
+			},
+			'identifierGND[]' {
+				'': '4125858-7'
 			}
 		}
 	}
@@ -73,6 +82,10 @@
 			'subjectIdentifier[]' {
 				'': '(DE-588)4130623-5',
 				'': '(DE-588)4125858-8'
+			},
+			'identifierGND[]' {
+				'': '4130623-5',
+				'': '4125858-8'
 			}
 		}
 	}

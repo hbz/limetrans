@@ -19,9 +19,9 @@
     <data name="languageSource" source="@language_short" />
     <data name="language" source="@language_long" />
   </entity>
-  <entity name="IdentifierISBN">
-    <entity name="identifierISBN[]" flushWith="record">
-      <data name="" source="020  .a" />
+  <entity name="IdentifierISBN[]" flushWith="record">
+    <entity name="" flushWith="020  " sameEntity="true">
+      <data name="identifierISBN" source="020  .a" />
     </entity>
   </entity>
 
@@ -185,6 +185,11 @@
       <entity name="subjectIdentifier[]" flushWith="650??" sameEntity="true">
         <data name="" source="650??.0" />
       </entity>
+      <entity name="identifierGND[]" flushWith="650??" sameEntity="true">
+        <data name="" source="650??.0">
+            <replace pattern="^\(DE-588\)" with="" />
+        </data>
+      </entity>
     </entity>
   </entity>
 
@@ -232,12 +237,13 @@
       <call-macro name="personRole"  field="700" />
     </entity>
   </entity>
-  <entity name="IdentifierISBNParallel">
-    <entity name="identifierISBN[]" flushWith="record">
-      <data name="" source="776??.z" />
+  <entity name="IdentifierISBNParalle[]" flushWith="record">
+    <entity name="" flushWith="776??" sameEntity="true">
+      <entity name="identifierISBN[]" flushWith="776??" sameEntity="true">
+        <data name="" source="776??.z" />
+      </entity>
     </entity>
   </entity>
-
   <!-- 8xx -->
   <entity name="SeriesAddedEntryUniformTitle[]" flushWith="record">
     <entity name="" flushWith="830 0" sameEntity="true">
@@ -245,7 +251,6 @@
       <call-macro name="regex-del-punctuation-end" dsource="830 0.v" dname="volume" />
     </entity>
   </entity>
-
   <entity name="OnlineAccess">
     <entity name="uri[]" flushWith="record">
       <data name="" source="856??.u">
