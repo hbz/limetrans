@@ -77,47 +77,97 @@
   </entity>
 
   <!-- 300 -->
-  <data name="@300a" source="300  .a">
-    <replace pattern="\s?[:;+]?$" with="" />
+  <data name="@300a1" source="300  .a">
+    <occurrence  only="1"/>
+    <replace pattern="\s?[:;+\(]?$" with="" />
+  </data>
+  <data name="@300a2" source="300  .a">
+    <occurrence  only="2"/>
+    <replace pattern="\s?[:;+\)]?$" with="" />
   </data>
   <data name="@300b" source="300  .b">
-    <replace pattern="\s?[:;+]?$" with="" />
+    <replace pattern="\s?[:;+\(]?$" with="" />
   </data>
-  <data name="@300c" source="300  .c">
-    <replace pattern="\s?[+]?$" with="" />
+  <data name="@300c1" source="300  .c">
+    <occurrence  only="1"/>
+    <replace pattern="\.?\s?[+\(]?$" with="" />
+  </data>
+  <data name="@300c2" source="300  .c">
+    <occurrence  only="2"/>
+    <replace pattern="\.?\s?[:;+\)]?$" with="" />
+  </data>
+  <data name="@300e" source="300  .e">
+    <replace pattern="\.?\s?\(?$" with="" />
   </data>
 
-  <combine name="@300b_punct" value=" : ${b1}">
+  <combine name="@300a2_punct" value="${a2})">
+    <if>
+      <all>
+        <data source="@300a2" />
+        <none>
+          <data source="@300c2" />
+        </none>
+      </all>
+    </if>
+    <data name="a2" source="@300a2" />
+  </combine>
+  <combine name="@300a2_punct" value="${a2} ; ">
+    <if>
+      <all>
+        <data source="@300a2" />
+        <data source="@300c2" />
+      </all>
+    </if>
+    <data name="a2" source="@300a2" />
+  </combine>
+  <combine name="@300b_punct" value=" : ${b}">
     <if>
       <all>
         <data source="@300b" />
-        <data source="@300a" />
+        <data source="@300a1" />
       </all>
     </if>
-    <data name="b1" source="@300b" />
+    <data name="b" source="@300b" />
   </combine>
-  <combine name="@300c_punct" value=" ; ${c1}">
+  <combine name="@300c1_punct" value=" ; ${c1}">
     <if>
       <all>
-        <data source="@300c" />
-        <data source="300  .a|300  .b" />
+        <data source="@300c1" />
+        <data source="@300a1|@300b" />
       </all>
     </if>
-    <data name="c1" source="@300c" />
+    <data name="c1" source="@300c1" />
   </combine>
-  <combine name="@300e_punct" value=" + ${e1}">
+  <combine name="@300c2_punct" value="${c2})">
+    <data name="c2" source="@300c2" />
+  </combine>
+  <combine name="@300e_punct" value=" ; ${e}">
     <if>
       <all>
         <data source="300  .e" />
-        <data source="300  .a|300  .b|300  .c" />
+        <data source="@300[ac]1|@300b" />
+        <none>
+          <data source="@300[ac]2" />
+        </none>
       </all>
     </if>
-    <data name="e1" source="300  .e" />
+    <data name="e" source="@300e" />
   </combine>
+  <combine name="@300e_punct" value=" ; ${e} (">
+    <if>
+      <all>
+        <data source="300  .e" />
+        <data source="@300[ac]1|@300b" />
+        <data source="@300[ac]2" />
+      </all>
+    </if>
+    <data name="e" source="@300e" />
+  </combine>
+
   <entity name="Extent">
-    <combine name="extent" value="${a}${b}${c}${e}">
-      <choose name="a">
-        <data source="@300a" />
+    <combine name="extent" value="${a1}${b}${c1}${e}${a2}${c2}">
+      <choose name="a1">
+        <data source="@300a1" />
         <data source="300*">
           <constant value="" />
         </data>
@@ -129,16 +179,28 @@
           <constant value="" />
         </data>
       </choose>
-      <choose name="c">
-        <data source="@300c_punct" />
-        <data source="@300c" />
+      <choose name="c1">
+        <data source="@300c1_punct" />
+        <data source="@300c1" />
         <data source="300*">
           <constant value="" />
         </data>
       </choose>
       <choose name="e">
         <data source="@300e_punct" />
-        <data source="300  .e" />
+        <data source="@300e" />
+        <data source="300*">
+          <constant value="" />
+        </data>
+      </choose>
+      <choose name="a2">
+        <data source="@300a2_punct" />
+        <data source="300*">
+          <constant value="" />
+        </data>
+      </choose>
+      <choose name="c2">
+        <data source="@300c2_punct" />
         <data source="300*">
           <constant value="" />
         </data>
