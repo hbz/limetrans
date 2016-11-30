@@ -61,6 +61,16 @@ public class LibraryMetadataTransformationTest {
         testInputQueueSize("wildcard-pattern-no-max", 4);
     }
 
+    @Test
+    public void testUnicodeNormalizationComposed() throws IOException {
+        testEqualsReference("unicode-normalization-composed");
+    }
+
+    @Test
+    public void testUnicodeNormalizationDecomposed() throws IOException {
+        testEqualsReference("unicode-normalization-decomposed");
+    }
+
     private void testNoInput(final String aName) throws IOException {
         thrown.expect(IllegalArgumentException.class);
         thrown.expectMessage("Could not process limetrans: no input specified.");
@@ -73,9 +83,27 @@ public class LibraryMetadataTransformationTest {
         assertEquals("Input queue size mismatch: " + aName, aSize, limetrans.getInputQueueSize());
     }
 
+    private void testEqualsReference(final String aName) throws IOException {
+        final LibraryMetadataTransformation limetrans = getLimetrans(aName);
+
+        limetrans.transform();
+
+        assertEqualsReference(aName);
+    }
+
     private LibraryMetadataTransformation getLimetrans(final String aName) throws IOException {
         final URL url = new File("src/conf/test/limetrans-" + aName + ".json").toURI().toURL();
         return new LibraryMetadataTransformation(Helpers.getSettingsFromUrl(url));
+    }
+
+    private void assertEqualsReference(final String aName) throws IOException {
+        assertEquals("Reference data mismatch: " + aName,
+                slurpFile("reference", aName),
+                slurpFile("output", aName));
+    }
+
+    private String slurpFile(final String aDir, final String aName) throws IOException {
+        return Helpers.slurpFile("src/test/resources/limetrans/" + aDir + "/" + aName + ".jsonl");
     }
 
 }

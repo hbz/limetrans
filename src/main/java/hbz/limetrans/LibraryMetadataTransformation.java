@@ -9,6 +9,7 @@ import org.culturegraph.mf.stream.converter.xml.MarcXmlHandler;
 import org.culturegraph.mf.stream.converter.xml.XmlDecoder;
 import org.culturegraph.mf.stream.pipe.ObjectTee;
 import org.culturegraph.mf.stream.pipe.StreamTee;
+import org.culturegraph.mf.stream.pipe.StreamUnicodeNormalizer;
 import org.culturegraph.mf.stream.sink.ObjectWriter;
 import org.culturegraph.mf.stream.source.FileOpener;
 import org.xbib.common.settings.Settings;
@@ -69,12 +70,14 @@ public class LibraryMetadataTransformation {
         final FileOpener opener = new FileOpener();
         final XmlDecoder decoder = new XmlDecoder();
         final MarcXmlHandler marcHandler = new MarcXmlHandler();
+        final StreamUnicodeNormalizer normalizer = new StreamUnicodeNormalizer();
         final Metamorph morph = new Metamorph(mRulesPath);
         final StreamTee streamTee = new StreamTee();
 
         opener
             .setReceiver(decoder)
             .setReceiver(marcHandler)
+            .setReceiver(normalizer)
             .setReceiver(morph)
             .setReceiver(streamTee);
 

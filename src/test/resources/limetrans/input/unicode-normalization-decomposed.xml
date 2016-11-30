@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cam a2200000Mc 4500</leader>
+    <controlfield tag="001">ocn958002247</controlfield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Fritzen, Florentine</subfield>
+      <subfield code="e">Verfasser</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Gemüseheilige</subfield>
+      <subfield code="b">Eine Geschichte des veganen Lebens</subfield>
+      <subfield code="c">Florentine Fritzen</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">183 Seiten</subfield>
+      <subfield code="b">14 Illustrationen</subfield>
+      <subfield code="c">21 cm x 13 cm, 0 g</subfield>
+    </datafield>
+    <datafield tag="653" ind1=" " ind2=" ">
+      <subfield code="a">(Produktform)Hardback</subfield>
+    </datafield>
+    <datafield tag="653" ind1=" " ind2=" ">
+      <subfield code="a">Gemüseheilige</subfield>
+    </datafield>
+    <datafield tag="653" ind1=" " ind2=" ">
+      <subfield code="a">Geschichte Veganes Leben</subfield>
+    </datafield>
+    <datafield tag="653" ind1=" " ind2=" ">
+      <subfield code="a">Kulturgeschichte</subfield>
+    </datafield>
+    <datafield tag="653" ind1=" " ind2=" ">
+      <subfield code="a">Sachbuch</subfield>
+    </datafield>
+    <datafield tag="653" ind1=" " ind2=" ">
+      <subfield code="a">Veganismus</subfield>
+    </datafield>
+    <datafield tag="653" ind1=" " ind2=" ">
+      <subfield code="a">(VLB-WN)1559: Hardcover, Softcover / Geschichte/Kulturgeschichte</subfield>
+    </datafield>
+  </record>
+</collection>
