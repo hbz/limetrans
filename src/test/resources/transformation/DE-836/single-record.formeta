@@ -24,12 +24,18 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '0585020531',
-			'': '9780585020532',
-			'': '9780262220460',
-			'': '0262220466'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '0585020531'
+		},
+		'' {
+			'identifierISBN': '9780585020532'
+		},
+		'' {
+			'identifierISBN': '9780262220460'
+		},
+		'' {
+			'identifierISBN': '0262220466'
 		}
 	},
 	'Person' {
@@ -58,9 +64,11 @@
 			'': '"A Bradford book."'
 		}
 	},
-	'IdentifierISBNParallel' {
-		'identifierISBN[]' {
-			'': '0262220466'
+	'IdentifierISBNParallel[]' {
+		'' {
+			'identifierISBN[]' {
+				'': '0262220466'
+			}
 		}
 	},
 	'OnlineAccess' {

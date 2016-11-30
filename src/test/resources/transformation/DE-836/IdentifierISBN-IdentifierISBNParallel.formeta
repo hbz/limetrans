@@ -9,14 +9,16 @@
 		},
 		'language': 'keine Angabe'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '0585020531'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '0585020531'
 		}
 	},
-	'IdentifierISBNParallel' {
-		'identifierISBN[]' {
-			'': '0262220466'
+	'IdentifierISBNParallel[]' {
+		'' {
+			'identifierISBN[]' {
+				'': '0262220466'
+			}
 		}
 	}
 }
@@ -31,18 +33,32 @@
 		},
 		'language': 'keine Angabe'
 	},
-	'IdentifierISBN' {
-		'identifierISBN[]' {
-			'': '0585020531',
-			'': '9780585020532',
-			'': '9780262220460'
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN': '0585020531'
+		},
+		'' {
+			'identifierISBN': '9780585020532'
+		},
+		'' {
+			'identifierISBN': '9780262220460'
 		}
 	},
-	'IdentifierISBNParallel' {
-		'identifierISBN[]' {
-			'': '0262220466',
-			'': '3540500537',
-			'': '0387500537'
+	'IdentifierISBNParallel[]' {
+		'' {
+			'identifierISBN[]' {
+				'': '0262220466'
+			}
+		},
+		'' {
+			'identifierISBN[]' {
+				'': '3540500537'
+			}
+		},
+		'' {
+			'identifierISBN[]' {
+				'': '0387500537'
+			}
 		}
 	}
 }
@@ -57,11 +73,13 @@
 		},
 		'language': 'keine Angabe'
 	},
-	'IdentifierISBNParallel' {
-		'identifierISBN[]' {
-			'': '0262220466',
-			'': '3540500537',
-			'': '0387500537'
+	'IdentifierISBNParallel[]' {
+		'' {
+			'identifierISBN[]' {
+				'': '0262220466',
+				'': '3540500537',
+				'': '0387500537'
+			}
 		}
 	}
 }
