@@ -187,7 +187,7 @@
       </entity>
       <entity name="identifierGND[]" flushWith="650??" sameEntity="true">
         <data name="" source="650??.0">
-            <replace pattern="^\(DE-588\)" with="" />
+          <replace pattern="^\(DE-588\)" with="" />
         </data>
       </entity>
     </entity>
@@ -244,6 +244,7 @@
       </entity>
     </entity>
   </entity>
+
   <!-- 8xx -->
   <entity name="SeriesAddedEntryUniformTitle[]" flushWith="record">
     <entity name="" flushWith="830 0" sameEntity="true">
