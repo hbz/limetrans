@@ -78,22 +78,22 @@
 
   <!-- 300 -->
   <data name="@300a1" source="300  .a">
-    <occurrence  only="1"/>
+    <occurrence only="1" />
     <replace pattern="\s?[:;+\(]?$" with="" />
   </data>
   <data name="@300a2" source="300  .a">
-    <occurrence  only="2"/>
+    <occurrence only="2" />
     <replace pattern="\s?[:;+\)]?$" with="" />
   </data>
   <data name="@300b" source="300  .b">
     <replace pattern="\s?[:;+\(]?$" with="" />
   </data>
   <data name="@300c1" source="300  .c">
-    <occurrence  only="1"/>
+    <occurrence only="1" />
     <replace pattern="\.?\s?[+\(]?$" with="" />
   </data>
   <data name="@300c2" source="300  .c">
-    <occurrence  only="2"/>
+    <occurrence only="2" />
     <replace pattern="\.?\s?[:;+\)]?$" with="" />
   </data>
   <data name="@300e" source="300  .e">
