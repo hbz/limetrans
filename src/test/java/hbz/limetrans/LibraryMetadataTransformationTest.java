@@ -8,7 +8,6 @@ import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 
 import static org.junit.Assert.assertEquals;
 
@@ -98,8 +97,8 @@ public class LibraryMetadataTransformationTest {
     }
 
     private LibraryMetadataTransformation getLimetrans(final String aName) throws IOException {
-        final URL url = new File("src/conf/test/limetrans-" + aName + ".json").toURI().toURL();
-        return new LibraryMetadataTransformation(Helpers.getSettingsFromUrl(url));
+        final File file = new File("src/conf/test/limetrans-" + aName + ".json");
+        return new LibraryMetadataTransformation(Helpers.loadSettings(file));
     }
 
     private void assertEqualsReference(final String aName) throws IOException {

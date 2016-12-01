@@ -18,8 +18,6 @@ public final class Main {
     }
 
     private static Settings setup(final String[] aArgs) throws IOException {
-        URL configUrl;
-
         if (aArgs.length < 1) {
             throw new IllegalArgumentException("Could not process limetrans: configuration missing.");
         }
@@ -34,7 +32,7 @@ public final class Main {
         }
 
         if (new UrlValidator(PROTOCOLS).isValid(arg)) {
-            configUrl = new URL(arg);
+            return Helpers.loadSettings(new URL(arg));
         }
         else {
             final File file = new File(arg);
@@ -42,11 +40,9 @@ public final class Main {
                 throw new IllegalArgumentException("Could not process limetrans: invalid configuration argument: ".concat(arg));
             }
             else {
-                configUrl = file.toURI().toURL();
+                return Helpers.loadSettings(file);
             }
         }
-
-        return Helpers.loadSettings(configUrl);
     }
 
 }

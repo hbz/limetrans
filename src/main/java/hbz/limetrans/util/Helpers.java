@@ -8,6 +8,7 @@ import org.xbib.common.settings.loader.SettingsLoaderFactory;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.File;
 import java.net.URL;
 import java.nio.charset.Charset;
 
@@ -22,6 +23,10 @@ public class Helpers {
             .build();
 
         return settings;
+    }
+
+    public static Settings loadSettings(final File aFile) throws IOException {
+        return loadSettings(aFile.toURI().toURL());
     }
 
     public static String slurpFile(final URL aUrl) throws IOException {
