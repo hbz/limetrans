@@ -46,7 +46,7 @@ public final class Main {
             }
         }
 
-        return Helpers.getSettingsFromUrl(configUrl);
+        return Helpers.loadSettings(configUrl);
     }
 
 }

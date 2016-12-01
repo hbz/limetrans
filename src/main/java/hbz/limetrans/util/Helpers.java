@@ -13,7 +13,7 @@ import java.nio.charset.Charset;
 
 public class Helpers {
 
-    public static Settings getSettingsFromUrl(final URL aUrl) throws IOException {
+    public static Settings loadSettings(final URL aUrl) throws IOException {
         final SettingsLoader settingsLoader = SettingsLoaderFactory.loaderFromResource(aUrl.toString());
 
         final Settings settings = Settings.settingsBuilder()
