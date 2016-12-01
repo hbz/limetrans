@@ -52,6 +52,17 @@
       <replace pattern="[.]$" with="" />
     </data>
   </entity>
+  <entity name="SeriesAddedEntryUniformTitle[]" flushWith="record">
+    <if>
+      <none flushWith="record">
+        <data source="830??" />
+      </none>
+    </if>
+    <entity name="" flushWith="245??" sameEntity="true">
+      <call-macro name="regex-del-punctuation-end" dsource="245??.p" dname="title" />
+      <call-macro name="regex-del-punctuation-end" dsource="245??.n" dname="volume" />
+    </entity>
+  </entity>
   <entity name="Edition">
     <entity name="edition[]" flushWith="record">
       <data name="" source="250  .a">
@@ -216,6 +227,8 @@
     <if>
       <none flushWith="record">
         <data source="830??" />
+		<data source="245??.n" />
+		<data source="245??.p" />
       </none>
     </if>
     <entity name="" flushWith="490[01] " sameEntity="true">
