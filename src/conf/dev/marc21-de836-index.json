@@ -16,6 +16,7 @@
       "index" : {
         "name" : "de-836-introx-limetrans-20161115",
         "type" : "titel",
+        "idKey" : "RecordIdentifier.identifierForTheRecord",
         "settings" : "src/test/resources/elasticsearch/hbztitle-settings.json",
         "mapping" : "src/test/resources/elasticsearch/hbztitle-mapping.json"
       },

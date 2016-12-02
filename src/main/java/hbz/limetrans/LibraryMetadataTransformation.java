@@ -180,9 +180,11 @@ public class LibraryMetadataTransformation {
             return;
         }
 
-        final JsonToElasticsearchBulk esBulk = new JsonToElasticsearchBulk("id",
+        final JsonToElasticsearchBulk esBulk = new JsonToElasticsearchBulk(
+                mElasticsearchSettings.get("index.idKey", "_id"),
                 mElasticsearchSettings.get("index.type"),
-                mElasticsearchSettings.get("index.name"));
+                mElasticsearchSettings.get("index.name"),
+                ".");
 
         aTee.addReceiver(esBulk);
         esBulk.setReceiver(new ObjectWriter<>(mElasticsearchPath));

@@ -16,6 +16,7 @@
       "index" : {
         "name" : "testindex-01",
         "type" : "titel",
+        "idKey" : "RecordIdentifier.identifierForTheRecord",
         "settings" : "src/test/resources/elasticsearch/hbztitle-settings.json",
         "mapping" : "src/test/resources/elasticsearch/hbztitle-mapping.json"
       }
