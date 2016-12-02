@@ -3,9 +3,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm24514712'
 	},
-	'TitleStatement' {
-		'titleMain': 'U.S. courts design guide'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -18,6 +15,11 @@
 	'Language' {
 		'language': 'Englisch',
 		'languageSource': 'eng'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'U.S. courts design guide'
+		}
 	},
 	'Edition' {
 		'edition[]' {
@@ -55,9 +57,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm47770357'
 	},
-	'TitleStatement' {
-		'titleMain': 'Rot'
-	},
 	'CreatorStatement' {
 		'creatorStatement': 'Janet Kauffman'
 	},
@@ -84,6 +83,11 @@
 	},
 	'Person' {
 		'personName': 'Kauffman, Janet'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Rot'
+		}
 	},
 	'Edition' {
 		'edition[]' {
@@ -115,10 +119,14 @@
 	},
 	'SeriesAddedEntryUniformTitle[]' {
 		'' {
-			'title': 'New Issues poetry & prose'
+			'title[]' {
+				'': 'New Issues poetry & prose.'
+			}
 		},
 		'' {
-			'title': 'Inland seas book'
+			'title[]' {
+				'': 'Inland seas book.'
+			}
 		}
 	}
 }
@@ -126,9 +134,6 @@
 	'id': 'ocn181570042',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn181570042'
-	},
-	'TitleStatement' {
-		'titleMain': 'Rhön, Spessart, Vogelsberg'
 	},
 	'TitleAddendum' {
 		'title': 'die schönsten Motorradziele'
@@ -154,6 +159,11 @@
 			'identifierISBN': '9783899202892'
 		}
 	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Rhön, Spessart, Vogelsberg'
+		}
+	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Geseke'
@@ -174,7 +184,9 @@
 	},
 	'SeriesAddedEntryUniformTitle[]' {
 		'' {
-			'title': 'Motorradkarte'
+			'title[]' {
+				'': 'Motorradkarte'
+			}
 		}
 	},
 	'Description' {
@@ -182,9 +194,9 @@
 			'': 'Mit Bildern, Texten und 1 Nebenkt. - Mit Schummerung'
 		}
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://www.publicpress.de/index.php?an=Artikeldetail&artid=276'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://www.publicpress.de/index.php?an=Artikeldetail&artid=276'
 		}
 	}
 }
@@ -192,9 +204,6 @@
 	'id': 'ocn231013554',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn231013554'
-	},
-	'TitleStatement' {
-		'titleMain': 'The American journal of clinical nutrition'
 	},
 	'TitleAddendum' {
 		'title': 'a publication of the American Society for Nutrition, Inc'
@@ -208,6 +217,11 @@
 	'Language' {
 		'language': 'Englisch',
 		'languageSource': 'eng'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'The American journal of clinical nutrition'
+		}
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {
@@ -231,9 +245,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn248656983'
 	},
-	'TitleStatement' {
-		'titleMain': 'Professional PHP Programming'
-	},
 	'CreatorStatement' {
 		'creatorStatement': 'Jesus Castagnetto ...'
 	},
@@ -256,6 +267,11 @@
 		},
 		'' {
 			'identifierISBN': '9781861002969'
+		}
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Professional PHP Programming'
 		}
 	},
 	'Edition' {
@@ -288,7 +304,9 @@
 	},
 	'SeriesAddedEntryUniformTitle[]' {
 		'' {
-			'title': 'Programmer to programmer'
+			'title[]' {
+				'': 'Programmer to programmer.'
+			}
 		}
 	}
 }
@@ -296,9 +314,6 @@
 	'id': 'ocn249962072',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn249962072'
-	},
-	'TitleStatement' {
-		'titleMain': 'Beginning PHP 5'
 	},
 	'CreatorStatement' {
 		'creatorStatement': 'Dave W. Mercer ..'
@@ -322,6 +337,11 @@
 		},
 		'' {
 			'identifierISBN': '9780764557835'
+		}
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Beginning PHP 5'
 		}
 	},
 	'PublicationPlace' {
@@ -360,14 +380,20 @@
 	},
 	'SeriesAddedEntryUniformTitle[]' {
 		'' {
-			'title': 'Programmer to programmer'
+			'title[]' {
+				'': 'Programmer to programmer.'
+			}
 		}
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://catdir.loc.gov/catdir/enhancements/fy0620/2004301758-b.html',
-			'': 'http://catdir.loc.gov/catdir/enhancements/fy0620/2004301758-d.html',
-			'': 'http://catdir.loc.gov/catdir/toc/wiley051/2004301758.html'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://catdir.loc.gov/catdir/enhancements/fy0620/2004301758-b.html'
+		},
+		'' {
+			'uri': 'http://catdir.loc.gov/catdir/enhancements/fy0620/2004301758-d.html'
+		},
+		'' {
+			'uri': 'http://catdir.loc.gov/catdir/toc/wiley051/2004301758.html'
 		}
 	}
 }
@@ -375,9 +401,6 @@
 	'id': 'ocn255413311',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn255413311'
-	},
-	'TitleStatement' {
-		'titleMain': 'Franchising for dummies'
 	},
 	'CreatorStatement' {
 		'creatorStatement': 'by Dave Thomas and Michael Seid'
@@ -405,6 +428,11 @@
 	},
 	'Person' {
 		'personName': 'Thomas, Dave'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Franchising for dummies'
+		}
 	},
 	'Edition' {
 		'edition[]' {
@@ -440,12 +468,18 @@
 			'personName': 'Seid, Michael'
 		}
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://bvbr.bib-bvb.de:8991/F?func=service&doc_library=BVB01&doc_number=016326957&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA',
-			'': 'http://catdir.loc.gov/catdir/enhancements/fy0826/2006927771-b.html',
-			'': 'http://catdir.loc.gov/catdir/enhancements/fy0826/2006927771-d.html',
-			'': 'http://catdir.loc.gov/catdir/toc/fy0713/2006927771.html'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://bvbr.bib-bvb.de:8991/F?func=service&doc_library=BVB01&doc_number=016326957&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA'
+		},
+		'' {
+			'uri': 'http://catdir.loc.gov/catdir/enhancements/fy0826/2006927771-b.html'
+		},
+		'' {
+			'uri': 'http://catdir.loc.gov/catdir/enhancements/fy0826/2006927771-d.html'
+		},
+		'' {
+			'uri': 'http://catdir.loc.gov/catdir/toc/fy0713/2006927771.html'
 		}
 	}
 }
@@ -453,9 +487,6 @@
 	'id': 'ocn255680877',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn255680877'
-	},
-	'TitleStatement' {
-		'titleMain': 'Bioinformatics for dummies'
 	},
 	'CreatorStatement' {
 		'creatorStatement': 'by Jean-Michel Claverie and Cedric Notredame'
@@ -483,6 +514,11 @@
 	},
 	'Person' {
 		'personName': 'Claverie, Jean-Michel'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Bioinformatics for dummies'
+		}
 	},
 	'Edition' {
 		'edition[]' {
@@ -512,11 +548,15 @@
 			'personName': 'Notredame, Cedric'
 		}
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://catdir.loc.gov/catdir/enhancements/fy0827/2006934844-b.html',
-			'': 'http://catdir.loc.gov/catdir/enhancements/fy0827/2006934844-d.html',
-			'': 'http://catdir.loc.gov/catdir/enhancements/fy0827/2006934844-t.html'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://catdir.loc.gov/catdir/enhancements/fy0827/2006934844-b.html'
+		},
+		'' {
+			'uri': 'http://catdir.loc.gov/catdir/enhancements/fy0827/2006934844-d.html'
+		},
+		'' {
+			'uri': 'http://catdir.loc.gov/catdir/enhancements/fy0827/2006934844-t.html'
 		}
 	}
 }
@@ -524,9 +564,6 @@
 	'id': 'ocn696257569',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn696257569'
-	},
-	'TitleStatement' {
-		'titleMain': 'Broadacre City und die Zwischenstadt'
 	},
 	'dc' {
 		'language': 'Deutsch',
@@ -538,15 +575,23 @@
 		'language': 'Deutsch',
 		'languageSource': 'ger'
 	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Broadacre City und die Zwischenstadt'
+		}
+	},
 	'Description' {
 		'description[]' {
 			'': 'application/pdf'
 		}
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://duepublico.uni-duisburg-essen.de/servlets/DocumentServlet?id=20542',
-			'': 'http://duepublico.uni-duisburg-essen.de/servlets/DerivateServlet/Derivate-22360/Broadacre_Bremer.pdf'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://duepublico.uni-duisburg-essen.de/servlets/DocumentServlet?id=20542',
+			'nonpublicnote': 'This 856 field was generated using the WorldCat Digital Collection Gateway'
+		},
+		'' {
+			'uri': 'http://duepublico.uni-duisburg-essen.de/servlets/DerivateServlet/Derivate-22360/Broadacre_Bremer.pdf'
 		}
 	}
 }
@@ -554,9 +599,6 @@
 	'id': 'ocn758397903',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocn758397903'
-	},
-	'TitleStatement' {
-		'titleMain': 'My Evernote'
 	},
 	'CreatorStatement' {
 		'creatorStatement': 'Katherine Murray'
@@ -585,6 +627,11 @@
 	'Person' {
 		'personName': 'Murray, Katherine',
 		'personBio': '1961-'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'My Evernote'
+		}
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {

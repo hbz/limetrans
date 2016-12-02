@@ -41,17 +41,32 @@
   </entity>
 
   <!-- 2xx -->
-  <entity name="TitleStatement">
-    <call-macro name="regex-del-punctuation-end" dsource="245??.a" dname="titleMain" />
+  <entity name="TitleStatement[]" flushWith="record">
+    <entity name="" flushWith="record">
+      <call-macro name="regex-del-punctuation-end" dsource="245??.a" dname="titleMain" />
+    </entity>
+    <entity name="" flushWith="record">
+      <data name="titleMain" source="245??.p">
+        <occurrence only="1" />
+        <replace pattern="\s?\.?\s?$" with="" />
+      </data>
+    </entity>
   </entity>
   <entity name="TitleAddendum">
     <call-macro name="regex-del-punctuation-end" dsource="245??.b" dname="title" />
+  </entity>
+  <entity name="VolumeDesignation">
+    <data name="volumeDesignation" source="245??.n">
+      <occurrence only="1" />
+      <replace pattern="\s?[,.]?\s?$" with="" />
+    </data>
   </entity>
   <entity name="CreatorStatement">
     <data name="creatorStatement" source="245[01]?.c">
       <replace pattern="[.]$" with="" />
     </data>
   </entity>
+
   <entity name="Edition">
     <entity name="edition[]" flushWith="record">
       <data name="" source="250  .a">
@@ -212,6 +227,7 @@
   <!-- 301-399 -->
 
   <!-- 4xx -->
+  <call-macro name="prepare-SeriesAddedEntryUniformTitle-title" field="490[01] " basefield="490" />
   <entity name="SeriesAddedEntryUniformTitle[]" flushWith="record">
     <if>
       <none flushWith="record">
@@ -219,8 +235,10 @@
       </none>
     </if>
     <entity name="" flushWith="490[01] " sameEntity="true">
-      <call-macro name="regex-del-punctuation-end" dsource="490[01] .a" dname="title" />
-      <call-macro name="regex-del-punctuation-end" dsource="490[01] .v" dname="volume" />
+      <call-macro name="SeriesAddedEntryUniformTitle-title" field="490[01] " basefield="490" />
+      <entity name="volume[]" flushWith="490[01] " sameEntity="true">
+        <call-macro name="regex-del-punctuation-end" dsource="490[01] .v" dname="" />
+      </entity>
     </entity>
   </entity>
 
@@ -308,16 +326,25 @@
   </entity>
 
   <!-- 8xx -->
+  <call-macro name="prepare-SeriesAddedEntryUniformTitle-title" field="830 0" basefield="830" />
+
   <entity name="SeriesAddedEntryUniformTitle[]" flushWith="record">
     <entity name="" flushWith="830 0" sameEntity="true">
-      <call-macro name="regex-del-punctuation-end" dsource="830 0.a" dname="title" />
-      <call-macro name="regex-del-punctuation-end" dsource="830 0.v" dname="volume" />
+      <call-macro name="SeriesAddedEntryUniformTitle-title" field="830 0" basefield="830" />
+      <entity name="volume[]" flushWith="830 0" sameEntity="true">
+        <call-macro name="regex-del-punctuation-end" dsource="830 0.v" dname="" />
+      </entity>
     </entity>
   </entity>
-  <entity name="OnlineAccess">
-    <entity name="uri[]" flushWith="record">
-      <data name="" source="856??.u">
+
+  <entity name="OnlineAccess[]" flushWith="record">
+    <entity name="" flushWith="856??" sameEntity="true">
+      <data name="uri" source="856??.u">
+        <occurrence only="1" sameEntity="true" />
         <unique />
+      </data>
+      <data name="nonpublicnote" source="856??.x">
+        <occurrence only="1" sameEntity="true" />
       </data>
     </entity>
   </entity>

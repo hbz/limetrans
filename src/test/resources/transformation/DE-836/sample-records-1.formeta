@@ -3,9 +3,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm38995695'
 	},
-	'TitleStatement' {
-		'titleMain': 'International journal of heat and mass transfer'
-	},
 	'dc' {
 		'language': 'Englisch',
 		'format[]' {
@@ -20,6 +17,11 @@
 	'Language' {
 		'language': 'Englisch',
 		'languageSource': 'eng'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'International journal of heat and mass transfer'
+		}
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {
@@ -42,9 +44,9 @@
 			'': 'Title from contents screen (ScienceDirect, viewed Feb. 28, 2007).'
 		}
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://www.sciencedirect.com/science/journal/00179310'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://www.sciencedirect.com/science/journal/00179310'
 		}
 	}
 }
@@ -52,9 +54,6 @@
 	'id': 'ocm43310902',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm43310902'
-	},
-	'TitleStatement' {
-		'titleMain': 'Archiv der Mathematik'
 	},
 	'TitleAddendum' {
 		'title': 'Archives mathématiques = Archives of mathematics'
@@ -71,13 +70,26 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://link.springer.com/journal/13',
-			'': 'http://www.springerlink.com/openurl.asp?genre=journal&eissn=1420-8938',
-			'': 'http://www.springerlink.com/link.asp?id=101192',
-			'': 'http://firstsearch.oclc.org',
-			'': 'http://firstsearch.oclc.org/journal=0003-889x;screen=info;ECOIP'
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Archiv der Mathematik'
+		}
+	},
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://link.springer.com/journal/13'
+		},
+		'' {
+			'uri': 'http://www.springerlink.com/openurl.asp?genre=journal&eissn=1420-8938'
+		},
+		'' {
+			'uri': 'http://www.springerlink.com/link.asp?id=101192'
+		},
+		'' {
+			'uri': 'http://firstsearch.oclc.org'
+		},
+		'' {
+			'uri': 'http://firstsearch.oclc.org/journal=0003-889x;screen=info;ECOIP'
 		}
 	}
 }
@@ -85,9 +97,6 @@
 	'id': 'ocm44954079',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm44954079'
-	},
-	'TitleStatement' {
-		'titleMain': 'A kidnapped Santa Claus'
 	},
 	'CreatorStatement' {
 		'creatorStatement': 'by L. Frank Baum'
@@ -116,6 +125,11 @@
 		'personName': 'Baum, L. Frank',
 		'personBio': '1856-1919'
 	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'A kidnapped Santa Claus'
+		}
+	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Champaign, Ill.'
@@ -136,16 +150,26 @@
 	},
 	'SeriesAddedEntryUniformTitle[]' {
 		'' {
-			'title': 'Project Gutenberg etext',
-			'volume': 'no. 519'
+			'title[]' {
+				'': 'Project Gutenberg etext ; no. 519'
+			},
+			'volume[]' {
+				'': 'no. 519'
+			}
 		}
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/kdsta10.txt',
-			'': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/kdsta10.zip',
-			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1000900',
-			'': 'http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=519'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/kdsta10.txt'
+		},
+		'' {
+			'uri': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/kdsta10.zip'
+		},
+		'' {
+			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1000900'
+		},
+		'' {
+			'uri': 'http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=519'
 		}
 	}
 }
@@ -153,9 +177,6 @@
 	'id': 'ocm44959477',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm44959477'
-	},
-	'TitleStatement' {
-		'titleMain': 'The god-idea of the ancients or sex in religion'
 	},
 	'CreatorStatement' {
 		'creatorStatement': 'Eliza Burt Gamble'
@@ -186,6 +207,11 @@
 	'Person' {
 		'personName': 'Gamble, Eliza, B.'
 	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'The god-idea of the ancients or sex in religion'
+		}
+	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Champaign, Ill.'
@@ -209,9 +235,9 @@
 			'': 'Available in multiple electronic file formats.'
 		}
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2009426'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2009426'
 		}
 	}
 }
@@ -219,9 +245,6 @@
 	'id': 'ocm44960649',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm44960649'
-	},
-	'TitleStatement' {
-		'titleMain': 'The new McGuffey first reader'
 	},
 	'CreatorStatement' {
 		'creatorStatement': 'William McGuffey'
@@ -250,6 +273,11 @@
 		'personName': 'McGuffey, William Holmes',
 		'personBio': '1800-1873'
 	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'The new McGuffey first reader'
+		}
+	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Champaign, Ill.'
@@ -268,9 +296,9 @@
 	'Extent' {
 		'extent': '1 online resource.'
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2009639'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2009639'
 		}
 	}
 }
@@ -278,9 +306,6 @@
 	'id': 'ocm44961551',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm44961551'
-	},
-	'TitleStatement' {
-		'titleMain': 'A journey from this world to the next'
 	},
 	'CreatorStatement' {
 		'creatorStatement': 'by Henry Fielding'
@@ -309,6 +334,11 @@
 		'personName': 'Fielding, Henry',
 		'personBio': '1707-1754'
 	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'A journey from this world to the next'
+		}
+	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Champaign, Ill.'
@@ -327,9 +357,9 @@
 	'Extent' {
 		'extent': '1 online resource.'
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1030100'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1030100'
 		}
 	}
 }
@@ -337,9 +367,6 @@
 	'id': 'ocm47011858',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm47011858'
-	},
-	'TitleStatement' {
-		'titleMain': 'A companion to feminist philosophy'
 	},
 	'CreatorStatement' {
 		'creatorStatement': 'edited by Alison M. Jaggar and Iris Marion Young'
@@ -372,6 +399,11 @@
 		},
 		'' {
 			'identifierISBN': '1405164492'
+		}
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'A companion to feminist philosophy'
 		}
 	},
 	'Edition' {
@@ -415,14 +447,20 @@
 	},
 	'SeriesAddedEntryUniformTitle[]' {
 		'' {
-			'title': 'Blackwell companions to philosophy',
-			'volume': '13'
+			'title[]' {
+				'': 'Blackwell companions to philosophy ; 13'
+			},
+			'volume[]' {
+				'': '13'
+			}
 		}
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://www.blackwellreference.com/subscriber/uid=3/book?show=all&id=g9780631220671_9780631220671',
-			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=44970'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://www.blackwellreference.com/subscriber/uid=3/book?show=all&id=g9780631220671_9780631220671'
+		},
+		'' {
+			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=44970'
 		}
 	}
 }
@@ -430,9 +468,6 @@
 	'id': 'ocm48498937',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm48498937'
-	},
-	'TitleStatement' {
-		'titleMain': 'Nuclear law bulletin'
 	},
 	'dc' {
 		'language': 'Englisch',
@@ -446,6 +481,11 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Nuclear law bulletin'
+		}
+	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Paris'
@@ -456,11 +496,15 @@
 			'': 'Organisation for Economic Co-Operation and Development'
 		}
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://www.ingenta.com/journals/browse/oecd/0304341x?mode=direct',
-			'': 'http://firstsearch.oclc.org',
-			'': 'http://firstsearch.oclc.org/journal=0304-341x;screen=info;ECOIP'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://www.ingenta.com/journals/browse/oecd/0304341x?mode=direct'
+		},
+		'' {
+			'uri': 'http://firstsearch.oclc.org'
+		},
+		'' {
+			'uri': 'http://firstsearch.oclc.org/journal=0304-341x;screen=info;ECOIP'
 		}
 	}
 }
@@ -468,9 +512,6 @@
 	'id': 'ocm49293189',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm49293189'
-	},
-	'TitleStatement' {
-		'titleMain': 'The life and death of Cormac the Skald'
 	},
 	'TitleAddendum' {
 		'title': 'anonymous Icelandic epic'
@@ -498,6 +539,11 @@
 			'identifierISBN': '9780585152301'
 		}
 	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'The life and death of Cormac the Skald'
+		}
+	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Champaign, Ill.'
@@ -518,8 +564,12 @@
 	},
 	'SeriesAddedEntryUniformTitle[]' {
 		'' {
-			'title': 'Project Gutenberg etext',
-			'volume': 'no. 265'
+			'title[]' {
+				'': 'Project Gutenberg etext ; no. 265'
+			},
+			'volume[]' {
+				'': 'no. 265'
+			}
 		}
 	},
 	'Description' {
@@ -533,12 +583,18 @@
 			'personBio': '1854-1932'
 		}
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext95/cormc10.txt',
-			'': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext95/cormc10.zip',
-			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2009672',
-			'': 'http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=265'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext95/cormc10.txt'
+		},
+		'' {
+			'uri': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext95/cormc10.zip'
+		},
+		'' {
+			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2009672'
+		},
+		'' {
+			'uri': 'http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=265'
 		}
 	}
 }
@@ -546,9 +602,6 @@
 	'id': 'ocm49293748',
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm49293748'
-	},
-	'TitleStatement' {
-		'titleMain': 'Rewards and fairies'
 	},
 	'CreatorStatement' {
 		'creatorStatement': 'by Rudyard Kipling'
@@ -577,6 +630,11 @@
 		'personName': 'Kipling, Rudyard',
 		'personBio': '1865-1936'
 	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Rewards and fairies'
+		}
+	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Champaign, Ill.'
@@ -597,16 +655,26 @@
 	},
 	'SeriesAddedEntryUniformTitle[]' {
 		'' {
-			'title': 'Project Gutenberg etext',
-			'volume': 'no. 556'
+			'title[]' {
+				'': 'Project Gutenberg etext ; no. 556'
+			},
+			'volume[]' {
+				'': 'no. 556'
+			}
 		}
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/rwfrs10.txt',
-			'': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/rwfrs10.zip',
-			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1085058',
-			'': 'http://digital.library.upenn.edu/webbin/gutbook/lookup?num=556'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/rwfrs10.txt'
+		},
+		'' {
+			'uri': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/rwfrs10.zip'
+		},
+		'' {
+			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1085058'
+		},
+		'' {
+			'uri': 'http://digital.library.upenn.edu/webbin/gutbook/lookup?num=556'
 		}
 	}
 }

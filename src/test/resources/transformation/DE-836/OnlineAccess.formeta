@@ -9,9 +9,9 @@
 		},
 		'language': 'keine Angabe'
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795'
 		}
 	}
 }
@@ -26,10 +26,9 @@
 		},
 		'language': 'keine Angabe'
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795',
-			'': 'http://cognet.mit.edu/library/books/view?isbn=0262220466'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795'
 		}
 	}
 }
@@ -44,10 +43,17 @@
 		},
 		'language': 'keine Angabe'
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795',
-			'': 'http://cognet.mit.edu/library/books/view?isbn=0262220466'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://swbplus.bsz-bw.de/bsz000838845inh.htm',
+			'nonpublicnote': 'Inhaltsverzeichnis1'
+		},
+		'' {
+			'uri': 'http://digitool.hbz-nrw.de:1801/webclient/DeliveryManager?pid=3723265&custom_att_2=simple_viewer',
+			'nonpublicnote': 'Inhaltsverzeichnis2'
+		},
+		'' {
+			'uri': 'http://cognet.mit.edu/library/books/view?isbn=0262220466'
 		}
 	}
 }
