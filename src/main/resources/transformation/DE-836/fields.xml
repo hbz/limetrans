@@ -227,7 +227,7 @@
   <!-- 301-399 -->
 
   <!-- 4xx -->
-  <call-macro name="prepare-SeriesAddedEntryUniformTitle-title" field="490[01] " basefield="490"/>
+  <call-macro name="prepare-SeriesAddedEntryUniformTitle-title" field="490[01] " basefield="490" />
   <entity name="SeriesAddedEntryUniformTitle[]" flushWith="record">
     <if>
       <none flushWith="record">
@@ -235,7 +235,7 @@
       </none>
     </if>
     <entity name="" flushWith="490[01] " sameEntity="true">
-      <call-macro name="SeriesAddedEntryUniformTitle-title" field="490[01] " basefield="490"/>
+      <call-macro name="SeriesAddedEntryUniformTitle-title" field="490[01] " basefield="490" />
       <entity name="volume[]" flushWith="490[01] " sameEntity="true">
         <call-macro name="regex-del-punctuation-end" dsource="490[01] .v" dname="" />
       </entity>
@@ -326,11 +326,11 @@
   </entity>
 
   <!-- 8xx -->
-  <call-macro name="prepare-SeriesAddedEntryUniformTitle-title" field="830 0" basefield="830"/>
+  <call-macro name="prepare-SeriesAddedEntryUniformTitle-title" field="830 0" basefield="830" />
 
   <entity name="SeriesAddedEntryUniformTitle[]" flushWith="record">
     <entity name="" flushWith="830 0" sameEntity="true">
-      <call-macro name="SeriesAddedEntryUniformTitle-title" field="830 0" basefield="830"/>
+      <call-macro name="SeriesAddedEntryUniformTitle-title" field="830 0" basefield="830" />
       <entity name="volume[]" flushWith="830 0" sameEntity="true">
         <call-macro name="regex-del-punctuation-end" dsource="830 0.v" dname="" />
       </entity>
@@ -339,13 +339,13 @@
 
   <entity name="OnlineAccess[]" flushWith="record">
     <entity name="" flushWith="856??" sameEntity="true">
-        <data name="uri" source="856??.u">
-          <occurrence only="1" sameEntity="true"/>
-          <unique />
-        </data>
-        <data name="nonpublicnote" source="856??.x">
-          <occurrence only="1" sameEntity="true"/>
-        </data>
+      <data name="uri" source="856??.u">
+        <occurrence only="1" sameEntity="true" />
+        <unique />
+      </data>
+      <data name="nonpublicnote" source="856??.x">
+        <occurrence only="1" sameEntity="true" />
+      </data>
     </entity>
   </entity>
 </rules>
