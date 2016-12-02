@@ -3,7 +3,6 @@ package hbz.limetrans;
 import org.junit.rules.ExpectedException;
 import org.junit.Rule;
 import org.junit.Test;
-import org.xbib.common.settings.Settings;
 
 import java.io.File;
 import java.io.IOException;
