@@ -1,0 +1,17 @@
+{
+  "input" : {
+    "queue" : {
+      "path" : "src/test/resources/limetrans/input/",
+      "pattern" : "unicode-normalization-composed.xml",
+      "sort_by" : "lastmodified",
+      "order" : "desc",
+      "max" : 1
+    }
+  },
+  "output": {
+    "json" : "src/test/resources/limetrans/output/unicode-normalization-composed.jsonl"
+  },
+  "transformation-rules" : "src/test/resources/limetrans/rules/noop.xml",
+  "catalogid" : "DE-605-test",
+  "collection" : "HBZ-Test"
+}

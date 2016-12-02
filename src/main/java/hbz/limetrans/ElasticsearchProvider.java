@@ -21,8 +21,6 @@ import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Map;
 
 public class ElasticsearchProvider {
@@ -75,8 +73,8 @@ public class ElasticsearchProvider {
         deleteIndex();
 
         mClient.admin().indices().prepareCreate(mIndexName)
-            .setSettings(slurpFile(mIndexSettings.get("settings")))
-            .addMapping(mIndexType, slurpFile(mIndexSettings.get("mapping")))
+            .setSettings(Helpers.slurpFile(mIndexSettings.get("settings")))
+            .addMapping(mIndexType, Helpers.slurpFile(mIndexSettings.get("mapping")))
             .get();
 
         refreshIndex();
@@ -157,10 +155,6 @@ public class ElasticsearchProvider {
     private void refreshIndex() {
         mClient.admin().indices()
             .prepareRefresh(mIndexName).get();
-    }
-
-    private String slurpFile(final String aPath) throws IOException {
-        return new String(Files.readAllBytes(Paths.get(aPath)));
     }
 
 }

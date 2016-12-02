@@ -9,18 +9,22 @@ import org.culturegraph.mf.stream.converter.xml.MarcXmlHandler;
 import org.culturegraph.mf.stream.converter.xml.XmlDecoder;
 import org.culturegraph.mf.stream.pipe.ObjectTee;
 import org.culturegraph.mf.stream.pipe.StreamTee;
+import org.culturegraph.mf.stream.pipe.StreamUnicodeNormalizer;
 import org.culturegraph.mf.stream.sink.ObjectWriter;
 import org.culturegraph.mf.stream.source.FileOpener;
 import org.xbib.common.settings.Settings;
+import org.xbib.util.Finder.PathFile;
+import org.xbib.util.Finder;
 
 import java.io.IOException;
 import java.io.File;
+import java.util.Queue;
 
 public class LibraryMetadataTransformation {
 
     private final Settings mElasticsearchSettings;
     private final String mFormetaPath;
-    private final String mInputPath;
+    private final Queue<PathFile> mInputQueue;
     private final String mJsonPath;
     private final String mRulesPath;
     private final boolean mIsUpdate;
@@ -28,8 +32,10 @@ public class LibraryMetadataTransformation {
     private String mElasticsearchPath;
 
     public LibraryMetadataTransformation(final Settings aSettings) throws IOException {
-        final Settings inputQueue = aSettings.getGroups("input").get("queue");
-        mInputPath = inputQueue.get("path").concat(inputQueue.get("pattern"));
+        mInputQueue = prepareInputQueue(aSettings.getGroups("input").get("queue"));
+        if (mInputQueue == null) {
+            throw new IllegalArgumentException("Could not process limetrans: no input specified.");
+        }
 
         final Settings outputSettings = aSettings.getAsSettings("output");
 
@@ -64,12 +70,14 @@ public class LibraryMetadataTransformation {
         final FileOpener opener = new FileOpener();
         final XmlDecoder decoder = new XmlDecoder();
         final MarcXmlHandler marcHandler = new MarcXmlHandler();
+        final StreamUnicodeNormalizer normalizer = new StreamUnicodeNormalizer();
         final Metamorph morph = new Metamorph(mRulesPath);
         final StreamTee streamTee = new StreamTee();
 
         opener
             .setReceiver(decoder)
             .setReceiver(marcHandler)
+            .setReceiver(normalizer)
             .setReceiver(morph)
             .setReceiver(streamTee);
 
@@ -79,7 +87,10 @@ public class LibraryMetadataTransformation {
         transformFormeta(streamTee);
         transformElasticsearch(objectTee);
 
-        opener.process(mInputPath);
+        for (final PathFile pathFile : mInputQueue) {
+            opener.process(pathFile.toString());
+        }
+
         opener.closeStream();
     }
 
@@ -103,6 +114,31 @@ public class LibraryMetadataTransformation {
         finally {
             esProvider.close();
         }
+    }
+
+    public int getInputQueueSize() {
+        return mInputQueue.size();
+    }
+
+    private Queue<PathFile> prepareInputQueue(final Settings inputSettings) throws IOException {
+        if (inputSettings == null) {
+          return null;
+        }
+
+        final String path = inputSettings.get("path");
+        final String pattern = inputSettings.get("pattern");
+
+        if (path == null || pattern == null) {
+          return null;
+        }
+
+        final Queue<PathFile> inputQueue = new Finder().find(
+                inputSettings.get("base"), inputSettings.get("basepattern"), path, pattern)
+            .sortBy(inputSettings.get("sort_by", "lastmodified"))
+            .order(inputSettings.get("order", "asc"))
+            .getPathFiles(inputSettings.getAsInt("max", -1));
+
+        return inputQueue.isEmpty() ? null : inputQueue;
     }
 
     private ObjectTee prepareJson(final StreamTee aTee) {

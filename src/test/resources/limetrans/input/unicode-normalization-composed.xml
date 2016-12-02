@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cjm a2200000Mi 4500</leader>
+    <controlfield tag="001">ocn823230005</controlfield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Lüth, Wiebke.</subfield>
+      <subfield code="0">(DE-588)1020026928</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">NLP-fresh-up Podcast.</subfield>
+      <subfield code="n">Staffel 2. Die komplette 2. Staffel - Folge 21 - 40 /</subfield>
+      <subfield code="c">Wiebke Lüth ; Marc A. Pletzer ; Ralf Gerstenlauer.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">4 CDs (208 Min.). - CDs ;</subfield>
+      <subfield code="c">12 cm, in Behältnissen je 13 x 15 x 3 cm.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Gerstenlauer, Ralf.</subfield>
+      <subfield code="0">(DE-588)1020026952</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Pletzer, Marc.</subfield>
+      <subfield code="0">(DE-588)114052336</subfield>
+    </datafield>
+  </record>
+</collection>

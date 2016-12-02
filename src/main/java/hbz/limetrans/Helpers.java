@@ -8,6 +8,8 @@ import org.xbib.common.settings.loader.SettingsLoaderFactory;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class Helpers {
 
@@ -15,10 +17,15 @@ public class Helpers {
         final SettingsLoader settingsLoader = SettingsLoaderFactory.loaderFromResource(aUrl.toString());
 
         final Settings settings = Settings.settingsBuilder()
-                .put(settingsLoader.load(IOUtils.toString(aUrl, Charset.defaultCharset())))
-                .replacePropertyPlaceholders()
-                .build();
+            .put(settingsLoader.load(IOUtils.toString(aUrl, Charset.defaultCharset())))
+            .replacePropertyPlaceholders()
+            .build();
 
         return settings;
     }
+
+    public static String slurpFile(final String aPath) throws IOException {
+        return new String(Files.readAllBytes(Paths.get(aPath)));
+    }
+
 }
