@@ -18,13 +18,15 @@
   </record>
   <record xmlns="http://www.loc.gov/MARC21/slim">
     <controlfield tag="001">3 </controlfield>
-    <datafield tag="856" ind1="4" ind2="2">
-      <subfield code="3">EBSCOhost</subfield>
-      <subfield code="u">http://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=1795</subfield>
+    <datafield tag="856" ind1="4" ind2="1">
+      <subfield code="3">Inhaltsverzeichnis</subfield>
+      <subfield code="u">http://swbplus.bsz-bw.de/bsz000838845inh.htm</subfield>
+      <subfield code="v">20110314164737</subfield>
+	  <subfield code="x">Inhaltsverzeichnis1</subfield>
     </datafield>
-    <datafield tag="856" ind1="4" ind2="2">
-      <subfield code="u">http://cognet.mit.edu/library/books/view?isbn=0262220466</subfield>
-      <subfield code="z">Full text available from MIT CogNet</subfield>
+    <datafield tag="856" ind1="4" ind2="1">
+      <subfield code="u">http://digitool.hbz-nrw.de:1801/webclient/DeliveryManager?pid=3723265&amp;custom_att_2=simple_viewer</subfield>
+      <subfield code="x">Inhaltsverzeichnis2</subfield>
     </datafield>
     <datafield tag="856" ind1="4" ind2=" ">
       <subfield code="u">http://cognet.mit.edu/library/books/view?isbn=0262220466</subfield>

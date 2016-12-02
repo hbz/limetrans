@@ -3,9 +3,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': 'ocm42328784'
 	},
-	'TitleStatement' {
-		'titleMain': 'What is cognitive science?'
-	},
 	'CreatorStatement' {
 		'creatorStatement': 'Barbara Von Eckardt'
 	},
@@ -41,6 +38,11 @@
 	'Person' {
 		'personName': 'Von Eckardt, Barbara'
 	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'What is cognitive science?'
+		}
+	},
 	'PublicationPlace' {
 		'printingPlace[]' {
 			'': 'Cambridge, Mass.'
@@ -71,10 +73,12 @@
 			}
 		}
 	},
-	'OnlineAccess' {
-		'uri[]' {
-			'': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795',
-			'': 'http://cognet.mit.edu/library/books/view?isbn=0262220466'
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795'
+		},
+		'' {
+			'uri': 'http://cognet.mit.edu/library/books/view?isbn=0262220466'
 		}
 	}
 }

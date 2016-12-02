@@ -80,4 +80,10 @@
     <result src="&base;/RSWK.formeta" />
   </test-case>
 
+  <test-case name="SeriesAddedEntryUniformTitle">
+    <input src="&base;/SeriesAddedEntryUniformTitle.xml" />
+    <transformation />
+    <result src="&base;/SeriesAddedEntryUniformTitle.formeta" />
+  </test-case>
+
 </metamorph-test>

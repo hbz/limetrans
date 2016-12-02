@@ -3,9 +3,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '1'
 	},
-	'TitleStatement' {
-		'titleMain': 'Deviant bodies'
-	},
 	'TitleAddendum' {
 		'title': 'critical perspectives on difference in science and popular culture'
 	},
@@ -17,6 +14,11 @@
 			'': 'keine Angabe'
 		},
 		'language': 'keine Angabe'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Deviant bodies'
+		}
 	}
 }
 '' {
@@ -24,9 +26,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '2'
 	},
-	'TitleStatement' {
-		'titleMain': 'Deviant bodies'
-	},
 	'TitleAddendum' {
 		'title': 'critical perspectives on difference in science and popular culture'
 	},
@@ -35,15 +34,17 @@
 			'': 'keine Angabe'
 		},
 		'language': 'keine Angabe'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Deviant bodies'
+		}
 	}
 }
 '' {
 	'id': '3',
 	'RecordIdentifier' {
 		'identifierForTheRecord': '3'
-	},
-	'TitleStatement' {
-		'titleMain': 'Deviant bodies'
 	},
 	'CreatorStatement' {
 		'creatorStatement': 'edited by Jennifer Terry and Jacqueline Urla'
@@ -53,6 +54,11 @@
 			'': 'keine Angabe'
 		},
 		'language': 'keine Angabe'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Deviant bodies'
+		}
 	}
 }
 '' {
@@ -60,13 +66,64 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '4'
 	},
-	'TitleStatement' {
-		'titleMain': 'Deviant bodies'
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Deviant bodies'
+		}
+	}
+}
+'' {
+	'id': '5',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '5'
+	},
+	'VolumeDesignation' {
+		'volumeDesignation': '1'
 	},
 	'dc' {
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'language': 'keine Angabe'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Handbuch Körpersoziologie'
+		},
+		'' {
+			'titleMain': 'Grundbegriffe und theoretische Perspektiven'
+		}
+	}
+}
+'' {
+	'id': '6',
+	'RecordIdentifier' {
+		'identifierForTheRecord': '6'
+	},
+	'TitleAddendum' {
+		'title': 'critical perspectives on difference in science and popular culture'
+	},
+	'VolumeDesignation' {
+		'volumeDesignation': '1'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Handbuch Körpersoziologie'
+		},
+		'' {
+			'titleMain': 'Grundbegriffe und theoretische Perspektiven'
+		}
 	}
 }

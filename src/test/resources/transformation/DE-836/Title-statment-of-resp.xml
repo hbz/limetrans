@@ -28,4 +28,25 @@
       <subfield code="a">Deviant bodies.</subfield>
     </datafield>
   </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">5 </controlfield>
+    <datafield tag="245" ind1=" " ind2=" ">
+      <subfield code="a">Handbuch Körpersoziologie</subfield>
+      <subfield code="c">Robert Gugutzer ... (Hrsg.)</subfield>
+      <subfield code="n">1</subfield>
+      <subfield code="p">Grundbegriffe und theoretische Perspektiven</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">6 </controlfield>
+    <datafield tag="245" ind1=" " ind2=" ">
+      <subfield code="a">Handbuch Körpersoziologie</subfield>
+      <subfield code="b">critical perspectives on difference in science and popular culture</subfield>
+      <subfield code="c">Robert Gugutzer ... (Hrsg.)</subfield>
+      <subfield code="n">1,</subfield>
+      <subfield code="p">Grundbegriffe und theoretische Perspektiven.</subfield>
+      <subfield code="n">2,</subfield>
+      <subfield code="p">Perspektiven.</subfield>
+    </datafield>
+  </record>
 </collection>
