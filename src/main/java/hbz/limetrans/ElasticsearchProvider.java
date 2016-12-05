@@ -2,6 +2,7 @@ package hbz.limetrans;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.io.FileUtils;
 import org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsResponse;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.action.bulk.BulkResponse;
@@ -13,43 +14,42 @@ import org.elasticsearch.common.settings.Settings.Builder;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.elasticsearch.index.IndexNotFoundException;
+import org.elasticsearch.node.Node;
+import org.elasticsearch.node.NodeBuilder;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.util.Map;
 
 public class ElasticsearchProvider {
 
-    final private Client mClient;
-    final private org.xbib.common.settings.Settings mIndexSettings;
-    final private String mIndexName;
-    final private String mIndexType;
+    private final Client mClient;
+    private final EmbeddedElasticsearchServer mEmbeddedServer;
+    private final org.xbib.common.settings.Settings mIndexSettings;
+    private final String mIndexName;
+    private final String mIndexType;
 
     public ElasticsearchProvider(final org.xbib.common.settings.Settings aElasticsearchSettings) {
         mIndexSettings = aElasticsearchSettings.getAsSettings("index");
         mIndexName = mIndexSettings.get("name");
         mIndexType = mIndexSettings.get("type");
 
-        final Builder clientSettingsBuilder = Settings.settingsBuilder();
-        clientSettingsBuilder.put("index.name", mIndexName);
-        clientSettingsBuilder.put("index.type", mIndexType);
-        clientSettingsBuilder.put("cluster.name", aElasticsearchSettings.get("cluster"));
-
-        // TODO: enable multiple server, according to array under "output.elasticsearch.host"
-        final String[] host = aElasticsearchSettings.get("host.0").split(":");
-        final String serverName = host[0];
-        final int serverPort = Integer.valueOf(host[1]);
-
-        try {
-            mClient = TransportClient.builder().settings(clientSettingsBuilder).build().addTransportAddress(
-                new InetSocketTransportAddress(InetAddress.getByName(serverName), serverPort));
-        } catch (UnknownHostException ex) {
-            throw new RuntimeException(ex);
+        final String embedded = aElasticsearchSettings.get("embedded");
+        final String[] hosts = aElasticsearchSettings.getAsArray("host");
+        if (embedded == null && hosts.length > 0) {
+            mEmbeddedServer = null;
+            mClient = buildClient(hosts, aElasticsearchSettings.get("cluster", "elasticsearch"));
+        }
+        else {
+            mEmbeddedServer = new EmbeddedElasticsearchServer(embedded);
+            mClient = mEmbeddedServer.getClient();
         }
     }
 
@@ -84,24 +84,45 @@ public class ElasticsearchProvider {
         final BulkRequestBuilder bulkRequest = mClient.prepareBulk();
 
         try (final BufferedReader br = new BufferedReader(new InputStreamReader(
-                new FileInputStream(aIndexFile), StandardCharsets.UTF_8))) {
+                        new FileInputStream(aIndexFile), StandardCharsets.UTF_8))) {
             readData(bulkRequest, br);
         }
 
         final BulkResponse response = bulkRequest.get();
 
-        try {
-            if (response != null && response.hasFailures()) {
-                throw new RuntimeException(response.buildFailureMessage());
-            }
-        }
-        finally {
-            refreshIndex();
+        refreshIndex();
+
+        if (response != null && response.hasFailures()) {
+            throw new RuntimeException(response.buildFailureMessage());
         }
     }
 
     public void close() {
         mClient.close();
+
+        if (mEmbeddedServer != null) {
+            mEmbeddedServer.shutdown();
+        }
+    }
+
+    private Client buildClient(final String[] aHosts, final String aCluster) {
+        final Builder clientSettingsBuilder = Settings.settingsBuilder()
+            .put("index.name", mIndexName)
+            .put("index.type", mIndexType)
+            .put("cluster.name", aCluster);
+
+        // TODO: enable multiple server, according to array under "output.elasticsearch.host"
+        final String[] host = aHosts[0].split(":");
+        final String serverName = host[0];
+        final int serverPort = Integer.valueOf(host[1]);
+
+        try {
+            return TransportClient.builder().settings(clientSettingsBuilder).build().addTransportAddress(
+                    new InetSocketTransportAddress(InetAddress.getByName(serverName), serverPort));
+        }
+        catch (UnknownHostException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private void deleteIndex() {
@@ -121,7 +142,7 @@ public class ElasticsearchProvider {
     }
 
     private void readData(final BulkRequestBuilder aBulkRequest,
-                          final BufferedReader aBufferedReader) throws IOException {
+            final BufferedReader aBufferedReader) throws IOException {
         final ObjectMapper mapper = new ObjectMapper();
         String line;
         int currentLine = 1;
@@ -143,8 +164,8 @@ public class ElasticsearchProvider {
 
                 if (libType == null || !libType.textValue().equals("Collection")) {
                     aBulkRequest.add(mClient
-                        .prepareIndex(mIndexName, mIndexType, organisationId)
-                        .setSource(organisationData));
+                            .prepareIndex(mIndexName, mIndexType, organisationId)
+                            .setSource(organisationData));
                 }
             }
 
@@ -155,6 +176,54 @@ public class ElasticsearchProvider {
     private void refreshIndex() {
         mClient.admin().indices()
             .prepareRefresh(mIndexName).get();
+    }
+
+    private class EmbeddedElasticsearchServer {
+
+        private final Node mNode;
+        private final File mTempDir;
+
+        public EmbeddedElasticsearchServer(String aDataDir) {
+            if (aDataDir == null) {
+                try {
+                    mTempDir = Files.createTempDirectory("limetrans-elasticsearch").toFile();
+                    aDataDir = mTempDir.getPath();
+                }
+                catch (IOException e) {
+                    throw new RuntimeException("Failed to create temporary directory", e);
+                }
+            }
+            else {
+                mTempDir = null;
+            }
+
+            mNode = NodeBuilder.nodeBuilder()
+                .local(true)
+                .settings(Settings.settingsBuilder()
+                        .put("http.enabled", false)
+                        .put("path.data", aDataDir)
+                        .put("path.home", aDataDir)
+                        .build())
+                .node();
+        }
+
+        public Client getClient() {
+            return mNode.client();
+        }
+
+        public void shutdown() {
+            mNode.close();
+
+            if (mTempDir != null) {
+                try {
+                    FileUtils.deleteDirectory(mTempDir);
+                }
+                catch (IOException e) {
+                    throw new RuntimeException("Failed to delete temporary directory", e);
+                }
+            }
+        }
+
     }
 
 }

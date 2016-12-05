@@ -1,5 +1,6 @@
 package hbz.limetrans;
 
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.xbib.common.settings.Settings;
@@ -21,6 +22,11 @@ public class ElasticsearchProviderTest {
         final URL url = new File("./src/conf/test/elasticsearch-provider-update-test.json").toURI().toURL();
         Settings elasticsearchSettings = Helpers.getSettingsFromUrl(url);
         mEsProvider = new ElasticsearchProvider(elasticsearchSettings);
+    }
+
+    @AfterClass
+    public static void teardown() {
+        mEsProvider.close();
     }
 
     @Test

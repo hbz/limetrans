@@ -16,8 +16,8 @@ import org.xbib.common.settings.Settings;
 import org.xbib.util.Finder.PathFile;
 import org.xbib.util.Finder;
 
-import java.io.IOException;
 import java.io.File;
+import java.io.IOException;
 import java.util.Queue;
 
 public class LibraryMetadataTransformation {
@@ -44,9 +44,14 @@ public class LibraryMetadataTransformation {
 
             mElasticsearchPath = mElasticsearchSettings.get("path");
             if (mElasticsearchPath == null) {
-                final File tempFile = File.createTempFile("limetrans", ".jsonl");
-                mElasticsearchPath = tempFile.getPath();
-                tempFile.deleteOnExit();
+                try {
+                    final File tempFile = File.createTempFile("limetrans", ".jsonl");
+                    mElasticsearchPath = tempFile.getPath();
+                    tempFile.deleteOnExit();
+                }
+                catch (IOException e) {
+                    throw new RuntimeException("Failed to create temporary file", e);
+                }
             }
 
             mIsUpdate = mElasticsearchSettings.getAsBoolean("update", false);
