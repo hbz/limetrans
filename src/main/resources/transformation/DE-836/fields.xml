@@ -3,7 +3,9 @@
 
   <!-- 0xx -->
   <entity name="RecordIdentifier" flushWith="001">
-    <data name="identifierForTheRecord" source="001" />
+    <data name="identifierForTheRecord" source="001">
+      <compose prefix="(DE-836)" />
+    </data>
   </entity>
   <data name="@language_short" source="008">
     <substring start="35" end="38" />
