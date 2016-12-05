@@ -837,7 +837,7 @@
           <regexp match="[cdj]" />
         </data>
         <data source="@007Pos00">
-            <equals string="q" />
+          <equals string="q" />
         </data>
       </any>
     </if>
@@ -1058,7 +1058,7 @@
             <equals string="s" />
           </data>
           <data source="@006Pos0[789]|@006Pos10">
-            <regexp match="y" />
+            <equals string="y" />
           </data>
         </all>
       </any>
