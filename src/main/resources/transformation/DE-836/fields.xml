@@ -26,11 +26,14 @@
   <!-- 1xx -->
   <entity name="Person" flushWith="record">
     <if>
-      <none flushWith="record">
-        <data source="1001 .e">
-          <equals string="editor" />
+      <any flushWith="record">
+        <none flushWith="record">
+          <data source="1001 .[4e]" />
+        </none>
+        <data source="1001 .[4e]">
+          <regexp match="^aut" />
         </data>
-      </none>
+      </any>
     </if>
     <call-macro name="personName"  field="100" />
     <call-macro name="personTitle" field="100" />
@@ -291,9 +294,12 @@
     <entity name="" flushWith="record">
       <if>
         <all flushWith="record">
-          <data source="1001 .e">
-            <equals string="editor" />
-          </data>
+          <data source="1001 .[4e]" />
+          <none flushWith="record">
+            <data source="1001 .[4e]">
+              <regexp match="^aut" />
+            </data>
+          </none>
         </all>
       </if>
       <call-macro name="personName"  field="100" />
