@@ -1029,7 +1029,7 @@
   <combine name="@facet_type" value="Zeitschrift">
     <if>
       <any>
-         <all>
+        <all>
           <data source="@type">
             <equals string="CR" />
           </data>
