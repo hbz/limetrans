@@ -26,11 +26,14 @@
   <!-- 1xx -->
   <entity name="Person" flushWith="record">
     <if>
-      <none flushWith="record">
-        <data source="1001 .e">
-          <equals string="editor" />
+      <any flushWith="record">
+        <none flushWith="record">
+          <data source="1001 .[4e]" />
+        </none>
+        <data source="1001 .[4e]">
+          <regexp match="^aut" />
         </data>
-      </none>
+      </any>
     </if>
     <call-macro name="personName"  field="100" />
     <call-macro name="personTitle" field="100" />
@@ -275,11 +278,14 @@
   <entity name="PersonCreator[]" flushWith="record">
     <entity name="" flushWith="7001 " sameEntity="true">
       <if>
-        <none flushWith="7001 " sameEntity="true">
-          <data source="7001 .4">
-            <equals string="edt." />
+        <any flushWith="7001 ">
+          <none flushWith="7001 " sameEntity="true">
+            <data source="7001 .[4e]" />
+          </none>
+          <data source="7001 .[4e]">
+            <regexp match="^aut" />
           </data>
-        </none>
+        </any>
       </if>
       <call-macro name="personName"  field="700" />
       <call-macro name="personTitle" field="700" />
@@ -291,9 +297,12 @@
     <entity name="" flushWith="record">
       <if>
         <all flushWith="record">
-          <data source="1001 .e">
-            <equals string="editor" />
-          </data>
+          <data source="1001 .[4e]" />
+          <none flushWith="record">
+            <data source="1001 .[4e]">
+              <regexp match="^aut" />
+            </data>
+          </none>
         </all>
       </if>
       <call-macro name="personName"  field="100" />
@@ -304,9 +313,12 @@
     <entity name="" flushWith="7001 " sameEntity="true">
       <if>
         <all flushWith="7001 " sameEntity="true">
-          <data source="7001 .4">
-            <equals string="edt." />
-          </data>
+          <data source="7001 .[4e]" />
+          <none flushWith="7001 " sameEntity="true">
+            <data source="7001 .[4e]">
+              <regexp match="^aut" />
+            </data>
+          </none>
         </all>
       </if>
       <call-macro name="personName"  field="700" />
