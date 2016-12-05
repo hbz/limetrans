@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rules xmlns="http://www.culturegraph.org/metamorph">
+
   <data source="leader" name="@LeaderPos06">
     <substring start="06" end="07" />
   </data>
@@ -522,11 +523,6 @@
     <data source="001" />
   </combine>
   <!-- END format -->
-  <data name="@facet_date" source="260[ 23] .c">
-    <split delimiter="[,-]" />
-    <regexp match="^.*?(\d{4}).*$" format="${1}" />
-    <unique in="record" />
-  </data>
 
   <entity name="dc" flushWith="record">
     <entity name="format[]" flushWith="record">
@@ -554,7 +550,12 @@
     </combine>
 
     <entity name="date[]" flushWith="record">
-      <data name="" source="@facet_date" />
+      <data name="" source="260[ 23] .c">
+        <split delimiter="[,-]" />
+        <regexp match="\d{4}" />
+        <unique />
+      </data>
     </entity>
   </entity>
+
 </rules>
