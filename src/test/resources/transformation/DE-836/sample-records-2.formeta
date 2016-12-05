@@ -7,6 +7,10 @@
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'type[]' {
+			'': 'Sonstiges',
+			'': 'Amtliche Druckschrift'
+		},
 		'date[]' {
 			'': '1991'
 		}
@@ -62,6 +66,10 @@
 		'language': 'Englisch',
 		'format[]' {
 			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'Monographie',
+			'': 'Sonstiges'
 		},
 		'date[]' {
 			'': '2001'
@@ -140,6 +148,9 @@
 		'format[]' {
 			'': 'Landkarte'
 		},
+		'type[]' {
+			'': 'Monographie'
+		},
 		'date[]' {
 			'': '2006'
 		}
@@ -208,6 +219,9 @@
 		'language': 'Englisch',
 		'format[]' {
 			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'Zeitschrift'
 		}
 	},
 	'Language' {
@@ -247,6 +261,10 @@
 		'language': 'Englisch',
 		'format[]' {
 			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'Monographie',
+			'': 'Sonstiges'
 		},
 		'date[]' {
 			'': '2000'
@@ -316,6 +334,10 @@
 		'language': 'Englisch',
 		'format[]' {
 			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'Monographie',
+			'': 'Sonstiges'
 		},
 		'date[]' {
 			'': '2004'
@@ -403,6 +425,10 @@
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'type[]' {
+			'': 'Monographie',
+			'': 'Sonstiges'
+		},
 		'date[]' {
 			'': '2006'
 		}
@@ -488,6 +514,10 @@
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'type[]' {
+			'': 'Monographie',
+			'': 'Sonstiges'
+		},
 		'date[]' {
 			'': '2007'
 		}
@@ -560,6 +590,9 @@
 		'language': 'Deutsch',
 		'format[]' {
 			'': 'Gedruckte Ressource'
+		},
+		'type[]' {
+			'': 'Schriftenreihe'
 		}
 	},
 	'Language' {
@@ -597,6 +630,11 @@
 		'language': 'Englisch',
 		'format[]' {
 			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'Monographie',
+			'': 'Bibliografie',
+			'': 'Sonstiges'
 		},
 		'date[]' {
 			'': '2012'
