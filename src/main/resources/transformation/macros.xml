@@ -29,8 +29,9 @@
 
   <macro name="personRole">
     <entity name="$[name][]" flushWith="$[field]1 " sameEntity="true">
-      <data name="" source="$[field]1 .e" />
-      <compose prefix="[" postfix="]" />
+      <data name="" source="$[field]1 .e" >
+        <compose prefix="[" postfix="]" />
+	  </data>
     </entity>
   </macro>
 
