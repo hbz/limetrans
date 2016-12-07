@@ -1,7 +1,5 @@
 package hbz.limetrans;
 
-import org.elasticsearch.common.settings.Settings;
-
 import org.junit.After;
 import org.junit.Rule;
 import org.junit.Test;
@@ -35,6 +33,7 @@ public class ElasticsearchIndexerTest {
     private static final String INDEX_NAME = "index1";
     private static final String INDEX_TYPE = "type1";
 
+    private ElasticsearchClient mClient;
     private ElasticsearchIndexer mIndexer;
 
     @Rule
@@ -390,22 +389,12 @@ public class ElasticsearchIndexerTest {
     }
 
     private void setIndexer() {
-        setIndexer(settingsBuilder());
+        setIndexer(null);
     }
 
     private void setIndexer(final String aBulkAction) {
-        setIndexer(settingsBuilder()
-                .put("bulkAction", aBulkAction));
-    }
-
-    private void setIndexer(final Settings.Builder aSettingsBuilder) {
-        mIndexer = new ElasticsearchIndexer(aSettingsBuilder.build());
-    }
-
-    private Settings.Builder settingsBuilder() {
-        return Settings.settingsBuilder()
-            .put("index.name", INDEX_NAME)
-            .put("index.type", INDEX_TYPE);
+        mClient = new ElasticsearchClient(INDEX_NAME, INDEX_TYPE);
+        mIndexer = new ElasticsearchIndexer(mClient, aBulkAction);
     }
 
     private void assertDocument(final String aId, final String aExpected) {
@@ -423,13 +412,13 @@ public class ElasticsearchIndexerTest {
     }
 
     private void insertDocument(final String aId, final String aDocument) {
-        mIndexer.getClient().prepareIndex(INDEX_NAME, INDEX_TYPE, aId)
+        mClient.getClient().prepareIndex(INDEX_NAME, INDEX_TYPE, aId)
             .setSource(fixQuotes(aDocument))
             .get();
     }
 
     private String getDocument(final String aId) {
-        return mIndexer.getClient().prepareGet(INDEX_NAME, INDEX_TYPE, aId)
+        return mClient.getClient().prepareGet(INDEX_NAME, INDEX_TYPE, aId)
             .get().getSourceAsString();
     }
 
