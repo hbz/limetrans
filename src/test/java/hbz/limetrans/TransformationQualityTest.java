@@ -188,7 +188,7 @@ public class TransformationQualityTest{
                 erroneousFieldNames.put(k, v);
             }
         });
-        StringBuffer sb = new StringBuffer("Too many arrors in fields:");
+        StringBuffer sb = new StringBuffer("Too many errors in fields:");
         erroneousFieldNames.forEach((k, v) -> {
             sb.append("\n\t" + k + " (" + v + ")");
         });
