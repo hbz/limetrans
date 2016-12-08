@@ -29,17 +29,19 @@
 
   <macro name="personRole">
     <entity name="$[name][]" flushWith="$[field]1 " sameEntity="true">
-      <data name="" source="$[field]1 .e" />
+      <data name="" source="$[field]1 .e">
+        <compose prefix="[" postfix="]" />
+      </data>
     </entity>
   </macro>
 
   <macro name="prepare-SeriesAddedEntryUniformTitle-title">
     <concat delimiter=" ; " name="@title$[basefield]" flushWith="$[field]">
-      <data source="$[field].a" >
+      <data source="$[field].a">
         <replace pattern="\s?;?$" with="" />
         <compose prefix="!next!" /> <!-- workaround for a "flush before" -->
       </data>
-      <data source="$[field].v" >
+      <data source="$[field].v">
         <replace pattern="\s?\.?$" with="" />
       </data>
     </concat>

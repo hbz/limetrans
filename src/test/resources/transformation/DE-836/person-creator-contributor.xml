@@ -10,10 +10,11 @@
       <subfield code="d">1815-1882.</subfield>
     </datafield>
     <datafield tag="700" ind1="1" ind2=" ">
-      <subfield code="a">Gjessing, S.</subfield>
-      <subfield code="q">(Stein),</subfield>
-      <subfield code="d">1950-</subfield>
-      <subfield code="4">aut.</subfield>
+      <subfield code="a">Nygaard, Kristen,</subfield>
+      <subfield code="e">Author</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Gaehde, Joachim E.</subfield>
     </datafield>
   </record>
   <record xmlns="http://www.loc.gov/MARC21/slim">
@@ -25,15 +26,13 @@
       <subfield code="e">author</subfield>
     </datafield>
     <datafield tag="700" ind1="1" ind2=" ">
-      <subfield code="a">Gjessing, S.</subfield>
-      <subfield code="q">(Stein),</subfield>
-      <subfield code="c">Emperor</subfield>
-      <subfield code="d">1950-</subfield>
-      <subfield code="e">author</subfield>
+      <subfield code="a">Nygaard, Kristen,</subfield>
+      <subfield code="e">Übers.</subfield>
     </datafield>
     <datafield tag="700" ind1="1" ind2=" ">
-      <subfield code="a">Nygaard, Kristen,</subfield>
-      <subfield code="d">1926-</subfield>
+      <subfield code="a">Braun, Almuth</subfield>
+      <subfield code="e">Übers.</subfield>
+      <subfield code="4">aut</subfield>
     </datafield>
   </record>
   <record xmlns="http://www.loc.gov/MARC21/slim">
@@ -42,7 +41,7 @@
     <datafield tag="100" ind1="1" ind2=" ">
       <subfield code="a">Trollope, Anthony,</subfield>
       <subfield code="d">1815-1882.</subfield>
-      <subfield code="4">aut.</subfield>
+      <subfield code="4">edt</subfield>
     </datafield>
     <datafield tag="700" ind1="1" ind2=" ">
       <subfield code="a">Nygaard, Kristen,</subfield>
@@ -51,7 +50,7 @@
     <datafield tag="700" ind1="1" ind2=" ">
       <subfield code="a">Gjessing, S.</subfield>
       <subfield code="q">(Stein),</subfield>
-      <subfield code="4">edt.</subfield>
+      <subfield code="4">edt</subfield>
     </datafield>
   </record>
   <record xmlns="http://www.loc.gov/MARC21/slim">
@@ -60,17 +59,20 @@
     <datafield tag="100" ind1="1" ind2=" ">
       <subfield code="a">Trollope, Anthony,</subfield>
       <subfield code="d">1815-1882.</subfield>
+      <subfield code="e">Übers.</subfield>
+      <subfield code="e">Author</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Nygaard, Kristen,</subfield>
       <subfield code="e">editor</subfield>
       <subfield code="e">translator</subfield>
     </datafield>
     <datafield tag="700" ind1="1" ind2=" ">
-      <subfield code="a">Gjessing, S.</subfield>
-      <subfield code="q">(Stein),</subfield>
-      <subfield code="d">1950-</subfield>
-    </datafield>
-    <datafield tag="700" ind1="1" ind2=" ">
-      <subfield code="a">Nygaard, Kristen,</subfield>
-      <subfield code="4">edt.</subfield>
+      <subfield code="a">Donin, Richard Kurt</subfield>
+      <subfield code="e">Bearb.</subfield>
+      <subfield code="4">arr</subfield>
+      <subfield code="0">(DE-601)389666475</subfield>
+      <subfield code="0">(DE-588)129116726</subfield>
     </datafield>
   </record>
 </collection>
