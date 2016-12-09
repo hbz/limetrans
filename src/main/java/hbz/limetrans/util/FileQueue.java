@@ -1,5 +1,9 @@
 package hbz.limetrans.util;
 
+import org.culturegraph.mf.framework.StreamReceiver;
+import org.culturegraph.mf.stream.converter.xml.MarcXmlHandler;
+import org.culturegraph.mf.stream.converter.xml.XmlDecoder;
+import org.culturegraph.mf.stream.pipe.StreamUnicodeNormalizer;
 import org.culturegraph.mf.stream.source.FileOpener;
 import org.xbib.common.settings.Settings;
 import org.xbib.util.Finder.PathFile;
@@ -29,10 +33,23 @@ public class FileQueue {
         }
     }
 
-    public void process(final FileOpener opener) {
+    public void processMarcXml(final StreamReceiver aReceiver) {
+        final FileOpener opener = new FileOpener();
+        final XmlDecoder decoder = new XmlDecoder();
+        final MarcXmlHandler marcHandler = new MarcXmlHandler();
+        final StreamUnicodeNormalizer normalizer = new StreamUnicodeNormalizer();
+
+        opener
+            .setReceiver(decoder)
+            .setReceiver(marcHandler)
+            .setReceiver(normalizer)
+            .setReceiver(aReceiver);
+
         for (final PathFile pathFile : mQueue) {
             opener.process(pathFile.toString());
         }
+
+        opener.closeStream();
     }
 
     public boolean isEmpty() {

@@ -7,13 +7,9 @@ import org.culturegraph.mf.morph.Metamorph;
 import org.culturegraph.mf.stream.converter.FormetaEncoder;
 import org.culturegraph.mf.stream.converter.JsonEncoder;
 import org.culturegraph.mf.stream.converter.JsonToElasticsearchBulk;
-import org.culturegraph.mf.stream.converter.xml.MarcXmlHandler;
-import org.culturegraph.mf.stream.converter.xml.XmlDecoder;
 import org.culturegraph.mf.stream.pipe.ObjectTee;
 import org.culturegraph.mf.stream.pipe.StreamTee;
-import org.culturegraph.mf.stream.pipe.StreamUnicodeNormalizer;
 import org.culturegraph.mf.stream.sink.ObjectWriter;
-import org.culturegraph.mf.stream.source.FileOpener;
 import org.xbib.common.settings.Settings;
 
 import java.io.File;
@@ -71,29 +67,16 @@ public class LibraryMetadataTransformation {
     }
 
     public void transform() {
-        final FileOpener opener = new FileOpener();
-        final XmlDecoder decoder = new XmlDecoder();
-        final MarcXmlHandler marcHandler = new MarcXmlHandler();
-        final StreamUnicodeNormalizer normalizer = new StreamUnicodeNormalizer();
         final Metamorph morph = new Metamorph(mRulesPath);
         final StreamTee streamTee = new StreamTee();
-
-        opener
-            .setReceiver(decoder)
-            .setReceiver(marcHandler)
-            .setReceiver(normalizer)
-            .setReceiver(morph)
-            .setReceiver(streamTee);
-
         final ObjectTee objectTee = prepareJson(streamTee);
 
         transformJson(objectTee);
         transformFormeta(streamTee);
         transformElasticsearch(objectTee);
 
-        mInputQueue.process(opener);
-
-        opener.closeStream();
+        morph.setReceiver(streamTee);
+        mInputQueue.processMarcXml(morph);
     }
 
     public void index() throws IOException {

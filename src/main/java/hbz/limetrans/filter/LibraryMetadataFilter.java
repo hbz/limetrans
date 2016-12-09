@@ -5,13 +5,9 @@ import hbz.limetrans.util.FileQueue;
 import org.culturegraph.mf.morph.InlineMorph;
 import org.culturegraph.mf.morph.Metamorph;
 import org.culturegraph.mf.stream.converter.JsonEncoder;
-import org.culturegraph.mf.stream.converter.xml.MarcXmlHandler;
-import org.culturegraph.mf.stream.converter.xml.XmlDecoder;
 import org.culturegraph.mf.stream.pipe.Filter;
-import org.culturegraph.mf.stream.pipe.StreamUnicodeNormalizer;
 import org.culturegraph.mf.stream.sink.ObjectStdoutWriter;
 import org.culturegraph.mf.stream.sink.ObjectWriter;
-import org.culturegraph.mf.stream.source.FileOpener;
 import org.xbib.common.settings.Settings;
 
 import java.io.IOException;
@@ -33,29 +29,18 @@ public class LibraryMetadataFilter {
     }
 
     public void process() {
-        final FileOpener opener = new FileOpener();
-        final XmlDecoder decoder = new XmlDecoder();
-        final MarcXmlHandler marcHandler = new MarcXmlHandler();
-        final StreamUnicodeNormalizer normalizer = new StreamUnicodeNormalizer();
         final Filter filter = new Filter(mMorphDef);
         final JsonEncoder encoder = new JsonEncoder();
-
         encoder.setPrettyPrinting(true);
 
-        opener
-            .setReceiver(decoder)
-            .setReceiver(marcHandler)
-            .setReceiver(normalizer)
-            .setReceiver(filter)
+        filter
             .setReceiver(encoder)
             .setReceiver(
-                    (mOutputPath == null || mOutputPath.equals("-")) ?
+                    mOutputPath == null || mOutputPath.equals("-") ?
                     new ObjectStdoutWriter<String>() :
                     new ObjectWriter<String>(mOutputPath));
 
-        mInputQueue.process(opener);
-
-        opener.closeStream();
+        mInputQueue.processMarcXml(filter);
     }
 
     /*
