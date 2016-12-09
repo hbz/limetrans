@@ -1,5 +1,7 @@
 package hbz.limetrans;
 
+import hbz.limetrans.util.Helpers;
+
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;

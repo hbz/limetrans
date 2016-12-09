@@ -1,4 +1,4 @@
-package hbz.limetrans;
+package hbz.limetrans.util;
 
 import org.apache.commons.io.IOUtils;
 import org.xbib.common.settings.Settings;
