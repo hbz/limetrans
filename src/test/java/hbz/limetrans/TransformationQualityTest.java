@@ -2,6 +2,8 @@ package hbz.limetrans;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.fasterxml.jackson.databind.node.TextNode;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
@@ -43,7 +45,9 @@ public class TransformationQualityTest{
     final private static Logger mLogger = LogManager.getLogger();
     final private static List<String> mMissingDocs = new ArrayList<>();
     final private static Map<String, Set<String>> mMissingFields = new HashMap<>();
+    final private static Map<String, Set<String>> mMisConfiguredFields = new HashMap<>();
     final private static Map<String, Set<String>> mErrorFields = new HashMap<>();
+    final private static Map<String, Integer> mErroneousFields = new HashMap<>();
     final private static Set<String> mWorkingFields = new HashSet<>();
     final private static Set<String> mErrorKeys = new HashSet<>();
     final private static Map<String, Integer> mAccumulatedErrorFields = new HashMap<>();
@@ -70,7 +74,7 @@ public class TransformationQualityTest{
             JsonNode document = mMapper.readTree(line);
             String ocm = document.get("RecordIdentifier").get("identifierForTheRecord").asText().substring(8);
             JsonNode reference = mReference.get(referenceMap.remove(ocm));
-            checkDocument(ocm, reference, document);
+            checkDocument(ocm, reference, document, null);
             line = reader.readLine();
         }
         mMissingDocs.addAll(referenceMap.keySet());
@@ -78,30 +82,54 @@ public class TransformationQualityTest{
         postProcessAndReport();
     }
 
-    private static void checkDocument(String aId, JsonNode aReference, JsonNode aDocument) {
+    private static void checkDocument(String aId, JsonNode aReference, JsonNode aDocument, String aParentNode) {
         Map<String, String> missing = new HashMap<>();
+        Set<String> misconfigured = new HashSet<>();
         Map<String, String> error = new HashMap<>();
 
-        // iterate over all document fields
-        // TODO: iterate over subfields and store in member variables as such entries
         final Iterator<Map.Entry<String, JsonNode>> fields = aDocument.fields();
         while (fields.hasNext()){
-            final Map.Entry<String, JsonNode> d = fields.next();
-            JsonNode r = aReference.get(d.getKey());
-            if (r == null){
-                missing.put(d.getKey(), d.getValue().asText());
+            final Map.Entry<String, JsonNode> field = fields.next();
+            JsonNode ref = aReference.get(field.getKey());
+
+            String qualifiedFieldName = (aParentNode == null ? field.getKey() : aParentNode.concat(".").concat(field.getKey()));
+
+            if (field == null){
+                continue;
             }
-            else if (r.equals(d)) {
-                mWorkingFields.add(d.getKey());
+            if (ref == null){
+                missing.put(field.getKey(), field.getValue().asText());
+                continue;
             }
-            else{
-                mWorkingFields.remove(d.getKey());
-                mErrorKeys.add(d.getKey());
-                error.put(d.getKey(), d.getValue().asText());
+
+            if ((field.getValue() instanceof TextNode)){
+                if (!(ref instanceof TextNode)){
+                    misconfigured.add(field.getKey());
+                    continue;
+                }
+                if (ref.equals(field)) {
+                    mWorkingFields.add(qualifiedFieldName);
+                }
+                else{
+                    mWorkingFields.remove(qualifiedFieldName);
+                    mErrorKeys.add(qualifiedFieldName);
+                    error.put(qualifiedFieldName, field.getValue().asText());
+                }
+            }
+            if (field.getValue() instanceof ObjectNode){
+                if (!(ref instanceof ObjectNode)){
+                    misconfigured.add(field.getKey());
+                }
+                else{
+                    checkDocument(aId, ref, field.getValue(), qualifiedFieldName);
+                }
             }
         }
         if (!missing.isEmpty()){
             mMissingFields.put(aId, missing.keySet());
+        }
+        if (!misconfigured.isEmpty()){
+            mMisConfiguredFields.put(aId, misconfigured);
         }
         if (!error.isEmpty()){
             mErrorFields.put(aId, error.keySet());
@@ -119,10 +147,6 @@ public class TransformationQualityTest{
     }
 
     public static void postProcessAndReport(){
-        if (!mWorkingFields.isEmpty()){
-            mLogger.info("WORKING FIELDS IN TRANSFORMATION:");
-            mWorkingFields.forEach(x -> mLogger.info("\t" + x));
-        }
         if (!mMissingDocs.isEmpty()){
             mLogger.error("MISSING DOCUMENTS IN TRANSFORMATION:");
             mMissingDocs.forEach(x -> mLogger.error("\t" + x));
@@ -144,6 +168,19 @@ public class TransformationQualityTest{
         if (!mErrorFields.isEmpty()){
             mLogger.error("ERRONEOUS FIELDS IN DOCUMENTS:");
             errorFieldsInverted.forEach((x, y) -> mLogger.error("\t" + x + " (" + y.size() + "): " + y));
+        }
+        mAccumulatedErrorFields.forEach((k, v) -> {
+            if (v > ERRONEOUS_DOCS_ACCEPTED_PER_FIELD &&
+                    EXPECTED_FIELDS_WORKING.contains(k)){
+                mErroneousFields.put(k, v);
+            }
+            else{
+                mWorkingFields.add(k);
+            }
+        });
+        if (!mWorkingFields.isEmpty()){
+            mLogger.error("WORKING FIELDS IN TRANSFORMATION:");
+            mWorkingFields.forEach(x -> mLogger.error("\t" + x));
         }
     }
 
@@ -181,18 +218,11 @@ public class TransformationQualityTest{
 
     @Test
     public void testErroneousFields(){
-        Map<String, Integer> erroneousFieldNames = new HashMap<>();
-        mAccumulatedErrorFields.forEach((k, v) -> {
-            if (v > ERRONEOUS_DOCS_ACCEPTED_PER_FIELD &&
-                    EXPECTED_FIELDS_WORKING.contains(k)){
-                erroneousFieldNames.put(k, v);
-            }
-        });
         StringBuffer sb = new StringBuffer("Too many errors in fields:");
-        erroneousFieldNames.forEach((k, v) -> {
+        mErroneousFields.forEach((k, v) -> {
             sb.append("\n\t" + k + " (" + v + ")");
         });
-        assertTrue(sb.toString(), erroneousFieldNames.isEmpty());
+        assertTrue(sb.toString(), mErroneousFields.isEmpty());
     }
 
 }
