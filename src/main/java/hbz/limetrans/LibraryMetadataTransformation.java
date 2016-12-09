@@ -1,5 +1,7 @@
 package hbz.limetrans;
 
+import hbz.limetrans.util.FileQueue;
+
 import org.culturegraph.mf.formeta.formatter.FormatterStyle;
 import org.culturegraph.mf.morph.Metamorph;
 import org.culturegraph.mf.stream.converter.FormetaEncoder;
@@ -13,18 +15,15 @@ import org.culturegraph.mf.stream.pipe.StreamUnicodeNormalizer;
 import org.culturegraph.mf.stream.sink.ObjectWriter;
 import org.culturegraph.mf.stream.source.FileOpener;
 import org.xbib.common.settings.Settings;
-import org.xbib.util.Finder.PathFile;
-import org.xbib.util.Finder;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Queue;
 
 public class LibraryMetadataTransformation {
 
+    private final FileQueue mInputQueue;
     private final Settings mElasticsearchSettings;
     private final String mFormetaPath;
-    private final Queue<PathFile> mInputQueue;
     private final String mJsonPath;
     private final String mRulesPath;
     private final boolean mIsUpdate;
@@ -32,8 +31,8 @@ public class LibraryMetadataTransformation {
     private String mElasticsearchPath;
 
     public LibraryMetadataTransformation(final Settings aSettings) throws IOException {
-        mInputQueue = prepareInputQueue(aSettings.getGroups("input").get("queue"));
-        if (mInputQueue == null) {
+        mInputQueue = new FileQueue(aSettings.getGroups("input").get("queue"));
+        if (mInputQueue.isEmpty()) {
             throw new IllegalArgumentException("Could not process limetrans: no input specified.");
         }
 
@@ -92,9 +91,7 @@ public class LibraryMetadataTransformation {
         transformFormeta(streamTee);
         transformElasticsearch(objectTee);
 
-        for (final PathFile pathFile : mInputQueue) {
-            opener.process(pathFile.toString());
-        }
+        mInputQueue.process(opener);
 
         opener.closeStream();
     }
@@ -123,27 +120,6 @@ public class LibraryMetadataTransformation {
 
     public int getInputQueueSize() {
         return mInputQueue.size();
-    }
-
-    private Queue<PathFile> prepareInputQueue(final Settings inputSettings) throws IOException {
-        if (inputSettings == null) {
-          return null;
-        }
-
-        final String path = inputSettings.get("path");
-        final String pattern = inputSettings.get("pattern");
-
-        if (path == null || pattern == null) {
-          return null;
-        }
-
-        final Queue<PathFile> inputQueue = new Finder().find(
-                inputSettings.get("base"), inputSettings.get("basepattern"), path, pattern)
-            .sortBy(inputSettings.get("sort_by", "lastmodified"))
-            .order(inputSettings.get("order", "asc"))
-            .getPathFiles(inputSettings.getAsInt("max", -1));
-
-        return inputQueue.isEmpty() ? null : inputQueue;
     }
 
     private ObjectTee prepareJson(final StreamTee aTee) {
