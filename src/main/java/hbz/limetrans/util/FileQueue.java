@@ -19,7 +19,7 @@ public class FileQueue {
     private final Queue<PathFile> mQueue = new LinkedList<>();
 
     public FileQueue(final Settings aSettings) throws IOException {
-      put(aSettings);
+        put(aSettings);
     }
 
     public FileQueue(final String[] aFileNames) throws IOException {

@@ -20,6 +20,7 @@ public class LibraryMetadataFilter {
 
     public LibraryMetadataFilter(final Settings aSettings) throws IOException {
         mInputQueue = new FileQueue(aSettings.getAsArray("input"));
+
         if (mInputQueue.isEmpty()) {
             throw new IllegalArgumentException("Could not process limetrans filter: no input specified.");
         }
