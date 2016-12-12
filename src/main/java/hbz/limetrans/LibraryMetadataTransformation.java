@@ -1,30 +1,25 @@
 package hbz.limetrans;
 
+import hbz.limetrans.util.FileQueue;
+
 import org.culturegraph.mf.formeta.formatter.FormatterStyle;
 import org.culturegraph.mf.morph.Metamorph;
 import org.culturegraph.mf.stream.converter.FormetaEncoder;
 import org.culturegraph.mf.stream.converter.JsonEncoder;
 import org.culturegraph.mf.stream.converter.JsonToElasticsearchBulk;
-import org.culturegraph.mf.stream.converter.xml.MarcXmlHandler;
-import org.culturegraph.mf.stream.converter.xml.XmlDecoder;
 import org.culturegraph.mf.stream.pipe.ObjectTee;
 import org.culturegraph.mf.stream.pipe.StreamTee;
-import org.culturegraph.mf.stream.pipe.StreamUnicodeNormalizer;
 import org.culturegraph.mf.stream.sink.ObjectWriter;
-import org.culturegraph.mf.stream.source.FileOpener;
 import org.xbib.common.settings.Settings;
-import org.xbib.util.Finder.PathFile;
-import org.xbib.util.Finder;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Queue;
 
 public class LibraryMetadataTransformation {
 
+    private final FileQueue mInputQueue;
     private final Settings mElasticsearchSettings;
     private final String mFormetaPath;
-    private final Queue<PathFile> mInputQueue;
     private final String mJsonPath;
     private final String mRulesPath;
     private final boolean mIsUpdate;
@@ -32,8 +27,8 @@ public class LibraryMetadataTransformation {
     private String mElasticsearchPath;
 
     public LibraryMetadataTransformation(final Settings aSettings) throws IOException {
-        mInputQueue = prepareInputQueue(aSettings.getGroups("input").get("queue"));
-        if (mInputQueue == null) {
+        mInputQueue = new FileQueue(aSettings.getGroups("input").get("queue"));
+        if (mInputQueue.isEmpty()) {
             throw new IllegalArgumentException("Could not process limetrans: no input specified.");
         }
 
@@ -72,31 +67,16 @@ public class LibraryMetadataTransformation {
     }
 
     public void transform() {
-        final FileOpener opener = new FileOpener();
-        final XmlDecoder decoder = new XmlDecoder();
-        final MarcXmlHandler marcHandler = new MarcXmlHandler();
-        final StreamUnicodeNormalizer normalizer = new StreamUnicodeNormalizer();
         final Metamorph morph = new Metamorph(mRulesPath);
         final StreamTee streamTee = new StreamTee();
-
-        opener
-            .setReceiver(decoder)
-            .setReceiver(marcHandler)
-            .setReceiver(normalizer)
-            .setReceiver(morph)
-            .setReceiver(streamTee);
-
         final ObjectTee objectTee = prepareJson(streamTee);
 
         transformJson(objectTee);
         transformFormeta(streamTee);
         transformElasticsearch(objectTee);
 
-        for (final PathFile pathFile : mInputQueue) {
-            opener.process(pathFile.toString());
-        }
-
-        opener.closeStream();
+        morph.setReceiver(streamTee);
+        mInputQueue.processMarcXml(morph);
     }
 
     public void index() throws IOException {
@@ -123,27 +103,6 @@ public class LibraryMetadataTransformation {
 
     public int getInputQueueSize() {
         return mInputQueue.size();
-    }
-
-    private Queue<PathFile> prepareInputQueue(final Settings inputSettings) throws IOException {
-        if (inputSettings == null) {
-          return null;
-        }
-
-        final String path = inputSettings.get("path");
-        final String pattern = inputSettings.get("pattern");
-
-        if (path == null || pattern == null) {
-          return null;
-        }
-
-        final Queue<PathFile> inputQueue = new Finder().find(
-                inputSettings.get("base"), inputSettings.get("basepattern"), path, pattern)
-            .sortBy(inputSettings.get("sort_by", "lastmodified"))
-            .order(inputSettings.get("order", "asc"))
-            .getPathFiles(inputSettings.getAsInt("max", -1));
-
-        return inputQueue.isEmpty() ? null : inputQueue;
     }
 
     private ObjectTee prepareJson(final StreamTee aTee) {

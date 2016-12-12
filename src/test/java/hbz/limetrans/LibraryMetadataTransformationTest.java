@@ -1,5 +1,7 @@
 package hbz.limetrans;
 
+import hbz.limetrans.util.Helpers;
+
 import org.junit.rules.ExpectedException;
 import org.junit.Rule;
 import org.junit.Test;
