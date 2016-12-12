@@ -62,7 +62,7 @@ public class TransformationQualityTest{
             "OnlineAccess.nonpublicnote"});
     final private static Logger mLogger = LogManager.getLogger();
     final private static List<String> mMissingDocs = new ArrayList<>();
-    final private static Map<String, Set<String>> mMissingFields = new HashMap<>();
+    final private static Map<String, Set<String>> mMissingInRefFields = new HashMap<>();
     final private static Map<String, Set<String>> mMisConfiguredFields = new HashMap<>();
     final private static Map<String, Set<String>> mErrorFields = new HashMap<>();
     final private static Map<String, Integer> mErroneousFields = new HashMap<>();
@@ -101,7 +101,7 @@ public class TransformationQualityTest{
     }
 
     private static void checkDocument(String aId, JsonNode aReference, JsonNode aDocument, String aParentNode) {
-        Map<String, String> missing = new HashMap<>();
+        Map<String, String> missingInRef = new HashMap<>();
         Set<String> misconfigured = new HashSet<>();
         Map<String, String> error = new HashMap<>();
 
@@ -116,7 +116,7 @@ public class TransformationQualityTest{
                 continue;
             }
             if (ref == null){
-                missing.put(field.getKey(), field.getValue().asText());
+                missingInRef.put(field.getKey(), field.getValue().asText());
                 continue;
             }
             if (!areSameInstanceOf(ref, field.getValue())){
@@ -139,8 +139,8 @@ public class TransformationQualityTest{
                 checkDocument(aId, ref, field.getValue(), qualifiedFieldName);
             }
         }
-        if (!missing.isEmpty()){
-            mMissingFields.put(aId, missing.keySet());
+        if (!missingInRef.isEmpty()){
+            mMissingInRefFields.put(aId, missingInRef.keySet());
         }
         if (!misconfigured.isEmpty()){
             mMisConfiguredFields.put(aId, misconfigured);
@@ -182,14 +182,14 @@ public class TransformationQualityTest{
             mErrorKeys.forEach(x -> mLogger.error("\t" + x));
         }
 
-        final Map<String, Set<String>> missingFieldsInverted = invert(mMissingFields);
+        final Map<String, Set<String>> missingInRefFieldsInverted = invert(mMissingInRefFields);
         final Map<String, Set<String>> errorFieldsInverted = invert(mErrorFields);
-        countAndAccumulateErrors(missingFieldsInverted);
+        countAndAccumulateErrors(missingInRefFieldsInverted);
         countAndAccumulateErrors(errorFieldsInverted);
 
-        if (!mMissingFields.isEmpty()){
-            mLogger.error("MISSING FIELDS IN DOCUMENTS:");
-            missingFieldsInverted.forEach((x, y) -> mLogger.error("\t" + x + " (" + y.size() + "): " + y));
+        if (!mMissingInRefFields.isEmpty()){
+            mLogger.error("MISSING FIELDS IN REFERENCE:");
+            missingInRefFieldsInverted.forEach((x, y) -> mLogger.error("\t" + x + " (" + y.size() + "): " + y));
         }
         if (!mErrorFields.isEmpty()){
             mLogger.error("ERRONEOUS FIELDS IN DOCUMENTS:");
