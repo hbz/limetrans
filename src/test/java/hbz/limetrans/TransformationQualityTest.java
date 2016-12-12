@@ -2,6 +2,7 @@ package hbz.limetrans;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.node.TextNode;
 import org.apache.logging.log4j.LogManager;
@@ -22,6 +23,7 @@ import static org.junit.Assert.assertTrue;
 
 public class TransformationQualityTest{
 
+    final private static Class[] mRelevantJsonClasses = new Class[]{ArrayNode.class, ObjectNode.class, TextNode.class};
     final private static Integer MISSING_DOCS_ACCEPTED = 10;
     final private static Integer ERRONEOUS_DOCS_ACCEPTED_PER_FIELD = 20;
     final private static List<String> EXPECTED_FIELDS_WORKING = Arrays.asList(new String[]{
@@ -117,12 +119,13 @@ public class TransformationQualityTest{
                 missing.put(field.getKey(), field.getValue().asText());
                 continue;
             }
+            if (!areSameInstanceOf(ref, field.getValue())){
+                misconfigured.add(field.getKey());
+                continue;
+            }
+
 
             if ((field.getValue() instanceof TextNode)){
-                if (!(ref instanceof TextNode)){
-                    misconfigured.add(field.getKey());
-                    continue;
-                }
                 if (ref.equals(field)) {
                     mWorkingFields.add(qualifiedFieldName);
                 }
@@ -133,12 +136,7 @@ public class TransformationQualityTest{
                 }
             }
             if (field.getValue() instanceof ObjectNode){
-                if (!(ref instanceof ObjectNode)){
-                    misconfigured.add(field.getKey());
-                }
-                else{
-                    checkDocument(aId, ref, field.getValue(), qualifiedFieldName);
-                }
+                checkDocument(aId, ref, field.getValue(), qualifiedFieldName);
             }
         }
         if (!missing.isEmpty()){
@@ -150,6 +148,18 @@ public class TransformationQualityTest{
         if (!error.isEmpty()){
             mErrorFields.put(aId, error.keySet());
         }
+    }
+
+    private static boolean areSameInstanceOf(JsonNode aJsonNode1, JsonNode aJsonNode2) {
+        for (Class clazz : mRelevantJsonClasses){
+            if (clazz.isInstance(aJsonNode1)){
+                if (clazz.isInstance(aJsonNode2)){
+                    return true;
+                }
+                return false;
+            }
+        }
+        return false;
     }
 
     private static Map<String,Integer> createReferencesMap() {
