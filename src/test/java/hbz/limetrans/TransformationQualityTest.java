@@ -116,14 +116,13 @@ public class TransformationQualityTest{
                 continue;
             }
             if (ref == null){
-                missingInRef.add(field.getKey());
+                missingInRef.add(qualifiedFieldName);
                 continue;
             }
             if (!areSameInstanceOf(ref, field.getValue())){
-                misconfigured.add(field.getKey());
+                misconfigured.add(qualifiedFieldName);
                 continue;
             }
-
 
             if ((field.getValue() instanceof TextNode)){
                 if (ref.equals(field)) {
@@ -135,7 +134,7 @@ public class TransformationQualityTest{
                     error.add(qualifiedFieldName);
                 }
             }
-            if (field.getValue() instanceof ObjectNode){
+            else if (field.getValue() instanceof ObjectNode){
                 checkDocument(aId, ref, field.getValue(), qualifiedFieldName);
             }
         }
@@ -200,11 +199,11 @@ public class TransformationQualityTest{
         countAndAccumulateErrors(missingInRefFieldsInverted);
         countAndAccumulateErrors(errorFieldsInverted);
 
-        if (!mMissingInRefFields.isEmpty()){
+        if (!missingInRefFieldsInverted.isEmpty()){
             mLogger.error("MISSING FIELDS IN REFERENCE:");
             missingInRefFieldsInverted.forEach((x, y) -> mLogger.error("\t" + x + " (" + y.size() + "): " + y));
         }
-        if (!mErrorFields.isEmpty()){
+        if (!errorFieldsInverted.isEmpty()){
             mLogger.error("ERRONEOUS FIELDS IN DOCUMENTS:");
             errorFieldsInverted.forEach((x, y) -> mLogger.error("\t" + x + " (" + y.size() + "): " + y));
         }
