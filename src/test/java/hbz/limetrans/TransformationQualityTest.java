@@ -101,9 +101,9 @@ public class TransformationQualityTest{
     }
 
     private static void checkDocument(String aId, JsonNode aReference, JsonNode aDocument, String aParentNode) {
-        Map<String, String> missingInRef = new HashMap<>();
+        Set<String> missingInRef = new HashSet<>();
         Set<String> misconfigured = new HashSet<>();
-        Map<String, String> error = new HashMap<>();
+        Set<String> error = new HashSet<>();
 
         final Iterator<Map.Entry<String, JsonNode>> fields = aDocument.fields();
         while (fields.hasNext()){
@@ -116,7 +116,7 @@ public class TransformationQualityTest{
                 continue;
             }
             if (ref == null){
-                missingInRef.put(field.getKey(), field.getValue().asText());
+                missingInRef.add(field.getKey());
                 continue;
             }
             if (!areSameInstanceOf(ref, field.getValue())){
@@ -132,22 +132,35 @@ public class TransformationQualityTest{
                 else{
                     mWorkingFields.remove(qualifiedFieldName);
                     mErrorKeys.add(qualifiedFieldName);
-                    error.put(qualifiedFieldName, field.getValue().asText());
+                    error.add(qualifiedFieldName);
                 }
             }
             if (field.getValue() instanceof ObjectNode){
                 checkDocument(aId, ref, field.getValue(), qualifiedFieldName);
             }
         }
-        if (!missingInRef.isEmpty()){
-            mMissingInRefFields.put(aId, missingInRef.keySet());
+
+        for (String s : missingInRef){
+            addValue(aId, s, mMissingInRefFields);
         }
-        if (!misconfigured.isEmpty()){
-            mMisConfiguredFields.put(aId, misconfigured);
+        for (String s : misconfigured){
+            addValue(aId, s, mMisConfiguredFields);
         }
-        if (!error.isEmpty()){
-            mErrorFields.put(aId, error.keySet());
+        for (String s : error){
+            addValue(aId, s, mErrorFields);
         }
+    }
+
+    private static void addValue(final String aKey, final String aValue, final Map<String, Set<String>> aMap){
+        Set<String> set;
+        if (aMap.containsKey(aKey)){
+            set = aMap.get(aKey);
+        }
+        else{
+            set = new HashSet<>();
+        }
+        set.add(aValue);
+        aMap.put(aKey, set);
     }
 
     private static boolean areSameInstanceOf(JsonNode aJsonNode1, JsonNode aJsonNode2) {
