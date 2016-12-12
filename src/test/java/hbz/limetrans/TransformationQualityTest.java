@@ -1,7 +1,6 @@
 package hbz.limetrans;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.node.TextNode;
@@ -10,18 +9,14 @@ import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
-import java.net.URL;
 import java.util.*;
 
 import static org.junit.Assert.assertTrue;
 
 // TODO: make re-usable: amend to DE836TransformationQualityTest extends TransformationQualityTest
 
-public class TransformationQualityTest{
+public class TransformationQualityTest extends AbstractTransformationTest{
 
     final private static Class[] mRelevantJsonClasses = new Class[]{ArrayNode.class, ObjectNode.class, TextNode.class};
     final private static Integer MISSING_DOCS_ACCEPTED = 10;
@@ -70,32 +65,20 @@ public class TransformationQualityTest{
     final private static Set<String> mErrorKeys = new HashSet<>();
     final private static Map<String, Integer> mAccumulatedErrorFields = new HashMap<>();
 
-    private static JsonNode mReference;
-    private static ObjectMapper mMapper = new ObjectMapper();
-
     @BeforeClass
     public static void runTransformation() throws IOException, InterruptedException {
-
-        final URL url = new File("src/conf/test/transformation-quality.json").toURI().toURL();
-        final LibraryMetadataTransformation limetrans = new LibraryMetadataTransformation(Helpers.getSettingsFromUrl(url));
-        limetrans.transform();
-
-        final File referenceFile = new File("src/test/resources/integration/reference/transformation-quality.json");
-        mReference = mMapper.readTree(referenceFile);
-
-        final File outputFile = new File("src/test/resources/integration/output/transformation-quality.jsonl");
-        BufferedReader reader = new BufferedReader(new FileReader(outputFile));
-        Map<String, Integer> referenceMap = createReferencesMap();
-
-        String line = reader.readLine();
+        String line = mReader.readLine();
+        Set<String> existentDocs = new HashSet<>();
         while (line != null){
             JsonNode document = mMapper.readTree(line);
             String ocm = document.get("RecordIdentifier").get("identifierForTheRecord").asText().substring(8);
-            JsonNode reference = mReference.get(referenceMap.remove(ocm));
+            existentDocs.add(ocm);
+            JsonNode reference = mReference.get(mReferenceMap.get(ocm));
             checkDocument(ocm, reference, document, null);
-            line = reader.readLine();
+            line = mReader.readLine();
         }
-        mMissingDocs.addAll(referenceMap.keySet());
+        mMissingDocs.addAll(mReferenceMap.keySet());
+        mMissingDocs.removeAll(existentDocs);
 
         postProcessAndReport();
     }
@@ -174,15 +157,7 @@ public class TransformationQualityTest{
         return false;
     }
 
-    private static Map<String,Integer> createReferencesMap() {
-        final Map<String, Integer> result = new HashMap<>();
-        final Iterator<JsonNode> elements = mReference.elements();
-        for (int i=0; elements.hasNext(); i++){
-            JsonNode doc = elements.next();
-            result.put(doc.get("Identifier").get("identifierGeneric").asText(), i);
-        }
-        return result;
-    }
+
 
     public static void postProcessAndReport(){
         if (!mMissingDocs.isEmpty()){
