@@ -76,7 +76,7 @@ public class LibraryMetadataFilter {
                     .with(filter.startsWith("~") ?
                             "<regexp match=\"" + filter.substring(1) + "\" />" :
                             "<equals string=\"" + filter + "\" />")
-                    .with("</data>")
+                    .with("</data>");
             }
 
             morph.with("</if>");
