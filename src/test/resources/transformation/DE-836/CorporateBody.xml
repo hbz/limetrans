@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">1 </controlfield>
+    <datafield tag="110" ind1="1" ind2=" ">
+      <subfield code="a">Performances (1979, München)</subfield>
+      <subfield code="0">(DE-588)2056045-X</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">2 </controlfield>
+    <datafield tag="110" ind1="2" ind2=" ">
+      <subfield code="a">Museum Bochum.</subfield>
+      <subfield code="b">Kunstsammlung</subfield>
+      <subfield code="0">(DE-588)2030896-6</subfield>
+      <subfield code="0">(DE-603)2056045-0</subfield>
+    </datafield>
+    <datafield tag="710" ind1="1" ind2=" ">
+      <subfield code="a">United States.</subfield>
+      <subfield code="b">Agricultural Marketing Service.</subfield>
+      <subfield code="b">Fruit and Vegetable Division.</subfield>
+      <subfield code="b">Market News Branch.</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+      <subfield code="a">Technische Universität Berlin.</subfield>
+      <subfield code="b">Zentrum für Antisemitismusforschung</subfield>
+      <subfield code="0">(DE-588)2056045-X</subfield>
+      <subfield code="0">(DE-588)2056045-0</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">3 </controlfield>
+    <datafield tag="710" ind1="2" ind2=" ">
+      <subfield code="a">Technische Universität Berlin.</subfield>
+      <subfield code="b">Zentrum für Antisemitismusforschung.</subfield>
+      <subfield code="0">(DE-603)2056045-0</subfield>
+      <subfield code="0">(DE-588)2056045-X</subfield>
+    </datafield>
+  </record>
+</collection>
