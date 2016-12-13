@@ -34,16 +34,27 @@ public class FileQueue {
     }
 
     public void processMarcXml(final StreamReceiver aReceiver) {
+        processMarcXml(aReceiver, true);
+    }
+
+    public void processMarcXml(final StreamReceiver aReceiver, final boolean aNormalizeUnicode) {
         final FileOpener opener = new FileOpener();
         final XmlDecoder decoder = new XmlDecoder();
         final MarcXmlHandler marcHandler = new MarcXmlHandler();
-        final StreamUnicodeNormalizer normalizer = new StreamUnicodeNormalizer();
 
         opener
             .setReceiver(decoder)
-            .setReceiver(marcHandler)
-            .setReceiver(normalizer)
-            .setReceiver(aReceiver);
+            .setReceiver(marcHandler);
+
+        if (aNormalizeUnicode) {
+            marcHandler
+                .setReceiver(new StreamUnicodeNormalizer())
+                .setReceiver(aReceiver);
+        }
+        else {
+            marcHandler
+                .setReceiver(aReceiver);
+        }
 
         for (final PathFile pathFile : mQueue) {
             opener.process(pathFile.toString());
