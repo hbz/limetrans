@@ -25,7 +25,7 @@ public class FieldReportTest extends AbstractTransformationTest{
 
     @Parameters
     public static Collection<Object> data() {
-        return Arrays.asList("CreatorStatement");
+        return Arrays.asList("/CreatorStatement/creatorStatement");
     }
 
     public FieldReportTest(String aField) {
@@ -66,8 +66,8 @@ public class FieldReportTest extends AbstractTransformationTest{
             mMissingReferences.add(aId);
             return;
         }
-        JsonNode field = aDocument.get(mField);
-        JsonNode ref = aReference.get(mField);
+        JsonNode field = aDocument.at(mField);
+        JsonNode ref = aReference.at(mField);
         if (field == null){
             if (ref != null) {
                 mMissingFields.add(aId);
