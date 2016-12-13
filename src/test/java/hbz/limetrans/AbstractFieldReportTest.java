@@ -3,19 +3,14 @@ package hbz.limetrans;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
 
 import java.io.IOException;
 import java.util.*;
 
-@RunWith(Parameterized.class)
-public class FieldReportTest extends AbstractTransformationTest{
+public class AbstractFieldReportTest extends AbstractTransformationTest{
 
     final private static Logger mLogger = LogManager.getLogger();
-    final private String mField;
+    protected String mField;
     final private static Set<String> mWorkingDocs = new HashSet<>();
     final private static Set<String> mMissingFields = new HashSet<>();
     final private static Set<String> mMissingInRef = new HashSet<>();
@@ -23,16 +18,6 @@ public class FieldReportTest extends AbstractTransformationTest{
     final private static Map<String, ErrorFieldPair> mErrors = new HashMap<>();
 
 
-    @Parameters
-    public static Collection<Object> data() {
-        return Arrays.asList("/CreatorStatement/creatorStatement");
-    }
-
-    public FieldReportTest(String aField) {
-        mField = aField;
-    }
-
-    @Test
     public void reportField() throws IOException, InterruptedException {
         String line = mReader.readLine();
         while (line != null){
