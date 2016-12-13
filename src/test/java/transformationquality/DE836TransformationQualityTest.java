@@ -12,8 +12,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import static org.junit.Assert.assertTrue;
-
 public class DE836TransformationQualityTest extends AbstractTransformationQualityTest{
 
     final private static Integer MISSING_DOCS_ACCEPTED = 10;
