@@ -55,7 +55,7 @@ public class FieldReportTest extends AbstractTransformationTest{
             mMissingReferences.forEach(x -> mLogger.error("\t" + x));
         }
         if (!mErrors.isEmpty()){
-            mLogger.error("MISSING REFERENCE DOCUMENTS:");
+            mLogger.error("DIVERGENT TRANSFORMATION:");
             mErrors.forEach((x, y) -> mLogger.error("\t".concat(x).concat("\n").concat(y.toString())));
         }
 
@@ -67,11 +67,13 @@ public class FieldReportTest extends AbstractTransformationTest{
             return;
         }
         JsonNode field = aDocument.get(mField);
+        JsonNode ref = aReference.get(mField);
         if (field == null){
-            mMissingFields.add(aId);
+            if (ref != null) {
+                mMissingFields.add(aId);
+            }
             return;
         }
-        JsonNode ref = aReference.get(mField);
         if (ref == null){
             mMissingInRef.add(aId);
             return;
