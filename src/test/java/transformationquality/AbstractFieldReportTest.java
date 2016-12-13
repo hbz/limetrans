@@ -28,19 +28,19 @@ public class AbstractFieldReportTest extends AbstractTransformationTest{
             line = mReader.readLine();
         }
         if (!mMissingFields.isEmpty()){
-            mLogger.error("MISSING FIELDS IN TRANSFORMED DATA:");
+            mLogger.error("MISSING FIELDS IN TRANSFORMED DATA (" + mMissingFields.size() + "):");
             mMissingFields.forEach(x -> mLogger.error("\t" + x));
         }
         if (!mMissingInRef.isEmpty()){
-            mLogger.error("MISSING FIELDS IN REFERENCE DOCUMENT:");
+            mLogger.error("MISSING FIELDS IN REFERENCE DOCUMENT (" + mMissingInRef.size() + "):");
             mMissingInRef.forEach(x -> mLogger.error("\t" + x));
         }
         if (!mMissingReferences.isEmpty()){
-            mLogger.error("MISSING REFERENCE DOCUMENTS:");
+            mLogger.error("MISSING REFERENCE DOCUMENTS (" + mMissingReferences.size() + "):");
             mMissingReferences.forEach(x -> mLogger.error("\t" + x));
         }
         if (!mErrors.isEmpty()){
-            mLogger.error("DIVERGENT TRANSFORMATION:");
+            mLogger.error("DIVERGENT TRANSFORMATION (" + mErrors.size() + "):");
             mErrors.forEach((x, y) -> mLogger.error("\t".concat(x).concat("\n").concat(y.toString())));
         }
 
