@@ -4,86 +4,25 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.node.TextNode;
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.BeforeClass;
-import org.junit.Test;
 
-import java.io.IOException;
 import java.util.*;
 
 import static org.junit.Assert.assertTrue;
 
-// TODO: make re-usable: amend to DE836TransformationQualityTest extends TransformationQualityTest
+public class AbstractTransformationQualityTest extends AbstractTransformationTest{
 
-public class TransformationQualityTest extends AbstractTransformationTest{
+    final protected static Class[] mRelevantJsonClasses = new Class[]{ArrayNode.class, ObjectNode.class, TextNode.class};
+    final protected static List<String> mMissingDocs = new ArrayList<>();
+    final protected static Map<String, Set<String>> mMissingInRefFields = new HashMap<>();
+    final protected static Map<String, Set<String>> mMisConfiguredFields = new HashMap<>();
+    final protected static Map<String, Set<String>> mErrorFields = new HashMap<>();
+    final protected static Map<String, Integer> mErroneousFields = new HashMap<>();
+    final protected static Set<String> mWorkingFields = new HashSet<>();
+    final protected static Set<String> mErrorKeys = new HashSet<>();
+    final protected static Map<String, Integer> mAccumulatedErrorFields = new HashMap<>();
 
-    final private static Class[] mRelevantJsonClasses = new Class[]{ArrayNode.class, ObjectNode.class, TextNode.class};
-    final private static Integer MISSING_DOCS_ACCEPTED = 10;
-    final private static Integer ERRONEOUS_DOCS_ACCEPTED_PER_FIELD = 20;
-    final private static List<String> EXPECTED_FIELDS_WORKING = Arrays.asList(new String[]{
-            "RecordIdentifier.identifierForTheRecord",
-            "Language.languageSource",
-            "Language.language",
-            "IdentifierISBN.identifierISBN",
-            "Person.personName",
-            "Person.personTitle",
-            "Person.personBio",
-            "Person.personRole",
-            "PersonCreator.personName",
-            "PersonCreator.personTitle",
-            "PersonCreator.personBio",
-            "PersonCreator.personRole",
-            "PersonContributor.personName",
-            "PersonContributor.personTitle",
-            "PersonContributor.personBio",
-            "PersonContributor.personRole",
-            "TitleStatement.titleMain",
-            "TitleAddendum.title",
-            "VolumeDesignation.volumeDesignation",
-            "CreatorStatement.creatorStatement",
-            "Edition.edition",
-            "PublicationPlace.printingPlace",
-            "PublisherName.name",
-            "DateProper.date",
-            "Extent.extent",
-            "SeriesAddedEntryUniformTitle.title",
-            "SeriesAddedEntryUniformTitle.volume",
-            "Description.description",
-            "RSWK.subjectTopicName",
-            "RSWK.subjectIdentifier",
-            "RSWK.identifierGND",
-            "OnlineAccess.uri",
-            "OnlineAccess.nonpublicnote"});
-    final private static Logger mLogger = LogManager.getLogger();
-    final private static List<String> mMissingDocs = new ArrayList<>();
-    final private static Map<String, Set<String>> mMissingInRefFields = new HashMap<>();
-    final private static Map<String, Set<String>> mMisConfiguredFields = new HashMap<>();
-    final private static Map<String, Set<String>> mErrorFields = new HashMap<>();
-    final private static Map<String, Integer> mErroneousFields = new HashMap<>();
-    final private static Set<String> mWorkingFields = new HashSet<>();
-    final private static Set<String> mErrorKeys = new HashSet<>();
-    final private static Map<String, Integer> mAccumulatedErrorFields = new HashMap<>();
-
-    @BeforeClass
-    public static void runTransformation() throws IOException, InterruptedException {
-        String line = mReader.readLine();
-        Set<String> existentDocs = new HashSet<>();
-        while (line != null){
-            JsonNode document = mMapper.readTree(line);
-            String ocm = document.get("RecordIdentifier").get("identifierForTheRecord").asText().substring(8);
-            existentDocs.add(ocm);
-            JsonNode reference = mReference.get(mReferenceMap.get(ocm));
-            checkDocument(ocm, reference, document, null);
-            line = mReader.readLine();
-        }
-        mMissingDocs.addAll(mReferenceMap.keySet());
-        mMissingDocs.removeAll(existentDocs);
-
-        postProcessAndReport();
-    }
-
-    private static void checkDocument(String aId, JsonNode aReference, JsonNode aDocument, String aParentNode) {
+    protected static void checkDocument(String aId, JsonNode aReference, JsonNode aDocument, String aParentNode) {
         Set<String> missingInRef = new HashSet<>();
         Set<String> misconfigured = new HashSet<>();
         Set<String> error = new HashSet<>();
@@ -159,14 +98,14 @@ public class TransformationQualityTest extends AbstractTransformationTest{
 
 
 
-    public static void postProcessAndReport(){
+    protected static void postProcessAndReport(final Logger aLogger, final Integer aErroneousDocsAcceptedPerField, final List<String> aExpectedFieldsWorking){
         if (!mMissingDocs.isEmpty()){
-            mLogger.error("MISSING DOCUMENTS IN TRANSFORMATION:");
-            mMissingDocs.forEach(x -> mLogger.error("\t" + x));
+            aLogger.error("MISSING DOCUMENTS IN TRANSFORMATION:");
+            mMissingDocs.forEach(x -> aLogger.error("\t" + x));
         }
         if (!mErrorKeys.isEmpty()){
-            mLogger.error("OVERALL ERRONEOUS FIELDS:");
-            mErrorKeys.forEach(x -> mLogger.error("\t" + x));
+            aLogger.error("OVERALL ERRONEOUS FIELDS:");
+            mErrorKeys.forEach(x -> aLogger.error("\t" + x));
         }
 
         final Map<String, Set<String>> missingInRefFieldsInverted = invert(mMissingInRefFields);
@@ -175,16 +114,16 @@ public class TransformationQualityTest extends AbstractTransformationTest{
         countAndAccumulateErrors(errorFieldsInverted);
 
         if (!missingInRefFieldsInverted.isEmpty()){
-            mLogger.error("MISSING FIELDS IN REFERENCE:");
-            missingInRefFieldsInverted.forEach((x, y) -> mLogger.error("\t" + x + " (" + y.size() + "): " + y));
+            aLogger.error("MISSING FIELDS IN REFERENCE:");
+            missingInRefFieldsInverted.forEach((x, y) -> aLogger.error("\t" + x + " (" + y.size() + "): " + y));
         }
         if (!errorFieldsInverted.isEmpty()){
-            mLogger.error("ERRONEOUS FIELDS IN DOCUMENTS:");
-            errorFieldsInverted.forEach((x, y) -> mLogger.error("\t" + x + " (" + y.size() + "): " + y));
+            aLogger.error("ERRONEOUS FIELDS IN DOCUMENTS:");
+            errorFieldsInverted.forEach((x, y) -> aLogger.error("\t" + x + " (" + y.size() + "): " + y));
         }
         mAccumulatedErrorFields.forEach((k, v) -> {
-            if (v > ERRONEOUS_DOCS_ACCEPTED_PER_FIELD &&
-                    EXPECTED_FIELDS_WORKING.contains(k)){
+            if (v > aErroneousDocsAcceptedPerField &&
+                    aExpectedFieldsWorking.contains(k)){
                 mErroneousFields.put(k, v);
             }
             else{
@@ -192,8 +131,8 @@ public class TransformationQualityTest extends AbstractTransformationTest{
             }
         });
         if (!mWorkingFields.isEmpty()){
-            mLogger.error("WORKING FIELDS IN TRANSFORMATION:");
-            mWorkingFields.forEach(x -> mLogger.error("\t" + x));
+            aLogger.error("WORKING FIELDS IN TRANSFORMATION:");
+            mWorkingFields.forEach(x -> aLogger.error("\t" + x));
         }
     }
 
@@ -224,13 +163,12 @@ public class TransformationQualityTest extends AbstractTransformationTest{
         return result;
     }
 
-    @Test
-    public void testMissingDocs(){
-        assertTrue("Too many documents missing in transformation.", mMissingDocs.size() <= MISSING_DOCS_ACCEPTED);
+
+    protected void testMissingDocs(final Integer aMissingDocsAccepted){
+        assertTrue("Too many documents missing in transformation.", mMissingDocs.size() <= aMissingDocsAccepted);
     }
 
-    @Test
-    public void testErroneousFields(){
+    protected void testErroneousFields(){
         StringBuffer sb = new StringBuffer("Too many errors in fields:");
         mErroneousFields.forEach((k, v) -> {
             sb.append("\n\t" + k + " (" + v + ")");
