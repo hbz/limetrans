@@ -184,20 +184,6 @@ public class ElasticsearchIndexerTest {
     }
 
     @Test
-    public void testShouldFailToIndexFieldWithSeparator() {
-        expectBulkFailure(); // MapperParsingException[Field name [L1.L4] cannot contain '.']
-        setIndexer();
-
-        mIndexer.startRecord(ID1);
-        mIndexer.literal(LITERAL1 + "." + LITERAL4, VALUE1);
-        mIndexer.literal(LITERAL2, VALUE2);
-        mIndexer.literal(LITERAL3, VALUE3);
-        mIndexer.endRecord();
-
-        mIndexer.flush();
-    }
-
-    @Test
     public void testShouldIndexMultipleDocuments() {
         setIndexer();
 
