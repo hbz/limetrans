@@ -1,6 +1,7 @@
 package transformationquality;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.MissingNode;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -53,13 +54,13 @@ public class AbstractFieldReportTest extends AbstractTransformationTest{
         }
         JsonNode field = aDocument.at(mField);
         JsonNode ref = aReference.at(mField);
-        if (field == null){
-            if (ref != null) {
+        if (field instanceof MissingNode){
+            if (!(ref instanceof MissingNode)) {
                 mMissingFields.add(aId);
             }
             return;
         }
-        if (ref == null){
+        if (ref instanceof MissingNode){
             mMissingInRef.add(aId);
             return;
         }
