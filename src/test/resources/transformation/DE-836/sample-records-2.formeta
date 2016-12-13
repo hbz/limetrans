@@ -19,6 +19,14 @@
 		'language': 'Englisch',
 		'languageSource': 'eng'
 	},
+	'CorporateBody' {
+		'' {
+			'corporateBodyName': 'Judicial Conference of the United States',
+			'corporateBodyNameUnit[]' {
+				'': 'Space and Facilities Division'
+			}
+		}
+	},
 	'TitleStatement[]' {
 		'' {
 			'titleMain': 'U.S. courts design guide'
@@ -227,6 +235,14 @@
 	'Language' {
 		'language': 'Englisch',
 		'languageSource': 'eng'
+	},
+	'CorporateBody' {
+		'' {
+			'corporateBodyName': 'American Society for Clinical Nutrition'
+		},
+		'' {
+			'corporateBodyName': 'American Society for Nutrition'
+		}
 	},
 	'TitleStatement[]' {
 		'' {

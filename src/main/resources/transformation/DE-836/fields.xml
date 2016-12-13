@@ -41,6 +41,29 @@
     <call-macro name="personRole"  field="100" />
   </entity>
 
+  <entity name="CorporateBody" flushWith="record">
+    <entity name="" flushWith="[17]10[012] " sameEntity="true">
+      <data name="corporateBodyName" source="[17]10[012] .a">
+        <replace pattern="\.$" with="" />
+      </data>
+      <entity name="corporateBodyNameUnit[]" flushWith="[17]10[012] " sameEntity="true">
+        <data name="" source="[17]10[012] .b">
+          <replace pattern="\.$" with="" />
+        </data>
+      </entity>
+      <entity name="personIdentifier[]" flushWith="[17]10[012] " sameEntity="true">
+        <data name="" source="[17]10[012] .0">
+          <regexp match="^\(DE-588\).*$" />
+        </data>
+      </entity>
+      <entity name="identifierGND[]" flushWith="[17]10[012] " sameEntity="true">
+        <data name="" source="[17]10[012] .0">
+          <regexp match="(?&lt;=\(DE-588\)).*$" />
+        </data>
+      </entity>
+    </entity>
+  </entity>
+
   <!-- 2xx -->
   <entity name="TitleStatement[]" flushWith="record">
     <entity name="" flushWith="record">
