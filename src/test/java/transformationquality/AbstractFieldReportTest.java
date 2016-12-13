@@ -56,12 +56,12 @@ public class AbstractFieldReportTest extends AbstractTransformationTest{
         JsonNode ref = aReference.at(mField);
         if (field instanceof MissingNode){
             if (!(ref instanceof MissingNode)) {
-                mMissingFields.add(aId);
+                mMissingFields.add(aId.concat(" (").concat(ref.toString()).concat(")"));
             }
             return;
         }
         if (ref instanceof MissingNode){
-            mMissingInRef.add(aId);
+            mMissingInRef.add(aId.concat(" (").concat(field.toString()).concat(")"));
             return;
         }
         if (field.equals(ref)){
