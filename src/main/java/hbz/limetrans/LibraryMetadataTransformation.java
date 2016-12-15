@@ -23,6 +23,7 @@ public class LibraryMetadataTransformation {
     private final String mJsonPath;
     private final String mRulesPath;
     private final boolean mIsUpdate;
+    private final boolean mNormalizeUnicode;
 
     private String mElasticsearchPath;
 
@@ -63,6 +64,7 @@ public class LibraryMetadataTransformation {
             throw new IllegalArgumentException("Could not process limetrans: no output specified.");
         }
 
+        mNormalizeUnicode = aSettings.getAsBoolean("normalize-unicode", true);
         mRulesPath = aSettings.get("transformation-rules");
     }
 
@@ -76,7 +78,7 @@ public class LibraryMetadataTransformation {
         transformElasticsearch(objectTee);
 
         morph.setReceiver(streamTee);
-        mInputQueue.processMarcXml(morph);
+        mInputQueue.processMarcXml(morph, mNormalizeUnicode);
     }
 
     public void index() throws IOException {
