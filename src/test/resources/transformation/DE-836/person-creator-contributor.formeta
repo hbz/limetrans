@@ -6,6 +6,9 @@
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'type[]' {
+			'': 'Monographie'
+		},
 		'language': 'keine Angabe'
 	},
 	'Person' {
@@ -18,8 +21,13 @@
 	},
 	'PersonCreator[]' {
 		'' {
-			'personName': 'Gjessing, S.',
-			'personBio': '1950-'
+			'personName': 'Nygaard, Kristen',
+			'personRole[]' {
+				'': '[Author]'
+			}
+		},
+		'' {
+			'personName': 'Gaehde, Joachim E.'
 		}
 	}
 }
@@ -31,29 +39,32 @@
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'type[]' {
+			'': 'Monographie'
+		},
 		'language': 'keine Angabe'
 	},
 	'Person' {
 		'personName': 'Trollope, Anthony',
 		'personBio': '1815-1882',
 		'personRole[]' {
-			'': 'author'
+			'': '[author]'
 		}
 	},
 	'PersonCreator[]' {
 		'' {
-			'personName': 'Gjessing, S.',
-			'personBio': '1950-',
-			'personTitle[]' {
-				'': 'Emperor'
-			},
+			'personName': 'Braun, Almuth',
 			'personRole[]' {
-				'': 'author'
+				'': '[Übers.]'
 			}
-		},
+		}
+	},
+	'PersonContributor[]' {
 		'' {
 			'personName': 'Nygaard, Kristen',
-			'personBio': '1926-'
+			'personRole[]' {
+				'': '[Übers.]'
+			}
 		}
 	}
 }
@@ -65,11 +76,10 @@
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'type[]' {
+			'': 'Monographie'
+		},
 		'language': 'keine Angabe'
-	},
-	'Person' {
-		'personName': 'Trollope, Anthony',
-		'personBio': '1815-1882'
 	},
 	'PersonCreator[]' {
 		'' {
@@ -80,6 +90,10 @@
 	'PersonContributor[]' {
 		'' {
 			'personName': 'Gjessing, S.'
+		},
+		'' {
+			'personName': 'Trollope, Anthony',
+			'personBio': '1815-1882'
 		}
 	}
 }
@@ -91,24 +105,31 @@
 		'format[]' {
 			'': 'keine Angabe'
 		},
+		'type[]' {
+			'': 'Monographie'
+		},
 		'language': 'keine Angabe'
 	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Gjessing, S.',
-			'personBio': '1950-'
+	'Person' {
+		'personName': 'Trollope, Anthony',
+		'personBio': '1815-1882',
+		'personRole[]' {
+			'': '[Übers.]',
+			'': '[Author]'
 		}
 	},
 	'PersonContributor[]' {
 		'' {
-			'personName': 'Nygaard, Kristen'
+			'personName': 'Nygaard, Kristen',
+			'personRole[]' {
+				'': '[editor]',
+				'': '[translator]'
+			}
 		},
 		'' {
-			'personName': 'Trollope, Anthony',
-			'personBio': '1815-1882',
+			'personName': 'Donin, Richard Kurt',
 			'personRole[]' {
-				'': 'editor',
-				'': 'translator'
+				'': '[Bearb.]'
 			}
 		}
 	}

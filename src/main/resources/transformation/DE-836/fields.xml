@@ -31,7 +31,7 @@
           <data source="1001 .[4e]" />
         </none>
         <data source="1001 .[4e]">
-          <regexp match="^aut" />
+          <regexp match="^[Aa]ut" />
         </data>
       </any>
     </if>
@@ -39,6 +39,29 @@
     <call-macro name="personTitle" field="100" />
     <call-macro name="personBio"   field="100" />
     <call-macro name="personRole"  field="100" />
+  </entity>
+
+  <entity name="CorporateBody" flushWith="record">
+    <entity name="" flushWith="[17]10[012] " sameEntity="true">
+      <data name="corporateBodyName" source="[17]10[012] .a">
+        <replace pattern="\.$" with="" />
+      </data>
+      <entity name="corporateBodyNameUnit[]" flushWith="[17]10[012] " sameEntity="true">
+        <data name="" source="[17]10[012] .b">
+          <replace pattern="\.$" with="" />
+        </data>
+      </entity>
+      <entity name="personIdentifier[]" flushWith="[17]10[012] " sameEntity="true">
+        <data name="" source="[17]10[012] .0">
+          <regexp match="^\(DE-588\).*$" />
+        </data>
+      </entity>
+      <entity name="identifierGND[]" flushWith="[17]10[012] " sameEntity="true">
+        <data name="" source="[17]10[012] .0">
+          <regexp match="(?&lt;=\(DE-588\)).*$" />
+        </data>
+      </entity>
+    </entity>
   </entity>
 
   <!-- 2xx -->
@@ -283,7 +306,7 @@
             <data source="7001 .[4e]" />
           </none>
           <data source="7001 .[4e]">
-            <regexp match="^aut" />
+            <regexp match="^[Aa]ut" />
           </data>
         </any>
       </if>
@@ -300,7 +323,7 @@
           <data source="1001 .[4e]" />
           <none flushWith="record">
             <data source="1001 .[4e]">
-              <regexp match="^aut" />
+              <regexp match="^[Aa]ut" />
             </data>
           </none>
         </all>
@@ -316,7 +339,7 @@
           <data source="7001 .[4e]" />
           <none flushWith="7001 " sameEntity="true">
             <data source="7001 .[4e]">
-              <regexp match="^aut" />
+              <regexp match="^[Aa]ut" />
             </data>
           </none>
         </all>

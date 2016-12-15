@@ -9,6 +9,9 @@
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
 		},
+		'type[]' {
+			'': 'Zeitschrift'
+		},
 		'date[]' {
 			'': '1960'
 		}
@@ -62,11 +65,19 @@
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'Zeitschrift'
 		}
 	},
 	'Language' {
 		'language': 'Englisch',
 		'languageSource': 'eng'
+	},
+	'CorporateBody' {
+		'' {
+			'corporateBodyName': 'Mathematisches Forschungsinstitut Oberwolfach'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
@@ -103,6 +114,10 @@
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
+			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'Monographie',
 			'': 'Sonstiges'
 		}
 	},
@@ -184,6 +199,10 @@
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
 		},
+		'type[]' {
+			'': 'Monographie',
+			'': 'Sonstiges'
+		},
 		'date[]' {
 			'': '1999'
 		}
@@ -250,6 +269,10 @@
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'Monographie',
+			'': 'Sonstiges'
 		}
 	},
 	'Language' {
@@ -310,6 +333,10 @@
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'Monographie',
+			'': 'Sonstiges'
 		}
 	},
 	'Language' {
@@ -369,6 +396,11 @@
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
+			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'Monographie',
+			'': 'Bibliografie',
 			'': 'Sonstiges'
 		},
 		'date[]' {
@@ -467,11 +499,19 @@
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
 			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'Zeitschrift'
 		}
 	},
 	'Language' {
 		'language': 'Englisch',
 		'languageSource': 'eng'
+	},
+	'CorporateBody' {
+		'' {
+			'corporateBodyName': 'Organisation for Economic Co-operation and Development'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
@@ -515,6 +555,10 @@
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
+			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'Monographie',
 			'': 'Sonstiges'
 		}
 	},
@@ -601,6 +645,10 @@
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
+			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'Monographie',
 			'': 'Sonstiges'
 		}
 	},

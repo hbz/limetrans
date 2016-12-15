@@ -10,11 +10,26 @@
   <data source="006" name="@006Pos00">
     <substring start="00" end="01" />
   </data>
+  <data source="006" name="@006Pos04">
+    <substring start="04" end="06" />
+  </data>
   <data source="006" name="@006Pos06">
     <substring start="06" end="07" />
   </data>
+  <data source="006" name="@006Pos07">
+    <substring start="07" end="08" />
+  </data>
+  <data source="006" name="@006Pos08">
+    <substring start="08" end="09" />
+  </data>
   <data source="006" name="@006Pos09">
     <substring start="09" end="10" />
+  </data>
+  <data source="006" name="@006Pos10">
+    <substring start="10" end="11" />
+  </data>
+  <data source="006" name="@006Pos11">
+    <substring start="11" end="12" />
   </data>
   <data source="006" name="@006Pos12">
     <substring start="12" end="13" />
@@ -31,11 +46,26 @@
   <data source="007" name="@007Pos01">
     <substring start="01" end="02" />
   </data>
+  <data source="008" name="@008Pos21">
+    <substring start="21" end="22" />
+  </data>
   <data source="008" name="@008Pos23">
     <substring start="23" end="24" />
   </data>
+  <data source="008" name="@008Pos24">
+    <substring start="24" end="25" />
+  </data>
+  <data source="008" name="@008Pos25">
+    <substring start="25" end="26" />
+  </data>
   <data source="008" name="@008Pos26">
     <substring start="26" end="27" />
+  </data>
+  <data source="008" name="@008Pos27">
+    <substring start="27" end="28" />
+  </data>
+  <data source="008" name="@008Pos28">
+    <substring start="28" end="29" />
   </data>
   <data source="008" name="@008Pos29">
     <substring start="29" end="30" />
@@ -70,7 +100,7 @@
           <equals string="a" />
         </data>
         <data source="@LeaderPos07">
-          <regexp match="[bi]" />
+          <regexp match="[bis]" />
         </data>
       </all>
     </if>
@@ -522,7 +552,520 @@
     </if>
     <data source="001" />
   </combine>
-  <!-- END format -->
+  <!-- END @facet_format -->
+
+  <!-- @facet_type -->
+  <combine name="@facet_type" value="Amtliche Druckschrift">
+    <if>
+      <any>
+        <all>
+          <data source="@type">
+            <regexp match="^(B|CF|CR|M|VM)$" />
+          </data>
+          <data source="@008Pos28">
+            <regexp match="[acfilmosz]" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[aefgkmorst]" />
+          </data>
+          <data source="@006Pos11">
+            <regexp match="[acfilmosz]" />
+          </data>
+        </all>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_type" value="Aufsatz">
+    <if>
+      <any>
+        <all>
+          <data source="@type">
+            <equals string="B" />
+          </data>
+          <data source="@008Pos33">
+            <equals string="e" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[at]" />
+          </data>
+          <data source="@006Pos16">
+            <equals string="e" />
+          </data>
+        </all>
+        <all>
+          <data source="@type">
+            <regexp match="^(B|CR)$" />
+          </data>
+          <data source="@008Pos2[4567]">
+            <equals string="g" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[ast]" />
+          </data>
+          <data source="@006Pos0[789]|@006Pos10">
+            <equals string="g" />
+          </data>
+        </all>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_type" value="Bibliografie">
+    <if>
+      <any>
+        <all>
+          <data source="@type">
+            <regexp match="^(B|CR)$" />
+          </data>
+          <data source="@008Pos2[4567]">
+            <regexp match="[bknq]" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[ast]" />
+          </data>
+          <data source="@006Pos0[789]|@006Pos10">
+            <regexp match="[bknq]" />
+          </data>
+        </all>
+        <all>
+          <data source="@type">
+            <equals string="CF" />
+          </data>
+          <data source="@008Pos26">
+            <equals string="e" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <equals string="m" />
+          </data>
+          <data source="@006Pos09">
+            <equals string="e" />
+          </data>
+        </all>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_type" value="Biografie">
+    <if>
+      <any>
+        <all>
+          <data source="@type">
+            <equals string="B" />
+          </data>
+          <data source="@008Pos34">
+            <regexp match="[abc]" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[at]" />
+          </data>
+          <data source="@006Pos17">
+            <regexp match="[abc]" />
+          </data>
+        </all>
+        <all>
+          <data source="@type">
+            <equals string="Mu" />
+          </data>
+          <data source="@008Pos3[01]">
+            <regexp match="[ab]" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[cdij]" />
+          </data>
+          <data source="@006Pos1[34]">
+            <regexp match="[ab]" />
+          </data>
+        </all>
+        <all>
+          <data source="@type">
+            <equals string="CR" />
+          </data>
+          <data source="@008Pos2[4567]">
+            <equals string="h" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <equals string="s" />
+          </data>
+          <data source="@006Pos0[789]|@006Pos10">
+            <equals string="h" />
+          </data>
+        </all>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_type" value="Festschrift">
+    <if>
+      <any>
+        <all>
+          <data source="@type">
+            <equals string="B" />
+          </data>
+          <data source="@008Pos30">
+            <equals string="1" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[at]" />
+          </data>
+          <data source="@008Pos13">
+            <equals string="1" />
+          </data>
+        </all>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_type" value="Gesetz">
+    <if>
+      <any>
+        <all>
+          <data source="@type">
+            <regexp match="^(B|CR)$" />
+          </data>
+          <data source="@008Pos2[4567]">
+            <equals string="l" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[ast]" />
+          </data>
+          <data source="@006Pos0[789]|@006Pos10">
+            <equals string="l" />
+          </data>
+        </all>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_type" value="Hochschulschrift">
+    <if>
+      <any>
+        <all>
+          <data source="@type">
+            <regexp match="^(B|CR)$" />
+          </data>
+          <data source="@008Pos2[4567]">
+            <equals string="m" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[ast]" />
+          </data>
+          <data source="@006Pos0[789]|@006Pos10">
+            <equals string="m" />
+          </data>
+        </all>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_type" value="Konferenzschrift">
+    <if>
+      <any>
+        <all>
+          <data source="@type">
+            <regexp match="^(B|CR)$" />
+          </data>
+          <data source="@008Pos29">
+            <equals string="1" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[ast]" />
+          </data>
+          <data source="@006Pos12">
+            <equals string="1" />
+          </data>
+        </all>
+        <all>
+          <data source="@type">
+            <equals string="Mu" />
+          </data>
+          <data source="@008Pos3[01]">
+            <equals string="c" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[cdij]" />
+          </data>
+          <data source="@006Pos1[34]">
+            <equals string="c" />
+          </data>
+        </all>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_type" value="Monographie">
+    <if>
+      <data source="@LeaderPos07">
+        <regexp match="[adm]" />
+      </data>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_type" value="Musikalia">
+    <if>
+      <any>
+        <data source="@LeaderPos06">
+          <regexp match="[cdj]" />
+        </data>
+        <data source="@006Pos00">
+          <regexp match="[cdj]" />
+        </data>
+        <data source="@007Pos00">
+          <equals string="q" />
+        </data>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_type" value="Nachschlagewerk">
+    <if>
+      <any>
+        <all>
+          <data source="@type">
+            <regexp match="^(B|CR)$" />
+          </data>
+          <data source="@008Pos2[4567]">
+            <regexp match="[der]" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[ast]" />
+          </data>
+          <data source="@006Pos0[789]|@006Pos10">
+            <regexp match="[der]" />
+          </data>
+        </all>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_type" value="Norm">
+    <if>
+      <any>
+        <all>
+          <data source="@type">
+            <regexp match="^(B|CR)$" />
+          </data>
+          <data source="@008Pos2[4567]">
+            <equals string="u" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[ast]" />
+          </data>
+          <data source="@006Pos0[789]|@006Pos10">
+            <equals string="u" />
+          </data>
+        </all>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_type" value="Schriftenreihe">
+    <if>
+      <any>
+        <data source="@LeaderPos07">
+          <equals string="c" />
+        </data>
+        <all>
+          <data source="@type">
+            <equals string="CR" />
+          </data>
+          <data source="@008Pos21">
+            <equals string="m" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <equals string="s" />
+          </data>
+          <data source="@006Pos04">
+            <equals string="m" />
+          </data>
+        </all>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_type" value="Sonstiges">
+    <if>
+      <any>
+        <all>
+          <data source="@007Pos00">
+            <equals string="7" />
+          </data>
+          <data source="@007Pos01">
+            <equals string="d" />
+          </data>
+        </all>
+        <all>
+          <data source="@type">
+            <regexp match="^(B|CR)$" />
+          </data>
+          <data source="@008Pos2[4567]">
+            <regexp match="[acfiopstvwz56]" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[ast]" />
+          </data>
+          <data source="@006Pos0[789]|@006Pos10">
+            <regexp match="[acfiopstvwz56]" />
+          </data>
+        </all>
+        <all>
+          <data source="@type">
+            <equals string="B" />
+          </data>
+          <data source="@008Pos2[4567]">
+            <regexp match="[jy2]" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[at]" />
+          </data>
+          <data source="@006Pos0[789]|@006Pos10">
+            <regexp match="[jy2]" />
+          </data>
+        </all>
+        <all>
+          <data source="@type">
+            <equals string="B" />
+          </data>
+          <data source="@008Pos33">
+            <regexp match="[dfhijmpsu01]" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[at]" />
+          </data>
+          <data source="@006Pos16">
+            <regexp match="[dfhijmpsu01]" />
+          </data>
+        </all>
+        <all>
+          <data source="@type">
+            <equals string="M" />
+          </data>
+          <data source="@008Pos3[34]">
+            <equals string="k" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[ef]" />
+          </data>
+          <data source="@006Pos1[67]">
+            <equals string="k" />
+          </data>
+        </all>
+        <all>
+          <data source="@type">
+            <equals string="Mu" />
+          </data>
+          <data source="@008Pos3[01]">
+            <regexp match="[dfghijklmoprstz]" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[cdij]" />
+          </data>
+          <data source="@006Pos1[34]">
+            <regexp match="[dfghijklmoprstz]" />
+          </data>
+        </all>
+        <all>
+          <data source="@type">
+            <equals string="CR" />
+          </data>
+          <data source="@008Pos21">
+            <regexp match="[#dlw]" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <equals string="s" />
+          </data>
+          <data source="@006Pos04">
+            <regexp match="[#dlw]" />
+          </data>
+        </all>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_type" value="Zeitschrift">
+    <if>
+      <any>
+        <all>
+          <data source="@type">
+            <equals string="CR" />
+          </data>
+          <data source="@008Pos21">
+            <regexp match="[np]" />
+          </data>
+        </all>
+        <all>
+          <data source="@type">
+            <equals string="CR" />
+          </data>
+          <data source="@008Pos2[4567]">
+            <equals string="y" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <equals string="s" />
+          </data>
+          <data source="@006Pos04">
+            <regexp match="[np]" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <equals string="s" />
+          </data>
+          <data source="@006Pos0[789]|@006Pos10">
+            <equals string="y" />
+          </data>
+        </all>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <!-- END @facet_type -->
 
   <entity name="dc" flushWith="record">
     <entity name="format[]" flushWith="record">
@@ -532,6 +1075,20 @@
       <if>
         <none>
           <data source="@facet_format" />
+        </none>
+      </if>
+      <data name="" source="001">
+        <constant value="keine Angabe" />
+      </data>
+    </entity>
+
+    <entity name="type[]" flushWith="record">
+      <data name="" source="@facet_type" />
+    </entity>
+    <entity name="type[]">
+      <if>
+        <none>
+          <data source="@facet_type" />
         </none>
       </if>
       <data name="" source="001">
