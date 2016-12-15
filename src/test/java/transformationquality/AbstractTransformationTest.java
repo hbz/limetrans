@@ -2,7 +2,7 @@ package transformationquality;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import hbz.limetrans.Helpers;
+import hbz.limetrans.util.Helpers;
 import hbz.limetrans.LibraryMetadataTransformation;
 import org.junit.BeforeClass;
 
