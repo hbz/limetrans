@@ -17,7 +17,7 @@ public class PersonCreatorPersonTitleReportTest extends AbstractFieldReportTest{
 
     @Parameterized.Parameters
     public static Collection<Object> data() {
-        return Arrays.asList("/PersonCreator/0/personTitle");
+        return Arrays.asList("/PersonCreator/personTitle");
     }
 
     public PersonCreatorPersonTitleReportTest(String aField) {

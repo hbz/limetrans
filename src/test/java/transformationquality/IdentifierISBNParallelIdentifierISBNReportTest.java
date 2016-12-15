@@ -17,9 +17,8 @@ public class IdentifierISBNParallelIdentifierISBNReportTest extends AbstractFiel
 
     @Parameterized.Parameters
     public static Collection<Object> data() {
-        return Arrays.asList("/IdentifierISBNParallel/0/identifierISBN");
+        return Arrays.asList("/IdentifierISBNParallel/identifierISBN");
     }
-    // TODO: generic solution for Json arrays (==> compare all elements)
 
     public IdentifierISBNParallelIdentifierISBNReportTest(String aField) {
         mField = aField;

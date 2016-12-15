@@ -17,9 +17,8 @@ public class TitleStatementTitleMainReportTest extends AbstractFieldReportTest{
 
     @Parameterized.Parameters
     public static Collection<Object> data() {
-        return Arrays.asList("/TitleStatement/0/titleMain");
+        return Arrays.asList("/TitleStatement/titleMain");
     }
-    // TODO: values: TitleStatement[] vs. reference: TitleStatement
 
     public TitleStatementTitleMainReportTest(String aField) {
         mField = aField;

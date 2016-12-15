@@ -17,7 +17,7 @@ public class OnlineAccessNonpublicnoteReportTest extends AbstractFieldReportTest
 
     @Parameterized.Parameters
     public static Collection<Object> data() {
-        return Arrays.asList("/OnlineAccess/0/nonpublicnote");
+        return Arrays.asList("/OnlineAccess/nonpublicnote");
     }
 
     public OnlineAccessNonpublicnoteReportTest(String aField) {

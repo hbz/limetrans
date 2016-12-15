@@ -17,9 +17,8 @@ public class SeriesAddedEntryUniformTitleTitle extends AbstractFieldReportTest{
 
     @Parameterized.Parameters
     public static Collection<Object> data() {
-        return Arrays.asList("/SeriesAddedEntryUniformTitle/0/title");
+        return Arrays.asList("/SeriesAddedEntryUniformTitle/title");
     }
-    // TODO: values: SeriesAddedEntryUniformTitle[] vs. reference: SeriesAddedEntryUniformTitle
 
     public SeriesAddedEntryUniformTitleTitle(String aField) {
         mField = aField;

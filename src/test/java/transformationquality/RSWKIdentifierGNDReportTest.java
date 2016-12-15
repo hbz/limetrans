@@ -17,7 +17,7 @@ public class RSWKIdentifierGNDReportTest extends AbstractFieldReportTest{
 
     @Parameterized.Parameters
     public static Collection<Object> data() {
-        return Arrays.asList("/RSWK/0/identifierGND");
+        return Arrays.asList("/RSWK/identifierGND");
     }
 
     public RSWKIdentifierGNDReportTest(String aField) {

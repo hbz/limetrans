@@ -17,7 +17,7 @@ public class RSWKSubjectTopicNameReportTest extends AbstractFieldReportTest{
 
     @Parameterized.Parameters
     public static Collection<Object> data() {
-        return Arrays.asList("/RSWK/0/subjectTopicName");
+        return Arrays.asList("/RSWK/subjectTopicName");
     }
 
     public RSWKSubjectTopicNameReportTest(String aField) {

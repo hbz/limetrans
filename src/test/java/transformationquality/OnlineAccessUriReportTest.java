@@ -17,7 +17,7 @@ public class OnlineAccessUriReportTest extends AbstractFieldReportTest{
 
     @Parameterized.Parameters
     public static Collection<Object> data() {
-        return Arrays.asList("/OnlineAccess/0/uri");
+        return Arrays.asList("/OnlineAccess/uri");
     }
 
     public OnlineAccessUriReportTest(String aField) {
