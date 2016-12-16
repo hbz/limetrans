@@ -11,26 +11,32 @@ import org.xbib.util.Finder;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.Iterable;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class FileQueue {
+public class FileQueue implements Iterable<String> {
 
-    private final Queue<PathFile> mQueue = new LinkedList<>();
+    private final Queue<String> mQueue = new LinkedList<>();
 
     public FileQueue(final Settings aSettings) throws IOException {
-        put(aSettings);
+        add(aSettings);
     }
 
     public FileQueue(final String[] aFileNames) throws IOException {
         for (final String fileName : aFileNames) {
             final File file = new File(fileName);
 
-            put(Settings.settingsBuilder()
+            add(Settings.settingsBuilder()
                     .put("path", file.getParent())
                     .put("pattern", file.getName())
                     .build());
         }
+    }
+
+    public Iterator<String> iterator() {
+        return mQueue.iterator();
     }
 
     public void processMarcXml(final StreamReceiver aReceiver) {
@@ -56,8 +62,8 @@ public class FileQueue {
                 .setReceiver(aReceiver);
         }
 
-        for (final PathFile pathFile : mQueue) {
-            opener.process(pathFile.toString());
+        for (final String fileName : this) {
+            opener.process(fileName);
         }
 
         opener.closeStream();
@@ -71,7 +77,7 @@ public class FileQueue {
         return mQueue.size();
     }
 
-    private void put(final Settings aSettings) throws IOException {
+    private void add(final Settings aSettings) throws IOException {
         if (aSettings == null) {
             return;
         }
@@ -83,11 +89,15 @@ public class FileQueue {
             return;
         }
 
-        mQueue.addAll(new Finder().find(
-                    aSettings.get("base"), aSettings.get("basepattern"), path, pattern)
-                .sortBy(aSettings.get("sort_by", "lastmodified"))
-                .order(aSettings.get("order", "asc"))
-                .getPathFiles(aSettings.getAsInt("max", -1)));
+        final Queue<PathFile> pathFiles = new Finder().find(
+                aSettings.get("base"), aSettings.get("basepattern"), path, pattern)
+            .sortBy(aSettings.get("sort_by", "lastmodified"))
+            .order(aSettings.get("order", "asc"))
+            .getPathFiles(aSettings.getAsInt("max", -1));
+
+        for (final PathFile pathFile : pathFiles) {
+            mQueue.add(pathFile.toString());
+        }
     }
 
 }
