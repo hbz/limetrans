@@ -11,14 +11,10 @@ import java.net.URL;
 
 public final class Main {
 
-    private static final String[] PROTOCOLS = new String[] {"http", "https", "ftp", "file"};
+    private static final String[] PROTOCOLS = new String[]{"http", "https", "ftp", "file"};
 
     public static void main(final String[] args) throws IOException {
-        final LibraryMetadataTransformation limetrans =
-            new LibraryMetadataTransformation(setup(args));
-
-        limetrans.transform();
-        limetrans.index();
+        new LibraryMetadataTransformation(setup(args)).process();
     }
 
     private static Settings setup(final String[] aArgs) throws IOException {

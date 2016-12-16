@@ -87,7 +87,7 @@ public class LibraryMetadataTransformationTest {
     private void testEqualsReference(final String aName) throws IOException {
         final LibraryMetadataTransformation limetrans = getLimetrans(aName);
 
-        limetrans.transform();
+        limetrans.process();
 
         assertEqualsReference(aName);
     }
