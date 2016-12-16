@@ -199,7 +199,7 @@ public class ElasticsearchClient {
                             InetAddress.getByName(hostWithPort[0]),
                             Integer.valueOf(hostWithPort[1])));
             }
-            catch (UnknownHostException e) {
+            catch (final UnknownHostException e) {
                 throw new RuntimeException(e);
             }
         }
@@ -237,7 +237,7 @@ public class ElasticsearchClient {
         try {
             return Helpers.slurpFile(path);
         }
-        catch (IOException e) {
+        catch (final IOException e) {
             throw new RuntimeException("Failed to read `" + aKey + "' file", e);
         }
     }

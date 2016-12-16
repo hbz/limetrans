@@ -21,7 +21,7 @@ public class ElasticsearchServer {
                 mTempDir = Files.createTempDirectory("elasticsearch").toFile();
                 aDataDir = mTempDir.getPath();
             }
-            catch (IOException e) {
+            catch (final IOException e) {
                 throw new RuntimeException("Failed to create temporary directory", e);
             }
         }
@@ -49,7 +49,7 @@ public class ElasticsearchServer {
             try {
                 FileUtils.deleteDirectory(mTempDir);
             }
-            catch (IOException e) {
+            catch (final IOException e) {
                 throw new RuntimeException("Failed to delete temporary directory", e);
             }
         }

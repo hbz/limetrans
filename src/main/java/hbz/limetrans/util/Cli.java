@@ -68,7 +68,7 @@ public class Cli {
         try {
             mCommandLine = new DefaultParser().parse(mOptions, aArgs);
         }
-        catch (ParseException e) {
+        catch (final ParseException e) {
             throw new CliException(this, e);
         }
 
