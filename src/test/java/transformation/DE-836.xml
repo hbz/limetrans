@@ -86,4 +86,16 @@
     <result src="&base;/SeriesAddedEntryUniformTitle.formeta" />
   </test-case>
 
+  <test-case name="CorporateBody">
+    <input src="&base;/CorporateBody.xml" />
+    <transformation />
+    <result src="&base;/CorporateBody.formeta" />
+  </test-case>
+
+  <test-case name="TypeMedia">
+    <input src="&base;/TypeMedia.xml" />
+    <transformation />
+    <result src="&base;/TypeMedia.formeta" />
+  </test-case>
+
 </metamorph-test>
