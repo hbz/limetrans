@@ -35,10 +35,12 @@
         </data>
       </any>
     </if>
-    <call-macro name="personName"  field="100" />
-    <call-macro name="personTitle" field="100" />
-    <call-macro name="personBio"   field="100" />
-    <call-macro name="personRole"  field="100" />
+    <call-macro name="personName"       field="100" />
+    <call-macro name="personTitle"      field="100" />
+    <call-macro name="personBio"        field="100" />
+    <call-macro name="personRole"       field="100" />
+    <call-macro name="personIdentifier" field="100" />
+    <call-macro name="identifierGND"    field="100" />
   </entity>
 
   <entity name="CorporateBody" flushWith="record">
@@ -51,16 +53,12 @@
           <replace pattern="\.$" with="" />
         </data>
       </entity>
-      <entity name="personIdentifier[]" flushWith="[17]10[012] " sameEntity="true">
+      <entity name="corporateBodyIdentifier[]" flushWith="[17]10[012] " sameEntity="true">
         <data name="" source="[17]10[012] .0">
           <regexp match="^\(DE-588\).*$" />
         </data>
       </entity>
-      <entity name="identifierGND[]" flushWith="[17]10[012] " sameEntity="true">
-        <data name="" source="[17]10[012] .0">
-          <regexp match="(?&lt;=\(DE-588\)).*$" />
-        </data>
-      </entity>
+      <call-macro name="identifierGND" field="[17]10" />
     </entity>
   </entity>
 
@@ -310,10 +308,12 @@
           </data>
         </any>
       </if>
-      <call-macro name="personName"  field="700" />
-      <call-macro name="personTitle" field="700" />
-      <call-macro name="personBio"   field="700" />
-      <call-macro name="personRole"  field="700" />
+      <call-macro name="personName"       field="700" />
+      <call-macro name="personTitle"      field="700" />
+      <call-macro name="personBio"        field="700" />
+      <call-macro name="personRole"       field="700" />
+      <call-macro name="personIdentifier" field="700" />
+      <call-macro name="identifierGND"    field="700" />
     </entity>
   </entity>
   <entity name="PersonContributor[]" flushWith="record">
@@ -328,10 +328,12 @@
           </none>
         </all>
       </if>
-      <call-macro name="personName"  field="100" />
-      <call-macro name="personTitle" field="100" />
-      <call-macro name="personBio"   field="100" />
-      <call-macro name="personRole"  field="100" />
+      <call-macro name="personName"       field="100" />
+      <call-macro name="personTitle"      field="100" />
+      <call-macro name="personBio"        field="100" />
+      <call-macro name="personRole"       field="100" />
+      <call-macro name="personIdentifier" field="100" />
+      <call-macro name="identifierGND"    field="100" />
     </entity>
     <entity name="" flushWith="7001 " sameEntity="true">
       <if>
@@ -344,10 +346,12 @@
           </none>
         </all>
       </if>
-      <call-macro name="personName"  field="700" />
-      <call-macro name="personTitle" field="700" />
-      <call-macro name="personBio"   field="700" />
-      <call-macro name="personRole"  field="700" />
+      <call-macro name="personName"       field="700" />
+      <call-macro name="personTitle"      field="700" />
+      <call-macro name="personBio"        field="700" />
+      <call-macro name="personRole"       field="700" />
+      <call-macro name="personIdentifier" field="700" />
+      <call-macro name="identifierGND"    field="700" />
     </entity>
   </entity>
   <entity name="IdentifierISBNParallel[]" flushWith="record">
@@ -360,7 +364,6 @@
 
   <!-- 8xx -->
   <call-macro name="prepare-SeriesAddedEntryUniformTitle-title" field="830 0" basefield="830" />
-
   <entity name="SeriesAddedEntryUniformTitle[]" flushWith="record">
     <entity name="" flushWith="830 0" sameEntity="true">
       <call-macro name="SeriesAddedEntryUniformTitle-title" field="830 0" basefield="830" />
