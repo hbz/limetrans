@@ -80,7 +80,7 @@
   <entity name="VolumeDesignation">
     <data name="volumeDesignation" source="245??.n">
       <occurrence only="1" />
-      <replace pattern="\s?[,.]?\s?$" with="" />
+      <replace pattern="\s?[,./:=]?\s?$" with="" />
     </data>
   </entity>
   <entity name="CreatorStatement">
