@@ -46,11 +46,15 @@
     <datafield tag="700" ind1="1" ind2=" ">
       <subfield code="a">Nygaard, Kristen,</subfield>
       <subfield code="d">1926-</subfield>
+      <subfield code="0">(DE-588)389666475</subfield>
+      <subfield code="0">(DE-588)129116726</subfield>
     </datafield>
     <datafield tag="700" ind1="1" ind2=" ">
       <subfield code="a">Gjessing, S.</subfield>
       <subfield code="q">(Stein),</subfield>
       <subfield code="4">edt</subfield>
+      <subfield code="0">(DE-588)129116726</subfield>
+      <subfield code="0">(DE-601)389666475</subfield>
     </datafield>
   </record>
   <record xmlns="http://www.loc.gov/MARC21/slim">
@@ -61,18 +65,20 @@
       <subfield code="d">1815-1882.</subfield>
       <subfield code="e">Übers.</subfield>
       <subfield code="e">Author</subfield>
+      <subfield code="0">(DE-601)389666475</subfield>
+      <subfield code="0">(DE-588)129116726</subfield>
     </datafield>
     <datafield tag="700" ind1="1" ind2=" ">
       <subfield code="a">Nygaard, Kristen,</subfield>
       <subfield code="e">editor</subfield>
       <subfield code="e">translator</subfield>
+      <subfield code="0">(DE-588)129116726</subfield>
     </datafield>
     <datafield tag="700" ind1="1" ind2=" ">
       <subfield code="a">Donin, Richard Kurt</subfield>
       <subfield code="e">Bearb.</subfield>
       <subfield code="4">arr</subfield>
       <subfield code="0">(DE-601)389666475</subfield>
-      <subfield code="0">(DE-588)129116726</subfield>
     </datafield>
   </record>
 </collection>

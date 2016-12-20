@@ -84,12 +84,26 @@
 	'PersonCreator[]' {
 		'' {
 			'personName': 'Nygaard, Kristen',
-			'personBio': '1926-'
+			'personBio': '1926-',
+			'personIdentifier[]' {
+				'': '(DE-588)389666475',
+				'': '(DE-588)129116726'
+			},
+			'identifierGND[]' {
+				'': '389666475',
+				'': '129116726'
+			}
 		}
 	},
 	'PersonContributor[]' {
 		'' {
-			'personName': 'Gjessing, S.'
+			'personName': 'Gjessing, S.',
+			'personIdentifier[]' {
+				'': '(DE-588)129116726'
+			},
+			'identifierGND[]' {
+				'': '129116726'
+			}
 		},
 		'' {
 			'personName': 'Trollope, Anthony',
@@ -116,6 +130,12 @@
 		'personRole[]' {
 			'': '[Übers.]',
 			'': '[Author]'
+		},
+		'personIdentifier[]' {
+			'': '(DE-588)129116726'
+		},
+		'identifierGND[]' {
+			'': '129116726'
 		}
 	},
 	'PersonContributor[]' {
@@ -124,6 +144,12 @@
 			'personRole[]' {
 				'': '[editor]',
 				'': '[translator]'
+			},
+			'personIdentifier[]' {
+				'': '(DE-588)129116726'
+			},
+			'identifierGND[]' {
+				'': '129116726'
 			}
 		},
 		'' {
