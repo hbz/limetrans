@@ -109,7 +109,7 @@ public class LibraryMetadataTransformationTest {
     }
 
     private String slurpFile(final String aDir, final String aName) throws IOException {
-        return Helpers.slurpFile("src/test/resources/limetrans/" + aDir + "/" + aName + ".jsonl");
+        return Helpers.slurpFile("/limetrans/" + aDir + "/" + aName + ".jsonl", getClass());
     }
 
 }
