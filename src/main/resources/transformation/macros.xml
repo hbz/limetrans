@@ -44,11 +44,11 @@
   </macro>
 
   <macro name="identifierGND">
-    <entity name="$[name][]" flushWith="$[field][013] " sameEntity="true">
-      <data name="" source="$[field][013] .0">
+    <entity name="$[name][]" flushWith="$[field][0123] " sameEntity="true">
+      <data name="" source="$[field][0123] .0">
         <regexp match="(?&lt;=\(DE-588\)).*$" />
       </data>
-     </entity>
+    </entity>
   </macro>
 
   <macro name="prepare-SeriesAddedEntryUniformTitle-title">

@@ -58,11 +58,7 @@
           <regexp match="^\(DE-588\).*$" />
         </data>
       </entity>
-      <entity name="identifierGND[]" flushWith="[17]10[012] " sameEntity="true">
-        <data name="" source="[17]10[012] .0">
-          <regexp match="(?&lt;=\(DE-588\)).*$" />
-        </data>
-      </entity>
+      <call-macro name="identifierGND" field="[17]10" />
     </entity>
   </entity>
 
