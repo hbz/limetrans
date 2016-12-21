@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <maps xmlns="http://www.culturegraph.org/metamorph">
 
-  <!-- Quelle: http://www.loc.gov/marc/languages/language_code.html -->
-  <map name="language">
-    <entry name="ger" value="Deutsch" />
-    <entry name="eng" value="Englisch" />
-    <entry name="fre" value="Französisch" />
-    <entry name="spa" value="Spanisch" />
-    <entry name="ita" value="Italienisch" />
-    <entry name="jpn" value="Japanisch" />
-    <entry name="dut" value="Niederländisch " />
-    <entry name="rus" value="Russisch" />
-    <entry name="por" value="Portugiesisch " />
-    <entry name="chi" value="Chinesisch" />
-    <entry name="kor" value="Koreanisch" />
-    <entry name="tur" value="Türkisch" />
-    <entry name="pol" value="Polnisch" />
-    <entry name="chi" value="Chinesisch" />
-    <entry name="swe" value="Schwedisch" />
-    <entry name="lat" value="Latein" />
-    <entry name="dan" value="Dänisch" />
-    <entry name="hun" value="Ungarisch" />
-    <entry name="ara" value="Arabisch" />
-    <entry name="cze" value="Tschechisch" />
-  </map>
-
   <!--
     CF = Computer files
     Mu = Music

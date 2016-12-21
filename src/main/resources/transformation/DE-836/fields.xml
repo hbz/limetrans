@@ -11,7 +11,7 @@
     <substring start="35" end="38" />
   </data>
   <data name="@language_long" source="@language_short">
-    <lookup in="language" />
+    <lookup in="ISO639-2-to-GND" />
   </data>
   <entity name="Language" flushWith="record">
     <data name="languageSource" source="@language_short" />
