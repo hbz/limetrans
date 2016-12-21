@@ -6,7 +6,7 @@ import org.culturegraph.mf.formeta.formatter.FormatterStyle;
 import org.culturegraph.mf.morph.Metamorph;
 import org.culturegraph.mf.stream.converter.FormetaEncoder;
 import org.culturegraph.mf.stream.converter.JsonEncoder;
-import org.culturegraph.mf.stream.pipe.IdChangePipe;
+import org.culturegraph.mf.stream.pipe.RecordIdChanger;
 import org.culturegraph.mf.stream.pipe.StreamTee;
 import org.culturegraph.mf.stream.sink.ObjectWriter;
 import org.xbib.common.settings.Settings;
@@ -88,19 +88,19 @@ public class LibraryMetadataTransformation {
             return;
         }
 
-        final IdChangePipe idChangePipe = new IdChangePipe();
+        final RecordIdChanger recordIdChanger = new RecordIdChanger();
         final String idKey = mElasticsearchSettings.get("index.idKey");
 
         if (idKey != null) {
-            idChangePipe.setIdLiteral(idKey);
-            idChangePipe.setKeepIdLiteral(true);
+            recordIdChanger.setIdLiteral(idKey);
+            recordIdChanger.setKeepIdLiteral(true);
         }
 
         final ElasticsearchIndexer elasticsearchIndexer =
             new ElasticsearchIndexer(mElasticsearchSettings.getAsMap());
 
-        aTee.addReceiver(idChangePipe);
-        idChangePipe.setReceiver(elasticsearchIndexer);
+        aTee.addReceiver(recordIdChanger);
+        recordIdChanger.setReceiver(elasticsearchIndexer);
     }
 
 }
