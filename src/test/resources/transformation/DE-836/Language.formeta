@@ -548,65 +548,6 @@
 }
 '' {
 	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)23'
-	},
-	'dc' {
-		'format[]' {
-			'': 'keine Angabe'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'Englisch',
-			'': 'Französisch'
-		}
-	},
-	'Language[]' {
-		'' {
-			'language': 'Englisch',
-			'languageSource': 'eng'
-		},
-		'' {
-			'language': 'Französisch',
-			'languageSource': 'fre'
-		}
-	}
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)24'
-	},
-	'dc' {
-		'format[]' {
-			'': 'keine Angabe'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'Englisch',
-			'': 'Französisch',
-			'': 'Portugiesisch'
-		}
-	},
-	'Language[]' {
-		'' {
-			'language': 'Englisch',
-			'languageSource': 'eng'
-		},
-		'' {
-			'language': 'Französisch',
-			'languageSource': 'fre'
-		},
-		'' {
-			'language': 'Portugiesisch',
-			'languageSource': 'por'
-		}
-	}
-}
-'' {
-	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)25'
 	},
 	'dc' {
