@@ -7,15 +7,18 @@
       <compose prefix="(DE-836)" />
     </data>
   </entity>
-  <data name="@language_short" source="008">
+  <data name="@language_source" source="008">
     <substring start="35" end="38" />
   </data>
-  <data name="@language_long" source="@language_short">
+  <data name="@language_source" source="041[01] .[adj]" />
+  <data name="@language_long" source="@language_source">
     <lookup in="ISO639-2-to-GND" />
   </data>
-  <entity name="Language" flushWith="record">
-    <data name="languageSource" source="@language_short" />
-    <data name="language" source="@language_long" />
+  <entity name="Language[]" flushWith="record">
+    <entity name="" flushWith="@language_source">
+      <data name="language" source="@language_long" />
+      <data name="languageSource" source="@language_source" />
+    </entity>
   </entity>
   <entity name="IdentifierISBN[]" flushWith="record">
     <entity name="" flushWith="020  " sameEntity="true">

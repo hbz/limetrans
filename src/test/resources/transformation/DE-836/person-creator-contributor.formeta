@@ -9,7 +9,9 @@
 		'type[]' {
 			'': 'Monographie'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'Person' {
 		'personName': 'Trollope, Anthony',
@@ -42,7 +44,9 @@
 		'type[]' {
 			'': 'Monographie'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'Person' {
 		'personName': 'Trollope, Anthony',
@@ -79,7 +83,9 @@
 		'type[]' {
 			'': 'Monographie'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'PersonCreator[]' {
 		'' {
@@ -122,7 +128,9 @@
 		'type[]' {
 			'': 'Monographie'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'Person' {
 		'personName': 'Trollope, Anthony',

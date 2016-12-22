@@ -3,17 +3,21 @@
 		'identifierForTheRecord': '(DE-836)1'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Englisch'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	}
 }
 '' {
@@ -21,17 +25,21 @@
 		'identifierForTheRecord': '(DE-836)2'
 	},
 	'dc' {
-		'language': 'Deutsch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Deutsch'
 		}
 	},
-	'Language' {
-		'language': 'Deutsch',
-		'languageSource': 'ger'
+	'Language[]' {
+		'' {
+			'language': 'Deutsch',
+			'languageSource': 'ger'
+		}
 	}
 }
 '' {
@@ -39,17 +47,21 @@
 		'identifierForTheRecord': '(DE-836)3'
 	},
 	'dc' {
-		'language': 'Französisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Französisch'
 		}
 	},
-	'Language' {
-		'language': 'Französisch',
-		'languageSource': 'fre'
+	'Language[]' {
+		'' {
+			'language': 'Französisch',
+			'languageSource': 'fre'
+		}
 	}
 }
 '' {
@@ -57,17 +69,21 @@
 		'identifierForTheRecord': '(DE-836)4'
 	},
 	'dc' {
-		'language': 'Spanisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Spanisch'
 		}
 	},
-	'Language' {
-		'language': 'Spanisch',
-		'languageSource': 'spa'
+	'Language[]' {
+		'' {
+			'language': 'Spanisch',
+			'languageSource': 'spa'
+		}
 	}
 }
 '' {
@@ -75,17 +91,21 @@
 		'identifierForTheRecord': '(DE-836)5'
 	},
 	'dc' {
-		'language': 'Italienisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Italienisch'
 		}
 	},
-	'Language' {
-		'language': 'Italienisch',
-		'languageSource': 'ita'
+	'Language[]' {
+		'' {
+			'language': 'Italienisch',
+			'languageSource': 'ita'
+		}
 	}
 }
 '' {
@@ -93,17 +113,21 @@
 		'identifierForTheRecord': '(DE-836)6'
 	},
 	'dc' {
-		'language': 'Japanisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Japanisch'
 		}
 	},
-	'Language' {
-		'language': 'Japanisch',
-		'languageSource': 'jpn'
+	'Language[]' {
+		'' {
+			'language': 'Japanisch',
+			'languageSource': 'jpn'
+		}
 	}
 }
 '' {
@@ -111,17 +135,21 @@
 		'identifierForTheRecord': '(DE-836)7'
 	},
 	'dc' {
-		'language': 'Niederländisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Niederländisch'
 		}
 	},
-	'Language' {
-		'language': 'Niederländisch',
-		'languageSource': 'dut'
+	'Language[]' {
+		'' {
+			'language': 'Niederländisch',
+			'languageSource': 'dut'
+		}
 	}
 }
 '' {
@@ -129,17 +157,21 @@
 		'identifierForTheRecord': '(DE-836)8'
 	},
 	'dc' {
-		'language': 'Russisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Russisch'
 		}
 	},
-	'Language' {
-		'language': 'Russisch',
-		'languageSource': 'rus'
+	'Language[]' {
+		'' {
+			'language': 'Russisch',
+			'languageSource': 'rus'
+		}
 	}
 }
 '' {
@@ -147,17 +179,21 @@
 		'identifierForTheRecord': '(DE-836)9'
 	},
 	'dc' {
-		'language': 'Portugiesisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Portugiesisch'
 		}
 	},
-	'Language' {
-		'language': 'Portugiesisch',
-		'languageSource': 'por'
+	'Language[]' {
+		'' {
+			'language': 'Portugiesisch',
+			'languageSource': 'por'
+		}
 	}
 }
 '' {
@@ -165,17 +201,21 @@
 		'identifierForTheRecord': '(DE-836)10'
 	},
 	'dc' {
-		'language': 'Chinesisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Chinesisch'
 		}
 	},
-	'Language' {
-		'language': 'Chinesisch',
-		'languageSource': 'chi'
+	'Language[]' {
+		'' {
+			'language': 'Chinesisch',
+			'languageSource': 'chi'
+		}
 	}
 }
 '' {
@@ -183,17 +223,21 @@
 		'identifierForTheRecord': '(DE-836)11'
 	},
 	'dc' {
-		'language': 'Koreanisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Koreanisch'
 		}
 	},
-	'Language' {
-		'language': 'Koreanisch',
-		'languageSource': 'kor'
+	'Language[]' {
+		'' {
+			'language': 'Koreanisch',
+			'languageSource': 'kor'
+		}
 	}
 }
 '' {
@@ -201,17 +245,21 @@
 		'identifierForTheRecord': '(DE-836)12'
 	},
 	'dc' {
-		'language': 'Türkisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Türkisch'
 		}
 	},
-	'Language' {
-		'language': 'Türkisch',
-		'languageSource': 'tur'
+	'Language[]' {
+		'' {
+			'language': 'Türkisch',
+			'languageSource': 'tur'
+		}
 	}
 }
 '' {
@@ -219,17 +267,21 @@
 		'identifierForTheRecord': '(DE-836)13'
 	},
 	'dc' {
-		'language': 'Polnisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Polnisch'
 		}
 	},
-	'Language' {
-		'language': 'Polnisch',
-		'languageSource': 'pol'
+	'Language[]' {
+		'' {
+			'language': 'Polnisch',
+			'languageSource': 'pol'
+		}
 	}
 }
 '' {
@@ -237,17 +289,21 @@
 		'identifierForTheRecord': '(DE-836)14'
 	},
 	'dc' {
-		'language': 'Chinesisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Chinesisch'
 		}
 	},
-	'Language' {
-		'language': 'Chinesisch',
-		'languageSource': 'chi'
+	'Language[]' {
+		'' {
+			'language': 'Chinesisch',
+			'languageSource': 'chi'
+		}
 	}
 }
 '' {
@@ -255,17 +311,21 @@
 		'identifierForTheRecord': '(DE-836)15'
 	},
 	'dc' {
-		'language': 'Schwedisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Schwedisch'
 		}
 	},
-	'Language' {
-		'language': 'Schwedisch',
-		'languageSource': 'swe'
+	'Language[]' {
+		'' {
+			'language': 'Schwedisch',
+			'languageSource': 'swe'
+		}
 	}
 }
 '' {
@@ -273,17 +333,21 @@
 		'identifierForTheRecord': '(DE-836)16'
 	},
 	'dc' {
-		'language': 'Latein',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Latein'
 		}
 	},
-	'Language' {
-		'language': 'Latein',
-		'languageSource': 'lat'
+	'Language[]' {
+		'' {
+			'language': 'Latein',
+			'languageSource': 'lat'
+		}
 	}
 }
 '' {
@@ -291,17 +355,21 @@
 		'identifierForTheRecord': '(DE-836)17'
 	},
 	'dc' {
-		'language': 'Dänisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Dänisch'
 		}
 	},
-	'Language' {
-		'language': 'Dänisch',
-		'languageSource': 'dan'
+	'Language[]' {
+		'' {
+			'language': 'Dänisch',
+			'languageSource': 'dan'
+		}
 	}
 }
 '' {
@@ -309,17 +377,21 @@
 		'identifierForTheRecord': '(DE-836)18'
 	},
 	'dc' {
-		'language': 'Ungarisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Ungarisch'
 		}
 	},
-	'Language' {
-		'language': 'Ungarisch',
-		'languageSource': 'hun'
+	'Language[]' {
+		'' {
+			'language': 'Ungarisch',
+			'languageSource': 'hun'
+		}
 	}
 }
 '' {
@@ -327,17 +399,21 @@
 		'identifierForTheRecord': '(DE-836)19'
 	},
 	'dc' {
-		'language': 'Arabisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Arabisch'
 		}
 	},
-	'Language' {
-		'language': 'Arabisch',
-		'languageSource': 'ara'
+	'Language[]' {
+		'' {
+			'language': 'Arabisch',
+			'languageSource': 'ara'
+		}
 	}
 }
 '' {
@@ -345,16 +421,246 @@
 		'identifierForTheRecord': '(DE-836)20'
 	},
 	'dc' {
-		'language': 'Tschechisch',
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Tschechisch'
 		}
 	},
-	'Language' {
-		'language': 'Tschechisch',
-		'languageSource': 'cze'
+	'Language[]' {
+		'' {
+			'language': 'Tschechisch',
+			'languageSource': 'cze'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)21'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Englisch'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)22'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Englisch',
+			'': 'Französisch'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		},
+		'' {
+			'language': 'Französisch',
+			'languageSource': 'fre'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)23'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Englisch',
+			'': 'Französisch'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		},
+		'' {
+			'language': 'Französisch',
+			'languageSource': 'fre'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)24'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Englisch',
+			'': 'Französisch',
+			'': 'Portugiesisch'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		},
+		'' {
+			'language': 'Französisch',
+			'languageSource': 'fre'
+		},
+		'' {
+			'language': 'Portugiesisch',
+			'languageSource': 'por'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)23'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Englisch',
+			'': 'Französisch'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		},
+		'' {
+			'language': 'Französisch',
+			'languageSource': 'fre'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)24'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Englisch',
+			'': 'Französisch',
+			'': 'Portugiesisch'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		},
+		'' {
+			'language': 'Französisch',
+			'languageSource': 'fre'
+		},
+		'' {
+			'language': 'Portugiesisch',
+			'languageSource': 'por'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)25'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Englisch',
+			'': 'Französisch'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		},
+		'' {
+			'language': 'Französisch',
+			'languageSource': 'fre'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)26'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'Englisch',
+			'': 'Französisch',
+			'': 'Portugiesisch'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		},
+		'' {
+			'language': 'Französisch',
+			'languageSource': 'fre'
+		},
+		'' {
+			'language': 'Portugiesisch',
+			'languageSource': 'por'
+		}
 	}
 }
