@@ -31,7 +31,7 @@
           <data source="1001 .[4e]" />
         </none>
         <data source="1001 .[4e]">
-          <regexp match="^[Aa]ut" />
+          <regexp match="^([Aa]ut|[Cc]re)" />
         </data>
       </any>
     </if>
@@ -304,7 +304,7 @@
             <data source="7001 .[4e]" />
           </none>
           <data source="7001 .[4e]">
-            <regexp match="^[Aa]ut" />
+            <regexp match="^([Aa]ut|[Cc]re)" />
           </data>
         </any>
       </if>
@@ -323,7 +323,7 @@
           <data source="1001 .[4e]" />
           <none flushWith="record">
             <data source="1001 .[4e]">
-              <regexp match="^[Aa]ut" />
+              <regexp match="^([Aa]ut|[Cc]re)" />
             </data>
           </none>
         </all>
@@ -341,7 +341,7 @@
           <data source="7001 .[4e]" />
           <none flushWith="7001 " sameEntity="true">
             <data source="7001 .[4e]">
-              <regexp match="^[Aa]ut" />
+              <regexp match="^([Aa]ut|[Cc]re)" />
             </data>
           </none>
         </all>
