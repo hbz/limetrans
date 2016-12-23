@@ -36,6 +36,11 @@
       </entity>
     </entity>
   </entity>
+  <entity name="IdentifierISSN[]" flushWith="record">
+    <entity name="" flushWith="022  " sameEntity="true">
+      <data name="identifierISSN" source="022  .a" />
+    </entity>
+  </entity>
 
   <!-- 1xx -->
   <entity name="Person" flushWith="record">
