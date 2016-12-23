@@ -527,8 +527,8 @@
 		},
 		'language[]' {
 			'': 'Englisch',
-			'': 'Französisch',
-			'': 'Portugiesisch'
+			'': 'Portugiesisch',
+			'': 'Französisch'
 		}
 	},
 	'Language[]' {
@@ -537,12 +537,12 @@
 			'languageSource': 'eng'
 		},
 		'' {
-			'language': 'Französisch',
-			'languageSource': 'fre'
-		},
-		'' {
 			'language': 'Portugiesisch',
 			'languageSource': 'por'
+		},
+		'' {
+			'language': 'Französisch',
+			'languageSource': 'fre'
 		}
 	}
 }
@@ -586,8 +586,8 @@
 		},
 		'language[]' {
 			'': 'Englisch',
-			'': 'Französisch',
-			'': 'Portugiesisch'
+			'': 'Portugiesisch',
+			'': 'Französisch'
 		}
 	},
 	'Language[]' {
@@ -596,12 +596,12 @@
 			'languageSource': 'eng'
 		},
 		'' {
-			'language': 'Französisch',
-			'languageSource': 'fre'
-		},
-		'' {
 			'language': 'Portugiesisch',
 			'languageSource': 'por'
+		},
+		'' {
+			'language': 'Französisch',
+			'languageSource': 'fre'
 		}
 	}
 }
