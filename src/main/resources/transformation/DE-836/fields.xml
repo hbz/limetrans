@@ -18,7 +18,7 @@
     <lookup in="ISO639-2-to-GND" />
   </data>
   <entity name="Language[]" flushWith="record">
-    <entity name="" flushWith="@language_source">
+    <entity name="" flushWith="@language_source" reset="true">
       <data name="language" source="@language_long" />
       <data name="languageSource" source="@language_source" />
     </entity>
