@@ -141,10 +141,16 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '058509988X'
+			'identifierISBN[]' {
+				'': '058509988X',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585099880'
+			'identifierISBN[]' {
+				'': '9780585099880',
+				'': 'electronic bk.'
+			}
 		}
 	},
 	'Person' {
@@ -232,10 +238,16 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585103844'
+			'identifierISBN[]' {
+				'': '0585103844',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585103846'
+			'identifierISBN[]' {
+				'': '9780585103846',
+				'': 'electronic bk.'
+			}
 		}
 	},
 	'Person' {
@@ -305,10 +317,16 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585151970'
+			'identifierISBN[]' {
+				'': '0585151970',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585151977'
+			'identifierISBN[]' {
+				'': '9780585151977',
+				'': 'electronic bk.'
+			}
 		}
 	},
 	'Person' {
@@ -374,10 +392,16 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585007136'
+			'identifierISBN[]' {
+				'': '0585007136',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585007137'
+			'identifierISBN[]' {
+				'': '9780585007137',
+				'': 'electronic bk.'
+			}
 		}
 	},
 	'Person' {
@@ -448,16 +472,26 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0631227644'
+			'identifierISBN[]' {
+				'': '0631227644',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780631227649'
+			'identifierISBN[]' {
+				'': '9780631227649',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9781405164498'
+			'identifierISBN[]' {
+				'': '9781405164498'
+			}
 		},
 		'' {
-			'identifierISBN': '1405164492'
+			'identifierISBN[]' {
+				'': '1405164492'
+			}
 		}
 	},
 	'TitleStatement[]' {
@@ -612,10 +646,16 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585152306'
+			'identifierISBN[]' {
+				'': '0585152306',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585152301'
+			'identifierISBN[]' {
+				'': '9780585152301',
+				'': 'electronic bk.'
+			}
 		}
 	},
 	'TitleStatement[]' {
@@ -707,10 +747,16 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585012814'
+			'identifierISBN[]' {
+				'': '0585012814',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585012810'
+			'identifierISBN[]' {
+				'': '9780585012810',
+				'': 'electronic bk.'
+			}
 		}
 	},
 	'Person' {

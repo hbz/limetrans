@@ -15,7 +15,9 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585020531'
+			'identifierISBN[]' {
+				'': '0585020531'
+			}
 		}
 	},
 	'IdentifierISBNParallel[]' {
@@ -43,13 +45,19 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585020531'
+			'identifierISBN[]' {
+				'': '0585020531'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585020532'
+			'identifierISBN[]' {
+				'': '9780585020532'
+			}
 		},
 		'' {
-			'identifierISBN': '9780262220460'
+			'identifierISBN[]' {
+				'': '9780262220460'
+			}
 		}
 	},
 	'IdentifierISBNParallel[]' {
@@ -91,6 +99,51 @@
 				'': '0262220466',
 				'': '3540500537',
 				'': '0387500537'
+			}
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)4'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe'
+	},
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN[]' {
+				'': '0585020531',
+				'': 'electronic bk.'
+			}
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)5'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language': 'keine Angabe'
+	},
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN[]' {
+				'': '0585020531',
+				'': 'electronic bk.',
+				'': 'v. 1'
 			}
 		}
 	}

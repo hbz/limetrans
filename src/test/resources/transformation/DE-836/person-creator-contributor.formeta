@@ -168,3 +168,38 @@
 		}
 	}
 }
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)5'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'Monographie'
+		},
+		'language': 'keine Angabe'
+	},
+	'Person' {
+		'personName': 'Trollope, Anthony',
+		'personBio': '1815-1882',
+		'personRole[]' {
+			'': '[Creator]'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Nygaard, Kristen',
+			'personRole[]' {
+				'': '[Author]'
+			}
+		},
+		'' {
+			'personName': 'Donin, Richard Kurt',
+			'personRole[]' {
+				'': '[Bearb.]'
+			}
+		}
+	}
+}

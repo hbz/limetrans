@@ -25,7 +25,15 @@
   </entity>
   <entity name="IdentifierISBN[]" flushWith="record">
     <entity name="" flushWith="020  " sameEntity="true">
-      <data name="identifierISBN" source="020  .a" />
+      <entity name="identifierISBN[]" flushWith="020  " sameEntity="true">
+        <if>
+          <data source="020  .a" />
+        </if>
+        <data name="" source="020  .a" />
+        <data name="" source="020  .q">
+          <replace pattern="^\(|\s?[):;,]\s?$" with="" />
+        </data>
+      </entity>
     </entity>
   </entity>
 
@@ -37,7 +45,7 @@
           <data source="1001 .[4e]" />
         </none>
         <data source="1001 .[4e]">
-          <regexp match="^[Aa]ut" />
+          <regexp match="^([Aa]ut|[Cc]re)" />
         </data>
       </any>
     </if>
@@ -310,7 +318,7 @@
             <data source="7001 .[4e]" />
           </none>
           <data source="7001 .[4e]">
-            <regexp match="^[Aa]ut" />
+            <regexp match="^([Aa]ut|[Cc]re)" />
           </data>
         </any>
       </if>
@@ -329,7 +337,7 @@
           <data source="1001 .[4e]" />
           <none flushWith="record">
             <data source="1001 .[4e]">
-              <regexp match="^[Aa]ut" />
+              <regexp match="^([Aa]ut|[Cc]re)" />
             </data>
           </none>
         </all>
@@ -347,7 +355,7 @@
           <data source="7001 .[4e]" />
           <none flushWith="7001 " sameEntity="true">
             <data source="7001 .[4e]">
-              <regexp match="^[Aa]ut" />
+              <regexp match="^([Aa]ut|[Cc]re)" />
             </data>
           </none>
         </all>
