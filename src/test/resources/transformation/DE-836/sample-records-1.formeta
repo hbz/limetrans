@@ -2,6 +2,12 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)ocm38995695'
 	},
+	'DateFirst' {
+		'date': '1960'
+	},
+	'ChronologyAndEnumeration' {
+		'value': 'Vol. 1, issue 1 (June 1960)-'
+	},
 	'dc' {
 		'format[]' {
 			'': 'Elektronische Ressource',
@@ -22,6 +28,11 @@
 		'' {
 			'language': 'Englisch',
 			'languageSource': 'eng'
+		}
+	},
+	'IdentifierISSN[]' {
+		'' {
+			'identifierISSN': '1879-2189'
 		}
 	},
 	'TitleStatement[]' {
@@ -61,6 +72,9 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)ocm43310902'
 	},
+	'DateFirst' {
+		'date': '1948'
+	},
 	'TitleAddendum' {
 		'title': 'Archives mathématiques = Archives of mathematics'
 	},
@@ -75,12 +89,20 @@
 		},
 		'language[]' {
 			'': 'Englisch'
+		},
+		'date[]' {
+			'': '1948'
 		}
 	},
 	'Language[]' {
 		'' {
 			'language': 'Englisch',
 			'languageSource': 'eng'
+		}
+	},
+	'IdentifierISSN[]' {
+		'' {
+			'identifierISSN': '1420-8938'
 		}
 	},
 	'CorporateBody' {
@@ -562,6 +584,9 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)ocm48498937'
 	},
+	'DateFirst' {
+		'date': '1968'
+	},
 	'dc' {
 		'format[]' {
 			'': 'Elektronische Ressource',
@@ -573,6 +598,9 @@
 		},
 		'language[]' {
 			'': 'Englisch'
+		},
+		'date[]' {
+			'': '1968'
 		}
 	},
 	'Language[]' {

@@ -1111,7 +1111,7 @@
     </entity>
 
     <entity name="date[]" flushWith="record">
-      <data name="" source="260[ 23] .c">
+      <data name="" source="260[ 23] .c|@date1">
         <split delimiter="[,-]" />
         <regexp match="\d{4}" />
         <unique />
