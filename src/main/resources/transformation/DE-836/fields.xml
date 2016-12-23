@@ -75,7 +75,7 @@
     <call-macro name="identifierGND"    field="100" />
   </entity>
 
-  <entity name="CorporateBody" flushWith="record">
+  <entity name="CorporateBody[]" flushWith="record">
     <entity name="" flushWith="[17]10[012] " sameEntity="true">
       <data name="corporateBodyName" source="[17]10[012] .a">
         <replace pattern="\.$" with="" />
