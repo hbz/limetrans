@@ -38,4 +38,23 @@
       <subfield code="z">0387500537</subfield>
     </datafield>
   </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">4 </controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">0585020531</subfield>
+      <subfield code="q">(electronic bk.)</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="z">0262220466</subfield>
+      <subfield code="q">(electronic bk.)</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">5 </controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">0585020531</subfield>
+      <subfield code="q">(electronic bk. ;</subfield>
+      <subfield code="q"> v. 1)</subfield>
+    </datafield>
+  </record>
 </collection>

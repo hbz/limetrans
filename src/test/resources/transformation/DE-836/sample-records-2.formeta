@@ -89,10 +89,14 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '1930974027'
+			'identifierISBN[]' {
+				'': '1930974027'
+			}
 		},
 		'' {
-			'identifierISBN': '9781930974029'
+			'identifierISBN[]' {
+				'': '9781930974029'
+			}
 		}
 	},
 	'Person' {
@@ -169,10 +173,14 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '3899202899'
+			'identifierISBN[]' {
+				'': '3899202899'
+			}
 		},
 		'' {
-			'identifierISBN': '9783899202892'
+			'identifierISBN[]' {
+				'': '9783899202892'
+			}
 		}
 	},
 	'TitleStatement[]' {
@@ -292,10 +300,14 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '1861002963'
+			'identifierISBN[]' {
+				'': '1861002963'
+			}
 		},
 		'' {
-			'identifierISBN': '9781861002969'
+			'identifierISBN[]' {
+				'': '9781861002969'
+			}
 		}
 	},
 	'TitleStatement[]' {
@@ -365,10 +377,14 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0764557831'
+			'identifierISBN[]' {
+				'': '0764557831'
+			}
 		},
 		'' {
-			'identifierISBN': '9780764557835'
+			'identifierISBN[]' {
+				'': '9780764557835'
+			}
 		}
 	},
 	'TitleStatement[]' {
@@ -455,10 +471,15 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0470045817'
+			'identifierISBN[]' {
+				'': '0470045817',
+				'': 'pbk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780470045817'
+			'identifierISBN[]' {
+				'': '9780470045817'
+			}
 		}
 	},
 	'Person' {
@@ -544,10 +565,15 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0470089857'
+			'identifierISBN[]' {
+				'': '0470089857',
+				'': 'pbk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780470089859'
+			'identifierISBN[]' {
+				'': '9780470089859'
+			}
 		}
 	},
 	'Person' {
@@ -664,10 +690,14 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '9780789749260'
+			'identifierISBN[]' {
+				'': '9780789749260'
+			}
 		},
 		'' {
-			'identifierISBN': '0789749262'
+			'identifierISBN[]' {
+				'': '0789749262'
+			}
 		}
 	},
 	'Person' {

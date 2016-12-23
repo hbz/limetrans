@@ -27,16 +27,26 @@
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585020531'
+			'identifierISBN[]' {
+				'': '0585020531',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585020532'
+			'identifierISBN[]' {
+				'': '9780585020532',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780262220460'
+			'identifierISBN[]' {
+				'': '9780262220460'
+			}
 		},
 		'' {
-			'identifierISBN': '0262220466'
+			'identifierISBN[]' {
+				'': '0262220466'
+			}
 		}
 	},
 	'Person' {
