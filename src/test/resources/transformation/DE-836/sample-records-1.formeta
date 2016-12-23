@@ -3,7 +3,6 @@
 		'identifierForTheRecord': '(DE-836)ocm38995695'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -12,13 +11,18 @@
 		'type[]' {
 			'': 'Zeitschrift'
 		},
+		'language[]' {
+			'': 'Englisch'
+		},
 		'date[]' {
 			'': '1960'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
@@ -61,7 +65,6 @@
 		'title': 'Archives mathématiques = Archives of mathematics'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -69,11 +72,16 @@
 		},
 		'type[]' {
 			'': 'Zeitschrift'
+		},
+		'language[]' {
+			'': 'Englisch'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'CorporateBody' {
 		'' {
@@ -112,7 +120,6 @@
 		'creatorStatement': 'by L. Frank Baum'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -121,11 +128,16 @@
 		'type[]' {
 			'': 'Monographie',
 			'': 'Sonstiges'
+		},
+		'language[]' {
+			'': 'Englisch'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
@@ -196,7 +208,6 @@
 		'creatorStatement': 'Eliza Burt Gamble'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -206,13 +217,18 @@
 			'': 'Monographie',
 			'': 'Sonstiges'
 		},
+		'language[]' {
+			'': 'Englisch'
+		},
 		'date[]' {
 			'': '1999'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
@@ -268,7 +284,6 @@
 		'creatorStatement': 'William McGuffey'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -277,11 +292,16 @@
 		'type[]' {
 			'': 'Monographie',
 			'': 'Sonstiges'
+		},
+		'language[]' {
+			'': 'Englisch'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
@@ -333,7 +353,6 @@
 		'creatorStatement': 'by Henry Fielding'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -342,11 +361,16 @@
 		'type[]' {
 			'': 'Monographie',
 			'': 'Sonstiges'
+		},
+		'language[]' {
+			'': 'Englisch'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
@@ -398,7 +422,6 @@
 		'creatorStatement': 'edited by Alison M. Jaggar and Iris Marion Young'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -409,14 +432,19 @@
 			'': 'Bibliografie',
 			'': 'Sonstiges'
 		},
+		'language[]' {
+			'': 'Englisch'
+		},
 		'date[]' {
 			'': '2000',
 			'': '1998'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
@@ -501,7 +529,6 @@
 		'identifierForTheRecord': '(DE-836)ocm48498937'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -509,11 +536,16 @@
 		},
 		'type[]' {
 			'': 'Zeitschrift'
+		},
+		'language[]' {
+			'': 'Englisch'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'CorporateBody' {
 		'' {
@@ -559,7 +591,6 @@
 		'creatorStatement': 'author unknown ; translation by W.G. Collingwood & J. Stefansson (Ulverston, 1901)'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -568,11 +599,16 @@
 		'type[]' {
 			'': 'Monographie',
 			'': 'Sonstiges'
+		},
+		'language[]' {
+			'': 'Englisch'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
@@ -650,7 +686,6 @@
 		'creatorStatement': 'by Rudyard Kipling'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -659,11 +694,16 @@
 		'type[]' {
 			'': 'Monographie',
 			'': 'Sonstiges'
+		},
+		'language[]' {
+			'': 'Englisch'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {

@@ -6,7 +6,6 @@
 		'creatorStatement': 'Barbara Von Eckardt'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -17,13 +16,18 @@
 			'': 'Bibliografie',
 			'': 'Sonstiges'
 		},
+		'language[]' {
+                        '': 'Englisch'
+                },
 		'date[]' {
 			'': '1993'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+                        'language': 'Englisch',
+		        'languageSource': 'eng'
+                }
 	},
 	'IdentifierISBN[]' {
 		'' {
