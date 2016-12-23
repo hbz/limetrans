@@ -7,6 +7,19 @@
       <compose prefix="(DE-836)" />
     </data>
   </entity>
+  <combine name="@date1" value="${date1}">
+    <if>
+      <data source="@type">
+        <equals string="CR" />
+      </data>
+    </if>
+    <data name="date1" source="008">
+      <substring start="07" end="11" />
+    </data>
+  </combine>
+  <entity name="DateFirst">
+    <data name="date" source="@date1" />
+  </entity>
   <data name="@language_source_all" source="008">
     <substring start="35" end="38" />
   </data>
@@ -268,11 +281,6 @@
   <!-- 301-399 -->
   <entity name="ChronologyAndEnumeration">
     <data name="value" source="3620 .a" />
-  </entity>
-  <entity name="DateFirst">
-    <data name="date" source="3620 .a">
-      <regexp match="\d{4}" />
-    </data>
   </entity>
 
   <!-- 4xx -->
