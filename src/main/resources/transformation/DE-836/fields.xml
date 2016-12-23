@@ -7,10 +7,13 @@
       <compose prefix="(DE-836)" />
     </data>
   </entity>
-  <data name="@language_source" source="008">
+  <data name="@language_source_all" source="008">
     <substring start="35" end="38" />
   </data>
-  <data name="@language_source" source="041[01] .[adj]" />
+  <data name="@language_source_all" source="041[01] .[adj]" />
+  <data name="@language_source" source="@language_source_all">
+    <unique />
+  </data>
   <data name="@language_long" source="@language_source">
     <lookup in="ISO639-2-to-GND" />
   </data>
