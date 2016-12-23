@@ -261,6 +261,9 @@
   <!-- END 300 -->
 
   <!-- 301-399 -->
+  <entity name="ChronologyAndEnumeration">
+    <data name="value" source="3620 .a" />
+  </entity>
   <entity name="DateFirst">
     <data name="date" source="3620 .a">
       <regexp match="\d{4}" />
