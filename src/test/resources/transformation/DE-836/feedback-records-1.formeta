@@ -1,0 +1,139 @@
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)ocn231018688'
+	},
+	'CreatorStatement' {
+		'creatorStatement': 'hrsg. von der Gesellschaft Deutscher Chemiker'
+	},
+	'DateFirst' {
+		'date': '1967'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'Zeitschrift'
+		},
+		'language[]' {
+			'': 'Deutsch'
+		},
+		'date[]' {
+			'': '1967'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Deutsch',
+			'languageSource': 'ger'
+		}
+	},
+	'CorporateBody' {
+		'' {
+			'corporateBodyName': 'Gesellschaft Deutscher Chemiker'
+		}
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Chemie in unserer Zeit'
+		}
+	},
+	'PublicationPlace' {
+		'printingPlace[]' {
+			'': 'Weinheim'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Wiley-VCH'
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectTopicName': 'Chemie',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4009816-3'
+			},
+			'identifierGND[]' {
+				'': '4009816-3'
+			}
+		},
+		'' {
+			'subjectTopicName': 'Experiment',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4015999-1'
+			},
+			'identifierGND[]' {
+				'': '4015999-1'
+			}
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)ocm45567891'
+	},
+	'DateFirst' {
+		'date': '1967'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Elektronische Ressource',
+			'': 'Online-Ressource',
+			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'Zeitschrift'
+		},
+		'language[]' {
+			'': 'Englisch'
+		},
+		'date[]' {
+			'': '1967'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
+	},
+	'CorporateBody' {
+		'' {
+			'corporateBodyName': 'Gesellschaft Deutscher Chemiker'
+		}
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Chemie in unserer Zeit'
+		}
+	},
+	'PublicationPlace' {
+		'printingPlace[]' {
+			'': 'Weinheim'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Verlag & Co. KGaA',
+			'': '[Verlag Chemie]'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '1967-'
+		}
+	},
+	'Description' {
+		'description[]' {
+			'': 'Title from table of contents screen (Wiley InterScience; viewed: 10/6/2006).',
+			'': 'Published: Weinheim : Verlag GmbH & Co. KGaA : [Verlag Chemie], 1967- ; published: Weinheim : Verlag GmbH & Co. KGaA : [VCH Verlagsgesellschaft mbH], <1988->; published: Weinheim : Wiley-VCH Verlag GmbH & Co. KGaA, <2005->'
+		}
+	},
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'https://www.hb.fh-muenster.de:2443/login?url=http://www.onlinelibrary.wiley.com/journal/10.1002/(ISSN)1521-3781'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
+}
