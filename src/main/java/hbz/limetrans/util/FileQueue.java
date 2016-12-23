@@ -85,12 +85,13 @@ public class FileQueue implements Iterable<String> {
         final String path = aSettings.get("path");
         final String pattern = aSettings.get("pattern");
 
-        if (path == null || pattern == null) {
+        if (pattern == null) {
             return;
         }
 
         final Queue<PathFile> pathFiles = new Finder().find(
-                aSettings.get("base"), aSettings.get("basepattern"), path, pattern)
+                aSettings.get("base"), aSettings.get("basepattern"),
+                path == null ? "." : path, pattern)
             .sortBy(aSettings.get("sort_by", "lastmodified"))
             .order(aSettings.get("order", "asc"))
             .getPathFiles(aSettings.getAsInt("max", -1));

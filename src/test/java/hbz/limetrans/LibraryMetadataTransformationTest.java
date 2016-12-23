@@ -23,13 +23,13 @@ public class LibraryMetadataTransformationTest {
     }
 
     @Test
-    public void testInputQueueMissingPath() throws IOException {
-        testNoInput("missing-path");
+    public void testInputQueueMissingPattern() throws IOException {
+        testNoInput("missing-pattern");
     }
 
     @Test
-    public void testInputQueueMissingPattern() throws IOException {
-        testNoInput("missing-pattern");
+    public void testInputQueueMissingPathAndPattern() throws IOException {
+        testNoInput("missing-path-and-pattern");
     }
 
     @Test
@@ -45,6 +45,11 @@ public class LibraryMetadataTransformationTest {
     @Test
     public void testInputQueueFixedPattern() throws IOException {
         testInputQueueSize("fixed-pattern", 1);
+    }
+
+    @Test
+    public void testInputQueueMissingPath() throws IOException {
+        testInputQueueSize("missing-path", 1);
     }
 
     @Test
