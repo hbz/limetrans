@@ -8,7 +8,6 @@ import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 
 import static org.junit.Assert.assertEquals;
 
@@ -23,13 +22,13 @@ public class LibraryMetadataTransformationTest {
     }
 
     @Test
-    public void testInputQueueMissingPath() throws IOException {
-        testNoInput("missing-path");
+    public void testInputQueueMissingPattern() throws IOException {
+        testNoInput("missing-pattern");
     }
 
     @Test
-    public void testInputQueueMissingPattern() throws IOException {
-        testNoInput("missing-pattern");
+    public void testInputQueueMissingPathAndPattern() throws IOException {
+        testNoInput("missing-path-and-pattern");
     }
 
     @Test
@@ -45,6 +44,11 @@ public class LibraryMetadataTransformationTest {
     @Test
     public void testInputQueueFixedPattern() throws IOException {
         testInputQueueSize("fixed-pattern", 1);
+    }
+
+    @Test
+    public void testInputQueueMissingPath() throws IOException {
+        testInputQueueSize("missing-path", 1);
     }
 
     @Test
@@ -93,8 +97,8 @@ public class LibraryMetadataTransformationTest {
     }
 
     private LibraryMetadataTransformation getLimetrans(final String aName) throws IOException {
-        final URL url = new File("src/conf/test/limetrans-" + aName + ".json").toURI().toURL();
-        return new LibraryMetadataTransformation(Helpers.getSettingsFromUrl(url));
+        final File file = new File("src/conf/test/limetrans-" + aName + ".json");
+        return new LibraryMetadataTransformation(Helpers.loadSettings(file));
     }
 
     private void assertEqualsReference(final String aName) throws IOException {
@@ -104,7 +108,7 @@ public class LibraryMetadataTransformationTest {
     }
 
     private String slurpFile(final String aDir, final String aName) throws IOException {
-        return Helpers.slurpFile("src/test/resources/limetrans/" + aDir + "/" + aName + ".jsonl");
+        return Helpers.slurpFile("/limetrans/" + aDir + "/" + aName + ".jsonl", getClass());
     }
 
 }
