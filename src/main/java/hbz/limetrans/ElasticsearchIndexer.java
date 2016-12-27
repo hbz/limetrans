@@ -3,7 +3,7 @@ package hbz.limetrans;
 import org.culturegraph.mf.framework.annotations.Description;
 import org.culturegraph.mf.framework.helpers.DefaultObjectReceiver;
 import org.culturegraph.mf.framework.helpers.DefaultStreamReceiver;
-import org.culturegraph.mf.stream.converter.JsonEncoder;
+import org.culturegraph.mf.json.JsonEncoder;
 import org.elasticsearch.common.settings.Settings;
 
 import java.util.Map;

@@ -2,13 +2,13 @@ package hbz.limetrans;
 
 import hbz.limetrans.util.FileQueue;
 
+import org.culturegraph.mf.formeta.FormetaEncoder;
 import org.culturegraph.mf.formeta.formatter.FormatterStyle;
-import org.culturegraph.mf.morph.Metamorph;
-import org.culturegraph.mf.stream.converter.FormetaEncoder;
-import org.culturegraph.mf.stream.converter.JsonEncoder;
-import org.culturegraph.mf.stream.pipe.RecordIdChanger;
-import org.culturegraph.mf.stream.pipe.StreamTee;
-import org.culturegraph.mf.stream.sink.ObjectWriter;
+import org.culturegraph.mf.io.ObjectWriter;
+import org.culturegraph.mf.json.JsonEncoder;
+import org.culturegraph.mf.mangling.RecordIdChanger;
+import org.culturegraph.mf.metamorph.Metamorph;
+import org.culturegraph.mf.plumbing.StreamTee;
 import org.xbib.common.settings.Settings;
 
 import java.io.IOException;
@@ -45,15 +45,15 @@ public class LibraryMetadataTransformation {
     }
 
     public void process() {
-        final Metamorph morph = new Metamorph(mRulesPath);
+        final Metamorph metamorph = new Metamorph(mRulesPath);
         final StreamTee streamTee = new StreamTee();
 
         transformJson(streamTee);
         transformFormeta(streamTee);
         transformElasticsearch(streamTee);
 
-        morph.setReceiver(streamTee);
-        mInputQueue.processMarcXml(morph, mNormalizeUnicode);
+        metamorph.setReceiver(streamTee);
+        mInputQueue.processMarcXml(metamorph, mNormalizeUnicode);
     }
 
     public int getInputQueueSize() {

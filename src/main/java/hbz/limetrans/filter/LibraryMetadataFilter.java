@@ -2,12 +2,12 @@ package hbz.limetrans.filter;
 
 import hbz.limetrans.util.FileQueue;
 
-import org.culturegraph.mf.morph.InlineMorph;
-import org.culturegraph.mf.morph.Metamorph;
-import org.culturegraph.mf.stream.converter.JsonEncoder;
-import org.culturegraph.mf.stream.pipe.Filter;
-import org.culturegraph.mf.stream.sink.ObjectStdoutWriter;
-import org.culturegraph.mf.stream.sink.ObjectWriter;
+import org.culturegraph.mf.io.ObjectStdoutWriter;
+import org.culturegraph.mf.io.ObjectWriter;
+import org.culturegraph.mf.json.JsonEncoder;
+import org.culturegraph.mf.metamorph.Filter;
+import org.culturegraph.mf.metamorph.InlineMorph;
+import org.culturegraph.mf.metamorph.Metamorph;
 import org.xbib.common.settings.Settings;
 
 import java.io.IOException;
@@ -55,13 +55,13 @@ public class LibraryMetadataFilter {
      */
 
     private Metamorph buildMorphDef(final Settings aSettings) {
-        final InlineMorph morph = InlineMorph.in(this)
+        final InlineMorph metamorph = InlineMorph.in(this)
             .with("<rules>")
             .with("<entity name=\"\" flushWith=\"record\">");
 
         final String[] filters = aSettings.getAsArray("filter");
         if (filters.length > 0) {
-            morph.with("<if>");
+            metamorph.with("<if>");
 
             for (String filter : filters) {
                 String source = "*";
@@ -72,7 +72,7 @@ public class LibraryMetadataFilter {
                     filter = filter.substring(index + 1);
                 }
 
-                morph
+                metamorph
                     .with("<data source=\"" + source + "\">")
                     .with(filter.startsWith("~") ?
                             "<regexp match=\"" + filter.substring(1) + "\" />" :
@@ -80,10 +80,10 @@ public class LibraryMetadataFilter {
                     .with("</data>");
             }
 
-            morph.with("</if>");
+            metamorph.with("</if>");
         }
 
-        return morph
+        return metamorph
             .with("<data source=\"001\" />")
             .with("</entity>")
             .with("</rules>")

@@ -1,10 +1,10 @@
 package hbz.limetrans.util;
 
+import org.culturegraph.mf.biblio.marc21.MarcXmlHandler;
 import org.culturegraph.mf.framework.StreamReceiver;
-import org.culturegraph.mf.stream.converter.xml.MarcXmlHandler;
-import org.culturegraph.mf.stream.converter.xml.XmlDecoder;
-import org.culturegraph.mf.stream.pipe.StreamUnicodeNormalizer;
-import org.culturegraph.mf.stream.source.FileOpener;
+import org.culturegraph.mf.io.FileOpener;
+import org.culturegraph.mf.strings.StreamUnicodeNormalizer;
+import org.culturegraph.mf.xml.XmlDecoder;
 import org.xbib.common.settings.Settings;
 import org.xbib.util.Finder.PathFile;
 import org.xbib.util.Finder;
