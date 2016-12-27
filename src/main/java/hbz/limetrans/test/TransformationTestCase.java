@@ -1,12 +1,12 @@
 package hbz.limetrans.test;
 
-import org.culturegraph.mf.morph.Metamorph;
-import org.culturegraph.mf.stream.sink.EventList;
+import org.culturegraph.mf.commons.ResourceUtil;
+import org.culturegraph.mf.javaintegration.EventList;
+import org.culturegraph.mf.metamorph.Metamorph;
 import org.culturegraph.mf.test.reader.FormetaReader;
 import org.culturegraph.mf.test.reader.MarcXmlReader;
 import org.culturegraph.mf.test.reader.Reader;
 import org.culturegraph.mf.test.validators.StreamValidator;
-import org.culturegraph.mf.util.ResourceUtil;
 
 import org.junit.runners.model.Statement;
 
