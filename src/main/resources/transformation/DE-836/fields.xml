@@ -2,10 +2,11 @@
 <rules xmlns="http://www.culturegraph.org/metamorph">
 
   <!-- 0xx -->
-  <entity name="RecordIdentifier" flushWith="001">
-    <data name="identifierForTheRecord" source="001">
-      <compose prefix="(DE-836)" />
-    </data>
+  <combine name="@id" value="(DE-836)${id}">
+    <data name="id" source="001" />
+  </combine>
+  <entity name="RecordIdentifier">
+    <data name="identifierForTheRecord" source="@id" />
   </entity>
   <combine name="@date1" value="${date1}">
     <if>
@@ -421,6 +422,11 @@
   </entity>
 
   <!-- Other -->
+  <entity name="xbib[]" flushWith="record">
+    <entity name="" flushWith="@id">
+      <data name="uid" source="@id" />
+    </entity>
+  </entity>
   <choose name="TypeMedia" flushWith="record">
     <data source="@facet_format">
       <!-- matches: Bild; Audio; Film, Dia, Video; Elektronische Ressource -->

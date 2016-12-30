@@ -17,17 +17,17 @@
 			'': 'Sonstiges'
 		},
 		'language[]' {
-                        '': 'Englisch'
-                },
+			'': 'Englisch'
+		},
 		'date[]' {
 			'': '1993'
 		}
 	},
 	'Language[]' {
 		'' {
-                        'language': 'Englisch',
-		        'languageSource': 'eng'
-                }
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
@@ -97,6 +97,11 @@
 		},
 		'' {
 			'uri': 'http://cognet.mit.edu/library/books/view?isbn=0262220466'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocm42328784'
 		}
 	},
 	'TypeMedia': 'Elektronische Ressource'
