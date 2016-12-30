@@ -241,7 +241,7 @@ public class ElasticsearchClient {
         }
 
         try {
-            return Helpers.slurpFile(path);
+            return Helpers.slurpFile(path, getClass());
         }
         catch (final IOException e) {
             throw new RuntimeException("Failed to read `" + aKey + "' file", e);
