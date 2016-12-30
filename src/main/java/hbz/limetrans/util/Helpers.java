@@ -48,7 +48,7 @@ public class Helpers {
                 aClass, aPath.substring(CLASSPATH_PREFIX.length())).toString() : aPath;
     }
 
-    public static URL getResource(final Class aClass, final String aPath) throws IOException {
+    public static URL getResourceUrl(final Class aClass, final String aPath) throws IOException {
         final URL url = aClass.getResource(aPath);
         if (url == null) {
             throw new FileNotFoundException("Resource not found for " + aClass.toString() + ": " + aPath);
