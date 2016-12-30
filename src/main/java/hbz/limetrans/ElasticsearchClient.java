@@ -34,7 +34,7 @@ public class ElasticsearchClient {
         if (aSettings.getAsBoolean("update", false)) {
             checkIndex();
         }
-        else {
+        else if (aSettings.getAsBoolean("delete", false) || !indexExists()) {
             setupIndex();
         }
     }
