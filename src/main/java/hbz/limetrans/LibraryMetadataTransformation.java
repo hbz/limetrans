@@ -1,6 +1,7 @@
 package hbz.limetrans;
 
 import hbz.limetrans.util.FileQueue;
+import hbz.limetrans.util.Helpers;
 
 import org.culturegraph.mf.formeta.FormetaEncoder;
 import org.culturegraph.mf.formeta.formatter.FormatterStyle;
@@ -41,7 +42,7 @@ public class LibraryMetadataTransformation {
         }
 
         mNormalizeUnicode = aSettings.getAsBoolean("normalize-unicode", true);
-        mRulesPath = aSettings.get("transformation-rules");
+        mRulesPath = Helpers.getPath(aSettings.get("transformation-rules"), getClass());
     }
 
     public void process() {
