@@ -14,6 +14,8 @@ import java.nio.charset.Charset;
 
 public class Helpers {
 
+    public static final String CLASSPATH_PREFIX = "classpath:";
+
     public static Settings loadSettings(final URL aUrl) throws IOException {
         final SettingsLoader settingsLoader = SettingsLoaderFactory.loaderFromResource(aUrl.toString());
 
@@ -39,6 +41,11 @@ public class Helpers {
 
     public static String slurpFile(final String aPath, final Class aClass) throws IOException {
         return slurpFile(getResource(aClass, aPath));
+    }
+
+    public static String getPath(final String aPath, final Class aClass) throws IOException {
+        return aPath != null && aPath.startsWith(CLASSPATH_PREFIX) ? getResource(
+                aClass, aPath.substring(CLASSPATH_PREFIX.length())).toString() : aPath;
     }
 
     public static URL getResource(final Class aClass, final String aPath) throws IOException {
