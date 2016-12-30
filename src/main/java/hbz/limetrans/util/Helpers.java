@@ -8,7 +8,6 @@ import org.xbib.common.settings.loader.SettingsLoaderFactory;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.File;
 import java.net.URL;
 import java.nio.charset.Charset;
 
@@ -40,12 +39,13 @@ public class Helpers {
     }
 
     public static String slurpFile(final String aPath, final Class aClass) throws IOException {
-        return slurpFile(getResource(aClass, aPath));
+        final URL url = getClasspathUrl(aClass, aPath);
+        return url != null ? slurpFile(url) : slurpFile(aPath);
     }
 
     public static String getPath(final String aPath, final Class aClass) throws IOException {
-        return aPath != null && aPath.startsWith(CLASSPATH_PREFIX) ? getResource(
-                aClass, aPath.substring(CLASSPATH_PREFIX.length())).toString() : aPath;
+        final URL url = getClasspathUrl(aClass, aPath);
+        return url != null ? url.toString() : aPath;
     }
 
     public static URL getResourceUrl(final Class aClass, final String aPath) throws IOException {
@@ -55,6 +55,15 @@ public class Helpers {
         }
         else {
             return url;
+        }
+    }
+
+    public static URL getClasspathUrl(final Class aClass, final String aPath) throws IOException {
+        if (aPath != null && aPath.startsWith(CLASSPATH_PREFIX)) {
+            return getResourceUrl(aClass, aPath.substring(CLASSPATH_PREFIX.length()));
+        }
+        else {
+            return null;
         }
     }
 
