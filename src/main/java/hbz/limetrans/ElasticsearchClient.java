@@ -31,11 +31,17 @@ public class ElasticsearchClient {
 
         reset();
 
-        if (aSettings.getAsBoolean("update", false)) {
-            checkIndex();
+        try {
+            if (aSettings.getAsBoolean("update", false)) {
+                checkIndex();
+            }
+            else if (aSettings.getAsBoolean("delete", false) || !indexExists()) {
+                setupIndex();
+            }
         }
-        else if (aSettings.getAsBoolean("delete", false) || !indexExists()) {
-            setupIndex();
+        catch (final RuntimeException e) {
+            close();
+            throw(e);
         }
     }
 
