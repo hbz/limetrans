@@ -31,11 +31,17 @@ public class ElasticsearchClient {
 
         reset();
 
-        if (aSettings.getAsBoolean("update", false)) {
-            checkIndex();
+        try {
+            if (aSettings.getAsBoolean("update", false)) {
+                checkIndex();
+            }
+            else if (aSettings.getAsBoolean("delete", false) || !indexExists()) {
+                setupIndex();
+            }
         }
-        else if (aSettings.getAsBoolean("delete", false) || !indexExists()) {
-            setupIndex();
+        catch (final RuntimeException e) {
+            close();
+            throw(e);
         }
     }
 
@@ -235,7 +241,7 @@ public class ElasticsearchClient {
         }
 
         try {
-            return Helpers.slurpFile(path);
+            return Helpers.slurpFile(path, getClass());
         }
         catch (final IOException e) {
             throw new RuntimeException("Failed to read `" + aKey + "' file", e);

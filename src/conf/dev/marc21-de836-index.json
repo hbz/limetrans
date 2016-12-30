@@ -17,13 +17,13 @@
         "name" : "de-836-introx-limetrans-20161115",
         "type" : "titel",
         "idKey" : "RecordIdentifier.identifierForTheRecord",
-        "settings" : "src/test/resources/elasticsearch/hbztitle-settings.json",
-        "mapping" : "src/test/resources/elasticsearch/hbztitle-mapping.json"
+        "settings" : "classpath:/elasticsearch/hbztitle-settings.json",
+        "mapping" : "classpath:/elasticsearch/hbztitle-mapping.json"
       },
       "update" : false
     }
   },
-  "transformation-rules" : "src/main/resources/transformation/DE-836.xml",
+  "transformation-rules" : "classpath:/transformation/DE-836.xml",
   "catalogid" : "DE-605-test",
   "collection" : "HBZ-Test"
 }

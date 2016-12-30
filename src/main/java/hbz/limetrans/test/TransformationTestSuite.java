@@ -27,7 +27,7 @@ public class TransformationTestSuite extends ParentRunner<Runner> {
 
         final URL rootUrl;
         try {
-            rootUrl = Helpers.getResource(aClass, ROOT_PATH);
+            rootUrl = Helpers.getResourceUrl(aClass, ROOT_PATH);
         }
         catch (final IOException e) {
             throw new InitializationError(e);
