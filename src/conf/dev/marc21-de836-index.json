@@ -14,11 +14,12 @@
       "cluster": "elasticsearch-01",
       "host": ["localhost:9300"],
       "index" : {
-        "name" : "de-836-introx-limetrans-20161115",
         "type" : "titel",
-        "idKey" : "RecordIdentifier.identifierForTheRecord",
+        "name" : "de-836-introx-limetrans-",
+        "timewindow" : "yyyyMMdd",
         "settings" : "classpath:/elasticsearch/hbztitle-settings.json",
-        "mapping" : "classpath:/elasticsearch/hbztitle-mapping.json"
+        "mapping" : "classpath:/elasticsearch/hbztitle-mapping.json",
+        "idKey" : "RecordIdentifier.identifierForTheRecord"
       },
       "update" : false
     }
