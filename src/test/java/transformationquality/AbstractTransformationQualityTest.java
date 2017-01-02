@@ -98,7 +98,8 @@ public class AbstractTransformationQualityTest extends AbstractTransformationTes
 
 
 
-    protected static void postProcessAndReport(final Logger aLogger, final Integer aErroneousDocsAcceptedPerField, final List<String> aExpectedFieldsWorking){
+    protected static void postProcessAndReport(final Logger aLogger, final Integer aErroneousDocsAcceptedPerField,
+                                               final Map<String, Integer> aExpectedFieldsWorking){
         if (!mMissingDocs.isEmpty()){
             aLogger.error("MISSING DOCUMENTS IN TRANSFORMATION:");
             mMissingDocs.forEach(x -> aLogger.error("\t" + x));
@@ -123,7 +124,8 @@ public class AbstractTransformationQualityTest extends AbstractTransformationTes
         }
         mAccumulatedErrorFields.forEach((k, v) -> {
             if (v > aErroneousDocsAcceptedPerField &&
-                    aExpectedFieldsWorking.contains(k)){
+                    aExpectedFieldsWorking.get(k) != null &&
+                    v > aExpectedFieldsWorking.get(k)){
                 mErroneousFields.put(k, v);
             }
             else{

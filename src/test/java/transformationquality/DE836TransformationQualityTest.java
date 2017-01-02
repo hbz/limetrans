@@ -7,49 +7,48 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class DE836TransformationQualityTest extends AbstractTransformationQualityTest{
 
     final private static Integer MISSING_DOCS_ACCEPTED = 10;
     final private static Integer ERRONEOUS_DOCS_ACCEPTED_PER_FIELD = 20;
-    final private static List<String> EXPECTED_FIELDS_WORKING = Arrays.asList(new String[]{
-            "RecordIdentifier.identifierForTheRecord",
-            "Language.languageSource",
-            "Language.language",
-            "IdentifierISBN.identifierISBN",
-            "Person.personName",
-            "Person.personTitle",
-            "Person.personBio",
-            "Person.personRole",
-            "PersonCreator.personName",
-            "PersonCreator.personTitle",
-            "PersonCreator.personBio",
-            "PersonCreator.personRole",
-            "PersonContributor.personName",
-            "PersonContributor.personTitle",
-            "PersonContributor.personBio",
-            "PersonContributor.personRole",
-            "TitleStatement.titleMain",
-            "TitleAddendum.title",
-            "VolumeDesignation.volumeDesignation",
-            "CreatorStatement.creatorStatement",
-            "Edition.edition",
-            "PublicationPlace.printingPlace",
-            "PublisherName.name",
-            "DateProper.date",
-            "Extent.extent",
-            "SeriesAddedEntryUniformTitle.title",
-            "SeriesAddedEntryUniformTitle.volume",
-            "Description.description",
-            "RSWK.subjectTopicName",
-            "RSWK.subjectIdentifier",
-            "RSWK.identifierGND",
-            "OnlineAccess.uri",
-            "OnlineAccess.nonpublicnote"});
+    final private static Map<String, Integer> EXPECTED_FIELDS_WORKING = new HashMap<>();
+    static {
+        EXPECTED_FIELDS_WORKING.put("RecordIdentifier.identifierForTheRecord", 987);
+        EXPECTED_FIELDS_WORKING.put("Language.languageSource", 0);
+        EXPECTED_FIELDS_WORKING.put("Language.language", 0);
+        EXPECTED_FIELDS_WORKING.put("IdentifierISBN.identifierISBN", 0);
+        EXPECTED_FIELDS_WORKING.put("Person.personName", 927);
+        EXPECTED_FIELDS_WORKING.put("Person.personTitle", 41);
+        EXPECTED_FIELDS_WORKING.put("Person.personBio", 846);
+        EXPECTED_FIELDS_WORKING.put("Person.personRole", 0);
+        EXPECTED_FIELDS_WORKING.put("PersonCreator.personName", 0);
+        EXPECTED_FIELDS_WORKING.put("PersonCreator.personTitle", 0);
+        EXPECTED_FIELDS_WORKING.put("PersonCreator.personBio", 0);
+        EXPECTED_FIELDS_WORKING.put("PersonCreator.personRole", 0);
+        EXPECTED_FIELDS_WORKING.put("PersonContributor.personName", 0);
+        EXPECTED_FIELDS_WORKING.put("PersonContributor.personTitle", 0);
+        EXPECTED_FIELDS_WORKING.put("PersonContributor.personBio", 0);
+        EXPECTED_FIELDS_WORKING.put("PersonContributor.personRole", 0);
+        EXPECTED_FIELDS_WORKING.put("TitleStatement.titleMain", 0);
+        EXPECTED_FIELDS_WORKING.put("TitleAddendum.title", 104);
+        EXPECTED_FIELDS_WORKING.put("VolumeDesignation.volumeDesignation", 0);
+        EXPECTED_FIELDS_WORKING.put("CreatorStatement.creatorStatement", 963);
+        EXPECTED_FIELDS_WORKING.put("Edition.edition", 0);
+        EXPECTED_FIELDS_WORKING.put("PublicationPlace.printingPlace", 0);
+        EXPECTED_FIELDS_WORKING.put("PublisherName.name", 0);
+        EXPECTED_FIELDS_WORKING.put("DateProper.date", 0);
+        EXPECTED_FIELDS_WORKING.put("Extent.extent", 0);
+        EXPECTED_FIELDS_WORKING.put("SeriesAddedEntryUniformTitle.title", 0);
+        EXPECTED_FIELDS_WORKING.put("SeriesAddedEntryUniformTitle.volume", 0);
+        EXPECTED_FIELDS_WORKING.put("Description.description", 0);
+        EXPECTED_FIELDS_WORKING.put("RSWK.subjectTopicName", 0);
+        EXPECTED_FIELDS_WORKING.put("RSWK.subjectIdentifier", 0);
+        EXPECTED_FIELDS_WORKING.put("RSWK.identifierGND", 0);
+        EXPECTED_FIELDS_WORKING.put("OnlineAccess.uri", 0);
+        EXPECTED_FIELDS_WORKING.put("OnlineAccess.nonpublicnote", 0);
+    }
     final private static Logger mLogger = LogManager.getLogger();
 
     @BeforeClass
