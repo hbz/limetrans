@@ -309,10 +309,10 @@
 
   <!-- 6xx -->
   <entity name="RSWK[]" flushWith="record">
-    <entity name="" flushWith="650??" sameEntity="true">
+    <entity name="" flushWith="65[01]??" sameEntity="true">
       <if>
-        <all flushWith="650??" sameEntity="true">
-          <data source="650??.2">
+        <all flushWith="65[01]??" sameEntity="true">
+          <data source="65[01]??.2">
             <equals string="gnd" />
           </data>
         </all>
@@ -320,11 +320,14 @@
       <data name="subjectTopicName" source="650??.a">
         <replace pattern="\.?$" with="" />
       </data>
-      <entity name="subjectIdentifier[]" flushWith="650??" sameEntity="true">
-        <data name="" source="650??.0" />
+      <data name="subjectGeoName" source="651??.a">
+        <replace pattern="\.?$" with="" />
+      </data>
+      <entity name="subjectIdentifier[]" flushWith="65[01]??" sameEntity="true">
+        <data name="" source="65[01]??.0" />
       </entity>
-      <entity name="identifierGND[]" flushWith="650??" sameEntity="true">
-        <data name="" source="650??.0">
+      <entity name="identifierGND[]" flushWith="65[01]??" sameEntity="true">
+        <data name="" source="65[01]??.0">
           <replace pattern="^\(DE-588\)" with="" />
         </data>
       </entity>
