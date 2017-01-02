@@ -52,11 +52,12 @@ By now, limetrans is written to be used with [Elasticsearch](https://www.elastic
     "cluster": "elasticsearch-01",
     "host": ["localhost:9300"],
     "index" : {
-      "name" : "choose-your-own-index-name",
       "type" : "title",
-      "idKey" : "the-id-field-name-configured-in-your-metafacture-rules-file",
+      "name" : "choose-your-own-index-name",
+      "timewindow" : "yyyyMMdd",
       "settings" : "a/path/to/your/elasticsearch/settings.json",
-      "mapping" : "a/path/to/your/elasticsearch/mapping.json"
+      "mapping" : "a/path/to/your/elasticsearch/mapping.json",
+      "idKey" : "the-id-field-name-configured-in-your-metafacture-rules-file"
     },
     "update" : false
   }
