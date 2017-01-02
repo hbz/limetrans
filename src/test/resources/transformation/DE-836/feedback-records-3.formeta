@@ -1,0 +1,294 @@
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)ocn258752341'
+	},
+	'CreatorStatement' {
+		'creatorStatement': '[Bildteil:] Chargesheimer ; [Text:] Böll'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'Monographie',
+			'': 'Sonstiges'
+		},
+		'language[]' {
+			'': 'Deutsch'
+		},
+		'date[]' {
+			'': '1958'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Deutsch',
+			'languageSource': 'ger'
+		}
+	},
+	'Person' {
+		'personName': 'Böll, Heinrich'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Im Ruhrgebiet'
+		}
+	},
+	'Edition' {
+		'edition[]' {
+			'': '[1. - 16. Tsd.]'
+		}
+	},
+	'PublicationPlace' {
+		'printingPlace[]' {
+			'': 'Köln ;Berlin'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Kiepenheuer & Witsch'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '1958'
+		}
+	},
+	'Extent' {
+		'extent': '28, 121 S : 88 Bl. Abb., 1 Falttaf ; 4'
+	},
+	'RSWK[]' {
+		'' {
+			'subjectTopicName': 'Bildband',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4145395-5'
+			},
+			'identifierGND[]' {
+				'': '4145395-5'
+			}
+		},
+		'' {
+			'subjectTopicName': 'Ruhrgebiet (Motiv)',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4245715-4'
+			},
+			'identifierGND[]' {
+				'': '4245715-4'
+			}
+		},
+		'' {
+			'subjectGeoName': 'Ruhrgebiet',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4050926-6'
+			},
+			'identifierGND[]' {
+				'': '4050926-6'
+			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocn258752341'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)ocn961280447'
+	},
+	'CreatorStatement' {
+		'creatorStatement': 'Andreas Rossmann. Mit Photographien von Barbara Klemm'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Gedruckte Ressource'
+		},
+		'type[]' {
+			'': 'Monographie',
+			'': 'Sonstiges'
+		},
+		'language[]' {
+			'': 'Deutsch'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Deutsch',
+			'languageSource': 'ger'
+		}
+	},
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN[]' {
+				'': '9783863351793'
+			}
+		},
+		'' {
+			'identifierISBN[]' {
+				'': '3863351797'
+			}
+		}
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Der Rauch verbindet die Städte nicht mehr'
+		}
+	},
+	'PublicationPlace' {
+		'printingPlace[]' {
+			'': 'Köln'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'König'
+		}
+	},
+	'Extent' {
+		'extent': '264 S. : zahlr. Ill.'
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Rossmann, Andreas'
+		},
+		'' {
+			'personName': 'Klemm, Barbara'
+		}
+	},
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://deposit.d-nb.de/cgi-bin/dokserv?id=4101741&prov=M&dok_var=1&dok_ext=htm'
+		},
+		'' {
+			'uri': 'http://digitool.hbz-nrw.de:1801/webclient/DeliveryManager?pid=4678265&custom_att_2=simple_viewer'
+		},
+		'' {
+			'uri': 'http://digitool.hbz-nrw.de:1801/webclient/DeliveryManager?pid=4678266&custom_att_2=simple_viewer',
+			'nonpublicnote': 'Zusätzliche Angaben'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocn961280447'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)ocm51712092'
+	},
+	'CreatorStatement' {
+		'creatorStatement': 'Schriftl. Horst Albach'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'Monographie',
+			'': 'Sonstiges'
+		},
+		'language[]' {
+			'': 'Deutsch',
+			'': 'Englisch'
+		},
+		'date[]' {
+			'': '2002'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Deutsch',
+			'languageSource': 'ger'
+		},
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
+	},
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN[]' {
+				'': '3409122826'
+			}
+		},
+		'' {
+			'identifierISBN[]' {
+				'': '9783409122825'
+			}
+		}
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Sportökonomie'
+		}
+	},
+	'PublicationPlace' {
+		'printingPlace[]' {
+			'': 'Wiesbaden'
+		}
+	},
+	'PublisherName' {
+		'name[]' {
+			'': 'Gabler'
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '2002'
+		}
+	},
+	'Extent' {
+		'extent': 'IX, 262 S., S XII - XIV : ill., graph. Darst.'
+	},
+	'Description' {
+		'description[]' {
+			'': 'Enth. 13 Beitr. - Zsfassungen der Beitr. in dt. und engl. Sprache.'
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectTopicName': 'Sportökonomie',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4207188-4'
+			},
+			'identifierGND[]' {
+				'': '4207188-4'
+			}
+		},
+		'' {
+			'subjectTopicName': 'Berufsfußball',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4144779-7'
+			},
+			'identifierGND[]' {
+				'': '4144779-7'
+			}
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Albach, Horst'
+		}
+	},
+	'SeriesAddedEntryUniformTitle[]' {
+		'' {
+			'title[]' {
+				'': 'Zeitschrift für Betriebswirtschaft / Ergänzungsheft. ; 2002,4'
+			},
+			'volume[]' {
+				'': '2002,4'
+			}
+		}
+	},
+	'OnlineAccess[]' {
+		'' {
+			'uri': 'http://d-nb.info/965470997/04'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocm51712092'
+		}
+	}
+}

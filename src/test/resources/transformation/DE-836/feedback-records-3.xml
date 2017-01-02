@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cam a2200000Mi 4500</leader>
+    <controlfield tag="001">ocn258752341</controlfield>
+    <controlfield tag="003">OCoLC</controlfield>
+    <controlfield tag="005">20161123072347.6</controlfield>
+    <controlfield tag="008">950101s1958    gw            000 0 ger d</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">GyGoGBV</subfield>
+      <subfield code="e">rakwb</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">GBVCP</subfield>
+      <subfield code="d">DEBBG</subfield>
+    </datafield>
+    <datafield tag="015" ind1=" " ind2=" ">
+      <subfield code="a">DDB450533360</subfield>
+    </datafield>
+    <datafield tag="016" ind1="7" ind2=" ">
+      <subfield code="a">450533360</subfield>
+      <subfield code="2">de-101</subfield>
+    </datafield>
+    <datafield tag="024" ind1="8" ind2=" ">
+      <subfield code="a">stbh00244107</subfield>
+    </datafield>
+    <datafield tag="024" ind1="8" ind2=" ">
+      <subfield code="a">sthanT00242824</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">DEBBG</subfield>
+      <subfield code="b">BV005793159</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">GBVCP</subfield>
+      <subfield code="b">175518823</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)258752341</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">20.31 ; Bildende Künstler</subfield>
+      <subfield code="2">bcc</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">ERD 367</subfield>
+      <subfield code="2">SfB</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">AP 95540</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">RD 45013</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">20.31</subfield>
+      <subfield code="2">bcl</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">ERD 367</subfield>
+      <subfield code="2">sfb</subfield>
+    </datafield>
+    <datafield tag="049" ind1=" " ind2=" ">
+      <subfield code="a">MAIN</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Böll, Heinrich.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Im Ruhrgebiet /</subfield>
+      <subfield code="c">[Bildteil:] Chargesheimer ; [Text:] Böll.</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+      <subfield code="a">[1. - 16. Tsd.]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Köln ;Berlin :</subfield>
+      <subfield code="b">Kiepenheuer &amp; Witsch,</subfield>
+      <subfield code="c">1958.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">28, 121 S :</subfield>
+      <subfield code="b">88 Bl. Abb., 1 Falttaf ;</subfield>
+      <subfield code="c">4.</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+      <subfield code="b">HBZ Sundv</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+      <subfield code="b">WorldCat Holdings</subfield>
+    </datafield>
+    <datafield tag="600" ind1="0" ind2="7">
+      <subfield code="a">Chargesheimer,</subfield>
+      <subfield code="d">1924-1971.</subfield>
+      <subfield code="0">(DE-588)118520148</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="650" ind1="0" ind2="7">
+      <subfield code="a">Bildband.</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="651" ind1=" " ind2="7">
+      <subfield code="a">Ruhrgebiet.</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="650" ind1="0" ind2="7">
+      <subfield code="a">Bildband.</subfield>
+      <subfield code="0">(DE-588)4145395-5</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="650" ind1="0" ind2="7">
+      <subfield code="a">Ruhrgebiet (Motiv)</subfield>
+      <subfield code="0">(DE-588)4245715-4</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="651" ind1=" " ind2="7">
+      <subfield code="a">Ruhrgebiet.</subfield>
+      <subfield code="0">(DE-588)4050926-6</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="653" ind1=" " ind2="0">
+      <subfield code="a">Bildband</subfield>
+    </datafield>
+    <datafield tag="653" ind1=" " ind2="0">
+      <subfield code="a">Chargesheimer ; SWD-ID: 40097754</subfield>
+    </datafield>
+    <datafield tag="653" ind1=" " ind2="0">
+      <subfield code="a">Photographie ; SWD-ID: 40458957</subfield>
+    </datafield>
+    <datafield tag="653" ind1=" " ind2="0">
+      <subfield code="a">Ruhrgebiet ; SWD-ID: 40509266</subfield>
+    </datafield>
+    <datafield tag="700" ind1="0" ind2=" ">
+      <subfield code="a">Chargesheimer.</subfield>
+    </datafield>
+    <datafield tag="994" ind1=" " ind2=" ">
+      <subfield code="a">92</subfield>
+      <subfield code="b">SUNDV</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000nam a2200000Mc 4500</leader>
+    <controlfield tag="001">ocn961280447</controlfield>
+    <controlfield tag="003">OCoLC</controlfield>
+    <controlfield tag="005">20161123073043.8</controlfield>
+    <controlfield tag="007">ta</controlfield>
+    <controlfield tag="008">121026s2012uuuugw a          000 0 ger d</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">SUNDV</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">SUNDV</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">9783863351793</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">3863351797</subfield>
+    </datafield>
+    <datafield tag="029" ind1="|" ind2=" ">
+      <subfield code="a">(SUNDV)262750</subfield>
+    </datafield>
+    <datafield tag="029" ind1="|" ind2=" ">
+      <subfield code="a">(DEHBZ)HT017370167</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)961280447</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">20</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">102000</subfield>
+    </datafield>
+    <datafield tag="049" ind1=" " ind2=" ">
+      <subfield code="a">MAIN</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Der Rauch verbindet die Städte nicht mehr</subfield>
+      <subfield code="c">Andreas Rossmann. Mit Photographien von Barbara Klemm</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Köln</subfield>
+      <subfield code="b">König</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">264 S. :</subfield>
+      <subfield code="b">zahlr. Ill.</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+      <subfield code="b">HBZ Sundv</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+      <subfield code="b">WorldCat Holdings</subfield>
+    </datafield>
+    <datafield tag="650" ind1="0" ind2="7">
+      <subfield code="a">Kultur</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="650" ind1="0" ind2="7">
+      <subfield code="a">Kunst</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="650" ind1="0" ind2="7">
+      <subfield code="a">Architektur</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="650" ind1="0" ind2="7">
+      <subfield code="a">Civilization</subfield>
+      <subfield code="a">Art</subfield>
+      <subfield code="a">Architecture</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="650" ind1="0" ind2="4">
+      <subfield code="a">Civilisation</subfield>
+      <subfield code="a">Art</subfield>
+      <subfield code="a">Architecture</subfield>
+    </datafield>
+    <datafield tag="650" ind1="0" ind2="4">
+      <subfield code="a">Culture</subfield>
+    </datafield>
+    <datafield tag="651" ind1=" " ind2="7">
+      <subfield code="a">Ruhrgebiet</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Aufsatzsammlung</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Rossmann, Andreas</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Klemm, Barbara</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="2">
+      <subfield code="3">Inhaltstext</subfield>
+      <subfield code="m">X:MVB</subfield>
+      <subfield code="q">text/html</subfield>
+      <subfield code="u">http://deposit.d-nb.de/cgi-bin/dokserv?id=4101741&amp;prov=M&amp;dok_var=1&amp;dok_ext=htm</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="2">
+      <subfield code="3">Inhaltsverzeichnis</subfield>
+      <subfield code="m">B:DE-101</subfield>
+      <subfield code="q">application/pdf</subfield>
+      <subfield code="u">http://digitool.hbz-nrw.de:1801/webclient/DeliveryManager?pid=4678265&amp;custom_att_2=simple_viewer</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="1">
+      <subfield code="u">http://digitool.hbz-nrw.de:1801/webclient/DeliveryManager?pid=4678266&amp;custom_att_2=simple_viewer</subfield>
+      <subfield code="x">Zusätzliche Angaben</subfield>
+      <subfield code="y">Der Rauch verbindet die Städte nicht mehr</subfield>
+    </datafield>
+    <datafield tag="994" ind1=" " ind2=" ">
+      <subfield code="a">92</subfield>
+      <subfield code="b">SUNDV</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cam a2200000Mi 4500</leader>
+    <controlfield tag="001">ocm51712092 </controlfield>
+    <controlfield tag="003">OCoLC</controlfield>
+    <controlfield tag="005">20161123071210.2</controlfield>
+    <controlfield tag="008">020926s2002    gw a          000 0 ger d</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">ZXW</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">ZXW</subfield>
+      <subfield code="d">OCLCQ</subfield>
+      <subfield code="d">NLGGC</subfield>
+      <subfield code="d">CHVBK</subfield>
+      <subfield code="d">HEBIS</subfield>
+      <subfield code="d">DEBBG</subfield>
+      <subfield code="d">GWDNB</subfield>
+      <subfield code="d">GBVCP</subfield>
+      <subfield code="d">OCLCQ</subfield>
+    </datafield>
+    <datafield tag="015" ind1=" " ind2=" ">
+      <subfield code="a">03,A10,0709</subfield>
+      <subfield code="2">dnb</subfield>
+    </datafield>
+    <datafield tag="016" ind1="7" ind2=" ">
+      <subfield code="a">965470997</subfield>
+      <subfield code="2">DE-101</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">3409122826</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">9783409122825</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">CHBIS</subfield>
+      <subfield code="b">004436682</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">CHDSB</subfield>
+      <subfield code="b">002654370</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">CHNEW</subfield>
+      <subfield code="b">000261782</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">CHSLU</subfield>
+      <subfield code="b">000424897</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">CHVBK</subfield>
+      <subfield code="b">028270282</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">CHVBK</subfield>
+      <subfield code="b">034273832</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">CHVBK</subfield>
+      <subfield code="b">123757819</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">CHVBK</subfield>
+      <subfield code="b">157130878</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">DEBBG</subfield>
+      <subfield code="b">BV014751571</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">DEBBG</subfield>
+      <subfield code="b">BV022088233</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">GBVCP</subfield>
+      <subfield code="b">35434126X</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">GEBAY</subfield>
+      <subfield code="b">6843703</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">GWDNB</subfield>
+      <subfield code="b">965470997</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">HEBIS</subfield>
+      <subfield code="b">107437236</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">HEBIS</subfield>
+      <subfield code="b">191397792</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">NLGGC</subfield>
+      <subfield code="b">240850076</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">CHVBK</subfield>
+      <subfield code="b">365936235</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">CHNEW</subfield>
+      <subfield code="b">000873636</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)51712092</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">ger</subfield>
+      <subfield code="a">eng</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2="4">
+      <subfield code="a">HB71-74</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">76.20 Sportorganisation</subfield>
+      <subfield code="2">z</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">85.99 Betriebswirtschaft: Sonstiges</subfield>
+      <subfield code="2">z</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">83.79 Wirtschaftssektoren: Sonstiges</subfield>
+      <subfield code="2">z</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">76.10</subfield>
+      <subfield code="2">bcl</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">17</subfield>
+      <subfield code="a">50</subfield>
+      <subfield code="a">330</subfield>
+      <subfield code="a">380</subfield>
+      <subfield code="a">650</subfield>
+      <subfield code="a">670</subfield>
+      <subfield code="2">sdnb</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">76.20</subfield>
+      <subfield code="2">bcl</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">83.79</subfield>
+      <subfield code="2">bcl</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">85.99</subfield>
+      <subfield code="2">bcl</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">QR 529</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">QR 560</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">QR 568</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">SPO 19</subfield>
+      <subfield code="2">sfb</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">SPO 31,3</subfield>
+      <subfield code="2">sfb</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">ZX 6900</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">QQ 975</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">SPO 570f</subfield>
+      <subfield code="2">stub</subfield>
+    </datafield>
+    <datafield tag="049" ind1=" " ind2=" ">
+      <subfield code="a">MAIN</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Sportökonomie /</subfield>
+      <subfield code="c">Schriftl. Horst Albach.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Wiesbaden :</subfield>
+      <subfield code="b">Gabler,</subfield>
+      <subfield code="c">2002.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">IX, 262 S., S XII - XIV :</subfield>
+      <subfield code="b">ill., graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">Zeitschrift für Betriebswirtschaft : ..., Ergänzungsheft ;</subfield>
+      <subfield code="v">2002,4</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Enth. 13 Beitr. - Zsfassungen der Beitr. in dt. und engl. Sprache.</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+      <subfield code="b">HBZ Sundv</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+      <subfield code="b">WorldCat Holdings</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Sportökonomie.</subfield>
+      <subfield code="2">gtt</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Sportökonomie.</subfield>
+      <subfield code="0">(DE-588)4207188-4</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Berufsfußball.</subfield>
+      <subfield code="0">(DE-588)4144779-7</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Sportökonomie.</subfield>
+      <subfield code="2">idsbb</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Sportökonomie.</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Unternehmenstheorie.</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Fussball.</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Marketing.</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Fussballverein.</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Spielertransfer.</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Beschaffungspolitik.</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Sportverein.</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Lohnsystem.</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Sportökonomik</subfield>
+      <subfield code="0">(DE-601)091391083</subfield>
+      <subfield code="0">(DE-STW)18955-5</subfield>
+      <subfield code="2">stw</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Theorie</subfield>
+      <subfield code="0">(DE-601)091394902</subfield>
+      <subfield code="0">(DE-STW)19073-6</subfield>
+      <subfield code="2">stw</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Deutschland</subfield>
+      <subfield code="0">(DE-601)091354749</subfield>
+      <subfield code="0">(DE-STW)18012-3</subfield>
+      <subfield code="2">stw</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="4">
+      <subfield code="a">Aufsatzsammlung.</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Aufsatzsammlung.</subfield>
+      <subfield code="2">swd</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Albach, Horst.</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Zeitschrift für Betriebswirtschaft / Ergänzungsheft.</subfield>
+      <subfield code="n">...</subfield>
+      <subfield code="p">Ergänzungsheft.</subfield>
+      <subfield code="t">Zeitschrift für Betriebswirtschaft ;</subfield>
+      <subfield code="v">2002,4</subfield>
+      <subfield code="w">(DE-101)012677728</subfield>
+      <subfield code="w">(DE-600)510125-6</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="1">
+      <subfield code="3">Inhaltsverzeichnis</subfield>
+      <subfield code="q">application/pdf</subfield>
+      <subfield code="u">http://d-nb.info/965470997/04</subfield>
+    </datafield>
+    <datafield tag="994" ind1=" " ind2=" ">
+      <subfield code="a">92</subfield>
+      <subfield code="b">SUNDV</subfield>
+    </datafield>
+  </record>
+</collection>
