@@ -12,42 +12,41 @@ import java.util.*;
 public class DE836TransformationQualityTest extends AbstractTransformationQualityTest{
 
     final private static Integer MISSING_DOCS_ACCEPTED = 10;
-    final private static Integer ERRONEOUS_DOCS_ACCEPTED_PER_FIELD = 20;
-    final private static Map<String, Integer> EXPECTED_FIELDS_WORKING = new HashMap<>();
+    final private static Map<String, Integer> EXPECTED_MAXIMUM_ERRORS_PER_FIELD = new HashMap<>();
     static {
-        EXPECTED_FIELDS_WORKING.put("RecordIdentifier.identifierForTheRecord", 987);
-        EXPECTED_FIELDS_WORKING.put("Language.languageSource", 0);
-        EXPECTED_FIELDS_WORKING.put("Language.language", 0);
-        EXPECTED_FIELDS_WORKING.put("IdentifierISBN.identifierISBN", 0);
-        EXPECTED_FIELDS_WORKING.put("Person.personName", 927);
-        EXPECTED_FIELDS_WORKING.put("Person.personTitle", 41);
-        EXPECTED_FIELDS_WORKING.put("Person.personBio", 846);
-        EXPECTED_FIELDS_WORKING.put("Person.personRole", 0);
-        EXPECTED_FIELDS_WORKING.put("PersonCreator.personName", 0);
-        EXPECTED_FIELDS_WORKING.put("PersonCreator.personTitle", 0);
-        EXPECTED_FIELDS_WORKING.put("PersonCreator.personBio", 0);
-        EXPECTED_FIELDS_WORKING.put("PersonCreator.personRole", 0);
-        EXPECTED_FIELDS_WORKING.put("PersonContributor.personName", 0);
-        EXPECTED_FIELDS_WORKING.put("PersonContributor.personTitle", 0);
-        EXPECTED_FIELDS_WORKING.put("PersonContributor.personBio", 0);
-        EXPECTED_FIELDS_WORKING.put("PersonContributor.personRole", 0);
-        EXPECTED_FIELDS_WORKING.put("TitleStatement.titleMain", 0);
-        EXPECTED_FIELDS_WORKING.put("TitleAddendum.title", 104);
-        EXPECTED_FIELDS_WORKING.put("VolumeDesignation.volumeDesignation", 0);
-        EXPECTED_FIELDS_WORKING.put("CreatorStatement.creatorStatement", 963);
-        EXPECTED_FIELDS_WORKING.put("Edition.edition", 0);
-        EXPECTED_FIELDS_WORKING.put("PublicationPlace.printingPlace", 0);
-        EXPECTED_FIELDS_WORKING.put("PublisherName.name", 0);
-        EXPECTED_FIELDS_WORKING.put("DateProper.date", 0);
-        EXPECTED_FIELDS_WORKING.put("Extent.extent", 0);
-        EXPECTED_FIELDS_WORKING.put("SeriesAddedEntryUniformTitle.title", 0);
-        EXPECTED_FIELDS_WORKING.put("SeriesAddedEntryUniformTitle.volume", 0);
-        EXPECTED_FIELDS_WORKING.put("Description.description", 0);
-        EXPECTED_FIELDS_WORKING.put("RSWK.subjectTopicName", 0);
-        EXPECTED_FIELDS_WORKING.put("RSWK.subjectIdentifier", 0);
-        EXPECTED_FIELDS_WORKING.put("RSWK.identifierGND", 0);
-        EXPECTED_FIELDS_WORKING.put("OnlineAccess.uri", 0);
-        EXPECTED_FIELDS_WORKING.put("OnlineAccess.nonpublicnote", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("RecordIdentifier.identifierForTheRecord", 987);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("Language.languageSource", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("Language.language", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("IdentifierISBN.identifierISBN", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("Person.personName", 927);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("Person.personTitle", 41);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("Person.personBio", 846);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("Person.personRole", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("PersonCreator.personName", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("PersonCreator.personTitle", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("PersonCreator.personBio", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("PersonCreator.personRole", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("PersonContributor.personName", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("PersonContributor.personTitle", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("PersonContributor.personBio", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("PersonContributor.personRole", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("TitleStatement.titleMain", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("TitleAddendum.title", 104);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("VolumeDesignation.volumeDesignation", 18);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("CreatorStatement.creatorStatement", 963);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("Edition.edition", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("PublicationPlace.printingPlace", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("PublisherName.name", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("DateProper.date", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("Extent.extent", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("SeriesAddedEntryUniformTitle.title", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("SeriesAddedEntryUniformTitle.volume", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("Description.description", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("RSWK.subjectTopicName", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("RSWK.subjectIdentifier", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("RSWK.identifierGND", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("OnlineAccess.uri", 0);
+        EXPECTED_MAXIMUM_ERRORS_PER_FIELD.put("OnlineAccess.nonpublicnote", 0);
     }
     final private static Logger mLogger = LogManager.getLogger();
 
@@ -66,7 +65,7 @@ public class DE836TransformationQualityTest extends AbstractTransformationQualit
         mMissingDocs.addAll(mReferenceMap.keySet());
         mMissingDocs.removeAll(existentDocs);
 
-        postProcessAndReport(mLogger, ERRONEOUS_DOCS_ACCEPTED_PER_FIELD, EXPECTED_FIELDS_WORKING);
+        postProcessAndReport(mLogger, EXPECTED_MAXIMUM_ERRORS_PER_FIELD);
     }
 
     @Test
