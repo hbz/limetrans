@@ -2,6 +2,8 @@ package hbz.limetrans;
 
 import hbz.limetrans.util.Helpers;
 
+import org.elasticsearch.action.admin.indices.alias.IndicesAliasesRequestBuilder;
+import org.elasticsearch.action.admin.indices.alias.get.GetAliasesResponse;
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.action.bulk.BulkResponse;
@@ -14,6 +16,9 @@ import org.elasticsearch.index.IndexNotFoundException;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 
 public class ElasticsearchClient {
 
@@ -21,6 +26,8 @@ public class ElasticsearchClient {
     public static final String INDEX_TYPE_KEY = "index.type";
 
     private final Settings mSettings;
+    private final String mAliasName;
+    private final String mIndexName;
 
     private BulkRequestBuilder mBulkRequest;
     private Client mClient;
@@ -28,6 +35,18 @@ public class ElasticsearchClient {
 
     public ElasticsearchClient(final Settings aSettings) {
         mSettings = aSettings;
+
+        final String indexName = aSettings.get(INDEX_NAME_KEY);
+        final String timeWindow = getTimeWindow();
+
+        if (timeWindow != null) {
+            mIndexName = indexName + timeWindow;
+            mAliasName = indexName;
+        }
+        else {
+            mIndexName = indexName;
+            mAliasName = null;
+        }
 
         reset();
 
@@ -67,7 +86,15 @@ public class ElasticsearchClient {
     }
 
     public void close() {
+        close(false);
+    }
+
+    public void close(final boolean aSwitchIndex) {
         flush();
+
+        if (aSwitchIndex) {
+            switchIndex();
+        }
 
         mClient.close();
 
@@ -120,12 +147,57 @@ public class ElasticsearchClient {
         mBulkRequest = mClient.prepareBulk();
     }
 
-    private String getIndexName() {
-        return mSettings.get(INDEX_NAME_KEY);
-    }
-
     private String getIndexType() {
         return mSettings.get(INDEX_TYPE_KEY);
+    }
+
+    private String getIndexName() {
+        return mIndexName;
+    }
+
+    private String getAliasName() {
+        return mAliasName;
+    }
+
+    private String getAliasIndex() {
+        final GetAliasesResponse response = mClient.admin().indices()
+            .prepareGetAliases(getAliasName()).get();
+
+        return response.getAliases().isEmpty() ? null : response
+            .getAliases().keys().iterator().next().value;
+    }
+
+    private String getTimeWindow() {
+        final String timeWindow = mSettings.get("index.timewindow");
+
+        if (timeWindow == null || timeWindow.isEmpty()) {
+            return null;
+        }
+
+        return DateTimeFormatter.ofPattern(timeWindow)
+            .withZone(ZoneId.systemDefault())
+            .format(LocalDate.now());
+    }
+
+    private void switchIndex() {
+        final String aliasName = getAliasName();
+
+        if (aliasName != null) {
+            final String newIndex = getIndexName();
+            final String oldIndex = getAliasIndex();
+
+            if (!newIndex.equals(oldIndex)) {
+                final IndicesAliasesRequestBuilder aliasesRequest = mClient.admin().indices()
+                    .prepareAliases();
+
+                if (oldIndex != null) {
+                    aliasesRequest.removeAlias(oldIndex, aliasName);
+                }
+
+                aliasesRequest.addAlias(newIndex, aliasName);
+                aliasesRequest.get();
+            }
+        }
     }
 
     private Client newClient(final String[] aHosts) {
