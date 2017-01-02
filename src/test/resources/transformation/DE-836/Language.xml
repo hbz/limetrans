@@ -80,4 +80,53 @@
     <controlfield tag="001">20 </controlfield>
     <controlfield tag="008">920324s1993    maua    ob    001 0 cze d</controlfield>
   </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">21 </controlfield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">eng</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">22 </controlfield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">eng</subfield>
+      <subfield code="a">fre</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">23 </controlfield>
+    <controlfield tag="008">x                                  eng  </controlfield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">eng</subfield>
+      <subfield code="a">fre</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">24 </controlfield>
+    <controlfield tag="008">x                                  eng  </controlfield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">por</subfield>
+      <subfield code="a">fre</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">25 </controlfield>
+    <controlfield tag="008">x                                  eng  </controlfield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">eng</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">26 </controlfield>
+    <controlfield tag="008">x                                  eng  </controlfield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">por</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+  </record>
 </collection>

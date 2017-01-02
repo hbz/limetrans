@@ -15,11 +15,18 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
 			'titleMain': 'Deviant bodies'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)1'
 		}
 	}
 }
@@ -37,11 +44,18 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
 			'titleMain': 'Deviant bodies'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)2'
 		}
 	}
 }
@@ -59,11 +73,18 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
 			'titleMain': 'Deviant bodies'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)3'
 		}
 	}
 }
@@ -78,11 +99,18 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
 			'titleMain': 'Deviant bodies'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)4'
 		}
 	}
 }
@@ -100,7 +128,9 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
@@ -108,6 +138,11 @@
 		},
 		'' {
 			'titleMain': 'Grundbegriffe und theoretische Perspektiven'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)5'
 		}
 	}
 }
@@ -128,7 +163,9 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
@@ -136,6 +173,11 @@
 		},
 		'' {
 			'titleMain': 'Grundbegriffe und theoretische Perspektiven'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)6'
 		}
 	}
 }

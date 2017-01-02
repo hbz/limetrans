@@ -1096,18 +1096,22 @@
       </data>
     </entity>
 
-    <data name="language" source="@language_long" />
-    <combine name="language" value="keine Angabe">
+    <entity name="language[]" flushWith="record">
+      <data name="" source="@language_long" />
+    </entity>
+    <entity name="language[]">
       <if>
         <none>
           <data source="@language_long" />
         </none>
       </if>
-      <data source="001" />
-    </combine>
+      <data name="" source="001">
+        <constant value="keine Angabe" />
+      </data>
+    </entity>
 
     <entity name="date[]" flushWith="record">
-      <data name="" source="260[ 23] .c">
+      <data name="" source="260[ 23] .c|@date1">
         <split delimiter="[,-]" />
         <regexp match="\d{4}" />
         <unique />

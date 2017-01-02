@@ -6,7 +6,6 @@
 		'creatorStatement': 'Barbara Von Eckardt'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -17,26 +16,41 @@
 			'': 'Bibliografie',
 			'': 'Sonstiges'
 		},
+		'language[]' {
+			'': 'Englisch'
+		},
 		'date[]' {
 			'': '1993'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585020531'
+			'identifierISBN[]' {
+				'': '0585020531',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585020532'
+			'identifierISBN[]' {
+				'': '9780585020532',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780262220460'
+			'identifierISBN[]' {
+				'': '9780262220460'
+			}
 		},
 		'' {
-			'identifierISBN': '0262220466'
+			'identifierISBN[]' {
+				'': '0262220466'
+			}
 		}
 	},
 	'Person' {
@@ -84,5 +98,11 @@
 		'' {
 			'uri': 'http://cognet.mit.edu/library/books/view?isbn=0262220466'
 		}
-	}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocm42328784'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }

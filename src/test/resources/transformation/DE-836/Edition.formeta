@@ -9,11 +9,18 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'Edition' {
 		'edition[]' {
 			'': '1st ed.'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)1'
 		}
 	}
 }
@@ -28,12 +35,19 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'Edition' {
 		'edition[]' {
 			'': '1st ed.',
 			'': '2nd ed.'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)2'
 		}
 	}
 }

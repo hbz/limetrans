@@ -9,7 +9,9 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe',
+		'language[]' {
+			'': 'keine Angabe'
+		},
 		'date[]' {
 			'': '2010'
 		}
@@ -28,6 +30,11 @@
 		'date[]' {
 			'': '[2010]'
 		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)1'
+		}
 	}
 }
 '' {
@@ -41,7 +48,9 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'PublicationPlace' {
 		'printingPlace[]' {
@@ -51,6 +60,11 @@
 	'PublisherName' {
 		'name[]' {
 			'': 'SAGE'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)2'
 		}
 	}
 }
@@ -65,7 +79,9 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe',
+		'language[]' {
+			'': 'keine Angabe'
+		},
 		'date[]' {
 			'': '2011'
 		}
@@ -87,6 +103,11 @@
 			'': '201-?',
 			'': '2011'
 		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)3'
+		}
 	}
 }
 '' {
@@ -100,7 +121,9 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe',
+		'language[]' {
+			'': 'keine Angabe'
+		},
 		'date[]' {
 			'': '2010',
 			'': '2011',
@@ -123,6 +146,11 @@
 		'date[]' {
 			'': '2010-2011',
 			'': '2010-[2012]'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)4'
 		}
 	}
 }

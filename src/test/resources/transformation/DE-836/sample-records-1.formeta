@@ -2,8 +2,13 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)ocm38995695'
 	},
+	'DateFirst' {
+		'date': '1960'
+	},
+	'ChronologyAndEnumeration' {
+		'value': 'Vol. 1, issue 1 (June 1960)-'
+	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -12,13 +17,23 @@
 		'type[]' {
 			'': 'Zeitschrift'
 		},
+		'language[]' {
+			'': 'Englisch'
+		},
 		'date[]' {
 			'': '1960'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
+	},
+	'IdentifierISSN[]' {
+		'' {
+			'identifierISSN': '1879-2189'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
@@ -50,17 +65,25 @@
 		'' {
 			'uri': 'http://www.sciencedirect.com/science/journal/00179310'
 		}
-	}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocm38995695'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)ocm43310902'
 	},
+	'DateFirst' {
+		'date': '1948'
+	},
 	'TitleAddendum' {
 		'title': 'Archives mathématiques = Archives of mathematics'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -68,13 +91,26 @@
 		},
 		'type[]' {
 			'': 'Zeitschrift'
+		},
+		'language[]' {
+			'': 'Englisch'
+		},
+		'date[]' {
+			'': '1948'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
-	'CorporateBody' {
+	'IdentifierISSN[]' {
+		'' {
+			'identifierISSN': '1420-8938'
+		}
+	},
+	'CorporateBody[]' {
 		'' {
 			'corporateBodyName': 'Mathematisches Forschungsinstitut Oberwolfach'
 		}
@@ -100,7 +136,13 @@
 		'' {
 			'uri': 'http://firstsearch.oclc.org/journal=0003-889x;screen=info;ECOIP'
 		}
-	}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocm43310902'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -110,7 +152,6 @@
 		'creatorStatement': 'by L. Frank Baum'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -119,18 +160,29 @@
 		'type[]' {
 			'': 'Monographie',
 			'': 'Sonstiges'
+		},
+		'language[]' {
+			'': 'Englisch'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '058509988X'
+			'identifierISBN[]' {
+				'': '058509988X',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585099880'
+			'identifierISBN[]' {
+				'': '9780585099880',
+				'': 'electronic bk.'
+			}
 		}
 	},
 	'Person' {
@@ -183,7 +235,13 @@
 		'' {
 			'uri': 'http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=519'
 		}
-	}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocm44954079'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -193,7 +251,6 @@
 		'creatorStatement': 'Eliza Burt Gamble'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -203,20 +260,31 @@
 			'': 'Monographie',
 			'': 'Sonstiges'
 		},
+		'language[]' {
+			'': 'Englisch'
+		},
 		'date[]' {
 			'': '1999'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585103844'
+			'identifierISBN[]' {
+				'': '0585103844',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585103846'
+			'identifierISBN[]' {
+				'': '9780585103846',
+				'': 'electronic bk.'
+			}
 		}
 	},
 	'Person' {
@@ -254,7 +322,13 @@
 		'' {
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2009426'
 		}
-	}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocm44959477'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -264,7 +338,6 @@
 		'creatorStatement': 'William McGuffey'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -273,18 +346,29 @@
 		'type[]' {
 			'': 'Monographie',
 			'': 'Sonstiges'
+		},
+		'language[]' {
+			'': 'Englisch'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585151970'
+			'identifierISBN[]' {
+				'': '0585151970',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585151977'
+			'identifierISBN[]' {
+				'': '9780585151977',
+				'': 'electronic bk.'
+			}
 		}
 	},
 	'Person' {
@@ -318,7 +402,13 @@
 		'' {
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2009639'
 		}
-	}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocm44960649'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -328,7 +418,6 @@
 		'creatorStatement': 'by Henry Fielding'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -337,18 +426,29 @@
 		'type[]' {
 			'': 'Monographie',
 			'': 'Sonstiges'
+		},
+		'language[]' {
+			'': 'Englisch'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585007136'
+			'identifierISBN[]' {
+				'': '0585007136',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585007137'
+			'identifierISBN[]' {
+				'': '9780585007137',
+				'': 'electronic bk.'
+			}
 		}
 	},
 	'Person' {
@@ -382,7 +482,13 @@
 		'' {
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1030100'
 		}
-	}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocm44961551'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -392,7 +498,6 @@
 		'creatorStatement': 'edited by Alison M. Jaggar and Iris Marion Young'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -403,27 +508,42 @@
 			'': 'Bibliografie',
 			'': 'Sonstiges'
 		},
+		'language[]' {
+			'': 'Englisch'
+		},
 		'date[]' {
 			'': '2000',
 			'': '1998'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0631227644'
+			'identifierISBN[]' {
+				'': '0631227644',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780631227649'
+			'identifierISBN[]' {
+				'': '9780631227649',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9781405164498'
+			'identifierISBN[]' {
+				'': '9781405164498'
+			}
 		},
 		'' {
-			'identifierISBN': '1405164492'
+			'identifierISBN[]' {
+				'': '1405164492'
+			}
 		}
 	},
 	'TitleStatement[]' {
@@ -487,14 +607,22 @@
 		'' {
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=44970'
 		}
-	}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocm47011858'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)ocm48498937'
 	},
+	'DateFirst' {
+		'date': '1968'
+	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -502,13 +630,21 @@
 		},
 		'type[]' {
 			'': 'Zeitschrift'
+		},
+		'language[]' {
+			'': 'Englisch'
+		},
+		'date[]' {
+			'': '1968'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
-	'CorporateBody' {
+	'CorporateBody[]' {
 		'' {
 			'corporateBodyName': 'Organisation for Economic Co-operation and Development'
 		}
@@ -538,7 +674,13 @@
 		'' {
 			'uri': 'http://firstsearch.oclc.org/journal=0304-341x;screen=info;ECOIP'
 		}
-	}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocm48498937'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -551,7 +693,6 @@
 		'creatorStatement': 'author unknown ; translation by W.G. Collingwood & J. Stefansson (Ulverston, 1901)'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -560,18 +701,29 @@
 		'type[]' {
 			'': 'Monographie',
 			'': 'Sonstiges'
+		},
+		'language[]' {
+			'': 'Englisch'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585152306'
+			'identifierISBN[]' {
+				'': '0585152306',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585152301'
+			'identifierISBN[]' {
+				'': '9780585152301',
+				'': 'electronic bk.'
+			}
 		}
 	},
 	'TitleStatement[]' {
@@ -631,7 +783,13 @@
 		'' {
 			'uri': 'http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=265'
 		}
-	}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocm49293189'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -641,7 +799,6 @@
 		'creatorStatement': 'by Rudyard Kipling'
 	},
 	'dc' {
-		'language': 'Englisch',
 		'format[]' {
 			'': 'Elektronische Ressource',
 			'': 'Online-Ressource',
@@ -650,18 +807,29 @@
 		'type[]' {
 			'': 'Monographie',
 			'': 'Sonstiges'
+		},
+		'language[]' {
+			'': 'Englisch'
 		}
 	},
-	'Language' {
-		'language': 'Englisch',
-		'languageSource': 'eng'
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585012814'
+			'identifierISBN[]' {
+				'': '0585012814',
+				'': 'electronic bk.'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585012810'
+			'identifierISBN[]' {
+				'': '9780585012810',
+				'': 'electronic bk.'
+			}
 		}
 	},
 	'Person' {
@@ -714,5 +882,11 @@
 		'' {
 			'uri': 'http://digital.library.upenn.edu/webbin/gutbook/lookup?num=556'
 		}
-	}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocm49293748'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }

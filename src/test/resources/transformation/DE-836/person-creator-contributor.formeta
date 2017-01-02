@@ -9,7 +9,9 @@
 		'type[]' {
 			'': 'Monographie'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'Person' {
 		'personName': 'Trollope, Anthony',
@@ -29,6 +31,11 @@
 		'' {
 			'personName': 'Gaehde, Joachim E.'
 		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)1'
+		}
 	}
 }
 '' {
@@ -42,7 +49,9 @@
 		'type[]' {
 			'': 'Monographie'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'Person' {
 		'personName': 'Trollope, Anthony',
@@ -66,6 +75,11 @@
 				'': '[Übers.]'
 			}
 		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)2'
+		}
 	}
 }
 '' {
@@ -79,21 +93,42 @@
 		'type[]' {
 			'': 'Monographie'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'PersonCreator[]' {
 		'' {
 			'personName': 'Nygaard, Kristen',
-			'personBio': '1926-'
+			'personBio': '1926-',
+			'personIdentifier[]' {
+				'': '(DE-588)389666475',
+				'': '(DE-588)129116726'
+			},
+			'identifierGND[]' {
+				'': '389666475',
+				'': '129116726'
+			}
 		}
 	},
 	'PersonContributor[]' {
 		'' {
-			'personName': 'Gjessing, S.'
+			'personName': 'Gjessing, S.',
+			'personIdentifier[]' {
+				'': '(DE-588)129116726'
+			},
+			'identifierGND[]' {
+				'': '129116726'
+			}
 		},
 		'' {
 			'personName': 'Trollope, Anthony',
 			'personBio': '1815-1882'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)3'
 		}
 	}
 }
@@ -108,7 +143,9 @@
 		'type[]' {
 			'': 'Monographie'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'Person' {
 		'personName': 'Trollope, Anthony',
@@ -116,6 +153,12 @@
 		'personRole[]' {
 			'': '[Übers.]',
 			'': '[Author]'
+		},
+		'personIdentifier[]' {
+			'': '(DE-588)129116726'
+		},
+		'identifierGND[]' {
+			'': '129116726'
 		}
 	},
 	'PersonContributor[]' {
@@ -124,6 +167,12 @@
 			'personRole[]' {
 				'': '[editor]',
 				'': '[translator]'
+			},
+			'personIdentifier[]' {
+				'': '(DE-588)129116726'
+			},
+			'identifierGND[]' {
+				'': '129116726'
 			}
 		},
 		'' {
@@ -131,6 +180,53 @@
 			'personRole[]' {
 				'': '[Bearb.]'
 			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)4'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)5'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'Monographie'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'Person' {
+		'personName': 'Trollope, Anthony',
+		'personBio': '1815-1882',
+		'personRole[]' {
+			'': '[Creator]'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Nygaard, Kristen',
+			'personRole[]' {
+				'': '[Author]'
+			}
+		},
+		'' {
+			'personName': 'Donin, Richard Kurt',
+			'personRole[]' {
+				'': '[Bearb.]'
+			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)5'
 		}
 	}
 }

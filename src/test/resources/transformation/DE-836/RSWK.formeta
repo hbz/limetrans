@@ -9,7 +9,14 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)1'
+		}
 	}
 }
 '' {
@@ -23,7 +30,9 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'RSWK[]' {
 		'' {
@@ -34,6 +43,11 @@
 			'identifierGND[]' {
 				'': '4130623-5'
 			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)2'
 		}
 	}
 }
@@ -48,7 +62,9 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'RSWK[]' {
 		'' {
@@ -69,6 +85,11 @@
 				'': '4125858-7'
 			}
 		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)3'
+		}
 	}
 }
 '' {
@@ -82,7 +103,9 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'RSWK[]' {
 		'' {
@@ -95,6 +118,11 @@
 				'': '4130623-5',
 				'': '4125858-8'
 			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)4'
 		}
 	}
 }

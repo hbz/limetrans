@@ -9,11 +9,15 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585020531'
+			'identifierISBN[]' {
+				'': '0585020531'
+			}
 		}
 	},
 	'IdentifierISBNParallel[]' {
@@ -21,6 +25,11 @@
 			'identifierISBN[]' {
 				'': '0262220466'
 			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)1'
 		}
 	}
 }
@@ -35,17 +44,25 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'IdentifierISBN[]' {
 		'' {
-			'identifierISBN': '0585020531'
+			'identifierISBN[]' {
+				'': '0585020531'
+			}
 		},
 		'' {
-			'identifierISBN': '9780585020532'
+			'identifierISBN[]' {
+				'': '9780585020532'
+			}
 		},
 		'' {
-			'identifierISBN': '9780262220460'
+			'identifierISBN[]' {
+				'': '9780262220460'
+			}
 		}
 	},
 	'IdentifierISBNParallel[]' {
@@ -64,6 +81,11 @@
 				'': '0387500537'
 			}
 		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)2'
+		}
 	}
 }
 '' {
@@ -77,7 +99,9 @@
 		'type[]' {
 			'': 'keine Angabe'
 		},
-		'language': 'keine Angabe'
+		'language[]' {
+			'': 'keine Angabe'
+		}
 	},
 	'IdentifierISBNParallel[]' {
 		'' {
@@ -86,6 +110,70 @@
 				'': '3540500537',
 				'': '0387500537'
 			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)3'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)4'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN[]' {
+				'': '0585020531',
+				'': 'electronic bk.'
+			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)4'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)5'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN[]' {
+				'': '0585020531',
+				'': 'electronic bk.',
+				'': 'v. 1'
+			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)5'
 		}
 	}
 }
