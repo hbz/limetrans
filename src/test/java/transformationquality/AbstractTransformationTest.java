@@ -26,8 +26,8 @@ public abstract class AbstractTransformationTest {
     public static void prepare() throws IOException, InterruptedException {
 
         final URL url = new File("src/conf/test/transformation-quality.json").toURI().toURL();
-        final LibraryMetadataTransformation limetrans = new LibraryMetadataTransformation(Helpers.getSettingsFromUrl(url));
-        limetrans.transform();
+        final LibraryMetadataTransformation limetrans = new LibraryMetadataTransformation(Helpers.loadSettings(url));
+        limetrans.process();
 
         final File referenceFile = new File("src/test/resources/integration/reference/transformation-quality.json");
         mReference = mMapper.readTree(referenceFile);
