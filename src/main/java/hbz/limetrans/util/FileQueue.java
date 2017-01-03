@@ -1,5 +1,7 @@
 package hbz.limetrans.util;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.culturegraph.mf.biblio.marc21.MarcXmlHandler;
 import org.culturegraph.mf.framework.StreamReceiver;
 import org.culturegraph.mf.io.FileOpener;
@@ -17,6 +19,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class FileQueue implements Iterable<String> {
+
+    private static final Logger mLogger = LogManager.getLogger();
 
     private final Queue<String> mQueue = new LinkedList<>();
 
@@ -63,8 +67,11 @@ public class FileQueue implements Iterable<String> {
         }
 
         for (final String fileName : this) {
+            mLogger.info("Processing MARCXML file: {}", fileName);
             opener.process(fileName);
         }
+
+        mLogger.info("Finished processing MARCXML files");
 
         opener.closeStream();
     }
@@ -82,6 +89,8 @@ public class FileQueue implements Iterable<String> {
             return;
         }
 
+        mLogger.debug("Settings: {}", aSettings.getAsMap());
+
         final String path = aSettings.get("path");
         final String pattern = aSettings.get("pattern");
 
@@ -97,7 +106,11 @@ public class FileQueue implements Iterable<String> {
             .getPathFiles(aSettings.getAsInt("max", -1));
 
         for (final PathFile pathFile : pathFiles) {
-            mQueue.add(pathFile.toString());
+            final String fileName = pathFile.toString();
+
+            mLogger.debug("Adding file: {}", fileName);
+
+            mQueue.add(fileName);
         }
     }
 

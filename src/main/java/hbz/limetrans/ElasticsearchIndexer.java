@@ -71,7 +71,7 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
     @Override
     public void closeStream() {
         mJsonEncoder.closeStream();
-        mClient.close();
+        mClient.close(true);
     }
 
     @Override

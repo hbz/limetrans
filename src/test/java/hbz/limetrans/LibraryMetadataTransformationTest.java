@@ -103,20 +103,12 @@ public class LibraryMetadataTransformationTest {
 
     private void assertEqualsReference(final String aName) throws IOException {
         assertEquals("Reference data mismatch: " + aName,
-                slurpFile("reference", aName),
-                slurpFile("output", aName, "src/test/resources"));
+                slurpFile("classpath:", "reference", aName),
+                slurpFile("src/test/resources", "output", aName));
     }
 
-    private String slurpFile(final String aDir, final String aName) throws IOException {
-        return Helpers.slurpFile(filePath(aDir, aName), getClass());
-    }
-
-    private String slurpFile(final String aDir, final String aName, final String aBase) throws IOException {
-        return Helpers.slurpFile(aBase + filePath(aDir, aName));
-    }
-
-    private String filePath(final String aDir, final String aName) {
-        return "/limetrans/" + aDir + "/" + aName + ".jsonl";
+    private String slurpFile(final String aPrefix, final String aDir, final String aName) throws IOException {
+        return Helpers.slurpFile(aPrefix + "/limetrans/" + aDir + "/" + aName + ".jsonl", getClass());
     }
 
 }

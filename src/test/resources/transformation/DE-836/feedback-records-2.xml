@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cas a2200000Mc 4500</leader>
+    <controlfield tag="001">ocn930016469</controlfield>
+    <controlfield tag="003">OCoLC</controlfield>
+    <controlfield tag="005">20161123072518.9</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">150805c20159999gw fu p       0    0ger d</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">HEBIS</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="e">rakwb</subfield>
+      <subfield code="c">HEBIS</subfield>
+      <subfield code="d">DEBBG</subfield>
+      <subfield code="d">GBVCP</subfield>
+      <subfield code="d">GWDNB</subfield>
+    </datafield>
+    <datafield tag="015" ind1=" " ind2=" ">
+      <subfield code="a">16,A22</subfield>
+      <subfield code="2">dnb</subfield>
+    </datafield>
+    <datafield tag="016" ind1="7" ind2=" ">
+      <subfield code="a">2830499-8</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield tag="016" ind1="7" ind2=" ">
+      <subfield code="a">1074966902</subfield>
+      <subfield code="2">DE-101</subfield>
+    </datafield>
+    <datafield tag="022" ind1=" " ind2=" ">
+      <subfield code="a">2365-3027</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">DEBBG</subfield>
+      <subfield code="b">BV042934527</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">CHVBK</subfield>
+      <subfield code="b">354308335</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">CHBIS</subfield>
+      <subfield code="b">010564317</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">GBVCP</subfield>
+      <subfield code="b">833142593</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">GWDNB</subfield>
+      <subfield code="b">1074966902</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)930016469</subfield>
+    </datafield>
+    <datafield tag="082" ind1="0" ind2="4">
+      <subfield code="a">700</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">700</subfield>
+      <subfield code="a">370</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">sdnb</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">LD 3000</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield tag="049" ind1=" " ind2=" ">
+      <subfield code="a">MAIN</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Imago</subfield>
+      <subfield code="b">Zeitschrift für Kunstpädagogik</subfield>
+    </datafield>
+    <datafield tag="260" ind1="3" ind2=" ">
+      <subfield code="a">München</subfield>
+      <subfield code="b">Kopaed</subfield>
+      <subfield code="c">2015, 2015-</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">Bände</subfield>
+      <subfield code="c">24 cm</subfield>
+    </datafield>
+    <datafield tag="362" ind1="0" ind2=" ">
+      <subfield code="a">2015,1</subfield>
+    </datafield>
+    <datafield tag="363" ind1="0" ind2="1">
+      <subfield code="i">2015</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+      <subfield code="b">HBZ Sundv</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+      <subfield code="b">WorldCat Holdings</subfield>
+    </datafield>
+    <datafield tag="592" ind1=" " ind2=" ">
+      <subfield code="a">1.2015</subfield>
+    </datafield>
+    <datafield tag="595" ind1=" " ind2=" ">
+      <subfield code="a">77 ZS 118</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="0">(DE-588)4033637-2</subfield>
+      <subfield code="0">(uri)http://d-nb.info/gnd/4033637-2</subfield>
+      <subfield code="0">(DE-101)040336379</subfield>
+      <subfield code="a">Kunsterziehung</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Zeitschrift</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Zeitschrift.</subfield>
+      <subfield code="2">gnd-content</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="4">
+      <subfield code="a">Zeitschrift.</subfield>
+    </datafield>
+    <datafield tag="994" ind1=" " ind2=" ">
+      <subfield code="a">92</subfield>
+      <subfield code="b">SUNDV</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cas a2200000 i 4500</leader>
+    <controlfield tag="001">ocn939922827</controlfield>
+    <controlfield tag="003">OCoLC</controlfield>
+    <controlfield tag="005">20161228062040.4</controlfield>
+    <controlfield tag="008">160219c20169999enkuu p o     0   a0eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">  2016201878</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">UNA</subfield>
+      <subfield code="b">eng</subfield>
+      <subfield code="e">rda</subfield>
+      <subfield code="c">UNA</subfield>
+      <subfield code="d">OCLCO</subfield>
+      <subfield code="d">DLC</subfield>
+      <subfield code="d">OCLCF</subfield>
+      <subfield code="d">OCLCO</subfield>
+      <subfield code="d">DLC</subfield>
+      <subfield code="d">COO</subfield>
+    </datafield>
+    <datafield tag="012" ind1=" " ind2=" ">
+      <subfield code="k">1</subfield>
+    </datafield>
+    <datafield tag="022" ind1="0" ind2=" ">
+      <subfield code="a">2057-3189</subfield>
+      <subfield code="l">2057-3170</subfield>
+      <subfield code="2">2</subfield>
+    </datafield>
+    <datafield tag="029" ind1="1" ind2=" ">
+      <subfield code="a">AU@</subfield>
+      <subfield code="b">000057193976</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)939922827</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">pcc</subfield>
+      <subfield code="a">nsdp</subfield>
+    </datafield>
+    <datafield tag="050" ind1="1" ind2="0">
+      <subfield code="a">ISSN RECORD</subfield>
+    </datafield>
+    <datafield tag="082" ind1="1" ind2="0">
+      <subfield code="a">327</subfield>
+      <subfield code="2">23</subfield>
+    </datafield>
+    <datafield tag="049" ind1=" " ind2=" ">
+      <subfield code="a">MAIN</subfield>
+    </datafield>
+    <datafield tag="222" ind1=" " ind2="0">
+      <subfield code="a">Journal of global security studies</subfield>
+      <subfield code="b">(Online)</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Journal of global security studies.</subfield>
+    </datafield>
+    <datafield tag="246" ind1="1" ind2=" ">
+      <subfield code="a">JOGSS</subfield>
+    </datafield>
+    <datafield tag="264" ind1=" " ind2="1">
+      <subfield code="a">Oxford :</subfield>
+      <subfield code="b">Oxford University Press on behalf of the International Studies Association,</subfield>
+      <subfield code="c">[2016-]</subfield>
+    </datafield>
+    <datafield tag="336" ind1=" " ind2=" ">
+      <subfield code="a">text</subfield>
+      <subfield code="b">txt</subfield>
+      <subfield code="2">rdacontent</subfield>
+    </datafield>
+    <datafield tag="337" ind1=" " ind2=" ">
+      <subfield code="a">computer</subfield>
+      <subfield code="b">c</subfield>
+      <subfield code="2">rdamedia</subfield>
+    </datafield>
+    <datafield tag="338" ind1=" " ind2=" ">
+      <subfield code="a">online resource</subfield>
+      <subfield code="b">cr</subfield>
+      <subfield code="2">rdacarrier</subfield>
+    </datafield>
+    <datafield tag="362" ind1="0" ind2=" ">
+      <subfield code="a">Began with: Volume 1, Issue 1 (February 2016).</subfield>
+    </datafield>
+    <datafield tag="588" ind1=" " ind2=" ">
+      <subfield code="a">Description based on: Volume 1, Issue 1 (February 2016); title from caption (jogss.oxfordjournals.org, viewed March 16, 2016).</subfield>
+    </datafield>
+    <datafield tag="588" ind1=" " ind2=" ">
+      <subfield code="a">Latest issue consulted: Volume 1, Issue 1 (February 2016) (viewed March 16, 2016).</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+      <subfield code="b">EZB FH Münster</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+      <subfield code="b">WorldCat Holdings</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Security, International</subfield>
+      <subfield code="y">21st century</subfield>
+      <subfield code="v">Periodicals.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">World politics</subfield>
+      <subfield code="y">21st century</subfield>
+      <subfield code="v">Periodicals.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">International relations</subfield>
+      <subfield code="y">21st century</subfield>
+      <subfield code="v">Periodicals.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">National security</subfield>
+      <subfield code="y">21st century</subfield>
+      <subfield code="v">Periodicals.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">International relations.</subfield>
+      <subfield code="2">fast</subfield>
+      <subfield code="0">(OCoLC)fst00977053</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">National security.</subfield>
+      <subfield code="2">fast</subfield>
+      <subfield code="0">(OCoLC)fst01033711</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">Security, International.</subfield>
+      <subfield code="2">fast</subfield>
+      <subfield code="0">(OCoLC)fst01110895</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+      <subfield code="a">World politics.</subfield>
+      <subfield code="2">fast</subfield>
+      <subfield code="0">(OCoLC)fst01181381</subfield>
+    </datafield>
+    <datafield tag="648" ind1=" " ind2="7">
+      <subfield code="a">2000-2099</subfield>
+      <subfield code="2">fast</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Periodicals.</subfield>
+      <subfield code="2">fast</subfield>
+      <subfield code="0">(OCoLC)fst01411641</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+      <subfield code="a">International Studies Association.</subfield>
+    </datafield>
+    <datafield tag="776" ind1="0" ind2="8">
+      <subfield code="i">Print version:</subfield>
+      <subfield code="t">Journal of global security studies</subfield>
+      <subfield code="x">2057-3170</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="0">
+      <subfield code="u">https://www.hb.fh-muenster.de:2443/login?url=http://jogss.oxfordjournals.org/content/by/year</subfield>
+    </datafield>
+    <datafield tag="994" ind1=" " ind2=" ">
+      <subfield code="a">92</subfield>
+      <subfield code="b">DEFHM</subfield>
+    </datafield>
+  </record>
+</collection>

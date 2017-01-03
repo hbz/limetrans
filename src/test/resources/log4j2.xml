@@ -6,8 +6,8 @@
     </Console>
   </Appenders>
   <Loggers>
-    <Logger name="org.elasticsearch.bootstrap" level="ERROR" />
-    <Root level="${env:LIMETRANS_LOGLEVEL:-INFO}">
+    <Logger name="org.elasticsearch" level="ERROR" />
+    <Root level="${env:LIMETRANS_LOGLEVEL:-WARN}">
       <AppenderRef ref="Console" />
     </Root>
   </Loggers>

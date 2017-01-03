@@ -3,3 +3,10 @@ language:
 
 jdk:
   oraclejdk8
+
+branches:
+  only:
+    - master
+
+env:
+  - LIMETRANS_LOGLEVEL=DEBUG
