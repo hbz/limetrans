@@ -17,10 +17,8 @@ public class AbstractFieldReportTest extends AbstractTransformationTest{
     final private static Set<String> mMissingInRef = new HashSet<>();
     final private static Set<String> mMissingReferences = new HashSet<>();
     final private static Map<String, ErrorFieldPair> mErrors = new HashMap<>();
-    final private static List<String> SPARE_LOG_USERS = Arrays.asList(new String[]{"travis"});
 
-    public void reportField(final Logger aLogger, final String aUser) throws IOException, InterruptedException {
-        boolean doFullLogging = !(SPARE_LOG_USERS.contains(aUser));
+    public void reportField(final Logger aLogger, final boolean aFullLogging) throws IOException, InterruptedException {
         String line = mReader.readLine();
         while (line != null){
             JsonNode document = mMapper.readTree(line);
@@ -31,31 +29,31 @@ public class AbstractFieldReportTest extends AbstractTransformationTest{
         }
         if (!mMissingFields.isEmpty()){
             aLogger.error("MISSING FIELDS IN TRANSFORMED DATA (" + mMissingFields.size() + ")");
-            if (doFullLogging){
+            if (aFullLogging){
                 mMissingFields.forEach(x -> aLogger.error("\t" + x));
             }
         }
         if (!mMissingInRef.isEmpty()){
             aLogger.error("MISSING FIELDS IN REFERENCE DOCUMENT (" + mMissingInRef.size() + ")");
-            if (doFullLogging){
+            if (aFullLogging){
                 mMissingInRef.forEach(x -> aLogger.error("\t" + x));
             }
         }
         if (!mMissingReferences.isEmpty()){
             aLogger.error("MISSING REFERENCE DOCUMENTS (" + mMissingReferences.size() + ")");
-            if (doFullLogging){
+            if (aFullLogging){
                 mMissingReferences.forEach(x -> aLogger.error("\t" + x));
             }
         }
         if (!mErrors.isEmpty()){
             aLogger.error("DIVERGENT TRANSFORMATION (" + mErrors.size() + ")");
-            if (doFullLogging){
+            if (aFullLogging){
                 mErrors.forEach((x, y) -> aLogger.error("\t".concat(x).concat("\n").concat(y.toString())));
             }
         }
         if (!mWorkingDocs.isEmpty()){
             aLogger.error("WORKING DOCUMENTS (" + mWorkingDocs.size() + ")");
-            if (doFullLogging){
+            if (aFullLogging){
                 mWorkingDocs.forEach(x -> aLogger.error("\t" + x));
             }
         }

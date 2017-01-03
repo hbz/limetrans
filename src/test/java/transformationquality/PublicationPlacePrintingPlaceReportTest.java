@@ -26,6 +26,6 @@ public class PublicationPlacePrintingPlaceReportTest extends AbstractFieldReport
 
     @Test
     public void reportField() throws IOException, InterruptedException {
-        super.reportField(mLogger, System.getProperty("user.name"));
+        super.reportField(mLogger, !(Boolean.valueOf(System.getenv("CI"))));
     }
 }
