@@ -2,6 +2,8 @@ package hbz.limetrans;
 
 import hbz.limetrans.util.Helpers;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.elasticsearch.action.admin.indices.alias.IndicesAliasesRequestBuilder;
 import org.elasticsearch.action.admin.indices.alias.get.GetAliasesResponse;
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
@@ -22,6 +24,8 @@ import java.time.format.DateTimeFormatter;
 
 public class ElasticsearchClient {
 
+    private static final Logger mLogger = LogManager.getLogger();
+
     public static final String INDEX_NAME_KEY = "index.name";
     public static final String INDEX_TYPE_KEY = "index.type";
 
@@ -34,6 +38,8 @@ public class ElasticsearchClient {
     private ElasticsearchServer mServer = null;
 
     public ElasticsearchClient(final Settings aSettings) {
+        mLogger.debug("Settings: {}", aSettings.getAsMap());
+
         mSettings = aSettings;
 
         final String indexName = aSettings.get(INDEX_NAME_KEY);
@@ -52,9 +58,11 @@ public class ElasticsearchClient {
 
         try {
             if (aSettings.getAsBoolean("update", false)) {
+                mLogger.info("Checking index: {}", getIndexName());
                 checkIndex();
             }
             else if (aSettings.getAsBoolean("delete", false) || !indexExists()) {
+                mLogger.info("Setting up index: {}", getIndexName());
                 setupIndex();
             }
         }
@@ -99,6 +107,7 @@ public class ElasticsearchClient {
         mClient.close();
 
         if (mServer != null) {
+            mLogger.info("Shutting down embedded server");
             mServer.shutdown();
         }
     }
@@ -111,6 +120,8 @@ public class ElasticsearchClient {
         if (!aFlush) {
             return;
         }
+
+        mLogger.info("Flushing bulk");
 
         final BulkResponse bulkResponse = mBulkRequest.get();
 
@@ -144,6 +155,7 @@ public class ElasticsearchClient {
     }
 
     private void startBulk() {
+        mLogger.info("Starting new bulk");
         mBulkRequest = mClient.prepareBulk();
     }
 
@@ -187,20 +199,27 @@ public class ElasticsearchClient {
             final String oldIndex = getAliasIndex();
 
             if (!newIndex.equals(oldIndex)) {
+                mLogger.info("Switching index alias: {}", aliasName);
+
                 final IndicesAliasesRequestBuilder aliasesRequest = mClient.admin().indices()
                     .prepareAliases();
 
                 if (oldIndex != null) {
+                    mLogger.info("Removing alias from index: {}", oldIndex);
                     aliasesRequest.removeAlias(oldIndex, aliasName);
                 }
 
+                mLogger.info("Adding alias to index: {}", newIndex);
                 aliasesRequest.addAlias(newIndex, aliasName);
+
                 aliasesRequest.get();
             }
         }
     }
 
     private Client newClient(final String[] aHosts) {
+        mLogger.info("Connecting to server: {}", String.join(", ", aHosts));
+
         final TransportClient client = TransportClient.builder()
             .settings(getClientSettings())
             .build();
@@ -211,6 +230,8 @@ public class ElasticsearchClient {
     }
 
     private Client newClient(final String aDataDir) {
+        mLogger.info("Starting embedded server: {}", aDataDir);
+
         mServer = new ElasticsearchServer(aDataDir);
         return mServer.getClient();
     }
@@ -231,11 +252,14 @@ public class ElasticsearchClient {
         waitForYellowStatus();
 
         if (indexExists()) {
+            mLogger.info("Deleting index: {}", getIndexName());
             mClient.admin().indices().prepareDelete(getIndexName()).get();
         }
     }
 
     private void createIndex() {
+        mLogger.info("Creating index: {}", getIndexName());
+
         final CreateIndexRequestBuilder createRequest = mClient.admin().indices()
             .prepareCreate(getIndexName());
 
@@ -286,6 +310,7 @@ public class ElasticsearchClient {
     private void setIndexSettings(final CreateIndexRequestBuilder aCreateRequest) {
         final String settings = getIndexSettings();
         if (settings != null) {
+            mLogger.debug("Applying settings: {}", settings);
             aCreateRequest.setSettings(settings);
         }
     }
@@ -293,6 +318,7 @@ public class ElasticsearchClient {
     private void addIndexMapping(final CreateIndexRequestBuilder aCreateRequest) {
         final String mapping = getIndexMapping();
         if (mapping != null) {
+            mLogger.debug("Applying mapping: {}", mapping);
             aCreateRequest.addMapping(getIndexType(), mapping);
         }
     }
