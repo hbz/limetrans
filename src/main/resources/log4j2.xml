@@ -4,14 +4,8 @@
     <Console name="Console" target="SYSTEM_OUT">
       <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
     </Console>
-    <File name="transformationquality" fileName="src/test/resources/integration/output/transformation-quality.log">
-      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{1} - %msg%n" />
-    </File>
   </Appenders>
   <Loggers>
-    <Logger name="transformationquality" additivity="false">
-      <AppenderRef ref="transformationquality" />
-    </Logger>
     <Logger name="org.elasticsearch.bootstrap" level="ERROR" />
     <Root level="${env:LIMETRANS_LOGLEVEL:-INFO}">
       <AppenderRef ref="Console" />
