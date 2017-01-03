@@ -8,5 +8,9 @@ branches:
   only:
     - master
 
+cache:
+  directories:
+    - $HOME/.m2
+
 env:
   - LIMETRANS_LOGLEVEL=DEBUG
