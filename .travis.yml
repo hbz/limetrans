@@ -7,3 +7,12 @@ jdk:
 branches:
   only:
     - master
+
+cache:
+  directories:
+    - $HOME/.m2
+
+env:
+  global:
+    - LIMETRANS_LOGLEVEL=DEBUG
+    - LIMETRANS_TRANSFORMATIONQUALITY_APPENDER=Console
