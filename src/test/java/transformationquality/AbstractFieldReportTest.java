@@ -17,9 +17,10 @@ public class AbstractFieldReportTest extends AbstractTransformationTest{
     final private static Set<String> mMissingInRef = new HashSet<>();
     final private static Set<String> mMissingReferences = new HashSet<>();
     final private static Map<String, ErrorFieldPair> mErrors = new HashMap<>();
+    final private static List<String> SPARE_LOG_USERS = Arrays.asList(new String[]{"travis"});
 
-
-    public void reportField(final Logger aLogger) throws IOException, InterruptedException {
+    public void reportField(final Logger aLogger, final String aUser) throws IOException, InterruptedException {
+        boolean doFullLogging = !(SPARE_LOG_USERS.contains(aUser));
         String line = mReader.readLine();
         while (line != null){
             JsonNode document = mMapper.readTree(line);
@@ -29,24 +30,34 @@ public class AbstractFieldReportTest extends AbstractTransformationTest{
             line = mReader.readLine();
         }
         if (!mMissingFields.isEmpty()){
-            aLogger.error("MISSING FIELDS IN TRANSFORMED DATA (" + mMissingFields.size() + "):");
-            mMissingFields.forEach(x -> aLogger.error("\t" + x));
+            aLogger.error("MISSING FIELDS IN TRANSFORMED DATA (" + mMissingFields.size() + ")");
+            if (doFullLogging){
+                mMissingFields.forEach(x -> aLogger.error("\t" + x));
+            }
         }
         if (!mMissingInRef.isEmpty()){
-            aLogger.error("MISSING FIELDS IN REFERENCE DOCUMENT (" + mMissingInRef.size() + "):");
-            mMissingInRef.forEach(x -> aLogger.error("\t" + x));
+            aLogger.error("MISSING FIELDS IN REFERENCE DOCUMENT (" + mMissingInRef.size() + ")");
+            if (doFullLogging){
+                mMissingInRef.forEach(x -> aLogger.error("\t" + x));
+            }
         }
         if (!mMissingReferences.isEmpty()){
-            aLogger.error("MISSING REFERENCE DOCUMENTS (" + mMissingReferences.size() + "):");
-            mMissingReferences.forEach(x -> aLogger.error("\t" + x));
+            aLogger.error("MISSING REFERENCE DOCUMENTS (" + mMissingReferences.size() + ")");
+            if (doFullLogging){
+                mMissingReferences.forEach(x -> aLogger.error("\t" + x));
+            }
         }
         if (!mErrors.isEmpty()){
-            aLogger.error("DIVERGENT TRANSFORMATION (" + mErrors.size() + "):");
-            mErrors.forEach((x, y) -> aLogger.error("\t".concat(x).concat("\n").concat(y.toString())));
+            aLogger.error("DIVERGENT TRANSFORMATION (" + mErrors.size() + ")");
+            if (doFullLogging){
+                mErrors.forEach((x, y) -> aLogger.error("\t".concat(x).concat("\n").concat(y.toString())));
+            }
         }
         if (!mWorkingDocs.isEmpty()){
-            aLogger.error("WORKING DOCUMENTS (" + mWorkingDocs.size() + "):");
-            mWorkingDocs.forEach(x -> aLogger.error("\t" + x));
+            aLogger.error("WORKING DOCUMENTS (" + mWorkingDocs.size() + ")");
+            if (doFullLogging){
+                mWorkingDocs.forEach(x -> aLogger.error("\t" + x));
+            }
         }
 
     }

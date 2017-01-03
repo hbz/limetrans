@@ -27,6 +27,6 @@ public class PersonContributorPersonTitleReportTest extends AbstractFieldReportT
 
     @Test
     public void reportField() throws IOException, InterruptedException {
-        super.reportField(mLogger);
+        super.reportField(mLogger, System.getProperty("user.name"));
     }
 }
