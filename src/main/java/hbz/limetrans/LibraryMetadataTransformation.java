@@ -3,6 +3,8 @@ package hbz.limetrans;
 import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.Helpers;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.culturegraph.mf.formeta.FormetaEncoder;
 import org.culturegraph.mf.formeta.formatter.FormatterStyle;
 import org.culturegraph.mf.io.ObjectWriter;
@@ -13,8 +15,11 @@ import org.culturegraph.mf.plumbing.StreamTee;
 import org.xbib.common.settings.Settings;
 
 import java.io.IOException;
+import java.util.Map;
 
 public class LibraryMetadataTransformation {
+
+    private static final Logger mLogger = LogManager.getLogger();
 
     private final FileQueue mInputQueue;
     private final Settings mElasticsearchSettings;
@@ -24,6 +29,8 @@ public class LibraryMetadataTransformation {
     private final boolean mNormalizeUnicode;
 
     public LibraryMetadataTransformation(final Settings aSettings) throws IOException {
+        mLogger.debug("Settings: {}", aSettings.getAsMap());
+
         mInputQueue = new FileQueue(aSettings.getGroups("input").get("queue"));
 
         if (mInputQueue.isEmpty()) {
@@ -46,6 +53,8 @@ public class LibraryMetadataTransformation {
     }
 
     public void process() {
+        mLogger.info("Starting transformation: {}", mRulesPath);
+
         final Metamorph metamorph = new Metamorph(mRulesPath);
         final StreamTee streamTee = new StreamTee();
 
@@ -55,6 +64,8 @@ public class LibraryMetadataTransformation {
 
         metamorph.setReceiver(streamTee);
         mInputQueue.processMarcXml(metamorph, mNormalizeUnicode);
+
+        mLogger.info("Finished transformation");
     }
 
     public int getInputQueueSize() {
@@ -65,6 +76,8 @@ public class LibraryMetadataTransformation {
         if (mFormetaPath == null) {
             return;
         }
+
+        mLogger.info("Writing Formeta file: {}", mFormetaPath);
 
         final FormetaEncoder formetaEncoder = new FormetaEncoder();
 
@@ -78,6 +91,8 @@ public class LibraryMetadataTransformation {
             return;
         }
 
+        mLogger.info("Writing JSON file: {}", mJsonPath);
+
         final JsonEncoder jsonEncoder = new JsonEncoder();
 
         aTee.addReceiver(jsonEncoder);
@@ -89,6 +104,11 @@ public class LibraryMetadataTransformation {
             return;
         }
 
+        final Map<String, String> elasticsearchSettings =
+            mElasticsearchSettings.getAsMap();
+
+        mLogger.info("Indexing into Elasticsearch: {}", elasticsearchSettings);
+
         final RecordIdChanger recordIdChanger = new RecordIdChanger();
         final String idKey = mElasticsearchSettings.get("index.idKey");
 
@@ -98,7 +118,7 @@ public class LibraryMetadataTransformation {
         }
 
         final ElasticsearchIndexer elasticsearchIndexer =
-            new ElasticsearchIndexer(mElasticsearchSettings.getAsMap());
+            new ElasticsearchIndexer(elasticsearchSettings);
 
         aTee.addReceiver(recordIdChanger);
         recordIdChanger.setReceiver(elasticsearchIndexer);
