@@ -4,21 +4,81 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.node.TextNode;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.util.*;
 
-public class AbstractFieldReportTest extends AbstractTransformationTest{
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+@RunWith(Parameterized.class)
+public class FieldReportTest extends AbstractTransformationTest{
 
     protected String mField;
+    final private static Logger mLogger = LogManager.getLogger();
+    private static boolean mFullLogging;
     final private static Set<String> mWorkingDocs = new HashSet<>();
     final private static Set<String> mMissingFields = new HashSet<>();
     final private static Set<String> mMissingInRef = new HashSet<>();
     final private static Set<String> mMissingReferences = new HashSet<>();
     final private static Map<String, ErrorFieldPair> mErrors = new HashMap<>();
 
-    public void reportField(final Logger aLogger, final boolean aFullLogging) throws IOException, InterruptedException {
+    public FieldReportTest(String aField) {
+        mField = aField;
+    }
+
+    @Parameterized.Parameters
+    public static Collection primeNumbers() {
+        return Arrays.asList(new String[] {
+                "/CreatorStatement/creatorStatement",
+                "/DateProper/date",
+                "/Description/description",
+                "/Edition/edition",
+                "/Extent/extent",
+                "/IdentifierISBN/identifierISBN",
+                "/IdentifierISBNParallel/identifierISBN",
+                "/Language/language",
+                "/Language/languageSource",
+                "/OnlineAccess/nonpublicnote",
+                "/OnlineAccess/uri",
+                "/PersonContributor/personBio",
+                "/PersonContributor/personName",
+                "/PersonContributor/personRole",
+                "/PersonContributor/personTitle",
+                "/PersonCreator/personBio",
+                "/PersonCreator/personName",
+                "/PersonCreator/personRole",
+                "/PersonCreator/personTitle",
+                "/Person/personBio",
+                "/Person/personName",
+                "/Person/personRole",
+                "/Person/personTitle",
+                "/PublicationPlace/printingPlace",
+                "/PublisherName/name",
+                "/RSWK/identifierGND",
+                "/RSWK/subjectIdentifier",
+                "/RSWK/subjectTopicName",
+                "/SeriesAddedEntryUniformTitle/title",
+                "/SeriesAddedEntryUniformTitle/volume",
+                "/TitleAddendum/title",
+                "/TitleStatement/titleMain",
+                "/VolumeDesignation/volumeDesignation"
+        });
+    }
+
+    @BeforeClass
+    public static void setup() throws IOException {
+        mFullLogging = !(Boolean.valueOf(System.getenv("CI")));
+        mReader.mark(10000000);
+    }
+
+    @Test
+    public void reportField() throws IOException, InterruptedException {
+        reset();
         String line = mReader.readLine();
         while (line != null){
             JsonNode document = mMapper.readTree(line);
@@ -28,39 +88,45 @@ public class AbstractFieldReportTest extends AbstractTransformationTest{
             line = mReader.readLine();
         }
         if (!mMissingFields.isEmpty()){
-            aLogger.error("MISSING FIELDS IN TRANSFORMED DATA (" + mMissingFields.size() + ")");
-            if (aFullLogging){
-                mMissingFields.forEach(x -> aLogger.error("\t" + x));
-            }
+            mLogger.error(mField + ": MISSING FIELDS IN TRANSFORMED DATA (" + mMissingFields.size() + ")");
         }
         if (!mMissingInRef.isEmpty()){
-            aLogger.error("MISSING FIELDS IN REFERENCE DOCUMENT (" + mMissingInRef.size() + ")");
-            if (aFullLogging){
-                mMissingInRef.forEach(x -> aLogger.error("\t" + x));
-            }
+            mLogger.error(mField + ": MISSING FIELDS IN REFERENCE DOCUMENT (" + mMissingInRef.size() + ")");
         }
         if (!mMissingReferences.isEmpty()){
-            aLogger.error("MISSING REFERENCE DOCUMENTS (" + mMissingReferences.size() + ")");
-            if (aFullLogging){
-                mMissingReferences.forEach(x -> aLogger.error("\t" + x));
-            }
+            mLogger.error(mField + ": MISSING REFERENCE DOCUMENTS (" + mMissingReferences.size() + ")");
         }
         if (!mErrors.isEmpty()){
-            aLogger.error("DIVERGENT TRANSFORMATION (" + mErrors.size() + ")");
-            if (aFullLogging){
-                mErrors.forEach((x, y) -> aLogger.error("\t".concat(x).concat("\n").concat(y.toString())));
-            }
+            mLogger.error(mField + ": DIVERGENT TRANSFORMATION (" + mErrors.size() + ")");
         }
         if (!mWorkingDocs.isEmpty()){
-            aLogger.error("WORKING DOCUMENTS (" + mWorkingDocs.size() + ")");
-            if (aFullLogging){
-                mWorkingDocs.forEach(x -> aLogger.error("\t" + x));
-            }
+            mLogger.error(mField + ": WORKING DOCUMENTS (" + mWorkingDocs.size() + ")");
         }
-
+        if (mFullLogging){
+            mMissingFields.forEach(
+                    x -> mLogger.error("\tMISSING FIELD IN TRANSFORMED DATA FOR ".concat(mField).concat(" : ").concat(x)));
+            mMissingInRef.forEach(
+                    x -> mLogger.error("\tMISSING FIELD IN REFERENCE DOCUMENT FOR ".concat(mField).concat(" : ").concat(x)));
+            mMissingReferences.forEach(
+                    x -> mLogger.error("\tMISSING REFERENCE DOCUMENT FOR ".concat(mField).concat(" : ").concat(x)));
+            mErrors.forEach(
+                    (x, y) -> mLogger.error("\tDIVERGENT TRANSFORMATION FOR ".concat(mField).concat(" : ").concat(x).concat("\n").concat(y.toString())));
+            mWorkingDocs.forEach(
+                    x -> mLogger.error("\tWORKING DOCUMENT FOR ".concat(mField).concat(" : ").concat(x)));
+        }
+        mLogger.error("\n\n");
     }
 
-    public void compare(final String aId, final JsonNode aDocument, final JsonNode aReference) {
+    private void reset() throws IOException {
+        mMissingFields.clear();
+        mMissingInRef.clear();
+        mMissingReferences.clear();
+        mErrors.clear();
+        mWorkingDocs.clear();
+        mReader.reset();
+    }
+
+    private void compare(final String aId, final JsonNode aDocument, final JsonNode aReference) {
         if (aReference == null) {
             mMissingReferences.add(aId);
             return;
