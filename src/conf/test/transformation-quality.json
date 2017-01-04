@@ -1,0 +1,17 @@
+{
+  "input" : {
+    "queue" : {
+      "path" : "src/test/resources/integration/input/",
+      "pattern" : "transformation-quality.xml",
+      "sort_by" : "lastmodified",
+      "order" : "desc",
+      "max" : 1
+    }
+  },
+  "transformation-rules" : "src/main/resources/transformation/DE-836.xml",
+  "output": {
+    "json" : "src/test/resources/integration/output/transformation-quality.jsonl"
+  },
+  "catalogid" : "DE-605-test",
+  "collection" : "HBZ-Test"
+}
