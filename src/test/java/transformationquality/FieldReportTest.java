@@ -97,22 +97,28 @@ public class FieldReportTest extends AbstractTransformationTest{
             mLogger.error(mField + ": MISSING REFERENCE DOCUMENTS (" + mMissingReferences.size() + ")");
         }
         if (!mErrors.isEmpty()){
-            mLogger.error(mField + ": DIVERGENT TRANSFORMATION (" + mErrors.size() + ")");
+            mLogger.error(mField + ": DIVERGENT TRANSFORMATION COUNT(" + mErrors.size() + ")");
         }
         if (!mWorkingDocs.isEmpty()){
             mLogger.error(mField + ": WORKING DOCUMENTS (" + mWorkingDocs.size() + ")");
         }
         if (mFullLogging){
+            String fieldColon = mField.concat(" : ");
+            String missingFieldTransformed = "\tMISSING FIELD IN TRANSFORMED DATA FOR ".concat(fieldColon);
+            String missingFieldReference = "\tMISSING FIELD IN REFERENCE DOCUMENT FOR ".concat(fieldColon);
+            String missingDocument = "\tMISSING REFERENCE DOCUMENT FOR ".concat(fieldColon);
+            String divergentTransformation = "\tDIVERGENT TRANSFORMATION FOR ".concat(fieldColon);
+            String workingDocument = "\tWORKING DOCUMENT FOR ".concat(fieldColon);
             mMissingFields.forEach(
-                    x -> mLogger.error("\tMISSING FIELD IN TRANSFORMED DATA FOR ".concat(mField).concat(" : ").concat(x)));
+                    x -> mLogger.error(missingFieldTransformed.concat(x)));
             mMissingInRef.forEach(
-                    x -> mLogger.error("\tMISSING FIELD IN REFERENCE DOCUMENT FOR ".concat(mField).concat(" : ").concat(x)));
+                    x -> mLogger.error(missingFieldReference.concat(x)));
             mMissingReferences.forEach(
-                    x -> mLogger.error("\tMISSING REFERENCE DOCUMENT FOR ".concat(mField).concat(" : ").concat(x)));
+                    x -> mLogger.error(missingDocument.concat(x)));
             mErrors.forEach(
-                    (x, y) -> mLogger.error("\tDIVERGENT TRANSFORMATION FOR ".concat(mField).concat(" : ").concat(x).concat("\n").concat(y.toString())));
+                    (x, y) -> mLogger.error(divergentTransformation.concat(x).concat("\n").concat(y.toString())));
             mWorkingDocs.forEach(
-                    x -> mLogger.error("\tWORKING DOCUMENT FOR ".concat(mField).concat(" : ").concat(x)));
+                    x -> mLogger.error(workingDocument.concat(x)));
         }
         mLogger.error("\n\n");
     }
