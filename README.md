@@ -38,7 +38,8 @@ Input is generally configured like this:
 ### Transformation
 
 ```json
-"transformation-rules" : "a/path/to/your/transformation/metafacture/rules/file.xml"
+"transformation-rules" : "a/path/to/your/transformation/metafacture/rules/file.xml",
+"normalize-unicode" : true
 ```
 
 ### Output
