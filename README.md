@@ -60,7 +60,8 @@ By now, limetrans is written to be used with [Elasticsearch](https://www.elastic
       "idKey" : "the-id-field-name-configured-in-your-metafacture-rules-file"
     },
     "update" : false,
-    "delete" : false
+    "delete" : false,
+    "bulkAction" : "index"
   }
 }
 ```
