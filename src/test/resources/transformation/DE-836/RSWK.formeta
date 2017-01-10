@@ -84,6 +84,15 @@
 			'identifierGND[]' {
 				'': '4125858-7'
 			}
+		},
+		'' {
+			'subjectTopicName': 'Volkstheater',
+			'subjectIdentifier[]' {
+				'': '(DE-588c)12345'
+			}
+		},
+		'' {
+			'subjectTopicName': 'Kultur'
 		}
 	},
 	'xbib[]' {
@@ -111,6 +120,44 @@
 		'' {
 			'subjectTopicName': 'Volkstheater',
 			'subjectIdentifier[]' {
+				'': '(DE-588c)12345'
+			}
+		},
+		'' {
+			'subjectTopicName': 'Volkstheater',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4130623-5'
+			},
+			'identifierGND[]' {
+				'': '4130623-5'
+			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)4'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)5'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectTopicName': 'Volkstheater',
+			'subjectIdentifier[]' {
 				'': '(DE-588)4130623-5',
 				'': '(DE-588)4125858-8'
 			},
@@ -118,11 +165,18 @@
 				'': '4130623-5',
 				'': '4125858-8'
 			}
+		},
+		'' {
+			'subjectTopicName': 'Theater',
+			'subjectIdentifier[]' {
+				'': '(DE-588c)12345',
+				'': '(DE-588c)67890'
+			}
 		}
 	},
 	'xbib[]' {
 		'' {
-			'uid': '(DE-836)4'
+			'uid': '(DE-836)5'
 		}
 	}
 }
