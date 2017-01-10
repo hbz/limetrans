@@ -59,6 +59,12 @@
 	},
 	'RSWK[]' {
 		'' {
+			'subjectTopicName': 'Bildband'
+		},
+		'' {
+			'subjectGeoName': 'Ruhrgebiet'
+		},
+		'' {
 			'subjectTopicName': 'Bildband',
 			'subjectIdentifier[]' {
 				'': '(DE-588)4145395-5'
@@ -146,6 +152,23 @@
 	},
 	'Extent' {
 		'extent': '264 S. : zahlr. Ill.'
+	},
+	'RSWK[]' {
+		'' {
+			'subjectTopicName': 'Kultur'
+		},
+		'' {
+			'subjectTopicName': 'Kunst'
+		},
+		'' {
+			'subjectTopicName': 'Architektur'
+		},
+		'' {
+			'subjectTopicName': 'Civilization'
+		},
+		'' {
+			'subjectGeoName': 'Ruhrgebiet'
+		}
 	},
 	'PersonCreator[]' {
 		'' {
@@ -264,6 +287,33 @@
 			'identifierGND[]' {
 				'': '4144779-7'
 			}
+		},
+		'' {
+			'subjectTopicName': 'Sportökonomie'
+		},
+		'' {
+			'subjectTopicName': 'Unternehmenstheorie'
+		},
+		'' {
+			'subjectTopicName': 'Fussball'
+		},
+		'' {
+			'subjectTopicName': 'Marketing'
+		},
+		'' {
+			'subjectTopicName': 'Fussballverein'
+		},
+		'' {
+			'subjectTopicName': 'Spielertransfer'
+		},
+		'' {
+			'subjectTopicName': 'Beschaffungspolitik'
+		},
+		'' {
+			'subjectTopicName': 'Sportverein'
+		},
+		'' {
+			'subjectTopicName': 'Lohnsystem'
 		}
 	},
 	'PersonCreator[]' {

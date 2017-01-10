@@ -313,14 +313,16 @@
       <if>
         <all flushWith="65[01]??" sameEntity="true">
           <data source="65[01]??.2">
-            <equals string="gnd" />
+            <regexp match="^(gnd|swd)$" />
           </data>
         </all>
       </if>
       <data name="subjectTopicName" source="650??.a">
+        <occurrence only="1" sameEntity="true" />
         <replace pattern="\.?$" with="" />
       </data>
       <data name="subjectGeoName" source="651??.a">
+        <occurrence only="1" sameEntity="true" />
         <replace pattern="\.?$" with="" />
       </data>
       <entity name="subjectIdentifier[]" flushWith="65[01]??" sameEntity="true">
@@ -328,7 +330,7 @@
       </entity>
       <entity name="identifierGND[]" flushWith="65[01]??" sameEntity="true">
         <data name="" source="65[01]??.0">
-          <replace pattern="^\(DE-588\)" with="" />
+          <regexp match="(?&lt;=\(DE-588\)).*$" />
         </data>
       </entity>
     </entity>
