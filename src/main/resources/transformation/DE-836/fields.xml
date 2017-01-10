@@ -308,7 +308,6 @@
   </entity>
 
   <!-- 6xx -->
-
   <entity name="RSWK[]" flushWith="record">
     <entity name="" flushWith="65[01]??" sameEntity="true">
       <if>
@@ -319,9 +318,11 @@
         </all>
       </if>
       <data name="subjectTopicName" source="650??.a">
+        <occurrence only="1" sameEntity="true" />
         <replace pattern="\.?$" with="" />
       </data>
       <data name="subjectGeoName" source="651??.a">
+        <occurrence only="1" sameEntity="true" />
         <replace pattern="\.?$" with="" />
       </data>
       <entity name="subjectIdentifier[]" flushWith="65[01]??" sameEntity="true">
