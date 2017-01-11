@@ -1,17 +1,19 @@
 package hbz.limetrans.test;
 
+import org.culturegraph.mf.biblio.marc21.MarcXmlHandler;
 import org.culturegraph.mf.commons.ResourceUtil;
+import org.culturegraph.mf.formeta.FormetaDecoder;
+import org.culturegraph.mf.formeta.FormetaRecordsReader;
 import org.culturegraph.mf.javaintegration.EventList;
 import org.culturegraph.mf.metamorph.Metamorph;
-import org.culturegraph.mf.test.reader.FormetaReader;
-import org.culturegraph.mf.test.reader.MarcXmlReader;
-import org.culturegraph.mf.test.reader.Reader;
 import org.culturegraph.mf.test.validators.StreamValidator;
+import org.culturegraph.mf.xml.XmlDecoder;
 
 import org.junit.runners.model.Statement;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.Reader;
 
 public class TransformationTestCase extends Statement {
 
@@ -45,11 +47,12 @@ public class TransformationTestCase extends Statement {
 
     @Override
     public void evaluate() {
-        final Reader inputReader = new MarcXmlReader();
-        final Reader resultReader = new FormetaReader();
+        final XmlDecoder inputReader = new XmlDecoder();
+        final FormetaRecordsReader resultReader = new FormetaRecordsReader();
         final EventList resultStream = new EventList();
 
         inputReader
+            .setReceiver(new MarcXmlHandler())
             .setReceiver(new Metamorph(mRulesPath))
             .setReceiver(resultStream);
 
@@ -57,13 +60,14 @@ public class TransformationTestCase extends Statement {
         inputReader.closeStream();
 
         resultReader
+            .setReceiver(new FormetaDecoder())
             .setReceiver(getValidator(resultStream));
 
         resultReader.process(getData("formeta"));
         resultReader.closeStream();
     }
 
-    private java.io.Reader getData(final String aExt) {
+    private Reader getData(final String aExt) {
         try {
             return ResourceUtil.getReader(mFileName + "." + aExt);
         }
