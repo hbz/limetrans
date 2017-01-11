@@ -16,6 +16,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.Reader;
 import java.util.Iterator;
+import java.util.Stack;
 
 public class TransformationTestCase extends Statement {
 
@@ -69,11 +70,30 @@ public class TransformationTestCase extends Statement {
         final Iterator<Event> expectedEvents = aExpected.getEvents().iterator();
         final Iterator<Event> actualEvents = aActual.getEvents().iterator();
 
-        while (expectedEvents.hasNext() && actualEvents.hasNext()) {
-            final String expected = expectedEvents.next().toString();
-            final String actual = actualEvents.next().toString();
+        final Stack<String> entityStack = new Stack<>();
+        int recordNumber = 0;
 
-            Assert.assertEquals(expected, actual);
+        while (expectedEvents.hasNext() && actualEvents.hasNext()) {
+            final Event expected = expectedEvents.next();
+            final Event actual = actualEvents.next();
+
+            switch (expected.getType()) {
+                case START_RECORD:
+                    entityStack.push("<" + (++recordNumber) + ">");
+                    break;
+                case START_ENTITY:
+                    entityStack.push(expected.getName());
+                    break;
+                case END_ENTITY:
+                    entityStack.pop();
+                    break;
+                case END_RECORD:
+                    entityStack.clear();
+                    break;
+            }
+
+            Assert.assertEquals(String.join("/", entityStack),
+                    expected.toString(), actual.toString());
         }
 
         Assert.assertFalse("Missing events", expectedEvents.hasNext());
