@@ -4,25 +4,23 @@ import org.culturegraph.mf.biblio.marc21.MarcXmlHandler;
 import org.culturegraph.mf.commons.ResourceUtil;
 import org.culturegraph.mf.formeta.FormetaDecoder;
 import org.culturegraph.mf.formeta.FormetaRecordsReader;
+import org.culturegraph.mf.javaintegration.EventList.Event;
 import org.culturegraph.mf.javaintegration.EventList;
 import org.culturegraph.mf.metamorph.Metamorph;
-import org.culturegraph.mf.test.validators.StreamValidator;
 import org.culturegraph.mf.xml.XmlDecoder;
 
+import org.junit.Assert;
 import org.junit.runners.model.Statement;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.Reader;
+import java.util.Iterator;
 
 public class TransformationTestCase extends Statement {
 
     private final String mFileName;
     private final String mRulesPath;
-
-    private boolean mStrictKeyOrder = false;
-    private boolean mStrictRecordOrder = false;
-    private boolean mStrictValueOrder = false;
 
     TransformationTestCase(final String aRulesPath, final String aFileName) {
         mRulesPath = aRulesPath;
@@ -33,38 +31,53 @@ public class TransformationTestCase extends Statement {
         return mFileName.substring(mFileName.lastIndexOf(File.separator) + 1);
     }
 
-    public void setStrictRecordOrder(final boolean aValue) {
-        mStrictRecordOrder = aValue;
-    }
-
-    public void setStrictKeyOrder(final boolean aValue) {
-        mStrictKeyOrder = aValue;
-    }
-
-    public void setStrictValueOrder(final boolean aValue) {
-        mStrictValueOrder = aValue;
-    }
-
     @Override
     public void evaluate() {
-        final XmlDecoder inputReader = new XmlDecoder();
-        final FormetaRecordsReader resultReader = new FormetaRecordsReader();
-        final EventList resultStream = new EventList();
+        validate(getExpected(), getActual());
+    }
 
-        inputReader
+    private EventList getExpected() {
+        final EventList eventList = new EventList();
+        final FormetaRecordsReader reader = new FormetaRecordsReader();
+
+        reader
+            .setReceiver(new FormetaDecoder())
+            .setReceiver(eventList);
+
+        reader.process(getData("formeta"));
+        reader.closeStream();
+
+        return eventList;
+    }
+
+    private EventList getActual() {
+        final EventList eventList = new EventList();
+        final XmlDecoder reader = new XmlDecoder();
+
+        reader
             .setReceiver(new MarcXmlHandler())
             .setReceiver(new Metamorph(mRulesPath))
-            .setReceiver(resultStream);
+            .setReceiver(eventList);
 
-        inputReader.process(getData("xml"));
-        inputReader.closeStream();
+        reader.process(getData("xml"));
+        reader.closeStream();
 
-        resultReader
-            .setReceiver(new FormetaDecoder())
-            .setReceiver(getValidator(resultStream));
+        return eventList;
+    }
 
-        resultReader.process(getData("formeta"));
-        resultReader.closeStream();
+    private void validate(final EventList aExpected, final EventList aActual) {
+        final Iterator<Event> expectedEvents = aExpected.getEvents().iterator();
+        final Iterator<Event> actualEvents = aActual.getEvents().iterator();
+
+        while (expectedEvents.hasNext() && actualEvents.hasNext()) {
+            final String expected = expectedEvents.next().toString();
+            final String actual = actualEvents.next().toString();
+
+            Assert.assertEquals(expected, actual);
+        }
+
+        Assert.assertFalse("Missing events", expectedEvents.hasNext());
+        Assert.assertFalse("Unexpected events", actualEvents.hasNext());
     }
 
     private Reader getData(final String aExt) {
@@ -74,17 +87,6 @@ public class TransformationTestCase extends Statement {
         catch (final FileNotFoundException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    private StreamValidator getValidator(final EventList aResultStream) {
-        final StreamValidator validator = new StreamValidator(aResultStream.getEvents());
-
-        validator.setErrorHandler(msg -> { throw new AssertionError(msg); });
-        validator.setStrictRecordOrder(mStrictRecordOrder);
-        validator.setStrictKeyOrder(mStrictKeyOrder);
-        validator.setStrictValueOrder(mStrictValueOrder);
-
-        return validator;
     }
 
 }
