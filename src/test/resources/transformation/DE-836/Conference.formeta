@@ -1,0 +1,69 @@
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)1'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'Conference' {
+		'conferenceName': 'World Congress on Intelligent Control and Automation',
+		'corporateBodyNameeNumber': '5th',
+		'conferenceDate': '2004',
+		'conferencePlace': 'Hangzhou, China',
+		'conferenceIdentifier[]' {
+			'': '(DE-588)6079613-3'
+		},
+		'identifierGND[]' {
+			'': '6079613-3'
+		},
+		'conferenceUnit': 'Organizing Committee'
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)1'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)2'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'Conference' {
+		'conferenceName': 'World Congress on Intelligent Control and Automation',
+		'corporateBodyNameeNumber': '5th',
+		'conferencePlace': 'Hangzhou, China',
+		'conferenceIdentifier[]' {
+			'': '(DE-588)6079613-3',
+			'': '(DE-588)1234567-3'
+		},
+		'identifierGND[]' {
+			'': '6079613-3',
+			'': '1234567-3'
+		},
+		'conferenceUnit': 'Organizing Committee. Department of Installation'
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)2'
+		}
+	}
+}
