@@ -13,6 +13,12 @@
     </data>
   </macro>
 
+  <macro name="personNumbering">
+    <data name="$[name]" source="$[field][013] .b">
+      <replace pattern="[,]$" with="" />
+    </data>
+  </macro>
+
   <macro name="personTitle">
     <entity name="$[name][]" flushWith="$[field][013] " sameEntity="true">
       <data name="" source="$[field][013] .c">

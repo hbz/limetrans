@@ -94,6 +94,7 @@
       </any>
     </if>
     <call-macro name="personName"       field="100" />
+    <call-macro name="personNumbering"  field="100" />
     <call-macro name="personTitle"      field="100" />
     <call-macro name="personBio"        field="100" />
     <call-macro name="personRole"       field="100" />
@@ -375,6 +376,7 @@
         </any>
       </if>
       <call-macro name="personName"       field="700" />
+      <call-macro name="personNumbering"  field="700" />
       <call-macro name="personTitle"      field="700" />
       <call-macro name="personBio"        field="700" />
       <call-macro name="personRole"       field="700" />
@@ -395,6 +397,7 @@
         </all>
       </if>
       <call-macro name="personName"       field="100" />
+      <call-macro name="personNumbering"  field="100" />
       <call-macro name="personTitle"      field="100" />
       <call-macro name="personBio"        field="100" />
       <call-macro name="personRole"       field="100" />
@@ -413,6 +416,7 @@
         </all>
       </if>
       <call-macro name="personName"       field="700" />
+      <call-macro name="personNumbering"  field="700" />
       <call-macro name="personTitle"      field="700" />
       <call-macro name="personBio"        field="700" />
       <call-macro name="personRole"       field="700" />

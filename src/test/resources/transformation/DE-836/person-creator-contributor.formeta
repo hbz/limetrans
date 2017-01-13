@@ -230,3 +230,53 @@
 		}
 	}
 }
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)6'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'Monographie'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'Person' {
+		'personName': 'James',
+		'personNumbering': 'II',
+		'personTitle[]' {
+			'': 'King of England.'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Henry',
+			'personNumbering': 'VIII',
+			'personBio': '1491-1547',
+			'personTitle[]' {
+				'': 'King of England'
+			}
+		}
+	},
+	'PersonContributor[]' {
+		'' {
+			'personName': 'Alfonso',
+			'personNumbering': 'X',
+			'personTitle[]' {
+				'': 'King of Castile and Leon'
+			},
+			'personRole[]' {
+				'': '[interviewee.]'
+			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)6'
+		}
+	}
+}
