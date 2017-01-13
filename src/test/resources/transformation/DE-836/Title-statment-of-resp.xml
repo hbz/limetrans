@@ -39,6 +39,9 @@
   </record>
   <record xmlns="http://www.loc.gov/MARC21/slim">
     <controlfield tag="001">6 </controlfield>
+    <datafield tag="240" ind1="1" ind2="2">
+      <subfield code="a">Transactions of the Philological Society (Online)</subfield>
+    </datafield>
     <datafield tag="245" ind1=" " ind2=" ">
       <subfield code="a">Handbuch Körpersoziologie</subfield>
       <subfield code="b">critical perspectives on difference in science and popular culture</subfield>

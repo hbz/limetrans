@@ -122,6 +122,11 @@
   </entity>
 
   <!-- 2xx -->
+  <entity name="TitleUniform">
+    <data name="titleUniform" source="240??.a">
+        <replace pattern="\.?$" with="" />
+    </data>
+  </entity>
   <entity name="TitleStatement[]" flushWith="record">
     <entity name="" flushWith="record">
       <call-macro name="regex-del-punctuation-end" dsource="245??.a" dname="titleMain" />
@@ -147,7 +152,6 @@
       <replace pattern="[.]$" with="" />
     </data>
   </entity>
-
   <entity name="Edition">
     <entity name="edition[]" flushWith="record">
       <data name="" source="250  .a">
