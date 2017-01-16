@@ -152,7 +152,7 @@
   <!-- 2xx -->
   <entity name="TitleUniform">
     <data name="titleUniform" source="240??.a">
-        <replace pattern="\.?$" with="" />
+      <replace pattern="\.?$" with="" />
     </data>
   </entity>
   <entity name="TitleStatement[]" flushWith="record">
