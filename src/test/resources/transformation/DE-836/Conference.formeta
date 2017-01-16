@@ -18,11 +18,11 @@
 		'corporateBodyNameeNumber': '5th',
 		'conferenceDate': '2004',
 		'conferencePlace': 'Hangzhou, China',
-		'conferenceIdentifier[]' {
-			'': '(DE-588)6079613-3'
-		},
 		'identifierGND[]' {
 			'': '6079613-3'
+		},
+		'conferenceIdentifier[]' {
+			'': '(DE-588)6079613-3'
 		},
 		'conferenceUnit': 'Organizing Committee'
 	},
@@ -51,13 +51,13 @@
 		'conferenceName': 'World Congress on Intelligent Control and Automation',
 		'corporateBodyNameeNumber': '5th',
 		'conferencePlace': 'Hangzhou, China',
-		'conferenceIdentifier[]' {
-			'': '(DE-588)6079613-3',
-			'': '(DE-588)1234567-3'
-		},
 		'identifierGND[]' {
 			'': '6079613-3',
 			'': '1234567-3'
+		},
+		'conferenceIdentifier[]' {
+			'': '(DE-588)6079613-3',
+			'': '(DE-588)1234567-3'
 		},
 		'conferenceUnit': 'Organizing Committee. Department of Installation'
 	},
