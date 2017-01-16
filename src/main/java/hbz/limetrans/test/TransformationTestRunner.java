@@ -21,7 +21,7 @@ public class TransformationTestRunner extends ParentRunner<TransformationTestCas
     private final List<TransformationTestCase> mTestCases;
     private final String mName;
 
-    TransformationTestRunner(final Class aClass, final File aDirectory) throws InitializationError {
+    public TransformationTestRunner(final Class aClass, final File aDirectory) throws InitializationError {
         super(aClass);
 
         mName = aDirectory.getName();
