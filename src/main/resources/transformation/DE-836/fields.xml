@@ -484,6 +484,10 @@
       <data name="nonpublicnote" source="856??.x">
         <occurrence only="1" sameEntity="true" />
       </data>
+      <data name="publicnote" source="856??.z">
+        <occurrence only="1" sameEntity="true" />
+      </data>
+      <data name="relatedto" source="856??.3" />
     </entity>
   </entity>
 

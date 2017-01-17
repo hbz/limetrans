@@ -245,6 +245,7 @@
 	},
 	'OnlineAccess[]' {
 		'' {
+			'relatedto': 'Ausführliche Beschreibung',
 			'uri': 'http://www.publicpress.de/index.php?an=Artikeldetail&artid=276'
 		}
 	},
@@ -601,6 +602,7 @@
 	},
 	'OnlineAccess[]' {
 		'' {
+			'relatedto': 'Inhaltsverzeichnis',
 			'uri': 'http://bvbr.bib-bvb.de:8991/F?func=service&doc_library=BVB01&doc_number=016326957&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA'
 		},
 		'' {
@@ -747,6 +749,7 @@
 	},
 	'OnlineAccess[]' {
 		'' {
+			'relatedto': 'Item Resolution URL',
 			'uri': 'http://duepublico.uni-duisburg-essen.de/servlets/DocumentServlet?id=20542',
 			'nonpublicnote': 'This 856 field was generated using the WorldCat Digital Collection Gateway'
 		},

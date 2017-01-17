@@ -180,9 +180,11 @@
 	},
 	'OnlineAccess[]' {
 		'' {
+			'relatedto': 'Inhaltstext',
 			'uri': 'http://deposit.d-nb.de/cgi-bin/dokserv?id=4101741&prov=M&dok_var=1&dok_ext=htm'
 		},
 		'' {
+			'relatedto': 'Inhaltsverzeichnis',
 			'uri': 'http://digitool.hbz-nrw.de:1801/webclient/DeliveryManager?pid=4678265&custom_att_2=simple_viewer'
 		},
 		'' {
@@ -333,6 +335,7 @@
 	},
 	'OnlineAccess[]' {
 		'' {
+			'relatedto': 'Inhaltsverzeichnis',
 			'uri': 'http://d-nb.info/965470997/04'
 		}
 	},

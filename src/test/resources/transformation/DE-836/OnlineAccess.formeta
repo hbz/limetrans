@@ -41,7 +41,10 @@
 	},
 	'OnlineAccess[]' {
 		'' {
-			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795'
+			'relatedto': 'EBSCOhost',
+			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795',
+			'publicnote': 'Full text available from MIT CogNet',
+			'nonpublicnote': 'Inhaltsverzeichnis'
 		}
 	},
 	'xbib[]' {
@@ -68,11 +71,35 @@
 	'OnlineAccess[]' {
 		'' {
 			'uri': 'http://swbplus.bsz-bw.de/bsz000838845inh.htm',
-			'nonpublicnote': 'Inhaltsverzeichnis1'
+			'publicnote': 'Restricted to IEEE Xplore subscribers',
+			'nonpublicnote': 'Inhaltsverzeichnis'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)3'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)4'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
 		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'OnlineAccess[]' {
 		'' {
 			'uri': 'http://digitool.hbz-nrw.de:1801/webclient/DeliveryManager?pid=3723265&custom_att_2=simple_viewer',
-			'nonpublicnote': 'Inhaltsverzeichnis2'
+			'nonpublicnote': 'Inhaltsverzeichnis'
 		},
 		'' {
 			'uri': 'http://cognet.mit.edu/library/books/view?isbn=0262220466'
@@ -80,7 +107,34 @@
 	},
 	'xbib[]' {
 		'' {
-			'uid': '(DE-836)3'
+			'uid': '(DE-836)4'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)5'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'OnlineAccess[]' {
+		'' {
+			'relatedto': 'Publisher description',
+			'uri': 'http://catdir.loc.gov/catdir/description/cam026/94008854.html'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)5'
 		}
 	}
 }

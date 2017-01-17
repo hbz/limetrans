@@ -131,10 +131,12 @@
 			'uri': 'http://www.springerlink.com/link.asp?id=101192'
 		},
 		'' {
-			'uri': 'http://firstsearch.oclc.org'
+			'uri': 'http://firstsearch.oclc.org',
+			'publicnote': 'Address for accessing the journal using authorization number and password through OCLC FirstSearch Electronic Collections Online'
 		},
 		'' {
-			'uri': 'http://firstsearch.oclc.org/journal=0003-889x;screen=info;ECOIP'
+			'uri': 'http://firstsearch.oclc.org/journal=0003-889x;screen=info;ECOIP',
+			'publicnote': 'Address for accessing the journal from an authorized IP address through OCLC FirstSearch Electronic Collections Online'
 		}
 	},
 	'xbib[]' {
@@ -230,6 +232,7 @@
 			'uri': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/kdsta10.zip'
 		},
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1000900'
 		},
 		'' {
@@ -320,6 +323,7 @@
 	},
 	'OnlineAccess[]' {
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2009426'
 		}
 	},
@@ -400,6 +404,7 @@
 	},
 	'OnlineAccess[]' {
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2009639'
 		}
 	},
@@ -480,6 +485,7 @@
 	},
 	'OnlineAccess[]' {
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1030100'
 		}
 	},
@@ -602,9 +608,12 @@
 	},
 	'OnlineAccess[]' {
 		'' {
-			'uri': 'http://www.blackwellreference.com/subscriber/uid=3/book?show=all&id=g9780631220671_9780631220671'
+			'relatedto': 'Blackwell Reference Online',
+			'uri': 'http://www.blackwellreference.com/subscriber/uid=3/book?show=all&id=g9780631220671_9780631220671',
+			'publicnote': 'An electronic book accessible through the World Wide Web; click for information'
 		},
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=44970'
 		}
 	},
@@ -669,10 +678,12 @@
 			'uri': 'http://www.ingenta.com/journals/browse/oecd/0304341x?mode=direct'
 		},
 		'' {
-			'uri': 'http://firstsearch.oclc.org'
+			'uri': 'http://firstsearch.oclc.org',
+			'publicnote': 'Address for accessing the journal using authorization number and password through OCLC FirstSearch Electronic Collections Online'
 		},
 		'' {
-			'uri': 'http://firstsearch.oclc.org/journal=0304-341x;screen=info;ECOIP'
+			'uri': 'http://firstsearch.oclc.org/journal=0304-341x;screen=info;ECOIP',
+			'publicnote': 'Address for accessing the journal from an authorized IP address through OCLC FirstSearch Electronic Collections Online'
 		}
 	},
 	'xbib[]' {
@@ -778,6 +789,7 @@
 			'uri': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext95/cormc10.zip'
 		},
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2009672'
 		},
 		'' {
@@ -877,6 +889,7 @@
 			'uri': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/rwfrs10.zip'
 		},
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1085058'
 		},
 		'' {
