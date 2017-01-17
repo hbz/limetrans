@@ -40,15 +40,18 @@
 			'titleMain': 'International journal of heat and mass transfer'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Oxford',
-			'': 'New York'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Pergamon Press'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Oxford',
+				'': 'New York'
+			},
+			'name[]' {
+				'': 'Pergamon Press'
+			},
+			'chronology[]' {
+				'': '1960-'
+			}
 		}
 	},
 	'DateProper' {
@@ -118,6 +121,24 @@
 	'TitleStatement[]' {
 		'' {
 			'titleMain': 'Archiv der Mathematik'
+		}
+	},
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Basel'
+			},
+			'name[]' {
+				'': 'Birkhäuser Verlag'
+			}
+		},
+		'' {
+			'place[]' {
+				'': 'Basel'
+			},
+			'name[]' {
+				'': 'Springer'
+			}
 		}
 	},
 	'OnlineAccess[]' {
@@ -196,14 +217,17 @@
 			'titleMain': 'A kidnapped Santa Claus'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Champaign, Ill.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Project Gutenberg'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Champaign, Ill.'
+			},
+			'name[]' {
+				'': 'Project Gutenberg'
+			},
+			'chronology[]' {
+				'': '[199-?]'
+			}
 		}
 	},
 	'DateProper' {
@@ -298,14 +322,17 @@
 			'titleMain': 'The god-idea of the ancients or sex in religion'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Champaign, Ill.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Project Gutenberg'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Champaign, Ill.'
+			},
+			'name[]' {
+				'': 'Project Gutenberg'
+			},
+			'chronology[]' {
+				'': '1999'
+			}
 		}
 	},
 	'DateProper' {
@@ -384,14 +411,17 @@
 			'titleMain': 'The new McGuffey first reader'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Champaign, Ill.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Project Gutenberg'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Champaign, Ill.'
+			},
+			'name[]' {
+				'': 'Project Gutenberg'
+			},
+			'chronology[]' {
+				'': '[199-?]'
+			}
 		}
 	},
 	'DateProper' {
@@ -465,14 +495,17 @@
 			'titleMain': 'A journey from this world to the next'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Champaign, Ill.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Project Gutenberg'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Champaign, Ill.'
+			},
+			'name[]' {
+				'': 'Project Gutenberg'
+			},
+			'chronology[]' {
+				'': '[199-?]'
+			}
 		}
 	},
 	'DateProper' {
@@ -562,14 +595,17 @@
 			'': '[1st pbk. ed., 2000].'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Malden, Mass.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Blackwell'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Malden, Mass.'
+			},
+			'name[]' {
+				'': 'Blackwell'
+			},
+			'chronology[]' {
+				'': '2000, 1998'
+			}
 		}
 	},
 	'DateProper' {
@@ -663,14 +699,14 @@
 			'titleMain': 'Nuclear law bulletin'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Paris'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Organisation for Economic Co-Operation and Development'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Paris'
+			},
+			'name[]' {
+				'': 'Organisation for Economic Co-Operation and Development'
+			}
 		}
 	},
 	'OnlineAccess[]' {
@@ -742,14 +778,17 @@
 			'titleMain': 'The life and death of Cormac the Skald'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Champaign, Ill.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Project Gutenberg'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Champaign, Ill.'
+			},
+			'name[]' {
+				'': 'Project Gutenberg'
+			},
+			'chronology[]' {
+				'': '[199-?]'
+			}
 		}
 	},
 	'DateProper' {
@@ -853,14 +892,17 @@
 			'titleMain': 'Rewards and fairies'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Champaign, Ill.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Project Gutenberg'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Champaign, Ill.'
+			},
+			'name[]' {
+				'': 'Project Gutenberg'
+			},
+			'chronology[]' {
+				'': '[199-?]'
+			}
 		}
 	},
 	'DateProper' {

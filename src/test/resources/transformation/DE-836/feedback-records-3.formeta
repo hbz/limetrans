@@ -39,14 +39,17 @@
 			'': '[1. - 16. Tsd.]'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Köln ;Berlin'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Kiepenheuer & Witsch'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Köln ;Berlin'
+			},
+			'name[]' {
+				'': 'Kiepenheuer & Witsch'
+			},
+			'chronology[]' {
+				'': '1958'
+			}
 		}
 	},
 	'DateProper' {
@@ -140,14 +143,14 @@
 			'titleMain': 'Der Rauch verbindet die Städte nicht mehr'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Köln'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'König'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Köln'
+			},
+			'name[]' {
+				'': 'König'
+			}
 		}
 	},
 	'Extent' {
@@ -248,14 +251,17 @@
 			'titleMain': 'Sportökonomie'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Wiesbaden'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Gabler'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Wiesbaden'
+			},
+			'name[]' {
+				'': 'Gabler'
+			},
+			'chronology[]' {
+				'': '2002'
+			}
 		}
 	},
 	'DateProper' {

@@ -46,14 +46,14 @@
 			'titleMain': 'Chemie in unserer Zeit'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Weinheim'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Wiley-VCH'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Weinheim'
+			},
+			'name[]' {
+				'': 'Wiley-VCH'
+			}
 		}
 	},
 	'RSWK[]' {
@@ -135,15 +135,18 @@
 			'titleMain': 'Chemie in unserer Zeit'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Weinheim'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Verlag & Co. KGaA',
-			'': '[Verlag Chemie]'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Weinheim'
+			},
+			'name[]' {
+				'': 'Verlag & Co. KGaA',
+				'': '[Verlag Chemie]'
+			},
+			'chronology[]' {
+				'': '1967-'
+			}
 		}
 	},
 	'DateProper' {

@@ -188,19 +188,22 @@
     </entity>
   </entity>
 
-  <entity name="PublicationPlace">
-    <entity name="printingPlace[]" flushWith="record">
-      <call-macro name="regex-del-punctuation-end" dsource="260[ 23] .a" dname="" />
-    </entity>
-  </entity>
-  <entity name="PublisherName">
-    <entity name="name[]" flushWith="record">
-      <call-macro name="regex-del-punctuation-end" dsource="260[ 23] .b" dname="" />
+  <entity name="PublisherName[]" flushWith="record">
+    <entity name="" flushWith="260[ 23] |264[ 23]1" sameEntity="true">
+      <entity name="place[]" flushWith="260[ 23] |264[ 23]1" sameEntity="true">
+        <call-macro name="regex-del-punctuation-end" dsource="260[ 23] .a|264[ 23]1.a" dname="" />
+      </entity>
+      <entity name="name[]" flushWith="260[ 23] |264[ 23]1" sameEntity="true">
+        <call-macro name="regex-del-punctuation-end" dsource="260[ 23] .b|264[ 23]1.b" dname="" />
+      </entity>
+      <entity name="chronology[]" flushWith="260[ 23] |264[ 23]1" sameEntity="true">
+        <call-macro name="regex-del-punctuation-end" dsource="260[ 23] .c|264[ 23]1.c" dname="" />
+      </entity>
     </entity>
   </entity>
   <entity name="DateProper">
     <entity name="date[]" flushWith="record">
-      <call-macro name="regex-del-punctuation-end" dsource="260[ 23] .c" dname="" />
+      <call-macro name="regex-del-punctuation-end" dsource="260[ 23] .c|264[ 23]1.c" dname="" />
     </entity>
   </entity>
 

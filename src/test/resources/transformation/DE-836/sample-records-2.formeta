@@ -44,14 +44,17 @@
 			'': '[3rd ed.].'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Washington, D.C.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Administrative Office of the U.S. Courts, Space and Facilities Division'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Washington, D.C.'
+			},
+			'name[]' {
+				'': 'Administrative Office of the U.S. Courts, Space and Facilities Division'
+			},
+			'chronology[]' {
+				'': '[1991-'
+			}
 		}
 	},
 	'DateProper' {
@@ -128,14 +131,17 @@
 			'': '1st ed.'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Kalamazoo, MI'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'New Issues/Western Michigan University'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Kalamazoo, MI'
+			},
+			'name[]' {
+				'': 'New Issues/Western Michigan University'
+			},
+			'chronology[]' {
+				'': '2001'
+			}
 		}
 	},
 	'DateProper' {
@@ -213,14 +219,17 @@
 			'titleMain': 'Rhön, Spessart, Vogelsberg'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Geseke'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Publicpress'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Geseke'
+			},
+			'name[]' {
+				'': 'Publicpress'
+			},
+			'chronology[]' {
+				'': '2006, [2006]'
+			}
 		}
 	},
 	'DateProper' {
@@ -306,14 +315,14 @@
 			'titleMain': 'The American journal of clinical nutrition'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Bethesda, Md.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'ASN'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Bethesda, Md.'
+			},
+			'name[]' {
+				'': 'ASN'
+			}
 		}
 	},
 	'Description' {
@@ -378,14 +387,17 @@
 			'': 'Repr.'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Birmingham'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Wrox Press'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Birmingham'
+			},
+			'name[]' {
+				'': 'Wrox Press'
+			},
+			'chronology[]' {
+				'': '2000'
+			}
 		}
 	},
 	'DateProper' {
@@ -459,14 +471,17 @@
 			'titleMain': 'Beginning PHP 5'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Indianapolis, Ind.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Wiley'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Indianapolis, Ind.'
+			},
+			'name[]' {
+				'': 'Wiley'
+			},
+			'chronology[]' {
+				'': '2004'
+			}
 		}
 	},
 	'DateProper' {
@@ -571,14 +586,17 @@
 			'': '2nd ed.'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Hoboken, N.J.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Wiley'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Hoboken, N.J.'
+			},
+			'name[]' {
+				'': 'Wiley'
+			},
+			'chronology[]' {
+				'': '2006'
+			}
 		}
 	},
 	'DateProper' {
@@ -675,14 +693,17 @@
 			'': '2nd ed.'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Hoboken, NJ'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Wiley'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Hoboken, NJ'
+			},
+			'name[]' {
+				'': 'Wiley'
+			},
+			'chronology[]' {
+				'': 'c 2007'
+			}
 		}
 	},
 	'DateProper' {
@@ -814,14 +835,17 @@
 			'titleMain': 'My Evernote'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Indianapolis, Indiana'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Que'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Indianapolis, Indiana'
+			},
+			'name[]' {
+				'': 'Que'
+			},
+			'chronology[]' {
+				'': '[2012]'
+			}
 		}
 	},
 	'DateProper' {

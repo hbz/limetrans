@@ -61,14 +61,17 @@
 			'titleMain': 'What is cognitive science?'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Cambridge, Mass.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'MIT Press'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Cambridge, Mass.'
+			},
+			'name[]' {
+				'': 'MIT Press'
+			},
+			'chronology[]' {
+				'': '1993'
+			}
 		}
 	},
 	'DateProper' {
