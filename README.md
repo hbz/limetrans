@@ -63,7 +63,8 @@ By now, limetrans is written to be used with [Elasticsearch](https://www.elastic
     "update" : false,
     "delete" : false,
     "bulkAction" : "index"
-  }
+  },
+  "pretty-printing" : false
 }
 ```
 
