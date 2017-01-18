@@ -367,6 +367,21 @@
       <data name="" source="500  .a" />
     </entity>
   </entity>
+  <entity name="Abstract">
+    <entity name="abstract[]" flushWith="record">
+      <data name="" source="5203 .[ab]" />
+    </entity>
+  </entity>
+  <entity name="Recension">
+    <entity name="abstract[]" flushWith="record">
+      <data name="" source="5201 .[ab]" />
+    </entity>
+  </entity>
+  <entity name="Summary">
+    <entity name="abstract[]" flushWith="record">
+      <data name="" source="520  .[ab]" />
+    </entity>
+  </entity>
 
   <!-- 6xx -->
   <entity name="RSWK[]" flushWith="record">
