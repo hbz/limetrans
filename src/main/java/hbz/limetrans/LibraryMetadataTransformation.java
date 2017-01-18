@@ -27,6 +27,7 @@ public class LibraryMetadataTransformation {
     private final String mJsonPath;
     private final String mRulesPath;
     private final boolean mNormalizeUnicode;
+    private final boolean mPrettyPrinting;
 
     public LibraryMetadataTransformation(final Settings aSettings) throws IOException {
         mLogger.debug("Settings: {}", aSettings.getAsMap());
@@ -38,6 +39,7 @@ public class LibraryMetadataTransformation {
         }
 
         final Settings outputSettings = aSettings.getAsSettings("output");
+        mPrettyPrinting = outputSettings.getAsBoolean("pretty-printing", false);
 
         mElasticsearchSettings = outputSettings.containsSetting("elasticsearch") ?
             outputSettings.getAsSettings("elasticsearch") : null;
@@ -80,9 +82,10 @@ public class LibraryMetadataTransformation {
         mLogger.info("Writing Formeta file: {}", mFormetaPath);
 
         final FormetaEncoder formetaEncoder = new FormetaEncoder();
+        formetaEncoder.setStyle(mPrettyPrinting ?
+                FormatterStyle.MULTILINE : FormatterStyle.VERBOSE);
 
         aTee.addReceiver(formetaEncoder);
-        formetaEncoder.setStyle(FormatterStyle.MULTILINE);
         formetaEncoder.setReceiver(new ObjectWriter<>(mFormetaPath));
     }
 
@@ -94,6 +97,7 @@ public class LibraryMetadataTransformation {
         mLogger.info("Writing JSON file: {}", mJsonPath);
 
         final JsonEncoder jsonEncoder = new JsonEncoder();
+        jsonEncoder.setPrettyPrinting(mPrettyPrinting);
 
         aTee.addReceiver(jsonEncoder);
         jsonEncoder.setReceiver(new ObjectWriter<>(mJsonPath));
