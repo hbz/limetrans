@@ -32,7 +32,7 @@ public class EventStackEntry {
     private final EventStackEntry mParent;
     private final Event mEvent;
 
-    private Integer mPosition = null;
+    private int mPosition = 0;
 
     public EventStackEntry(final Event aEvent, final EventStackEntry aParent) {
         mEvent = aEvent;
@@ -76,12 +76,12 @@ public class EventStackEntry {
 
     private void incrementPosition() {
         if (mParent == null || mEvent.getName().endsWith(ARRAY_MARKER)) {
-            mPosition = mPosition == null ? 1 : mPosition + 1;
+            ++mPosition;
         }
     }
 
     private void appendPosition(final StringBuilder aBuilder) {
-        if (mPosition != null) {
+        if (mPosition > 0) {
             aBuilder
                 .append("<")
                 .append(mPosition)
