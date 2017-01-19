@@ -8,6 +8,7 @@
   <entity name="RecordIdentifier">
     <data name="identifierForTheRecord" source="@id" />
   </entity>
+
   <combine name="@date1" value="${date1}">
     <if>
       <all>
@@ -46,6 +47,7 @@
   <entity name="DateLast">
     <data name="date" source="@date2" />
   </entity>
+
   <data name="@language_source_all" source="008">
     <substring start="35" end="38" />
   </data>
@@ -62,6 +64,7 @@
       <data name="languageSource" source="@language_source" />
     </entity>
   </entity>
+
   <entity name="IdentifierISBN[]" flushWith="record">
     <entity name="" flushWith="020  " sameEntity="true">
       <entity name="identifierISBN[]" flushWith="020  " sameEntity="true">
