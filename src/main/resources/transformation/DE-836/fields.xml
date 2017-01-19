@@ -95,6 +95,17 @@
     </entity>
   </entity>
 
+  <entity name="IdentifierDOI[]" flushWith="record">
+    <entity name="" flushWith="0247?" sameEntity="true">
+      <if>
+        <data source="0247?.2">
+          <equals string="doi" />
+        </data>
+      </if>
+      <data name="standardNumber" source="0247?.a" />
+    </entity>
+  </entity>
+
   <!-- 1xx -->
   <entity name="Person" flushWith="record">
     <if>
