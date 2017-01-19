@@ -65,6 +65,17 @@
     </entity>
   </entity>
 
+  <entity name="IdentifierZDB[]" flushWith="record">
+    <entity name="" flushWith="0167 " sameEntity="true">
+      <if>
+        <data source="0167 .2">
+          <equals string="DE-600" />
+        </data>
+      </if>
+      <data name="identifierZDB" source="0167 .a" />
+    </entity>
+  </entity>
+
   <entity name="IdentifierISBN[]" flushWith="record">
     <entity name="" flushWith="020  " sameEntity="true">
       <entity name="identifierISBN[]" flushWith="020  " sameEntity="true">
