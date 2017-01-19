@@ -16,14 +16,17 @@
 			'': '2010'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'New Delhi'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'SAGE'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'New Delhi'
+			},
+			'name[]' {
+				'': 'SAGE'
+			},
+			'chronology[]' {
+				'': '[2010]'
+			}
 		}
 	},
 	'DateProper' {
@@ -52,14 +55,14 @@
 			'': 'keine Angabe'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'New Delhi'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'SAGE'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'New Delhi'
+			},
+			'name[]' {
+				'': 'SAGE'
+			}
 		}
 	},
 	'xbib[]' {
@@ -86,16 +89,20 @@
 			'': '2011'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'New Delhi',
-			'': 'Thousand Oaks, Calif.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'SAGE',
-			'': '[Sage Publications]'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'New Delhi',
+				'': 'Thousand Oaks, Calif.'
+			},
+			'name[]' {
+				'': 'SAGE',
+				'': '[Sage Publications]'
+			},
+			'chronology[]' {
+				'': '201-?',
+				'': '2011'
+			}
 		}
 	},
 	'DateProper' {
@@ -130,16 +137,28 @@
 			'': '2012'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'New Delhi',
-			'': 'Thousand Oaks, Calif.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'SAGE',
-			'': '[Sage Publications]'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'New Delhi'
+			},
+			'name[]' {
+				'': 'SAGE'
+			},
+			'chronology[]' {
+				'': '2010-2011'
+			}
+		},
+		'' {
+			'place[]' {
+				'': 'Thousand Oaks, Calif.'
+			},
+			'name[]' {
+				'': '[Sage Publications]'
+			},
+			'chronology[]' {
+				'': '2010-[2012]'
+			}
 		}
 	},
 	'DateProper' {
@@ -151,6 +170,139 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)4'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)5'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Oxford',
+				'': 'München'
+			},
+			'name[]' {
+				'': 'Kopaed',
+				'': 'Oxford University Press on behalf of the International Studies Association'
+			},
+			'chronology[]' {
+				'': '[2016-]',
+				'': '2015, 2015-'
+			}
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '[2016-]',
+			'': '2015, 2015-'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)5'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)6'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Oxford'
+			},
+			'name[]' {
+				'': 'Oxford University Press on behalf of the International Studies Association'
+			},
+			'chronology[]' {
+				'': '[2016-]'
+			}
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '[2016-]'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)6'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)7'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Oxford'
+			},
+			'name[]' {
+				'': 'Oxford University Press on behalf of the International Studies Association'
+			},
+			'chronology[]' {
+				'': '[2016-]'
+			}
+		},
+		'' {
+			'place[]' {
+				'': 'Los Angeles, Calif'
+			},
+			'name[]' {
+				'': 'Sage'
+			},
+			'chronology[]' {
+				'': '2009'
+			}
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '[2016-]',
+			'': '2009'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)7'
 		}
 	}
 }

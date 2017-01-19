@@ -40,15 +40,18 @@
 			'titleMain': 'International journal of heat and mass transfer'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Oxford',
-			'': 'New York'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Pergamon Press'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Oxford',
+				'': 'New York'
+			},
+			'name[]' {
+				'': 'Pergamon Press'
+			},
+			'chronology[]' {
+				'': '1960-'
+			}
 		}
 	},
 	'DateProper' {
@@ -120,6 +123,24 @@
 			'titleMain': 'Archiv der Mathematik'
 		}
 	},
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Basel'
+			},
+			'name[]' {
+				'': 'Birkhäuser Verlag'
+			}
+		},
+		'' {
+			'place[]' {
+				'': 'Basel'
+			},
+			'name[]' {
+				'': 'Springer'
+			}
+		}
+	},
 	'OnlineAccess[]' {
 		'' {
 			'uri': 'http://link.springer.com/journal/13'
@@ -131,10 +152,12 @@
 			'uri': 'http://www.springerlink.com/link.asp?id=101192'
 		},
 		'' {
-			'uri': 'http://firstsearch.oclc.org'
+			'uri': 'http://firstsearch.oclc.org',
+			'publicnote': 'Address for accessing the journal using authorization number and password through OCLC FirstSearch Electronic Collections Online'
 		},
 		'' {
-			'uri': 'http://firstsearch.oclc.org/journal=0003-889x;screen=info;ECOIP'
+			'uri': 'http://firstsearch.oclc.org/journal=0003-889x;screen=info;ECOIP',
+			'publicnote': 'Address for accessing the journal from an authorized IP address through OCLC FirstSearch Electronic Collections Online'
 		}
 	},
 	'xbib[]' {
@@ -194,14 +217,17 @@
 			'titleMain': 'A kidnapped Santa Claus'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Champaign, Ill.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Project Gutenberg'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Champaign, Ill.'
+			},
+			'name[]' {
+				'': 'Project Gutenberg'
+			},
+			'chronology[]' {
+				'': '[199-?]'
+			}
 		}
 	},
 	'DateProper' {
@@ -222,6 +248,11 @@
 			}
 		}
 	},
+	'Summary' {
+		'abstract[]' {
+			'': 'Unhappy because Santa has been spreading too much contentment among the children, the five Daemons devise a plan to kidnap him.'
+		}
+	},
 	'OnlineAccess[]' {
 		'' {
 			'uri': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/kdsta10.txt'
@@ -230,6 +261,7 @@
 			'uri': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/kdsta10.zip'
 		},
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1000900'
 		},
 		'' {
@@ -295,14 +327,17 @@
 			'titleMain': 'The god-idea of the ancients or sex in religion'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Champaign, Ill.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Project Gutenberg'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Champaign, Ill.'
+			},
+			'name[]' {
+				'': 'Project Gutenberg'
+			},
+			'chronology[]' {
+				'': '1999'
+			}
 		}
 	},
 	'DateProper' {
@@ -320,6 +355,7 @@
 	},
 	'OnlineAccess[]' {
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2009426'
 		}
 	},
@@ -380,14 +416,17 @@
 			'titleMain': 'The new McGuffey first reader'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Champaign, Ill.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Project Gutenberg'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Champaign, Ill.'
+			},
+			'name[]' {
+				'': 'Project Gutenberg'
+			},
+			'chronology[]' {
+				'': '[199-?]'
+			}
 		}
 	},
 	'DateProper' {
@@ -400,6 +439,7 @@
 	},
 	'OnlineAccess[]' {
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2009639'
 		}
 	},
@@ -460,14 +500,17 @@
 			'titleMain': 'A journey from this world to the next'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Champaign, Ill.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Project Gutenberg'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Champaign, Ill.'
+			},
+			'name[]' {
+				'': 'Project Gutenberg'
+			},
+			'chronology[]' {
+				'': '[199-?]'
+			}
 		}
 	},
 	'DateProper' {
@@ -480,6 +523,7 @@
 	},
 	'OnlineAccess[]' {
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1030100'
 		}
 	},
@@ -556,14 +600,17 @@
 			'': '[1st pbk. ed., 2000].'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Malden, Mass.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Blackwell'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Malden, Mass.'
+			},
+			'name[]' {
+				'': 'Blackwell'
+			},
+			'chronology[]' {
+				'': '2000, 1998'
+			}
 		}
 	},
 	'DateProper' {
@@ -602,9 +649,12 @@
 	},
 	'OnlineAccess[]' {
 		'' {
-			'uri': 'http://www.blackwellreference.com/subscriber/uid=3/book?show=all&id=g9780631220671_9780631220671'
+			'relatedto': 'Blackwell Reference Online',
+			'uri': 'http://www.blackwellreference.com/subscriber/uid=3/book?show=all&id=g9780631220671_9780631220671',
+			'publicnote': 'An electronic book accessible through the World Wide Web; click for information'
 		},
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=44970'
 		}
 	},
@@ -654,14 +704,14 @@
 			'titleMain': 'Nuclear law bulletin'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Paris'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Organisation for Economic Co-Operation and Development'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Paris'
+			},
+			'name[]' {
+				'': 'Organisation for Economic Co-Operation and Development'
+			}
 		}
 	},
 	'OnlineAccess[]' {
@@ -669,10 +719,12 @@
 			'uri': 'http://www.ingenta.com/journals/browse/oecd/0304341x?mode=direct'
 		},
 		'' {
-			'uri': 'http://firstsearch.oclc.org'
+			'uri': 'http://firstsearch.oclc.org',
+			'publicnote': 'Address for accessing the journal using authorization number and password through OCLC FirstSearch Electronic Collections Online'
 		},
 		'' {
-			'uri': 'http://firstsearch.oclc.org/journal=0304-341x;screen=info;ECOIP'
+			'uri': 'http://firstsearch.oclc.org/journal=0304-341x;screen=info;ECOIP',
+			'publicnote': 'Address for accessing the journal from an authorized IP address through OCLC FirstSearch Electronic Collections Online'
 		}
 	},
 	'xbib[]' {
@@ -731,14 +783,17 @@
 			'titleMain': 'The life and death of Cormac the Skald'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Champaign, Ill.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Project Gutenberg'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Champaign, Ill.'
+			},
+			'name[]' {
+				'': 'Project Gutenberg'
+			},
+			'chronology[]' {
+				'': '[199-?]'
+			}
 		}
 	},
 	'DateProper' {
@@ -778,6 +833,7 @@
 			'uri': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext95/cormc10.zip'
 		},
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=2009672'
 		},
 		'' {
@@ -841,14 +897,17 @@
 			'titleMain': 'Rewards and fairies'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Champaign, Ill.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Project Gutenberg'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Champaign, Ill.'
+			},
+			'name[]' {
+				'': 'Project Gutenberg'
+			},
+			'chronology[]' {
+				'': '[199-?]'
+			}
 		}
 	},
 	'DateProper' {
@@ -877,6 +936,7 @@
 			'uri': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/rwfrs10.zip'
 		},
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1085058'
 		},
 		'' {

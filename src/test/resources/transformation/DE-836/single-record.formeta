@@ -61,14 +61,17 @@
 			'titleMain': 'What is cognitive science?'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Cambridge, Mass.'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'MIT Press'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Cambridge, Mass.'
+			},
+			'name[]' {
+				'': 'MIT Press'
+			},
+			'chronology[]' {
+				'': '1993'
+			}
 		}
 	},
 	'DateProper' {
@@ -93,10 +96,12 @@
 	},
 	'OnlineAccess[]' {
 		'' {
+			'relatedto': 'EBSCOhost',
 			'uri': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795'
 		},
 		'' {
-			'uri': 'http://cognet.mit.edu/library/books/view?isbn=0262220466'
+			'uri': 'http://cognet.mit.edu/library/books/view?isbn=0262220466',
+			'publicnote': 'Full text available from MIT CogNet'
 		}
 	},
 	'xbib[]' {

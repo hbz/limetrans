@@ -41,14 +41,17 @@
 			'titleMain': 'Imago'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'München'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Kopaed'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'München'
+			},
+			'name[]' {
+				'': 'Kopaed'
+			},
+			'chronology[]' {
+				'': '2015, 2015-'
+			}
 		}
 	},
 	'DateProper' {
@@ -121,6 +124,24 @@
 	'TitleStatement[]' {
 		'' {
 			'titleMain': 'Journal of global security studies'
+		}
+	},
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Oxford'
+			},
+			'name[]' {
+				'': 'Oxford University Press on behalf of the International Studies Association'
+			},
+			'chronology[]' {
+				'': '[2016-]'
+			}
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '[2016-]'
 		}
 	},
 	'OnlineAccess[]' {

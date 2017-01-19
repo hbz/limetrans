@@ -46,14 +46,19 @@
 			'titleMain': 'Chemie in unserer Zeit'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Weinheim'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Weinheim'
+			},
+			'name[]' {
+				'': 'Wiley-VCH'
+			}
 		}
 	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Wiley-VCH'
+	'Summary' {
+		'abstract[]' {
+			'': 'Enthält "Mini-Chuiz" (extra paginiert).'
 		}
 	},
 	'RSWK[]' {
@@ -135,15 +140,18 @@
 			'titleMain': 'Chemie in unserer Zeit'
 		}
 	},
-	'PublicationPlace' {
-		'printingPlace[]' {
-			'': 'Weinheim'
-		}
-	},
-	'PublisherName' {
-		'name[]' {
-			'': 'Verlag & Co. KGaA',
-			'': '[Verlag Chemie]'
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Weinheim'
+			},
+			'name[]' {
+				'': 'Verlag & Co. KGaA',
+				'': '[Verlag Chemie]'
+			},
+			'chronology[]' {
+				'': '1967-'
+			}
 		}
 	},
 	'DateProper' {
