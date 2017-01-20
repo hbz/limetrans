@@ -1,0 +1,15 @@
+{
+  "input" : {
+    "queue" : {
+      "path" : "src/test/resources/limetrans/input/",
+      "pattern" : "input-queue-*.xml",
+      "patterns" : ["input-queue-{1,2}.xml", "input-queue-{3,4}.xml"],
+      "sort_by" : "lastmodified",
+      "order" : "desc",
+      "max" : 2
+    }
+  },
+  "output" : {
+    "json" : "dummy"
+  }
+}

@@ -91,12 +91,22 @@ public class FileQueue implements Iterable<String> {
 
         mLogger.debug("Settings: {}", aSettings.getAsMap());
 
-        final String path = aSettings.get("path");
-        final String pattern = aSettings.get("pattern");
+        if (aSettings.containsSetting("patterns")) {
+            for (final String pattern : aSettings.getAsArray("patterns")) {
+                add(aSettings, pattern);
+            }
+        }
+        else {
+            add(aSettings, aSettings.get("pattern"));
+        }
+    }
 
+    private void add(final Settings aSettings, final String pattern) throws IOException {
         if (pattern == null) {
             return;
         }
+
+        final String path = aSettings.get("path");
 
         final Queue<PathFile> pathFiles = new Finder().find(
                 aSettings.get("base"), aSettings.get("basepattern"),

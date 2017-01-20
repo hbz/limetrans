@@ -67,6 +67,16 @@ public class LibraryMetadataTransformationTest {
     }
 
     @Test
+    public void testMultiplePatterns() throws IOException {
+        testInputQueueSize("multiple-patterns", 4);
+    }
+
+    @Test
+    public void testMultiplePatternsMax() throws IOException {
+        testInputQueueSize("multiple-patterns-max", 2);
+    }
+
+    @Test
     public void testUnicodeNormalizationComposed() throws IOException {
         testEqualsReference("unicode-normalization-composed");
     }
