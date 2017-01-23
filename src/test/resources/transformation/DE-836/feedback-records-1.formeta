@@ -8,9 +8,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'hrsg. von der Gesellschaft Deutscher Chemiker'
 	},
-	'ChronologyAndEnumeration' {
-		'value': '1.1967 -'
-	},
 	'dc' {
 		'format[]' {
 			'': 'keine Angabe'
@@ -29,6 +26,11 @@
 		'' {
 			'language': 'Deutsch',
 			'languageSource': 'ger'
+		}
+	},
+	'IdentifierZDB[]' {
+		'' {
+			'identifierZDB': '6904-8'
 		}
 	},
 	'IdentifierISSN[]' {
@@ -55,6 +57,9 @@
 				'': 'Wiley-VCH'
 			}
 		}
+	},
+	'ChronologyAndEnumeration' {
+		'value': '1.1967 -'
 	},
 	'Summary' {
 		'abstract[]' {
@@ -87,6 +92,12 @@
 			}
 		}
 	},
+	'DescriptionOfRelatedEditions[]' {
+		'' {
+			'prefix': 'Internetausg.',
+			'description': 'Chemie in unserer Zeit'
+		}
+	},
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)ocn231018688'
@@ -99,9 +110,6 @@
 	},
 	'DateFirst' {
 		'date': '1967'
-	},
-	'ChronologyAndEnumeration' {
-		'value': 'Vol. 1, issue 1 (März 1967)-'
 	},
 	'dc' {
 		'format[]' {
@@ -159,10 +167,18 @@
 			'': '1967-'
 		}
 	},
+	'ChronologyAndEnumeration' {
+		'value': 'Vol. 1, issue 1 (März 1967)-'
+	},
 	'Description' {
 		'description[]' {
 			'': 'Title from table of contents screen (Wiley InterScience; viewed: 10/6/2006).',
 			'': 'Published: Weinheim : Verlag GmbH & Co. KGaA : [Verlag Chemie], 1967- ; published: Weinheim : Verlag GmbH & Co. KGaA : [VCH Verlagsgesellschaft mbH], <1988->; published: Weinheim : Wiley-VCH Verlag GmbH & Co. KGaA, <2005->'
+		}
+	},
+	'DescriptionOfRelatedEditions[]' {
+		'' {
+			'description': 'Chemie in unserer Zeit'
 		}
 	},
 	'OnlineAccess[]' {

@@ -8,6 +8,7 @@
   <entity name="RecordIdentifier">
     <data name="identifierForTheRecord" source="@id" />
   </entity>
+
   <combine name="@date1" value="${date1}">
     <if>
       <all>
@@ -46,6 +47,7 @@
   <entity name="DateLast">
     <data name="date" source="@date2" />
   </entity>
+
   <data name="@language_source_all" source="008">
     <substring start="35" end="38" />
   </data>
@@ -62,6 +64,18 @@
       <data name="languageSource" source="@language_source" />
     </entity>
   </entity>
+
+  <entity name="IdentifierZDB[]" flushWith="record">
+    <entity name="" flushWith="0167 " sameEntity="true">
+      <if>
+        <data source="0167 .2">
+          <equals string="DE-600" />
+        </data>
+      </if>
+      <data name="identifierZDB" source="0167 .a" />
+    </entity>
+  </entity>
+
   <entity name="IdentifierISBN[]" flushWith="record">
     <entity name="" flushWith="020  " sameEntity="true">
       <entity name="identifierISBN[]" flushWith="020  " sameEntity="true">
@@ -78,6 +92,17 @@
   <entity name="IdentifierISSN[]" flushWith="record">
     <entity name="" flushWith="022? " sameEntity="true">
       <data name="identifierISSN" source="022? .a" />
+    </entity>
+  </entity>
+
+  <entity name="IdentifierDOI[]" flushWith="record">
+    <entity name="" flushWith="0247?" sameEntity="true">
+      <if>
+        <data source="0247?.2">
+          <equals string="doi" />
+        </data>
+      </if>
+      <data name="standardNumber" source="0247?.a" />
     </entity>
   </entity>
 
@@ -342,7 +367,9 @@
 
   <!-- 301-399 -->
   <entity name="ChronologyAndEnumeration">
-    <data name="value" source="3620 .a" />
+    <concat name="value" delimiter=" ; ">
+      <data source="3620 .a" />
+    </concat>
   </entity>
 
   <!-- 4xx -->
@@ -474,10 +501,30 @@
       <call-macro name="identifierGND"    field="700" />
     </entity>
   </entity>
+
+  <entity name="DescriptionOfRelatedEditions[]" flushWith="record">
+    <entity name="" flushWith="77[356]??" sameEntity="true">
+      <concat name="description" delimiter=": " flushWith="77[356]??">
+        <data source="77[356]??.a">
+          <replace pattern="[.:]?$" with="" />
+        </data>
+        <data source="77[356]??.t">
+          <replace pattern="\.?$" with="" />
+        </data>
+      </concat>
+      <data name="prefix" source="77[356]??.i">
+        <replace pattern=":?$" with="" />
+      </data>
+      <entity name="note[]" flushWith="77[356]??" sameEntity="true">
+        <data name="" source="77[356]??.n" />
+      </entity>
+    </entity>
+  </entity>
+
   <entity name="IdentifierISBNParallel[]" flushWith="record">
-    <entity name="" flushWith="776??" sameEntity="true">
-      <entity name="identifierISBN[]" flushWith="776??" sameEntity="true">
-        <data name="" source="776??.z" />
+    <entity name="" flushWith="77[356]??" sameEntity="true">
+      <entity name="identifierISBN[]" flushWith="77[356]??" sameEntity="true">
+        <data name="" source="77[356]??.z" />
       </entity>
     </entity>
   </entity>

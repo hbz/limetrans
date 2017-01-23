@@ -8,9 +8,6 @@
 	'TitleAddendum' {
 		'title': 'Zeitschrift für Kunstpädagogik'
 	},
-	'ChronologyAndEnumeration' {
-		'value': '2015,1'
-	},
 	'dc' {
 		'format[]' {
 			'': 'keine Angabe'
@@ -29,6 +26,11 @@
 		'' {
 			'language': 'Deutsch',
 			'languageSource': 'ger'
+		}
+	},
+	'IdentifierZDB[]' {
+		'' {
+			'identifierZDB': '2830499-8'
 		}
 	},
 	'IdentifierISSN[]' {
@@ -62,6 +64,9 @@
 	'Extent' {
 		'extent': 'Bände ; 24 cm'
 	},
+	'ChronologyAndEnumeration' {
+		'value': '2015,1'
+	},
 	'RSWK[]' {
 		'' {
 			'subjectTopicName': 'Kunsterziehung',
@@ -87,9 +92,6 @@
 	},
 	'DateFirst' {
 		'date': '2016'
-	},
-	'ChronologyAndEnumeration' {
-		'value': 'Began with: Volume 1, Issue 1 (February 2016).'
 	},
 	'dc' {
 		'format[]' {
@@ -142,6 +144,15 @@
 	'DateProper' {
 		'date[]' {
 			'': '[2016-]'
+		}
+	},
+	'ChronologyAndEnumeration' {
+		'value': 'Began with: Volume 1, Issue 1 (February 2016).'
+	},
+	'DescriptionOfRelatedEditions[]' {
+		'' {
+			'prefix': 'Print version',
+			'description': 'Journal of global security studies'
 		}
 	},
 	'OnlineAccess[]' {

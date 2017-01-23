@@ -5,9 +5,6 @@
 	'DateFirst' {
 		'date': '1960'
 	},
-	'ChronologyAndEnumeration' {
-		'value': 'Vol. 1, issue 1 (June 1960)-'
-	},
 	'dc' {
 		'format[]' {
 			'': 'Elektronische Ressource',
@@ -59,9 +56,18 @@
 			'': '1960-'
 		}
 	},
+	'ChronologyAndEnumeration' {
+		'value': 'Vol. 1, issue 1 (June 1960)-'
+	},
 	'Description' {
 		'description[]' {
 			'': 'Title from contents screen (ScienceDirect, viewed Feb. 28, 2007).'
+		}
+	},
+	'DescriptionOfRelatedEditions[]' {
+		'' {
+			'prefix': 'Print version',
+			'description': 'International journal of heat and mass transfer'
 		}
 	},
 	'OnlineAccess[]' {
@@ -139,6 +145,12 @@
 			'name[]' {
 				'': 'Springer'
 			}
+		}
+	},
+	'DescriptionOfRelatedEditions[]' {
+		'' {
+			'prefix': 'Print version',
+			'description': 'Archiv der Mathematik'
 		}
 	},
 	'OnlineAccess[]' {
@@ -630,6 +642,12 @@
 			'personBio': '1949-'
 		}
 	},
+	'DescriptionOfRelatedEditions[]' {
+		'' {
+			'prefix': 'Print version',
+			'description': 'Companion to feminist philosophy'
+		}
+	},
 	'IdentifierISBNParallel[]' {
 		'' {
 			'identifierISBN[]' {
@@ -712,6 +730,12 @@
 			'name[]' {
 				'': 'Organisation for Economic Co-Operation and Development'
 			}
+		}
+	},
+	'DescriptionOfRelatedEditions[]' {
+		'' {
+			'prefix': 'Print version, -2013',
+			'description': 'Nuclear law bulletin'
 		}
 	},
 	'OnlineAccess[]' {
