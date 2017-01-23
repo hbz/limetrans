@@ -286,9 +286,6 @@
 	'TitleAddendum' {
 		'title': 'a publication of the American Society for Nutrition, Inc'
 	},
-	'ChronologyAndEnumeration' {
-		'value': '2.1954,4-'
-	},
 	'dc' {
 		'format[]' {
 			'': 'keine Angabe'
@@ -341,6 +338,9 @@
 				'': 'ASN'
 			}
 		}
+	},
+	'ChronologyAndEnumeration' {
+		'value': '2.1954,4-'
 	},
 	'Description' {
 		'description[]' {

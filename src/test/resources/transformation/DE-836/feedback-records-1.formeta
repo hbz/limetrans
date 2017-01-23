@@ -8,9 +8,6 @@
 	'CreatorStatement' {
 		'creatorStatement': 'hrsg. von der Gesellschaft Deutscher Chemiker'
 	},
-	'ChronologyAndEnumeration' {
-		'value': '1.1967 -'
-	},
 	'dc' {
 		'format[]' {
 			'': 'keine Angabe'
@@ -61,6 +58,9 @@
 			}
 		}
 	},
+	'ChronologyAndEnumeration' {
+		'value': '1.1967 -'
+	},
 	'Summary' {
 		'abstract[]' {
 			'': 'Enthält "Mini-Chuiz" (extra paginiert).'
@@ -110,9 +110,6 @@
 	},
 	'DateFirst' {
 		'date': '1967'
-	},
-	'ChronologyAndEnumeration' {
-		'value': 'Vol. 1, issue 1 (März 1967)-'
 	},
 	'dc' {
 		'format[]' {
@@ -169,6 +166,9 @@
 		'date[]' {
 			'': '1967-'
 		}
+	},
+	'ChronologyAndEnumeration' {
+		'value': 'Vol. 1, issue 1 (März 1967)-'
 	},
 	'Description' {
 		'description[]' {
