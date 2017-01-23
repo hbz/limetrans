@@ -367,7 +367,7 @@
 
   <!-- 301-399 -->
   <entity name="ChronologyAndEnumeration">
-    <concat delimiter=" ; " name="value">
+    <concat name="value" delimiter=" ; ">
       <data source="3620 .a" />
     </concat>
   </entity>
