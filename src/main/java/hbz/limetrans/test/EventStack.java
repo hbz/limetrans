@@ -33,6 +33,9 @@ public class EventStack {
             case END_RECORD:
                 mStack.pop();
                 break;
+            default:
+                // nothing to do
+                break;
         }
 
         return entry;
