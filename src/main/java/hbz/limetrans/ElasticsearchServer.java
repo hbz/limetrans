@@ -12,14 +12,15 @@ import java.nio.file.Files;
 
 public class ElasticsearchServer {
 
-    private final Node mNode;
     private final File mTempDir;
+    private final Node mNode;
+    private final String mDataDir;
 
-    public ElasticsearchServer(String aDataDir) {
+    public ElasticsearchServer(final String aDataDir) {
         if (aDataDir == null) {
             try {
                 mTempDir = Files.createTempDirectory("elasticsearch").toFile();
-                aDataDir = mTempDir.getPath();
+                mDataDir = mTempDir.getPath();
             }
             catch (final IOException e) {
                 throw new RuntimeException("Failed to create temporary directory", e);
@@ -27,12 +28,13 @@ public class ElasticsearchServer {
         }
         else {
             mTempDir = null;
+            mDataDir = aDataDir;
         }
 
         mNode = NodeBuilder.nodeBuilder()
             .settings(Settings.settingsBuilder()
                     .put("http.enabled", false)
-                    .put("path.home", aDataDir)
+                    .put("path.home", mDataDir)
                     .build())
             .local(true)
             .node();
