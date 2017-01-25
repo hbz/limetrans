@@ -68,7 +68,7 @@ public class ElasticsearchClient {
         }
         catch (final RuntimeException e) {
             close();
-            throw(e);
+            throw e;
         }
     }
 
