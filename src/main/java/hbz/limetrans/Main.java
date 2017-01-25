@@ -5,13 +5,17 @@ import hbz.limetrans.util.Helpers;
 import org.apache.commons.validator.routines.UrlValidator;
 import org.xbib.common.settings.Settings;
 
-import java.io.IOException;
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 
 public final class Main {
 
     private static final String[] PROTOCOLS = new String[]{"http", "https", "ftp", "file"};
+
+    private Main() {
+        throw new IllegalAccessError("Utility class");
+    }
 
     public static void main(final String[] args) throws IOException {
         new LibraryMetadataTransformation(setup(args)).process();
