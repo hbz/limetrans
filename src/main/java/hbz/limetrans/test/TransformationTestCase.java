@@ -1,5 +1,7 @@
 package hbz.limetrans.test;
 
+import hbz.limetrans.util.LimetransException;
+
 import org.culturegraph.mf.biblio.marc21.MarcXmlHandler;
 import org.culturegraph.mf.commons.ResourceUtil;
 import org.culturegraph.mf.formeta.FormetaDecoder;
@@ -74,7 +76,7 @@ public class TransformationTestCase extends Statement {
             return ResourceUtil.getReader(mFileName + "." + aExt);
         }
         catch (final FileNotFoundException e) {
-            throw new RuntimeException(e);
+            throw new LimetransException(e);
         }
     }
 
