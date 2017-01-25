@@ -22,7 +22,7 @@ public class TransformationTestCase extends Statement {
 
     public TransformationTestCase(final String aRulesPath, final String aFileName) {
         mRulesPath = aRulesPath;
-        mFileName = aFileName.substring(0, aFileName.lastIndexOf("."));
+        mFileName = aFileName.substring(0, aFileName.lastIndexOf('.'));
     }
 
     public String getName() {

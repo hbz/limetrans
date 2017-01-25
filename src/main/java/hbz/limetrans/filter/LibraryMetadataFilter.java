@@ -66,7 +66,7 @@ public class LibraryMetadataFilter {
             for (String filter : filters) {
                 String source = "*";
 
-                final int index = filter.indexOf("=");
+                final int index = filter.indexOf('=');
                 if (index != -1) {
                     source = filter.substring(0, index);
                     filter = filter.substring(index + 1);
