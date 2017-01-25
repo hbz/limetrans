@@ -5,9 +5,10 @@ import hbz.limetrans.util.Helpers;
 import org.apache.commons.validator.routines.UrlValidator;
 import org.xbib.common.settings.Settings;
 
-import java.io.IOException;
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
+import java.util.Arrays;
 
 public final class Main {
 
@@ -23,7 +24,7 @@ public final class Main {
         }
 
         if (aArgs.length > 1) {
-            throw new IllegalArgumentException("Could not process limetrans: too many arguments: ".concat(aArgs.toString()));
+            throw new IllegalArgumentException("Could not process limetrans: too many arguments: ".concat(Arrays.toString(aArgs)));
         }
 
         final String arg = aArgs[0].trim();

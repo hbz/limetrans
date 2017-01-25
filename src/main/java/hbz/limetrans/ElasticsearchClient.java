@@ -1,6 +1,7 @@
 package hbz.limetrans;
 
 import hbz.limetrans.util.Helpers;
+import hbz.limetrans.util.LimetransException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -151,7 +152,7 @@ public class ElasticsearchClient {
     }
 
     public void onBulkFailure(final BulkResponse aBulkResponse) {
-        throw new RuntimeException(aBulkResponse.buildFailureMessage());
+        throw new LimetransException(aBulkResponse.buildFailureMessage());
     }
 
     private void startBulk() {
@@ -302,7 +303,7 @@ public class ElasticsearchClient {
                             Integer.valueOf(hostWithPort[1])));
             }
             catch (final UnknownHostException e) {
-                throw new RuntimeException(e);
+                throw new LimetransException(e);
             }
         }
     }
@@ -342,7 +343,7 @@ public class ElasticsearchClient {
             return Helpers.slurpFile(path, getClass());
         }
         catch (final IOException e) {
-            throw new RuntimeException("Failed to read `" + aKey + "' file", e);
+            throw new LimetransException("Failed to read `" + aKey + "' file", e);
         }
     }
 

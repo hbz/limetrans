@@ -3,13 +3,14 @@ package hbz.limetrans.test;
 import org.culturegraph.mf.javaintegration.EventList.Event;
 import org.culturegraph.mf.javaintegration.EventList;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Iterator;
-import java.util.Stack;
 
 public class EventStack {
 
     private final Iterator<Event> mEvents;
-    private final Stack<EventStackEntry> mStack = new Stack<>();
+    private final Deque<EventStackEntry> mStack = new ArrayDeque<>();
 
     public EventStack(final EventList aEventList) {
         mEvents = aEventList.getEvents().iterator();

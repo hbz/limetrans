@@ -1,5 +1,7 @@
 package hbz.limetrans;
 
+import hbz.limetrans.util.LimetransException;
+
 import org.culturegraph.mf.framework.annotations.Description;
 import org.culturegraph.mf.framework.helpers.DefaultObjectReceiver;
 import org.culturegraph.mf.framework.helpers.DefaultStreamReceiver;
@@ -103,7 +105,7 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
                     }
                 };
             default:
-                throw new RuntimeException("Illegal bulk action: " + aBulkAction);
+                throw new LimetransException("Illegal bulk action: " + aBulkAction);
         }
     }
 

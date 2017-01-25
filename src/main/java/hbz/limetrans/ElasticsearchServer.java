@@ -1,5 +1,7 @@
 package hbz.limetrans;
 
+import hbz.limetrans.util.LimetransException;
+
 import org.apache.commons.io.FileUtils;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.settings.Settings;
@@ -12,27 +14,29 @@ import java.nio.file.Files;
 
 public class ElasticsearchServer {
 
-    private final Node mNode;
     private final File mTempDir;
+    private final Node mNode;
+    private final String mDataDir;
 
-    public ElasticsearchServer(String aDataDir) {
+    public ElasticsearchServer(final String aDataDir) {
         if (aDataDir == null) {
             try {
                 mTempDir = Files.createTempDirectory("elasticsearch").toFile();
-                aDataDir = mTempDir.getPath();
+                mDataDir = mTempDir.getPath();
             }
             catch (final IOException e) {
-                throw new RuntimeException("Failed to create temporary directory", e);
+                throw new LimetransException("Failed to create temporary directory", e);
             }
         }
         else {
             mTempDir = null;
+            mDataDir = aDataDir;
         }
 
         mNode = NodeBuilder.nodeBuilder()
             .settings(Settings.settingsBuilder()
                     .put("http.enabled", false)
-                    .put("path.home", aDataDir)
+                    .put("path.home", mDataDir)
                     .build())
             .local(true)
             .node();
@@ -50,7 +54,7 @@ public class ElasticsearchServer {
                 FileUtils.deleteDirectory(mTempDir);
             }
             catch (final IOException e) {
-                throw new RuntimeException("Failed to delete temporary directory", e);
+                throw new LimetransException("Failed to delete temporary directory", e);
             }
         }
     }
