@@ -82,29 +82,41 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
     private DefaultObjectReceiver<String> newBulkReceiver(final String aBulkAction) {
         switch (aBulkAction) {
             case "index":
-                return new DefaultObjectReceiver<String>() {
-                    @Override
-                    public void process(final String json) {
-                        mClient.addBulkIndex(mId, json);
-                    }
-                };
+                return new IndexBulkReceiver();
             case "update":
-                return new DefaultObjectReceiver<String>() {
-                    @Override
-                    public void process(final String json) {
-                        mClient.addBulkUpdate(mId, json);
-                    }
-                };
+                return new UpdateBulkReceiver();
             case "delete":
-                return new DefaultObjectReceiver<String>() {
-                    @Override
-                    public void process(final String json) {
-                        mClient.addBulkDelete(mId);
-                    }
-                };
+                return new DeleteBulkReceiver();
             default:
                 throw new RuntimeException("Illegal bulk action: " + aBulkAction);
         }
+    }
+
+    public class IndexBulkReceiver extends DefaultObjectReceiver<String> {
+
+        @Override
+        public void process(final String json) {
+            mClient.addBulkIndex(mId, json);
+        }
+
+    }
+
+    public class UpdateBulkReceiver extends DefaultObjectReceiver<String> {
+
+        @Override
+        public void process(final String json) {
+            mClient.addBulkUpdate(mId, json);
+        }
+
+    }
+
+    public class DeleteBulkReceiver extends DefaultObjectReceiver<String> {
+
+        @Override
+        public void process(final String json) {
+            mClient.addBulkDelete(mId);
+        }
+
     }
 
 }
