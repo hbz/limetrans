@@ -13,7 +13,6 @@ import org.xbib.util.Finder;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.Iterable;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -39,6 +38,7 @@ public class FileQueue implements Iterable<String> {
         }
     }
 
+    @Override
     public Iterator<String> iterator() {
         return mQueue.iterator();
     }

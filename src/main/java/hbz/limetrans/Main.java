@@ -14,6 +14,10 @@ public final class Main {
 
     private static final String[] PROTOCOLS = new String[]{"http", "https", "ftp", "file"};
 
+    private Main() {
+        throw new IllegalAccessError("Utility class");
+    }
+
     public static void main(final String[] args) throws IOException {
         new LibraryMetadataTransformation(setup(args)).process();
     }

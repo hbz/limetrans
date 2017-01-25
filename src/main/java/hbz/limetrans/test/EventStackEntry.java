@@ -69,9 +69,18 @@ public class EventStackEntry {
         final String name = mEvent.getName();
         final String value = mEvent.getValue();
 
-        return mEvent.getType() != event.getType() ? Mismatch.TYPE :
-            name != null && !name.equals(event.getName()) ? Mismatch.NAME :
-            value != null && !value.equals(event.getValue()) ? Mismatch.VALUE : null;
+        if (mEvent.getType() != event.getType()) {
+            return Mismatch.TYPE;
+        }
+        else if (name != null && !name.equals(event.getName())) {
+            return Mismatch.NAME;
+        }
+        else if (value != null && !value.equals(event.getValue())) {
+            return Mismatch.VALUE;
+        }
+        else {
+            return null;
+        }
     }
 
     private void incrementPosition() {
