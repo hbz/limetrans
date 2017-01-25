@@ -9,6 +9,7 @@ import org.apache.commons.cli.ParseException;
 import org.xbib.common.settings.Settings;
 
 import java.io.ByteArrayOutputStream;
+import java.io.OutputStream;
 import java.io.PrintWriter;
 
 public class Cli {
@@ -38,11 +39,18 @@ public class Cli {
 
     public String getHelp() {
         final ByteArrayOutputStream output = new ByteArrayOutputStream();
-        final PrintWriter pw = new PrintWriter(output);
+
+        printHelp(output);
+
+        return output.toString();
+    }
+
+    public void printHelp(final OutputStream aOutputStream) {
+        final PrintWriter pw = new PrintWriter(aOutputStream);
 
         String cmdLineSyntax = mProgram;
         if (mArgsLine != null) {
-          cmdLineSyntax += " " + mArgsLine;
+            cmdLineSyntax += " " + mArgsLine;
         }
 
         final String header = mHasOptions ? "\nOptions:" : null;
@@ -58,8 +66,6 @@ public class Cli {
                 header, mOptions, leftPad, descPad, footer, autoUsage);
 
         pw.close();
-
-        return output.toString();
     }
 
     public boolean parse(final String[] aArgs) throws CliException {
@@ -73,7 +79,7 @@ public class Cli {
         }
 
         if (mCommandLine.hasOption("h")) {
-            System.out.println(getHelp());
+            printHelp(System.out);
             return false;
         }
 
