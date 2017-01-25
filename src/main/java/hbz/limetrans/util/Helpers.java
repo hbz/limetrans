@@ -22,12 +22,10 @@ public class Helpers {
     public static Settings loadSettings(final URL aUrl) throws IOException {
         final SettingsLoader settingsLoader = SettingsLoaderFactory.loaderFromResource(aUrl.toString());
 
-        final Settings settings = Settings.settingsBuilder()
+        return Settings.settingsBuilder()
             .put(settingsLoader.load(slurpFile(aUrl)))
             .replacePropertyPlaceholders()
             .build();
-
-        return settings;
     }
 
     public static Settings loadSettings(final File aFile) throws IOException {
