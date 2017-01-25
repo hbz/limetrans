@@ -38,6 +38,7 @@ public class FileQueue implements Iterable<String> {
         }
     }
 
+    @Override
     public Iterator<String> iterator() {
         return mQueue.iterator();
     }
