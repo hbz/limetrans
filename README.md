@@ -1,6 +1,7 @@
 # limetrans - Library Metadata Transformation
 
 [![Travis CI](https://travis-ci.org/hbz/limetrans.svg)](https://travis-ci.org/hbz/limetrans)
+[![SonarQube](https://sonarqube.com/api/badges/gate?key=hbz.introx.direct:limetrans)](https://sonarqube.com/dashboard?id=hbz.introx.direct:limetrans)
 
 ## Configuration
 
