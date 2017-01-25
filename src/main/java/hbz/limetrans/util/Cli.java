@@ -63,8 +63,6 @@ public class Cli {
     }
 
     public boolean parse(final String[] aArgs) throws CliException {
-        String error = null;
-
         try {
             mCommandLine = new DefaultParser().parse(mOptions, aArgs);
         }
