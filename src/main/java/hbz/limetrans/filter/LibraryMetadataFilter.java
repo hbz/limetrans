@@ -37,7 +37,7 @@ public class LibraryMetadataFilter {
         filter
             .setReceiver(encoder)
             .setReceiver(
-                    mOutputPath == null || mOutputPath.equals("-") ?
+                    mOutputPath == null || "-".equals(mOutputPath) ?
                     new ObjectStdoutWriter<String>() :
                     new ObjectWriter<String>(mOutputPath));
 
