@@ -86,6 +86,16 @@ public class LibraryMetadataTransformationTest {
         testEqualsReference("unicode-normalization-decomposed");
     }
 
+    @Test
+    public void testFormeta() throws IOException {
+        testEqualsReference("formeta", "formeta");
+    }
+
+    @Test
+    public void testFormetaPretty() throws IOException {
+        testEqualsReference("formeta-pretty", "formeta");
+    }
+
     private void testNoInput(final String aName) throws IOException {
         thrown.expect(IllegalArgumentException.class);
         thrown.expectMessage("Could not process limetrans: no input specified.");
@@ -99,11 +109,15 @@ public class LibraryMetadataTransformationTest {
     }
 
     private void testEqualsReference(final String aName) throws IOException {
+        testEqualsReference(aName, "jsonl");
+    }
+
+    private void testEqualsReference(final String aName, final String aExt) throws IOException {
         final LibraryMetadataTransformation limetrans = getLimetrans(aName);
 
         limetrans.process();
 
-        assertEqualsReference(aName);
+        assertEqualsReference(aName, aExt);
     }
 
     private LibraryMetadataTransformation getLimetrans(final String aName) throws IOException {
@@ -111,14 +125,14 @@ public class LibraryMetadataTransformationTest {
         return new LibraryMetadataTransformation(Helpers.loadSettings(file));
     }
 
-    private void assertEqualsReference(final String aName) throws IOException {
+    private void assertEqualsReference(final String aName, final String aExt) throws IOException {
         assertEquals("Reference data mismatch: " + aName,
-                slurpFile("classpath:", "reference", aName),
-                slurpFile("src/test/resources", "output", aName));
+                slurpFile("classpath:", "reference", aName, aExt),
+                slurpFile("src/test/resources", "output", aName, aExt));
     }
 
-    private String slurpFile(final String aPrefix, final String aDir, final String aName) throws IOException {
-        return Helpers.slurpFile(aPrefix + "/limetrans/" + aDir + "/" + aName + ".jsonl", getClass());
+    private String slurpFile(final String aPrefix, final String aDir, final String aName, final String aExt) throws IOException {
+        return Helpers.slurpFile(aPrefix + "/limetrans/" + aDir + "/" + aName + "." + aExt, getClass());
     }
 
 }
