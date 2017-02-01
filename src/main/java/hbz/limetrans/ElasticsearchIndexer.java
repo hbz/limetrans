@@ -8,8 +8,6 @@ import org.culturegraph.mf.framework.helpers.DefaultStreamReceiver;
 import org.culturegraph.mf.json.JsonEncoder;
 import org.elasticsearch.common.settings.Settings;
 
-import java.util.Map;
-
 @Description("Indexes an object into Elasticsearch")
 public class ElasticsearchIndexer extends DefaultStreamReceiver {
 
@@ -29,10 +27,6 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
 
     public ElasticsearchIndexer(final Settings aSettings) {
         this(new ElasticsearchClient(aSettings), aSettings.get("bulkAction"));
-    }
-
-    public ElasticsearchIndexer(final Map<String, String> aSettings) {
-        this(Settings.settingsBuilder().put(aSettings).build());
     }
 
     public ElasticsearchClient getClient() {

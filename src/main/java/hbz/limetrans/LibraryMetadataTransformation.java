@@ -15,7 +15,6 @@ import org.culturegraph.mf.plumbing.StreamTee;
 import org.xbib.common.settings.Settings;
 
 import java.io.IOException;
-import java.util.Map;
 
 public class LibraryMetadataTransformation {
 
@@ -108,10 +107,7 @@ public class LibraryMetadataTransformation {
             return;
         }
 
-        final Map<String, String> elasticsearchSettings =
-            mElasticsearchSettings.getAsMap();
-
-        mLogger.info("Indexing into Elasticsearch: {}", elasticsearchSettings);
+        mLogger.info("Indexing into Elasticsearch: {}", mElasticsearchSettings.getAsMap());
 
         final RecordIdChanger recordIdChanger = new RecordIdChanger();
         final String idKey = mElasticsearchSettings.get("index.idKey");
@@ -122,7 +118,7 @@ public class LibraryMetadataTransformation {
         }
 
         final ElasticsearchIndexer elasticsearchIndexer =
-            new ElasticsearchIndexer(elasticsearchSettings);
+            new ElasticsearchIndexer(Helpers.convertSettings(mElasticsearchSettings));
 
         aTee.addReceiver(recordIdChanger);
         recordIdChanger.setReceiver(elasticsearchIndexer);

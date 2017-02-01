@@ -32,6 +32,18 @@ public class Helpers {
         return loadSettings(aFile.toURI().toURL());
     }
 
+    public static Settings convertSettings(final org.elasticsearch.common.settings.Settings aSettings) {
+        return Settings.settingsBuilder()
+            .put(aSettings.getAsMap())
+            .build();
+    }
+
+    public static org.elasticsearch.common.settings.Settings convertSettings(final Settings aSettings) {
+        return org.elasticsearch.common.settings.Settings.settingsBuilder()
+            .put(aSettings.getAsMap())
+            .build();
+    }
+
     public static String slurpFile(final URL aUrl) throws IOException {
         return IOUtils.toString(aUrl, Charset.defaultCharset());
     }
