@@ -1,0 +1,18 @@
+{
+  "input" : {
+    "queue" : {
+      "path" : "src/test/resources/limetrans/input/",
+      "pattern" : "elasticsearch.xml"
+    }
+  },
+  "output": {
+    "elasticsearch" : {
+      "index" : {
+        "type" : "titel",
+        "name" : "test"
+      },
+      "embeddedPath" : "src/test/resources/limetrans/output/elasticsearch"
+    }
+  },
+  "transformation-rules" : "src/test/resources/limetrans/rules/elasticsearch.xml"
+}

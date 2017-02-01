@@ -1,0 +1,12 @@
+{
+  "input" : {
+    "queue" : {
+      "path" : "src/test/resources/limetrans/input/",
+      "pattern" : "formeta.xml"
+    }
+  },
+  "output": {
+    "formeta" : "src/test/resources/limetrans/output/formeta.formeta"
+  },
+  "transformation-rules" : "src/test/resources/limetrans/rules/nonull.xml"
+}

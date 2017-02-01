@@ -2,9 +2,12 @@ package hbz.limetrans;
 
 import hbz.limetrans.util.Helpers;
 
-import org.junit.rules.ExpectedException;
+import org.apache.commons.io.FileUtils;
+import org.xbib.common.settings.Settings;
+
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 import java.io.File;
 import java.io.IOException;
@@ -86,6 +89,26 @@ public class LibraryMetadataTransformationTest {
         testEqualsReference("unicode-normalization-decomposed");
     }
 
+    @Test
+    public void testFormeta() throws IOException {
+        testEqualsReference("formeta", "formeta");
+    }
+
+    @Test
+    public void testFormetaPretty() throws IOException {
+        testEqualsReference("formeta-pretty", "formeta");
+    }
+
+    @Test
+    public void testElasticsearch() throws IOException {
+        testElasticsearchEqualsReference("elasticsearch", "");
+    }
+
+    @Test
+    public void testElasticsearchIdKey() throws IOException {
+        testElasticsearchEqualsReference("elasticsearch-id-key", "ocm42328784");
+    }
+
     private void testNoInput(final String aName) throws IOException {
         thrown.expect(IllegalArgumentException.class);
         thrown.expectMessage("Could not process limetrans: no input specified.");
@@ -99,26 +122,54 @@ public class LibraryMetadataTransformationTest {
     }
 
     private void testEqualsReference(final String aName) throws IOException {
+        testEqualsReference(aName, "jsonl");
+    }
+
+    private void testEqualsReference(final String aName, final String aExt) throws IOException {
         final LibraryMetadataTransformation limetrans = getLimetrans(aName);
 
         limetrans.process();
 
-        assertEqualsReference(aName);
+        assertEqualsReference(aName, aExt);
     }
 
     private LibraryMetadataTransformation getLimetrans(final String aName) throws IOException {
-        final File file = new File("src/conf/test/limetrans-" + aName + ".json");
-        return new LibraryMetadataTransformation(Helpers.loadSettings(file));
+        return new LibraryMetadataTransformation(loadSettings(aName));
     }
 
-    private void assertEqualsReference(final String aName) throws IOException {
+    private void assertEqualsReference(final String aName, final String aExt) throws IOException {
         assertEquals("Reference data mismatch: " + aName,
-                slurpFile("classpath:", "reference", aName),
-                slurpFile("src/test/resources", "output", aName));
+                getReference(aName, aExt), slurpFile("src/test/resources", "output", aName, aExt));
     }
 
-    private String slurpFile(final String aPrefix, final String aDir, final String aName) throws IOException {
-        return Helpers.slurpFile(aPrefix + "/limetrans/" + aDir + "/" + aName + ".jsonl", getClass());
+    private void testElasticsearchEqualsReference(final String aName, final String aId) throws IOException {
+        final Settings settings = loadSettings(aName).getAsSettings("output.elasticsearch");
+        final ElasticsearchClient client = new ElasticsearchClient(Helpers.convertSettings(settings));
+
+        try {
+            getLimetrans(aName).process();
+
+            assertEquals(getReference(aName, "json"), client.getClient().prepareGet(
+                        settings.get(ElasticsearchClient.INDEX_NAME_KEY),
+                        settings.get(ElasticsearchClient.INDEX_TYPE_KEY),
+                        aId).get().getSourceAsString());
+        }
+        finally {
+            client.close();
+            FileUtils.deleteDirectory(new File(settings.get("embeddedPath")));
+        }
+    }
+
+    private String getReference(final String aName, final String aExt) throws IOException {
+        return slurpFile("classpath:", "reference", aName, aExt);
+    }
+
+    private Settings loadSettings(final String aName) throws IOException {
+        return Helpers.loadSettings(new File("src/conf/test/limetrans-" + aName + ".json"));
+    }
+
+    private String slurpFile(final String aPrefix, final String aDir, final String aName, final String aExt) throws IOException {
+        return Helpers.slurpFile(aPrefix + "/limetrans/" + aDir + "/" + aName + "." + aExt, getClass());
     }
 
 }

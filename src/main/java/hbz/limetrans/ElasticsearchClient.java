@@ -91,6 +91,7 @@ public class ElasticsearchClient {
 
     public void reset() {
         setClient(mSettings.getAsArray("host"), mSettings.get("embeddedPath"));
+        waitForYellowStatus();
         startBulk();
     }
 
@@ -250,8 +251,6 @@ public class ElasticsearchClient {
     }
 
     private void deleteIndex() {
-        waitForYellowStatus();
-
         if (indexExists()) {
             mLogger.info("Deleting index: {}", getIndexName());
             mClient.admin().indices().prepareDelete(getIndexName()).get();
