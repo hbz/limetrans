@@ -49,6 +49,7 @@ public class ElasticsearchClient {
     private BulkRequestBuilder mBulkRequest;
     private Client mClient;
     private ElasticsearchServer mServer;
+    private boolean mDeleteOnExit;
     private int numRecords;
 
     public ElasticsearchClient(final Settings aSettings) {
@@ -111,6 +112,14 @@ public class ElasticsearchClient {
         return mClient;
     }
 
+    public void setDeleteOnExit(final boolean aDeleteOnExit) {
+        mDeleteOnExit = aDeleteOnExit;
+    }
+
+    public boolean getDeleteOnExit() {
+        return mDeleteOnExit;
+    }
+
     public void reset() {
         numRecords = 0;
 
@@ -138,7 +147,7 @@ public class ElasticsearchClient {
 
         if (mServer != null) {
             LOGGER.info("Shutting down embedded server");
-            mServer.shutdown();
+            mServer.shutdown(getDeleteOnExit());
         }
     }
 

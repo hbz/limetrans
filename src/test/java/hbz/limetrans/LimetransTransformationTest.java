@@ -2,15 +2,12 @@ package hbz.limetrans;
 
 import hbz.limetrans.test.TransformationTestCase;
 import hbz.limetrans.util.Helpers;
-import hbz.limetrans.util.Settings;
 
-import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.util.function.Supplier;
@@ -150,8 +147,8 @@ public class LimetransTransformationTest extends AbstractLimetransTest {
     private void testElasticsearchEqualsReference(final String aName, final String aId) throws IOException {
         final Limetrans limetrans = getLimetrans(aName);
 
-        final Settings settings = loadSettings(aName).getAsSettings("output").getAsSettings("elasticsearch");
-        final ElasticsearchClient client = new ElasticsearchClient(settings);
+        final ElasticsearchClient client = new ElasticsearchClient(loadSettings(aName).getAsSettings("output").getAsSettings("elasticsearch"));
+        client.setDeleteOnExit(true);
 
         try {
             testLimetransEqualsReference(limetrans, aName, getReferenceFile(limetrans, aName, "json"), () ->
@@ -159,7 +156,6 @@ public class LimetransTransformationTest extends AbstractLimetransTest {
         }
         finally {
             client.close();
-            FileUtils.deleteDirectory(new File(settings.get("embeddedPath")));
         }
     }
 

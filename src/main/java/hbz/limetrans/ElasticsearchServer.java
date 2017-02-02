@@ -25,7 +25,7 @@ public class ElasticsearchServer {
                 mDataDir = mTempDir.getPath();
             }
             catch (final IOException e) {
-                throw new LimetransException("Failed to create temporary directory", e);
+                throw new LimetransException("Failed to create directory", e);
             }
         }
         else {
@@ -47,15 +47,26 @@ public class ElasticsearchServer {
     }
 
     public void shutdown() {
+        shutdown(false);
+    }
+
+    public void shutdown(final boolean aDeleteOnExit) {
         mNode.close();
 
         if (mTempDir != null) {
-            try {
-                FileUtils.deleteDirectory(mTempDir);
-            }
-            catch (final IOException e) {
-                throw new LimetransException("Failed to delete temporary directory", e);
-            }
+            deleteDirectory(mTempDir);
+        }
+        else if (aDeleteOnExit) {
+            deleteDirectory(new File(mDataDir));
+        }
+    }
+
+    private void deleteDirectory(final File aDirectory) {
+        try {
+            FileUtils.deleteDirectory(aDirectory);
+        }
+        catch (final IOException e) {
+            throw new LimetransException("Failed to delete directory", e);
         }
     }
 
