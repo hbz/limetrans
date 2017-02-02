@@ -1,5 +1,7 @@
 package hbz.limetrans;
 
+import hbz.limetrans.util.LimetransException;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -35,7 +37,12 @@ public class ElasticsearchIndexerTest {
 
     @After
     public void cleanup() {
-        mIndexer.closeStream();
+        if (mIndexer != null) {
+            mIndexer.closeStream();
+        }
+        else if (mClient != null) {
+            mClient.close();
+        }
     }
 
     @Test
@@ -438,6 +445,12 @@ public class ElasticsearchIndexerTest {
 
         assertMissing(ID1);
         assertDocument(ID2, doc2);
+    }
+
+    @Test
+    public void testShouldDenyIllegalBulkAction() {
+        final Throwable ex = Assert.assertThrows(LimetransException.class, () -> setIndexer("XXX"));
+        Assert.assertEquals("Illegal bulk action: XXX", ex.getMessage());
     }
 
     private void setIndexer() {
