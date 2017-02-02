@@ -151,8 +151,7 @@ public class LimetransTransformationTest extends AbstractLimetransTest {
         client.setDeleteOnExit(true);
 
         try {
-            testLimetransEqualsReference(limetrans, aName, getReferenceFile(limetrans, aName, "json"), () ->
-                    client.getClient().prepareGet(client.getIndexName(), client.getIndexType(), aId).get().getSourceAsString());
+            testLimetransEqualsReference(limetrans, aName, getReferenceFile(limetrans, aName, "json"), () -> client.getDocument(aId));
         }
         finally {
             client.close();

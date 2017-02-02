@@ -120,6 +120,18 @@ public class ElasticsearchClient {
         return mDeleteOnExit;
     }
 
+    public String getDocument(final String aId) {
+        return mClient
+            .prepareGet(getIndexName(), getIndexType(), aId).get()
+            .getSourceAsString();
+    }
+
+    public void indexDocument(final String aId, final String aDocument) {
+        mClient.prepareIndex(getIndexName(), getIndexType(), aId)
+            .setSource(aDocument)
+            .get();
+    }
+
     public void reset() {
         numRecords = 0;
 

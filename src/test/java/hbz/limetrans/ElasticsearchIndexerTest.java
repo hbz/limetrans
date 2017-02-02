@@ -450,11 +450,11 @@ public class ElasticsearchIndexerTest {
     }
 
     private void assertDocument(final String aId, final String aExpected) {
-        Assert.assertEquals(fixQuotes(aExpected), getDocument(aId));
+        Assert.assertEquals(fixQuotes(aExpected), mClient.getDocument(aId));
     }
 
     private void assertMissing(final String aId) {
-        Assert.assertNull(getDocument(aId));
+        Assert.assertNull(mClient.getDocument(aId));
     }
 
     private void expectBulkFailure(final ThrowingRunnable aRunnable, final String aId) {
@@ -466,14 +466,7 @@ public class ElasticsearchIndexerTest {
     }
 
     private void insertDocument(final String aId, final String aDocument) {
-        mClient.getClient().prepareIndex(INDEX_NAME, INDEX_TYPE, aId)
-            .setSource(fixQuotes(aDocument))
-            .get();
-    }
-
-    private String getDocument(final String aId) {
-        return mClient.getClient().prepareGet(INDEX_NAME, INDEX_TYPE, aId)
-            .get().getSourceAsString();
+        mClient.indexDocument(aId, fixQuotes(aDocument));
     }
 
     /*
