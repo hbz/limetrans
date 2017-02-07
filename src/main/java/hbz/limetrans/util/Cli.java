@@ -26,7 +26,7 @@ public class Cli {
         mArgsLine = aArgsLine;
     }
 
-    public Cli(final Class program, final String aArgsLine) {
+    public Cli(final Class<?> program, final String aArgsLine) {
         this(program.getName(), aArgsLine);
     }
 

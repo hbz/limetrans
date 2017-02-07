@@ -20,7 +20,7 @@ public class TransformationTestSuite extends ParentRunner<Runner> {
 
     private final List<Runner> mRunners;
 
-    public TransformationTestSuite(final Class aClass) throws InitializationError {
+    public TransformationTestSuite(final Class<?> aClass) throws InitializationError {
         super(aClass);
 
         mRunners = new ArrayList<>();
