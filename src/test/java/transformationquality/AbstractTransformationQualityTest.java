@@ -30,13 +30,15 @@ public class AbstractTransformationQualityTest extends AbstractTransformationTes
         final Iterator<Map.Entry<String, JsonNode>> fields = aDocument.fields();
         while (fields.hasNext()){
             final Map.Entry<String, JsonNode> field = fields.next();
+
+            if (field == null) {
+                continue;
+            }
+
             JsonNode ref = aReference.get(field.getKey());
 
             String qualifiedFieldName = (aParentNode == null ? field.getKey() : aParentNode.concat(".").concat(field.getKey()));
 
-            if (field == null){
-                continue;
-            }
             if (ref == null){
                 missingInRef.add(qualifiedFieldName);
                 continue;
