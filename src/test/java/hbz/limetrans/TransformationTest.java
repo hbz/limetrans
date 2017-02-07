@@ -1,4 +1,4 @@
-package hbz.limetrans.test;
+package hbz.limetrans;
 
 import org.junit.runner.RunWith;
 
