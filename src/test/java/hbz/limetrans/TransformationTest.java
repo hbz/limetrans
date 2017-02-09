@@ -1,4 +1,6 @@
-package hbz.limetrans.test;
+package hbz.limetrans;
+
+import hbz.limetrans.test.TransformationTestSuite;
 
 import org.junit.runner.RunWith;
 

@@ -26,7 +26,7 @@ public class Cli {
         mArgsLine = aArgsLine;
     }
 
-    public Cli(final Class program, final String aArgsLine) {
+    public Cli(final Class<?> program, final String aArgsLine) {
         this(program.getName(), aArgsLine);
     }
 
@@ -107,6 +107,8 @@ public class Cli {
     }
 
     public class CliException extends Exception {
+
+        private static final long serialVersionUID = 1587965155138860229L;
 
         public CliException(final Cli aCli, final ParseException aCause) {
             super(aCause.getMessage() + "\n" + aCli.getHelp());

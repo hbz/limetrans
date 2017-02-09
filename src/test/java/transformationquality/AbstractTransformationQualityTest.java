@@ -12,7 +12,7 @@ import static org.junit.Assert.assertTrue;
 
 public class AbstractTransformationQualityTest extends AbstractTransformationTest{
 
-    final protected static Class[] mRelevantJsonClasses = new Class[]{ArrayNode.class, ObjectNode.class, TextNode.class};
+    final protected static Class<?>[] mRelevantJsonClasses = new Class<?>[]{ArrayNode.class, ObjectNode.class, TextNode.class};
     final protected static List<String> mMissingDocs = new ArrayList<>();
     final protected static Map<String, Set<String>> mMissingInRefFields = new HashMap<>();
     final protected static Map<String, Set<String>> mMisConfiguredFields = new HashMap<>();
@@ -30,13 +30,15 @@ public class AbstractTransformationQualityTest extends AbstractTransformationTes
         final Iterator<Map.Entry<String, JsonNode>> fields = aDocument.fields();
         while (fields.hasNext()){
             final Map.Entry<String, JsonNode> field = fields.next();
+
+            if (field == null) {
+                continue;
+            }
+
             JsonNode ref = aReference.get(field.getKey());
 
             String qualifiedFieldName = (aParentNode == null ? field.getKey() : aParentNode.concat(".").concat(field.getKey()));
 
-            if (field == null){
-                continue;
-            }
             if (ref == null){
                 missingInRef.add(qualifiedFieldName);
                 continue;
@@ -85,7 +87,7 @@ public class AbstractTransformationQualityTest extends AbstractTransformationTes
     }
 
     private static boolean areSameInstanceOf(JsonNode aJsonNode1, JsonNode aJsonNode2) {
-        for (Class clazz : mRelevantJsonClasses){
+        for (Class<?> clazz : mRelevantJsonClasses){
             if (clazz.isInstance(aJsonNode1)){
                 if (clazz.isInstance(aJsonNode2)){
                     return true;

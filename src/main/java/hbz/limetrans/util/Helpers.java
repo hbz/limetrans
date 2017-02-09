@@ -52,17 +52,17 @@ public class Helpers {
         return slurpFile(new File(aPath).toURI().toURL());
     }
 
-    public static String slurpFile(final String aPath, final Class aClass) throws IOException {
+    public static String slurpFile(final String aPath, final Class<?> aClass) throws IOException {
         final URL url = getClasspathUrl(aClass, aPath);
         return url != null ? slurpFile(url) : slurpFile(aPath);
     }
 
-    public static String getPath(final String aPath, final Class aClass) throws IOException {
+    public static String getPath(final String aPath, final Class<?> aClass) throws IOException {
         final URL url = getClasspathUrl(aClass, aPath);
         return url != null ? url.toString() : aPath;
     }
 
-    public static URL getResourceUrl(final Class aClass, final String aPath) throws IOException {
+    public static URL getResourceUrl(final Class<?> aClass, final String aPath) throws IOException {
         final URL url = aClass.getResource(aPath);
         if (url == null) {
             throw new FileNotFoundException("Resource not found for " + aClass.toString() + ": " + aPath);
@@ -72,7 +72,7 @@ public class Helpers {
         }
     }
 
-    public static URL getClasspathUrl(final Class aClass, final String aPath) throws IOException {
+    public static URL getClasspathUrl(final Class<?> aClass, final String aPath) throws IOException {
         if (aPath != null && aPath.startsWith(CLASSPATH_PREFIX)) {
             return getResourceUrl(aClass, aPath.substring(CLASSPATH_PREFIX.length()));
         }
