@@ -12,6 +12,7 @@ import org.culturegraph.mf.json.JsonEncoder;
 import org.culturegraph.mf.mangling.RecordIdChanger;
 import org.culturegraph.mf.metamorph.Metamorph;
 import org.culturegraph.mf.plumbing.StreamTee;
+import org.culturegraph.mf.statistics.Counter;
 import org.xbib.common.settings.Settings;
 
 import java.io.IOException;
@@ -58,15 +59,19 @@ public class LibraryMetadataTransformation {
 
         final Metamorph metamorph = new Metamorph(mRulesPath);
         final StreamTee streamTee = new StreamTee();
+        final Counter counter = new Counter();
 
         transformJson(streamTee);
         transformFormeta(streamTee);
         transformElasticsearch(streamTee);
 
-        metamorph.setReceiver(streamTee);
+        metamorph
+            .setReceiver(counter)
+            .setReceiver(streamTee);
+
         mInputQueue.processMarcXml(metamorph, mNormalizeUnicode);
 
-        mLogger.info("Finished transformation");
+        mLogger.info("Finished transformation ({})", counter);
     }
 
     public int getInputQueueSize() {
