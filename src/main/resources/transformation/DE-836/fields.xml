@@ -529,6 +529,43 @@
     </entity>
   </entity>
 
+  <entity name="DescriptionOfContinuingEditionsOrVolumes[]" flushWith="record">
+    <entity name="" flushWith="7800[01234567]" sameEntity="true">
+      <choose name="prefix" flushWith="7800[01234567].t" sameEntity="true">
+        <data source="7800[0123567].i" />
+        <data source="78000.t">
+          <constant value="Fortsetzung von" />
+        </data>
+        <data source="78001.t">
+          <constant value="Teilweise Fortsetzung von" />
+        </data>
+        <data source="78002.t">
+          <constant value="Ersatz von" />
+        </data>
+        <data source="78003.t">
+          <constant value="Teilweise Ersatz von" />
+        </data>
+        <data source="78004.t">
+          <constant value="Vereinigung von" />
+        </data>
+        <data source="78005.t">
+          <constant value="Darin aufgegangen" />
+        </data>
+        <data source="78006.t">
+          <constant value="Teilweise darin aufgegangen" />
+        </data>
+        <data source="78007.t">
+          <constant value="Abgespalten von" />
+        </data>
+      </choose>
+      <concat name="description" delimiter=": " flushWith="7800[01234567]">
+        <data source="7800[01234567].a" />
+        <data source="7800[01234567].t" />
+      </concat>
+      <data name="note" source="7800[01234567].n" />
+    </entity>
+  </entity>
+
   <!-- 8xx -->
   <call-macro name="prepare-SeriesAddedEntryUniformTitle-title" field="830 0" basefield="830" />
   <entity name="SeriesAddedEntryUniformTitle[]" flushWith="record">

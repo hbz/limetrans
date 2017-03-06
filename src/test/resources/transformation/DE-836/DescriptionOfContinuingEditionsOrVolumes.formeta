@@ -1,0 +1,82 @@
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)1'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'DescriptionOfContinuingEditionsOrVolumes[]' {
+		'' {
+			'prefix': 'Fortsetzung von',
+			'description': 'Government publications review (0)'
+		},
+		'' {
+			'prefix': 'Früher u.d.T.',
+			'description': 'Fünfzig Jahre Bauhaus 1968'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)1'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)2'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'DescriptionOfContinuingEditionsOrVolumes[]' {
+		'' {
+			'prefix': 'Teilweise Fortsetzung von',
+			'description': 'Stazione zoologica di Napoli.: Pubblicazioni della Stazione zoologica di Napoli'
+		},
+		'' {
+			'prefix': 'Ersatz von',
+			'description': 'Government publications review (2)'
+		},
+		'' {
+			'prefix': 'Teilweise Ersatz von',
+			'description': 'Government publications review (3)'
+		},
+		'' {
+			'prefix': 'Vereinigung von',
+			'description': 'Government publications review (4)'
+		},
+		'' {
+			'prefix': 'Darin aufgegangen',
+			'description': 'Government publications review (5)'
+		},
+		'' {
+			'prefix': 'Teilweise darin aufgegangen',
+			'description': 'Government publications review (6)'
+		},
+		'' {
+			'prefix': 'Abgespalten von',
+			'description': 'Government publications review (7)'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)2'
+		}
+	}
+}
