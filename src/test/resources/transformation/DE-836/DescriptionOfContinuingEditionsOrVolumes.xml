@@ -2,56 +2,62 @@
 <collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
   <record xmlns="http://www.loc.gov/MARC21/slim">
     <controlfield tag="001">1 </controlfield>
-    <datafield tag="780" ind1="1" ind2="5">
-      <subfield code="t">Title</subfield>
+    <datafield tag="785" ind1="1" ind2="5">
+      <subfield code="t">Procurement preview</subfield>
       <subfield code="w">(DLC)   00252536</subfield>
       <subfield code="w">(OCoLC)44940686</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
-      <subfield code="t">Government publications review (0)</subfield>
+    <datafield tag="785" ind1="0" ind2="0">
+      <subfield code="t">Procurement preview (0)</subfield>
       <subfield code="w">(DLC)   00252536</subfield>
       <subfield code="w">(OCoLC)44940686</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="2">
-      <subfield code="i">Früher u.d.T.</subfield>
-      <subfield code="t">Fünfzig Jahre Bauhaus 1968</subfield>
+    <datafield tag="785" ind1="0" ind2="0">
+      <subfield code="i">Später u.d.T.</subfield>
+      <subfield code="a">Galerie Eva Poll &lt;Berlin, West&gt;</subfield>
+      <subfield code="t">Steuer-Seminar</subfield>
+      <subfield code="w">(GYFmHBV)024544493</subfield>
     </datafield>
   </record>
   <record xmlns="http://www.loc.gov/MARC21/slim">
     <controlfield tag="001">2 </controlfield>
-    <datafield tag="780" ind1="0" ind2="1">
-      <subfield code="a">Stazione zoologica di Napoli.</subfield>
-      <subfield code="t">Pubblicazioni della Stazione zoologica di Napoli</subfield>
-      <subfield code="w">(DLC)  2010263457</subfield>
-      <subfield code="w">(OCoLC)551319949</subfield>
-    </datafield>
-    <datafield tag="780" ind1="0" ind2="2">
-      <subfield code="t">Government publications review (2)</subfield>
+    <datafield tag="785" ind1="0" ind2="1">
+      <subfield code="t">Procurement preview (1)</subfield>
       <subfield code="w">(DLC)   00252536</subfield>
       <subfield code="w">(OCoLC)44940686</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="3">
-      <subfield code="t">Government publications review (3)</subfield>
+    <datafield tag="785" ind1="0" ind2="2">
+      <subfield code="t">Procurement preview (2)</subfield>
       <subfield code="w">(DLC)   00252536</subfield>
       <subfield code="w">(OCoLC)44940686</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="4">
-      <subfield code="t">Government publications review (4)</subfield>
-      <subfield code="w">(DLC)sf 84001176</subfield>
-      <subfield code="w">(OCoLC)2250743</subfield>
-    </datafield>
-    <datafield tag="780" ind1="0" ind2="5">
-      <subfield code="t">Government publications review (5)</subfield>
+    <datafield tag="785" ind1="0" ind2="3">
+      <subfield code="t">Procurement preview (3)</subfield>
       <subfield code="w">(DLC)   00252536</subfield>
       <subfield code="w">(OCoLC)44940686</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="6">
-      <subfield code="t">Government publications review (6)</subfield>
+    <datafield tag="785" ind1="0" ind2="4">
+      <subfield code="t">Procurement preview (4)</subfield>
       <subfield code="w">(DLC)   00252536</subfield>
       <subfield code="w">(OCoLC)44940686</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="7">
-      <subfield code="t">Government publications review (7)</subfield>
+    <datafield tag="785" ind1="0" ind2="5">
+      <subfield code="t">Procurement preview (5)</subfield>
+      <subfield code="w">(DLC)   00252536</subfield>
+      <subfield code="w">(OCoLC)44940686</subfield>
+    </datafield>
+    <datafield tag="785" ind1="0" ind2="6">
+      <subfield code="t">Procurement preview (6)</subfield>
+      <subfield code="w">(DLC)   00252536</subfield>
+      <subfield code="w">(OCoLC)44940686</subfield>
+    </datafield>
+    <datafield tag="785" ind1="0" ind2="7">
+      <subfield code="t">Procurement preview (7)</subfield>
+      <subfield code="w">(DLC)   00252536</subfield>
+      <subfield code="w">(OCoLC)44940686</subfield>
+    </datafield>
+    <datafield tag="785" ind1="0" ind2="8">
+      <subfield code="t">Procurement preview (8)</subfield>
       <subfield code="w">(DLC)   00252536</subfield>
       <subfield code="w">(OCoLC)44940686</subfield>
     </datafield>

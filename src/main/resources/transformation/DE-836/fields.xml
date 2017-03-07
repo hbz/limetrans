@@ -529,7 +529,7 @@
     </entity>
   </entity>
 
-  <entity name="DescriptionOfContinuingEditionsOrVolumes[]" flushWith="record">
+  <entity name="DescriptionOfFormerEditionsOrVolumes[]" flushWith="record">
     <entity name="" flushWith="7800[01234567]" sameEntity="true">
       <choose name="prefix" flushWith="7800[01234567].t" sameEntity="true">
         <data source="7800[0123567].i" />
@@ -566,7 +566,7 @@
     </entity>
   </entity>
 
-  <entity name="DescriptionOfFormerEditionsOrVolumes[]" flushWith="record">
+  <entity name="DescriptionOfContinuingEditionsOrVolumes[]" flushWith="record">
     <entity name="" flushWith="7850[012345678]" sameEntity="true">
       <choose name="prefix" flushWith="7850[012345678].t" sameEntity="true">
         <data source="7850[012345678].i" />
