@@ -503,7 +503,7 @@
   </entity>
 
   <entity name="DescriptionOfRelatedEditions[]" flushWith="record">
-    <entity name="" flushWith="77[356]??" sameEntity="true">
+    <entity name="" flushWith="77[356]??|580  " sameEntity="true">
       <concat name="description" delimiter=": " flushWith="77[356]??">
         <data source="77[356]??.a">
           <replace pattern="[.:]?$" with="" />
@@ -512,6 +512,7 @@
           <replace pattern="\.?$" with="" />
         </data>
       </concat>
+      <data name="description" source="580  .a" />
       <data name="prefix" source="77[356]??.i">
         <replace pattern=":?$" with="" />
       </data>
@@ -526,6 +527,77 @@
       <entity name="identifierISBN[]" flushWith="77[356]??" sameEntity="true">
         <data name="" source="77[356]??.z" />
       </entity>
+    </entity>
+  </entity>
+
+  <entity name="DescriptionOfFormerEditionsOrVolumes[]" flushWith="record">
+    <entity name="" flushWith="7800[01234567]" sameEntity="true">
+      <choose name="prefix" flushWith="7800[01234567].t" sameEntity="true">
+        <data source="7800[0123567].i" />
+        <data source="78000.t">
+          <constant value="Fortsetzung von" />
+        </data>
+        <data source="78001.t">
+          <constant value="Teilweise Fortsetzung von" />
+        </data>
+        <data source="78002.t">
+          <constant value="Ersatz von" />
+        </data>
+        <data source="78003.t">
+          <constant value="Teilweise Ersatz von" />
+        </data>
+        <data source="78004.t">
+          <constant value="Vereinigung von" />
+        </data>
+        <data source="78005.t">
+          <constant value="Darin aufgegangen" />
+        </data>
+        <data source="78006.t">
+          <constant value="Teilweise darin aufgegangen" />
+        </data>
+        <data source="78007.t">
+          <constant value="Abgespalten von" />
+        </data>
+      </choose>
+      <concat name="description" delimiter=": " flushWith="7800[01234567]">
+        <data source="7800[01234567].a" />
+        <data source="7800[01234567].t" />
+      </concat>
+      <data name="note" source="7800[01234567].n" />
+    </entity>
+  </entity>
+
+  <entity name="DescriptionOfContinuingEditionsOrVolumes[]" flushWith="record">
+    <entity name="" flushWith="7850[012345678]" sameEntity="true">
+      <choose name="prefix" flushWith="7850[012345678].t" sameEntity="true">
+        <data source="7850[012345678].i" />
+        <data source="7850[078].t">
+          <constant value="Fortgesetzt von" />
+        </data>
+        <data source="78501.t">
+          <constant value="Teilweise fortgesetzt von" />
+        </data>
+        <data source="78502.t">
+          <constant value="Ersetzt durch" />
+        </data>
+        <data source="78503.t">
+          <constant value="Teilweise ersetzt durch" />
+        </data>
+        <data source="78504.t">
+          <constant value="Aufgegangen in" />
+        </data>
+        <data source="78505.t">
+          <constant value="Teilweise aufgegangen in" />
+        </data>
+        <data source="78506.t">
+          <constant value="Gesplittet in" />
+        </data>
+      </choose>
+      <concat name="description" delimiter=": " flushWith="7850[012345678]">
+        <data source="7850[012345678].a" />
+        <data source="7850[012345678].t" />
+      </concat>
+      <data name="note" source="7850[012345678].n" />
     </entity>
   </entity>
 
