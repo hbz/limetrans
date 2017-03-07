@@ -503,7 +503,7 @@
   </entity>
 
   <entity name="DescriptionOfRelatedEditions[]" flushWith="record">
-    <entity name="" flushWith="77[356]??" sameEntity="true">
+    <entity name="" flushWith="77[356]??|580  " sameEntity="true">
       <concat name="description" delimiter=": " flushWith="77[356]??">
         <data source="77[356]??.a">
           <replace pattern="[.:]?$" with="" />
@@ -512,6 +512,7 @@
           <replace pattern="\.?$" with="" />
         </data>
       </concat>
+      <data name="description" source="580  .a" />
       <data name="prefix" source="77[356]??.i">
         <replace pattern=":?$" with="" />
       </data>
