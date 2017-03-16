@@ -30,9 +30,12 @@ public class ElasticsearchClient {
     public static final String INDEX_NAME_KEY = "index.name";
     public static final String INDEX_TYPE_KEY = "index.type";
 
+    public static final int MAX_BULK_ACTIONS = 100_000;
+
     private final Settings mSettings;
     private final String mAliasName;
     private final String mIndexName;
+    private final int mBulkActions;
 
     private BulkRequestBuilder mBulkRequest;
     private Client mClient;
@@ -71,6 +74,8 @@ public class ElasticsearchClient {
             close();
             throw e;
         }
+
+        mBulkActions = aSettings.getAsInt("maxbulkactions", MAX_BULK_ACTIONS);
     }
 
     public ElasticsearchClient(final String aIndexName, final String aIndexType) {
@@ -115,7 +120,11 @@ public class ElasticsearchClient {
     }
 
     public void flush() {
-        flush(mBulkRequest.numberOfActions() > 0);
+        flush(1);
+    }
+
+    public void flush(final int aNum) {
+        flush(mBulkRequest.numberOfActions() >= aNum);
     }
 
     public void flush(final boolean aFlush) {
@@ -123,7 +132,7 @@ public class ElasticsearchClient {
             return;
         }
 
-        mLogger.info("Flushing bulk");
+        mLogger.info("Flushing bulk ({})", mBulkRequest.numberOfActions());
 
         final BulkResponse bulkResponse = mBulkRequest.get();
 
@@ -136,18 +145,21 @@ public class ElasticsearchClient {
     }
 
     public void addBulkIndex(final String aId, final String aDocument) {
+        flush(mBulkActions);
         mBulkRequest.add(mClient
                 .prepareIndex(getIndexName(), getIndexType(), aId)
                 .setSource(aDocument));
     }
 
     public void addBulkUpdate(final String aId, final String aDocument) {
+        flush(mBulkActions);
         mBulkRequest.add(mClient
                 .prepareUpdate(getIndexName(), getIndexType(), aId)
                 .setDoc(aDocument));
     }
 
     public void addBulkDelete(final String aId) {
+        flush(mBulkActions);
         mBulkRequest.add(mClient
                 .prepareDelete(getIndexName(), getIndexType(), aId));
     }
@@ -157,7 +169,7 @@ public class ElasticsearchClient {
     }
 
     private void startBulk() {
-        mLogger.info("Starting new bulk");
+        mLogger.info("Starting bulk");
         mBulkRequest = mClient.prepareBulk();
     }
 
