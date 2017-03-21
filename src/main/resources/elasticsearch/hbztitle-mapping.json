@@ -17,7 +17,9 @@
     "cql" : {
       "properties" : {
         "allIndexes" : {
-          "type" : "string"
+          "type" : "string",
+          "analyzer" : "default",
+          "search_analyzer" : "search"
         }
       }
     },
@@ -27,13 +29,19 @@
           "type" : "integer"
         },
         "title" : {
-          "type" : "string"
+          "type" : "string",
+          "analyzer" : "default",
+          "search_analyzer" : "search"
         },
         "publisher" : {
-          "type" : "string"
+          "type" : "string",
+          "analyzer" : "default",
+          "search_analyzer" : "search"
         },
         "subject" : {
-          "type" : "string"
+          "type" : "string",
+          "analyzer" : "default",
+          "search_analyzer" : "search"
         },
         "identifier" : {
           "type" : "string",
@@ -104,7 +112,9 @@
           "analyzer" : "unstemmed"
         },
         "nameCorporate" : {
-          "type" : "string"
+          "type" : "string",
+          "analyzer" : "default",
+          "search_analyzer" : "search"
         },
         "nameConference" : {
           "type" : "string"
