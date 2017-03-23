@@ -115,8 +115,13 @@
           <regexp match="[ij]" />
         </data>
         <data source="@006Pos00">
-          <regexp match="[ijk]" />
+          <regexp match="[ij]" />
         </data>
+        <all>
+          <data source="@007Pos00">
+            <regexp match="[s]" />
+          </data>
+        </all>
         <all>
           <data source="@type">
             <equals string="CF" />
@@ -246,7 +251,7 @@
             <equals string="VM" />
           </data>
           <data source="@008Pos33">
-            <regexp match="[fvtsm]" />
+            <regexp match="[fmstv]" />
           </data>
         </all>
         <all>
@@ -254,7 +259,7 @@
             <regexp match="[gkor]" />
           </data>
           <data source="@006Pos16">
-            <regexp match="[fvtsm]" />
+            <regexp match="[fmstv]" />
           </data>
         </all>
       </any>
@@ -299,14 +304,6 @@
             <regexp match="[acdijpst]" />
           </data>
           <data source="@006Pos06">
-            <regexp match="[dr]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <regexp match="^(M|VM)$" />
-          </data>
-          <data source="@008Pos29">
             <regexp match="[dr]" />
           </data>
         </all>
@@ -450,7 +447,7 @@
           <equals string="r" />
         </data>
         <data source="@007Pos00">
-          <equals string="f" />
+          <regexp match="[fz]" />
         </data>
         <all>
           <data source="@007Pos00">
@@ -462,7 +459,7 @@
         </all>
         <all>
           <data source="@007Pos00">
-            <regexp match="[fz]" />
+            <equals string="t" />
           </data>
           <data source="@007Pos01">
             <regexp match="[cuz]" />
@@ -915,12 +912,14 @@
     </if>
     <data source="001" />
   </combine>
+  <!-- <combine name="@facet_type" value="Schulbuch">
+  </combine>-->
   <combine name="@facet_type" value="Sonstiges">
     <if>
       <any>
         <all>
           <data source="@007Pos00">
-            <equals string="7" />
+            <equals string="t" />
           </data>
           <data source="@007Pos01">
             <equals string="d" />
