@@ -517,8 +517,8 @@
           <data source="@type">
             <equals string="M" />
           </data>
-          <data source="@008Pos3[43]">
-            <regexp match="[#lnprz]" />
+          <data source="@008Pos3[34]">
+            <regexp match="[#lnpz]" />
           </data>
         </all>
         <all>
@@ -526,7 +526,7 @@
             <regexp match="[ef]" />
           </data>
           <data source="@006Pos1[67]">
-            <regexp match="[#lnprz]" />
+            <regexp match="[#lnpz]" />
           </data>
         </all>
         <all>
@@ -913,7 +913,7 @@
     <data source="001" />
   </combine>
   <!-- <combine name="@facet_type" value="Schulbuch">
-  </combine>-->
+  </combine> -->
   <combine name="@facet_type" value="Sonstiges">
     <if>
       <any>
@@ -923,6 +923,22 @@
           </data>
           <data source="@007Pos01">
             <equals string="d" />
+          </data>
+        </all>
+        <all>
+          <data source="@type">
+            <equals string="M" />
+          </data>
+          <data source="@008Pos3[34]">
+            <equals string="r" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[ef]" />
+          </data>
+          <data source="@006Pos1[67]">
+            <equals string="r" />
           </data>
         </all>
         <all>
