@@ -443,26 +443,12 @@
   <combine name="@facet_format" value="Sonstiges">
     <if>
       <any>
-        <data source="@LeaderPos06|@006Pos00">
-          <equals string="r" />
-        </data>
-        <data source="@007Pos00">
-          <regexp match="[fz]" />
-        </data>
-        <all>
-          <data source="@007Pos00">
-            <equals string="k" />
-          </data>
-          <data source="@007Pos01">
-            <regexp match="[ago]" />
-          </data>
-        </all>
         <all>
           <data source="@007Pos00">
             <equals string="t" />
           </data>
           <data source="@007Pos01">
-            <regexp match="[cuz]" />
+            <equals string="c" />
           </data>
         </all>
         <all>
@@ -470,7 +456,7 @@
             <regexp match="[acdijpst]" />
           </data>
           <data source="@006Pos06">
-            <regexp match="[f#]" />
+            <equals string="f" />
           </data>
         </all>
         <all>
@@ -478,7 +464,7 @@
             <regexp match="^(B|CR|Mu|MX)$" />
           </data>
           <data source="@008Pos23">
-            <regexp match="[f#]" />
+            <equals string="f" />
           </data>
         </all>
         <all>
@@ -486,7 +472,7 @@
             <regexp match="^(M|VM)$" />
           </data>
           <data source="@008Pos29">
-            <regexp match="[f#]" />
+            <equals string="f" />
           </data>
         </all>
         <all>
@@ -494,7 +480,7 @@
             <regexp match="[efgkor]" />
           </data>
           <data source="@006Pos12">
-            <regexp match="[f#]" />
+            <equals string="f" />
           </data>
         </all>
         <all>
@@ -502,7 +488,7 @@
             <equals string="m" />
           </data>
           <data source="@006Pos09">
-            <regexp match="[acdfgijmuz]" />
+            <equals string="g" />
           </data>
         </all>
         <all>
@@ -510,7 +496,7 @@
             <equals string="CF" />
           </data>
           <data source="@008Pos26">
-            <regexp match="[acdfgijmuz]" />
+            <equals string="g" />
           </data>
         </all>
         <all>
@@ -518,7 +504,7 @@
             <equals string="M" />
           </data>
           <data source="@008Pos3[34]">
-            <regexp match="[#lnpz]" />
+            <equals string="n" />
           </data>
         </all>
         <all>
@@ -526,7 +512,7 @@
             <regexp match="[ef]" />
           </data>
           <data source="@006Pos1[67]">
-            <regexp match="[#lnpz]" />
+            <equals string="n" />
           </data>
         </all>
         <all>
@@ -534,7 +520,7 @@
             <equals string="VM" />
           </data>
           <data source="@008Pos33">
-            <regexp match="[acgpoqrwz]" />
+            <regexp match="[gp]" />
           </data>
         </all>
         <all>
@@ -542,7 +528,7 @@
             <regexp match="[gkor]" />
           </data>
           <data source="@006Pos16">
-            <regexp match="[acgpoqrwz]" />
+            <regexp match="[gp]" />
           </data>
         </all>
       </any>
@@ -946,7 +932,7 @@
             <regexp match="^(B|CR)$" />
           </data>
           <data source="@008Pos2[4567]">
-            <regexp match="[acfiopstvwz56]" />
+            <regexp match="[acis]" />
           </data>
         </all>
         <all>
@@ -954,7 +940,7 @@
             <regexp match="[ast]" />
           </data>
           <data source="@006Pos0[789]|@006Pos10">
-            <regexp match="[acfiopstvwz56]" />
+            <regexp match="[acis]" />
           </data>
         </all>
         <all>
@@ -962,7 +948,7 @@
             <equals string="B" />
           </data>
           <data source="@008Pos2[4567]">
-            <regexp match="[jy2]" />
+            <regexp match="[j2]" />
           </data>
         </all>
         <all>
@@ -970,7 +956,7 @@
             <regexp match="[at]" />
           </data>
           <data source="@006Pos0[789]|@006Pos10">
-            <regexp match="[jy2]" />
+            <regexp match="[j2]" />
           </data>
         </all>
         <all>
@@ -978,7 +964,7 @@
             <equals string="B" />
           </data>
           <data source="@008Pos33">
-            <regexp match="[dfhijmpsu01]" />
+            <equals string="m" />
           </data>
         </all>
         <all>
@@ -986,39 +972,7 @@
             <regexp match="[at]" />
           </data>
           <data source="@006Pos16">
-            <regexp match="[dfhijmpsu01]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="M" />
-          </data>
-          <data source="@008Pos3[34]">
-            <equals string="k" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[ef]" />
-          </data>
-          <data source="@006Pos1[67]">
-            <equals string="k" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="Mu" />
-          </data>
-          <data source="@008Pos3[01]">
-            <regexp match="[dfghijklmoprstz]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[cdij]" />
-          </data>
-          <data source="@006Pos1[34]">
-            <regexp match="[dfghijklmoprstz]" />
+            <equals string="m" />
           </data>
         </all>
         <all>
@@ -1026,7 +980,7 @@
             <equals string="CR" />
           </data>
           <data source="@008Pos21">
-            <regexp match="[#dlw]" />
+            <equals string="l" />
           </data>
         </all>
         <all>
@@ -1034,7 +988,7 @@
             <equals string="s" />
           </data>
           <data source="@006Pos04">
-            <regexp match="[#dlw]" />
+            <equals string="l" />
           </data>
         </all>
       </any>
