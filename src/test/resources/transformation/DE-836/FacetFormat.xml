@@ -1,0 +1,2288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Audio: MARC Leader, Pos. 06, code i (Nonmusical sound recording) -->
+    <leader>|     i</leader>
+    <controlfield tag="001">0 </controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Audio: MARC Leader, Pos. 06, code j (Musical sound recording) -->
+    <leader>|     j</leader>
+    <controlfield tag="001">1 </controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Audio: MARC 006, Pos. 00, code i (Nonmusical sound recording) -->
+    <controlfield tag="001">2 </controlfield>
+    <controlfield tag="006">i</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Audio: MARC 006, Pos. 00, code j (Musical sound recording) -->
+    <controlfield tag="001">3 </controlfield>
+    <controlfield tag="006">j</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Audio: MARC 007, Pos. 00, code s (Sound recording) -->
+    <controlfield tag="001">4 </controlfield>
+    <controlfield tag="007">s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Audio: CF und MARC 008, Pos. 26, code h (Sound) -->
+    <leader>|     m</leader>
+    <controlfield tag="001">5 </controlfield>
+    <controlfield tag="008">|                         h</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Audio: MARC 006, Pos. 00, m und MARC 006, Pos. 09, code h (Sound) |-->
+    <controlfield tag="001">6 </controlfield>
+    <controlfield tag="006">m        h</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code kc (Nonprojected graphic, Collage) -->
+    <controlfield tag="001">7 </controlfield>
+    <controlfield tag="007">kc</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code kd (Nonprojected graphic, Drawing) -->
+    <controlfield tag="001">8 </controlfield>
+    <controlfield tag="007">kd</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code ke (Nonprojected graphic, Painting) -->
+    <controlfield tag="001">9 </controlfield>
+    <controlfield tag="007">ke</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code kf (Nonprojected graphic, Photomechanical print) -->
+    <controlfield tag="001">10 </controlfield>
+    <controlfield tag="007">kf</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code kh (Nonprojected graphic, Photoprint) -->
+    <controlfield tag="001">11 </controlfield>
+    <controlfield tag="007">kh</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code ki (Nonprojected graphic, Picture) -->
+    <controlfield tag="001">12 </controlfield>
+    <controlfield tag="007">ki</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code kj (Nonprojected graphic, Print) -->
+    <controlfield tag="001">13 </controlfield>
+    <controlfield tag="007">kj</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code kk (Nonprojected graphic, Poster) -->
+    <controlfield tag="001">14 </controlfield>
+    <controlfield tag="007">kk</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code kl (Nonprojected graphic, Technical drawing) -->
+    <controlfield tag="001">15 </controlfield>
+    <controlfield tag="007">kl</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code kn (Nonprojected graphic, Chart) -->
+    <controlfield tag="001">16 </controlfield>
+    <controlfield tag="007">kn</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code kp (Nonprojected graphic, Postcard) -->
+    <controlfield tag="001">17 </controlfield>
+    <controlfield tag="007">kp</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code kq (Nonprojected graphic, Icon) -->
+    <controlfield tag="001">18 </controlfield>
+    <controlfield tag="007">kq</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code kr (Nonprojected graphic, Radiograph) -->
+    <controlfield tag="001">19 </controlfield>
+    <controlfield tag="007">kr</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code ks (Nonprojected graphic, Study print) -->
+    <controlfield tag="001">20 </controlfield>
+    <controlfield tag="007">ks</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code ku (Nonprojected graphic, Unspecified) -->
+    <controlfield tag="001">21 </controlfield>
+    <controlfield tag="007">ku</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code kv (Nonprojected graphic, Photograph, type unspecified) -->
+    <controlfield tag="001">22 </controlfield>
+    <controlfield tag="007">kv</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code kz (Nonprojected graphic, Other) -->
+    <controlfield tag="001">23 </controlfield>
+    <controlfield tag="007">kz</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 007, Pos. 00, code r (Remote-sensing image) -->
+    <controlfield tag="001">24 </controlfield>
+    <controlfield tag="007">r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: M und MARC 008, Pos. 33 / 34, code j (Picture card, post card) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">25 </controlfield>
+    <controlfield tag="008">|                                j</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: M und MARC 008, Pos. 33 / 34, code j (Picture card, post card) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">26 </controlfield>
+    <controlfield tag="008">|                                 j</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: M und MARC 008, Pos. 33 / 34, code j (Picture card, post card) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">27 </controlfield>
+    <controlfield tag="008">|                                j</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: M und MARC 008, Pos. 33 / 34, code j (Picture card, post card) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">28 </controlfield>
+    <controlfield tag="008">|                                 j</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, e / f und MARC 006, Pos. 16 / 17, code j (Picture card, post card) -->
+    <controlfield tag="001">29 </controlfield>
+    <controlfield tag="006">e               j</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, e / f und MARC 006, Pos. 16 / 17, code j (Picture card, post card) -->
+    <controlfield tag="001">30 </controlfield>
+    <controlfield tag="006">e                j</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, e / f und MARC 006, Pos. 16 / 17, code j (Picture card, post card) -->
+    <controlfield tag="001">31 </controlfield>
+    <controlfield tag="006">f               j</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, e / f und MARC 006, Pos. 16 / 17, code j (Picture card, post card) -->
+    <controlfield tag="001">32 </controlfield>
+    <controlfield tag="006">f                j</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: M und MARC 008, Pos. 33 / 34, code o (Maps, Picture card, Wall map) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">33 </controlfield>
+    <controlfield tag="008">|                                o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: M und MARC 008, Pos. 33 / 34, code o (Maps, Picture card, Wall map) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">34 </controlfield>
+    <controlfield tag="008">|                                 o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: M und MARC 008, Pos. 33 / 34, code o (Maps, Picture card, Wall map) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">35 </controlfield>
+    <controlfield tag="008">|                                o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: M und MARC 008, Pos. 33 / 34, code o (Maps, Picture card, Wall map) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">36 </controlfield>
+    <controlfield tag="008">|                                 o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, e / f und MARC 006, Pos. 16 / 17, code o (Picture card, Wall map) -->
+    <controlfield tag="001">37 </controlfield>
+    <controlfield tag="006">e               o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, e / f und MARC 006, Pos. 16 / 17, code o (Picture card, Wall map) -->
+    <controlfield tag="001">38 </controlfield>
+    <controlfield tag="006">e                o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, e / f und MARC 006, Pos. 16 / 17, code o (Picture card, Wall map) -->
+    <controlfield tag="001">39 </controlfield>
+    <controlfield tag="006">f               o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, e / f und MARC 006, Pos. 16 / 17, code o (Picture card, Wall map) -->
+    <controlfield tag="001">40 </controlfield>
+    <controlfield tag="006">f                o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code d (Diorama) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">41 </controlfield>
+    <controlfield tag="008">|                                d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code d (Diorama) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">42 </controlfield>
+    <controlfield tag="008">|                                d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code d (Diorama) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">43 </controlfield>
+    <controlfield tag="008">|                                d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code d (Diorama) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">44 </controlfield>
+    <controlfield tag="008">|                                d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code d (Diorama) -->
+    <controlfield tag="001">45 </controlfield>
+    <controlfield tag="006">g               d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code d (Diorama) -->
+    <controlfield tag="001">46 </controlfield>
+    <controlfield tag="006">k               d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code d (Diorama) -->
+    <controlfield tag="001">47 </controlfield>
+    <controlfield tag="006">o               d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code d (Diorama) -->
+    <controlfield tag="001">48 </controlfield>
+    <controlfield tag="006">r               d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code i (Picture) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">49 </controlfield>
+    <controlfield tag="008">|                                i</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code i (Picture) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">50 </controlfield>
+    <controlfield tag="008">|                                i</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code i (Picture) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">51 </controlfield>
+    <controlfield tag="008">|                                i</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code i (Picture) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">52 </controlfield>
+    <controlfield tag="008">|                                i</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code i (Picture) -->
+    <controlfield tag="001">53 </controlfield>
+    <controlfield tag="006">g               i</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code i (Picture) -->
+    <controlfield tag="001">54 </controlfield>
+    <controlfield tag="006">k               i</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code i (Picture) -->
+    <controlfield tag="001">55 </controlfield>
+    <controlfield tag="006">o               i</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code i (Picture) -->
+    <controlfield tag="001">56 </controlfield>
+    <controlfield tag="006">r               i</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code k (Graphic) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">57 </controlfield>
+    <controlfield tag="008">|                                k</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code k (Graphic) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">58 </controlfield>
+    <controlfield tag="008">|                                k</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code k (Graphic) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">59 </controlfield>
+    <controlfield tag="008">|                                k</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code k (Graphic) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">60 </controlfield>
+    <controlfield tag="008">|                                k</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code k (Graphic) -->
+    <controlfield tag="001">61 </controlfield>
+    <controlfield tag="006">g               k</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code k (Graphic) -->
+    <controlfield tag="001">62 </controlfield>
+    <controlfield tag="006">k               k</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code k (Graphic) -->
+    <controlfield tag="001">63 </controlfield>
+    <controlfield tag="006">o               k</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code k (Graphic) -->
+    <controlfield tag="001">64 </controlfield>
+    <controlfield tag="006">r               k</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code l (Technical drawing) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">65 </controlfield>
+    <controlfield tag="008">|                                l</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code l (Technical drawing) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">66 </controlfield>
+    <controlfield tag="008">|                                l</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code l (Technical drawing) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">67 </controlfield>
+    <controlfield tag="008">|                                l</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code l (Technical drawing) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">68 </controlfield>
+    <controlfield tag="008">|                                l</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code l (Technical drawing) -->
+    <controlfield tag="001">69 </controlfield>
+    <controlfield tag="006">g               l</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code l (Technical drawing) -->
+    <controlfield tag="001">70 </controlfield>
+    <controlfield tag="006">k               l</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code l (Technical drawing) -->
+    <controlfield tag="001">71 </controlfield>
+    <controlfield tag="006">o               l</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code l (Technical drawing) -->
+    <controlfield tag="001">72 </controlfield>
+    <controlfield tag="006">r               l</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code n (Chart) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">73 </controlfield>
+    <controlfield tag="008">|                                n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code n (Chart) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">74 </controlfield>
+    <controlfield tag="008">|                                n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code n (Chart) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">75 </controlfield>
+    <controlfield tag="008">|                                n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: VM und MARC 008, Pos. 33, code n (Chart) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">76 </controlfield>
+    <controlfield tag="008">|                                n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code n (Chart) |-->
+    <controlfield tag="001">77 </controlfield>
+    <controlfield tag="006">g               n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code n (Chart) |-->
+    <controlfield tag="001">78 </controlfield>
+    <controlfield tag="006">k               n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code n (Chart) |-->
+    <controlfield tag="001">79 </controlfield>
+    <controlfield tag="006">o               n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Bild: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code n (Chart) |-->
+    <controlfield tag="001">80 </controlfield>
+    <controlfield tag="006">r               n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC Leader, Pos. 06, code m (Computer file) -->
+    <leader>|     m</leader>
+    <controlfield tag="001">81 </controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, code m (Computer file) -->
+    <controlfield tag="001">82 </controlfield>
+    <controlfield tag="006">m</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 007, Pos. 00, code c (Electronic resource) -->
+    <controlfield tag="001">83 </controlfield>
+    <controlfield tag="007">c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     aa</leader>
+    <controlfield tag="001">84 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     ac</leader>
+    <controlfield tag="001">85 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     ad</leader>
+    <controlfield tag="001">86 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     am</leader>
+    <controlfield tag="001">87 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     ta</leader>
+    <controlfield tag="001">88 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     tc</leader>
+    <controlfield tag="001">89 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     td</leader>
+    <controlfield tag="001">90 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     tm</leader>
+    <controlfield tag="001">91 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     c</leader>
+    <controlfield tag="001">92 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     d</leader>
+    <controlfield tag="001">93 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     i</leader>
+    <controlfield tag="001">94 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     j</leader>
+    <controlfield tag="001">95 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     ab</leader>
+    <controlfield tag="001">96 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     ai</leader>
+    <controlfield tag="001">97 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     as</leader>
+    <controlfield tag="001">98 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code q (Direct electronic) -->
+    <leader>|     p</leader>
+    <controlfield tag="001">99 </controlfield>
+    <controlfield tag="008">|                      q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code q (Direct electronic) -->
+    <controlfield tag="001">100 </controlfield>
+    <controlfield tag="006">a     q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code q (Direct electronic) -->
+    <controlfield tag="001">101 </controlfield>
+    <controlfield tag="006">c     q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code q (Direct electronic) -->
+    <controlfield tag="001">102 </controlfield>
+    <controlfield tag="006">d     q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code q (Direct electronic) -->
+    <controlfield tag="001">103 </controlfield>
+    <controlfield tag="006">i     q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code q (Direct electronic) -->
+    <controlfield tag="001">104 </controlfield>
+    <controlfield tag="006">j     q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code q (Direct electronic) -->
+    <controlfield tag="001">105 </controlfield>
+    <controlfield tag="006">p     q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code q (Direct electronic) -->
+    <controlfield tag="001">106 </controlfield>
+    <controlfield tag="006">s     q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code q (Direct electronic) -->
+    <controlfield tag="001">107 </controlfield>
+    <controlfield tag="006">t     q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     aa</leader>
+    <controlfield tag="001">108 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     ac</leader>
+    <controlfield tag="001">109 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     ad</leader>
+    <controlfield tag="001">110 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     am</leader>
+    <controlfield tag="001">111 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     ta</leader>
+    <controlfield tag="001">112 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     tc</leader>
+    <controlfield tag="001">113 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     td</leader>
+    <controlfield tag="001">114 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     tm</leader>
+    <controlfield tag="001">115 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     c</leader>
+    <controlfield tag="001">116 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     d</leader>
+    <controlfield tag="001">117 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     i</leader>
+    <controlfield tag="001">118 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     j</leader>
+    <controlfield tag="001">119 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     ab</leader>
+    <controlfield tag="001">120 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     ai</leader>
+    <controlfield tag="001">121 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     as</leader>
+    <controlfield tag="001">122 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code s (Electronic) -->
+    <leader>|     p</leader>
+    <controlfield tag="001">123 </controlfield>
+    <controlfield tag="008">|                      s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code s (Electronic) -->
+    <controlfield tag="001">124 </controlfield>
+    <controlfield tag="006">a     s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code s (Electronic) -->
+    <controlfield tag="001">125 </controlfield>
+    <controlfield tag="006">c     s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code s (Electronic) -->
+    <controlfield tag="001">126 </controlfield>
+    <controlfield tag="006">d     s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code s (Electronic) -->
+    <controlfield tag="001">127 </controlfield>
+    <controlfield tag="006">i     s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code s (Electronic) -->
+    <controlfield tag="001">128 </controlfield>
+    <controlfield tag="006">j     s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code s (Electronic) -->
+    <controlfield tag="001">129 </controlfield>
+    <controlfield tag="006">p     s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code s (Electronic) -->
+    <controlfield tag="001">130 </controlfield>
+    <controlfield tag="006">s     s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code s (Electronic) -->
+    <controlfield tag="001">131 </controlfield>
+    <controlfield tag="006">t     s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: M/VM und MARC 008, Pos. 29, code q (Direct electronic) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">132 </controlfield>
+    <controlfield tag="008">|                            q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: M/VM und MARC 008, Pos. 29, code q (Direct electronic) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">133 </controlfield>
+    <controlfield tag="008">|                            q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: M/VM und MARC 008, Pos. 29, code q (Direct electronic) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">134 </controlfield>
+    <controlfield tag="008">|                            q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: M/VM und MARC 008, Pos. 29, code q (Direct electronic) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">135 </controlfield>
+    <controlfield tag="008">|                            q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: M/VM und MARC 008, Pos. 29, code q (Direct electronic) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">136 </controlfield>
+    <controlfield tag="008">|                            q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: M/VM und MARC 008, Pos. 29, code q (Direct electronic) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">137 </controlfield>
+    <controlfield tag="008">|                            q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code q (Direct electronic) -->
+    <controlfield tag="001">138 </controlfield>
+    <controlfield tag="006">e           q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code q (Direct electronic) -->
+    <controlfield tag="001">139 </controlfield>
+    <controlfield tag="006">f           q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code q (Direct electronic) -->
+    <controlfield tag="001">140 </controlfield>
+    <controlfield tag="006">g           q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code q (Direct electronic) -->
+    <controlfield tag="001">141 </controlfield>
+    <controlfield tag="006">k           q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code q (Direct electronic) -->
+    <controlfield tag="001">142 </controlfield>
+    <controlfield tag="006">o           q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code q (Direct electronic) -->
+    <controlfield tag="001">143 </controlfield>
+    <controlfield tag="006">r           q</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: M/VM und MARC 008, Pos. 29, code s (Electronic) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">144 </controlfield>
+    <controlfield tag="008">|                            s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: M/VM und MARC 008, Pos. 29, code s (Electronic) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">145 </controlfield>
+    <controlfield tag="008">|                            s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: M/VM und MARC 008, Pos. 29, code s (Electronic) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">146 </controlfield>
+    <controlfield tag="008">|                            s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: M/VM und MARC 008, Pos. 29, code s (Electronic) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">147 </controlfield>
+    <controlfield tag="008">|                            s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: M/VM und MARC 008, Pos. 29, code s (Electronic) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">148 </controlfield>
+    <controlfield tag="008">|                            s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: M/VM und MARC 008, Pos. 29, code s (Electronic) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">149 </controlfield>
+    <controlfield tag="008">|                            s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code s (Electronic) |-->
+    <controlfield tag="001">150 </controlfield>
+    <controlfield tag="006">e           s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code s (Electronic) |-->
+    <controlfield tag="001">151 </controlfield>
+    <controlfield tag="006">f           s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code s (Electronic) |-->
+    <controlfield tag="001">152 </controlfield>
+    <controlfield tag="006">g           s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code s (Electronic) |-->
+    <controlfield tag="001">153 </controlfield>
+    <controlfield tag="006">k           s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code s (Electronic) |-->
+    <controlfield tag="001">154 </controlfield>
+    <controlfield tag="006">o           s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Elektronische Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code s (Electronic) |-->
+    <controlfield tag="001">155 </controlfield>
+    <controlfield tag="006">r           s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 007, Pos. 00, code g (Projected graphic) -->
+    <controlfield tag="001">156 </controlfield>
+    <controlfield tag="007">g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 007, Pos. 00, code m (Motion picture) -->
+    <controlfield tag="001">157 </controlfield>
+    <controlfield tag="007">m</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 007, Pos. 00, code v (Videorecording) -->
+    <controlfield tag="001">158 </controlfield>
+    <controlfield tag="007">v</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code f (Filmstrip) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">159 </controlfield>
+    <controlfield tag="008">|                                f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code f (Filmstrip) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">160 </controlfield>
+    <controlfield tag="008">|                                f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code f (Filmstrip) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">161 </controlfield>
+    <controlfield tag="008">|                                f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code f (Filmstrip) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">162 </controlfield>
+    <controlfield tag="008">|                                f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code f (Filmstrip) -->
+    <controlfield tag="001">163 </controlfield>
+    <controlfield tag="006">g               f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code f (Filmstrip) -->
+    <controlfield tag="001">164 </controlfield>
+    <controlfield tag="006">k               f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code f (Filmstrip) -->
+    <controlfield tag="001">165 </controlfield>
+    <controlfield tag="006">o               f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code f (Filmstrip) -->
+    <controlfield tag="001">166 </controlfield>
+    <controlfield tag="006">r               f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code m (Motion picture) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">167 </controlfield>
+    <controlfield tag="008">|                                m</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code m (Motion picture) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">168 </controlfield>
+    <controlfield tag="008">|                                m</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code m (Motion picture) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">169 </controlfield>
+    <controlfield tag="008">|                                m</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code m (Motion picture) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">170 </controlfield>
+    <controlfield tag="008">|                                m</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code m (Motion picture) -->
+    <controlfield tag="001">171 </controlfield>
+    <controlfield tag="006">g               m</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code m (Motion picture) -->
+    <controlfield tag="001">172 </controlfield>
+    <controlfield tag="006">k               m</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code m (Motion picture) -->
+    <controlfield tag="001">173 </controlfield>
+    <controlfield tag="006">o               m</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code m (Motion picture) -->
+    <controlfield tag="001">174 </controlfield>
+    <controlfield tag="006">r               m</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code s (Slide) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">175 </controlfield>
+    <controlfield tag="008">|                                s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code s (Slide) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">176 </controlfield>
+    <controlfield tag="008">|                                s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code s (Slide) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">177 </controlfield>
+    <controlfield tag="008">|                                s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code s (Slide) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">178 </controlfield>
+    <controlfield tag="008">|                                s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code s (Slide) -->
+    <controlfield tag="001">179 </controlfield>
+    <controlfield tag="006">g               s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code s (Slide) -->
+    <controlfield tag="001">180 </controlfield>
+    <controlfield tag="006">k               s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code s (Slide) -->
+    <controlfield tag="001">181 </controlfield>
+    <controlfield tag="006">o               s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code s (Slide) -->
+    <controlfield tag="001">182 </controlfield>
+    <controlfield tag="006">r               s</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code t (Transparency) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">183 </controlfield>
+    <controlfield tag="008">|                                t</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code t (Transparency) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">184 </controlfield>
+    <controlfield tag="008">|                                t</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code t (Transparency) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">185 </controlfield>
+    <controlfield tag="008">|                                t</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code t (Transparency) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">186 </controlfield>
+    <controlfield tag="008">|                                t</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code t (Transparency) -->
+    <controlfield tag="001">187 </controlfield>
+    <controlfield tag="006">g               t</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code t (Transparency) -->
+    <controlfield tag="001">188 </controlfield>
+    <controlfield tag="006">k               t</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code t (Transparency) -->
+    <controlfield tag="001">189 </controlfield>
+    <controlfield tag="006">o               t</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code t (Transparency) -->
+    <controlfield tag="001">190 </controlfield>
+    <controlfield tag="006">r               t</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code v (Videorecording) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">191 </controlfield>
+    <controlfield tag="008">|                                v</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code v (Videorecording) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">192 </controlfield>
+    <controlfield tag="008">|                                v</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code v (Videorecording) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">193 </controlfield>
+    <controlfield tag="008">|                                v</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: VM und MARC 008, Pos. 33, code v (Videorecording) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">194 </controlfield>
+    <controlfield tag="008">|                                v</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code v (Videorecording) |-->
+    <controlfield tag="001">195 </controlfield>
+    <controlfield tag="006">g               v</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code v (Videorecording) |-->
+    <controlfield tag="001">196 </controlfield>
+    <controlfield tag="006">k               v</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code v (Videorecording) |-->
+    <controlfield tag="001">197 </controlfield>
+    <controlfield tag="006">o               v</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Film, Dia, Video: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code v (Videorecording) |-->
+    <controlfield tag="001">198 </controlfield>
+    <controlfield tag="006">r               v</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC Leader, Pos. 06, code o (Kit) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">199 </controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC Leader, Pos. 06, code p (Mixed materials) -->
+    <leader>|     p</leader>
+    <controlfield tag="001">200 </controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, code o (Kit) -->
+    <controlfield tag="001">201 </controlfield>
+    <controlfield tag="006">o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, code p (Mixed materials) -->
+    <controlfield tag="001">202 </controlfield>
+    <controlfield tag="006">p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 007, Pos. 00, code kf (Photomechanical print) -->
+    <controlfield tag="001">203 </controlfield>
+    <controlfield tag="007">kf</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 007, Pos. 00, code kj (Print) -->
+    <controlfield tag="001">204 </controlfield>
+    <controlfield tag="007">kj</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 007, Pos. 00, code ks (Study print) -->
+    <controlfield tag="001">205 </controlfield>
+    <controlfield tag="007">ks</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 007, Pos. 00, code o (Kit) -->
+    <controlfield tag="001">206 </controlfield>
+    <controlfield tag="007">o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 007, Pos. 00, code ta (Regular print) -->
+    <controlfield tag="001">207 </controlfield>
+    <controlfield tag="007">ta</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 007, Pos. 00, code tb (Large print) -->
+    <controlfield tag="001">208 </controlfield>
+    <controlfield tag="007">tb</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     aa</leader>
+    <controlfield tag="001">209 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     ac</leader>
+    <controlfield tag="001">210 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     ad</leader>
+    <controlfield tag="001">211 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     am</leader>
+    <controlfield tag="001">212 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     ta</leader>
+    <controlfield tag="001">213 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     tc</leader>
+    <controlfield tag="001">214 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     td</leader>
+    <controlfield tag="001">215 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     tm</leader>
+    <controlfield tag="001">216 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     c</leader>
+    <controlfield tag="001">217 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     d</leader>
+    <controlfield tag="001">218 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     i</leader>
+    <controlfield tag="001">219 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     j</leader>
+    <controlfield tag="001">220 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     ab</leader>
+    <controlfield tag="001">221 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     ai</leader>
+    <controlfield tag="001">222 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     as</leader>
+    <controlfield tag="001">223 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code d (Large print) -->
+    <leader>|     p</leader>
+    <controlfield tag="001">224 </controlfield>
+    <controlfield tag="008">|                      d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code d (Large print) -->
+    <controlfield tag="001">225 </controlfield>
+    <controlfield tag="006">a     d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code d (Large print) -->
+    <controlfield tag="001">226 </controlfield>
+    <controlfield tag="006">c     d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code d (Large print) -->
+    <controlfield tag="001">227 </controlfield>
+    <controlfield tag="006">d     d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code d (Large print) -->
+    <controlfield tag="001">228 </controlfield>
+    <controlfield tag="006">i     d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code d (Large print) -->
+    <controlfield tag="001">229 </controlfield>
+    <controlfield tag="006">j     d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code d (Large print) -->
+    <controlfield tag="001">230 </controlfield>
+    <controlfield tag="006">p     d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code d (Large print) -->
+    <controlfield tag="001">231 </controlfield>
+    <controlfield tag="006">s     d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code d (Large print) -->
+    <controlfield tag="001">232 </controlfield>
+    <controlfield tag="006">t     d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     aa</leader>
+    <controlfield tag="001">233 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     ac</leader>
+    <controlfield tag="001">234 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     ad</leader>
+    <controlfield tag="001">235 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     am</leader>
+    <controlfield tag="001">236 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     ta</leader>
+    <controlfield tag="001">237 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     tc</leader>
+    <controlfield tag="001">238 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     td</leader>
+    <controlfield tag="001">239 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     tm</leader>
+    <controlfield tag="001">240 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     c</leader>
+    <controlfield tag="001">241 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     d</leader>
+    <controlfield tag="001">242 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     i</leader>
+    <controlfield tag="001">243 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     j</leader>
+    <controlfield tag="001">244 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     ab</leader>
+    <controlfield tag="001">245 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     ai</leader>
+    <controlfield tag="001">246 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     as</leader>
+    <controlfield tag="001">247 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: B/Mu/CR/MX und MARC 008, Pos. 23, code r (Regular print reproduction) -->
+    <leader>|     p</leader>
+    <controlfield tag="001">248 </controlfield>
+    <controlfield tag="008">|                      r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code r (Regular print reproduction) -->
+    <controlfield tag="001">249 </controlfield>
+    <controlfield tag="006">a     r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code r (Regular print reproduction) -->
+    <controlfield tag="001">250 </controlfield>
+    <controlfield tag="006">c     r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code r (Regular print reproduction) -->
+    <controlfield tag="001">251 </controlfield>
+    <controlfield tag="006">d     r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code r (Regular print reproduction) -->
+    <controlfield tag="001">252 </controlfield>
+    <controlfield tag="006">i     r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code r (Regular print reproduction) -->
+    <controlfield tag="001">253 </controlfield>
+    <controlfield tag="006">j     r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code r (Regular print reproduction) -->
+    <controlfield tag="001">254 </controlfield>
+    <controlfield tag="006">p     r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code r (Regular print reproduction) -->
+    <controlfield tag="001">255 </controlfield>
+    <controlfield tag="006">s     r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code r (Regular print reproduction) -->
+    <controlfield tag="001">256 </controlfield>
+    <controlfield tag="006">t     r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: M/VM und MARC 008, Pos. 29, code d (Large print) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">257 </controlfield>
+    <controlfield tag="008">|                            d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: M/VM und MARC 008, Pos. 29, code d (Large print) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">258 </controlfield>
+    <controlfield tag="008">|                            d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: M/VM und MARC 008, Pos. 29, code d (Large print) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">259 </controlfield>
+    <controlfield tag="008">|                            d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: M/VM und MARC 008, Pos. 29, code d (Large print) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">260 </controlfield>
+    <controlfield tag="008">|                            d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: M/VM und MARC 008, Pos. 29, code d (Large print) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">261 </controlfield>
+    <controlfield tag="008">|                            d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: M/VM und MARC 008, Pos. 29, code d (Large print) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">262 </controlfield>
+    <controlfield tag="008">|                            d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code d (Large print) -->
+    <controlfield tag="001">263 </controlfield>
+    <controlfield tag="006">e           d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code d (Large print) -->
+    <controlfield tag="001">264 </controlfield>
+    <controlfield tag="006">f           d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code d (Large print) -->
+    <controlfield tag="001">265 </controlfield>
+    <controlfield tag="006">g           d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code d (Large print) -->
+    <controlfield tag="001">266 </controlfield>
+    <controlfield tag="006">k           d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code d (Large print) -->
+    <controlfield tag="001">267 </controlfield>
+    <controlfield tag="006">o           d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code d (Large print) -->
+    <controlfield tag="001">268 </controlfield>
+    <controlfield tag="006">r           d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: M/VM und MARC 008, Pos. 29, code r (Regular print reproduction) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">269 </controlfield>
+    <controlfield tag="008">|                            r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: M/VM und MARC 008, Pos. 29, code r (Regular print reproduction) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">270 </controlfield>
+    <controlfield tag="008">|                            r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: M/VM und MARC 008, Pos. 29, code r (Regular print reproduction) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">271 </controlfield>
+    <controlfield tag="008">|                            r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: M/VM und MARC 008, Pos. 29, code r (Regular print reproduction) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">272 </controlfield>
+    <controlfield tag="008">|                            r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: M/VM und MARC 008, Pos. 29, code r (Regular print reproduction) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">273 </controlfield>
+    <controlfield tag="008">|                            r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: M/VM und MARC 008, Pos. 29, code r (Regular print reproduction) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">274 </controlfield>
+    <controlfield tag="008">|                            r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code r (Regular print reproduction) -->
+    <controlfield tag="001">275 </controlfield>
+    <controlfield tag="006">e           r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code r (Regular print reproduction) -->
+    <controlfield tag="001">276 </controlfield>
+    <controlfield tag="006">f           r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code r (Regular print reproduction) -->
+    <controlfield tag="001">277 </controlfield>
+    <controlfield tag="006">g           r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code r (Regular print reproduction) -->
+    <controlfield tag="001">278 </controlfield>
+    <controlfield tag="006">k           r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code r (Regular print reproduction) -->
+    <controlfield tag="001">279 </controlfield>
+    <controlfield tag="006">o           r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, e/f/g/k/o/r und MARC 006, Pos. 12, code r (Regular print reproduction) -->
+    <controlfield tag="001">280 </controlfield>
+    <controlfield tag="006">r           r</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: VM und MARC 008, Pos. 33, code b (Kit) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">281 </controlfield>
+    <controlfield tag="008">|                                b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: VM und MARC 008, Pos. 33, code b (Kit) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">282 </controlfield>
+    <controlfield tag="008">|                                b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: VM und MARC 008, Pos. 33, code b (Kit) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">283 </controlfield>
+    <controlfield tag="008">|                                b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: VM und MARC 008, Pos. 33, code b (Kit) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">284 </controlfield>
+    <controlfield tag="008">|                                b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code b (Kit) |-->
+    <controlfield tag="001">285 </controlfield>
+    <controlfield tag="006">g               b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code b (Kit) |-->
+    <controlfield tag="001">286 </controlfield>
+    <controlfield tag="006">k               b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code b (Kit) |-->
+    <controlfield tag="001">287 </controlfield>
+    <controlfield tag="006">o               b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Gedruckte Ressource: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code b (Kit) |-->
+    <controlfield tag="001">288 </controlfield>
+    <controlfield tag="006">r               b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Landkarte: MARC Leader, Pos. 06, code e (Cartographic material) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">289 </controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Landkarte: MARC Leader, Pos. 06, code f (Manuscript cartographic material) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">290 </controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Landkarte: MARC 006, Pos. 00, code e (Cartographic material) -->
+    <controlfield tag="001">291 </controlfield>
+    <controlfield tag="006">e</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Landkarte: MARC 006, Pos. 00, code f (Manuscript cartographic material) -->
+    <controlfield tag="001">292 </controlfield>
+    <controlfield tag="006">f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Landkarte: MARC 007, Pos. 00, code a (Map) -->
+    <controlfield tag="001">293 </controlfield>
+    <controlfield tag="007">a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Landkarte: MARC 007, Pos. 00, code d (Globe) |-->
+    <controlfield tag="001">294 </controlfield>
+    <controlfield tag="007">d</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 007, Pos. 00, code h (Microform) -->
+    <controlfield tag="001">295 </controlfield>
+    <controlfield tag="007">h</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code a (Microfilm) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">296 </controlfield>
+    <controlfield tag="008">|                            a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code a (Microfilm) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">297 </controlfield>
+    <controlfield tag="008">|                            a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code a (Microfilm) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">298 </controlfield>
+    <controlfield tag="008">|                            a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code a (Microfilm) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">299 </controlfield>
+    <controlfield tag="008">|                            a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code a (Microfilm) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">300 </controlfield>
+    <controlfield tag="008">|                            a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code a (Microfilm) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">301 </controlfield>
+    <controlfield tag="008">|                            a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code a (Microfilm) -->
+    <controlfield tag="001">302 </controlfield>
+    <controlfield tag="006">e           a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code a (Microfilm) -->
+    <controlfield tag="001">303 </controlfield>
+    <controlfield tag="006">f           a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code a (Microfilm) -->
+    <controlfield tag="001">304 </controlfield>
+    <controlfield tag="006">g           a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code a (Microfilm) -->
+    <controlfield tag="001">305 </controlfield>
+    <controlfield tag="006">k           a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code a (Microfilm) -->
+    <controlfield tag="001">306 </controlfield>
+    <controlfield tag="006">o           a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code a (Microfilm) -->
+    <controlfield tag="001">307 </controlfield>
+    <controlfield tag="006">r           a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code b (Microfiche) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">308 </controlfield>
+    <controlfield tag="008">|                            b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code b (Microfiche) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">309 </controlfield>
+    <controlfield tag="008">|                            b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code b (Microfiche) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">310 </controlfield>
+    <controlfield tag="008">|                            b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code b (Microfiche) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">311 </controlfield>
+    <controlfield tag="008">|                            b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code b (Microfiche) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">312 </controlfield>
+    <controlfield tag="008">|                            b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code b (Microfiche) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">313 </controlfield>
+    <controlfield tag="008">|                            b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code b (Microfiche) -->
+    <controlfield tag="001">314 </controlfield>
+    <controlfield tag="006">e           b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code b (Microfiche) -->
+    <controlfield tag="001">315 </controlfield>
+    <controlfield tag="006">f           b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code b (Microfiche) -->
+    <controlfield tag="001">316 </controlfield>
+    <controlfield tag="006">g           b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code b (Microfiche) -->
+    <controlfield tag="001">317 </controlfield>
+    <controlfield tag="006">k           b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code b (Microfiche) -->
+    <controlfield tag="001">318 </controlfield>
+    <controlfield tag="006">o           b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code b (Microfiche) -->
+    <controlfield tag="001">319 </controlfield>
+    <controlfield tag="006">r           b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code c (Microopaque) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">320 </controlfield>
+    <controlfield tag="008">|                            c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code c (Microopaque) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">321 </controlfield>
+    <controlfield tag="008">|                            c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code c (Microopaque) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">322 </controlfield>
+    <controlfield tag="008">|                            c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code c (Microopaque) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">323 </controlfield>
+    <controlfield tag="008">|                            c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code c (Microopaque) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">324 </controlfield>
+    <controlfield tag="008">|                            c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: M/VM und MARC 008, Pos. 29, code c (Microopaque) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">325 </controlfield>
+    <controlfield tag="008">|                            c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code c (Microopaque) -->
+    <controlfield tag="001">326 </controlfield>
+    <controlfield tag="006">e           c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code c (Microopaque) -->
+    <controlfield tag="001">327 </controlfield>
+    <controlfield tag="006">f           c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code c (Microopaque) -->
+    <controlfield tag="001">328 </controlfield>
+    <controlfield tag="006">g           c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code c (Microopaque) -->
+    <controlfield tag="001">329 </controlfield>
+    <controlfield tag="006">k           c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code c (Microopaque) -->
+    <controlfield tag="001">330 </controlfield>
+    <controlfield tag="006">o           c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code c (Microopaque) -->
+    <controlfield tag="001">331 </controlfield>
+    <controlfield tag="006">r           c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     aa</leader>
+    <controlfield tag="001">332 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     ac</leader>
+    <controlfield tag="001">333 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     ad</leader>
+    <controlfield tag="001">334 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     am</leader>
+    <controlfield tag="001">335 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     ta</leader>
+    <controlfield tag="001">336 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     tc</leader>
+    <controlfield tag="001">337 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     td</leader>
+    <controlfield tag="001">338 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     tm</leader>
+    <controlfield tag="001">339 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     c</leader>
+    <controlfield tag="001">340 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     d</leader>
+    <controlfield tag="001">341 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     i</leader>
+    <controlfield tag="001">342 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     j</leader>
+    <controlfield tag="001">343 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     ab</leader>
+    <controlfield tag="001">344 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     ai</leader>
+    <controlfield tag="001">345 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     as</leader>
+    <controlfield tag="001">346 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code a (Microfilm) -->
+    <leader>|     p</leader>
+    <controlfield tag="001">347 </controlfield>
+    <controlfield tag="008">|                      a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code a (Microfilm) -->
+    <controlfield tag="001">348 </controlfield>
+    <controlfield tag="006">a     a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code a (Microfilm) -->
+    <controlfield tag="001">349 </controlfield>
+    <controlfield tag="006">c     a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code a (Microfilm) -->
+    <controlfield tag="001">350 </controlfield>
+    <controlfield tag="006">d     a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code a (Microfilm) -->
+    <controlfield tag="001">351 </controlfield>
+    <controlfield tag="006">i     a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code a (Microfilm) -->
+    <controlfield tag="001">352 </controlfield>
+    <controlfield tag="006">j     a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code a (Microfilm) -->
+    <controlfield tag="001">353 </controlfield>
+    <controlfield tag="006">p     a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code a (Microfilm) -->
+    <controlfield tag="001">354 </controlfield>
+    <controlfield tag="006">s     a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code a (Microfilm) -->
+    <controlfield tag="001">355 </controlfield>
+    <controlfield tag="006">t     a</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     aa</leader>
+    <controlfield tag="001">356 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     ac</leader>
+    <controlfield tag="001">357 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     ad</leader>
+    <controlfield tag="001">358 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     am</leader>
+    <controlfield tag="001">359 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     ta</leader>
+    <controlfield tag="001">360 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     tc</leader>
+    <controlfield tag="001">361 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     td</leader>
+    <controlfield tag="001">362 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     tm</leader>
+    <controlfield tag="001">363 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     c</leader>
+    <controlfield tag="001">364 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     d</leader>
+    <controlfield tag="001">365 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     i</leader>
+    <controlfield tag="001">366 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     j</leader>
+    <controlfield tag="001">367 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     ab</leader>
+    <controlfield tag="001">368 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     ai</leader>
+    <controlfield tag="001">369 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     as</leader>
+    <controlfield tag="001">370 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code b (Microfiche) -->
+    <leader>|     p</leader>
+    <controlfield tag="001">371 </controlfield>
+    <controlfield tag="008">|                      b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code b (Microfiche) -->
+    <controlfield tag="001">372 </controlfield>
+    <controlfield tag="006">a     b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code b (Microfiche) -->
+    <controlfield tag="001">373 </controlfield>
+    <controlfield tag="006">c     b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code b (Microfiche) -->
+    <controlfield tag="001">374 </controlfield>
+    <controlfield tag="006">d     b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code b (Microfiche) -->
+    <controlfield tag="001">375 </controlfield>
+    <controlfield tag="006">i     b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code b (Microfiche) -->
+    <controlfield tag="001">376 </controlfield>
+    <controlfield tag="006">j     b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code b (Microfiche) -->
+    <controlfield tag="001">377 </controlfield>
+    <controlfield tag="006">p     b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code b (Microfiche) -->
+    <controlfield tag="001">378 </controlfield>
+    <controlfield tag="006">s     b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code b (Microfiche) -->
+    <controlfield tag="001">379 </controlfield>
+    <controlfield tag="006">t     b</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     aa</leader>
+    <controlfield tag="001">380 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     ac</leader>
+    <controlfield tag="001">381 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     ad</leader>
+    <controlfield tag="001">382 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     am</leader>
+    <controlfield tag="001">383 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     ta</leader>
+    <controlfield tag="001">384 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     tc</leader>
+    <controlfield tag="001">385 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     td</leader>
+    <controlfield tag="001">386 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     tm</leader>
+    <controlfield tag="001">387 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     c</leader>
+    <controlfield tag="001">388 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     d</leader>
+    <controlfield tag="001">389 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     i</leader>
+    <controlfield tag="001">390 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     j</leader>
+    <controlfield tag="001">391 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     ab</leader>
+    <controlfield tag="001">392 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     ai</leader>
+    <controlfield tag="001">393 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     as</leader>
+    <controlfield tag="001">394 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: B/Mu/CR/MX und MARC 008, Pos. 23, code c (Microopaque) -->
+    <leader>|     p</leader>
+    <controlfield tag="001">395 </controlfield>
+    <controlfield tag="008">|                      c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code c (Microopaque) |-->
+    <controlfield tag="001">396 </controlfield>
+    <controlfield tag="006">a     c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code c (Microopaque) |-->
+    <controlfield tag="001">397 </controlfield>
+    <controlfield tag="006">c     c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code c (Microopaque) |-->
+    <controlfield tag="001">398 </controlfield>
+    <controlfield tag="006">d     c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code c (Microopaque) |-->
+    <controlfield tag="001">399 </controlfield>
+    <controlfield tag="006">i     c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code c (Microopaque) |-->
+    <controlfield tag="001">400 </controlfield>
+    <controlfield tag="006">j     c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code c (Microopaque) |-->
+    <controlfield tag="001">401 </controlfield>
+    <controlfield tag="006">p     c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code c (Microopaque) |-->
+    <controlfield tag="001">402 </controlfield>
+    <controlfield tag="006">s     c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Mikroform: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code c (Microopaque) |-->
+    <controlfield tag="001">403 </controlfield>
+    <controlfield tag="006">t     c</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     aa</leader>
+    <controlfield tag="001">404 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     ac</leader>
+    <controlfield tag="001">405 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     ad</leader>
+    <controlfield tag="001">406 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     am</leader>
+    <controlfield tag="001">407 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     ta</leader>
+    <controlfield tag="001">408 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     tc</leader>
+    <controlfield tag="001">409 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     td</leader>
+    <controlfield tag="001">410 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     tm</leader>
+    <controlfield tag="001">411 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     c</leader>
+    <controlfield tag="001">412 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     d</leader>
+    <controlfield tag="001">413 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     i</leader>
+    <controlfield tag="001">414 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     j</leader>
+    <controlfield tag="001">415 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     m</leader>
+    <controlfield tag="001">416 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     ab</leader>
+    <controlfield tag="001">417 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     ai</leader>
+    <controlfield tag="001">418 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     as</leader>
+    <controlfield tag="001">419 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: B/Mu/CF/CR/MX und MARC 008, Pos. 23, code o (Online) -->
+    <leader>|     p</leader>
+    <controlfield tag="001">420 </controlfield>
+    <controlfield tag="008">|                      o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t/m und MARC 006, Pos. 06, code o (Online) -->
+    <controlfield tag="001">421 </controlfield>
+    <controlfield tag="006">a     o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t/m und MARC 006, Pos. 06, code o (Online) -->
+    <controlfield tag="001">422 </controlfield>
+    <controlfield tag="006">c     o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t/m und MARC 006, Pos. 06, code o (Online) -->
+    <controlfield tag="001">423 </controlfield>
+    <controlfield tag="006">d     o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t/m und MARC 006, Pos. 06, code o (Online) -->
+    <controlfield tag="001">424 </controlfield>
+    <controlfield tag="006">i     o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t/m und MARC 006, Pos. 06, code o (Online) -->
+    <controlfield tag="001">425 </controlfield>
+    <controlfield tag="006">j     o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t/m und MARC 006, Pos. 06, code o (Online) -->
+    <controlfield tag="001">426 </controlfield>
+    <controlfield tag="006">p     o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t/m und MARC 006, Pos. 06, code o (Online) -->
+    <controlfield tag="001">427 </controlfield>
+    <controlfield tag="006">s     o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t/m und MARC 006, Pos. 06, code o (Online) -->
+    <controlfield tag="001">428 </controlfield>
+    <controlfield tag="006">t     o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t/m und MARC 006, Pos. 06, code o (Online) -->
+    <controlfield tag="001">429 </controlfield>
+    <controlfield tag="006">m     o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: M/VM und MARC 008, Pos. 29, code o (Online) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">430 </controlfield>
+    <controlfield tag="008">|                            o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: M/VM und MARC 008, Pos. 29, code o (Online) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">431 </controlfield>
+    <controlfield tag="008">|                            o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: M/VM und MARC 008, Pos. 29, code o (Online) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">432 </controlfield>
+    <controlfield tag="008">|                            o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: M/VM und MARC 008, Pos. 29, code o (Online) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">433 </controlfield>
+    <controlfield tag="008">|                            o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: M/VM und MARC 008, Pos. 29, code o (Online) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">434 </controlfield>
+    <controlfield tag="008">|                            o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: M/VM und MARC 008, Pos. 29, code o (Online) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">435 </controlfield>
+    <controlfield tag="008">|                            o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code o (Online) |-->
+    <controlfield tag="001">436 </controlfield>
+    <controlfield tag="006">e           o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code o (Online) |-->
+    <controlfield tag="001">437 </controlfield>
+    <controlfield tag="006">f           o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code o (Online) |-->
+    <controlfield tag="001">438 </controlfield>
+    <controlfield tag="006">g           o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code o (Online) |-->
+    <controlfield tag="001">439 </controlfield>
+    <controlfield tag="006">k           o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code o (Online) |-->
+    <controlfield tag="001">440 </controlfield>
+    <controlfield tag="006">o           o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Online-Ressource: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code o (Online) |-->
+    <controlfield tag="001">441 </controlfield>
+    <controlfield tag="006">r           o</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 007, Pos. 00, code tc (Text, Braille) -->
+    <controlfield tag="001">442 </controlfield>
+    <controlfield tag="007">tc</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     aa</leader>
+    <controlfield tag="001">443 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     ac</leader>
+    <controlfield tag="001">444 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     ad</leader>
+    <controlfield tag="001">445 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     am</leader>
+    <controlfield tag="001">446 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     ta</leader>
+    <controlfield tag="001">447 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     tc</leader>
+    <controlfield tag="001">448 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     td</leader>
+    <controlfield tag="001">449 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     tm</leader>
+    <controlfield tag="001">450 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     ab</leader>
+    <controlfield tag="001">451 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     ai</leader>
+    <controlfield tag="001">452 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     as</leader>
+    <controlfield tag="001">453 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     c</leader>
+    <controlfield tag="001">454 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     d</leader>
+    <controlfield tag="001">455 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     i</leader>
+    <controlfield tag="001">456 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     j</leader>
+    <controlfield tag="001">457 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: B/CR/Mu/MX und MARC 008, Pos. 23, code f (Braille) -->
+    <leader>|     p</leader>
+    <controlfield tag="001">458 </controlfield>
+    <controlfield tag="008">|                      f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code f (Braille) -->
+    <controlfield tag="001">459 </controlfield>
+    <controlfield tag="006">a     f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code f (Braille) -->
+    <controlfield tag="001">460 </controlfield>
+    <controlfield tag="006">c     f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code f (Braille) -->
+    <controlfield tag="001">461 </controlfield>
+    <controlfield tag="006">d     f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code f (Braille) -->
+    <controlfield tag="001">462 </controlfield>
+    <controlfield tag="006">i     f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code f (Braille) -->
+    <controlfield tag="001">463 </controlfield>
+    <controlfield tag="006">j     f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code f (Braille) -->
+    <controlfield tag="001">464 </controlfield>
+    <controlfield tag="006">p     f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code f (Braille) -->
+    <controlfield tag="001">465 </controlfield>
+    <controlfield tag="006">s     f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code a/c/d/i/j/p/s/t und MARC 006, Pos. 06, code f (Braille) -->
+    <controlfield tag="001">466 </controlfield>
+    <controlfield tag="006">t     f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: M/VM und MARC 008, Pos. 29, code f (Braille) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">467 </controlfield>
+    <controlfield tag="008">|                            f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: M/VM und MARC 008, Pos. 29, code f (Braille) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">468 </controlfield>
+    <controlfield tag="008">|                            f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: M/VM und MARC 008, Pos. 29, code f (Braille) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">469 </controlfield>
+    <controlfield tag="008">|                            f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: M/VM und MARC 008, Pos. 29, code f (Braille) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">470 </controlfield>
+    <controlfield tag="008">|                            f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: M/VM und MARC 008, Pos. 29, code f (Braille) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">471 </controlfield>
+    <controlfield tag="008">|                            f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: M/VM und MARC 008, Pos. 29, code f (Braille) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">472 </controlfield>
+    <controlfield tag="008">|                            f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code f (Braille) -->
+    <controlfield tag="001">473 </controlfield>
+    <controlfield tag="006">e           f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code f (Braille) -->
+    <controlfield tag="001">474 </controlfield>
+    <controlfield tag="006">f           f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code f (Braille) -->
+    <controlfield tag="001">475 </controlfield>
+    <controlfield tag="006">g           f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code f (Braille) -->
+    <controlfield tag="001">476 </controlfield>
+    <controlfield tag="006">k           f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code f (Braille) -->
+    <controlfield tag="001">477 </controlfield>
+    <controlfield tag="006">o           f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code e/f/g/k/o/r und MARC 006, Pos. 12, code f (Braille) -->
+    <controlfield tag="001">478 </controlfield>
+    <controlfield tag="006">r           f</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: CF und MARC 008, Pos. 26, code g (Game) -->
+    <leader>|     m</leader>
+    <controlfield tag="001">479 </controlfield>
+    <controlfield tag="008">|                         g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code m und MARC 006, Pos. 09, code g (Game) -->
+    <controlfield tag="001">480 </controlfield>
+    <controlfield tag="006">m        g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: M und MARC 008, Pos. 33/34, code n (Game) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">481 </controlfield>
+    <controlfield tag="008">|                                n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: M und MARC 008, Pos. 33/34, code n (Game) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">482 </controlfield>
+    <controlfield tag="008">|                                 n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: M und MARC 008, Pos. 33/34, code n (Game) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">483 </controlfield>
+    <controlfield tag="008">|                                n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: M und MARC 008, Pos. 33/34, code n (Game) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">484 </controlfield>
+    <controlfield tag="008">|                                 n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code n (Game) -->
+    <controlfield tag="001">485 </controlfield>
+    <controlfield tag="006">e               n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code n (Game) -->
+    <controlfield tag="001">486 </controlfield>
+    <controlfield tag="006">e                n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code n (Game) -->
+    <controlfield tag="001">487 </controlfield>
+    <controlfield tag="006">f               n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code n (Game) -->
+    <controlfield tag="001">488 </controlfield>
+    <controlfield tag="006">f                n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code g (Game) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">489 </controlfield>
+    <controlfield tag="008">|                                g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code g (Game) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">490 </controlfield>
+    <controlfield tag="008">|                                g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code g (Game) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">491 </controlfield>
+    <controlfield tag="008">|                                g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code g (Game) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">492 </controlfield>
+    <controlfield tag="008">|                                g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code g (Game) -->
+    <controlfield tag="001">493 </controlfield>
+    <controlfield tag="006">g               g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code g (Game) -->
+    <controlfield tag="001">494 </controlfield>
+    <controlfield tag="006">k               g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code g (Game) -->
+    <controlfield tag="001">495 </controlfield>
+    <controlfield tag="006">o               g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code g (Game) -->
+    <controlfield tag="001">496 </controlfield>
+    <controlfield tag="006">r               g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code p (Microscope slide) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">497 </controlfield>
+    <controlfield tag="008">|                                p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code p (Microscope slide) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">498 </controlfield>
+    <controlfield tag="008">|                                p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code p (Microscope slide) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">499 </controlfield>
+    <controlfield tag="008">|                                p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code p (Microscope slide) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">500 </controlfield>
+    <controlfield tag="008">|                                p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code p (Microscope slide) |-->
+    <controlfield tag="001">501 </controlfield>
+    <controlfield tag="006">g               p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code p (Microscope slide) |-->
+    <controlfield tag="001">502 </controlfield>
+    <controlfield tag="006">k               p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code p (Microscope slide) |-->
+    <controlfield tag="001">503 </controlfield>
+    <controlfield tag="006">o               p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code p (Microscope slide) |-->
+    <controlfield tag="001">504 </controlfield>
+    <controlfield tag="006">r               p</controlfield>
+  </record>
+</collection>
