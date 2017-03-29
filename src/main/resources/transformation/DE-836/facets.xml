@@ -34,6 +34,12 @@
   <data source="006" name="@006Pos12">
     <substring start="12" end="13" />
   </data>
+  <data source="006" name="@006Pos13">
+    <substring start="13" end="14" />
+  </data>
+  <data source="006" name="@006Pos14">
+    <substring start="14" end="15" />
+  </data>
   <data source="006" name="@006Pos16">
     <substring start="16" end="17" />
   </data>
@@ -72,6 +78,12 @@
   </data>
   <data source="008" name="@008Pos33">
     <substring start="33" end="34" />
+  </data>
+  <data source="008" name="@008Pos30">
+    <substring start="30" end="31" />
+  </data>
+  <data source="008" name="@008Pos31">
+    <substring start="31" end="32" />
   </data>
   <data source="008" name="@008Pos34">
     <substring start="34" end="35" />
@@ -709,7 +721,7 @@
           <data source="@006Pos00">
             <regexp match="[at]" />
           </data>
-          <data source="@008Pos13">
+          <data source="@006Pos13">
             <equals string="1" />
           </data>
         </all>
