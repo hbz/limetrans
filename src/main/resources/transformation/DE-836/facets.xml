@@ -1007,9 +1007,6 @@
     </if>
     <data source="001" />
   </combine>
-  <combine name="@facet_type" value="Teil eines Werkes">
-    <data source="245??.n" />
-  </combine>
   <combine name="@facet_type" value="Zeitschrift">
     <if>
       <any>
@@ -1067,9 +1064,7 @@
     </entity>
 
     <entity name="type[]" flushWith="record">
-      <data name="" source="@facet_type">
-        <unique />
-      </data>
+      <data name="" source="@facet_type" />
     </entity>
     <entity name="type[]">
       <if>
