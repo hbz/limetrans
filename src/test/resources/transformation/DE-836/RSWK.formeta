@@ -13,6 +13,11 @@
 			'': 'keine Angabe'
 		}
 	},
+	'introx' {
+		'subject[]' {
+			'': 'Toneel'
+		}
+	},
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)1'
@@ -32,6 +37,11 @@
 		},
 		'language[]' {
 			'': 'keine Angabe'
+		}
+	},
+	'introx' {
+		'subject[]' {
+			'': 'Volkstheater'
 		}
 	},
 	'RSWK[]' {
@@ -64,6 +74,13 @@
 		},
 		'language[]' {
 			'': 'keine Angabe'
+		}
+	},
+	'introx' {
+		'subject[]' {
+			'': 'Toneel',
+			'': 'Volkstheater',
+			'': 'Kultur'
 		}
 	},
 	'RSWK[]' {
@@ -107,6 +124,14 @@
 			'': 'keine Angabe'
 		}
 	},
+	'introx' {
+		'subject[]' {
+			'': 'Toneel',
+			'': 'Volkstheater',
+			'': 'Theater',
+			'': 'Kultur'
+		}
+	},
 	'RSWK[]' {
 		'' {
 			'subjectGeoName': 'Volkstheater',
@@ -146,6 +171,12 @@
 		},
 		'language[]' {
 			'': 'keine Angabe'
+		}
+	},
+	'introx' {
+		'subject[]' {
+			'': 'Volkstheater',
+			'': 'Theater'
 		}
 	},
 	'RSWK[]' {
@@ -190,6 +221,12 @@
 		},
 		'language[]' {
 			'': 'keine Angabe'
+		}
+	},
+	'introx' {
+		'subject[]' {
+			'': 'Volkstheater',
+			'': 'Theater'
 		}
 	},
 	'RSWK[]' {
