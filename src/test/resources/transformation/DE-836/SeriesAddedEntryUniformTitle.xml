@@ -90,4 +90,13 @@
       <subfield code="a">Bradford book.</subfield>
     </datafield>
   </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">7 </controlfield>
+    <datafield tag="830" ind1=" " ind2="6">
+      <subfield code="a">Wicksell lectures ;</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="7">
+      <subfield code="a">Bradford book.</subfield>
+    </datafield>
+  </record>
 </collection>
