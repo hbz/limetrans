@@ -602,12 +602,12 @@
   </entity>
 
   <!-- 8xx -->
-  <call-macro name="prepare-SeriesAddedEntryUniformTitle-title" field="830 0" basefield="830" />
+  <call-macro name="prepare-SeriesAddedEntryUniformTitle-title" field="830 [0123456789]" basefield="830" />
   <entity name="SeriesAddedEntryUniformTitle[]" flushWith="record">
-    <entity name="" flushWith="830 0" sameEntity="true">
-      <call-macro name="SeriesAddedEntryUniformTitle-title" field="830 0" basefield="830" />
-      <entity name="volume[]" flushWith="830 0" sameEntity="true">
-        <call-macro name="regex-del-punctuation-end" dsource="830 0.v" dname="" />
+    <entity name="" flushWith="830 [0123456789]" sameEntity="true">
+      <call-macro name="SeriesAddedEntryUniformTitle-title" field="830 [0123456789]" basefield="830" />
+      <entity name="volume[]" flushWith="830 [0123456789]" sameEntity="true">
+        <call-macro name="regex-del-punctuation-end" dsource="830 [0123456789].v" dname="" />
       </entity>
     </entity>
   </entity>

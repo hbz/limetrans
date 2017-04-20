@@ -346,3 +346,36 @@
 		}
 	}
 }
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)7'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'SeriesAddedEntryUniformTitle[]' {
+		'' {
+			'title[]' {
+				'': 'Wicksell lectures'
+			}
+		},
+		'' {
+			'title[]' {
+				'': 'Bradford book.'
+			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)7'
+		}
+	}
+}
