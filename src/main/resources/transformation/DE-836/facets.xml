@@ -1100,4 +1100,16 @@
     </entity>
   </entity>
 
+  <entity name="introx" flushWith="record">
+    <entity name="subject[]" flushWith="record">
+      <data name="" source="6????.a">
+        <split delimiter=" (?:[/;]|--) " />
+        <trim />
+        <regexp match="^(?!SWD-ID:).*" />
+        <replace pattern="[.]$" with="" />
+        <unique />
+      </data>
+    </entity>
+  </entity>
+
 </rules>
