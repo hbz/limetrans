@@ -111,9 +111,9 @@
     <if>
       <any flushWith="record">
         <none flushWith="record">
-          <data source="1001 .[4e]" />
+          <data source="100[013] .[4e]" />
         </none>
-        <data source="1001 .[4e]">
+        <data source="100[013] .[4e]">
           <regexp match="^([Aa]ut|[Cc]re)" />
         </data>
       </any>
@@ -441,13 +441,13 @@
 
   <!-- 7xx -->
   <entity name="PersonCreator[]" flushWith="record">
-    <entity name="" flushWith="7001 " sameEntity="true">
+    <entity name="" flushWith="700[013] " sameEntity="true">
       <if>
-        <any flushWith="7001 ">
-          <none flushWith="7001 " sameEntity="true">
-            <data source="7001 .[4e]" />
+        <any flushWith="700[013] ">
+          <none flushWith="700[013] " sameEntity="true">
+            <data source="700[013] .[4e]" />
           </none>
-          <data source="7001 .[4e]">
+          <data source="700[013] .[4e]">
             <regexp match="^([Aa]ut|[Cc]re)" />
           </data>
         </any>
@@ -465,9 +465,9 @@
     <entity name="" flushWith="record">
       <if>
         <all flushWith="record">
-          <data source="1001 .[4e]" />
+          <data source="100[013] .[4e]" />
           <none flushWith="record">
-            <data source="1001 .[4e]">
+            <data source="100[013] .[4e]">
               <regexp match="^([Aa]ut|[Cc]re)" />
             </data>
           </none>
@@ -481,12 +481,12 @@
       <call-macro name="personIdentifier" field="100" />
       <call-macro name="identifierGND"    field="100" />
     </entity>
-    <entity name="" flushWith="7001 " sameEntity="true">
+    <entity name="" flushWith="700[013] " sameEntity="true">
       <if>
-        <all flushWith="7001 " sameEntity="true">
-          <data source="7001 .[4e]" />
-          <none flushWith="7001 " sameEntity="true">
-            <data source="7001 .[4e]">
+        <all flushWith="700[013] " sameEntity="true">
+          <data source="700[013] .[4e]" />
+          <none flushWith="700[013] " sameEntity="true">
+            <data source="700[013] .[4e]">
               <regexp match="^([Aa]ut|[Cc]re)" />
             </data>
           </none>

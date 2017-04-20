@@ -280,3 +280,43 @@
 		}
 	}
 }
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)7'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'Monographie'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'Person' {
+		'personName': 'Trollope, Anthony',
+		'personRole[]' {
+			'': '[Author]'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Nygaard, Kristen'
+		}
+	},
+	'PersonContributor[]' {
+		'' {
+			'personName': 'Donin, Richard Kurt',
+			'personRole[]' {
+				'': '[Bearb.]'
+			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)7'
+		}
+	}
+}
