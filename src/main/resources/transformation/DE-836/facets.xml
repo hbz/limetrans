@@ -496,6 +496,29 @@
           </data>
         </all>
         <all>
+          <data source="@type">
+            <equals string="VM" />
+          </data>
+          <data source="@008Pos33">
+            <equals string="p" />
+          </data>
+        </all>
+        <all>
+          <data source="@006Pos00">
+            <regexp match="[gkor]" />
+          </data>
+          <data source="@006Pos16">
+            <equals string="p" />
+          </data>
+        </all>
+      </any>
+    </if>
+    <data source="001" />
+  </combine>
+  <combine name="@facet_format" value="Spiel">
+    <if>
+      <any>
+        <all>
           <data source="@006Pos00">
             <equals string="m" />
           </data>
@@ -516,7 +539,7 @@
             <equals string="M" />
           </data>
           <data source="@008Pos3[34]">
-            <equals string="n" />
+            <regexp match="[pn]" />
           </data>
         </all>
         <all>
@@ -524,7 +547,7 @@
             <regexp match="[ef]" />
           </data>
           <data source="@006Pos1[67]">
-            <equals string="n" />
+            <regexp match="[pn]" />
           </data>
         </all>
         <all>
@@ -532,7 +555,7 @@
             <equals string="VM" />
           </data>
           <data source="@008Pos33">
-            <regexp match="[gp]" />
+            <equals string="g" />
           </data>
         </all>
         <all>
@@ -540,7 +563,7 @@
             <regexp match="[gkor]" />
           </data>
           <data source="@006Pos16">
-            <regexp match="[gp]" />
+            <equals string="g" />
           </data>
         </all>
       </any>

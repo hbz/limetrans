@@ -26326,7 +26326,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte'
+			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -26347,7 +26347,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte'
+			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -26368,7 +26368,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -26389,7 +26389,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte'
+			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -26410,7 +26410,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte'
+			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -26431,7 +26431,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte'
+			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -26452,7 +26452,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -26473,7 +26473,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte'
+			'': 'keine Angabe'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -27502,7 +27502,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'keine Angabe'
+			'': 'Elektronische Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -27515,7 +27515,8 @@
 		'' {
 			'uid': '(DE-836)1261'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -27523,7 +27524,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'keine Angabe'
+			'': 'Elektronische Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -27536,181 +27537,12 @@
 		'' {
 			'uid': '(DE-836)1262'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)1263'
-	},
-	'dc' {
-		'format[]' {
-			'': 'Gedruckte Ressource'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)1263'
-		}
-	}
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)1264'
-	},
-	'dc' {
-		'format[]' {
-			'': 'keine Angabe'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)1264'
-		}
-	}
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)1265'
-	},
-	'dc' {
-		'format[]' {
-			'': 'keine Angabe'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)1265'
-		}
-	}
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)1266'
-	},
-	'dc' {
-		'format[]' {
-			'': 'keine Angabe'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)1266'
-		}
-	}
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)1267'
-	},
-	'dc' {
-		'format[]' {
-			'': 'Gedruckte Ressource'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)1267'
-		}
-	}
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)1268'
-	},
-	'dc' {
-		'format[]' {
-			'': 'keine Angabe'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)1268'
-		}
-	}
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)1269'
-	},
-	'dc' {
-		'format[]' {
-			'': 'Elektronische Ressource'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)1269'
-		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)1270'
-	},
-	'dc' {
-		'format[]' {
-			'': 'Elektronische Ressource'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)1270'
-		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)1269'
 	},
 	'dc' {
 		'format[]' {
@@ -27730,7 +27562,7 @@
 	},
 	'xbib[]' {
 		'' {
-			'uid': '(DE-836)1269'
+			'uid': '(DE-836)1263'
 		}
 	}
 }

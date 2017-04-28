@@ -2168,121 +2168,157 @@
     <controlfield tag="001">478 </controlfield>
     <controlfield tag="006">r           f</controlfield>
   </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: CF und MARC 008, Pos. 26, code g (Game) -->
-    <leader>|     m</leader>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code p (Microscope slide) -->
+    <leader>|     g</leader>
     <controlfield tag="001">479 </controlfield>
-    <controlfield tag="008">|                         g</controlfield>
+    <controlfield tag="008">|                                p</controlfield>
   </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code m und MARC 006, Pos. 09, code g (Game) -->
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code p (Microscope slide) -->
+    <leader>|     k</leader>
     <controlfield tag="001">480 </controlfield>
-    <controlfield tag="006">m        g</controlfield>
+    <controlfield tag="008">|                                p</controlfield>
   </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: M und MARC 008, Pos. 33/34, code n (Game) -->
-    <leader>|     e</leader>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code p (Microscope slide) -->
+    <leader>|     o</leader>
     <controlfield tag="001">481 </controlfield>
-    <controlfield tag="008">|                                n</controlfield>
+    <controlfield tag="008">|                                p</controlfield>
   </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: M und MARC 008, Pos. 33/34, code n (Game) -->
-    <leader>|     e</leader>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code p (Microscope slide) -->
+    <leader>|     r</leader>
     <controlfield tag="001">482 </controlfield>
-    <controlfield tag="008">|                                 n</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: M und MARC 008, Pos. 33/34, code n (Game) -->
-    <leader>|     f</leader>
-    <controlfield tag="001">483 </controlfield>
-    <controlfield tag="008">|                                n</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: M und MARC 008, Pos. 33/34, code n (Game) -->
-    <leader>|     f</leader>
-    <controlfield tag="001">484 </controlfield>
-    <controlfield tag="008">|                                 n</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code n (Game) -->
-    <controlfield tag="001">485 </controlfield>
-    <controlfield tag="006">e               n</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code n (Game) -->
-    <controlfield tag="001">486 </controlfield>
-    <controlfield tag="006">e                n</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code n (Game) -->
-    <controlfield tag="001">487 </controlfield>
-    <controlfield tag="006">f               n</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code n (Game) -->
-    <controlfield tag="001">488 </controlfield>
-    <controlfield tag="006">f                n</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code g (Game) -->
-    <leader>|     g</leader>
-    <controlfield tag="001">489 </controlfield>
-    <controlfield tag="008">|                                g</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code g (Game) -->
-    <leader>|     k</leader>
-    <controlfield tag="001">490 </controlfield>
-    <controlfield tag="008">|                                g</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code g (Game) -->
-    <leader>|     o</leader>
-    <controlfield tag="001">491 </controlfield>
-    <controlfield tag="008">|                                g</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code g (Game) -->
-    <leader>|     r</leader>
-    <controlfield tag="001">492 </controlfield>
-    <controlfield tag="008">|                                g</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code g (Game) -->
-    <controlfield tag="001">493 </controlfield>
-    <controlfield tag="006">g               g</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code g (Game) -->
-    <controlfield tag="001">494 </controlfield>
-    <controlfield tag="006">k               g</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code g (Game) -->
-    <controlfield tag="001">495 </controlfield>
-    <controlfield tag="006">o               g</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code g (Game) -->
-    <controlfield tag="001">496 </controlfield>
-    <controlfield tag="006">r               g</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code p (Microscope slide) -->
-    <leader>|     g</leader>
-    <controlfield tag="001">497 </controlfield>
-    <controlfield tag="008">|                                p</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code p (Microscope slide) -->
-    <leader>|     k</leader>
-    <controlfield tag="001">498 </controlfield>
-    <controlfield tag="008">|                                p</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code p (Microscope slide) -->
-    <leader>|     o</leader>
-    <controlfield tag="001">499 </controlfield>
-    <controlfield tag="008">|                                p</controlfield>
-  </record>
-  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: VM und MARC 008, Pos. 33, code p (Microscope slide) -->
-    <leader>|     r</leader>
-    <controlfield tag="001">500 </controlfield>
     <controlfield tag="008">|                                p</controlfield>
   </record>
   <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code p (Microscope slide) |-->
-    <controlfield tag="001">501 </controlfield>
+    <controlfield tag="001">483 </controlfield>
     <controlfield tag="006">g               p</controlfield>
   </record>
   <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code p (Microscope slide) |-->
-    <controlfield tag="001">502 </controlfield>
+    <controlfield tag="001">484 </controlfield>
     <controlfield tag="006">k               p</controlfield>
   </record>
   <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code p (Microscope slide) |-->
-    <controlfield tag="001">503 </controlfield>
+    <controlfield tag="001">485 </controlfield>
     <controlfield tag="006">o               p</controlfield>
   </record>
   <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Sonstiges: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code p (Microscope slide) |-->
-    <controlfield tag="001">504 </controlfield>
+    <controlfield tag="001">486 </controlfield>
     <controlfield tag="006">r               p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: M und MARC 008, Pos. 33/34, code p (Playing cards) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">487 </controlfield>
+    <controlfield tag="008">|                                p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: M und MARC 008, Pos. 33/34, code p (Playing cards) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">488 </controlfield>
+    <controlfield tag="008">|                                 p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: M und MARC 008, Pos. 33/34, code p (Playing cards) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">489 </controlfield>
+    <controlfield tag="008">|                                p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: M und MARC 008, Pos. 33/34, code p (Playing cards) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">490 </controlfield>
+    <controlfield tag="008">|                                 p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code p (Playing cards) -->
+    <controlfield tag="001">491 </controlfield>
+    <controlfield tag="006">e               p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code p (Playing cards) -->
+    <controlfield tag="001">492 </controlfield>
+    <controlfield tag="006">e                p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code p (Playing cards) -->
+    <controlfield tag="001">493 </controlfield>
+    <controlfield tag="006">f               p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code p (Playing cards) -->
+    <controlfield tag="001">494 </controlfield>
+    <controlfield tag="006">f                p</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: CF und MARC 008, Pos. 26, code g (Game) -->
+    <leader>|     m</leader>
+    <controlfield tag="001">495 </controlfield>
+    <controlfield tag="008">|                         g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: MARC 006, Pos. 00, code m und MARC 006, Pos. 09, code g (Game) -->
+    <controlfield tag="001">496 </controlfield>
+    <controlfield tag="006">m        g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: M und MARC 008, Pos. 33/34, code n (Game) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">497 </controlfield>
+    <controlfield tag="008">|                                n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: M und MARC 008, Pos. 33/34, code n (Game) -->
+    <leader>|     e</leader>
+    <controlfield tag="001">498 </controlfield>
+    <controlfield tag="008">|                                 n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: M und MARC 008, Pos. 33/34, code n (Game) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">499 </controlfield>
+    <controlfield tag="008">|                                n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: M und MARC 008, Pos. 33/34, code n (Game) -->
+    <leader>|     f</leader>
+    <controlfield tag="001">500 </controlfield>
+    <controlfield tag="008">|                                 n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code n (Game) -->
+    <controlfield tag="001">501 </controlfield>
+    <controlfield tag="006">e               n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code n (Game) -->
+    <controlfield tag="001">502 </controlfield>
+    <controlfield tag="006">e                n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code n (Game) -->
+    <controlfield tag="001">503 </controlfield>
+    <controlfield tag="006">f               n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: MARC 006, Pos. 00, code e/f und MARC 006, Pos. 16/17, code n (Game) -->
+    <controlfield tag="001">504 </controlfield>
+    <controlfield tag="006">f                n</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: VM und MARC 008, Pos. 33, code g (Game) -->
+    <leader>|     g</leader>
+    <controlfield tag="001">505 </controlfield>
+    <controlfield tag="008">|                                g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: VM und MARC 008, Pos. 33, code g (Game) -->
+    <leader>|     k</leader>
+    <controlfield tag="001">506 </controlfield>
+    <controlfield tag="008">|                                g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: VM und MARC 008, Pos. 33, code g (Game) -->
+    <leader>|     o</leader>
+    <controlfield tag="001">507 </controlfield>
+    <controlfield tag="008">|                                g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: VM und MARC 008, Pos. 33, code g (Game) -->
+    <leader>|     r</leader>
+    <controlfield tag="001">508 </controlfield>
+    <controlfield tag="008">|                                g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code g (Game) |-->
+    <controlfield tag="001">509 </controlfield>
+    <controlfield tag="006">g               g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code g (Game) |-->
+    <controlfield tag="001">510 </controlfield>
+    <controlfield tag="006">k               g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code g (Game) |-->
+    <controlfield tag="001">511 </controlfield>
+    <controlfield tag="006">o               g</controlfield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim"> <!-- Spiel: MARC 006, Pos. 00, code g/k/o/r und MARC 006, Pos. 16, code g (Game) |-->
+    <controlfield tag="001">512 </controlfield>
+    <controlfield tag="006">r               g</controlfield>
   </record>
 </collection>
