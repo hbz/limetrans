@@ -119,6 +119,14 @@
             "unique"
           ]
         },
+        "keyword_normalized" : {
+          "type" : "custom",
+          "tokenizer" : "keyword",
+          "filter" : [
+            "icu_normalizer",
+            "icu_folding"
+          ]
+        },
         "german_phonebook_with_sortform" : {
           "type" : "sortform",
           "language" : "de",
