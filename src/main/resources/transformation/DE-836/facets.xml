@@ -150,6 +150,15 @@
             <equals string="h" />
           </data>
         </all>
+        <data source="337  .a">
+          <equals string="audio" />
+        </data>
+        <data source="337  .b">
+          <equals string="s" />
+        </data>
+        <data source="338  .a">
+          <equals string="Audiodisk" />
+        </data>
       </any>
     </if>
     <data source="001" />
@@ -248,6 +257,18 @@
             <regexp match="[sq]" />
           </data>
         </all>
+        <data source="337  .a">
+          <regexp match="^(Computermedien|computer|computermedien|informatique)$" />
+        </data>
+        <data source="337  .b">
+          <equals string="c" />
+        </data>
+        <data source="338  .a">
+          <regexp match="^(Computerdisk|computer disc)$" />
+        </data>
+        <data source="338  .b">
+          <equals string="cd" />
+        </data>
       </any>
     </if>
     <data source="001" />
@@ -274,6 +295,18 @@
             <regexp match="[fmstv]" />
           </data>
         </all>
+        <data source="337  .a">
+          <equals string="video" />
+        </data>
+        <data source="337  .b">
+          <equals string="v" />
+        </data>
+        <data source="338  .a">
+          <regexp match="^(Videodisk|videodisc)$" />
+        </data>
+        <data source="338  .b">
+          <equals string="vd" />
+        </data>
       </any>
     </if>
     <data source="001" />
@@ -409,6 +442,18 @@
             <regexp match="[abc]" />
           </data>
         </all>
+        <data source="337  .a">
+          <regexp match="^(Mikroform|microform)$" />
+        </data>
+        <data source="337  .b">
+          <equals string="h" />
+        </data>
+        <data source="338  .a">
+          <regexp match="^(microfiche|microfilm roll)$" />
+        </data>
+        <data source="338  .b">
+          <regexp match="he|hj" />
+        </data>
       </any>
     </if>
     <data source="001" />
@@ -448,6 +493,12 @@
             <equals string="o" />
           </data>
         </all>
+        <data source="338  .a">
+          <regexp match="^(online bron|online resource|online-ressource|Online-Ressource|ressource en ligne)$" />
+        </data>
+        <data source="338  .b">
+          <equals string="cr" />
+        </data>
       </any>
     </if>
     <data source="001" />
@@ -511,6 +562,12 @@
             <equals string="p" />
           </data>
         </all>
+        <data source="338  .a">
+          <regexp match="^(Gegenstand|Karte)$" />
+        </data>
+        <data source="338  .b">
+          <regexp match="n[or]" />
+        </data>
       </any>
     </if>
     <data source="001" />
