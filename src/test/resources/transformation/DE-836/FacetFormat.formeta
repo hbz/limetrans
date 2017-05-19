@@ -160,7 +160,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Bild'
+			'': 'Audio'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -174,7 +174,7 @@
 			'uid': '(DE-836)7'
 		}
 	},
-	'TypeMedia': 'Bild'
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -182,7 +182,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Bild'
+			'': 'Audio'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -196,7 +196,7 @@
 			'uid': '(DE-836)8'
 		}
 	},
-	'TypeMedia': 'Bild'
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -204,7 +204,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Bild'
+			'': 'Audio'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -218,7 +218,7 @@
 			'uid': '(DE-836)9'
 		}
 	},
-	'TypeMedia': 'Bild'
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -226,8 +226,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Bild',
-			'': 'Gedruckte Ressource'
+			'': 'Bild'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -360,7 +359,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Bild'
+			'': 'Bild',
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -448,8 +448,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Bild',
-			'': 'Gedruckte Ressource'
+			'': 'Bild'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -515,7 +514,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Bild'
+			'': 'Bild',
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -559,7 +559,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -582,7 +581,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -605,7 +603,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -927,6 +924,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -949,6 +947,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -971,7 +970,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
+			'': 'Landkarte',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1038,6 +1037,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1060,7 +1060,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1127,6 +1126,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1149,7 +1149,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1216,6 +1215,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1238,7 +1238,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1305,6 +1304,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1327,7 +1327,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1394,6 +1393,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1416,7 +1416,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1483,6 +1482,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1505,7 +1505,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1572,6 +1571,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1594,7 +1594,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1661,6 +1660,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1683,7 +1683,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1750,6 +1749,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1772,7 +1772,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Bild'
 		},
 		'type[]' {
@@ -1817,7 +1816,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Elektronische Ressource'
+			'': 'Bild'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -1831,7 +1830,7 @@
 			'uid': '(DE-836)81'
 		}
 	},
-	'TypeMedia': 'Elektronische Ressource'
+	'TypeMedia': 'Bild'
 }
 '' {
 	'RecordIdentifier' {
@@ -1839,7 +1838,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Elektronische Ressource'
+			'': 'Gedruckte Ressource',
+			'': 'Bild'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -1853,7 +1853,7 @@
 			'uid': '(DE-836)82'
 		}
 	},
-	'TypeMedia': 'Elektronische Ressource'
+	'TypeMedia': 'Bild'
 }
 '' {
 	'RecordIdentifier' {
@@ -1861,7 +1861,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Elektronische Ressource'
+			'': 'Bild'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -1875,7 +1875,7 @@
 			'uid': '(DE-836)83'
 		}
 	},
-	'TypeMedia': 'Elektronische Ressource'
+	'TypeMedia': 'Bild'
 }
 '' {
 	'RecordIdentifier' {
@@ -1886,7 +1886,7 @@
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -1908,7 +1908,7 @@
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -1930,7 +1930,7 @@
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -1974,7 +1974,7 @@
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -1996,7 +1996,7 @@
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2062,7 +2062,7 @@
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2084,7 +2084,7 @@
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2103,11 +2103,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2126,7 +2125,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -2147,18 +2145,12 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)96'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2175,14 +2167,9 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)97'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -2203,6 +2190,29 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)98'
 	},
+	'dc' {
+		'format[]' {
+			'': 'Audio',
+			'': 'Elektronische Ressource'
+		},
+		'type[]' {
+			'': 'Musikalia'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)98'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)99'
+	},
 	'DateFirst' {
 		'date': '    '
 	},
@@ -2222,29 +2232,6 @@
 	},
 	'xbib[]' {
 		'' {
-			'uid': '(DE-836)98'
-		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)99'
-	},
-	'dc' {
-		'format[]' {
-			'': 'Gedruckte Ressource',
-			'': 'Elektronische Ressource'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
 			'uid': '(DE-836)99'
 		}
 	},
@@ -2253,6 +2240,12 @@
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)100'
+	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
 	},
 	'dc' {
 		'format[]' {
@@ -2276,12 +2269,18 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)101'
 	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
 	'dc' {
 		'format[]' {
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2300,10 +2299,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2322,7 +2322,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -2345,7 +2344,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -2368,11 +2366,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2391,6 +2388,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -2413,10 +2411,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2435,10 +2434,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2460,7 +2460,7 @@
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2482,7 +2482,7 @@
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2526,7 +2526,7 @@
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2548,7 +2548,7 @@
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2614,7 +2614,7 @@
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2636,7 +2636,7 @@
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2655,11 +2655,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2678,7 +2677,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -2699,18 +2697,12 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)120'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2727,14 +2719,9 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)121'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -2755,6 +2742,29 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)122'
 	},
+	'dc' {
+		'format[]' {
+			'': 'Audio',
+			'': 'Elektronische Ressource'
+		},
+		'type[]' {
+			'': 'Musikalia'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)122'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)123'
+	},
 	'DateFirst' {
 		'date': '    '
 	},
@@ -2774,29 +2784,6 @@
 	},
 	'xbib[]' {
 		'' {
-			'uid': '(DE-836)122'
-		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)123'
-	},
-	'dc' {
-		'format[]' {
-			'': 'Gedruckte Ressource',
-			'': 'Elektronische Ressource'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
 			'uid': '(DE-836)123'
 		}
 	},
@@ -2805,6 +2792,12 @@
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)124'
+	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
 	},
 	'dc' {
 		'format[]' {
@@ -2828,12 +2821,18 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)125'
 	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
 	'dc' {
 		'format[]' {
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2852,10 +2851,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2874,7 +2874,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -2897,7 +2896,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -2920,11 +2918,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2943,6 +2940,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -2965,10 +2963,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -2987,7 +2986,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
+			'': 'Gedruckte Ressource',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3010,7 +3009,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3055,6 +3053,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3077,7 +3076,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
+			'': 'Landkarte',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3122,7 +3121,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3145,7 +3143,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
+			'': 'Gedruckte Ressource',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3190,6 +3188,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3212,7 +3211,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
+			'': 'Landkarte',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3257,7 +3256,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3280,7 +3278,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
+			'': 'Gedruckte Ressource',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3325,6 +3323,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3347,7 +3346,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
+			'': 'Landkarte',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3392,7 +3391,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3415,7 +3413,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
+			'': 'Gedruckte Ressource',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3460,6 +3458,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3482,7 +3481,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
+			'': 'Landkarte',
 			'': 'Elektronische Ressource'
 		},
 		'type[]' {
@@ -3527,7 +3526,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Film, Dia, Video'
+			'': 'Elektronische Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -3541,7 +3540,7 @@
 			'uid': '(DE-836)156'
 		}
 	},
-	'TypeMedia': 'Film, Dia, Video'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -3549,7 +3548,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Film, Dia, Video'
+			'': 'Gedruckte Ressource',
+			'': 'Elektronische Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -3563,7 +3563,7 @@
 			'uid': '(DE-836)157'
 		}
 	},
-	'TypeMedia': 'Film, Dia, Video'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -3571,7 +3571,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Film, Dia, Video'
+			'': 'Elektronische Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -3585,7 +3585,7 @@
 			'uid': '(DE-836)158'
 		}
 	},
-	'TypeMedia': 'Film, Dia, Video'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -3593,7 +3593,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Film, Dia, Video'
+			'': 'Elektronische Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -3607,7 +3607,7 @@
 			'uid': '(DE-836)159'
 		}
 	},
-	'TypeMedia': 'Film, Dia, Video'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -3615,7 +3615,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Film, Dia, Video'
+			'': 'Elektronische Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -3629,7 +3629,7 @@
 			'uid': '(DE-836)160'
 		}
 	},
-	'TypeMedia': 'Film, Dia, Video'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -3637,8 +3637,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
-			'': 'Film, Dia, Video'
+			'': 'Elektronische Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -3652,7 +3651,7 @@
 			'uid': '(DE-836)161'
 		}
 	},
-	'TypeMedia': 'Film, Dia, Video'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -3660,7 +3659,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Film, Dia, Video'
+			'': 'Elektronische Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -3674,7 +3673,7 @@
 			'uid': '(DE-836)162'
 		}
 	},
-	'TypeMedia': 'Film, Dia, Video'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -3682,7 +3681,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Film, Dia, Video'
+			'': 'Elektronische Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -3696,7 +3695,7 @@
 			'uid': '(DE-836)163'
 		}
 	},
-	'TypeMedia': 'Film, Dia, Video'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -3704,7 +3703,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Film, Dia, Video'
+			'': 'Elektronische Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -3718,7 +3717,7 @@
 			'uid': '(DE-836)164'
 		}
 	},
-	'TypeMedia': 'Film, Dia, Video'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -3726,8 +3725,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
-			'': 'Film, Dia, Video'
+			'': 'Elektronische Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -3741,7 +3739,7 @@
 			'uid': '(DE-836)165'
 		}
 	},
-	'TypeMedia': 'Film, Dia, Video'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -3749,7 +3747,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Film, Dia, Video'
+			'': 'Elektronische Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -3763,7 +3761,7 @@
 			'uid': '(DE-836)166'
 		}
 	},
-	'TypeMedia': 'Film, Dia, Video'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -3815,7 +3813,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -3882,6 +3879,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -3904,7 +3902,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -3971,6 +3968,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -3993,7 +3991,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -4060,6 +4057,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -4082,7 +4080,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -4149,6 +4146,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -4171,7 +4169,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -4238,6 +4235,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -4260,7 +4258,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -4327,6 +4324,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -4349,7 +4347,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -4416,6 +4413,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -4438,7 +4436,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Film, Dia, Video'
 		},
 		'type[]' {
@@ -4483,7 +4480,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource'
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -4496,7 +4493,8 @@
 		'' {
 			'uid': '(DE-836)199'
 		}
-	}
+	},
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4504,7 +4502,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource'
+			'': 'Gedruckte Ressource',
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -4517,7 +4516,8 @@
 		'' {
 			'uid': '(DE-836)200'
 		}
-	}
+	},
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4525,7 +4525,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource'
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -4538,7 +4538,8 @@
 		'' {
 			'uid': '(DE-836)201'
 		}
-	}
+	},
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4546,7 +4547,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource'
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -4559,7 +4560,8 @@
 		'' {
 			'uid': '(DE-836)202'
 		}
-	}
+	},
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4567,8 +4569,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Bild',
-			'': 'Gedruckte Ressource'
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -4582,7 +4583,7 @@
 			'uid': '(DE-836)203'
 		}
 	},
-	'TypeMedia': 'Bild'
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4590,8 +4591,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Bild',
-			'': 'Gedruckte Ressource'
+			'': 'Gedruckte Ressource',
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -4605,7 +4606,7 @@
 			'uid': '(DE-836)204'
 		}
 	},
-	'TypeMedia': 'Bild'
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4613,8 +4614,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Bild',
-			'': 'Gedruckte Ressource'
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -4628,7 +4628,7 @@
 			'uid': '(DE-836)205'
 		}
 	},
-	'TypeMedia': 'Bild'
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4636,7 +4636,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource'
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -4649,7 +4649,8 @@
 		'' {
 			'uid': '(DE-836)206'
 		}
-	}
+	},
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4657,7 +4658,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource'
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -4670,7 +4671,8 @@
 		'' {
 			'uid': '(DE-836)207'
 		}
-	}
+	},
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4678,7 +4680,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource'
+			'': 'Gedruckte Ressource',
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -4691,7 +4694,8 @@
 		'' {
 			'uid': '(DE-836)208'
 		}
-	}
+	},
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4699,10 +4703,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource'
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -4712,7 +4716,8 @@
 		'' {
 			'uid': '(DE-836)209'
 		}
-	}
+	},
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4720,10 +4725,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource'
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -4733,7 +4738,8 @@
 		'' {
 			'uid': '(DE-836)210'
 		}
-	}
+	},
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4741,10 +4747,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource'
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -4754,7 +4760,8 @@
 		'' {
 			'uid': '(DE-836)211'
 		}
-	}
+	},
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4762,10 +4769,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource'
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -4775,7 +4782,8 @@
 		'' {
 			'uid': '(DE-836)212'
 		}
-	}
+	},
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4783,10 +4791,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource'
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -4796,7 +4804,8 @@
 		'' {
 			'uid': '(DE-836)213'
 		}
-	}
+	},
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4804,10 +4813,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource'
+			'': 'Film, Dia, Video'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -4817,7 +4826,8 @@
 		'' {
 			'uid': '(DE-836)214'
 		}
-	}
+	},
+	'TypeMedia': 'Film, Dia, Video'
 }
 '' {
 	'RecordIdentifier' {
@@ -4828,7 +4838,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -4849,7 +4859,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -4870,7 +4880,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -4891,7 +4901,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -4909,7 +4919,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
+			'': 'Bild',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -4924,7 +4934,7 @@
 			'uid': '(DE-836)219'
 		}
 	},
-	'TypeMedia': 'Audio'
+	'TypeMedia': 'Bild'
 }
 '' {
 	'RecordIdentifier' {
@@ -4932,11 +4942,11 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
+			'': 'Bild',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -4947,20 +4957,15 @@
 			'uid': '(DE-836)220'
 		}
 	},
-	'TypeMedia': 'Audio'
+	'TypeMedia': 'Bild'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)221'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
+			'': 'Bild',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -4974,17 +4979,12 @@
 		'' {
 			'uid': '(DE-836)221'
 		}
-	}
+	},
+	'TypeMedia': 'Bild'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)222'
-	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
 	},
 	'dc' {
 		'format[]' {
@@ -5006,12 +5006,6 @@
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)223'
-	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
 	},
 	'dc' {
 		'format[]' {
@@ -5060,7 +5054,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5081,7 +5075,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5102,7 +5096,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5120,11 +5114,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5134,8 +5127,7 @@
 		'' {
 			'uid': '(DE-836)228'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -5143,11 +5135,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5157,8 +5148,7 @@
 		'' {
 			'uid': '(DE-836)229'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -5169,7 +5159,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5190,7 +5180,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5211,7 +5201,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5232,7 +5222,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5253,7 +5243,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5271,10 +5261,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5284,7 +5275,8 @@
 		'' {
 			'uid': '(DE-836)235'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -5292,10 +5284,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5305,18 +5298,25 @@
 		'' {
 			'uid': '(DE-836)236'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)237'
+	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
 	},
 	'dc' {
 		'format[]' {
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5332,12 +5332,18 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)238'
 	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
 	'dc' {
 		'format[]' {
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5353,12 +5359,18 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)239'
 	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
 	'dc' {
 		'format[]' {
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5379,7 +5391,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5400,7 +5412,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5439,11 +5451,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5453,8 +5464,7 @@
 		'' {
 			'uid': '(DE-836)243'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -5466,7 +5476,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5483,18 +5493,13 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)245'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5504,17 +5509,12 @@
 		'' {
 			'uid': '(DE-836)245'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)246'
-	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
 	},
 	'dc' {
 		'format[]' {
@@ -5536,12 +5536,6 @@
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)247'
-	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
 	},
 	'dc' {
 		'format[]' {
@@ -5590,7 +5584,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5611,7 +5605,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5632,7 +5626,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5650,11 +5644,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5664,8 +5657,7 @@
 		'' {
 			'uid': '(DE-836)252'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -5673,11 +5665,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5687,8 +5678,7 @@
 		'' {
 			'uid': '(DE-836)253'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -5699,7 +5689,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5720,7 +5710,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5741,7 +5731,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5759,11 +5749,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5781,11 +5770,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5803,6 +5791,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -5816,7 +5805,8 @@
 		'' {
 			'uid': '(DE-836)259'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -5824,10 +5814,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5837,11 +5828,18 @@
 		'' {
 			'uid': '(DE-836)260'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)261'
+	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
 	},
 	'dc' {
 		'format[]' {
@@ -5864,6 +5862,12 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)262'
 	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
 	'dc' {
 		'format[]' {
 			'': 'Gedruckte Ressource'
@@ -5885,9 +5889,14 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)263'
 	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -5909,7 +5918,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -5955,7 +5963,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5976,7 +5984,7 @@
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -5994,6 +6002,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -6007,7 +6016,8 @@
 		'' {
 			'uid': '(DE-836)268'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -6015,11 +6025,11 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
+			'': 'Audio',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -6029,7 +6039,8 @@
 		'' {
 			'uid': '(DE-836)269'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -6037,7 +6048,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -6101,6 +6111,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -6122,6 +6133,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -6143,7 +6155,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -6165,7 +6176,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -6229,6 +6239,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -6250,6 +6261,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -6355,6 +6367,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -6376,6 +6389,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
@@ -6439,7 +6453,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6460,7 +6474,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6481,7 +6495,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte'
+			'': 'Landkarte',
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6502,7 +6517,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte'
+			'': 'Landkarte',
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6523,7 +6539,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6544,7 +6560,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6565,7 +6581,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Mikroform'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6586,8 +6602,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Mikroform'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6608,8 +6623,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Mikroform'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6630,7 +6644,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Mikroform'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6651,7 +6665,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Mikroform'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6672,8 +6686,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
-			'': 'Mikroform'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6694,7 +6707,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Mikroform'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6715,8 +6728,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Mikroform'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6737,8 +6749,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Mikroform'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6759,7 +6770,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Mikroform'
+			'': 'Gedruckte Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6780,7 +6791,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Mikroform'
+			'': 'Landkarte'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6801,8 +6812,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
-			'': 'Mikroform'
+			'': 'Landkarte'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6823,7 +6833,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Mikroform'
+			'': 'Landkarte'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6844,8 +6854,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Mikroform'
+			'': 'Landkarte'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6866,8 +6875,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Mikroform'
+			'': 'Landkarte'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6888,7 +6896,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Mikroform'
+			'': 'Landkarte'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -6930,7 +6938,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
+			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -6952,6 +6960,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -6973,7 +6982,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -6995,7 +7003,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7017,6 +7024,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7059,7 +7067,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
+			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7081,6 +7089,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7102,7 +7111,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7124,7 +7132,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7146,6 +7153,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7188,7 +7196,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
+			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7210,6 +7218,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7231,7 +7240,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7253,7 +7261,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7275,6 +7282,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7317,7 +7325,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
+			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7339,6 +7347,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7363,7 +7372,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7384,7 +7393,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7402,10 +7411,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7426,7 +7436,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7444,10 +7454,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7465,10 +7476,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7489,7 +7501,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7510,7 +7522,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7528,10 +7540,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7552,7 +7565,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7570,7 +7583,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
+			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7584,8 +7597,7 @@
 		'' {
 			'uid': '(DE-836)342'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -7593,11 +7605,11 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
+			'': 'Landkarte',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7607,18 +7619,11 @@
 		'' {
 			'uid': '(DE-836)343'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)344'
-	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
 	},
 	'dc' {
 		'format[]' {
@@ -7641,12 +7646,6 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)345'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
 			'': 'Mikroform'
@@ -7668,14 +7667,9 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)346'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7697,7 +7691,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -7722,7 +7715,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7743,7 +7736,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7764,7 +7757,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7782,11 +7775,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7796,8 +7788,7 @@
 		'' {
 			'uid': '(DE-836)351'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -7805,11 +7796,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7819,8 +7809,7 @@
 		'' {
 			'uid': '(DE-836)352'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -7828,11 +7817,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7853,7 +7841,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7874,7 +7862,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7895,7 +7883,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7916,7 +7904,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7934,10 +7922,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7947,7 +7936,8 @@
 		'' {
 			'uid': '(DE-836)358'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -7955,10 +7945,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7968,18 +7959,25 @@
 		'' {
 			'uid': '(DE-836)359'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)360'
+	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
 	},
 	'dc' {
 		'format[]' {
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -7995,12 +7993,18 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)361'
 	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
 	'dc' {
 		'format[]' {
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8016,12 +8020,18 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)362'
 	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
 	'dc' {
 		'format[]' {
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8039,10 +8049,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8063,7 +8074,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8102,11 +8113,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8116,8 +8126,7 @@
 		'' {
 			'uid': '(DE-836)366'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -8129,7 +8138,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8146,18 +8155,13 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)368'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8167,20 +8171,16 @@
 		'' {
 			'uid': '(DE-836)368'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)369'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -8199,12 +8199,6 @@
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)370'
-	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
 	},
 	'dc' {
 		'format[]' {
@@ -8229,7 +8223,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -8254,7 +8247,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8275,7 +8268,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8296,7 +8289,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8314,11 +8307,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8328,8 +8320,7 @@
 		'' {
 			'uid': '(DE-836)375'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -8337,11 +8328,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8351,8 +8341,7 @@
 		'' {
 			'uid': '(DE-836)376'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -8360,11 +8349,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8385,7 +8373,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8406,7 +8394,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8427,7 +8415,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8448,7 +8436,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8466,10 +8454,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8479,7 +8468,8 @@
 		'' {
 			'uid': '(DE-836)382'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -8487,10 +8477,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8500,18 +8491,25 @@
 		'' {
 			'uid': '(DE-836)383'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)384'
+	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
 	},
 	'dc' {
 		'format[]' {
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8527,12 +8525,18 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)385'
 	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
 	'dc' {
 		'format[]' {
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8548,12 +8552,18 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)386'
 	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
 	'dc' {
 		'format[]' {
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8571,10 +8581,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8595,7 +8606,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8634,11 +8645,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8648,8 +8658,7 @@
 		'' {
 			'uid': '(DE-836)390'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -8661,7 +8670,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8678,18 +8687,13 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)392'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8699,20 +8703,16 @@
 		'' {
 			'uid': '(DE-836)392'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)393'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
+			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -8731,12 +8731,6 @@
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)394'
-	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
 	},
 	'dc' {
 		'format[]' {
@@ -8761,7 +8755,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
@@ -8786,7 +8779,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8807,7 +8800,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8828,7 +8821,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8846,11 +8839,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8860,8 +8852,7 @@
 		'' {
 			'uid': '(DE-836)399'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -8869,11 +8860,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8883,8 +8873,7 @@
 		'' {
 			'uid': '(DE-836)400'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -8892,11 +8881,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8917,7 +8905,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8938,7 +8926,7 @@
 			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -8956,183 +8944,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Online-Ressource'
-		},
-		'type[]' {
-			'': 'Monographie'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)404'
-		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)405'
-	},
-	'dc' {
-		'format[]' {
-			'': 'Online-Ressource'
-		},
-		'type[]' {
-			'': 'Schriftenreihe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)405'
-		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)406'
-	},
-	'dc' {
-		'format[]' {
-			'': 'Online-Ressource'
-		},
-		'type[]' {
-			'': 'Monographie'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)406'
-		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)407'
-	},
-	'dc' {
-		'format[]' {
-			'': 'Online-Ressource'
-		},
-		'type[]' {
-			'': 'Monographie'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)407'
-		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)408'
-	},
-	'dc' {
-		'format[]' {
-			'': 'Online-Ressource'
-		},
-		'type[]' {
-			'': 'Monographie'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)408'
-		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)409'
-	},
-	'dc' {
-		'format[]' {
-			'': 'Online-Ressource'
-		},
-		'type[]' {
-			'': 'Schriftenreihe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)409'
-		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)410'
-	},
-	'dc' {
-		'format[]' {
-			'': 'Online-Ressource'
-		},
-		'type[]' {
-			'': 'Monographie'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)410'
-		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)411'
-	},
-	'dc' {
-		'format[]' {
-			'': 'Online-Ressource'
-		},
-		'type[]' {
-			'': 'Monographie'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)411'
-		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)412'
-	},
-	'dc' {
-		'format[]' {
-			'': 'Online-Ressource'
+			'': 'Mikroform'
 		},
 		'type[]' {
 			'': 'Musikalia'
@@ -9143,10 +8955,200 @@
 	},
 	'xbib[]' {
 		'' {
-			'uid': '(DE-836)412'
+			'uid': '(DE-836)404'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)405'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Mikroform'
+		},
+		'type[]' {
+			'': 'Musikalia'
+		},
+		'language[]' {
+			'': 'keine Angabe'
 		}
 	},
-	'TypeMedia': 'Elektronische Ressource'
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)405'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)406'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Audio',
+			'': 'Mikroform'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)406'
+		}
+	},
+	'TypeMedia': 'Audio'
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)407'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Audio',
+			'': 'Mikroform'
+		},
+		'type[]' {
+			'': 'Musikalia'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)407'
+		}
+	},
+	'TypeMedia': 'Audio'
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)408'
+	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
+	'dc' {
+		'format[]' {
+			'': 'Mikroform'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)408'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)409'
+	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
+	'dc' {
+		'format[]' {
+			'': 'Mikroform'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)409'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)410'
+	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
+	'dc' {
+		'format[]' {
+			'': 'Mikroform'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)410'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)411'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Gedruckte Ressource',
+			'': 'Mikroform'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)411'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)412'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Mikroform'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)412'
+		}
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -9154,7 +9156,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Online-Ressource'
+			'': 'Mikroform'
 		},
 		'type[]' {
 			'': 'Musikalia'
@@ -9167,8 +9169,7 @@
 		'' {
 			'uid': '(DE-836)413'
 		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -9176,11 +9177,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
-			'': 'Online-Ressource'
+			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9190,8 +9190,7 @@
 		'' {
 			'uid': '(DE-836)414'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -9200,10 +9199,10 @@
 	'dc' {
 		'format[]' {
 			'': 'Audio',
-			'': 'Online-Ressource'
+			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9222,11 +9221,11 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Elektronische Ressource',
-			'': 'Online-Ressource'
+			'': 'Audio',
+			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9237,21 +9236,16 @@
 			'uid': '(DE-836)416'
 		}
 	},
-	'TypeMedia': 'Elektronische Ressource'
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)417'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
-			'': 'Online-Ressource'
+			'': 'Gedruckte Ressource',
+			'': 'Mikroform'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -9264,22 +9258,15 @@
 		'' {
 			'uid': '(DE-836)417'
 		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
+	}
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)418'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
-			'': 'Online-Ressource'
+			'': 'Mikroform'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -9292,22 +9279,15 @@
 		'' {
 			'uid': '(DE-836)418'
 		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
+	}
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)419'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
-			'': 'Online-Ressource'
+			'': 'Mikroform'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -9320,8 +9300,7 @@
 		'' {
 			'uid': '(DE-836)419'
 		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -9329,8 +9308,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
-			'': 'Online-Ressource'
+			'': 'Mikroform'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -9343,8 +9321,7 @@
 		'' {
 			'uid': '(DE-836)420'
 		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -9352,7 +9329,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Online-Ressource'
+			'': 'Mikroform'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -9365,8 +9342,7 @@
 		'' {
 			'uid': '(DE-836)421'
 		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -9374,10 +9350,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Online-Ressource'
+			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9387,8 +9363,7 @@
 		'' {
 			'uid': '(DE-836)422'
 		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -9396,10 +9371,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Online-Ressource'
+			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9409,8 +9384,7 @@
 		'' {
 			'uid': '(DE-836)423'
 		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -9418,8 +9392,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
-			'': 'Online-Ressource'
+			'': 'Mikroform'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -9432,8 +9405,7 @@
 		'' {
 			'uid': '(DE-836)424'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -9441,11 +9413,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
-			'': 'Online-Ressource'
+			'': 'Mikroform'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9455,8 +9426,7 @@
 		'' {
 			'uid': '(DE-836)425'
 		}
-	},
-	'TypeMedia': 'Audio'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -9464,8 +9434,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
-			'': 'Online-Ressource'
+			'': 'Mikroform'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -9478,8 +9447,7 @@
 		'' {
 			'uid': '(DE-836)426'
 		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -9490,7 +9458,7 @@
 			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9512,7 +9480,7 @@
 			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9531,11 +9499,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Elektronische Ressource',
 			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9554,11 +9521,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9577,11 +9543,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9603,7 +9568,7 @@
 			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9625,7 +9590,7 @@
 			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9644,11 +9609,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9670,7 +9634,7 @@
 			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9689,11 +9653,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9712,7 +9675,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
+			'': 'Audio',
 			'': 'Online-Ressource'
 		},
 		'type[]' {
@@ -9727,7 +9690,7 @@
 			'uid': '(DE-836)437'
 		}
 	},
-	'TypeMedia': 'Elektronische Ressource'
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -9735,10 +9698,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9749,7 +9713,7 @@
 			'uid': '(DE-836)438'
 		}
 	},
-	'TypeMedia': 'Elektronische Ressource'
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -9757,6 +9721,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Elektronische Ressource',
 			'': 'Online-Ressource'
 		},
 		'type[]' {
@@ -9777,9 +9742,14 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)440'
 	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Online-Ressource'
 		},
 		'type[]' {
@@ -9799,6 +9769,12 @@
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)441'
+	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
 	},
 	'dc' {
 		'format[]' {
@@ -9822,9 +9798,15 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)442'
 	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -9837,7 +9819,8 @@
 		'' {
 			'uid': '(DE-836)442'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -9845,10 +9828,11 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Gedruckte Ressource',
+			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9858,7 +9842,8 @@
 		'' {
 			'uid': '(DE-836)443'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -9866,10 +9851,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9879,7 +9864,8 @@
 		'' {
 			'uid': '(DE-836)444'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -9887,10 +9873,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9900,7 +9886,8 @@
 		'' {
 			'uid': '(DE-836)445'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -9908,10 +9895,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9921,7 +9908,8 @@
 		'' {
 			'uid': '(DE-836)446'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -9929,10 +9917,11 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Audio',
+			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9942,7 +9931,8 @@
 		'' {
 			'uid': '(DE-836)447'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -9950,10 +9940,11 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Audio',
+			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'Schriftenreihe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9963,7 +9954,8 @@
 		'' {
 			'uid': '(DE-836)448'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -9971,10 +9963,11 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Gedruckte Ressource',
+			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -9984,7 +9977,8 @@
 		'' {
 			'uid': '(DE-836)449'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -9992,10 +9986,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'Monographie'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10005,21 +9999,16 @@
 		'' {
 			'uid': '(DE-836)450'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)451'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10032,21 +10021,17 @@
 		'' {
 			'uid': '(DE-836)451'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)452'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Elektronische Ressource',
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10059,21 +10044,17 @@
 		'' {
 			'uid': '(DE-836)452'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)453'
 	},
-	'DateFirst' {
-		'date': '    '
-	},
-	'DateLast' {
-		'date': '    '
-	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Landkarte',
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10086,7 +10067,8 @@
 		'' {
 			'uid': '(DE-836)453'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10094,10 +10076,11 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Landkarte',
+			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10107,7 +10090,8 @@
 		'' {
 			'uid': '(DE-836)454'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10115,10 +10099,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10128,7 +10112,8 @@
 		'' {
 			'uid': '(DE-836)455'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10136,8 +10121,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10151,7 +10135,7 @@
 			'uid': '(DE-836)456'
 		}
 	},
-	'TypeMedia': 'Audio'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10159,11 +10143,11 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
-			'': 'Sonstiges'
+			'': 'Gedruckte Ressource',
+			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10174,7 +10158,7 @@
 			'uid': '(DE-836)457'
 		}
 	},
-	'TypeMedia': 'Audio'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10182,8 +10166,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10196,7 +10179,8 @@
 		'' {
 			'uid': '(DE-836)458'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10204,7 +10188,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Landkarte',
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10217,7 +10202,8 @@
 		'' {
 			'uid': '(DE-836)459'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10225,10 +10211,11 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Landkarte',
+			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10238,7 +10225,8 @@
 		'' {
 			'uid': '(DE-836)460'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10246,10 +10234,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10259,7 +10247,8 @@
 		'' {
 			'uid': '(DE-836)461'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10267,8 +10256,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10282,7 +10270,7 @@
 			'uid': '(DE-836)462'
 		}
 	},
-	'TypeMedia': 'Audio'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10290,11 +10278,11 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Audio',
-			'': 'Sonstiges'
+			'': 'Gedruckte Ressource',
+			'': 'Online-Ressource'
 		},
 		'type[]' {
-			'': 'Musikalia'
+			'': 'keine Angabe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10305,7 +10293,7 @@
 			'uid': '(DE-836)463'
 		}
 	},
-	'TypeMedia': 'Audio'
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10313,8 +10301,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10327,7 +10314,8 @@
 		'' {
 			'uid': '(DE-836)464'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10335,7 +10323,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10348,7 +10336,8 @@
 		'' {
 			'uid': '(DE-836)465'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10356,7 +10345,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10369,7 +10358,8 @@
 		'' {
 			'uid': '(DE-836)466'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10377,8 +10367,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10391,7 +10380,8 @@
 		'' {
 			'uid': '(DE-836)467'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10399,8 +10389,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10413,7 +10402,8 @@
 		'' {
 			'uid': '(DE-836)468'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10421,7 +10411,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10434,7 +10424,8 @@
 		'' {
 			'uid': '(DE-836)469'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10442,7 +10433,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Sonstiges'
+			'': 'Online-Ressource'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10455,7 +10446,8 @@
 		'' {
 			'uid': '(DE-836)470'
 		}
-	}
+	},
+	'TypeMedia': 'Elektronische Ressource'
 }
 '' {
 	'RecordIdentifier' {
@@ -10463,7 +10455,6 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Sonstiges'
 		},
 		'type[]' {
@@ -10488,7 +10479,7 @@
 			'': 'Sonstiges'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10506,11 +10497,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Sonstiges'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10528,11 +10518,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
 			'': 'Sonstiges'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10553,7 +10542,7 @@
 			'': 'Sonstiges'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10574,7 +10563,7 @@
 			'': 'Sonstiges'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10592,11 +10581,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Sonstiges'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Schriftenreihe'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10617,7 +10605,7 @@
 			'': 'Sonstiges'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10638,7 +10626,7 @@
 			'': 'Sonstiges'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10653,6 +10641,12 @@
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)480'
+	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
 	},
 	'dc' {
 		'format[]' {
@@ -10675,9 +10669,14 @@
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)481'
 	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
+	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
 			'': 'Sonstiges'
 		},
 		'type[]' {
@@ -10696,6 +10695,12 @@
 '' {
 	'RecordIdentifier' {
 		'identifierForTheRecord': '(DE-836)482'
+	},
+	'DateFirst' {
+		'date': '    '
+	},
+	'DateLast' {
+		'date': '    '
 	},
 	'dc' {
 		'format[]' {
@@ -10723,7 +10728,7 @@
 			'': 'Sonstiges'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10744,7 +10749,7 @@
 			'': 'Sonstiges'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10762,7 +10767,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
+			'': 'Audio',
 			'': 'Sonstiges'
 		},
 		'type[]' {
@@ -10776,7 +10781,8 @@
 		'' {
 			'uid': '(DE-836)485'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -10784,10 +10790,11 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Audio',
 			'': 'Sonstiges'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10797,7 +10804,8 @@
 		'' {
 			'uid': '(DE-836)486'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -10805,8 +10813,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Gedruckte Ressource',
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10827,8 +10835,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10849,11 +10856,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10871,11 +10877,10 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10893,8 +10898,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Audio',
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10907,7 +10912,8 @@
 		'' {
 			'uid': '(DE-836)491'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -10915,11 +10921,11 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Audio',
+			'': 'Sonstiges'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Musikalia'
 		},
 		'language[]' {
 			'': 'keine Angabe'
@@ -10929,7 +10935,8 @@
 		'' {
 			'uid': '(DE-836)492'
 		}
-	}
+	},
+	'TypeMedia': 'Audio'
 }
 '' {
 	'RecordIdentifier' {
@@ -10937,8 +10944,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Gedruckte Ressource',
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10959,8 +10966,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10981,8 +10987,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Elektronische Ressource',
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -10995,8 +11000,7 @@
 		'' {
 			'uid': '(DE-836)495'
 		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -11004,8 +11008,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Elektronische Ressource',
-			'': 'Spiel'
+			'': 'Landkarte',
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11018,8 +11022,7 @@
 		'' {
 			'uid': '(DE-836)496'
 		}
-	},
-	'TypeMedia': 'Elektronische Ressource'
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -11028,7 +11031,7 @@
 	'dc' {
 		'format[]' {
 			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11049,8 +11052,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11071,8 +11073,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11093,8 +11094,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Gedruckte Ressource',
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11115,8 +11116,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11138,7 +11138,7 @@
 	'dc' {
 		'format[]' {
 			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11160,7 +11160,7 @@
 	'dc' {
 		'format[]' {
 			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11181,8 +11181,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Landkarte',
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11203,7 +11202,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11224,7 +11223,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Spiel'
+			'': 'Gedruckte Ressource',
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11245,8 +11245,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11267,7 +11266,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11288,7 +11287,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11309,7 +11308,8 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Spiel'
+			'': 'Gedruckte Ressource',
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11330,8 +11330,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Gedruckte Ressource',
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11352,7 +11351,7 @@
 	},
 	'dc' {
 		'format[]' {
-			'': 'Spiel'
+			'': 'Sonstiges'
 		},
 		'type[]' {
 			'': 'keine Angabe'
@@ -11364,6 +11363,722 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)512'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)513'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)513'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)514'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Gedruckte Ressource',
+			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)514'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)515'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)515'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)516'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)516'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)517'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)517'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)518'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)518'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)519'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Sonstiges'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)519'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)520'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)520'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)521'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)521'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)522'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)522'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)523'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)523'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)524'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)524'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)525'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)525'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)526'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)526'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)527'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)527'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)528'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Elektronische Ressource',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)528'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)529'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Elektronische Ressource',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)529'
+		}
+	},
+	'TypeMedia': 'Elektronische Ressource'
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)530'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)530'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)531'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)531'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)532'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)532'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)533'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)533'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)534'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)534'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)535'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)535'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)536'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)536'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)537'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Landkarte',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)537'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)538'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)538'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)539'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)539'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)540'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Gedruckte Ressource',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)540'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)541'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)541'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)542'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)542'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)543'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)543'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)544'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Gedruckte Ressource',
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)544'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)545'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Spiel'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)545'
 		}
 	}
 }
