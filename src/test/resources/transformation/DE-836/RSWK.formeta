@@ -53,7 +53,7 @@
 }
 '' {
 	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)3-1'
+		'identifierForTheRecord': '(DE-836)3'
 	},
 	'dc' {
 		'format[]' {
@@ -84,73 +84,10 @@
 		},
 		'' {
 			'subjectTopicName': 'Kultur'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)3-1'
-		}
-	}
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)3-2'
-	},
-	'dc' {
-		'format[]' {
-			'': 'keine Angabe'
 		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'RSWK[]' {
-		'' {
-			'subjectGeoName': 'Volkstheater',
-			'subjectIdentifier[]' {
-				'': '(DE-588)4130623-5'
-			},
-			'identifierGND[]' {
-				'': '4130623-5'
-			}
-		},
-		'' {
-			'subjectGeoName': 'Theater',
-			'subjectIdentifier[]' {
-				'': '(DE-588c)12345'
-			}
-		},
-		'' {
-			'subjectGeoName': 'Kultur'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)3-2'
-		}
-	}
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)4-1'
-	},
-	'dc' {
-		'format[]' {
-			'': 'keine Angabe'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'RSWK[]' {
 		'' {
 			'subjectTopicName': 'Volkstheater',
+			'subjectGeoName': 'Solothurn <2000>',
 			'subjectIdentifier[]' {
 				'': '(DE-588c)12345',
 				'': '(DE-588)4125858-8'
@@ -158,28 +95,17 @@
 			'identifierGND[]' {
 				'': '4125858-8'
 			}
-		},
-		'' {
-			'subjectTopicName': 'Theater',
-			'subjectIdentifier[]' {
-				'': '(DE-588)4130623-5',
-				'': '(DE-588)4125861-3'
-			},
-			'identifierGND[]' {
-				'': '4130623-5',
-				'': '4125861-3'
-			}
 		}
 	},
 	'xbib[]' {
 		'' {
-			'uid': '(DE-836)4-1'
+			'uid': '(DE-836)3'
 		}
 	}
 }
 '' {
 	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)4-2'
+		'identifierForTheRecord': '(DE-836)4'
 	},
 	'dc' {
 		'format[]' {
@@ -194,30 +120,172 @@
 	},
 	'RSWK[]' {
 		'' {
-			'subjectGeoName': 'Volkstheater',
+			'subjectPersonName': 'Croissant, Michael',
+			'subjectNameAddendum': 'Künstler',
+			'subjectDate': '1928-2002',
 			'subjectIdentifier[]' {
-				'': '(DE-588c)12345',
-				'': '(DE-588)4125858-8'
+				'': '(DE-588)118936670',
+				'': '(DE-603)087277042'
 			},
 			'identifierGND[]' {
-				'': '4125858-8'
+				'': '118936670'
 			}
 		},
 		'' {
-			'subjectGeoName': 'Theater',
+			'subjectPersonName': 'Hanimann, Alex',
+			'subjectChronological': 'Geschichte 1990-1999',
+			'subjectGenre': 'Ausstellung',
+			'subjectGeoName': 'Solothurn <2000>'
+		},
+		'' {
+			'subjectPersonName': 'Alberti, Leon Battista',
+			'subjectDate': '1404-1472',
+			'subjectTitleName': 'De pictura praestantissima et nunquam satis laudata arte libri tres absolutissimi',
 			'subjectIdentifier[]' {
-				'': '(DE-588)4130623-5',
-				'': '(DE-588)4125861-3'
+				'': '(DE-588)4662291-3'
 			},
 			'identifierGND[]' {
-				'': '4130623-5',
-				'': '4125861-3'
+				'': '4662291-3'
 			}
 		}
 	},
 	'xbib[]' {
 		'' {
-			'uid': '(DE-836)4-2'
+			'uid': '(DE-836)4'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)5'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectCorporateBodyName': 'Amerika Haus Berlin',
+			'subjectCorporateBodySubUnit': 'Video Lending Library'
+		},
+		'' {
+			'subjectCorporateBodyName': 'Deutschland',
+			'subjectTitleName': 'Verdingungsordnung für Bauleistungen',
+			'subjectUnit': 'Teil B',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4122394-9'
+			},
+			'identifierGND[]' {
+				'': '4122394-9'
+			}
+		},
+		'' {
+			'subjectCorporateBodyName': 'Kupferstichkabinett',
+			'subjectIdentifier[]' {
+				'': '(DE-588)1008166-5'
+			},
+			'identifierGND[]' {
+				'': '1008166-5'
+			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)5'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)6'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectConference': 'Kulturmesse',
+			'subjectNumbering': '2',
+			'subjectDate': '1984',
+			'subjectGeoAddendum': 'Unna',
+			'subjectIdentifier[]' {
+				'': '(DE-588)2101426-7'
+			},
+			'identifierGND[]' {
+				'': '2101426-7'
+			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)6'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)7'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectChronological': 'Geschichte 2030'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)7'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)8'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectGeoName': 'Entwicklungsländer'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)8'
 		}
 	}
 }
