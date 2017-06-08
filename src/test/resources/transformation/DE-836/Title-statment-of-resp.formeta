@@ -184,3 +184,35 @@
 		}
 	}
 }
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)7'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'TitleOther' {
+		'title[]' {
+			'': 'Chem comm online',
+			'': 'JCT',
+			'': 'JCT4',
+			'': 'JCT5',
+			'': 'JCT6',
+			'': 'JCT7',
+			'': 'JCT8'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)7'
+		}
+	}
+}
