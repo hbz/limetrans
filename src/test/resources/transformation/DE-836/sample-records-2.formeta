@@ -39,6 +39,11 @@
 			'titleMain': 'U.S. courts design guide'
 		}
 	},
+	'TitleOther' {
+		'title[]' {
+			'': 'US courts design guide'
+		}
+	},
 	'Edition' {
 		'edition[]' {
 			'': '[3rd ed.].'
@@ -326,6 +331,11 @@
 	'TitleStatement[]' {
 		'' {
 			'titleMain': 'The American journal of clinical nutrition'
+		}
+	},
+	'TitleOther' {
+		'title[]' {
+			'': 'Official journal of the American Society for Clinical Nutrition, Inc'
 		}
 	},
 	'PublisherName[]' {
@@ -789,6 +799,12 @@
 	'TitleStatement[]' {
 		'' {
 			'titleMain': 'Broadacre City und die Zwischenstadt'
+		}
+	},
+	'TitleOther' {
+		'title[]' {
+			'': 'Neueinordnung des amerikanischen Entwurfsmodells im Rahmen der aktuellen Debatte zur Qualifizierung der Zwischenstadt',
+			'': 'Boradacre City and Zwischenstadt'
 		}
 	},
 	'Description' {
