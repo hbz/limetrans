@@ -212,6 +212,15 @@
       <replace pattern="[.]$" with="" />
     </data>
   </entity>
+
+  <entity name="TitleOther">
+    <entity name="title[]" flushWith="record">
+      <data name="" source="246?[ 345678].a">
+        <replace pattern="\.$" with="" />
+      </data>
+    </entity>
+  </entity>
+
   <entity name="Edition">
     <entity name="edition[]" flushWith="record">
       <data name="" source="250  .a">
