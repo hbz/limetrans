@@ -155,6 +155,7 @@
 	},
 	'dc' {
 		'format[]' {
+			'': 'Elektronische Ressource',
 			'': 'Online-Ressource'
 		},
 		'type[]' {
@@ -191,4 +192,27 @@
 			'uid': '(DE-836)9'
 		}
 	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)10'
+	},
+	'dc' {
+		'format[]' {
+			'': 'Elektronische Ressource',
+			'': 'Film, Dia, Video'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)10'
+		}
+	},
+	'TypeMedia': 'Film, Dia, Video'
 }

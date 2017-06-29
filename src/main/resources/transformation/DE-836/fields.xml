@@ -702,11 +702,7 @@
   <choose name="TypeMedia" flushWith="record">
     <data source="@facet_format">
       <!-- matches: Bild; Audio; Film, Dia, Video; Elektronische Ressource -->
-      <regexp match="^[BAFE].*$" />
-    </data>
-    <data source="@facet_format">
-      <equals string="Online-Ressource" />
-      <constant value="Elektronische Ressource" />
+      <regexp match="^[BAFE].*" />
     </data>
   </choose>
 

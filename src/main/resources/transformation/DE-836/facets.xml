@@ -269,6 +269,9 @@
         <data source="338  .b">
           <equals string="cd" />
         </data>
+        <data source="@facet_format">
+          <equals string="Online-Ressource" />
+        </data>
       </any>
     </if>
     <data source="001" />
