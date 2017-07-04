@@ -1562,6 +1562,11 @@
                   "norms" : {
                        "enabled" : false
                   }
+              },
+              "identifierISSNNormalized" : {
+                "type" : "string",
+                "index" : "no", "doc_values" : false,
+                "copy_to" : [ "cql.allIndexes", "dc.identifier", "bib.identifierAuthority=issn" ]
               }
             }
           },
@@ -1792,6 +1797,11 @@
                   "norms" : {
                        "enabled" : false
                   }
+              },
+              "identifierISSNNormalized" : {
+                  "type" : "string",
+                  "index" : "no", "doc_values" : false,
+                  "copy_to" : [ "cql.allIndexes", "dc.identifier", "bib.identifierAuthority=issn" ]
               }
             }
           },

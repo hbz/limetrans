@@ -16,6 +16,16 @@
           "type" : "hyphen",
           "subwords" : false
         },
+        "keyword_normalizer_delete" : {
+          "type": "pattern_replace",
+          "pattern": "[^a-zA-Z 0-9]",
+          "replacement": ""
+        },
+        "keyword_normalizer_squeeze" : {
+          "type": "pattern_replace",
+          "pattern": " +",
+          "replacement": " "
+        },
         "german_stop_words" : {
           "type" : "stop",
           "stopwords" : [
@@ -124,7 +134,9 @@
           "tokenizer" : "keyword",
           "filter" : [
             "icu_normalizer",
-            "icu_folding"
+            "icu_folding",
+            "keyword_normalizer_delete",
+            "keyword_normalizer_squeeze"
           ]
         },
         "german_phonebook_with_sortform" : {
