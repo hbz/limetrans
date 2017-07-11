@@ -41,7 +41,7 @@ public class LibraryMetadataFilter {
                     new ObjectStdoutWriter<String>() :
                     new ObjectWriter<String>(mOutputPath));
 
-        mInputQueue.processMarcXml(filter);
+        mInputQueue.process(filter);
     }
 
     /*

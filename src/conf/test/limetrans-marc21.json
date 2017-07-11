@@ -1,0 +1,18 @@
+{
+  "input" : {
+    "queue" : {
+      "path" : "src/test/resources/limetrans/input/",
+      "pattern" : "10.marc21",
+      "processor" : "MARC21",
+      "sort_by" : "lastmodified",
+      "order" : "desc",
+      "max" : 1
+    }
+  },
+  "output": {
+    "json" : "src/test/resources/limetrans/output/marc21.jsonl"
+  },
+  "transformation-rules" : "src/test/resources/limetrans/rules/noop.xml",
+  "catalogid" : "DE-605-test",
+  "collection" : "HBZ-Test"
+}

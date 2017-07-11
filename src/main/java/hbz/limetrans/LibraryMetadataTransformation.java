@@ -69,7 +69,7 @@ public class LibraryMetadataTransformation {
             .setReceiver(counter)
             .setReceiver(streamTee);
 
-        mInputQueue.processMarcXml(metamorph, mNormalizeUnicode);
+        mInputQueue.process(metamorph, mNormalizeUnicode);
 
         mLogger.info("Finished transformation ({})", counter);
     }
