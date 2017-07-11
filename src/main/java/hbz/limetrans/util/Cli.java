@@ -26,13 +26,13 @@ public class Cli {
         mArgsLine = aArgsLine;
     }
 
-    public Cli(final Class<?> program, final String aArgsLine) {
-        this(program.getName(), aArgsLine);
+    public Cli(final Class<?> aProgram, final String aArgsLine) {
+        this(aProgram.getName(), aArgsLine);
     }
 
-    public Cli addOption(final String opt, final String longOpt,
-            final boolean hasArg, final String description) {
-        mOptions.addOption(opt, longOpt, hasArg, description);
+    public Cli addOption(final String aOpt, final String aLongOpt,
+            final boolean aHasArg, final String aDescription) {
+        mOptions.addOption(aOpt, aLongOpt, aHasArg, aDescription);
         mHasOptions = true;
         return this;
     }
@@ -53,17 +53,8 @@ public class Cli {
             cmdLineSyntax += " " + mArgsLine;
         }
 
-        final String header = mHasOptions ? "\nOptions:" : null;
-        final String footer = null;
-
-        final int width = 80;
-        final int leftPad = 1;
-        final int descPad = 3;
-
-        final boolean autoUsage = true;
-
-        new HelpFormatter().printHelp(pw, width, cmdLineSyntax,
-                header, mOptions, leftPad, descPad, footer, autoUsage);
+        new HelpFormatter().printHelp(pw, 80, cmdLineSyntax,
+                mHasOptions ? "\nOptions:" : null, mOptions, 1, 3, null, true);
 
         pw.close();
     }
