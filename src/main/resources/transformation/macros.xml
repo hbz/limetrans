@@ -57,24 +57,4 @@
     </entity>
   </macro>
 
-  <macro name="prepare-SeriesAddedEntryUniformTitle-title">
-    <concat delimiter=" ; " name="@title$[basefield]" flushWith="$[field]">
-      <data source="$[field].a">
-        <replace pattern="\s?;?$" with="" />
-        <compose prefix="!next!" /> <!-- workaround for a "flush before" -->
-      </data>
-      <data source="$[field].v">
-        <replace pattern="\s?\.?$" with="" />
-      </data>
-    </concat>
-  </macro>
-
-  <macro name="SeriesAddedEntryUniformTitle-title">
-    <entity name="title[]" flushWith="$[field]" sameEntity="true">
-      <data name="" source="@title$[basefield]">
-        <replace pattern="^!next!" with="" />
-        <split delimiter=" ; !next!" />
-      </data>
-    </entity>
-  </macro>
 </macros>

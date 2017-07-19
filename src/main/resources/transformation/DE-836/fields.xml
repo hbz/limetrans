@@ -389,21 +389,32 @@
   </entity>
 
   <!-- 4xx -->
-  <call-macro name="prepare-SeriesAddedEntryUniformTitle-title" field="490[01] " basefield="490" />
-  <entity name="SeriesAddedEntryUniformTitle[]" flushWith="record">
-    <if>
-      <none flushWith="record">
-        <data source="830??" />
-      </none>
-    </if>
-    <entity name="" flushWith="490[01] " sameEntity="true">
-      <call-macro name="SeriesAddedEntryUniformTitle-title" field="490[01] " basefield="490" />
-      <entity name="volume[]" flushWith="490[01] " sameEntity="true">
+  <entity name="TitleSuper[]" flushWith="record">
+    <entity name="" flushWith="record"> 
+      <if>
+        <none flushWith="record">
+          <data source="830??" />
+        </none>
+      </if>
+      <entity name="titleSuper[]" flushWith="490[01] " sameEntity="true">
+        <call-macro name="regex-del-punctuation-end" dsource="490[01] .a" dname="" />
+      </entity>
+    </entity>
+  </entity>
+  
+  <entity name="TitleSuperVolumeDesignation[]" flushWith="record">
+    <entity name="" flushWith="record">
+      <if>
+        <none flushWith="record">
+          <data source="830??" />
+        </none>
+      </if>
+      <entity name="volumeDesignation[]" flushWith="490[01] " sameEntity="true">
         <call-macro name="regex-del-punctuation-end" dsource="490[01] .v" dname="" />
       </entity>
     </entity>
   </entity>
-
+  
   <!-- 5xx -->
   <entity name="Description">
     <entity name="description[]" flushWith="record">
@@ -667,12 +678,18 @@
   </entity>
 
   <!-- 8xx -->
-  <call-macro name="prepare-SeriesAddedEntryUniformTitle-title" field="830 [0123456789]" basefield="830" />
-  <entity name="SeriesAddedEntryUniformTitle[]" flushWith="record">
-    <entity name="" flushWith="830 [0123456789]" sameEntity="true">
-      <call-macro name="SeriesAddedEntryUniformTitle-title" field="830 [0123456789]" basefield="830" />
-      <entity name="volume[]" flushWith="830 [0123456789]" sameEntity="true">
-        <call-macro name="regex-del-punctuation-end" dsource="830 [0123456789].v" dname="" />
+  <entity name="TitleSuper[]" flushWith="record">
+    <entity name="" flushWith="record">
+      <entity name="titleSuper[]" flushWith="830 ?" sameEntity="true">
+        <call-macro name="regex-del-punctuation-end" dsource="830 ?.a" dname="" />
+      </entity>
+    </entity>
+  </entity>
+  
+  <entity name="TitleSuperVolumeDesignation[]" flushWith="record">
+    <entity name="" flushWith="record">
+      <entity name="volumeDesignation[]" flushWith="830 ?" sameEntity="true">
+        <call-macro name="regex-del-punctuation-end" dsource="830 ?.v" dname="" />
       </entity>
     </entity>
   </entity>
