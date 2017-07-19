@@ -253,12 +253,16 @@
 	'Extent' {
 		'extent': '1 online resource.'
 	},
-	'SeriesAddedEntryUniformTitle[]' {
+	'TitleSuper[]' {
 		'' {
-			'title[]' {
-				'': 'Project Gutenberg etext ; no. 519'
-			},
-			'volume[]' {
+			'titleSuper[]' {
+				'': 'Project Gutenberg etext'
+			}
+		}
+	},
+	'TitleSuperVolumeDesignation[]' {
+		'' {
+			'volumeDesignation[]' {
 				'': 'no. 519'
 			}
 		}
@@ -650,12 +654,16 @@
 			}
 		}
 	},
-	'SeriesAddedEntryUniformTitle[]' {
+	'TitleSuper[]' {
 		'' {
-			'title[]' {
-				'': 'Blackwell companions to philosophy ; 13'
-			},
-			'volume[]' {
+			'titleSuper[]' {
+				'': 'Blackwell companions to philosophy'
+			}
+		}
+	},
+	'TitleSuperVolumeDesignation[]' {
+		'' {
+			'volumeDesignation[]' {
 				'': '13'
 			}
 		}
@@ -820,12 +828,16 @@
 	'Extent' {
 		'extent': '1 online resource.'
 	},
-	'SeriesAddedEntryUniformTitle[]' {
+	'TitleSuper[]' {
 		'' {
-			'title[]' {
-				'': 'Project Gutenberg etext ; no. 265'
-			},
-			'volume[]' {
+			'titleSuper[]' {
+				'': 'Project Gutenberg etext'
+			}
+		}
+	},
+	'TitleSuperVolumeDesignation[]' {
+		'' {
+			'volumeDesignation[]' {
 				'': 'no. 265'
 			}
 		}
@@ -936,12 +948,16 @@
 	'Extent' {
 		'extent': '1 online resource.'
 	},
-	'SeriesAddedEntryUniformTitle[]' {
+	'TitleSuper[]' {
 		'' {
-			'title[]' {
-				'': 'Project Gutenberg etext ; no. 556'
-			},
-			'volume[]' {
+			'titleSuper[]' {
+				'': 'Project Gutenberg etext'
+			}
+		}
+	},
+	'TitleSuperVolumeDesignation[]' {
+		'' {
+			'volumeDesignation[]' {
 				'': 'no. 556'
 			}
 		}

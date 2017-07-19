@@ -341,12 +341,16 @@
 			'personName': 'Albach, Horst'
 		}
 	},
-	'SeriesAddedEntryUniformTitle[]' {
+	'TitleSuper[]' {
 		'' {
-			'title[]' {
-				'': 'Zeitschrift für Betriebswirtschaft / Ergänzungsheft. ; 2002,4'
-			},
-			'volume[]' {
+			'titleSuper[]' {
+				'': 'Zeitschrift für Betriebswirtschaft / Ergänzungsheft'
+			}
+		}
+	},
+	'TitleSuperVolumeDesignation[]' {
+		'' {
+			'volumeDesignation[]' {
 				'': '2002,4'
 			}
 		}
