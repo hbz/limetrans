@@ -390,7 +390,7 @@
 
   <!-- 4xx -->
   <entity name="TitleSuper[]" flushWith="record">
-    <entity name="" flushWith="record"> 
+    <entity name="" flushWith="record">
       <if>
         <none flushWith="record">
           <data source="830??" />
@@ -401,7 +401,7 @@
       </entity>
     </entity>
   </entity>
-  
+
   <entity name="TitleSuperVolumeDesignation[]" flushWith="record">
     <entity name="" flushWith="record">
       <if>
@@ -414,7 +414,7 @@
       </entity>
     </entity>
   </entity>
-  
+
   <!-- 5xx -->
   <entity name="Description">
     <entity name="description[]" flushWith="record">
@@ -685,7 +685,7 @@
       </entity>
     </entity>
   </entity>
-  
+
   <entity name="TitleSuperVolumeDesignation[]" flushWith="record">
     <entity name="" flushWith="record">
       <entity name="volumeDesignation[]" flushWith="830 ?" sameEntity="true">
