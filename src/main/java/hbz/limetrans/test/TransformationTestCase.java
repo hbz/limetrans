@@ -1,40 +1,38 @@
 package hbz.limetrans.test;
 
+import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.LimetransException;
 
-import org.culturegraph.mf.biblio.marc21.MarcXmlHandler;
-import org.culturegraph.mf.commons.ResourceUtil;
-import org.culturegraph.mf.formeta.FormetaDecoder;
-import org.culturegraph.mf.formeta.FormetaRecordsReader;
 import org.culturegraph.mf.javaintegration.EventList;
 import org.culturegraph.mf.metamorph.Metamorph;
-import org.culturegraph.mf.xml.XmlDecoder;
 
 import org.junit.Assert;
 import org.junit.runners.model.Statement;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.Reader;
+import java.io.IOException;
 
 public class TransformationTestCase extends Statement {
 
-    private final String mFileName;
-    private final String mRulesPath;
+    private final String mInput;
+    private final String mName;
+    private final String mReference;
+    private final String mRules;
 
-    public TransformationTestCase(final String aRulesPath, final String aFileName) {
-        mRulesPath = aRulesPath;
-        mFileName = aFileName.substring(0, aFileName.lastIndexOf('.'));
+    public TransformationTestCase(final String aName, final String aReference, final String aInput, final String aRules) {
+        mName = aName;
+        mReference = aReference;
+        mInput = aInput;
+        mRules = aRules;
     }
 
     public String getName() {
-        return mFileName.substring(mFileName.lastIndexOf(File.separator) + 1);
+        return mName;
     }
 
     @Override
     public void evaluate() {
-        final EventStack expected = new EventStack(getExpected());
-        final EventStack actual = new EventStack(getActual());
+        final EventStack expected = getEvents(mReference, null);
+        final EventStack actual = getEvents(mInput, mRules);
 
         evaluateCommon(expected, actual);
 
@@ -42,42 +40,21 @@ public class TransformationTestCase extends Statement {
         evaluateRemaining(actual, "Unexpected events");
     }
 
-    private EventList getExpected() {
-        final EventList eventList = new EventList();
-        final FormetaRecordsReader reader = new FormetaRecordsReader();
+    private EventStack getEvents(final String aFile, final String aRules) {
+        final String ext = aFile.substring(aFile.lastIndexOf('.') + 1);
 
-        reader
-            .setReceiver(new FormetaDecoder())
-            .setReceiver(eventList);
-
-        reader.process(getData("formeta"));
-        reader.closeStream();
-
-        return eventList;
-    }
-
-    private EventList getActual() {
-        final EventList eventList = new EventList();
-        final XmlDecoder reader = new XmlDecoder();
-
-        reader
-            .setReceiver(new MarcXmlHandler())
-            .setReceiver(new Metamorph(mRulesPath))
-            .setReceiver(eventList);
-
-        reader.process(getData("xml"));
-        reader.closeStream();
-
-        return eventList;
-    }
-
-    private Reader getData(final String aExt) {
+        final FileQueue inputQueue;
         try {
-            return ResourceUtil.getReader(mFileName + "." + aExt);
+            inputQueue = new FileQueue(ext.equals("xml") ? "MARCXML" : ext.toUpperCase(), aFile);
         }
-        catch (final FileNotFoundException e) {
+        catch (final IOException e) {
             throw new LimetransException(e);
         }
+
+        final EventList eventList = new EventList();
+        inputQueue.process(eventList, aRules != null ? new Metamorph(aRules) : null);
+
+        return new EventStack(eventList);
     }
 
     private void evaluateCommon(final EventStack aExpected, final EventStack aActual) {

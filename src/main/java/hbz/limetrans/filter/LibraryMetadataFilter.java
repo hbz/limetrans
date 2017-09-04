@@ -19,7 +19,7 @@ public class LibraryMetadataFilter {
     private final String mOutputPath;
 
     public LibraryMetadataFilter(final Settings aSettings) throws IOException {
-        mInputQueue = new FileQueue(aSettings.getAsArray("input"));
+        mInputQueue = new FileQueue("MARCXML", aSettings.getAsArray("input"));
 
         if (mInputQueue.isEmpty()) {
             throw new IllegalArgumentException("Could not process limetrans filter: no input specified.");
@@ -41,7 +41,7 @@ public class LibraryMetadataFilter {
                     new ObjectStdoutWriter<String>() :
                     new ObjectWriter<String>(mOutputPath));
 
-        mInputQueue.process(filter);
+        mInputQueue.process(filter, true);
     }
 
     /*

@@ -4,6 +4,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.culturegraph.mf.biblio.marc21.Marc21Decoder;
 import org.culturegraph.mf.biblio.marc21.MarcXmlHandler;
+import org.culturegraph.mf.formeta.FormetaDecoder;
+import org.culturegraph.mf.formeta.FormetaRecordsReader;
 import org.culturegraph.mf.framework.Sender;
 import org.culturegraph.mf.framework.StreamReceiver;
 import org.culturegraph.mf.io.FileOpener;
@@ -23,12 +25,13 @@ import java.util.Queue;
 public class FileQueue implements Iterable<String> {
 
     private enum Processor {
-        MARCXML {
+
+        FORMETA {
             @Override
             public Sender<StreamReceiver> process(final FileOpener aOpener) {
                 return aOpener
-                    .setReceiver(new XmlDecoder())
-                    .setReceiver(new MarcXmlHandler());
+                    .setReceiver(new FormetaRecordsReader())
+                    .setReceiver(new FormetaDecoder());
             }
         },
 
@@ -39,17 +42,20 @@ public class FileQueue implements Iterable<String> {
                     .setReceiver(new LineReader())
                     .setReceiver(new Marc21Decoder());
             }
+        },
+
+        MARCXML {
+            @Override
+            public Sender<StreamReceiver> process(final FileOpener aOpener) {
+                return aOpener
+                    .setReceiver(new XmlDecoder())
+                    .setReceiver(new MarcXmlHandler());
+            }
         };
 
         public abstract Sender<StreamReceiver> process(FileOpener aOpener);
 
-        public Sender<StreamReceiver> process(final FileOpener aOpener, final boolean aNormalizeUnicode) {
-            final Sender<StreamReceiver> sender = process(aOpener);
-            return aNormalizeUnicode ? sender.setReceiver(new StreamUnicodeNormalizer()) : sender;
-        }
     }
-
-    private static final Processor DEFAULT_PROCESSOR = Processor.MARCXML;
 
     private static final Logger mLogger = LogManager.getLogger();
 
@@ -57,18 +63,17 @@ public class FileQueue implements Iterable<String> {
     private final Processor mProcessor;
 
     public FileQueue(final Settings aSettings) throws IOException {
-        final String processor = aSettings == null ? null : aSettings.get("processor");
-        mProcessor = processor == null ? DEFAULT_PROCESSOR : Processor.valueOf(processor);
-
-        add(aSettings);
+        if (aSettings != null) {
+            mProcessor = Processor.valueOf(aSettings.get("processor", "MARCXML"));
+            add(aSettings);
+        }
+        else {
+            mProcessor = null;
+        }
     }
 
-    public FileQueue(final String[] aFileNames) throws IOException {
-        this(aFileNames, DEFAULT_PROCESSOR);
-    }
-
-    public FileQueue(final String[] aFileNames, final Processor aProcessor) throws IOException {
-        mProcessor = aProcessor;
+    public FileQueue(final String aProcessor, final String... aFileNames) throws IOException {
+        mProcessor = Processor.valueOf(aProcessor);
 
         for (final String fileName : aFileNames) {
             final File file = new File(fileName);
@@ -85,14 +90,24 @@ public class FileQueue implements Iterable<String> {
         return mQueue.iterator();
     }
 
-    public void process(final StreamReceiver aReceiver) {
-        process(aReceiver, true);
+    public void process(final StreamReceiver aReceiver, final boolean aNormalizeUnicode) {
+        process(aReceiver, aNormalizeUnicode ? new StreamUnicodeNormalizer() : null);
     }
 
-    public void process(final StreamReceiver aReceiver, final boolean aNormalizeUnicode) {
+    public <T extends StreamReceiver & Sender<StreamReceiver>> void process(final StreamReceiver aReceiver, final T... aSenders) {
         final FileOpener opener = new FileOpener();
 
-        mProcessor.process(opener, aNormalizeUnicode).setReceiver(aReceiver);
+        if (mProcessor != null) {
+            Sender<StreamReceiver> result = mProcessor.process(opener);
+
+            for (final T sender : aSenders) {
+                if (sender != null) {
+                    result = result.setReceiver(sender);
+                }
+            }
+
+            result.setReceiver(aReceiver);
+        }
 
         for (final String fileName : this) {
             mLogger.info("Processing {} file: {}", mProcessor, fileName);
@@ -113,10 +128,6 @@ public class FileQueue implements Iterable<String> {
     }
 
     private void add(final Settings aSettings) throws IOException {
-        if (aSettings == null) {
-            return;
-        }
-
         mLogger.debug("Settings: {}", aSettings.getAsMap());
 
         if (aSettings.containsSetting("patterns")) {
