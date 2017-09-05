@@ -10,7 +10,6 @@ import org.junit.runners.model.InitializationError;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,15 +24,15 @@ public class TransformationTestSuite extends ParentRunner<Runner> {
 
         mRunners = new ArrayList<>();
 
-        final URL rootUrl;
+        final String root;
         try {
-            rootUrl = Helpers.getResourceUrl(aClass, ROOT_PATH);
+            root = Helpers.getResourceUrl(aClass, ROOT_PATH).getPath();
         }
         catch (final IOException e) {
             throw new InitializationError(e);
         }
 
-        for (final File directory : new File(rootUrl.getPath()).listFiles()) {
+        for (final File directory : new File(root).listFiles()) {
             mRunners.add(new TransformationTestRunner(aClass, directory));
         }
 

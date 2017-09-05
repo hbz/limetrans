@@ -10,21 +10,15 @@ public class EventStackEntry {
 
     public enum Mismatch {
 
-        TYPE("type"),
-        NAME("name"),
-        VALUE("value");
+        TYPE,
+        NAME,
+        VALUE;
 
         public static final String FORMAT = "Event %s mismatch";
 
-        private final String mText;
-
-        private Mismatch(final String aText) {
-            mText = aText;
-        }
-
         @Override
         public String toString() {
-            return String.format(FORMAT, mText.toUpperCase());
+            return String.format(FORMAT, name());
         }
 
     }

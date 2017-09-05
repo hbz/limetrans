@@ -13,7 +13,6 @@ import org.culturegraph.mf.io.LineReader;
 import org.culturegraph.mf.strings.StreamUnicodeNormalizer;
 import org.culturegraph.mf.xml.XmlDecoder;
 import org.xbib.common.settings.Settings;
-import org.xbib.util.Finder.PathFile;
 import org.xbib.util.Finder;
 
 import java.io.File;
@@ -90,6 +89,14 @@ public class FileQueue implements Iterable<String> {
         return mQueue.iterator();
     }
 
+    public boolean isEmpty() {
+        return mQueue.isEmpty();
+    }
+
+    public int size() {
+        return mQueue.size();
+    }
+
     public void process(final StreamReceiver aReceiver, final boolean aNormalizeUnicode) {
         process(aReceiver, aNormalizeUnicode ? new StreamUnicodeNormalizer() : null);
     }
@@ -119,14 +126,6 @@ public class FileQueue implements Iterable<String> {
         opener.closeStream();
     }
 
-    public boolean isEmpty() {
-        return mQueue.isEmpty();
-    }
-
-    public int size() {
-        return mQueue.size();
-    }
-
     private void add(final Settings aSettings) throws IOException {
         mLogger.debug("Settings: {}", aSettings.getAsMap());
 
@@ -147,20 +146,17 @@ public class FileQueue implements Iterable<String> {
 
         final String path = aSettings.get("path");
 
-        final Queue<PathFile> pathFiles = new Finder().find(
+        new Finder().find(
                 aSettings.get("base"), aSettings.get("basepattern"),
                 path == null ? "." : path, pattern)
             .sortBy(aSettings.get("sort_by", "lastmodified"))
             .order(aSettings.get("order", "asc"))
-            .getPathFiles(aSettings.getAsInt("max", -1));
-
-        for (final PathFile pathFile : pathFiles) {
-            final String fileName = pathFile.toString();
-
-            mLogger.debug("Adding file: {}", fileName);
-
-            mQueue.add(fileName);
-        }
+            .getPathFiles(aSettings.getAsInt("max", -1))
+            .stream()
+            .forEachOrdered(i -> {
+                mLogger.debug("Adding file: {}", i);
+                mQueue.add(i.toString());
+            });
     }
 
 }
