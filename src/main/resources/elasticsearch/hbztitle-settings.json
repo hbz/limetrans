@@ -1,6 +1,6 @@
 {
   "index" : {
-    "number_of_shards" : 3,
+    "number_of_shards" : 1,
     "number_of_replicas" : 0,
     "analysis" : {
       "filter" : {
@@ -16,12 +16,17 @@
           "type" : "hyphen",
           "subwords" : false
         },
-        "keyword_normalizer_delete" : {
+        "string_normalizer" : {
+          "type": "pattern_replace",
+          "pattern": "'",
+          "replacement": ""
+        },
+        "keyword_normalizer" : {
           "type": "pattern_replace",
           "pattern": "[^a-zA-Z 0-9]",
           "replacement": ""
         },
-        "keyword_normalizer_squeeze" : {
+        "squeeze_whitespace" : {
           "type": "pattern_replace",
           "pattern": " +",
           "replacement": " "
@@ -96,6 +101,7 @@
             "icu_normalizer",
             "icu_folding",
             "hyphen",
+            "string_normalizer",
             "snowball_german_umlaut",
             "standardnumber",
             "unique"
@@ -110,6 +116,7 @@
             "keyword_repeat",
             "icu_normalizer",
             "icu_folding",
+            "string_normalizer",
             "snowball_german_umlaut",
             "standardnumber",
             "unique"
@@ -135,8 +142,9 @@
           "filter" : [
             "icu_normalizer",
             "icu_folding",
-            "keyword_normalizer_delete",
-            "keyword_normalizer_squeeze"
+            "keyword_normalizer",
+            "squeeze_whitespace",
+            "trim"
           ]
         },
         "german_phonebook_with_sortform" : {
