@@ -10,6 +10,8 @@ import org.metafacture.framework.Sender;
 import org.metafacture.framework.StreamReceiver;
 import org.metafacture.io.FileOpener;
 import org.metafacture.io.LineReader;
+import org.metafacture.io.RecordReader;
+import org.metafacture.json.JsonDecoder;
 import org.metafacture.strings.StreamUnicodeNormalizer;
 import org.metafacture.xml.XmlDecoder;
 import org.xbib.common.settings.Settings;
@@ -31,6 +33,23 @@ public class FileQueue implements Iterable<String> {
                 return aOpener
                     .setReceiver(new FormetaRecordsReader())
                     .setReceiver(new FormetaDecoder());
+            }
+        },
+
+        JSON {
+            @Override
+            public Sender<StreamReceiver> process(final FileOpener aOpener) {
+                final RecordReader reader = new RecordReader();
+                final JsonDecoder decoder = new JsonDecoder();
+
+                reader.setSeparator('\0'); // read complete input
+
+                decoder.setArrayName(""); // no numbered array elements
+                decoder.setRecordId(""); // no record IDs
+
+                return aOpener
+                    .setReceiver(reader)
+                    .setReceiver(decoder);
             }
         },
 
