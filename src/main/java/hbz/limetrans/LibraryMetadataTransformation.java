@@ -5,14 +5,14 @@ import hbz.limetrans.util.Helpers;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.culturegraph.mf.formeta.FormetaEncoder;
-import org.culturegraph.mf.formeta.formatter.FormatterStyle;
-import org.culturegraph.mf.io.ObjectWriter;
-import org.culturegraph.mf.json.JsonEncoder;
-import org.culturegraph.mf.mangling.RecordIdChanger;
-import org.culturegraph.mf.metamorph.Metamorph;
-import org.culturegraph.mf.plumbing.StreamTee;
-import org.culturegraph.mf.statistics.Counter;
+import org.metafacture.formeta.FormetaEncoder;
+import org.metafacture.formeta.formatter.FormatterStyle;
+import org.metafacture.io.ObjectWriter;
+import org.metafacture.json.JsonEncoder;
+import org.metafacture.mangling.RecordIdChanger;
+import org.metafacture.metamorph.Metamorph;
+import org.metafacture.plumbing.StreamTee;
+import org.metafacture.statistics.Counter;
 import org.xbib.common.settings.Settings;
 
 import java.io.IOException;

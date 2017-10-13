@@ -3,8 +3,8 @@ package hbz.limetrans.test;
 import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.LimetransException;
 
-import org.culturegraph.mf.javaintegration.EventList;
-import org.culturegraph.mf.metamorph.Metamorph;
+import org.metafacture.javaintegration.EventList;
+import org.metafacture.metamorph.Metamorph;
 
 import org.junit.Assert;
 import org.junit.runners.model.Statement;

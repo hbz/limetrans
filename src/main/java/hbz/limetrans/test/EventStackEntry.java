@@ -1,8 +1,8 @@
 package hbz.limetrans.test;
 
-import org.culturegraph.mf.javaintegration.EventList.Event;
+import org.metafacture.javaintegration.EventList.Event;
 
-import static org.culturegraph.mf.json.JsonEncoder.ARRAY_MARKER;
+import static org.metafacture.json.JsonEncoder.ARRAY_MARKER;
 
 public class EventStackEntry {
 

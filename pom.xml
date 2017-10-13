@@ -1,17 +1,18 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>hbz.introx.direct</groupId>
   <artifactId>limetrans</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>limetrans - Library Metadata Transformation</name>
-  <description>Limetrans is a tool to transform diverse library metadata by using Metafacture (https://github.com/culturegraph/metafacture-core). The configuration of a limetrans instance allows easy parametrisation of the whole transformation process.</description>
-
+  <description>Limetrans is a tool to transform diverse library metadata by using Metafacture (https://github.com/metafacture/metafacture-core). The configuration of a limetrans instance allows easy parametrisation of the whole transformation process.</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <elasticsearch.version>2.1.1</elasticsearch.version>
+    <metafacture.version>5.0.0</metafacture.version>
+    <xbib.version>2.0.0</xbib.version>
     <targetJdk>1.8</targetJdk>
   </properties>
-
   <build>
     <testResources>
       <testResource>
@@ -75,7 +76,6 @@
       </plugin>
     </plugins>
   </build>
-
   <repositories>
     <repository>
       <id>jitpack.io</id>
@@ -90,7 +90,6 @@
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </repository>
   </repositories>
-
   <dependencies>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
@@ -98,24 +97,84 @@
       <version>2.6.5</version>
     </dependency>
     <dependency>
-      <groupId>org.culturegraph</groupId>
-      <artifactId>metafacture-core</artifactId>
-      <version>4.0.0</version>
-    </dependency>
-    <dependency>
       <groupId>org.elasticsearch</groupId>
       <artifactId>elasticsearch</artifactId>
-      <version>2.1.1</version>
+      <version>${elasticsearch.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.metafacture</groupId>
+      <artifactId>metafacture-biblio</artifactId>
+      <version>${metafacture.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.metafacture</groupId>
+      <artifactId>metafacture-commons</artifactId>
+      <version>${metafacture.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.metafacture</groupId>
+      <artifactId>metafacture-formeta</artifactId>
+      <version>${metafacture.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.metafacture</groupId>
+      <artifactId>metafacture-framework</artifactId>
+      <version>${metafacture.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.metafacture</groupId>
+      <artifactId>metafacture-io</artifactId>
+      <version>${metafacture.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.metafacture</groupId>
+      <artifactId>metafacture-javaintegration</artifactId>
+      <version>${metafacture.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.metafacture</groupId>
+      <artifactId>metafacture-json</artifactId>
+      <version>${metafacture.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.metafacture</groupId>
+      <artifactId>metafacture-mangling</artifactId>
+      <version>${metafacture.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.metafacture</groupId>
+      <artifactId>metafacture-plumbing</artifactId>
+      <version>${metafacture.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.metafacture</groupId>
+      <artifactId>metafacture-statistics</artifactId>
+      <version>${metafacture.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.metafacture</groupId>
+      <artifactId>metafacture-strings</artifactId>
+      <version>${metafacture.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.metafacture</groupId>
+      <artifactId>metafacture-xml</artifactId>
+      <version>${metafacture.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.metafacture</groupId>
+      <artifactId>metamorph</artifactId>
+      <version>${metafacture.version}</version>
     </dependency>
     <dependency>
       <groupId>org.xbib</groupId>
       <artifactId>common</artifactId>
-      <version>2.0.0</version>
+      <version>${xbib.version}</version>
     </dependency>
     <dependency>
       <groupId>org.xbib</groupId>
       <artifactId>tools</artifactId>
-      <version>2.0.0</version>
+      <version>${xbib.version}</version>
     </dependency>
     <dependency>
       <groupId>commons-validator</groupId>
@@ -137,8 +196,12 @@
       <artifactId>slf4j-log4j12</artifactId>
       <version>1.7.22</version>
     </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+    </dependency>
   </dependencies>
-
   <licenses>
     <license>
       <name>GNU Affero General Public License (AGPL)</name>

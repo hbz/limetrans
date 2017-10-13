@@ -1,7 +1,7 @@
 package hbz.limetrans.test;
 
-import org.culturegraph.mf.javaintegration.EventList.Event;
-import org.culturegraph.mf.javaintegration.EventList;
+import org.metafacture.javaintegration.EventList.Event;
+import org.metafacture.javaintegration.EventList;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

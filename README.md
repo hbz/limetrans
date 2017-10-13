@@ -5,7 +5,7 @@
 
 ## Configuration
 
-Limetrans can be regarded as a configuration frame for the use of [Metafacture](https://github.com/culturegraph/metafacture-documentation) for library purposes. It makes use of a JSON configuration scheme and can be abstracted as:
+Limetrans can be regarded as a configuration frame for the use of [Metafacture](https://github.com/metafacture/metafacture-documentation) for library purposes. It makes use of a JSON configuration scheme and can be abstracted as:
 
 ```json
 {

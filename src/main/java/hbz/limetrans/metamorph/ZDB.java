@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 
-import org.culturegraph.mf.metamorph.api.helpers.AbstractSimpleStatelessFunction;
+import org.metafacture.metamorph.api.helpers.AbstractSimpleStatelessFunction;
 
 public class ZDB extends AbstractSimpleStatelessFunction {
 

@@ -2,12 +2,12 @@ package hbz.limetrans.filter;
 
 import hbz.limetrans.util.FileQueue;
 
-import org.culturegraph.mf.io.ObjectStdoutWriter;
-import org.culturegraph.mf.io.ObjectWriter;
-import org.culturegraph.mf.json.JsonEncoder;
-import org.culturegraph.mf.metamorph.Filter;
-import org.culturegraph.mf.metamorph.InlineMorph;
-import org.culturegraph.mf.metamorph.Metamorph;
+import org.metafacture.io.ObjectStdoutWriter;
+import org.metafacture.io.ObjectWriter;
+import org.metafacture.json.JsonEncoder;
+import org.metafacture.metamorph.Filter;
+import org.metafacture.metamorph.InlineMorph;
+import org.metafacture.metamorph.Metamorph;
 import org.xbib.common.settings.Settings;
 
 import java.io.IOException;

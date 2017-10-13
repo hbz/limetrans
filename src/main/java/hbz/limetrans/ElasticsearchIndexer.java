@@ -2,10 +2,10 @@ package hbz.limetrans;
 
 import hbz.limetrans.util.LimetransException;
 
-import org.culturegraph.mf.framework.annotations.Description;
-import org.culturegraph.mf.framework.helpers.DefaultObjectReceiver;
-import org.culturegraph.mf.framework.helpers.DefaultStreamReceiver;
-import org.culturegraph.mf.json.JsonEncoder;
+import org.metafacture.framework.annotations.Description;
+import org.metafacture.framework.helpers.DefaultObjectReceiver;
+import org.metafacture.framework.helpers.DefaultStreamReceiver;
+import org.metafacture.json.JsonEncoder;
 import org.elasticsearch.common.settings.Settings;
 
 @Description("Indexes an object into Elasticsearch")

@@ -54,7 +54,7 @@ public class LibraryMetadataFilterTest {
         testEqualsReference("any-equals", "Print version:");
     }
 
-    @Ignore("org.culturegraph.mf.metamorph.functions.Regexp can't handle null values")
+    @Ignore("org.metafacture.metamorph.functions.Regexp can't handle null values")
     @Test
     public void testAnyRegexp() throws IOException {
         testEqualsReference("any-regexp", "~Science");

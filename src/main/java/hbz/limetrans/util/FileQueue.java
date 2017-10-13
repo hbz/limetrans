@@ -2,16 +2,16 @@ package hbz.limetrans.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.culturegraph.mf.biblio.marc21.Marc21Decoder;
-import org.culturegraph.mf.biblio.marc21.MarcXmlHandler;
-import org.culturegraph.mf.formeta.FormetaDecoder;
-import org.culturegraph.mf.formeta.FormetaRecordsReader;
-import org.culturegraph.mf.framework.Sender;
-import org.culturegraph.mf.framework.StreamReceiver;
-import org.culturegraph.mf.io.FileOpener;
-import org.culturegraph.mf.io.LineReader;
-import org.culturegraph.mf.strings.StreamUnicodeNormalizer;
-import org.culturegraph.mf.xml.XmlDecoder;
+import org.metafacture.biblio.marc21.Marc21Decoder;
+import org.metafacture.biblio.marc21.MarcXmlHandler;
+import org.metafacture.formeta.FormetaDecoder;
+import org.metafacture.formeta.FormetaRecordsReader;
+import org.metafacture.framework.Sender;
+import org.metafacture.framework.StreamReceiver;
+import org.metafacture.io.FileOpener;
+import org.metafacture.io.LineReader;
+import org.metafacture.strings.StreamUnicodeNormalizer;
+import org.metafacture.xml.XmlDecoder;
 import org.xbib.common.settings.Settings;
 import org.xbib.util.Finder;
 
