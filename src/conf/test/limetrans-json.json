@@ -1,0 +1,12 @@
+{
+  "input" : {
+    "queue" : {
+      "path" : "src/test/resources/limetrans/input/",
+      "pattern" : "json.xml"
+    }
+  },
+  "output": {
+    "json" : "src/test/resources/limetrans/output/json.json"
+  },
+  "transformation-rules" : "src/test/resources/limetrans/rules/nonull.xml"
+}

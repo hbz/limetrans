@@ -105,6 +105,16 @@ public class LibraryMetadataTransformationTest {
     }
 
     @Test
+    public void testJson() throws IOException {
+        testEqualsReference("json", "json");
+    }
+
+    @Test
+    public void testJsonPretty() throws IOException {
+        testEqualsReference("json-pretty", "json");
+    }
+
+    @Test
     public void testElasticsearch() throws IOException {
         testElasticsearchEqualsReference("elasticsearch", "");
     }
