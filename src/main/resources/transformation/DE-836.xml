@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE metamorph [<!ENTITY isil "DE-836">]>
 <metamorph xmlns="http://www.culturegraph.org/metamorph" xmlns:xi="http://www.w3.org/2001/XInclude" version="1">
+  <vars>
+    <var name="isil" value="&isil;" />
+  </vars>
   <xi:include href="macros.xml" />
   <xi:include href="maps.xml" />
-  <xi:include href="&isil;/facets.xml" />
+  <xi:include href="common-marc/facets.xml" />
+  <xi:include href="common-marc/fields.xml" />
   <xi:include href="&isil;/fields.xml" />
 </metamorph>
