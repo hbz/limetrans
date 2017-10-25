@@ -2,7 +2,7 @@
 <rules xmlns="http://www.culturegraph.org/metamorph">
 
   <!-- 0xx -->
-  <combine name="@id" value="(DE-836)${id}">
+  <combine name="@id" value="($[isil])${id}">
     <data name="id" source="001" />
   </combine>
   <entity name="RecordIdentifier">
