@@ -144,15 +144,6 @@
         }
       }
     },
-    "Abstract": {
-      "properties": {
-        "abstract": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
     "AdditionalPhysicalFormEntry": {
       "properties": {
         "identifierISBN": {
@@ -174,24 +165,6 @@
             "cql.allIndexes",
             "dc.identifier"
           ]
-        }
-      }
-    },
-    "ArticleExtent": {
-      "properties": {
-        "extent": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "ChronologyAndEnumeration": {
-      "properties": {
-        "value": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         }
       }
     },
@@ -571,78 +544,6 @@
         }
       }
     },
-    "Description": {
-      "properties": {
-        "description": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "identifierForDescription": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "note": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "prefix": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "DescriptionMediaTypeElectronic": {
-      "properties": {
-        "description": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "identifierForDescription": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "note": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "prefix": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "DescriptionOfAdditionalTitle": {
-      "properties": {
-        "description": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "identifierForDescription": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "note": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "prefix": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
     "DescriptionOfContent": {
       "properties": {
         "description": {
@@ -652,45 +553,6 @@
           "copy_to": [
             "cql.allIndexes"
           ]
-        },
-        "identifierForDescription": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "note": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "prefix": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "DescriptionOfContinuingEditionsOrVolumes": {
-      "properties": {
-        "description": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "identifierForDescription": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "note": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "prefix": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         }
       }
     },
@@ -703,287 +565,6 @@
           "copy_to": [
             "cql.allIndexes"
           ]
-        }
-      }
-    },
-    "DescriptionOfExpression": {
-      "properties": {
-        "description": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "identifierForDescription": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "note": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "prefix": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "DescriptionOfFormerEditionsOrVolumes": {
-      "properties": {
-        "description": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "identifierForDescription": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "note": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "prefix": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "DescriptionOfIssuance": {
-      "properties": {
-        "description": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "identifierForDescription": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "note": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "prefix": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "DescriptionOfPeriodicSupplements": {
-      "properties": {
-        "description": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "identifierForDescription": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "note": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "prefix": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "DescriptionOfPublicationStatement": {
-      "properties": {
-        "description": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "identifierForDescription": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "note": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "prefix": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "DescriptionOfRelatedEditions": {
-      "properties": {
-        "description": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "identifierForDescription": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "note": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "prefix": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "DescriptionOfSource": {
-      "properties": {
-        "description": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "DescriptionOfThesis": {
-      "properties": {
-        "description": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "note": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "place": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "prefix": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "type": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "year": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "DescriptionOfTitleForms": {
-      "properties": {
-        "description": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "identifierForDescription": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "note": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "prefix": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "DescriptionOfUniformTitle": {
-      "properties": {
-        "description": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "identifierForDescription": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "note": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "prefix": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "Edition": {
-      "properties": {
-        "edition": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "Excerpt": {
-      "properties": {
-        "abstract": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "Extent": {
-      "properties": {
-        "extent": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "FormatCarrier": {
-      "type": "string",
-      "index": "no",
-      "doc_values": false
-    },
-    "FormatElectronic": {
-      "properties": {
-        "extent": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "format": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         }
       }
     },
@@ -1027,9 +608,6 @@
             "dc.subject"
           ]
         },
-        "geoZone": {
-          "type": "string"
-        },
         "identifierGND": {
           "type": "ref",
           "ref_index": "gnd",
@@ -1057,15 +635,6 @@
             "cql.allIndexes",
             "dc.identifier"
           ]
-        }
-      }
-    },
-    "IdentifierDOI": {
-      "properties": {
-        "standardNumber": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         }
       }
     },
@@ -1132,20 +701,6 @@
             "cql.allIndexes",
             "dc.identifier"
           ]
-        }
-      }
-    },
-    "IdentifierLocal": {
-      "properties": {
-        "identifierLocal": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "standardNumber": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         }
       }
     },
@@ -1235,26 +790,6 @@
           "copy_to": [
             "introx.localCallNumber"
           ]
-        },
-        "collection": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "identifier": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "shelfmark": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "status": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         }
       }
     },
@@ -1285,49 +820,6 @@
         }
       }
     },
-    "OnlineAccess": {
-      "properties": {
-        "access": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "isInternalLinkFor": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "nonpublicnote": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "publicnote": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "relatedto": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "uri": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "OnlineAccessScopedLink": {
-      "properties": {
-        "url": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
     "Person": {
       "properties": {
         "identifierGND": {
@@ -1342,11 +834,6 @@
             "bib.namePersonal",
             "cql.allIndexes"
           ]
-        },
-        "personBio": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         },
         "personIdentifier": {
           "type": "string",
@@ -1364,21 +851,6 @@
             "bib.namePersonal",
             "cql.allIndexes"
           ]
-        },
-        "personNumbering": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "personRole": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "personTitle": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         }
       }
     },
@@ -1397,11 +869,6 @@
             "cql.allIndexes"
           ]
         },
-        "personBio": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
         "personIdentifier": {
           "type": "string",
           "index": "no",
@@ -1418,21 +885,6 @@
             "bib.namePersonal",
             "cql.allIndexes"
           ]
-        },
-        "personNumbering": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "personRole": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "personTitle": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         }
       }
     },
@@ -1476,21 +928,6 @@
             "bib.namePersonal",
             "cql.allIndexes"
           ]
-        },
-        "personNumbering": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "personRole": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "personTitle": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         }
       }
     },
@@ -1534,21 +971,6 @@
             "bib.namePersonal",
             "cql.allIndexes"
           ]
-        },
-        "personNumbering": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "personRole": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "personTitle": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         }
       }
     },
@@ -1579,11 +1001,6 @@
             "cql.allIndexes"
           ]
         },
-        "personBio": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
         "personIdentifier": {
           "type": "string",
           "index": "no",
@@ -1600,30 +1017,6 @@
             "bib.namePersonal",
             "cql.allIndexes"
           ]
-        },
-        "personNumbering": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "personRole": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
-        "personTitle": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "PieceExtent": {
-      "properties": {
-        "extent": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         }
       }
     },
@@ -1649,15 +1042,6 @@
         }
       }
     },
-    "PublicationPlaceOfSecondaryEdition": {
-      "properties": {
-        "name": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
     "PublicationPlaceOther": {
       "properties": {
         "institutionPlace": {
@@ -1680,11 +1064,6 @@
     },
     "PublisherName": {
       "properties": {
-        "chronology": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        },
         "name": {
           "type": "string",
           "index": "no",
@@ -1914,20 +1293,6 @@
         }
       }
     },
-    "Recension": {
-      "properties": {
-        "abstract": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "RecordCodes": {
-      "type": "string",
-      "index": "no",
-      "doc_values": false
-    },
     "RecordIdentifier": {
       "properties": {
         "identifierForTheRecord": {
@@ -1951,24 +1316,6 @@
           "copy_to": [
             "bib.identifierAuthority=mabwhole"
           ]
-        }
-      }
-    },
-    "SecondaryEdition": {
-      "properties": {
-        "secondaryEdition": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "SecondaryEditionExtent": {
-      "properties": {
-        "secondaryEdition": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         }
       }
     },
@@ -2094,42 +1441,6 @@
           "copy_to": [
             "cql.allIndexes"
           ]
-        }
-      }
-    },
-    "SourceDescriptionVolume": {
-      "properties": {
-        "source": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "SourceEdition": {
-      "properties": {
-        "source": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "SourceIdentifier": {
-      "properties": {
-        "identifierOfTheSource": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "SourcePublisherPlace": {
-      "properties": {
-        "source": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         }
       }
     },
@@ -3426,15 +2737,6 @@
         }
       }
     },
-    "TitleSuperVolumeDesignation": {
-      "properties": {
-        "volumeDesignation": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
     "TitleUniform": {
       "properties": {
         "titleUniform": {
@@ -3446,48 +2748,6 @@
             "dc.title",
             "introx.titlePhrase"
           ]
-        }
-      }
-    },
-    "TitleUniformIdentifier": {
-      "properties": {
-        "titleUniformIdentifier": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "TypeMedia": {
-      "type": "string",
-      "index": "no",
-      "doc_values": false
-    },
-    "TypeMonograph": {
-      "type": "string",
-      "index": "no",
-      "doc_values": false
-    },
-    "TypePeriodical": {
-      "type": "string",
-      "index": "no",
-      "doc_values": false
-    },
-    "VolumeDesignation": {
-      "properties": {
-        "volumeDesignation": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
-        }
-      }
-    },
-    "VolumeExtent": {
-      "properties": {
-        "extent": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false
         }
       }
     }
