@@ -114,24 +114,26 @@
   </entity>
 
   <!-- 1xx -->
-  <entity name="Person" flushWith="record">
-    <if>
-      <any flushWith="record">
-        <none flushWith="record">
-          <data source="100[013] .[4e]" />
-        </none>
-        <data source="100[013] .[4e]">
-          <regexp match="^([Aa]ut|[Cc]re)" />
-        </data>
-      </any>
-    </if>
-    <call-macro name="personName"       field="100" />
-    <call-macro name="personNumbering"  field="100" />
-    <call-macro name="personTitle"      field="100" />
-    <call-macro name="personBio"        field="100" />
-    <call-macro name="personRole"       field="100" />
-    <call-macro name="personIdentifier" field="100" />
-    <call-macro name="identifierGND"    field="100" />
+  <entity name="Person[]" flushWith="record">
+    <entity name="" flushWith="100[013] " sameEntity="true">
+      <if>
+        <any flushWith="100[013] ">
+          <none flushWith="100[013] " sameEntity="true">
+            <data source="100[013] .[4e]" />
+          </none>
+          <data source="100[013] .[4e]">
+            <regexp match="^([Aa]ut|[Cc]re)" />
+          </data>
+        </any>
+      </if>
+      <call-macro name="personName"       field="100" />
+      <call-macro name="personNumbering"  field="100" />
+      <call-macro name="personTitle"      field="100" />
+      <call-macro name="personBio"        field="100" />
+      <call-macro name="personRole"       field="100" />
+      <call-macro name="personIdentifier" field="100" />
+      <call-macro name="identifierGND"    field="100" />
+    </entity>
   </entity>
 
   <entity name="CorporateBody[]" flushWith="record">

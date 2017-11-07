@@ -128,8 +128,10 @@
 			}
 		}
 	},
-	'Person' {
-		'personName': 'Kauffman, Janet'
+	'Person[]' {
+		'' {
+			'personName': 'Kauffman, Janet'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
@@ -610,8 +612,10 @@
 			}
 		}
 	},
-	'Person' {
-		'personName': 'Thomas, Dave'
+	'Person[]' {
+		'' {
+			'personName': 'Thomas, Dave'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
@@ -716,8 +720,10 @@
 			}
 		}
 	},
-	'Person' {
-		'personName': 'Claverie, Jean-Michel'
+	'Person[]' {
+		'' {
+			'personName': 'Claverie, Jean-Michel'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
@@ -868,9 +874,11 @@
 			}
 		}
 	},
-	'Person' {
-		'personName': 'Murray, Katherine',
-		'personBio': '1961-'
+	'Person[]' {
+		'' {
+			'personName': 'Murray, Katherine',
+			'personBio': '1961-'
+		}
 	},
 	'TitleStatement[]' {
 		'' {

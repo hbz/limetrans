@@ -13,12 +13,14 @@
 			'': 'keine Angabe'
 		}
 	},
-	'Person' {
-		'personName': 'Trollope, Anthony',
-		'personBio': '1815-1882',
-		'personTitle[]' {
-			'': 'grandson of James II, King of England',
-			'': 'Prince'
+	'Person[]' {
+		'' {
+			'personName': 'Trollope, Anthony',
+			'personBio': '1815-1882',
+			'personTitle[]' {
+				'': 'grandson of James II, King of England',
+				'': 'Prince'
+			}
 		}
 	},
 	'PersonCreator[]' {
@@ -53,11 +55,13 @@
 			'': 'keine Angabe'
 		}
 	},
-	'Person' {
-		'personName': 'Trollope, Anthony',
-		'personBio': '1815-1882',
-		'personRole[]' {
-			'': '[author]'
+	'Person[]' {
+		'' {
+			'personName': 'Trollope, Anthony',
+			'personBio': '1815-1882',
+			'personRole[]' {
+				'': '[author]'
+			}
 		}
 	},
 	'PersonCreator[]' {
@@ -147,18 +151,20 @@
 			'': 'keine Angabe'
 		}
 	},
-	'Person' {
-		'personName': 'Trollope, Anthony',
-		'personBio': '1815-1882',
-		'personRole[]' {
-			'': '[Übers.]',
-			'': '[Author]'
-		},
-		'personIdentifier[]' {
-			'': '(DE-588)129116726'
-		},
-		'identifierGND[]' {
-			'': '129116726'
+	'Person[]' {
+		'' {
+			'personName': 'Trollope, Anthony',
+			'personBio': '1815-1882',
+			'personRole[]' {
+				'': '[Übers.]',
+				'': '[Author]'
+			},
+			'personIdentifier[]' {
+				'': '(DE-588)129116726'
+			},
+			'identifierGND[]' {
+				'': '129116726'
+			}
 		}
 	},
 	'PersonContributor[]' {
@@ -203,11 +209,13 @@
 			'': 'keine Angabe'
 		}
 	},
-	'Person' {
-		'personName': 'Trollope, Anthony',
-		'personBio': '1815-1882',
-		'personRole[]' {
-			'': '[Creator]'
+	'Person[]' {
+		'' {
+			'personName': 'Trollope, Anthony',
+			'personBio': '1815-1882',
+			'personRole[]' {
+				'': '[Creator]'
+			}
 		}
 	},
 	'PersonCreator[]' {
@@ -245,11 +253,13 @@
 			'': 'keine Angabe'
 		}
 	},
-	'Person' {
-		'personName': 'James',
-		'personNumbering': 'II',
-		'personTitle[]' {
-			'': 'King of England.'
+	'Person[]' {
+		'' {
+			'personName': 'James',
+			'personNumbering': 'II',
+			'personTitle[]' {
+				'': 'King of England.'
+			}
 		}
 	},
 	'PersonCreator[]' {
@@ -295,10 +305,12 @@
 			'': 'keine Angabe'
 		}
 	},
-	'Person' {
-		'personName': 'Trollope, Anthony',
-		'personRole[]' {
-			'': '[Author]'
+	'Person[]' {
+		'' {
+			'personName': 'Trollope, Anthony',
+			'personRole[]' {
+				'': '[Author]'
+			}
 		}
 	},
 	'PersonCreator[]' {
@@ -317,6 +329,44 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)7'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-836)8'
+	},
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'Monographie'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'Person[]' {
+		'' {
+			'personName': 'Trollope, Anthony',
+			'personRole[]' {
+				'': '[Author]'
+			}
+		},
+		'' {
+			'personName': 'Nygaard, Kristen'
+		},
+		'' {
+			'personName': 'Donin, Richard Kurt',
+			'personRole[]' {
+				'': '[Creator]'
+			}
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)8'
 		}
 	}
 }

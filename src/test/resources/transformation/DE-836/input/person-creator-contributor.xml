@@ -136,4 +136,19 @@
       <subfield code="e">Bearb.</subfield>
     </datafield>
   </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00000cam a2200000 a 4500</leader>
+    <controlfield tag="001">8 </controlfield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Trollope, Anthony,</subfield>
+      <subfield code="e">Author</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Nygaard, Kristen,</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Donin, Richard Kurt</subfield>
+      <subfield code="e">Creator</subfield>
+    </datafield>
+  </record>
 </collection>

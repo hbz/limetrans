@@ -223,9 +223,11 @@
 			}
 		}
 	},
-	'Person' {
-		'personName': 'Baum, L. Frank',
-		'personBio': '1856-1919'
+	'Person[]' {
+		'' {
+			'personName': 'Baum, L. Frank',
+			'personBio': '1856-1919'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
@@ -336,8 +338,10 @@
 			}
 		}
 	},
-	'Person' {
-		'personName': 'Gamble, Eliza, B.'
+	'Person[]' {
+		'' {
+			'personName': 'Gamble, Eliza, B.'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
@@ -422,9 +426,11 @@
 			}
 		}
 	},
-	'Person' {
-		'personName': 'McGuffey, William Holmes',
-		'personBio': '1800-1873'
+	'Person[]' {
+		'' {
+			'personName': 'McGuffey, William Holmes',
+			'personBio': '1800-1873'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
@@ -504,9 +510,11 @@
 			}
 		}
 	},
-	'Person' {
-		'personName': 'Fielding, Henry',
-		'personBio': '1707-1754'
+	'Person[]' {
+		'' {
+			'personName': 'Fielding, Henry',
+			'personBio': '1707-1754'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
@@ -918,9 +926,11 @@
 			}
 		}
 	},
-	'Person' {
-		'personName': 'Kipling, Rudyard',
-		'personBio': '1865-1936'
+	'Person[]' {
+		'' {
+			'personName': 'Kipling, Rudyard',
+			'personBio': '1865-1936'
+		}
 	},
 	'TitleStatement[]' {
 		'' {

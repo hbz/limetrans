@@ -51,8 +51,10 @@
 			}
 		}
 	},
-	'Person' {
-		'personName': 'Von Eckardt, Barbara'
+	'Person[]' {
+		'' {
+			'personName': 'Von Eckardt, Barbara'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
