@@ -1,6 +1,7 @@
 '' {
 	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)1'
+		'identifierForTheRecord': '(DE-836)1',
+		'isContextLocal': '(DE-836)1'
 	},
 	'DateFirst' {
 		'date': '1958'
@@ -31,7 +32,8 @@
 }
 '' {
 	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)2'
+		'identifierForTheRecord': '(DE-836)2',
+		'isContextLocal': '(DE-836)2'
 	},
 	'dc' {
 		'format[]' {
@@ -52,7 +54,8 @@
 }
 '' {
 	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)3'
+		'identifierForTheRecord': '(DE-836)3',
+		'isContextLocal': '(DE-836)3'
 	},
 	'DateFirst' {
 		'date': '2012'
@@ -79,7 +82,8 @@
 }
 '' {
 	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)4'
+		'identifierForTheRecord': '(DE-836)4',
+		'isContextLocal': '(DE-836)4'
 	},
 	'dc' {
 		'format[]' {

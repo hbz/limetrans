@@ -7,6 +7,7 @@
   </combine>
   <entity name="RecordIdentifier">
     <data name="identifierForTheRecord" source="@id" />
+    <data name="isContextLocal" source="@id" />
   </entity>
 
   <combine name="@date1" value="${date1}">

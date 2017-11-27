@@ -1,6 +1,7 @@
 '' {
 	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)1'
+		'identifierForTheRecord': '(DE-836)1',
+		'isContextLocal': '(DE-836)1'
 	},
 	'dc' {
 		'format[]' {
@@ -34,7 +35,8 @@
 }
 '' {
 	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-836)2'
+		'identifierForTheRecord': '(DE-836)2',
+		'isContextLocal': '(DE-836)2'
 	},
 	'dc' {
 		'format[]' {
