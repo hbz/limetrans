@@ -40,11 +40,6 @@
 			'titleMain': 'U.S. courts design guide'
 		}
 	},
-	'TitleOther' {
-		'title[]' {
-			'': 'US courts design guide'
-		}
-	},
 	'Edition' {
 		'edition[]' {
 			'': '[3rd ed.].'
@@ -87,6 +82,11 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)ocm24514712'
+		}
+	},
+	'TitleOther' {
+		'title[]' {
+			'': 'US courts design guide'
 		}
 	}
 }
@@ -337,11 +337,6 @@
 			'titleMain': 'The American journal of clinical nutrition'
 		}
 	},
-	'TitleOther' {
-		'title[]' {
-			'': 'Official journal of the American Society for Clinical Nutrition, Inc'
-		}
-	},
 	'PublisherName[]' {
 		'' {
 			'place[]' {
@@ -380,6 +375,11 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)ocn231013554'
+		}
+	},
+	'TitleOther' {
+		'title[]' {
+			'': 'Official journal of the American Society for Clinical Nutrition, Inc'
 		}
 	}
 }
@@ -454,11 +454,6 @@
 	'Extent' {
 		'extent': 'XXI, 909 S : Ill., graph. Darst.'
 	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Castagnetto, Jesus'
-		}
-	},
 	'TitleSuper[]' {
 		'' {
 			'titleSuper[]' {
@@ -469,6 +464,11 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)ocn248656983'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Castagnetto, Jesus'
 		}
 	}
 }
@@ -549,11 +549,6 @@
 			}
 		}
 	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Mercer, Dave W.'
-		}
-	},
 	'TitleSuper[]' {
 		'' {
 			'titleSuper[]' {
@@ -575,6 +570,11 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)ocn249962072'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Mercer, Dave W.'
 		}
 	}
 }
@@ -661,11 +661,6 @@
 			'': 'Previous edition: Foster City, Calif.: IDG, 2000.'
 		}
 	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Seid, Michael'
-		}
-	},
 	'OnlineAccess[]' {
 		'' {
 			'relatedto': 'Inhaltsverzeichnis',
@@ -684,6 +679,11 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)ocn255413311'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Seid, Michael'
 		}
 	}
 }
@@ -764,11 +764,6 @@
 	'Extent' {
 		'extent': 'XVIII, 436 S. : Ill., graph. Darst. ; 24 cm'
 	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Notredame, Cedric'
-		}
-	},
 	'OnlineAccess[]' {
 		'' {
 			'uri': 'http://catdir.loc.gov/catdir/enhancements/fy0827/2006934844-b.html'
@@ -783,6 +778,11 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)ocn255680877'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Notredame, Cedric'
 		}
 	}
 }
@@ -815,12 +815,6 @@
 			'titleMain': 'Broadacre City und die Zwischenstadt'
 		}
 	},
-	'TitleOther' {
-		'title[]' {
-			'': 'Neueinordnung des amerikanischen Entwurfsmodells im Rahmen der aktuellen Debatte zur Qualifizierung der Zwischenstadt',
-			'': 'Boradacre City and Zwischenstadt'
-		}
-	},
 	'Description' {
 		'description[]' {
 			'': 'application/pdf'
@@ -841,7 +835,13 @@
 			'uid': '(DE-836)ocn696257569'
 		}
 	},
-	'TypeMedia': 'Elektronische Ressource'
+	'TypeMedia': 'Elektronische Ressource',
+	'TitleOther' {
+		'title[]' {
+			'': 'Neueinordnung des amerikanischen Entwurfsmodells im Rahmen der aktuellen Debatte zur Qualifizierung der Zwischenstadt',
+			'': 'Boradacre City and Zwischenstadt'
+		}
+	}
 }
 '' {
 	'RecordIdentifier' {

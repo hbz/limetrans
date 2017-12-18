@@ -49,11 +49,6 @@
 			'titleMain': 'Chemie in unserer Zeit'
 		}
 	},
-	'TitleOther' {
-		'title[]' {
-			'': 'Treffpunkt Buch plus'
-		}
-	},
 	'PublisherName[]' {
 		'' {
 			'place[]' {
@@ -107,6 +102,11 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)ocn231018688'
+		}
+	},
+	'TitleOther' {
+		'title[]' {
+			'': 'Treffpunkt Buch plus'
 		}
 	}
 }

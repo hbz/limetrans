@@ -107,14 +107,14 @@
 			}
 		}
 	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Chargesheimer'
-		}
-	},
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)ocn258752341'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Chargesheimer'
 		}
 	}
 }
@@ -190,14 +190,6 @@
 			'subjectGeoName': 'Ruhrgebiet'
 		}
 	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Rossmann, Andreas'
-		},
-		'' {
-			'personName': 'Klemm, Barbara'
-		}
-	},
 	'OnlineAccess[]' {
 		'' {
 			'relatedto': 'Inhaltstext',
@@ -215,6 +207,14 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)ocn961280447'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Rossmann, Andreas'
+		},
+		'' {
+			'personName': 'Klemm, Barbara'
 		}
 	}
 }
@@ -341,11 +341,6 @@
 			'subjectTopicName': 'Lohnsystem'
 		}
 	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Albach, Horst'
-		}
-	},
 	'TitleSuper[]' {
 		'' {
 			'titleSuper[]' {
@@ -369,6 +364,11 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)ocm51712092'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Albach, Horst'
 		}
 	}
 }

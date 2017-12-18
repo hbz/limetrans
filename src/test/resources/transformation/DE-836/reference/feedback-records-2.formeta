@@ -131,11 +131,6 @@
 			'titleMain': 'Journal of global security studies'
 		}
 	},
-	'TitleOther' {
-		'title[]' {
-			'': 'JOGSS'
-		}
-	},
 	'PublisherName[]' {
 		'' {
 			'place[]' {
@@ -173,5 +168,10 @@
 			'uid': '(DE-836)ocn939922827'
 		}
 	},
-	'TypeMedia': 'Elektronische Ressource'
+	'TypeMedia': 'Elektronische Ressource',
+	'TitleOther' {
+		'title[]' {
+			'': 'JOGSS'
+		}
+	}
 }

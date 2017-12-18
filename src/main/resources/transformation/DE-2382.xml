@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE metamorph [<!ENTITY isil "DE-836">]>
+<!DOCTYPE metamorph [<!ENTITY isil "DE-2382">]>
 <metamorph xmlns="http://www.culturegraph.org/metamorph" xmlns:xi="http://www.w3.org/2001/XInclude" version="1">
   <vars>
     <var name="isil" value="&isil;" />
@@ -8,7 +8,5 @@
   <xi:include href="maps.xml" />
   <xi:include href="marc-standard/facets.xml" />
   <xi:include href="marc-standard/fields.xml" />
-  <xi:include href="marc-standard/personCreator.xml" />
-  <xi:include href="marc-standard/titleOther.xml" />
   <xi:include href="&isil;/fields.xml" />
 </metamorph>

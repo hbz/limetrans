@@ -216,13 +216,13 @@
     </data>
   </entity>
 
-  <entity name="TitleOther">
+  <!--entity name="TitleOther">
     <entity name="title[]" flushWith="record">
       <data name="" source="246?[ 345678].a">
         <replace pattern="\.$" with="" />
       </data>
     </entity>
-  </entity>
+  </entity-->
 
   <entity name="Edition">
     <entity name="edition[]" flushWith="record">
@@ -519,7 +519,7 @@
   </entity>
 
   <!-- 7xx -->
-  <entity name="PersonCreator[]" flushWith="record">
+  <!--entity name="PersonCreator[]" flushWith="record">
     <entity name="" flushWith="700[013] " sameEntity="true">
       <if>
         <any flushWith="700[013] ">
@@ -539,7 +539,7 @@
       <call-macro name="personIdentifier" field="700" />
       <call-macro name="identifierGND"    field="700" />
     </entity>
-  </entity>
+  </entity-->
   <entity name="PersonContributor[]" flushWith="record">
     <entity name="" flushWith="record">
       <if>
