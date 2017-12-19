@@ -4,7 +4,7 @@
   <!-- 0xx -->
 
   <!-- 1xx -->
-
+  
   <!-- 2xx -->
 
   <entity name="TitleOther">
@@ -65,18 +65,7 @@
   <!-- 6xx -->
 
   <!-- 7xx -->
-  <!--entity name="PersonCreator[]">
-    <entity name="" flushWith="record">
-      <if>
-        <all flushWith="880??.a" sameEntity="true">
-          <data source="880??.6">
-            <regexp match="^700" />
-          </data>
-        </all>
-      </if>
-      <data source="880??.a" name="personName" />
-    </entity>
-  </entity-->
+
   <entity name="PersonCreator[]" flushWith="record">
     <entity name="" flushWith="700[013] " sameEntity="true">
       <if>
@@ -101,12 +90,11 @@
       <if>
         <all flushWith="880??.a" sameEntity="true">
           <data source="880??.6">
-            <regexp match="^700" />
+            <regexp match="^[17]00" />
           </data>
         </all>
       </if>
       <call-macro name="personName"       field="880" />
-      <!--data source="880??.a" name="personName" /-->
     </entity>
   </entity>
 
