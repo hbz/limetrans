@@ -4,6 +4,25 @@
   <!-- 0xx -->
 
   <!-- 1xx -->
+  <entity name="TitleUniform">
+    <concat delimiter=" = " name="namen" flushWith="record" reset="true">
+      <data name="" source="130??.a">
+        <replace pattern="\.?$" with="" />
+      </data>
+      <combine name="" value="${transl}" sameEntity="true">
+        <if>
+          <all flushWith="880??.a" sameEntity="true">
+            <data source="880??.6">
+              <regexp match="^130" />
+            </data>
+          </all>
+        </if>
+        <data source="880??.a" name="transl">
+          <replace pattern="\.?$" with="" />
+        </data>
+      </combine>
+    </concat>
+  </entity>
   
   <!-- 2xx -->
 

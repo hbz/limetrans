@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">1</controlfield>
+    <datafield tag="130" ind1="0" ind2=" ">
+      <subfield code="a">Taiheiki.</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">2</controlfield>
+    <datafield tag="130" ind1="0" ind2=" ">
+      <subfield code="6">880-01</subfield>
+      <subfield code="a">Taiheiki.</subfield>
+    </datafield>
+    <datafield tag="880" ind1="0" ind2=" ">
+      <subfield code="6">130-01/$1</subfield>
+      <subfield code="a">太平記.</subfield>
+    </datafield>
+  </record>
+</collection>
