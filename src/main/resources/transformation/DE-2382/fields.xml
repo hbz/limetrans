@@ -23,8 +23,24 @@
       </combine>
     </concat>
   </entity>
-  
+
   <!-- 2xx -->
+
+  <entity name="TitleParallel[]" flushWith="record">
+    <entity name="" flushWith="242??" sameEntity="true">
+       <data source="242??.a" name="title" />
+    </entity>
+    <entity name="" flushWith="880??.a" sameEntity="true">
+      <if>
+        <all flushWith="880??.a" sameEntity="true">
+          <data source="880??.6">
+            <regexp match="^242" />
+          </data>
+        </all>
+      </if>
+      <data source="880??.a" name="title" />
+    </entity>
+  </entity>
 
   <entity name="TitleOther">
     <entity name="title[]" flushWith="record">
