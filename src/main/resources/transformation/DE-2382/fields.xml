@@ -30,16 +30,6 @@
     <entity name="" flushWith="242??" sameEntity="true">
        <data source="242??.a" name="title" />
     </entity>
-    <entity name="" flushWith="880??.a" sameEntity="true">
-      <if>
-        <all flushWith="880??.a" sameEntity="true">
-          <data source="880??.6">
-            <regexp match="^242" />
-          </data>
-        </all>
-      </if>
-      <data source="880??.a" name="title" />
-    </entity>
   </entity>
 
   <entity name="TitleOther">
@@ -59,6 +49,26 @@
           <data source="880??.a" name="transl" />
         </combine>
       </concat>
+      <combine name="" value="${transl}" sameEntity="true" flushWith="880??.a">
+        <if>
+          <all flushWith="880??.a" sameEntity="true">
+            <data source="880??.6">
+              <regexp match="^24[25]" />
+            </data>
+          </all>
+        </if>
+        <data source="880??.a" name="transl" />
+      </combine>
+      <combine name="" value="${transl}" sameEntity="true" flushWith="880??.b">
+        <if>
+          <all flushWith="880??.b" sameEntity="true">
+            <data source="880??.6">
+              <regexp match="^245" />
+            </data>
+          </all>
+        </if>
+        <data source="880??.b" name="transl" />
+      </combine>
     </entity>
   </entity>
 
@@ -88,12 +98,24 @@
     </entity>
   </entity-->
 
-  <!-- 300 -->
-  <!-- END 300 -->
-
-  <!-- 301-399 -->
+  <!-- 3xx -->
 
   <!-- 4xx -->
+  <entity name="TitleSuper[]" flushWith="record">
+    <entity name="" flushWith="record">
+      <entity name="titleSuper[]" flushWith="440??" sameEntity="true">
+        <call-macro name="regex-del-punctuation-end" dsource="440??.[ap]" dname="" />
+      </entity>
+    </entity>
+  </entity>
+
+  <entity name="TitleSuperVolumeDesignation[]" flushWith="record">
+    <entity name="" flushWith="record">
+      <entity name="volumeDesignation[]" flushWith="440??" sameEntity="true">
+        <call-macro name="regex-del-punctuation-end" dsource="440??.[nv]" dname="" />
+      </entity>
+    </entity>
+  </entity>
 
   <!-- 5xx -->
 

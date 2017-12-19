@@ -18,9 +18,18 @@
 			'uid': '(DE-2382)1'
 		}
 	},
-	'TitleParallel[]' {
+	'TitleSuper[]' {
 		'' {
-			'title': 'Eibun nihon daihyakka jiten'
+			'titleSuper[]' {
+				'': 'Schriften des Instituts für Asienkunde in Hamburg'
+			}
+		}
+	},
+	'TitleSuperVolumeDesignation[]' {
+		'' {
+			'volumeDesignation[]' {
+				'': 'Bd. 10'
+			}
 		}
 	}
 }
@@ -44,14 +53,22 @@
 			'uid': '(DE-2382)2'
 		}
 	},
-	'TitleParallel[]' {
+	'TitleSuper[]' {
 		'' {
-			'title': 'Eibun nihon daihyakka jiten'
+			'titleSuper[]' {
+				'': 'Tut books'
+			},
+			'titleSuper[]' {
+				'': 'Unesco collection of representative works',
+				'': 'Japanese ser'
+			}
 		}
 	},
-	'TitleOther' {
-		'title[]' {
-			'': '英文日本大百科事典'
+	'TitleSuperVolumeDesignation[]' {
+		'' {
+			'volumeDesignation[]' {
+				'': 'L'
+			}
 		}
 	}
 }
@@ -75,17 +92,24 @@
 			'uid': '(DE-2382)3'
 		}
 	},
-	'TitleParallel[]' {
+	'TitleSuper[]' {
 		'' {
-			'title': 'Nihon bukkyō chōkokuten'
-		},
-		'' {
-			'title': 'Nihon chōkokuten'
+			'titleSuper[]' {
+				'': 'The Penguin poets'
+			},
+			'titleSuper[]' {
+				'': 'Unesco collection of representative works'
+			}
 		}
 	},
-	'TitleOther' {
-		'title[]' {
-			'': '日本仏教彫刻展'
+	'TitleSuperVolumeDesignation[]' {
+		'' {
+			'volumeDesignation[]' {
+				'': 'D77'
+			},
+			'volumeDesignation[]' {
+				'': 'Japanese ser'
+			}
 		}
 	}
 }
@@ -109,18 +133,20 @@
 			'uid': '(DE-2382)4'
 		}
 	},
-	'TitleParallel[]' {
+	'TitleSuper[]' {
 		'' {
-			'title': 'Nihon bukkyō chōkokuten'
-		},
-		'' {
-			'title': 'Nihon chōkokuten'
+			'titleSuper[]' {
+				'': 'Veröffentlichungen des Ostasien-Instituts der Ruhr-Universität Bochum',
+				'': 'Acta Sieboldiana'
+			}
 		}
 	},
-	'TitleOther' {
-		'title[]' {
-			'': '日本仏教彫刻展',
-			'': '日本彫刻展'
+	'TitleSuperVolumeDesignation[]' {
+		'' {
+			'volumeDesignation[]' {
+				'': 'Bd. 33',
+				'': 'T. 1'
+			}
 		}
 	}
 }
