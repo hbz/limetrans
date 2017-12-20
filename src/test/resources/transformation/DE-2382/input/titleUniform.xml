@@ -17,4 +17,15 @@
       <subfield code="a">太平記.</subfield>
     </datafield>
   </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">3</controlfield>
+    <datafield tag="730" ind1="0" ind2=" ">
+      <subfield code="6">880-02</subfield>
+      <subfield code="a">Heike monogatari.</subfield>
+    </datafield>
+    <datafield tag="880" ind1="0" ind2=" ">
+      <subfield code="6">730-02/$1</subfield>
+      <subfield code="a">平家物語(KOTEN:6939)</subfield>
+    </datafield>
+  </record>
 </collection>
