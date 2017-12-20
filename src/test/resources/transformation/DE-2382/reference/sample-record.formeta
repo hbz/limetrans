@@ -1,187 +1,226 @@
 '' {
 	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-2382)1'
+		'identifierForTheRecord': '(DE-2382)BA00044815'
 	},
 	'collection': 'DE-2382',
+	'CreatorStatement' {
+		'creatorStatement': 'Edward G. Seidensticker'
+	},
 	'dc' {
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
-			'': 'keine Angabe'
+			'': 'Englisch'
+		},
+		'date[]' {
+			'': '1983',
+			'': '1977'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
+	},
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN[]' {
+				'': '4770011407(: Japan)'
+			}
+		},
+		'' {
+			'identifierISBN[]' {
+				'': '0870116401(: US)'
+			}
+		}
+	},
+	'Person' {
+		'personName': 'Seidensticker, Edward, 1921-2007'
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Genji days'
+		}
+	},
+	'Edition' {
+		'edition[]' {
+			'': 'Paperback ed.'
+		}
+	},
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Tokyo ; New York'
+			},
+			'name[]' {
+				'': 'Kodansha International'
+			},
+			'chronology[]' {
+				'': '1983, c1977'
+			}
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '1983, c1977'
+		}
+	},
+	'Extent' {
+		'extent': '225 p. ; 19 cm'
+	},
+	'Description' {
+		'description[]' {
+			'': 'Japanese title on cover: 源氏物語翻訳日記.'
 		}
 	},
 	'xbib[]' {
 		'' {
-			'uid': '(DE-2382)1'
+			'uid': '(DE-2382)BA00044815'
 		}
 	},
 	'TitleOther' {
 		'title[]' {
-			'': 'Mishima yukio : sono sei to shi = 三島由紀夫 : その生と死'
+			'': 'Genji monogatari hon\'yaku nikki = 源氏物語翻訳日記'
 		}
 	},
-	'SubjectPersonalName[]' {
+	'RSWK[]' {
 		'' {
-			'subjectAddendum': 'Mishima,Yukio(1925-1970)'
+			'subjectPersonName': 'Seidensticker, Edward, 1921-'
 		},
 		'' {
-			'subjectAddendum': '三島, 由紀夫(1925-1970)'
+			'subjectPersonName': 'Murasaki Shikibu, b. 978? Genji monogatari'
+		},
+		'' {
+			'subjectTopicName': 'Critics -- United States -- Biography'
+		},
+		'' {
+			'subjectTopicName': 'Translators -- United States -- Biography'
 		}
+	},
+	'Item' {
+		'callnumber': '935.6||Sei||1 13508'
 	}
 }
 '' {
 	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-2382)2'
+		'identifierForTheRecord': '(DE-2382)BA00045206'
 	},
 	'collection': 'DE-2382',
+	'CreatorStatement' {
+		'creatorStatement': 'by Lafcadio Hearn'
+	},
 	'dc' {
 		'format[]' {
 			'': 'keine Angabe'
 		},
 		'type[]' {
-			'': 'keine Angabe'
+			'': 'Monographie'
 		},
 		'language[]' {
-			'': 'keine Angabe'
+			'': 'Englisch'
+		},
+		'date[]' {
+			'': '1971'
+		}
+	},
+	'Language[]' {
+		'' {
+			'language': 'Englisch',
+			'languageSource': 'eng'
+		}
+	},
+	'IdentifierISBN[]' {
+		'' {
+			'identifierISBN[]' {
+				'': '0804809674'
+			}
+		}
+	},
+	'TitleStatement[]' {
+		'' {
+			'titleMain': 'Shadowings'
+		}
+	},
+	'Edition' {
+		'edition[]' {
+			'': '1st Tuttle ed.'
+		}
+	},
+	'PublisherName[]' {
+		'' {
+			'place[]' {
+				'': 'Rutland, Vt. ; Tokyo'
+			},
+			'name[]' {
+				'': 'C.E. Tuttle'
+			},
+			'chronology[]' {
+				'': '1971'
+			}
+		}
+	},
+	'DateProper' {
+		'date[]' {
+			'': '1971'
+		}
+	},
+	'Extent' {
+		'extent': 'x, 268 p. : ill. ; 19 cm'
+	},
+	'Description' {
+		'description[]' {
+			'': 'Japanese title on cover: 影.'
 		}
 	},
 	'xbib[]' {
 		'' {
-			'uid': '(DE-2382)2'
+			'uid': '(DE-2382)BA00045206'
 		}
 	},
 	'TitleOther' {
 		'title[]' {
-			'': 'Mishima yukio : sono sei to shi'
-		}
-	}
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-2382)3'
-	},
-	'collection': 'DE-2382',
-	'dc' {
-		'format[]' {
-			'': 'keine Angabe'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
+			'': 'Kage = 影'
 		}
 	},
-	'xbib[]' {
+	'TitleSuper[]' {
 		'' {
-			'uid': '(DE-2382)3'
+			'titleSuper[]' {
+				'': 'Tut books'
+			}
 		}
 	},
-	'TitleOther' {
-		'title[]' {
-			'': 'Mishima yukio : sono sei to shi'
+	'TitleSuperVolumeDesignation[]' {
+		'' {
+			'volumeDesignation[]' {
+				'': 'L'
+			}
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectTopicName': 'Cicada'
+		},
+		'' {
+			'subjectTopicName': 'Names, Personal -- Japanese'
+		},
+		'' {
+			'subjectTopicName': 'Japanese poetry -- Translations into English'
+		},
+		'' {
+			'subjectTopicName': 'English poetry -- Translations from Japanese'
 		}
 	},
 	'PersonCreator[]' {
 		'' {
-			'personName': 'Fukutake, Tadashi'
-		},
-		'' {
-			'personName': '福武, 直(1917-1989)'
-		},
-		'' {
-			'personName': 'Morioka, Kiyomi'
-		},
-		'' {
-			'personName': '森岡, 清美(1923-)'
-		},
-		'' {
-			'personName': 'Nihon Shakai Gakkai'
-		},
-		'' {
-			'personName': '日本社会学会'
-		},
-		'' {
-			'personName': 'Monbushō Nihon Kokunai Yunesuko Īnkai'
-		},
-		'' {
-			'personName': '文部省日本国内ユネスコ委員会'
-		}
-	}
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-2382)4'
-	},
-	'collection': 'DE-2382',
-	'dc' {
-		'format[]' {
-			'': 'keine Angabe'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
+			'personName': 'Hearn, Lafcadio, 1850-1904'
 		}
 	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-2382)4'
-		}
-	},
-	'TitleOther' {
-		'title[]' {
-			'': 'Mishima yukio : sono sei to shi'
-		}
-	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Fukutake, Tadashi'
-		},
-		'' {
-			'personName': 'Morioka, Kiyomi'
-		},
-		'' {
-			'personName': 'Nihon Shakai Gakkai'
-		},
-		'' {
-			'personName': '日本社会学会'
-		},
-		'' {
-			'personName': 'Monbushō Nihon Kokunai Yunesuko Īnkai'
-		}
-	}
-}
-'' {
-	'RecordIdentifier' {
-		'identifierForTheRecord': '(DE-2382)2'
-	},
-	'collection': 'DE-2382',
-	'dc' {
-		'format[]' {
-			'': 'keine Angabe'
-		},
-		'type[]' {
-			'': 'keine Angabe'
-		},
-		'language[]' {
-			'': 'keine Angabe'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-2382)2'
-		}
-	},
-	'TitleOther' {
-		'title[]' {
-			'': 'Nihon oyobi nihonjin = 日本及び日本人 /',
-			'': 'ニホン オヨビ ニホンジン.'
-		}
+	'Item' {
+		'callnumber': '934||Hea||2 3720'
 	}
 }

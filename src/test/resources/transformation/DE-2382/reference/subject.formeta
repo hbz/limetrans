@@ -19,12 +19,12 @@
 			'uid': '(DE-2382)1-1'
 		}
 	},
-	'SubjectPersonalName[]' {
+	'RSWK[]' {
 		'' {
-			'subjectAddendum': 'Mishima,Yukio(1925-1970)'
+			'subjectPersonName': 'Mishima,Yukio(1925-1970)'
 		},
 		'' {
-			'subjectAddendum': '三島, 由紀夫(1925-1970)'
+			'subjectPersonName': '三島, 由紀夫(1925-1970)'
 		}
 	}
 }
@@ -49,18 +49,18 @@
 			'uid': '(DE-2382)1-2'
 		}
 	},
-	'SubjectPersonalName[]' {
+	'RSWK[]' {
 		'' {
-			'subjectAddendum': 'Mishima,Yukio(1925-1970)'
+			'subjectPersonName': 'Mishima,Yukio(1925-1970)'
 		},
 		'' {
-			'subjectAddendum': '三島, 由紀夫(1925-1970)'
+			'subjectPersonName': '三島, 由紀夫(1925-1970)'
 		},
 		'' {
-			'subjectAddendum': 'Fukuchi,Gen\'ichirō(1841-1906)'
+			'subjectPersonName': 'Fukuchi,Gen\'ichirō(1841-1906)'
 		},
 		'' {
-			'subjectAddendum': '福地, 源一郎(1841-1906)'
+			'subjectPersonName': '福地, 源一郎(1841-1906)'
 		}
 	}
 }
@@ -85,12 +85,12 @@
 			'uid': '(DE-2382)2-1'
 		}
 	},
-	'SubjectCorporateBodyName[]' {
+	'RSWK[]' {
 		'' {
-			'subjectAddendum': 'Mishima,Yukio(1925-1970)'
+			'subjectCorporateBodyName': 'Mishima,Yukio(1925-1970)'
 		},
 		'' {
-			'subjectAddendum': '三島, 由紀夫(1925-1970)'
+			'subjectCorporateBodyName': '三島, 由紀夫(1925-1970)'
 		}
 	}
 }
@@ -115,18 +115,18 @@
 			'uid': '(DE-2382)2-2'
 		}
 	},
-	'SubjectCorporateBodyName[]' {
+	'RSWK[]' {
 		'' {
-			'subjectAddendum': 'Mishima,Yukio(1925-1970)'
+			'subjectCorporateBodyName': 'Mishima,Yukio(1925-1970)'
 		},
 		'' {
-			'subjectAddendum': '三島, 由紀夫(1925-1970)'
+			'subjectCorporateBodyName': '三島, 由紀夫(1925-1970)'
 		},
 		'' {
-			'subjectAddendum': 'Fukuchi,Gen\'ichirō(1841-1906)'
+			'subjectCorporateBodyName': 'Fukuchi,Gen\'ichirō(1841-1906)'
 		},
 		'' {
-			'subjectAddendum': '福地, 源一郎(1841-1906)'
+			'subjectCorporateBodyName': '福地, 源一郎(1841-1906)'
 		}
 	}
 }
@@ -151,12 +151,12 @@
 			'uid': '(DE-2382)3-1'
 		}
 	},
-	'SubjectTitle[]' {
+	'RSWK[]' {
 		'' {
-			'subjectAddendum': 'Genjimonogatari'
+			'subjectTitleName': 'Genjimonogatari'
 		},
 		'' {
-			'subjectAddendum': '源氏物語'
+			'subjectTitleName': '源氏物語'
 		}
 	}
 }
@@ -181,15 +181,15 @@
 			'uid': '(DE-2382)3-2'
 		}
 	},
-	'SubjectTitle[]' {
+	'RSWK[]' {
 		'' {
-			'subjectAddendum': 'Genjimonogatari'
+			'subjectTitleName': 'Genjimonogatari'
 		},
 		'' {
-			'subjectAddendum': '源氏物語'
+			'subjectTitleName': '源氏物語'
 		},
 		'' {
-			'subjectAddendum': 'Tripiṭaka. Ṣūtrapiṭaka. Saddharmapuṇḍarīkasūtra -- Illustrations -- Exhibitions'
+			'subjectTitleName': 'Tripiṭaka. Ṣūtrapiṭaka. Saddharmapuṇḍarīkasūtra -- Illustrations -- Exhibitions'
 		}
 	}
 }
@@ -214,12 +214,12 @@
 			'uid': '(DE-2382)4-1'
 		}
 	},
-	'SubjectTopic[]' {
+	'RSWK[]' {
 		'' {
-			'subjectAddendum': 'Nihongo -- Kōbunron'
+			'subjectTopicName': 'Nihongo -- Kōbunron'
 		},
 		'' {
-			'subjectAddendum': '日本語 -- 構文論'
+			'subjectTopicName': '日本語 -- 構文論'
 		}
 	}
 }
@@ -244,18 +244,18 @@
 			'uid': '(DE-2382)4-2'
 		}
 	},
-	'SubjectTopic[]' {
+	'RSWK[]' {
 		'' {
-			'subjectAddendum': 'Nihongo -- Kōbunron'
+			'subjectTopicName': 'Nihongo -- Kōbunron'
 		},
 		'' {
-			'subjectAddendum': '日本語 -- 構文論'
+			'subjectTopicName': '日本語 -- 構文論'
 		},
 		'' {
-			'subjectAddendum': 'Taishōgengogaku'
+			'subjectTopicName': 'Taishōgengogaku'
 		},
 		'' {
-			'subjectAddendum': '対照言語学'
+			'subjectTopicName': '対照言語学'
 		}
 	}
 }
@@ -280,12 +280,12 @@
 			'uid': '(DE-2382)5-2'
 		}
 	},
-	'SubjectGeo[]' {
+	'RSWK[]' {
 		'' {
-			'subjectAddendum': 'Nihon -- Keizai -- Rekishi -- Shōwajidai'
+			'subjectGeoName': 'Nihon -- Keizai -- Rekishi -- Shōwajidai'
 		},
 		'' {
-			'subjectAddendum': '日本 -- 経済 -- 歴史 -- 昭和時代'
+			'subjectGeoName': '日本 -- 経済 -- 歴史 -- 昭和時代'
 		}
 	}
 }
@@ -310,15 +310,15 @@
 			'uid': '(DE-2382)5-2'
 		}
 	},
-	'SubjectGeo[]' {
+	'RSWK[]' {
 		'' {
-			'subjectAddendum': 'Nihon -- Keizai -- Rekishi -- Shōwajidai'
+			'subjectGeoName': 'Nihon -- Keizai -- Rekishi -- Shōwajidai'
 		},
 		'' {
-			'subjectAddendum': '日本 -- 経済 -- 歴史 -- 昭和時代'
+			'subjectGeoName': '日本 -- 経済 -- 歴史 -- 昭和時代'
 		},
 		'' {
-			'subjectAddendum': 'Japan -- Economic policy -- 1945-1989'
+			'subjectGeoName': 'Japan -- Economic policy -- 1945-1989'
 		}
 	}
 }

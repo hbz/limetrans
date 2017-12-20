@@ -4,6 +4,7 @@
   <!-- 0xx -->
 
   <!-- 1xx -->
+
   <entity name="TitleUniform">
     <concat delimiter=" = " name="namen" flushWith="record" reset="true">
       <data name="" source="130??.a">
@@ -28,7 +29,7 @@
 
   <entity name="TitleParallel[]" flushWith="record">
     <entity name="" flushWith="242??" sameEntity="true">
-       <data source="242??.a" name="title" />
+      <data source="242??.a" name="title" />
     </entity>
   </entity>
 
@@ -72,35 +73,10 @@
     </entity>
   </entity>
 
-  <!--entity name="Testnamen[]">
-    <entity name="" flushWith="record">
-      <concat delimiter=" / " name="namen" flushWith="record" reset="true">
-        <data name="" source="700??.a">
-          <replace pattern="\.$" with="" />
-          <compose prefix="!!" />
-        </data>
-        <combine name="" value="${transl}" sameEntity="true">
-          <if>
-            <all flushWith="880??.a" sameEntity="true">
-              <data source="880??.6">
-                <regexp match="^700" />
-              </data>
-            </all>
-          </if>
-          <data source="880??.a" name="transl" />
-        </combine>
-        <postprocess>
-          <replace pattern="[.]$" with="" />
-          <replace pattern="^!!" with="" />
-          <split delimiter=" / !!" />
-        </postprocess>
-      </concat>
-    </entity>
-  </entity-->
-
   <!-- 3xx -->
 
   <!-- 4xx -->
+
   <entity name="TitleSuper[]" flushWith="record">
     <entity name="" flushWith="record">
       <entity name="titleSuper[]" flushWith="440??" sameEntity="true">
@@ -124,9 +100,9 @@
 
   <!-- 6xx -->
 
-  <entity name="SubjectPersonalName[]" flushWith="record">
+  <entity name="RSWK[]" flushWith="record">
     <entity name="" flushWith="600??.a" sameEntity="true">
-       <data source="600??.a" name="subjectAddendum">
+      <data source="600??.a" name="subjectPersonName">
         <replace pattern="\.$" with="" />
       </data>
     </entity>
@@ -138,15 +114,13 @@
           </data>
         </all>
       </if>
-      <data source="880??.a" name="subjectAddendum">
+      <data source="880??.a" name="subjectPersonName">
         <replace pattern="\.$" with="" />
       </data>
     </entity>
-  </entity>
 
-  <entity name="SubjectCorporateBodyName[]" flushWith="record">
     <entity name="" flushWith="610??.a" sameEntity="true">
-       <data source="610??.a" name="subjectAddendum">
+      <data source="610??.a" name="subjectCorporateBodyName">
         <replace pattern="\.$" with="" />
       </data>
     </entity>
@@ -158,15 +132,13 @@
           </data>
         </all>
       </if>
-      <data source="880??.a" name="subjectAddendum">
+      <data source="880??.a" name="subjectCorporateBodyName">
         <replace pattern="\.$" with="" />
       </data>
     </entity>
-  </entity>
 
-  <entity name="SubjectTitle[]" flushWith="record">
     <entity name="" flushWith="630??.a" sameEntity="true">
-       <data source="630??.a" name="subjectAddendum">
+      <data source="630??.a" name="subjectTitleName">
         <replace pattern="\.$" with="" />
       </data>
     </entity>
@@ -178,15 +150,13 @@
           </data>
         </all>
       </if>
-      <data source="880??.a" name="subjectAddendum">
+      <data source="880??.a" name="subjectTitleName">
         <replace pattern="\.$" with="" />
       </data>
     </entity>
-  </entity>
 
-  <entity name="SubjectTopic[]" flushWith="record">
     <entity name="" flushWith="650??.a" sameEntity="true">
-       <data source="650??.a" name="subjectAddendum">
+      <data source="650??.a" name="subjectTopicName">
         <replace pattern="\.$" with="" />
       </data>
     </entity>
@@ -198,15 +168,13 @@
           </data>
         </all>
       </if>
-      <data source="880??.a" name="subjectAddendum">
+      <data source="880??.a" name="subjectTopicName">
         <replace pattern="\.$" with="" />
       </data>
     </entity>
-  </entity>
 
-  <entity name="SubjectGeo[]" flushWith="record">
     <entity name="" flushWith="651??.a" sameEntity="true">
-      <data source="651??.a" name="subjectAddendum">
+      <data source="651??.a" name="subjectGeoName">
         <replace pattern="\.$" with="" />
       </data>
     </entity>
@@ -218,7 +186,7 @@
           </data>
         </all>
       </if>
-      <data source="880??.a" name="subjectAddendum">
+      <data source="880??.a" name="subjectGeoName">
         <replace pattern="\.$" with="" />
       </data>
     </entity>
@@ -256,12 +224,16 @@
       </if>
       <!--call-macro name="personName"       field="880" /-->
       <data source="880??.a" name="personName">
-         <replace pattern="\.$" with="" />
+        <replace pattern="\.$" with="" />
       </data>
     </entity>
   </entity>
 
   <!-- 8xx -->
+
+  <entity name="Item" flushWith="record">
+    <data source="852??.i" name="callnumber" />
+  </entity>
 
   <!-- Other -->
 
