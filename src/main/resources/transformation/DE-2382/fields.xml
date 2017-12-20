@@ -151,12 +151,15 @@
           </data>
         </all>
       </if>
-      <call-macro name="personName"       field="880" />
+      <!--call-macro name="personName"       field="880" /-->
+      <data source="880??.a" name="personName">
+         <replace pattern="\.$" with="" />
+      </data>
     </entity>
   </entity>
 
   <!-- 8xx -->
-
+ 
   <!-- Other -->
 
 </rules>
