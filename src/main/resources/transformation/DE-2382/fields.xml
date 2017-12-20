@@ -124,6 +124,106 @@
 
   <!-- 6xx -->
 
+  <entity name="SubjectPersonalName[]" flushWith="record">
+    <entity name="" flushWith="600??.a" sameEntity="true">
+       <data source="600??.a" name="subjectAddendum">
+        <replace pattern="\.$" with="" />
+      </data>
+    </entity>
+    <entity name="" flushWith="880??.a" sameEntity="true">
+      <if>
+        <all flushWith="880??.a" sameEntity="true">
+          <data source="880??.6">
+            <regexp match="^600" />
+          </data>
+        </all>
+      </if>
+      <data source="880??.a" name="subjectAddendum">
+        <replace pattern="\.$" with="" />
+      </data>
+    </entity>
+  </entity>
+
+  <entity name="SubjectCorporateBodyName[]" flushWith="record">
+    <entity name="" flushWith="610??.a" sameEntity="true">
+       <data source="610??.a" name="subjectAddendum">
+        <replace pattern="\.$" with="" />
+      </data>
+    </entity>
+    <entity name="" flushWith="880??.a" sameEntity="true">
+      <if>
+        <all flushWith="880??.a" sameEntity="true">
+          <data source="880??.6">
+            <regexp match="^610" />
+          </data>
+        </all>
+      </if>
+      <data source="880??.a" name="subjectAddendum">
+        <replace pattern="\.$" with="" />
+      </data>
+    </entity>
+  </entity>
+
+  <entity name="SubjectTitle[]" flushWith="record">
+    <entity name="" flushWith="630??.a" sameEntity="true">
+       <data source="630??.a" name="subjectAddendum">
+        <replace pattern="\.$" with="" />
+      </data>
+    </entity>
+    <entity name="" flushWith="880??.a" sameEntity="true">
+      <if>
+        <all flushWith="880??.a" sameEntity="true">
+          <data source="880??.6">
+            <regexp match="^630" />
+          </data>
+        </all>
+      </if>
+      <data source="880??.a" name="subjectAddendum">
+        <replace pattern="\.$" with="" />
+      </data>
+    </entity>
+  </entity>
+
+  <entity name="SubjectTopic[]" flushWith="record">
+    <entity name="" flushWith="650??.a" sameEntity="true">
+       <data source="650??.a" name="subjectAddendum">
+        <replace pattern="\.$" with="" />
+      </data>
+    </entity>
+    <entity name="" flushWith="880??.a" sameEntity="true">
+      <if>
+        <all flushWith="880??.a" sameEntity="true">
+          <data source="880??.6">
+            <regexp match="^650" />
+          </data>
+        </all>
+      </if>
+      <data source="880??.a" name="subjectAddendum">
+        <replace pattern="\.$" with="" />
+      </data>
+    </entity>
+  </entity>
+
+  <entity name="SubjectGeo[]" flushWith="record">
+    <entity name="" flushWith="651??.a" sameEntity="true">
+      <data source="651??.a" name="subjectAddendum">
+        <replace pattern="\.$" with="" />
+      </data>
+    </entity>
+    <entity name="" flushWith="880??.a" sameEntity="true">
+      <if>
+        <all flushWith="880??.a" sameEntity="true">
+          <data source="880??.6">
+            <regexp match="^651" />
+          </data>
+        </all>
+      </if>
+      <data source="880??.a" name="subjectAddendum">
+        <replace pattern="\.$" with="" />
+      </data>
+    </entity>
+  </entity>
+
   <!-- 7xx -->
 
   <entity name="PersonCreator[]" flushWith="record">

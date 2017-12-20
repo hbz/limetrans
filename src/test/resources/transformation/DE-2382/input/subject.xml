@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">1-1</controlfield>
+    <datafield tag="600" ind1="1" ind2="4">
+      <subfield code="6">880-02</subfield>
+      <subfield code="a">Mishima,Yukio(1925-1970)</subfield>
+    </datafield>
+    <datafield tag="880" ind1="1" ind2="4">
+      <subfield code="6">600-02/$1</subfield>
+      <subfield code="a">三島, 由紀夫(1925-1970)</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">1-2</controlfield>
+    <datafield tag="600" ind1="1" ind2="4">
+      <subfield code="6">880-02</subfield>
+      <subfield code="a">Mishima,Yukio(1925-1970)</subfield>
+    </datafield>
+    <datafield tag="880" ind1="1" ind2="4">
+      <subfield code="6">600-02/$1</subfield>
+      <subfield code="a">三島, 由紀夫(1925-1970)</subfield>
+    </datafield>
+    <datafield tag="600" ind1="1" ind2="4">
+      <subfield code="6">880-03</subfield>
+      <subfield code="a">Fukuchi,Gen&apos;ichirō(1841-1906)</subfield>
+    </datafield>
+    <datafield tag="880" ind1="1" ind2="4">
+      <subfield code="6">600-03/$1</subfield>
+      <subfield code="a">福地, 源一郎(1841-1906)</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">2-1</controlfield>
+    <datafield tag="610" ind1="1" ind2="4">
+      <subfield code="6">880-02</subfield>
+      <subfield code="a">Mishima,Yukio(1925-1970)</subfield>
+    </datafield>
+    <datafield tag="880" ind1="1" ind2="4">
+      <subfield code="6">610-02/$1</subfield>
+      <subfield code="a">三島, 由紀夫(1925-1970)</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">2-2</controlfield>
+    <datafield tag="610" ind1="1" ind2="4">
+      <subfield code="6">880-02</subfield>
+      <subfield code="a">Mishima,Yukio(1925-1970)</subfield>
+    </datafield>
+    <datafield tag="880" ind1="1" ind2="4">
+      <subfield code="6">610-02/$1</subfield>
+      <subfield code="a">三島, 由紀夫(1925-1970)</subfield>
+    </datafield>
+    <datafield tag="610" ind1="1" ind2="4">
+      <subfield code="6">880-03</subfield>
+      <subfield code="a">Fukuchi,Gen&apos;ichirō(1841-1906)</subfield>
+    </datafield>
+    <datafield tag="880" ind1="1" ind2="4">
+      <subfield code="6">610-03/$1</subfield>
+      <subfield code="a">福地, 源一郎(1841-1906)</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">3-1</controlfield>
+    <datafield tag="630" ind1="0" ind2="4">
+      <subfield code="6">880-02</subfield>
+      <subfield code="a">Genjimonogatari.</subfield>
+    </datafield>
+    <datafield tag="880" ind1="0" ind2="4">
+      <subfield code="6">630-02/$1</subfield>
+      <subfield code="a">源氏物語.</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">3-2</controlfield>
+    <datafield tag="630" ind1="0" ind2="4">
+      <subfield code="6">880-02</subfield>
+      <subfield code="a">Genjimonogatari.</subfield>
+    </datafield>
+    <datafield tag="880" ind1="0" ind2="4">
+      <subfield code="6">630-02/$1</subfield>
+      <subfield code="a">源氏物語.</subfield>
+    </datafield>
+    <datafield tag="630" ind1="0" ind2="0">
+      <subfield code="a">Tripiṭaka. Ṣūtrapiṭaka. Saddharmapuṇḍarīkasūtra -- Illustrations -- Exhibitions.</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">4-1</controlfield>
+    <datafield tag="650" ind1=" " ind2="4">
+      <subfield code="6">880-02</subfield>
+      <subfield code="a">Nihongo -- Kōbunron.</subfield>
+    </datafield>
+    <datafield tag="880" ind1=" " ind2="4">
+      <subfield code="6">650-02/$1</subfield>
+      <subfield code="a">日本語 -- 構文論.</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">4-2</controlfield>
+    <datafield tag="650" ind1=" " ind2="4">
+      <subfield code="6">880-02</subfield>
+      <subfield code="a">Nihongo -- Kōbunron.</subfield>
+    </datafield>
+    <datafield tag="880" ind1=" " ind2="4">
+      <subfield code="6">650-02/$1</subfield>
+      <subfield code="a">日本語 -- 構文論.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="4">
+      <subfield code="6">880-03</subfield>
+      <subfield code="a">Taishōgengogaku.</subfield>
+    </datafield>
+    <datafield tag="880" ind1=" " ind2="4">
+      <subfield code="6">650-03/$1</subfield>
+      <subfield code="a">対照言語学.</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">5-2</controlfield>
+    <datafield tag="651" ind1=" " ind2="4">
+      <subfield code="6">880-02</subfield>
+      <subfield code="a">Nihon -- Keizai -- Rekishi -- Shōwajidai.</subfield>
+    </datafield>
+    <datafield tag="880" ind1=" " ind2="4">
+      <subfield code="6">651-02/$1</subfield>
+      <subfield code="a">日本 -- 経済 -- 歴史 -- 昭和時代.</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">5-2</controlfield>
+    <datafield tag="651" ind1=" " ind2="4">
+      <subfield code="6">880-02</subfield>
+      <subfield code="a">Nihon -- Keizai -- Rekishi -- Shōwajidai.</subfield>
+    </datafield>
+    <datafield tag="880" ind1=" " ind2="4">
+      <subfield code="6">651-02/$1</subfield>
+      <subfield code="a">日本 -- 経済 -- 歴史 -- 昭和時代.</subfield>
+    </datafield>
+    <datafield tag="651" ind1=" " ind2="0">
+      <subfield code="a">Japan -- Economic policy -- 1945-1989.</subfield>
+    </datafield>
+  </record>
+</collection>

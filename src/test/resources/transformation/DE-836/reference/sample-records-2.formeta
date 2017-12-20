@@ -538,17 +538,6 @@
 	'Extent' {
 		'extent': 'XXVII, 859 S : ill., graph. Darst ; 24 cm'
 	},
-	'RSWK[]' {
-		'' {
-			'subjectTopicName': 'PHP 5.0',
-			'subjectIdentifier[]' {
-				'': '(DE-588)4763174-0'
-			},
-			'identifierGND[]' {
-				'': '4763174-0'
-			}
-		}
-	},
 	'TitleSuper[]' {
 		'' {
 			'titleSuper[]' {
@@ -575,6 +564,17 @@
 	'PersonCreator[]' {
 		'' {
 			'personName': 'Mercer, Dave W.'
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectTopicName': 'PHP 5.0',
+			'subjectIdentifier[]' {
+				'': '(DE-588)4763174-0'
+			},
+			'identifierGND[]' {
+				'': '4763174-0'
+			}
 		}
 	}
 }

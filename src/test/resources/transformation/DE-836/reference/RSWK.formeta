@@ -36,6 +36,11 @@
 			'': 'keine Angabe'
 		}
 	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)2'
+		}
+	},
 	'RSWK[]' {
 		'' {
 			'subjectTopicName': 'Volkstheater',
@@ -45,11 +50,6 @@
 			'identifierGND[]' {
 				'': '4130623-5'
 			}
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)2'
 		}
 	}
 }
@@ -67,6 +67,11 @@
 		},
 		'language[]' {
 			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)3'
 		}
 	},
 	'RSWK[]' {
@@ -99,11 +104,6 @@
 				'': '4125858-8'
 			}
 		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)3'
-		}
 	}
 }
 '' {
@@ -120,6 +120,11 @@
 		},
 		'language[]' {
 			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)4'
 		}
 	},
 	'RSWK[]' {
@@ -152,11 +157,6 @@
 				'': '4662291-3'
 			}
 		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)4'
-		}
 	}
 }
 '' {
@@ -173,6 +173,11 @@
 		},
 		'language[]' {
 			'': 'keine Angabe'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)5'
 		}
 	},
 	'RSWK[]' {
@@ -200,11 +205,6 @@
 				'': '1008166-5'
 			}
 		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)5'
-		}
 	}
 }
 '' {
@@ -223,6 +223,11 @@
 			'': 'keine Angabe'
 		}
 	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)6'
+		}
+	},
 	'RSWK[]' {
 		'' {
 			'subjectConference': 'Kulturmesse',
@@ -235,11 +240,6 @@
 			'identifierGND[]' {
 				'': '2101426-7'
 			}
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)6'
 		}
 	}
 }
@@ -259,14 +259,14 @@
 			'': 'keine Angabe'
 		}
 	},
-	'RSWK[]' {
-		'' {
-			'subjectChronological': 'Geschichte 2030'
-		}
-	},
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)7'
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectChronological': 'Geschichte 2030'
 		}
 	}
 }
@@ -286,14 +286,14 @@
 			'': 'keine Angabe'
 		}
 	},
-	'RSWK[]' {
-		'' {
-			'subjectGeoName': 'Entwicklungsländer'
-		}
-	},
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)8'
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectGeoName': 'Entwicklungsländer'
 		}
 	}
 }
