@@ -39,8 +39,10 @@
 			}
 		}
 	},
-	'Person' {
-		'personName': 'Seidensticker, Edward, 1921-2007'
+	'Person[]' {
+		'' {
+			'personName': 'Seidensticker, Edward, 1921-2007'
+		}
 	},
 	'TitleStatement[]' {
 		'' {
