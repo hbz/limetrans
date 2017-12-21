@@ -98,6 +98,14 @@
 
   <!-- 5xx -->
 
+  <entity name="Abstract[]" flushWith="record">
+    <entity name="" flushWith="505??" sameEntity="true">
+      <concat delimiter=" " name="abstract[]" flushWith="505??|record">
+         <data source="505??.[grt]" name=""/>
+      </concat>
+    </entity>
+  </entity>
+
   <!-- 6xx -->
 
   <entity name="RSWK[]" flushWith="record">
