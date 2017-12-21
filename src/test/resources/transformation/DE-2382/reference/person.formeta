@@ -1,0 +1,59 @@
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-2382)1'
+	},
+	'collection': 'DE-2382',
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'Person[]' {
+		'' {
+			'personName': 'Nihon Pen Kurabu'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-2382)1'
+		}
+	}
+}
+'' {
+	'RecordIdentifier' {
+		'identifierForTheRecord': '(DE-2382)2'
+	},
+	'collection': 'DE-2382',
+	'dc' {
+		'format[]' {
+			'': 'keine Angabe'
+		},
+		'type[]' {
+			'': 'keine Angabe'
+		},
+		'language[]' {
+			'': 'keine Angabe'
+		}
+	},
+	'Person[]' {
+		'' {
+			'personName': 'Nihon Pen Kurabu'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-2382)2'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': '日本ペンクラブ'
+		}
+	}
+}

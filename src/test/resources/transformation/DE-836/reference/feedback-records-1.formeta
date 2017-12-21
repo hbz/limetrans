@@ -49,11 +49,6 @@
 			'titleMain': 'Chemie in unserer Zeit'
 		}
 	},
-	'TitleOther' {
-		'title[]' {
-			'': 'Treffpunkt Buch plus'
-		}
-	},
 	'PublisherName[]' {
 		'' {
 			'place[]' {
@@ -70,6 +65,22 @@
 	'Summary' {
 		'abstract[]' {
 			'': 'Enthält "Mini-Chuiz" (extra paginiert).'
+		}
+	},
+	'DescriptionOfRelatedEditions[]' {
+		'' {
+			'prefix': 'Internetausg.',
+			'description': 'Chemie in unserer Zeit'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocn231018688'
+		}
+	},
+	'TitleOther' {
+		'title[]' {
+			'': 'Treffpunkt Buch plus'
 		}
 	},
 	'RSWK[]' {
@@ -96,17 +107,6 @@
 			'identifierGND[]' {
 				'': '4015999-1'
 			}
-		}
-	},
-	'DescriptionOfRelatedEditions[]' {
-		'' {
-			'prefix': 'Internetausg.',
-			'description': 'Chemie in unserer Zeit'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)ocn231018688'
 		}
 	}
 }

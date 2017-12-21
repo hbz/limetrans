@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">1</controlfield>
+    <datafield tag="440" ind1=" " ind2="0">
+      <subfield code="a">Schriften des Instituts für Asienkunde in Hamburg</subfield>
+      <subfield code="n">Bd. 10</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">2</controlfield>
+    <datafield tag="440" ind1=" " ind2="0">
+      <subfield code="a">Tut books</subfield>
+      <subfield code="n">L</subfield>
+    </datafield>
+    <datafield tag="440" ind1=" " ind2="0">
+      <subfield code="a">Unesco collection of representative works</subfield>
+      <subfield code="p"> Japanese ser.</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">3</controlfield>
+    <datafield tag="440" ind1=" " ind2="0">
+      <subfield code="a">The Penguin poets</subfield>
+      <subfield code="n">D77</subfield>
+    </datafield>
+    <datafield tag="440" ind1=" " ind2="0">
+      <subfield code="a">Unesco collection of representative works</subfield>
+      <subfield code="n">Japanese ser.</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">4</controlfield>
+    <datafield tag="440" ind1=" " ind2="0">
+      <subfield code="a">Veröffentlichungen des Ostasien-Instituts der Ruhr-Universität Bochum</subfield>
+      <subfield code="n">Bd. 33</subfield>
+      <subfield code="p">Acta Sieboldiana</subfield>
+      <subfield code="v">T. 1</subfield>
+    </datafield>
+  </record>
+</collection>

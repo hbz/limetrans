@@ -24,6 +24,11 @@
 			}
 		}
 	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)1'
+		}
+	},
 	'PersonCreator[]' {
 		'' {
 			'personName': 'Nygaard, Kristen',
@@ -33,11 +38,6 @@
 		},
 		'' {
 			'personName': 'Gaehde, Joachim E.'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)1'
 		}
 	}
 }
@@ -66,14 +66,6 @@
 			}
 		}
 	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Braun, Almuth',
-			'personRole[]' {
-				'': '[Übers.]'
-			}
-		}
-	},
 	'PersonContributor[]' {
 		'' {
 			'personName': 'Nygaard, Kristen',
@@ -85,6 +77,14 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)2'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Braun, Almuth',
+			'personRole[]' {
+				'': '[Übers.]'
+			}
 		}
 	}
 }
@@ -102,20 +102,6 @@
 		},
 		'language[]' {
 			'': 'keine Angabe'
-		}
-	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Nygaard, Kristen',
-			'personBio': '1926-',
-			'personIdentifier[]' {
-				'': '(DE-588)389666475',
-				'': '(DE-588)129116726'
-			},
-			'identifierGND[]' {
-				'': '389666475',
-				'': '129116726'
-			}
 		}
 	},
 	'PersonContributor[]' {
@@ -136,6 +122,20 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)3'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Nygaard, Kristen',
+			'personBio': '1926-',
+			'personIdentifier[]' {
+				'': '(DE-588)389666475',
+				'': '(DE-588)129116726'
+			},
+			'identifierGND[]' {
+				'': '389666475',
+				'': '129116726'
+			}
 		}
 	}
 }
@@ -223,6 +223,11 @@
 			}
 		}
 	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)5'
+		}
+	},
 	'PersonCreator[]' {
 		'' {
 			'personName': 'Nygaard, Kristen',
@@ -235,11 +240,6 @@
 			'personRole[]' {
 				'': '[Bearb.]'
 			}
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)5'
 		}
 	}
 }
@@ -268,16 +268,6 @@
 			}
 		}
 	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Henry',
-			'personNumbering': 'VIII',
-			'personBio': '1491-1547',
-			'personTitle[]' {
-				'': 'King of England'
-			}
-		}
-	},
 	'PersonContributor[]' {
 		'' {
 			'personName': 'Alfonso',
@@ -293,6 +283,16 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)6'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Henry',
+			'personNumbering': 'VIII',
+			'personBio': '1491-1547',
+			'personTitle[]' {
+				'': 'King of England'
+			}
 		}
 	}
 }
@@ -320,11 +320,6 @@
 			}
 		}
 	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Nygaard, Kristen'
-		}
-	},
 	'PersonContributor[]' {
 		'' {
 			'personName': 'Donin, Richard Kurt',
@@ -336,6 +331,11 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)7'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Nygaard, Kristen'
 		}
 	}
 }

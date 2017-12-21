@@ -129,13 +129,6 @@
 			'titleMain': 'Archiv der Mathematik'
 		}
 	},
-	'TitleOther' {
-		'title[]' {
-			'': 'Arch. math',
-			'': 'A.M',
-			'': 'ADM'
-		}
-	},
 	'PublisherName[]' {
 		'' {
 			'place[]' {
@@ -184,7 +177,14 @@
 			'uid': '(DE-836)ocm43310902'
 		}
 	},
-	'TypeMedia': 'Elektronische Ressource'
+	'TypeMedia': 'Elektronische Ressource',
+	'TitleOther' {
+		'title[]' {
+			'': 'Arch. math',
+			'': 'A.M',
+			'': 'ADM'
+		}
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -647,15 +647,6 @@
 	'Extent' {
 		'extent': '1 online resource (xvii, 703 pages).'
 	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Jaggar, Alison M.'
-		},
-		'' {
-			'personName': 'Young, Iris Marion',
-			'personBio': '1949-'
-		}
-	},
 	'DescriptionOfRelatedEditions[]' {
 		'' {
 			'prefix': 'Print version',
@@ -699,7 +690,16 @@
 			'uid': '(DE-836)ocm47011858'
 		}
 	},
-	'TypeMedia': 'Elektronische Ressource'
+	'TypeMedia': 'Elektronische Ressource',
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Jaggar, Alison M.'
+		},
+		'' {
+			'personName': 'Young, Iris Marion',
+			'personBio': '1949-'
+		}
+	}
 }
 '' {
 	'RecordIdentifier' {
@@ -864,16 +864,6 @@
 			'': '"Originally written in Icelandic sometime between 1250 - 1300 A.D. although parts may be based on a now lost 12th century saga."'
 		}
 	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Collingwood, W. G.',
-			'personBio': '1854-1932'
-		},
-		'' {
-			'personName': 'Jón Stefánsson',
-			'personBio': '1862-'
-		}
-	},
 	'OnlineAccess[]' {
 		'' {
 			'uri': 'ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext95/cormc10.txt'
@@ -894,7 +884,17 @@
 			'uid': '(DE-836)ocm49293189'
 		}
 	},
-	'TypeMedia': 'Elektronische Ressource'
+	'TypeMedia': 'Elektronische Ressource',
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Collingwood, W. G.',
+			'personBio': '1854-1932'
+		},
+		'' {
+			'personName': 'Jón Stefánsson',
+			'personBio': '1862-'
+		}
+	}
 }
 '' {
 	'RecordIdentifier' {

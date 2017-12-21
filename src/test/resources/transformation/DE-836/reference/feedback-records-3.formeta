@@ -62,6 +62,16 @@
 	'Extent' {
 		'extent': '28, 121 S : 88 Bl. Abb., 1 Falttaf ; 4'
 	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocn258752341'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Chargesheimer'
+		}
+	},
 	'RSWK[]' {
 		'' {
 			'subjectPersonName': 'Chargesheimer',
@@ -105,16 +115,6 @@
 			'identifierGND[]' {
 				'': '4050926-6'
 			}
-		}
-	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Chargesheimer'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)ocn258752341'
 		}
 	}
 }
@@ -173,31 +173,6 @@
 	'Extent' {
 		'extent': '264 S. : zahlr. Ill.'
 	},
-	'RSWK[]' {
-		'' {
-			'subjectTopicName': 'Kultur'
-		},
-		'' {
-			'subjectTopicName': 'Kunst'
-		},
-		'' {
-			'subjectTopicName': 'Architektur'
-		},
-		'' {
-			'subjectTopicName': 'Civilization'
-		},
-		'' {
-			'subjectGeoName': 'Ruhrgebiet'
-		}
-	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Rossmann, Andreas'
-		},
-		'' {
-			'personName': 'Klemm, Barbara'
-		}
-	},
 	'OnlineAccess[]' {
 		'' {
 			'relatedto': 'Inhaltstext',
@@ -215,6 +190,31 @@
 	'xbib[]' {
 		'' {
 			'uid': '(DE-836)ocn961280447'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Rossmann, Andreas'
+		},
+		'' {
+			'personName': 'Klemm, Barbara'
+		}
+	},
+	'RSWK[]' {
+		'' {
+			'subjectTopicName': 'Kultur'
+		},
+		'' {
+			'subjectTopicName': 'Kunst'
+		},
+		'' {
+			'subjectTopicName': 'Architektur'
+		},
+		'' {
+			'subjectTopicName': 'Civilization'
+		},
+		'' {
+			'subjectGeoName': 'Ruhrgebiet'
 		}
 	}
 }
@@ -294,6 +294,36 @@
 			'': 'Enth. 13 Beitr. - Zsfassungen der Beitr. in dt. und engl. Sprache.'
 		}
 	},
+	'TitleSuper[]' {
+		'' {
+			'titleSuper[]' {
+				'': 'Zeitschrift für Betriebswirtschaft / Ergänzungsheft'
+			}
+		}
+	},
+	'TitleSuperVolumeDesignation[]' {
+		'' {
+			'volumeDesignation[]' {
+				'': '2002,4'
+			}
+		}
+	},
+	'OnlineAccess[]' {
+		'' {
+			'relatedto': 'Inhaltsverzeichnis',
+			'uri': 'http://d-nb.info/965470997/04'
+		}
+	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocm51712092'
+		}
+	},
+	'PersonCreator[]' {
+		'' {
+			'personName': 'Albach, Horst'
+		}
+	},
 	'RSWK[]' {
 		'' {
 			'subjectTopicName': 'Sportökonomie',
@@ -339,36 +369,6 @@
 		},
 		'' {
 			'subjectTopicName': 'Lohnsystem'
-		}
-	},
-	'PersonCreator[]' {
-		'' {
-			'personName': 'Albach, Horst'
-		}
-	},
-	'TitleSuper[]' {
-		'' {
-			'titleSuper[]' {
-				'': 'Zeitschrift für Betriebswirtschaft / Ergänzungsheft'
-			}
-		}
-	},
-	'TitleSuperVolumeDesignation[]' {
-		'' {
-			'volumeDesignation[]' {
-				'': '2002,4'
-			}
-		}
-	},
-	'OnlineAccess[]' {
-		'' {
-			'relatedto': 'Inhaltsverzeichnis',
-			'uri': 'http://d-nb.info/965470997/04'
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)ocm51712092'
 		}
 	}
 }

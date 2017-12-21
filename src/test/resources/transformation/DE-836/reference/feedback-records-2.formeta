@@ -68,6 +68,11 @@
 	'ChronologyAndEnumeration' {
 		'value': '2015,1'
 	},
+	'xbib[]' {
+		'' {
+			'uid': '(DE-836)ocn930016469'
+		}
+	},
 	'RSWK[]' {
 		'' {
 			'subjectTopicName': 'Kunsterziehung',
@@ -79,11 +84,6 @@
 			'identifierGND[]' {
 				'': '4033637-2'
 			}
-		}
-	},
-	'xbib[]' {
-		'' {
-			'uid': '(DE-836)ocn930016469'
 		}
 	}
 }
@@ -131,11 +131,6 @@
 			'titleMain': 'Journal of global security studies'
 		}
 	},
-	'TitleOther' {
-		'title[]' {
-			'': 'JOGSS'
-		}
-	},
 	'PublisherName[]' {
 		'' {
 			'place[]' {
@@ -173,5 +168,10 @@
 			'uid': '(DE-836)ocn939922827'
 		}
 	},
-	'TypeMedia': 'Elektronische Ressource'
+	'TypeMedia': 'Elektronische Ressource',
+	'TitleOther' {
+		'title[]' {
+			'': 'JOGSS'
+		}
+	}
 }

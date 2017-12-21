@@ -67,7 +67,7 @@ public class TransformationTestRunner extends ParentRunner<TransformationTestCas
 
     @Override
     protected Description describeChild(final TransformationTestCase child) {
-        return Description.createTestDescription(getName(), child.getName());
+        return Description.createTestDescription(child.getName(), getName());
     }
 
     @Override
