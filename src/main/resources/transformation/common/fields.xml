@@ -5,9 +5,11 @@
   <combine name="@id" value="($[isil])${id}">
     <data name="id" source="001" />
   </combine>
-  <entity name="RecordIdentifier">
+  <entity name="RecordIdentifier" flushWith="@id">
     <data name="identifierForTheRecord" source="@id" />
-    <data name="isContextLocal" source="@id" />
+    <data name="isContextLocal" source="@id">
+      <regexp match="\(DE-836\).*" />
+    </data>
   </entity>
 
   <combine name="@date1" value="${date1}">
