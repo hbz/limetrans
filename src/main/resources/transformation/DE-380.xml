@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metamorph xmlns="http://www.culturegraph.org/metamorph" xmlns:xi="http://www.w3.org/2001/XInclude" version="1">
+  <vars>
+    <var name="isil" value="DE-380"/>
+  </vars>
+  <xi:include href="macros.xml"/>
+  <xi:include href="maps.xml"/>
+  <xi:include href="common/facets.xml"/>
+  <xi:include href="common/fields.xml"/>
+  <xi:include href="common/personCreator.xml"/>
+  <xi:include href="common/RSWK.xml"/>
+  <xi:include href="common/titleOther.xml"/>
+  <xi:include href="common/collection.xml"/>
+
+  <!-- <rules xmlns="http://www.culturegraph.org/metamorph"> -->
+  <!--   <entity name="RSWK[]" flushWith="record"> -->
+  <!--     <entity name="" flushWith="6[59]0??" sameEntity="true"> -->
+  <!--       <concat delimiter=" / " name="subjectTopicName" flushWith="6[59]0??" > -->
+  <!--         <data source="6[59]0??.[ax]"> -->
+  <!--           <replace pattern="\.?$" with="" /> -->
+  <!--         </data> -->
+  <!--       </concat> -->
+  <!--     </entity> -->
+  <!--   </entity> -->
+  <!--   <entity name="Item" flushWith="record"> -->
+  <!--      <concat delimiter=" / " name="callnumber" flushWith="record" > -->
+  <!--        <data source="852??.?"/> -->
+  <!--      </concat> -->
+  <!--   </entity> -->
+  <!-- </rules> -->
+
+</metamorph>
