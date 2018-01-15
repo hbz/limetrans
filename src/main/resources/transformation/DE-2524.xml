@@ -21,8 +21,8 @@
         </concat>
       </entity>
     </entity>
-    <entity name="Item" flushWith="record">
-       <concat delimiter=" / " name="callnumber" flushWith="record" >
+    <entity name="IdentifierLocal" flushWith="record">
+       <concat delimiter=" / " name="standardNumber" flushWith="record" >
          <data source="852??.?"/>
        </concat>
     </entity>

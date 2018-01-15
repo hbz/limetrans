@@ -216,8 +216,8 @@
         </data>
       </entity>
     </entity>
-    <entity name="Item" flushWith="record">
-      <data source="852??.i" name="callnumber"/>
+    <entity name="IdentifierLocal" flushWith="record">
+      <data source="852??.i" name="standardNumber"/>
     </entity>
   </rules>
 </metamorph>
