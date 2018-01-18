@@ -30,7 +30,8 @@
 	'IdentifierISBN[]' {
 		'' {
 			'identifierISBN[]' {
-				'': '4770011407(: Japan)'
+				'': '4770011407(: Japan)',
+				'': '1000円'
 			}
 		},
 		'' {
@@ -104,8 +105,8 @@
 			'subjectTopicName': 'Translators -- United States -- Biography'
 		}
 	},
-	'Item' {
-		'callnumber': '935.6||Sei||1 13508'
+	'IdentifierLocal' {
+		'standardNumber': '935.6||Sei||1 13508'
 	}
 }
 '' {
@@ -227,7 +228,7 @@
 			'personName': 'Hearn, Lafcadio, 1850-1904'
 		}
 	},
-	'Item' {
-		'callnumber': '934||Hea||2 3720'
+	'IdentifierLocal' {
+		'standardNumber': '934||Hea||2 3720'
 	}
 }
