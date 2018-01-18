@@ -12,7 +12,7 @@
   <xi:include href="common/titleOther.xml"/>
   <xi:include href="common/collection.xml"/>
 
-  <!-- <rules xmlns="http://www.culturegraph.org/metamorph"> -->
+  <rules xmlns="http://www.culturegraph.org/metamorph">
   <!--   <entity name="RSWK[]" flushWith="record"> -->
   <!--     <entity name="" flushWith="6[59]0??" sameEntity="true"> -->
   <!--       <concat delimiter=" / " name="subjectTopicName" flushWith="6[59]0??" > -->
@@ -22,11 +22,11 @@
   <!--       </concat> -->
   <!--     </entity> -->
   <!--   </entity> -->
-  <!--   <entity name="Item" flushWith="record"> -->
-  <!--      <concat delimiter=" / " name="callnumber" flushWith="record" > -->
-  <!--        <data source="852??.?"/> -->
-  <!--      </concat> -->
-  <!--   </entity> -->
-  <!-- </rules> -->
+    <entity name="IdentifierLocal" flushWith="52??">
+       <!-- <concat delimiter=" / " name="callnumber" flushWith="record" > -->
+         <data source="852??.?" name="callnumber" />
+       <!-- </concat> -->
+    </entity>
+  </rules>
 
 </metamorph>
