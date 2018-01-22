@@ -1,0 +1,106 @@
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)ocn930016469",
+    "isContextLocal" : "(DE-836)ocn930016469"
+  },
+  "DateFirst" : {
+    "date" : "2015"
+  },
+  "TitleAddendum" : {
+    "title" : "Zeitschrift für Kunstpädagogik"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2015" ]
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "28304998"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "2365-3027"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Imago"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "München" ],
+    "name" : [ "Kopaed" ],
+    "chronology" : [ "2015, 2015-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2015, 2015-" ]
+  },
+  "Extent" : {
+    "extent" : "Bände ; 24 cm"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "2015,1"
+  },
+  "xbib" : [ {
+    "uid" : "(DE-836)ocn930016469"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Kunsterziehung",
+    "subjectIdentifier" : [ "(DE-588)4033637-2", "(uri)http://d-nb.info/gnd/4033637-2", "(DE-101)040336379" ],
+    "identifierGND" : [ "4033637-2" ]
+  } ]
+}
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)ocn939922827",
+    "isContextLocal" : "(DE-836)ocn939922827"
+  },
+  "DateFirst" : {
+    "date" : "2016"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2016" ]
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "2057-3189"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "International Studies Association"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Journal of global security studies"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Oxford" ],
+    "name" : [ "Oxford University Press on behalf of the International Studies Association" ],
+    "chronology" : [ "[2016-]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2016-]" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "Began with: Volume 1, Issue 1 (February 2016)."
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Print version",
+    "description" : "Journal of global security studies"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://www.hb.fh-muenster.de:2443/login?url=http://jogss.oxfordjournals.org/content/by/year"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)ocn939922827"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "TitleOther" : {
+    "title" : [ "JOGSS" ]
+  }
+}

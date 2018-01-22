@@ -1,0 +1,99 @@
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)1",
+    "isContextLocal" : "(DE-836)1"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "0585020531" ]
+  } ],
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "0262220466" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)1"
+  } ]
+}
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)2",
+    "isContextLocal" : "(DE-836)2"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "0585020531" ]
+  }, {
+    "identifierISBN" : [ "9780585020532" ]
+  }, {
+    "identifierISBN" : [ "9780262220460" ]
+  } ],
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "0262220466" ]
+  }, {
+    "identifierISBN" : [ "3540500537" ]
+  }, {
+    "identifierISBN" : [ "0387500537" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)2"
+  } ]
+}
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)3",
+    "isContextLocal" : "(DE-836)3"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "0262220466", "3540500537", "0387500537" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)3"
+  } ]
+}
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)4",
+    "isContextLocal" : "(DE-836)4"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "0585020531", "electronic bk." ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)4"
+  } ]
+}
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)5",
+    "isContextLocal" : "(DE-836)5"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "0585020531", "electronic bk.", "v. 1" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)5"
+  } ]
+}

@@ -1,0 +1,67 @@
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)1",
+    "isContextLocal" : "(DE-836)1"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Performances (1979, München)",
+    "corporateBodyIdentifier" : [ "(DE-588)2056045-X" ],
+    "identifierGND" : [ "2056045-X" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)1"
+  } ]
+}
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)2",
+    "isContextLocal" : "(DE-836)2"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Museum Bochum",
+    "corporateBodyNameUnit" : [ "Kunstsammlung" ],
+    "corporateBodyIdentifier" : [ "(DE-588)2030896-6" ],
+    "identifierGND" : [ "2030896-6" ]
+  }, {
+    "corporateBodyName" : "United States",
+    "corporateBodyNameUnit" : [ "Agricultural Marketing Service", "Fruit and Vegetable Division", "Market News Branch" ]
+  }, {
+    "corporateBodyName" : "Technische Universität Berlin",
+    "corporateBodyNameUnit" : [ "Zentrum für Antisemitismusforschung" ],
+    "corporateBodyIdentifier" : [ "(DE-588)2056045-X", "(DE-588)2056045-0" ],
+    "identifierGND" : [ "2056045-X", "2056045-0" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)2"
+  } ]
+}
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)3",
+    "isContextLocal" : "(DE-836)3"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Technische Universität Berlin",
+    "corporateBodyNameUnit" : [ "Zentrum für Antisemitismusforschung" ],
+    "corporateBodyIdentifier" : [ "(DE-588)2056045-X" ],
+    "identifierGND" : [ "2056045-X" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)3"
+  } ]
+}

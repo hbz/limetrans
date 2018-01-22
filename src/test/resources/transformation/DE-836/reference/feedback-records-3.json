@@ -1,0 +1,216 @@
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)ocn258752341",
+    "isContextLocal" : "(DE-836)ocn258752341"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "[Bildteil:] Chargesheimer ; [Text:] Böll"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1958" ]
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Böll, Heinrich"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Im Ruhrgebiet"
+  } ],
+  "Edition" : {
+    "edition" : [ "[1. - 16. Tsd.]" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Köln ;Berlin" ],
+    "name" : [ "Kiepenheuer & Witsch" ],
+    "chronology" : [ "1958" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1958" ]
+  },
+  "Extent" : {
+    "extent" : "28, 121 S : 88 Bl. Abb., 1 Falttaf ; 4"
+  },
+  "xbib" : [ {
+    "uid" : "(DE-836)ocn258752341"
+  } ],
+  "PersonCreator" : [ {
+    "personName" : "Chargesheimer"
+  } ],
+  "RSWK" : [ {
+    "subjectPersonName" : "Chargesheimer",
+    "subjectDate" : "1924-1971",
+    "subjectIdentifier" : [ "(DE-588)118520148" ],
+    "identifierGND" : [ "118520148" ]
+  }, {
+    "subjectTopicName" : "Bildband"
+  }, {
+    "subjectGeoName" : "Ruhrgebiet"
+  }, {
+    "subjectTopicName" : "Bildband",
+    "subjectIdentifier" : [ "(DE-588)4145395-5" ],
+    "identifierGND" : [ "4145395-5" ]
+  }, {
+    "subjectTopicName" : "Ruhrgebiet (Motiv)",
+    "subjectIdentifier" : [ "(DE-588)4245715-4" ],
+    "identifierGND" : [ "4245715-4" ]
+  }, {
+    "subjectGeoName" : "Ruhrgebiet",
+    "subjectIdentifier" : [ "(DE-588)4050926-6" ],
+    "identifierGND" : [ "4050926-6" ]
+  } ]
+}
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)ocn961280447",
+    "isContextLocal" : "(DE-836)ocn961280447"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Andreas Rossmann. Mit Photographien von Barbara Klemm"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ]
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783863351793" ]
+  }, {
+    "identifierISBN" : [ "3863351797" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Der Rauch verbindet die Städte nicht mehr"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Köln" ],
+    "name" : [ "König" ]
+  } ],
+  "Extent" : {
+    "extent" : "264 S. : zahlr. Ill."
+  },
+  "OnlineAccess" : [ {
+    "relatedto" : "Inhaltstext",
+    "uri" : "http://deposit.d-nb.de/cgi-bin/dokserv?id=4101741&prov=M&dok_var=1&dok_ext=htm"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis",
+    "uri" : "http://digitool.hbz-nrw.de:1801/webclient/DeliveryManager?pid=4678265&custom_att_2=simple_viewer"
+  }, {
+    "uri" : "http://digitool.hbz-nrw.de:1801/webclient/DeliveryManager?pid=4678266&custom_att_2=simple_viewer",
+    "nonpublicnote" : "Zusätzliche Angaben"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)ocn961280447"
+  } ],
+  "PersonCreator" : [ {
+    "personName" : "Rossmann, Andreas"
+  }, {
+    "personName" : "Klemm, Barbara"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Kultur"
+  }, {
+    "subjectTopicName" : "Kunst"
+  }, {
+    "subjectTopicName" : "Architektur"
+  }, {
+    "subjectTopicName" : "Civilization"
+  }, {
+    "subjectGeoName" : "Ruhrgebiet"
+  } ]
+}
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)ocm51712092",
+    "isContextLocal" : "(DE-836)ocm51712092"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Schriftl. Horst Albach"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch", "Englisch" ],
+    "date" : [ "2002" ]
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  }, {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3409122826" ]
+  }, {
+    "identifierISBN" : [ "9783409122825" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Sportökonomie"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Wiesbaden" ],
+    "name" : [ "Gabler" ],
+    "chronology" : [ "2002" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2002" ]
+  },
+  "Extent" : {
+    "extent" : "IX, 262 S., S XII - XIV : ill., graph. Darst."
+  },
+  "Description" : {
+    "description" : [ "Enth. 13 Beitr. - Zsfassungen der Beitr. in dt. und engl. Sprache." ]
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Zeitschrift für Betriebswirtschaft / Ergänzungsheft" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "2002,4" ]
+  } ],
+  "OnlineAccess" : [ {
+    "relatedto" : "Inhaltsverzeichnis",
+    "uri" : "http://d-nb.info/965470997/04"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)ocm51712092"
+  } ],
+  "PersonCreator" : [ {
+    "personName" : "Albach, Horst"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Sportökonomie",
+    "subjectIdentifier" : [ "(DE-588)4207188-4" ],
+    "identifierGND" : [ "4207188-4" ]
+  }, {
+    "subjectTopicName" : "Berufsfußball",
+    "subjectIdentifier" : [ "(DE-588)4144779-7" ],
+    "identifierGND" : [ "4144779-7" ]
+  }, {
+    "subjectTopicName" : "Sportökonomie"
+  }, {
+    "subjectTopicName" : "Unternehmenstheorie"
+  }, {
+    "subjectTopicName" : "Fussball"
+  }, {
+    "subjectTopicName" : "Marketing"
+  }, {
+    "subjectTopicName" : "Fussballverein"
+  }, {
+    "subjectTopicName" : "Spielertransfer"
+  }, {
+    "subjectTopicName" : "Beschaffungspolitik"
+  }, {
+    "subjectTopicName" : "Sportverein"
+  }, {
+    "subjectTopicName" : "Lohnsystem"
+  } ]
+}
