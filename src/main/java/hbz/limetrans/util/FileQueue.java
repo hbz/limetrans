@@ -138,7 +138,13 @@ public class FileQueue implements Iterable<String> {
         for (final String fileName : this) {
             if (new File(fileName).length() > 0) {
                 mLogger.info("Processing {} file: {}", mProcessor, fileName);
-                opener.process(fileName);
+
+                try {
+                    opener.process(fileName);
+                }
+                catch (final Exception e) {
+                    mLogger.error("Processing failed:", e);
+                }
             }
             else {
                 mLogger.warn("Skipping empty {} file: {}", mProcessor, fileName);
