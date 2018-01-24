@@ -40,6 +40,7 @@ public class ElasticsearchClient {
     private BulkRequestBuilder mBulkRequest;
     private Client mClient;
     private ElasticsearchServer mServer = null;
+    private int numRecords;
 
     public ElasticsearchClient(final Settings aSettings) {
         mLogger.debug("Settings: {}", aSettings.getAsMap());
@@ -95,9 +96,15 @@ public class ElasticsearchClient {
     }
 
     public void reset() {
+        numRecords = 0;
+
         setClient(mSettings.getAsArray("host"), mSettings.get("embeddedPath"));
         waitForYellowStatus();
         startBulk();
+    }
+
+    public void inc() {
+        ++numRecords;
     }
 
     public void close() {
@@ -207,27 +214,33 @@ public class ElasticsearchClient {
 
     private void switchIndex() {
         final String aliasName = getAliasName();
+        if (aliasName == null) {
+            return;
+        }
 
-        if (aliasName != null) {
-            final String newIndex = getIndexName();
-            final String oldIndex = getAliasIndex();
+        if (numRecords == 0) {
+            mLogger.warn("No docs, skipping index switch");
+            return;
+        }
 
-            if (!newIndex.equals(oldIndex)) {
-                mLogger.info("Switching index alias: {}", aliasName);
+        final String newIndex = getIndexName();
+        final String oldIndex = getAliasIndex();
 
-                final IndicesAliasesRequestBuilder aliasesRequest = mClient.admin().indices()
-                    .prepareAliases();
+        if (!newIndex.equals(oldIndex)) {
+            mLogger.info("Switching index alias: {}", aliasName);
 
-                if (oldIndex != null) {
-                    mLogger.info("Removing alias from index: {}", oldIndex);
-                    aliasesRequest.removeAlias(oldIndex, aliasName);
-                }
+            final IndicesAliasesRequestBuilder aliasesRequest = mClient.admin().indices()
+                .prepareAliases();
 
-                mLogger.info("Adding alias to index: {}", newIndex);
-                aliasesRequest.addAlias(newIndex, aliasName);
-
-                aliasesRequest.get();
+            if (oldIndex != null) {
+                mLogger.info("Removing alias from index: {}", oldIndex);
+                aliasesRequest.removeAlias(oldIndex, aliasName);
             }
+
+            mLogger.info("Adding alias to index: {}", newIndex);
+            aliasesRequest.addAlias(newIndex, aliasName);
+
+            aliasesRequest.get();
         }
     }
 

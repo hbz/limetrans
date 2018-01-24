@@ -40,6 +40,7 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
     @Override
     public void startRecord(final String id) {
         mId = id;
+        mClient.inc();
         mJsonEncoder.startRecord(id);
     }
 
