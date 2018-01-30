@@ -22,56 +22,47 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.function.Function;
 
 public class FileQueue implements Iterable<String> {
 
     private enum Processor {
 
-        FORMETA {
-            @Override
-            public Sender<StreamReceiver> process(final FileOpener aOpener) {
-                return aOpener
-                    .setReceiver(new FormetaRecordsReader())
-                    .setReceiver(new FormetaDecoder());
-            }
-        },
+        FORMETA(aOpener -> aOpener
+                .setReceiver(new FormetaRecordsReader())
+                .setReceiver(new FormetaDecoder())),
 
-        JSON {
-            @Override
-            public Sender<StreamReceiver> process(final FileOpener aOpener) {
-                final RecordReader reader = new RecordReader();
-                final JsonDecoder decoder = new JsonDecoder();
+        JSON(aOpener -> {
+            final RecordReader reader = new RecordReader();
+            final JsonDecoder decoder = new JsonDecoder();
 
-                reader.setSeparator('\0'); // read complete input
+            reader.setSeparator('\0'); // read complete input
 
-                decoder.setArrayName(""); // no numbered array elements
-                decoder.setRecordId(""); // no record IDs
+            decoder.setArrayName(""); // no numbered array elements
+            decoder.setRecordId(""); // no record IDs
 
-                return aOpener
-                    .setReceiver(reader)
-                    .setReceiver(decoder);
-            }
-        },
+            return aOpener
+                .setReceiver(reader)
+                .setReceiver(decoder);
+        }),
 
-        MARC21 {
-            @Override
-            public Sender<StreamReceiver> process(final FileOpener aOpener) {
-                return aOpener
-                    .setReceiver(new LineReader())
-                    .setReceiver(new Marc21Decoder());
-            }
-        },
+        MARC21(aOpener -> aOpener
+                .setReceiver(new LineReader())
+                .setReceiver(new Marc21Decoder())),
 
-        MARCXML {
-            @Override
-            public Sender<StreamReceiver> process(final FileOpener aOpener) {
-                return aOpener
-                    .setReceiver(new XmlDecoder())
-                    .setReceiver(new MarcXmlHandler());
-            }
-        };
+        MARCXML(aOpener -> aOpener
+                .setReceiver(new XmlDecoder())
+                .setReceiver(new MarcXmlHandler()));
 
-        public abstract Sender<StreamReceiver> process(FileOpener aOpener);
+        private final Function<FileOpener, Sender<StreamReceiver>> mFunction;
+
+        Processor(final Function<FileOpener, Sender<StreamReceiver>> aFunction) {
+            mFunction = aFunction;
+        }
+
+        public Sender<StreamReceiver> process(final FileOpener aOpener) {
+            return mFunction.apply(aOpener);
+        }
 
     }
 
