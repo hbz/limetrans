@@ -8,13 +8,13 @@
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ]
   },
+  "xbib" : [ {
+    "uid" : "(DE-836)1"
+  } ],
   "Person" : [ {
     "personName" : "Trollope, Anthony",
     "personBio" : "1815-1882",
     "personTitle" : [ "grandson of James II, King of England", "Prince" ]
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-836)1"
   } ],
   "PersonCreator" : [ {
     "personName" : "Nygaard, Kristen",
@@ -33,20 +33,20 @@
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ]
   },
+  "xbib" : [ {
+    "uid" : "(DE-836)2"
+  } ],
   "Person" : [ {
     "personName" : "Trollope, Anthony",
     "personBio" : "1815-1882",
     "personRole" : [ "[author]" ]
   } ],
-  "PersonContributor" : [ {
-    "personName" : "Nygaard, Kristen",
-    "personRole" : [ "[Übers.]" ]
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-836)2"
-  } ],
   "PersonCreator" : [ {
     "personName" : "Braun, Almuth",
+    "personRole" : [ "[Übers.]" ]
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Nygaard, Kristen",
     "personRole" : [ "[Übers.]" ]
   } ]
 }
@@ -60,14 +60,6 @@
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ]
   },
-  "PersonContributor" : [ {
-    "personName" : "Gjessing, S.",
-    "personIdentifier" : [ "(DE-588)129116726" ],
-    "identifierGND" : [ "129116726" ]
-  }, {
-    "personName" : "Trollope, Anthony",
-    "personBio" : "1815-1882"
-  } ],
   "xbib" : [ {
     "uid" : "(DE-836)3"
   } ],
@@ -76,6 +68,14 @@
     "personBio" : "1926-",
     "personIdentifier" : [ "(DE-588)389666475", "(DE-588)129116726" ],
     "identifierGND" : [ "389666475", "129116726" ]
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Gjessing, S.",
+    "personIdentifier" : [ "(DE-588)129116726" ],
+    "identifierGND" : [ "129116726" ]
+  }, {
+    "personName" : "Trollope, Anthony",
+    "personBio" : "1815-1882"
   } ]
 }
 {
@@ -88,6 +88,9 @@
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ]
   },
+  "xbib" : [ {
+    "uid" : "(DE-836)4"
+  } ],
   "Person" : [ {
     "personName" : "Trollope, Anthony",
     "personBio" : "1815-1882",
@@ -103,9 +106,6 @@
   }, {
     "personName" : "Donin, Richard Kurt",
     "personRole" : [ "[Bearb.]" ]
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-836)4"
   } ]
 }
 {
@@ -118,13 +118,13 @@
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ]
   },
+  "xbib" : [ {
+    "uid" : "(DE-836)5"
+  } ],
   "Person" : [ {
     "personName" : "Trollope, Anthony",
     "personBio" : "1815-1882",
     "personRole" : [ "[Creator]" ]
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-836)5"
   } ],
   "PersonCreator" : [ {
     "personName" : "Nygaard, Kristen",
@@ -144,25 +144,25 @@
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ]
   },
+  "xbib" : [ {
+    "uid" : "(DE-836)6"
+  } ],
   "Person" : [ {
     "personName" : "James",
     "personNumbering" : "II",
     "personTitle" : [ "King of England." ]
-  } ],
-  "PersonContributor" : [ {
-    "personName" : "Alfonso",
-    "personNumbering" : "X",
-    "personTitle" : [ "King of Castile and Leon" ],
-    "personRole" : [ "[interviewee.]" ]
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-836)6"
   } ],
   "PersonCreator" : [ {
     "personName" : "Henry",
     "personNumbering" : "VIII",
     "personBio" : "1491-1547",
     "personTitle" : [ "King of England" ]
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Alfonso",
+    "personNumbering" : "X",
+    "personTitle" : [ "King of Castile and Leon" ],
+    "personRole" : [ "[interviewee.]" ]
   } ]
 }
 {
@@ -175,19 +175,19 @@
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ]
   },
+  "xbib" : [ {
+    "uid" : "(DE-836)7"
+  } ],
   "Person" : [ {
     "personName" : "Trollope, Anthony",
     "personRole" : [ "[Author]" ]
   } ],
+  "PersonCreator" : [ {
+    "personName" : "Nygaard, Kristen"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Donin, Richard Kurt",
     "personRole" : [ "[Bearb.]" ]
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-836)7"
-  } ],
-  "PersonCreator" : [ {
-    "personName" : "Nygaard, Kristen"
   } ]
 }
 {
@@ -200,6 +200,9 @@
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ]
   },
+  "xbib" : [ {
+    "uid" : "(DE-836)8"
+  } ],
   "Person" : [ {
     "personName" : "Trollope, Anthony",
     "personRole" : [ "[Author]" ]
@@ -208,8 +211,5 @@
   }, {
     "personName" : "Donin, Richard Kurt",
     "personRole" : [ "[Creator]" ]
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-836)8"
   } ]
 }

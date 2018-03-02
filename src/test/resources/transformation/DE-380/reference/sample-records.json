@@ -63,7 +63,10 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-380)1187779"
-  } ]
+  } ],
+  "IdentifierLocal" : {
+    "standardNumber" : "U *Taschenbuch-Unterhaltung*"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -123,7 +126,10 @@
   } ],
   "PersonCreator" : [ {
     "personName" : "Fischer, Andrea <[Übers.]>"
-  } ]
+  } ],
+  "IdentifierLocal" : {
+    "standardNumber" : "U *Taschenbuch-Unterhaltung*"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -176,7 +182,10 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-380)1143812"
-  } ]
+  } ],
+  "IdentifierLocal" : {
+    "standardNumber" : "Ehp 9 Berufsziel Steuerberater/Wirtschaftsprüfer"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -192,7 +201,8 @@
   "dc" : {
     "format" : [ "keine Angabe" ],
     "type" : [ "Monographie" ],
-    "language" : [ "Deutsch" ]
+    "language" : [ "Deutsch" ],
+    "date" : [ "2015" ]
   },
   "Language" : [ {
     "language" : "Deutsch",
@@ -251,7 +261,10 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-380)1143814"
-  } ]
+  } ],
+  "IdentifierLocal" : {
+    "standardNumber" : "Ehr 3 USA / Seyfang"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -308,7 +321,10 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-380)1049010"
-  } ]
+  } ],
+  "IdentifierLocal" : {
+    "standardNumber" : "Ihl 3.3 Steyer"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -362,7 +378,10 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-380)1049012"
-  } ]
+  } ],
+  "IdentifierLocal" : {
+    "standardNumber" : "Ihl 3.3 Troche"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -392,7 +411,8 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-380)12937"
-  } ]
+  } ],
+  "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ]
 }
 {
   "RecordIdentifier" : {
@@ -425,7 +445,8 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-380)12960"
-  } ]
+  } ],
+  "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ]
 }
 {
   "RecordIdentifier" : {
@@ -437,6 +458,9 @@
   },
   "VolumeDesignation" : {
     "volumeDesignation" : "5"
+  },
+  "RecordIdentifierSuper" : {
+    "recordIdentifierSuper" : "29130"
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -467,7 +491,10 @@
   },
   "xbib" : [ {
     "uid" : "(DE-380)303783"
-  } ]
+  } ],
+  "IdentifierLocal" : {
+    "standardNumber" : "FMN 2 JANSSEN"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -479,6 +506,9 @@
   },
   "VolumeDesignation" : {
     "volumeDesignation" : "5"
+  },
+  "RecordIdentifierSuper" : {
+    "recordIdentifierSuper" : "29130"
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -509,7 +539,10 @@
   },
   "xbib" : [ {
     "uid" : "(DE-380)303787"
-  } ]
+  } ],
+  "IdentifierLocal" : {
+    "standardNumber" : "FMN 2 JANSSEN"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -525,7 +558,8 @@
   "dc" : {
     "format" : [ "keine Angabe" ],
     "type" : [ "Monographie" ],
-    "language" : [ "keine Angabe" ]
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1913" ]
   },
   "Person" : [ {
     "personName" : "Bendel, Johann"
@@ -546,7 +580,10 @@
   },
   "xbib" : [ {
     "uid" : "(DE-380)1220842ALS01220842"
-  } ]
+  } ],
+  "IdentifierLocal" : {
+    "standardNumber" : "Nd Mülheim / Bendel"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -559,7 +596,8 @@
   "dc" : {
     "format" : [ "keine Angabe" ],
     "type" : [ "Monographie" ],
-    "language" : [ "Deutsch" ]
+    "language" : [ "Deutsch" ],
+    "date" : [ "2016" ]
   },
   "Language" : [ {
     "language" : "Deutsch",
