@@ -118,28 +118,6 @@
   </entity>
 
   <!-- 1xx -->
-  <entity name="Person[]" flushWith="record">
-    <entity name="" flushWith="100[013] " sameEntity="true">
-      <if>
-        <any flushWith="100[013] ">
-          <none flushWith="100[013] " sameEntity="true">
-            <data source="100[013] .[4e]" />
-          </none>
-          <data source="100[013] .[4e]">
-            <regexp match="^([Aa]ut|[Cc]re)" />
-          </data>
-        </any>
-      </if>
-      <call-macro name="personName"       field="100" />
-      <call-macro name="personNumbering"  field="100" />
-      <call-macro name="personTitle"      field="100" />
-      <call-macro name="personBio"        field="100" />
-      <call-macro name="personRole"       field="100" />
-      <call-macro name="personIdentifier" field="100" />
-      <call-macro name="identifierGND"    field="100" />
-    </entity>
-  </entity>
-
   <entity name="CorporateBody[]" flushWith="record">
     <entity name="" flushWith="[17]10[012] " sameEntity="true">
       <data name="corporateBodyName" source="[17]10[012] .a">
@@ -218,14 +196,6 @@
       <replace pattern="[.]$" with="" />
     </data>
   </entity>
-
-  <!--entity name="TitleOther">
-    <entity name="title[]" flushWith="record">
-      <data name="" source="246?[ 345678].a">
-        <replace pattern="\.$" with="" />
-      </data>
-    </entity>
-  </entity-->
 
   <entity name="Edition">
     <entity name="edition[]" flushWith="record">
@@ -446,68 +416,6 @@
   <!-- 6xx -->
 
   <!-- 7xx -->
-  <!--entity name="PersonCreator[]" flushWith="record">
-    <entity name="" flushWith="700[013] " sameEntity="true">
-      <if>
-        <any flushWith="700[013] ">
-          <none flushWith="700[013] " sameEntity="true">
-            <data source="700[013] .[4e]" />
-          </none>
-          <data source="700[013] .[4e]">
-            <regexp match="^([Aa]ut|[Cc]re)" />
-          </data>
-        </any>
-      </if>
-      <call-macro name="personName"       field="700" />
-      <call-macro name="personNumbering"  field="700" />
-      <call-macro name="personTitle"      field="700" />
-      <call-macro name="personBio"        field="700" />
-      <call-macro name="personRole"       field="700" />
-      <call-macro name="personIdentifier" field="700" />
-      <call-macro name="identifierGND"    field="700" />
-    </entity>
-  </entity-->
-  <entity name="PersonContributor[]" flushWith="record">
-    <entity name="" flushWith="record">
-      <if>
-        <all flushWith="record">
-          <data source="100[013] .[4e]" />
-          <none flushWith="record">
-            <data source="100[013] .[4e]">
-              <regexp match="^([Aa]ut|[Cc]re)" />
-            </data>
-          </none>
-        </all>
-      </if>
-      <call-macro name="personName"       field="100" />
-      <call-macro name="personNumbering"  field="100" />
-      <call-macro name="personTitle"      field="100" />
-      <call-macro name="personBio"        field="100" />
-      <call-macro name="personRole"       field="100" />
-      <call-macro name="personIdentifier" field="100" />
-      <call-macro name="identifierGND"    field="100" />
-    </entity>
-    <entity name="" flushWith="700[013] " sameEntity="true">
-      <if>
-        <all flushWith="700[013] " sameEntity="true">
-          <data source="700[013] .[4e]" />
-          <none flushWith="700[013] " sameEntity="true">
-            <data source="700[013] .[4e]">
-              <regexp match="^([Aa]ut|[Cc]re)" />
-            </data>
-          </none>
-        </all>
-      </if>
-      <call-macro name="personName"       field="700" />
-      <call-macro name="personNumbering"  field="700" />
-      <call-macro name="personTitle"      field="700" />
-      <call-macro name="personBio"        field="700" />
-      <call-macro name="personRole"       field="700" />
-      <call-macro name="personIdentifier" field="700" />
-      <call-macro name="identifierGND"    field="700" />
-    </entity>
-  </entity>
-
   <entity name="DescriptionOfRelatedEditions[]" flushWith="record">
     <entity name="" flushWith="77[356]??|580  " sameEntity="true">
       <concat name="description" delimiter=": " flushWith="77[356]??">
