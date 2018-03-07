@@ -13,15 +13,8 @@
   <xi:include href="common/collection.xml"/>
 
   <rules xmlns="http://www.culturegraph.org/metamorph">
-  <!--   <entity name="RSWK[]" flushWith="record"> -->
-  <!--     <entity name="" flushWith="6[59]0??" sameEntity="true"> -->
-  <!--       <concat delimiter=" / " name="subjectTopicName" flushWith="6[59]0??" > -->
-  <!--         <data source="6[59]0??.[ax]"> -->
-  <!--           <replace pattern="\.?$" with="" /> -->
-  <!--         </data> -->
-  <!--       </concat> -->
-  <!--     </entity> -->
-  <!--   </entity> -->
+
+    <data source="000" name="Type" />
     <entity name="TypeMonograph[]" flushWith="record">
       <if>
         <data source="007">
@@ -60,15 +53,26 @@
       </entity>
     </entity>
 
+    <data source="6[013]0??.a|611??.a|648??.a|65[0135]??.a|689??.a" name="@rswk">
+      <unique />
+    </data>
+    <entity name="RSWK[]" flushWith="record">
+      <entity name="" flushWith="@rswk" reset="true">
+        <data source="@rswk" name="subjectTopicName" />
+      </entity>
+    </entity>
+
     <entity name="RecordIdentifierSuper" flushWith="773??">
-      <data source="773??.w" name="recordIdentifierSuper" />
+      <combine name="recordIdentifierSuper" value="($[isil])${id}">
+        <data name="id" source="773??.w" />
+      </combine>
     </entity>
 
     <entity name="PersonCreator[]" flushWith="record">
       <entity name="" flushWith="700[013] " sameEntity="true">
         <if>
           <all flushWith="700[013] " sameEntity="true">
-             <data source="700[013] .0">
+            <data source="700[013] .0">
               <regexp match="^\(DE-588\)*" />
             </data>
             <any flushWith="700[013] ">
