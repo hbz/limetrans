@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules xmlns="http://www.culturegraph.org/metamorph">
+
+  <data source="000" name="Type" />
+
+  <entity name="TypeMonograph[]" flushWith="record">
+    <if>
+      <data source="007">
+        <regexp match="^z|" />
+      </data>
+    </if>
+    <data source="007" name="" >
+      <constant  value="mehrbändiges begrenztes Werk" />
+    </data>
+  </entity>
+
+  <entity name="Person[]" flushWith="record">
+    <entity name="" flushWith="100[013] " sameEntity="true">
+      <if>
+        <all flushWith="100[013] " sameEntity="true">
+          <any flushWith="100[013] ">
+            <none flushWith="100[013] " sameEntity="true">
+              <data source="100[013] .[4e]" />
+            </none>
+            <data source="100[013] .[4e]">
+              <regexp match="^([Aa]ut|[Cc]re)" />
+            </data>
+          </any>
+          <data source="100[013] .0">
+            <regexp match="^\(DE-588\)*" />
+          </data>
+        </all>
+      </if>
+      <call-macro name="personName"       field="100" />
+      <call-macro name="personNumbering"  field="100" />
+      <call-macro name="personTitle"      field="100" />
+      <call-macro name="personBio"        field="100" />
+      <call-macro name="personRole"       field="100" />
+      <call-macro name="personIdentifier" field="100" />
+      <call-macro name="identifierGND"    field="100" />
+    </entity>
+  </entity>
+
+  <data source="6[013]0??.a|611??.a|648??.a|65[0135]??.a|689??.a" name="@rswk">
+    <unique />
+  </data>
+  <entity name="RSWK[]" flushWith="record">
+    <entity name="" flushWith="@rswk" reset="true">
+      <data source="@rswk" name="subjectTopicName" />
+    </entity>
+  </entity>
+
+  <entity name="RecordIdentifierSuper" flushWith="773??">
+    <combine name="recordIdentifierSuper" value="($[isil])${id}">
+      <data name="id" source="773??.w" />
+    </combine>
+  </entity>
+
+  <entity name="PersonCreator[]" flushWith="record">
+    <entity name="" flushWith="700[013] " sameEntity="true">
+      <if>
+        <all flushWith="700[013] " sameEntity="true">
+          <data source="700[013] .0">
+            <regexp match="^\(DE-588\)*" />
+          </data>
+          <any flushWith="700[013] ">
+            <none flushWith="700[013] " sameEntity="true">
+              <data source="700[013] .[4e]" />
+            </none>
+            <data source="700[013] .[4e]">
+              <regexp match="^([Aa]ut|[Cc]re)" />
+            </data>
+          </any>
+        </all>
+      </if>
+      <call-macro name="personName"       field="700" />
+      <call-macro name="personNumbering"  field="700" />
+      <call-macro name="personTitle"      field="700" />
+      <call-macro name="personBio"        field="700" />
+      <call-macro name="personRole"       field="700" />
+      <call-macro name="personIdentifier" field="700" />
+      <call-macro name="identifierGND"    field="700" />
+    </entity>
+  </entity>
+  <entity name="PersonContributor[]" flushWith="record">
+    <entity name="" flushWith="record">
+      <if>
+        <all flushWith="record" sameEntity="true">
+          <data source="100[013] .[4e]" />
+          <none flushWith="record">
+            <data source="100[013] .[4e]">
+              <regexp match="^([Aa]ut|[Cc]re)" />
+            </data>
+          </none>
+          <data source="100[013] .0">
+            <regexp match="^\(DE-588\)*" />
+          </data>
+        </all>
+      </if>
+      <call-macro name="personName"       field="100" />
+      <call-macro name="personNumbering"  field="100" />
+      <call-macro name="personTitle"      field="100" />
+      <call-macro name="personBio"        field="100" />
+      <call-macro name="personRole"       field="100" />
+      <call-macro name="personIdentifier" field="100" />
+      <call-macro name="identifierGND"    field="100" />
+    </entity>
+    <entity name="" flushWith="700[013] " sameEntity="true">
+      <if>
+        <all flushWith="700[013] " sameEntity="true">
+          <data source="700[013] .[4e]" />
+          <none flushWith="700[013] " sameEntity="true">
+            <data source="700[013] .[4e]">
+              <regexp match="^([Aa]ut|[Cc]re)" />
+            </data>
+          </none>
+          <data source="700[013] .0">
+            <regexp match="^\(DE-588\)*" />
+          </data>
+        </all>
+      </if>
+      <call-macro name="personName"       field="700" />
+      <call-macro name="personNumbering"  field="700" />
+      <call-macro name="personTitle"      field="700" />
+      <call-macro name="personBio"        field="700" />
+      <call-macro name="personRole"       field="700" />
+      <call-macro name="personIdentifier" field="700" />
+      <call-macro name="identifierGND"    field="700" />
+    </entity>
+  </entity>
+
+  <entity name="IdentifierLocal" flushWith="record">
+    <data source="852??.?" name="standardNumber">
+      <occurrence only="1" />
+    </data>
+  </entity>
+
+</rules>
