@@ -204,8 +204,12 @@
       </data>
     </entity>
   </entity>
+
   <entity name="TitleAddendum">
-    <call-macro name="regex-del-punctuation-end" dsource="245??.b" dname="title" />
+    <data name="title" source="245??.b">
+      <occurrence only="1" />
+      <replace pattern="\s?[./]\s?$" with="" />
+    </data>
   </entity>
   <entity name="VolumeDesignation">
     <data name="volumeDesignation" source="245??.n">
