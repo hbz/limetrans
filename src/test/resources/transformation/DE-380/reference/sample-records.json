@@ -24,6 +24,12 @@
   }, {
     "identifierISBN" : [ "3596195519" ]
   } ],
+  "Person" : [ {
+    "personName" : "Toon, Paige",
+    "personBio" : "1975-",
+    "personIdentifier" : [ "(DE-588)136073026" ],
+    "identifierGND" : [ "136073026" ]
+  } ],
   "TitleStatement" : [ {
     "titleMain" : "Diesmal für immer"
   } ],
@@ -44,6 +50,13 @@
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "19551" ]
   } ],
+  "PersonContributor" : [ {
+    "personName" : "Fischer, Andrea",
+    "personBio" : "1969-",
+    "personRole" : [ "[Übers.]" ],
+    "personIdentifier" : [ "(DE-588)136647626" ],
+    "identifierGND" : [ "136647626" ]
+  } ],
   "OnlineAccess" : [ {
     "uri" : "http://deposit.d-nb.de/cgi-bin/dokserv?id=4810569&prov=M&dok_var=1&dok_ext=htm",
     "relatedto" : "Inhaltstext"
@@ -51,21 +64,8 @@
   "xbib" : [ {
     "uid" : "(DE-380)1187779"
   } ],
-  "Person" : [ {
-    "personName" : "Toon, Paige",
-    "personBio" : "1975-",
-    "personIdentifier" : [ "(DE-588)136073026" ],
-    "identifierGND" : [ "136073026" ]
-  } ],
   "RSWK" : [ {
     "subjectTopicName" : "Erzählende Literatur: Gegenwartsliteratur ab 1945"
-  } ],
-  "PersonContributor" : [ {
-    "personName" : "Fischer, Andrea",
-    "personBio" : "1969-",
-    "personRole" : [ "[Übers.]" ],
-    "personIdentifier" : [ "(DE-588)136647626" ],
-    "identifierGND" : [ "136647626" ]
   } ],
   "IdentifierLocal" : {
     "standardNumber" : "U *Taschenbuch-Unterhaltung*"
@@ -96,6 +96,9 @@
     "identifierISBN" : [ "9783596188864", "kart. : EUR 8.99 (DE), EUR 9.30 (AT), sfr 13.50 (freier Pr.)" ]
   }, {
     "identifierISBN" : [ "3596188865" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Toon, Paige"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Einmal rund ums Glück"
@@ -166,6 +169,13 @@
   "Extent" : {
     "extent" : "320 S. : mit zahlr. Abb. ; 210 mm x 150 mm"
   },
+  "PersonContributor" : [ {
+    "personName" : "Lauterbach, Andrea",
+    "personRole" : [ "[Hrsg.]" ]
+  }, {
+    "personName" : "Brauner, Detlef Jürgen",
+    "personRole" : [ "[Hrsg.]" ]
+  } ],
   "OnlineAccess" : [ {
     "uri" : "http://deposit.d-nb.de/cgi-bin/dokserv?id=4782524&prov=M&dok_var=1&dok_ext=htm",
     "relatedto" : "Inhaltstext"
@@ -202,6 +212,12 @@
     "identifierISBN" : [ "9783658089092", "Broschur : EUR 9.99 (DE), EUR 10.27 (AT), sfr 11.00 (freier Pr.)" ]
   }, {
     "identifierISBN" : [ "3658089091" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Seyfang, Alexandra V.",
+    "personRole" : [ "[Verfasser]" ],
+    "personIdentifier" : [ "(DE-588)1073637123" ],
+    "identifierGND" : [ "1073637123" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Springer Fachmedien Wiesbaden GmbH",
@@ -245,12 +261,6 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-380)1143814"
-  } ],
-  "Person" : [ {
-    "personName" : "Seyfang, Alexandra V.",
-    "personRole" : [ "[Verfasser]" ],
-    "personIdentifier" : [ "(DE-588)1073637123" ],
-    "identifierGND" : [ "1073637123" ]
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "(Produktform)Paperback / softback"
@@ -310,6 +320,9 @@
     "identifierISBN" : [ "9783446435100", "Pp. : EUR 29.99 (DE), EUR 30.90 (AT), sfr 40.90 (freier Pr.)" ]
   }, {
     "identifierISBN" : [ "3446435107" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Steyer, Ralph"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Apps mit PhoneGap entwickeln"
@@ -371,6 +384,9 @@
   }, {
     "identifierISBN" : [ "3826694775" ]
   } ],
+  "Person" : [ {
+    "personName" : "Troche, Christoph"
+  } ],
   "TitleStatement" : [ {
     "titleMain" : "<Die> Welt der Android-Apps"
   } ],
@@ -419,6 +435,9 @@
   },
   "Language" : [ {
     "languageSource" : "|||"
+  } ],
+  "Person" : [ {
+    "personName" : "NESTROY, JOHANN"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Komödien"
@@ -489,6 +508,9 @@
   "Language" : [ {
     "languageSource" : "|||"
   } ],
+  "Person" : [ {
+    "personName" : "JANSSEN, JOHANNES"
+  } ],
   "TitleStatement" : [ {
     "titleMain" : "VORBEREITUNG DES DREISSIGJAEHRIGEN KRIEGES"
   } ],
@@ -534,6 +556,9 @@
   "Language" : [ {
     "languageSource" : "|||"
   } ],
+  "Person" : [ {
+    "personName" : "JANSSEN, JOHANNES"
+  } ],
   "TitleStatement" : [ {
     "titleMain" : "VORBEREITUNG DES DREISSIGJAEHRIGEN KRIEGES"
   } ],
@@ -573,6 +598,9 @@
     "language" : [ "keine Angabe" ],
     "date" : [ "1913" ]
   },
+  "Person" : [ {
+    "personName" : "Bendel, Johann"
+  } ],
   "TitleStatement" : [ {
     "titleMain" : "<Die> Stadt Mülheim am Rhein"
   } ],
@@ -612,6 +640,12 @@
     "language" : "Deutsch",
     "languageSource" : "ger"
   } ],
+  "Person" : [ {
+    "personName" : "Shepherd, Megan",
+    "personRole" : [ "[Verfasser]" ],
+    "personIdentifier" : [ "(DE-588)1112460276" ],
+    "identifierGND" : [ "1112460276" ]
+  } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Wilhelm-Heyne-Verlag",
     "corporateBodyIdentifier" : [ "(DE-588)2026980-8" ],
@@ -634,24 +668,18 @@
   "TitleSuper" : [ {
     "titleSuper" : [ "Heyne fliegt" ]
   } ],
-  "xbib" : [ {
-    "uid" : "(DE-380)1220845"
-  } ],
-  "Person" : [ {
-    "personName" : "Shepherd, Megan",
-    "personRole" : [ "[Verfasser]" ],
-    "personIdentifier" : [ "(DE-588)1112460276" ],
-    "identifierGND" : [ "1112460276" ]
-  } ],
-  "RSWK" : [ {
-    "subjectTopicName" : "Jugendbuch"
-  }, {
-    "subjectTopicName" : "Jugendbücher ab 12 Jahre"
-  } ],
   "PersonContributor" : [ {
     "personName" : "Brammertz, Beate",
     "personRole" : [ "[Übersetzer]" ],
     "personIdentifier" : [ "(DE-588)137321619" ],
     "identifierGND" : [ "137321619" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-380)1220845"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Jugendbuch"
+  }, {
+    "subjectTopicName" : "Jugendbücher ab 12 Jahre"
   } ]
 }
