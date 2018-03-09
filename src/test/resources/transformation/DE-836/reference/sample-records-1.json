@@ -132,6 +132,10 @@
   }, {
     "identifierISBN" : [ "9780585099880", "electronic bk." ]
   } ],
+  "Person" : [ {
+    "personName" : "Baum, L. Frank",
+    "personBio" : "1856-1919"
+  } ],
   "TitleStatement" : [ {
     "titleMain" : "A kidnapped Santa Claus"
   } ],
@@ -168,11 +172,7 @@
   "xbib" : [ {
     "uid" : "(DE-836)ocm44954079"
   } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "Person" : [ {
-    "personName" : "Baum, L. Frank",
-    "personBio" : "1856-1919"
-  } ]
+  "TypeMedia" : "Elektronische Ressource"
 }
 {
   "RecordIdentifier" : {
@@ -196,6 +196,9 @@
     "identifierISBN" : [ "0585103844", "electronic bk." ]
   }, {
     "identifierISBN" : [ "9780585103846", "electronic bk." ]
+  } ],
+  "Person" : [ {
+    "personName" : "Gamble, Eliza, B."
   } ],
   "TitleStatement" : [ {
     "titleMain" : "The god-idea of the ancients or sex in religion"
@@ -221,10 +224,7 @@
   "xbib" : [ {
     "uid" : "(DE-836)ocm44959477"
   } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "Person" : [ {
-    "personName" : "Gamble, Eliza, B."
-  } ]
+  "TypeMedia" : "Elektronische Ressource"
 }
 {
   "RecordIdentifier" : {
@@ -248,6 +248,10 @@
   }, {
     "identifierISBN" : [ "9780585151977", "electronic bk." ]
   } ],
+  "Person" : [ {
+    "personName" : "McGuffey, William Holmes",
+    "personBio" : "1800-1873"
+  } ],
   "TitleStatement" : [ {
     "titleMain" : "The new McGuffey first reader"
   } ],
@@ -269,11 +273,7 @@
   "xbib" : [ {
     "uid" : "(DE-836)ocm44960649"
   } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "Person" : [ {
-    "personName" : "McGuffey, William Holmes",
-    "personBio" : "1800-1873"
-  } ]
+  "TypeMedia" : "Elektronische Ressource"
 }
 {
   "RecordIdentifier" : {
@@ -297,6 +297,10 @@
   }, {
     "identifierISBN" : [ "9780585007137", "electronic bk." ]
   } ],
+  "Person" : [ {
+    "personName" : "Fielding, Henry",
+    "personBio" : "1707-1754"
+  } ],
   "TitleStatement" : [ {
     "titleMain" : "A journey from this world to the next"
   } ],
@@ -318,11 +322,7 @@
   "xbib" : [ {
     "uid" : "(DE-836)ocm44961551"
   } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "Person" : [ {
-    "personName" : "Fielding, Henry",
-    "personBio" : "1707-1754"
-  } ]
+  "TypeMedia" : "Elektronische Ressource"
 }
 {
   "RecordIdentifier" : {
@@ -538,6 +538,10 @@
   }, {
     "identifierISBN" : [ "9780585012810", "electronic bk." ]
   } ],
+  "Person" : [ {
+    "personName" : "Kipling, Rudyard",
+    "personBio" : "1865-1936"
+  } ],
   "TitleStatement" : [ {
     "titleMain" : "Rewards and fairies"
   } ],
@@ -571,9 +575,5 @@
   "xbib" : [ {
     "uid" : "(DE-836)ocm49293748"
   } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "Person" : [ {
-    "personName" : "Kipling, Rudyard",
-    "personBio" : "1865-1936"
-  } ]
+  "TypeMedia" : "Elektronische Ressource"
 }

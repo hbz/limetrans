@@ -74,6 +74,9 @@
   }, {
     "identifierISBN" : [ "9781930974029" ]
   } ],
+  "Person" : [ {
+    "personName" : "Kauffman, Janet"
+  } ],
   "TitleStatement" : [ {
     "titleMain" : "Rot"
   } ],
@@ -104,9 +107,6 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-836)ocm47770357"
-  } ],
-  "Person" : [ {
-    "personName" : "Kauffman, Janet"
   } ]
 }
 {
@@ -355,6 +355,9 @@
   }, {
     "identifierISBN" : [ "9780470045817" ]
   } ],
+  "Person" : [ {
+    "personName" : "Thomas, Dave"
+  } ],
   "TitleStatement" : [ {
     "titleMain" : "Franchising for dummies"
   } ],
@@ -388,9 +391,6 @@
   "xbib" : [ {
     "uid" : "(DE-836)ocn255413311"
   } ],
-  "Person" : [ {
-    "personName" : "Thomas, Dave"
-  } ],
   "PersonCreator" : [ {
     "personName" : "Seid, Michael"
   } ]
@@ -418,6 +418,9 @@
   }, {
     "identifierISBN" : [ "9780470089859" ]
   } ],
+  "Person" : [ {
+    "personName" : "Claverie, Jean-Michel"
+  } ],
   "TitleStatement" : [ {
     "titleMain" : "Bioinformatics for dummies"
   } ],
@@ -444,9 +447,6 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-836)ocn255680877"
-  } ],
-  "Person" : [ {
-    "personName" : "Claverie, Jean-Michel"
   } ],
   "PersonCreator" : [ {
     "personName" : "Notredame, Cedric"
@@ -510,6 +510,10 @@
   }, {
     "identifierISBN" : [ "0789749262" ]
   } ],
+  "Person" : [ {
+    "personName" : "Murray, Katherine",
+    "personBio" : "1961-"
+  } ],
   "TitleStatement" : [ {
     "titleMain" : "My Evernote"
   } ],
@@ -532,9 +536,5 @@
   },
   "xbib" : [ {
     "uid" : "(DE-836)ocn758397903"
-  } ],
-  "Person" : [ {
-    "personName" : "Murray, Katherine",
-    "personBio" : "1961-"
   } ]
 }
