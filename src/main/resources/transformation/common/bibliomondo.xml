@@ -14,6 +14,10 @@
     </data>
   </entity>
 
+  <entity name="DescriptionOfExpression" flushWith="record">
+    <data source="546??.a" name="description" />
+  </entity>
+
   <data source="6[013]0??.a|611??.a|648??.a|65[0135]??.a|689??.a" name="@rswk">
     <unique />
   </data>
