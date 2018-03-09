@@ -8,8 +8,6 @@
   <xi:include href="common/facets.xml"/>
   <xi:include href="common/fields.xml"/>
   <xi:include href="common/collection.xml"/>
-  <xi:include href="common/person.xml"/>
-  <xi:include href="common/personContributor.xml"/>
 
   <rules xmlns="http://www.culturegraph.org/metamorph">
     <entity name="TitleUniform">
