@@ -1,7 +1,7 @@
 # limetrans - Library Metadata Transformation
 
 [![Travis CI](https://travis-ci.org/hbz/limetrans.svg)](https://travis-ci.org/hbz/limetrans)
-[![SonarCloud](https://sonarcloud.io/api/badges/gate?key=hbz.introx.direct:limetrans)](https://sonarcloud.io/dashboard?id=hbz.introx.direct:limetrans)
+[![SonarCloud](https://sonarcloud.io/api/project_badges/measure?project=hbz.introx.direct%3Alimetrans&metric=alert_status)](https://sonarcloud.io/dashboard?id=hbz.introx.direct:limetrans)
 
 ## Configuration
 
