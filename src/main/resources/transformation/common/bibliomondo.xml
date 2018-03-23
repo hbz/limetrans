@@ -6,11 +6,11 @@
   <entity name="TypeMonograph[]" flushWith="record">
     <if>
       <data source="007">
-        <regexp match="^z|" />
+        <regexp match="^z\|" />
       </data>
     </if>
     <data source="007" name="" >
-      <constant  value="mehrbändiges begrenztes Werk" />
+      <constant value="mehrbändiges begrenztes Werk" />
     </data>
   </entity>
 
