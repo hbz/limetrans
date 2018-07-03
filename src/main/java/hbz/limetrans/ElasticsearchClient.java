@@ -3,6 +3,7 @@ package hbz.limetrans;
 import hbz.limetrans.util.Helpers;
 import hbz.limetrans.util.LimetransException;
 
+import com.carrotsearch.hppc.cursors.ObjectCursor;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.elasticsearch.action.admin.indices.alias.IndicesAliasesRequestBuilder;
@@ -12,6 +13,7 @@ import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.action.bulk.BulkResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.cluster.metadata.AliasMetaData;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.elasticsearch.index.IndexNotFoundException;
@@ -22,6 +24,9 @@ import java.net.UnknownHostException;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class ElasticsearchClient {
 
@@ -226,20 +231,43 @@ public class ElasticsearchClient {
         final String newIndex = getIndexName();
         final String oldIndex = getAliasIndex();
 
-        if (!newIndex.equals(oldIndex)) {
-            mLogger.info("Switching index alias: {}", aliasName);
+        if (newIndex.equals(oldIndex)) {
+            return;
+        }
 
-            final IndicesAliasesRequestBuilder aliasesRequest = mClient.admin().indices()
-                .prepareAliases();
+        mLogger.info("Switching index alias: {}", aliasName);
 
-            if (oldIndex != null) {
-                mLogger.info("Removing alias from index: {}", oldIndex);
-                aliasesRequest.removeAlias(oldIndex, aliasName);
-            }
+        final IndicesAliasesRequestBuilder aliasesRequest = mClient.admin().indices()
+            .prepareAliases();
 
-            mLogger.info("Adding alias to index: {}", newIndex);
+        final Set<String> aliases = new HashSet<>();
+
+        if (oldIndex == null) {
             aliasesRequest.addAlias(newIndex, aliasName);
+            aliases.add(aliasName);
+        }
+        else {
+            for (final ObjectCursor<List<AliasMetaData>> aliasMetaDataList : mClient.admin().indices()
+                    .prepareGetAliases().setIndices(oldIndex).get().getAliases().values()) {
+                for (final AliasMetaData aliasMetaData : aliasMetaDataList.value) {
+                    final String alias = aliasMetaData.alias();
 
+                    aliasesRequest.removeAlias(oldIndex, alias);
+                    aliases.add(alias);
+
+                    if (aliasMetaData.filteringRequired()) {
+                        aliasesRequest.addAlias(newIndex, alias,
+                                new String(aliasMetaData.getFilter().uncompressed()));
+                    }
+                    else {
+                        aliasesRequest.addAlias(newIndex, alias);
+                    }
+                }
+            }
+        }
+
+        if (!aliases.isEmpty()) {
+            mLogger.info("Adding aliases to index {}: {}", newIndex, aliases);
             aliasesRequest.get();
         }
     }
