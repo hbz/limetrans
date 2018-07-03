@@ -12,6 +12,10 @@
     </data>
   </entity>
 
+  <data name="collection" source="001">
+    <constant value="$[isil]"/>
+  </data>
+
   <combine name="@date1" value="${date1}">
     <if>
       <all>

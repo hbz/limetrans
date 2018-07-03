@@ -9,7 +9,6 @@
   <xi:include href="common/fields.xml"/>
   <xi:include href="common/personCreator.xml"/>
   <xi:include href="common/titleOther.xml"/>
-  <xi:include href="common/collection.xml"/>
 
   <rules xmlns="http://www.culturegraph.org/metamorph">
     <entity name="RSWK[]" flushWith="record">
