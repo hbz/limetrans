@@ -99,4 +99,26 @@
       <subfield code="a">Bradford book.</subfield>
     </datafield>
   </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">7-1 </controlfield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Theories of contemporary culture ;</subfield>
+      <subfield code="v">v. 23.</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Bradford book.</subfield>
+      <subfield code="v">v. 24.</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <controlfield tag="001">7-2 </controlfield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">Theories of contemporary culture ;</subfield>
+      <subfield code="v">v. 23.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">Bradford book.</subfield>
+      <subfield code="v">v. 24.</subfield>
+    </datafield>
+  </record>
 </collection>

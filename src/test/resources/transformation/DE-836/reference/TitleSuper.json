@@ -88,7 +88,8 @@
     "language" : [ "keine Angabe" ]
   },
   "TitleSuper" : [ {
-    "titleSuper" : [ "Theories of contemporary culture" ],
+    "titleSuper" : [ "Theories of contemporary culture" ]
+  }, {
     "titleSuper" : [ "Bradford book" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
@@ -110,7 +111,8 @@
     "language" : [ "keine Angabe" ]
   },
   "TitleSuper" : [ {
-    "titleSuper" : [ "Theories of contemporary culture" ],
+    "titleSuper" : [ "Theories of contemporary culture" ]
+  }, {
     "titleSuper" : [ "Bradford book" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
@@ -234,10 +236,61 @@
     "language" : [ "keine Angabe" ]
   },
   "TitleSuper" : [ {
-    "titleSuper" : [ "Wicksell lectures" ],
+    "titleSuper" : [ "Wicksell lectures" ]
+  }, {
     "titleSuper" : [ "Bradford book" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-836)7"
+  } ]
+}
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)7-1",
+    "isContextLocal" : "(DE-836)7-1"
+  },
+  "collection" : "DE-836",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Theories of contemporary culture" ]
+  }, {
+    "titleSuper" : [ "Bradford book" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "v. 23" ]
+  }, {
+    "volumeDesignation" : [ "v. 24" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)7-1"
+  } ]
+}
+{
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)7-2",
+    "isContextLocal" : "(DE-836)7-2"
+  },
+  "collection" : "DE-836",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Theories of contemporary culture" ]
+  }, {
+    "titleSuper" : [ "Bradford book" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "v. 23" ]
+  }, {
+    "volumeDesignation" : [ "v. 24" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)7-2"
   } ]
 }
