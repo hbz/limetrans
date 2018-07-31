@@ -396,12 +396,12 @@
 
   <!-- 4xx -->
   <entity name="TitleSuper[]" flushWith="record">
-    <entity name="" flushWith="record">
-      <if>
-        <none flushWith="record">
-          <data source="830??" />
-        </none>
-      </if>
+    <if>
+      <none flushWith="record">
+        <data source="830??" />
+      </none>
+    </if>
+    <entity name="" flushWith="490[01] " sameEntity="true" >
       <entity name="titleSuper[]" flushWith="490[01] " sameEntity="true">
         <call-macro name="regex-del-punctuation-end" dsource="490[01] .a" dname="" />
       </entity>
@@ -409,12 +409,12 @@
   </entity>
 
   <entity name="TitleSuperVolumeDesignation[]" flushWith="record">
-    <entity name="" flushWith="record">
-      <if>
-        <none flushWith="record">
-          <data source="830??" />
-        </none>
-      </if>
+    <if>
+      <none flushWith="record">
+        <data source="830??" />
+      </none>
+    </if>
+    <entity name="" flushWith="490[01] " sameEntity="true">
       <entity name="volumeDesignation[]" flushWith="490[01] " sameEntity="true">
         <call-macro name="regex-del-punctuation-end" dsource="490[01] .v" dname="" />
       </entity>
@@ -588,7 +588,7 @@
 
   <!-- 8xx -->
   <entity name="TitleSuper[]" flushWith="record">
-    <entity name="" flushWith="record">
+    <entity name="" flushWith="830 ?" sameEntity="true">
       <entity name="titleSuper[]" flushWith="830 ?" sameEntity="true">
         <call-macro name="regex-del-punctuation-end" dsource="830 ?.a" dname="" />
       </entity>
@@ -596,7 +596,7 @@
   </entity>
 
   <entity name="TitleSuperVolumeDesignation[]" flushWith="record">
-    <entity name="" flushWith="record">
+    <entity name="" flushWith="830 ?" sameEntity="true">
       <entity name="volumeDesignation[]" flushWith="830 ?" sameEntity="true">
         <call-macro name="regex-del-punctuation-end" dsource="830 ?.v" dname="" />
       </entity>
