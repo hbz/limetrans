@@ -26,6 +26,11 @@
           "pattern": "[^a-zA-Z 0-9]",
           "replacement": ""
         },
+        "ocn_normalizer" : {
+          "type": "pattern_replace",
+          "pattern": "^[^0-9]*0*",
+          "replacement": ""
+        },
         "squeeze_whitespace" : {
           "type": "pattern_replace",
           "pattern": " +",
@@ -145,6 +150,13 @@
             "keyword_normalizer",
             "squeeze_whitespace",
             "trim"
+          ]
+        },
+        "ocn" : {
+          "type" : "custom",
+          "tokenizer" : "keyword",
+          "filter" : [
+            "ocn_normalizer"
           ]
         },
         "german_phonebook_with_sortform" : {

@@ -32,6 +32,13 @@
           "type": "string",
           "index": "not_analyzed"
         },
+        "identifierAuthority=oclc": {
+          "type": "string",
+          "analyzer": "ocn",
+          "norms": {
+            "enabled": false
+          }
+        },
         "identifierAuthority=zdb": {
           "type": "string",
           "analyzer": "standardnumber",
@@ -109,9 +116,23 @@
         },
         "localCallNumber": {
           "type": "string",
-          "index": "not_analyzed"
+          "index": "not_analyzed",
+          "fields": {
+            // TODO: Promote when all users are migrated to HBZ::Indexsearch::Backend::HBZES::ES
+            "normalized": {
+              "type": "string",
+              "analyzer": "keyword_normalized",
+              "norms": {
+                "enabled": false
+              }
+            }
+          }
         },
         "subject": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "taxonomy": {
           "type": "string",
           "index": "not_analyzed"
         },
@@ -126,21 +147,21 @@
     },
     "xbib": {
       "properties": {
-        "taxonomy": {
-          "properties": {
-            "DE-A96": {
-              "properties": {
-                "text": {
-                  "type": "string",
-                  "index": "not_analyzed"
-                }
-              }
-            }
-          }
-        },
         "uid": {
           "type": "string",
           "index": "not_analyzed"
+        }
+      }
+    },
+    "Abstract": {
+      "properties": {
+        "abstract": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
         }
       }
     },
@@ -556,6 +577,18 @@
         }
       }
     },
+    "DescriptionOfCreationStatement" : {
+      "properties": {
+        "description": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
     "DescriptionOfEstimatedPublicationDate": {
       "properties": {
         "description": {
@@ -698,6 +731,20 @@
           "doc_values": false,
           "copy_to": [
             "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        }
+      }
+    },
+    "IdentifierOCLC": {
+      "properties": {
+        "identifierOCLC": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=oclc",
             "cql.allIndexes",
             "dc.identifier"
           ]
@@ -1356,6 +1403,18 @@
         }
       }
     },
+    "SecondaryEditionReproduction": {
+      "properties": {
+        "verifiedRelationIdentifier": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=mabwhole"
+          ]
+        }
+      }
+    },
     "SecondaryEditionSecondCreator": {
       "properties": {
         "secondaryEdition": {
@@ -1652,6 +1711,18 @@
           "copy_to": [
             "cql.allIndexes",
             "dc.subject"
+          ]
+        }
+      }
+    },
+    "SubjectGHBLocal": {
+      "properties": {
+        "subject": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "introx.localCallNumber"
           ]
         }
       }
