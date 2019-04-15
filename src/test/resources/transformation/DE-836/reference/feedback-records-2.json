@@ -16,6 +16,10 @@
     "language" : [ "Deutsch" ],
     "date" : [ "2015" ]
   },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "Language" : [ {
     "language" : "Deutsch",
     "languageSource" : "ger"
@@ -65,10 +69,14 @@
     "date" : "2016"
   },
   "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
     "language" : [ "Englisch" ],
     "date" : [ "2016" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
   },
   "Language" : [ {
     "language" : "Englisch",

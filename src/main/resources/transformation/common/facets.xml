@@ -269,9 +269,6 @@
         <data source="338  .b">
           <equals string="cd" />
         </data>
-        <data source="@facet_format">
-          <equals string="Online-Ressource" />
-        </data>
       </any>
     </if>
     <data source="001" />
@@ -1134,6 +1131,23 @@
   <entity name="dc" flushWith="record">
     <entity name="format[]" flushWith="record">
       <data name="" source="@facet_format" />
+      <combine name="" value="Elektronische Ressource">
+        <if>
+          <all>
+            <any>
+              <data source="@facet_format">
+                <equals string="Online-Ressource" />
+              </data>
+            </any>
+            <none>
+              <data source="@facet_format">
+                <equals string="Elektronische Ressource" />
+              </data>
+            </none>
+          </all>
+        </if>
+        <data source="001" />
+      </combine>
     </entity>
     <entity name="format[]">
       <if>
@@ -1179,6 +1193,43 @@
         <split delimiter="[,-]" />
         <regexp match="\d{4}" />
         <unique />
+      </data>
+    </entity>
+  </entity>
+
+  <entity name="introx" flushWith="record">
+    <entity name="access[]" flushWith="record">
+      <data name="" source="@facet_format">
+        <equals string="Online-Ressource" />
+        <constant value="online" />
+      </data>
+    </entity>
+    <entity name="access[]">
+      <if>
+        <none>
+          <data source="@facet_format">
+            <equals string="Online-Ressource" />
+          </data>
+        </none>
+      </if>
+      <data name="" source="001">
+        <constant value="local" />
+      </data>
+    </entity>
+
+    <entity name="carrier[]" flushWith="record">
+      <data name="" source="@facet_format">
+        <not-equals string="Online-Ressource" />
+      </data>
+    </entity>
+    <entity name="carrier[]">
+      <if>
+        <none>
+          <data source="@facet_format" />
+        </none>
+      </if>
+      <data name="" source="001">
+        <constant value="keine Angabe" />
       </data>
     </entity>
   </entity>

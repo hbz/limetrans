@@ -116,7 +116,15 @@
     },
     "introx": {
       "properties": {
+        "access": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
         "branch": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "carrier": {
           "type": "string",
           "index": "not_analyzed"
         },
