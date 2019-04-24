@@ -64,7 +64,10 @@
     "subjectTopicName" : "Experiment",
     "subjectIdentifier" : [ "(DE-588)4015999-1" ],
     "identifierGND" : [ "4015999-1" ]
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "ocn231018688"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -117,5 +120,8 @@
   "xbib" : [ {
     "uid" : "(DE-836)ocm45567891"
   } ],
-  "TypeMedia" : "Elektronische Ressource"
+  "TypeMedia" : "Elektronische Ressource",
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "ocm45567891"
+  }
 }

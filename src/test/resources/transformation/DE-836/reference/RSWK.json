@@ -11,7 +11,10 @@
   },
   "xbib" : [ {
     "uid" : "(DE-836)1"
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "1"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -31,7 +34,10 @@
     "subjectTopicName" : "Volkstheater",
     "subjectIdentifier" : [ "(DE-588)4130623-5" ],
     "identifierGND" : [ "4130623-5" ]
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "2"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -61,7 +67,10 @@
     "subjectGeoName" : "Solothurn <2000>",
     "subjectIdentifier" : [ "(DE-588c)12345", "(DE-588)4125858-8" ],
     "identifierGND" : [ "4125858-8" ]
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "3"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -94,7 +103,10 @@
     "subjectTitleName" : "De pictura praestantissima et nunquam satis laudata arte libri tres absolutissimi",
     "subjectIdentifier" : [ "(DE-588)4662291-3" ],
     "identifierGND" : [ "4662291-3" ]
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "4"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -123,7 +135,10 @@
     "subjectCorporateBodyName" : "Kupferstichkabinett",
     "subjectIdentifier" : [ "(DE-588)1008166-5" ],
     "identifierGND" : [ "1008166-5" ]
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "5"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -146,7 +161,10 @@
     "subjectGeoAddendum" : "Unna",
     "subjectIdentifier" : [ "(DE-588)2101426-7" ],
     "identifierGND" : [ "2101426-7" ]
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "6"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -164,7 +182,10 @@
   } ],
   "RSWK" : [ {
     "subjectChronological" : "Geschichte 2030"
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "7"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -182,5 +203,8 @@
   } ],
   "RSWK" : [ {
     "subjectGeoName" : "Entwicklungsländer"
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "8"
+  }
 }

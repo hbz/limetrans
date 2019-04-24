@@ -50,7 +50,10 @@
     "subjectTopicName" : "Kunsterziehung",
     "subjectIdentifier" : [ "(DE-588)4033637-2", "(uri)http://d-nb.info/gnd/4033637-2", "(DE-101)040336379" ],
     "identifierGND" : [ "4033637-2" ]
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "ocn930016469"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -104,5 +107,8 @@
   "TypeMedia" : "Elektronische Ressource",
   "TitleOther" : {
     "title" : [ "JOGSS" ]
+  },
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "ocn939922827"
   }
 }

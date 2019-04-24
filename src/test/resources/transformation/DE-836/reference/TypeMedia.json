@@ -12,7 +12,10 @@
   "xbib" : [ {
     "uid" : "(DE-836)1"
   } ],
-  "TypeMedia" : "Audio"
+  "TypeMedia" : "Audio",
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "1"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -28,7 +31,10 @@
   "xbib" : [ {
     "uid" : "(DE-836)2"
   } ],
-  "TypeMedia" : "Bild"
+  "TypeMedia" : "Bild",
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "2"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -44,7 +50,10 @@
   "xbib" : [ {
     "uid" : "(DE-836)3"
   } ],
-  "TypeMedia" : "Elektronische Ressource"
+  "TypeMedia" : "Elektronische Ressource",
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "3"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -60,7 +69,10 @@
   "xbib" : [ {
     "uid" : "(DE-836)4"
   } ],
-  "TypeMedia" : "Film, Dia, Video"
+  "TypeMedia" : "Film, Dia, Video",
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "4"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -75,7 +87,10 @@
   },
   "xbib" : [ {
     "uid" : "(DE-836)5"
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "5"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -90,7 +105,10 @@
   },
   "xbib" : [ {
     "uid" : "(DE-836)6"
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "6"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -105,7 +123,10 @@
   },
   "xbib" : [ {
     "uid" : "(DE-836)7"
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "7"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -121,7 +142,10 @@
   "xbib" : [ {
     "uid" : "(DE-836)8"
   } ],
-  "TypeMedia" : "Elektronische Ressource"
+  "TypeMedia" : "Elektronische Ressource",
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "8"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -136,7 +160,10 @@
   },
   "xbib" : [ {
     "uid" : "(DE-836)9"
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "9"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -152,5 +179,8 @@
   "xbib" : [ {
     "uid" : "(DE-836)10"
   } ],
-  "TypeMedia" : "Film, Dia, Video"
+  "TypeMedia" : "Film, Dia, Video",
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "10"
+  }
 }

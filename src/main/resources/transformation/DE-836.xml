@@ -10,4 +10,10 @@
   <xi:include href="common/personCreator.xml"/>
   <xi:include href="common/titleOther.xml"/>
   <xi:include href="common/RSWK.xml"/>
+
+  <rules xmlns="http://www.culturegraph.org/metamorph">
+    <entity name="IdentifierOCLC" flushWith="record">
+      <data name="identifierOCLC" source="001" />
+    </entity>
+  </rules>
 </metamorph>

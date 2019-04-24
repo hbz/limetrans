@@ -22,7 +22,10 @@
     "personRole" : [ "[Author]" ]
   }, {
     "personName" : "Gaehde, Joachim E."
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "1"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -50,7 +53,10 @@
   "PersonCreator" : [ {
     "personName" : "Braun, Almuth",
     "personRole" : [ "[Übers.]" ]
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "2"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -79,7 +85,10 @@
     "personBio" : "1926-",
     "personIdentifier" : [ "(DE-588)389666475", "(DE-588)129116726" ],
     "identifierGND" : [ "389666475", "129116726" ]
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "3"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -110,7 +119,10 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-836)4"
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "4"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -137,7 +149,10 @@
   }, {
     "personName" : "Donin, Richard Kurt",
     "personRole" : [ "[Bearb.]" ]
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "5"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -169,7 +184,10 @@
     "personNumbering" : "VIII",
     "personBio" : "1491-1547",
     "personTitle" : [ "King of England" ]
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "6"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -195,7 +213,10 @@
   } ],
   "PersonCreator" : [ {
     "personName" : "Nygaard, Kristen"
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "7"
+  }
 }
 {
   "RecordIdentifier" : {
@@ -219,5 +240,8 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-836)8"
-  } ]
+  } ],
+  "IdentifierOCLC" : {
+    "identifierOCLC" : "8"
+  }
 }
