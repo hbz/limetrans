@@ -31,10 +31,13 @@ Input is generally configured like this:
     "pattern" : "your-marc-xml-input-file.xml",
     "sort_by" : "lastmodified",
     "order" : "desc",
-    "max" : 1
+    "max" : 1,
+    "processor" : "MARC21"
   }
 }
 ```
+
+`MARCXML` is the default value for `'processor'` thus `'processor'` can be omitted when processing MARCXML data.
 
 ### Transformation
 
