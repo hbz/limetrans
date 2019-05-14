@@ -49,11 +49,13 @@
         "nameCorporate": {
           "type": "string",
           "analyzer": "default",
-          "search_analyzer": "search"
+          "search_analyzer": "search",
+          "store": true
         },
         "namePersonal": {
           "type": "string",
-          "analyzer": "unstemmed"
+          "analyzer": "unstemmed",
+          "store": true
         }
       }
     },
@@ -66,7 +68,8 @@
         "allIndexes": {
           "type": "string",
           "analyzer": "default",
-          "search_analyzer": "search"
+          "search_analyzer": "search",
+          "store": true
         }
       }
     },
@@ -90,17 +93,20 @@
         "publisher": {
           "type": "string",
           "analyzer": "default",
-          "search_analyzer": "search"
+          "search_analyzer": "search",
+          "store": true
         },
         "subject": {
           "type": "string",
           "analyzer": "default",
-          "search_analyzer": "search"
+          "search_analyzer": "search",
+          "store": true
         },
         "title": {
           "type": "string",
           "analyzer": "default",
-          "search_analyzer": "search"
+          "search_analyzer": "search",
+          "store": true
         },
         "type": {
           "type": "string",
