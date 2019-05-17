@@ -50,6 +50,10 @@ public class FileQueue implements Iterable<String> {
                 .setReceiver(new LineReader())
                 .setReceiver(new Marc21Decoder())),
 
+        MARC21RECORDS(aOpener -> aOpener
+                .setReceiver(new RecordReader())
+                .setReceiver(new Marc21Decoder())),
+
         MARCXML(aOpener -> aOpener
                 .setReceiver(new XmlDecoder())
                 .setReceiver(new MarcXmlHandler()));

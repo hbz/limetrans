@@ -95,6 +95,11 @@ public class LibraryMetadataTransformationTest {
     }
 
     @Test
+    public void testMarc21Records() throws IOException {
+        testEqualsReference("marc21records");
+    }
+
+    @Test
     public void testFormeta() throws IOException {
         testEqualsReference("formeta", "formeta");
     }
