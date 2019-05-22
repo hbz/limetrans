@@ -361,42 +361,44 @@ public class ElasticsearchClient {
     }
 
     private void setIndexSettings(final CreateIndexRequestBuilder aCreateRequest) {
-        final String settings = getIndexSettings();
-        if (settings != null) {
-            mLogger.debug("Applying settings: {}", settings);
-            aCreateRequest.setSettings(settings);
-        }
+        final Settings settings = getIndexSettings();
+
+        mLogger.debug("Applying settings: {}", settings.getAsStructuredMap());
+        aCreateRequest.setSettings(settings);
     }
 
     private void addIndexMapping(final CreateIndexRequestBuilder aCreateRequest) {
-        final String mapping = getIndexMapping();
-        if (mapping != null) {
-            mLogger.debug("Applying mapping: {}", mapping);
-            aCreateRequest.addMapping(getIndexType(), mapping);
-        }
+        final Settings mapping = getIndexMapping();
+
+        mLogger.debug("Applying mapping: {}", mapping.getAsStructuredMap());
+        aCreateRequest.addMapping(getIndexType(), mapping.getAsStructuredMap());
     }
 
-    private String getIndexSettings() {
-        return slurpFile("index.settings");
+    private Settings getIndexSettings() {
+        return Settings.settingsBuilder()
+            .put(settingsFromFile("index.settings"))
+            .put(mSettings.getAsSettings("index.settings-inline"))
+            .build();
     }
 
-    private String getIndexMapping() {
-        return slurpFile("index.mapping");
+    private Settings getIndexMapping() {
+        return settingsFromFile("index.mapping");
     }
 
-    private String slurpFile(final String aKey) {
+    private Settings settingsFromFile(final String aKey) {
         final String path = mSettings.get(aKey);
+        final Settings.Builder settingsBuilder = Settings.settingsBuilder();
 
-        if (path == null) {
-            return null;
+        if (path != null) {
+            try {
+                settingsBuilder.loadFromSource(Helpers.slurpFile(path, getClass()));
+            }
+            catch (final IOException e) {
+                throw new LimetransException("Failed to read `" + aKey + "' file", e);
+            }
         }
 
-        try {
-            return Helpers.slurpFile(path, getClass());
-        }
-        catch (final IOException e) {
-            throw new LimetransException("Failed to read `" + aKey + "' file", e);
-        }
+        return settingsBuilder.build();
     }
 
 }
