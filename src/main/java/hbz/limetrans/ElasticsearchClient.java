@@ -30,12 +30,12 @@ import java.util.Set;
 
 public class ElasticsearchClient {
 
-    private static final Logger mLogger = LogManager.getLogger();
-
     public static final String INDEX_NAME_KEY = "index.name";
     public static final String INDEX_TYPE_KEY = "index.type";
 
     public static final int MAX_BULK_ACTIONS = 100_000;
+
+    private static final Logger LOGGER = LogManager.getLogger();
 
     private final Settings mSettings;
     private final String mAliasName;
@@ -44,11 +44,11 @@ public class ElasticsearchClient {
 
     private BulkRequestBuilder mBulkRequest;
     private Client mClient;
-    private ElasticsearchServer mServer = null;
+    private ElasticsearchServer mServer;
     private int numRecords;
 
     public ElasticsearchClient(final Settings aSettings) {
-        mLogger.debug("Settings: {}", aSettings.getAsMap());
+        LOGGER.debug("Settings: {}", aSettings.getAsMap());
 
         mSettings = aSettings;
 
@@ -68,15 +68,15 @@ public class ElasticsearchClient {
 
         try {
             if (aSettings.getAsBoolean("update", false)) {
-                mLogger.info("Checking index: {}", getIndexName());
+                LOGGER.info("Checking index: {}", getIndexName());
                 checkIndex();
             }
             else if (aSettings.getAsBoolean("delete", false) || !indexExists()) {
-                mLogger.info("Setting up index: {}", getIndexName());
+                LOGGER.info("Setting up index: {}", getIndexName());
                 setupIndex();
             }
         }
-        catch (final RuntimeException e) {
+        catch (final RuntimeException e) { // checkstyle-disable-line IllegalCatch
             close();
             throw e;
         }
@@ -126,7 +126,7 @@ public class ElasticsearchClient {
         mClient.close();
 
         if (mServer != null) {
-            mLogger.info("Shutting down embedded server");
+            LOGGER.info("Shutting down embedded server");
             mServer.shutdown();
         }
     }
@@ -144,7 +144,7 @@ public class ElasticsearchClient {
             return;
         }
 
-        mLogger.info("Flushing bulk ({})", mBulkRequest.numberOfActions());
+        LOGGER.info("Flushing bulk ({})", mBulkRequest.numberOfActions());
 
         final BulkResponse bulkResponse = mBulkRequest.get();
 
@@ -181,7 +181,7 @@ public class ElasticsearchClient {
     }
 
     private void startBulk() {
-        mLogger.info("Starting bulk");
+        LOGGER.info("Starting bulk");
         mBulkRequest = mClient.prepareBulk();
     }
 
@@ -217,14 +217,14 @@ public class ElasticsearchClient {
             .format(LocalDate.now());
     }
 
-    private void switchIndex() {
+    private void switchIndex() { // checkstyle-disable-line ReturnCount
         final String aliasName = getAliasName();
         if (aliasName == null) {
             return;
         }
 
         if (numRecords == 0) {
-            mLogger.warn("No docs, skipping index switch");
+            LOGGER.warn("No docs, skipping index switch");
             return;
         }
 
@@ -235,7 +235,7 @@ public class ElasticsearchClient {
             return;
         }
 
-        mLogger.info("Switching index alias: {}", aliasName);
+        LOGGER.info("Switching index alias: {}", aliasName);
 
         final IndicesAliasesRequestBuilder aliasesRequest = mClient.admin().indices()
             .prepareAliases();
@@ -267,13 +267,13 @@ public class ElasticsearchClient {
         }
 
         if (!aliases.isEmpty()) {
-            mLogger.info("Adding aliases to index {}: {}", newIndex, aliases);
+            LOGGER.info("Adding aliases to index {}: {}", newIndex, aliases);
             aliasesRequest.get();
         }
     }
 
     private Client newClient(final String[] aHosts) {
-        mLogger.info("Connecting to server: {}", String.join(", ", aHosts));
+        LOGGER.info("Connecting to server: {}", String.join(", ", aHosts));
 
         final TransportClient client = TransportClient.builder()
             .settings(getClientSettings())
@@ -285,7 +285,7 @@ public class ElasticsearchClient {
     }
 
     private Client newClient(final String aDataDir) {
-        mLogger.info("Starting embedded server: {}", aDataDir);
+        LOGGER.info("Starting embedded server: {}", aDataDir);
 
         mServer = new ElasticsearchServer(aDataDir);
         return mServer.getClient();
@@ -305,13 +305,13 @@ public class ElasticsearchClient {
 
     private void deleteIndex() {
         if (indexExists()) {
-            mLogger.info("Deleting index: {}", getIndexName());
+            LOGGER.info("Deleting index: {}", getIndexName());
             mClient.admin().indices().prepareDelete(getIndexName()).get();
         }
     }
 
     private void createIndex() {
-        mLogger.info("Creating index: {}", getIndexName());
+        LOGGER.info("Creating index: {}", getIndexName());
 
         final CreateIndexRequestBuilder createRequest = mClient.admin().indices()
             .prepareCreate(getIndexName());
@@ -363,14 +363,14 @@ public class ElasticsearchClient {
     private void setIndexSettings(final CreateIndexRequestBuilder aCreateRequest) {
         final Settings settings = getIndexSettings();
 
-        mLogger.debug("Applying settings: {}", settings.getAsStructuredMap());
+        LOGGER.debug("Applying settings: {}", settings.getAsStructuredMap());
         aCreateRequest.setSettings(settings);
     }
 
     private void addIndexMapping(final CreateIndexRequestBuilder aCreateRequest) {
         final Settings mapping = getIndexMapping();
 
-        mLogger.debug("Applying mapping: {}", mapping.getAsStructuredMap());
+        LOGGER.debug("Applying mapping: {}", mapping.getAsStructuredMap());
         aCreateRequest.addMapping(getIndexType(), mapping.getAsStructuredMap());
     }
 

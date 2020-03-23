@@ -26,7 +26,7 @@ import java.util.function.Function;
 
 public class FileQueue implements Iterable<String> {
 
-    private enum Processor {
+    private enum Processor { // checkstyle-disable-line ClassDataAbstractionCoupling
 
         FORMETA(aOpener -> aOpener
                 .setReceiver(new FormetaRecordsReader())
@@ -70,7 +70,7 @@ public class FileQueue implements Iterable<String> {
 
     }
 
-    private static final Logger mLogger = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger();
 
     private final Queue<String> mQueue = new LinkedList<>();
     private final Processor mProcessor;
@@ -132,27 +132,27 @@ public class FileQueue implements Iterable<String> {
 
         for (final String fileName : this) {
             if (new File(fileName).length() > 0) {
-                mLogger.info("Processing {} file: {}", mProcessor, fileName);
+                LOGGER.info("Processing {} file: {}", mProcessor, fileName);
 
                 try {
                     opener.process(fileName);
                 }
-                catch (final Exception e) {
-                    mLogger.error("Processing failed:", e);
+                catch (final Exception e) { // checkstyle-disable-line IllegalCatch
+                    LOGGER.error("Processing failed:", e);
                 }
             }
             else {
-                mLogger.warn("Skipping empty {} file: {}", mProcessor, fileName);
+                LOGGER.warn("Skipping empty {} file: {}", mProcessor, fileName);
             }
         }
 
-        mLogger.info("Finished processing {} files", mProcessor);
+        LOGGER.info("Finished processing {} files", mProcessor);
 
         opener.closeStream();
     }
 
     private void add(final Settings aSettings) throws IOException {
-        mLogger.debug("Settings: {}", aSettings.getAsMap());
+        LOGGER.debug("Settings: {}", aSettings.getAsMap());
 
         if (aSettings.containsSetting("patterns")) {
             for (final String pattern : aSettings.getAsArray("patterns")) {
@@ -179,7 +179,7 @@ public class FileQueue implements Iterable<String> {
             .getPathFiles(aSettings.getAsInt("max", -1))
             .stream()
             .forEachOrdered(i -> {
-                mLogger.debug("Adding file: {}", i);
+                LOGGER.debug("Adding file: {}", i);
                 mQueue.add(i.toString());
             });
     }

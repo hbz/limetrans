@@ -18,8 +18,8 @@ public class Cli {
     private final String mArgsLine;
     private final String mProgram;
 
-    private CommandLine mCommandLine = null;
-    private boolean mHasOptions = false;
+    private CommandLine mCommandLine;
+    private boolean mHasOptions;
 
     public Cli(final String aProgram, final String aArgsLine) {
         mProgram = aProgram;
@@ -53,8 +53,11 @@ public class Cli {
             cmdLineSyntax += " " + mArgsLine;
         }
 
-        new HelpFormatter().printHelp(pw, 80, cmdLineSyntax,
-                mHasOptions ? "\nOptions:" : null, mOptions, 1, 3, null, true);
+        final int helpWidth = 80;
+        final int helpDescPad = 3;
+
+        new HelpFormatter().printHelp(pw, helpWidth, cmdLineSyntax,
+                mHasOptions ? "\nOptions:" : null, mOptions, 1, helpDescPad, null, true);
 
         pw.close();
     }

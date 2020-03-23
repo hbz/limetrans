@@ -1,14 +1,19 @@
 package hbz.limetrans.metamorph;
 
+import org.metafacture.metamorph.api.helpers.AbstractSimpleStatelessFunction;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 
-import org.metafacture.metamorph.api.helpers.AbstractSimpleStatelessFunction;
-
 public class ZDB extends AbstractSimpleStatelessFunction {
 
     private static final Pattern PATTERN = Pattern.compile("^(\\d{2,10})-?([\\dxX])\\b");
+
+    private static final int BASE = 10;
+
+    public ZDB() {
+    }
 
     @Override
     public String process(final String aValue) {
@@ -25,7 +30,7 @@ public class ZDB extends AbstractSimpleStatelessFunction {
 
                 final char chr = checkDigit.charAt(0);
 
-                if (checksum % 11 == (chr == 'X' ? 10 : chr - '0')) {
+                if (checksum % (BASE + 1) == (chr == 'X' ? BASE : chr - '0')) {
                     return number + checkDigit;
                 }
             }

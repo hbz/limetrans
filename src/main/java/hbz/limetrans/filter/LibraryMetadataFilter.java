@@ -63,13 +63,18 @@ public class LibraryMetadataFilter {
         if (filters.length > 0) {
             metamorph.with("<if>");
 
-            for (String filter : filters) {
-                String source = "*";
+            for (final String filterParam : filters) {
+                final String source;
+                final String filter;
 
-                final int index = filter.indexOf('=');
+                final int index = filterParam.indexOf('=');
                 if (index != -1) {
-                    source = filter.substring(0, index);
-                    filter = filter.substring(index + 1);
+                    source = filterParam.substring(0, index);
+                    filter = filterParam.substring(index + 1);
+                }
+                else {
+                    source = "*";
+                    filter = filterParam;
                 }
 
                 metamorph

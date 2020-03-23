@@ -2,11 +2,11 @@ package hbz.limetrans;
 
 import hbz.limetrans.util.LimetransException;
 
+import org.elasticsearch.common.settings.Settings;
 import org.metafacture.framework.annotations.Description;
 import org.metafacture.framework.helpers.DefaultObjectReceiver;
 import org.metafacture.framework.helpers.DefaultStreamReceiver;
 import org.metafacture.json.JsonEncoder;
-import org.elasticsearch.common.settings.Settings;
 
 @Description("Indexes an object into Elasticsearch")
 public class ElasticsearchIndexer extends DefaultStreamReceiver {
@@ -16,7 +16,7 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
     private final ElasticsearchClient mClient;
     private final JsonEncoder mJsonEncoder = new JsonEncoder();
 
-    private String mId = null;
+    private String mId;
 
     public ElasticsearchIndexer(final ElasticsearchClient aClient, final String aBulkAction) {
         mClient = aClient;
@@ -77,19 +77,29 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
     }
 
     private DefaultObjectReceiver<String> newBulkReceiver(final String aBulkAction) {
+        final DefaultObjectReceiver<String> receiver;
+
         switch (aBulkAction) {
             case "index":
-                return new IndexBulkReceiver();
+                receiver = new IndexBulkReceiver();
+                break;
             case "update":
-                return new UpdateBulkReceiver();
+                receiver = new UpdateBulkReceiver();
+                break;
             case "delete":
-                return new DeleteBulkReceiver();
+                receiver = new DeleteBulkReceiver();
+                break;
             default:
                 throw new LimetransException("Illegal bulk action: " + aBulkAction);
         }
+
+        return receiver;
     }
 
     public class IndexBulkReceiver extends DefaultObjectReceiver<String> {
+
+        public IndexBulkReceiver() {
+        }
 
         @Override
         public void process(final String json) {
@@ -100,6 +110,9 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
 
     public class UpdateBulkReceiver extends DefaultObjectReceiver<String> {
 
+        public UpdateBulkReceiver() {
+        }
+
         @Override
         public void process(final String json) {
             mClient.addBulkUpdate(mId, json);
@@ -108,6 +121,9 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
     }
 
     public class DeleteBulkReceiver extends DefaultObjectReceiver<String> {
+
+        public DeleteBulkReceiver() {
+        }
 
         @Override
         public void process(final String json) {

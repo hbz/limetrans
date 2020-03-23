@@ -1,8 +1,7 @@
 package hbz.limetrans.test;
 
 import org.metafacture.javaintegration.EventList.Event;
-
-import static org.metafacture.json.JsonEncoder.ARRAY_MARKER;
+import org.metafacture.json.JsonEncoder;
 
 public class EventStackEntry {
 
@@ -26,7 +25,7 @@ public class EventStackEntry {
     private final EventStackEntry mParent;
     private final Event mEvent;
 
-    private int mPosition = 0;
+    private int mPosition;
 
     public EventStackEntry(final Event aEvent, final EventStackEntry aParent) {
         mEvent = aEvent;
@@ -63,22 +62,26 @@ public class EventStackEntry {
         final String name = mEvent.getName();
         final String value = mEvent.getValue();
 
+        final Mismatch result;
+
         if (mEvent.getType() != event.getType()) {
-            return Mismatch.TYPE;
+            result = Mismatch.TYPE;
         }
         else if (name != null && !name.equals(event.getName())) {
-            return Mismatch.NAME;
+            result = Mismatch.NAME;
         }
         else if (value != null && !value.equals(event.getValue())) {
-            return Mismatch.VALUE;
+            result = Mismatch.VALUE;
         }
         else {
-            return null;
+            result = null;
         }
+
+        return result;
     }
 
     private void incrementPosition() {
-        if (mParent == null || mEvent.getName().endsWith(ARRAY_MARKER)) {
+        if (mParent == null || mEvent.getName().endsWith(JsonEncoder.ARRAY_MARKER)) {
             ++mPosition;
         }
     }

@@ -3,11 +3,10 @@ package hbz.limetrans.test;
 import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.LimetransException;
 
-import org.metafacture.javaintegration.EventList;
-import org.metafacture.metamorph.Metamorph;
-
 import org.junit.Assert;
 import org.junit.runners.model.Statement;
+import org.metafacture.javaintegration.EventList;
+import org.metafacture.metamorph.Metamorph;
 
 import java.io.IOException;
 
@@ -45,7 +44,7 @@ public class TransformationTestCase extends Statement {
 
         final FileQueue inputQueue;
         try {
-            inputQueue = new FileQueue(ext.equals("xml") ? "MARCXML" : ext.toUpperCase(), aFile);
+            inputQueue = new FileQueue("xml".equals(ext) ? "MARCXML" : ext.toUpperCase(), aFile);
         }
         catch (final IOException e) {
             throw new LimetransException(e);

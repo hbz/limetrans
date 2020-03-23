@@ -17,9 +17,9 @@ import org.xbib.common.settings.Settings;
 
 import java.io.IOException;
 
-public class LibraryMetadataTransformation {
+public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDataAbstractionCoupling
 
-    private static final Logger mLogger = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger();
 
     private final FileQueue mInputQueue;
     private final Settings mElasticsearchSettings;
@@ -30,7 +30,7 @@ public class LibraryMetadataTransformation {
     private final boolean mPrettyPrinting;
 
     public LibraryMetadataTransformation(final Settings aSettings) throws IOException {
-        mLogger.debug("Settings: {}", aSettings.getAsMap());
+        LOGGER.debug("Settings: {}", aSettings.getAsMap());
 
         mInputQueue = new FileQueue(aSettings.getGroups("input").get("queue"));
 
@@ -55,7 +55,7 @@ public class LibraryMetadataTransformation {
     }
 
     public void process() {
-        mLogger.info("Starting transformation: {}", mRulesPath);
+        LOGGER.info("Starting transformation: {}", mRulesPath);
 
         final Metamorph metamorph = new Metamorph(mRulesPath);
         final StreamTee streamTee = new StreamTee();
@@ -71,7 +71,7 @@ public class LibraryMetadataTransformation {
 
         mInputQueue.process(metamorph, mNormalizeUnicode);
 
-        mLogger.info("Finished transformation ({})", counter);
+        LOGGER.info("Finished transformation ({})", counter);
     }
 
     public int getInputQueueSize() {
@@ -83,7 +83,7 @@ public class LibraryMetadataTransformation {
             return;
         }
 
-        mLogger.info("Writing Formeta file: {}", mFormetaPath);
+        LOGGER.info("Writing Formeta file: {}", mFormetaPath);
 
         final FormetaEncoder formetaEncoder = new FormetaEncoder();
         formetaEncoder.setStyle(mPrettyPrinting ?
@@ -98,7 +98,7 @@ public class LibraryMetadataTransformation {
             return;
         }
 
-        mLogger.info("Writing JSON file: {}", mJsonPath);
+        LOGGER.info("Writing JSON file: {}", mJsonPath);
 
         final JsonEncoder jsonEncoder = new JsonEncoder();
         jsonEncoder.setPrettyPrinting(mPrettyPrinting);
@@ -112,7 +112,7 @@ public class LibraryMetadataTransformation {
             return;
         }
 
-        mLogger.info("Indexing into Elasticsearch: {}", mElasticsearchSettings.getAsMap());
+        LOGGER.info("Indexing into Elasticsearch: {}", mElasticsearchSettings.getAsMap());
 
         final RecordIdChanger recordIdChanger = new RecordIdChanger();
         final String idKey = mElasticsearchSettings.get("index.idKey");
