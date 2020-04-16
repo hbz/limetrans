@@ -52,6 +52,8 @@ public class ElasticsearchClient {
 
         mSettings = aSettings;
 
+        reset();
+
         final String indexName = aSettings.get(INDEX_NAME_KEY);
         final String timeWindow = getTimeWindow();
 
@@ -60,11 +62,11 @@ public class ElasticsearchClient {
             mAliasName = indexName;
         }
         else {
-            mIndexName = indexName;
-            mAliasName = null;
-        }
+            final String concreteName = getAliasIndex(indexName);
 
-        reset();
+            mIndexName = concreteName != null ? concreteName : indexName;
+            mAliasName = concreteName != null ? indexName : null;
+        }
 
         try {
             if (aSettings.getAsBoolean("update", false)) {
@@ -197,12 +199,9 @@ public class ElasticsearchClient {
         return mAliasName;
     }
 
-    private String getAliasIndex() {
-        final String index = getAliasName();
+    private String getAliasIndex(final String index) {
+        final Pattern pattern = Pattern.compile("^" + Pattern.quote(index) + "\\d+$");
         final Set<String> indices = new HashSet<>();
-
-        final String timeWindow = mSettings.get("index.timewindow");
-        final Pattern pattern = Pattern.compile("^" + Pattern.quote(index) + "\\d{" + timeWindow.length() + "}$");
 
         for (final ObjectCursor<String> indexName : mClient.admin().indices()
                 .prepareGetAliases(index).get().getAliases().keys()) {
@@ -245,7 +244,7 @@ public class ElasticsearchClient {
         }
 
         final String newIndex = getIndexName();
-        final String oldIndex = getAliasIndex();
+        final String oldIndex = getAliasIndex(getAliasName());
 
         if (newIndex.equals(oldIndex)) {
             return;
@@ -355,7 +354,6 @@ public class ElasticsearchClient {
 
     private Settings getClientSettings() {
         return Settings.settingsBuilder()
-            .put(INDEX_NAME_KEY, getIndexName())
             .put(INDEX_TYPE_KEY, getIndexType())
             .put("cluster.name", mSettings.get("cluster", "elasticsearch"))
             .build();
