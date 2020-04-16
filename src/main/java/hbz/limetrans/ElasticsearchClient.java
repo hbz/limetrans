@@ -7,7 +7,6 @@ import com.carrotsearch.hppc.cursors.ObjectCursor;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.elasticsearch.action.admin.indices.alias.IndicesAliasesRequestBuilder;
-import org.elasticsearch.action.admin.indices.alias.get.GetAliasesResponse;
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.action.bulk.BulkResponse;
@@ -27,6 +26,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 public class ElasticsearchClient {
 
@@ -198,11 +198,27 @@ public class ElasticsearchClient {
     }
 
     private String getAliasIndex() {
-        final GetAliasesResponse response = mClient.admin().indices()
-            .prepareGetAliases(getAliasName()).get();
+        final String index = getAliasName();
+        final Set<String> indices = new HashSet<>();
 
-        return response.getAliases().isEmpty() ? null : response
-            .getAliases().keys().iterator().next().value;
+        final String timeWindow = mSettings.get("index.timewindow");
+        final Pattern pattern = Pattern.compile("^" + Pattern.quote(index) + "\\d{" + timeWindow.length() + "}$");
+
+        for (final ObjectCursor<String> indexName : mClient.admin().indices()
+                .prepareGetAliases(index).get().getAliases().keys()) {
+            if (pattern.matcher(indexName.value).matches()) {
+                indices.add(indexName.value);
+            }
+        }
+
+        switch (indices.size()) {
+            case 0:
+                return null;
+            case 1:
+                return indices.iterator().next();
+            default:
+                throw new RuntimeException(index + ": too many indices: " + indices);
+        }
     }
 
     private String getTimeWindow() {
