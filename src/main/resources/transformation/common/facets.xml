@@ -1130,7 +1130,9 @@
 
   <entity name="dc" flushWith="record">
     <entity name="format[]" flushWith="record">
-      <data name="" source="@facet_format" />
+      <data name="" source="@facet_format">
+        <unique/>
+      </data>
       <combine name="" value="Elektronische Ressource">
         <if>
           <all>
@@ -1202,6 +1204,7 @@
       <data name="" source="@facet_format">
         <equals string="Online-Ressource" />
         <constant value="online" />
+        <unique/>
       </data>
     </entity>
     <entity name="access[]">

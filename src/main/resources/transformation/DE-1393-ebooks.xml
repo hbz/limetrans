@@ -5,9 +5,24 @@
   </vars>
   <xi:include href="macros.xml"/>
   <xi:include href="maps.xml"/>
+
+  <rules xmlns="http://www.culturegraph.org/metamorph">
+    <data name="@facet_format" source="001">
+      <constant value="Online-Ressource" />
+    </data>
+  </rules>
+
   <xi:include href="common/facets.xml"/>
   <xi:include href="common/fields.xml"/>
   <xi:include href="common/personCreator.xml"/>
   <xi:include href="common/titleOther.xml"/>
   <xi:include href="common/RSWK.xml"/>
+
+  <rules xmlns="http://www.culturegraph.org/metamorph">
+    <choose name="TypeMedia" flushWith="record">
+      <data source="@facet_format">
+        <occurrence only="1" />
+      </data>
+    </choose>
+  </rules>
 </metamorph>
