@@ -35,6 +35,16 @@ public class LibraryMetadataFilterTest {
     }
 
     @Test
+    public void testPresence() throws IOException {
+        testEqualsReference("presence", "@7102 .a");
+    }
+
+    @Test
+    public void testAbsence() throws IOException {
+        testEqualsReference("absence", "!7102 .a");
+    }
+
+    @Test
     public void testRecordId() throws IOException {
         testEqualsReference("record-id", "001=ocm44959477");
     }
@@ -74,6 +84,7 @@ public class LibraryMetadataFilterTest {
         settingsBuilder.putArray("input", new String[]{aInput});
         settingsBuilder.putArray("filter", aFilters);
         settingsBuilder.put("output", OUTPUT_PATH);
+        settingsBuilder.put("pretty", true);
 
         return new LibraryMetadataFilter(settingsBuilder.build());
     }

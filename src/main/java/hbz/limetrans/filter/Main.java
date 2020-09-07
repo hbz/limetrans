@@ -14,7 +14,10 @@ public final class Main {
         final Cli cli = new Cli(Main.class, "FILE...")
             .addOption("f", "filter", true, "Filter condition")
             .addOption("h", "help", false, "Print help output")
-            .addOption("o", "output", true, "Output file (default: STDOUT)");
+            .addOption("O", "operator", true, "Logical operator (all, any (default), none)")
+            .addOption("o", "output", true, "Output file (default: STDOUT)")
+            .addOption("P", "pretty", false, "Pretty-print JSON output")
+            .addOption("p", "processor", true, "Input processor (default: MARCXML)");
 
         if (cli.parse(aArgs)) {
             new LibraryMetadataFilter(cli.getAsSettings("input")).process();

@@ -17,22 +17,24 @@ public class LibraryMetadataFilter {
     private final FileQueue mInputQueue;
     private final Metamorph mMorphDef;
     private final String mOutputPath;
+    private final boolean mPretty;
 
     public LibraryMetadataFilter(final Settings aSettings) throws IOException {
-        mInputQueue = new FileQueue("MARCXML", aSettings.getAsArray("input"));
+        mInputQueue = new FileQueue(aSettings.get("processor", "MARCXML"), aSettings.getAsArray("input"));
 
         if (mInputQueue.isEmpty()) {
             throw new IllegalArgumentException("Could not process limetrans filter: no input specified.");
         }
 
+        mMorphDef = buildMorphDef(aSettings.get("operator", "any"), aSettings.getAsArray("filter"));
         mOutputPath = aSettings.get("output");
-        mMorphDef = buildMorphDef(aSettings);
+        mPretty = aSettings.getAsBoolean("pretty", false);
     }
 
     public void process() {
         final Filter filter = new Filter(mMorphDef);
         final JsonEncoder encoder = new JsonEncoder();
-        encoder.setPrettyPrinting(true);
+        encoder.setPrettyPrinting(mPretty);
 
         filter
             .setReceiver(encoder)
@@ -47,6 +49,8 @@ public class LibraryMetadataFilter {
     /*
      * Filter examples:
      *
+     * - "@001": Record with an ID.
+     * - "!001": Record with no ID.
      * - "001=ocn958002247": Record with ID "ocn958002247"
      * - "85642.3=Inhaltstext": Record(s) with field "85642.3" equal to "Inhaltstext"
      * - "85642.3=~Inhaltstext": Record(s) with field "85642.3" matching "Inhaltstext"
@@ -54,45 +58,59 @@ public class LibraryMetadataFilter {
      * - "~Inhaltstext": Record(s) with any field matching "Inhaltstext"
      */
 
-    private Metamorph buildMorphDef(final Settings aSettings) {
-        final InlineMorph metamorph = InlineMorph.in(this)
+    public static Metamorph buildMorphDef(final String aOperator, final String... aFilters) {
+        final InlineMorph metamorph = InlineMorph.in(LibraryMetadataFilter.class)
             .with("<rules>")
             .with("<entity name=\"\" flushWith=\"record\">");
 
-        final String[] filters = aSettings.getAsArray("filter");
-        if (filters.length > 0) {
+        if (aFilters.length > 0) {
             metamorph.with("<if>");
+            metamorph.with("<" + aOperator + ">");
 
-            for (final String filterParam : filters) {
-                final String source;
-                final String filter;
-
-                final int index = filterParam.indexOf('=');
-                if (index != -1) {
-                    source = filterParam.substring(0, index);
-                    filter = filterParam.substring(index + 1);
+            for (final String filterParam : aFilters) {
+                if (filterParam.startsWith("@")) {
+                    metamorph
+                        .with("<data source=\"" + filterParam.substring(1) + "\" />");
+                }
+                else if (filterParam.startsWith("!")) {
+                    metamorph
+                        .with("<none>")
+                        .with("<data source=\"" + filterParam.substring(1) + "\" />")
+                        .with("</none>");
                 }
                 else {
-                    source = "*";
-                    filter = filterParam;
-                }
+                    final String source;
+                    final String filter;
 
-                metamorph
-                    .with("<data source=\"" + source + "\">")
-                    .with(filter.startsWith("~") ?
-                            "<regexp match=\"" + filter.substring(1) + "\" />" :
-                            "<equals string=\"" + filter + "\" />")
-                    .with("</data>");
+                    final int index = filterParam.indexOf('=');
+                    if (index != -1) {
+                        source = filterParam.substring(0, index);
+                        filter = filterParam.substring(index + 1);
+                    }
+                    else {
+                        source = "*";
+                        filter = filterParam;
+                    }
+
+                    metamorph
+                        .with("<data source=\"" + source + "\">")
+                        .with(filter.startsWith("~") ?
+                                "<regexp match=\"" + filter.substring(1) + "\" />" :
+                                "<equals string=\"" + filter + "\" />")
+                        .with("</data>");
+                }
             }
 
+            metamorph.with("</" + aOperator + ">");
             metamorph.with("</if>");
         }
 
-        return metamorph
+        metamorph
             .with("<data source=\"001\" />")
             .with("</entity>")
-            .with("</rules>")
-            .create();
+            .with("</rules>");
+
+        return metamorph.create();
     }
 
 }
