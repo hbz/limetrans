@@ -23,6 +23,9 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.function.Function;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Stream;
 
 public class FileQueue implements Iterable<String> {
 
@@ -71,6 +74,8 @@ public class FileQueue implements Iterable<String> {
     }
 
     private static final Logger LOGGER = LogManager.getLogger();
+
+    private static final String GROUP_MARKER = "%GROUP_MARKER%";
 
     private final Queue<String> mQueue = new LinkedList<>();
     private final Processor mProcessor;
@@ -164,24 +169,72 @@ public class FileQueue implements Iterable<String> {
         }
     }
 
-    private void add(final Settings aSettings, final String pattern) throws IOException {
+    private void add(final Settings aSettings, final String aPattern) throws IOException {
+        final String pattern;
+
+        if (aPattern != null) {
+            final int index = aPattern.indexOf(GROUP_MARKER);
+            if (index != -1) {
+                final String prefix = aPattern.substring(0, index);
+                final String suffix = aPattern.substring(index + GROUP_MARKER.length());
+
+                final String groupPattern = prefix + "*" + suffix;
+                LOGGER.debug("Finding groups: {}", groupPattern);
+
+                final Finder.PathFile file = find(aSettings, groupPattern).reduce(null, (a, b) -> b);
+                if (file != null) {
+                    // FIXME: Support bracket and brace expressions (`[A-Z]*.{java,class}`)
+                    final Pattern p = Pattern.compile(aPattern
+                            .replaceAll("[.+()]", "\\\\$0")
+                            .replace("*", ".*")
+                            .replace("?", ".")
+                            .replace(GROUP_MARKER, "(.*)"));
+
+                    final String name = file.getPath().getFileName().toString();
+                    LOGGER.debug("Extracting group: {}: {}", p, name);
+
+                    final Matcher m = p.matcher(name);
+                    if (m.matches()) {
+                        pattern = prefix + m.group(1) + suffix;
+                    }
+                    else {
+                        pattern = null;
+                    }
+                }
+                else {
+                    pattern = null;
+                }
+            }
+            else {
+                pattern = aPattern;
+            }
+        }
+        else {
+            pattern = null;
+        }
+
         if (pattern == null) {
             return;
         }
 
+        LOGGER.debug("Finding pattern: {}", pattern);
+
+        find(aSettings, pattern).forEachOrdered(i -> {
+            LOGGER.debug("Adding file: {}", i);
+            mQueue.add(i.toString());
+        });
+    }
+
+    private Stream<Finder.PathFile> find(final Settings aSettings, final String aPattern) throws IOException {
         final String path = aSettings.get("path");
 
-        new Finder().find(
+        return new Finder().find(
                 aSettings.get("base"), aSettings.get("basepattern"),
-                path == null ? "." : path, pattern)
+                path == null ? "." : path, aPattern)
             .sortBy(aSettings.get("sort_by", "lastmodified"))
             .order(aSettings.get("order", "asc"))
             .getPathFiles(aSettings.getAsInt("max", -1))
-            .stream()
-            .forEachOrdered(i -> {
-                LOGGER.debug("Adding file: {}", i);
-                mQueue.add(i.toString());
-            });
+            .stream();
     }
 
 }
