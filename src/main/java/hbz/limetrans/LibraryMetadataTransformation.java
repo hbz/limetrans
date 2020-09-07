@@ -1,5 +1,6 @@
 package hbz.limetrans;
 
+import hbz.limetrans.filter.LibraryMetadataFilter;
 import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.Helpers;
 
@@ -10,6 +11,7 @@ import org.metafacture.formeta.formatter.FormatterStyle;
 import org.metafacture.io.ObjectWriter;
 import org.metafacture.json.JsonEncoder;
 import org.metafacture.mangling.RecordIdChanger;
+import org.metafacture.metamorph.Filter;
 import org.metafacture.metamorph.Metamorph;
 import org.metafacture.plumbing.StreamTee;
 import org.metafacture.statistics.Counter;
@@ -23,9 +25,11 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
     private final FileQueue mInputQueue;
     private final Settings mElasticsearchSettings;
+    private final String mFilterOperator;
     private final String mFormetaPath;
     private final String mJsonPath;
     private final String mRulesPath;
+    private final String[] mFilter;
     private final boolean mNormalizeUnicode;
     private final boolean mPrettyPrinting;
 
@@ -50,6 +54,8 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             throw new IllegalArgumentException("Could not process limetrans: no output specified.");
         }
 
+        mFilter = aSettings.getAsArray("filter");
+        mFilterOperator = aSettings.get("filterOperator", "any");
         mNormalizeUnicode = aSettings.getAsBoolean("normalize-unicode", true);
         mRulesPath = Helpers.getPath(aSettings.get("transformation-rules"), getClass());
     }
@@ -69,7 +75,15 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             .setReceiver(counter)
             .setReceiver(streamTee);
 
-        mInputQueue.process(metamorph, mNormalizeUnicode);
+        if (mFilter.length > 0) {
+            final Filter filter = new Filter(LibraryMetadataFilter.buildMorphDef(mFilterOperator, mFilter));
+            filter.setReceiver(metamorph);
+
+            mInputQueue.process(filter, mNormalizeUnicode);
+        }
+        else {
+            mInputQueue.process(metamorph, mNormalizeUnicode);
+        }
 
         LOGGER.info("Finished transformation ({})", counter);
     }
