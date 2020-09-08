@@ -18,12 +18,15 @@ import org.metafacture.statistics.Counter;
 import org.xbib.common.settings.Settings;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDataAbstractionCoupling
 
     private static final Logger LOGGER = LogManager.getLogger();
 
     private final FileQueue mInputQueue;
+    private final Map<String, String> mVars = new HashMap<>();
     private final Settings mElasticsearchSettings;
     private final String mFilterOperator;
     private final String mFormetaPath;
@@ -58,12 +61,16 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
         mFilterOperator = aSettings.get("filterOperator", "any");
         mNormalizeUnicode = aSettings.getAsBoolean("normalize-unicode", true);
         mRulesPath = Helpers.getPath(aSettings.get("transformation-rules"), getClass());
+
+        if (aSettings.containsSetting("isil")) {
+            mVars.put("isil", aSettings.get("isil"));
+        }
     }
 
     public void process() {
         LOGGER.info("Starting transformation: {}", mRulesPath);
 
-        final Metamorph metamorph = new Metamorph(mRulesPath);
+        final Metamorph metamorph = new Metamorph(mRulesPath, mVars);
         final StreamTee streamTee = new StreamTee();
         final Counter counter = new Counter();
 
