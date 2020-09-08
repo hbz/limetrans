@@ -40,7 +40,6 @@
         <module name="EmptyStatement"/>
         <module name="EqualsAvoidNull"/>
         <module name="EqualsHashCode"/>
-        <module name="ExecutableStatementCount"/>
         <module name="ExplicitInitialization"/>
         <module name="FallThrough"/>
         <module name="FinalLocalVariable">
@@ -84,10 +83,6 @@
         <module name="MissingSwitchDefault"/>
         <module name="ModifiedControlVariable"/>
         <module name="ModifierOrder"/>
-        <module name="MultipleStringLiterals">
-            <property name="allowedDuplicates" value="2"/>
-            <property name="ignoreStringsRegexp" value="^&quot;.?.?&quot;$"/>
-        </module>
         <module name="MultipleVariableDeclarations"/>
         <module name="MutableException"/>
         <module name="NeedBraces"/>
