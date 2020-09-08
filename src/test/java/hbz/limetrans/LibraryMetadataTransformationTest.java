@@ -169,10 +169,8 @@ public class LibraryMetadataTransformationTest {
         try {
             getLimetrans(aName).process();
 
-            assertEquals(getReference(aName, "json"), client.getClient().prepareGet(
-                        settings.get(ElasticsearchClient.INDEX_NAME_KEY),
-                        settings.get(ElasticsearchClient.INDEX_TYPE_KEY),
-                        aId).get().getSourceAsString());
+            assertEquals(getReference(aName, "json"), client.getClient()
+                    .prepareGet(client.getIndexName(), client.getIndexType(), aId).get().getSourceAsString());
         }
         finally {
             client.close();

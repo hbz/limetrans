@@ -30,12 +30,12 @@ import java.util.regex.Pattern;
 
 public class ElasticsearchClient {
 
-    public static final String INDEX_NAME_KEY = "index.name";
-    public static final String INDEX_TYPE_KEY = "index.type";
-
     public static final int MAX_BULK_ACTIONS = 100_000;
 
     private static final Logger LOGGER = LogManager.getLogger();
+
+    private static final String INDEX_NAME_KEY = "index.name";
+    private static final String INDEX_TYPE_KEY = "index.type";
 
     private final Settings mSettings;
     private final String mAliasName;
@@ -54,7 +54,7 @@ public class ElasticsearchClient {
 
         reset();
 
-        final String indexName = aSettings.get(INDEX_NAME_KEY);
+        final String indexName = aSettings.get(INDEX_NAME_KEY).toLowerCase();
         final String timeWindow = getTimeWindow();
 
         if (timeWindow != null) {
@@ -187,11 +187,11 @@ public class ElasticsearchClient {
         mBulkRequest = mClient.prepareBulk();
     }
 
-    private String getIndexType() {
+    public String getIndexType() {
         return mSettings.get(INDEX_TYPE_KEY);
     }
 
-    private String getIndexName() {
+    public String getIndexName() {
         return mIndexName;
     }
 
