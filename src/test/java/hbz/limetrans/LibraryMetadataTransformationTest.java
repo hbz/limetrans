@@ -127,6 +127,21 @@ public class LibraryMetadataTransformationTest {
     }
 
     @Test
+    public void testAlmaHBZ() throws IOException {
+        testAlmaEqualsReference("hbz");
+    }
+
+    @Test
+    public void testAlmaA96() throws IOException {
+        testAlmaEqualsReference("a96");
+    }
+
+    @Test
+    public void testAlma468() throws IOException {
+        testAlmaEqualsReference("468");
+    }
+
+    @Test
     public void testElasticsearch() throws IOException {
         testElasticsearchEqualsReference("elasticsearch", "");
     }
@@ -146,6 +161,10 @@ public class LibraryMetadataTransformationTest {
     private void testInputQueueSize(final String aName, final int aSize) throws IOException {
         final LibraryMetadataTransformation limetrans = getLimetrans("input-queue-" + aName);
         assertEquals("Input queue size mismatch: " + aName, aSize, limetrans.getInputQueueSize());
+    }
+
+    private void testAlmaEqualsReference(final String aName) throws IOException {
+        testEqualsReference("alma-" + aName, "json");
     }
 
     private void testEqualsReference(final String aName) throws IOException {

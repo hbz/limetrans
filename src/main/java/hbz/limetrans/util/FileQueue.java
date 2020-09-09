@@ -11,6 +11,7 @@ import org.metafacture.framework.StreamReceiver;
 import org.metafacture.io.FileOpener;
 import org.metafacture.io.LineReader;
 import org.metafacture.io.RecordReader;
+import org.metafacture.io.TarReader;
 import org.metafacture.json.JsonDecoder;
 import org.metafacture.strings.StreamUnicodeNormalizer;
 import org.metafacture.xml.XmlDecoder;
@@ -37,6 +38,16 @@ import java.util.stream.Stream;
 public class FileQueue implements Iterable<String> {
 
     private enum Processor { // checkstyle-disable-line ClassDataAbstractionCoupling
+
+        ALMAXML(aOpener -> {
+            final MarcXmlHandler handler = new MarcXmlHandler();
+            handler.setNamespace("");
+
+            return aOpener
+                .setReceiver(new TarReader())
+                .setReceiver(new XmlDecoder())
+                .setReceiver(handler);
+        }),
 
         FORMETA(aOpener -> aOpener
                 .setReceiver(new FormetaRecordsReader())

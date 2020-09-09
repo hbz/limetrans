@@ -1,0 +1,168 @@
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)99366597115306441"
+  },
+  "dc" : {
+    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Englisch" ]
+  },
+  "introx" : {
+    "access" : [ "online" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMMS" : "99366597115306441",
+    "identifierMMSIZ" : "9915810639006447",
+    "identifierPID" : "5354767020006447"
+  },
+  "DateFirst" : {
+    "date" : "1867"
+  },
+  "DateLast" : {
+    "date" : "1867"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Olive Wreath: A Monthly Magazine, Devoted to Odd Fellowship & Its Literature (via EBSCO Host)"
+  } ],
+  "PublisherName" : [ {
+    "name" : [ "American Antiquarian Society Historical Periodicals via EBSCO Host" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://www.bibliothek.uni-regensburg.de/ezeit/?2241653",
+    "nonpublicnote" : "EZB"
+  }, {
+    "uri" : "http://digitale-objekte.hbz-nrw.de/storage/2007/11/27/file_131/2235259.pdf",
+    "relatedto" : "Inhaltsverzeichnis"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99366597115306441"
+  }, {
+    "uid" : "(DE-468)9915810639006447"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "TitleOther" : {
+    "title" : [ "Olive Wreath" ]
+  }
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)99366597114806441"
+  },
+  "dc" : {
+    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Englisch" ]
+  },
+  "introx" : {
+    "access" : [ "online" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMMS" : "99366597114806441",
+    "identifierMMSIZ" : "9915810638506447",
+    "identifierPID" : "5354767080006447"
+  },
+  "DateFirst" : {
+    "date" : "1866"
+  },
+  "DateLast" : {
+    "date" : "1866"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Olio: A Monthly Magazine for Railroad & Steamboat Reading (via EBSCO Host)"
+  } ],
+  "PublisherName" : [ {
+    "name" : [ "American Antiquarian Society Historical Periodicals via EBSCO Host" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99366597114806441"
+  }, {
+    "uid" : "(DE-468)9915810638506447"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "TitleOther" : {
+    "title" : [ "Olio" ]
+  }
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)99366599897006441"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Manfred Hegger, Hans Drexler, Martin Zeumer"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2014" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMMS" : "99366599897006441",
+    "identifierMMSIZ" : "9915811024706447",
+    "identifierPID" : "5354967650006447"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3-0356-1246-3" ]
+  }, {
+    "identifierISBN" : [ "3-0356-1160-2" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Hegger, Manfred",
+    "personRole" : [ "[author.]" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Materialität"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Basel, Schweiz" ],
+    "name" : [ "Birkhäuser" ],
+    "chronology" : [ "2014" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2014" ]
+  },
+  "Extent" : {
+    "extent" : "1 online resource (87 pages) : illustrations."
+  },
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "3-0356-0302-2" ]
+  } ],
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Basics (Basel, Switzerland)" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99366599897006441"
+  }, {
+    "uid" : "(DE-468)9915811024706447"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "PersonCreator" : [ {
+    "personName" : "Drexler, Hans",
+    "personRole" : [ "[author.]" ]
+  }, {
+    "personName" : "Zeumer, Martin",
+    "personRole" : [ "[author.]" ]
+  } ],
+  "TitleOther" : {
+    "title" : [ "Basics entwerfen materialität" ]
+  }
+}
