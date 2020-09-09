@@ -13,7 +13,7 @@
   </entity>
 
   <data name="collection" source="001">
-    <constant value="$[isil]"/>
+    <constant value="$[isil]" />
   </data>
 
   <combine name="@date1" value="${date1}">
@@ -33,7 +33,9 @@
     </data>
   </combine>
   <entity name="DateFirst">
-    <data name="date" source="@date1" />
+    <data name="date" source="@date1">
+      <regexp match="^[0-9]+$" />
+    </data>
   </entity>
   <combine name="@date2" value="${date2}">
     <if>
@@ -52,7 +54,9 @@
     </data>
   </combine>
   <entity name="DateLast">
-    <data name="date" source="@date2" />
+    <data name="date" source="@date2">
+      <regexp match="^[0-9]+$" />
+    </data>
   </entity>
 
   <data name="@language_source_all" source="008">
