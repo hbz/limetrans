@@ -58,14 +58,36 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             throw new IllegalArgumentException("Could not process limetrans: no output specified.");
         }
 
-        mFilter = aSettings.getAsArray("filter");
-        mFilterKey = aSettings.get("filterKey", LibraryMetadataFilter.DEFAULT_KEY);
-        mFilterOperator = aSettings.get("filterOperator", "any");
-        mRulesPath = Helpers.getPath(getClass(), aSettings.get("transformation-rules"));
-
         if (aSettings.containsSetting("isil")) {
             mVars.put("isil", aSettings.get("isil"));
         }
+
+        final String defaultFilterOperator;
+        final String defaultRulesPath;
+
+        if (aSettings.containsSetting("alma")) {
+            final String memberID = aSettings.get("alma");
+            mVars.put("member", memberID);
+
+            // Ex Libris (Deutschland) GmbH
+            mVars.put("isil", "DE-632");
+
+            // 009 = HBZ-IDN Aleph NZ (-> "Extension Pack")
+            mFilter = new String[]{"MBD  .M=" + memberID, "!009"};
+
+            defaultFilterOperator = "all";
+            defaultRulesPath = "classpath:/transformation/alma.xml";
+        }
+        else {
+            mFilter = aSettings.getAsArray("filter");
+
+            defaultFilterOperator = "any";
+            defaultRulesPath = null;
+        }
+
+        mFilterKey = aSettings.get("filterKey", LibraryMetadataFilter.DEFAULT_KEY);
+        mFilterOperator = aSettings.get("filterOperator", defaultFilterOperator);
+        mRulesPath = Helpers.getPath(getClass(), aSettings.get("transformation-rules", defaultRulesPath));
     }
 
     public void process() {

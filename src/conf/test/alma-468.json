@@ -1,0 +1,13 @@
+{
+  "alma": "49HBZ_WUP",
+  "input": {
+    "queue": {
+      "path": "src/test/resources/limetrans/input/",
+      "pattern": "alma.xml"
+    }
+  },
+  "output": {
+    "json": "src/test/resources/limetrans/output/alma-468.json",
+    "pretty-printing": true
+  }
+}

@@ -57,4 +57,34 @@
     </entity>
   </macro>
 
+  <macro name="static-filter">
+    <combine name="$[dname]" value="${value}" sameEntity="true">
+      <if>
+        <data source="$[filter]">
+          <equals string="$[value]" />
+        </data>
+      </if>
+      <data name="value" source="$[source]" />
+    </combine>
+  </macro>
+
+  <macro name="dynamic-filter">
+    <combine name="$[dname]" value="${value}" sameEntity="true">
+      <if>
+        <equalsFilter name="" value="" flushWith="$[value]" flushIncomplete="false" reset="true">
+          <data source="$[filter]" />
+          <data source="$[value]" />
+        </equalsFilter>
+      </if>
+      <data name="value" source="$[source]" />
+    </combine>
+  </macro>
+
+  <macro name="alma-mms-to-isil">
+    <data name="$[dname]" source="$[source]">
+      <regexp match="....$" />
+      <lookup in="alma-institution-code-to-isil" />
+    </data>
+  </macro>
+
 </macros>

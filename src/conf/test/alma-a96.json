@@ -1,0 +1,13 @@
+{
+  "alma": "49HBZ_FHA",
+  "input": {
+    "queue": {
+      "path": "src/test/resources/limetrans/input/",
+      "pattern": "alma.xml"
+    }
+  },
+  "output": {
+    "json": "src/test/resources/limetrans/output/alma-a96.json",
+    "pretty-printing": true
+  }
+}
