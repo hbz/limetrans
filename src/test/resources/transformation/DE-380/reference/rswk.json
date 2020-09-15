@@ -1,8 +1,4 @@
 {
-  "RecordIdentifier" : {
-    "identifierForTheRecord" : "(DE-380)0"
-  },
-  "collection" : "DE-380",
   "dc" : {
     "format" : [ "keine Angabe" ],
     "type" : [ "keine Angabe" ],
@@ -12,6 +8,10 @@
     "access" : [ "local" ],
     "carrier" : [ "keine Angabe" ]
   },
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-380)0"
+  },
+  "collection" : "DE-380",
   "xbib" : [ {
     "uid" : "(DE-380)0"
   } ],
