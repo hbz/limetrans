@@ -37,17 +37,16 @@ public class FileQueue implements Iterable<String> {
 
         JSON(aOpener -> {
             final RecordReader reader = new RecordReader();
-            final JsonDecoder decoder = new JsonDecoder();
-
             reader.setSeparator('\0'); // read complete input
-
-            decoder.setArrayName(""); // no numbered array elements
-            decoder.setRecordId(""); // no record IDs
 
             return aOpener
                 .setReceiver(reader)
-                .setReceiver(decoder);
+                .setReceiver(getJsonDecoder());
         }),
+
+        JSONL(aOpener -> aOpener
+                .setReceiver(new LineReader())
+                .setReceiver(getJsonDecoder())),
 
         MARC21(aOpener -> aOpener
                 .setReceiver(new LineReader())
@@ -67,6 +66,14 @@ public class FileQueue implements Iterable<String> {
             mFunction = aFunction;
         }
 
+        private static JsonDecoder getJsonDecoder() {
+            final JsonDecoder decoder = new JsonDecoder();
+            decoder.setArrayName(""); // no numbered array elements
+            decoder.setRecordId(""); // no record IDs
+
+            return decoder;
+        }
+
         public Sender<StreamReceiver> process(final FileOpener aOpener) {
             return mFunction.apply(aOpener);
         }
@@ -77,21 +84,25 @@ public class FileQueue implements Iterable<String> {
 
     private static final String GROUP_MARKER = "%GROUP_MARKER%";
 
-    private final Queue<String> mQueue = new LinkedList<>();
     private final Processor mProcessor;
+    private final Queue<String> mQueue = new LinkedList<>();
+    private final boolean mNormalizeUnicode;
 
     public FileQueue(final Settings aSettings) throws IOException {
         if (aSettings != null) {
             mProcessor = Processor.valueOf(aSettings.get("processor", "MARCXML"));
+            mNormalizeUnicode = aSettings.getAsBoolean("normalize-unicode", true);
             add(aSettings);
         }
         else {
             mProcessor = null;
+            mNormalizeUnicode = false;
         }
     }
 
-    public FileQueue(final String aProcessor, final String... aFileNames) throws IOException {
+    public FileQueue(final String aProcessor, final boolean aNormalizeUnicode, final String... aFileNames) throws IOException {
         mProcessor = Processor.valueOf(aProcessor);
+        mNormalizeUnicode = aNormalizeUnicode;
 
         for (final String fileName : aFileNames) {
             final File file = new File(fileName);
@@ -116,20 +127,22 @@ public class FileQueue implements Iterable<String> {
         return mQueue.size();
     }
 
-    public void process(final StreamReceiver aReceiver, final boolean aNormalizeUnicode) {
-        process(aReceiver, aNormalizeUnicode ? new StreamUnicodeNormalizer() : null);
+    public void process(final StreamReceiver aReceiver) {
+        process(aReceiver, null);
     }
 
-    public <T extends StreamReceiver & Sender<StreamReceiver>> void process(final StreamReceiver aReceiver, final T... aSenders) {
+    public <T extends StreamReceiver & Sender<StreamReceiver>> void process(final StreamReceiver aReceiver, final T aSender) {
         final FileOpener opener = new FileOpener();
 
         if (mProcessor != null) {
             Sender<StreamReceiver> result = mProcessor.process(opener);
 
-            for (final T sender : aSenders) {
-                if (sender != null) {
-                    result = result.setReceiver(sender);
-                }
+            if (mNormalizeUnicode) {
+                result = result.setReceiver(new StreamUnicodeNormalizer());
+            }
+
+            if (aSender != null) {
+                result = result.setReceiver(aSender);
             }
 
             result.setReceiver(aReceiver);

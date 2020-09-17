@@ -32,6 +32,7 @@ Input is generally configured like this:
     "sort_by" : "lastmodified",
     "order" : "desc",
     "max" : 1,
+    "normalize-unicode" : false,
     "processor" : "MARC21"
   }
 }
@@ -42,8 +43,7 @@ Input is generally configured like this:
 ### Transformation
 
 ```json
-"transformation-rules" : "a/path/to/your/transformation/metafacture/rules/file.xml",
-"normalize-unicode" : true
+"transformation-rules" : "a/path/to/your/transformation/metafacture/rules/file.xml"
 ```
 
 ### Output

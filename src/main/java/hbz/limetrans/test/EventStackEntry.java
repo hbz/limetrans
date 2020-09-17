@@ -59,16 +59,22 @@ public class EventStackEntry {
     public Mismatch getMismatch(final EventStackEntry aEntry) {
         final Event event = aEntry.getEvent();
 
+        final Event.Type type = mEvent.getType();
         final String name = mEvent.getName();
         final String value = mEvent.getValue();
 
         final Mismatch result;
 
-        if (mEvent.getType() != event.getType()) {
+        if (type != event.getType()) {
             result = Mismatch.TYPE;
         }
         else if (name != null && !name.equals(event.getName())) {
-            result = Mismatch.NAME;
+            if (type == Event.Type.START_RECORD && "".equals(name)) {
+                result = null; // Ignore missing record ID
+            }
+            else {
+                result = Mismatch.NAME;
+            }
         }
         else if (value != null && !value.equals(event.getValue())) {
             result = Mismatch.VALUE;

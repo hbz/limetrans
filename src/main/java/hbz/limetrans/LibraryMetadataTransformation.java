@@ -8,6 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.metafacture.formeta.FormetaEncoder;
 import org.metafacture.formeta.formatter.FormatterStyle;
+import org.metafacture.framework.StreamReceiver;
 import org.metafacture.io.ObjectWriter;
 import org.metafacture.json.JsonEncoder;
 import org.metafacture.mangling.RecordIdChanger;
@@ -33,7 +34,6 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
     private final String mJsonPath;
     private final String mRulesPath;
     private final String[] mFilter;
-    private final boolean mNormalizeUnicode;
     private final boolean mPrettyPrinting;
 
     public LibraryMetadataTransformation(final Settings aSettings) throws IOException {
@@ -59,7 +59,6 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
         mFilter = aSettings.getAsArray("filter");
         mFilterOperator = aSettings.get("filterOperator", "any");
-        mNormalizeUnicode = aSettings.getAsBoolean("normalize-unicode", true);
         mRulesPath = Helpers.getPath(aSettings.get("transformation-rules"), getClass());
 
         if (aSettings.containsSetting("isil")) {
@@ -68,6 +67,10 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
     }
 
     public void process() {
+        process(null);
+    }
+
+    public void process(final StreamReceiver aReceiver) {
         LOGGER.info("Starting transformation: {}", mRulesPath);
 
         final Metamorph metamorph = new Metamorph(mRulesPath, mVars);
@@ -82,15 +85,12 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             .setReceiver(counter)
             .setReceiver(streamTee);
 
-        if (mFilter.length > 0) {
-            final Filter filter = new Filter(LibraryMetadataFilter.buildMorphDef(mFilterOperator, mFilter));
-            filter.setReceiver(metamorph);
+        if (aReceiver != null) {
+            metamorph.setReceiver(aReceiver);
+        }
 
-            mInputQueue.process(filter, mNormalizeUnicode);
-        }
-        else {
-            mInputQueue.process(metamorph, mNormalizeUnicode);
-        }
+        mInputQueue.process(metamorph, mFilter.length > 0 ?
+                new Filter(LibraryMetadataFilter.buildMorphDef(mFilterOperator, mFilter)) : null);
 
         LOGGER.info("Finished transformation ({})", counter);
     }

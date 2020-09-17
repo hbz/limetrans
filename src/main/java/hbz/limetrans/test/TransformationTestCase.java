@@ -9,6 +9,7 @@ import org.metafacture.javaintegration.EventList;
 import org.metafacture.metamorph.Metamorph;
 
 import java.io.IOException;
+import java.util.function.Consumer;
 
 public class TransformationTestCase extends Statement {
 
@@ -30,33 +31,44 @@ public class TransformationTestCase extends Statement {
 
     @Override
     public void evaluate() {
-        final EventStack expected = getEvents(mReference, null);
-        final EventStack actual = getEvents(mInput, mRules);
-
-        evaluateCommon(expected, actual);
-
-        evaluateRemaining(expected, "Missing events");
-        evaluateRemaining(actual, "Unexpected events");
+        evaluateTransformation(mReference, getEvents(mInput, mRules));
     }
 
-    private EventStack getEvents(final String aFile, final String aRules) {
+    public static void evaluateTransformation(final String aReference, final Consumer<EventList> aConsumer) {
+        evaluateTransformation(aReference, processEvents(aConsumer));
+    }
+
+    private static void evaluateTransformation(final String aReference, final EventStack aActual) {
+        final EventStack expected = getEvents(aReference, null);
+
+        evaluateCommon(expected, aActual);
+
+        evaluateRemaining(expected, "Missing events");
+        evaluateRemaining(aActual, "Unexpected events");
+    }
+
+    private static EventStack getEvents(final String aFile, final String aRules) {
         final String ext = aFile.substring(aFile.lastIndexOf('.') + 1);
 
         final FileQueue inputQueue;
         try {
-            inputQueue = new FileQueue("xml".equals(ext) ? "MARCXML" : ext.toUpperCase(), aFile);
+            inputQueue = new FileQueue("xml".equals(ext) ? "MARCXML" : ext.toUpperCase(), false, aFile);
         }
         catch (final IOException e) {
             throw new LimetransException(e);
         }
 
+        return processEvents(l -> inputQueue.process(l, aRules != null ? new Metamorph(aRules) : null));
+    }
+
+    private static EventStack processEvents(final Consumer<EventList> aConsumer) {
         final EventList eventList = new EventList();
-        inputQueue.process(eventList, aRules != null ? new Metamorph(aRules) : null);
+        aConsumer.accept(eventList);
 
         return new EventStack(eventList);
     }
 
-    private void evaluateCommon(final EventStack aExpected, final EventStack aActual) {
+    private static void evaluateCommon(final EventStack aExpected, final EventStack aActual) {
         while (aExpected.hasNext() && aActual.hasNext()) {
             final EventStackEntry expected = aExpected.next();
             final EventStackEntry actual = aActual.next();
@@ -75,7 +87,7 @@ public class TransformationTestCase extends Statement {
         }
     }
 
-    private void evaluateRemaining(final EventStack aStack, final String aMsg) {
+    private static void evaluateRemaining(final EventStack aStack, final String aMsg) {
         if (aStack.hasNext()) {
             final StringBuilder builder = new StringBuilder(aMsg);
 
