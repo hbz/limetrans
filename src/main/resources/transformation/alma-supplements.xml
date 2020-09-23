@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metamorph xmlns="http://www.culturegraph.org/metamorph" xmlns:xi="http://www.w3.org/2001/XInclude" version="1">
+  <xi:include href="macros.xml"/>
+
+  <rules xmlns="http://www.culturegraph.org/metamorph">
+    <data name="id" source="009" />
+
+    <entity name="IdentifierAlma" flushWith="record">
+      <data name="identifierMMS" source="001" />
+      <call-macro name="static-filter" dname="identifierMMSIZ" source="MBD  .i" filter="MBD  .M" value="$[member]" />
+    </entity>
+
+    <!-- Alma-HOL (MAB 200$#9$2 = NAME DER 1. KÖRPERSCHAFT) (Zeitschriften-Bestandsangabe) -->
+    <!--
+    <entity name="HoldingsStatement[]" flushWith="record">
+      <entity name="" flushWith="" sameEntity="true">
+        <if>
+          <all flushWith="" sameEntity="true">
+            <data source=".M">
+              <equals string="$[member]" />
+            </data>
+          </all>
+        </if>
+        <data name="note" source=".e" />
+      </entity>
+    </entity>
+    -->
+
+    <!-- Alma-HOL (MAB 655$$2 = ELEKTRONISCHE ADRESSE UND ZUGRIFFSART) (Bibliotheksspezifische URL) -->
+    <entity name="OnlineAccess[]" flushWith="record">
+      <entity name="" flushWith="856??" sameEntity="true">
+        <if>
+          <all flushWith="856??" sameEntity="true">
+            <data source="856??.M">
+              <equals string="$[member]" />
+            </data>
+          </all>
+        </if>
+        <data name="uri" source="856??.u" />
+        <data name="nonpublicnote" source="856??.x" />
+        <data name="publicnote" source="856??.z" />
+        <data name="relatedto" source="856??.3" />
+      </entity>
+    </entity>
+
+    <!-- Alma-BIB (MAB 700$h9$2 = NOTATION EINES KLASSIFIKATIONSSYSTEMS) (Lokale Klassifikation / Sachgruppen) / SISIS Feld 700 (Notationen) -->
+    <call-macro name="static-filter" dname="@subject" source="983  .b" filter="983  .M" value="$[member]" />
+    <entity name="SubjectGHBLocal.subject[]" flushWith="record">
+      <data name="" source="@subject">
+        <unique />
+      </data>
+    </entity>
+
+    <!-- Alma-HOL (MAB 027$$a = LOKALE IDENTIFIKATIONSNUMMER) / SISIS Feld 600 (Kommentar extern) -->
+    <call-macro name="static-filter" dname="@description" source="989  .a" filter="989  .M" value="$[member]" />
+    <entity name="Description.description[]" flushWith="record">
+      <data name="" source="@description">
+        <unique />
+      </data>
+    </entity>
+
+    <!-- Call number subfield (MAB 088$$a = Angabe der redigierenden Bibliothek) / SISIS Feld 9902 (Buchdatensignatur) -->
+    <call-macro name="static-filter" dname="@callnumber" source="ITM  .c" filter="ITM  .M" value="$[member]" />
+    <entity name="Item.callnumber[]" flushWith="record">
+      <data name="" source="@callnumber">
+        <unique />
+      </data>
+    </entity>
+  </rules>
+</metamorph>

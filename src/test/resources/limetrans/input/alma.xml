@@ -3465,9 +3465,10 @@
     <datafield tag="856" ind1="4" ind2="2">
       <subfield code="m">V:DE-605;X:migimw</subfield>
       <subfield code="q">application/pdf</subfield>
-      <subfield code="u">http://digitale-objekte.hbz-nrw.de/storage/2007/11/27/file_131/2235259.pdf</subfield>
-      <subfield code="3">Inhaltsverzeichnis</subfield>
+      <subfield code="u">http://digitale-objekte.hbz-nrw.de/storage/2007/11/27/file_131/0000000.pdf</subfield>
+      <subfield code="3">Dummy</subfield>
       <subfield code="9">O:PKN</subfield>
+      <subfield code="M">49HBZ_WUP</subfield>
     </datafield>
     <datafield tag="960" ind1="1" ind2=" ">
       <subfield code="o">retro</subfield>
@@ -10398,6 +10399,1223 @@
       <subfield code="b">Available</subfield>
       <subfield code="f">BOOK</subfield>
       <subfield code="8">539683590006444</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00000nam#a2200000#c#4500</leader>
+    <controlfield tag="003">DE-605</controlfield>
+    <controlfield tag="005">20191122191700.0</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">990501|1971####gw############|||#|#ger#c</controlfield>
+    <controlfield tag="009">HT000816547</controlfield>
+    <controlfield tag="001">990007179200206441</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">HT000816547</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-605)HT000816547</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(ALEPHCCHBZ)000717920HBZ01</subfield>
+    </datafield>
+    <datafield tag="016" ind1="7" ind2=" ">
+      <subfield code="a">1069992069</subfield>
+      <subfield code="2">OCoLC</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)1069992069</subfield>
+      <subfield code="0">(uri) http://www.worldcat.org/oclc/1069992069</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">6</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">385</subfield>
+      <subfield code="e">rakwb</subfield>
+    </datafield>
+    <datafield tag="041" ind1=" " ind2=" ">
+      <subfield code="a">ger</subfield>
+    </datafield>
+    <datafield tag="044" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">DU 1000</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">MS 1030</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">CV 4000</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">MS 1000</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Setzen, Karl M.</subfield>
+      <subfield code="0">(DE-588)177401427</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">&lt;&lt;Die&gt;&gt; Gruppe als soziales Grundgebilde</subfield>
+      <subfield code="b">eine Einführung</subfield>
+      <subfield code="c">Karl M. Setzen</subfield>
+    </datafield>
+    <datafield tag="264" ind1=" " ind2="1">
+      <subfield code="a">Heidenheim an der Brenz</subfield>
+      <subfield code="b">Heidenheimer Verl.-Anst.</subfield>
+      <subfield code="c">1971</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">103 S. : graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code="a">Gruppe</subfield>
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4022378-4</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=040223787</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|040223787</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">030</subfield>
+      <subfield code="A">a|1uc||||||17</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">050</subfield>
+      <subfield code="A">a|||||||||||||</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">051</subfield>
+      <subfield code="A">m|||||||</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_NETWORK</subfield>
+      <subfield code="i">990007179200206441</subfield>
+      <subfield code="n">HBZ Network</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_WUP</subfield>
+      <subfield code="i">990001691680206447</subfield>
+      <subfield code="n">Bergische Universität Wuppertal</subfield>
+    </datafield>
+    <datafield tag="983" ind1=" " ind2=" ">
+      <subfield code="b">OEG</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_WUP</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_FHA</subfield>
+      <subfield code="i">991001031859706444</subfield>
+      <subfield code="n">Fachhochschule Aachen</subfield>
+    </datafield>
+    <datafield tag="980" ind1="1" ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="e">HBZ</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="981" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">(DE-A96)1001</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="983" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="b">OEG</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="991" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">ass</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="997" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">19881216</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_UBD</subfield>
+      <subfield code="i">991002447569706445</subfield>
+      <subfield code="n">Technische Universitaet Dortmund</subfield>
+    </datafield>
+    <datafield tag="980" ind1="1" ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="e">HBZ</subfield>
+      <subfield code="M">49HBZ_UBD</subfield>
+    </datafield>
+    <datafield tag="981" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">(DE-290)76393</subfield>
+      <subfield code="M">49HBZ_UBD</subfield>
+    </datafield>
+    <datafield tag="997" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">19990727</subfield>
+      <subfield code="M">49HBZ_UBD</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_BIE</subfield>
+      <subfield code="i">991005069889706442</subfield>
+      <subfield code="n">Universität Bielefeld</subfield>
+    </datafield>
+    <datafield tag="980" ind1="1" ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="e">HBZ</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="981" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">(DE-361)110306</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="997" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">20020120</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_UDE</subfield>
+      <subfield code="i">990001389620206446</subfield>
+      <subfield code="n">Universität Duisburg-Essen</subfield>
+    </datafield>
+    <datafield tag="983" ind1=" " ind2=" ">
+      <subfield code="b">OEG</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_UDE</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_DUE</subfield>
+      <subfield code="i">990017535940206443</subfield>
+      <subfield code="n">Universität Düsseldorf</subfield>
+    </datafield>
+    <datafield tag="983" ind1=" " ind2=" ">
+      <subfield code="a">FBsozn230</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="996" ind1="0" ind2=" ">
+      <subfield code="s">Einführung</subfield>
+      <subfield code="0">(DE-588)4151278-9</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="996" ind1="0" ind2=" ">
+      <subfield code="s">Gruppe</subfield>
+      <subfield code="0">(DE-588)4022378-4</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="996" ind1="0" ind2=" ">
+      <subfield code="a">Grund</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="996" ind1="0" ind2=" ">
+      <subfield code="a">sozial</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="MNG" ind1=" " ind2=" ">
+      <subfield code="f">ILS</subfield>
+      <subfield code="i">marc21</subfield>
+      <subfield code="k">01</subfield>
+      <subfield code="e">false</subfield>
+      <subfield code="g">000717920-HBZ01</subfield>
+      <subfield code="j">60</subfield>
+      <subfield code="a">import</subfield>
+      <subfield code="b">2020-07-17 02:00:40 Europe/Berlin</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-01 10:45:12</subfield>
+      <subfield code="8">2240990940006447</subfield>
+      <subfield code="M">49HBZ_WUP</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-01 10:45:12</subfield>
+      <subfield code="8">2240990960006447</subfield>
+      <subfield code="M">49HBZ_WUP</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2240990960006447</subfield>
+      <subfield code="a">2340990950006447</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">11</subfield>
+      <subfield code="c">OEG1048</subfield>
+      <subfield code="b">000551235000010</subfield>
+      <subfield code="M">49HBZ_WUP</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-16 19:38:24</subfield>
+      <subfield code="8">227013070006444</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">227013070006444</subfield>
+      <subfield code="a">237013040006444</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">ZZZ</subfield>
+      <subfield code="c">21 OEG 2</subfield>
+      <subfield code="b">21OEG2</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-16 14:38:01</subfield>
+      <subfield code="8">2257565470006445</subfield>
+      <subfield code="M">49HBZ_UBD</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-16 14:38:01</subfield>
+      <subfield code="8">2257565450006445</subfield>
+      <subfield code="M">49HBZ_UBD</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-16 14:38:01</subfield>
+      <subfield code="8">2257565430006445</subfield>
+      <subfield code="M">49HBZ_UBD</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2257565430006445</subfield>
+      <subfield code="a">2357565420006445</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">ZZZ</subfield>
+      <subfield code="c">SOJ 1/101</subfield>
+      <subfield code="b">53157999</subfield>
+      <subfield code="M">49HBZ_UBD</subfield>
+      <subfield code="n">72/292</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2257565470006445</subfield>
+      <subfield code="a">2357565460006445</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">ZZZ</subfield>
+      <subfield code="c">Fn 4813</subfield>
+      <subfield code="b">134965</subfield>
+      <subfield code="M">49HBZ_UBD</subfield>
+      <subfield code="n">@</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2257565450006445</subfield>
+      <subfield code="a">2357565440006445</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">ZZZ</subfield>
+      <subfield code="c">7100/Setz</subfield>
+      <subfield code="b">20109091</subfield>
+      <subfield code="M">49HBZ_UBD</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-19 21:37:30</subfield>
+      <subfield code="8">2257191720006442</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-19 21:37:30</subfield>
+      <subfield code="8">2257191740006442</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2257191720006442</subfield>
+      <subfield code="a">2357191690006442</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">item_08</subfield>
+      <subfield code="c">BO500 S495</subfield>
+      <subfield code="b">168_0410359+02</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2257191740006442</subfield>
+      <subfield code="a">2357191730006442</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">item_08</subfield>
+      <subfield code="c">HT540 S495</subfield>
+      <subfield code="b">128_0410359+01</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-07 12:44:42</subfield>
+      <subfield code="8">2267041900006446</subfield>
+      <subfield code="M">49HBZ_UDE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-07 12:44:42</subfield>
+      <subfield code="8">2267041870006446</subfield>
+      <subfield code="M">49HBZ_UDE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2267041900006446</subfield>
+      <subfield code="a">2367041890006446</subfield>
+      <subfield code="s">0</subfield>
+      <subfield code="p">10</subfield>
+      <subfield code="c">OEG1072</subfield>
+      <subfield code="b">OEG1072</subfield>
+      <subfield code="M">49HBZ_UDE</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2267041900006446</subfield>
+      <subfield code="a">2367041880006446</subfield>
+      <subfield code="t">8</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">10</subfield>
+      <subfield code="c">OEG1072</subfield>
+      <subfield code="b">E00010356</subfield>
+      <subfield code="M">49HBZ_UDE</subfield>
+      <subfield code="n">OEG1072+1</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-01 06:44:46</subfield>
+      <subfield code="8">224810940006443</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-01 06:44:46</subfield>
+      <subfield code="8">224810960006443</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">224810960006443</subfield>
+      <subfield code="a">234810950006443</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">11</subfield>
+      <subfield code="c">sozn230.s495</subfield>
+      <subfield code="b">903806101</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00000nai#a2200000#ca4500</leader>
+    <controlfield tag="003">DE-605</controlfield>
+    <controlfield tag="005">20200422160200.0</controlfield>
+    <controlfield tag="007">td</controlfield>
+    <controlfield tag="008">931223|########gw##|#l#######|####2ger#c</controlfield>
+    <controlfield tag="009">HT003638156</controlfield>
+    <controlfield tag="001">990048857150206441</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">HT003638156</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-605)HT003638156</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(ALEPHCCHBZ)004885715HBZ01</subfield>
+    </datafield>
+    <datafield tag="016" ind1="7" ind2=" ">
+      <subfield code="a">1070353813</subfield>
+      <subfield code="2">OCoLC</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)1070353813</subfield>
+      <subfield code="0">(uri) http://www.worldcat.org/oclc/1070353813</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">292</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">361</subfield>
+      <subfield code="e">rakwb</subfield>
+    </datafield>
+    <datafield tag="041" ind1=" " ind2=" ">
+      <subfield code="a">ger</subfield>
+    </datafield>
+    <datafield tag="044" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Handbuch Logistik und Produktionsmanagement</subfield>
+      <subfield code="b">Strategien, Konzepte und Lösungen für die JIT-Beschaffung, -Produktion und -Distribution</subfield>
+      <subfield code="c">Klaus J. Schmidt (Hrsg.)</subfield>
+    </datafield>
+    <datafield tag="264" ind1="3" ind2="1">
+      <subfield code="a">Landsberg/Lech</subfield>
+      <subfield code="b">Verl. Moderne Industrie</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">Losebl.-Ausg.</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code="a">Logistik</subfield>
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4036210-3</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=040362108</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|040362108</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="1">
+      <subfield code="a">Just-in-time-Produktion</subfield>
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4140040-9</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=041400402</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|041400402</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Schmidt, Klaus J.</subfield>
+      <subfield code="0">(DE-588)111951097</subfield>
+      <subfield code="4">edt</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">030</subfield>
+      <subfield code="A">a|1uc||||||37</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">050</subfield>
+      <subfield code="A">a|||||||||||||</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">051</subfield>
+      <subfield code="A">no||||||</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_NETWORK</subfield>
+      <subfield code="i">990048857150206441</subfield>
+      <subfield code="n">HBZ Network</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_FHA</subfield>
+      <subfield code="i">991001031669706444</subfield>
+      <subfield code="n">Fachhochschule Aachen</subfield>
+    </datafield>
+    <datafield tag="980" ind1="1" ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="e">HBZ</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="981" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">(DE-A96)802</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="983" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="b">QBB</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="989" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">vorhanden mit Stand: Mai 2004</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="991" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">ass/kow</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="997" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">19881214</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_BIE</subfield>
+      <subfield code="i">991019159369706442</subfield>
+      <subfield code="n">Universität Bielefeld</subfield>
+    </datafield>
+    <datafield tag="980" ind1="1" ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="e">HBZ</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="981" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">(DE-361)637156</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="983" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="b">SA003</subfield>
+      <subfield code="b">SU100</subfield>
+      <subfield code="b">SU300</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="989" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">Stand: 1997. - Wird nicht fortgeführt. - Gebunden</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="997" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">20020121</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="MNG" ind1=" " ind2=" ">
+      <subfield code="f">ILS</subfield>
+      <subfield code="i">marc21</subfield>
+      <subfield code="k">01</subfield>
+      <subfield code="e">false</subfield>
+      <subfield code="g">004885715-HBZ01</subfield>
+      <subfield code="j">60</subfield>
+      <subfield code="a">import</subfield>
+      <subfield code="b">2020-07-17 00:04:51 Europe/Berlin</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-16 19:33:38</subfield>
+      <subfield code="8">225025720006444</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">225025720006444</subfield>
+      <subfield code="a">235025710006444</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">ZZZ</subfield>
+      <subfield code="c">21 QBB 134</subfield>
+      <subfield code="b">21QBB134</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-19 21:49:22</subfield>
+      <subfield code="8">2262468040006442</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-19 21:49:22</subfield>
+      <subfield code="8">2262468090006442</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-19 21:49:22</subfield>
+      <subfield code="8">2262468060006442</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2262468090006442</subfield>
+      <subfield code="a">2362468070006442</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">item_00</subfield>
+      <subfield code="c">SU077 H2L8P[1</subfield>
+      <subfield code="b">130_1571782+01</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2262468040006442</subfield>
+      <subfield code="a">2362468010006442</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">item_00</subfield>
+      <subfield code="c">SU077 H2L8P[3</subfield>
+      <subfield code="b">130_4052296+01</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2262468060006442</subfield>
+      <subfield code="a">2362468050006442</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">item_00</subfield>
+      <subfield code="c">SU077 H2L8P[2</subfield>
+      <subfield code="b">130_1571783+01</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00000nam#a2200000#cb4500</leader>
+    <controlfield tag="003">DE-605</controlfield>
+    <controlfield tag="005">20200313162700.0</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">960930|1996####gw#######m####|||#|#ger#c</controlfield>
+    <controlfield tag="009">HT007252218</controlfield>
+    <controlfield tag="001">990068619160206441</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">HT007252218</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-605)HT007252218</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(ALEPHCCHBZ)006861916HBZ01</subfield>
+    </datafield>
+    <datafield tag="016" ind1="7" ind2=" ">
+      <subfield code="a">1070744834</subfield>
+      <subfield code="2">OCoLC</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">3823340891</subfield>
+      <subfield code="c">kart. : ca. DM 58.00, ca. sfr 55.00, ca. S 429.00</subfield>
+      <subfield code="0">(uri) http://www.isbnsearch.org/isbn/3823340891</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)1070744834</subfield>
+      <subfield code="0">(uri) http://www.worldcat.org/oclc/1070744834</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-599)HBZHT007252218</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">61</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">61</subfield>
+      <subfield code="e">rakwb</subfield>
+    </datafield>
+    <datafield tag="041" ind1=" " ind2=" ">
+      <subfield code="a">ger</subfield>
+    </datafield>
+    <datafield tag="044" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Lauber, Cornelia</subfield>
+      <subfield code="0">(DE-588)114469725</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Selbstporträts</subfield>
+      <subfield code="b">zum soziologischen Profil von Literaturübersetzern aus dem Französischen</subfield>
+      <subfield code="c">Cornelia Lauber</subfield>
+    </datafield>
+    <datafield tag="264" ind1=" " ind2="1">
+      <subfield code="a">Tübingen</subfield>
+      <subfield code="b">Narr</subfield>
+      <subfield code="c">1996</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">140 S.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">Transfer</subfield>
+      <subfield code="v">10</subfield>
+    </datafield>
+    <datafield tag="502" ind1=" " ind2=" ">
+      <subfield code="a">Zugl.: Düsseldorf, Univ., Dipl.-Arb. Studiengang Literaturübersetzen</subfield>
+    </datafield>
+    <datafield tag="583" ind1="1" ind2=" ">
+      <subfield code="a">Archivierung/Langzeitarchivierung gewährleistet</subfield>
+      <subfield code="5">DE-61</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code="a">Deutschland</subfield>
+      <subfield code="D">g</subfield>
+      <subfield code="0">(DE-588)4011882-4</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=040118827</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|040118827</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="1">
+      <subfield code="a">Übersetzer</subfield>
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4061414-1</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=04061414X</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|04061414X</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="2">
+      <subfield code="a">Französisch</subfield>
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4113615-9</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=041136152</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|041136152</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="3">
+      <subfield code="a">Literatur</subfield>
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4035964-5</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=040359646</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|040359646</subfield>
+    </datafield>
+    <datafield tag="751" ind1=" " ind2=" ">
+      <subfield code="a">Düsseldorf</subfield>
+      <subfield code="0">(DE-588)4013255-9</subfield>
+      <subfield code="4">uvp</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=040132552</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|040132552</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Transfer</subfield>
+      <subfield code="w">(DE-605)HT003430388</subfield>
+      <subfield code="v">10</subfield>
+      <subfield code="9">O:1</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="2">
+      <subfield code="m">V:DE-605;X:migimw</subfield>
+      <subfield code="q">application/pdf</subfield>
+      <subfield code="u">http://digitale-objekte.hbz-nrw.de/storage/2006/01/25/file_401/1409545.pdf</subfield>
+      <subfield code="3">Inhaltsverzeichnis</subfield>
+      <subfield code="9">O:PKN</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">030</subfield>
+      <subfield code="A">a|1uc||||||17</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">050</subfield>
+      <subfield code="A">a|||||||||||||</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">051</subfield>
+      <subfield code="A">sy||||||</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_NETWORK</subfield>
+      <subfield code="i">990068619160206441</subfield>
+      <subfield code="n">HBZ Network</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_WUP</subfield>
+      <subfield code="i">990007596260206447</subfield>
+      <subfield code="n">Bergische Universität Wuppertal</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Transfer</subfield>
+      <subfield code="w">(DE-605)HT003430388</subfield>
+      <subfield code="v">10</subfield>
+      <subfield code="9">O:1</subfield>
+      <subfield code="M">49HBZ_WUP</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="2">
+      <subfield code="m">V:DE-605;X:migimw</subfield>
+      <subfield code="q">application/pdf</subfield>
+      <subfield code="u">http://digitale-objekte.hbz-nrw.de/storage/2006/01/25/file_401/1409545.pdf</subfield>
+      <subfield code="3">Inhaltsverzeichnis</subfield>
+      <subfield code="9">O:PKN</subfield>
+      <subfield code="M">49HBZ_WUP</subfield>
+    </datafield>
+    <datafield tag="983" ind1=" " ind2=" ">
+      <subfield code="b">EXI</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_WUP</subfield>
+    </datafield>
+    <datafield tag="983" ind1=" " ind2=" ">
+      <subfield code="b">BKH</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_WUP</subfield>
+    </datafield>
+    <datafield tag="983" ind1=" " ind2=" ">
+      <subfield code="b">ZZV</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_WUP</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_BIE</subfield>
+      <subfield code="i">991006742099706442</subfield>
+      <subfield code="n">Universität Bielefeld</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Transfer</subfield>
+      <subfield code="w">(DE-605)HT003430388</subfield>
+      <subfield code="v">10</subfield>
+      <subfield code="9">O:1</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="2">
+      <subfield code="m">V:DE-605;X:migimw</subfield>
+      <subfield code="q">application/pdf</subfield>
+      <subfield code="u">http://digitale-objekte.hbz-nrw.de/storage/2006/01/25/file_401/1409545.pdf</subfield>
+      <subfield code="3">Inhaltsverzeichnis</subfield>
+      <subfield code="9">O:PKN</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="980" ind1="1" ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="e">HBZ</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="981" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">(DE-361)1670673</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="997" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">20020121</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_UDE</subfield>
+      <subfield code="i">990007435030206446</subfield>
+      <subfield code="n">Universität Duisburg-Essen</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Transfer</subfield>
+      <subfield code="w">(DE-605)HT003430388</subfield>
+      <subfield code="v">10</subfield>
+      <subfield code="9">O:1</subfield>
+      <subfield code="M">49HBZ_UDE</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="2">
+      <subfield code="m">V:DE-605;X:migimw</subfield>
+      <subfield code="q">application/pdf</subfield>
+      <subfield code="u">http://digitale-objekte.hbz-nrw.de/storage/2006/01/25/file_401/1409545.pdf</subfield>
+      <subfield code="3">Inhaltsverzeichnis</subfield>
+      <subfield code="9">O:PKN</subfield>
+      <subfield code="M">49HBZ_UDE</subfield>
+    </datafield>
+    <datafield tag="983" ind1=" " ind2=" ">
+      <subfield code="b">BKH</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_UDE</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_DUE</subfield>
+      <subfield code="i">990010760890206443</subfield>
+      <subfield code="n">Universität Düsseldorf</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Transfer</subfield>
+      <subfield code="w">(DE-605)HT003430388</subfield>
+      <subfield code="v">10</subfield>
+      <subfield code="9">O:1</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="2">
+      <subfield code="m">V:DE-605;X:migimw</subfield>
+      <subfield code="q">application/pdf</subfield>
+      <subfield code="u">http://digitale-objekte.hbz-nrw.de/storage/2006/01/25/file_401/1409545.pdf</subfield>
+      <subfield code="3">Inhaltsverzeichnis</subfield>
+      <subfield code="9">O:PKN</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="983" ind1=" " ind2=" ">
+      <subfield code="a">romc250</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="996" ind1="0" ind2=" ">
+      <subfield code="s">Profil</subfield>
+      <subfield code="0">(DE-588)4533611-8</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="996" ind1="0" ind2=" ">
+      <subfield code="s">Selbstbildnis</subfield>
+      <subfield code="0">(DE-588)4054394-8</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="996" ind1="0" ind2=" ">
+      <subfield code="a">Frankreich</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="996" ind1="0" ind2=" ">
+      <subfield code="a">Französisch</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="996" ind1="0" ind2=" ">
+      <subfield code="a">Literaturübersetzer</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="996" ind1="0" ind2=" ">
+      <subfield code="a">Porträt</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="996" ind1="0" ind2=" ">
+      <subfield code="a">Selbstporträt</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="996" ind1="0" ind2=" ">
+      <subfield code="a">Soziologie</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="996" ind1="0" ind2=" ">
+      <subfield code="a">französisch</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="996" ind1="0" ind2=" ">
+      <subfield code="a">soziologisch</subfield>
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+    <datafield tag="MNG" ind1=" " ind2=" ">
+      <subfield code="f">ILS</subfield>
+      <subfield code="i">marc21</subfield>
+      <subfield code="k">01</subfield>
+      <subfield code="e">false</subfield>
+      <subfield code="g">006861916-HBZ01</subfield>
+      <subfield code="j">60</subfield>
+      <subfield code="a">import</subfield>
+      <subfield code="b">2020-07-17 03:51:32 Europe/Berlin</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-01 10:03:46</subfield>
+      <subfield code="8">2226984830006447</subfield>
+      <subfield code="M">49HBZ_WUP</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-01 10:03:46</subfield>
+      <subfield code="8">2226984790006447</subfield>
+      <subfield code="M">49HBZ_WUP</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2226984830006447</subfield>
+      <subfield code="a">2326984800006447</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">15</subfield>
+      <subfield code="c">ZZV400937</subfield>
+      <subfield code="b">000240000000010</subfield>
+      <subfield code="M">49HBZ_WUP</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-19 20:23:25</subfield>
+      <subfield code="8">2223496100006442</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2223496100006442</subfield>
+      <subfield code="a">2323496090006442</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">item_08</subfield>
+      <subfield code="c">OK610 L366</subfield>
+      <subfield code="b">158_3167863+01</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-07 11:36:36</subfield>
+      <subfield code="8">2240290560006446</subfield>
+      <subfield code="M">49HBZ_UDE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-07 11:36:36</subfield>
+      <subfield code="8">2240290580006446</subfield>
+      <subfield code="M">49HBZ_UDE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2240290580006446</subfield>
+      <subfield code="a">2340290570006446</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">10</subfield>
+      <subfield code="c">BKH1886</subfield>
+      <subfield code="b">BKH1886</subfield>
+      <subfield code="M">49HBZ_UDE</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-01 07:24:18</subfield>
+      <subfield code="8">2218850210006443</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-01 07:24:18</subfield>
+      <subfield code="8">2218850230006443</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">2218850230006443</subfield>
+      <subfield code="a">2318850220006443</subfield>
+      <subfield code="s">1</subfield>
+      <subfield code="p">10</subfield>
+      <subfield code="c">romc250.l366</subfield>
+      <subfield code="b">093850901</subfield>
+      <subfield code="M">49HBZ_DUE</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00000nam#a2200000#ub4500</leader>
+    <controlfield tag="003">DE-605</controlfield>
+    <controlfield tag="005">20140603112300.0</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">140519|2011####xxu###########|||#u#eng#c</controlfield>
+    <controlfield tag="009">HT018264803</controlfield>
+    <controlfield tag="001">990203911330206441</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">HT018264803</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-605)HT018264803</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(ALEPHCCHBZ)020391133HBZ01</subfield>
+    </datafield>
+    <datafield tag="016" ind1="7" ind2=" ">
+      <subfield code="a">838518862</subfield>
+      <subfield code="2">OCoLC</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">9780841226128</subfield>
+      <subfield code="0">(uri) http://www.isbnsearch.org/isbn/9780841226128</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">0841226121</subfield>
+      <subfield code="c">(hbk.) No price</subfield>
+      <subfield code="0">(uri) http://www.isbnsearch.org/isbn/0841226121</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)838518862</subfield>
+      <subfield code="0">(uri) http://www.worldcat.org/oclc/838518862</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-599)HBZHT018264803</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">A 96</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">A 96</subfield>
+    </datafield>
+    <datafield tag="041" ind1=" " ind2=" ">
+      <subfield code="a">eng</subfield>
+    </datafield>
+    <datafield tag="044" ind1=" " ind2=" ">
+      <subfield code="c">XD-US</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+      <subfield code="h">h</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Rapid characterization of microorganisms by mass spectrometry</subfield>
+      <subfield code="c">Catherine Fenselau, ed. ...</subfield>
+    </datafield>
+    <datafield tag="264" ind1=" " ind2="1">
+      <subfield code="a">Washington, DC</subfield>
+      <subfield code="b">American Chemical Society</subfield>
+      <subfield code="c">2011</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">VIII, 237 S. : Ill., graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">ACS symposium series</subfield>
+      <subfield code="v">1065</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Microorganisms--Identification.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Mass spectrometry.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Microbiological chemistry.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Fenselau, Catherine</subfield>
+      <subfield code="d">1939-</subfield>
+      <subfield code="0">(DE-588)1018725954</subfield>
+      <subfield code="4">edt</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=1018725954</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|1018725954</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">ACS symposium series</subfield>
+      <subfield code="w">(DE-605)HT001233088</subfield>
+      <subfield code="v">1065</subfield>
+      <subfield code="9">O:1</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">030</subfield>
+      <subfield code="A">a|1dz||z|||37</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">050</subfield>
+      <subfield code="A">a|a|||||||||||</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">051</subfield>
+      <subfield code="A">s|||z|||</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_NETWORK</subfield>
+      <subfield code="i">990203911330206441</subfield>
+      <subfield code="n">HBZ Network</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_FHA</subfield>
+      <subfield code="i">991000618589706444</subfield>
+      <subfield code="n">Fachhochschule Aachen</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">ACS symposium series</subfield>
+      <subfield code="w">(DE-605)HT001233088</subfield>
+      <subfield code="v">1065</subfield>
+      <subfield code="9">O:1</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="980" ind1="1" ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="e">HBZ</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="981" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">(DE-A96)492417</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="983" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="b">UTI</subfield>
+      <subfield code="b">VOW</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="989" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">neu1406</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="991" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">br/nie</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="997" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">20140519</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="MNG" ind1=" " ind2=" ">
+      <subfield code="f">ILS</subfield>
+      <subfield code="i">marc21</subfield>
+      <subfield code="k">01</subfield>
+      <subfield code="e">false</subfield>
+      <subfield code="g">020391133-HBZ01</subfield>
+      <subfield code="j">60</subfield>
+      <subfield code="a">import</subfield>
+      <subfield code="b">2020-07-16 14:23:05 Europe/Berlin</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="b">2020-07-16 19:39:20</subfield>
+      <subfield code="8">227485880006444</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">import</subfield>
+    </datafield>
+    <datafield tag="ITM" ind1=" " ind2=" ">
+      <subfield code="H">227485880006444</subfield>
+      <subfield code="a">237485870006444</subfield>
+      <subfield code="s">0</subfield>
+      <subfield code="p">ZZZ</subfield>
+      <subfield code="c">61 UTI 12</subfield>
+      <subfield code="b">61UTI12</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
     </datafield>
   </record>
 </collection>

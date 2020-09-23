@@ -67,16 +67,18 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
         if (aSettings.containsSetting("alma")) {
             final String memberID = aSettings.get("alma");
+            final boolean supplements = aSettings.getAsBoolean("alma-supplements", false);
+
             mVars.put("member", memberID);
 
             // Ex Libris (Deutschland) GmbH
             mVars.put("isil", "DE-632");
 
             // 009 = HBZ-IDN Aleph NZ (-> "Extension Pack")
-            mFilter = new String[]{"MBD  .M=" + memberID, "!009"};
+            mFilter = new String[]{"MBD  .M=" + memberID, (supplements ? "@" : "!") + "009"};
 
             defaultFilterOperator = "all";
-            defaultRulesPath = "classpath:/transformation/alma.xml";
+            defaultRulesPath = "classpath:/transformation/alma" + (supplements ? "-supplements" : "") + ".xml";
         }
         else {
             mFilter = aSettings.getAsArray("filter");
