@@ -1,0 +1,15 @@
+{
+  "isil": "DE-A96",
+  "alma": "49HBZ_FHA",
+  "alma-supplements": true,
+  "input": {
+    "queue": {
+      "path": "/mnt/almaprod/central/",
+      "pattern": "NZ_Central_Pub_PE_Bib_GND_All_*_new*.tar.gz",
+      "processor": "ALMAXML"
+    }
+  },
+  "output": {
+    "json": "/data/alephxml/export/alma/${isil}-baseline-supplements.json.gz"
+  }
+}

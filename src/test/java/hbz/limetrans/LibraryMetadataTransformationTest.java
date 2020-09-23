@@ -142,6 +142,16 @@ public class LibraryMetadataTransformationTest {
     }
 
     @Test
+    public void testAlmaA96Supplements() throws IOException {
+        testAlmaEqualsReference("a96-supplements");
+    }
+
+    @Test
+    public void testAlma468Supplements() throws IOException {
+        testAlmaEqualsReference("468-supplements");
+    }
+
+    @Test
     public void testElasticsearch() throws IOException {
         testElasticsearchEqualsReference("elasticsearch", "");
     }
