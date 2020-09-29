@@ -1,6 +1,8 @@
 {
   "alma": "49HBZ_FHA",
-  "alma-supplements": true,
+  "alma-supplements": {
+    "description": ".*vorhanden.*"
+  },
   "input": {
     "queue": {
       "path": "src/test/resources/limetrans/input/",

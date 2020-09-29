@@ -21,6 +21,7 @@ import org.metafacture.statistics.Counter;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Stream;
 
 public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDataAbstractionCoupling
 
@@ -67,18 +68,32 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
         if (aSettings.containsSetting("alma")) {
             final String memberID = aSettings.get("alma");
-            final boolean supplements = aSettings.getAsBoolean("alma-supplements", false);
 
             mVars.put("member", memberID);
 
             // Ex Libris (Deutschland) GmbH
             mVars.put("isil", "DE-632");
 
+            final String filterPrefix;
+            final String rulesSuffix;
+
+            if (aSettings.containsSetting("alma-supplements")) {
+                final Settings supplements = aSettings.getAsSettings("alma-supplements");
+                Stream.of("description").forEach(k -> mVars.put("regexp." + k, supplements.get(k, ".*")));
+
+                filterPrefix = "@";
+                rulesSuffix = "-supplements";
+            }
+            else {
+                filterPrefix = "!";
+                rulesSuffix = "";
+            }
+
             // 009 = HBZ-IDN Aleph NZ (-> "Extension Pack")
-            mFilter = new String[]{"MBD  .M=" + memberID, (supplements ? "@" : "!") + "009"};
+            mFilter = new String[]{"MBD  .M=" + memberID, filterPrefix + "009"};
 
             defaultFilterOperator = "all";
-            defaultRulesPath = "classpath:/transformation/alma" + (supplements ? "-supplements" : "") + ".xml";
+            defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + ".xml";
         }
         else {
             mFilter = aSettings.getAsArray("filter");
