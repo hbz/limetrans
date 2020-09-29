@@ -767,6 +767,30 @@
         }
       }
     },
+    "IdentifierAlma": {
+      "properties": {
+        "identifierMMS": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=mab",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "identifierMMSIZ": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=mab",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        }
+      }
+    },
     "IdentifierISBN": {
       "properties": {
         "identifierISBN": {
