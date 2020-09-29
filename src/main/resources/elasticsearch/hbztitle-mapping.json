@@ -142,6 +142,13 @@
             }
           }
         },
+        "music": {
+          "type": "string",
+          "index": "not_analyzed",
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
         "subject": {
           "type": "string",
           "index": "not_analyzed"
@@ -179,6 +186,18 @@
         }
       }
     },
+    "AbstractCreator": {
+      "properties": {
+        "abstract": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
     "AdditionalPhysicalFormEntry": {
       "properties": {
         "identifierISBN": {
@@ -199,6 +218,30 @@
             "bib.identifierAuthority=issn",
             "cql.allIndexes",
             "dc.identifier"
+          ]
+        }
+      }
+    },
+    "ClassifierDigitization": {
+      "properties": {
+        "classifier": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "CompilationTitle": {
+      "properties": {
+        "title": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
           ]
         }
       }
@@ -300,6 +343,14 @@
           ]
         }
       }
+    },
+    "ContentType": {
+      "type": "string",
+      "index": "no",
+      "doc_values": false,
+      "copy_to": [
+        "cql.allIndexes"
+      ]
     },
     "CorporateBody": {
       "properties": {
@@ -425,8 +476,7 @@
           "index": "no",
           "doc_values": false,
           "copy_to": [
-            "cql.allIndexes",
-            "dc.title"
+            "cql.allIndexes"
           ]
         }
       }
@@ -581,7 +631,23 @@
     },
     "DescriptionOfContent": {
       "properties": {
+        "creator": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
         "description": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "note": {
           "type": "string",
           "index": "no",
           "doc_values": false,
@@ -614,6 +680,22 @@
           ]
         }
       }
+    },
+    "ExtendedFormat": {
+      "type": "string",
+      "index": "no",
+      "doc_values": false,
+      "copy_to": [
+        "cql.allIndexes"
+      ]
+    },
+    "ExtendedType": {
+      "type": "string",
+      "index": "no",
+      "doc_values": false,
+      "copy_to": [
+        "cql.allIndexes"
+      ]
     },
     "Geo": {
       "properties": {
@@ -1413,18 +1495,6 @@
           "doc_values": false,
           "copy_to": [
             "cql.allIndexes"
-          ]
-        }
-      }
-    },
-    "SecondaryEditionReproduction": {
-      "properties": {
-        "verifiedRelationIdentifier": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false,
-          "copy_to": [
-            "bib.identifierAuthority=mabwhole"
           ]
         }
       }
@@ -2229,6 +2299,18 @@
         }
       }
     },
+    "SubjectRPB": {
+      "properties": {
+        "subject": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "introx.localCallNumber"
+          ]
+        }
+      }
+    },
     "SubjectRSWK": {
       "properties": {
         "identifierGND": {
@@ -2682,8 +2764,7 @@
           "index": "no",
           "doc_values": false,
           "copy_to": [
-            "cql.allIndexes",
-            "dc.title"
+            "cql.allIndexes"
           ]
         }
       }
@@ -2723,8 +2804,7 @@
           "index": "no",
           "doc_values": false,
           "copy_to": [
-            "cql.allIndexes",
-            "dc.title"
+            "cql.allIndexes"
           ]
         }
       }
@@ -2744,6 +2824,19 @@
       }
     },
     "TitleParallelStatement": {
+      "properties": {
+        "title": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
+          ]
+        }
+      }
+    },
+    "TitlePreferred": {
       "properties": {
         "title": {
           "type": "string",
@@ -2832,6 +2925,19 @@
             "cql.allIndexes",
             "dc.title",
             "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "VolumeDesignation": {
+      "properties": {
+        "volumeDesignation": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
           ]
         }
       }
