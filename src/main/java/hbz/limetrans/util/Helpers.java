@@ -59,7 +59,7 @@ public class Helpers {
 
     public static String getPath(final String aPath, final Class<?> aClass) throws IOException {
         final URL url = getClasspathUrl(aClass, aPath);
-        return url != null ? url.getPath() : aPath;
+        return url != null ? url.toString() : aPath;
     }
 
     public static URL getResourceUrl(final Class<?> aClass, final String aPath) throws IOException {

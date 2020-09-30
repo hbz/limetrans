@@ -189,7 +189,7 @@ public class LibraryMetadataTransformationTest {
     }
 
     private String getReferenceFile(final String aName, final String aExt) throws IOException {
-        return Helpers.getPath("classpath:/limetrans/reference/" + aName + "." + aExt, getClass());
+        return Helpers.getClasspathUrl(getClass(), "classpath:/limetrans/reference/" + aName + "." + aExt).getPath();
     }
 
     private Settings loadSettings(final String aName) throws IOException {
