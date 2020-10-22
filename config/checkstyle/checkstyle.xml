@@ -31,7 +31,9 @@
             <property name="customImportOrderRules" value="SAME_PACKAGE(2)###THIRD_PARTY_PACKAGE###STANDARD_JAVA_PACKAGE###SPECIAL_IMPORTS###STATIC"/>
             <property name="separateLineBetweenGroups" value="true"/>
         </module>
-        <module name="CyclomaticComplexity"/>
+        <module name="CyclomaticComplexity">
+            <property name="max" value="12"/>
+        </module>
         <module name="DeclarationOrder"/>
         <module name="DefaultComesLast"/>
         <module name="EmptyLineSeparator">
@@ -113,7 +115,7 @@
             <property name="ignoreOverridden" value="true"/>
         </module>
         <module name="ParameterNumber">
-            <property name="max" value="6"/>
+            <property name="max" value="7"/>
         </module>
         <module name="ParenPad"/>
         <module name="RedundantImport"/>

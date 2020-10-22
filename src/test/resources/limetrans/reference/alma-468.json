@@ -96,6 +96,74 @@
 {
   "collection" : "DE-605",
   "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)99366545708706441"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Kym Anderson, Michael Bosworth"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2009" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMMS" : "99366545708706441",
+    "identifierPID" : "53221949450006441"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9780980623826  ‡q (ebook)" ]
+  }, {
+    "identifierISBN" : [ "0980623820 ‡q (ebook)" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "University of Adelaide Press,"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Reforming trade policy in Papua New Guinea and the Pacific Islands"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Adelaide" ],
+    "name" : [ "University of Adelaide Press" ],
+    "chronology" : [ "2009" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2009" ]
+  },
+  "Extent" : {
+    "extent" : "1 online resource (xiv, 203 pages) : digital, PDF file(s)."
+  },
+  "Description" : {
+    "description" : [ "Bibliographic Level Mode of Issuance: Monograph" ]
+  },
+  "Summary" : {
+    "abstract" : [ "The countries of the South Pacific have struggled to generate sustainable economic growth since their independence. Interventionist policies have failed in the past here, as they have in all other regions. Business and government leaders in this region are now beginning to acknowledge - as has happened in many other developing country regions over the past two decades - that major reforms are needed to put their economies onto a higher growth path. This study examines the growth record of key Pacific island economies and identifies the reasons for their relatively poor performance. It then looks at the process of globalization that is affecting those and indeed all economies increasingly; and the role the WTO has played in that process." ]
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Print version"
+  } ],
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "9780980623895" ]
+  } ],
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Reprints collection (University of Adelaide Press)" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99366545708706441"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
     "identifierForTheRecord" : "(DE-605)99366599897006441"
   },
   "CreatorStatement" : {

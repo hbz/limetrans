@@ -35,7 +35,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
     private final String mFormetaPath;
     private final String mJsonPath;
     private final String mRulesPath;
-    private final String[] mFilter;
+    private final String[][] mFilter;
     private final boolean mPrettyPrinting;
 
     public LibraryMetadataTransformation(final Settings aSettings) throws IOException {
@@ -63,7 +63,6 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             mVars.put("isil", aSettings.get("isil"));
         }
 
-        final String defaultFilterOperator;
         final String defaultRulesPath;
 
         if (aSettings.containsSetting("alma")) {
@@ -74,36 +73,40 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             // Ex Libris (Deutschland) GmbH
             mVars.put("isil", "DE-632");
 
-            final String filterPrefix;
+            // 009 = HBZ-IDN Aleph NZ (-> "Extension Pack")
+            final String idKey = "009";
+
             final String rulesSuffix;
 
             if (aSettings.containsSetting("alma-supplements")) {
                 final Settings supplements = aSettings.getAsSettings("alma-supplements");
                 Stream.of("description").forEach(k -> mVars.put("regexp." + k, supplements.get(k, ".*")));
 
-                filterPrefix = "@";
                 rulesSuffix = "-supplements";
+
+                // MBD$M=memberID AND EXISTS(009)
+                mFilter = new String[][]{{"MBD  .M=" + memberID, "@" + idKey}};
             }
             else {
-                filterPrefix = "!";
                 rulesSuffix = "";
+
+                // (MBD$M=memberID OR POR$M=memberID OR POR$A=memberID) AND NOT EXISTS(009)
+                mFilter = new String[][]{{"MBD  .M|POR  .[MA]=" + memberID, "!" + idKey}};
+
+                // (MBD$M=memberID AND NOT EXISTS(009)) OR POR$M=memberID OR POR$A=memberID
+                //mFilter = new String[][]{{"MBD  .M=" + memberID, "!" + idKey}, {"POR  .[MA]=" + memberID}};
             }
 
-            // 009 = HBZ-IDN Aleph NZ (-> "Extension Pack")
-            mFilter = new String[]{"MBD  .M=" + memberID, filterPrefix + "009"};
-
-            defaultFilterOperator = "all";
             defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + ".xml";
         }
         else {
-            mFilter = aSettings.getAsArray("filter");
+            mFilter = new String[][]{aSettings.getAsArray("filter")};
 
-            defaultFilterOperator = "any";
             defaultRulesPath = null;
         }
 
         mFilterKey = aSettings.get("filterKey", LibraryMetadataFilter.DEFAULT_KEY);
-        mFilterOperator = aSettings.get("filterOperator", defaultFilterOperator);
+        mFilterOperator = aSettings.get("filterOperator", "any");
         mRulesPath = Helpers.getPath(getClass(), aSettings.get("transformation-rules", defaultRulesPath));
     }
 
@@ -130,7 +133,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             metamorph.setReceiver(aReceiver);
         }
 
-        mInputQueue.process(metamorph, mFilter.length > 0 ?
+        mInputQueue.process(metamorph, mFilter.length > 0 && mFilter[0].length > 0 ?
                 new Filter(LibraryMetadataFilter.buildMorphDef(mFilterKey, mFilterOperator, mFilter)) : null);
 
         LOGGER.info("Finished transformation ({})", counter);
