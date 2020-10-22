@@ -22,6 +22,9 @@
     <data name="isil" source="@isiliz" />
     <data name="id" source="@mmsiz" />
   </combine>
+  <data name="@uid" source="035  .a">
+    <regexp match="^\($[catalogid]\).*" />
+  </data>
   <data name="@uid" source="981  .a" /> <!-- SISIS CATKey -->
   <data name="@uid" source="@id" />
   <entity name="RecordIdentifier" flushWith="@id">
