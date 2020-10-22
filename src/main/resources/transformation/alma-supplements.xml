@@ -3,7 +3,9 @@
   <xi:include href="macros.xml"/>
 
   <rules xmlns="http://www.culturegraph.org/metamorph">
-    <data name="id" source="009" />
+    <data name="id" source="035  .a">
+      <regexp match="^\($[catalogid]\)(.*)" format="${1}" />
+    </data>
 
     <entity name="IdentifierAlma" flushWith="record">
       <data name="identifierMMS" source="001" />
