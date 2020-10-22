@@ -21,20 +21,26 @@ public class LibraryMetadataFilter {
     private final String mOutputPath;
     private final boolean mPretty;
 
-    public LibraryMetadataFilter(final Settings aSettings) throws IOException {
-        mInputQueue = new FileQueue(aSettings.get("processor", "MARCXML"), true, aSettings.getAsArray("input"));
+    public LibraryMetadataFilter(final String aProcessor, final String[] aInput, final String aKey, final String aOperator, final String[][] aFilters, final String aOutput, final boolean aPretty) throws IOException {
+        mInputQueue = new FileQueue(aProcessor, true, aInput);
 
         if (mInputQueue.isEmpty()) {
             throw new IllegalArgumentException("Could not process limetrans filter: no input specified.");
         }
 
-        mMorphDef = buildMorphDef(
+        mMorphDef = buildMorphDef(aKey, aOperator, aFilters);
+        mOutputPath = aOutput;
+        mPretty = aPretty;
+    }
+
+    public LibraryMetadataFilter(final Settings aSettings) throws IOException {
+        this(aSettings.get("processor", "MARCXML"),
+                aSettings.getAsArray("input"),
                 aSettings.get("key", DEFAULT_KEY),
                 aSettings.get("operator", "any"),
-                aSettings.getAsArray("filter"));
-
-        mOutputPath = aSettings.get("output");
-        mPretty = aSettings.getAsBoolean("pretty", false);
+                new String[][]{aSettings.getAsArray("filter")},
+                aSettings.get("output"),
+                aSettings.getAsBoolean("pretty", false));
     }
 
     public void process() {
@@ -64,51 +70,48 @@ public class LibraryMetadataFilter {
      * - "~Inhaltstext": Record(s) with any field matching "Inhaltstext"
      */
 
-    public static Metamorph buildMorphDef(final String aKey, final String aOperator, final String... aFilters) {
+    public static Metamorph buildMorphDef(final String aKey, final String aOperator, final String[][] aFilters) {
+        final String innerOperator = "any".equals(aOperator) ? "all" : "any";
+
         final InlineMorph metamorph = InlineMorph.in(LibraryMetadataFilter.class)
             .with("<rules>")
             .with("<entity name=\"\" flushWith=\"record\">");
 
-        if (aFilters.length > 0) {
-            metamorph.with("<if>");
-            metamorph.with("<" + aOperator + ">");
+        if (aFilters.length > 0 && aFilters[0].length > 0) {
+            metamorph
+                .with("<if>")
+                .with("<" + aOperator + ">");
 
-            for (final String filterParam : aFilters) {
-                if (filterParam.startsWith("@")) {
+            for (final String[] filters : aFilters) {
+                if (filters.length > 0) {
                     metamorph
-                        .with("<data source=\"" + filterParam.substring(1) + "\" />");
-                }
-                else if (filterParam.startsWith("!")) {
-                    metamorph
-                        .with("<none>")
-                        .with("<data source=\"" + filterParam.substring(1) + "\" />")
-                        .with("</none>");
-                }
-                else {
-                    final String source;
-                    final String filter;
+                        .with("<" + innerOperator + ">");
 
-                    final int index = filterParam.indexOf('=');
-                    if (index != -1) {
-                        source = filterParam.substring(0, index);
-                        filter = filterParam.substring(index + 1);
-                    }
-                    else {
-                        source = "*";
-                        filter = filterParam;
+                    for (final String filterParam : filters) {
+                        if (filterParam.startsWith("@")) {
+                            metamorph
+                                .with(data(filterParam.substring(1), true));
+                        }
+                        else if (filterParam.startsWith("!")) {
+                            metamorph
+                                .with("<none>")
+                                .with(data(filterParam.substring(1), true))
+                                .with("</none>");
+                        }
+                        else {
+                            metamorph
+                                .with(data(filterParam, false));
+                        }
                     }
 
                     metamorph
-                        .with("<data source=\"" + source + "\">")
-                        .with(filter.startsWith("~") ?
-                                "<regexp match=\"" + filter.substring(1) + "\" />" :
-                                "<equals string=\"" + filter + "\" />")
-                        .with("</data>");
+                        .with("</" + innerOperator + ">");
                 }
             }
 
-            metamorph.with("</" + aOperator + ">");
-            metamorph.with("</if>");
+            metamorph
+                .with("</" + aOperator + ">")
+                .with("</if>");
         }
 
         metamorph
@@ -117,6 +120,31 @@ public class LibraryMetadataFilter {
             .with("</rules>");
 
         return metamorph.create();
+    }
+
+    private static String data(final String aFilter, final boolean aFilterSource) {
+        final String source;
+        final String filter;
+
+        final int index = aFilter.indexOf('=');
+        if (index != -1) {
+            source = aFilter.substring(0, index);
+            filter = aFilter.substring(index + 1);
+        }
+        else if (aFilterSource) {
+            source = aFilter;
+            filter = null;
+        }
+        else {
+            source = "*";
+            filter = aFilter;
+        }
+
+        return "<data source=\"" + source + "\">" + (
+                filter == null ? "" : filter.startsWith("~") ?
+                    "<regexp match=\"" + filter.substring(1) + "\" />" :
+                    "<equals string=\"" + filter + "\" />"
+                ) + "</data>";
     }
 
 }
