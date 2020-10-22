@@ -73,9 +73,11 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             // Ex Libris (Deutschland) GmbH
             mVars.put("isil", "DE-632");
 
-            // 009 = HBZ-IDN Aleph NZ (-> "Extension Pack")
-            final String idKey = "009";
+            // Organization originating the system control number
+            final String catalogid = aSettings.get("catalogid", "DE-605");
+            mVars.put("catalogid", catalogid);
 
+            final String hbzIdFilter = "035  .a=~^\\(" + catalogid + "\\)";
             final String rulesSuffix;
 
             if (aSettings.containsSetting("alma-supplements")) {
@@ -84,17 +86,17 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
                 rulesSuffix = "-supplements";
 
-                // MBD$M=memberID AND EXISTS(009)
-                mFilter = new String[][]{{"MBD  .M=" + memberID, "@" + idKey}};
+                // MBD$M=memberID AND 035$a=~^\(DE-605\)
+                mFilter = new String[][]{{"MBD  .M=" + memberID, hbzIdFilter}};
             }
             else {
                 rulesSuffix = "";
 
-                // (MBD$M=memberID OR POR$M=memberID OR POR$A=memberID) AND NOT EXISTS(009)
-                mFilter = new String[][]{{"MBD  .M|POR  .[MA]=" + memberID, "!" + idKey}};
+                // (MBD$M=memberID OR POR$M=memberID OR POR$A=memberID) AND NOT 035$a=~^\(DE-605\)
+                mFilter = new String[][]{{"MBD  .M|POR  .[MA]=" + memberID, "!" + hbzIdFilter}};
 
-                // (MBD$M=memberID AND NOT EXISTS(009)) OR POR$M=memberID OR POR$A=memberID
-                //mFilter = new String[][]{{"MBD  .M=" + memberID, "!" + idKey}, {"POR  .[MA]=" + memberID}};
+                // (MBD$M=memberID AND NOT 035$a=~^\(DE-605\)) OR POR$M=memberID OR POR$A=memberID
+                //mFilter = new String[][]{{"MBD  .M=" + memberID, "!" + hbzIdFilter}, {"POR  .[MA]=" + memberID}};
             }
 
             defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + ".xml";
