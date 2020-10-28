@@ -93,10 +93,10 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
                 rulesSuffix = "";
 
                 // (MBD$M=memberID OR POR$M=memberID OR POR$A=memberID) AND NOT 035$a=~^\(DE-605\)
-                mFilter = new String[][]{{"MBD  .M|POR  .[MA]=" + memberID, "!" + hbzIdFilter}};
+                //mFilter = new String[][]{{"MBD  .M|POR  .[MA]=" + memberID, "!" + hbzIdFilter}};
 
                 // (MBD$M=memberID AND NOT 035$a=~^\(DE-605\)) OR POR$M=memberID OR POR$A=memberID
-                //mFilter = new String[][]{{"MBD  .M=" + memberID, "!" + hbzIdFilter}, {"POR  .[MA]=" + memberID}};
+                mFilter = new String[][]{{"MBD  .M=" + memberID, "!" + hbzIdFilter}, {"POR  .[MA]=" + memberID}};
             }
 
             defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + ".xml";
