@@ -4,7 +4,6 @@ import hbz.limetrans.util.Helpers;
 import hbz.limetrans.util.Settings;
 
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -58,7 +57,6 @@ public class LibraryMetadataFilterTest {
         testEqualsReference("any-equals", "Print version:");
     }
 
-    @Ignore("org.metafacture.metamorph.functions.Regexp can't handle null values")
     @Test
     public void testAnyRegexp() throws IOException {
         testEqualsReference("any-regexp", "~Science");
