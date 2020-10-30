@@ -5,21 +5,16 @@ import hbz.limetrans.util.Cli.CliException;
 import org.xbib.common.settings.Settings;
 
 import org.junit.Assert;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
 public class CliTest {
 
-    @Rule
-    public ExpectedException thrown = ExpectedException.none();
-
     @Test
     public void testInvalidOption() throws CliException {
-        thrown.expect(CliException.class);
-        thrown.expectMessage("Unrecognized option: -o");
+        final Throwable ex = Assert.assertThrows(CliException.class,
+                () -> new Cli("program", "").parse(new String[]{"-o", "value"}));
 
-        new Cli("program", "").parse(new String[]{"-o", "value"});
+        Assert.assertEquals("Unrecognized option: -o\nusage: program\n\n", ex.getMessage());
     }
 
     @Test

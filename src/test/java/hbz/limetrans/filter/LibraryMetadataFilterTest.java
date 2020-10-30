@@ -6,9 +6,7 @@ import org.xbib.common.settings.Settings;
 
 import org.junit.Assert;
 import org.junit.Ignore;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
 import java.io.IOException;
 
@@ -18,15 +16,12 @@ public class LibraryMetadataFilterTest {
     private static final String INPUT_PATH = BASE_PATH + "/input/test.xml";
     private static final String OUTPUT_PATH = BASE_PATH + "/output/test.json";
 
-    @Rule
-    public ExpectedException thrown = ExpectedException.none();
-
     @Test
     public void testMissingFile() throws IOException {
-        thrown.expect(IllegalArgumentException.class);
-        thrown.expectMessage("Could not process limetrans filter: no input specified.");
+        final Throwable ex = Assert.assertThrows(IllegalArgumentException.class,
+                () -> getFilter("missing-file"));
 
-        getFilter("missing-file");
+        Assert.assertEquals("Could not process limetrans filter: no input specified.", ex.getMessage());
     }
 
     @Test

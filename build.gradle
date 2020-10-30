@@ -1,0 +1,80 @@
+group = 'hbz.portal'
+
+println "Timestamp: ${java.time.Instant.now().atZone(java.time.ZoneId.systemDefault())}, Host: ${java.net.InetAddress.getLocalHost()}"
+println "Versions: JVM=${org.gradle.internal.jvm.Jvm.current()}, Groovy=${GroovySystem.getVersion()}, Gradle=${gradle.gradleVersion}"
+
+ext {
+    versions = [
+        'commons-cli'       : '1.3.1',
+        'commons-io'        : '2.4',
+        'commons-validator' : '1.5.1',
+        'elasticsearch'     : '2.2.1',
+        'jackson'           : '2.11.0',
+        'junit'             : '4.13.1',
+        'log4j'             : '2.5',
+        'metafacture'       : '5.0.0',
+        'xbib'              : '2.0.0'
+    ]
+}
+
+apply plugin: 'java'
+apply plugin: 'checkstyle'
+
+apply from: 'gradle/tasks.gradle'
+
+repositories {
+    mavenLocal() // TODO: Remove! ("No matching variant of org.xbib:chart:2.0.0 was found" <- org.xbib:tools:2.0.0 <- org.xbib.util.Finder)
+    mavenCentral()
+    maven { url = uri('https://oss.sonatype.org/content/repositories/snapshots') }
+    maven { url = uri('http://xbib.org/repository'); allowInsecureProtocol = true }
+}
+
+dependencies {
+    implementation "com.fasterxml.jackson.core:jackson-databind:${versions.jackson}"
+    implementation "commons-cli:commons-cli:${versions['commons-cli']}"
+    implementation "commons-io:commons-io:${versions['commons-io']}"
+    implementation "commons-validator:commons-validator:${versions['commons-validator']}"
+    implementation "junit:junit:${versions.junit}"
+    implementation "org.apache.logging.log4j:log4j-core:${versions.log4j}"
+    implementation "org.apache.logging.log4j:log4j-slf4j-impl:${versions.log4j}"
+    implementation "org.elasticsearch:elasticsearch:${versions.elasticsearch}"
+    implementation "org.metafacture:metafacture-biblio:${versions.metafacture}"
+    implementation "org.metafacture:metafacture-commons:${versions.metafacture}"
+    implementation "org.metafacture:metafacture-formeta:${versions.metafacture}"
+    implementation "org.metafacture:metafacture-framework:${versions.metafacture}"
+    implementation "org.metafacture:metafacture-io:${versions.metafacture}"
+    implementation "org.metafacture:metafacture-javaintegration:${versions.metafacture}"
+    implementation "org.metafacture:metafacture-json:${versions.metafacture}"
+    implementation "org.metafacture:metafacture-mangling:${versions.metafacture}"
+    implementation "org.metafacture:metafacture-plumbing:${versions.metafacture}"
+    implementation "org.metafacture:metafacture-statistics:${versions.metafacture}"
+    implementation "org.metafacture:metafacture-strings:${versions.metafacture}"
+    implementation "org.metafacture:metafacture-xml:${versions.metafacture}"
+    implementation "org.metafacture:metamorph:${versions.metafacture}"
+    implementation "org.xbib:common:${versions.xbib}"
+    implementation "org.xbib:tools:${versions.xbib}"
+}
+
+checkstyle {
+    toolVersion '8.30'
+    checkstyleTest.enabled = false // TODO: Enable
+}
+
+tasks.withType(JavaCompile) {
+    'all -processing -rawtypes -serial'.split().each {
+        options.compilerArgs << "-Xlint:${it}"
+    }
+
+    options.compilerArgs << '-Werror'
+}
+
+test {
+    testLogging {
+        showStandardStreams = true
+        exceptionFormat = 'full'
+    }
+
+    systemProperties System.properties
+
+    maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+}

@@ -1,0 +1,23 @@
+def (root, extension) = [file('.').toPath(), '.json']
+
+def camelize = { it.replaceAll(~/\b./) { it[0].toUpperCase() } }
+
+file('src/conf').eachDir {
+    def (group, path, map) = [it.getName(), it.toPath(), [:].withDefault { [] }]
+
+    def indexTask = { name, list ->
+        task(group + name.replaceAll('[^a-zA-Z0-9]', ''),
+                description: list.collect { root.relativize(it.toPath()) },
+                type: JavaExec, group: group, dependsOn: ':compileJava') {
+            doFirst { systemProperties System.properties }
+            classpath = sourceSets.main.runtimeClasspath
+            main = 'hbz.limetrans.Main'
+            args list
+        }
+    }
+
+    it.eachFileMatch(~/.*\Q${extension}\E/) {
+        def name = camelize(it.getName().minus(extension))
+        indexTask(name, [it])
+    }
+}

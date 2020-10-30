@@ -6,9 +6,8 @@ import hbz.limetrans.util.Helpers;
 import org.apache.commons.io.FileUtils;
 import org.xbib.common.settings.Settings;
 
-import org.junit.Rule;
+import org.junit.Assert;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,9 +17,6 @@ import java.util.function.Supplier;
 import static org.junit.Assert.assertEquals;
 
 public class LibraryMetadataTransformationTest {
-
-    @Rule
-    public ExpectedException thrown = ExpectedException.none();
 
     @Test
     public void testInputQueueMissingFile() throws IOException {
@@ -133,10 +129,10 @@ public class LibraryMetadataTransformationTest {
     }
 
     private void testNoInput(final String aName) throws IOException {
-        thrown.expect(IllegalArgumentException.class);
-        thrown.expectMessage("Could not process limetrans: no input specified.");
+        final Throwable ex = Assert.assertThrows(IllegalArgumentException.class,
+                () -> getLimetrans("input-queue-" + aName));
 
-        getLimetrans("input-queue-" + aName);
+        Assert.assertEquals("Could not process limetrans: no input specified.", ex.getMessage());
     }
 
     private void testInputQueueSize(final String aName, final int aSize) throws IOException {
