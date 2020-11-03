@@ -1,0 +1,30 @@
+{
+  "isil": "DE-836",
+  "input": {
+    "queue": {
+      "base": "/mnt/herakles/${isil}/upload/",
+      "basepattern": "[0-9]*",
+      "pattern": "metacoll.DEFHM.updates.*.xml"
+    }
+  },
+  "output": {
+    "elasticsearch": {
+      "cluster": "zbn",
+      "host": ["zephyros.hbz-nrw.de:9300"],
+      "index": {
+        "type": "titel",
+        "name": "${isil}-d7test-",
+        "settings-inline": {
+          "index": {
+            "number_of_replicas": 0
+          }
+        },
+        "timewindow": "yyyyMMdd",
+        "settings": "classpath:/elasticsearch/hbztitle-settings.json",
+        "mapping": "classpath:/elasticsearch/hbztitle-mapping.json",
+        "idKey": "RecordIdentifier.identifierForTheRecord"
+      }
+    }
+  },
+  "transformation-rules": "classpath:/transformation/${isil}.xml"
+}

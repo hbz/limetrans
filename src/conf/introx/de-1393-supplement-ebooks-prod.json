@@ -1,0 +1,24 @@
+{
+  "isil": "DE-1393",
+  "input": {
+    "queue": {
+      "path": "/mnt/herakles/${isil}/upload/",
+      "pattern": "${isil}_{degruyter,hanser,pearson,springer,utb,vahlen}_marc.xml"
+    }
+  },
+  "output": {
+    "elasticsearch": {
+      "cluster": "hap",
+      "host": ["hera.hbz-nrw.de:9300"],
+      "index": {
+        "type": "hbz",
+        "name": "${isil}-introx-",
+        "settings": "classpath:/elasticsearch/hbztitle-settings.json",
+        "mapping": "classpath:/elasticsearch/hbztitle-mapping.json",
+        "idKey": "RecordIdentifier.identifierForTheRecord"
+      },
+      "update": true
+    }
+  },
+  "transformation-rules": "classpath:/transformation/${isil}-ebooks.xml"
+}
