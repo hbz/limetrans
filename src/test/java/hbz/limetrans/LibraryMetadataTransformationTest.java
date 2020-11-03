@@ -189,7 +189,7 @@ public class LibraryMetadataTransformationTest {
     }
 
     private Settings loadSettings(final String aName) throws IOException {
-        return Helpers.loadSettings(new File("src/conf/test/limetrans-" + aName + ".json"));
+        return Helpers.loadSettings(new File("src/conf/test/" + aName + ".json"));
     }
 
 }
