@@ -8,6 +8,9 @@
   <call-macro name="alma-mms-to-isil" dname="@isiliz" source="@mmsiz" />
 
   <entity name="IdentifierAlma" flushWith="record">
+    <data name="identifierMember" source="001">
+      <constant value="$[member]" />
+    </data>
     <data name="identifierMMS" source="001" />
     <data name="identifierMMSIZ" source="@mmsiz" />
     <data name="identifierPID" source="@portfolio" />
