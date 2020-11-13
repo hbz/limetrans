@@ -1,6 +1,293 @@
 {
   "collection" : "DE-605",
   "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990151648920206441"
+  },
+  "TitleAddendum" : {
+    "title" : "limnologia et oecologia regionalis systematis fluminis Amazonas"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1965" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990151648920206441",
+    "identifierMMSIZ" : "990151648920206441"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "22416535"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "0065-6755"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Instituto Nacional de Pesquisas da Amazônia",
+    "corporateBodyIdentifier" : [ "(DE-588)2014487-8" ],
+    "identifierGND" : [ "2014487-8" ]
+  }, {
+    "corporateBodyName" : "Max-Planck-Institut für Limnologie",
+    "corporateBodyNameUnit" : [ "Arbeitsgruppe Tropenökologie" ],
+    "corporateBodyIdentifier" : [ "(DE-588)511736-7" ],
+    "identifierGND" : [ "511736-7" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Amazoniana"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Kiel" ],
+    "name" : [ "Mühlau [in Komm.]" ],
+    "chronology" : [ "1965-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1965-" ]
+  },
+  "Extent" : {
+    "extent" : "Online-Ressource"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "1.1965/68 - 19.2006/07; damit Ersch. eingest."
+  },
+  "Description" : {
+    "description" : [ "Gesehen am 29.08.07", "Gesehen am 29.08.07" ]
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Druckausg.",
+    "description" : "Amazoniana"
+  }, {
+    "prefix" : "Druckausg.",
+    "description" : "Amazoniana"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://www.bibliothek.uni-regensburg.de/ezeit/?2241653",
+    "nonpublicnote" : "EZB"
+  }, {
+    "uri" : "http://www.mpil-ploen.mpg.de/mpiltj.htm",
+    "nonpublicnote" : "Verlag; 1.1965/68 - 16.2000/01: Contents; 17.2002/03 -19.2006/07: Volltexte",
+    "publicnote" : "kostenfrei"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990151648920206441"
+  }, {
+    "uid" : "(DE-605)HT014786137"
+  }, {
+    "uid" : "(DE-A96)220727"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990017076150206441"
+  },
+  "TitleAddendum" : {
+    "title" : "75 Jahre Fußball-Geschichte"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "[Mitarb.: Helmut von Bruck ...]"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1978" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990017076150206441",
+    "identifierMMSIZ" : "990017076150206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "FC Schalke 04",
+    "corporateBodyIdentifier" : [ "(DE-588)2037491-4" ],
+    "identifierGND" : [ "2037491-4" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "FC Schalke 04"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Gelsenkirchen" ],
+    "name" : [ "Druvela-Verl" ],
+    "chronology" : [ "[circa 1978]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[circa 1978]" ]
+  },
+  "Extent" : {
+    "extent" : "219 S. : zahlr. Ill."
+  },
+  "PersonContributor" : [ {
+    "personName" : "Bruck, Helmut <<von>>",
+    "personRole" : [ "[[Bearb.]]" ],
+    "personIdentifier" : [ "(DE-588)174928939" ],
+    "identifierGND" : [ "174928939" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990017076150206441"
+  }, {
+    "uid" : "(DE-605)HT004344482"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990187582740206441"
+  },
+  "TitleAddendum" : {
+    "title" : "Informationsdienst zum Geräte- und Produktsicherheitsgesetz GPSG"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Hrsg.: Bundesanstalt für Arbeitsschutz und Arbeitsmedizin"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2007" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990187582740206441",
+    "identifierMMSIZ" : "990187582740206441"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "26146472"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Bundesanstalt für Arbeitsschutz und Arbeitsmedizin",
+    "corporateBodyIdentifier" : [ "(DE-588)5185811-3" ],
+    "identifierGND" : [ "5185811-3" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Gefährliche Produkte .."
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Dortmund", "Berlin", "Dresden" ],
+    "name" : [ "Bundesanst. für Arbeitsschutz und Arbeitsmedizin" ],
+    "chronology" : [ "2007-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2007-" ]
+  },
+  "Extent" : {
+    "extent" : "Online-Ressource"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "2007 -"
+  },
+  "Description" : {
+    "description" : [ "Gesehen am 20.06.11", "Gesehen am 20.06.11", "Gesehen am 20.06.11", "Gesehen am 20.06.11" ]
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Druckausg.",
+    "description" : "Gefährliche Produkte .."
+  }, {
+    "prefix" : "Druckausg.",
+    "description" : "Gefährliche Produkte .."
+  }, {
+    "prefix" : "Druckausg.",
+    "description" : "Gefährliche Produkte .."
+  }, {
+    "prefix" : "Druckausg.",
+    "description" : "Gefährliche Produkte .."
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://www.produktsicherheitsportal.de/portal-produktsicherheit/de/Startseite.html",
+    "nonpublicnote" : "Verlag",
+    "publicnote" : "kostenfrei"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990187582740206441"
+  }, {
+    "uid" : "(DE-605)HT016868512"
+  }, {
+    "uid" : "(DE-A96)292292"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990087639280206441"
+  },
+  "VolumeDesignation" : {
+    "volumeDesignation" : "45"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Kotzebue"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1815" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990087639280206441",
+    "identifierMMSIZ" : "990087639280206441"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Kotzebue, August <<von>>",
+    "personBio" : "1761-1819",
+    "personIdentifier" : [ "(DE-588)118565796" ],
+    "identifierGND" : [ "118565796" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Theater"
+  }, {
+    "titleMain" : "Der Schutzgeist"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Wien" ],
+    "name" : [ "Doll in Comm" ],
+    "chronology" : [ "1815" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1815" ]
+  },
+  "xbib" : [ {
+    "uid" : "(DE-605)990087639280206441"
+  }, {
+    "uid" : "(DE-605)HT009310445"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
     "identifierForTheRecord" : "(DE-605)99366597115306441"
   },
   "dc" : {
@@ -72,6 +359,1790 @@
   "TypeMedia" : "Elektronische Ressource",
   "TitleOther" : {
     "title" : [ "Olio" ]
+  }
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990124532860206441"
+  },
+  "TitleAddendum" : {
+    "title" : "genomics, transcriptomics, proteomics"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Günter Kahl"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie", "Nachschlagewerk" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2004" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990124532860206441",
+    "identifierMMSIZ" : "990124532860206441"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3527307656", "Gb. : ca. CHF 442.00 (freier Pr.), ca. EUR 299.00 (freier Pr.)" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Kahl, Günter",
+    "personBio" : "1943-",
+    "personIdentifier" : [ "(DE-588)133130754" ],
+    "identifierGND" : [ "133130754" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<The>> dictionary of gene technology"
+  } ],
+  "Edition" : {
+    "edition" : [ "3., rev. and enl. ed." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "2004-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2004-" ]
+  },
+  "DescriptionOfContinuingEditionsOrVolumes" : [ {
+    "prefix" : "Ab 4. Aufl. u.d.T.",
+    "description" : "Kahl, Günter: The dictionary of genomics, transcriptomics and proteomics"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990124532860206441"
+  }, {
+    "uid" : "(DE-605)HT013905202"
+  }, {
+    "uid" : "(DE-A96)202547"
+  }, {
+    "uid" : "(DE-361)2000925"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990167666820206441"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1976" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990167666820206441",
+    "identifierMMSIZ" : "990167666820206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "Person" : [ {
+    "personName" : "Anderson, Dennis R.",
+    "personIdentifier" : [ "(DE-588)157407810" ],
+    "identifierGND" : [ "157407810" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Chrysler Museum of Art",
+    "corporateBodyIdentifier" : [ "(DE-588)5009068-9" ],
+    "identifierGND" : [ "5009068-9" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<300>> (THREE HUNDRED) YEARS OF AMERICAN ART. BY DENNIS (R.) ANDERSON"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "NORFOLK" ],
+    "chronology" : [ "(UM 1976)" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "(UM 1976)" ]
+  },
+  "Extent" : {
+    "extent" : "7 BL. MIT ABB., TEILS FARB."
+  },
+  "Description" : {
+    "description" : [ "300 YEARS OF AMERICAN ART. - MUSEUMSKAT.. - UMSCHLAGT. : <<A>> NORFOLK BICENTENNIAL SALUTE AT NORFOLK'S CHRYSLER MUSEUM" ]
+  },
+  "xbib" : [ {
+    "uid" : "(DE-605)990167666820206441"
+  }, {
+    "uid" : "(DE-605)TT002501966"
+  } ],
+  "TitleOther" : {
+    "title" : [ "<<A>> NORFOLK BICENTENNIAL SALUTE AT NORFOLK'S CHRYSLER MUSEUM" ]
+  }
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073412760206441"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Monika Schwinn ; Bernhard Diehl"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1975" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073412760206441",
+    "identifierMMSIZ" : "990073412760206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3426003821" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Schwinn, Monika",
+    "personBio" : "1942-",
+    "personIdentifier" : [ "(DE-588)172939496" ],
+    "identifierGND" : [ "172939496" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Eine>> Handvoll Menschlichkeit"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "[München] [u.a.]" ],
+    "name" : [ "Droemer Knaur" ],
+    "chronology" : [ "[1975]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[1975]" ]
+  },
+  "Extent" : {
+    "extent" : "218 S."
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Knaur-[Taschenbuch]" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "382" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073412760206441"
+  }, {
+    "uid" : "(DE-605)HT010112920"
+  } ],
+  "PersonCreator" : [ {
+    "personName" : "Diehl, Bernhard",
+    "personBio" : "1946-",
+    "personIdentifier" : [ "(DE-588)172941504" ],
+    "identifierGND" : [ "172941504" ]
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073415180206441"
+  },
+  "TitleAddendum" : {
+    "title" : "Februar bis Mai 1923"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "von Heinrich Seilkopf u. Georg Stüve"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1923" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073415180206441",
+    "identifierMMSIZ" : "990073415180206441"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Seilkopf, Heinrich",
+    "personIdentifier" : [ "(DE-588)117656194" ],
+    "identifierGND" : [ "117656194" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Ergebnisse von Höhenwindmessungen auf dem Nordatlantischen Ozean und im Golf von Mexico"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Hamburg" ],
+    "chronology" : [ "1923" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1923" ]
+  },
+  "Extent" : {
+    "extent" : "38 S., 4 Bl. : graph. Darst., Kt. ; 4-o"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Aus dem Archiv der Deutschen Seewarte" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "42,2" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073415180206441"
+  }, {
+    "uid" : "(DE-605)HT010113992"
+  } ],
+  "PersonCreator" : [ {
+    "personName" : "Stüve, Georg",
+    "personIdentifier" : [ "(DE-588)117358649" ],
+    "identifierGND" : [ "117358649" ]
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990167666980206441"
+  },
+  "TitleAddendum" : {
+    "title" : "= SELECTIONS FROM HUNGARIAN PRIVATE COLLECTIONS"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1981" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990167666980206441",
+    "identifierMMSIZ" : "990167666980206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Magyar Nemzeti Galéria",
+    "corporateBodyIdentifier" : [ "(DE-588)2018679-4" ],
+    "identifierGND" : [ "2018679-4" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "VALOGATAS MAGYAR MAGANGYÜJTEMENYEKBÖL"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "BUDAPEST" ],
+    "chronology" : [ "1981" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1981" ]
+  },
+  "Extent" : {
+    "extent" : "334 S. MIT ZAHLR. ABB."
+  },
+  "Description" : {
+    "description" : [ "AUSSTELLUNGSKAT. - KAT. ENGL. U. UNGAR." ]
+  },
+  "PersonContributor" : [ {
+    "personName" : "BOGAR, IMRE",
+    "personRole" : [ "[[Bearb.]]" ],
+    "personIdentifier" : [ "(DE-588)187668000" ],
+    "identifierGND" : [ "187668000" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990167666980206441"
+  }, {
+    "uid" : "(DE-605)TT002501982"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073411310206441"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "von Schwerber"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1926" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073411310206441",
+    "identifierMMSIZ" : "990073411310206441"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Schwerber, Peter",
+    "personIdentifier" : [ "(DE-588)101610203" ],
+    "identifierGND" : [ "101610203" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Moderne Technik und christliche Weltanschauung"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Bielefeld" ],
+    "name" : [ "Rennebohn & Hausknecht" ],
+    "chronology" : [ "1926" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1926" ]
+  },
+  "Extent" : {
+    "extent" : "96 S."
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Schriftenreihe / Verband der Wissenschaftlichen Katholischen Studentenvereine Unitas" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "5" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073411310206441"
+  }, {
+    "uid" : "(DE-605)HT010112291"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990059759970206441"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1972" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990059759970206441",
+    "identifierMMSIZ" : "990059759970206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "MANAGEMENT-INFORMATIONSSYSTEME. BEITRAEGE AUS D. PRAXIS. HRSG.: PETER LINDEMANN UND KURT NAGEL"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "NEUWIED" ],
+    "name" : [ "LUCHTERHAND" ],
+    "chronology" : [ "1972" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1972" ]
+  },
+  "Extent" : {
+    "extent" : "323 S."
+  },
+  "PersonContributor" : [ {
+    "personName" : "Lindemann, Peter",
+    "personBio" : "1917-",
+    "personIdentifier" : [ "(DE-588)17222702X" ],
+    "identifierGND" : [ "17222702X" ]
+  }, {
+    "personName" : "Nagel, Kurt",
+    "personIdentifier" : [ "(DE-588)105059579" ],
+    "identifierGND" : [ "105059579" ]
+  } ],
+  "TitleSuper" : [ {
+    "titleSuper" : [ "WIRTSCHAFTSFUEHRUNG, KYBERNETIK, DATENVERARBEITUNG. BD 11" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "11" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990059759970206441"
+  }, {
+    "uid" : "(DE-605)HT001065654"
+  } ],
+  "TitleOther" : {
+    "title" : [ "MANAGEMENT-INFORMATIONSSYSTEME" ]
+  }
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073409010206441"
+  },
+  "TitleAddendum" : {
+    "title" : "ein Leitfaden für Schule u. Praxis"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "von Ludwig Schweers u. Heinz Gerards"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1973" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073409010206441",
+    "identifierMMSIZ" : "990073409010206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3801610837" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Schweers, Ludwig",
+    "personIdentifier" : [ "(DE-588)107432374" ],
+    "identifierGND" : [ "107432374" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Das>> neue Waffenrecht"
+  } ],
+  "Edition" : {
+    "edition" : [ "3. neu bearb. Aufl." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Lübeck" ],
+    "name" : [ "Verl. für polizeiliches Fachschrifttum" ],
+    "chronology" : [ "[1973]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[1973]" ]
+  },
+  "Extent" : {
+    "extent" : "285 S. ; 8-o"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Kleine Polizei-Bücherei" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "20" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073409010206441"
+  }, {
+    "uid" : "(DE-605)HT010111297"
+  } ],
+  "PersonCreator" : [ {
+    "personName" : "Gerards, Heinz",
+    "personIdentifier" : [ "(DE-588)107872595" ],
+    "identifierGND" : [ "107872595" ]
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990124534340206441"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "vorgelegt von Ulrich Göbel"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Hochschulschrift", "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2003" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990124534340206441",
+    "identifierMMSIZ" : "990124534340206441"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Göbel, Ulrich",
+    "personBio" : "1975-",
+    "personIdentifier" : [ "(DE-588)128735090" ],
+    "identifierGND" : [ "128735090" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Mikrosatelliten - Instabilitäten bei Colitis ulcerosa"
+  } ],
+  "PublisherName" : [ {
+    "chronology" : [ "2003" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2003" ]
+  },
+  "Extent" : {
+    "extent" : "II, 93 S. : Ill., graph. Darst."
+  },
+  "OnlineAccess" : [ {
+    "uri" : "http://digitale-objekte.hbz-nrw.de/storage/2009/02/02/file_24/2794620.pdf",
+    "relatedto" : "Inhaltsverzeichnis"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990124534340206441"
+  }, {
+    "uid" : "(DE-605)HT013905352"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073409740206441"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Ulrich Schweinfurth"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1966" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073409740206441",
+    "identifierMMSIZ" : "990073409740206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "Person" : [ {
+    "personName" : "Schweinfurth, Ulrich",
+    "personBio" : "1925-2005",
+    "personIdentifier" : [ "(DE-588)117402818" ],
+    "identifierGND" : [ "117402818" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Das>> Pflanzenkleid der Insel Tasmanien"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Heidelberg" ],
+    "name" : [ "Südasien-Inst. d. Unvi" ],
+    "chronology" : [ "1966" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1966" ]
+  },
+  "Extent" : {
+    "extent" : "S. 1965 - 175 ; 8-o"
+  },
+  "Description" : {
+    "description" : [ "Aus: Natur und Museum. 96,5. 1966" ]
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Sonderdrucke der Mitglieder / Südasien-Inst. d. Univ. Heidelberg" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "20" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073409740206441"
+  }, {
+    "uid" : "(DE-605)HT010111610"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990167667020206441"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1977" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990167667020206441",
+    "identifierMMSIZ" : "990167667020206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Electric Gallery",
+    "corporateBodyIdentifier" : [ "(DE-588)16107805-9" ],
+    "identifierGND" : [ "16107805-9" ]
+  }, {
+    "corporateBodyName" : "Vancouver Art Gallery",
+    "corporateBodyIdentifier" : [ "(DE-588)1040826-5" ],
+    "identifierGND" : [ "1040826-5" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "FROM ELECTRICAL FIRE SPIRITS MAY BE KINDLED -BENJAMIN FRANKLIN-"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "VANCOUVER" ],
+    "chronology" : [ "1977" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1977" ]
+  },
+  "Extent" : {
+    "extent" : "9 BL. MIT ABB."
+  },
+  "Description" : {
+    "description" : [ "AUSSTELLUNGSKAT." ]
+  },
+  "xbib" : [ {
+    "uid" : "(DE-605)990167667020206441"
+  }, {
+    "uid" : "(DE-605)TT002501986"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990124537590206441"
+  },
+  "TitleAddendum" : {
+    "title" : "interruption losses and other commercial damages"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Patrick A. Gaughan"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2004" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990124537590206441",
+    "identifierMMSIZ" : "990124537590206441"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "0471266566" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Gaughan, Patrick A.",
+    "personIdentifier" : [ "(DE-588)154501123" ],
+    "identifierGND" : [ "154501123" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Measuring business"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Hoboken, NJ" ],
+    "name" : [ "Wiley" ],
+    "chronology" : [ "2004" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2004" ]
+  },
+  "Extent" : {
+    "extent" : "XIV, 466 S. : graph. Darst."
+  },
+  "xbib" : [ {
+    "uid" : "(DE-605)990124537590206441"
+  }, {
+    "uid" : "(DE-605)HT013905682"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073416430206441"
+  },
+  "TitleAddendum" : {
+    "title" : "(first decade of planning) ; a theoretical analysis"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "by M. C. Sekhar"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1968" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073416430206441",
+    "identifierMMSIZ" : "990073416430206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "Person" : [ {
+    "personName" : "Sekhar, M. C.",
+    "personIdentifier" : [ "(DE-588)178399051" ],
+    "identifierGND" : [ "178399051" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Social Change in India"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "[Poona]" ],
+    "name" : [ "[Deccan College] [u.a.]" ],
+    "chronology" : [ "1968" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1968" ]
+  },
+  "Extent" : {
+    "extent" : "392 S. ; 8-o"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Deccan College Monogram Series" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "39" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073416430206441"
+  }, {
+    "uid" : "(DE-605)HT010114655"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073407760206441"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Richard Schwarz"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1908" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073407760206441",
+    "identifierMMSIZ" : "990073407760206441"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Schwarz, Richard",
+    "personIdentifier" : [ "(DE-588)101293275" ],
+    "identifierGND" : [ "101293275" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Ein>> Beitrag zur Diagnose und Therapie der Cholelithiasis"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Würzburg" ],
+    "name" : [ "Kabitzsch" ],
+    "chronology" : [ "1908" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1908" ]
+  },
+  "Extent" : {
+    "extent" : "29 S."
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Würzburger Abhandlungen aus dem Gesamtgebiet der praktischen Medizin" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "8,10" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073407760206441"
+  }, {
+    "uid" : "(DE-605)HT010110777"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990030478870206441"
+  },
+  "TitleAddendum" : {
+    "title" : "... Münster den 22. Februarii 1720. Clement August"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1720" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990030478870206441",
+    "identifierMMSIZ" : "990030478870206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Nachdem Ihre Hochfürstl. Durchl. zu Münster und Paderborn ... vernommen ... welcher gestalt ... Fleischhawer-Ambts-Genossen ... beym Verkauff ... sich ohnbescheiden auffführen ... ob seye ... kein füglicheres Mittel ... außzufinden gewesen als jedermänniglichen ... die ... Freyheit ... zu ertheilen in hiesiger Stadt das Fleisch frey ... zu verkauffen .."
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "[S.l.]" ],
+    "chronology" : [ "1720" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1720" ]
+  },
+  "Extent" : {
+    "extent" : "[1] Bl. ; 1-o"
+  },
+  "PersonContributor" : [ {
+    "personName" : "Clemens August",
+    "personNumbering" : "I.",
+    "personBio" : "1700-1761",
+    "personTitle" : [ "Köln, Erzbischof" ],
+    "personIdentifier" : [ "(DE-588)118634224" ],
+    "identifierGND" : [ "118634224" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990030478870206441"
+  }, {
+    "uid" : "(DE-605)HT007829376"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073407900206441"
+  },
+  "TitleAddendum" : {
+    "title" : "ein Leitfaden f. Mittel- u. Kleinbetriebe zur Rentabilitätskontrolle der Warenbewegung"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "von Rudolf Schwarz"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1965" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073407900206441",
+    "identifierMMSIZ" : "990073407900206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "Person" : [ {
+    "personName" : "Schwarz, Rudolf",
+    "personIdentifier" : [ "(DE-588)103788867" ],
+    "identifierGND" : [ "103788867" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Die>> kurzfristige Erfolgsrechnung im Einstandswertverfahren"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Köln" ],
+    "name" : [ "Betriebswirtschaftl. Beratungsstelle f. d. Einzelhandel" ],
+    "chronology" : [ "[1965]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[1965]" ]
+  },
+  "Extent" : {
+    "extent" : "171 S. ; 8-o"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Schriften zur Berufs- u. Betriebsförderung im Einzelhandel" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "43,44" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073407900206441"
+  }, {
+    "uid" : "(DE-605)HT010110824"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990226075930206441"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "vorgelegt von Fabian Walders"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Hochschulschrift", "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2018" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990226075930206441",
+    "identifierMMSIZ" : "990226075930206441"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "Person" : [ {
+    "personName" : "Walders, Fabian",
+    "personIdentifier" : [ "(DE-588)1164245996" ],
+    "identifierGND" : [ "1164245996" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Rheinische Friedrich-Wilhelms-Universität Bonn",
+    "corporateBodyIdentifier" : [ "(DE-588)36150-1" ],
+    "identifierGND" : [ "36150-1" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Three essays in econometrics"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Bonn" ],
+    "chronology" : [ "2018" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2018" ]
+  },
+  "Extent" : {
+    "extent" : "Online-Ressource (vii, 151 Seiten, Diagramme)"
+  },
+  "OnlineAccess" : [ {
+    "uri" : "http://nbn-resolving.de/urn:nbn:de:hbz:5-51662",
+    "nonpublicnote" : "Resolving-System"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990226075930206441"
+  }, {
+    "uid" : "(DE-605)HT019799914"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073412540206441"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Otto Schwindrazheim"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073412540206441",
+    "identifierMMSIZ" : "990073412540206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "Person" : [ {
+    "personName" : "Schwindrazheim, Otto",
+    "personIdentifier" : [ "(DE-588)182768457" ],
+    "identifierGND" : [ "182768457" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Wege zur Heimatfreude"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Dresden" ],
+    "name" : [ "Limpert" ],
+    "chronology" : [ "o.J" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "o.J" ]
+  },
+  "Extent" : {
+    "extent" : "119 S. ; 8-o"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Quellen und Wege" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "1" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073412540206441"
+  }, {
+    "uid" : "(DE-605)HT010112834"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990167668780206441"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1983" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990167668780206441",
+    "identifierMMSIZ" : "990167668780206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Refectoire des Jacobins",
+    "corporateBodyIdentifier" : [ "(DE-588)16313575-7" ],
+    "identifierGND" : [ "16313575-7" ]
+  }, {
+    "corporateBodyName" : "Musee decale",
+    "corporateBodyIdentifier" : [ "(DE-588)16312123-0" ],
+    "identifierGND" : [ "16312123-0" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "EMPREINTE, GESTE, SURFACE"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "TOULOUSE" ],
+    "chronology" : [ "1983" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1983" ]
+  },
+  "Extent" : {
+    "extent" : "67 S. MIT ABB., TEILS FARB."
+  },
+  "Description" : {
+    "description" : [ "UMSCHLAGT. : LE MUSEE DECALE. - AUSSTELLUNGSKAT." ]
+  },
+  "xbib" : [ {
+    "uid" : "(DE-605)990167668780206441"
+  }, {
+    "uid" : "(DE-605)TT002502162"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073412960206441"
+  },
+  "TitleUniform" : {
+    "titleUniform" : "<<La>> Croisade des enfants <dt.>"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Marcel Schwob. [Ber. Übertr. von Arthur Seiffhart]"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1970" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073412960206441",
+    "identifierMMSIZ" : "990073412960206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "Person" : [ {
+    "personName" : "Schwob, Marcel",
+    "personBio" : "1867-1905",
+    "personIdentifier" : [ "(DE-588)118795813" ],
+    "identifierGND" : [ "118795813" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Der>> Kinderkreuzzug"
+  } ],
+  "Edition" : {
+    "edition" : [ "Leipzig: Wolff 1914. [Faks.-Ausg.]" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "[Frankfurt a. M.]" ],
+    "name" : [ "[Scheffler]" ],
+    "chronology" : [ "[1970]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[1970]" ]
+  },
+  "Extent" : {
+    "extent" : "33 S."
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Bücherei Der jüngste Tag" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "1,16" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073412960206441"
+  }, {
+    "uid" : "(DE-605)HT010113000"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073410050206441"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1961" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073410050206441",
+    "identifierMMSIZ" : "990073410050206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Die>> Schweiz und das Jungendbuch"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "[München]" ],
+    "name" : [ "[Juventa-Verl.]" ],
+    "chronology" : [ "1961" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1961" ]
+  },
+  "Extent" : {
+    "extent" : "S. 481 - 542 ; 8-o"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Jugentliteratur" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "7" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073410050206441"
+  }, {
+    "uid" : "(DE-605)HT010111712"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073416530206441"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1915" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073416530206441",
+    "identifierMMSIZ" : "990073416530206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Eien Sekretärkonferenz der katholischen Arbeiter- und Knappenvereine Westdeutschlands am 29. Okt. 1915 zu Düsseldorf"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Mönchengladbach" ],
+    "chronology" : [ "1915" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1915" ]
+  },
+  "Extent" : {
+    "extent" : "13 S."
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Materialien d. Verbandszentrale d. kathol. Arbeiter- u. Knappenvereine Westdeutschlands" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "3" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073416530206441"
+  }, {
+    "uid" : "(DE-605)HT010114699"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073416710206441"
+  },
+  "TitleAddendum" : {
+    "title" : "den anglosachsiska väckelsångens genombrott i Sverige ; with a summary in English"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Sven-Åke Selander"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Hochschulschrift", "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1973" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073416710206441",
+    "identifierMMSIZ" : "990073416710206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "Person" : [ {
+    "personName" : "Selander, Sven-Åke",
+    "personIdentifier" : [ "(DE-588)177394633" ],
+    "identifierGND" : [ "177394633" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Den>> nya sången"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "[S.l.]" ],
+    "chronology" : [ "1973" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1973" ]
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Bibliotheca theologiae practicae" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "28" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073416710206441"
+  }, {
+    "uid" : "(DE-605)HT010114757"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073410330206441"
+  },
+  "TitleAddendum" : {
+    "title" : "mit über 100 Notenbeispielen, schematischen Darstellungen u. einer Bildbeil"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "von Gottfried Schweizer"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1957" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073410330206441",
+    "identifierMMSIZ" : "990073410330206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "Person" : [ {
+    "personName" : "Schweizer, Gottfried",
+    "personIdentifier" : [ "(DE-588)102622787" ],
+    "identifierGND" : [ "102622787" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Der>> Musikunterricht"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Berlin [u.a.]" ],
+    "name" : [ "Schroedel" ],
+    "chronology" : [ "[1957]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[1957]" ]
+  },
+  "Extent" : {
+    "extent" : "132 S. ; 8-o"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Handbuch der Mittelschulpädagogik .." ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "5" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073410330206441"
+  }, {
+    "uid" : "(DE-605)HT010111835"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073409780206441"
+  },
+  "TitleAddendum" : {
+    "title" : "psychologische Ratschläge zu seiner Lebensführung"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Eduard Schweingruber"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1970" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073409780206441",
+    "identifierMMSIZ" : "990073409780206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "Person" : [ {
+    "personName" : "Schweingruber, Eduard",
+    "personBio" : "1899-1975",
+    "personIdentifier" : [ "(DE-588)172367042" ],
+    "identifierGND" : [ "172367042" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Der>> sensible Mensch"
+  } ],
+  "Edition" : {
+    "edition" : [ "2. Aufl." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "München" ],
+    "name" : [ "Kindler" ],
+    "chronology" : [ "1970" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1970" ]
+  },
+  "Extent" : {
+    "extent" : "113 S."
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Geist und Psyche" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "2052" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073409780206441"
+  }, {
+    "uid" : "(DE-605)HT010111618"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990148125530206441"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Richard Gameson"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1995" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990148125530206441",
+    "identifierMMSIZ" : "990148125530206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "0198205414" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Gameson, Richard",
+    "personBio" : "1964-",
+    "personIdentifier" : [ "(DE-588)129702188" ],
+    "identifierGND" : [ "129702188" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<The>> role of art in the late Anglo-Saxon church"
+  } ],
+  "Edition" : {
+    "edition" : [ "1. publ." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Oxford [u.a.]" ],
+    "name" : [ "Clarendon Press" ],
+    "chronology" : [ "1995" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1995" ]
+  },
+  "Extent" : {
+    "extent" : "312 S., [16] Bl. : Ill."
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Oxford historical monographs" ]
+  } ],
+  "Description" : {
+    "description" : [ "Zugl.: Diss." ]
+  },
+  "xbib" : [ {
+    "uid" : "(DE-605)990148125530206441"
+  }, {
+    "uid" : "(DE-605)TT001728222"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990148135130206441"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Anna Sapir Abulafia"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1995" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990148135130206441",
+    "identifierMMSIZ" : "990148135130206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "0415000122" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Abulafia, Anna Sapir",
+    "personIdentifier" : [ "(DE-588)160292255" ],
+    "identifierGND" : [ "160292255" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Christians and Jews in the twelth-century renaissance"
+  } ],
+  "Edition" : {
+    "edition" : [ "1. publ." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "London [u.a.]" ],
+    "name" : [ "Routledge" ],
+    "chronology" : [ "1995" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1995" ]
+  },
+  "Extent" : {
+    "extent" : "X, 196 S."
+  },
+  "xbib" : [ {
+    "uid" : "(DE-605)990148135130206441"
+  }, {
+    "uid" : "(DE-605)TT001729180"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990073414560206441"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Konrad Seiffert"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1964" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990073414560206441",
+    "identifierMMSIZ" : "990073414560206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "Person" : [ {
+    "personName" : "Seiffert, Konrad",
+    "personIdentifier" : [ "(DE-588)10746120X" ],
+    "identifierGND" : [ "10746120X" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Pascha von Damaskus"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Würzburg" ],
+    "name" : [ "Arena" ],
+    "chronology" : [ "1964" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1964" ]
+  },
+  "Extent" : {
+    "extent" : "131 S."
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Arena-Taschenbuch" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "1004" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990073414560206441"
+  }, {
+    "uid" : "(DE-605)HT010113635"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990148131570206441"
+  },
+  "TitleAddendum" : {
+    "title" : "christliche Meditation über das Leben und Sterben und die Sterbehilfe"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Hans Halter"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1994" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990148131570206441",
+    "identifierMMSIZ" : "990148131570206441"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3857644036" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Halter, Hans",
+    "personIdentifier" : [ "(DE-588)105768979" ],
+    "identifierGND" : [ "105768979" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Leben dürfen, sterben müssen"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Freiburg, [Schweiz]" ],
+    "name" : [ "Kanisius-Verl. [u.a.]" ],
+    "chronology" : [ "1994" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1994" ]
+  },
+  "Extent" : {
+    "extent" : "32 S."
+  },
+  "Description" : {
+    "description" : [ "Aus: Schweizerische Kirchenzeitung ; 18. 1993" ]
+  },
+  "xbib" : [ {
+    "uid" : "(DE-605)990148131570206441"
+  }, {
+    "uid" : "(DE-605)TT001728824"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990226074370206441"
+  },
+  "TitleAddendum" : {
+    "title" : "kak istoriko-ėtnografičeskij istočnik"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "S.F. Karabanova ; otvetstvennyj redaktor Ju.A. Sem ; chudožnik V.A. Černecov ; Akademija nauk SSSR, Dal'nevostočnyj naučnyj centr, Institut istorii, archeologii i ėtnografii narodov Dal'nego Vostoka"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Russisch" ],
+    "date" : [ "1979" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990226074370206441",
+    "identifierMMSIZ" : "990226074370206441"
+  },
+  "Language" : [ {
+    "language" : "Russisch",
+    "languageSource" : "rus"
+  } ],
+  "Person" : [ {
+    "personName" : "Karabanova, Svetlana Fedorovna"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Institut Istorii, Archeologii i Ėtnografii Narodov Dalʹnego Vostoka",
+    "corporateBodyIdentifier" : [ "(DE-588)114905-2" ],
+    "identifierGND" : [ "114905-2" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Tancy malych narodov juga Dal'nego Vostoka SSSR"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Moskva" ],
+    "name" : [ "Izdatel'stvo \"Nauka\"" ],
+    "chronology" : [ "1979" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1979" ]
+  },
+  "Extent" : {
+    "extent" : "139 Seiten : Illustrationen, Notenbeispiele"
+  },
+  "PersonContributor" : [ {
+    "personName" : "Sem, Jurij A.",
+    "personIdentifier" : [ "(DE-588)103261125" ],
+    "identifierGND" : [ "103261125" ]
+  }, {
+    "personName" : "Černecov, V. A."
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990226074370206441"
+  }, {
+    "uid" : "(DE-605)HT019799753"
+  } ],
+  "TitleOther" : {
+    "title" : [ "Tancy małych narodov juga Dal'nego Vostoka SSSR" ]
   }
 }
 {
@@ -215,4 +2286,128 @@
   "TitleOther" : {
     "title" : [ "Basics entwerfen materialität" ]
   }
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990050093380206441"
+  },
+  "TitleAddendum" : {
+    "title" : "ein Handbuch zur Einführung in die fachliche Informationsarbeit"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Marianne Buder ... (Hrsg.). Begr. von Klaus Laisiepen .."
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1997" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990050093380206441",
+    "identifierMMSIZ" : "990050093380206441"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3598113099", "Gb. : DM 248.00" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Grundlagen der praktischen Information und Dokumentation"
+  } ],
+  "Edition" : {
+    "edition" : [ "4. völlig neu gefaßte Ausg." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "München [u.a.]" ],
+    "name" : [ "Saur" ],
+    "chronology" : [ "1997-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1997-" ]
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "DGD-Schriftenreihe" ]
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Buder, Marianne",
+    "personIdentifier" : [ "(DE-588)108735184" ],
+    "identifierGND" : [ "108735184" ]
+  }, {
+    "personName" : "Laisiepen, Klaus",
+    "personRole" : [ "[Begründer des Werks]" ],
+    "personIdentifier" : [ "(DE-588)105708305" ],
+    "identifierGND" : [ "105708305" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990050093380206441"
+  }, {
+    "uid" : "(DE-605)HT007313557"
+  }, {
+    "uid" : "(DE-A96)150758"
+  }, {
+    "uid" : "(DE-290)659836"
+  }, {
+    "uid" : "(DE-361)1675787"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990139139240206441"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Mark Skipper"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2002" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990139139240206441",
+    "identifierMMSIZ" : "990139139240206441"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Advanced grammar & vocabulary"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Newbury, Berkshire", "[Ismaning]" ],
+    "name" : [ "Express Publ", "Hueber" ],
+    "chronology" : [ "2002-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2002-" ]
+  },
+  "Description" : {
+    "description" : [ "2. Verl. und Hueber-ISBN's eingeklebt", "2. Verl. und Hueber-ISBN's eingeklebt" ]
+  },
+  "PersonContributor" : [ {
+    "personName" : "Skipper, Mark"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990139139240206441"
+  }, {
+    "uid" : "(DE-605)HT014469732"
+  }, {
+    "uid" : "(DE-A96)231536"
+  } ]
 }
