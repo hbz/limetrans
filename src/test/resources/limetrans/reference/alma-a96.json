@@ -463,6 +463,75 @@
 {
   "collection" : "DE-605",
   "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990124532860206441"
+  },
+  "TitleAddendum" : {
+    "title" : "genomics, transcriptomics, proteomics"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Günter Kahl"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie", "Nachschlagewerk" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2004" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990124532860206441",
+    "identifierMMSIZ" : "991001492349706444"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3527307656", "Gb. : ca. CHF 442.00 (freier Pr.), ca. EUR 299.00 (freier Pr.)" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Kahl, Günter",
+    "personBio" : "1943-",
+    "personIdentifier" : [ "(DE-588)133130754" ],
+    "identifierGND" : [ "133130754" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<The>> dictionary of gene technology"
+  } ],
+  "Edition" : {
+    "edition" : [ "3., rev. and enl. ed." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "2004-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2004-" ]
+  },
+  "DescriptionOfContinuingEditionsOrVolumes" : [ {
+    "prefix" : "Ab 4. Aufl. u.d.T.",
+    "description" : "Kahl, Günter: The dictionary of genomics, transcriptomics and proteomics"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990124532860206441"
+  }, {
+    "uid" : "(DE-605)HT013905202"
+  }, {
+    "uid" : "(DE-A96)991001492349706444"
+  }, {
+    "uid" : "(DE-A96)202547"
+  }, {
+    "uid" : "(DE-361)2000925"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
     "identifierForTheRecord" : "(DE-605)99366545708706441"
   },
   "CreatorStatement" : {
@@ -603,4 +672,132 @@
   "TitleOther" : {
     "title" : [ "Basics entwerfen materialität" ]
   }
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990050093380206441"
+  },
+  "TitleAddendum" : {
+    "title" : "ein Handbuch zur Einführung in die fachliche Informationsarbeit"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Marianne Buder ... (Hrsg.). Begr. von Klaus Laisiepen .."
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1997" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990050093380206441",
+    "identifierMMSIZ" : "991001206629706444"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3598113099", "Gb. : DM 248.00" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Grundlagen der praktischen Information und Dokumentation"
+  } ],
+  "Edition" : {
+    "edition" : [ "4. völlig neu gefaßte Ausg." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "München [u.a.]" ],
+    "name" : [ "Saur" ],
+    "chronology" : [ "1997-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1997-" ]
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "DGD-Schriftenreihe" ]
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Buder, Marianne",
+    "personIdentifier" : [ "(DE-588)108735184" ],
+    "identifierGND" : [ "108735184" ]
+  }, {
+    "personName" : "Laisiepen, Klaus",
+    "personRole" : [ "[Begründer des Werks]" ],
+    "personIdentifier" : [ "(DE-588)105708305" ],
+    "identifierGND" : [ "105708305" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990050093380206441"
+  }, {
+    "uid" : "(DE-605)HT007313557"
+  }, {
+    "uid" : "(DE-A96)991001206629706444"
+  }, {
+    "uid" : "(DE-A96)150758"
+  }, {
+    "uid" : "(DE-290)659836"
+  }, {
+    "uid" : "(DE-361)1675787"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)990139139240206441"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Mark Skipper"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2002" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990139139240206441",
+    "identifierMMSIZ" : "991002138299706444"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Advanced grammar & vocabulary"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Newbury, Berkshire", "[Ismaning]" ],
+    "name" : [ "Express Publ", "Hueber" ],
+    "chronology" : [ "2002-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2002-" ]
+  },
+  "Description" : {
+    "description" : [ "2. Verl. und Hueber-ISBN's eingeklebt", "2. Verl. und Hueber-ISBN's eingeklebt" ]
+  },
+  "PersonContributor" : [ {
+    "personName" : "Skipper, Mark"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990139139240206441"
+  }, {
+    "uid" : "(DE-605)HT014469732"
+  }, {
+    "uid" : "(DE-A96)991002138299706444"
+  }, {
+    "uid" : "(DE-A96)231536"
+  } ]
 }

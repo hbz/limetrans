@@ -63,6 +63,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             mVars.put("isil", aSettings.get("isil"));
         }
 
+        final String defaultFilterOperator;
         final String defaultRulesPath;
 
         if (aSettings.containsSetting("alma")) {
@@ -77,7 +78,9 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             final String catalogid = aSettings.get("catalogid", "DE-605");
             mVars.put("catalogid", catalogid);
 
-            final String hbzIdFilter = "035  .a=~^\\(" + catalogid + "\\)";
+            final String networkFilter = "MBD  .M=" + aSettings.get("alma-network", "49HBZ_NETWORK");
+            final String memberFilter = "MBD  .M|POR  .[MA]=" + memberID;
+            final String itemGuard = "ITM  ";
             final String rulesSuffix;
 
             if (aSettings.containsSetting("alma-supplements")) {
@@ -86,29 +89,28 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
                 rulesSuffix = "-supplements";
 
-                // MBD$M=memberID AND 035$a=~^\(DE-605\)
-                mFilter = new String[][]{{"MBD  .M=" + memberID, hbzIdFilter}};
+                // (MBD$M=memberID OR POR$M=memberID OR POR$A=memberID) AND MBD$M=49HBZ_NETWORK AND EXISTS(ITM)
+                mFilter = new String[][]{{memberFilter}, {networkFilter}, {"@" + itemGuard}};
             }
             else {
                 rulesSuffix = "";
 
-                // (MBD$M=memberID OR POR$M=memberID OR POR$A=memberID) AND NOT 035$a=~^\(DE-605\)
-                //mFilter = new String[][]{{"MBD  .M|POR  .[MA]=" + memberID, "!" + hbzIdFilter}};
-
-                // (MBD$M=memberID AND NOT 035$a=~^\(DE-605\)) OR POR$M=memberID OR POR$A=memberID
-                mFilter = new String[][]{{"MBD  .M=" + memberID, "!" + hbzIdFilter}, {"POR  .[MA]=" + memberID}};
+                // (MBD$M=memberID OR POR$M=memberID OR POR$A=memberID) AND (NOT MBD$M=49HBZ_NETWORK OR NOT EXISTS(ITM))
+                mFilter = new String[][]{{memberFilter}, {"!" + networkFilter, "!" + itemGuard}};
             }
 
+            defaultFilterOperator = "all";
             defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + ".xml";
         }
         else {
             mFilter = new String[][]{aSettings.getAsArray("filter")};
 
+            defaultFilterOperator = "any";
             defaultRulesPath = null;
         }
 
         mFilterKey = aSettings.get("filterKey", LibraryMetadataFilter.DEFAULT_KEY);
-        mFilterOperator = aSettings.get("filterOperator", "any");
+        mFilterOperator = aSettings.get("filterOperator", defaultFilterOperator);
         mRulesPath = Helpers.getPath(getClass(), aSettings.get("transformation-rules", defaultRulesPath));
     }
 
