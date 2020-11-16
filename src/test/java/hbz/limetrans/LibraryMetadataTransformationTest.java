@@ -2,10 +2,9 @@ package hbz.limetrans;
 
 import hbz.limetrans.test.TransformationTestCase;
 import hbz.limetrans.util.Helpers;
+import hbz.limetrans.util.Settings;
 
 import org.apache.commons.io.FileUtils;
-import org.xbib.common.settings.Settings;
-
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -162,8 +161,8 @@ public class LibraryMetadataTransformationTest {
     }
 
     private void testElasticsearchEqualsReference(final String aName, final String aId) throws IOException {
-        final Settings settings = loadSettings(aName).getAsSettings("output.elasticsearch");
-        final ElasticsearchClient client = new ElasticsearchClient(Helpers.convertSettings(settings));
+        final Settings settings = loadSettings(aName).getAsSettings("output").getAsSettings("elasticsearch");
+        final ElasticsearchClient client = new ElasticsearchClient(settings);
 
         try {
             testLimetransEqualsReference(getLimetrans(aName), aName, getReferenceFile(aName, "json"),
@@ -189,7 +188,7 @@ public class LibraryMetadataTransformationTest {
     }
 
     private Settings loadSettings(final String aName) throws IOException {
-        return Helpers.loadSettings(new File("src/conf/test/" + aName + ".json"));
+        return Helpers.loadSettings("src/conf/test/" + aName + ".json");
     }
 
 }

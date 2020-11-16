@@ -1,8 +1,8 @@
 package hbz.limetrans;
 
 import hbz.limetrans.util.LimetransException;
+import hbz.limetrans.util.Settings;
 
-import org.elasticsearch.common.settings.Settings;
 import org.metafacture.framework.annotations.Description;
 import org.metafacture.framework.helpers.DefaultObjectReceiver;
 import org.metafacture.framework.helpers.DefaultStreamReceiver;

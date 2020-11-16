@@ -1,16 +1,16 @@
 package transformationquality;
 
+import hbz.limetrans.LibraryMetadataTransformation;
+import hbz.limetrans.util.Helpers;
+
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import hbz.limetrans.util.Helpers;
-import hbz.limetrans.LibraryMetadataTransformation;
 import org.junit.BeforeClass;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.URL;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -25,8 +25,8 @@ public abstract class AbstractTransformationTest {
     @BeforeClass
     public static void prepare() throws IOException, InterruptedException {
 
-        final URL url = new File("src/conf/test/transformation-quality.json").toURI().toURL();
-        final LibraryMetadataTransformation limetrans = new LibraryMetadataTransformation(Helpers.loadSettings(url));
+        final LibraryMetadataTransformation limetrans = new LibraryMetadataTransformation(
+                Helpers.loadSettings("src/conf/test/transformation-quality.json"));
         limetrans.process();
 
         final File referenceFile = new File("src/test/resources/integration/reference/transformation-quality.json");

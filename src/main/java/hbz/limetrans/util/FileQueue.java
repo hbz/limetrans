@@ -14,7 +14,6 @@ import org.metafacture.io.RecordReader;
 import org.metafacture.json.JsonDecoder;
 import org.metafacture.strings.StreamUnicodeNormalizer;
 import org.metafacture.xml.XmlDecoder;
-import org.xbib.common.settings.Settings;
 
 import java.io.File;
 import java.io.IOException;
@@ -115,10 +114,15 @@ public class FileQueue implements Iterable<String> {
         for (final String fileName : aFileNames) {
             final File file = new File(fileName);
 
-            add(Settings.settingsBuilder()
-                    .put("path", file.getParent())
-                    .put("pattern", file.getName())
-                    .build());
+            final Settings.Builder settingsBuilder = Settings.settingsBuilder();
+            settingsBuilder.put("pattern", file.getName());
+
+            final String parent = file.getParent();
+            if (parent != null) {
+                settingsBuilder.put("path", parent);
+            }
+
+            add(settingsBuilder.build());
         }
     }
 
@@ -178,7 +182,7 @@ public class FileQueue implements Iterable<String> {
     }
 
     private void add(final Settings aSettings) throws IOException {
-        LOGGER.debug("Settings: {}", aSettings.getAsMap());
+        LOGGER.debug("Settings: {}", aSettings);
 
         if (aSettings.containsSetting("patterns")) {
             for (final String pattern : aSettings.getAsArray("patterns")) {

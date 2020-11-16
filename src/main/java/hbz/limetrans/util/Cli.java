@@ -6,7 +6,6 @@ import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
-import org.xbib.common.settings.Settings;
 
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
@@ -86,7 +85,7 @@ public class Cli {
         }
 
         if (aArgsKey != null) {
-            settingsBuilder.putArray(aArgsKey, getArgs());
+            settingsBuilder.put(new String[]{aArgsKey}, getArgs());
         }
 
         return settingsBuilder.build();

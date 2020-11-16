@@ -1,13 +1,12 @@
 package hbz.limetrans.util;
 
 import org.apache.commons.io.IOUtils;
-import org.xbib.common.settings.Settings;
-import org.xbib.common.settings.loader.SettingsLoader;
-import org.xbib.common.settings.loader.SettingsLoaderFactory;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.nio.charset.Charset;
 
@@ -19,29 +18,16 @@ public class Helpers {
         throw new IllegalAccessError("Utility class");
     }
 
-    public static Settings loadSettings(final URL aUrl) throws IOException {
-        final SettingsLoader settingsLoader = SettingsLoaderFactory.loaderFromResource(aUrl.toString());
+    public static Settings loadSettings(final String aPath) throws IOException {
+        final Settings.Builder settingsBuilder = Settings.settingsBuilder();
 
-        return Settings.settingsBuilder()
-            .put(settingsLoader.load(slurpFile(aUrl)))
-            .replacePropertyPlaceholders()
-            .build();
-    }
+        if (aPath != null) {
+            try (InputStream in = new FileInputStream(aPath)) {
+                settingsBuilder.load(in);
+            }
+        }
 
-    public static Settings loadSettings(final File aFile) throws IOException {
-        return loadSettings(aFile.toURI().toURL());
-    }
-
-    public static Settings convertSettings(final org.elasticsearch.common.settings.Settings aSettings) {
-        return Settings.settingsBuilder()
-            .put(aSettings.getAsMap())
-            .build();
-    }
-
-    public static org.elasticsearch.common.settings.Settings convertSettings(final Settings aSettings) {
-        return org.elasticsearch.common.settings.Settings.settingsBuilder()
-            .put(aSettings.getAsMap())
-            .build();
+        return settingsBuilder.build();
     }
 
     public static String slurpFile(final URL aUrl) throws IOException {

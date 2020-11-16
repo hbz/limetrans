@@ -3,6 +3,7 @@ package hbz.limetrans;
 import hbz.limetrans.filter.LibraryMetadataFilter;
 import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.Helpers;
+import hbz.limetrans.util.Settings;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,7 +17,6 @@ import org.metafacture.metamorph.Filter;
 import org.metafacture.metamorph.Metamorph;
 import org.metafacture.plumbing.StreamTee;
 import org.metafacture.statistics.Counter;
-import org.xbib.common.settings.Settings;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -37,9 +37,9 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
     private final boolean mPrettyPrinting;
 
     public LibraryMetadataTransformation(final Settings aSettings) throws IOException {
-        LOGGER.debug("Settings: {}", aSettings.getAsMap());
+        LOGGER.debug("Settings: {}", aSettings);
 
-        mInputQueue = new FileQueue(aSettings.getGroups("input").get("queue"));
+        mInputQueue = new FileQueue(aSettings.getAsSettings("input").getAsSettings("queue"));
 
         if (mInputQueue.isEmpty()) {
             throw new IllegalArgumentException("Could not process limetrans: no input specified.");
@@ -133,10 +133,10 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             return;
         }
 
-        LOGGER.info("Indexing into Elasticsearch: {}", mElasticsearchSettings.getAsMap());
+        LOGGER.info("Indexing into Elasticsearch: {}", mElasticsearchSettings);
 
         final RecordIdChanger recordIdChanger = new RecordIdChanger();
-        final String idKey = mElasticsearchSettings.get("index.idKey");
+        final String idKey = ElasticsearchClient.getIndexSettings(mElasticsearchSettings).get("idKey");
 
         if (idKey != null) {
             recordIdChanger.setIdLiteral(idKey);
@@ -144,7 +144,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
         }
 
         final ElasticsearchIndexer elasticsearchIndexer =
-            new ElasticsearchIndexer(Helpers.convertSettings(mElasticsearchSettings));
+            new ElasticsearchIndexer(mElasticsearchSettings);
 
         aTee.addReceiver(recordIdChanger);
         recordIdChanger.setReceiver(elasticsearchIndexer);

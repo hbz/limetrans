@@ -1,8 +1,7 @@
 package hbz.limetrans.filter;
 
 import hbz.limetrans.util.Helpers;
-
-import org.xbib.common.settings.Settings;
+import hbz.limetrans.util.Settings;
 
 import org.junit.Assert;
 import org.junit.Ignore;
@@ -76,10 +75,10 @@ public class LibraryMetadataFilterTest {
     private LibraryMetadataFilter getFilter(final String aInput, final String... aFilters) throws IOException {
         final Settings.Builder settingsBuilder = Settings.settingsBuilder();
 
-        settingsBuilder.putArray("input", new String[]{aInput});
-        settingsBuilder.putArray("filter", aFilters);
-        settingsBuilder.put("output", OUTPUT_PATH);
-        settingsBuilder.put("pretty", true);
+        settingsBuilder.put(new String[]{"input"}, new String[]{aInput});
+        settingsBuilder.put(new String[]{"filter"}, aFilters);
+        settingsBuilder.put(new String[]{"output"}, OUTPUT_PATH);
+        settingsBuilder.put(new String[]{"pretty"}, true);
 
         return new LibraryMetadataFilter(settingsBuilder.build());
     }

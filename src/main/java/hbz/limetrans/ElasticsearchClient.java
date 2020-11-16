@@ -2,6 +2,7 @@ package hbz.limetrans;
 
 import hbz.limetrans.util.Helpers;
 import hbz.limetrans.util.LimetransException;
+import hbz.limetrans.util.Settings;
 
 import com.carrotsearch.hppc.cursors.ObjectCursor;
 import org.apache.logging.log4j.LogManager;
@@ -13,7 +14,6 @@ import org.elasticsearch.action.bulk.BulkResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.cluster.metadata.AliasMetaData;
-import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.elasticsearch.index.IndexNotFoundException;
 
@@ -26,6 +26,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.function.Consumer;
 import java.util.regex.Pattern;
 
 public class ElasticsearchClient {
@@ -34,9 +35,12 @@ public class ElasticsearchClient {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
-    private static final String INDEX_NAME_KEY = "index.name";
-    private static final String INDEX_TYPE_KEY = "index.type";
+    private static final String INDEX_KEY = "index";
+    private static final String INDEX_NAME_KEY = "name";
+    private static final String INDEX_TYPE_KEY = "type";
+    private static final String SETTINGS_SEPARATOR = ".";
 
+    private final Settings mIndexSettings;
     private final Settings mSettings;
     private final String mAliasName;
     private final String mIndexName;
@@ -48,13 +52,14 @@ public class ElasticsearchClient {
     private int numRecords;
 
     public ElasticsearchClient(final Settings aSettings) {
-        LOGGER.debug("Settings: {}", aSettings.getAsMap());
+        LOGGER.debug("Settings: {}", aSettings);
 
         mSettings = aSettings;
+        mIndexSettings = getIndexSettings(aSettings);
 
         reset();
 
-        final String indexName = aSettings.get(INDEX_NAME_KEY).toLowerCase();
+        final String indexName = mIndexSettings.get(INDEX_NAME_KEY).toLowerCase();
         final String timeWindow = getTimeWindow();
 
         if (timeWindow != null) {
@@ -88,9 +93,13 @@ public class ElasticsearchClient {
 
     public ElasticsearchClient(final String aIndexName, final String aIndexType) {
         this(Settings.settingsBuilder()
-                .put(INDEX_NAME_KEY, aIndexName)
-                .put(INDEX_TYPE_KEY, aIndexType)
+                .put(new String[]{INDEX_KEY, INDEX_NAME_KEY}, aIndexName)
+                .put(new String[]{INDEX_KEY, INDEX_TYPE_KEY}, aIndexType)
                 .build());
+    }
+
+    public static Settings getIndexSettings(final Settings aSettings) {
+        return aSettings.getAsSettings(INDEX_KEY);
     }
 
     public void setClient(final String[] aHosts, final String aDataDir) {
@@ -188,7 +197,7 @@ public class ElasticsearchClient {
     }
 
     public String getIndexType() {
-        return mSettings.get(INDEX_TYPE_KEY);
+        return mIndexSettings.get(INDEX_TYPE_KEY);
     }
 
     public String getIndexName() {
@@ -199,12 +208,12 @@ public class ElasticsearchClient {
         return mAliasName;
     }
 
-    private String getAliasIndex(final String index) {
-        final Pattern pattern = Pattern.compile("^" + Pattern.quote(index) + "\\d+$");
+    private String getAliasIndex(final String aIndex) {
+        final Pattern pattern = Pattern.compile("^" + Pattern.quote(aIndex) + "\\d+$");
         final Set<String> indices = new HashSet<>();
 
         for (final ObjectCursor<String> indexName : mClient.admin().indices()
-                .prepareGetAliases(index).get().getAliases().keys()) {
+                .prepareGetAliases(aIndex).get().getAliases().keys()) {
             if (pattern.matcher(indexName.value).matches()) {
                 indices.add(indexName.value);
             }
@@ -216,12 +225,12 @@ public class ElasticsearchClient {
             case 1:
                 return indices.iterator().next();
             default:
-                throw new RuntimeException(index + ": too many indices: " + indices);
+                throw new RuntimeException(aIndex + ": too many indices: " + indices);
         }
     }
 
     private String getTimeWindow() {
-        final String timeWindow = mSettings.get("index.timewindow");
+        final String timeWindow = mIndexSettings.get("timewindow");
 
         if (timeWindow == null || timeWindow.isEmpty()) {
             return null;
@@ -290,9 +299,10 @@ public class ElasticsearchClient {
     private Client newClient(final String[] aHosts) {
         LOGGER.info("Connecting to server: {}", String.join(", ", aHosts));
 
-        final TransportClient client = TransportClient.builder()
-            .settings(getClientSettings())
-            .build();
+        final TransportClient client = TransportClient.builder().settings(elasticsearchSettings("transport", b -> {
+            b.put(INDEX_KEY + SETTINGS_SEPARATOR + INDEX_TYPE_KEY, getIndexType());
+            b.put("cluster.name", mSettings.get("cluster", "elasticsearch"));
+        })).build();
 
         addClientTransport(client, aHosts);
 
@@ -352,13 +362,6 @@ public class ElasticsearchClient {
             .setWaitForYellowStatus().get();
     }
 
-    private Settings getClientSettings() {
-        return Settings.settingsBuilder()
-            .put(INDEX_TYPE_KEY, getIndexType())
-            .put("cluster.name", mSettings.get("cluster", "elasticsearch"))
-            .build();
-    }
-
     private void addClientTransport(final TransportClient aClient, final String[] aHosts) {
         for (final String host : aHosts) {
             final String[] hostWithPort = host.split(":");
@@ -375,44 +378,34 @@ public class ElasticsearchClient {
     }
 
     private void setIndexSettings(final CreateIndexRequestBuilder aCreateRequest) {
-        final Settings settings = getIndexSettings();
-
-        LOGGER.debug("Applying settings: {}", settings.getAsStructuredMap());
-        aCreateRequest.setSettings(settings);
+        aCreateRequest.setSettings(elasticsearchIndexSettings("settings"));
     }
 
     private void addIndexMapping(final CreateIndexRequestBuilder aCreateRequest) {
-        final Settings mapping = getIndexMapping();
-
-        LOGGER.debug("Applying mapping: {}", mapping.getAsStructuredMap());
-        aCreateRequest.addMapping(getIndexType(), mapping.getAsStructuredMap());
+        aCreateRequest.addMapping(getIndexType(), elasticsearchIndexSettings("mapping").getAsStructuredMap());
     }
 
-    private Settings getIndexSettings() {
-        return Settings.settingsBuilder()
-            .put(settingsFromFile("index.settings"))
-            .put(mSettings.getAsSettings("index.settings-inline"))
-            .build();
-    }
-
-    private Settings getIndexMapping() {
-        return settingsFromFile("index.mapping");
-    }
-
-    private Settings settingsFromFile(final String aKey) {
-        final String path = mSettings.get(aKey);
-        final Settings.Builder settingsBuilder = Settings.settingsBuilder();
-
-        if (path != null) {
+    private org.elasticsearch.common.settings.Settings elasticsearchIndexSettings(final String aKey) {
+        return elasticsearchSettings(aKey, b -> {
             try {
-                settingsBuilder.loadFromSource(Helpers.slurpFile(path, getClass()));
+                b.put(Helpers.loadSettings(mIndexSettings.get(aKey)).getAsFlatMap(SETTINGS_SEPARATOR));
+                b.put(mIndexSettings.getAsSettings(aKey + "-inline").getAsFlatMap(SETTINGS_SEPARATOR));
             }
             catch (final IOException e) {
-                throw new LimetransException("Failed to read `" + aKey + "' file", e);
+                throw new LimetransException("Failed to read index " + aKey + " file", e);
             }
-        }
+        });
+    }
 
-        return settingsBuilder.build();
+    private org.elasticsearch.common.settings.Settings elasticsearchSettings(final String aKey,
+            final Consumer<org.elasticsearch.common.settings.Settings.Builder> aConsumer) {
+        final org.elasticsearch.common.settings.Settings.Builder settingsBuilder =
+            org.elasticsearch.common.settings.Settings.settingsBuilder();
+        aConsumer.accept(settingsBuilder);
+
+        final org.elasticsearch.common.settings.Settings settings = settingsBuilder.build();
+        LOGGER.debug("Elasticsearch {}: {}", aKey, settings.getAsStructuredMap());
+        return settings;
     }
 
 }

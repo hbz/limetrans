@@ -1,6 +1,7 @@
 package hbz.limetrans.filter;
 
 import hbz.limetrans.util.FileQueue;
+import hbz.limetrans.util.Settings;
 
 import org.metafacture.io.ObjectStdoutWriter;
 import org.metafacture.io.ObjectWriter;
@@ -8,7 +9,6 @@ import org.metafacture.json.JsonEncoder;
 import org.metafacture.metamorph.Filter;
 import org.metafacture.metamorph.InlineMorph;
 import org.metafacture.metamorph.Metamorph;
-import org.xbib.common.settings.Settings;
 
 import java.io.IOException;
 

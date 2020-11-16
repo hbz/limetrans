@@ -4,16 +4,16 @@ public class LimetransException extends RuntimeException {
 
     private static final long serialVersionUID = -97804944829183531L;
 
-    public LimetransException(final String message) {
-        super(message);
+    public LimetransException(final String aMessage) {
+        super(aMessage);
     }
 
-    public LimetransException(final Throwable cause) {
-        super(cause);
+    public LimetransException(final Throwable aCause) {
+        super(aCause);
     }
 
-    public LimetransException(final String message, final Throwable cause) {
-        super(message, cause);
+    public LimetransException(final String aMessage, final Throwable aCause) {
+        super(aMessage, aCause);
     }
 
 }

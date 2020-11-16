@@ -12,8 +12,7 @@ ext {
         'jackson'           : '2.11.0',
         'junit'             : '4.13.1',
         'log4j'             : '2.5',
-        'metafacture'       : '5.0.0',
-        'xbib'              : '2.0.0'
+        'metafacture'       : '5.0.0'
     ]
 }
 
@@ -25,7 +24,6 @@ apply from: 'gradle/tasks.gradle'
 repositories {
     mavenCentral()
     maven { url = uri('https://oss.sonatype.org/content/repositories/snapshots') }
-    maven { url = uri('https://xbib.org/repository') }
 }
 
 dependencies {
@@ -50,7 +48,6 @@ dependencies {
     implementation "org.metafacture:metafacture-strings:${versions.metafacture}"
     implementation "org.metafacture:metafacture-xml:${versions.metafacture}"
     implementation "org.metafacture:metamorph:${versions.metafacture}"
-    implementation "org.xbib:common:${versions.xbib}"
 }
 
 checkstyle {

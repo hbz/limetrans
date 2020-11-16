@@ -2,8 +2,6 @@ package hbz.limetrans.util;
 
 import hbz.limetrans.util.Cli.CliException;
 
-import org.xbib.common.settings.Settings;
-
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -27,7 +25,7 @@ public class CliTest {
         final Settings.Builder settingsBuilder = Settings.settingsBuilder();
         settingsBuilder.put("opt", "value");
 
-        Assert.assertEquals(settingsBuilder.build(), cli.getAsSettings());
+        assertSettings(settingsBuilder.build(), cli.getAsSettings());
     }
 
     @Test
@@ -46,9 +44,13 @@ public class CliTest {
         cli.parse(aArgs);
 
         final Settings.Builder settingsBuilder = Settings.settingsBuilder();
-        settingsBuilder.putArray("args", aArgs);
+        settingsBuilder.put(new String[]{"args"}, aArgs);
 
-        Assert.assertEquals(settingsBuilder.build(), cli.getAsSettings("args"));
+        assertSettings(settingsBuilder.build(), cli.getAsSettings("args"));
+    }
+
+    private void assertSettings(final Settings aExpected, final Settings aActual) throws CliException {
+        Assert.assertEquals(aExpected.getAsFlatMap("."), aActual.getAsFlatMap("."));
     }
 
 }
