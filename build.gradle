@@ -23,7 +23,6 @@ apply plugin: 'checkstyle'
 apply from: 'gradle/tasks.gradle'
 
 repositories {
-    mavenLocal() // TODO: Remove! ("No matching variant of org.xbib:chart:2.0.0 was found" <- org.xbib:tools:2.0.0 <- org.xbib.util.Finder)
     mavenCentral()
     maven { url = uri('https://oss.sonatype.org/content/repositories/snapshots') }
     maven { url = uri('https://xbib.org/repository') }
@@ -52,7 +51,6 @@ dependencies {
     implementation "org.metafacture:metafacture-xml:${versions.metafacture}"
     implementation "org.metafacture:metamorph:${versions.metafacture}"
     implementation "org.xbib:common:${versions.xbib}"
-    implementation "org.xbib:tools:${versions.xbib}"
 }
 
 checkstyle {

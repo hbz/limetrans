@@ -15,14 +15,20 @@ import org.metafacture.json.JsonDecoder;
 import org.metafacture.strings.StreamUnicodeNormalizer;
 import org.metafacture.xml.XmlDecoder;
 import org.xbib.common.settings.Settings;
-import org.xbib.util.Finder;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.PathMatcher;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
@@ -83,6 +89,8 @@ public class FileQueue implements Iterable<String> {
     private static final Logger LOGGER = LogManager.getLogger();
 
     private static final String GROUP_MARKER = "%GROUP_MARKER%";
+
+    private static final FileSystem FILE_SYSTEM = FileSystems.getDefault();
 
     private final Processor mProcessor;
     private final Queue<String> mQueue = new LinkedList<>();
@@ -194,7 +202,7 @@ public class FileQueue implements Iterable<String> {
                 final String groupPattern = prefix + "*" + suffix;
                 LOGGER.debug("Finding groups: {}", groupPattern);
 
-                final Finder.PathFile file = find(aSettings, groupPattern).reduce(null, (a, b) -> b);
+                final Path file = find(aSettings, groupPattern).reduce(null, (a, b) -> b);
                 if (file != null) {
                     // FIXME: Support bracket and brace expressions (`[A-Z]*.{java,class}`)
                     final Pattern p = Pattern.compile(aPattern
@@ -203,7 +211,7 @@ public class FileQueue implements Iterable<String> {
                             .replace("?", ".")
                             .replace(GROUP_MARKER, "(.*)"));
 
-                    final String name = file.getPath().getFileName().toString();
+                    final String name = file.getFileName().toString();
                     LOGGER.debug("Extracting group: {}: {}", p, name);
 
                     final Matcher m = p.matcher(name);
@@ -232,22 +240,59 @@ public class FileQueue implements Iterable<String> {
 
         LOGGER.debug("Finding pattern: {}", pattern);
 
-        find(aSettings, pattern).forEachOrdered(i -> {
-            LOGGER.debug("Adding file: {}", i);
-            mQueue.add(i.toString());
+        find(aSettings, pattern).forEachOrdered(p -> {
+            LOGGER.debug("Adding file: {}", p);
+            mQueue.add(p.toString());
         });
     }
 
-    private Stream<Finder.PathFile> find(final Settings aSettings, final String aPattern) throws IOException {
-        final String path = aSettings.get("path");
+    public static Stream<Path> find(final Settings aSettings, final String aPattern) throws IOException {
+        final Path path;
 
-        return new Finder().find(
-                aSettings.get("base"), aSettings.get("basepattern"),
-                path == null ? "." : path, aPattern)
-            .sortBy(aSettings.get("sort_by", "lastmodified"))
-            .order(aSettings.get("order", "asc"))
-            .getPathFiles(aSettings.getAsInt("max", -1))
-            .stream();
+        if (aSettings.containsSetting("base")) {
+            path = findFiles(FILE_SYSTEM.getPath(aSettings.get("base")), aSettings,
+                    aSettings.get("basepattern", "*"), File::isDirectory, "name", true).iterator().next();
+        }
+        else {
+            path = FILE_SYSTEM.getPath(aSettings.get("path", "."));
+        }
+
+        if (path == null) {
+            return Stream.empty();
+        }
+
+        final int maxAge = aSettings.getAsInt("max-age", -1);
+        final long threshold = System.currentTimeMillis() - maxAge * 24 * 60 * 60 * 1000;
+
+        return findFiles(path, aSettings, aPattern, File::isFile,
+                aSettings.get("sort_by", "lastmodified"), "desc".equals(aSettings.get("order")))
+            .limit(aSettings.getAsInt("max", Integer.MAX_VALUE))
+            .peek(p -> {
+                if (maxAge > -1 && threshold > p.toFile().lastModified()) {
+                    throw new RuntimeException("file too old: " + p + " (" + maxAge + ")");
+                }
+            });
+    }
+
+    private static Stream<Path> findFiles(final Path aPath, final Settings aSettings, final String aPattern,
+            final Predicate<File> aPredicate, final String aSort, final boolean aReversed) throws IOException {
+        final Comparator<Path> comparator;
+
+        switch (aSort) {
+            case "lastmodified":
+                comparator = Comparator.comparing(p -> p.toFile().lastModified());
+                break;
+            case "name":
+                comparator = Comparator.comparing(Path::toString);
+                break;
+            default:
+                throw new RuntimeException("invalid sort parameter: " + aSort);
+        }
+
+        final PathMatcher m = FILE_SYSTEM.getPathMatcher("glob:" + aPattern);
+
+        return Files.find(aPath, Integer.MAX_VALUE, (p, a) -> aPredicate.test(p.toFile()) && m.matches(p.getFileName()))
+            .sorted(aReversed ? comparator.reversed() : comparator);
     }
 
 }

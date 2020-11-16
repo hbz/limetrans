@@ -108,7 +108,7 @@
         <module name="ParameterAssignment"/>
         <module name="ParameterName"/>
         <module name="ParameterNumber">
-            <property name="max" value="5"/>
+            <property name="max" value="6"/>
         </module>
         <module name="ParenPad"/>
         <module name="RedundantImport"/>
