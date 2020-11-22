@@ -19,6 +19,7 @@ import org.elasticsearch.index.IndexNotFoundException;
 
 import java.io.IOException;
 import java.net.InetAddress;
+import java.net.URL;
 import java.net.UnknownHostException;
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -388,7 +389,10 @@ public class ElasticsearchClient {
     private org.elasticsearch.common.settings.Settings elasticsearchIndexSettings(final String aKey) {
         return elasticsearchSettings(aKey, b -> {
             try {
-                b.put(Helpers.loadSettings(mIndexSettings.get(aKey)).getAsFlatMap(SETTINGS_SEPARATOR));
+                final String path = mIndexSettings.get(aKey);
+                final URL url = Helpers.getClasspathUrl(getClass(), path);
+
+                b.put(Helpers.loadSettings(url != null ? url.getPath() : path).getAsFlatMap(SETTINGS_SEPARATOR));
                 b.put(mIndexSettings.getAsSettings(aKey + "-inline").getAsFlatMap(SETTINGS_SEPARATOR));
             }
             catch (final IOException e) {
