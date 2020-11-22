@@ -1,10 +1,9 @@
 {
-  "sigel": "1383",
-  "isil": "DE-${sigel}",
+  "isil": "DE-1383",
   "input": {
     "queue": {
       "path": "/mnt/herakles/${isil}/upload/",
-      "pattern": "${sigel}_degruyter.mrc",
+      "pattern": "1383_degruyter.mrc",
       "processor": "MARC21RECORDS"
     }
   },

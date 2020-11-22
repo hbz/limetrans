@@ -1,10 +1,9 @@
 {
-  "sigel": "1393",
-  "isil": "DE-${sigel}",
+  "isil": "DE-1393",
   "input": {
     "queue": {
       "path": "/mnt/herakles/${isil}/upload/",
-      "pattern": "${sigel}_{degruyter,hanser,pearson,springer,utb,vahlen}_marc.xml"
+      "pattern": "1393_{degruyter,hanser,pearson,springer,utb,vahlen}_marc.xml"
     }
   },
   "output": {
