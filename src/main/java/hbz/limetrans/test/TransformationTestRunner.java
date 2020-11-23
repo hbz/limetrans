@@ -29,7 +29,7 @@ public class TransformationTestRunner extends ParentRunner<TransformationTestCas
 
         final String rules;
         try {
-            rules = Helpers.getResourceUrl(aClass, String.format(RULES_PATH, mName)).getPath();
+            rules = Helpers.getResourcePath(aClass, String.format(RULES_PATH, mName));
         }
         catch (final IOException e) {
             throw new InitializationError(e);

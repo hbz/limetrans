@@ -59,7 +59,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
         mFilter = aSettings.getAsArray("filter");
         mFilterOperator = aSettings.get("filterOperator", "any");
-        mRulesPath = Helpers.getPath(aSettings.get("transformation-rules"), getClass());
+        mRulesPath = Helpers.getPath(getClass(), aSettings.get("transformation-rules"));
 
         if (aSettings.containsSetting("isil")) {
             mVars.put("isil", aSettings.get("isil"));
