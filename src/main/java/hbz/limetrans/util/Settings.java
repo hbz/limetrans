@@ -264,8 +264,8 @@ public class Settings {
             final StringBuffer sb = new StringBuffer();
 
             while (matcher.find()) {
-                matcher.appendReplacement(sb, Matcher.quoteReplacement(
-                            getReplacement(mMap, matcher.group(1))));
+                final String replacement = getReplacement(mMap, matcher.group(1));
+                matcher.appendReplacement(sb, Matcher.quoteReplacement(replacePlaceholders(replacement)));
             }
 
             return matcher.appendTail(sb).toString();

@@ -68,13 +68,22 @@ public class LibraryMetadataTransformationTest {
     }
 
     @Test
-    public void testMultiplePatterns() throws IOException {
+    public void testInputQueueMultiplePatterns() throws IOException {
         testInputQueueSize("multiple-patterns", 4);
     }
 
     @Test
-    public void testMultiplePatternsMax() throws IOException {
+    public void testInputQueueMultiplePatternsMax() throws IOException {
         testInputQueueSize("multiple-patterns-max", 2);
+    }
+
+    @Test
+    public void testSettingsReplacePlaceholders() throws IOException {
+        final Settings settings = loadSettings("settings-replace-placeholders");
+
+        Assert.assertEquals("AB", settings.get("ab"));
+        Assert.assertEquals("ABC", settings.get("abc"));
+        Assert.assertEquals("ABC", settings.getAsSettings("x").get("y"));
     }
 
     @Test
