@@ -6,9 +6,8 @@ file('src/conf').eachDir {
     def (group, path, map) = [it.getName(), it.toPath(), [:].withDefault { [] }]
 
     def indexTask = { name, list ->
-        task(group + name.replaceAll('[^a-zA-Z0-9]', ''),
-                description: list.collect { root.relativize(it.toPath()) },
-                type: JavaExec, group: group, dependsOn: ':compileJava') {
+        task(group + name.replaceAll('[^a-zA-Z0-9]', ''), type: JavaExec, group: group,
+                description: list.collect { root.relativize(it.toPath()) }) {
             doFirst { systemProperties System.properties }
             classpath = sourceSets.main.runtimeClasspath
             main = 'hbz.limetrans.Main'
@@ -21,3 +20,14 @@ file('src/conf').eachDir {
         indexTask(name, [it])
     }
 }
+
+def execTask = { name, mainClass ->
+    task('exec' + camelize(name), type: JavaExec, group: 'Exec',
+            description: 'Execute ' + mainClass + '.') {
+        classpath = sourceSets.main.runtimeClasspath
+        main = mainClass
+    }
+}
+
+execTask('transformation', 'hbz.limetrans.Main')
+execTask('filter', 'hbz.limetrans.filter.Main')
