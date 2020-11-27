@@ -29,6 +29,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
     private final FileQueue mInputQueue;
     private final Map<String, String> mVars = new HashMap<>();
     private final Settings mElasticsearchSettings;
+    private final String mFilterKey;
     private final String mFilterOperator;
     private final String mFormetaPath;
     private final String mJsonPath;
@@ -58,6 +59,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
         }
 
         mFilter = aSettings.getAsArray("filter");
+        mFilterKey = aSettings.get("filterKey", LibraryMetadataFilter.DEFAULT_KEY);
         mFilterOperator = aSettings.get("filterOperator", "any");
         mRulesPath = Helpers.getPath(getClass(), aSettings.get("transformation-rules"));
 
@@ -90,7 +92,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
         }
 
         mInputQueue.process(metamorph, mFilter.length > 0 ?
-                new Filter(LibraryMetadataFilter.buildMorphDef(mFilterOperator, mFilter)) : null);
+                new Filter(LibraryMetadataFilter.buildMorphDef(mFilterKey, mFilterOperator, mFilter)) : null);
 
         LOGGER.info("Finished transformation ({})", counter);
     }

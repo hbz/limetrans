@@ -14,6 +14,8 @@ import java.io.IOException;
 
 public class LibraryMetadataFilter {
 
+    public static final String DEFAULT_KEY = "001";
+
     private final FileQueue mInputQueue;
     private final Metamorph mMorphDef;
     private final String mOutputPath;
@@ -26,7 +28,11 @@ public class LibraryMetadataFilter {
             throw new IllegalArgumentException("Could not process limetrans filter: no input specified.");
         }
 
-        mMorphDef = buildMorphDef(aSettings.get("operator", "any"), aSettings.getAsArray("filter"));
+        mMorphDef = buildMorphDef(
+                aSettings.get("key", DEFAULT_KEY),
+                aSettings.get("operator", "any"),
+                aSettings.getAsArray("filter"));
+
         mOutputPath = aSettings.get("output");
         mPretty = aSettings.getAsBoolean("pretty", false);
     }
@@ -58,7 +64,7 @@ public class LibraryMetadataFilter {
      * - "~Inhaltstext": Record(s) with any field matching "Inhaltstext"
      */
 
-    public static Metamorph buildMorphDef(final String aOperator, final String... aFilters) {
+    public static Metamorph buildMorphDef(final String aKey, final String aOperator, final String... aFilters) {
         final InlineMorph metamorph = InlineMorph.in(LibraryMetadataFilter.class)
             .with("<rules>")
             .with("<entity name=\"\" flushWith=\"record\">");
@@ -106,7 +112,7 @@ public class LibraryMetadataFilter {
         }
 
         metamorph
-            .with("<data source=\"001\" />")
+            .with("<data source=\"" + aKey + "\" />")
             .with("</entity>")
             .with("</rules>");
 

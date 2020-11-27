@@ -14,6 +14,7 @@ public final class Main {
         final Cli cli = new Cli(Main.class, "FILE...")
             .addOption("f", "filter", true, "Filter condition")
             .addOption("h", "help", false, "Print help output")
+            .addOption("k", "key", true, "Key field (default: 001)")
             .addOption("O", "operator", true, "Logical operator (all, any (default), none)")
             .addOption("o", "output", true, "Output file (default: STDOUT)")
             .addOption("P", "pretty", false, "Pretty-print JSON output")
