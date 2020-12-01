@@ -74,6 +74,8 @@ public class FileQueue implements Iterable<String> {
 
         private static JsonDecoder getJsonDecoder() {
             final JsonDecoder decoder = new JsonDecoder();
+
+            decoder.setAllowComments(true); // Java/C++ style comments
             decoder.setArrayName(""); // no numbered array elements
             decoder.setRecordId(""); // no record IDs
 
