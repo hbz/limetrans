@@ -4,7 +4,7 @@
   "input": {
     "queue": {
       "path": "/mnt/herakles/${isil}/upload/",
-      "pattern": "${sigel}_degruyter.mrc",
+      "pattern": "${sigel}_degruyter{,_dup}.mrc",
       "processor": "MARC21RECORDS"
     }
   },
