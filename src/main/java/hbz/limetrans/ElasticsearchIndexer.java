@@ -11,22 +11,29 @@ import org.metafacture.json.JsonEncoder;
 @Description("Indexes an object into Elasticsearch")
 public class ElasticsearchIndexer extends DefaultStreamReceiver {
 
-    public static final String DEFAULT_BULK_ACTION = "index";
-
     private final ElasticsearchClient mClient;
     private final JsonEncoder mJsonEncoder = new JsonEncoder();
 
+    private String mDeletionLiteral;
     private String mId;
+    private boolean mIsDeletion;
 
     public ElasticsearchIndexer(final ElasticsearchClient aClient, final String aBulkAction) {
         mClient = aClient;
-
-        mJsonEncoder.setReceiver(newBulkReceiver(
-                    aBulkAction == null ? DEFAULT_BULK_ACTION : aBulkAction));
+        mJsonEncoder.setReceiver(newBulkReceiver(aBulkAction));
     }
 
     public ElasticsearchIndexer(final Settings aSettings) {
         this(new ElasticsearchClient(aSettings), aSettings.get("bulkAction"));
+        mDeletionLiteral = aSettings.get("deletionLiteral");
+    }
+
+    public void setDeletionLiteral(final String aDeletionLiteral) {
+        mDeletionLiteral = aDeletionLiteral;
+    }
+
+    public String getDeletionLiteral() {
+        return mDeletionLiteral;
     }
 
     public ElasticsearchClient getClient() {
@@ -40,6 +47,8 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
     @Override
     public void startRecord(final String id) {
         mId = id;
+        mIsDeletion = false;
+
         mClient.inc();
         mJsonEncoder.startRecord(id);
     }
@@ -73,27 +82,53 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
 
     @Override
     public void literal(final String name, final String value) {
+        if (mDeletionLiteral != null && mDeletionLiteral.equals(name)) {
+            mIsDeletion = true;
+        }
+
         mJsonEncoder.literal(name, value);
     }
 
     private DefaultObjectReceiver<String> newBulkReceiver(final String aBulkAction) {
         final DefaultObjectReceiver<String> receiver;
 
-        switch (aBulkAction) {
-            case "index":
-                receiver = new IndexBulkReceiver();
-                break;
-            case "update":
-                receiver = new UpdateBulkReceiver();
-                break;
-            case "delete":
-                receiver = new DeleteBulkReceiver();
-                break;
-            default:
-                throw new LimetransException("Illegal bulk action: " + aBulkAction);
+        if (aBulkAction == null) {
+            receiver = new DefaultBulkReceiver();
+        }
+        else {
+            switch (aBulkAction) {
+                case "index":
+                    receiver = new IndexBulkReceiver();
+                    break;
+                case "update":
+                    receiver = new UpdateBulkReceiver();
+                    break;
+                case "delete":
+                    receiver = new DeleteBulkReceiver();
+                    break;
+                default:
+                    throw new LimetransException("Illegal bulk action: " + aBulkAction);
+            }
         }
 
         return receiver;
+    }
+
+    public class DefaultBulkReceiver extends DefaultObjectReceiver<String> {
+
+        public DefaultBulkReceiver() {
+        }
+
+        @Override
+        public void process(final String json) {
+            if (mIsDeletion) {
+                mClient.addBulkDelete(mId);
+            }
+            else {
+                mClient.addBulkIndex(mId, json);
+            }
+        }
+
     }
 
     public class IndexBulkReceiver extends DefaultObjectReceiver<String> {

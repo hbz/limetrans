@@ -369,6 +369,80 @@ public class ElasticsearchIndexerTest {
         assertDocument(ID1, doc);
     }
 
+    @Test
+    public void testShouldDeleteDocumentBasedOnLiteral() {
+        final String doc = "{'L1':'V1','L2':'V2'}";
+
+        setIndexer();
+        mIndexer.setDeletionLiteral("L1");
+
+        assertMissing(ID1);
+        insertDocument(ID1, doc);
+        assertDocument(ID1, doc);
+
+        mIndexer.startRecord(ID1);
+        mIndexer.literal("L1", "V1");
+        mIndexer.literal("L2", "V2");
+        mIndexer.endRecord();
+
+        mIndexer.flush();
+
+        assertMissing(ID1);
+    }
+
+    @Test
+    public void testShouldNotDeleteDocumentBasedOnDifferentLiteral() {
+        final String doc = "{'L1':'V1','L2':'V2'}";
+
+        setIndexer();
+        mIndexer.setDeletionLiteral("L0");
+
+        assertMissing(ID1);
+        insertDocument(ID1, doc);
+        assertDocument(ID1, doc);
+
+        mIndexer.startRecord(ID1);
+        mIndexer.literal("L1", "V1");
+        mIndexer.literal("L2", "V2");
+        mIndexer.endRecord();
+
+        mIndexer.flush();
+
+        assertDocument(ID1, doc);
+    }
+
+    @Test
+    public void testShouldNotDeleteSubsequentDocumentBasedOnDifferentLiteral() {
+        final String doc1 = "{'L0':'V1','L2':'V2'}";
+        final String doc2 = "{'L1':'V1','L2':'V2'}";
+
+        setIndexer();
+        mIndexer.setDeletionLiteral("L0");
+
+        assertMissing(ID1);
+        insertDocument(ID1, doc1);
+        assertDocument(ID1, doc1);
+
+        assertMissing(ID2);
+        insertDocument(ID2, doc2);
+        assertDocument(ID2, doc2);
+
+        mIndexer.startRecord(ID1);
+        mIndexer.literal("L0", "V1");
+        mIndexer.literal("L2", "V2");
+        mIndexer.endRecord();
+
+        mIndexer.startRecord(ID2);
+        mIndexer.literal("L1", "V1");
+        mIndexer.literal("L2", "V2");
+        mIndexer.endRecord();
+
+        mIndexer.flush();
+
+        assertMissing(ID1);
+        assertDocument(ID2, doc2);
+    }
+
     private void setIndexer() {
         setIndexer(null);
     }
