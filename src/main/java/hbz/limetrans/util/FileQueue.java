@@ -19,6 +19,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.FileSystem;
 import java.nio.file.FileSystems;
+import java.nio.file.FileVisitOption;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.PathMatcher;
@@ -295,7 +296,8 @@ public class FileQueue implements Iterable<String> {
 
         final PathMatcher m = FILE_SYSTEM.getPathMatcher("glob:" + aPattern);
 
-        return Files.find(aPath, Integer.MAX_VALUE, (p, a) -> aPredicate.test(p.toFile()) && m.matches(p.getFileName()))
+        return Files.find(aPath, Integer.MAX_VALUE,
+            (p, a) -> aPredicate.test(p.toFile()) && m.matches(p.getFileName()), FileVisitOption.FOLLOW_LINKS)
             .sorted(aReversed ? comparator.reversed() : comparator);
     }
 
