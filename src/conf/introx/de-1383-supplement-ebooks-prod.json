@@ -4,8 +4,7 @@
   "input": {
     "queue": {
       "path": "/mnt/herakles/${isil}/upload/",
-      "pattern": "${sigel}_degruyter{,_dup}.mrc",
-      "processor": "MARC21RECORDS"
+      "pattern": "ProQuest_${sigel}_Express-XML_*.xml"
     }
   },
   "output": {
