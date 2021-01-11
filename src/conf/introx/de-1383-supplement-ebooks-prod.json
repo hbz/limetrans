@@ -4,7 +4,7 @@
   "input": {
     "queue": {
       "path": "/mnt/herakles/${isil}/upload/",
-      "pattern": "ProQuest_${sigel}_Express-XML_*.xml"
+      "pattern": "{${sigel}_psyc_marc,ProQuest_${sigel}_Express-XML_*}.xml"
     }
   },
   "output": {
