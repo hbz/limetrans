@@ -149,6 +149,7 @@ public class FileQueue implements Iterable<String> {
 
     public <T extends StreamReceiver & Sender<StreamReceiver>> void process(final StreamReceiver aReceiver, final T aSender) {
         final FileOpener opener = new FileOpener();
+        opener.setDecompressConcatenated(true);
 
         if (mProcessor != null) {
             Sender<StreamReceiver> result = mProcessor.process(opener);
