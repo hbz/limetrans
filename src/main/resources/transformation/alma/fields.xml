@@ -33,8 +33,12 @@
     <data name="id" source="001" />
   </combine>
   <choose name="@id">
-    <data source="@hbzid" />
-    <data source="@sysid" />
+    <data source="@hbzid">
+      <compose postfix="$[id-suffix]" />
+    </data>
+    <data source="@sysid">
+      <compose postfix="$[id-suffix]" />
+    </data>
     <data source="@mmsid" />
   </choose>
   <combine name="@uid" value="(${isil})${id}">

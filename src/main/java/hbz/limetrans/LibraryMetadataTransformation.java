@@ -70,6 +70,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             final String memberID = aSettings.get("alma");
 
             mVars.put("member", memberID);
+            mVars.put("id-suffix", aSettings.get("id-suffix"));
 
             // Ex Libris (Deutschland) GmbH
             mVars.putIfAbsent("isil", "DE-632");
