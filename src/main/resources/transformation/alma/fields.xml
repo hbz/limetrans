@@ -17,18 +17,33 @@
   </entity>
 
   <!-- 0xx -->
-  <combine name="@id" value="(${isil})${id}">
+  <data name="@hbzid" source="035  .a">
+    <regexp match="^\($[catalogid]\).*" />
+  </data>
+  <choose name="@sysid">
+    <data source="981  .a"> <!-- SISIS CATKey -->
+      <regexp match="^\($[isil]\).*" />
+    </data>
+    <data source="035  .a">
+      <regexp match="^\($[isil]\).*" />
+    </data>
+  </choose>
+  <combine name="@mmsid" value="(${isil})${id}">
     <data name="isil" source="@isil" />
     <data name="id" source="001" />
   </combine>
+  <choose name="@id">
+    <data source="@hbzid" />
+    <data source="@sysid" />
+    <data source="@mmsid" />
+  </choose>
   <combine name="@uid" value="(${isil})${id}">
     <data name="isil" source="@isiliz" />
     <data name="id" source="@mmsiz" />
   </combine>
-  <data name="@uid" source="035  .a">
-    <regexp match="^\($[catalogid]\).*" />
-  </data>
-  <data name="@uid" source="981  .a" /> <!-- SISIS CATKey -->
+  <data name="@uid" source="@hbzid" />
+  <data name="@uid" source="@sysid" />
+  <data name="@uid" source="@mmsid" />
   <data name="@uid" source="@id" />
   <entity name="RecordIdentifier" flushWith="@id">
     <data name="identifierForTheRecord" source="@id" />
