@@ -2,15 +2,8 @@
 <rules xmlns="http://www.culturegraph.org/metamorph">
 
   <!-- 0xx -->
-  <choose name="@_isil">
-    <data source="@isil" />
-    <data source="001">
-      <constant value="$[isil]" />
-    </data>
-  </choose>
-  <combine name="@id" value="(${isil})${id}">
+  <combine name="@id" value="($[isil])${id}">
     <data name="id" source="001" />
-    <data name="isil" source="@_isil" />
   </combine>
   <entity name="RecordIdentifier" flushWith="@id">
     <data name="identifierForTheRecord" source="@id" />
@@ -19,7 +12,9 @@
     </data>
   </entity>
 
-  <data name="collection" source="@_isil" />
+  <data name="collection" source="001">
+    <constant value="$[isil]" />
+  </data>
 
   <combine name="@date1" value="${date1}">
     <if>

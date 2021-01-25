@@ -1,4 +1,9 @@
 {
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)1",
+    "isContextLocal" : "(DE-836)1"
+  },
+  "collection" : "DE-836",
   "dc" : {
     "format" : [ "keine Angabe" ],
     "type" : [ "keine Angabe" ],
@@ -8,11 +13,6 @@
     "access" : [ "local" ],
     "carrier" : [ "keine Angabe" ]
   },
-  "RecordIdentifier" : {
-    "identifierForTheRecord" : "(DE-836)1",
-    "isContextLocal" : "(DE-836)1"
-  },
-  "collection" : "DE-836",
   "Edition" : {
     "edition" : [ "1st ed." ]
   },
@@ -24,6 +24,11 @@
   }
 }
 {
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-836)2",
+    "isContextLocal" : "(DE-836)2"
+  },
+  "collection" : "DE-836",
   "dc" : {
     "format" : [ "keine Angabe" ],
     "type" : [ "keine Angabe" ],
@@ -33,11 +38,6 @@
     "access" : [ "local" ],
     "carrier" : [ "keine Angabe" ]
   },
-  "RecordIdentifier" : {
-    "identifierForTheRecord" : "(DE-836)2",
-    "isContextLocal" : "(DE-836)2"
-  },
-  "collection" : "DE-836",
   "Edition" : {
     "edition" : [ "1st ed.", "2nd ed." ]
   },
