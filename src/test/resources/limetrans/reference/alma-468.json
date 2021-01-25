@@ -1,8 +1,5 @@
 {
   "collection" : "DE-605",
-  "RecordIdentifier" : {
-    "identifierForTheRecord" : "(DE-605)99366597115306441"
-  },
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
@@ -16,6 +13,9 @@
     "identifierMMS" : "99366597115306441",
     "identifierMMSIZ" : "9915810639006447",
     "identifierPID" : "5354767020006447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)99366597115306441"
   },
   "DateFirst" : {
     "date" : "1867"
@@ -52,9 +52,6 @@
 }
 {
   "collection" : "DE-605",
-  "RecordIdentifier" : {
-    "identifierForTheRecord" : "(DE-605)99366597114806441"
-  },
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
@@ -68,6 +65,9 @@
     "identifierMMS" : "99366597114806441",
     "identifierMMSIZ" : "9915810638506447",
     "identifierPID" : "5354767080006447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)99366597114806441"
   },
   "DateFirst" : {
     "date" : "1866"
@@ -97,9 +97,6 @@
 }
 {
   "collection" : "DE-605",
-  "RecordIdentifier" : {
-    "identifierForTheRecord" : "(DE-605)99366545708706441"
-  },
   "CreatorStatement" : {
     "creatorStatement" : "Kym Anderson, Michael Bosworth"
   },
@@ -117,6 +114,9 @@
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "99366545708706441",
     "identifierPID" : "53221949450006441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)99366545708706441"
   },
   "Language" : [ {
     "language" : "Englisch",
@@ -166,9 +166,6 @@
 }
 {
   "collection" : "DE-605",
-  "RecordIdentifier" : {
-    "identifierForTheRecord" : "(DE-605)99366599897006441"
-  },
   "CreatorStatement" : {
     "creatorStatement" : "Manfred Hegger, Hans Drexler, Martin Zeumer"
   },
@@ -187,6 +184,9 @@
     "identifierMMS" : "99366599897006441",
     "identifierMMSIZ" : "9915811024706447",
     "identifierPID" : "5354967650006447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)99366599897006441"
   },
   "Language" : [ {
     "language" : "Englisch",
@@ -240,9 +240,6 @@
 }
 {
   "collection" : "DE-605",
-  "RecordIdentifier" : {
-    "identifierForTheRecord" : "(DE-605)990050093380206441"
-  },
   "TitleAddendum" : {
     "title" : "ein Handbuch zur Einführung in die fachliche Informationsarbeit"
   },
@@ -263,6 +260,9 @@
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990050093380206441",
     "identifierMMSIZ" : "990007627960206447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheRecord" : "(DE-605)HT007313557"
   },
   "Language" : [ {
     "language" : "Deutsch",
@@ -304,11 +304,5 @@
     "uid" : "(DE-605)HT007313557"
   }, {
     "uid" : "(DE-468)990007627960206447"
-  }, {
-    "uid" : "(DE-A96)150758"
-  }, {
-    "uid" : "(DE-290)659836"
-  }, {
-    "uid" : "(DE-361)1675787"
   } ]
 }
