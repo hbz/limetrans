@@ -1,128 +1,135 @@
 package hbz.limetrans.filter;
 
 import hbz.limetrans.util.FileQueue;
-import hbz.limetrans.util.Settings;
+import hbz.limetrans.util.Helpers;
 
 import org.metafacture.io.ObjectStdoutWriter;
 import org.metafacture.io.ObjectWriter;
 import org.metafacture.json.JsonEncoder;
 import org.metafacture.metamorph.Filter;
 import org.metafacture.metamorph.InlineMorph;
-import org.metafacture.metamorph.Metamorph;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Consumer;
+
+/*
+ * Filter examples:
+ *
+ * - "@001": Record with an ID.
+ * - "!001": Record with no ID.
+ * - "001=ocn958002247": Record with ID "ocn958002247"
+ * - "85642.3=Inhaltstext": Record(s) with field "85642.3" equal to "Inhaltstext"
+ * - "85642.3=~Inhaltstext": Record(s) with field "85642.3" matching "Inhaltstext"
+ * - "Inhaltstext": Record(s) with any field equal to "Inhaltstext"
+ * - "~Inhaltstext": Record(s) with any field matching "Inhaltstext"
+ */
 
 public class LibraryMetadataFilter {
 
-    public static final String DEFAULT_KEY = "001";
+    private static final String DEFAULT_KEY = "001";
 
-    private final FileQueue mInputQueue;
-    private final Metamorph mMorphDef;
-    private final String mOutputPath;
-    private final boolean mPretty;
+    private final List<LibraryMetadataFilter> mChildren = new ArrayList<>();
+    private final List<String> mValues = new ArrayList<>();
+    private final Operator mOperator;
+    private final String mKey;
 
-    public LibraryMetadataFilter(final String aProcessor, final String[] aInput, final String aKey, final String aOperator, final String[][] aFilters, final String aOutput, final boolean aPretty) throws IOException {
-        mInputQueue = new FileQueue(aProcessor, true, aInput);
+    private LibraryMetadataFilter(final Operator aOperator, final String aKey) {
+        mOperator = aOperator;
+        mKey = aKey;
+    }
 
-        if (mInputQueue.isEmpty()) {
-            throw new IllegalArgumentException("Could not process limetrans filter: no input specified.");
+    public LibraryMetadataFilter(final String aOperator, final String aKey, final String[] aValues) {
+        this(Operator.valueOf(aOperator), aKey);
+        add(aValues);
+    }
+
+    public static LibraryMetadataFilter all(final String aKey) {
+        return new LibraryMetadataFilter(Operator.all, aKey);
+    }
+
+    public static LibraryMetadataFilter all() {
+        return all(null);
+    }
+
+    public static LibraryMetadataFilter any() {
+        return new LibraryMetadataFilter(Operator.any, null);
+    }
+
+    public static LibraryMetadataFilter none() {
+        return new LibraryMetadataFilter(Operator.none, null);
+    }
+
+    public LibraryMetadataFilter add(final LibraryMetadataFilter... aFilters) {
+        Arrays.stream(aFilters).filter(f -> f != null).forEach(mChildren::add);
+        return this;
+    }
+
+    public LibraryMetadataFilter add(final String... aValues) {
+        Arrays.stream(aValues).filter(v -> v != null).forEach(mValues::add);
+        return this;
+    }
+
+    public boolean isEmpty() {
+        return mChildren.isEmpty() && mValues.isEmpty();
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder();
+        build(sb::append);
+        return Helpers.prettyXml(sb.toString());
+    }
+
+    public Filter toFilter() {
+        final InlineMorph metamorph = InlineMorph.in(LibraryMetadataFilter.class);
+        build(metamorph::with);
+        return new Filter(metamorph.create());
+    }
+
+    private void build(final Consumer<String> aConsumer) {
+        aConsumer.accept("<rules>");
+        aConsumer.accept("<entity name=\"\" flushWith=\"record\">");
+
+        if (!isEmpty()) {
+            aConsumer.accept("<if>");
+            buildClause(aConsumer);
+            aConsumer.accept("</if>");
         }
 
-        mMorphDef = buildMorphDef(aKey, aOperator, aFilters);
-        mOutputPath = aOutput;
-        mPretty = aPretty;
+        aConsumer.accept("<data source=\"" + (mKey != null ? mKey : DEFAULT_KEY) + "\" />");
+        aConsumer.accept("</entity>");
+        aConsumer.accept("</rules>");
     }
 
-    public LibraryMetadataFilter(final Settings aSettings) throws IOException {
-        this(aSettings.get("processor", "MARCXML"),
-                aSettings.getAsArray("input"),
-                aSettings.get("key", DEFAULT_KEY),
-                aSettings.get("operator", "any"),
-                new String[][]{aSettings.getAsArray("filter")},
-                aSettings.get("output"),
-                aSettings.getAsBoolean("pretty", false));
-    }
+    private void buildClause(final Consumer<String> aConsumer) {
+        if (isEmpty()) {
+            return;
+        }
 
-    public void process() {
-        final Filter filter = new Filter(mMorphDef);
-        final JsonEncoder encoder = new JsonEncoder();
-        encoder.setPrettyPrinting(mPretty);
+        aConsumer.accept("<" + mOperator + ">");
 
-        filter
-            .setReceiver(encoder)
-            .setReceiver(
-                    mOutputPath == null || "-".equals(mOutputPath) ?
-                    new ObjectStdoutWriter<String>() :
-                    new ObjectWriter<String>(mOutputPath));
-
-        mInputQueue.process(filter);
-    }
-
-    /*
-     * Filter examples:
-     *
-     * - "@001": Record with an ID.
-     * - "!001": Record with no ID.
-     * - "001=ocn958002247": Record with ID "ocn958002247"
-     * - "85642.3=Inhaltstext": Record(s) with field "85642.3" equal to "Inhaltstext"
-     * - "85642.3=~Inhaltstext": Record(s) with field "85642.3" matching "Inhaltstext"
-     * - "Inhaltstext": Record(s) with any field equal to "Inhaltstext"
-     * - "~Inhaltstext": Record(s) with any field matching "Inhaltstext"
-     */
-
-    public static Metamorph buildMorphDef(final String aKey, final String aOperator, final String[][] aFilters) {
-        final String innerOperator = "any".equals(aOperator) ? "all" : "any";
-
-        final InlineMorph metamorph = InlineMorph.in(LibraryMetadataFilter.class)
-            .with("<rules>")
-            .with("<entity name=\"\" flushWith=\"record\">");
-
-        if (aFilters.length > 0 && aFilters[0].length > 0) {
-            metamorph
-                .with("<if>")
-                .with("<" + aOperator + ">");
-
-            for (final String[] filters : aFilters) {
-                if (filters.length > 0) {
-                    metamorph
-                        .with("<" + innerOperator + ">");
-
-                    for (final String filterParam : filters) {
-                        if (filterParam.startsWith("@")) {
-                            metamorph
-                                .with(data(filterParam.substring(1), true));
-                        }
-                        else if (filterParam.startsWith("!")) {
-                            metamorph
-                                .with("<none>")
-                                .with(data(filterParam.substring(1), true))
-                                .with("</none>");
-                        }
-                        else {
-                            metamorph
-                                .with(data(filterParam, false));
-                        }
-                    }
-
-                    metamorph
-                        .with("</" + innerOperator + ">");
-                }
+        mChildren.forEach(f -> f.buildClause(aConsumer));
+        mValues.forEach(v -> {
+            if (v.startsWith("@")) {
+                aConsumer.accept(buildData(v.substring(1), true));
             }
+            else if (v.startsWith("!")) {
+                aConsumer.accept("<none>");
+                aConsumer.accept(buildData(v.substring(1), true));
+                aConsumer.accept("</none>");
+            }
+            else {
+                aConsumer.accept(buildData(v, false));
+            }
+        });
 
-            metamorph
-                .with("</" + aOperator + ">")
-                .with("</if>");
-        }
-
-        metamorph
-            .with("<data source=\"" + aKey + "\" />")
-            .with("</entity>")
-            .with("</rules>");
-
-        return metamorph.create();
+        aConsumer.accept("</" + mOperator + ">");
     }
 
-    private static String data(final String aFilter, final boolean aFilterSource) {
+    private String buildData(final String aFilter, final boolean aFilterSource) {
         final String source;
         final String filter;
 
@@ -145,6 +152,27 @@ public class LibraryMetadataFilter {
                     "<regexp match=\"" + filter.substring(1) + "\" />" :
                     "<equals string=\"" + filter + "\" />"
                 ) + "</data>";
+    }
+
+    public void process(final String[] aInput, final String aOutput, final String aProcessor, final boolean aPretty) throws IOException {
+        final FileQueue inputQueue = new FileQueue(aProcessor, true, aInput);
+
+        if (inputQueue.isEmpty()) {
+            throw new IllegalArgumentException("Could not process limetrans filter: no input specified.");
+        }
+
+        final JsonEncoder encoder = new JsonEncoder();
+        encoder.setPrettyPrinting(aPretty);
+
+        final Filter filter = toFilter();
+        filter.setReceiver(encoder).setReceiver(aOutput == null || "-".equals(aOutput) ?
+                new ObjectStdoutWriter<String>() : new ObjectWriter<String>(aOutput));
+
+        inputQueue.process(filter);
+    }
+
+    private enum Operator {
+        all, any, none
     }
 
 }

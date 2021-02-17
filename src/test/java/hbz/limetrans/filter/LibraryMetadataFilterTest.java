@@ -16,7 +16,7 @@ public class LibraryMetadataFilterTest {
     @Test
     public void testMissingFile() throws IOException {
         final Throwable ex = Assert.assertThrows(IllegalArgumentException.class,
-                () -> getFilter("missing-file", null, null));
+                () -> process(LibraryMetadataFilter.any(), "missing-file"));
 
         Assert.assertEquals("Could not process limetrans filter: no input specified.", ex.getMessage());
     }
@@ -28,17 +28,45 @@ public class LibraryMetadataFilterTest {
 
     @Test
     public void testEmptyFilter() throws IOException {
-        testEqualsReference("missing-filter", "any", new String[][]{{}});
+        testEqualsReference("missing-filter", LibraryMetadataFilter.any());
     }
 
     @Test
     public void testEmptyFirstFilter() throws IOException {
-        testEqualsReference("missing-filter", "any", new String[][]{{}, {"Mathematics"}, {"Children's literature."}});
+        testEqualsReference("empty-filter", LibraryMetadataFilter.any()
+                .add(LibraryMetadataFilter.all())
+                .add("Mathematics")
+                .add("Children's literature."));
     }
 
     @Test
     public void testEmptySubsequentFilter() throws IOException {
-        testEqualsReference("empty-filter", "any", new String[][]{{"Mathematics"}, {}, {"Children's literature."}});
+        testEqualsReference("empty-filter", LibraryMetadataFilter.any()
+                .add("Mathematics")
+                .add(LibraryMetadataFilter.all())
+                .add("Children's literature."));
+    }
+
+    @Test
+    public void testNullFilter() throws IOException {
+        testEqualsReference("empty-filter", LibraryMetadataFilter.any()
+                .add("Mathematics")
+                .add((String) null)
+                .add("Children's literature."));
+    }
+
+    @Test
+    public void testNullFirstFilter() throws IOException {
+        testEqualsReference("empty-filter", LibraryMetadataFilter.any()
+                .add(LibraryMetadataFilter.all().add(null, "Mathematics"))
+                .add("Children's literature."));
+    }
+
+    @Test
+    public void testNullSubsequentFilter() throws IOException {
+        testEqualsReference("empty-filter", LibraryMetadataFilter.any()
+                .add(LibraryMetadataFilter.all().add("Mathematics", null))
+                .add("Children's literature."));
     }
 
     @Test
@@ -98,33 +126,39 @@ public class LibraryMetadataFilterTest {
 
     @Test
     public void testNestedAny() throws IOException {
-        testEqualsReference("nested-any", "any", new String[][]{{"650??.a=Mathematics", "@042??.a"}, {"856??.u=~book", "!001=ocm44954079", "!001=ocm47011858"}});
+        testEqualsReference("nested-any", LibraryMetadataFilter.any()
+                .add(LibraryMetadataFilter.all().add("650??.a=Mathematics", "@042??.a"))
+                .add(LibraryMetadataFilter.all().add("856??.u=~book", "!001=ocm44954079", "!001=ocm47011858")));
     }
 
     @Test
     public void testNestedAll() throws IOException {
-        testEqualsReference("nested-all", "all", new String[][]{{"650??.a=Mathematics", "@042??.a"}, {"856??.u=~book", "!001=ocm44954079", "!001=ocm47011858"}});
+        testEqualsReference("nested-all", LibraryMetadataFilter.all()
+                .add(LibraryMetadataFilter.any().add("650??.a=Mathematics", "@042??.a"))
+                .add(LibraryMetadataFilter.any().add("856??.u=~book", "!001=ocm44954079", "!001=ocm47011858")));
     }
 
     @Test
     public void testNestedNone() throws IOException {
-        testEqualsReference("nested-none", "none", new String[][]{{"650??.a=Mathematics", "@042??.a"}, {"856??.u=~book"}});
+        testEqualsReference("nested-none", LibraryMetadataFilter.none()
+                .add(LibraryMetadataFilter.any().add("650??.a=Mathematics", "@042??.a"))
+                .add("856??.u=~book"));
     }
 
     private void testEqualsReference(final String aName, final String... aFilters) throws IOException {
-        testEqualsReference(aName, "any", new String[][]{aFilters});
+        testEqualsReference(aName, LibraryMetadataFilter.any().add(aFilters));
     }
 
-    private void testEqualsReference(final String aName, final String aOperator, final String[][] aFilters) throws IOException {
-        getFilter(INPUT_PATH, aOperator, aFilters).process();
+    private void testEqualsReference(final String aName, final LibraryMetadataFilter aFilter) throws IOException {
+        process(aFilter, INPUT_PATH);
 
         Assert.assertEquals("Reference data mismatch: " + aName,
                 Helpers.slurpFile(BASE_PATH + "/reference/" + aName + ".json"),
                 Helpers.slurpFile(OUTPUT_PATH));
     }
 
-    private LibraryMetadataFilter getFilter(final String aInput, final String aOperator, final String[][] aFilters) throws IOException {
-        return new LibraryMetadataFilter("MARCXML", new String[]{aInput}, LibraryMetadataFilter.DEFAULT_KEY, aOperator, aFilters, OUTPUT_PATH, true);
+    private void process(final LibraryMetadataFilter aFilter, final String aInput) throws IOException {
+        aFilter.process(new String[]{aInput}, OUTPUT_PATH, "MARCXML", true);
     }
 
 }

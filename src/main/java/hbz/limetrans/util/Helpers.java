@@ -4,13 +4,26 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Reader;
+import java.io.StringReader;
+import java.io.StringWriter;
+import java.io.Writer;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
 
 public class Helpers {
 
     public static final String CLASSPATH_PREFIX = "classpath:";
+
+    private static final TransformerFactory TRANSFORMER_FACTORY = TransformerFactory.newInstance();
+    private static final String INDENT_AMOUNT_KEY = "{http://xml.apache.org/xslt}indent-amount";
 
     private Helpers() {
         throw new IllegalAccessError("Utility class");
@@ -48,6 +61,23 @@ public class Helpers {
         }
         else {
             return aPath;
+        }
+    }
+
+    public static String prettyXml(final String aString) {
+        try (Reader reader = new StringReader(aString);
+                Writer writer = new StringWriter()) {
+            final Transformer transformer = TRANSFORMER_FACTORY.newTransformer();
+
+            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+            transformer.setOutputProperty(INDENT_AMOUNT_KEY, "2");
+            transformer.transform(new StreamSource(reader), new StreamResult(writer));
+
+            return writer.toString();
+        }
+        catch (final IOException | TransformerException e) {
+            System.err.println(e);
+            return aString;
         }
     }
 

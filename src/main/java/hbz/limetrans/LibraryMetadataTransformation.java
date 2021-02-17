@@ -13,7 +13,6 @@ import org.metafacture.framework.StreamReceiver;
 import org.metafacture.io.ObjectWriter;
 import org.metafacture.json.JsonEncoder;
 import org.metafacture.mangling.RecordIdChanger;
-import org.metafacture.metamorph.Filter;
 import org.metafacture.metamorph.Metamorph;
 import org.metafacture.plumbing.StreamTee;
 import org.metafacture.statistics.Counter;
@@ -28,14 +27,12 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
     private static final Logger LOGGER = LogManager.getLogger();
 
     private final FileQueue mInputQueue;
+    private final LibraryMetadataFilter mFilter;
     private final Map<String, String> mVars = new HashMap<>();
     private final Settings mElasticsearchSettings;
-    private final String mFilterKey;
-    private final String mFilterOperator;
     private final String mFormetaPath;
     private final String mJsonPath;
     private final String mRulesPath;
-    private final String[][] mFilter;
     private final boolean mPrettyPrinting;
 
     public LibraryMetadataTransformation(final Settings aSettings) throws IOException {
@@ -47,6 +44,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             throw new IllegalArgumentException("Could not process limetrans: no input specified.");
         }
 
+        final String filterKey = aSettings.get("filterKey");
         final Settings outputSettings = aSettings.getAsSettings("output");
         mPrettyPrinting = outputSettings.getAsBoolean("pretty-printing", false);
 
@@ -63,7 +61,6 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             mVars.put("isil", aSettings.get("isil"));
         }
 
-        final String defaultFilterOperator;
         final String defaultRulesPath;
 
         if (aSettings.containsSetting("alma")) {
@@ -79,39 +76,39 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             final String catalogid = aSettings.get("catalogid", "DE-605");
             mVars.put("catalogid", catalogid);
 
-            final String networkFilter = "MBD  .M=" + aSettings.get("alma-network", "49HBZ_NETWORK");
-            final String memberFilter = "MBD  .M|POR  .[MA]=" + memberID;
-            final String itemGuard = "ITM  ";
             final String rulesSuffix;
+
+            // MBD$$M=memberID OR POR$$M=memberID OR POR$$A=memberID
+            final LibraryMetadataFilter memberFilter = LibraryMetadataFilter.any()
+                .add("MBD  .M|POR  .[MA]=" + memberID);
+
+            // MBD$$M=49HBZ_NETWORK AND EXISTS(ITM)
+            final LibraryMetadataFilter itemFilter = LibraryMetadataFilter.all()
+                .add("MBD  .M=" + aSettings.get("alma-network", "49HBZ_NETWORK"), "@ITM  ");
+
+            mFilter = LibraryMetadataFilter.all(filterKey).add(memberFilter);
 
             if (aSettings.containsSetting("alma-supplements")) {
                 final Settings supplements = aSettings.getAsSettings("alma-supplements");
                 Stream.of("description").forEach(k -> mVars.put("regexp." + k, supplements.get(k, ".*")));
 
                 rulesSuffix = "-supplements";
-
-                // (MBD$M=memberID OR POR$M=memberID OR POR$A=memberID) AND MBD$M=49HBZ_NETWORK AND EXISTS(ITM)
-                mFilter = new String[][]{{memberFilter}, {networkFilter}, {"@" + itemGuard}};
+                mFilter.add(itemFilter);
             }
             else {
                 rulesSuffix = "";
-
-                // (MBD$M=memberID OR POR$M=memberID OR POR$A=memberID) AND (NOT MBD$M=49HBZ_NETWORK OR NOT EXISTS(ITM))
-                mFilter = new String[][]{{memberFilter}, {"!" + networkFilter, "!" + itemGuard}};
+                mFilter.add(LibraryMetadataFilter.none().add(itemFilter));
             }
 
-            defaultFilterOperator = "all";
             defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + ".xml";
         }
         else {
-            mFilter = new String[][]{aSettings.getAsArray("filter")};
+            mFilter = new LibraryMetadataFilter(
+                    aSettings.get("filterOperator", "any"), filterKey, aSettings.getAsArray("filter"));
 
-            defaultFilterOperator = "any";
             defaultRulesPath = null;
         }
 
-        mFilterKey = aSettings.get("filterKey", LibraryMetadataFilter.DEFAULT_KEY);
-        mFilterOperator = aSettings.get("filterOperator", defaultFilterOperator);
         mRulesPath = Helpers.getPath(getClass(), aSettings.get("transformation-rules", defaultRulesPath));
     }
 
@@ -138,8 +135,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             metamorph.setReceiver(aReceiver);
         }
 
-        mInputQueue.process(metamorph, mFilter.length > 0 && mFilter[0].length > 0 ?
-                new Filter(LibraryMetadataFilter.buildMorphDef(mFilterKey, mFilterOperator, mFilter)) : null);
+        mInputQueue.process(metamorph, mFilter.isEmpty() ? null : mFilter.toFilter());
 
         LOGGER.info("Finished transformation ({})", counter);
     }
