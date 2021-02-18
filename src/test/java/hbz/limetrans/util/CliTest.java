@@ -5,27 +5,51 @@ import hbz.limetrans.util.Cli.CliException;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.function.Consumer;
+
 public class CliTest {
+
+    private static final String PROGRAM = "program";
+    private static final String ARGS = "args";
 
     @Test
     public void testInvalidOption() throws CliException {
         final Throwable ex = Assert.assertThrows(CliException.class,
-                () -> new Cli("program", "").parse(new String[]{"-o", "value"}));
+                () -> assertCli(c -> {}, s -> {}, "-o", "value"));
 
-        Assert.assertEquals("Unrecognized option: -o\nusage: program\n\n", ex.getMessage());
+        Assert.assertEquals("Unrecognized option: -o\nusage: " + PROGRAM + " " + ARGS + "\n\n", ex.getMessage());
     }
 
     @Test
     public void testValidOption() throws CliException {
-        final Cli cli = new Cli("program", "");
-        cli.addOption("o", "opt", true, "option");
+        assertCli(
+                c -> c.addOption("o", "opt", "some option", false),
+                s -> s.put("opt", "value"),
+                "-o", "value");
+    }
 
-        cli.parse(new String[]{"-o", "value"});
+    @Test
+    public void testMultiOption() throws CliException {
+        assertCli(
+                c -> c.addOption("o", "opt", "some option", true),
+                s -> s.put(new String[]{"opt"}, new String[]{"v1", "v2"}),
+                "-o", "v1", "v2");
+    }
 
-        final Settings.Builder settingsBuilder = Settings.settingsBuilder();
-        settingsBuilder.put("opt", "value");
+    @Test
+    public void testMultiSeparatorOption() throws CliException {
+        assertCli(
+                c -> c.addOption("o", "opt", "some option", true),
+                s -> s.put(new String[]{"opt"}, new String[]{"v1", "v2"}),
+                "-o", "v1,v2");
+    }
 
-        assertSettings(settingsBuilder.build(), cli.getAsSettings());
+    @Test
+    public void testFlag() throws CliException {
+        assertCli(
+                c -> c.addOption("f", "flag", "some flag"),
+                s -> s.put(new String[]{"flag"}, true),
+                "-f");
     }
 
     @Test
@@ -39,18 +63,18 @@ public class CliTest {
     }
 
     private void assertArgs(final String... aArgs) throws CliException {
-        final Cli cli = new Cli("program", "args");
-
-        cli.parse(aArgs);
-
-        final Settings.Builder settingsBuilder = Settings.settingsBuilder();
-        settingsBuilder.put(new String[]{"args"}, aArgs);
-
-        assertSettings(settingsBuilder.build(), cli.getAsSettings("args"));
+        assertCli(c -> {}, s -> s.put(new String[]{ARGS}, aArgs), aArgs);
     }
 
-    private void assertSettings(final Settings aExpected, final Settings aActual) throws CliException {
-        Assert.assertEquals(aExpected.getAsFlatMap("."), aActual.getAsFlatMap("."));
+    private void assertCli(final Consumer<Cli> aCliConsumer, final Consumer<Settings.Builder> aSettingsBuilderConsumer, final String... aArgs) throws CliException {
+        final Cli cli = new Cli(PROGRAM, ARGS);
+        aCliConsumer.accept(cli);
+
+        final Settings.Builder settingsBuilder = Settings.settingsBuilder();
+        aSettingsBuilderConsumer.accept(settingsBuilder);
+
+        cli.parse(aArgs);
+        Assert.assertEquals(settingsBuilder.build().getAsFlatMap("."), cli.getAsSettings(ARGS).getAsFlatMap("."));
     }
 
 }

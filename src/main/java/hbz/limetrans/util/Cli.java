@@ -13,6 +13,8 @@ import java.io.PrintWriter;
 
 public class Cli {
 
+    private static final char VALUE_SEPARATOR = ',';
+
     private final Options mOptions = new Options();
     private final String mArgsLine;
     private final String mProgram;
@@ -29,9 +31,23 @@ public class Cli {
         this(aProgram.getName(), aArgsLine);
     }
 
-    public Cli addOption(final String aOpt, final String aLongOpt,
-            final boolean aHasArg, final String aDescription) {
-        mOptions.addOption(aOpt, aLongOpt, aHasArg, aDescription);
+    public Cli addOption(final String aOpt, final String aLongOpt, final String aDescription) {
+        mOptions.addOption(aOpt, aLongOpt, false, aDescription);
+        mHasOptions = true;
+        return this;
+    }
+
+    public Cli addOption(final String aOpt, final String aLongOpt, final String aDescription, final boolean aHasArgs) {
+        final Option.Builder builder = Option.builder(aOpt).longOpt(aLongOpt).desc(aDescription);
+
+        if (aHasArgs) {
+            builder.hasArgs().valueSeparator(VALUE_SEPARATOR);
+        }
+        else {
+            builder.hasArg();
+        }
+
+        mOptions.addOption(builder.build());
         mHasOptions = true;
         return this;
     }
@@ -81,7 +97,17 @@ public class Cli {
         final Settings.Builder settingsBuilder = Settings.settingsBuilder();
 
         for (final Option option : mCommandLine.getOptions()) {
-            settingsBuilder.put(option.getLongOpt(), option.getValue());
+            final String[] key = new String[]{option.getLongOpt()};
+
+            if (option.hasArgs()) {
+                settingsBuilder.put(key, option.getValues());
+            }
+            else if (option.hasArg()) {
+                settingsBuilder.put(key, option.getValue());
+            }
+            else {
+                settingsBuilder.put(key, true);
+            }
         }
 
         if (aArgsKey != null) {
