@@ -329,6 +329,24 @@
       <subfield code="a">import</subfield>
       <subfield code="b">2020-07-16 14:46:41 Europe/Berlin</subfield>
     </datafield>
+    <datafield tag="POR" ind1=" " ind2=" ">
+      <subfield code="x">System</subfield>
+      <subfield code="a">5377717890006442</subfield>
+      <subfield code="M">49HBZ_NETWORK</subfield>
+      <subfield code="c">static</subfield>
+      <subfield code="l">Interna: Verlag; Info: Zugriff nur im Hochschulnetz der Universität Bielefeld bzw. für autorisierte Benutzer</subfield>
+      <subfield code="y">2020-07-23 13:27:43 Europe/Berlin</subfield>
+      <subfield code="w">2020-07-23 13:27:39 Europe/Berlin</subfield>
+      <subfield code="D">https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_NETWORK/openurl?u.ignore_date_coverage=true&amp;portfolio_pid=5377717890006442&amp;Force_direct=true</subfield>
+      <subfield code="v">P2E_JOB</subfield>
+      <subfield code="z">2020-07-23 11:27:39</subfield>
+      <subfield code="i">false</subfield>
+      <subfield code="S">5277717900006442</subfield>
+      <subfield code="d">e?u.ignore_date_coverage=true&amp;rft.mms_id=991009919449706442</subfield>
+      <subfield code="b">Available</subfield>
+      <subfield code="f">BOOK</subfield>
+      <subfield code="8">5377717890006442</subfield>
+    </datafield>
   </record>
   <record>
     <leader>00000nms#a2200000#c#4500</leader>
@@ -12190,6 +12208,230 @@
       <subfield code="2">uri</subfield>
       <subfield code="0">GND</subfield>
       <subfield code="1">GND-040147770</subfield>
+      <subfield code="2">024</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00000nmm#a2200000#c#4500</leader>
+    <controlfield tag="003">DE-605</controlfield>
+    <controlfield tag="005">20130514121000.0</controlfield>
+    <controlfield tag="007">cr#|||||||||||</controlfield>
+    <controlfield tag="008">101215|2010####xxu#####o##|########eng#c</controlfield>
+    <controlfield tag="009">HT016629833</controlfield>
+    <controlfield tag="001">990183315640206441</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">HT016629833</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-605)HT016629833</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(ALEPHCCHBZ)018331564HBZ01</subfield>
+    </datafield>
+    <datafield tag="016" ind1="7" ind2=" ">
+      <subfield code="a">891535824</subfield>
+      <subfield code="2">OCoLC</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">9781282563032</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">9786612563034</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)891535824</subfield>
+      <subfield code="0">(uri) http://www.worldcat.org/oclc/891535824</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-599)HBZHT016629833</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">38</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">361</subfield>
+      <subfield code="e">rakwb</subfield>
+    </datafield>
+    <datafield tag="041" ind1=" " ind2=" ">
+      <subfield code="a">eng</subfield>
+    </datafield>
+    <datafield tag="044" ind1=" " ind2=" ">
+      <subfield code="c">XD-US</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Hall, Joseph N.</subfield>
+      <subfield code="0">(DE-588)120327945</subfield>
+      <subfield code="4">aut</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=120327945</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|120327945</subfield>
+      <subfield code="1">GND-120327945</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Effective Perl programming</subfield>
+      <subfield code="h">Elektronische Ressource</subfield>
+      <subfield code="b">ways to write better, more idiomatic Perl</subfield>
+      <subfield code="c">Joseph N. Hall ; Joshua McAdams ; Brian D. Foy</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+      <subfield code="a">2. ed.</subfield>
+    </datafield>
+    <datafield tag="264" ind1=" " ind2="1">
+      <subfield code="a">Upper Saddle River, NJ [u.a.]</subfield>
+      <subfield code="b">Addison-Wesley</subfield>
+      <subfield code="c">2010</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">XIX, 473 S.</subfield>
+    </datafield>
+    <datafield tag="340" ind1=" " ind2=" ">
+      <subfield code="a">Online-Ressource</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+      <subfield code="a">Effective software development series</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Includes bibliographical references and index</subfield>
+      <subfield code="9">F:501</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code="a">Perl</subfield>
+      <subfield code="g">Programmiersprache</subfield>
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4307836-9</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=043078362</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|043078362</subfield>
+      <subfield code="1">GND-043078362</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">McAdams, Joshua A.</subfield>
+      <subfield code="0">(DE-588)141555327</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Foy, Brian D.</subfield>
+      <subfield code="0">(DE-588)130469386</subfield>
+      <subfield code="4">aut</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=130469386</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|130469386</subfield>
+      <subfield code="1">GND-130469386</subfield>
+    </datafield>
+    <datafield tag="912" ind1=" " ind2=" ">
+      <subfield code="a">ZDB-26-MYL</subfield>
+    </datafield>
+    <datafield tag="960" ind1="1" ind2=" ">
+      <subfield code="i">iall</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">030</subfield>
+      <subfield code="A">a|1uc||||||17</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">050</subfield>
+      <subfield code="A">||||||||g|||||</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">051</subfield>
+      <subfield code="A">m|||||||</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="V">086a</subfield>
+      <subfield code="d">978-0-321-49694-2</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="V">086a</subfield>
+      <subfield code="c">978-0-321-71826-6</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_NETWORK</subfield>
+      <subfield code="i">990183315640206441</subfield>
+      <subfield code="n">HBZ Network</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Includes bibliographical references and index</subfield>
+      <subfield code="9">F:501</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="980" ind1="1" ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">ZDB-26-MYL</subfield>
+      <subfield code="e">HBZ</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="981" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">(DE-361)2315799</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="997" ind1=" " ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="a">20130514</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="998" ind1="4" ind2=" ">
+      <subfield code="9">LOCAL</subfield>
+      <subfield code="u">http://lib.myilibrary.com/detail.asp?ID=256303</subfield>
+      <subfield code="z">Interna: Verlag; Info: Zugriff nur im Hochschulnetz der Universität Bielefeld bzw. für autorisierte Benutzer</subfield>
+      <subfield code="M">49HBZ_BIE</subfield>
+    </datafield>
+    <datafield tag="MNG" ind1=" " ind2=" ">
+      <subfield code="f">ILS</subfield>
+      <subfield code="i">marc21</subfield>
+      <subfield code="k">01</subfield>
+      <subfield code="e">false</subfield>
+      <subfield code="g">018331564-HBZ01</subfield>
+      <subfield code="j">60</subfield>
+      <subfield code="a">import</subfield>
+      <subfield code="b">2020-07-17 00:56:51 Europe/Berlin</subfield>
+    </datafield>
+    <datafield tag="POR" ind1=" " ind2=" ">
+      <subfield code="x">System</subfield>
+      <subfield code="a">5377717890006442</subfield>
+      <subfield code="M">49HBZ_NETWORK</subfield>
+      <subfield code="c">static</subfield>
+      <subfield code="l">Interna: Verlag; Info: Zugriff nur im Hochschulnetz der Universität Bielefeld bzw. für autorisierte Benutzer</subfield>
+      <subfield code="y">2020-07-23 13:27:43 Europe/Berlin</subfield>
+      <subfield code="w">2020-07-23 13:27:39 Europe/Berlin</subfield>
+      <subfield code="D">https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_NETWORK/openurl?u.ignore_date_coverage=true&amp;portfolio_pid=5377717890006442&amp;Force_direct=true</subfield>
+      <subfield code="v">P2E_JOB</subfield>
+      <subfield code="z">2020-07-23 11:27:39</subfield>
+      <subfield code="i">false</subfield>
+      <subfield code="S">5277717900006442</subfield>
+      <subfield code="d">e?u.ignore_date_coverage=true&amp;rft.mms_id=991009919449706442</subfield>
+      <subfield code="b">Available</subfield>
+      <subfield code="f">BOOK</subfield>
+      <subfield code="8">5377717890006442</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Practical extraction and report language</subfield>
+      <subfield code="0">GND</subfield>
+      <subfield code="1">GND-043078362</subfield>
+      <subfield code="2">450</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Praktische Sprache für Daten-Gewinnung und -Ausgabe</subfield>
+      <subfield code="0">GND</subfield>
+      <subfield code="1">GND-043078362</subfield>
+      <subfield code="2">450</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">4307836-9</subfield>
+      <subfield code="0">http://d-nb.info/gnd/4307836-9</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="0">GND</subfield>
+      <subfield code="1">GND-043078362</subfield>
+      <subfield code="2">024</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">http://d-nb.info/gnd/130469386</subfield>
+      <subfield code="2">uri</subfield>
+      <subfield code="0">GND</subfield>
+      <subfield code="1">GND-130469386</subfield>
+      <subfield code="2">024</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">http://d-nb.info/gnd/120327945</subfield>
+      <subfield code="2">uri</subfield>
+      <subfield code="0">GND</subfield>
+      <subfield code="1">GND-120327945</subfield>
       <subfield code="2">024</subfield>
     </datafield>
   </record>
