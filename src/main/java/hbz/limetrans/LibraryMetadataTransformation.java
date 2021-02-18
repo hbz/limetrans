@@ -65,6 +65,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
         if (aSettings.containsSetting("alma")) {
             final String memberID = aSettings.get("alma");
+            final String networkID = aSettings.get("alma-network", "49HBZ_NETWORK");
 
             mVars.put("member", memberID);
             mVars.put("id-suffix", aSettings.get("id-suffix"));
@@ -84,9 +85,18 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
             // MBD$$M=49HBZ_NETWORK AND EXISTS(ITM)
             final LibraryMetadataFilter itemFilter = LibraryMetadataFilter.all()
-                .add("MBD  .M=" + aSettings.get("alma-network", "49HBZ_NETWORK"), "@ITM  ");
+                .add("MBD  .M=" + networkID, "@ITM  ");
 
             mFilter = LibraryMetadataFilter.all(filterKey).add(memberFilter);
+
+            if (aSettings.getAsBoolean("alma-portfolios", false)) {
+                // POR$$M=49HBZ_NETWORK AND NOT EXISTS(POR$$A)
+                memberFilter.add(LibraryMetadataFilter.all().add("POR  .M=" + networkID, "!POR  .A"));
+                mVars.put("portfolio", networkID);
+            }
+            else {
+                mVars.put("portfolio", "-");
+            }
 
             if (aSettings.containsSetting("alma-supplements")) {
                 final Settings supplements = aSettings.getAsSettings("alma-supplements");

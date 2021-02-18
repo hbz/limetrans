@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rules xmlns="http://www.culturegraph.org/metamorph">
 
-  <call-macro name="static-filter" dname="@portfolio" source="POR  .a" filter="POR  .[MA]" value="$[member]" />
+  <call-macro name="alma-portfolio-filter" dname="@portfolio" source="a" />
+
   <call-macro name="static-filter" dname="@mmsiz" source="MBD  .i" filter="MBD  .M" value="$[member]" />
 
   <call-macro name="alma-mms-to-isil" dname="@isil" source="001" />
