@@ -87,7 +87,11 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             final LibraryMetadataFilter itemFilter = LibraryMetadataFilter.all()
                 .add("MBD  .M=" + networkID, "@ITM  ");
 
-            mFilter = LibraryMetadataFilter.all(filterKey).add(memberFilter);
+            // leader@05=d
+            final LibraryMetadataFilter suppressionFilter = LibraryMetadataFilter.none()
+                .add("leader=~^.....d");
+
+            mFilter = LibraryMetadataFilter.all(filterKey).add(memberFilter).add(suppressionFilter);
 
             if (aSettings.getAsBoolean("alma-portfolios", false)) {
                 // POR$$M=49HBZ_NETWORK AND NOT EXISTS(POR$$A)
