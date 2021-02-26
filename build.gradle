@@ -17,7 +17,7 @@ ext {
         'jackson'           : '2.11.0',
         'junit'             : '4.13.1',
         'log4j'             : '2.5',
-        'metafacture'       : '5.0.0'
+        'metafacture'       : '5.2.0'
     ]
 }
 
@@ -34,6 +34,7 @@ dependencies {
     implementation "commons-io:commons-io:${versions['commons-io']}"
     implementation "commons-validator:commons-validator:${versions['commons-validator']}"
     implementation "junit:junit:${versions.junit}"
+    implementation "org.apache.logging.log4j:log4j-1.2-api:${versions.log4j}"
     implementation "org.apache.logging.log4j:log4j-core:${versions.log4j}"
     implementation "org.apache.logging.log4j:log4j-slf4j-impl:${versions.log4j}"
     implementation "org.elasticsearch:elasticsearch:${versions.elasticsearch}"
