@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="http://www.loc.gov/MARC21/slim">
+  <!-- Test load 1 -->
   <record>
     <leader>00000nms#a2200000#c#4500</leader>
     <controlfield tag="003">DE-605</controlfield>
@@ -12433,6 +12434,202 @@
       <subfield code="0">GND</subfield>
       <subfield code="1">GND-120327945</subfield>
       <subfield code="2">024</subfield>
+    </datafield>
+  </record>
+  <!-- Test load 2 -->
+  <record>
+    <leader>00000dam a2200000 u 4500</leader>
+    <controlfield tag="001">990005255180306447</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">BC-00338878</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(Aleph)000525518WUP40-Aleph</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">978-3-8375-0663-1</subfield>
+      <subfield code="0">(uri) http://www.isbnsearch.org/isbn/978-3-8375-0663-1</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-576)999999999</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">DE-576</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Klemp, Stefan</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">"Nicht ermittelt" : Polizeibataillone und die Nachkriegsjustiz ; ein Handbuch.</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+      <subfield code="a">2., erw. und überarb</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Essen :</subfield>
+      <subfield code="b">Klartext-Verl.,</subfield>
+      <subfield code="c">2011.</subfield>
+    </datafield>
+    <datafield tag="270" ind1=" " ind2=" ">
+      <subfield code="a">Klartext-Verl.</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+      <subfield code="a">HBZ$|6:00000040 3K 38589 |361:00000014 DD834 K64|929:00000000 2012/2322 |Dü62:cdd 11 LHM 105 |Bm3/2:F D 615/17:2 |61:00 pfl/d6284 #HBZ$|380:Fmo 3.09 Klemp|Sol1:MA 3568/5 |168:#BVB$|12:|384:|19:|M352:|</subfield>
+    </datafield>
+    <datafield tag="ISS" ind1=" " ind2=" ">
+      <subfield code="y">2011</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_NETWORK</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_WUP</subfield>
+    </datafield>
+  </record>
+  <record>
+    <controlfield tag="DEL">Y</controlfield>
+    <leader>00328dam a2200133 a 4500</leader>
+    <controlfield tag="005">20200707</controlfield>
+    <controlfield tag="007">cr |||||||||||</controlfield>
+    <controlfield tag="008">||||||nuuuuuuuu|||||| |o|||||||||||und||</controlfield>
+    <controlfield tag="001">991000065939706444</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-A96)410543-49hbz_fha</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">410543</subfield>
+      <subfield code="9">ExL</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">UTB-studi-E-Book</subfield>
+      <subfield code="b">EMedien 6-2012</subfield>
+    </datafield>
+    <datafield tag="264" ind1=" " ind2=" ">
+      <subfield code="a">Stuttgart</subfield>
+      <subfield code="b">UTB</subfield>
+    </datafield>
+    <datafield tag="981" ind1=" " ind2=" ">
+      <subfield code="a">(A96)410543</subfield>
+      <subfield code="9">LOCAL</subfield>
+    </datafield>
+    <datafield tag="989" ind1=" " ind2=" ">
+      <subfield code="a">Ebook-Paket</subfield>
+      <subfield code="9">LOCAL</subfield>
+    </datafield>
+    <datafield tag="997" ind1=" " ind2=" ">
+      <subfield code="a">20130204</subfield>
+      <subfield code="9">LOCAL</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_NETWORK</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_WUP</subfield>
+    </datafield>
+  </record>
+  <record>
+    <controlfield tag="DEL">Y</controlfield>
+    <leader>00388nam  22001333u 4500</leader>
+    <controlfield tag="008">210107s2013####xx######r#####000#0#eng#d</controlfield>
+    <controlfield tag="005">20210107170049.0</controlfield>
+    <controlfield tag="001">991004562349606444</controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">978-3407754271</subfield>
+      <subfield code="0">(uri) http://www.isbnsearch.org/isbn/978-3407754271</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Beatrice Alemagna</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Das wundervolle Fluffipuff: Fünffarbiges Bilderbuch mit Ausklappseite</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+      <subfield code="a">Lizenzausgabe</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="b">Beltz &amp; Gelberg</subfield>
+    </datafield>
+    <datafield tag="773" ind1="0" ind2=" ">
+      <subfield code="g">p:48 Seiten </subfield>
+    </datafield>
+    <datafield tag="H52" ind1="8" ind2=" ">
+      <subfield code="b">RES_SHARE</subfield>
+      <subfield code="c">OUT_RS_REQ</subfield>
+      <subfield code="8">2254089930006444</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="d">2021-01-07 16:00:54</subfield>
+      <subfield code="8">2254089930006444</subfield>
+      <subfield code="b">2021-01-07 16:00:54</subfield>
+      <subfield code="M">49HBZ_FHA</subfield>
+      <subfield code="e">Resource Sharing Library</subfield>
+      <subfield code="f">Borrowing Resource Sharing Requests</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">horita</subfield>
+      <subfield code="c">horita</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_NETWORK</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_WUP</subfield>
+    </datafield>
+  </record>
+  <record>
+    <controlfield tag="DEL">Y</controlfield>
+    <leader>00393dam  22001213u 4500</leader>
+    <controlfield tag="008">210108s2021    xx      r     000 0 ger d</controlfield>
+    <controlfield tag="005">20210108064253.0</controlfield>
+    <controlfield tag="001">99203866538906446</controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">978-1-138-30604-2</subfield>
+      <subfield code="0">(uri) http://www.isbnsearch.org/isbn/978-1-138-30604-2</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">HT019870046</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Reger, Jo [Herausgeber]</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Nevertheless they persisted : feminisms and continued resistance in the U.S. women's movement</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">New York </subfield>
+      <subfield code="b">Routledge</subfield>
+      <subfield code="c">2019</subfield>
+    </datafield>
+    <datafield tag="H52" ind1="8" ind2=" ">
+      <subfield code="b">E0001</subfield>
+      <subfield code="c">FL-AUSL</subfield>
+      <subfield code="8">22249909390006446</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="d">2021-01-08 05:44:37</subfield>
+      <subfield code="8">22249909390006446</subfield>
+      <subfield code="b">2021-01-08 05:44:31</subfield>
+      <subfield code="M">49HBZ_UDE</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">System</subfield>
+      <subfield code="c">System</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_NETWORK</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_FHA</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_WUP</subfield>
     </datafield>
   </record>
 </collection>
