@@ -19,7 +19,7 @@
         "timewindow": "yyyyMMdd",
         "settings": "classpath:/elasticsearch/hbztitle-settings.json",
         "mapping": "classpath:/elasticsearch/hbztitle-mapping.json",
-        "idKey": "RecordIdentifier.identifierForTheRecord"
+        "idKey": "RecordIdentifier.identifierForTheIndex"
       }
     }
   }
