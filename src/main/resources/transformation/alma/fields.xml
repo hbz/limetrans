@@ -51,6 +51,7 @@
   <data name="@uid" source="@id" />
   <entity name="RecordIdentifier" flushWith="@id">
     <data name="identifierForTheRecord" source="@id" />
+    <data name="identifierForTheIndex" source="@mmsid" />
   </entity>
 
   <data name="collection" source="@isil" />
