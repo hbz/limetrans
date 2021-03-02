@@ -500,3 +500,86 @@
     "uid" : "(DE-A96)991004562349606444"
   } ]
 }
+{
+  "collection" : "DE-468",
+  "VolumeDesignation" : {
+    "volumeDesignation" : "Series B"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "The Gerontological Society of America"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "1995", "9999", "2008" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "990013054080206447",
+    "identifierMMSIZ" : "990013054080206447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-468)990013054080206447",
+    "identifierForTheRecord" : "(DE-468)WU000014939-ALMA"
+  },
+  "DateFirst" : {
+    "date" : "1995"
+  },
+  "DateLast" : {
+    "date" : "9999"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "1079-5014"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Gerontological Society of America",
+    "corporateBodyIdentifier" : [ "(DE-588)514268-4" ],
+    "identifierGND" : [ "514268-4" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<The>> journals of gerontology"
+  }, {
+    "titleMain" : "Psychological sciences and social sciences"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Cary, NC" ],
+    "name" : [ "Oxford Univ. Pr" ],
+    "chronology" : [ "1995-" ]
+  }, {
+    "place" : [ "Washington, DC" ],
+    "name" : [ "Gerontological Society of America" ],
+    "chronology" : [ "-2008" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1995-", "-2008" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "50.1995 -"
+  },
+  "Description" : {
+    "description" : [ "lokale TA Okt. 2013/ Bestand ausgesondert / Vorg.: Journals of gerontology" ]
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Online-Ausg. --->",
+    "description" : "<<The>> journals of gerontology / B"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-468)990013054080206447"
+  }, {
+    "uid" : "(DE-468)WU000014939"
+  }, {
+    "uid" : "(DE-468)WU000014939-ALMA"
+  } ],
+  "TitleOther" : {
+    "title" : [ "<<The>> journals of gerontology / B", "Psychological sciences and social sciences", "Journal of gerontology", "Journal of gerontology" ]
+  }
+}
