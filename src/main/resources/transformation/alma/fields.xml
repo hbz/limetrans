@@ -678,6 +678,14 @@
     </entity>
   </entity>
 
+  <!-- 9xx -->
+  <call-macro name="static-filter" dname="@SubjectGHBLocal" source="983  .b" filter="983  .M" value="$[member]" />
+  <entity name="SubjectGHBLocal[]" flushWith="record">
+    <entity name="" flushWith="@SubjectGHBLocal" reset="true">
+      <data name="subject" source="@SubjectGHBLocal" />
+    </entity>
+  </entity>
+
   <!-- Other -->
   <entity name="xbib[]" flushWith="record">
     <entity name="" flushWith="@uid" reset="true">
