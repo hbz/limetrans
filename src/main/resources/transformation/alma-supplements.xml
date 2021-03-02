@@ -46,9 +46,9 @@
     </entity>
 
     <!-- Alma-BIB (MAB 700$h9$2 = NOTATION EINES KLASSIFIKATIONSSYSTEMS) (Lokale Klassifikation / Sachgruppen) / SISIS Feld 700 (Notationen) -->
-    <call-macro name="static-filter" dname="@subject" source="983  .b" filter="983  .M" value="$[member]" />
+    <call-macro name="static-filter" dname="@SubjectGHBLocal" source="983  .b" filter="983  .M" value="$[member]" />
     <entity name="SubjectGHBLocal.subject[]" flushWith="record">
-      <data name="" source="@subject">
+      <data name="" source="@SubjectGHBLocal">
         <unique />
       </data>
     </entity>
