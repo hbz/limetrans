@@ -580,3 +580,94 @@
     "title" : [ "<<The>> journals of gerontology / B", "Psychological sciences and social sciences", "Journal of gerontology", "Journal of gerontology" ]
   }
 }
+{
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : "ed. by: C. Le Bris"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2003" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "990176414160206441",
+    "identifierMMSIZ" : "990009835370206447",
+    "identifierPID" : "53104257440006447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990176414160206441",
+    "identifierForTheRecord" : "(DE-605)HT016037352-ALMA"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9780444515667" ]
+  }, {
+    "identifierISBN" : [ "0444512489" ]
+  }, {
+    "identifierISBN" : [ "9780444515667" ]
+  }, {
+    "identifierISBN" : [ "0444512489" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Computational chemistry"
+  } ],
+  "Edition" : {
+    "edition" : [ "1. ed." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Amsterdam [u.a.]" ],
+    "name" : [ "Elsevier" ],
+    "chronology" : [ "2003" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2003" ]
+  },
+  "Extent" : {
+    "extent" : "X, 899 S. : Ill., graph. Darst."
+  },
+  "PersonContributor" : [ {
+    "personName" : "Le Bris, Claude",
+    "personBio" : "1966-",
+    "personIdentifier" : [ "(DE-588)12235138X" ],
+    "identifierGND" : [ "12235138X" ]
+  } ],
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Erscheint auch als",
+    "description" : "Computational chemistry",
+    "note" : [ "Druckausg." ]
+  } ],
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Handbook of numerical analysis" ]
+  }, {
+    "titleSuper" : [ "Handbook of numerical analysis" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "10" ]
+  }, {
+    "volumeDesignation" : [ "10" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://www.sciencedirect.com/science?_ob=PublicationURL&_tockey=%23TOC%2320481%232003%23999899999%23536518%23FLP%23&_cdi=20481&_pubType=HS&_auth=y&_acct=C000061607&_version=1&_urlVersion=0&_userid=3862678&md5=dab20d268649911fe095998515f2a42d",
+    "nonpublicnote" : "Digitalisierung"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990176414160206441"
+  }, {
+    "uid" : "(DE-605)HT016037352"
+  }, {
+    "uid" : "(DE-468)990009835370206447"
+  }, {
+    "uid" : "(DE-605)HT016037352-ALMA"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
