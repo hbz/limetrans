@@ -683,6 +683,9 @@
         <replace pattern="$[network]" with="$[member]" />
         <unique />
       </data>
+      <data name="isInternalLinkFor" source="@OnlineAccess">
+        <constant value="$[isil]" />
+      </data>
     </entity>
   </entity>
 
