@@ -35,7 +35,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
     private final String mRulesPath;
     private final boolean mPrettyPrinting;
 
-    public LibraryMetadataTransformation(final Settings aSettings) throws IOException {
+    public LibraryMetadataTransformation(final Settings aSettings) throws IOException { // checkstyle-disable-line JavaNCSS|NPathComplexity
         LOGGER.debug("Settings: {}", aSettings);
 
         mInputQueue = new FileQueue(aSettings.getAsSettings("input").getAsSettings("queue"));
@@ -58,7 +58,13 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
         }
 
         if (aSettings.containsSetting("isil")) {
-            mVars.put("isil", aSettings.get("isil"));
+            final String isil = aSettings.get("isil");
+            mVars.put("isil", isil);
+
+            final int index = isil.indexOf('-');
+            if (index > 0) {
+                mVars.put("sigel", isil.substring(index + 1));
+            }
         }
 
         final String defaultRulesPath;

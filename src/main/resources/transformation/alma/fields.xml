@@ -25,6 +25,9 @@
     <data source="981  .a"> <!-- SISIS CATKey -->
       <regexp match="^\($[isil]\).*" />
     </data>
+    <data source="981  .a"> <!-- SISIS CATKey -->
+      <regexp match="^\($[sigel]\)(.*)" format="($[isil])${1}" />
+    </data>
     <data source="035  .a">
       <regexp match="^\($[isil]\).*" />
     </data>
