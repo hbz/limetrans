@@ -652,6 +652,8 @@
     </entity>
   </entity>
 
+  <call-macro name="alma-portfolio-filter" dname="@OnlineAccess" source="d" />
+  <call-macro name="alma-portfolio-filter" dname="@OnlineAccess" source="D" />
   <entity name="OnlineAccess[]" flushWith="record">
     <entity name="" flushWith="856??" sameEntity="true">
       <if>
@@ -675,6 +677,12 @@
         <occurrence only="1" sameEntity="true" />
       </data>
       <data name="relatedto" source="856??.3" />
+    </entity>
+    <entity name="" reset="true">
+      <data name="uri" source="@OnlineAccess">
+        <replace pattern="$[network]" with="$[member]" />
+        <unique />
+      </data>
     </entity>
   </entity>
 

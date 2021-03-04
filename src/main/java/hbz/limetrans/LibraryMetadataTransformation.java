@@ -68,6 +68,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             final String networkID = aSettings.get("alma-network", "49HBZ_NETWORK");
 
             mVars.put("member", memberID);
+            mVars.put("network", networkID);
             mVars.put("id-suffix", aSettings.get("id-suffix"));
 
             // Ex Libris (Deutschland) GmbH
