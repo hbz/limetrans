@@ -913,3 +913,54 @@
     "uid" : "(DE-A96)991004562349606444"
   } ]
 }
+{
+  "collection" : "DE-A96",
+  "CreatorStatement" : {
+    "creatorStatement" : "in Zusammenarbeit mit: Forschungszentrum Jülich (Dipl.-Ing. Karl Heinz Graf)"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Hochschulschrift", "Monographie" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "991000067219706444",
+    "identifierMMSIZ" : "991000067219706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991000067219706444",
+    "identifierForTheRecord" : "(DE-A96)534977-49hbz_fha-ALMA"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Schuller, Dimitri"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Konstruktion, Bau und Inbetriebnahme einer Tieftemperaturkühlkammer eines Rastertunnelmikroskops"
+  } ],
+  "PublisherName" : [ {
+    "chronology" : [ "2014" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2014" ]
+  },
+  "PersonContributor" : [ {
+    "personName" : "Wählisch, Georg",
+    "personRole" : [ "[Betreuer]" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-A96)991000067219706444"
+  }, {
+    "uid" : "(DE-A96)534977-49hbz_fha"
+  }, {
+    "uid" : "(DE-A96)534977-49hbz_fha-ALMA"
+  } ]
+}
