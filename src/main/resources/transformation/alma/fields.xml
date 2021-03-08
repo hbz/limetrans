@@ -719,4 +719,14 @@
     </data>
   </choose>
 
+  <!-- ITM -->
+  <call-macro name="static-filter" dname="@callnumber" source="ITM  .c" filter="ITM  .M" value="$[member]" />
+  <entity name="Item[]" flushWith="record">
+    <entity name="" flushWith="@callnumber" reset="true">
+      <data name="callnumber" source="@callnumber">
+        <unique />
+      </data>
+    </entity>
+  </entity>
+
 </rules>
