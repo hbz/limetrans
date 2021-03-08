@@ -725,3 +725,73 @@
   } ],
   "TypeMedia" : "Elektronische Ressource"
 }
+{
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : "series editor, Dr. Richard Hull"
+  },
+  "dc" : {
+    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2011", "9999" ]
+  },
+  "introx" : {
+    "access" : [ "online" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "99368113400306441",
+    "identifierMMSIZ" : "9915879171806447",
+    "identifierPID" : "5398718960006447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99368113400306441",
+    "identifierForTheRecord" : "(DE-605)99368113400306441"
+  },
+  "DateFirst" : {
+    "date" : "2011",
+    "date" : "2011"
+  },
+  "DateLast" : {
+    "date" : "2017"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "26574159"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "2046-6080"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Dialogues in Critical Management Studies"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Bingley, U.K." ],
+    "name" : [ "Emerald Group Publishing Limited" ],
+    "chronology" : [ "2011-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2011-" ]
+  },
+  "OnlineAccess" : [ {
+    "uri" : "https://hbz-network.userservices.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&rft.mms_id=9915879171806447",
+    "isInternalLinkFor" : "DE-468"
+  }, {
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&portfolio_pid=5398718960006447&Force_direct=true",
+    "isInternalLinkFor" : "DE-468"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99368113400306441"
+  }, {
+    "uid" : "(DE-468)9915879171806447"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "PersonCreator" : [ {
+    "personName" : "Hull, Richard",
+    "personTitle" : [ "Ph. D." ]
+  } ]
+}
