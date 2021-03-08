@@ -1040,3 +1040,93 @@
     "personTitle" : [ "Ph. D." ]
   } ]
 }
+{
+  "collection" : "DE-A96",
+  "CreatorStatement" : {
+    "creatorStatement" : "in Zusammenarbeit mit: RWTH Aachen/Institut für Angewandte Medizintechnik (Dipl.-Ing. Stephanie Schmitz)"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Hochschulschrift", "Monographie" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "991000073589706444",
+    "identifierMMSIZ" : "991000073589706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991000073589706444",
+    "identifierForTheRecord" : "(DE-A96)520553-ALMA"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Henning, Patrick"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Untersuchung des Einflusses verschiedener Strukturen von Polycarbonaturethanvliesen auf die Hämokompatibilität"
+  } ],
+  "PublisherName" : [ {
+    "chronology" : [ "2014" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2014" ]
+  },
+  "PersonContributor" : [ {
+    "personName" : "Behbahani, Mehdi",
+    "personRole" : [ "[Betreuer]" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-A96)991000073589706444"
+  }, {
+    "uid" : "(DE-A96)520553"
+  }, {
+    "uid" : "(DE-A96)520553-ALMA"
+  } ]
+}
+{
+  "collection" : "DE-A96",
+  "VolumeDesignation" : {
+    "volumeDesignation" : "2020,10"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "991004279679706444",
+    "identifierMMSIZ" : "991004279679706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991004279679706444",
+    "identifierForTheRecord" : "(DE-605)HT020611813-ALMA"
+  },
+  "Language" : [ {
+    "languageSource" : "und"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Karriere in der IT - Ratgeber, Tipps, Praxis"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-A96)991004279679706444"
+  }, {
+    "uid" : "(DE-605)HT020611813"
+  }, {
+    "uid" : "(DE-A96)983960"
+  }, {
+    "uid" : "(DE-605)HT020611813-ALMA"
+  } ]
+}
