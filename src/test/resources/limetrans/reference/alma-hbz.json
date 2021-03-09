@@ -2801,3 +2801,100 @@
     "personTitle" : [ "Ph. D." ]
   } ]
 }
+{
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : "Doris Haas-Arndt"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2015" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990218476060206441",
+    "identifierMMSIZ" : "990218476060206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990218476060206441",
+    "identifierForTheRecord" : "(DE-605)HT019344670-ALMA"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783035612974", "PDF" ]
+  }, {
+    "identifierISBN" : [ "9783035613162", "EPUB" ]
+  }, {
+    "identifierISBN" : [ "9783035612974", "PDF" ]
+  }, {
+    "identifierISBN" : [ "9783035613162", "EPUB" ]
+  }, {
+    "identifierISBN" : [ "9783035612974", "PDF" ]
+  }, {
+    "identifierISBN" : [ "9783035613162", "EPUB" ]
+  } ],
+  "IdentifierDOI" : [ {
+    "standardNumber" : "10.1515/9783035612974"
+  } ],
+  "Person" : [ {
+    "personName" : "Haas-Arndt, Doris",
+    "personBio" : "1957-",
+    "personIdentifier" : [ "(DE-588)121619087" ],
+    "identifierGND" : [ "121619087" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Wasserkreislauf im Gebäude"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Basel" ],
+    "name" : [ "Birkhäuser" ],
+    "chronology" : [ "[2015]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2015]" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource (81 Seiten)"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Basics" ]
+  } ],
+  "Description" : {
+    "description" : [ "\"Erscheinungsdatum: Mai 2017\" - Startseite", "Erscheinungsjahr der Printausgabe: 2015", "\"Erscheinungsdatum: Mai 2017\" - Startseite", "Erscheinungsjahr der Printausgabe: 2015", "\"Erscheinungsdatum: Mai 2017\" - Startseite", "Erscheinungsjahr der Printausgabe: 2015" ]
+  },
+  "Summary" : {
+    "abstract" : [ "ger: Die Integration der haustechnischen Anlagen ist ein wichtiger Aspekt bei der Planung des Architekten. Die Konzeptionierung von Versorgungssträngen und Kreisläufen im Gebäude erfordert ein Verständnis für die Zusammenhänge der Ver- und Entsorgung mit dem Element Wasser. Hierbei geht es vor allem um die Zusammenhänge der einzelnen Kreislaufelemente von der Versorgung mit Trinkwasser, den Verbrauchern im Haus und der Entsorgung von Abwasser bis hin zur Wiedernutzbarmachung von Abwässern. Das Thema der Wassereinsparung bildet dabei einen übergeordneten Rahmen." ]
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Erscheint auch als",
+    "description" : "Haas-Arndt, Doris, 1957-: Wasserkreislauf im Gebäude",
+    "note" : [ "Druck-Ausgabe" ]
+  } ],
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "978-3-0356-0565-5" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://dx.doi.org/10.1515/9783035612974",
+    "nonpublicnote" : "Resolving-System"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990218476060206441"
+  }, {
+    "uid" : "(DE-605)HT019344670"
+  }, {
+    "uid" : "(DE-605)HT019344670-ALMA"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "TitleOther" : {
+    "title" : [ "Basics Wasserkreislauf im Gebäude", "Basics Haustechnik Wasserkreislauf im Gebäude" ]
+  }
+}
