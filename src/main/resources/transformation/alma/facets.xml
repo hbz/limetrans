@@ -1200,6 +1200,8 @@
     </entity>
   </entity>
 
+  <call-macro name="static-filter" dname="@current_library" source="ITM  .w" filter="ITM  .M" value="$[member]" />
+  <call-macro name="static-filter" dname="@current_location" source="ITM  .x" filter="ITM  .M" value="$[member]" />
   <entity name="introx" flushWith="record">
     <entity name="access[]" flushWith="record">
       <data name="" source="@facet_format">
@@ -1218,6 +1220,17 @@
       </if>
       <data name="" source="001">
         <constant value="local" />
+      </data>
+    </entity>
+
+    <entity name="branch[]" flushWith="record">
+      <data name="" source="@current_library">
+        <lookup in="alma-library-to-branch-$[isil]" />
+        <unique />
+      </data>
+      <data name="" source="@current_location">
+        <lookup in="alma-location-to-branch-$[isil]" />
+        <unique />
       </data>
     </entity>
 
