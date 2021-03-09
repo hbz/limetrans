@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metamorph xmlns="http://www.culturegraph.org/metamorph" xmlns:xi="http://www.w3.org/2001/XInclude" version="1">
   <xi:include href="macros.xml"/>
+  <xi:include href="maps/alma-branches.xml"/>
 
   <rules xmlns="http://www.culturegraph.org/metamorph">
     <data name="id" source="035  .a">
@@ -66,6 +67,19 @@
     <call-macro name="static-filter" dname="@callnumber" source="ITM  .c" filter="ITM  .M" value="$[member]" />
     <entity name="Item.callnumber[]" flushWith="record">
       <data name="" source="@callnumber">
+        <unique />
+      </data>
+    </entity>
+
+    <call-macro name="static-filter" dname="@current_library" source="ITM  .w" filter="ITM  .M" value="$[member]" />
+    <call-macro name="static-filter" dname="@current_location" source="ITM  .x" filter="ITM  .M" value="$[member]" />
+    <entity name="introx.branch[]" flushWith="record">
+      <data name="" source="@current_library">
+        <lookup in="alma-library-to-branch-$[isil]" />
+        <unique />
+      </data>
+      <data name="" source="@current_location">
+        <lookup in="alma-location-to-branch-$[isil]" />
         <unique />
       </data>
     </entity>
