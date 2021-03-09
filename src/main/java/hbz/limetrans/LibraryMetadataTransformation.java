@@ -70,12 +70,14 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
         final String defaultRulesPath;
 
         if (aSettings.containsSetting("alma")) {
-            final String memberID = aSettings.get("alma");
-            final String networkID = aSettings.get("alma-network", "49HBZ_NETWORK");
+            final Settings almaSettings = aSettings.getAsSettings("alma");
+
+            final String memberID = almaSettings.get("member");
+            final String networkID = almaSettings.get("network", "49HBZ_NETWORK");
 
             mVars.put("member", memberID);
             mVars.put("network", networkID);
-            mVars.put("id-suffix", aSettings.get("id-suffix"));
+            mVars.put("id-suffix", almaSettings.get("id-suffix"));
 
             // Ex Libris (Deutschland) GmbH
             mVars.putIfAbsent("isil", "DE-632");
@@ -100,7 +102,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
             mFilter = LibraryMetadataFilter.all(filterKey).add(memberFilter).add(suppressionFilter);
 
-            if (aSettings.getAsBoolean("alma-portfolios", false)) {
+            if (almaSettings.getAsBoolean("portfolios", false)) {
                 // POR$$M=49HBZ_NETWORK AND NOT EXISTS(POR$$A)
                 memberFilter.add(LibraryMetadataFilter.all().add("POR  .M=" + networkID, "!POR  .A"));
                 mVars.put("portfolio", networkID);
@@ -109,10 +111,10 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
                 mVars.put("portfolio", "-");
             }
 
-            if (aSettings.containsSetting("alma-supplements")) {
-                final Settings supplements = aSettings.getAsSettings("alma-supplements");
-                Stream.of("description").forEach(k -> mVars.put("regexp." + k, supplements.get(k, ".*")));
+            final Settings regexp = almaSettings.getAsSettings("regexp");
+            Stream.of("description").forEach(k -> mVars.put("regexp." + k, regexp.get(k, ".*")));
 
+            if (almaSettings.getAsBoolean("supplements", false)) {
                 rulesSuffix = "-supplements";
                 mFilter.add(itemFilter);
             }

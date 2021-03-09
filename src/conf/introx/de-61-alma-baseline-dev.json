@@ -1,7 +1,9 @@
 {
   "isil": "DE-61",
-  "alma": "49HBZ_DUE",
-  "id-suffix": "-ALMA",
+  "alma": {
+    "member": "49HBZ_DUE",
+    "id-suffix": "-ALMA"
+  },
   "input": {
     "queue": {
       "path": "/mnt/almaprod/central/",

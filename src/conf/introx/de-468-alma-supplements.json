@@ -1,7 +1,9 @@
 {
   "isil": "DE-468",
-  "alma": "49HBZ_WUP",
-  "alma-supplements": {},
+  "alma": {
+    "member": "49HBZ_WUP",
+    "supplements": true
+  },
   "input": {
     "queue": {
       "path": "/mnt/almaprod/central/",

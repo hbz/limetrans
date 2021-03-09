@@ -1,7 +1,9 @@
 {
   "isil": "DE-290",
-  "alma": "49HBZ_UBD",
-  "alma-supplements": {},
+  "alma": {
+    "member": "49HBZ_UBD",
+    "supplements": true
+  },
   "input": {
     "queue": {
       "path": "/mnt/almaprod/central/",
