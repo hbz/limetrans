@@ -1,7 +1,12 @@
 {
   "isil": "DE-A96",
-  "alma": "49HBZ_FHA",
-  "id-suffix": "-ALMA",
+  "alma": {
+    "member": "49HBZ_FHA",
+    "id-suffix": "-ALMA",
+    "regexp": {
+      "description": ".*vorhanden.*"
+    }
+  },
   "input": {
     "queue": {
       "path": "/mnt/almaprod/central/",

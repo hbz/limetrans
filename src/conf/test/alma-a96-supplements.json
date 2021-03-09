@@ -1,8 +1,11 @@
 {
   "isil": "DE-A96",
-  "alma": "49HBZ_FHA",
-  "alma-supplements": {
-    "description": ".*vorhanden.*"
+  "alma": {
+    "member": "49HBZ_FHA",
+    "supplements": true,
+    "regexp": {
+      "description": ".*vorhanden.*"
+    }
   },
   "input": {
     "queue": {

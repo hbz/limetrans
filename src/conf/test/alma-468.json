@@ -1,8 +1,10 @@
 {
   "isil": "DE-468",
-  "alma": "49HBZ_WUP",
-  "alma-portfolios": true,
-  "id-suffix": "-ALMA",
+  "alma": {
+    "member": "49HBZ_WUP",
+    "portfolios": true,
+    "id-suffix": "-ALMA"
+  },
   "input": {
     "queue": {
       "path": "src/test/resources/limetrans/input/",
