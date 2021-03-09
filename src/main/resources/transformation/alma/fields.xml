@@ -474,9 +474,14 @@
   </entity>
 
   <!-- 5xx -->
+  <call-macro name="static-filter" dname="@description" source="989  .a" filter="989  .M" value="$[member]" />
   <entity name="Description">
     <entity name="description[]" flushWith="record">
       <data name="" source="500  .a" />
+      <data name="" source="@description">
+        <regexp match="$[regexp.description]" />
+        <unique />
+      </data>
     </entity>
   </entity>
   <entity name="Abstract">
