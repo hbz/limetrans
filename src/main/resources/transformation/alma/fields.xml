@@ -660,7 +660,6 @@
     </entity>
   </entity>
 
-  <call-macro name="alma-portfolio-filter" dname="@OnlineAccess" source="d" />
   <call-macro name="alma-portfolio-filter" dname="@OnlineAccess" source="D" />
   <entity name="OnlineAccess[]" flushWith="record">
     <entity name="" flushWith="856??" sameEntity="true">
