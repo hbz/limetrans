@@ -660,7 +660,6 @@
     </entity>
   </entity>
 
-  <call-macro name="alma-portfolio-filter" dname="@OnlineAccess" source="D" />
   <entity name="OnlineAccess[]" flushWith="record">
     <entity name="" flushWith="856??" sameEntity="true">
       <if>
@@ -685,14 +684,30 @@
       </data>
       <data name="relatedto" source="856??.3" />
     </entity>
-    <entity name="" reset="true">
-      <data name="uri" source="@OnlineAccess">
+    <!-- Cf. macro alma-portfolio-filter -->
+    <entity name="" flushWith="POR  " sameEntity="true">
+      <if>
+        <any flushWith="POR  ">
+          <data source="POR  .[MA]">
+            <equals string="$[member]" />
+          </data>
+          <all>
+            <data source="POR  .M">
+              <equals string="$[portfolio]" />
+            </data>
+            <none flushWith="POR  ">
+              <data source="POR  .A" />
+            </none>
+          </all>
+        </any>
+      </if>
+      <data name="uri" source="POR  .D">
         <replace pattern="$[network]" with="$[member]" />
-        <unique />
       </data>
-      <data name="isInternalLinkFor" source="@OnlineAccess">
+      <data name="isInternalLinkFor" source="POR  .D">
         <constant value="$[isil]" />
       </data>
+      <data name="publicnote" source="POR  .q" />
     </entity>
   </entity>
 
