@@ -6,6 +6,7 @@
   <rules xmlns="http://www.culturegraph.org/metamorph">
     <data name="id" source="035  .a">
       <regexp match="^\($[catalogid]\)([BCHT].*)" format="${1}" />
+      <occurrence only="1" />
     </data>
 
     <entity name="IdentifierAlma" flushWith="record">
