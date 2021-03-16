@@ -47,6 +47,14 @@
       </entity>
     </entity>
 
+    <!-- Alma-BIB (MAB 710$a$a = SCHLAGWÖRTER UND SCHLAGWORTKETTEN) (Sachschlagwort) / SISIS Feld 710 (Schlagwörter) -->
+    <call-macro name="alma-member-filter" dname="@SubjectHeadings" entity="982  " source="b" />
+    <entity name="SubjectHeadings.subject[]" flushWith="record">
+      <data name="" source="@SubjectHeadings">
+        <unique />
+      </data>
+    </entity>
+
     <!-- Alma-BIB (MAB 700$h9$2 = NOTATION EINES KLASSIFIKATIONSSYSTEMS) (Lokale Klassifikation / Sachgruppen) / SISIS Feld 700 (Notationen) -->
     <call-macro name="alma-member-filter" dname="@SubjectGHBLocal" entity="983  " source="b" />
     <entity name="SubjectGHBLocal.subject[]" flushWith="record">

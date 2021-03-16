@@ -713,6 +713,12 @@
   </entity>
 
   <!-- 9xx -->
+  <call-macro name="alma-member-filter" dname="@SubjectHeadings" entity="982  " source="b" />
+  <entity name="SubjectHeadings[]" flushWith="record">
+    <entity name="" flushWith="@SubjectHeadings" reset="true">
+      <data name="subject" source="@SubjectHeadings" />
+    </entity>
+  </entity>
   <call-macro name="alma-member-filter" dname="@SubjectGHBLocal" entity="983  " source="b" />
   <entity name="SubjectGHBLocal[]" flushWith="record">
     <entity name="" flushWith="@SubjectGHBLocal" reset="true">
