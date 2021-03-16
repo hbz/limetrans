@@ -502,6 +502,11 @@
   </entity>
 
   <!-- 6xx -->
+  <entity name="HoldingsStatement[]" flushWith="record">
+    <entity name="" flushWith="H66??" sameEntity="true">
+      <call-macro name="alma-mms-filter" dname="note" entity="H66??" source="z" filter="8" />
+    </entity>
+  </entity>
 
   <!-- 7xx -->
   <entity name="PersonContributor[]" flushWith="record">

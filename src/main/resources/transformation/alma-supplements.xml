@@ -15,20 +15,11 @@
     </entity>
 
     <!-- Alma-HOL (MAB 200$#9$2 = NAME DER 1. KÖRPERSCHAFT) (Zeitschriften-Bestandsangabe) -->
-    <!--
     <entity name="HoldingsStatement[]" flushWith="record">
-      <entity name="" flushWith="" sameEntity="true">
-        <if>
-          <all flushWith="" sameEntity="true">
-            <data source=".M">
-              <equals string="$[member]" />
-            </data>
-          </all>
-        </if>
-        <data name="note" source=".e" />
+      <entity name="" flushWith="H66??" sameEntity="true">
+        <call-macro name="alma-mms-filter" dname="note" entity="H66??" source="z" filter="8" />
       </entity>
     </entity>
-    -->
 
     <!-- Alma-HOL (MAB 655$$2 = ELEKTRONISCHE ADRESSE UND ZUGRIFFSART) (Bibliotheksspezifische URL) -->
     <entity name="OnlineAccess[]" flushWith="record">
