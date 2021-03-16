@@ -26,8 +26,39 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
     private static final Logger LOGGER = LogManager.getLogger();
 
+    private static final Map<String, String> ISIL_TO_MEMBER_ID = new HashMap<String, String>() {
+        {
+            put("DE-605", "49HBZ_NETWORK"); // hbz - Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen
+            put("DE-361", "49HBZ_BIE");     // Universitätsbibliothek Bielefeld
+            put("DE-61",  "49HBZ_DUE");     // Universitäts- und Landesbibliothek Düsseldorf
+            put("DE-A96", "49HBZ_FHA");     // Hochschulbibliothek der Fachhochschule Aachen
+            put("DE-290", "49HBZ_UBD");     // Universitätsbibliothek Dortmund
+            put("DE-465", "49HBZ_UDE");     // Universitätsbibliothek Duisburg-Essen (DE-464 = Campus Duisburg, DE-465 = Campus Essen)
+            put("DE-468", "49HBZ_WUP");     // Universitätsbibliothek Wuppertal
+        }
+    };
+
+    private static final Map<String, String> ISIL_TO_INSTITUTION_CODE = new HashMap<String, String>() {
+        {
+            put("DE-605", "6441");          // hbz - Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen
+            put("DE-361", "6442");          // Universitätsbibliothek Bielefeld
+            put("DE-61",  "6443");          // Universitäts- und Landesbibliothek Düsseldorf
+            put("DE-A96", "6444");          // Hochschulbibliothek der Fachhochschule Aachen
+            put("DE-290", "6445");          // Universitätsbibliothek Dortmund
+            put("DE-465", "6446");          // Universitätsbibliothek Duisburg-Essen (DE-464 = Campus Duisburg, DE-465 = Campus Essen)
+            put("DE-468", "6447");          // Universitätsbibliothek Wuppertal
+        }
+    };
+
+    private static final Map<String, String> INSTITUTION_CODE_TO_ISIL = new HashMap<String, String>() {
+        {
+            ISIL_TO_INSTITUTION_CODE.forEach((k, v) -> put(v, k));
+        }
+    };
+
     private final FileQueue mInputQueue;
     private final LibraryMetadataFilter mFilter;
+    private final Map<String, Map<String, String>> mMaps = new HashMap<>();
     private final Map<String, String> mVars = new HashMap<>();
     private final Settings mElasticsearchSettings;
     private final String mFormetaPath;
@@ -72,19 +103,35 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
         if (aSettings.containsSetting("alma")) {
             final Settings almaSettings = aSettings.getAsSettings("alma");
 
-            final String memberID = almaSettings.get("member");
-            final String networkID = almaSettings.get("network", "49HBZ_NETWORK");
-
-            mVars.put("member", memberID);
-            mVars.put("network", networkID);
-            mVars.put("id-suffix", almaSettings.get("id-suffix"));
-
             // Ex Libris (Deutschland) GmbH
             mVars.putIfAbsent("isil", "DE-632");
 
-            // Organization originating the system control number
+            final String isil = mVars.get("isil");
             final String catalogid = aSettings.get("catalogid", "DE-605");
+
+            // Organization originating the system control number
             mVars.put("catalogid", catalogid);
+
+            final String memberID = ISIL_TO_MEMBER_ID.get(isil);
+            final String networkID = ISIL_TO_MEMBER_ID.get(catalogid);
+            final String institutionCode = ISIL_TO_INSTITUTION_CODE.get(isil);
+
+            if (memberID == null || institutionCode == null) {
+                throw new RuntimeException("Unknown ISIL: " + isil);
+            }
+
+            if (networkID == null) {
+                throw new RuntimeException("Unknown catalog ID: " + catalogid);
+            }
+
+            mVars.put("member", memberID);
+            mVars.put("network", networkID);
+            mVars.put("institution-code", institutionCode);
+            mVars.put("id-suffix", almaSettings.get("id-suffix"));
+
+            //mMaps.put("isil-to-member-id", ISIL_TO_MEMBER_ID);
+            //mMaps.put("isil-to-institution-code", ISIL_TO_INSTITUTION_CODE);
+            mMaps.put("institution-code-to-isil", INSTITUTION_CODE_TO_ISIL);
 
             final String rulesSuffix;
 
@@ -149,6 +196,8 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
         transformJson(streamTee);
         transformFormeta(streamTee);
         transformElasticsearch(streamTee);
+
+        mMaps.forEach(metamorph::putMap);
 
         metamorph
             .setReceiver(counter)

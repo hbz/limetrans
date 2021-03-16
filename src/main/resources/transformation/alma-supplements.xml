@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metamorph xmlns="http://www.culturegraph.org/metamorph" xmlns:xi="http://www.w3.org/2001/XInclude" version="1">
-  <xi:include href="macros.xml"/>
+  <xi:include href="macros/alma.xml"/>
   <xi:include href="maps/alma-branches.xml"/>
 
   <rules xmlns="http://www.culturegraph.org/metamorph">
@@ -11,7 +11,7 @@
 
     <entity name="IdentifierAlma" flushWith="record">
       <data name="identifierMMS" source="001" />
-      <call-macro name="static-filter" dname="identifierMMSIZ" source="MBD  .i" filter="MBD  .M" value="$[member]" />
+      <call-macro name="alma-member-filter" dname="identifierMMSIZ" entity="MBD  " source="i" />
     </entity>
 
     <!-- Alma-HOL (MAB 200$#9$2 = NAME DER 1. KÖRPERSCHAFT) (Zeitschriften-Bestandsangabe) -->
@@ -48,7 +48,7 @@
     </entity>
 
     <!-- Alma-BIB (MAB 700$h9$2 = NOTATION EINES KLASSIFIKATIONSSYSTEMS) (Lokale Klassifikation / Sachgruppen) / SISIS Feld 700 (Notationen) -->
-    <call-macro name="static-filter" dname="@SubjectGHBLocal" source="983  .b" filter="983  .M" value="$[member]" />
+    <call-macro name="alma-member-filter" dname="@SubjectGHBLocal" entity="983  " source="b" />
     <entity name="SubjectGHBLocal.subject[]" flushWith="record">
       <data name="" source="@SubjectGHBLocal">
         <unique />
@@ -56,7 +56,7 @@
     </entity>
 
     <!-- Alma-HOL (MAB 027$$a = LOKALE IDENTIFIKATIONSNUMMER) / SISIS Feld 600 (Kommentar extern) -->
-    <call-macro name="static-filter" dname="@description" source="989  .a" filter="989  .M" value="$[member]" />
+    <call-macro name="alma-member-filter" dname="@description" entity="989  " source="a" />
     <entity name="Description.description[]" flushWith="record">
       <data name="" source="@description">
         <regexp match="$[regexp.description]" />
@@ -65,15 +65,15 @@
     </entity>
 
     <!-- Call number subfield (MAB 088$$a = Angabe der redigierenden Bibliothek) / SISIS Feld 9902 (Buchdatensignatur) -->
-    <call-macro name="static-filter" dname="@callnumber" source="ITM  .c" filter="ITM  .M" value="$[member]" />
+    <call-macro name="alma-member-filter" dname="@callnumber" entity="ITM  " source="c" />
     <entity name="Item.callnumber[]" flushWith="record">
       <data name="" source="@callnumber">
         <unique />
       </data>
     </entity>
 
-    <call-macro name="static-filter" dname="@current_library" source="ITM  .w" filter="ITM  .M" value="$[member]" />
-    <call-macro name="static-filter" dname="@current_location" source="ITM  .x" filter="ITM  .M" value="$[member]" />
+    <call-macro name="alma-member-filter" dname="@current_library" entity="ITM  " source="w" />
+    <call-macro name="alma-member-filter" dname="@current_location" entity="ITM  " source="x" />
     <entity name="introx.branch[]" flushWith="record">
       <data name="" source="@current_library">
         <lookup in="alma-library-to-branch-$[isil]" />

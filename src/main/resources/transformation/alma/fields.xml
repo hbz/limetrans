@@ -3,7 +3,7 @@
 
   <call-macro name="alma-portfolio-filter" dname="@portfolio" source="a" />
 
-  <call-macro name="static-filter" dname="@mmsiz" source="MBD  .i" filter="MBD  .M" value="$[member]" />
+  <call-macro name="alma-member-filter" dname="@mmsiz" entity="MBD  " source="i" />
 
   <call-macro name="alma-mms-to-isil" dname="@isil" source="001" />
   <call-macro name="alma-mms-to-isil" dname="@isiliz" source="@mmsiz" />
@@ -77,7 +77,7 @@
     </data>
   </combine>
   <entity name="DateFirst" flushWith="record">
-    <call-macro name="dynamic-filter" dname="date" source="POC  .b" filter="@portfolio" value="POC  .a" />
+    <call-macro name="alma-mms-filter" dname="date" entity="POC  " source="b" filter="a" />
     <data name="date" source="@date1">
       <regexp match="^[0-9]+$" />
       <not-equals string="9999" />
@@ -100,7 +100,7 @@
     </data>
   </combine>
   <entity name="DateLast" flushWith="record">
-    <call-macro name="dynamic-filter" dname="date" source="POC  .c" filter="@portfolio" value="POC  .a" />
+    <call-macro name="alma-mms-filter" dname="date" entity="POC  " source="c" filter="a" />
     <data name="date" source="@date2">
       <regexp match="^[0-9]+$" />
       <not-equals string="9999" />
@@ -474,7 +474,7 @@
   </entity>
 
   <!-- 5xx -->
-  <call-macro name="static-filter" dname="@description" source="989  .a" filter="989  .M" value="$[member]" />
+  <call-macro name="alma-member-filter" dname="@description" entity="989  " source="a" />
   <entity name="Description">
     <entity name="description[]" flushWith="record">
       <data name="" source="500  .a" />
@@ -712,7 +712,7 @@
   </entity>
 
   <!-- 9xx -->
-  <call-macro name="static-filter" dname="@SubjectGHBLocal" source="983  .b" filter="983  .M" value="$[member]" />
+  <call-macro name="alma-member-filter" dname="@SubjectGHBLocal" entity="983  " source="b" />
   <entity name="SubjectGHBLocal[]" flushWith="record">
     <entity name="" flushWith="@SubjectGHBLocal" reset="true">
       <data name="subject" source="@SubjectGHBLocal" />
@@ -739,7 +739,7 @@
   </choose>
 
   <!-- ITM -->
-  <call-macro name="static-filter" dname="@callnumber" source="ITM  .c" filter="ITM  .M" value="$[member]" />
+  <call-macro name="alma-member-filter" dname="@callnumber" entity="ITM  " source="c" />
   <entity name="Item[]" flushWith="record">
     <entity name="" flushWith="@callnumber" reset="true">
       <data name="callnumber" source="@callnumber">

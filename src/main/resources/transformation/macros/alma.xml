@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macros xmlns="http://www.culturegraph.org/metamorph">
+
+  <macro name="alma-mms-to-isil">
+    <data name="$[dname]" source="$[source]">
+      <regexp match=".{4}$" />
+      <lookup in="institution-code-to-isil" />
+    </data>
+  </macro>
+
+  <macro name="alma-mms-filter">
+    <combine name="$[dname]" value="${value}" sameEntity="true">
+      <if>
+        <data source="$[entity].$[filter]">
+          <regexp match=".*$[institution-code]$" />
+        </data>
+      </if>
+      <data name="value" source="$[entity].$[source]" />
+    </combine>
+  </macro>
+
+  <macro name="alma-member-filter">
+    <combine name="$[dname]" value="${value}" sameEntity="true">
+      <if>
+        <data source="$[entity].M">
+          <equals string="$[member]" />
+        </data>
+      </if>
+      <data name="value" source="$[entity].$[source]" />
+    </combine>
+  </macro>
+
+  <macro name="alma-portfolio-filter">
+    <combine name="$[dname]" value="${value}" sameEntity="true">
+      <if>
+        <any flushWith="POR  ">
+          <data source="POR  .[MA]">
+            <equals string="$[member]" />
+          </data>
+          <all>
+            <data source="POR  .M">
+              <equals string="$[portfolio]" />
+            </data>
+            <none flushWith="POR  ">
+              <data source="POR  .A" />
+            </none>
+          </all>
+        </any>
+      </if>
+      <data name="value" source="POR  .$[source]" />
+    </combine>
+  </macro>
+
+</macros>

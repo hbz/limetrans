@@ -1200,8 +1200,8 @@
     </entity>
   </entity>
 
-  <call-macro name="static-filter" dname="@current_library" source="ITM  .w" filter="ITM  .M" value="$[member]" />
-  <call-macro name="static-filter" dname="@current_location" source="ITM  .x" filter="ITM  .M" value="$[member]" />
+  <call-macro name="alma-member-filter" dname="@current_library" entity="ITM  " source="w" />
+  <call-macro name="alma-member-filter" dname="@current_location" entity="ITM  " source="x" />
   <entity name="introx" flushWith="record">
     <entity name="access[]" flushWith="record">
       <data name="" source="@facet_format">
