@@ -62,6 +62,7 @@
         <regexp match="$[regexp.description]" />
         <unique />
       </data>
+      <call-macro name="alma-mms-filter" dname="" entity="H52??" source="z" filter="8" />
     </entity>
 
     <!-- Call number subfield (MAB 088$$a = Angabe der redigierenden Bibliothek) / SISIS Feld 9902 (Buchdatensignatur) -->

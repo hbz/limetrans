@@ -482,6 +482,7 @@
         <regexp match="$[regexp.description]" />
         <unique />
       </data>
+      <call-macro name="alma-mms-filter" dname="" entity="H52??" source="z" filter="8" />
     </entity>
   </entity>
   <entity name="Abstract">
