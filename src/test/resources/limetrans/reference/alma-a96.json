@@ -1251,3 +1251,66 @@
     "title" : [ "Basics Wasserkreislauf im Gebäude", "Basics Haustechnik Wasserkreislauf im Gebäude" ]
   }
 }
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "ARH"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Zentralverband des Deutschen Baugewerbes .."
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Sonstiges" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990047610350206441",
+    "identifierMMSIZ" : "991001257929706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990047610350206441",
+    "identifierForTheRecord" : "(DE-605)HT000011758-ALMA"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Zentralverband Deutsches Baugewerbe",
+    "corporateBodyIdentifier" : [ "(DE-588)9563-1" ],
+    "identifierGND" : [ "9563-1" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Arbeitszeit-Richtwerte Hochbau"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Neu-Isenburg" ],
+    "name" : [ "Zeittechnik-Verl" ]
+  } ],
+  "Extent" : {
+    "extent" : "Losebl.-Ausg."
+  },
+  "Description" : {
+    "description" : [ "Verl.-Ort anfangs: Dreieich", "Verl.-Ort anfangs: Dreieich", "Verl.-Ort anfangs: Dreieich", "Verl.-Ort anfangs: Dreieich" ]
+  },
+  "xbib" : [ {
+    "uid" : "(DE-605)990047610350206441"
+  }, {
+    "uid" : "(DE-605)HT000011758"
+  }, {
+    "uid" : "(DE-A96)991001257929706444"
+  }, {
+    "uid" : "(DE-A96)166528"
+  }, {
+    "uid" : "(DE-605)HT000011758-ALMA"
+  } ],
+  "TitleOther" : {
+    "title" : [ "ARH" ]
+  }
+}

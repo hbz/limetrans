@@ -139,9 +139,9 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             final LibraryMetadataFilter memberFilter = LibraryMetadataFilter.any()
                 .add("MBD  .M|POR  .[MA]=" + memberID);
 
-            // MBD$$M=49HBZ_NETWORK AND EXISTS(ITM)
+            // MBD$$M=49HBZ_NETWORK AND ITM$$M=memberID
             final LibraryMetadataFilter itemFilter = LibraryMetadataFilter.all()
-                .add("MBD  .M=" + networkID, "@ITM  ");
+                .add("MBD  .M=" + networkID, "ITM  .M=" + memberID);
 
             // leader@05=d
             final LibraryMetadataFilter suppressionFilter = LibraryMetadataFilter.none()
