@@ -12490,8 +12490,10 @@
     </datafield>
   </record>
   <record>
-    <controlfield tag="DEL">Y</controlfield>
-    <leader>00328dam a2200133 a 4500</leader>
+    <datafield tag="DEL" ind1="-" ind2="1">
+      <subfield code="a">Y</subfield>
+    </datafield>
+    <leader>00328nam a2200133 a 4500</leader>
     <controlfield tag="005">20200707</controlfield>
     <controlfield tag="007">cr |||||||||||</controlfield>
     <controlfield tag="008">||||||nuuuuuuuu|||||| |o|||||||||||und||</controlfield>
@@ -12529,12 +12531,11 @@
     <datafield tag="MBD" ind1=" " ind2=" ">
       <subfield code="M">49HBZ_FHA</subfield>
     </datafield>
-    <datafield tag="MBD" ind1=" " ind2=" ">
-      <subfield code="M">49HBZ_WUP</subfield>
-    </datafield>
   </record>
   <record>
-    <controlfield tag="DEL">Y</controlfield>
+    <datafield tag="DEL" ind1="-" ind2="1">
+      <subfield code="a">Y</subfield>
+    </datafield>
     <leader>00388nam  22001333u 4500</leader>
     <controlfield tag="008">210107s2013####xx######r#####000#0#eng#d</controlfield>
     <controlfield tag="005">20210107170049.0</controlfield>
@@ -12585,7 +12586,9 @@
     </datafield>
   </record>
   <record>
-    <controlfield tag="DEL">Y</controlfield>
+    <datafield tag="DEL" ind1="-" ind2="1">
+      <subfield code="a">Y</subfield>
+    </datafield>
     <leader>00393dam  22001213u 4500</leader>
     <controlfield tag="008">210108s2021    xx      r     000 0 ger d</controlfield>
     <controlfield tag="005">20210108064253.0</controlfield>
@@ -22139,6 +22142,66 @@
       <subfield code="A">GND</subfield>
       <subfield code="B">GND-00009563X</subfield>
       <subfield code="C">024</subfield>
+    </datafield>
+  </record>
+  <record>
+    <datafield tag="DEL" ind1="-" ind2="1">
+      <subfield code="a">Y</subfield>
+    </datafield>
+    <leader>00454dam  22001333u 4500</leader>
+    <controlfield tag="008">210311s2021    xx      r     000 0 ger d</controlfield>
+    <controlfield tag="005">20210316142957.0</controlfield>
+    <controlfield tag="001">99203913838706446</controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">978-3-631-63463-9</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">HT017565347</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Veit, Vivien</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Die gesetzliche Konzeption der Bestechungsdelikte : zugleich ein Vorschlag f&#xFC;r eine k&#xFC;nftige Fassung der &#xA7;&#xA7; 331 ff. StGB</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Frankfurt am Main</subfield>
+      <subfield code="b">Lang</subfield>
+      <subfield code="c">2013</subfield>
+    </datafield>
+    <datafield tag="773" ind1="0" ind2=" ">
+      <subfield code="g">p:192 S. </subfield>
+    </datafield>
+    <datafield tag="H52" ind1="8" ind2=" ">
+      <subfield code="b">RES_SHARE</subfield>
+      <subfield code="c">OUT_RS_REQ</subfield>
+      <subfield code="8">22251209440006446</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="d">2021-03-16 13:31:38</subfield>
+    <subfield code="8">22251209440006446</subfield>
+    <subfield code="b">2021-03-11 14:26:30</subfield>
+      <subfield code="M">49HBZ_UDE</subfield>
+      <subfield code="e">Resource Sharing Library</subfield>
+      <subfield code="f">Borrowing Resource Sharing Requests</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">System</subfield>
+      <subfield code="c">CE00002084</subfield>
+    </datafield>
+    <datafield tag="H52" ind1="8" ind2=" ">
+      <subfield code="b">RES_SHARE</subfield>
+      <subfield code="c">OUT_RS_LS</subfield>
+      <subfield code="8">22251989070006446</subfield>
+    </datafield>
+    <datafield tag="HOL" ind1=" " ind2=" ">
+      <subfield code="d">2021-03-16 13:56:46</subfield>
+      <subfield code="8">22251989070006446</subfield>
+      <subfield code="b">2021-03-16 13:31:38</subfield>
+      <subfield code="M">49HBZ_UDE</subfield>
+      <subfield code="e">Resource Sharing Library</subfield>
+      <subfield code="g">false</subfield>
+      <subfield code="a">CE00002084</subfield>
+      <subfield code="c">CE00002084</subfield>
     </datafield>
   </record>
 </collection>

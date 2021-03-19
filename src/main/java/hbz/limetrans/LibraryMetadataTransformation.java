@@ -20,6 +20,7 @@ import org.metafacture.statistics.Counter;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.UnaryOperator;
 import java.util.stream.Stream;
 
 public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDataAbstractionCoupling
@@ -101,6 +102,11 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
         final String defaultRulesPath;
 
         if (aSettings.containsSetting("alma")) {
+            // Export ("PubHub") BGZF contains a large XML file; increase limits for XML parser.
+            // »The accumulated size of entities is "50,000,001" that exceeded the "50,000,000" limit set by "FEATURE_SECURE_PROCESSING".«
+            // https://docs.oracle.com/en/java/javase/13/security/java-api-xml-processing-jaxp-security-guide.html#GUID-82F8C206-F2DF-4204-9544-F96155B1D258__TABLE_RQ1_3PY_HHB
+            System.setProperty("jdk.xml.totalEntitySizeLimit", "0");
+
             final Settings almaSettings = aSettings.getAsSettings("alma");
 
             // Ex Libris (Deutschland) GmbH
@@ -108,6 +114,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
             final String isil = mVars.get("isil");
             final String catalogid = aSettings.get("catalogid", "DE-605");
+            final String almaDeletion = almaSettings.get("deletions", "DEL??.a=Y");
 
             // Organization originating the system control number
             mVars.put("catalogid", catalogid);
@@ -135,6 +142,8 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
             final String rulesSuffix;
 
+            final UnaryOperator<String> sourceSystemFilter = i -> "035  .a=~^\\(" + i + "\\)";
+
             // MBD$$M=memberID OR POR$$M=memberID OR POR$$A=memberID
             final LibraryMetadataFilter memberFilter = LibraryMetadataFilter.any()
                 .add("MBD  .M|POR  .[MA]=" + memberID);
@@ -143,22 +152,56 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             final LibraryMetadataFilter itemFilter = LibraryMetadataFilter.all()
                 .add("MBD  .M=" + networkID, "ITM  .M=" + memberID);
 
-            // leader@05=d
-            final LibraryMetadataFilter suppressionFilter = LibraryMetadataFilter.none()
-                .add("leader=~^.....d");
+            // DEL??.a=Y OR leader@05=d
+            final LibraryMetadataFilter deletionFilter = LibraryMetadataFilter.any()
+                .add(almaDeletion, "leader=~^.{5}d");
 
-            mFilter = LibraryMetadataFilter.all(filterKey).add(memberFilter).add(suppressionFilter);
+            final LibraryMetadataFilter noDeletionFilter = LibraryMetadataFilter.none()
+                .add(deletionFilter);
+
+            mFilter = LibraryMetadataFilter.all(filterKey)
+                .add(memberFilter);
 
             final Settings regexp = almaSettings.getAsSettings("regexp");
             Stream.of("description").forEach(k -> mVars.put("regexp." + k, regexp.get(k, ".*")));
 
             if (almaSettings.getAsBoolean("supplements", false)) {
                 rulesSuffix = "-supplements";
-                mFilter.add(itemFilter).add("035  .a=~^\\(" + catalogid + "\\)");
+
+                mFilter
+                    .add(noDeletionFilter)
+                    .add(itemFilter)
+                    .add(sourceSystemFilter.apply(catalogid));
             }
             else {
+                final String deletionLiteral = almaSettings.get("deletion-literal",
+                        mElasticsearchSettings != null ?  mElasticsearchSettings.get("deletionLiteral") : null);
+
+                if (deletionLiteral != null) {
+                    final String[] deletion = almaDeletion.split("=");
+
+                    mVars.put("deletion-literal", deletionLiteral);
+                    mVars.put("deletion-source", deletion[0]);
+                    mVars.put("deletion-value", deletion[1]);
+
+                    memberFilter
+                        .add(deletionFilter);
+                }
+                else {
+                    mVars.put("deletion-literal", "-");
+                    mVars.put("deletion-source", "-");
+                    mVars.put("deletion-value", "-");
+
+                    mFilter
+                        .add(noDeletionFilter);
+                }
+
                 rulesSuffix = "";
-                mFilter.add(LibraryMetadataFilter.none().add(itemFilter).add("035  .a=~^\\(DE-600\\)"));
+
+                mFilter
+                    .add(LibraryMetadataFilter.none()
+                            .add(itemFilter)
+                            .add(sourceSystemFilter.apply("DE-600")));
             }
 
             defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + ".xml";

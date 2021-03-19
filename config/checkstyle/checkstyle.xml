@@ -32,7 +32,7 @@
             <property name="separateLineBetweenGroups" value="true"/>
         </module>
         <module name="CyclomaticComplexity">
-            <property name="max" value="14"/>
+            <property name="max" value="16"/>
         </module>
         <module name="DeclarationOrder"/>
         <module name="DefaultComesLast"/>

@@ -5,9 +5,8 @@
   },
   "input": {
     "queue": {
-      "path": "/mnt/almaprod/central/",
-      "pattern": "NZ_Central_Pub_PE_Bib_GND_All_*_new*.tar.gz",
-      "processor": "ALMAXML"
+      "path": "/mnt/datenportal/export/alma/prod/",
+      "pattern": "baseline.xml.bgzf"
     }
   },
   "output": {

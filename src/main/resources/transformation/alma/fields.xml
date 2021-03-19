@@ -757,4 +757,16 @@
     </entity>
   </entity>
 
+  <!-- DEL -->
+  <choose name="$[deletion-literal]">
+    <data source="$[deletion-source]">
+      <equals string="$[deletion-value]" />
+    </data>
+    <data source="leader">
+      <substring start="5" end="6" />
+      <equals string="d" />
+      <constant value="$[deletion-value]" />
+    </data>
+  </choose>
+
 </rules>

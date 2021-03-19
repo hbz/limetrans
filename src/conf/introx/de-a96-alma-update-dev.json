@@ -8,9 +8,8 @@
   },
   "input": {
     "queue": {
-      "path": "/mnt/almaprod/central/",
-      "pattern": "NZ_Central_Pub_PE_Bib_GND_All_202102*_new*.tar.gz",
-      "processor": "ALMAXML"
+      "path": "/mnt/datenportal/export/alma/prod/",
+      "pattern": "update.xml.bgzf"
     }
   },
   "output": {
@@ -24,6 +23,7 @@
         "mapping": "classpath:/elasticsearch/hbztitle-mapping.json",
         "idKey": "RecordIdentifier.identifierForTheRecord"
       },
+      "deletionLiteral": "DEL",
       "update": true
     }
   }
