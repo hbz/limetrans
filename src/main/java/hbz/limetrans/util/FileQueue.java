@@ -23,6 +23,7 @@ import java.nio.file.FileVisitOption;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.PathMatcher;
+import java.nio.file.attribute.FileTime;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -162,8 +163,12 @@ public class FileQueue implements Iterable<String> {
         }
 
         for (final String fileName : this) {
-            if (new File(fileName).length() > 0) {
-                LOGGER.info("Processing {} file: {}", mProcessor, fileName);
+            final File file = new File(fileName);
+            final String msg = String.format("%s file: %s [mtime=%s]",
+                    mProcessor, fileName, FileTime.fromMillis(file.lastModified()));
+
+            if (file.length() > 0) {
+                LOGGER.info("Processing " + msg);
 
                 try {
                     opener.process(fileName);
@@ -173,7 +178,7 @@ public class FileQueue implements Iterable<String> {
                 }
             }
             else {
-                LOGGER.warn("Skipping empty {} file: {}", mProcessor, fileName);
+                LOGGER.warn("Skipping empty " + msg);
             }
         }
 
