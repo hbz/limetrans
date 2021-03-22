@@ -179,7 +179,22 @@
   "xbib" : [ {
     "uid" : "(DE-605)99366545708706441"
   } ],
-  "TypeMedia" : "Elektronische Ressource"
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : "Commerce"
+  }, {
+    "subjectTopicName" : "Business & Economics"
+  }, {
+    "subjectTopicName" : "Local Commerce"
+  }, {
+    "subjectGeoName" : "Papua New Guinea"
+  }, {
+    "subjectGeoName" : "Oceania"
+  }, {
+    "subjectCorporateBodyName" : "Asia Pacific Economic Cooperation (Organization)"
+  }, {
+    "subjectCorporateBodyName" : "World Trade Organization"
+  } ]
 }
 {
   "collection" : "DE-605",
@@ -259,7 +274,10 @@
   } ],
   "TitleOther" : {
     "title" : [ "Basics entwerfen materialität" ]
-  }
+  },
+  "RSWK" : [ {
+    "subjectTopicName" : "Building materials"
+  } ]
 }
 {
   "collection" : "DE-605",
@@ -622,6 +640,11 @@
   "PersonCreator" : [ {
     "personName" : "Hull, Richard",
     "personTitle" : [ "Ph. D." ]
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Nonprofit organizations"
+  }, {
+    "subjectGenre" : "Case studies"
   } ]
 }
 {

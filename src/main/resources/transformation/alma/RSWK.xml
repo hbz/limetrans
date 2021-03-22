@@ -4,20 +4,15 @@
   <!-- 6xx -->
   <entity name="RSWK[]" flushWith="record">
     <entity name="" flushWith="600??|6[15][01]??|648??" sameEntity="true">
-      <if>
-        <all flushWith="600??|6[15][01]??|648??" sameEntity="true">
-          <data source="600??.2|6[15][01]??.2|648??.2">
-            <regexp match="^(gnd|swd)$" />
-          </data>
-        </all>
-      </if>
       <data name="subjectTopicName" source="650??.a">
         <occurrence only="1" sameEntity="true" />
         <replace pattern="\.?$" with="" />
+        <unique />
       </data>
       <data name="subjectGeoName" source="6[105]0??.z|6[15]1??.z|651??.a">
         <occurrence only="1" sameEntity="true" />
         <replace pattern="\.?$" with="" />
+        <unique />
       </data>
       <data name="subjectChronological" source="6[105]0??.y|6[15]1??.y||648??.a">
         <occurrence only="1" sameEntity="true" />
