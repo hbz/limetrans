@@ -163,7 +163,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
             if (almaSettings.getAsBoolean("supplements", false)) {
                 rulesSuffix = "-supplements";
-                mFilter.add(itemFilter);
+                mFilter.add(itemFilter).add("035  .a=~^\\(" + catalogid + "\\)");
             }
             else {
                 rulesSuffix = "";
