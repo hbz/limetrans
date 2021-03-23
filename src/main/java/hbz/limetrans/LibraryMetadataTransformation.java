@@ -167,7 +167,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             }
             else {
                 rulesSuffix = "";
-                mFilter.add(LibraryMetadataFilter.none().add(itemFilter));
+                mFilter.add(LibraryMetadataFilter.none().add(itemFilter).add("035  .a=~^\\(DE-600\\)"));
             }
 
             defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + ".xml";
