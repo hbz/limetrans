@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rules xmlns="http://www.culturegraph.org/metamorph">
 
-  <call-macro name="alma-portfolio-filter" dname="@portfolio" source="a" />
+  <combine name="@portfolio" value="${value}" sameEntity="true">
+    <if>
+      <data source="POR  .[MA]">
+        <equals string="$[member]" />
+      </data>
+    </if>
+    <data name="value" source="POR  .a" />
+  </combine>
 
   <call-macro name="alma-member-filter" dname="@mmsiz" entity="MBD  " source="i" />
 
@@ -690,22 +697,11 @@
       </data>
       <data name="relatedto" source="856??.3" />
     </entity>
-    <!-- Cf. macro alma-portfolio-filter -->
     <entity name="" flushWith="POR  " sameEntity="true">
       <if>
-        <any flushWith="POR  ">
-          <data source="POR  .[MA]">
-            <equals string="$[member]" />
-          </data>
-          <all>
-            <data source="POR  .M">
-              <equals string="$[portfolio]" />
-            </data>
-            <none flushWith="POR  ">
-              <data source="POR  .A" />
-            </none>
-          </all>
-        </any>
+        <data source="POR  .[MA]">
+          <equals string="$[member]" />
+        </data>
       </if>
       <data name="uri" source="POR  .D">
         <replace pattern="$[network]" with="$[member]" />

@@ -30,25 +30,4 @@
     </combine>
   </macro>
 
-  <macro name="alma-portfolio-filter">
-    <combine name="$[dname]" value="${value}" sameEntity="true">
-      <if>
-        <any flushWith="POR  ">
-          <data source="POR  .[MA]">
-            <equals string="$[member]" />
-          </data>
-          <all>
-            <data source="POR  .M">
-              <equals string="$[portfolio]" />
-            </data>
-            <none flushWith="POR  ">
-              <data source="POR  .A" />
-            </none>
-          </all>
-        </any>
-      </if>
-      <data name="value" source="POR  .$[source]" />
-    </combine>
-  </macro>
-
 </macros>

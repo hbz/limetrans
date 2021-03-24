@@ -149,15 +149,6 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
             mFilter = LibraryMetadataFilter.all(filterKey).add(memberFilter).add(suppressionFilter);
 
-            if (almaSettings.getAsBoolean("portfolios", false)) {
-                // POR$$M=49HBZ_NETWORK AND NOT EXISTS(POR$$A)
-                memberFilter.add(LibraryMetadataFilter.all().add("POR  .M=" + networkID, "!POR  .A"));
-                mVars.put("portfolio", networkID);
-            }
-            else {
-                mVars.put("portfolio", "-");
-            }
-
             final Settings regexp = almaSettings.getAsSettings("regexp");
             Stream.of("description").forEach(k -> mVars.put("regexp." + k, regexp.get(k, ".*")));
 
