@@ -3,7 +3,7 @@
   "input": {
     "queue": {
       "path": "/mnt/herakles/DE-1383/upload/",
-      "pattern": "1383_degruyter.xml"
+      "pattern": "1383_degruyter{,_duk}.xml"
     }
   },
   "output": {
