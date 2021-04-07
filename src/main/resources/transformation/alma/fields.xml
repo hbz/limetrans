@@ -715,6 +715,7 @@
 
   <!-- 9xx -->
   <call-macro name="alma-member-filter" dname="@SubjectHeadings" entity="982  " source="b" />
+  <data name="@SubjectHeadings" source="689??.a" />
   <entity name="SubjectHeadings[]" flushWith="record">
     <entity name="" flushWith="@SubjectHeadings" reset="true">
       <data name="subject" source="@SubjectHeadings" />
