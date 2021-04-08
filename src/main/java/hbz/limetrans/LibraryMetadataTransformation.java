@@ -144,9 +144,11 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
             final UnaryOperator<String> sourceSystemFilter = i -> "035  .a=~^\\(" + i + "\\)";
 
-            // MBD$$M=memberID OR POR$$M=memberID OR POR$$A=memberID
+            // MBD$$M=memberID OR POR$$M=memberID OR (POR$$A=memberID AND 035$$a=(EXLCZ)*)
             final LibraryMetadataFilter memberFilter = LibraryMetadataFilter.any()
-                .add("MBD  .M|POR  .[MA]=" + memberID);
+                .add("MBD  .M|POR  .M=" + memberID)
+                .add(LibraryMetadataFilter.all()
+                        .add("POR  .A=" + memberID, sourceSystemFilter.apply("EXLCZ")));
 
             // MBD$$M=49HBZ_NETWORK AND ITM$$M=memberID
             final LibraryMetadataFilter itemFilter = LibraryMetadataFilter.all()
