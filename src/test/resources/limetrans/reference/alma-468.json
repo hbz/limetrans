@@ -1099,3 +1099,83 @@
     "subjectIdentifier" : [ "https://scigraph.springernature.com/ontologies/product-market-codes/P25013" ]
   } ]
 }
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "eine Einführung"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Detlef Horster"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie", "Bibliografie", "Biografie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2010" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "99368053843406441",
+    "identifierPID" : "53460640960006441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99368053843406441",
+    "identifierForTheRecord" : "(DE-605)99368053843406441"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3-534-70536-X" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Horster, Detlef",
+    "personRole" : [ "[author.]" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Jürgen Habermas"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Darmstadt" ],
+    "name" : [ "WBG (Wissenschaftliche Buchgesellschaft)" ],
+    "chronology" : [ "[2010]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2010]" ]
+  },
+  "Extent" : {
+    "extent" : "1 online resource (114 p.)"
+  },
+  "Description" : {
+    "description" : [ "Description based upon print version of record." ]
+  },
+  "Summary" : {
+    "abstract" : [ "Jürgen Habermas, der bekannteste Philosoph der deutschen Gegenwart, wird hier in einer knappen und verständlichen Einführung behandelt. Alle Themenbereiche des Habermasschen Denkens werden berücksichtigt und von einem prominenten Kenner der Materie didaktisch klug dargestellt. Es werden nicht nur die Stationen der intellektuellen Entwicklung beschrieben, sondern auch die systematischen Festlegungen. Im Mittelpunkt stehen die politisch-philosophischen Kategorien, mit denen Habermas bis heute in die aktuellen Debatten hineinwirkt. Ein Verzeichnis der Schriften und eine Zeittafel komplettiere" ]
+  },
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "3-534-23284-4" ]
+  } ],
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Philosophie (Wissenschaftliche Buchgesellschaft)" ]
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "Wissenschaftliche Buchgesellschaft Philosophie - Einführungen",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&portfolio_pid=53460640960006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-468"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99368053843406441"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectPersonName" : "Habermas, Jürgen"
+  }, {
+    "subjectTopicName" : "Philosophy, German",
+    "subjectChronological" : "20th century"
+  } ]
+}
