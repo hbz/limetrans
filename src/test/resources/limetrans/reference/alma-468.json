@@ -1179,3 +1179,111 @@
     "subjectChronological" : "20th century"
   } ]
 }
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Scheidung, Unterhalt, Verfahren : Kommentar"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "mitbegründet von Prof. Kurt H. Johannsen†, weiland Richter am BGH ; herausgegeben von Prof. Dr. Dr. h.c. mult. Dieter Henrich, Regensburg, Prof. Dr. Christoph Althammer, Universität Regensburg ; bearbeitet von Prof. Dr. Christoph Althammer [und 15 weiteren]"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2020" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "990367446770206441",
+    "identifierPID" : "53487259870006441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990367446770206441",
+    "identifierForTheRecord" : "(DE-605)HT020551580-ALMA"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783406753459" ]
+  }, {
+    "identifierISBN" : [ "3406753450" ]
+  }, {
+    "identifierISBN" : [ "9783406753459" ]
+  }, {
+    "identifierISBN" : [ "3406753450" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Henrich, Dieter",
+    "personBio" : "1930-",
+    "personIdentifier" : [ "(DE-588)122423488" ],
+    "identifierGND" : [ "122423488" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Verlag C.H. Beck",
+    "corporateBodyIdentifier" : [ "(DE-588)1023902869" ],
+    "identifierGND" : [ "1023902869" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Familienrecht"
+  } ],
+  "Edition" : {
+    "edition" : [ "7., überarbeitete und erweiterte Auflage" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "München" ],
+    "name" : [ "C.H.Beck" ],
+    "chronology" : [ "2020" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2020" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Beck-online" ]
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Johannsen, Kurt Herbert",
+    "personRole" : [ "[Begründer eines Werks]" ],
+    "personIdentifier" : [ "(DE-588)120543613" ],
+    "identifierGND" : [ "120543613" ]
+  } ],
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Erscheint auch als",
+    "description" : "Althammer, Christoph: Familienrecht",
+    "note" : [ "Druck-Ausgabe" ]
+  } ],
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "9783406753459" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://beck-online.beck.de/?vpath=bibdata%2Fkomm%2FJoHeEhe_7%2Fcont%2FJoHeEhe%2Ehtm",
+    "nonpublicnote" : "Verlag"
+  }, {
+    "publicnote" : "Beck online - Hochschulmodul (Books ZDB-18-BOH)",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&portfolio_pid=53487259870006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-468"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990367446770206441"
+  }, {
+    "uid" : "(DE-605)HT020551580"
+  }, {
+    "uid" : "(DE-605)HT020551580-ALMA"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "PersonCreator" : [ {
+    "personName" : "Althammer, Christoph",
+    "personBio" : "1972-",
+    "personIdentifier" : [ "(DE-588)129401579" ],
+    "identifierGND" : [ "129401579" ]
+  } ]
+}
