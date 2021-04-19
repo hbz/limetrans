@@ -134,7 +134,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             mVars.put("member", memberID);
             mVars.put("network", networkID);
             mVars.put("institution-code", institutionCode);
-            mVars.put("id-suffix", almaSettings.get("id-suffix"));
+            mVars.put("id-suffix", almaSettings.get("id-suffix", ""));
 
             //mMaps.put("isil-to-member-id", ISIL_TO_MEMBER_ID);
             //mMaps.put("isil-to-institution-code", ISIL_TO_INSTITUTION_CODE);
