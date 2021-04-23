@@ -629,6 +629,18 @@
         }
       }
     },
+    "Description" : {
+      "properties": {
+        "description": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
     "DescriptionOfContent": {
       "properties": {
         "creator": {
