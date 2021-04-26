@@ -1,0 +1,28 @@
+{
+  "isil": "DE-A96",
+  "alma": {
+    "regexp": {
+      "description": ".*vorhanden.*"
+    }
+  },
+  "input": {
+    "queue": {
+      "path": "/mnt/datenportal/export/alma/prod/",
+      "pattern": "baseline.xml.bgzf"
+    }
+  },
+  "output": {
+    "elasticsearch": {
+      "cluster": "hap",
+      "host": ["hera.hbz-nrw.de:9300"],
+      "index": {
+        "type": "titel",
+        "name": "${isil}-alma-introx-limetrans-",
+        "timewindow": "yyyyMMdd",
+        "settings": "classpath:/elasticsearch/hbztitle-settings.json",
+        "mapping": "classpath:/elasticsearch/hbztitle-mapping.json",
+        "idKey": "RecordIdentifier.identifierForTheIndex"
+      }
+    }
+  }
+}
