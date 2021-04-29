@@ -748,7 +748,7 @@
   </choose>
 
   <!-- ITM -->
-  <call-macro name="alma-member-filter" dname="@callnumber" entity="ITM  " source="c" />
+  <call-macro name="alma-member-filter" dname="@callnumber" entity="ITM  " source="[cz]" />
   <entity name="Item[]" flushWith="record">
     <entity name="" flushWith="@callnumber" reset="true">
       <data name="callnumber" source="@callnumber">
