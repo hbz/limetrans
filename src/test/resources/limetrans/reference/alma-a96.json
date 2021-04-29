@@ -1205,3 +1205,74 @@
     "subjectIdentifier" : [ "https://scigraph.springernature.com/ontologies/product-market-codes/P25013" ]
   } ]
 }
+{
+  "collection" : "DE-A96",
+  "CreatorStatement" : {
+    "creatorStatement" : "ANSI/ISA ; ANSI/ISA"
+  },
+  "VolumeDesignation" : {
+    "volumeDesignation" : "62443-3-3"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Eupener Straße" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "991000192699706444",
+    "identifierMMSIZ" : "991000192699706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991000192699706444",
+    "identifierForTheRecord" : "(DE-A96)499667"
+  },
+  "Language" : [ {
+    "languageSource" : "und"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9780876640395" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "American National Standards Institute",
+    "corporateBodyIdentifier" : [ "(DE-588)55095-4" ],
+    "identifierGND" : [ "55095-4" ]
+  }, {
+    "corporateBodyName" : "American National Standards Institute"
+  }, {
+    "corporateBodyName" : "International Society of Automation"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Security for industrial automation and control systems"
+  }, {
+    "titleMain" : "Part 3-3: System security requirements and security levels"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Research Triangle Park, NC" ],
+    "name" : [ "ISA" ]
+  }, {
+    "chronology" : [ "2013" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2013" ]
+  },
+  "Extent" : {
+    "extent" : "81 S. : Ill., graph. Darst."
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Security for industrial automation and control systems" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-A96)991000192699706444"
+  }, {
+    "uid" : "(DE-A96)499667"
+  } ],
+  "Item" : [ {
+    "callnumber" : "21 WBS 1-62443-3-3"
+  } ]
+}

@@ -5329,3 +5329,167 @@
     "identifierGND" : [ "129401579" ]
   } ]
 }
+{
+  "collection" : "DE-605",
+  "TitleUniform" : {
+    "titleUniform" : "<<The>> Gutenberg galaxy"
+  },
+  "TitleAddendum" : {
+    "title" : "das Ende des Buchzeitalters"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Marshall McLuhan"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1995" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990025012090206441",
+    "identifierMMSIZ" : "990025012090206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990025012090206441",
+    "identifierForTheRecord" : "(DE-605)HT006546809"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3893199993", "Pp. : DM 38.00, sfr 39.00, S 296.00" ]
+  }, {
+    "identifierISBN" : [ "3893199004" ]
+  }, {
+    "identifierISBN" : [ "3893199993", "Pp. : DM 38.00, sfr 39.00, S 296.00" ]
+  }, {
+    "identifierISBN" : [ "3893199004" ]
+  }, {
+    "identifierISBN" : [ "3893199993", "Pp. : DM 38.00, sfr 39.00, S 296.00" ]
+  }, {
+    "identifierISBN" : [ "3893199004" ]
+  }, {
+    "identifierISBN" : [ "3893199993", "Pp. : DM 38.00, sfr 39.00, S 296.00" ]
+  }, {
+    "identifierISBN" : [ "3893199004" ]
+  } ],
+  "Person" : [ {
+    "personName" : "McLuhan, Marshall",
+    "personBio" : "1911-1980",
+    "personIdentifier" : [ "(DE-588)118729977" ],
+    "identifierGND" : [ "118729977" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Die>> Gutenberg-Galaxis"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Bonn [u.a.]" ],
+    "name" : [ "Addison-Wesley" ],
+    "chronology" : [ "1995" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1995" ]
+  },
+  "Extent" : {
+    "extent" : "XVIII, 375 S."
+  },
+  "SubjectHeadings" : [ {
+    "subject" : "Informationsgesellschaft"
+  }, {
+    "subject" : "Kulturwandel"
+  }, {
+    "subject" : "Massenmedien"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990025012090206441"
+  }, {
+    "uid" : "(DE-605)HT006546809"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "das Praxisbuch"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Wolfram Gieseke"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2020" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990365245190206441",
+    "identifierMMSIZ" : "990365245190206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990365245190206441",
+    "identifierForTheRecord" : "(DE-605)HT020331882"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783959821889", ": EUR 19.95 (DE), EUR 20.60 (AT)" ]
+  }, {
+    "identifierISBN" : [ "3959821883" ]
+  }, {
+    "identifierISBN" : [ "9783959821889", ": EUR 19.95 (DE), EUR 20.60 (AT)" ]
+  }, {
+    "identifierISBN" : [ "3959821883" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Gieseke, Wolfram",
+    "personBio" : "1971-",
+    "personIdentifier" : [ "(DE-588)141678259" ],
+    "identifierGND" : [ "141678259" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Markt+Technik Verlag GmbH",
+    "corporateBodyIdentifier" : [ "(DE-588)1065428669" ],
+    "identifierGND" : [ "1065428669" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Die>> ultimative Anti-Hacker-Bibel"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Burgthann" ],
+    "name" : [ "Markt + Technik" ],
+    "chronology" : [ "[2020]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2020]" ]
+  },
+  "Extent" : {
+    "extent" : "364 Seiten : Illustrationen"
+  },
+  "OnlineAccess" : [ {
+    "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2020/04/30/file_10/8855155.pdf",
+    "relatedto" : "Inhaltsverzeichnis"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Computersicherheit"
+  }, {
+    "subject" : "Hacker"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990365245190206441"
+  }, {
+    "uid" : "(DE-605)HT020331882"
+  } ]
+}
