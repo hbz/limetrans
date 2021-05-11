@@ -7,6 +7,9 @@
   <data source="leader" name="@LeaderPos07">
     <substring start="07" end="08" />
   </data>
+  <data source="leader" name="@LeaderPos19">
+    <substring start="19" end="20" />
+  </data>
   <data source="006" name="@006Pos00">
     <substring start="00" end="01" />
   </data>
@@ -896,9 +899,16 @@
   </combine>
   <combine name="@facet_type" value="Monographie">
     <if>
-      <data source="@LeaderPos07">
-        <regexp match="[adm]" />
-      </data>
+      <all>
+        <data source="@LeaderPos07">
+          <regexp match="[adm]" />
+        </data>
+        <none>
+          <data source="@LeaderPos19">
+            <equals string="a" />
+          </data>
+        </none>
+      </all>
     </if>
     <data source="001" />
   </combine>
@@ -969,6 +979,9 @@
       <any>
         <data source="@LeaderPos07">
           <equals string="c" />
+        </data>
+        <data source="@LeaderPos19">
+          <equals string="a" />
         </data>
         <all>
           <data source="@type">
