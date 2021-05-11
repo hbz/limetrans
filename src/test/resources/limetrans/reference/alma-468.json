@@ -1,5 +1,6 @@
 {
   "collection" : "DE-605",
+  "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
@@ -57,6 +58,7 @@
 }
 {
   "collection" : "DE-605",
+  "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
@@ -280,6 +282,7 @@
   } ]
 }
 {
+  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "ein Handbuch zur Einführung in die fachliche Informationsarbeit"
@@ -524,6 +527,7 @@
   "DEL" : "Y"
 }
 {
+  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-468",
   "VolumeDesignation" : {
     "volumeDesignation" : "Series B"
@@ -1172,6 +1176,7 @@
   } ]
 }
 {
+  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "in fünf Bänden"
@@ -1247,6 +1252,7 @@
   } ]
 }
 {
+  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1302,6 +1308,7 @@
   } ]
 }
 {
+  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : "hrsg. von Niels Birbaumer .."

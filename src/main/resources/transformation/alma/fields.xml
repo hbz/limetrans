@@ -746,6 +746,9 @@
       <constant value="Elektronische Ressource" />
     </data>
   </choose>
+  <data name="TypePeriodical" source="@facet_type">
+    <regexp match="Schriftenreihe|(?i)zeitschrift" />
+  </data>
 
   <!-- ITM -->
   <call-macro name="alma-member-filter" dname="@callnumber" entity="ITM  " source="[cz]" />
