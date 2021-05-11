@@ -1278,3 +1278,73 @@
     "callnumber" : "21 WBS 1-62443-3-3"
   } ]
 }
+{
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : "hrsg. von Niels Birbaumer .."
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie", "Nachschlagewerk" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2003" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990129211850206441",
+    "identifierMMSIZ" : "991005391079706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990129211850206441",
+    "identifierForTheRecord" : "(DE-605)HT014051766"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Enzyklopädie der Psychologie"
+  } ],
+  "Edition" : {
+    "edition" : [ "[Neubearb. ab 2003]" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Göttingen [u.a.]" ],
+    "name" : [ "Hogrefe, Verl. für Psychologie" ],
+    "chronology" : [ "2003-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2003-" ]
+  },
+  "PersonContributor" : [ {
+    "personName" : "Birbaumer, Niels-Peter",
+    "personBio" : "1945-",
+    "personIdentifier" : [ "(DE-588)121603164" ],
+    "identifierGND" : [ "121603164" ]
+  } ],
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Erscheint auch als",
+    "description" : "Enzyklopädie der Psychologie",
+    "note" : [ "Online-Ausg." ]
+  } ],
+  "DescriptionOfFormerEditionsOrVolumes" : [ {
+    "prefix" : "Frühere Ausg. mit teilw. anderer Bandeinteilung u.d.T.",
+    "description" : "Enzyklopädie der Psychologie"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Psychologie"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990129211850206441"
+  }, {
+    "uid" : "(DE-605)HT014051766"
+  }, {
+    "uid" : "(DE-A96)991005391079706444"
+  }, {
+    "uid" : "(DE-A96)391042"
+  } ]
+}
