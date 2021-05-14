@@ -1,5 +1,195 @@
 {
   "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "limnologia et oecologia regionalis systematis fluminis Amazonas"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1965" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990151648920206441",
+    "identifierMMSIZ" : "991001938529706444",
+    "identifierPID" : "5333993100006444",
+    "identifierPID" : "5333993120006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990151648920206441",
+    "identifierForTheRecord" : "(DE-605)HT014786137"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "22416535"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "0065-6755"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Instituto Nacional de Pesquisas da Amazônia",
+    "corporateBodyIdentifier" : [ "(DE-588)2014487-8" ],
+    "identifierGND" : [ "2014487-8" ]
+  }, {
+    "corporateBodyName" : "Max-Planck-Institut für Limnologie",
+    "corporateBodyNameUnit" : [ "Arbeitsgruppe Tropenökologie" ],
+    "corporateBodyIdentifier" : [ "(DE-588)511736-7" ],
+    "identifierGND" : [ "511736-7" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Amazoniana"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Kiel" ],
+    "name" : [ "Mühlau [in Komm.]" ],
+    "chronology" : [ "1965-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1965-" ]
+  },
+  "Extent" : {
+    "extent" : "Online-Ressource"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "1.1965/68 - 19.2006/07; damit Ersch. eingest."
+  },
+  "Description" : {
+    "description" : [ "Gesehen am 29.08.07", "Gesehen am 29.08.07" ]
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Druckausg.",
+    "description" : "Amazoniana"
+  }, {
+    "prefix" : "Druckausg.",
+    "description" : "Amazoniana"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://www.bibliothek.uni-regensburg.de/ezeit/?2241653",
+    "nonpublicnote" : "EZB"
+  }, {
+    "uri" : "http://www.mpil-ploen.mpg.de/mpiltj.htm",
+    "nonpublicnote" : "Verlag; 1.1965/68 - 16.2000/01: Contents; 17.2002/03 -19.2006/07: Volltexte",
+    "publicnote" : "kostenfrei"
+  }, {
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5333993100006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  }, {
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5333993120006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990151648920206441"
+  }, {
+    "uid" : "(DE-605)HT014786137"
+  }, {
+    "uid" : "(DE-A96)991001938529706444"
+  }, {
+    "uid" : "(DE-A96)220727"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Informationsdienst zum Geräte- und Produktsicherheitsgesetz GPSG"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Hrsg.: Bundesanstalt für Arbeitsschutz und Arbeitsmedizin"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2007" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990187582740206441",
+    "identifierMMSIZ" : "991003235479706444",
+    "identifierPID" : "5335977570006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990187582740206441",
+    "identifierForTheRecord" : "(DE-605)HT016868512"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "26146472"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Bundesanstalt für Arbeitsschutz und Arbeitsmedizin",
+    "corporateBodyIdentifier" : [ "(DE-588)5185811-3" ],
+    "identifierGND" : [ "5185811-3" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Gefährliche Produkte .."
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Dortmund", "Berlin", "Dresden" ],
+    "name" : [ "Bundesanst. für Arbeitsschutz und Arbeitsmedizin" ],
+    "chronology" : [ "2007-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2007-" ]
+  },
+  "Extent" : {
+    "extent" : "Online-Ressource"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "2007 -"
+  },
+  "Description" : {
+    "description" : [ "Gesehen am 20.06.11", "Gesehen am 20.06.11", "Gesehen am 20.06.11", "Gesehen am 20.06.11" ]
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Druckausg.",
+    "description" : "Gefährliche Produkte .."
+  }, {
+    "prefix" : "Druckausg.",
+    "description" : "Gefährliche Produkte .."
+  }, {
+    "prefix" : "Druckausg.",
+    "description" : "Gefährliche Produkte .."
+  }, {
+    "prefix" : "Druckausg.",
+    "description" : "Gefährliche Produkte .."
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://www.produktsicherheitsportal.de/portal-produktsicherheit/de/Startseite.html",
+    "nonpublicnote" : "Verlag",
+    "publicnote" : "kostenfrei"
+  }, {
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5335977570006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990187582740206441"
+  }, {
+    "uid" : "(DE-605)HT016868512"
+  }, {
+    "uid" : "(DE-A96)991003235479706444"
+  }, {
+    "uid" : "(DE-A96)292292"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
+{
+  "collection" : "DE-605",
   "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
@@ -1053,6 +1243,121 @@
   "TypeMedia" : "Elektronische Ressource",
   "TitleOther" : {
     "title" : [ "Basics Wasserkreislauf im Gebäude", "Basics Haustechnik Wasserkreislauf im Gebäude" ]
+  }
+}
+{
+  "TypePeriodical" : "Schriftenreihe",
+  "TypePeriodical" : "Zeitschrift",
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Zeitschrift der Gesellschaft Deutscher Chemiker"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Schriftenreihe", "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2000", "2010", "2011", "2014" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Eupener Straße" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990110260070206441",
+    "identifierMMSIZ" : "991000209759706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990110260070206441",
+    "identifierForTheRecord" : "(DE-605)HT012875221"
+  },
+  "DateFirst" : {
+    "date" : "2000"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "20003869"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "1439-9598"
+  }, {
+    "identifierISSN" : "1439-9598"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Gesellschaft Deutscher Chemiker",
+    "corporateBodyIdentifier" : [ "(DE-588)2012027-8" ],
+    "identifierGND" : [ "2012027-8" ]
+  }, {
+    "corporateBodyName" : "Gesellschaft Österreichischer Chemiker",
+    "corporateBodyIdentifier" : [ "(DE-588)5137928-4" ],
+    "identifierGND" : [ "5137928-4" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Nachrichten aus der Chemie"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "2000-" ]
+  }, {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "2000-2010" ]
+  }, {
+    "place" : [ "Frankfurt, M" ],
+    "name" : [ "Ges. Dt. Chemiker" ],
+    "chronology" : [ "teils" ]
+  }, {
+    "place" : [ "Berlin" ],
+    "name" : [ "<<de>> Gruyter" ],
+    "chronology" : [ "2011-2014" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2000-", "2000-2010", "teils", "2011-2014" ]
+  },
+  "Extent" : {
+    "extent" : "30 cm"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "48.2000 -"
+  },
+  "HoldingsStatement" : [ {
+    "note" : "im Magazin Eupener Str., ab 2012 im Schuber"
+  } ],
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Online-Ausg.",
+    "description" : "Nachrichten aus der Chemie"
+  } ],
+  "DescriptionOfFormerEditionsOrVolumes" : [ {
+    "prefix" : "Vorg.:",
+    "description" : "Nachrichten aus Chemie, Technik und Laboratorium"
+  }, {
+    "prefix" : "Darin aufgegangen",
+    "description" : "Gesellschaft Österreichischer Chemiker: Mitteilungsblatt der Gesellschaft Österreichischer Chemiker"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Chemie"
+  }, {
+    "subject" : "Zeitschrift"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990110260070206441"
+  }, {
+    "uid" : "(DE-605)HT012875221"
+  }, {
+    "uid" : "(DE-A96)991000209759706444"
+  }, {
+    "uid" : "(DE-A96)177135"
+  } ],
+  "Item" : [ {
+    "callnumber" : "63 ZS 104"
+  } ],
+  "TitleOther" : {
+    "title" : [ "Analytica pro", "EuCheMS newsletter", "Nachrichten für die Karriere", "Nachrichten für die Chemikerkarriere", "Nachrichten aus der Chemiewirtschaft", "Nano", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker" ]
   }
 }
 {

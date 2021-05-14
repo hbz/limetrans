@@ -201,9 +201,10 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
                 rulesSuffix = "";
 
                 mFilter
-                    .add(LibraryMetadataFilter.none()
-                            .add(itemFilter)
-                            .add(sourceSystemFilter.apply("DE-600")));
+                    .add(LibraryMetadataFilter.any()
+                            .add(sourceSystemFilter.apply("DE-600"))
+                            .add(LibraryMetadataFilter.none()
+                                .add(itemFilter)));
             }
 
             defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + ".xml";
