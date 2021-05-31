@@ -20,7 +20,7 @@
         "name": "${isil}-alma-introx-limetrans-",
         "settings": "classpath:/elasticsearch/hbztitle-settings.json",
         "mapping": "classpath:/elasticsearch/hbztitle-mapping.json",
-        "idKey": "RecordIdentifier.identifierForTheRecord"
+        "idKey": "RecordIdentifier.identifierForTheIndex"
       },
       "deletionLiteral": "DEL",
       "update": true
