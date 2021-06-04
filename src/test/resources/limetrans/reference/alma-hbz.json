@@ -6094,3 +6094,169 @@
     "uid" : "(DE-605)HT014051766"
   } ]
 }
+{
+  "TypePeriodical" : "Schriftenreihe",
+  "TypePeriodical" : "Zeitschrift",
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Schriftenreihe", "Zeitschrift" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "1936" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990054150240206441",
+    "identifierMMSIZ" : "990054150240206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990054150240206441",
+    "identifierForTheRecord" : "(DE-605)HT002193206"
+  },
+  "DateFirst" : {
+    "date" : "1936"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "33765"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "0016-8777"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "German life and letters"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Oxford", "Malden" ],
+    "name" : [ "Wiley-Blackwell" ],
+    "chronology" : [ "1936-" ]
+  }, {
+    "place" : [ "Oxford [u.a.]" ],
+    "name" : [ "Blackwell Publ" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1936-" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "1.1936/37 - 4.1939,1; N.S. 1.1947/48 -"
+  },
+  "Description" : {
+    "description" : [ "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson" ]
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Online-Ausg.",
+    "description" : "German life and letters"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Deutsch"
+  }, {
+    "subject" : "Literatur"
+  }, {
+    "subject" : "Zeitschrift"
+  }, {
+    "subject" : "Deutschland"
+  }, {
+    "subject" : "Kultur"
+  }, {
+    "subject" : "Geschichte"
+  }, {
+    "subject" : "Zeitschrift"
+  }, {
+    "subject" : "Deutsch"
+  }, {
+    "subject" : "Literatur"
+  }, {
+    "subject" : "Kultur"
+  }, {
+    "subject" : "Zeitschrift"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990054150240206441"
+  }, {
+    "uid" : "(DE-605)HT002193206"
+  } ]
+}
+{
+  "TypePeriodical" : "Zeitschrift",
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "1969", "1997" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990055814090206441",
+    "identifierMMSIZ" : "990055814090206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990055814090206441",
+    "identifierForTheRecord" : "(DE-605)HT007028316"
+  },
+  "DateFirst" : {
+    "date" : "1969"
+  },
+  "DateLast" : {
+    "date" : "1997"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "9737868"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "0041-414X"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Tunnels & tunnelling"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "London" ],
+    "name" : [ "Miller Freeman" ],
+    "chronology" : [ "1969-1997" ]
+  }, {
+    "place" : [ "London" ],
+    "name" : [ "Morgan-Grampian Ltd" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1969-1997" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "1.1969 - 29.1997,2"
+  },
+  "DescriptionOfContinuingEditionsOrVolumes" : [ {
+    "prefix" : "Forts.:",
+    "description" : "Tunnels & tunnelling international"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Tunnelbau"
+  }, {
+    "subject" : "Zeitschrift"
+  }, {
+    "subject" : "Tunnel"
+  }, {
+    "subject" : "Zeitschrift"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990055814090206441"
+  }, {
+    "uid" : "(DE-605)HT007028316"
+  } ],
+  "TitleOther" : {
+    "title" : [ "Tunnels and tunnelling" ]
+  }
+}
