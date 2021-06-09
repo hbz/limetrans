@@ -31,7 +31,7 @@ public class ZDB extends AbstractSimpleStatelessFunction {
                 final char chr = checkDigit.charAt(0);
 
                 if (checksum % (BASE + 1) == (chr == 'X' ? BASE : chr - '0')) {
-                    return number + checkDigit;
+                    return number + "-" + checkDigit;
                 }
             }
         }
