@@ -71,7 +71,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
     private final String mRulesPath;
     private final boolean mPrettyPrinting;
 
-    public LibraryMetadataTransformation(final Settings aSettings) throws IOException { // checkstyle-disable-line JavaNCSS|NPathComplexity|
+    public LibraryMetadataTransformation(final Settings aSettings) throws IOException { // checkstyle-disable-line JavaNCSS|NPathComplexity
         LOGGER.debug("Settings: {}", aSettings);
 
         aSettings.getAsSettings("input").forEach((s, k) -> {
