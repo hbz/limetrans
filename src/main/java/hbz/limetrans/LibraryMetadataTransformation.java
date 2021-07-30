@@ -13,12 +13,16 @@ import org.metafacture.framework.StreamReceiver;
 import org.metafacture.io.ObjectWriter;
 import org.metafacture.json.JsonEncoder;
 import org.metafacture.mangling.RecordIdChanger;
+import org.metafacture.metamorph.Filter;
 import org.metafacture.metamorph.Metamorph;
 import org.metafacture.plumbing.StreamTee;
 import org.metafacture.statistics.Counter;
 
 import java.io.IOException;
+import java.io.UncheckedIOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.function.UnaryOperator;
 import java.util.stream.Stream;
@@ -57,8 +61,8 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
         }
     };
 
-    private final FileQueue mInputQueue;
     private final LibraryMetadataFilter mFilter;
+    private final List<FileQueue> mInputQueues = new ArrayList<>();
     private final Map<String, Map<String, String>> mMaps = new HashMap<>();
     private final Map<String, String> mVars = new HashMap<>();
     private final Settings mElasticsearchSettings;
@@ -67,12 +71,31 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
     private final String mRulesPath;
     private final boolean mPrettyPrinting;
 
-    public LibraryMetadataTransformation(final Settings aSettings) throws IOException { // checkstyle-disable-line JavaNCSS|NPathComplexity
+    public LibraryMetadataTransformation(final Settings aSettings) throws IOException { // checkstyle-disable-line JavaNCSS|NPathComplexity|
         LOGGER.debug("Settings: {}", aSettings);
 
-        mInputQueue = new FileQueue(aSettings.getAsSettings("input").getAsSettings("queue"));
+        aSettings.getAsSettings("input").forEach((s, k) -> {
+            if (k.startsWith("queue")) {
+                try {
+                    final FileQueue inputQueue = new FileQueue(s.getAsSettings(k));
 
-        if (mInputQueue.isEmpty()) {
+                    if (inputQueue.isEmpty()) {
+                        LOGGER.warn("Empty input queue: {}", k);
+                    }
+                    else {
+                        mInputQueues.add(inputQueue);
+                    }
+                }
+                catch (final IOException e) {
+                    throw new UncheckedIOException(e);
+                }
+            }
+            else {
+                LOGGER.warn("Unsupported input type: {}", k);
+            }
+        });
+
+        if (mInputQueues.isEmpty()) {
             throw new IllegalArgumentException("Could not process limetrans: no input specified.");
         }
 
@@ -244,13 +267,14 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             metamorph.setReceiver(aReceiver);
         }
 
-        mInputQueue.process(metamorph, mFilter.isEmpty() ? null : mFilter.toFilter());
+        final Filter filter = mFilter.isEmpty() ? null : mFilter.toFilter();
+        mInputQueues.forEach(i -> i.process(metamorph, filter));
 
         LOGGER.info("Finished transformation ({})", counter);
     }
 
     public int getInputQueueSize() {
-        return mInputQueue.size();
+        return mInputQueues.stream().mapToInt(FileQueue::size).sum();
     }
 
     private void transformFormeta(final StreamTee aTee) {

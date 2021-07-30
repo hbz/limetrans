@@ -32,7 +32,7 @@
             <property name="separateLineBetweenGroups" value="true"/>
         </module>
         <module name="CyclomaticComplexity">
-            <property name="max" value="16"/>
+            <property name="max" value="18"/>
         </module>
         <module name="DeclarationOrder"/>
         <module name="DefaultComesLast"/>
@@ -78,7 +78,7 @@
         <module name="MagicNumber"/>
         <module name="MemberName"/>
         <module name="MethodLength">
-            <property name="max" value="160"/>
+            <property name="max" value="170"/>
         </module>
         <module name="MethodName"/>
         <module name="MethodParamPad"/>
