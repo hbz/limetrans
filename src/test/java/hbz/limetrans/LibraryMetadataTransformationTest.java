@@ -78,6 +78,11 @@ public class LibraryMetadataTransformationTest {
     }
 
     @Test
+    public void testInputQueueMultipleQueues() throws IOException {
+        testInputQueueSize("multiple-queues", 4);
+    }
+
+    @Test
     public void testSettingsReplacePlaceholders() throws IOException {
         final Settings settings = loadSettings("settings-replace-placeholders");
 
@@ -124,6 +129,11 @@ public class LibraryMetadataTransformationTest {
     @Test
     public void testJsonPretty() throws IOException {
         testEqualsReference("json-pretty", "json");
+    }
+
+    @Test
+    public void testMultipleInputQueues() throws IOException {
+        testEqualsReference("multiple-input-queues");
     }
 
     @Test

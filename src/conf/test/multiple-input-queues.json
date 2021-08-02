@@ -1,0 +1,18 @@
+{
+  "input" : {
+    "queue1" : {
+      "path" : "src/test/resources/limetrans/input/",
+      "pattern" : "10.marc21",
+      "processor" : "MARC21"
+    },
+    "queue2" : {
+      "path" : "src/test/resources/limetrans/input/",
+      "pattern" : "10.marc21records",
+      "processor" : "MARC21RECORDS"
+    }
+  },
+  "output": {
+    "json" : "src/test/resources/limetrans/output/multiple-input-queues.jsonl"
+  },
+  "transformation-rules" : "src/test/resources/limetrans/rules/noop.xml"
+}

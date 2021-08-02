@@ -168,7 +168,7 @@ public class LibraryMetadataFilter {
         filter.setReceiver(encoder).setReceiver(aOutput == null || "-".equals(aOutput) ?
                 new ObjectStdoutWriter<String>() : new ObjectWriter<String>(aOutput));
 
-        inputQueue.process(filter);
+        inputQueue.process(filter).closeStream();
     }
 
     private enum Operator {

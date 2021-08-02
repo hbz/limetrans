@@ -58,7 +58,7 @@ public class TransformationTestCase extends Statement {
             throw new LimetransException(e);
         }
 
-        return processEvents(l -> inputQueue.process(l, aRules != null ? new Metamorph(aRules) : null));
+        return processEvents(l -> inputQueue.process(l, aRules != null ? new Metamorph(aRules) : null).closeStream());
     }
 
     private static EventStack processEvents(final Consumer<EventList> aConsumer) {

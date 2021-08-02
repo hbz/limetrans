@@ -10,6 +10,7 @@ import org.apache.logging.log4j.Logger;
 import org.metafacture.formeta.FormetaEncoder;
 import org.metafacture.formeta.formatter.FormatterStyle;
 import org.metafacture.framework.StreamReceiver;
+import org.metafacture.io.FileOpener;
 import org.metafacture.io.ObjectWriter;
 import org.metafacture.json.JsonEncoder;
 import org.metafacture.mangling.RecordIdChanger;
@@ -25,6 +26,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.UnaryOperator;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDataAbstractionCoupling
@@ -268,7 +270,8 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
         }
 
         final Filter filter = mFilter.isEmpty() ? null : mFilter.toFilter();
-        mInputQueues.forEach(i -> i.process(metamorph, filter));
+        mInputQueues.stream().map(i -> i.process(metamorph, filter))
+            .collect(Collectors.toList()).forEach(FileOpener::closeStream);
 
         LOGGER.info("Finished transformation ({})", counter);
     }

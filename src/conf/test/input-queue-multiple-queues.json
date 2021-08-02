@@ -1,0 +1,15 @@
+{
+  "input" : {
+    "queue1" : {
+      "path" : "src/test/resources/limetrans/input/",
+      "pattern" : "input-queue-{1,2}.xml"
+    },
+    "queue2" : {
+      "path" : "src/test/resources/limetrans/input/",
+      "pattern" : "input-queue-{2,3}.xml"
+    }
+  },
+  "output" : {
+    "json" : "dummy"
+  }
+}

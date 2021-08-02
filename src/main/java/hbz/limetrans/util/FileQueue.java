@@ -154,11 +154,11 @@ public class FileQueue implements Iterable<String> {
         return mQueue.size();
     }
 
-    public void process(final StreamReceiver aReceiver) {
-        process(aReceiver, null);
+    public FileOpener process(final StreamReceiver aReceiver) {
+        return process(aReceiver, null);
     }
 
-    public <T extends StreamReceiver & Sender<StreamReceiver>> void process(final StreamReceiver aReceiver, final T aSender) {
+    public <T extends StreamReceiver & Sender<StreamReceiver>> FileOpener process(final StreamReceiver aReceiver, final T aSender) {
         final FileOpener opener = new FileOpener();
         opener.setDecompressConcatenated(true);
 
@@ -198,7 +198,7 @@ public class FileQueue implements Iterable<String> {
 
         LOGGER.info("Finished processing {} files", mProcessor);
 
-        opener.closeStream();
+        return opener;
     }
 
     private void add(final Settings aSettings) throws IOException {
