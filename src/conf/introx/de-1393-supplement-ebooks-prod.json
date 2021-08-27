@@ -4,7 +4,7 @@
   "input": {
     "queue": {
       "path": "/mnt/herakles/${isil}/upload/",
-      "pattern": "${sigel}_{hanser,packt*,pearson*,springer,utb,vahlen}_marc.xml"
+      "pattern": "${sigel}_{packt*,pearson*,springer,utb,vahlen}_marc.xml"
     }
   },
   "output": {
