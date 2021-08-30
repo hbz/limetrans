@@ -10,7 +10,7 @@ file('src/conf').eachDir {
                 description: list.collect { root.relativize(it.toPath()) }) {
             doFirst { systemProperties System.properties }
             classpath = sourceSets.main.runtimeClasspath
-            main = 'hbz.limetrans.Main'
+            mainClass = 'hbz.limetrans.Main'
             args list
         }
     }
@@ -21,11 +21,11 @@ file('src/conf').eachDir {
     }
 }
 
-def execTask = { name, mainClass ->
+def execTask = { name, main ->
     task('exec' + camelize(name), type: JavaExec, group: 'Exec',
-            description: 'Execute ' + mainClass + '.') {
+            description: 'Execute ' + main + '.') {
         classpath = sourceSets.main.runtimeClasspath
-        main = mainClass
+        mainClass = main
     }
 }
 
