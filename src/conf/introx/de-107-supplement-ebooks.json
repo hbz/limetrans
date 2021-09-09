@@ -1,0 +1,24 @@
+{
+  "sigel": "107",
+  "isil": "DE-${sigel}",
+  "input": {
+    "queue": {
+      "path": "/mnt/herakles/${isil}/upload/",
+      "pattern": "hanser_ebooks_LBZ.mrc",
+      "processor" : "MARC21RECORDS"
+    }
+  },
+  "output": {
+    "elasticsearch": {
+      "index": {
+        "type": "hbz",
+        "name": "${isil}-introx-",
+        "settings": "classpath:/elasticsearch/hbztitle-settings.json",
+        "mapping": "classpath:/elasticsearch/hbztitle-mapping.json",
+        "idKey": "RecordIdentifier.identifierForTheRecord"
+      },
+      "update": true
+    }
+  },
+  "transformation-rules": "classpath:/transformation/${isil}-ebooks.xml"
+}
