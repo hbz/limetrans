@@ -15,6 +15,7 @@ ext {
         'commons-validator' : '1.5.1',
         'elasticsearch'     : '2.2.1',
         'jackson'           : '2.11.0',
+        'jdk'               : '8',
         'junit'             : '4.13.1',
         'log4j'             : '2.5',
         'metafacture'       : '5.2.0'
@@ -53,6 +54,12 @@ dependencies {
     implementation "org.metafacture:metamorph:${versions.metafacture}"
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(versions.jdk)
+    }
+}
+
 checkstyle {
     toolVersion '8.30'
     checkstyleTest.enabled = false // TODO: Enable
@@ -64,6 +71,12 @@ tasks.withType(JavaCompile) {
     }
 
     options.compilerArgs << '-Werror'
+}
+
+tasks.withType(JavaExec) {
+    javaLauncher = javaToolchains.launcherFor {
+        languageVersion = java.toolchain.languageVersion
+    }
 }
 
 test {
