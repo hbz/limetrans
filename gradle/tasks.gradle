@@ -8,7 +8,6 @@ file('src/conf').eachDir {
     def indexTask = { name, list ->
         task(group + name.replaceAll('[^a-zA-Z0-9]', ''), type: JavaExec, group: group,
                 description: list.collect { root.relativize(it.toPath()) }) {
-            doFirst { systemProperties System.properties }
             classpath = sourceSets.main.runtimeClasspath
             mainClass = 'hbz.limetrans.Main'
             args list
