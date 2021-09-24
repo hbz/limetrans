@@ -1262,6 +1262,12 @@
         <constant value="keine Angabe" />
       </data>
     </entity>
+    <entity name="taxonomy[]" flushWith="record">
+      <data name="" source="@SubjectGHBLocal">
+        <lookup in="alma-notation-to-taxonomy" />
+        <unique />
+      </data>
+    </entity>
   </entity>
 
 </rules>
