@@ -1660,3 +1660,118 @@
     "uid" : "(DE-A96)391042"
   } ]
 }
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Praxishandbuch für Java- und Webservice-Entwickler"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Kai Spichale"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2019" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990228777590206441",
+    "identifierMMSIZ" : "991001675579706444",
+    "identifierPID" : "5387670440006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990228777590206441",
+    "identifierForTheRecord" : "(DE-605)HT020069184"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783960886020", "epdf" ]
+  }, {
+    "identifierISBN" : [ "9783960886037", "epub" ]
+  }, {
+    "identifierISBN" : [ "9783960886044", "mobi" ]
+  }, {
+    "identifierISBN" : [ "9783960886020", "epdf" ]
+  }, {
+    "identifierISBN" : [ "9783960886037", "epub" ]
+  }, {
+    "identifierISBN" : [ "9783960886044", "mobi" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Spichale, Kai",
+    "personIdentifier" : [ "(DE-588)112194647X" ],
+    "identifierGND" : [ "112194647X" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "API-Design"
+  } ],
+  "Edition" : {
+    "edition" : [ "2., überarbeitete und erweiterte Auflage" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Heidelberg" ],
+    "name" : [ "dpunkt.verlag" ],
+    "chronology" : [ "2019" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2019" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource (xxii, 359 Seiten) : Illustrationen, Diagramme ; 24 cm x 16.5 cm"
+  },
+  "Description" : {
+    "description" : [ "Literaturverzeichnis: Seite 351-356.", "Literaturverzeichnis: Seite 351-356." ]
+  },
+  "Summary" : {
+    "abstract" : [ "Application Programming Interfaces (APIs) sind allgegenwärtig, denn Softwareentwickler benutzen sie nicht nur ständig, sondern entwerfen sie häufig auch. Dieses Buch bietet erstmals eine umfassende Anleitung für das vielfältige Thema API-Design. Neben theoretischen Konzepten werden zahlreiche praktische Hinweise und Programmbeispiele für Java-APIs gegeben. Remote APIs in Form von RESTful HTTP, SOAP-Webservices und Messaging, die für moderne Webanwendungen und andere verteilte Systeme enorm wichtig sind, spielen in diesem Buch ebenfalls eine zentrale Rolle. Aus dem Inhalt: - Entwurf leicht benutzbarer APIs - Kompatibilität und Versionierung - Objektkollaboration, Fluent APIs und Thread-Sicherheit - Dokumentation - Skalierbarkeit, Caching - API-ManagementNach der erfolgreichen Lektüre dieses Buches kennen Sie die Grundlagen von APIs und sind in der Lage, objektorientierte APIs für Softwarekomponenten und Remote APIs für verteilte Systeme zu entwerfen. In der zweiten Auflage sind u.a. die Behandlung des API-Standards OData, zusätzliche Informationen über GraphQL, das Jigsaw-Modulsystem von Java und die Metrik Konnaszenz zur Untersuchung der Änderbarkeit von APIs hinzugekommen." ]
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Erscheint auch als",
+    "note" : [ "Druck-Ausgabe" ]
+  }, {
+    "prefix" : "Erscheint auch als",
+    "note" : [ "Druck-Ausgabe" ]
+  } ],
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "9783864906114" ]
+  }, {
+    "identifierISBN" : [ "9783864906114" ]
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "Ebook Central Perpetual, DDA and Subscription Titles",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5387670440006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Softwareentwicklung"
+  }, {
+    "subject" : "API"
+  }, {
+    "subject" : "Java"
+  }, {
+    "subject" : "Web Services"
+  }, {
+    "subject" : "Verteiltes System"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "subject" : "TWP"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990228777590206441"
+  }, {
+    "uid" : "(DE-605)HT020069184"
+  }, {
+    "uid" : "(DE-A96)991001675579706444"
+  }, {
+    "uid" : "(DE-A96)993327"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
