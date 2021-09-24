@@ -722,6 +722,14 @@
     </entity>
   </entity>
   <call-macro name="alma-member-filter" dname="@SubjectGHBLocal" entity="983  " source="b" />
+  <combine name="@SubjectGHBLocal" value="${value}" sameEntity="true">
+    <if>
+      <data source="084  .2">
+        <equals string="ghbs" />
+      </data>
+    </if>
+    <data name="value" source="084  .a" />
+  </combine>
   <entity name="SubjectGHBLocal[]" flushWith="record">
     <entity name="" flushWith="@SubjectGHBLocal" reset="true">
       <data name="subject" source="@SubjectGHBLocal" />
