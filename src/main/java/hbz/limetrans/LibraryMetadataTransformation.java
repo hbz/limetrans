@@ -169,11 +169,13 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
 
             final UnaryOperator<String> sourceSystemFilter = i -> "035  .a=~^\\(" + i + "\\)";
 
-            // MBD$$M=memberID OR POR$$M=memberID OR (POR$$A=memberID AND 035$$a=(EXLCZ)*)
+            // POR$$A=memberID
+            final LibraryMetadataFilter availableForFilter = LibraryMetadataFilter.all()
+                .add("POR  .A=" + memberID);
+
+            // MBD$$M=memberID OR POR$$M=memberID
             final LibraryMetadataFilter memberFilter = LibraryMetadataFilter.any()
-                .add("MBD  .M|POR  .M=" + memberID)
-                .add(LibraryMetadataFilter.all()
-                        .add("POR  .A=" + memberID, sourceSystemFilter.apply("EXLCZ")));
+                .add("MBD  .M|POR  .M=" + memberID);
 
             // MBD$$M=49HBZ_NETWORK AND ITM$$M=memberID
             final LibraryMetadataFilter itemFilter = LibraryMetadataFilter.all()
@@ -186,8 +188,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             final LibraryMetadataFilter noDeletionFilter = LibraryMetadataFilter.none()
                 .add(deletionFilter);
 
-            mFilter = LibraryMetadataFilter.all(filterKey)
-                .add(memberFilter);
+            mFilter = LibraryMetadataFilter.all(filterKey);
 
             final Settings regexp = almaSettings.getAsSettings("regexp");
             Stream.of("description").forEach(k -> mVars.put("regexp." + k, regexp.get(k, ".*")));
@@ -196,8 +197,12 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
                 rulesSuffix = "-supplements";
 
                 mFilter
+                    .add(LibraryMetadataFilter.any()
+                            .add(availableForFilter)
+                            .add(LibraryMetadataFilter.all()
+                                .add(memberFilter)
+                                .add(itemFilter)))
                     .add(noDeletionFilter)
-                    .add(itemFilter)
                     .add(sourceSystemFilter.apply(catalogid));
             }
             else {
@@ -226,6 +231,9 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
                 rulesSuffix = "";
 
                 mFilter
+                    .add(memberFilter
+                            .add(availableForFilter
+                                .add(sourceSystemFilter.apply("EXLCZ"))))
                     .add(LibraryMetadataFilter.any()
                             .add(sourceSystemFilter.apply("DE-600"))
                             .add(LibraryMetadataFilter.none()
