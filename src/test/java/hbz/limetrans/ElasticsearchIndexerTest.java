@@ -5,9 +5,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.function.ThrowingRunnable;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-
 public class ElasticsearchIndexerTest {
 
     private static final String ID1 = "ID1";
@@ -453,11 +450,11 @@ public class ElasticsearchIndexerTest {
     }
 
     private void assertDocument(final String aId, final String aExpected) {
-        assertEquals(fixQuotes(aExpected), getDocument(aId));
+        Assert.assertEquals(fixQuotes(aExpected), getDocument(aId));
     }
 
     private void assertMissing(final String aId) {
-        assertNull(getDocument(aId));
+        Assert.assertNull(getDocument(aId));
     }
 
     private void expectBulkFailure(final ThrowingRunnable aRunnable, final String aId) {

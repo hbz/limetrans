@@ -13,8 +13,6 @@ import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.util.function.Supplier;
 
-import static org.junit.Assert.assertEquals;
-
 public class LibraryMetadataTransformationTest {
 
     @Test
@@ -180,7 +178,7 @@ public class LibraryMetadataTransformationTest {
 
     private void testInputQueueSize(final String aName, final int aSize) throws IOException {
         final LibraryMetadataTransformation limetrans = getLimetrans("input-queue-" + aName);
-        assertEquals("Input queue size mismatch: " + aName, aSize, limetrans.getInputQueueSize());
+        Assert.assertEquals("Input queue size mismatch: " + aName, aSize, limetrans.getInputQueueSize());
     }
 
     private void testAlmaEqualsReference(final String aName) throws IOException {
@@ -224,7 +222,7 @@ public class LibraryMetadataTransformationTest {
 
     private void testLimetransEqualsReference(final LibraryMetadataTransformation aLimetrans, final String aName, final String aReferenceFile, final Supplier<String> aOutputSupplier) throws IOException {
         aLimetrans.process();
-        assertEquals("Reference data mismatch: " + aName, Helpers.slurpFile(aReferenceFile), aOutputSupplier.get());
+        Assert.assertEquals("Reference data mismatch: " + aName, Helpers.slurpFile(aReferenceFile), aOutputSupplier.get());
     }
 
     private LibraryMetadataTransformation getLimetrans(final String aName) throws IOException {

@@ -5,10 +5,9 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.node.TextNode;
 import org.apache.logging.log4j.Logger;
+import org.junit.Assert;
 
 import java.util.*;
-
-import static org.junit.Assert.assertTrue;
 
 public class AbstractTransformationQualityTest extends AbstractTransformationTest{
 
@@ -98,8 +97,6 @@ public class AbstractTransformationQualityTest extends AbstractTransformationTes
         return false;
     }
 
-
-
     protected static void postProcessAndReport(final Logger aLogger, final Map<String, Integer> aExpectedFieldsWorking){
         if (!mMissingDocs.isEmpty()){
             aLogger.error("MISSING DOCUMENTS IN TRANSFORMATION:");
@@ -164,9 +161,8 @@ public class AbstractTransformationQualityTest extends AbstractTransformationTes
         return result;
     }
 
-
     protected void testMissingDocs(final Integer aMissingDocsAccepted){
-        assertTrue("Too many documents missing in transformation.", mMissingDocs.size() <= aMissingDocsAccepted);
+        Assert.assertTrue("Too many documents missing in transformation.", mMissingDocs.size() <= aMissingDocsAccepted);
     }
 
     protected void testErroneousFields(){
@@ -174,7 +170,7 @@ public class AbstractTransformationQualityTest extends AbstractTransformationTes
         mErroneousFields.forEach((k, v) -> {
             sb.append("\n\t" + k + " (" + v + ")");
         });
-        assertTrue(sb.toString(), mErroneousFields.isEmpty());
+        Assert.assertTrue(sb.toString(), mErroneousFields.isEmpty());
     }
 
 }
