@@ -9,7 +9,7 @@ file('src/conf').eachDir {
         task(group + name.replaceAll('[^a-zA-Z0-9]', ''), type: JavaExec, group: group,
                 description: list.collect { root.relativize(it.toPath()) }) {
             classpath = sourceSets.main.runtimeClasspath
-            mainClass = 'hbz.limetrans.Main'
+            mainClass = "${project.group}.Main"
             args list
         }
     }
@@ -28,5 +28,5 @@ def execTask = { name, main ->
     }
 }
 
-execTask('transformation', 'hbz.limetrans.Main')
-execTask('filter', 'hbz.limetrans.filter.Main')
+execTask('transformation', "${project.group}.Main")
+execTask('filter', "${project.group}.filter.Main")
