@@ -69,8 +69,8 @@ public class EventStackEntry {
             result = Mismatch.TYPE;
         }
         else if (name != null && !name.equals(event.getName())) {
-            if (type == Event.Type.START_RECORD && "".equals(name)) {
-                result = null; // Ignore missing record ID
+            if ("".equals(name) && ignoreMissingName(type)) {
+                result = null;
             }
             else {
                 result = Mismatch.NAME;
@@ -87,7 +87,7 @@ public class EventStackEntry {
     }
 
     private void incrementPosition() {
-        if (mParent == null || mEvent.getName().endsWith(JsonEncoder.ARRAY_MARKER)) {
+        if (mParent == null || isArray(mEvent)) {
             ++mPosition;
         }
     }
@@ -99,6 +99,20 @@ public class EventStackEntry {
                 .append(mPosition)
                 .append(">");
         }
+    }
+
+    private boolean isArray(final Event aEvent) {
+        return aEvent != null && aEvent.getName().endsWith(JsonEncoder.ARRAY_MARKER);
+    }
+
+    private boolean ignoreMissingName(final Event.Type aType) {
+        return switch (aType) {
+            // Ignore missing record ID (cf. FileQueue.Processor.JSON)
+            case START_RECORD -> true;
+            // Ignore missing array number (cf. FileQueue.Processor.JSON)
+            case LITERAL      -> isArray(mParent.getEvent());
+            default           -> false;
+        };
     }
 
 }
