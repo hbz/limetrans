@@ -25,7 +25,7 @@ public final class Main {
         if (cli.parse(aArgs)) {
             final Settings settings = cli.getAsSettings("input");
 
-            final LibraryMetadataFilter filter = new LibraryMetadataFilter(
+            final LimetransFilter filter = new LimetransFilter(
                     settings.get("operator", "any"), settings.get("key"), settings.getAsArray("filter"));
 
             if (settings.getAsBoolean("debug", false)) {

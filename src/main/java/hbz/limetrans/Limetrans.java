@@ -1,6 +1,6 @@
 package hbz.limetrans;
 
-import hbz.limetrans.filter.LibraryMetadataFilter;
+import hbz.limetrans.filter.LimetransFilter;
 import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.Helpers;
 import hbz.limetrans.util.Settings;
@@ -29,7 +29,7 @@ import java.util.function.UnaryOperator;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDataAbstractionCoupling
+public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
     private static final Logger LOGGER = LogManager.getLogger();
 
@@ -63,7 +63,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
         }
     };
 
-    private final LibraryMetadataFilter mFilter;
+    private final LimetransFilter mFilter;
     private final List<FileQueue> mInputQueues = new ArrayList<>();
     private final Map<String, Map<String, String>> mMaps = new HashMap<>();
     private final Map<String, String> mVars = new HashMap<>();
@@ -73,7 +73,7 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
     private final String mRulesPath;
     private final boolean mPrettyPrinting;
 
-    public LibraryMetadataTransformation(final Settings aSettings) throws IOException { // checkstyle-disable-line JavaNCSS|NPathComplexity
+    public Limetrans(final Settings aSettings) throws IOException { // checkstyle-disable-line JavaNCSS|NPathComplexity
         LOGGER.debug("Settings: {}", aSettings);
 
         aSettings.getAsSettings("input").forEach((s, k) -> {
@@ -170,25 +170,25 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
             final UnaryOperator<String> sourceSystemFilter = i -> "035  .a=~^\\(" + i + "\\)";
 
             // POR$$A=memberID
-            final LibraryMetadataFilter availableForFilter = LibraryMetadataFilter.all()
+            final LimetransFilter availableForFilter = LimetransFilter.all()
                 .add("POR  .A=" + memberID);
 
             // MBD$$M=memberID OR POR$$M=memberID
-            final LibraryMetadataFilter memberFilter = LibraryMetadataFilter.any()
+            final LimetransFilter memberFilter = LimetransFilter.any()
                 .add("MBD  .M|POR  .M=" + memberID);
 
             // MBD$$M=49HBZ_NETWORK AND ITM$$M=memberID
-            final LibraryMetadataFilter itemFilter = LibraryMetadataFilter.all()
+            final LimetransFilter itemFilter = LimetransFilter.all()
                 .add("MBD  .M=" + networkID, "ITM  .M=" + memberID);
 
             // DEL??.a=Y OR leader@05=d
-            final LibraryMetadataFilter deletionFilter = LibraryMetadataFilter.any()
+            final LimetransFilter deletionFilter = LimetransFilter.any()
                 .add(almaDeletion, "leader=~^.{5}d");
 
-            final LibraryMetadataFilter noDeletionFilter = LibraryMetadataFilter.none()
+            final LimetransFilter noDeletionFilter = LimetransFilter.none()
                 .add(deletionFilter);
 
-            mFilter = LibraryMetadataFilter.all(filterKey);
+            mFilter = LimetransFilter.all(filterKey);
 
             final Settings regexp = almaSettings.getAsSettings("regexp");
             Stream.of("description").forEach(k -> mVars.put("regexp." + k, regexp.get(k, ".*")));
@@ -197,9 +197,9 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
                 rulesSuffix = "-supplements";
 
                 mFilter
-                    .add(LibraryMetadataFilter.any()
+                    .add(LimetransFilter.any()
                             .add(availableForFilter)
-                            .add(LibraryMetadataFilter.all()
+                            .add(LimetransFilter.all()
                                 .add(memberFilter)
                                 .add(itemFilter)))
                     .add(noDeletionFilter)
@@ -234,16 +234,16 @@ public class LibraryMetadataTransformation { // checkstyle-disable-line ClassDat
                     .add(memberFilter
                             .add(availableForFilter
                                 .add(sourceSystemFilter.apply("EXLCZ"))))
-                    .add(LibraryMetadataFilter.any()
+                    .add(LimetransFilter.any()
                             .add(sourceSystemFilter.apply("DE-600"))
-                            .add(LibraryMetadataFilter.none()
+                            .add(LimetransFilter.none()
                                 .add(itemFilter)));
             }
 
             defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + ".xml";
         }
         else {
-            mFilter = new LibraryMetadataFilter(
+            mFilter = new LimetransFilter(
                     aSettings.get("filterOperator", "any"), filterKey, aSettings.getAsArray("filter"));
 
             defaultRulesPath = null;

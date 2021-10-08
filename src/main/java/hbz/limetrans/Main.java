@@ -13,7 +13,7 @@ public final class Main {
     }
 
     public static void main(final String[] aArgs) throws IOException {
-        new LibraryMetadataTransformation(setup(aArgs)).process();
+        new Limetrans(setup(aArgs)).process();
     }
 
     private static Settings setup(final String[] aArgs) throws IOException {

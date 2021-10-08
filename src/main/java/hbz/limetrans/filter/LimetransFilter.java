@@ -27,47 +27,47 @@ import java.util.function.Consumer;
  * - "~Inhaltstext": Record(s) with any field matching "Inhaltstext"
  */
 
-public class LibraryMetadataFilter {
+public class LimetransFilter {
 
     private static final String DEFAULT_KEY = "001";
 
-    private final List<LibraryMetadataFilter> mChildren = new ArrayList<>();
+    private final List<LimetransFilter> mChildren = new ArrayList<>();
     private final List<String> mValues = new ArrayList<>();
     private final Operator mOperator;
     private final String mKey;
 
-    private LibraryMetadataFilter(final Operator aOperator, final String aKey) {
+    private LimetransFilter(final Operator aOperator, final String aKey) {
         mOperator = aOperator;
         mKey = aKey;
     }
 
-    public LibraryMetadataFilter(final String aOperator, final String aKey, final String[] aValues) {
+    public LimetransFilter(final String aOperator, final String aKey, final String[] aValues) {
         this(Operator.valueOf(aOperator), aKey);
         add(aValues);
     }
 
-    public static LibraryMetadataFilter all(final String aKey) {
-        return new LibraryMetadataFilter(Operator.all, aKey);
+    public static LimetransFilter all(final String aKey) {
+        return new LimetransFilter(Operator.all, aKey);
     }
 
-    public static LibraryMetadataFilter all() {
+    public static LimetransFilter all() {
         return all(null);
     }
 
-    public static LibraryMetadataFilter any() {
-        return new LibraryMetadataFilter(Operator.any, null);
+    public static LimetransFilter any() {
+        return new LimetransFilter(Operator.any, null);
     }
 
-    public static LibraryMetadataFilter none() {
-        return new LibraryMetadataFilter(Operator.none, null);
+    public static LimetransFilter none() {
+        return new LimetransFilter(Operator.none, null);
     }
 
-    public LibraryMetadataFilter add(final LibraryMetadataFilter... aFilters) {
+    public LimetransFilter add(final LimetransFilter... aFilters) {
         Arrays.stream(aFilters).filter(f -> f != null).forEach(mChildren::add);
         return this;
     }
 
-    public LibraryMetadataFilter add(final String... aValues) {
+    public LimetransFilter add(final String... aValues) {
         Arrays.stream(aValues).filter(v -> v != null).forEach(mValues::add);
         return this;
     }
@@ -84,7 +84,7 @@ public class LibraryMetadataFilter {
     }
 
     public Filter toFilter() {
-        final InlineMorph metamorph = InlineMorph.in(LibraryMetadataFilter.class);
+        final InlineMorph metamorph = InlineMorph.in(LimetransFilter.class);
         build(metamorph::with);
         return new Filter(metamorph.create());
     }

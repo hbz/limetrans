@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.util.function.Supplier;
 
-public class LibraryMetadataTransformationTest {
+public class LimetransTest {
 
     @Test
     public void testInputQueueMissingFile() throws IOException {
@@ -177,7 +177,7 @@ public class LibraryMetadataTransformationTest {
     }
 
     private void testInputQueueSize(final String aName, final int aSize) throws IOException {
-        final LibraryMetadataTransformation limetrans = getLimetrans("input-queue-" + aName);
+        final Limetrans limetrans = getLimetrans("input-queue-" + aName);
         Assert.assertEquals("Input queue size mismatch: " + aName, aSize, limetrans.getInputQueueSize());
     }
 
@@ -190,7 +190,7 @@ public class LibraryMetadataTransformationTest {
     }
 
     private void testEqualsReference(final String aName, final String aExt) throws IOException {
-        final LibraryMetadataTransformation limetrans = getLimetrans(aName);
+        final Limetrans limetrans = getLimetrans(aName);
         final String referenceFile = getReferenceFile(aName, aExt);
 
         TransformationTestCase.evaluateTransformation(referenceFile, l -> limetrans.process(l));
@@ -220,13 +220,13 @@ public class LibraryMetadataTransformationTest {
         }
     }
 
-    private void testLimetransEqualsReference(final LibraryMetadataTransformation aLimetrans, final String aName, final String aReferenceFile, final Supplier<String> aOutputSupplier) throws IOException {
+    private void testLimetransEqualsReference(final Limetrans aLimetrans, final String aName, final String aReferenceFile, final Supplier<String> aOutputSupplier) throws IOException {
         aLimetrans.process();
         Assert.assertEquals("Reference data mismatch: " + aName, Helpers.slurpFile(aReferenceFile), aOutputSupplier.get());
     }
 
-    private LibraryMetadataTransformation getLimetrans(final String aName) throws IOException {
-        return new LibraryMetadataTransformation(loadSettings(aName));
+    private Limetrans getLimetrans(final String aName) throws IOException {
+        return new Limetrans(loadSettings(aName));
     }
 
     private String getReferenceFile(final String aName, final String aExt) throws IOException {

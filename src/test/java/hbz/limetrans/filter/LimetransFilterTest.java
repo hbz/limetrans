@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-public class LibraryMetadataFilterTest {
+public class LimetransFilterTest {
 
     private static final String BASE_PATH = "src/test/resources/filter";
     private static final String INPUT_PATH = BASE_PATH + "/input/test.xml";
@@ -16,7 +16,7 @@ public class LibraryMetadataFilterTest {
     @Test
     public void testMissingFile() throws IOException {
         final Throwable ex = Assert.assertThrows(IllegalArgumentException.class,
-                () -> process(LibraryMetadataFilter.any(), "missing-file"));
+                () -> process(LimetransFilter.any(), "missing-file"));
 
         Assert.assertEquals("Could not process limetrans filter: no input specified.", ex.getMessage());
     }
@@ -28,28 +28,28 @@ public class LibraryMetadataFilterTest {
 
     @Test
     public void testEmptyFilter() throws IOException {
-        testEqualsReference("missing-filter", LibraryMetadataFilter.any());
+        testEqualsReference("missing-filter", LimetransFilter.any());
     }
 
     @Test
     public void testEmptyFirstFilter() throws IOException {
-        testEqualsReference("empty-filter", LibraryMetadataFilter.any()
-                .add(LibraryMetadataFilter.all())
+        testEqualsReference("empty-filter", LimetransFilter.any()
+                .add(LimetransFilter.all())
                 .add("Mathematics")
                 .add("Children's literature."));
     }
 
     @Test
     public void testEmptySubsequentFilter() throws IOException {
-        testEqualsReference("empty-filter", LibraryMetadataFilter.any()
+        testEqualsReference("empty-filter", LimetransFilter.any()
                 .add("Mathematics")
-                .add(LibraryMetadataFilter.all())
+                .add(LimetransFilter.all())
                 .add("Children's literature."));
     }
 
     @Test
     public void testNullFilter() throws IOException {
-        testEqualsReference("empty-filter", LibraryMetadataFilter.any()
+        testEqualsReference("empty-filter", LimetransFilter.any()
                 .add("Mathematics")
                 .add((String) null)
                 .add("Children's literature."));
@@ -57,15 +57,15 @@ public class LibraryMetadataFilterTest {
 
     @Test
     public void testNullFirstFilter() throws IOException {
-        testEqualsReference("empty-filter", LibraryMetadataFilter.any()
-                .add(LibraryMetadataFilter.all().add(null, "Mathematics"))
+        testEqualsReference("empty-filter", LimetransFilter.any()
+                .add(LimetransFilter.all().add(null, "Mathematics"))
                 .add("Children's literature."));
     }
 
     @Test
     public void testNullSubsequentFilter() throws IOException {
-        testEqualsReference("empty-filter", LibraryMetadataFilter.any()
-                .add(LibraryMetadataFilter.all().add("Mathematics", null))
+        testEqualsReference("empty-filter", LimetransFilter.any()
+                .add(LimetransFilter.all().add("Mathematics", null))
                 .add("Children's literature."));
     }
 
@@ -126,30 +126,30 @@ public class LibraryMetadataFilterTest {
 
     @Test
     public void testNestedAny() throws IOException {
-        testEqualsReference("nested-any", LibraryMetadataFilter.any()
-                .add(LibraryMetadataFilter.all().add("650??.a=Mathematics", "@042??.a"))
-                .add(LibraryMetadataFilter.all().add("856??.u=~book", "!001=ocm44954079", "!001=ocm47011858")));
+        testEqualsReference("nested-any", LimetransFilter.any()
+                .add(LimetransFilter.all().add("650??.a=Mathematics", "@042??.a"))
+                .add(LimetransFilter.all().add("856??.u=~book", "!001=ocm44954079", "!001=ocm47011858")));
     }
 
     @Test
     public void testNestedAll() throws IOException {
-        testEqualsReference("nested-all", LibraryMetadataFilter.all()
-                .add(LibraryMetadataFilter.any().add("650??.a=Mathematics", "@042??.a"))
-                .add(LibraryMetadataFilter.any().add("856??.u=~book", "!001=ocm44954079", "!001=ocm47011858")));
+        testEqualsReference("nested-all", LimetransFilter.all()
+                .add(LimetransFilter.any().add("650??.a=Mathematics", "@042??.a"))
+                .add(LimetransFilter.any().add("856??.u=~book", "!001=ocm44954079", "!001=ocm47011858")));
     }
 
     @Test
     public void testNestedNone() throws IOException {
-        testEqualsReference("nested-none", LibraryMetadataFilter.none()
-                .add(LibraryMetadataFilter.any().add("650??.a=Mathematics", "@042??.a"))
+        testEqualsReference("nested-none", LimetransFilter.none()
+                .add(LimetransFilter.any().add("650??.a=Mathematics", "@042??.a"))
                 .add("856??.u=~book"));
     }
 
     private void testEqualsReference(final String aName, final String... aFilters) throws IOException {
-        testEqualsReference(aName, LibraryMetadataFilter.any().add(aFilters));
+        testEqualsReference(aName, LimetransFilter.any().add(aFilters));
     }
 
-    private void testEqualsReference(final String aName, final LibraryMetadataFilter aFilter) throws IOException {
+    private void testEqualsReference(final String aName, final LimetransFilter aFilter) throws IOException {
         process(aFilter, INPUT_PATH);
 
         Assert.assertEquals("Reference data mismatch: " + aName,
@@ -157,7 +157,7 @@ public class LibraryMetadataFilterTest {
                 Helpers.slurpFile(OUTPUT_PATH));
     }
 
-    private void process(final LibraryMetadataFilter aFilter, final String aInput) throws IOException {
+    private void process(final LimetransFilter aFilter, final String aInput) throws IOException {
         aFilter.process(new String[]{aInput}, OUTPUT_PATH, "MARCXML", true);
     }
 
