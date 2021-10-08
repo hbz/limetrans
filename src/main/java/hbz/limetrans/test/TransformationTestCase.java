@@ -1,12 +1,12 @@
 package hbz.limetrans.test;
 
+import hbz.limetrans.Limetrans;
 import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.LimetransException;
 
 import org.junit.Assert;
 import org.junit.runners.model.Statement;
 import org.metafacture.javaintegration.EventList;
-import org.metafacture.metamorph.Metamorph;
 
 import java.io.IOException;
 import java.util.function.Consumer;
@@ -58,7 +58,7 @@ public class TransformationTestCase extends Statement {
             throw new LimetransException(e);
         }
 
-        return processEvents(l -> inputQueue.process(l, aRules != null ? new Metamorph(aRules) : null).closeStream());
+        return processEvents(l -> inputQueue.process(l, Limetrans.getStreamPipe(aRules, null, null)).closeStream());
     }
 
     private static EventStack processEvents(final Consumer<EventList> aConsumer) {

@@ -9,6 +9,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.metafacture.formeta.FormetaEncoder;
 import org.metafacture.formeta.formatter.FormatterStyle;
+import org.metafacture.framework.StreamPipe;
 import org.metafacture.framework.StreamReceiver;
 import org.metafacture.io.FileOpener;
 import org.metafacture.io.ObjectWriter;
@@ -16,15 +17,18 @@ import org.metafacture.json.JsonEncoder;
 import org.metafacture.mangling.RecordIdChanger;
 import org.metafacture.metamorph.Filter;
 import org.metafacture.metamorph.Metamorph;
+import org.metafacture.metamorph.api.Maps;
 import org.metafacture.plumbing.StreamTee;
 import org.metafacture.statistics.Counter;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Consumer;
 import java.util.function.UnaryOperator;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -73,9 +77,45 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     private final String mRulesPath;
     private final boolean mPrettyPrinting;
 
-    public Limetrans(final Settings aSettings) throws IOException { // checkstyle-disable-line JavaNCSS|NPathComplexity
+    public Limetrans(final Settings aSettings) throws IOException {
         LOGGER.debug("Settings: {}", aSettings);
 
+        initializeInput(aSettings);
+        initializeVars(aSettings);
+
+        final String filterKey = aSettings.get("filterKey");
+        final Settings outputSettings = aSettings.getAsSettings("output");
+        mPrettyPrinting = outputSettings.getAsBoolean("pretty-printing", false);
+
+        mElasticsearchSettings = outputSettings.containsSetting("elasticsearch") ?
+            outputSettings.getAsSettings("elasticsearch") : null;
+        mFormetaPath = outputSettings.get("formeta");
+        mJsonPath = outputSettings.get("json");
+
+        if (mFormetaPath == null && mJsonPath == null && mElasticsearchSettings == null) {
+            throw new IllegalArgumentException("Could not process limetrans: no output specified.");
+        }
+
+        final String defaultRulesPath;
+
+        if (aSettings.containsSetting("alma")) {
+            mFilter = LimetransFilter.all(filterKey);
+
+            final String rulesSuffix = initializeAlma(aSettings);
+
+            defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + ".xml";
+        }
+        else {
+            mFilter = new LimetransFilter(
+                    aSettings.get("filterOperator", "any"), filterKey, aSettings.getAsArray("filter"));
+
+            defaultRulesPath = null;
+        }
+
+        mRulesPath = Helpers.getPath(getClass(), aSettings.get("transformation-rules", defaultRulesPath));
+    }
+
+    private void initializeInput(final Settings aSettings) {
         aSettings.getAsSettings("input").forEach((s, k) -> {
             if (k.startsWith("queue")) {
                 try {
@@ -100,20 +140,9 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         if (mInputQueues.isEmpty()) {
             throw new IllegalArgumentException("Could not process limetrans: no input specified.");
         }
+    }
 
-        final String filterKey = aSettings.get("filterKey");
-        final Settings outputSettings = aSettings.getAsSettings("output");
-        mPrettyPrinting = outputSettings.getAsBoolean("pretty-printing", false);
-
-        mElasticsearchSettings = outputSettings.containsSetting("elasticsearch") ?
-            outputSettings.getAsSettings("elasticsearch") : null;
-        mFormetaPath = outputSettings.get("formeta");
-        mJsonPath = outputSettings.get("json");
-
-        if (mFormetaPath == null && mJsonPath == null && mElasticsearchSettings == null) {
-            throw new IllegalArgumentException("Could not process limetrans: no output specified.");
-        }
-
+    private void initializeVars(final Settings aSettings) {
         if (aSettings.containsSetting("isil")) {
             final String isil = aSettings.get("isil");
             mVars.put("isil", isil);
@@ -123,133 +152,121 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
                 mVars.put("sigel", isil.substring(index + 1));
             }
         }
+    }
 
-        final String defaultRulesPath;
+    private String initializeAlma(final Settings aSettings) {
+        // Export ("PubHub") BGZF contains a large XML file; increase limits for XML parser.
+        // »The accumulated size of entities is "50,000,001" that exceeded the "50,000,000" limit set by "FEATURE_SECURE_PROCESSING".«
+        // https://docs.oracle.com/en/java/javase/13/security/java-api-xml-processing-jaxp-security-guide.html#GUID-82F8C206-F2DF-4204-9544-F96155B1D258__TABLE_RQ1_3PY_HHB
+        System.setProperty("jdk.xml.totalEntitySizeLimit", "0");
 
-        if (aSettings.containsSetting("alma")) {
-            // Export ("PubHub") BGZF contains a large XML file; increase limits for XML parser.
-            // »The accumulated size of entities is "50,000,001" that exceeded the "50,000,000" limit set by "FEATURE_SECURE_PROCESSING".«
-            // https://docs.oracle.com/en/java/javase/13/security/java-api-xml-processing-jaxp-security-guide.html#GUID-82F8C206-F2DF-4204-9544-F96155B1D258__TABLE_RQ1_3PY_HHB
-            System.setProperty("jdk.xml.totalEntitySizeLimit", "0");
+        final Settings almaSettings = aSettings.getAsSettings("alma");
 
-            final Settings almaSettings = aSettings.getAsSettings("alma");
+        // Ex Libris (Deutschland) GmbH
+        mVars.putIfAbsent("isil", "DE-632");
 
-            // Ex Libris (Deutschland) GmbH
-            mVars.putIfAbsent("isil", "DE-632");
+        final String isil = mVars.get("isil");
+        final String catalogid = aSettings.get("catalogid", "DE-605");
+        final String almaDeletion = almaSettings.get("deletions", "DEL??.a=Y");
 
-            final String isil = mVars.get("isil");
-            final String catalogid = aSettings.get("catalogid", "DE-605");
-            final String almaDeletion = almaSettings.get("deletions", "DEL??.a=Y");
+        // Organization originating the system control number
+        mVars.put("catalogid", catalogid);
 
-            // Organization originating the system control number
-            mVars.put("catalogid", catalogid);
+        final String memberID = ISIL_TO_MEMBER_ID.get(isil);
+        final String networkID = ISIL_TO_MEMBER_ID.get(catalogid);
+        final String institutionCode = ISIL_TO_INSTITUTION_CODE.get(isil);
 
-            final String memberID = ISIL_TO_MEMBER_ID.get(isil);
-            final String networkID = ISIL_TO_MEMBER_ID.get(catalogid);
-            final String institutionCode = ISIL_TO_INSTITUTION_CODE.get(isil);
+        if (memberID == null || institutionCode == null) {
+            throw new RuntimeException("Unknown ISIL: " + isil);
+        }
 
-            if (memberID == null || institutionCode == null) {
-                throw new RuntimeException("Unknown ISIL: " + isil);
-            }
+        if (networkID == null) {
+            throw new RuntimeException("Unknown catalog ID: " + catalogid);
+        }
 
-            if (networkID == null) {
-                throw new RuntimeException("Unknown catalog ID: " + catalogid);
-            }
+        mVars.put("member", memberID);
+        mVars.put("network", networkID);
+        mVars.put("institution-code", institutionCode);
+        mVars.put("id-suffix", almaSettings.get("id-suffix", ""));
 
-            mVars.put("member", memberID);
-            mVars.put("network", networkID);
-            mVars.put("institution-code", institutionCode);
-            mVars.put("id-suffix", almaSettings.get("id-suffix", ""));
+        //mMaps.put("isil-to-member-id", ISIL_TO_MEMBER_ID);
+        //mMaps.put("isil-to-institution-code", ISIL_TO_INSTITUTION_CODE);
+        mMaps.put("institution-code-to-isil", INSTITUTION_CODE_TO_ISIL);
 
-            //mMaps.put("isil-to-member-id", ISIL_TO_MEMBER_ID);
-            //mMaps.put("isil-to-institution-code", ISIL_TO_INSTITUTION_CODE);
-            mMaps.put("institution-code-to-isil", INSTITUTION_CODE_TO_ISIL);
+        final String rulesSuffix;
 
-            final String rulesSuffix;
+        final UnaryOperator<String> sourceSystemFilter = i -> "035  .a=~^\\(" + i + "\\)";
 
-            final UnaryOperator<String> sourceSystemFilter = i -> "035  .a=~^\\(" + i + "\\)";
+        // POR$$A=memberID
+        final LimetransFilter availableForFilter = LimetransFilter.all()
+            .add("POR  .A=" + memberID);
 
-            // POR$$A=memberID
-            final LimetransFilter availableForFilter = LimetransFilter.all()
-                .add("POR  .A=" + memberID);
+        // MBD$$M=memberID OR POR$$M=memberID
+        final LimetransFilter memberFilter = LimetransFilter.any()
+            .add("MBD  .M|POR  .M=" + memberID);
 
-            // MBD$$M=memberID OR POR$$M=memberID
-            final LimetransFilter memberFilter = LimetransFilter.any()
-                .add("MBD  .M|POR  .M=" + memberID);
+        // MBD$$M=49HBZ_NETWORK AND ITM$$M=memberID
+        final LimetransFilter itemFilter = LimetransFilter.all()
+            .add("MBD  .M=" + networkID, "ITM  .M=" + memberID);
 
-            // MBD$$M=49HBZ_NETWORK AND ITM$$M=memberID
-            final LimetransFilter itemFilter = LimetransFilter.all()
-                .add("MBD  .M=" + networkID, "ITM  .M=" + memberID);
+        // DEL??.a=Y OR leader@05=d
+        final LimetransFilter deletionFilter = LimetransFilter.any()
+            .add(almaDeletion, "leader=~^.{5}d");
 
-            // DEL??.a=Y OR leader@05=d
-            final LimetransFilter deletionFilter = LimetransFilter.any()
-                .add(almaDeletion, "leader=~^.{5}d");
+        final LimetransFilter noDeletionFilter = LimetransFilter.none()
+            .add(deletionFilter);
 
-            final LimetransFilter noDeletionFilter = LimetransFilter.none()
-                .add(deletionFilter);
+        final Settings regexp = almaSettings.getAsSettings("regexp");
+        Stream.of("description").forEach(k -> mVars.put("regexp." + k, regexp.get(k, ".*")));
 
-            mFilter = LimetransFilter.all(filterKey);
+        if (almaSettings.getAsBoolean("supplements", false)) {
+            rulesSuffix = "-supplements";
 
-            final Settings regexp = almaSettings.getAsSettings("regexp");
-            Stream.of("description").forEach(k -> mVars.put("regexp." + k, regexp.get(k, ".*")));
-
-            if (almaSettings.getAsBoolean("supplements", false)) {
-                rulesSuffix = "-supplements";
-
-                mFilter
-                    .add(LimetransFilter.any()
-                            .add(availableForFilter)
-                            .add(LimetransFilter.all()
-                                .add(memberFilter)
-                                .add(itemFilter)))
-                    .add(noDeletionFilter)
-                    .add(sourceSystemFilter.apply(catalogid));
-            }
-            else {
-                final String deletionLiteral = almaSettings.get("deletion-literal",
-                        mElasticsearchSettings != null ?  mElasticsearchSettings.get("deletionLiteral") : null);
-
-                if (deletionLiteral != null) {
-                    final String[] deletion = almaDeletion.split("=");
-
-                    mVars.put("deletion-literal", deletionLiteral);
-                    mVars.put("deletion-source", deletion[0]);
-                    mVars.put("deletion-value", deletion[1]);
-
-                    memberFilter
-                        .add(deletionFilter);
-                }
-                else {
-                    mVars.put("deletion-literal", "-");
-                    mVars.put("deletion-source", "-");
-                    mVars.put("deletion-value", "-");
-
-                    mFilter
-                        .add(noDeletionFilter);
-                }
-
-                rulesSuffix = "";
-
-                mFilter
-                    .add(memberFilter
-                            .add(availableForFilter
-                                .add(sourceSystemFilter.apply("EXLCZ"))))
-                    .add(LimetransFilter.any()
-                            .add(sourceSystemFilter.apply("DE-600"))
-                            .add(LimetransFilter.none()
-                                .add(itemFilter)));
-            }
-
-            defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + ".xml";
+            mFilter
+                .add(LimetransFilter.any()
+                        .add(availableForFilter)
+                        .add(LimetransFilter.all()
+                            .add(memberFilter)
+                            .add(itemFilter)))
+                .add(noDeletionFilter)
+                .add(sourceSystemFilter.apply(catalogid));
         }
         else {
-            mFilter = new LimetransFilter(
-                    aSettings.get("filterOperator", "any"), filterKey, aSettings.getAsArray("filter"));
+            final String deletionLiteral = almaSettings.get("deletion-literal",
+                    mElasticsearchSettings != null ?  mElasticsearchSettings.get("deletionLiteral") : null);
 
-            defaultRulesPath = null;
+            if (deletionLiteral != null) {
+                final String[] deletion = almaDeletion.split("=");
+
+                mVars.put("deletion-literal", deletionLiteral);
+                mVars.put("deletion-source", deletion[0]);
+                mVars.put("deletion-value", deletion[1]);
+
+                memberFilter
+                    .add(deletionFilter);
+            }
+            else {
+                mVars.put("deletion-literal", "-");
+                mVars.put("deletion-source", "-");
+                mVars.put("deletion-value", "-");
+
+                mFilter
+                    .add(noDeletionFilter);
+            }
+
+            rulesSuffix = "";
+
+            mFilter
+                .add(memberFilter
+                        .add(availableForFilter
+                            .add(sourceSystemFilter.apply("EXLCZ"))))
+                .add(LimetransFilter.any()
+                        .add(sourceSystemFilter.apply("DE-600"))
+                        .add(LimetransFilter.none()
+                            .add(itemFilter)));
         }
 
-        mRulesPath = Helpers.getPath(getClass(), aSettings.get("transformation-rules", defaultRulesPath));
+        return rulesSuffix;
     }
 
     public void process() {
@@ -257,9 +274,9 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     }
 
     public void process(final StreamReceiver aReceiver) {
-        LOGGER.info("Starting transformation: {}", mRulesPath);
+        final StreamPipe<StreamReceiver> pipe = getStreamPipe(mRulesPath, mVars,
+                t -> LOGGER.info("Starting {} transformation: {}", t, mRulesPath));
 
-        final Metamorph metamorph = new Metamorph(mRulesPath, mVars);
         final StreamTee streamTee = new StreamTee();
         final Counter counter = new Counter();
 
@@ -267,25 +284,42 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         transformFormeta(streamTee);
         transformElasticsearch(streamTee);
 
-        mMaps.forEach(metamorph::putMap);
+        if (pipe instanceof final Maps maps) {
+            mMaps.forEach(maps::putMap);
+        }
 
-        metamorph
+        pipe
             .setReceiver(counter)
             .setReceiver(streamTee);
 
         if (aReceiver != null) {
-            metamorph.setReceiver(aReceiver);
+            pipe.setReceiver(aReceiver);
         }
 
         final Filter filter = mFilter.isEmpty() ? null : mFilter.toFilter();
-        mInputQueues.stream().map(i -> i.process(metamorph, filter))
+        mInputQueues.stream().map(i -> i.process(pipe, filter))
             .collect(Collectors.toList()).forEach(FileOpener::closeStream);
 
         LOGGER.info("Finished transformation ({})", counter);
     }
 
-    public int getInputQueueSize() {
-        return mInputQueues.stream().mapToInt(FileQueue::size).sum();
+    public static StreamPipe<StreamReceiver> getStreamPipe(final String aRulesPath, final Map<String, String> aVars, final Consumer<String> aConsumer) {
+        if (aRulesPath == null) {
+            return null;
+        }
+
+        final Map<String, String> vars = aVars != null ? aVars : Collections.emptyMap();
+        final StreamPipe<StreamReceiver> pipe;
+        final String type;
+
+        pipe = new Metamorph(aRulesPath, vars);
+        type = "MORPH";
+
+        if (aConsumer != null) {
+            aConsumer.accept(type);
+        }
+
+        return pipe;
     }
 
     private void transformFormeta(final StreamTee aTee) {
@@ -337,6 +371,10 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
         aTee.addReceiver(recordIdChanger);
         recordIdChanger.setReceiver(elasticsearchIndexer);
+    }
+
+    /*package-private*/ int getInputQueueSize() {
+        return mInputQueues.stream().mapToInt(FileQueue::size).sum();
     }
 
 }
