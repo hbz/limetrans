@@ -11,6 +11,7 @@ import java.io.Writer;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.function.Function;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
@@ -20,6 +21,8 @@ import javax.xml.transform.stream.StreamSource;
 
 public class Helpers {
 
+    public static final String GROUP_PREFIX = "hbz.limetrans.";
+
     public static final String CLASSPATH_PREFIX = "classpath:";
 
     private static final TransformerFactory TRANSFORMER_FACTORY = TransformerFactory.newInstance();
@@ -27,6 +30,24 @@ public class Helpers {
 
     private Helpers() {
         throw new IllegalAccessError("Utility class");
+    }
+
+    public static String getProperty(final String aKey) {
+        return System.getProperty(GROUP_PREFIX + aKey);
+    }
+
+    public static String getProperty(final String aKey, final String aDefaultValue) {
+        return getProperty(aKey, Function.identity(), aDefaultValue);
+    }
+
+    public static boolean getProperty(final String aKey, final boolean aDefaultValue) {
+        final Boolean value = getProperty(aKey, Boolean::valueOf, aDefaultValue);
+        return value != null ? value.booleanValue() : aDefaultValue;
+    }
+
+    public static <T> T getProperty(final String aKey, final Function<String, T> aFunction, final T aDefaultValue) {
+        final String value = getProperty(aKey);
+        return value != null ? value.isEmpty() ? aDefaultValue : aFunction.apply(value) : null;
     }
 
     public static Settings loadSettings(final String aPath) throws IOException {
