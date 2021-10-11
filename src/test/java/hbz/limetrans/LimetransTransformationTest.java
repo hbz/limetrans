@@ -13,81 +13,7 @@ import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.util.function.Supplier;
 
-public class LimetransTest {
-
-    @Test
-    public void testInputQueueMissingFile() throws IOException {
-        testNoInput("missing-file");
-    }
-
-    @Test
-    public void testInputQueueMissingPattern() throws IOException {
-        testNoInput("missing-pattern");
-    }
-
-    @Test
-    public void testInputQueueMissingPathAndPattern() throws IOException {
-        testNoInput("missing-path-and-pattern");
-    }
-
-    @Test
-    public void testInputQueueMissingQueueSetting() throws IOException {
-        testNoInput("missing-queue-setting");
-    }
-
-    @Test
-    public void testInputQueueMissingInputSetting() throws IOException {
-        testNoInput("missing-input-setting");
-    }
-
-    @Test
-    public void testInputQueueFixedPattern() throws IOException {
-        testInputQueueSize("fixed-pattern", 1);
-    }
-
-    @Test
-    public void testInputQueueMissingPath() throws IOException {
-        testInputQueueSize("missing-path", 1);
-    }
-
-    @Test
-    public void testInputQueueWildcardPatternMax1() throws IOException {
-        testInputQueueSize("wildcard-pattern-max-1", 1);
-    }
-
-    @Test
-    public void testInputQueueWildcardPatternMax2() throws IOException {
-        testInputQueueSize("wildcard-pattern-max-2", 2);
-    }
-
-    @Test
-    public void testInputQueueWildcardPatternNoMax() throws IOException {
-        testInputQueueSize("wildcard-pattern-no-max", 4);
-    }
-
-    @Test
-    public void testInputQueueMultiplePatterns() throws IOException {
-        testInputQueueSize("multiple-patterns", 4);
-    }
-
-    @Test
-    public void testInputQueueMultiplePatternsMax() throws IOException {
-        testInputQueueSize("multiple-patterns-max", 2);
-    }
-
-    @Test
-    public void testInputQueueMultipleQueues() throws IOException {
-        testInputQueueSize("multiple-queues", 4);
-    }
-
-    @Test
-    public void testSettingsReplacePlaceholders() throws IOException {
-        final Settings settings = loadSettings("settings-replace-placeholders");
-
-        Assert.assertEquals("AB", settings.get("ab"));
-        Assert.assertEquals("ABC", settings.get("abc"));
-        Assert.assertEquals("ABC", settings.getAsSettings("x").get("y"));
-    }
+public class LimetransTransformationTest extends AbstractLimetransTest {
 
     @Test
     public void testUnicodeNormalizationComposed() throws IOException {
@@ -169,18 +95,6 @@ public class LimetransTest {
         testElasticsearchEqualsReference("elasticsearch-id-key", "ocm42328784");
     }
 
-    private void testNoInput(final String aName) throws IOException {
-        final Throwable ex = Assert.assertThrows(IllegalArgumentException.class,
-                () -> getLimetrans("input-queue-" + aName));
-
-        Assert.assertEquals("Could not process limetrans: no input specified.", ex.getMessage());
-    }
-
-    private void testInputQueueSize(final String aName, final int aSize) throws IOException {
-        final Limetrans limetrans = getLimetrans("input-queue-" + aName);
-        Assert.assertEquals("Input queue size mismatch: " + aName, aSize, limetrans.getInputQueueSize());
-    }
-
     private void testAlmaEqualsReference(final String aName) throws IOException {
         testEqualsReference("alma-" + aName, "json");
     }
@@ -225,16 +139,8 @@ public class LimetransTest {
         Assert.assertEquals("Reference data mismatch: " + aName, Helpers.slurpFile(aReferenceFile), aOutputSupplier.get());
     }
 
-    private Limetrans getLimetrans(final String aName) throws IOException {
-        return new Limetrans(loadSettings(aName));
-    }
-
     private String getReferenceFile(final String aName, final String aExt) throws IOException {
         return Helpers.getResourcePath(getClass(), "/limetrans/reference/" + aName + "." + aExt);
-    }
-
-    private Settings loadSettings(final String aName) throws IOException {
-        return Helpers.loadSettings("src/conf/test/" + aName + ".json");
     }
 
 }
