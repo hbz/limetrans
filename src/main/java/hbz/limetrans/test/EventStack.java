@@ -1,7 +1,7 @@
 package hbz.limetrans.test;
 
-import org.metafacture.javaintegration.EventList.Event;
 import org.metafacture.javaintegration.EventList;
+import org.metafacture.javaintegration.EventList.Event;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

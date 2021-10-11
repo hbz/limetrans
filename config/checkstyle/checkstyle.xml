@@ -30,6 +30,7 @@
         <module name="CustomImportOrder">
             <property name="customImportOrderRules" value="SAME_PACKAGE(2)###THIRD_PARTY_PACKAGE###STANDARD_JAVA_PACKAGE###SPECIAL_IMPORTS###STATIC"/>
             <property name="separateLineBetweenGroups" value="true"/>
+            <property name="sortImportsInGroupAlphabetically" value="true"/>
         </module>
         <module name="CyclomaticComplexity">
             <property name="max" value="18"/>
