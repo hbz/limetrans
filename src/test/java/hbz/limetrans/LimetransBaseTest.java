@@ -9,6 +9,11 @@ import java.io.IOException;
 
 public class LimetransBaseTest extends AbstractLimetransTest {
 
+    @Override
+    protected Limetrans.Type getType() {
+        return null;
+    }
+
     @Test
     public void testInputQueueMissingFile() throws IOException {
         testNoInput("missing-file");
@@ -84,8 +89,8 @@ public class LimetransBaseTest extends AbstractLimetransTest {
     }
 
     private void testNoInput(final String aName) throws IOException {
-        final Throwable ex = Assert.assertThrows(IllegalArgumentException.class,
-                () -> getLimetrans("input-queue-" + aName));
+        final Settings settings = loadSettings("input-queue-" + aName);
+        final Throwable ex = Assert.assertThrows(IllegalArgumentException.class, () -> getLimetrans(settings));
 
         Assert.assertEquals("Could not process limetrans: no input specified.", ex.getMessage());
     }

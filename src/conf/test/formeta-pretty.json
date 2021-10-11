@@ -6,8 +6,8 @@
     }
   },
   "output": {
-    "formeta" : "src/test/resources/limetrans/output/formeta-pretty.formeta",
+    "formeta" : "src/test/resources/limetrans/output%s/formeta-pretty.formeta",
     "pretty-printing" : true
   },
-  "transformation-rules" : "src/test/resources/limetrans/rules/nonull.xml"
+  "transformation-rules" : "src/test/resources/limetrans/rules/nonull%s"
 }

@@ -5,6 +5,7 @@ import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.LimetransException;
 
 import org.junit.Assert;
+import org.junit.Assume;
 import org.junit.runners.model.Statement;
 import org.metafacture.javaintegration.EventList;
 
@@ -17,12 +18,14 @@ public class TransformationTestCase extends Statement {
     private final String mName;
     private final String mReference;
     private final String mRules;
+    private final boolean mRequired;
 
-    public TransformationTestCase(final String aName, final String aReference, final String aInput, final String aRules) {
+    public TransformationTestCase(final String aName, final String aReference, final String aInput, final String aRules, final boolean aRequired) {
         mName = aName;
         mReference = aReference;
         mInput = aInput;
         mRules = aRules;
+        mRequired = aRequired;
     }
 
     public String getName() {
@@ -31,6 +34,7 @@ public class TransformationTestCase extends Statement {
 
     @Override
     public void evaluate() {
+        Assume.assumeTrue(mRequired);
         evaluateTransformation(mReference, getEvents(mInput, mRules));
     }
 

@@ -6,8 +6,8 @@
     }
   },
   "output": {
-    "json" : "src/test/resources/limetrans/output/json-pretty.json",
+    "json" : "src/test/resources/limetrans/output%s/json-pretty.json",
     "pretty-printing" : true
   },
-  "transformation-rules" : "src/test/resources/limetrans/rules/nonull.xml"
+  "transformation-rules" : "src/test/resources/limetrans/rules/nonull%s"
 }

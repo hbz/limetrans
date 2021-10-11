@@ -9,9 +9,9 @@
     }
   },
   "output": {
-    "json" : "src/test/resources/limetrans/output/unicode-normalization-composed.jsonl"
+    "json" : "src/test/resources/limetrans/output%s/unicode-normalization-composed.jsonl"
   },
-  "transformation-rules" : "src/test/resources/limetrans/rules/noop.xml",
+  "transformation-rules" : "src/test/resources/limetrans/rules/noop%s",
   "catalogid" : "DE-605-test",
   "collection" : "HBZ-Test"
 }

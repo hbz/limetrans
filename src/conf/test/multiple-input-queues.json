@@ -12,7 +12,7 @@
     }
   },
   "output": {
-    "json" : "src/test/resources/limetrans/output/multiple-input-queues.jsonl"
+    "json" : "src/test/resources/limetrans/output%s/multiple-input-queues.jsonl"
   },
-  "transformation-rules" : "src/test/resources/limetrans/rules/noop.xml"
+  "transformation-rules" : "src/test/resources/limetrans/rules/noop%s"
 }

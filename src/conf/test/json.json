@@ -6,7 +6,7 @@
     }
   },
   "output": {
-    "json" : "src/test/resources/limetrans/output/json.json"
+    "json" : "src/test/resources/limetrans/output%s/json.json"
   },
-  "transformation-rules" : "src/test/resources/limetrans/rules/nonull.xml"
+  "transformation-rules" : "src/test/resources/limetrans/rules/nonull%s"
 }

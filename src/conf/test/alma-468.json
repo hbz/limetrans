@@ -10,7 +10,7 @@
     }
   },
   "output": {
-    "json": "src/test/resources/limetrans/output/alma-468.json",
+    "json": "src/test/resources/limetrans/output%s/alma-468.json",
     "pretty-printing": true
   }
 }

@@ -1,5 +1,6 @@
 package hbz.limetrans.test;
 
+import hbz.limetrans.Limetrans;
 import hbz.limetrans.util.Helpers;
 
 import org.junit.runner.Description;
@@ -16,12 +17,12 @@ import java.util.Map;
 
 public class TransformationTestRunner extends ParentRunner<TransformationTestCase> {
 
-    public static final String RULES_PATH = TransformationTestSuite.ROOT_PATH + "/%s.xml";
+    public static final String RULES_PATH = TransformationTestSuite.ROOT_PATH + "/%s%s";
 
     private final List<TransformationTestCase> mTestCases;
     private final String mName;
 
-    public TransformationTestRunner(final Class<?> aClass, final File aDirectory) throws InitializationError {
+    public TransformationTestRunner(final Class<?> aClass, final File aDirectory, final Limetrans.Type aType) throws InitializationError {
         super(aClass);
 
         mName = aDirectory.getName();
@@ -29,13 +30,19 @@ public class TransformationTestRunner extends ParentRunner<TransformationTestCas
 
         final String rules;
         try {
-            rules = Helpers.getResourcePath(aClass, String.format(RULES_PATH, mName));
+            rules = Helpers.getResourcePath(aClass, String.format(RULES_PATH, mName, aType.getExtension()));
         }
         catch (final IOException e) {
-            throw new InitializationError(e);
+            if (aType.getRequired()) {
+                throw new InitializationError(e);
+            }
+            else {
+                mTestCases.add(new TransformationTestCase(null, null, null, null, false));
+                return;
+            }
         }
 
-        final Map<String, String> referenceFiles = listFiles(aDirectory, "reference");
+        final Map<String, String> referenceFiles = listFiles(aDirectory, "reference" + aType.getExtension());
         final Map<String, String> inputFiles = listFiles(aDirectory, "input");
 
         for (final Map.Entry<String, String> entry : referenceFiles.entrySet()) {
@@ -43,7 +50,7 @@ public class TransformationTestRunner extends ParentRunner<TransformationTestCas
             final String path = entry.getValue();
 
             if (inputFiles.containsKey(base)) {
-                mTestCases.add(new TransformationTestCase(base, path, inputFiles.get(base), rules));
+                mTestCases.add(new TransformationTestCase(base, path, inputFiles.get(base), rules, true));
             }
             else {
                 throw new InitializationError("Missing input file: " + path);
@@ -77,9 +84,12 @@ public class TransformationTestRunner extends ParentRunner<TransformationTestCas
 
     private Map<String, String> listFiles(final File aDir, final String aName) {
         final Map<String, String> list = new HashMap<>();
+        final File[] files = aDir.toPath().resolve(aName).toFile().listFiles();
 
-        for (final File file : aDir.toPath().resolve(aName).toFile().listFiles()) {
-            list.put(file.getName().substring(0, file.getName().lastIndexOf('.')), file.getPath());
+        if (files != null) {
+            for (final File file : files) {
+                list.put(file.getName().substring(0, file.getName().lastIndexOf('.')), file.getPath());
+            }
         }
 
         return list;

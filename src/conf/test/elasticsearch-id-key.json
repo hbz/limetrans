@@ -15,5 +15,5 @@
       "embeddedPath" : "src/test/resources/limetrans/output/elasticsearch"
     }
   },
-  "transformation-rules" : "src/test/resources/limetrans/rules/elasticsearch.xml"
+  "transformation-rules" : "src/test/resources/limetrans/rules/elasticsearch%s"
 }

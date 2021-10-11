@@ -8,7 +8,7 @@
     }
   },
   "output": {
-    "json": "src/test/resources/limetrans/output/alma-hbz.json",
+    "json": "src/test/resources/limetrans/output%s/alma-hbz.json",
     "pretty-printing": true
   }
 }

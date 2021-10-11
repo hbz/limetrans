@@ -7,13 +7,29 @@ import hbz.limetrans.util.Settings;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.util.function.Supplier;
 
+@RunWith(Parameterized.class)
 public class LimetransTransformationTest extends AbstractLimetransTest {
+
+    @Parameterized.Parameters(name="{0}")
+    public static Object[] data() {
+        return Limetrans.Type.values();
+    }
+
+    @Parameterized.Parameter(0)
+    public Limetrans.Type mType;
+
+    @Override
+    protected Limetrans.Type getType() {
+        return mType;
+    }
 
     @Test
     public void testUnicodeNormalizationComposed() throws IOException {
@@ -105,28 +121,31 @@ public class LimetransTransformationTest extends AbstractLimetransTest {
 
     private void testEqualsReference(final String aName, final String aExt) throws IOException {
         final Limetrans limetrans = getLimetrans(aName);
-        final String referenceFile = getReferenceFile(aName, aExt);
 
-        TransformationTestCase.evaluateTransformation(referenceFile, l -> limetrans.process(l));
+        final String outputFile = "src/test/resources" + getResourcePath(limetrans, "output", aName, aExt);
+        final String referenceFile = getReferenceFile(limetrans, aName, aExt);
 
-        testLimetransEqualsReference(limetrans, aName, referenceFile,
-                () -> {
-                    try {
-                        return Helpers.slurpFile("src/test/resources/limetrans/output/" + aName + "." + aExt);
-                    }
-                    catch (final IOException e) {
-                        throw new UncheckedIOException(e);
-                    }
-                });
+        TransformationTestCase.evaluateTransformation(referenceFile, limetrans::process);
+
+        testLimetransEqualsReference(limetrans, aName, referenceFile, () -> {
+            try {
+                return Helpers.slurpFile(outputFile);
+            }
+            catch (final IOException e) {
+                throw new UncheckedIOException(e);
+            }
+        });
     }
 
     private void testElasticsearchEqualsReference(final String aName, final String aId) throws IOException {
+        final Limetrans limetrans = getLimetrans(aName);
+
         final Settings settings = loadSettings(aName).getAsSettings("output").getAsSettings("elasticsearch");
         final ElasticsearchClient client = new ElasticsearchClient(settings);
 
         try {
-            testLimetransEqualsReference(getLimetrans(aName), aName, getReferenceFile(aName, "json"),
-                    () -> client.getClient().prepareGet(client.getIndexName(), client.getIndexType(), aId).get().getSourceAsString());
+            testLimetransEqualsReference(limetrans, aName, getReferenceFile(limetrans, aName, "json"), () ->
+                    client.getClient().prepareGet(client.getIndexName(), client.getIndexType(), aId).get().getSourceAsString());
         }
         finally {
             client.close();
@@ -139,8 +158,12 @@ public class LimetransTransformationTest extends AbstractLimetransTest {
         Assert.assertEquals("Reference data mismatch: " + aName, Helpers.slurpFile(aReferenceFile), aOutputSupplier.get());
     }
 
-    private String getReferenceFile(final String aName, final String aExt) throws IOException {
-        return Helpers.getResourcePath(getClass(), "/limetrans/reference/" + aName + "." + aExt);
+    private String getReferenceFile(final Limetrans aLimetrans, final String aName, final String aExt) throws IOException {
+        return Helpers.getResourcePath(getClass(), getResourcePath(aLimetrans, "reference", aName, aExt));
+    }
+
+    private String getResourcePath(final Limetrans aLimetrans, final String aDir, final String aName, final String aExt) {
+        return aLimetrans.pathForType("/limetrans/" + aDir + "%s/" + aName + "." + aExt);
     }
 
 }

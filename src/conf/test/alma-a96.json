@@ -12,7 +12,7 @@
     }
   },
   "output": {
-    "json": "src/test/resources/limetrans/output/alma-a96.json",
+    "json": "src/test/resources/limetrans/output%s/alma-a96.json",
     "pretty-printing": true
   }
 }

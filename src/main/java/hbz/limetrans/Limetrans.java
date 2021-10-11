@@ -67,6 +67,39 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         }
     };
 
+    public enum Type {
+
+        METAMORPH(".xml", true);
+
+        private static final String PREFIX = "META";
+
+        private static final Type DEFAULT = METAMORPH;
+
+        private final String mName;
+        private final String mExtension;
+        private final boolean mRequired;
+
+        Type(final String aExtension, final boolean aRequired) {
+            mName = name().substring(PREFIX.length());
+            mExtension = aExtension;
+            mRequired = aRequired;
+        }
+
+        public String getExtension() {
+            return mExtension;
+        }
+
+        public boolean getRequired() {
+            return mRequired;
+        }
+
+        @Override
+        public String toString() {
+            return mName;
+        }
+
+    }
+
     private final LimetransFilter mFilter;
     private final List<FileQueue> mInputQueues = new ArrayList<>();
     private final Map<String, Map<String, String>> mMaps = new HashMap<>();
@@ -75,10 +108,17 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     private final String mFormetaPath;
     private final String mJsonPath;
     private final String mRulesPath;
+    private final Type mType;
     private final boolean mPrettyPrinting;
 
     public Limetrans(final Settings aSettings) throws IOException {
+        this(aSettings, initializeType(aSettings));
+    }
+
+    public Limetrans(final Settings aSettings, final Type aType) throws IOException {
         LOGGER.debug("Settings: {}", aSettings);
+
+        mType = aType;
 
         initializeInput(aSettings);
         initializeVars(aSettings);
@@ -89,8 +129,8 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
         mElasticsearchSettings = outputSettings.containsSetting("elasticsearch") ?
             outputSettings.getAsSettings("elasticsearch") : null;
-        mFormetaPath = outputSettings.get("formeta");
-        mJsonPath = outputSettings.get("json");
+        mFormetaPath = pathForType(outputSettings.get("formeta"));
+        mJsonPath = pathForType(outputSettings.get("json"));
 
         if (mFormetaPath == null && mJsonPath == null && mElasticsearchSettings == null) {
             throw new IllegalArgumentException("Could not process limetrans: no output specified.");
@@ -103,7 +143,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
             final String rulesSuffix = initializeAlma(aSettings);
 
-            defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + ".xml";
+            defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + "%s";
         }
         else {
             mFilter = new LimetransFilter(
@@ -112,7 +152,25 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
             defaultRulesPath = null;
         }
 
-        mRulesPath = Helpers.getPath(getClass(), aSettings.get("transformation-rules", defaultRulesPath));
+        mRulesPath = Helpers.getPath(getClass(), pathForType(aSettings.get("transformation-rules", defaultRulesPath)));
+    }
+
+    private static Type initializeType(final Settings aSettings) {
+        final String typeKey = "type";
+        final String typeValue = Helpers.getProperty(typeKey, aSettings.get(typeKey));
+
+        if (typeValue == null) {
+            LOGGER.info("Missing type property; using default: " + Type.DEFAULT);
+            return Type.DEFAULT;
+        }
+        else {
+            try {
+                return Type.valueOf(Type.PREFIX + typeValue.toUpperCase());
+            }
+            catch (final IllegalArgumentException e) {
+                throw new IllegalArgumentException("Invalid type property: " + typeValue);
+            }
+        }
     }
 
     private void initializeInput(final Settings aSettings) {
@@ -303,17 +361,17 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         LOGGER.info("Finished transformation ({})", counter);
     }
 
-    public static StreamPipe<StreamReceiver> getStreamPipe(final String aRulesPath, final Map<String, String> aVars, final Consumer<String> aConsumer) {
+    public static StreamPipe<StreamReceiver> getStreamPipe(final String aRulesPath, final Map<String, String> aVars, final Consumer<Type> aConsumer) {
         if (aRulesPath == null) {
             return null;
         }
 
         final Map<String, String> vars = aVars != null ? aVars : Collections.emptyMap();
         final StreamPipe<StreamReceiver> pipe;
-        final String type;
+        final Type type;
 
         pipe = new Metamorph(aRulesPath, vars);
-        type = "MORPH";
+        type = Type.METAMORPH;
 
         if (aConsumer != null) {
             aConsumer.accept(type);
@@ -371,6 +429,10 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
         aTee.addReceiver(recordIdChanger);
         recordIdChanger.setReceiver(elasticsearchIndexer);
+    }
+
+    /*package-private*/ String pathForType(final String aPath) {
+        return aPath != null ? mType != null ? String.format(aPath, mType.getExtension()) : aPath : null;
     }
 
     /*package-private*/ int getInputQueueSize() {

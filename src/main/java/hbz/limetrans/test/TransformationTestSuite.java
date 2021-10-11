@@ -1,5 +1,6 @@
 package hbz.limetrans.test;
 
+import hbz.limetrans.Limetrans;
 import hbz.limetrans.util.Helpers;
 
 import org.junit.runner.Description;
@@ -19,7 +20,7 @@ public class TransformationTestSuite extends ParentRunner<Runner> {
 
     private final List<Runner> mRunners;
 
-    public TransformationTestSuite(final Class<?> aClass) throws InitializationError {
+    public TransformationTestSuite(final Class<?> aClass, final Limetrans.Type aType) throws InitializationError {
         super(aClass);
 
         mRunners = new ArrayList<>();
@@ -33,7 +34,7 @@ public class TransformationTestSuite extends ParentRunner<Runner> {
         }
 
         for (final File directory : new File(root).listFiles()) {
-            mRunners.add(new TransformationTestRunner(aClass, directory));
+            mRunners.add(new TransformationTestRunner(aClass, directory, aType));
         }
 
         if (mRunners.isEmpty()) {
@@ -54,6 +55,14 @@ public class TransformationTestSuite extends ParentRunner<Runner> {
     @Override
     protected void runChild(final Runner child, final RunNotifier notifier) {
         child.run(notifier);
+    }
+
+    public static class Metamorph extends TransformationTestSuite {
+
+        public Metamorph(final Class<?> aClass) throws InitializationError {
+            super(aClass, Limetrans.Type.METAMORPH);
+        }
+
     }
 
 }
