@@ -13,6 +13,7 @@
       <AppenderRef ref="${env:LIMETRANS_TRANSFORMATIONQUALITY_APPENDER:-transformationquality}" />
     </Logger>
     <Logger name="org.elasticsearch" level="ERROR" />
+    <Logger name="org.metafacture.metafix" level="WARN" />
     <Root level="${env:LIMETRANS_LOGLEVEL:-WARN}">
       <AppenderRef ref="Console" />
     </Root>

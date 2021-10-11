@@ -15,6 +15,7 @@ import org.metafacture.io.FileOpener;
 import org.metafacture.io.ObjectWriter;
 import org.metafacture.json.JsonEncoder;
 import org.metafacture.mangling.RecordIdChanger;
+import org.metafacture.metafix.Metafix;
 import org.metafacture.metamorph.Filter;
 import org.metafacture.metamorph.Metamorph;
 import org.metafacture.metamorph.api.Maps;
@@ -67,13 +68,16 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         }
     };
 
+    private static final boolean METAFIX_IS_DEFAULT = false;
+
     public enum Type {
 
-        METAMORPH(".xml", true);
+        METAFIX(".fix", METAFIX_IS_DEFAULT),
+        METAMORPH(".xml", !METAFIX_IS_DEFAULT);
 
         private static final String PREFIX = "META";
 
-        private static final Type DEFAULT = METAMORPH;
+        private static final Type DEFAULT = METAFIX_IS_DEFAULT ? METAFIX : METAMORPH;
 
         private final String mName;
         private final String mExtension;
@@ -370,8 +374,19 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         final StreamPipe<StreamReceiver> pipe;
         final Type type;
 
-        pipe = new Metamorph(aRulesPath, vars);
-        type = Type.METAMORPH;
+        try {
+            if (aRulesPath.endsWith(Type.METAFIX.getExtension()) || METAFIX_IS_DEFAULT && !aRulesPath.endsWith(Type.METAMORPH.getExtension())) {
+                pipe = new Metafix(aRulesPath, vars);
+                type = Type.METAFIX;
+            }
+            else {
+                pipe = new Metamorph(aRulesPath, vars);
+                type = Type.METAMORPH;
+            }
+        }
+        catch (final IOException e) {
+            throw new UncheckedIOException(e);
+        }
 
         if (aConsumer != null) {
             aConsumer.accept(type);

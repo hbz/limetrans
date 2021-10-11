@@ -60,4 +60,12 @@ public class TransformationTestSuite extends ParentRunner<Runner> {
 
     }
 
+    public static class Metafix extends TransformationTestSuite {
+
+        public Metafix(final Class<?> aClass) throws InitializationError {
+            super(aClass, Limetrans.Type.METAFIX);
+        }
+
+    }
+
 }

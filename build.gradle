@@ -1,6 +1,7 @@
 plugins {
   id 'java'
   id 'checkstyle'
+  id 'io.github.0ffz.github-packages' version '1.2.1'
 }
 
 println "Timestamp: ${java.time.Instant.now().atZone(java.time.ZoneId.systemDefault())}, Host: ${java.net.InetAddress.getLocalHost()}"
@@ -25,7 +26,8 @@ ext {
         'jdk'               : '17',
         'junit'             : '4.13.1',
         'log4j'             : '2.5',
-        'metafacture'       : '5.2.0'
+        'metafacture'       : '5.2.0',
+        'metafix'           : '0.2.0-rc3'
     ]
 }
 
@@ -33,7 +35,7 @@ apply from: 'gradle/tasks.gradle'
 
 repositories {
     mavenCentral()
-    maven { url = uri('https://oss.sonatype.org/content/repositories/snapshots') }
+    maven githubPackage.invoke('metafacture')
 }
 
 dependencies {
@@ -48,6 +50,7 @@ dependencies {
     implementation "org.elasticsearch:elasticsearch:${versions.elasticsearch}"
     implementation "org.metafacture:metafacture-biblio:${versions.metafacture}"
     implementation "org.metafacture:metafacture-commons:${versions.metafacture}"
+    implementation "org.metafacture:metafacture-fix:${versions.metafix}"
     implementation "org.metafacture:metafacture-formeta:${versions.metafacture}"
     implementation "org.metafacture:metafacture-framework:${versions.metafacture}"
     implementation "org.metafacture:metafacture-io:${versions.metafacture}"
