@@ -125,6 +125,11 @@ public class LimetransTransformationTest extends AbstractLimetransTest {
         final String outputFile = "src/test/resources" + getResourcePath(limetrans, "output", aName, aExt);
         final String referenceFile = getReferenceFile(limetrans, aName, aExt);
 
+        Helpers.updateTestFile(referenceFile, () -> {
+            limetrans.process();
+            return outputFile;
+        });
+
         TransformationTestCase.evaluateTransformation(referenceFile, limetrans::process);
 
         testLimetransEqualsReference(limetrans, aName, referenceFile, () -> {

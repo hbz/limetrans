@@ -1,7 +1,6 @@
 package hbz.limetrans.test;
 
 import hbz.limetrans.Limetrans;
-import hbz.limetrans.util.Helpers;
 
 import org.junit.runner.Description;
 import org.junit.runner.notification.RunNotifier;
@@ -9,7 +8,6 @@ import org.junit.runners.ParentRunner;
 import org.junit.runners.model.InitializationError;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -17,7 +15,7 @@ import java.util.Map;
 
 public class TransformationTestRunner extends ParentRunner<TransformationTestCase> {
 
-    public static final String RULES_PATH = TransformationTestSuite.ROOT_PATH + "/%s%s";
+    public static final String RULES_PATH = TransformationTestSuite.ROOT_PATH.replace("test", "main") + "/%s%s";
 
     private final List<TransformationTestCase> mTestCases;
     private final String mName;
@@ -28,13 +26,11 @@ public class TransformationTestRunner extends ParentRunner<TransformationTestCas
         mName = aDirectory.getName();
         mTestCases = new ArrayList<>();
 
-        final String rules;
-        try {
-            rules = Helpers.getResourcePath(aClass, String.format(RULES_PATH, mName, aType.getExtension()));
-        }
-        catch (final IOException e) {
+        final String rules = String.format(RULES_PATH, mName, aType.getExtension());
+
+        if (!new File(rules).exists()) {
             if (aType.getRequired()) {
-                throw new InitializationError(e);
+                throw new InitializationError("Rules file not found: " + rules);
             }
             else {
                 mTestCases.add(new TransformationTestCase(null, null, null, null, false));

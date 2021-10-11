@@ -1,7 +1,6 @@
 package hbz.limetrans.test;
 
 import hbz.limetrans.Limetrans;
-import hbz.limetrans.util.Helpers;
 
 import org.junit.runner.Description;
 import org.junit.runner.Runner;
@@ -10,13 +9,12 @@ import org.junit.runners.ParentRunner;
 import org.junit.runners.model.InitializationError;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class TransformationTestSuite extends ParentRunner<Runner> {
 
-    public static final String ROOT_PATH = "/transformation";
+    public static final String ROOT_PATH = "src/test/resources/transformation";
 
     private final List<Runner> mRunners;
 
@@ -25,15 +23,12 @@ public class TransformationTestSuite extends ParentRunner<Runner> {
 
         mRunners = new ArrayList<>();
 
-        final String root;
-        try {
-            root = Helpers.getResourcePath(aClass, ROOT_PATH);
-        }
-        catch (final IOException e) {
-            throw new InitializationError(e);
+        final File root = new File(ROOT_PATH);
+        if (!root.exists()) {
+            throw new InitializationError("Root path not found: " + ROOT_PATH);
         }
 
-        for (final File directory : new File(root).listFiles()) {
+        for (final File directory : root.listFiles()) {
             mRunners.add(new TransformationTestRunner(aClass, directory, aType));
         }
 

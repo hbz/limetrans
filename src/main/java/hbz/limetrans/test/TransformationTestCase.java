@@ -2,13 +2,18 @@ package hbz.limetrans.test;
 
 import hbz.limetrans.Limetrans;
 import hbz.limetrans.util.FileQueue;
+import hbz.limetrans.util.Helpers;
 import hbz.limetrans.util.LimetransException;
 
 import org.junit.Assert;
 import org.junit.Assume;
 import org.junit.runners.model.Statement;
+import org.metafacture.framework.StreamReceiver;
+import org.metafacture.io.ObjectWriter;
 import org.metafacture.javaintegration.EventList;
+import org.metafacture.json.JsonEncoder;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.function.Consumer;
 
@@ -34,8 +39,35 @@ public class TransformationTestCase extends Statement {
 
     @Override
     public void evaluate() {
-        Assume.assumeTrue(mRequired);
-        evaluateTransformation(mReference, getEvents(mInput, mRules));
+        try {
+            Helpers.updateTestFile(mReference, () -> {
+                try {
+                    final File outputFile = File.createTempFile(new File(mReference).getName(), "");
+                    outputFile.deleteOnExit();
+
+                    final JsonEncoder jsonEncoder = new JsonEncoder();
+                    jsonEncoder.setPrettyPrinting(true);
+                    jsonEncoder.setReceiver(new ObjectWriter<>(outputFile.getPath()));
+
+                    processFile(mInput, mRules, jsonEncoder);
+
+                    return outputFile.getPath();
+                }
+                catch (final IOException e) {
+                    throw new RuntimeException(e);
+                }
+            });
+        }
+        catch (final IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        if (mReference != null && new File(mReference).exists()) {
+            evaluateTransformation(mReference, getEvents(mInput, mRules));
+        }
+        else {
+            Assume.assumeTrue(mRequired);
+        }
     }
 
     public static void evaluateTransformation(final String aReference, final Consumer<EventList> aConsumer) {
@@ -52,6 +84,10 @@ public class TransformationTestCase extends Statement {
     }
 
     private static EventStack getEvents(final String aFile, final String aRules) {
+        return processEvents(l -> processFile(aFile, aRules, l));
+    }
+
+    private static void processFile(final String aFile, final String aRules, final StreamReceiver aReceiver) {
         final String ext = aFile.substring(aFile.lastIndexOf('.') + 1);
 
         final FileQueue inputQueue;
@@ -62,7 +98,7 @@ public class TransformationTestCase extends Statement {
             throw new LimetransException(e);
         }
 
-        return processEvents(l -> inputQueue.process(l, Limetrans.getStreamPipe(aRules, null, null)).closeStream());
+        inputQueue.process(aReceiver, Limetrans.getStreamPipe(aRules, null, null)).closeStream();
     }
 
     private static EventStack processEvents(final Consumer<EventList> aConsumer) {

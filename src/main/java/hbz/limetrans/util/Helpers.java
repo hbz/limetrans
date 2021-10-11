@@ -11,7 +11,9 @@ import java.io.Writer;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.function.Function;
+import java.util.function.Supplier;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
@@ -82,6 +84,15 @@ public class Helpers {
         }
         else {
             return aPath;
+        }
+    }
+
+    public static void updateTestFile(final String aTarget, final Supplier<String> aSupplier) throws IOException {
+        if (aTarget != null && getProperty("updateTestFiles", false)) {
+            final String source = aSupplier.get();
+            if (source != null) {
+                Files.move(Paths.get(source), Paths.get(aTarget), StandardCopyOption.REPLACE_EXISTING);
+            }
         }
     }
 
