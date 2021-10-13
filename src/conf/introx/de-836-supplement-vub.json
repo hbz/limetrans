@@ -1,23 +1,21 @@
 {
-  "isil": "DE-B1597",
+  "isil": "DE-836",
   "input": {
     "queue": {
-      "path": "/mnt/herakles/DE-1383/upload/",
-      "pattern": "1383_degruyter{,_duk}.xml"
+      "path": "/mnt/herakles/${isil}/upload/VUB/",
+      "pattern": "VUB.xml"
     }
   },
   "output": {
     "elasticsearch": {
-      "cluster": "zbn",
-      "host": ["zephyros.hbz-nrw.de:9300"],
       "index": {
         "type": "titel",
         "name": "${isil}-introx-limetrans-",
-        "timewindow": "yyyyMMdd",
         "settings": "classpath:/elasticsearch/hbztitle-settings.json",
         "mapping": "classpath:/elasticsearch/hbztitle-mapping.json",
         "idKey": "RecordIdentifier.identifierForTheRecord"
-      }
+      },
+      "update": true
     }
   },
   "transformation-rules": "classpath:/transformation/${isil}.xml"

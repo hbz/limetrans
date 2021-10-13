@@ -9,8 +9,6 @@
   },
   "output": {
     "elasticsearch": {
-      "cluster": "hap",
-      "host": ["hera.hbz-nrw.de:9300"],
       "index": {
         "type": "titel",
         "name": "${isil}-introx-limetrans-",

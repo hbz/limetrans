@@ -9,8 +9,6 @@
   },
   "output": {
     "elasticsearch": {
-      "cluster": "zbn",
-      "host": ["zephyros.hbz-nrw.de:9300"],
       "index": {
         "type": "titel",
         "name": "${isil}-introx-limetrans-",

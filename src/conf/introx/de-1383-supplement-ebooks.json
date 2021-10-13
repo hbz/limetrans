@@ -14,8 +14,6 @@
   },
   "output": {
     "elasticsearch": {
-      "cluster": "hap",
-      "host": ["hera.hbz-nrw.de:9300"],
       "index": {
         "type": "hbz",
         "name": "${isil}-introx-",

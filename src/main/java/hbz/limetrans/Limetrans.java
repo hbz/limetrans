@@ -116,7 +116,8 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     private final boolean mPrettyPrinting;
 
     public Limetrans(final Settings aSettings) throws IOException {
-        this(aSettings, initializeType(aSettings));
+        this(aSettings, Helpers.getEnumProperty("type", aSettings.get("type"),
+                    Type.DEFAULT, LOGGER::info, k -> Type.PREFIX + k.toUpperCase()));
     }
 
     public Limetrans(final Settings aSettings, final Type aType) throws IOException {
@@ -157,24 +158,6 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         }
 
         mRulesPath = Helpers.getPath(getClass(), pathForType(aSettings.get("transformation-rules", defaultRulesPath)));
-    }
-
-    private static Type initializeType(final Settings aSettings) {
-        final String typeKey = "type";
-        final String typeValue = Helpers.getProperty(typeKey, aSettings.get(typeKey));
-
-        if (typeValue == null) {
-            LOGGER.info("Missing type property; using default: " + Type.DEFAULT);
-            return Type.DEFAULT;
-        }
-        else {
-            try {
-                return Type.valueOf(Type.PREFIX + typeValue.toUpperCase());
-            }
-            catch (final IllegalArgumentException e) {
-                throw new IllegalArgumentException("Invalid type property: " + typeValue);
-            }
-        }
     }
 
     private void initializeInput(final Settings aSettings) {

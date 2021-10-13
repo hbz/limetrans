@@ -2,6 +2,20 @@ def (root, extension) = [file('.').toPath(), '.json']
 
 def camelize = { it.replaceAll(~/\b./) { it[0].toUpperCase() } }
 
+def propTask = { group, list ->
+    def prop = "${project.group}.${group}"
+
+    list.each { value ->
+        task(group + camelize(value), group: group,
+                description: "Sets -D${prop}=${value}") {
+            doLast { System.properties[prop] = value }
+        }
+    }
+}
+
+// See hbz.limetrans.Main.Env.
+propTask('env', ['prod', 'dev', 'd7test', 'local', 'ignore'])
+
 file('src/conf').eachDir {
     def (group, path, map) = [it.getName(), it.toPath(), [:].withDefault { [] }]
 

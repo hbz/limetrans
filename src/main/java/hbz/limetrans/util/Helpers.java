@@ -12,8 +12,10 @@ import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
+import java.util.function.UnaryOperator;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
@@ -52,13 +54,41 @@ public class Helpers {
         return value != null ? value.isEmpty() ? aDefaultValue : aFunction.apply(value) : null;
     }
 
+    public static <T extends Enum<T>> T getEnumProperty(final String aKey, final String aDefaultPropValue, final T aDefaultEnumValue, final Consumer<String> aConsumer, final UnaryOperator<String> aOperator) {
+        final String propValue = getProperty(aKey, aDefaultPropValue);
+
+        if (propValue == null) {
+            if (aConsumer != null) {
+                aConsumer.accept("Missing " + aKey + " property; using default: " + aDefaultEnumValue);
+            }
+
+            return aDefaultEnumValue;
+        }
+        else {
+            try {
+                return Enum.valueOf(aDefaultEnumValue.getDeclaringClass(), aOperator != null ? aOperator.apply(propValue) : propValue);
+            }
+            catch (final IllegalArgumentException e) {
+                throw new IllegalArgumentException("Invalid " + aKey + " property: " + propValue);
+            }
+        }
+    }
+
     public static Settings loadSettings(final String aPath) throws IOException {
+        return loadSettings(aPath, null);
+    }
+
+    public static Settings loadSettings(final String aPath, final Consumer<Settings.Builder> aConsumer) throws IOException {
         final Settings.Builder settingsBuilder = Settings.settingsBuilder();
 
         if (aPath != null) {
             try (InputStream in = new FileInputStream(aPath)) {
                 settingsBuilder.load(in);
             }
+        }
+
+        if (aConsumer != null) {
+            aConsumer.accept(settingsBuilder);
         }
 
         return settingsBuilder.build();

@@ -165,6 +165,8 @@
         <module name="UpperEll"/>
         <module name="VisibilityModifier"/>
         <module name="WhitespaceAfter"/>
-        <module name="WhitespaceAround"/>
+        <module name="WhitespaceAround">
+            <property name="allowEmptyLambdas" value="true"/>
+        </module>
     </module>
 </module>
