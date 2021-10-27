@@ -64,6 +64,14 @@ dependencies {
     implementation "org.metafacture:metamorph:${versions.metafacture}"
 }
 
+sourceSets {
+    test {
+        resources {
+            exclude '**/output/'
+        }
+    }
+}
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(versions.jdk)
