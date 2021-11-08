@@ -4,7 +4,7 @@
   "input": {
     "queue": {
       "path": "/mnt/herakles/${isil}/upload/",
-      "pattern": "hanser_ebooks_LBZ.mrc",
+      "pattern": "{hanser_ebooks_LBZ,NBE_*_gesamt}.mrc",
       "processor" : "MARC21RECORDS"
     }
   },
