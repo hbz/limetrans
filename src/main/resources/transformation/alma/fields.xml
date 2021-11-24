@@ -762,7 +762,7 @@
   <call-macro name="alma-mms-filter" dname="@callnumber" entity="H52??" source="h" filter="8" />
 
   <!-- ITM -->
-  <call-macro name="alma-member-filter" dname="@callnumber" entity="ITM  " source="[cz]" />
+  <call-macro name="alma-member-filter" dname="@callnumber" entity="ITM  " source="[cnz]" />
   <entity name="Item[]" flushWith="record">
     <entity name="" flushWith="@callnumber" reset="true">
       <data name="callnumber" source="@callnumber">

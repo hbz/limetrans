@@ -81,7 +81,7 @@
     </entity>
 
     <!-- Call number subfield (MAB 088$$a = Angabe der redigierenden Bibliothek) / SISIS Feld 9902 (Buchdatensignatur) -->
-    <call-macro name="alma-member-filter" dname="@callnumber" entity="ITM  " source="[cz]" />
+    <call-macro name="alma-member-filter" dname="@callnumber" entity="ITM  " source="[cnz]" />
     <call-macro name="alma-mms-filter" dname="@callnumber" entity="H52??" source="h" filter="8" />
     <entity name="Item.callnumber[]" flushWith="record">
       <data name="" source="@callnumber">
