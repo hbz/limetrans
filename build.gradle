@@ -27,7 +27,7 @@ ext {
         'junit'             : '4.13.1',
         'log4j'             : '2.14.1',
         'metafacture'       : '5.3.1',
-        'metafix'           : '0.2.0-rc3'
+        'metafix'           : '0.2.0-rc6'
     ]
 }
 
@@ -51,7 +51,6 @@ dependencies {
     implementation "org.elasticsearch:elasticsearch:${versions.elasticsearch}"
     implementation "org.metafacture:metafacture-biblio:${versions.metafacture}"
     implementation "org.metafacture:metafacture-commons:${versions.metafacture}"
-    implementation "org.metafacture:metafacture-fix:${versions.metafix}"
     implementation "org.metafacture:metafacture-formeta:${versions.metafacture}"
     implementation "org.metafacture:metafacture-framework:${versions.metafacture}"
     implementation "org.metafacture:metafacture-io:${versions.metafacture}"
@@ -62,6 +61,9 @@ dependencies {
     implementation "org.metafacture:metafacture-statistics:${versions.metafacture}"
     implementation "org.metafacture:metafacture-strings:${versions.metafacture}"
     implementation "org.metafacture:metafacture-xml:${versions.metafacture}"
+    implementation("org.metafacture:metafix:${versions.metafix}") {
+        exclude group: 'org.slf4j', module: 'slf4j-simple'
+    }
     implementation "org.metafacture:metamorph:${versions.metafacture}"
 }
 
