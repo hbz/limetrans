@@ -122,7 +122,7 @@ public class LimetransTransformationTest extends AbstractLimetransTest {
     private void testEqualsReference(final String aName, final String aExt) throws IOException {
         final Limetrans limetrans = getLimetrans(aName);
 
-        final String outputFile = "src/test/resources" + getResourcePath(limetrans, "output", aName, aExt);
+        final String outputFile = getResourcePath(limetrans, "output", aName, aExt);
         final String referenceFile = getReferenceFile(limetrans, aName, aExt);
 
         Helpers.updateTestFile(referenceFile, () -> {
@@ -164,11 +164,11 @@ public class LimetransTransformationTest extends AbstractLimetransTest {
     }
 
     private String getReferenceFile(final Limetrans aLimetrans, final String aName, final String aExt) throws IOException {
-        return Helpers.getResourcePath(getClass(), getResourcePath(aLimetrans, "reference", aName, aExt));
+        return getResourcePath(aLimetrans, "reference", aName, aExt);
     }
 
     private String getResourcePath(final Limetrans aLimetrans, final String aDir, final String aName, final String aExt) {
-        return aLimetrans.pathForType("/limetrans/" + aDir + "%s/" + aName + "." + aExt);
+        return aLimetrans.pathForType("src/test/resources/limetrans/" + aDir + "%s/" + aName + "." + aExt);
     }
 
 }

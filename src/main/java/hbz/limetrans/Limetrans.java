@@ -148,7 +148,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
             final String rulesSuffix = initializeAlma(aSettings);
 
-            defaultRulesPath = "classpath:/transformation/alma" + rulesSuffix + "%s";
+            defaultRulesPath = Helpers.CLASSPATH_PREFIX + "/transformation/alma" + rulesSuffix + "%s";
         }
         else {
             mFilter = new LimetransFilter(
