@@ -27,7 +27,7 @@ ext {
         'junit'             : '4.13.1',
         'log4j'             : '2.17.1',
         'metafacture'       : '5.3.1',
-        'metafix'           : '0.2.0-rc6'
+        'metafix'           : 'master'
     ]
 }
 
@@ -61,7 +61,8 @@ dependencies {
     implementation "org.metafacture:metafacture-statistics:${versions.metafacture}"
     implementation "org.metafacture:metafacture-strings:${versions.metafacture}"
     implementation "org.metafacture:metafacture-xml:${versions.metafacture}"
-    implementation("org.metafacture:metafix:${versions.metafix}") {
+    implementation('org.metafacture:metafix') {
+        version { branch = versions.metafix }
         exclude group: 'org.slf4j', module: 'slf4j-simple'
     }
     implementation "org.metafacture:metamorph:${versions.metafacture}"
