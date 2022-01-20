@@ -150,6 +150,11 @@
             <property name="checkFormat" value="$1"/>
             <property name="commentFormat" value="checkstyle-disable-line (\w+(?:\|\w+)?)"/>
         </module>
+        <module name="SuppressionCommentFilter">
+            <property name="checkFormat" value="$1"/>
+            <property name="offCommentFormat" value="checkstyle-disable-begin (\w+(?:\|\w+)?)"/>
+            <property name="onCommentFormat" value="checkstyle-disable-end"/>
+        </module>
         <module name="ThrowsCount">
             <property name="max" value="2"/>
         </module>
