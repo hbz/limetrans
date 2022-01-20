@@ -38,35 +38,50 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
     private static final Logger LOGGER = LogManager.getLogger();
 
-    private static final Map<String, String> ISIL_TO_MEMBER_ID = new HashMap<String, String>() {
-        {
-            put("DE-605", "49HBZ_NETWORK"); // hbz - Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen
-            put("DE-361", "49HBZ_BIE");     // Universitätsbibliothek Bielefeld
-            put("DE-61",  "49HBZ_DUE");     // Universitäts- und Landesbibliothek Düsseldorf
-            put("DE-A96", "49HBZ_FHA");     // Hochschulbibliothek der Fachhochschule Aachen
-            put("DE-290", "49HBZ_UBD");     // Universitätsbibliothek Dortmund
-            put("DE-465", "49HBZ_UDE");     // Universitätsbibliothek Duisburg-Essen (DE-464 = Campus Duisburg, DE-465 = Campus Essen)
-            put("DE-468", "49HBZ_WUP");     // Universitätsbibliothek Wuppertal
-        }
-    };
+    private static final Map<String, String> INSTITUTION_CODE_TO_ISIL = new HashMap<>();
 
-    private static final Map<String, String> ISIL_TO_INSTITUTION_CODE = new HashMap<String, String>() {
-        {
-            put("DE-605", "6441");          // hbz - Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen
-            put("DE-361", "6442");          // Universitätsbibliothek Bielefeld
-            put("DE-61",  "6443");          // Universitäts- und Landesbibliothek Düsseldorf
-            put("DE-A96", "6444");          // Hochschulbibliothek der Fachhochschule Aachen
-            put("DE-290", "6445");          // Universitätsbibliothek Dortmund
-            put("DE-465", "6446");          // Universitätsbibliothek Duisburg-Essen (DE-464 = Campus Duisburg, DE-465 = Campus Essen)
-            put("DE-468", "6447");          // Universitätsbibliothek Wuppertal
-        }
-    };
+    private enum Isil {
 
-    private static final Map<String, String> INSTITUTION_CODE_TO_ISIL = new HashMap<String, String>() {
-        {
-            ISIL_TO_INSTITUTION_CODE.forEach((k, v) -> put(v, k));
+        DE_605("6441", "49HBZ_NETWORK"), // hbz NRW
+        DE_361("6442", "49HBZ_BIE"),     // UB Bielefeld
+        DE_61("6443",  "49HBZ_DUE"),     // ULB Düsseldorf
+        DE_A96("6444", "49HBZ_FHA"),     // FHB Aachen
+        DE_290("6445", "49HBZ_UBD"),     // UB Dortmund
+        DE_465("6446", "49HBZ_UDE"),     // UB Duisburg-Essen (DE-464 = Campus Duisburg, DE-465 = Campus Essen)
+        DE_468("6447", "49HBZ_WUP");     // UB Wuppertal
+
+        private static final String ISIL_SEPARATOR = "-";
+        private static final String NAME_SEPARATOR = "_";
+
+        private final String mInstitutionCode;
+        private final String mIsil;
+        private final String mMemberId;
+
+        Isil(final String aInstitutionCode, final String aMemberId) {
+            mInstitutionCode = aInstitutionCode;
+            mMemberId = aMemberId;
+
+            mIsil = name().replace(NAME_SEPARATOR, ISIL_SEPARATOR);
+            INSTITUTION_CODE_TO_ISIL.put(aInstitutionCode, mIsil);
         }
-    };
+
+        private static Isil get(final String aIsil) {
+            return valueOf(aIsil.replace(ISIL_SEPARATOR, NAME_SEPARATOR));
+        }
+
+        private String getInstitutionCode() {
+            return mInstitutionCode;
+        }
+
+        private String getIsil() {
+            return mIsil;
+        }
+
+        private String getMemberId() {
+            return mMemberId;
+        }
+
+    }
 
     private static final boolean METAFIX_IS_DEFAULT = false;
 
@@ -210,32 +225,22 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         // Ex Libris (Deutschland) GmbH
         mVars.putIfAbsent("isil", "DE-632");
 
-        final String isil = mVars.get("isil");
-        final String catalogid = aSettings.get("catalogid", "DE-605");
+        final Isil isil = Isil.get(mVars.get("isil"));
+        final Isil catalogid = Isil.get(aSettings.get("catalogid", "DE-605"));
         final String almaDeletion = almaSettings.get("deletions", "DEL??.a=Y");
 
         // Organization originating the system control number
-        mVars.put("catalogid", catalogid);
+        mVars.put("catalogid", catalogid.getIsil());
 
-        final String memberID = ISIL_TO_MEMBER_ID.get(isil);
-        final String networkID = ISIL_TO_MEMBER_ID.get(catalogid);
-        final String institutionCode = ISIL_TO_INSTITUTION_CODE.get(isil);
-
-        if (memberID == null || institutionCode == null) {
-            throw new RuntimeException("Unknown ISIL: " + isil);
-        }
-
-        if (networkID == null) {
-            throw new RuntimeException("Unknown catalog ID: " + catalogid);
-        }
+        final String memberID = isil.getMemberId();
+        final String networkID = catalogid.getMemberId();
+        final String institutionCode = isil.getInstitutionCode();
 
         mVars.put("member", memberID);
         mVars.put("network", networkID);
         mVars.put("institution-code", institutionCode);
         mVars.put("id-suffix", almaSettings.get("id-suffix", ""));
 
-        //mMaps.put("isil-to-member-id", ISIL_TO_MEMBER_ID);
-        //mMaps.put("isil-to-institution-code", ISIL_TO_INSTITUTION_CODE);
         mMaps.put("institution-code-to-isil", INSTITUTION_CODE_TO_ISIL);
 
         final String rulesSuffix;
@@ -274,7 +279,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
                             .add(memberFilter)
                             .add(itemFilter)))
                 .add(noDeletionFilter)
-                .add(sourceSystemFilter.apply(catalogid));
+                .add(sourceSystemFilter.apply(catalogid.getIsil()));
         }
         else {
             final String deletionLiteral = almaSettings.get("deletion-literal",
