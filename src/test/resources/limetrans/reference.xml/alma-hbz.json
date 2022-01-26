@@ -4709,6 +4709,8 @@
   } ],
   "IdentifierZDB" : [ {
     "identifierZDB" : "2657415-9"
+  }, {
+    "identifierZDB" : "2000386-9"
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "2046-6080"
@@ -6544,5 +6546,188 @@
     "subjectTopicName" : "Application software"
   }, {
     "subjectTopicName" : "Java (Computer program language)"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : "H. A. Weldon [Hrsg.]"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Konferenzschrift", "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "1983" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "99371144075706441",
+    "identifierMMSIZ" : "99371144075706441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99371144075706441",
+    "identifierForTheRecord" : "(DE-605)HT021206881"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "0817631690" ]
+  }, {
+    "identifierISBN" : [ "3764331690" ]
+  } ],
+  "Conference" : {
+    "conferenceName" : "Workshop on Grand Unification",
+    "corporateBodyNameeNumber" : "4",
+    "conferenceDate" : "1983",
+    "conferencePlace" : "Philadelphia, Pa",
+    "conferenceIdentifier" : [ "(DE-588)1091890-5", "(DE-588)1234567-8" ],
+    "identifierGND" : [ "1091890-5", "1234567-8" ]
+  },
+  "TitleStatement" : [ {
+    "titleMain" : "Fourth Workshop on Grand Unification, University of Pennsylvania, Philadelphia, April 21 - 23, 1983"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Boston, Mass. [u.a.]" ],
+    "name" : [ "Birkhäuser" ],
+    "chronology" : [ "1983" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1983" ]
+  },
+  "Extent" : {
+    "extent" : "IX, 415 S. : graph. Darst"
+  },
+  "PersonContributor" : [ {
+    "personName" : "Weldon, H. A."
+  } ],
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Progress in physics" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "9" ]
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Große Vereinheitlichung"
+  }, {
+    "subject" : "Magnetischer Monopol"
+  }, {
+    "subject" : "Proton"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99371144075706441"
+  }, {
+    "uid" : "(DE-605)HT021206881"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Herausforderungen an die Integrationsleistung der Grundschule"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Nina Skorsetz, Marina Bonanati, Diemut Kucharz (Hrsg.)"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Konferenzschrift", "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2020" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "99371142325706441",
+    "identifierMMSIZ" : "99371142325706441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99371142325706441",
+    "identifierForTheRecord" : "(DE-605)HT021206141"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783658275297", "eBook" ]
+  } ],
+  "Conference" : {
+    "conferenceName" : "Deutsche Gesellschaft für Erziehungswissenschaft",
+    "corporateBodyNameeNumber" : "27.",
+    "conferenceDate" : "2018",
+    "conferencePlace" : "Frankfurt am Main",
+    "conferenceIdentifier" : [ "(DE-588)119466900X" ],
+    "identifierGND" : [ "119466900X" ],
+    "conferenceUnit" : "Kommission Grundschulforschung und Pädagogik der Primarstufe. Jahrestagung"
+  },
+  "TitleStatement" : [ {
+    "titleMain" : "Diversität und soziale Ungleichheit"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Wiesbaden" ],
+    "name" : [ "Springer VS" ],
+    "chronology" : [ "[2020]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2020]" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource"
+  },
+  "Description" : {
+    "description" : [ "\"... im Rahmen der 27. Jahrestagung der Kommission \"Grundschulforschung und Pädagogik der Primarstufe\" in der DGfE-Sektion \"Schulpädagogik\" vom 24.-26. September 2018 an der Goethe-Universität Frankfurt analysiert und diskutiert\" - Einleitung" ]
+  },
+  "PersonContributor" : [ {
+    "personName" : "Skorsetz, Nina",
+    "personIdentifier" : [ "(DE-588)1194098134" ],
+    "identifierGND" : [ "1194098134" ]
+  }, {
+    "personName" : "Bonanati, Marina",
+    "personIdentifier" : [ "(DE-588)1105067130" ],
+    "identifierGND" : [ "1105067130" ]
+  }, {
+    "personName" : "Kucharz, Diemut",
+    "personBio" : "1959-",
+    "personIdentifier" : [ "(DE-588)12212541X" ],
+    "identifierGND" : [ "12212541X" ]
+  } ],
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Erscheint auch als",
+    "note" : [ "Druck-Ausgabe" ]
+  } ],
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "9783658275280" ]
+  } ],
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Jahrbuch Grundschulforschung" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "24" ]
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Grundschulpädagogik"
+  }, {
+    "subject" : "Heterogenität"
+  }, {
+    "subject" : "Soziale Ungleichheit"
+  }, {
+    "subject" : "Professionalisierung"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99371142325706441"
+  }, {
+    "uid" : "(DE-605)HT021206141"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : "Education—Research"
   } ]
 }

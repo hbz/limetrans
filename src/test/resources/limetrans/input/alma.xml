@@ -13446,6 +13446,10 @@
       <subfield code="a">2657415-9</subfield>
       <subfield code="2">DE-600</subfield>
     </datafield>
+    <datafield tag="016" ind1="7" ind2=" ">
+      <subfield code="a">2000386-9</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
     <datafield tag="022" ind1=" " ind2=" ">
       <subfield code="a">2046-6080</subfield>
     </datafield>
@@ -29413,6 +29417,10 @@
       <subfield code="2">DE-600</subfield>
     </datafield>
     <datafield tag="016" ind1="7" ind2=" ">
+      <subfield code="a">invalid</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield tag="016" ind1="7" ind2=" ">
       <subfield code="a">263606619</subfield>
       <subfield code="2">OCoLC</subfield>
     </datafield>
@@ -30706,6 +30714,613 @@
       <subfield code="W">2021-11-03 08:09:44</subfield>
       <subfield code="u">W0001</subfield>
       <subfield code="w">W0001</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>01384cam#a22004091cb4500</leader>
+    <controlfield tag="005">20220121104700.0</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">220121|1983####xxu###########1||#|#eng#c</controlfield>
+    <controlfield tag="003">DE-605</controlfield>
+    <controlfield tag="001">99371144075706441</controlfield>
+    <datafield tag="016" ind1="7" ind2=" ">
+      <subfield code="a">10146585</subfield>
+      <subfield code="2">OCoLC</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">0817631690</subfield>
+      <subfield code="9">0-8176-3169-0</subfield>
+      <subfield code="0">(uri) http://www.isbnsearch.org/isbn/0817631690</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">3764331690</subfield>
+      <subfield code="9">3-7643-3169-0</subfield>
+      <subfield code="0">(uri) http://www.isbnsearch.org/isbn/3764331690</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-605)HT021206881</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">DE-605</subfield>
+      <subfield code="a">5</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">DE-605</subfield>
+    </datafield>
+    <datafield tag="041" ind1=" " ind2=" ">
+      <subfield code="a">eng</subfield>
+    </datafield>
+    <datafield tag="044" ind1=" " ind2=" ">
+      <subfield code="c">XD-US</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">UO 1183</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield tag="111" ind1="2" ind2=" ">
+      <subfield code="a">Workshop on Grand Unification</subfield>
+      <subfield code="n">4</subfield>
+      <subfield code="d">1983</subfield>
+      <subfield code="c">Philadelphia, Pa.</subfield>
+      <subfield code="0">(DE-588)1091890-5</subfield>
+      <subfield code="0">(DE-588)1234567-8</subfield>
+      <subfield code="4">aut</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=004425707</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|004425707</subfield>
+      <subfield code="B">GND-004425707</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Fourth Workshop on Grand Unification, University of Pennsylvania, Philadelphia, April 21 - 23, 1983</subfield>
+      <subfield code="c">H. A. Weldon [Hrsg.]</subfield>
+    </datafield>
+    <datafield tag="264" ind1=" " ind2="1">
+      <subfield code="a">Boston, Mass. [u.a.]</subfield>
+      <subfield code="b">Birkh&#xE4;user</subfield>
+      <subfield code="c">1983</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">IX, 415 S.</subfield>
+      <subfield code="b">graph. Darst</subfield>
+    </datafield>
+    <datafield tag="336" ind1=" " ind2=" ">
+      <subfield code="b">txt</subfield>
+    </datafield>
+    <datafield tag="337" ind1=" " ind2=" ">
+      <subfield code="b">n</subfield>
+    </datafield>
+    <datafield tag="338" ind1=" " ind2=" ">
+      <subfield code="b">nc</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">Progress in physics</subfield>
+      <subfield code="v">9</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code="a">Gro&#xDF;e Vereinheitlichung</subfield>
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4158251-2</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=041582519</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|041582519</subfield>
+      <subfield code="B">GND-041582519</subfield>
+    </datafield>
+    <datafield tag="689" ind1="1" ind2="0">
+      <subfield code="a">Magnetischer Monopol</subfield>
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4168573-8</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=041685733</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|041685733</subfield>
+      <subfield code="B">GND-041685733</subfield>
+    </datafield>
+    <datafield tag="689" ind1="2" ind2="0">
+      <subfield code="a">Proton</subfield>
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4137643-2</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=041376439</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|041376439</subfield>
+      <subfield code="B">GND-041376439</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Progress in physics</subfield>
+      <subfield code="w">(DE-605)HT001235068</subfield>
+      <subfield code="v">9</subfield>
+      <subfield code="9">O:1</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">051</subfield>
+      <subfield code="A">sk||||||</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">030</subfield>
+      <subfield code="A">b||u|||||||27</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">050</subfield>
+      <subfield code="A">a|a|||||||||||</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)10146585</subfield>
+      <subfield code="0">(uri) http://www.worldcat.org/oclc/10146585</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-627)022156828</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-599)GBV022156828</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Weldon, H. A.</subfield>
+      <subfield code="4">edt</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Konferenzschrift</subfield>
+      <subfield code="y">21.04.1983-23.04.1983</subfield>
+      <subfield code="z">Philadelphia, Pa.</subfield>
+      <subfield code="0">(DE-588)1071861417</subfield>
+      <subfield code="2">gnd-content</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_NETWORK</subfield>
+      <subfield code="i">99371144075706441</subfield>
+      <subfield code="n">HBZ Network</subfield>
+    </datafield>
+    <datafield tag="MNG" ind1=" " ind2=" ">
+      <subfield code="c">System</subfield>
+      <subfield code="f">HBZ</subfield>
+      <subfield code="i">marc21</subfield>
+      <subfield code="h">20220121104700.0</subfield>
+      <subfield code="k">01</subfield>
+      <subfield code="e">false</subfield>
+      <subfield code="d">2022-01-21 11:30:44 Europe/Berlin</subfield>
+      <subfield code="g">HT021206881</subfield>
+      <subfield code="j">60</subfield>
+      <subfield code="a">System</subfield>
+      <subfield code="b">2022-01-21 11:30:48 Europe/Berlin</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">1091890-5</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1091890-5</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-004425707</subfield>
+      <subfield code="C">024</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Protonen</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041376439</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">http://d-nb.info/gnd/4137643-2</subfield>
+      <subfield code="2">uri</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041376439</subfield>
+      <subfield code="C">024</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Monopol</subfield>
+      <subfield code="g">Magnetismus</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041685733</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">http://d-nb.info/gnd/4168573-8</subfield>
+      <subfield code="2">uri</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041685733</subfield>
+      <subfield code="C">024</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Grand Unification</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041582519</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">GUT</subfield>
+      <subfield code="g">Physik</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041582519</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Gro&#xDF;e unifizierte Theorie</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041582519</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Gro&#xDF;e vereinheitlichte Theorie</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041582519</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">GVT</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041582519</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Grand unified theory</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041582519</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Gro&#xDF;e Vereinigung der Wechselwirkungen</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041582519</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Gro&#xDF;e Vereinigungstheorie</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041582519</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">http://d-nb.info/gnd/4158251-2</subfield>
+      <subfield code="2">uri</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041582519</subfield>
+      <subfield code="C">024</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>02181nam#a2200493#cb4500</leader>
+    <controlfield tag="005">20220121094700.0</controlfield>
+    <controlfield tag="007">cr#|||||||||||</controlfield>
+    <controlfield tag="008">220120|2020####gw######o#####1||#|#ger#c</controlfield>
+    <controlfield tag="003">DE-605</controlfield>
+    <controlfield tag="001">99371142325706441</controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">9783658275297</subfield>
+      <subfield code="c">eBook</subfield>
+      <subfield code="9">978-3-658-27529-7</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-605)HT021206141</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">DE-605</subfield>
+      <subfield code="a">82</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="d">82</subfield>
+      <subfield code="e">rda</subfield>
+      <subfield code="d">DE-605</subfield>
+    </datafield>
+    <datafield tag="041" ind1=" " ind2=" ">
+      <subfield code="a">ger</subfield>
+    </datafield>
+    <datafield tag="044" ind1=" " ind2=" ">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield tag="082" ind1="0" ind2="4">
+      <subfield code="a">371.3</subfield>
+      <subfield code="2">23</subfield>
+    </datafield>
+    <datafield tag="089" ind1="0" ind2="4">
+      <subfield code="a">371.3</subfield>
+      <subfield code="e">23</subfield>
+      <subfield code="A">4</subfield>
+    </datafield>
+    <datafield tag="111" ind1="2" ind2=" ">
+      <subfield code="a">Deutsche Gesellschaft f&#xFC;r Erziehungswissenschaft</subfield>
+      <subfield code="e">Kommission Grundschulforschung und P&#xE4;dagogik der Primarstufe</subfield>
+      <subfield code="e">Jahrestagung</subfield>
+      <subfield code="n">27.</subfield>
+      <subfield code="d">2018</subfield>
+      <subfield code="c">Frankfurt am Main</subfield>
+      <subfield code="0">(DE-588)119466900X</subfield>
+      <subfield code="4">aut</subfield>
+      <subfield code="B">GND-119466900X</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Diversit&#xE4;t und soziale Ungleichheit</subfield>
+      <subfield code="b">Herausforderungen an die Integrationsleistung der Grundschule</subfield>
+      <subfield code="c">Nina Skorsetz, Marina Bonanati, Diemut Kucharz (Hrsg.)</subfield>
+    </datafield>
+    <datafield tag="264" ind1=" " ind2="1">
+      <subfield code="a">Wiesbaden</subfield>
+      <subfield code="b">Springer VS</subfield>
+      <subfield code="c">[2020]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">1 Online-Ressource</subfield>
+    </datafield>
+    <datafield tag="336" ind1=" " ind2=" ">
+      <subfield code="b">txt</subfield>
+    </datafield>
+    <datafield tag="337" ind1=" " ind2=" ">
+      <subfield code="b">c</subfield>
+    </datafield>
+    <datafield tag="338" ind1=" " ind2=" ">
+      <subfield code="b">cr</subfield>
+    </datafield>
+    <datafield tag="347" ind1=" " ind2=" ">
+      <subfield code="a">Textdatei</subfield>
+      <subfield code="b">PDF</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">Jahrbuch Grundschulforschung</subfield>
+      <subfield code="v">Band 24</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code="a">Grundschulp&#xE4;dagogik</subfield>
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4158406-5</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=041584066</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|041584066</subfield>
+      <subfield code="B">GND-041584066</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="1">
+      <subfield code="a">Heterogenit&#xE4;t</subfield>
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4201275-2</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=042012759</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|042012759</subfield>
+      <subfield code="B">GND-042012759</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="2">
+      <subfield code="a">Soziale Ungleichheit</subfield>
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4055736-4</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=040557367</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|040557367</subfield>
+      <subfield code="B">GND-040557367</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="3">
+      <subfield code="a">Professionalisierung</subfield>
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4047376-4</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=040473767</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|040473767</subfield>
+      <subfield code="B">GND-040473767</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Jahrbuch Grundschulforschung</subfield>
+      <subfield code="w">(DE-605)HT017955487</subfield>
+      <subfield code="v">24</subfield>
+      <subfield code="9">O:1</subfield>
+    </datafield>
+    <datafield tag="912" ind1=" " ind2=" ">
+      <subfield code="a">ZDB-22-CAN</subfield>
+    </datafield>
+    <datafield tag="962" ind1=" " ind2=" ">
+      <subfield code="e">ZDB-22-CAN</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">051</subfield>
+      <subfield code="A">sk||||||</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">030</subfield>
+      <subfield code="A">a|1ur||||||27</subfield>
+    </datafield>
+    <datafield tag="964" ind1="0" ind2="s">
+      <subfield code="F">050</subfield>
+      <subfield code="A">||||||||g|||||</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-599)HBZHT021206141</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Skorsetz, Nina</subfield>
+      <subfield code="0">(DE-588)1194098134</subfield>
+      <subfield code="4">edt</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=1194098134</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|1194098134</subfield>
+      <subfield code="B">GND-1194098134</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Bonanati, Marina</subfield>
+      <subfield code="0">(DE-588)1105067130</subfield>
+      <subfield code="4">edt</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=1105067130</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|1105067130</subfield>
+      <subfield code="B">GND-1105067130</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Kucharz, Diemut</subfield>
+      <subfield code="d">1959-</subfield>
+      <subfield code="0">(DE-588)12212541X</subfield>
+      <subfield code="4">edt</subfield>
+      <subfield code="0">(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&amp;cqlMode=true&amp;query=idn=12212541X</subfield>
+      <subfield code="0">(uri) http://viaf.org/viaf/sourceID/DNB|12212541X</subfield>
+      <subfield code="B">GND-12212541X</subfield>
+    </datafield>
+    <datafield tag="776" ind1="0" ind2="8">
+      <subfield code="i">Erscheint auch als</subfield>
+      <subfield code="n">Druck-Ausgabe</subfield>
+      <subfield code="z">9783658275280</subfield>
+      <subfield code="9">978-3-658-27528-0</subfield>
+      <subfield code="0">(uri) http://www.isbnsearch.org/isbn/9783658275280</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Education&#x2014;Research</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Konferenzschrift</subfield>
+      <subfield code="y">2018</subfield>
+      <subfield code="z">Frankfurt am Main</subfield>
+      <subfield code="0">(DE-588)1071861417</subfield>
+      <subfield code="2">gnd-content</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">"... im Rahmen der 27. Jahrestagung der Kommission "Grundschulforschung und P&#xE4;dagogik der Primarstufe" in der DGfE-Sektion "Schulp&#xE4;dagogik" vom 24.-26. September 2018 an der Goethe-Universit&#xE4;t Frankfurt analysiert und diskutiert" - Einleitung</subfield>
+    </datafield>
+    <datafield tag="506" ind1="1" ind2=" ">
+      <subfield code="a">Kein Open Access</subfield>
+      <subfield code="f">Online access with authorization</subfield>
+      <subfield code="2">star</subfield>
+    </datafield>
+    <datafield tag="MBD" ind1=" " ind2=" ">
+      <subfield code="M">49HBZ_NETWORK</subfield>
+      <subfield code="i">99371142325706441</subfield>
+      <subfield code="n">HBZ Network</subfield>
+    </datafield>
+    <datafield tag="MNG" ind1=" " ind2=" ">
+      <subfield code="c">System</subfield>
+      <subfield code="f">HBZ</subfield>
+      <subfield code="i">marc21</subfield>
+      <subfield code="h">20220121094700.0</subfield>
+      <subfield code="k">01</subfield>
+      <subfield code="e">false</subfield>
+      <subfield code="d">2022-01-21 10:30:40 Europe/Berlin</subfield>
+      <subfield code="g">HT021206141</subfield>
+      <subfield code="j">60</subfield>
+      <subfield code="a">System</subfield>
+      <subfield code="b">2022-01-20 14:30:51 Europe/Berlin</subfield>
+    </datafield>
+    <datafield tag="GKS" ind1="2" ind2=" ">
+      <subfield code="a">Jahrestagung der DGfE-Kommission Grundschulforschung und P&#xE4;dagogik der Primarstufe</subfield>
+      <subfield code="n">27.</subfield>
+      <subfield code="d">2018</subfield>
+      <subfield code="c">Frankfurt am Main</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-119466900X</subfield>
+      <subfield code="C">411</subfield>
+    </datafield>
+    <datafield tag="GKS" ind1="2" ind2=" ">
+      <subfield code="a">Jahrestagung der Kommission Grundschulforschung und P&#xE4;dagogik der Primarstufe der DGfE</subfield>
+      <subfield code="n">27.</subfield>
+      <subfield code="d">2018</subfield>
+      <subfield code="c">Frankfurt am Main</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-119466900X</subfield>
+      <subfield code="C">411</subfield>
+    </datafield>
+    <datafield tag="GKS" ind1="2" ind2=" ">
+      <subfield code="a">27. Jahrestagung der Kommission Grundschulforschung und P&#xE4;dagogik der Primarstufe der DGfE</subfield>
+      <subfield code="4">nauv</subfield>
+      <subfield code="4">https://d-nb.info/standards/elementset/gnd#variantName</subfield>
+      <subfield code="w">r</subfield>
+      <subfield code="i">Unveraenderte Form</subfield>
+      <subfield code="j">Unveraenderte Form</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-119466900X</subfield>
+      <subfield code="C">411</subfield>
+    </datafield>
+    <datafield tag="GKS" ind1="2" ind2=" ">
+      <subfield code="a">Diversit&#xE4;t und soziale Ungleichheit</subfield>
+      <subfield code="g">Veranstaltung</subfield>
+      <subfield code="d">2018</subfield>
+      <subfield code="c">Frankfurt am Main</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-119466900X</subfield>
+      <subfield code="C">411</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">119466900X</subfield>
+      <subfield code="0">http://d-nb.info/gnd/119466900X</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-119466900X</subfield>
+      <subfield code="C">024</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">12212541X</subfield>
+      <subfield code="0">http://d-nb.info/gnd/12212541X</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-12212541X</subfield>
+      <subfield code="C">024</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">http://d-nb.info/gnd/4047376-4</subfield>
+      <subfield code="2">uri</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-040473767</subfield>
+      <subfield code="C">024</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Gesellschaftliche Ungleichheit</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-040557367</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Sozialer Unterschied</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-040557367</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Soziale Differenz</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-040557367</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">http://d-nb.info/gnd/4055736-4</subfield>
+      <subfield code="2">uri</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-040557367</subfield>
+      <subfield code="C">024</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Inhomogenit&#xE4;t</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-042012759</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Verschiedenartigkeit</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-042012759</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Uneinheitlichkeit</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-042012759</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">4201275-2</subfield>
+      <subfield code="0">http://d-nb.info/gnd/4201275-2</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-042012759</subfield>
+      <subfield code="C">024</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Grundschule</subfield>
+      <subfield code="x">Pa&#x308;dagogik</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041584066</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GST" ind1=" " ind2=" ">
+      <subfield code="a">Schulpa&#x308;dagogik</subfield>
+      <subfield code="x">Grundschule</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041584066</subfield>
+      <subfield code="C">450</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">http://d-nb.info/gnd/4158406-5</subfield>
+      <subfield code="2">uri</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-041584066</subfield>
+      <subfield code="C">024</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">1105067130</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1105067130</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-1105067130</subfield>
+      <subfield code="C">024</subfield>
+    </datafield>
+    <datafield tag="GSI" ind1="7" ind2=" ">
+      <subfield code="a">1194098134</subfield>
+      <subfield code="0">http://d-nb.info/gnd/1194098134</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="A">GND</subfield>
+      <subfield code="B">GND-1194098134</subfield>
+      <subfield code="C">024</subfield>
     </datafield>
   </record>
 </collection>

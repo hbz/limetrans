@@ -607,6 +607,9 @@
   }, {
     "uid" : "(DE-468)WU000014939"
   } ],
+  "Item" : [ {
+    "callnumber" : "22J45-B"
+  } ],
   "TitleOther" : {
     "title" : [ "<<The>> journals of gerontology / B", "Psychological sciences and social sciences", "Journal of gerontology", "Journal of gerontology" ]
   }
@@ -748,6 +751,8 @@
   } ],
   "IdentifierZDB" : [ {
     "identifierZDB" : "2657415-9"
+  }, {
+    "identifierZDB" : "2000386-9"
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "2046-6080"
@@ -1672,4 +1677,62 @@
   "TitleOther" : {
     "title" : [ "Tunnels and tunnelling" ]
   }
+}
+{
+  "collection" : "DE-468",
+  "CreatorStatement" : {
+    "creatorStatement" : "Max Aub"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Spanisch" ],
+    "date" : [ "2003" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Campus Grifflenberg" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "9915993472406447",
+    "identifierMMSIZ" : "9915993472406447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-468)9915993472406447",
+    "identifierForTheRecord" : "(DE-468)9915993472406447"
+  },
+  "Language" : [ {
+    "languageSource" : "   "
+  }, {
+    "language" : "Spanisch",
+    "languageSource" : "spa"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "8466310746" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Aub, Max"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Campo cerrado"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Madrid" ],
+    "name" : [ "punto de lectura" ],
+    "chronology" : [ "[abril 2003]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[abril 2003]" ]
+  },
+  "Extent" : {
+    "extent" : "249 Seiten"
+  },
+  "xbib" : [ {
+    "uid" : "(DE-468)9915993472406447"
+  } ],
+  "Item" : [ {
+    "callnumber" : "FZZ1"
+  } ]
 }
