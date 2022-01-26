@@ -1,12 +1,17 @@
-package hbz.limetrans.metamorph;
+package hbz.limetrans.function;
 
+import org.metafacture.metafix.Metafix;
+import org.metafacture.metafix.Record;
+import org.metafacture.metafix.api.FixFunction;
 import org.metafacture.metamorph.api.helpers.AbstractSimpleStatelessFunction;
 
+import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 
-public class ZDB extends AbstractSimpleStatelessFunction {
+public class ZDB extends AbstractSimpleStatelessFunction implements FixFunction {
 
     private static final Pattern PATTERN = Pattern.compile("^(\\d{2,10})-?([\\dxX])\\b");
 
@@ -37,6 +42,11 @@ public class ZDB extends AbstractSimpleStatelessFunction {
         }
 
         return null;
+    }
+
+    @Override
+    public void apply(final Metafix aMetafix, final Record aRecord, final List<String> aParams, final Map<String, String> aOptions) {
+        aRecord.transformFields(aParams, this::process);
     }
 
 }
