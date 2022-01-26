@@ -102,7 +102,7 @@
     "title" : "Informationsdienst zum Geräte- und Produktsicherheitsgesetz GPSG"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Hrsg.: Bundesanstalt für Arbeitsschutz und Arbeitsmedizin"
+    "creatorStatement" : [ "Hrsg.: Bundesanstalt für Arbeitsschutz und Arbeitsmedizin" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -190,7 +190,6 @@
 }
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
@@ -239,13 +238,13 @@
     "uid" : "(DE-A96)991004536033306444"
   } ],
   "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : "Zeitschrift",
   "TitleOther" : {
     "title" : [ "Olive Wreath" ]
   }
 }
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
@@ -291,6 +290,7 @@
     "uid" : "(DE-A96)991004536032806444"
   } ],
   "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : "Zeitschrift",
   "TitleOther" : {
     "title" : [ "Olio" ]
   }
@@ -298,7 +298,7 @@
 {
   "collection" : "DE-A96",
   "CreatorStatement" : {
-    "creatorStatement" : "in Zusammenarbeit mit: Forschungszentrum Jülich (Dipl.-Ing. Karl Heinz Graf)"
+    "creatorStatement" : [ "in Zusammenarbeit mit: Forschungszentrum Jülich (Dipl.-Ing. Karl Heinz Graf)" ]
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
@@ -350,7 +350,7 @@
 {
   "collection" : "DE-A96",
   "CreatorStatement" : {
-    "creatorStatement" : "in Zusammenarbeit mit: RWTH Aachen/Institut für Angewandte Medizintechnik (Dipl.-Ing. Stephanie Schmitz)"
+    "creatorStatement" : [ "in Zusammenarbeit mit: RWTH Aachen/Institut für Angewandte Medizintechnik (Dipl.-Ing. Stephanie Schmitz)" ]
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
@@ -451,7 +451,7 @@
 {
   "collection" : "DE-A96",
   "CreatorStatement" : {
-    "creatorStatement" : "in Zusammenarbeit mit: Uniklinikum Köln/Institute für Humangenetik (Dr. Min Jeong Kye)"
+    "creatorStatement" : [ "in Zusammenarbeit mit: Uniklinikum Köln/Institute für Humangenetik (Dr. Min Jeong Kye)" ]
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
@@ -501,13 +501,12 @@
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "genomics, transcriptomics, proteomics"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Günter Kahl"
+    "creatorStatement" : [ "Günter Kahl" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -572,12 +571,13 @@
     "uid" : "(DE-A96)991001492349706444"
   }, {
     "uid" : "(DE-A96)202547"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Kym Anderson, Michael Bosworth"
+    "creatorStatement" : [ "Kym Anderson, Michael Bosworth" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -654,6 +654,10 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "RSWK" : [ {
+    "subjectCorporateBodyName" : "Asia Pacific Economic Cooperation (Organization)"
+  }, {
+    "subjectCorporateBodyName" : "World Trade Organization"
+  }, {
     "subjectTopicName" : "Commerce"
   }, {
     "subjectTopicName" : "Business & Economics"
@@ -663,16 +667,12 @@
     "subjectGeoName" : "Papua New Guinea"
   }, {
     "subjectGeoName" : "Oceania"
-  }, {
-    "subjectCorporateBodyName" : "Asia Pacific Economic Cooperation (Organization)"
-  }, {
-    "subjectCorporateBodyName" : "World Trade Organization"
   } ]
 }
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Manfred Hegger, Hans Drexler, Martin Zeumer"
+    "creatorStatement" : [ "Manfred Hegger, Hans Drexler, Martin Zeumer" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -753,13 +753,12 @@
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "ein Handbuch zur Einführung in die fachliche Informationsarbeit"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Marianne Buder ... (Hrsg.). Begr. von Klaus Laisiepen .."
+    "creatorStatement" : [ "Marianne Buder ... (Hrsg.). Begr. von Klaus Laisiepen .." ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -825,13 +824,13 @@
     "uid" : "(DE-A96)991001206629706444"
   }, {
     "uid" : "(DE-A96)150758"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Mark Skipper"
+    "creatorStatement" : [ "Mark Skipper" ]
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
@@ -894,12 +893,13 @@
     "uid" : "(DE-A96)991002138299706444"
   }, {
     "uid" : "(DE-A96)231536"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
   "collection" : "DE-A96",
   "CreatorStatement" : {
-    "creatorStatement" : "in Zusammenarbeit mit: Forschungszentrum Jülich (Dipl.-Ing. Karl Heinz Graf)"
+    "creatorStatement" : [ "in Zusammenarbeit mit: Forschungszentrum Jülich (Dipl.-Ing. Karl Heinz Graf)" ]
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
@@ -952,7 +952,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "series editor, Dr. Richard Hull"
+    "creatorStatement" : [ "series editor, Dr. Richard Hull" ]
   },
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
@@ -976,11 +976,9 @@
   },
   "DateFirst" : {
     "date" : "2011",
-    "date" : "2011",
     "date" : "2011"
   },
   "DateLast" : {
-    "date" : "2017",
     "date" : "2017"
   },
   "Language" : [ {
@@ -1034,7 +1032,7 @@
 {
   "collection" : "DE-A96",
   "CreatorStatement" : {
-    "creatorStatement" : "in Zusammenarbeit mit: RWTH Aachen/Institut für Angewandte Medizintechnik (Dipl.-Ing. Stephanie Schmitz)"
+    "creatorStatement" : [ "in Zusammenarbeit mit: RWTH Aachen/Institut für Angewandte Medizintechnik (Dipl.-Ing. Stephanie Schmitz)" ]
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
@@ -1131,7 +1129,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Doris Haas-Arndt"
+    "creatorStatement" : [ "Doris Haas-Arndt" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -1249,8 +1247,6 @@
   }
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "Zeitschrift der Gesellschaft Deutscher Chemiker"
@@ -1356,6 +1352,8 @@
   }, {
     "uid" : "(DE-A96)177135"
   } ],
+  "TypePeriodical" : "Schriftenreihe",
+  "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "63 ZS 104"
   } ],
@@ -1364,13 +1362,12 @@
   }
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "ARH"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Zentralverband des Deutschen Baugewerbes .."
+    "creatorStatement" : [ "Zentralverband des Deutschen Baugewerbes .." ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1428,6 +1425,7 @@
   }, {
     "uid" : "(DE-A96)166528"
   } ],
+  "TypePeriodical" : "Schriftenreihe",
   "TitleOther" : {
     "title" : [ "ARH" ]
   }
@@ -1438,7 +1436,7 @@
     "title" : "Eine kompakte Einführung in Geschichte, Entwicklung und Theorie der Festkörperphysik"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "von Rudolf P. Hübener"
+    "creatorStatement" : [ "von Rudolf P. Hübener" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -1521,11 +1519,11 @@
 }
 {
   "collection" : "DE-A96",
-  "CreatorStatement" : {
-    "creatorStatement" : "ANSI/ISA ; ANSI/ISA"
-  },
   "VolumeDesignation" : {
     "volumeDesignation" : "62443-3-3"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "ANSI/ISA ; ANSI/ISA" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1593,10 +1591,9 @@
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "hrsg. von Niels Birbaumer .."
+    "creatorStatement" : [ "hrsg. von Niels Birbaumer .." ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1661,7 +1658,8 @@
     "uid" : "(DE-A96)991005391079706444"
   }, {
     "uid" : "(DE-A96)391042"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
   "collection" : "DE-605",
@@ -1669,7 +1667,7 @@
     "title" : "Praxishandbuch für Java- und Webservice-Entwickler"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Kai Spichale"
+    "creatorStatement" : [ "Kai Spichale" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -1781,10 +1779,9 @@
 }
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Zeitschrift", "Sonstiges" ],
+    "type" : [ "Sonstiges", "Zeitschrift" ],
     "language" : [ "Englisch" ],
     "date" : [ "1982" ]
   },
@@ -1803,8 +1800,8 @@
     "identifierForTheRecord" : "(DE-605)99370677324206441"
   },
   "DateFirst" : {
-    "date" : "1982",
-    "date" : "2007"
+    "date" : "2007",
+    "date" : "1982"
   },
   "DateLast" : {
     "date" : "2011"
@@ -1845,6 +1842,7 @@
     "uid" : "(DE-A96)991005820384406444"
   } ],
   "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : "Zeitschrift",
   "RSWK" : [ {
     "subjectTopicName" : "Art",
     "subjectGenre" : "Periodicals"
@@ -1854,7 +1852,6 @@
 }
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
@@ -1877,12 +1874,12 @@
   },
   "DateFirst" : {
     "date" : "1989",
-    "date" : "1989",
-    "date" : "2000"
+    "date" : "2000",
+    "date" : "1989"
   },
   "DateLast" : {
-    "date" : "1994",
-    "date" : "2005"
+    "date" : "2005",
+    "date" : "1994"
   },
   "Language" : [ {
     "language" : "Deutsch",
@@ -1933,6 +1930,7 @@
     "uid" : "(DE-A96)991005822976806444"
   } ],
   "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : "Zeitschrift",
   "RSWK" : [ {
     "subjectTopicName" : "Vacuum technology",
     "subjectGenre" : "Periodicals"

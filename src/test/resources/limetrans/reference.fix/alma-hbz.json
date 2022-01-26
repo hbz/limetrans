@@ -90,7 +90,7 @@
     "title" : "75 Jahre Fußball-Geschichte"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "[Mitarb.: Helmut von Bruck ...]"
+    "creatorStatement" : [ "[Mitarb.: Helmut von Bruck ...]" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -156,7 +156,7 @@
     "title" : "Informationsdienst zum Geräte- und Produktsicherheitsgesetz GPSG"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Hrsg.: Bundesanstalt für Arbeitsschutz und Arbeitsmedizin"
+    "creatorStatement" : [ "Hrsg.: Bundesanstalt für Arbeitsschutz und Arbeitsmedizin" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -240,7 +240,7 @@
     "volumeDesignation" : "45"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Kotzebue"
+    "creatorStatement" : [ "Kotzebue" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -292,7 +292,6 @@
 }
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
@@ -328,13 +327,13 @@
     "uid" : "(DE-605)99366597115306441"
   } ],
   "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : "Zeitschrift",
   "TitleOther" : {
     "title" : [ "Olive Wreath" ]
   }
 }
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
@@ -366,18 +365,18 @@
     "uid" : "(DE-605)99366597114806441"
   } ],
   "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : "Zeitschrift",
   "TitleOther" : {
     "title" : [ "Olio" ]
   }
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "genomics, transcriptomics, proteomics"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Günter Kahl"
+    "creatorStatement" : [ "Günter Kahl" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -438,7 +437,8 @@
     "uid" : "(DE-605)990124532860206441"
   }, {
     "uid" : "(DE-605)HT013905202"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
   "collection" : "DE-605",
@@ -446,7 +446,7 @@
     "title" : "unter besonderer Berücksichtigung der Faktoren- und Transformationsanalyse"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "von J. Roppert u. G. Fischer"
+    "creatorStatement" : [ "von J. Roppert u. G. Fischer" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -491,16 +491,6 @@
     "extent" : "74 S."
   },
   "TitleSuper" : [ {
-    "titleSuper" : [ "Arbeiten aus dem Institut für Höhere Studien und Wissenschaftliche Forschung" ]
-  }, {
-    "titleSuper" : [ "Arbeiten aus dem Institut für Höhere Studien und Wissenschaftliche Forschung" ]
-  }, {
-    "titleSuper" : [ "Arbeiten aus dem Institut für Höhere Studien und Wissenschaftliche Forschung" ]
-  }, {
-    "titleSuper" : [ "Arbeiten aus dem Institut für Höhere Studien und Wissenschaftliche Forschung" ]
-  }, {
-    "titleSuper" : [ "Arbeiten aus dem Institut für Höhere Studien und Wissenschaftliche Forschung" ]
-  }, {
     "titleSuper" : [ "Arbeiten aus dem Institut für Höhere Studien und Wissenschaftliche Forschung" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
@@ -589,7 +579,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Monika Schwinn ; Bernhard Diehl"
+    "creatorStatement" : [ "Monika Schwinn ; Bernhard Diehl" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -660,7 +650,7 @@
     "title" : "Februar bis Mai 1923"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "von Heinrich Seilkopf u. Georg Stüve"
+    "creatorStatement" : [ "von Heinrich Seilkopf u. Georg Stüve" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -760,10 +750,6 @@
   },
   "TitleSuper" : [ {
     "titleSuper" : [ "STANFORD STUDIES IN LANGUAGE AND LITERATURE. 23" ]
-  }, {
-    "titleSuper" : [ "STANFORD STUDIES IN LANGUAGE AND LITERATURE. 23" ]
-  }, {
-    "titleSuper" : [ "STANFORD STUDIES IN LANGUAGE AND LITERATURE. 23" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "23" ]
@@ -844,7 +830,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "von Schwerber"
+    "creatorStatement" : [ "von Schwerber" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1013,10 +999,6 @@
     "titleSuper" : [ "BIBLIOTECA DI CULTURA MODERNA" ]
   }, {
     "titleSuper" : [ "UNIVERSALE LATERZA" ]
-  }, {
-    "titleSuper" : [ "BIBLIOTECA DI CULTURA MODERNA" ]
-  }, {
-    "titleSuper" : [ "UNIVERSALE LATERZA" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "499" ]
@@ -1042,7 +1024,7 @@
     "title" : "der Weg zur akademischen Gemeinschaft"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "hrsg. von Hans Roeseler"
+    "creatorStatement" : [ "hrsg. von Hans Roeseler" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1089,8 +1071,6 @@
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "Hefte zur Hochschule" ]
-  }, {
-    "titleSuper" : [ "Hefte zur Hochschule" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "2" ]
@@ -1109,7 +1089,7 @@
     "title" : "ein Leitfaden für Schule u. Praxis"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "von Ludwig Schweers u. Heinz Gerards"
+    "creatorStatement" : [ "von Ludwig Schweers u. Heinz Gerards" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1178,7 +1158,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Hubert Berens"
+    "creatorStatement" : [ "Hubert Berens" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1228,16 +1208,6 @@
   },
   "TitleSuper" : [ {
     "titleSuper" : [ "Lecture notes in mathematics" ]
-  }, {
-    "titleSuper" : [ "Lecture notes in mathematics" ]
-  }, {
-    "titleSuper" : [ "Lecture notes in mathematics" ]
-  }, {
-    "titleSuper" : [ "Lecture notes in mathematics" ]
-  }, {
-    "titleSuper" : [ "Lecture notes in mathematics" ]
-  }, {
-    "titleSuper" : [ "Lecture notes in mathematics" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "64" ]
@@ -1268,7 +1238,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "vorgelegt von Ulrich Göbel"
+    "creatorStatement" : [ "vorgelegt von Ulrich Göbel" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1324,7 +1294,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Ulrich Schweinfurth"
+    "creatorStatement" : [ "Ulrich Schweinfurth" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1444,7 +1414,7 @@
     "title" : "interruption losses and other commercial damages"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Patrick A. Gaughan"
+    "creatorStatement" : [ "Patrick A. Gaughan" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1503,7 +1473,7 @@
     "title" : "(first decade of planning) ; a theoretical analysis"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "by M. C. Sekhar"
+    "creatorStatement" : [ "by M. C. Sekhar" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1564,7 +1534,7 @@
     "titleUniform" : "Ringtheorie <engl.>"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Ernst-August Behrens"
+    "creatorStatement" : [ "Ernst-August Behrens" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1614,16 +1584,6 @@
   },
   "TitleSuper" : [ {
     "titleSuper" : [ "Pure and applied mathematics" ]
-  }, {
-    "titleSuper" : [ "Pure and applied mathematics" ]
-  }, {
-    "titleSuper" : [ "Pure and applied mathematics" ]
-  }, {
-    "titleSuper" : [ "Pure and applied mathematics" ]
-  }, {
-    "titleSuper" : [ "Pure and applied mathematics" ]
-  }, {
-    "titleSuper" : [ "Pure and applied mathematics" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "44" ]
@@ -1654,7 +1614,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Richard Schwarz"
+    "creatorStatement" : [ "Richard Schwarz" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1753,8 +1713,8 @@
   "PersonContributor" : [ {
     "personName" : "Clemens August",
     "personNumbering" : "I.",
-    "personBio" : "1700-1761",
     "personTitle" : [ "Köln, Erzbischof" ],
+    "personBio" : "1700-1761",
     "personIdentifier" : [ "(DE-588)118634224" ],
     "identifierGND" : [ "118634224" ]
   } ],
@@ -1770,7 +1730,7 @@
     "title" : "ein Leitfaden f. Mittel- u. Kleinbetriebe zur Rentabilitätskontrolle der Warenbewegung"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "von Rudolf Schwarz"
+    "creatorStatement" : [ "von Rudolf Schwarz" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1831,7 +1791,7 @@
     "title" : "Beschäftigungsfelder, Arbeitgeberwünsche, Crashkurs Bewerben"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Isolde Debus-Spangenberg"
+    "creatorStatement" : [ "Isolde Debus-Spangenberg" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1907,7 +1867,7 @@
     "titleUniform" : "<<L'>> astronomie expérimentale <engl.>"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Jean-Claude Pecker"
+    "creatorStatement" : [ "Jean-Claude Pecker" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1955,12 +1915,6 @@
   },
   "TitleSuper" : [ {
     "titleSuper" : [ "Astrophysics and space science library" ]
-  }, {
-    "titleSuper" : [ "Astrophysics and space science library" ]
-  }, {
-    "titleSuper" : [ "Astrophysics and space science library" ]
-  }, {
-    "titleSuper" : [ "Astrophysics and space science library" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "18" ]
@@ -1980,7 +1934,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "vorgelegt von Fabian Walders"
+    "creatorStatement" : [ "vorgelegt von Fabian Walders" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -2045,7 +1999,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Otto Schwindrazheim"
+    "creatorStatement" : [ "Otto Schwindrazheim" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -2194,8 +2148,6 @@
   },
   "TitleSuper" : [ {
     "titleSuper" : [ "MATHEMATICS IN SCIENCE AND ENGINEERING. VOL. 45" ]
-  }, {
-    "titleSuper" : [ "MATHEMATICS IN SCIENCE AND ENGINEERING. VOL. 45" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "45" ]
@@ -2217,7 +2169,7 @@
     "titleUniform" : "<<La>> Croisade des enfants <dt.>"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Marcel Schwob. [Ber. Übertr. von Arthur Seiffhart]"
+    "creatorStatement" : [ "Marcel Schwob. [Ber. Übertr. von Arthur Seiffhart]" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -2282,7 +2234,7 @@
     "title" : "die Entwicklung von Produktion u. Investitionen in 10 Industrieländern Westeuropas ; capital investment in Western Europe, 1958 - 1985 ; investissements en Europe occidentale, 1958 - 1985"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "von Aloys Schwietert u. Reinhold A. Vogelsang unter Mitarb. von Gyula Büti [u.a.]"
+    "creatorStatement" : [ "von Aloys Schwietert u. Reinhold A. Vogelsang unter Mitarb. von Gyula Büti [u.a.]" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -2325,8 +2277,6 @@
     "extent" : "XVII, 281, 324 S. ; 4-o"
   },
   "TitleSuper" : [ {
-    "titleSuper" : [ "Prognos-Report" ]
-  }, {
     "titleSuper" : [ "Prognos-Report" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
@@ -2450,7 +2400,7 @@
     "title" : "den anglosachsiska väckelsångens genombrott i Sverige ; with a summary in English"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Sven-Åke Selander"
+    "creatorStatement" : [ "Sven-Åke Selander" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -2504,7 +2454,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "by L. Marder"
+    "creatorStatement" : [ "by L. Marder" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -2554,12 +2504,6 @@
   },
   "TitleSuper" : [ {
     "titleSuper" : [ "Unwin studies in physics and applied mathematics" ]
-  }, {
-    "titleSuper" : [ "Unwin studies in physics and applied mathematics" ]
-  }, {
-    "titleSuper" : [ "Unwin studies in physics and applied mathematics" ]
-  }, {
-    "titleSuper" : [ "Unwin studies in physics and applied mathematics" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "3" ]
@@ -2579,7 +2523,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "by Tadeusz Bałaban"
+    "creatorStatement" : [ "by Tadeusz Bałaban" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -2625,16 +2569,6 @@
   },
   "TitleSuper" : [ {
     "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
-  }, {
-    "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
-  }, {
-    "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
-  }, {
-    "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
-  }, {
-    "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
-  }, {
-    "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "112" ]
@@ -2661,7 +2595,7 @@
     "title" : "über Gestalt und Geschichtlichkeit mittelhochdeutscher Lyrik am Beispiel des Leichs"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "von Karl Heinrich Bertau"
+    "creatorStatement" : [ "von Karl Heinrich Bertau" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -2708,14 +2642,6 @@
   },
   "TitleSuper" : [ {
     "titleSuper" : [ "Palaestra" ]
-  }, {
-    "titleSuper" : [ "Palaestra" ]
-  }, {
-    "titleSuper" : [ "Palaestra" ]
-  }, {
-    "titleSuper" : [ "Palaestra" ]
-  }, {
-    "titleSuper" : [ "Palaestra" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "240" ]
@@ -2744,7 +2670,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "by Helen Skala"
+    "creatorStatement" : [ "by Helen Skala" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -2793,12 +2719,6 @@
   },
   "TitleSuper" : [ {
     "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
-  }, {
-    "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
-  }, {
-    "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
-  }, {
-    "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "121" ]
@@ -2825,7 +2745,7 @@
     "title" : "1521 - 1576"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Blaise de Monluc. Éd. critique établie et annotée par Paul Courteault"
+    "creatorStatement" : [ "Blaise de Monluc. Éd. critique établie et annotée par Paul Courteault" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -2877,10 +2797,6 @@
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "Bibliothèque de la Pléiade" ]
-  }, {
-    "titleSuper" : [ "Bibliothèque de la Pléiade" ]
-  }, {
-    "titleSuper" : [ "Bibliothèque de la Pléiade" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "174" ]
@@ -2905,7 +2821,7 @@
     "title" : "mit über 100 Notenbeispielen, schematischen Darstellungen u. einer Bildbeil"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "von Gottfried Schweizer"
+    "creatorStatement" : [ "von Gottfried Schweizer" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -2966,7 +2882,7 @@
     "title" : "psychologische Ratschläge zu seiner Lebensführung"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Eduard Schweingruber"
+    "creatorStatement" : [ "Eduard Schweingruber" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -3070,8 +2986,6 @@
   },
   "TitleSuper" : [ {
     "titleSuper" : [ "Queen's papers in pure and applied mathematics" ]
-  }, {
-    "titleSuper" : [ "Queen's papers in pure and applied mathematics" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "28" ]
@@ -3096,7 +3010,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Richard Gameson"
+    "creatorStatement" : [ "Richard Gameson" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -3168,7 +3082,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Anna Sapir Abulafia"
+    "creatorStatement" : [ "Anna Sapir Abulafia" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -3233,7 +3147,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Konrad Seiffert"
+    "creatorStatement" : [ "Konrad Seiffert" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -3294,7 +3208,7 @@
     "title" : "christliche Meditation über das Leben und Sterben und die Sterbehilfe"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Hans Halter"
+    "creatorStatement" : [ "Hans Halter" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -3364,7 +3278,7 @@
     "title" : "kak istoriko-ėtnografičeskij istočnik"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "S.F. Karabanova ; otvetstvennyj redaktor Ju.A. Sem ; chudožnik V.A. Černecov ; Akademija nauk SSSR, Dal'nevostočnyj naučnyj centr, Institut istorii, archeologii i ėtnografii narodov Dal'nego Vostoka"
+    "creatorStatement" : [ "S.F. Karabanova ; otvetstvennyj redaktor Ju.A. Sem ; chudožnik V.A. Černecov ; Akademija nauk SSSR, Dal'nevostočnyj naučnyj centr, Institut istorii, archeologii i ėtnografii narodov Dal'nego Vostoka" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -3473,10 +3387,6 @@
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "BIBLIOTHEQUE DE LA PLEIADE. 65" ]
-  }, {
-    "titleSuper" : [ "BIBLIOTHEQUE DE LA PLEIADE. 65" ]
-  }, {
-    "titleSuper" : [ "BIBLIOTHEQUE DE LA PLEIADE. 65" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "65" ]
@@ -3534,10 +3444,6 @@
   },
   "TitleSuper" : [ {
     "titleSuper" : [ "DE PETRARQUE A DESCARTES. 1" ]
-  }, {
-    "titleSuper" : [ "DE PETRARQUE A DESCARTES. 1" ]
-  }, {
-    "titleSuper" : [ "DE PETRARQUE A DESCARTES. 1" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "1" ]
@@ -3558,7 +3464,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "by S. C. Kleene"
+    "creatorStatement" : [ "by S. C. Kleene" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -3609,10 +3515,6 @@
     "extent" : "68 S."
   },
   "TitleSuper" : [ {
-    "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
-  }, {
-    "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
-  }, {
     "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
@@ -3695,7 +3597,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "J.-P. Eckmann ; M. Guenin"
+    "creatorStatement" : [ "J.-P. Eckmann ; M. Guenin" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -3744,16 +3646,6 @@
     "extent" : "131 S. : graph. Darst."
   },
   "TitleSuper" : [ {
-    "titleSuper" : [ "Lecture notes in mathematics" ]
-  }, {
-    "titleSuper" : [ "Lecture notes in mathematics" ]
-  }, {
-    "titleSuper" : [ "Lecture notes in mathematics" ]
-  }, {
-    "titleSuper" : [ "Lecture notes in mathematics" ]
-  }, {
-    "titleSuper" : [ "Lecture notes in mathematics" ]
-  }, {
     "titleSuper" : [ "Lecture notes in mathematics" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
@@ -3841,7 +3733,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Kym Anderson, Michael Bosworth"
+    "creatorStatement" : [ "Kym Anderson, Michael Bosworth" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -3919,6 +3811,10 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "RSWK" : [ {
+    "subjectCorporateBodyName" : "Asia Pacific Economic Cooperation (Organization)"
+  }, {
+    "subjectCorporateBodyName" : "World Trade Organization"
+  }, {
     "subjectTopicName" : "Commerce"
   }, {
     "subjectTopicName" : "Business & Economics"
@@ -3928,16 +3824,12 @@
     "subjectGeoName" : "Papua New Guinea"
   }, {
     "subjectGeoName" : "Oceania"
-  }, {
-    "subjectCorporateBodyName" : "Asia Pacific Economic Cooperation (Organization)"
-  }, {
-    "subjectCorporateBodyName" : "World Trade Organization"
   } ]
 }
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Manfred Hegger, Hans Drexler, Martin Zeumer"
+    "creatorStatement" : [ "Manfred Hegger, Hans Drexler, Martin Zeumer" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -4015,7 +3907,7 @@
     "title" : "eine Einführung"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Karl M. Setzen"
+    "creatorStatement" : [ "Karl M. Setzen" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -4069,13 +3961,12 @@
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "Strategien, Konzepte und Lösungen für die JIT-Beschaffung, -Produktion und -Distribution"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Klaus J. Schmidt (Hrsg.)"
+    "creatorStatement" : [ "Klaus J. Schmidt (Hrsg.)" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -4123,7 +4014,8 @@
     "uid" : "(DE-605)990048857150206441"
   }, {
     "uid" : "(DE-605)HT003638156"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
   "collection" : "DE-605",
@@ -4131,7 +4023,7 @@
     "title" : "zum soziologischen Profil von Literaturübersetzern aus dem Französischen"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Cornelia Lauber"
+    "creatorStatement" : [ "Cornelia Lauber" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -4180,14 +4072,6 @@
   },
   "TitleSuper" : [ {
     "titleSuper" : [ "Transfer" ]
-  }, {
-    "titleSuper" : [ "Transfer" ]
-  }, {
-    "titleSuper" : [ "Transfer" ]
-  }, {
-    "titleSuper" : [ "Transfer" ]
-  }, {
-    "titleSuper" : [ "Transfer" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "10" ]
@@ -4222,7 +4106,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Catherine Fenselau, ed. .."
+    "creatorStatement" : [ "Catherine Fenselau, ed. .." ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -4274,8 +4158,6 @@
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "ACS symposium series" ]
-  }, {
-    "titleSuper" : [ "ACS symposium series" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "1065" ]
@@ -4296,13 +4178,12 @@
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "ein Handbuch zur Einführung in die fachliche Informationsarbeit"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Marianne Buder ... (Hrsg.). Begr. von Klaus Laisiepen .."
+    "creatorStatement" : [ "Marianne Buder ... (Hrsg.). Begr. von Klaus Laisiepen .." ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -4364,13 +4245,13 @@
     "uid" : "(DE-605)990050093380206441"
   }, {
     "uid" : "(DE-605)HT007313557"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Mark Skipper"
+    "creatorStatement" : [ "Mark Skipper" ]
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
@@ -4429,7 +4310,8 @@
     "uid" : "(DE-605)990139139240206441"
   }, {
     "uid" : "(DE-605)HT014469732"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
   "collection" : "DE-605",
@@ -4437,7 +4319,7 @@
     "title" : "ways to write better, more idiomatic Perl"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Joseph N. Hall ; Joshua McAdams ; Brian D. Foy"
+    "creatorStatement" : [ "Joseph N. Hall ; Joshua McAdams ; Brian D. Foy" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -4594,7 +4476,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "ed. by: C. Le Bris"
+    "creatorStatement" : [ "ed. by: C. Le Bris" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -4658,8 +4540,6 @@
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "Handbook of numerical analysis" ]
-  }, {
-    "titleSuper" : [ "Handbook of numerical analysis" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "10" ]
@@ -4680,7 +4560,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "series editor, Dr. Richard Hull"
+    "creatorStatement" : [ "series editor, Dr. Richard Hull" ]
   },
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
@@ -4743,7 +4623,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Doris Haas-Arndt"
+    "creatorStatement" : [ "Doris Haas-Arndt" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -4854,7 +4734,7 @@
     "title" : "eine Fallstudie zur Beurteilung der aktuellen Situation und ihrer ökonomischen, politischen und sozialen Auswirkungen"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Peter Michael Müller"
+    "creatorStatement" : [ "Peter Michael Müller" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -4902,8 +4782,6 @@
   },
   "TitleSuper" : [ {
     "titleSuper" : [ "Europäische Hochschulschriften : Reihe 31, Politikwissenschaft" ]
-  }, {
-    "titleSuper" : [ "Europäische Hochschulschriften : Reihe 31, Politikwissenschaft" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "149" ]
@@ -4926,10 +4804,9 @@
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Kühn ; Birett"
+    "creatorStatement" : [ "Kühn ; Birett" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -5007,7 +4884,8 @@
     "uid" : "(DE-605)990048309450206441"
   }, {
     "uid" : "(DE-605)HT002117916"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
   "collection" : "DE-605",
@@ -5015,7 +4893,7 @@
     "title" : "sicherer Umgang mit der DIN 18202 : mit gewerkespezifischen Regeln für den Roh- und Ausbau auf dem Stand VOB 2016"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Petra Derler"
+    "creatorStatement" : [ "Petra Derler" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -5103,8 +4981,6 @@
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "Zeitschrift der Gesellschaft Deutscher Chemiker"
@@ -5202,18 +5078,19 @@
   }, {
     "uid" : "(DE-605)HT012875221"
   } ],
+  "TypePeriodical" : "Schriftenreihe",
+  "TypePeriodical" : "Zeitschrift",
   "TitleOther" : {
     "title" : [ "Analytica pro", "EuCheMS newsletter", "Nachrichten für die Karriere", "Nachrichten für die Chemikerkarriere", "Nachrichten aus der Chemiewirtschaft", "Nano", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker" ]
   }
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "ARH"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Zentralverband des Deutschen Baugewerbes .."
+    "creatorStatement" : [ "Zentralverband des Deutschen Baugewerbes .." ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -5267,6 +5144,7 @@
   }, {
     "uid" : "(DE-605)HT000011758"
   } ],
+  "TypePeriodical" : "Schriftenreihe",
   "TitleOther" : {
     "title" : [ "ARH" ]
   }
@@ -5346,7 +5224,7 @@
     "title" : "Eine kompakte Einführung in Geschichte, Entwicklung und Theorie der Festkörperphysik"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "von Rudolf P. Hübener"
+    "creatorStatement" : [ "von Rudolf P. Hübener" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -5431,7 +5309,7 @@
     "title" : "eine Einführung"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Detlef Horster"
+    "creatorStatement" : [ "Detlef Horster" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -5512,7 +5390,7 @@
     "title" : "Scheidung, Unterhalt, Verfahren : Kommentar"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "mitbegründet von Prof. Kurt H. Johannsen†, weiland Richter am BGH ; herausgegeben von Prof. Dr. Dr. h.c. mult. Dieter Henrich, Regensburg, Prof. Dr. Christoph Althammer, Universität Regensburg ; bearbeitet von Prof. Dr. Christoph Althammer [und 15 weiteren]"
+    "creatorStatement" : [ "mitbegründet von Prof. Kurt H. Johannsen†, weiland Richter am BGH ; herausgegeben von Prof. Dr. Dr. h.c. mult. Dieter Henrich, Regensburg, Prof. Dr. Christoph Althammer, Universität Regensburg ; bearbeitet von Prof. Dr. Christoph Althammer [und 15 weiteren]" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -5622,7 +5500,7 @@
     "title" : "das Ende des Buchzeitalters"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Marshall McLuhan"
+    "creatorStatement" : [ "Marshall McLuhan" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -5703,7 +5581,7 @@
     "title" : "das Praxisbuch"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Wolfram Gieseke"
+    "creatorStatement" : [ "Wolfram Gieseke" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -5783,7 +5661,7 @@
     "title" : "Durchschauen - Kontrollieren - Einsetzen"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Günter Lüttgens, Wolfgang Schubert, Sylvia Lüttgens, Ulrich von Pidoll und Stefan Emde"
+    "creatorStatement" : [ "Günter Lüttgens, Wolfgang Schubert, Sylvia Lüttgens, Ulrich von Pidoll und Stefan Emde" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -5907,13 +5785,12 @@
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "in fünf Bänden"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "hrsg. von Jan Knopf"
+    "creatorStatement" : [ "hrsg. von Jan Knopf" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -5978,10 +5855,10 @@
     "uid" : "(DE-605)990113988060206441"
   }, {
     "uid" : "(DE-605)HT013072137"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -6027,13 +5904,13 @@
     "uid" : "(DE-605)990047829090206441"
   }, {
     "uid" : "(DE-605)HT001332689"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "hrsg. von Niels Birbaumer .."
+    "creatorStatement" : [ "hrsg. von Niels Birbaumer .." ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -6094,11 +5971,10 @@
     "uid" : "(DE-605)990129211850206441"
   }, {
     "uid" : "(DE-605)HT014051766"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -6183,10 +6059,11 @@
     "uid" : "(DE-605)990054150240206441"
   }, {
     "uid" : "(DE-605)HT002193206"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe",
+  "TypePeriodical" : "Zeitschrift"
 }
 {
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -6258,6 +6135,7 @@
   }, {
     "uid" : "(DE-605)HT007028316"
   } ],
+  "TypePeriodical" : "Zeitschrift",
   "TitleOther" : {
     "title" : [ "Tunnels and tunnelling" ]
   }
@@ -6356,7 +6234,7 @@
     "title" : "Praxishandbuch für Java- und Webservice-Entwickler"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Kai Spichale"
+    "creatorStatement" : [ "Kai Spichale" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -6458,7 +6336,7 @@
     "title" : "Aktuelle Ansätze verstehen - mit Beispielen in Java und Greenfoot"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "von Uwe Lorenz"
+    "creatorStatement" : [ "von Uwe Lorenz" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -6551,7 +6429,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "H. A. Weldon [Hrsg.]"
+    "creatorStatement" : [ "H. A. Weldon [Hrsg.]" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -6631,7 +6509,7 @@
     "title" : "Herausforderungen an die Integrationsleistung der Grundschule"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Nina Skorsetz, Marina Bonanati, Diemut Kucharz (Hrsg.)"
+    "creatorStatement" : [ "Nina Skorsetz, Marina Bonanati, Diemut Kucharz (Hrsg.)" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -6733,10 +6611,9 @@
 }
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Zeitschrift", "Sonstiges" ],
+    "type" : [ "Sonstiges", "Zeitschrift" ],
     "language" : [ "Englisch" ],
     "date" : [ "1982" ]
   },
@@ -6785,6 +6662,7 @@
     "uid" : "(DE-605)99370677324206441"
   } ],
   "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : "Zeitschrift",
   "RSWK" : [ {
     "subjectTopicName" : "Art",
     "subjectGenre" : "Periodicals"
@@ -6794,7 +6672,6 @@
 }
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
@@ -6857,6 +6734,7 @@
     "uid" : "(DE-605)99370676979406441"
   } ],
   "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : "Zeitschrift",
   "RSWK" : [ {
     "subjectTopicName" : "Vacuum technology",
     "subjectGenre" : "Periodicals"
@@ -6867,7 +6745,6 @@
   } ]
 }
 {
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
   "VolumeDesignation" : {
     "volumeDesignation" : "[...]"
@@ -6946,6 +6823,7 @@
   }, {
     "uid" : "(DE-605)HT002187703"
   } ],
+  "TypePeriodical" : "Zeitschrift",
   "TitleOther" : {
     "title" : [ "Monatsberichte der Deutschen Bundesbank / Statistische Beihefte / 4" ]
   }

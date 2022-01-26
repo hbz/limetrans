@@ -294,22 +294,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         final Settings regexp = almaSettings.getAsSettings("regexp");
         Stream.of("description").forEach(k -> mVars.put("regexp." + k, regexp.get(k, ".*")));
 
-        if (almaSettings.getAsBoolean("supplements", false)) {
-            rulesSuffix = "-supplements";
-
-            mFilter
-                .add(LimetransFilter.any()
-                        .add(availableForFilter)
-                        .add(LimetransFilter.all()
-                            .add(memberFilter)
-                            .add(itemFilter)))
-                .add(noDeletionFilter)
-                .add(sourceSystemFilter.apply(catalogid.getIsil()));
-        }
-        else {
-            final String deletionLiteral = almaSettings.get("deletion-literal",
-                    mElasticsearchSettings != null ?  mElasticsearchSettings.get("deletionLiteral") : null);
-
+        final Consumer<String> setDeletion = deletionLiteral -> {
             if (deletionLiteral != null) {
                 final String[] deletion = almaDeletion.split("=");
 
@@ -328,6 +313,24 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
                 mFilter
                     .add(noDeletionFilter);
             }
+        };
+
+        if (almaSettings.getAsBoolean("supplements", false)) {
+            rulesSuffix = "-supplements";
+
+            mFilter
+                .add(LimetransFilter.any()
+                        .add(availableForFilter)
+                        .add(LimetransFilter.all()
+                            .add(memberFilter)
+                            .add(itemFilter)))
+                .add(sourceSystemFilter.apply(catalogid.getIsil()));
+
+            setDeletion.accept(null);
+        }
+        else {
+            setDeletion.accept(almaSettings.get("deletion-literal",
+                        mElasticsearchSettings != null ?  mElasticsearchSettings.get("deletionLiteral") : null));
 
             rulesSuffix = "";
 

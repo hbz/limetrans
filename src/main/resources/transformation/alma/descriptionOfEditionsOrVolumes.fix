@@ -1,0 +1,15 @@
+add_field("@descriptionOfEditionsOrVolumes.$append.__dummy__", "")
+if exists("$i.t")
+  if exists("$i.i")
+    copy_field("$i.i", "@descriptionOfEditionsOrVolumes.$last.prefix")
+  else
+    copy_field("@prefix", "@descriptionOfEditionsOrVolumes.$last.prefix")
+  end
+end
+remove_field("@prefix")
+set_array("@description")
+copy_field("$i.a", "@description")
+copy_field("$i.t", "@description")
+join_field("@description", ": ")
+move_field("@description", "@descriptionOfEditionsOrVolumes.$last.description")
+copy_field("$i.n", "@descriptionOfEditionsOrVolumes.$last.note")

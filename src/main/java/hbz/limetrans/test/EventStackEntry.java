@@ -108,10 +108,10 @@ public class EventStackEntry {
     private boolean ignoreMissingName(final Event.Type aType) {
         return switch (aType) {
             // Ignore missing record ID (cf. FileQueue.Processor.JSON)
-            case START_RECORD -> true;
+            case START_RECORD          -> true;
             // Ignore missing array number (cf. FileQueue.Processor.JSON)
-            case LITERAL      -> isArray(mParent.getEvent());
-            default           -> false;
+            case START_ENTITY, LITERAL -> isArray(mParent.getEvent());
+            default                    -> false;
         };
     }
 

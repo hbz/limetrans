@@ -1,119 +1,986 @@
 {
-  "id" : "HT000816547",
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "eine Einführung"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Karl M. Setzen" ]
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1971" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Sozialwissenschaften / Soziologie" ]
+  },
   "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990007179200206441",
     "identifierMMSIZ" : "991001031859706444"
   },
-  "SubjectGHBLocal.subject" : [ "OEG" ],
-  "introx.taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
-  "Item.callnumber" : [ "21 OEG 2" ]
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990007179200206441",
+    "identifierForTheRecord" : "(DE-605)HT000816547"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Setzen, Karl M.",
+    "personIdentifier" : [ "(DE-588)177401427" ],
+    "identifierGND" : [ "177401427" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Die>> Gruppe als soziales Grundgebilde"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Heidenheim an der Brenz" ],
+    "name" : [ "Heidenheimer Verl.-Anst" ],
+    "chronology" : [ "1971" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1971" ]
+  },
+  "Extent" : {
+    "extent" : "103 S. : graph. Darst."
+  },
+  "SubjectHeadings" : [ {
+    "subject" : "Gruppe"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "subject" : "OEG"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990007179200206441"
+  }, {
+    "uid" : "(DE-605)HT000816547"
+  }, {
+    "uid" : "(DE-A96)991001031859706444"
+  }, {
+    "uid" : "(DE-A96)1001"
+  } ],
+  "Item" : [ {
+    "callnumber" : "21 OEG 2"
+  } ]
 }
 {
-  "id" : "HT003638156",
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Strategien, Konzepte und Lösungen für die JIT-Beschaffung, -Produktion und -Distribution"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Klaus J. Schmidt (Hrsg.)" ]
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Schriftenreihe", "Sonstiges" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Wirtschaftswissenschaften" ]
+  },
   "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990048857150206441",
     "identifierMMSIZ" : "991001031669706444"
   },
-  "SubjectGHBLocal.subject" : [ "QBB" ],
-  "introx.taxonomy" : [ "Wirtschaftswissenschaften" ],
-  "Description.description" : [ "vorhanden mit Stand: Mai 2004" ],
-  "Item.callnumber" : [ "21 QBB 134" ]
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990048857150206441",
+    "identifierForTheRecord" : "(DE-605)HT003638156"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Handbuch Logistik und Produktionsmanagement"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Landsberg/Lech" ],
+    "name" : [ "Verl. Moderne Industrie" ]
+  } ],
+  "Extent" : {
+    "extent" : "Losebl.-Ausg."
+  },
+  "Description" : {
+    "description" : [ "vorhanden mit Stand: Mai 2004" ]
+  },
+  "PersonContributor" : [ {
+    "personName" : "Schmidt, Klaus J.",
+    "personIdentifier" : [ "(DE-588)111951097" ],
+    "identifierGND" : [ "111951097" ]
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Logistik"
+  }, {
+    "subject" : "Just-in-time-Produktion"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "subject" : "QBB"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990048857150206441"
+  }, {
+    "uid" : "(DE-605)HT003638156"
+  }, {
+    "uid" : "(DE-A96)991001031669706444"
+  }, {
+    "uid" : "(DE-A96)802"
+  } ],
+  "TypePeriodical" : "Schriftenreihe",
+  "Item" : [ {
+    "callnumber" : "21 QBB 134"
+  } ]
 }
 {
-  "id" : "HT018264803",
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Catherine Fenselau, ed. .." ]
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2011" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Chemie und Chemische Technik", "Biologie" ]
+  },
   "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990203911330206441",
     "identifierMMSIZ" : "991000618589706444"
   },
-  "SubjectGHBLocal.subject" : [ "VOW" ],
-  "introx.taxonomy" : [ "Biologie" ],
-  "Item.callnumber" : [ "61 UTI 12" ]
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990203911330206441",
+    "identifierForTheRecord" : "(DE-605)HT018264803"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9780841226128" ]
+  }, {
+    "identifierISBN" : [ "0841226121", "(hbk.) No price" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Rapid characterization of microorganisms by mass spectrometry"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Washington, DC" ],
+    "name" : [ "American Chemical Society" ],
+    "chronology" : [ "2011" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2011" ]
+  },
+  "Extent" : {
+    "extent" : "VIII, 237 S. : Ill., graph. Darst."
+  },
+  "PersonContributor" : [ {
+    "personName" : "Fenselau, Catherine",
+    "personBio" : "1939-",
+    "personIdentifier" : [ "(DE-588)1018725954" ],
+    "identifierGND" : [ "1018725954" ]
+  } ],
+  "TitleSuper" : [ {
+    "titleSuper" : [ "ACS symposium series" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "1065" ]
+  }, {
+    "volumeDesignation" : [ "1065" ]
+  } ],
+  "SubjectGHBLocal" : [ {
+    "subject" : "UTI"
+  }, {
+    "subject" : "VOW"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990203911330206441"
+  }, {
+    "uid" : "(DE-605)HT018264803"
+  }, {
+    "uid" : "(DE-A96)991000618589706444"
+  }, {
+    "uid" : "(DE-A96)492417"
+  } ],
+  "Item" : [ {
+    "callnumber" : "61 UTI 12"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Microorganisms--Identification"
+  }, {
+    "subjectTopicName" : "Mass spectrometry"
+  }, {
+    "subjectTopicName" : "Microbiological chemistry"
+  } ]
 }
 {
-  "id" : "HT019743301",
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "sicherer Umgang mit der DIN 18202 : mit gewerkespezifischen Regeln für den Roh- und Ausbau auf dem Stand VOB 2016"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Petra Derler" ]
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2017" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Bayernallee" ],
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Architektur und Bauingenieurwesen" ]
+  },
   "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990225508660206441",
     "identifierMMSIZ" : "991002764539706444"
   },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990225508660206441",
+    "identifierForTheRecord" : "(DE-605)HT019743301"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783811101180", "Broschur" ]
+  }, {
+    "identifierISBN" : [ "9783811101180", "Broschur" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Derler, Petra",
+    "personIdentifier" : [ "(DE-588)115793771" ],
+    "identifierGND" : [ "115793771" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Maßtoleranzen im Baualltag"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Kissing" ],
+    "name" : [ "Weka Media" ],
+    "chronology" : [ "[2017]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2017]" ]
+  },
+  "Extent" : {
+    "extent" : "348 Seiten : Illustrationen, Diagramme ; 21 cm ; CD-ROM (12 cm)"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Praxislösungen" ]
+  } ],
+  "Description" : {
+    "description" : [ "CD-ROM: Titel-Nr.: CD8198-2003", "CD-ROM: Titel-Nr.: CD8198-2003" ]
+  },
+  "Summary" : {
+    "abstract" : [ "Ohne Probleme halten Sie die zulässigen Maßtoleranzen ein. Sie sorgen für einen reibungslosen Bauablauf ohne Nachbesserungen oder Minderungen. Die Toleranznorm DIN 18202 rechtssicher auslegen und Haftungsfälle vermeiden!Am Anfang eines jeden Bauvorhabens werden die Abmessungen und die Lage von Bauwerken und -teilen geplant. Auf dem langen Weg zum fertigen Gebäude drohen jedoch häufig Abweichungen. Dafür gibt es zahlreiche Gründe: Messungenauigkeiten, Fehler bei der Fertigung oder beim Einbau sowie äußere Einflüsse wie z.B. Temperatur, Feuchtigkeit oder Lasteinwirkung.Maßtoleranzen sind für Architekten und Ingenieure enorm wichtig, denn sie bilden und definieren den Korridorzwischen normgerechtem Bauen und Baumangel. Bis zu welchem Grad sind Abweichungen zu tolerieren? Aufwelche Regelwerke können sich Architekten und Ingenieure berufen? Wie können sie ein Gebäude so planen und bauen, dass die zulässigen Abweichungen eingehalten und nicht überschritten werden? Wo liegen die Ursachen für Abweichungen? Die überarbeitete Neuauflage des Fachbuchs „Maßtoleranzen im Baualltag“ liefert das nötige Know-how für das normgerechte Bauen bei Maßabweichungen. Mit diesem Wissen lassen sich die bestehenden Normen rechtssicher interpretieren und teure Haftungsfälle somit vermeiden.Im Zentrum der Betrachtung steht dabei zum einen die DIN 18202, zum anderen die vielen weiteren Normen und Regelungen, die zu beachten sind. Berücksichtigt sind dabei auch die Änderungen der VOB 2016. Die gewerkebezogene Darstellung erleichtert das schnelle Finden der einschlägigen Regelungen. Die beiliegende CD-ROM enthält eine Sammlung aktueller Schadensfälle zu allen neuralgischen Punkten eines Gebäudes: Verbindungsbauteile, Fassade, Fugen, Rohbau, Baugrund etc. Hierbei wird auch der baurechtliche Hintergrund analysiert. Sie schützen sich vor teuren Haftungsansprüchen und Mangelbeseitigungskosten.", "Mithilfe von wertvollen Praxishinweisen zum maßgerechten Planen und Bauen nach DIN 18202 wissen Sie stets, worauf Sie achten müssen. Sie haben hieb- und stichfeste Argumente für jedes Gewerk: Übersichten für alle Gewerke des Roh- und Ausbaus zeigen, welche Maßtoleranzen in den einzelnen Gewerken zu berücksichtigen sind. Alle aktuellen Normen einschließlich VOB 2016 sind berücksichtigt. Schadensfälle inkl." ]
+  },
   "OnlineAccess" : [ {
+    "uri" : "http://bvbr.bib-bvb.de:8991/F?func=service&doc_library=BVB01&local_base=BVB01&doc_number=029315686&sequence=000001&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA",
+    "publicnote" : "Inhaltsverzeichnis"
+  }, {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2019/05/01/file_98/8419987.pdf",
     "relatedto" : "Inhaltsverzeichnis"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis"
   } ],
-  "SubjectHeadings.subject" : [ "Maßtoleranzen", "DIN18202" ],
-  "SubjectGHBLocal.subject" : [ "XBT" ],
-  "introx.taxonomy" : [ "Architektur und Bauingenieurwesen" ],
-  "Item.callnumber" : [ "11 XBT 11(2017)" ],
-  "introx.branch" : [ "Bayernallee" ]
+  "SubjectHeadings" : [ {
+    "subject" : "Maßtoleranzen"
+  }, {
+    "subject" : "DIN18202"
+  }, {
+    "subject" : "DIN 18202"
+  }, {
+    "subject" : "Rohbau"
+  }, {
+    "subject" : "Ausbau"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "subject" : "XBT"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990225508660206441"
+  }, {
+    "uid" : "(DE-605)HT019743301"
+  }, {
+    "uid" : "(DE-A96)991002764539706444"
+  }, {
+    "uid" : "(DE-A96)803462"
+  } ],
+  "Item" : [ {
+    "callnumber" : "11 XBT 11(2017)"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Maßtoleranzen"
+  }, {
+    "subjectTopicName" : "DIN18202"
+  }, {
+    "subjectTopicName" : "MaßtoleranzenRohbau"
+  }, {
+    "subjectTopicName" : "MaßtoleranzenAusbau"
+  } ]
 }
 {
-  "id" : "HT012875221",
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Zeitschrift der Gesellschaft Deutscher Chemiker"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Schriftenreihe", "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2000", "2010", "2011", "2014" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Eupener Straße" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990110260070206441",
     "identifierMMSIZ" : "991000209759706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990110260070206441",
+    "identifierForTheRecord" : "(DE-605)HT012875221"
+  },
+  "DateFirst" : {
+    "date" : "2000"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2000386-9"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "1439-9598"
+  }, {
+    "identifierISSN" : "1439-9598"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Gesellschaft Deutscher Chemiker",
+    "corporateBodyIdentifier" : [ "(DE-588)2012027-8" ],
+    "identifierGND" : [ "2012027-8" ]
+  }, {
+    "corporateBodyName" : "Gesellschaft Österreichischer Chemiker",
+    "corporateBodyIdentifier" : [ "(DE-588)5137928-4" ],
+    "identifierGND" : [ "5137928-4" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Nachrichten aus der Chemie"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "2000-" ]
+  }, {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "2000-2010" ]
+  }, {
+    "place" : [ "Frankfurt, M" ],
+    "name" : [ "Ges. Dt. Chemiker" ],
+    "chronology" : [ "teils" ]
+  }, {
+    "place" : [ "Berlin" ],
+    "name" : [ "<<de>> Gruyter" ],
+    "chronology" : [ "2011-2014" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2000-", "2000-2010", "teils", "2011-2014" ]
+  },
+  "Extent" : {
+    "extent" : "30 cm"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "48.2000 -"
   },
   "HoldingsStatement" : [ {
     "note" : "im Magazin Eupener Str., ab 2012 im Schuber"
   } ],
-  "Item.callnumber" : [ "63 ZS 104" ],
-  "introx.branch" : [ "Eupener Straße" ]
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Online-Ausg.",
+    "description" : "Nachrichten aus der Chemie"
+  } ],
+  "DescriptionOfFormerEditionsOrVolumes" : [ {
+    "prefix" : "Vorg.:",
+    "description" : "Nachrichten aus Chemie, Technik und Laboratorium"
+  }, {
+    "prefix" : "Darin aufgegangen",
+    "description" : "Gesellschaft Österreichischer Chemiker: Mitteilungsblatt der Gesellschaft Österreichischer Chemiker"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Chemie"
+  }, {
+    "subject" : "Zeitschrift"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990110260070206441"
+  }, {
+    "uid" : "(DE-605)HT012875221"
+  }, {
+    "uid" : "(DE-A96)991000209759706444"
+  }, {
+    "uid" : "(DE-A96)177135"
+  } ],
+  "TypePeriodical" : "Schriftenreihe",
+  "TypePeriodical" : "Zeitschrift",
+  "Item" : [ {
+    "callnumber" : "63 ZS 104"
+  } ],
+  "TitleOther" : {
+    "title" : [ "Analytica pro", "EuCheMS newsletter", "Nachrichten für die Karriere", "Nachrichten für die Chemikerkarriere", "Nachrichten aus der Chemiewirtschaft", "Nano", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker" ]
+  }
 }
 {
-  "id" : "HT006546809",
+  "collection" : "DE-605",
+  "TitleUniform" : {
+    "titleUniform" : "<<The>> Gutenberg galaxy"
+  },
+  "TitleAddendum" : {
+    "title" : "das Ende des Buchzeitalters"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Marshall McLuhan" ]
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1995" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Boxgraben" ],
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Sprach- und Literaturwissenschaften" ]
+  },
   "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990025012090206441",
     "identifierMMSIZ" : "991001499669706444"
   },
-  "SubjectGHBLocal.subject" : [ "BFG" ],
-  "introx.taxonomy" : [ "Sprach- und Literaturwissenschaften" ],
-  "Item.callnumber" : [ "51 BFG 9", "BOX-SemApp-Buhl-Drucktechnologie" ],
-  "introx.branch" : [ "Boxgraben" ]
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990025012090206441",
+    "identifierForTheRecord" : "(DE-605)HT006546809"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3893199993", "Pp. : DM 38.00, sfr 39.00, S 296.00" ]
+  }, {
+    "identifierISBN" : [ "3893199004" ]
+  }, {
+    "identifierISBN" : [ "3893199993", "Pp. : DM 38.00, sfr 39.00, S 296.00" ]
+  }, {
+    "identifierISBN" : [ "3893199004" ]
+  }, {
+    "identifierISBN" : [ "3893199993", "Pp. : DM 38.00, sfr 39.00, S 296.00" ]
+  }, {
+    "identifierISBN" : [ "3893199004" ]
+  }, {
+    "identifierISBN" : [ "3893199993", "Pp. : DM 38.00, sfr 39.00, S 296.00" ]
+  }, {
+    "identifierISBN" : [ "3893199004" ]
+  } ],
+  "Person" : [ {
+    "personName" : "McLuhan, Marshall",
+    "personBio" : "1911-1980",
+    "personIdentifier" : [ "(DE-588)118729977" ],
+    "identifierGND" : [ "118729977" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Die>> Gutenberg-Galaxis"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Bonn [u.a.]" ],
+    "name" : [ "Addison-Wesley" ],
+    "chronology" : [ "1995" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1995" ]
+  },
+  "Extent" : {
+    "extent" : "XVIII, 375 S."
+  },
+  "SubjectHeadings" : [ {
+    "subject" : "Informationsgesellschaft"
+  }, {
+    "subject" : "Kulturwandel"
+  }, {
+    "subject" : "Massenmedien"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "subject" : "BFG"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990025012090206441"
+  }, {
+    "uid" : "(DE-605)HT006546809"
+  }, {
+    "uid" : "(DE-A96)991001499669706444"
+  }, {
+    "uid" : "(DE-A96)131412"
+  } ],
+  "Item" : [ {
+    "callnumber" : "51 BFG 9"
+  }, {
+    "callnumber" : "BOX-SemApp-Buhl-Drucktechnologie"
+  } ]
 }
 {
-  "id" : "HT020331882",
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "das Praxisbuch"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Wolfram Gieseke" ]
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2020" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Eupener Straße" ],
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Informatik" ]
+  },
   "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990365245190206441",
     "identifierMMSIZ" : "991001346159706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990365245190206441",
+    "identifierForTheRecord" : "(DE-605)HT020331882"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783959821889", ": EUR 19.95 (DE), EUR 20.60 (AT)" ]
+  }, {
+    "identifierISBN" : [ "3959821883" ]
+  }, {
+    "identifierISBN" : [ "9783959821889", ": EUR 19.95 (DE), EUR 20.60 (AT)" ]
+  }, {
+    "identifierISBN" : [ "3959821883" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Gieseke, Wolfram",
+    "personBio" : "1971-",
+    "personIdentifier" : [ "(DE-588)141678259" ],
+    "identifierGND" : [ "141678259" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Markt+Technik Verlag GmbH",
+    "corporateBodyIdentifier" : [ "(DE-588)1065428669" ],
+    "identifierGND" : [ "1065428669" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Die>> ultimative Anti-Hacker-Bibel"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Burgthann" ],
+    "name" : [ "Markt + Technik" ],
+    "chronology" : [ "[2020]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2020]" ]
+  },
+  "Extent" : {
+    "extent" : "364 Seiten : Illustrationen"
   },
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2020/04/30/file_10/8855155.pdf",
     "relatedto" : "Inhaltsverzeichnis"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis"
   } ],
-  "SubjectGHBLocal.subject" : [ "TWZ" ],
-  "introx.taxonomy" : [ "Informatik" ],
-  "Item.callnumber" : [ "21 TWZ 35", "EUP-Labor-Höfken-Rechenzentrale" ],
-  "introx.branch" : [ "Eupener Straße" ]
+  "SubjectHeadings" : [ {
+    "subject" : "Computersicherheit"
+  }, {
+    "subject" : "Hacker"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "subject" : "TWZ"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990365245190206441"
+  }, {
+    "uid" : "(DE-605)HT020331882"
+  }, {
+    "uid" : "(DE-A96)991001346159706444"
+  }, {
+    "uid" : "(DE-A96)952501"
+  } ],
+  "Item" : [ {
+    "callnumber" : "21 TWZ 35"
+  }, {
+    "callnumber" : "EUP-Labor-Höfken-Rechenzentrale"
+  } ]
 }
 {
-  "id" : "HT020313959",
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Durchschauen - Kontrollieren - Einsetzen"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Günter Lüttgens, Wolfgang Schubert, Sylvia Lüttgens, Ulrich von Pidoll und Stefan Emde" ]
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2020" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Jülich" ],
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Physik" ]
+  },
   "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990365065460206441",
     "identifierMMSIZ" : "991001366429706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990365065460206441",
+    "identifierForTheRecord" : "(DE-605)HT020313959"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783527413720", "EUR109.00" ]
+  }, {
+    "identifierISBN" : [ "9783527413720", "EUR109.00" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Lüttgens, Günter",
+    "personBio" : "1933-",
+    "personIdentifier" : [ "(DE-588)109296443" ],
+    "identifierGND" : [ "109296443" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Statische Elektrizität"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Weinheim, Germany" ],
+    "name" : [ "WILEY-VCH" ],
+    "chronology" : [ "[2020]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2020]" ]
+  },
+  "Extent" : {
+    "extent" : "XXII, 470 Seiten : Illustrationen ; 244 mm"
+  },
+  "Description" : {
+    "description" : [ "Titelzusatz auf dem Umschlag: Durchschauen - Überwachen - Anwenden" ]
+  },
+  "Summary" : {
+    "abstract" : [ "Verständnis und Kontrolle statischer Elektrizität sind von elementarer Bedeutung in vielen Industriezweigen, in erster Linie mit Blick auf die potentiellen Gefahren. Daher sind die Erkennung und Vermeidung von Gefahren durch statische Aufladungen immer wichtiger geworden und haben die Entwicklung neuer und präziser Messmethoden befördert. Andererseits können statische Aufladungen auch nutzbringend eingesetzt werden. Vielfältige Anwendungen werden beschrieben.Statische Elektrizität ? Durchschauen ? Überwachen ? Anwenden informiert zunächst über Brand- und Explosionsgefahren. Entstehung von Aufladung und daraus resultierende Entladungserscheinungen werden veranschaulicht.Ein großer Teil des Buches befasst sich mit Messtechnik, Vermeidung von Gefahren und Störungen sowie Beseitigung unerwünschter Aufladung. Fallstudien und Beschreibung von Demonstrationsexperimenten vermitteln den Bezug zur Praxis.Ohne Normen geht es nicht; auch darüber wird berichtet. Der stetig zunehmenden Anwendung statischer Elektrizität ist ein eigenes Kapitel über den gezielten Einsatz von Aufladungen vorbehalten und soll die Kreativität der Leser anregen. Zu guter Letzt sind im Mathematischen Werkzeugkasten alle relevanten Formeln einsortiert.* Praxisperspektive: geschrieben von Autoren mit langjähriger Forschungs- und Beratungserfahrung* Durchblick: Beschreibung von Demonstrationsexperimenten zur besseren Veranschaulichung* Fallstudien: aus den Fehlern Anderer lernen* Zusatzmaterial: kurze Videos zeigen die - teils drastischen - Auswirkungen statischer Aufladungen" ]
   },
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2020/02/06/file_16/8817236.pdf",
     "relatedto" : "Inhaltsverzeichnis"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis"
   } ],
-  "SubjectGHBLocal.subject" : [ "UEC" ],
-  "introx.taxonomy" : [ "Physik" ],
-  "Item.callnumber" : [ "61 UEC 6" ],
-  "introx.branch" : [ "Jülich" ]
+  "SubjectHeadings" : [ {
+    "subject" : "Elektrostatik"
+  }, {
+    "subject" : "Elektrostatische Aufladung"
+  }, {
+    "subject" : "Elektrostatische Entladung"
+  }, {
+    "subject" : "Gasentladung"
+  }, {
+    "subject" : "Messtechnik"
+  }, {
+    "subject" : "Elektrounfall"
+  }, {
+    "subject" : "Brandgefahr"
+  }, {
+    "subject" : "Explosion"
+  }, {
+    "subject" : "Arbeitssicherheit"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "subject" : "UEC"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990365065460206441"
+  }, {
+    "uid" : "(DE-605)HT020313959"
+  }, {
+    "uid" : "(DE-A96)991001366429706444"
+  }, {
+    "uid" : "(DE-A96)940901"
+  } ],
+  "Item" : [ {
+    "callnumber" : "61 UEC 6"
+  } ],
+  "PersonCreator" : [ {
+    "personName" : "Lüttgens, Sylvia",
+    "personBio" : "1946-",
+    "personIdentifier" : [ "(DE-588)1142576795" ],
+    "identifierGND" : [ "1142576795" ]
+  }, {
+    "personName" : "Emde, Stefan",
+    "personBio" : "1960-",
+    "personIdentifier" : [ "(DE-588)1201773784" ],
+    "identifierGND" : [ "1201773784" ]
+  }, {
+    "personName" : "Pidoll, Ulrich <<von>>"
+  }, {
+    "personName" : "Schubert, Wolfgang",
+    "personBio" : "1952-",
+    "personIdentifier" : [ "(DE-588)1026875439" ],
+    "identifierGND" : [ "1026875439" ]
+  } ],
+  "TitleOther" : {
+    "title" : [ "Statische Elektrizität : Durchschauen - Überwachen - Anwenden" ]
+  },
+  "RSWK" : [ {
+    "subjectTopicName" : "Arbeitssicherheit"
+  }, {
+    "subjectTopicName" : "Arbeitssicherheit u. Umweltschutz i. d. Chemie"
+  }, {
+    "subjectTopicName" : "Chemie"
+  }, {
+    "subjectTopicName" : "Elektrizitätslehre"
+  }, {
+    "subjectTopicName" : "Elektrotechnik u. Elektronik"
+  }, {
+    "subjectTopicName" : "Leistungselektronik"
+  }, {
+    "subjectTopicName" : "Physik"
+  }, {
+    "subjectTopicName" : "Statische Elektrizität"
+  } ]
 }
 {
-  "id" : "HT020805013",
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "a problem-solution approach"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2021" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Jülich" ],
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Informatik" ]
+  },
   "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990369983090206441",
     "identifierMMSIZ" : "991004989759706444"
   },
-  "SubjectGHBLocal.subject" : [ "TZH" ],
-  "introx.taxonomy" : [ "Informatik" ],
-  "Item.callnumber" : [ "61 TZH 28(2)" ],
-  "introx.branch" : [ "Jülich" ]
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990369983090206441",
+    "identifierForTheRecord" : "(DE-605)HT020805013"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9781484261231" ]
+  }, {
+    "identifierISBN" : [ "9781484261231" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Paluszek, Michael"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "MATLAB recipes"
+  } ],
+  "Edition" : {
+    "edition" : [ "Second edition" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Berkeley" ],
+    "name" : [ "Apress" ],
+    "chronology" : [ "[2021]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2021]" ]
+  },
+  "Extent" : {
+    "extent" : "XIX, 415 Seiten : Illustrationen ; 824 grams"
+  },
+  "Summary" : {
+    "abstract" : [ "Learn from state-of-the-art examples in robotics, motors, detection filters, chemical processes, aircraft, and spacecraft. With this book you will review contemporary MATLAB coding including the latest MATLAB language features and use MATLAB as a software development environment including code organization, GUI development, and algorithm design and testing. Features now covered include the new graph and digraph classes for charts and networks; interactive documents that combine text, code, and output; a new development environment for building apps; locally defined functions in scripts; automatic expansion of dimensions; tall arrays for big data; the new string type; new functions to encode/decode JSON; handling non-English languages; the new class architecture; the Mocking framework; an engine API for Java; the cloud-based MATLAB desktop; the memoize function; and heatmap charts. MATLAB Recipes: A Problem-Solution Approach, Second Edition provides practical, hands-on code snippets and guidance for using MATLAB to build a body of code you can turn to time and again for solving technical problems in your work. Develop algorithms, test them, visualize the results, and pass the code along to others to create a functional code base for your firm. What You Will Learn- Get up to date with the latest MATLAB up to and including MATLAB 2020b- Code in MATLAB- Write applications in MATLAB- Build your own toolbox of MATLAB code to increase your efficiency and effectivenessWho This Book Is For Engineers, data scientists, and students wanting a book rich in examples using MATLAB." ]
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Erscheint auch als",
+    "note" : [ "Online-Ausgabe" ]
+  }, {
+    "prefix" : "Erscheint auch als",
+    "note" : [ "Online-Ausgabe" ]
+  } ],
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "9781484261248" ]
+  }, {
+    "identifierISBN" : [ "9781484261248" ]
+  } ],
+  "SubjectGHBLocal" : [ {
+    "subject" : "TZH"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990369983090206441"
+  }, {
+    "uid" : "(DE-605)HT020805013"
+  }, {
+    "uid" : "(DE-A96)991004989759706444"
+  }, {
+    "uid" : "(DE-A96)1034613"
+  } ],
+  "Item" : [ {
+    "callnumber" : "61 TZH 28(2)"
+  } ],
+  "PersonCreator" : [ {
+    "personName" : "Thomas, Stephanie"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Computer software"
+  }, {
+    "subjectTopicName" : "Mathematics"
+  }, {
+    "subjectTopicName" : "Programming languages (Electronic computers)"
+  }, {
+    "subjectTopicName" : "Computer science"
+  }, {
+    "subjectTopicName" : "MATLAB 10;MATLAB;algorithms;engineering;GUI development;robotics;code;recipes;developer;cookbook;source;development;programming;computational science;numerical"
+  } ]
 }
 {
-  "id" : "HT020603705",
-  "IdentifierAlma" : {
-    "identifierMMS" : "990367970500206441"
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Aktuelle Ansätze verstehen - mit Beispielen in Java und Greenfoot"
   },
-  "SubjectGHBLocal.subject" : [ "TWP" ],
-  "introx.taxonomy" : [ "Informatik" ]
+  "CreatorStatement" : {
+    "creatorStatement" : [ "von Uwe Lorenz" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2020" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "taxonomy" : [ "Informatik" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990367970500206441",
+    "identifierPID" : "53736556350006441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990367970500206441",
+    "identifierForTheRecord" : "(DE-605)HT020603705"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783662616512" ]
+  }, {
+    "identifierISBN" : [ "9783662616512" ]
+  } ],
+  "IdentifierDOI" : [ {
+    "standardNumber" : "10.1007/978-3-662-61651-2"
+  } ],
+  "Person" : [ {
+    "personName" : "Lorenz, Uwe"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Reinforcement Learning"
+  } ],
+  "Edition" : {
+    "edition" : [ "1st ed. 2020" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Berlin, Heidelberg" ],
+    "name" : [ "Springer Berlin Heidelberg", "Imprint: Springer Vieweg" ],
+    "chronology" : [ "2020" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2020" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource (XVIII, 170 S. 84 Abb., 57 Abb. in Farbe)"
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Printed edition"
+  } ],
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "9783662616505" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://doi.org/10.1007/978-3-662-61651-2",
+    "nonpublicnote" : "Resolving-System"
+  }, {
+    "publicnote" : "Springer Technik, Informatik 2020 (ZDB-2-STI)",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53736556350006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "subject" : "TWP"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990367970500206441"
+  }, {
+    "uid" : "(DE-605)HT020603705"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : "Coding theory"
+  }, {
+    "subjectTopicName" : "Information theory"
+  }, {
+    "subjectTopicName" : "Data mining"
+  }, {
+    "subjectTopicName" : "Application software"
+  }, {
+    "subjectTopicName" : "Java (Computer program language)"
+  } ]
 }

@@ -1,0 +1,26 @@
+include("./maps/ISO639-2-to-GND.fix")
+
+/*
+  CF = Computer files
+  Mu = Music
+  M  = Map
+  CR = Continuing Resources
+  VM = Visual materials
+  MX = Mixed materials
+  B  = Book
+*/
+put_map("typeLeader06",
+  "m": "CF",
+  "c": "Mu",
+  "d": "Mu",
+  "i": "Mu",
+  "j": "Mu",
+  "e": "M",
+  "f": "M",
+  "g": "VM",
+  "k": "VM",
+  "o": "VM",
+  "r": "VM",
+  "p": "MX",
+  "t": "B"
+)

@@ -1,6 +1,5 @@
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
@@ -52,13 +51,13 @@
     "uid" : "(DE-468)9915810639006447"
   } ],
   "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : "Zeitschrift",
   "TitleOther" : {
     "title" : [ "Olive Wreath" ]
   }
 }
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
@@ -104,6 +103,7 @@
     "uid" : "(DE-468)9915810638506447"
   } ],
   "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : "Zeitschrift",
   "TitleOther" : {
     "title" : [ "Olio" ]
   }
@@ -111,7 +111,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Kym Anderson, Michael Bosworth"
+    "creatorStatement" : [ "Kym Anderson, Michael Bosworth" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -183,6 +183,10 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "RSWK" : [ {
+    "subjectCorporateBodyName" : "Asia Pacific Economic Cooperation (Organization)"
+  }, {
+    "subjectCorporateBodyName" : "World Trade Organization"
+  }, {
     "subjectTopicName" : "Commerce"
   }, {
     "subjectTopicName" : "Business & Economics"
@@ -192,16 +196,12 @@
     "subjectGeoName" : "Papua New Guinea"
   }, {
     "subjectGeoName" : "Oceania"
-  }, {
-    "subjectCorporateBodyName" : "Asia Pacific Economic Cooperation (Organization)"
-  }, {
-    "subjectCorporateBodyName" : "World Trade Organization"
   } ]
 }
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Manfred Hegger, Hans Drexler, Martin Zeumer"
+    "creatorStatement" : [ "Manfred Hegger, Hans Drexler, Martin Zeumer" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -282,13 +282,12 @@
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "ein Handbuch zur Einführung in die fachliche Informationsarbeit"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Marianne Buder ... (Hrsg.). Begr. von Klaus Laisiepen .."
+    "creatorStatement" : [ "Marianne Buder ... (Hrsg.). Begr. von Klaus Laisiepen .." ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -352,7 +351,8 @@
     "uid" : "(DE-605)HT007313557"
   }, {
     "uid" : "(DE-468)990007627960206447"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
   "collection" : "DE-468",
@@ -527,13 +527,12 @@
   "DEL" : "Y"
 }
 {
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-468",
   "VolumeDesignation" : {
     "volumeDesignation" : "Series B"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "The Gerontological Society of America"
+    "creatorStatement" : [ "The Gerontological Society of America" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -607,6 +606,7 @@
   }, {
     "uid" : "(DE-468)WU000014939"
   } ],
+  "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "22J45-B"
   } ],
@@ -617,7 +617,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "ed. by: C. Le Bris"
+    "creatorStatement" : [ "ed. by: C. Le Bris" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -683,8 +683,6 @@
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "Handbook of numerical analysis" ]
-  }, {
-    "titleSuper" : [ "Handbook of numerical analysis" ]
   } ],
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "10" ]
@@ -717,7 +715,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "series editor, Dr. Richard Hull"
+    "creatorStatement" : [ "series editor, Dr. Richard Hull" ]
   },
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
@@ -792,7 +790,7 @@
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "Doris Haas-Arndt"
+    "creatorStatement" : [ "Doris Haas-Arndt" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -904,8 +902,6 @@
   }
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "Zeitschrift der Gesellschaft Deutscher Chemiker"
@@ -1008,6 +1004,8 @@
   }, {
     "uid" : "(DE-468)990008405780206447"
   } ],
+  "TypePeriodical" : "Schriftenreihe",
+  "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "70N1"
   } ],
@@ -1135,7 +1133,7 @@
     "title" : "Eine kompakte Einführung in Geschichte, Entwicklung und Theorie der Festkörperphysik"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "von Rudolf P. Hübener"
+    "creatorStatement" : [ "von Rudolf P. Hübener" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -1219,7 +1217,7 @@
     "title" : "eine Einführung"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "Detlef Horster"
+    "creatorStatement" : [ "Detlef Horster" ]
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -1294,13 +1292,12 @@
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "in fünf Bänden"
   },
   "CreatorStatement" : {
-    "creatorStatement" : "hrsg. von Jan Knopf"
+    "creatorStatement" : [ "hrsg. von Jan Knopf" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1367,10 +1364,10 @@
     "uid" : "(DE-605)HT013072137"
   }, {
     "uid" : "(DE-468)990008494220206447"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1424,13 +1421,13 @@
     "uid" : "(DE-605)HT001332689"
   }, {
     "uid" : "(DE-468)990003074850206447"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "CreatorStatement" : {
-    "creatorStatement" : "hrsg. von Niels Birbaumer .."
+    "creatorStatement" : [ "hrsg. von Niels Birbaumer .." ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1493,11 +1490,10 @@
     "uid" : "(DE-605)HT014051766"
   }, {
     "uid" : "(DE-468)990008797960206447"
-  } ]
+  } ],
+  "TypePeriodical" : "Schriftenreihe"
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1589,12 +1585,13 @@
   }, {
     "uid" : "(DE-468)990004037860206447"
   } ],
+  "TypePeriodical" : "Schriftenreihe",
+  "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "07G6"
   } ]
 }
 {
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "keine Angabe" ],
@@ -1671,6 +1668,7 @@
   }, {
     "uid" : "(DE-468)990007503320206447"
   } ],
+  "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "82T6"
   } ],
@@ -1681,7 +1679,7 @@
 {
   "collection" : "DE-468",
   "CreatorStatement" : {
-    "creatorStatement" : "Max Aub"
+    "creatorStatement" : [ "Max Aub" ]
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
@@ -1738,10 +1736,9 @@
 }
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Zeitschrift", "Sonstiges" ],
+    "type" : [ "Sonstiges", "Zeitschrift" ],
     "language" : [ "Englisch" ],
     "date" : [ "1982" ]
   },
@@ -1761,7 +1758,6 @@
     "identifierForTheRecord" : "(DE-605)99370677324206441"
   },
   "DateFirst" : {
-    "date" : "1982",
     "date" : "1982",
     "date" : "1982"
   },
@@ -1805,6 +1801,7 @@
     "uid" : "(DE-468)9915969659906447"
   } ],
   "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : "Zeitschrift",
   "RSWK" : [ {
     "subjectTopicName" : "Art",
     "subjectGenre" : "Periodicals"
@@ -1814,7 +1811,6 @@
 }
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
   "dc" : {
     "format" : [ "Online-Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
@@ -1837,12 +1833,12 @@
   },
   "DateFirst" : {
     "date" : "1989",
-    "date" : "1989",
-    "date" : "2000"
+    "date" : "2000",
+    "date" : "1989"
   },
   "DateLast" : {
-    "date" : "1994",
-    "date" : "2005"
+    "date" : "2005",
+    "date" : "1994"
   },
   "Language" : [ {
     "language" : "Deutsch",
@@ -1893,6 +1889,7 @@
     "uid" : "(DE-468)9915970521406447"
   } ],
   "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : "Zeitschrift",
   "RSWK" : [ {
     "subjectTopicName" : "Vacuum technology",
     "subjectGenre" : "Periodicals"
@@ -1903,7 +1900,6 @@
   } ]
 }
 {
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
   "VolumeDesignation" : {
     "volumeDesignation" : "[...]"
@@ -1987,6 +1983,7 @@
   }, {
     "uid" : "(DE-468)990004013350206447"
   } ],
+  "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "49M16-D"
   } ],
