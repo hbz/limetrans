@@ -1,7 +1,7 @@
 rootProject.name = 'limetrans'
 
 sourceControl {
-    gitRepository('https://github.com/metafacture/metafacture-fix.git') {
+    gitRepository('file:///data/devel/metafacture-fix') { //https://github.com/metafacture/metafacture-fix.git') {
         producesModule('org.metafacture:metafix')
     }
 }

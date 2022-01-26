@@ -1,13 +1,13 @@
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
   "dc" : {
-    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
-    "type" : [ "Zeitschrift" ],
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Englisch" ]
   },
   "introx" : {
-    "access" : [ "online" ]
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -51,21 +51,20 @@
   }, {
     "uid" : "(DE-468)9915810639006447"
   } ],
-  "TypeMedia" : "Elektronische Ressource",
   "TitleOther" : {
     "title" : [ "Olive Wreath" ]
   }
 }
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
   "dc" : {
-    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
-    "type" : [ "Zeitschrift" ],
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Englisch" ]
   },
   "introx" : {
-    "access" : [ "online" ]
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -103,7 +102,6 @@
   }, {
     "uid" : "(DE-468)9915810638506447"
   } ],
-  "TypeMedia" : "Elektronische Ressource",
   "TitleOther" : {
     "title" : [ "Olio" ]
   }
@@ -114,13 +112,13 @@
     "creatorStatement" : "Kym Anderson, Michael Bosworth"
   },
   "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Englisch" ],
-    "date" : [ "2009" ]
+    "date" : [ "2009." ]
   },
   "introx" : {
-    "access" : [ "online" ],
+    "access" : [ "local" ],
     "carrier" : [ "Elektronische Ressource" ]
   },
   "IdentifierAlma" : {
@@ -181,22 +179,7 @@
   "xbib" : [ {
     "uid" : "(DE-605)99366545708706441"
   } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "RSWK" : [ {
-    "subjectTopicName" : "Commerce"
-  }, {
-    "subjectTopicName" : "Business & Economics"
-  }, {
-    "subjectTopicName" : "Local Commerce"
-  }, {
-    "subjectGeoName" : "Papua New Guinea"
-  }, {
-    "subjectGeoName" : "Oceania"
-  }, {
-    "subjectCorporateBodyName" : "Asia Pacific Economic Cooperation (Organization)"
-  }, {
-    "subjectCorporateBodyName" : "World Trade Organization"
-  } ]
+  "TypeMedia" : "Elektronische Ressource"
 }
 {
   "collection" : "DE-605",
@@ -204,13 +187,13 @@
     "creatorStatement" : "Manfred Hegger, Hans Drexler, Martin Zeumer"
   },
   "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Englisch" ],
-    "date" : [ "2014" ]
+    "date" : [ "2014." ]
   },
   "introx" : {
-    "access" : [ "online" ],
+    "access" : [ "local" ],
     "carrier" : [ "Elektronische Ressource" ]
   },
   "IdentifierAlma" : {
@@ -276,13 +259,9 @@
   } ],
   "TitleOther" : {
     "title" : [ "Basics entwerfen materialität" ]
-  },
-  "RSWK" : [ {
-    "subjectTopicName" : "Building materials"
-  } ]
+  }
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "ein Handbuch zur Einführung in die fachliche Informationsarbeit"
@@ -292,9 +271,9 @@
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
-    "type" : [ "Schriftenreihe" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Deutsch" ],
-    "date" : [ "1997" ]
+    "date" : [ "1997-" ]
   },
   "introx" : {
     "access" : [ "local" ],
@@ -358,9 +337,9 @@
   "collection" : "DE-468",
   "dc" : {
     "format" : [ "keine Angabe" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "keine Angabe" ],
-    "date" : [ "2011" ]
+    "date" : [ "2011." ]
   },
   "introx" : {
     "access" : [ "local" ],
@@ -405,12 +384,12 @@
     "title" : "EMedien 6-2012"
   },
   "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "keine Angabe" ]
   },
   "introx" : {
-    "access" : [ "online" ],
+    "access" : [ "local" ],
     "carrier" : [ "Elektronische Ressource" ]
   },
   "IdentifierAlma" : {
@@ -441,7 +420,7 @@
   "collection" : "DE-A96",
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Englisch" ]
   },
   "introx" : {
@@ -484,7 +463,7 @@
   "collection" : "DE-465",
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2019" ]
   },
@@ -527,7 +506,6 @@
   "DEL" : "Y"
 }
 {
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-468",
   "VolumeDesignation" : {
     "volumeDesignation" : "Series B"
@@ -537,9 +515,9 @@
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
-    "type" : [ "Zeitschrift" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Englisch" ],
-    "date" : [ "1995", "2008" ]
+    "date" : [ "1995-", "-2008", "1995" ]
   },
   "introx" : {
     "access" : [ "local" ],
@@ -620,13 +598,13 @@
     "creatorStatement" : "ed. by: C. Le Bris"
   },
   "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Englisch" ],
     "date" : [ "2003" ]
   },
   "introx" : {
-    "access" : [ "online" ],
+    "access" : [ "local" ],
     "carrier" : [ "Elektronische Ressource" ],
     "taxonomy" : [ "Chemie und Chemische Technik", "Mathematik" ]
   },
@@ -720,13 +698,14 @@
     "creatorStatement" : "series editor, Dr. Richard Hull"
   },
   "dc" : {
-    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
+    "format" : [ "keine Angabe" ],
     "type" : [ "keine Angabe" ],
     "language" : [ "Englisch" ],
-    "date" : [ "2011" ]
+    "date" : [ "©2011-", "2011" ]
   },
   "introx" : {
-    "access" : [ "online" ]
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -778,15 +757,9 @@
   }, {
     "uid" : "(DE-468)9915879171806447"
   } ],
-  "TypeMedia" : "Elektronische Ressource",
   "PersonCreator" : [ {
     "personName" : "Hull, Richard",
     "personTitle" : [ "Ph. D." ]
-  } ],
-  "RSWK" : [ {
-    "subjectTopicName" : "Nonprofit organizations"
-  }, {
-    "subjectGenre" : "Case studies"
   } ]
 }
 {
@@ -795,13 +768,13 @@
     "creatorStatement" : "Doris Haas-Arndt"
   },
   "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Deutsch" ],
-    "date" : [ "2015" ]
+    "date" : [ "[2015]" ]
   },
   "introx" : {
-    "access" : [ "online" ],
+    "access" : [ "local" ],
     "carrier" : [ "Elektronische Ressource" ]
   },
   "IdentifierAlma" : {
@@ -904,17 +877,15 @@
   }
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "Zeitschrift der Gesellschaft Deutscher Chemiker"
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
-    "type" : [ "Schriftenreihe", "Zeitschrift" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Deutsch" ],
-    "date" : [ "2000", "2010", "2011", "2014" ]
+    "date" : [ "2000-", "2000-2010", "2011-2014", "2000" ]
   },
   "introx" : {
     "access" : [ "local" ],
@@ -976,9 +947,6 @@
   "DateProper" : {
     "date" : [ "2000-", "2000-2010", "teils", "2011-2014" ]
   },
-  "Extent" : {
-    "extent" : "30 cm"
-  },
   "ChronologyAndEnumeration" : {
     "value" : "48.2000 -"
   },
@@ -1019,7 +987,7 @@
   "collection" : "DE-465",
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2013" ]
   },
@@ -1064,13 +1032,13 @@
 {
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Englisch" ],
     "date" : [ "2005" ]
   },
   "introx" : {
-    "access" : [ "online" ],
+    "access" : [ "local" ],
     "carrier" : [ "Elektronische Ressource" ]
   },
   "IdentifierAlma" : {
@@ -1117,17 +1085,7 @@
   "xbib" : [ {
     "uid" : "(DE-605)99368091563606441"
   } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "RSWK" : [ {
-    "subjectTopicName" : "English Literature"
-  }, {
-    "subjectTopicName" : "English"
-  }, {
-    "subjectTopicName" : "Languages & Literatures"
-  }, {
-    "subjectGeoName" : "South Africa",
-    "subjectGenre" : "Fiction"
-  } ]
+  "TypeMedia" : "Elektronische Ressource"
 }
 {
   "collection" : "DE-605",
@@ -1138,13 +1096,13 @@
     "creatorStatement" : "von Rudolf P. Hübener"
   },
   "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Deutsch" ],
-    "date" : [ "2020" ]
+    "date" : [ "2020." ]
   },
   "introx" : {
-    "access" : [ "online" ],
+    "access" : [ "local" ],
     "carrier" : [ "Elektronische Ressource" ]
   },
   "IdentifierAlma" : {
@@ -1201,17 +1159,7 @@
   "xbib" : [ {
     "uid" : "(DE-605)99368165410206441"
   } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "RSWK" : [ {
-    "subjectTopicName" : "Semiconductors"
-  }, {
-    "subjectTopicName" : "Solid state physics"
-  }, {
-    "subjectIdentifier" : [ "https://scigraph.springernature.com/ontologies/product-market-codes/P25150" ]
-  }, {
-    "subjectTopicName" : "Solid State Physics",
-    "subjectIdentifier" : [ "https://scigraph.springernature.com/ontologies/product-market-codes/P25013" ]
-  } ]
+  "TypeMedia" : "Elektronische Ressource"
 }
 {
   "collection" : "DE-605",
@@ -1222,13 +1170,13 @@
     "creatorStatement" : "Detlef Horster"
   },
   "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Bibliografie", "Biografie", "Monographie" ],
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Deutsch" ],
-    "date" : [ "2010" ]
+    "date" : [ "[2010]" ]
   },
   "introx" : {
-    "access" : [ "online" ],
+    "access" : [ "local" ],
     "carrier" : [ "Elektronische Ressource" ]
   },
   "IdentifierAlma" : {
@@ -1285,16 +1233,9 @@
   "xbib" : [ {
     "uid" : "(DE-605)99368053843406441"
   } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "RSWK" : [ {
-    "subjectPersonName" : "Habermas, Jürgen"
-  }, {
-    "subjectTopicName" : "Philosophy, German",
-    "subjectChronological" : "20th century"
-  } ]
+  "TypeMedia" : "Elektronische Ressource"
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "in fünf Bänden"
@@ -1304,9 +1245,9 @@
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
-    "type" : [ "Schriftenreihe" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Deutsch" ],
-    "date" : [ "2001" ]
+    "date" : [ "2001-" ]
   },
   "introx" : {
     "access" : [ "local" ],
@@ -1370,13 +1311,12 @@
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "keine Angabe" ],
-    "type" : [ "Nachschlagewerk", "Schriftenreihe" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Deutsch" ],
-    "date" : [ "1980", "1999" ]
+    "date" : [ "1980-1999" ]
   },
   "introx" : {
     "access" : [ "local" ],
@@ -1427,16 +1367,15 @@
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : "hrsg. von Niels Birbaumer .."
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
-    "type" : [ "Nachschlagewerk", "Schriftenreihe" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Deutsch" ],
-    "date" : [ "2003" ]
+    "date" : [ "2003-" ]
   },
   "introx" : {
     "access" : [ "local" ],
@@ -1496,14 +1435,12 @@
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "keine Angabe" ],
-    "type" : [ "Schriftenreihe", "Zeitschrift" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Englisch" ],
-    "date" : [ "1936" ]
+    "date" : [ "1936-", "1936" ]
   },
   "introx" : {
     "access" : [ "local" ],
@@ -1594,13 +1531,12 @@
   } ]
 }
 {
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "keine Angabe" ],
-    "type" : [ "Zeitschrift" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Englisch" ],
-    "date" : [ "1969", "1997" ]
+    "date" : [ "1969-1997", "1969", "1997" ]
   },
   "introx" : {
     "access" : [ "local" ],
@@ -1685,9 +1621,9 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "keine Angabe" ],
     "language" : [ "Spanisch" ],
-    "date" : [ "2003" ]
+    "date" : [ "[abril 2003]" ]
   },
   "introx" : {
     "access" : [ "local" ],

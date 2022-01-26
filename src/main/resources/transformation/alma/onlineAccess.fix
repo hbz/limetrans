@@ -1,0 +1,8 @@
+# TODO: only first occurrence
+uniq("$i.u")
+copy_field("$i.u", "OnlineAccess[].$last.uri")
+# TODO: only first occurrence
+copy_field("$i.x", "OnlineAccess[].$last.nonpublicnote")
+# TODO: only first occurrence
+copy_field("$i.z", "OnlineAccess[].$last.publicnote")
+copy_field("$i.3", "OnlineAccess[].$last.relatedto")
