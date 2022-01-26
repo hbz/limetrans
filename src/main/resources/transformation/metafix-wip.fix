@@ -1,1 +1,19 @@
-retain()
+/*
+  <entity name="TitleOther">
+    <entity name="title[]" flushWith="record">
+      <data name="" source="246?[ 345678].a">
+        <replace pattern="\.$" with="" />
+      </data>
+    </entity>
+  </entity>
+	*/
+
+# TODO: Das schreiben in einen tieferliegendes Array funktioniert anscheinend nicht.
+
+set_array("TitleOther.title[]")
+do list(path: "246?[ 345678]", "var": "varTitleOther")
+ replace_all("varTitleOther.a", "\\.$", "")
+ copy_field("varTitleOther.a", "TitleOther.title[].$append")
+end
+
+retain("TitleOther")
