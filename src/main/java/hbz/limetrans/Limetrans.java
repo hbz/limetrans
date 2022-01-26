@@ -43,29 +43,29 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     private enum Isil {
 
         // checkstyle-disable-begin MethodParamPad
-        DE_605  ("6441", "49HBZ_NETWORK"), // hbz NRW
-        DE_361  ("6442", "49HBZ_BIE"),     // UB Bielefeld
-        DE_61   ("6443", "49HBZ_DUE"),     // ULB Düsseldorf
-        DE_A96  ("6444", "49HBZ_FHA"),     // FHB Aachen
-        DE_290  ("6445", "49HBZ_UBD"),     // UB Dortmund
-        DE_465  ("6446", "49HBZ_UDE"),     // UB Duisburg-Essen (DE-464 = Duisburg, DE-465 = Essen)
-        DE_468  ("6447", "49HBZ_WUP"),     // UB Wuppertal
-        DE_82   ("6448", "49HBZ_UBA"),     // RWTH Aachen
-        DE_6    ("6449", "49HBZ_ULM"),     // UB Münster
-        DE_Bi10 ("6450", "49HBZ_HBI"),     // HS Bielefeld
-        DE_Dm13 ("6451", "49HBZ_FDO"),     // FH Dortmund
-        DE_1044 ("6452", "49HBZ_BRS"),     // HS Bonn-Rhein-Sieg
-        DE_1393 ("6453", "49HBZ_RUW"),     // HS Ruhr West (DE-1393 = Mülheim, DE-1393-BOT = Bottrop)
-        DE_Bm40 ("6454", "49HBZ_HBO"),     // HS Bochum
-        DE_Due62("6455", "49HBZ_HSD"),     // HS Düsseldorf
-        DE_1010 ("6456", "49HBZ_WHS"),     // Westfälische HS Gelsenkirchen
-        DE_1156 ("6459", "49HBZ_FUK"),     // Folkwang Universität der Künste (DE-1156 = Essen, DE-1156a = Bochum, DE-1156b = Duisburg, DE-1156c = Zollverein)
-        DE_Hag4 ("6461", "49HBZ_FSW"),     // FH Hagen / Südwestfalen
-        DE_467  ("6462", "49HBZ_SIE"),     // UB Siegen
-        DE_466  ("6463", "49HBZ_PAD"),     // UB Paderborn
-        DE_708  ("6464", "49HBZ_FUH"),     // Fernuni Hagen
-        DE_836  ("6485", "49HBZ_FHM"),     // FH Münster / Kunstakademie Münster (DE-836 =FH, DE-Mue301 = Kunstakademie)
-        DE_386  ("7476", "49HBZ_RTU");     // UB Kaiserslautern-Landau (DE-386 = Kaiserslautern, DE-Lan1 = Landau)
+        DE_605  ("6441", "49HBZ_NETWORK", "hbz NRW"),
+        DE_361  ("6442", "49HBZ_BIE",     "UB Bielefeld"),
+        DE_61   ("6443", "49HBZ_DUE",     "ULB Düsseldorf"),
+        DE_A96  ("6444", "49HBZ_FHA",     "FHB Aachen"),
+        DE_290  ("6445", "49HBZ_UBD",     "UB Dortmund"),
+        DE_465  ("6446", "49HBZ_UDE",     "UB Duisburg-Essen"),                  // DE-464 = Duisburg, DE-465 = Essen
+        DE_468  ("6447", "49HBZ_WUP",     "UB Wuppertal"),
+        DE_82   ("6448", "49HBZ_UBA",     "RWTH Aachen"),
+        DE_6    ("6449", "49HBZ_ULM",     "UB Münster"),
+        DE_Bi10 ("6450", "49HBZ_HBI",     "HS Bielefeld"),
+        DE_Dm13 ("6451", "49HBZ_FDO",     "FH Dortmund"),
+        DE_1044 ("6452", "49HBZ_BRS",     "HS Bonn-Rhein-Sieg"),
+        DE_1393 ("6453", "49HBZ_RUW",     "HS Ruhr West"),                       // DE-1393 = Mülheim, DE-1393-BOT = Bottrop
+        DE_Bm40 ("6454", "49HBZ_HBO",     "HS Bochum"),
+        DE_Due62("6455", "49HBZ_HSD",     "HS Düsseldorf"),
+        DE_1010 ("6456", "49HBZ_WHS",     "Westfälische HS Gelsenkirchen"),
+        DE_1156 ("6459", "49HBZ_FUK",     "Folkwang Universität der Künste"),    // DE-1156 = Essen, DE-1156a = Bochum, DE-1156b = Duisburg, DE-1156c = Zollverein
+        DE_Hag4 ("6461", "49HBZ_FSW",     "FH Hagen / Südwestfalen"),
+        DE_467  ("6462", "49HBZ_SIE",     "UB Siegen"),
+        DE_466  ("6463", "49HBZ_PAD",     "UB Paderborn"),
+        DE_708  ("6464", "49HBZ_FUH",     "Fernuni Hagen"),
+        DE_836  ("6485", "49HBZ_FHM",     "FH Münster / Kunstakademie Münster"), // DE-836 = FH, DE-Mue301 = Kunstakademie
+        DE_386  ("7476", "49HBZ_RTU",     "UB Kaiserslautern-Landau");           // DE-386 = Kaiserslautern, DE-Lan1 = Landau
         // checkstyle-disable-end
 
         private static final String ISIL_SEPARATOR = "-";
@@ -73,11 +73,13 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
         private final String mInstitutionCode;
         private final String mIsil;
-        private final String mMemberId;
+        private final String mMemberCode;
+        private final String mMemberName;
 
-        Isil(final String aInstitutionCode, final String aMemberId) {
+        Isil(final String aInstitutionCode, final String aMemberCode, final String aMemberName) {
             mInstitutionCode = aInstitutionCode;
-            mMemberId = aMemberId;
+            mMemberCode = aMemberCode;
+            mMemberName = aMemberName;
 
             mIsil = name().replace(NAME_SEPARATOR, ISIL_SEPARATOR);
             INSTITUTION_CODE_TO_ISIL.put(aInstitutionCode, mIsil);
@@ -95,8 +97,12 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
             return mIsil;
         }
 
-        private String getMemberId() {
-            return mMemberId;
+        private String getMemberCode() {
+            return mMemberCode;
+        }
+
+        private String getMemberName() {
+            return mMemberName;
         }
 
     }
@@ -250,12 +256,12 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         // Organization originating the system control number
         mVars.put("catalogid", catalogid.getIsil());
 
-        final String memberID = isil.getMemberId();
-        final String networkID = catalogid.getMemberId();
+        final String memberCode = isil.getMemberCode();
+        final String networkCode = catalogid.getMemberCode();
         final String institutionCode = isil.getInstitutionCode();
 
-        mVars.put("member", memberID);
-        mVars.put("network", networkID);
+        mVars.put("member", memberCode);
+        mVars.put("network", networkCode);
         mVars.put("institution-code", institutionCode);
         mVars.put("id-suffix", almaSettings.get("id-suffix", ""));
 
@@ -265,17 +271,17 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
         final UnaryOperator<String> sourceSystemFilter = i -> "035  .a=~^\\(" + i + "\\)";
 
-        // POR$$A=memberID
+        // POR$$A=memberCode
         final LimetransFilter availableForFilter = LimetransFilter.all()
-            .add("POR  .A=" + memberID);
+            .add("POR  .A=" + memberCode);
 
-        // MBD$$M=memberID OR POR$$M=memberID
+        // MBD$$M=memberCode OR POR$$M=memberCode
         final LimetransFilter memberFilter = LimetransFilter.any()
-            .add("MBD  .M|POR  .M=" + memberID);
+            .add("MBD  .M|POR  .M=" + memberCode);
 
-        // MBD$$M=49HBZ_NETWORK AND ITM$$M=memberID
+        // MBD$$M=49HBZ_NETWORK AND ITM$$M=memberCode
         final LimetransFilter itemFilter = LimetransFilter.all()
-            .add("MBD  .M=" + networkID, "ITM  .M=" + memberID);
+            .add("MBD  .M=" + networkCode, "ITM  .M=" + memberCode);
 
         // DEL??.a=Y OR leader@05=d
         final LimetransFilter deletionFilter = LimetransFilter.any()
