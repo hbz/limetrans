@@ -1,0 +1,15 @@
+{
+  "isil": "DE-605",
+  "alma": {},
+  "input": {
+    "queue": {
+      "path": "src/test/resources/limetrans/input/",
+      "pattern": "alma.xml"
+    }
+  },
+  "output": {
+    "json": "src/test/resources/limetrans/output.fix/metafix-wip.json",
+    "pretty-printing": true
+  },
+  "transformation-rules" : "src/main/resources/transformation/metafix-wip.fix"
+}

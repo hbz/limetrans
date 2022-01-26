@@ -107,7 +107,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
     }
 
-    private static final boolean METAFIX_IS_DEFAULT = false;
+    private static final boolean METAFIX_IS_DEFAULT = true;
 
     public enum Type {
 
