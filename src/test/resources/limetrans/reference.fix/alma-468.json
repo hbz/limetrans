@@ -1,201 +1,34 @@
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
-  "dc" : {
-    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
-    "type" : [ "Zeitschrift" ],
-    "language" : [ "Englisch" ]
-  },
-  "introx" : {
-    "access" : [ "online" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "99366597115306441",
-    "identifierMMSIZ" : "9915810639006447",
-    "identifierPID" : "5354767020006447"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)99366597115306441",
     "identifierForTheRecord" : "(DE-605)99366597115306441"
   },
-  "DateFirst" : {
-    "date" : "1867"
-  },
-  "DateLast" : {
-    "date" : "1867"
-  },
-  "Language" : [ {
-    "language" : "Englisch",
-    "languageSource" : "eng"
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Olive Wreath: A Monthly Magazine, Devoted to Odd Fellowship & Its Literature (via EBSCO Host)"
-  } ],
-  "PublisherName" : [ {
-    "name" : [ "American Antiquarian Society Historical Periodicals via EBSCO Host" ]
-  } ],
-  "OnlineAccess" : [ {
-    "uri" : "http://www.bibliothek.uni-regensburg.de/ezeit/?2241653",
-    "nonpublicnote" : "EZB"
-  }, {
-    "uri" : "http://digitale-objekte.hbz-nrw.de/storage/2007/11/27/file_131/2235259.pdf",
-    "relatedto" : "Inhaltsverzeichnis"
-  }, {
-    "publicnote" : "EZB-NALAS-00438 AAS Historical Periodicals 5 NL",
-    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&portfolio_pid=5354767020006447&Force_direct=true",
-    "isInternalLinkFor" : "DE-468"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)99366597115306441"
-  }, {
-    "uid" : "(DE-468)9915810639006447"
-  } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "Olive Wreath" ]
-  }
+  } ]
 }
 {
   "collection" : "DE-605",
-  "TypePeriodical" : "Zeitschrift",
-  "dc" : {
-    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
-    "type" : [ "Zeitschrift" ],
-    "language" : [ "Englisch" ]
-  },
-  "introx" : {
-    "access" : [ "online" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "99366597114806441",
-    "identifierMMSIZ" : "9915810638506447",
-    "identifierPID" : "5354767080006447"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)99366597114806441",
     "identifierForTheRecord" : "(DE-605)99366597114806441"
   },
-  "DateFirst" : {
-    "date" : "1866"
-  },
-  "DateLast" : {
-    "date" : "1866"
-  },
-  "Language" : [ {
-    "language" : "Englisch",
-    "languageSource" : "eng"
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Olio: A Monthly Magazine for Railroad & Steamboat Reading (via EBSCO Host)"
-  } ],
-  "PublisherName" : [ {
-    "name" : [ "American Antiquarian Society Historical Periodicals via EBSCO Host" ]
-  } ],
-  "OnlineAccess" : [ {
-    "publicnote" : "EZB-NALAS-00438 AAS Historical Periodicals 5 NL",
-    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&portfolio_pid=5354767080006447&Force_direct=true",
-    "isInternalLinkFor" : "DE-468"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)99366597114806441"
-  }, {
-    "uid" : "(DE-468)9915810638506447"
-  } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "Olio" ]
-  }
+  } ]
 }
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : "Kym Anderson, Michael Bosworth"
   },
-  "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "Englisch" ],
-    "date" : [ "2009" ]
-  },
-  "introx" : {
-    "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "99366545708706441",
-    "identifierPID" : "53221949450006441"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)99366545708706441",
     "identifierForTheRecord" : "(DE-605)99366545708706441"
   },
-  "Language" : [ {
-    "language" : "Englisch",
-    "languageSource" : "eng"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9780980623826  ‡q (ebook)" ]
-  }, {
-    "identifierISBN" : [ "0980623820 ‡q (ebook)" ]
-  } ],
-  "CorporateBody" : [ {
-    "corporateBodyName" : "University of Adelaide Press,"
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Reforming trade policy in Papua New Guinea and the Pacific Islands"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "Adelaide" ],
-    "name" : [ "University of Adelaide Press" ],
-    "chronology" : [ "2009" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2009" ]
-  },
-  "Extent" : {
-    "extent" : "1 online resource (xiv, 203 pages) : digital, PDF file(s)."
-  },
-  "Description" : {
-    "description" : [ "Bibliographic Level Mode of Issuance: Monograph" ]
-  },
-  "Summary" : {
-    "abstract" : [ "The countries of the South Pacific have struggled to generate sustainable economic growth since their independence. Interventionist policies have failed in the past here, as they have in all other regions. Business and government leaders in this region are now beginning to acknowledge - as has happened in many other developing country regions over the past two decades - that major reforms are needed to put their economies onto a higher growth path. This study examines the growth record of key Pacific island economies and identifies the reasons for their relatively poor performance. It then looks at the process of globalization that is affecting those and indeed all economies increasingly; and the role the WTO has played in that process." ]
-  },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Print version"
-  } ],
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "9780980623895" ]
-  } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Reprints collection (University of Adelaide Press)" ]
-  } ],
-  "OnlineAccess" : [ {
-    "publicnote" : "JSTOR Books Open Access",
-    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&portfolio_pid=53221949450006441&Force_direct=true",
-    "isInternalLinkFor" : "DE-468"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)99366545708706441"
-  } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "RSWK" : [ {
-    "subjectTopicName" : "Commerce"
-  }, {
-    "subjectTopicName" : "Business & Economics"
-  }, {
-    "subjectTopicName" : "Local Commerce"
-  }, {
-    "subjectGeoName" : "Papua New Guinea"
-  }, {
-    "subjectGeoName" : "Oceania"
-  }, {
-    "subjectCorporateBodyName" : "Asia Pacific Economic Cooperation (Organization)"
-  }, {
-    "subjectCorporateBodyName" : "World Trade Organization"
   } ]
 }
 {
@@ -203,86 +36,15 @@
   "CreatorStatement" : {
     "creatorStatement" : "Manfred Hegger, Hans Drexler, Martin Zeumer"
   },
-  "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "Englisch" ],
-    "date" : [ "2014" ]
-  },
-  "introx" : {
-    "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "99366599897006441",
-    "identifierMMSIZ" : "9915811024706447",
-    "identifierPID" : "5354967650006447"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)99366599897006441",
     "identifierForTheRecord" : "(DE-605)99366599897006441"
   },
-  "Language" : [ {
-    "language" : "Englisch",
-    "languageSource" : "eng"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3-0356-1246-3" ]
-  }, {
-    "identifierISBN" : [ "3-0356-1160-2" ]
-  } ],
-  "Person" : [ {
-    "personName" : "Hegger, Manfred",
-    "personRole" : [ "[author.]" ]
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Materialität"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "Basel, Schweiz" ],
-    "name" : [ "Birkhäuser" ],
-    "chronology" : [ "2014" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2014" ]
-  },
-  "Extent" : {
-    "extent" : "1 online resource (87 pages) : illustrations."
-  },
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "3-0356-0302-2" ]
-  } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Basics (Basel, Switzerland)" ]
-  } ],
-  "OnlineAccess" : [ {
-    "publicnote" : "De Gruyter Basics Online",
-    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&portfolio_pid=5354967650006447&Force_direct=true",
-    "isInternalLinkFor" : "DE-468"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)99366599897006441"
-  }, {
-    "uid" : "(DE-468)9915811024706447"
-  } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "PersonCreator" : [ {
-    "personName" : "Drexler, Hans",
-    "personRole" : [ "[author.]" ]
-  }, {
-    "personName" : "Zeumer, Martin",
-    "personRole" : [ "[author.]" ]
-  } ],
-  "TitleOther" : {
-    "title" : [ "Basics entwerfen materialität" ]
-  },
-  "RSWK" : [ {
-    "subjectTopicName" : "Building materials"
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "ein Handbuch zur Einführung in die fachliche Informationsarbeit"
@@ -290,244 +52,58 @@
   "CreatorStatement" : {
     "creatorStatement" : "Marianne Buder ... (Hrsg.). Begr. von Klaus Laisiepen .."
   },
-  "dc" : {
-    "format" : [ "keine Angabe" ],
-    "type" : [ "Schriftenreihe" ],
-    "language" : [ "Deutsch" ],
-    "date" : [ "1997" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "990050093380206441",
-    "identifierMMSIZ" : "990007627960206447"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)990050093380206441",
     "identifierForTheRecord" : "(DE-605)HT007313557"
   },
-  "Language" : [ {
-    "language" : "Deutsch",
-    "languageSource" : "ger"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3598113099", "Gb. : DM 248.00" ]
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Grundlagen der praktischen Information und Dokumentation"
-  } ],
-  "Edition" : {
-    "edition" : [ "4. völlig neu gefaßte Ausg." ]
-  },
-  "PublisherName" : [ {
-    "place" : [ "München [u.a.]" ],
-    "name" : [ "Saur" ],
-    "chronology" : [ "1997-" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "1997-" ]
-  },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "DGD-Schriftenreihe" ]
-  } ],
-  "PersonContributor" : [ {
-    "personName" : "Buder, Marianne",
-    "personIdentifier" : [ "(DE-588)108735184" ],
-    "identifierGND" : [ "108735184" ]
-  }, {
-    "personName" : "Laisiepen, Klaus",
-    "personRole" : [ "[Begründer des Werks]" ],
-    "personIdentifier" : [ "(DE-588)105708305" ],
-    "identifierGND" : [ "105708305" ]
-  } ],
-  "SubjectHeadings" : [ {
-    "subject" : "Information und Dokumentation"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)990050093380206441"
-  }, {
-    "uid" : "(DE-605)HT007313557"
-  }, {
-    "uid" : "(DE-468)990007627960206447"
   } ]
 }
 {
   "collection" : "DE-468",
-  "dc" : {
-    "format" : [ "keine Angabe" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "keine Angabe" ],
-    "date" : [ "2011" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "990005255180306447"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-468)990005255180306447",
     "identifierForTheRecord" : "(DE-468)990005255180306447"
   },
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "978-3-8375-0663-1" ]
-  } ],
-  "Person" : [ {
-    "personName" : "Klemp, Stefan"
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "\"Nicht ermittelt\" : Polizeibataillone und die Nachkriegsjustiz ; ein Handbuch"
-  } ],
-  "Edition" : {
-    "edition" : [ "2., erw. und überarb" ]
-  },
-  "PublisherName" : [ {
-    "place" : [ "Essen" ],
-    "name" : [ "Klartext-Verl." ],
-    "chronology" : [ "2011" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2011" ]
-  },
-  "xbib" : [ {
-    "uid" : "(DE-468)990005255180306447"
-  } ],
-  "DEL" : "Y"
+  } ]
 }
 {
   "collection" : "DE-A96",
   "TitleAddendum" : {
     "title" : "EMedien 6-2012"
   },
-  "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "keine Angabe" ]
-  },
-  "introx" : {
-    "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "991000065939706444"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-A96)991000065939706444",
     "identifierForTheRecord" : "(DE-A96)991000065939706444"
   },
-  "Language" : [ {
-    "languageSource" : "und"
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "UTB-studi-E-Book"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "Stuttgart" ],
-    "name" : [ "UTB" ]
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-A96)991000065939706444"
-  } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "DEL" : "Y"
+  } ]
 }
 {
   "collection" : "DE-A96",
-  "dc" : {
-    "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "Englisch" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "991004562349606444"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-A96)991004562349606444",
     "identifierForTheRecord" : "(DE-A96)991004562349606444"
   },
-  "Language" : [ {
-    "language" : "Englisch",
-    "languageSource" : "eng"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "978-3407754271" ]
-  } ],
-  "Person" : [ {
-    "personName" : "Beatrice Alemagna"
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Das wundervolle Fluffipuff: Fünffarbiges Bilderbuch mit Ausklappseite"
-  } ],
-  "Edition" : {
-    "edition" : [ "Lizenzausgabe" ]
-  },
-  "PublisherName" : [ {
-    "name" : [ "Beltz & Gelberg" ]
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-A96)991004562349606444"
-  } ],
-  "DEL" : "Y"
+  } ]
 }
 {
   "collection" : "DE-465",
-  "dc" : {
-    "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "Deutsch" ],
-    "date" : [ "2019" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "99203866538906446"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-465)99203866538906446",
     "identifierForTheRecord" : "(DE-465)99203866538906446"
   },
-  "Language" : [ {
-    "language" : "Deutsch",
-    "languageSource" : "ger"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "978-1-138-30604-2" ]
-  } ],
-  "Person" : [ {
-    "personName" : "Reger, Jo [Herausgeber]"
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Nevertheless they persisted : feminisms and continued resistance in the U.S. women's movement"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "New York" ],
-    "name" : [ "Routledge" ],
-    "chronology" : [ "2019" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2019" ]
-  },
-  "xbib" : [ {
-    "uid" : "(DE-465)99203866538906446"
-  } ],
-  "DEL" : "Y"
+  } ]
 }
 {
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-468",
   "VolumeDesignation" : {
     "volumeDesignation" : "Series B"
@@ -535,258 +111,45 @@
   "CreatorStatement" : {
     "creatorStatement" : "The Gerontological Society of America"
   },
-  "dc" : {
-    "format" : [ "keine Angabe" ],
-    "type" : [ "Zeitschrift" ],
-    "language" : [ "Englisch" ],
-    "date" : [ "1995", "2008" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "keine Angabe" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "990013054080206447",
-    "identifierMMSIZ" : "990013054080206447"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-468)990013054080206447",
     "identifierForTheRecord" : "(DE-468)WU000014939"
   },
-  "DateFirst" : {
-    "date" : "1995"
-  },
-  "Language" : [ {
-    "language" : "Englisch",
-    "languageSource" : "eng"
-  } ],
-  "IdentifierISSN" : [ {
-    "identifierISSN" : "1079-5014"
-  } ],
-  "CorporateBody" : [ {
-    "corporateBodyName" : "Gerontological Society of America",
-    "corporateBodyIdentifier" : [ "(DE-588)514268-4" ],
-    "identifierGND" : [ "514268-4" ]
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "<<The>> journals of gerontology"
   }, {
     "titleMain" : "Psychological sciences and social sciences"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "Cary, NC" ],
-    "name" : [ "Oxford Univ. Pr" ],
-    "chronology" : [ "1995-" ]
-  }, {
-    "place" : [ "Washington, DC" ],
-    "name" : [ "Gerontological Society of America" ],
-    "chronology" : [ "-2008" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "1995-", "-2008" ]
-  },
-  "ChronologyAndEnumeration" : {
-    "value" : "50.1995 -"
-  },
-  "Description" : {
-    "description" : [ "lokale TA Okt. 2013/ Bestand ausgesondert / Vorg.: Journals of gerontology" ]
-  },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Online-Ausg. --->",
-    "description" : "<<The>> journals of gerontology / B"
-  } ],
-  "SubjectHeadings" : [ {
-    "subject" : "Gerontologie"
-  }, {
-    "subject" : "Zeitschrift"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-468)990013054080206447"
-  }, {
-    "uid" : "(DE-468)WU000014939"
-  } ],
-  "Item" : [ {
-    "callnumber" : "22J45-B"
-  } ],
-  "TitleOther" : {
-    "title" : [ "<<The>> journals of gerontology / B", "Psychological sciences and social sciences", "Journal of gerontology", "Journal of gerontology" ]
-  }
+  } ]
 }
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : "ed. by: C. Le Bris"
   },
-  "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "Englisch" ],
-    "date" : [ "2003" ]
-  },
-  "introx" : {
-    "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ],
-    "taxonomy" : [ "Chemie und Chemische Technik", "Mathematik" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "990176414160206441",
-    "identifierMMSIZ" : "990009835370206447",
-    "identifierPID" : "53104257440006447"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)990176414160206441",
     "identifierForTheRecord" : "(DE-605)HT016037352"
   },
-  "Language" : [ {
-    "language" : "Englisch",
-    "languageSource" : "eng"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9780444515667" ]
-  }, {
-    "identifierISBN" : [ "0444512489" ]
-  }, {
-    "identifierISBN" : [ "9780444515667" ]
-  }, {
-    "identifierISBN" : [ "0444512489" ]
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Computational chemistry"
-  } ],
-  "Edition" : {
-    "edition" : [ "1. ed." ]
-  },
-  "PublisherName" : [ {
-    "place" : [ "Amsterdam [u.a.]" ],
-    "name" : [ "Elsevier" ],
-    "chronology" : [ "2003" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2003" ]
-  },
-  "Extent" : {
-    "extent" : "X, 899 S. : Ill., graph. Darst."
-  },
-  "PersonContributor" : [ {
-    "personName" : "Le Bris, Claude",
-    "personBio" : "1966-",
-    "personIdentifier" : [ "(DE-588)12235138X" ],
-    "identifierGND" : [ "12235138X" ]
-  } ],
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Erscheint auch als",
-    "description" : "Computational chemistry",
-    "note" : [ "Druckausg." ]
-  } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Handbook of numerical analysis" ]
-  }, {
-    "titleSuper" : [ "Handbook of numerical analysis" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "10" ]
-  }, {
-    "volumeDesignation" : [ "10" ]
-  } ],
-  "OnlineAccess" : [ {
-    "uri" : "http://www.sciencedirect.com/science?_ob=PublicationURL&_tockey=%23TOC%2320481%232003%23999899999%23536518%23FLP%23&_cdi=20481&_pubType=HS&_auth=y&_acct=C000061607&_version=1&_urlVersion=0&_userid=3862678&md5=dab20d268649911fe095998515f2a42d",
-    "nonpublicnote" : "Digitalisierung"
-  }, {
-    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&portfolio_pid=53104257440006447&Force_direct=true",
-    "isInternalLinkFor" : "DE-468"
-  } ],
-  "SubjectGHBLocal" : [ {
-    "subject" : "UNR"
-  }, {
-    "subject" : "TLN"
-  }, {
-    "subject" : "TKX"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)990176414160206441"
-  }, {
-    "uid" : "(DE-605)HT016037352"
-  }, {
-    "uid" : "(DE-468)990009835370206447"
-  } ],
-  "TypeMedia" : "Elektronische Ressource"
+  } ]
 }
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : "series editor, Dr. Richard Hull"
   },
-  "dc" : {
-    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
-    "type" : [ "keine Angabe" ],
-    "language" : [ "Englisch" ],
-    "date" : [ "2011" ]
-  },
-  "introx" : {
-    "access" : [ "online" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "99368113400306441",
-    "identifierMMSIZ" : "9915879171806447",
-    "identifierPID" : "5398718960006447"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)99368113400306441",
     "identifierForTheRecord" : "(DE-605)99368113400306441"
   },
-  "DateFirst" : {
-    "date" : "2011",
-    "date" : "2011"
-  },
-  "DateLast" : {
-    "date" : "2017"
-  },
-  "Language" : [ {
-    "language" : "Englisch",
-    "languageSource" : "eng"
-  } ],
   "IdentifierZDB" : [ {
     "identifierZDB" : "2657415-9"
   }, {
     "identifierZDB" : "2000386-9"
   } ],
-  "IdentifierISSN" : [ {
-    "identifierISSN" : "2046-6080"
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Dialogues in Critical Management Studies"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "Bingley, U.K." ],
-    "name" : [ "Emerald Group Publishing Limited" ],
-    "chronology" : [ "2011-" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2011-" ]
-  },
-  "OnlineAccess" : [ {
-    "publicnote" : "EZB-NALFO-01634 Emerald BME eBook Series Archive AL",
-    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&portfolio_pid=5398718960006447&Force_direct=true",
-    "isInternalLinkFor" : "DE-468"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)99368113400306441"
-  }, {
-    "uid" : "(DE-468)9915879171806447"
-  } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "PersonCreator" : [ {
-    "personName" : "Hull, Richard",
-    "personTitle" : [ "Ph. D." ]
-  } ],
-  "RSWK" : [ {
-    "subjectTopicName" : "Nonprofit organizations"
-  }, {
-    "subjectGenre" : "Case studies"
   } ]
 }
 {
@@ -794,339 +157,48 @@
   "CreatorStatement" : {
     "creatorStatement" : "Doris Haas-Arndt"
   },
-  "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "Deutsch" ],
-    "date" : [ "2015" ]
-  },
-  "introx" : {
-    "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "990218476060206441",
-    "identifierMMSIZ" : "990014836170206447",
-    "identifierPID" : "53101140790006447"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)990218476060206441",
     "identifierForTheRecord" : "(DE-605)HT019344670"
   },
-  "Language" : [ {
-    "language" : "Deutsch",
-    "languageSource" : "ger"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783035612974", "PDF" ]
-  }, {
-    "identifierISBN" : [ "9783035613162", "EPUB" ]
-  }, {
-    "identifierISBN" : [ "9783035612974", "PDF" ]
-  }, {
-    "identifierISBN" : [ "9783035613162", "EPUB" ]
-  }, {
-    "identifierISBN" : [ "9783035612974", "PDF" ]
-  }, {
-    "identifierISBN" : [ "9783035613162", "EPUB" ]
-  } ],
-  "IdentifierDOI" : [ {
-    "standardNumber" : "10.1515/9783035612974"
-  } ],
-  "Person" : [ {
-    "personName" : "Haas-Arndt, Doris",
-    "personBio" : "1957-",
-    "personIdentifier" : [ "(DE-588)121619087" ],
-    "identifierGND" : [ "121619087" ]
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Wasserkreislauf im Gebäude"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "Basel" ],
-    "name" : [ "Birkhäuser" ],
-    "chronology" : [ "[2015]" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "[2015]" ]
-  },
-  "Extent" : {
-    "extent" : "1 Online-Ressource (81 Seiten)"
-  },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Basics" ]
-  } ],
-  "Description" : {
-    "description" : [ "\"Erscheinungsdatum: Mai 2017\" - Startseite", "Erscheinungsjahr der Printausgabe: 2015", "\"Erscheinungsdatum: Mai 2017\" - Startseite", "Erscheinungsjahr der Printausgabe: 2015", "\"Erscheinungsdatum: Mai 2017\" - Startseite", "Erscheinungsjahr der Printausgabe: 2015" ]
-  },
-  "Summary" : {
-    "abstract" : [ "ger: Die Integration der haustechnischen Anlagen ist ein wichtiger Aspekt bei der Planung des Architekten. Die Konzeptionierung von Versorgungssträngen und Kreisläufen im Gebäude erfordert ein Verständnis für die Zusammenhänge der Ver- und Entsorgung mit dem Element Wasser. Hierbei geht es vor allem um die Zusammenhänge der einzelnen Kreislaufelemente von der Versorgung mit Trinkwasser, den Verbrauchern im Haus und der Entsorgung von Abwasser bis hin zur Wiedernutzbarmachung von Abwässern. Das Thema der Wassereinsparung bildet dabei einen übergeordneten Rahmen." ]
-  },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Erscheint auch als",
-    "description" : "Haas-Arndt, Doris, 1957-: Wasserkreislauf im Gebäude",
-    "note" : [ "Druck-Ausgabe" ]
-  } ],
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "978-3-0356-0565-5" ]
-  } ],
-  "OnlineAccess" : [ {
-    "uri" : "https://dx.doi.org/10.1515/9783035612974",
-    "nonpublicnote" : "Resolving-System"
-  }, {
-    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&portfolio_pid=53101140790006447&Force_direct=true",
-    "isInternalLinkFor" : "DE-468"
-  } ],
-  "SubjectHeadings" : [ {
-    "subject" : "Gebäude"
-  }, {
-    "subject" : "Wasserversorgung"
-  }, {
-    "subject" : "Gebäude"
-  }, {
-    "subject" : "Abwasserbeseitigung"
-  }, {
-    "subject" : "Haustechnik"
-  }, {
-    "subject" : "Wasserkreislauf"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)990218476060206441"
-  }, {
-    "uid" : "(DE-605)HT019344670"
-  }, {
-    "uid" : "(DE-468)990014836170206447"
-  } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "Basics Wasserkreislauf im Gebäude", "Basics Haustechnik Wasserkreislauf im Gebäude" ]
-  }
+  } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "Zeitschrift der Gesellschaft Deutscher Chemiker"
-  },
-  "dc" : {
-    "format" : [ "keine Angabe" ],
-    "type" : [ "Schriftenreihe", "Zeitschrift" ],
-    "language" : [ "Deutsch" ],
-    "date" : [ "2000", "2010", "2011", "2014" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "990110260070206441",
-    "identifierMMSIZ" : "990008405780206447"
   },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)990110260070206441",
     "identifierForTheRecord" : "(DE-605)HT012875221"
   },
-  "DateFirst" : {
-    "date" : "2000"
-  },
-  "Language" : [ {
-    "language" : "Deutsch",
-    "languageSource" : "ger"
-  } ],
   "IdentifierZDB" : [ {
     "identifierZDB" : "2000386-9"
   } ],
-  "IdentifierISSN" : [ {
-    "identifierISSN" : "1439-9598"
-  }, {
-    "identifierISSN" : "1439-9598"
-  } ],
-  "CorporateBody" : [ {
-    "corporateBodyName" : "Gesellschaft Deutscher Chemiker",
-    "corporateBodyIdentifier" : [ "(DE-588)2012027-8" ],
-    "identifierGND" : [ "2012027-8" ]
-  }, {
-    "corporateBodyName" : "Gesellschaft Österreichischer Chemiker",
-    "corporateBodyIdentifier" : [ "(DE-588)5137928-4" ],
-    "identifierGND" : [ "5137928-4" ]
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Nachrichten aus der Chemie"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "Weinheim" ],
-    "name" : [ "Wiley-VCH" ],
-    "chronology" : [ "2000-" ]
-  }, {
-    "place" : [ "Weinheim" ],
-    "name" : [ "Wiley-VCH" ],
-    "chronology" : [ "2000-2010" ]
-  }, {
-    "place" : [ "Frankfurt, M" ],
-    "name" : [ "Ges. Dt. Chemiker" ],
-    "chronology" : [ "teils" ]
-  }, {
-    "place" : [ "Berlin" ],
-    "name" : [ "<<de>> Gruyter" ],
-    "chronology" : [ "2011-2014" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2000-", "2000-2010", "teils", "2011-2014" ]
-  },
-  "Extent" : {
-    "extent" : "30 cm"
-  },
-  "ChronologyAndEnumeration" : {
-    "value" : "48.2000 -"
-  },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Online-Ausg.",
-    "description" : "Nachrichten aus der Chemie"
-  } ],
-  "DescriptionOfFormerEditionsOrVolumes" : [ {
-    "prefix" : "Vorg.:",
-    "description" : "Nachrichten aus Chemie, Technik und Laboratorium"
-  }, {
-    "prefix" : "Darin aufgegangen",
-    "description" : "Gesellschaft Österreichischer Chemiker: Mitteilungsblatt der Gesellschaft Österreichischer Chemiker"
-  } ],
-  "SubjectHeadings" : [ {
-    "subject" : "Chemie"
-  }, {
-    "subject" : "Zeitschrift"
-  } ],
-  "SubjectGHBLocal" : [ {
-    "subject" : "70"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)990110260070206441"
-  }, {
-    "uid" : "(DE-605)HT012875221"
-  }, {
-    "uid" : "(DE-468)990008405780206447"
-  } ],
-  "Item" : [ {
-    "callnumber" : "70N1"
-  } ],
-  "TitleOther" : {
-    "title" : [ "Analytica pro", "EuCheMS newsletter", "Nachrichten für die Karriere", "Nachrichten für die Chemikerkarriere", "Nachrichten aus der Chemiewirtschaft", "Nano", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker" ]
-  }
+  } ]
 }
 {
   "collection" : "DE-465",
-  "dc" : {
-    "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "Deutsch" ],
-    "date" : [ "2013" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "99203913838706446"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-465)99203913838706446",
     "identifierForTheRecord" : "(DE-465)99203913838706446"
   },
-  "Language" : [ {
-    "language" : "Deutsch",
-    "languageSource" : "ger"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "978-3-631-63463-9" ]
-  } ],
-  "Person" : [ {
-    "personName" : "Veit, Vivien"
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Die gesetzliche Konzeption der Bestechungsdelikte : zugleich ein Vorschlag für eine künftige Fassung der §§ 331 ff. StGB"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "Frankfurt am Main" ],
-    "name" : [ "Lang" ],
-    "chronology" : [ "2013" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2013" ]
-  },
-  "xbib" : [ {
-    "uid" : "(DE-465)99203913838706446"
-  } ],
-  "DEL" : "Y"
+  } ]
 }
 {
   "collection" : "DE-605",
-  "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "Englisch" ],
-    "date" : [ "2005" ]
-  },
-  "introx" : {
-    "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "99368091563606441",
-    "identifierPID" : "53472256850006441"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)99368091563606441",
     "identifierForTheRecord" : "(DE-605)99368091563606441"
   },
-  "Language" : [ {
-    "language" : "Englisch",
-    "languageSource" : "eng"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "0-435-91006-X" ]
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Eyes of the sky"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "[Place of publication not identified]" ],
-    "name" : [ "ProQuest LLC" ],
-    "chronology" : [ "2005" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2005" ]
-  },
-  "Extent" : {
-    "extent" : "1 online resource (vii, 231 pages)."
-  },
-  "Description" : {
-    "description" : [ "Bibliographic Level Mode of Issuance: Monograph" ]
-  },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "African writers series" ]
-  } ],
-  "OnlineAccess" : [ {
-    "publicnote" : "African Writers Series",
-    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&portfolio_pid=53472256850006441&Force_direct=true",
-    "isInternalLinkFor" : "DE-468"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)99368091563606441"
-  } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "RSWK" : [ {
-    "subjectTopicName" : "English Literature"
-  }, {
-    "subjectTopicName" : "English"
-  }, {
-    "subjectTopicName" : "Languages & Literatures"
-  }, {
-    "subjectGeoName" : "South Africa",
-    "subjectGenre" : "Fiction"
   } ]
 }
 {
@@ -1137,80 +209,12 @@
   "CreatorStatement" : {
     "creatorStatement" : "von Rudolf P. Hübener"
   },
-  "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "Deutsch" ],
-    "date" : [ "2020" ]
-  },
-  "introx" : {
-    "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "99368165410206441",
-    "identifierPID" : "53486715250006441"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)99368165410206441",
     "identifierForTheRecord" : "(DE-605)99368165410206441"
   },
-  "Language" : [ {
-    "language" : "Deutsch",
-    "languageSource" : "ger"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3-662-62078-2" ]
-  } ],
-  "IdentifierDOI" : [ {
-    "standardNumber" : "10.1007/978-3-662-62078-6"
-  } ],
-  "Person" : [ {
-    "personName" : "Hübener, Rudolf P.",
-    "personRole" : [ "[author.]" ]
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Leiter, Halbleiter, Supraleiter"
-  } ],
-  "Edition" : {
-    "edition" : [ "3rd ed. 2020." ]
-  },
-  "PublisherName" : [ {
-    "place" : [ "Berlin, Heidelberg" ],
-    "name" : [ "Springer Berlin Heidelberg", "Imprint: Springer Spektrum" ],
-    "chronology" : [ "2020" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2020" ]
-  },
-  "Extent" : {
-    "extent" : "1 online resource (XVII, 247 S. 121 Abb., 34 Abb. in Farbe.)"
-  },
-  "Summary" : {
-    "abstract" : [ "Das vorliegende Buch gibt eine kompakte Einführung in die Grundlagen der Festkörperphysik, wobei der Schwerpunkt auf den elektrischen und magnetischen Materialeigenschaften liegt. Leser werden nicht nur die kompakte und anschauliche Herangehensweise schätzen, sondern auch die kurzen Abschnitte über die Forschungsgeschichte der Festkörperphysik, die mit wegweisenden Forschern wie Max Planck, Albert Einstein aber auch Heike Kamerlingh Onnes, Eugene Wigner oder Frederick Seitz verbunden ist. Diese helfen dabei, die Entwicklung der Festkörperphysik und ihre unterschiedlichen Theorien und Modelle verstehen und einordnen zu können. Das Buch richtet sich an Studierende der Physik, Ingenieurwissenschaften und Materialwissenschaften bis zum Bachelor. Es kann durch seine anschaulichen Erklärungen und seinen didaktischen Ansatz auch als motivierende Vorstufe und unterstützendes Begleitwerk beim Studium anspruchsvollerer Lehrbücher der Festkörperphysik benutzt werden. Die dritte Auflage enthält eine Reihe von Erweiterungen, besonders im Kapitel über topologische Materialien. Aus dem Inhalt - Kristallgitter - Theorie der Halbleiter, Leiter und Supraleiter - Metalle - Drude-Lorentz-Modell - BCS-Theorie - Hochtemperatur-Supraleiter - Nanostrukturen: Quantenpunkte - Fehler im Kristallgitter Der Autor Rudolf Huebener studierte Physik und Mathematik an der Universität Marburg sowie an den Technischen Hochschulen München und Darmstadt. 1958 promovierte er in Marburg im Fach Experimentalphysik. Nach einer Tätigkeit im Forschungszentrum Karlsruhe und einem Forschungsinstitut bei Albany, New York, USA arbeitete er für 12 Jahre am Argonne National Laboratory bei Chicago, Illinois. 1974 übernahm er einen Lehrstuhl für Experimentalphysik an der Universität Tübingen. Dort lehrte und forschte er bis zu seiner Emeritierung im Jahr 1999." ]
-  },
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "3-662-62077-4" ]
-  } ],
-  "OnlineAccess" : [ {
-    "publicnote" : "Springer Natur - und Basiswissenschaften incl. Mathematik eBooks 2020 - German Language",
-    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&portfolio_pid=53486715250006441&Force_direct=true",
-    "isInternalLinkFor" : "DE-468"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)99368165410206441"
-  } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "RSWK" : [ {
-    "subjectTopicName" : "Semiconductors"
-  }, {
-    "subjectTopicName" : "Solid state physics"
-  }, {
-    "subjectIdentifier" : [ "https://scigraph.springernature.com/ontologies/product-market-codes/P25150" ]
-  }, {
-    "subjectTopicName" : "Solid State Physics",
-    "subjectIdentifier" : [ "https://scigraph.springernature.com/ontologies/product-market-codes/P25013" ]
   } ]
 }
 {
@@ -1221,80 +225,15 @@
   "CreatorStatement" : {
     "creatorStatement" : "Detlef Horster"
   },
-  "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Bibliografie", "Biografie", "Monographie" ],
-    "language" : [ "Deutsch" ],
-    "date" : [ "2010" ]
-  },
-  "introx" : {
-    "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "99368053843406441",
-    "identifierPID" : "53460640960006441"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)99368053843406441",
     "identifierForTheRecord" : "(DE-605)99368053843406441"
   },
-  "Language" : [ {
-    "language" : "Deutsch",
-    "languageSource" : "ger"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3-534-70536-X" ]
-  } ],
-  "Person" : [ {
-    "personName" : "Horster, Detlef",
-    "personRole" : [ "[author.]" ]
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Jürgen Habermas"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "Darmstadt" ],
-    "name" : [ "WBG (Wissenschaftliche Buchgesellschaft)" ],
-    "chronology" : [ "[2010]" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "[2010]" ]
-  },
-  "Extent" : {
-    "extent" : "1 online resource (114 p.)"
-  },
-  "Description" : {
-    "description" : [ "Description based upon print version of record." ]
-  },
-  "Summary" : {
-    "abstract" : [ "Jürgen Habermas, der bekannteste Philosoph der deutschen Gegenwart, wird hier in einer knappen und verständlichen Einführung behandelt. Alle Themenbereiche des Habermasschen Denkens werden berücksichtigt und von einem prominenten Kenner der Materie didaktisch klug dargestellt. Es werden nicht nur die Stationen der intellektuellen Entwicklung beschrieben, sondern auch die systematischen Festlegungen. Im Mittelpunkt stehen die politisch-philosophischen Kategorien, mit denen Habermas bis heute in die aktuellen Debatten hineinwirkt. Ein Verzeichnis der Schriften und eine Zeittafel komplettiere" ]
-  },
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "3-534-23284-4" ]
-  } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Philosophie (Wissenschaftliche Buchgesellschaft)" ]
-  } ],
-  "OnlineAccess" : [ {
-    "publicnote" : "Wissenschaftliche Buchgesellschaft Philosophie - Einführungen",
-    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&portfolio_pid=53460640960006441&Force_direct=true",
-    "isInternalLinkFor" : "DE-468"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)99368053843406441"
-  } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "RSWK" : [ {
-    "subjectPersonName" : "Habermas, Jürgen"
-  }, {
-    "subjectTopicName" : "Philosophy, German",
-    "subjectChronological" : "20th century"
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "in fünf Bänden"
@@ -1302,437 +241,73 @@
   "CreatorStatement" : {
     "creatorStatement" : "hrsg. von Jan Knopf"
   },
-  "dc" : {
-    "format" : [ "keine Angabe" ],
-    "type" : [ "Schriftenreihe" ],
-    "language" : [ "Deutsch" ],
-    "date" : [ "2001" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "990113988060206441",
-    "identifierMMSIZ" : "990008494220206447"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)990113988060206441",
     "identifierForTheRecord" : "(DE-605)HT013072137"
   },
-  "Language" : [ {
-    "language" : "Deutsch",
-    "languageSource" : "ger"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3476018288" ]
-  }, {
-    "identifierISBN" : [ "3476018288" ]
-  }, {
-    "identifierISBN" : [ "3476018288" ]
-  }, {
-    "identifierISBN" : [ "3476018288" ]
-  }, {
-    "identifierISBN" : [ "3476018288" ]
-  }, {
-    "identifierISBN" : [ "3476018288" ]
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Brecht-Handbuch"
-  } ],
-  "Edition" : {
-    "edition" : [ "[Neubearb.]" ]
-  },
-  "PublisherName" : [ {
-    "place" : [ "Stuttgart [u.a.]" ],
-    "name" : [ "Metzler" ],
-    "chronology" : [ "2001-" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2001-" ]
-  },
-  "PersonContributor" : [ {
-    "personName" : "Knopf, Jan",
-    "personBio" : "1944-",
-    "personIdentifier" : [ "(DE-588)116260092" ],
-    "identifierGND" : [ "116260092" ]
-  } ],
-  "SubjectHeadings" : [ {
-    "subject" : "Brecht, Bertolt"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)990113988060206441"
-  }, {
-    "uid" : "(DE-605)HT013072137"
-  }, {
-    "uid" : "(DE-468)990008494220206447"
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
-  "dc" : {
-    "format" : [ "keine Angabe" ],
-    "type" : [ "Nachschlagewerk", "Schriftenreihe" ],
-    "language" : [ "Deutsch" ],
-    "date" : [ "1980", "1999" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ],
-    "taxonomy" : [ "Geschichte" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "990047829090206441",
-    "identifierMMSIZ" : "990003074850206447"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)990047829090206441",
     "identifierForTheRecord" : "(DE-605)HT001332689"
   },
-  "Language" : [ {
-    "language" : "Deutsch",
-    "languageSource" : "ger"
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Lexikon des Mittelalters"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "München [u.a.]" ],
-    "name" : [ "Artemis-Verl" ],
-    "chronology" : [ "1980-1999" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "1980-1999" ]
-  },
-  "Description" : {
-    "description" : [ "Bd. 7 und 8 im LexMA-Verl., München, erschienen. Reg.-Bd. im Verl. Metzler, Stuttgart [u.a.], erschienen" ]
-  },
-  "SubjectHeadings" : [ {
-    "subject" : "Mittelalter"
-  } ],
-  "SubjectGHBLocal" : [ {
-    "subject" : "LCB"
-  }, {
-    "subject" : "AACM"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)990047829090206441"
-  }, {
-    "uid" : "(DE-605)HT001332689"
-  }, {
-    "uid" : "(DE-468)990003074850206447"
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : "hrsg. von Niels Birbaumer .."
-  },
-  "dc" : {
-    "format" : [ "keine Angabe" ],
-    "type" : [ "Nachschlagewerk", "Schriftenreihe" ],
-    "language" : [ "Deutsch" ],
-    "date" : [ "2003" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "990129211850206441",
-    "identifierMMSIZ" : "990008797960206447"
   },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)990129211850206441",
     "identifierForTheRecord" : "(DE-605)HT014051766"
   },
-  "Language" : [ {
-    "language" : "Deutsch",
-    "languageSource" : "ger"
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Enzyklopädie der Psychologie"
-  } ],
-  "Edition" : {
-    "edition" : [ "[Neubearb. ab 2003]" ]
-  },
-  "PublisherName" : [ {
-    "place" : [ "Göttingen [u.a.]" ],
-    "name" : [ "Hogrefe, Verl. für Psychologie" ],
-    "chronology" : [ "2003-" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2003-" ]
-  },
-  "PersonContributor" : [ {
-    "personName" : "Birbaumer, Niels-Peter",
-    "personBio" : "1945-",
-    "personIdentifier" : [ "(DE-588)121603164" ],
-    "identifierGND" : [ "121603164" ]
-  } ],
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Erscheint auch als",
-    "description" : "Enzyklopädie der Psychologie",
-    "note" : [ "Online-Ausg." ]
-  } ],
-  "DescriptionOfFormerEditionsOrVolumes" : [ {
-    "prefix" : "Frühere Ausg. mit teilw. anderer Bandeinteilung u.d.T.",
-    "description" : "Enzyklopädie der Psychologie"
-  } ],
-  "SubjectHeadings" : [ {
-    "subject" : "Psychologie"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)990129211850206441"
-  }, {
-    "uid" : "(DE-605)HT014051766"
-  }, {
-    "uid" : "(DE-468)990008797960206447"
   } ]
 }
 {
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
-  "dc" : {
-    "format" : [ "keine Angabe" ],
-    "type" : [ "Schriftenreihe", "Zeitschrift" ],
-    "language" : [ "Englisch" ],
-    "date" : [ "1936" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "branch" : [ "Campus Grifflenberg", "Magazin" ],
-    "carrier" : [ "keine Angabe" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "990054150240206441",
-    "identifierMMSIZ" : "990004037860206447"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)990054150240206441",
     "identifierForTheRecord" : "(DE-605)HT002193206"
   },
-  "DateFirst" : {
-    "date" : "1936"
-  },
-  "Language" : [ {
-    "language" : "Englisch",
-    "languageSource" : "eng"
-  } ],
   "IdentifierZDB" : [ {
     "identifierZDB" : "3376-5"
   } ],
-  "IdentifierISSN" : [ {
-    "identifierISSN" : "0016-8777"
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "German life and letters"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "Oxford", "Malden" ],
-    "name" : [ "Wiley-Blackwell" ],
-    "chronology" : [ "1936-" ]
-  }, {
-    "place" : [ "Oxford [u.a.]" ],
-    "name" : [ "Blackwell Publ" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "1936-" ]
-  },
-  "ChronologyAndEnumeration" : {
-    "value" : "1.1936/37 - 4.1939,1; N.S. 1.1947/48 -"
-  },
-  "Description" : {
-    "description" : [ "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson" ]
-  },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Online-Ausg.",
-    "description" : "German life and letters"
-  } ],
-  "SubjectHeadings" : [ {
-    "subject" : "Deutsch"
-  }, {
-    "subject" : "Literatur"
-  }, {
-    "subject" : "Zeitschrift"
-  }, {
-    "subject" : "Deutschland"
-  }, {
-    "subject" : "Kultur"
-  }, {
-    "subject" : "Geschichte"
-  }, {
-    "subject" : "Zeitschrift"
-  }, {
-    "subject" : "Deutsch"
-  }, {
-    "subject" : "Literatur"
-  }, {
-    "subject" : "Kultur"
-  }, {
-    "subject" : "Zeitschrift"
-  } ],
-  "SubjectGHBLocal" : [ {
-    "subject" : "07"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)990054150240206441"
-  }, {
-    "uid" : "(DE-605)HT002193206"
-  }, {
-    "uid" : "(DE-468)990004037860206447"
-  } ],
-  "Item" : [ {
-    "callnumber" : "07G6"
   } ]
 }
 {
-  "TypePeriodical" : "Zeitschrift",
   "collection" : "DE-605",
-  "dc" : {
-    "format" : [ "keine Angabe" ],
-    "type" : [ "Zeitschrift" ],
-    "language" : [ "Englisch" ],
-    "date" : [ "1969", "1997" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "990055814090206441",
-    "identifierMMSIZ" : "990007503320206447"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-605)990055814090206441",
     "identifierForTheRecord" : "(DE-605)HT007028316"
   },
-  "DateFirst" : {
-    "date" : "1969"
-  },
-  "DateLast" : {
-    "date" : "1997"
-  },
-  "Language" : [ {
-    "language" : "Englisch",
-    "languageSource" : "eng"
-  } ],
   "IdentifierZDB" : [ {
     "identifierZDB" : "973786-8"
   } ],
-  "IdentifierISSN" : [ {
-    "identifierISSN" : "0041-414X"
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Tunnels & tunnelling"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "London" ],
-    "name" : [ "Miller Freeman" ],
-    "chronology" : [ "1969-1997" ]
-  }, {
-    "place" : [ "London" ],
-    "name" : [ "Morgan-Grampian Ltd" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "1969-1997" ]
-  },
-  "ChronologyAndEnumeration" : {
-    "value" : "1.1969 - 29.1997,2"
-  },
-  "DescriptionOfContinuingEditionsOrVolumes" : [ {
-    "prefix" : "Forts.:",
-    "description" : "Tunnels & tunnelling international"
-  } ],
-  "SubjectHeadings" : [ {
-    "subject" : "Tunnelbau"
-  }, {
-    "subject" : "Zeitschrift"
-  }, {
-    "subject" : "Tunnel"
-  }, {
-    "subject" : "Zeitschrift"
-  } ],
-  "SubjectGHBLocal" : [ {
-    "subject" : "82"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-605)990055814090206441"
-  }, {
-    "uid" : "(DE-605)HT007028316"
-  }, {
-    "uid" : "(DE-468)990007503320206447"
-  } ],
-  "Item" : [ {
-    "callnumber" : "82T6"
-  } ],
-  "TitleOther" : {
-    "title" : [ "Tunnels and tunnelling" ]
-  }
+  } ]
 }
 {
   "collection" : "DE-468",
   "CreatorStatement" : {
     "creatorStatement" : "Max Aub"
   },
-  "dc" : {
-    "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "Spanisch" ],
-    "date" : [ "2003" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_WUP",
-    "identifierMMS" : "9915993472406447",
-    "identifierMMSIZ" : "9915993472406447"
-  },
   "RecordIdentifier" : {
     "identifierForTheIndex" : "(DE-468)9915993472406447",
     "identifierForTheRecord" : "(DE-468)9915993472406447"
   },
-  "Language" : [ {
-    "languageSource" : "   "
-  }, {
-    "language" : "Spanisch",
-    "languageSource" : "spa"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "8466310746" ]
-  } ],
-  "Person" : [ {
-    "personName" : "Aub, Max"
-  } ],
   "TitleStatement" : [ {
     "titleMain" : "Campo cerrado"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "Madrid" ],
-    "name" : [ "punto de lectura" ],
-    "chronology" : [ "[abril 2003]" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "[abril 2003]" ]
-  },
-  "Extent" : {
-    "extent" : "249 Seiten"
-  },
-  "xbib" : [ {
-    "uid" : "(DE-468)9915993472406447"
-  } ],
-  "Item" : [ {
-    "callnumber" : "FZZ1"
   } ]
 }

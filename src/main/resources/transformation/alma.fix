@@ -1,0 +1,273 @@
+/*
+  <macro name="regex-del-punctuation-end">
+    <data source="$[dsource]" name="$[dname]">
+      <replace pattern="^[©]|\s?[,.:;/=]?$" with="" />
+    </data>
+  </macro>
+
+  <macro name="identifierGND">
+    <entity name="$[name][]" flushWith="$[field][0123] " sameEntity="true">
+      <data name="" source="$[field][0123] .0">
+        <regexp match="(?&lt;=\(DE-588\)).*$" />
+      </data>
+    </entity>
+  </macro>
+*/
+
+/*
+  <call-macro name="alma-mms-to-isil" dname="@isil" source="001" />
+*/
+copy_field("001", "@institution_code")
+parse_text("@institution_code", ".*(.{4})$")
+copy_field("@institution_code", "@isil")
+lookup("@isil", "institution-code-to-isil")
+
+/*
+  <data name="collection" source="@isil" />
+*/
+copy_field("@isil", "collection")
+
+/*
+  <choose name="@sysid">
+    <data source="981  .a"> <!-- SISIS CATKey -->
+      <regexp match="^\($[isil]\).*" />
+    </data>
+    <data source="981  .a"> <!-- SISIS CATKey -->
+      <regexp match="^\($[sigel]\)(.*)" format="($[isil])${1}" />
+    </data>
+    <data source="035  .a">
+      <regexp match="^\($[isil]\).*" />
+    </data>
+  </choose>
+*/
+do list(path: "981  .a", ^var: "$i") # SISIS CATKey
+  if any_match("$i", "^\\($[isil]\\).*")
+    copy_field("$i", "@sysid")
+  elsif any_match("$i", "^\\($[sigel]\\).*")
+    replace_all("$i", "^\\($[sigel]\\)", "($[isil])")
+    copy_field("$i", "@sysid")
+  end
+end
+
+/*
+  <data name="@hbzid" source="035  .a">
+    <regexp match="^\($[catalogid]\).*" />
+  </data>
+*/
+do list(path: "035  .a", ^var: "$i")
+  if any_match("$i", "^\\($[catalogid]\\).*")
+    if exists("@hbzid")
+      remove_field("@hbzid")
+    end
+    copy_field("$i", "@hbzid")
+  elsif any_match("$i", "^\\($[isil]\\).*")
+    unless exists("@sysid")
+      copy_field("$i", "@sysid")
+    end
+  end
+end
+
+/*
+  <combine name="@mmsid" value="(${isil})${id}">
+    <data name="isil" source="@isil" />
+    <data name="id" source="001" />
+  </combine>
+*/
+paste("@mmsid", "~(", "@isil", "~)", "001", join_char: "")
+
+/*
+  <choose name="@id">
+    <data source="@hbzid">
+      <compose postfix="$[id-suffix]" />
+    </data>
+    <data source="@sysid">
+      <compose postfix="$[id-suffix]" />
+    </data>
+    <data source="@mmsid" />
+  </choose>
+*/
+if exists("@hbzid")
+  paste("@id", "@hbzid", "$[id-suffix]", join_char: "")
+elsif exists("@sysid")
+  paste("@id", "@sysid", "$[id-suffix]", join_char: "")
+else
+  copy_field("@mmsid", "@id")
+end
+
+/*
+  <entity name="TitleUniform">
+    <data name="titleUniform" source="240??.a">
+      <replace pattern="\.?$" with="" />
+    </data>
+  </entity>
+*/
+copy_field("240??.a", "TitleUniform.titleUniform")
+replace_all("TitleUniform.titleUniform", "[.]$", "")
+
+/*
+  <entity name="TitleAddendum">
+    <data name="title" source="245??.b">
+      <occurrence only="1" />
+      <replace pattern="\s?[./]\s?$" with="" />
+    </data>
+  </entity>
+*/
+# TODO: only first occurrence
+copy_field("245??.b", "TitleAddendum.title")
+replace_all("TitleAddendum.title", "\\s?[./]\\s?$", "")
+
+/*
+  <entity name="VolumeDesignation">
+    <data name="volumeDesignation" source="245??.n">
+      <occurrence only="1" />
+      <replace pattern="\s?[,./:=]?\s?$" with="" />
+    </data>
+  </entity>
+*/
+# TODO: only first occurrence
+copy_field("245??.n", "VolumeDesignation.volumeDesignation")
+replace_all("VolumeDesignation.volumeDesignation", "\\s?[,./:=]?\\s?$", "")
+
+/*
+  <entity name="CreatorStatement">
+    <data name="creatorStatement" source="245[01]?.c">
+      <replace pattern="[.]$" with="" />
+    </data>
+  </entity>
+*/
+copy_field("245[01]?.c", "CreatorStatement.creatorStatement")
+replace_all("CreatorStatement.creatorStatement", "[.]$", "")
+
+/*
+  <entity name="RecordIdentifier" flushWith="@id">
+    <data name="identifierForTheRecord" source="@id" />
+    <data name="identifierForTheIndex" source="@mmsid" />
+  </entity>
+*/
+copy_field("@mmsid", "RecordIdentifier.identifierForTheIndex")
+copy_field("@id", "RecordIdentifier.identifierForTheRecord")
+
+/*
+  <entity name="IdentifierZDB[]" flushWith="record">
+    <entity name="" flushWith="0167 " sameEntity="true">
+      <if>
+        <any flushWith="0167 ">
+          <none flushWith="0167 " sameEntity="true">
+            <data source="0167 .2" />
+          </none>
+          <data source="0167 .2">
+            <equals string="DE-600" />
+          </data>
+        </any>
+      </if>
+      <data name="identifierZDB" source="0167 .a">
+        <java class="hbz.limetrans.function.ZDB" />
+      </data>
+    </entity>
+  </entity>
+*/
+do list(path: "0167 ", ^var: "$i")
+  if any_match("$i.2", "^DE-600$")
+    hbz.limetrans.function.ZDB("$i.a")
+    unless exists("IdentifierZDB[]")
+      set_array("IdentifierZDB[]")
+    end
+    copy_field("$i.a", "IdentifierZDB[].$append.identifierZDB")
+  end
+end
+
+/*
+  <entity name="Conference" flushWith="record">
+    <data name="conferenceName" source="111[012] .a">
+      <replace pattern="[.,]$" with="" />
+    </data>
+    <data name="conferencePlace" source="111[012] .c">
+      <replace pattern="\(|\)?[;.,]?$" with="" />
+      <occurrence only="1" />
+    </data>
+    <data name="conferenceDate" source="111[012] .d">
+      <replace pattern="\(|\)?[,]?$|\s?:$" with="" />
+    </data>
+    <concat name="conferenceUnit" delimiter=". ">
+      <data source="111[012] .e">
+        <replace pattern="[,.]$" with="" />
+      </data>
+    </concat>
+    <data name="corporateBodyNameeNumber" source="111[012] .n"><!-- [sic] -->
+      <replace pattern="\(|\)?[,]?$|\s?[;:]$" with="" />
+      <occurrence only="1" />
+    </data>
+    <entity name="conferenceIdentifier[]" flushWith="111[012] " sameEntity="true">
+      <data name="" source="111[012] .0">
+        <regexp match="^\(DE-588\).*$" />
+      </data>
+    </entity>
+    <call-macro name="identifierGND" field="111" />
+  </entity>
+*/
+copy_field("111[012] .a", "Conference.conferenceName")
+replace_all("Conference.conferenceName", "[.,]$", "")
+# TODO: only first occurrence
+copy_field("111[012] .n", "Conference.corporateBodyNameeNumber") # sic!
+replace_all("Conference.corporateBodyNameeNumber", "\\(|\\)?[,]?$|\\s?:$", "")
+copy_field("111[012] .d", "Conference.conferenceDate")
+replace_all("Conference.conferenceDate", "\\(|\\)?[,]?$|\\s?:$", "")
+# TODO: only first occurrence
+copy_field("111[012] .c", "Conference.conferencePlace")
+replace_all("Conference.conferencePlace", "\\(|\\)?[;.,]?$", "")
+do list(path: "111[012] .0", ^var: "$i")
+  if any_match("$i", "^\\(DE-588\\).*")
+    unless exists("Conference.conferenceIdentifier[]")
+      set_array("Conference.conferenceIdentifier[]")
+    end
+    copy_field("$i", "Conference.conferenceIdentifier[].$append")
+  end
+end
+do list(path: "111[0123] .0", ^var: "$i")
+  if any_match("$i", "^\\(DE-588\\).*")
+    replace_all("$i", "^\\(DE-588\\)", "")
+    unless exists("Conference.identifierGND[]")
+      set_array("Conference.identifierGND[]")
+    end
+    copy_field("$i", "Conference.identifierGND[].$append")
+  end
+end
+copy_field("111[012] .e", "Conference.conferenceUnit")
+# TODO: replace_all("Conference.conferenceUnit", "[,.]$", "")
+join_field("Conference.conferenceUnit", ". ")
+
+/*
+  <entity name="TitleStatement[]" flushWith="record">
+    <entity name="" flushWith="record">
+      <call-macro name="regex-del-punctuation-end" dsource="245??.a" dname="titleMain" />
+    </entity>
+    <entity name="" flushWith="record">
+      <data name="titleMain" source="245??.p">
+        <occurrence only="1" />
+        <replace pattern="\s?\.?\s?$" with="" />
+      </data>
+    </entity>
+  </entity>
+*/
+set_array("TitleStatement[]")
+do list(path: "245??.a", ^var: "$i")
+  replace_all("$i", "^[©]|\\s?[,.:;/=]?$", "")
+  copy_field("$i", "TitleStatement[].$append.titleMain")
+end
+do list(path: "245??.p", ^var: "$i")
+  replace_all("$i", "\\s?[.]?\\s?$", "")
+  # TODO: only first occurrence
+  copy_field("$i", "TitleStatement[].$append.titleMain")
+end
+
+retain(
+  "Conference",
+  "CreatorStatement",
+  "IdentifierZDB[]",
+  "RecordIdentifier",
+  "TitleAddendum",
+  "TitleStatement[]",
+  "TitleUniform",
+  "VolumeDesignation",
+  "collection"
+)

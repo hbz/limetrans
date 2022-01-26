@@ -89,7 +89,7 @@
         </any>
       </if>
       <data name="identifierZDB" source="0167 .a">
-        <java class="hbz.limetrans.metamorph.ZDB" />
+        <java class="hbz.limetrans.function.ZDB" />
       </data>
     </entity>
   </entity>
