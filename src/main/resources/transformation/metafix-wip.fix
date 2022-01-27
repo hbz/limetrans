@@ -11,17 +11,18 @@
 # TODO: Das schreiben in einen tieferliegendes Array funktioniert anscheinend nicht.
 
 # set_array("TitleOther.title[]")
-# do list(path: "246?[ 345678]", "var": "varTitleOther")
-#	 replace_all("varTitleOther.a", "\\.$", "")
-#	 copy_field("varTitleOther.a", "TitleOther.title[].$append")
+# do list(path: "246?[ 345678]", "var": "$i")
+#	 replace_all("$i.a", "\\.$", "")
+#	 copy_field("$i.a", "TitleOther.title[].$append")
 # end
 
 set_array("TO[]")
-do list(path: "246?[ 345678]", "var": "varTitleOther")
-	 replace_all("varTitleOther.a", "\\.$", "")
-	 copy_field("varTitleOther.a", "TO[].$append")
+do list(path: "246?[ 345678]", "var": "$i")
+  replace_all("$i.a", "\\.$", "")
+  copy_field("$i.a", "TO[].$append")
 end
 
-move_field("TO[]","TitleOther.title[]")
+# => This seems not to work. TO[] is correct but the moved field is not.
+copy_field("TO[]","TitleOther.title[]")
 
-retain("TitleOther")
+retain("TitleOther", "TO[]")
