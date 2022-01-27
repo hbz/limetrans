@@ -108,7 +108,7 @@ do list(path:"700[013] ", "var": $i)
 			copy_field("$j", "PersonCreator[].$last.identifierGND[].$append")
 		end
 	end
-	if any_match ("$.[4e]","^([Aa]ut|[Cc]re)")
+	if any_match ("$i.[4e]","^([Aa]ut|[Cc]re).*")
         /*  <data source="700[013] .[4e]">
             <regexp match="^([Aa]ut|[Cc]re)" />
           </data>
