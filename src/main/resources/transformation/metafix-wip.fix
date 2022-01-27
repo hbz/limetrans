@@ -28,7 +28,7 @@ do list(path:"700[013] ", "var": $i)
 			>
     </data>
   </macro>*/
-		replace_all("$i.a", "(\\?&lt;!\\p{Upper})\\.$|[,]$", "")
+		replace_all("$i.a", "(?<!\\p{Upper})\\.$|[,]$", "")
 		copy_field("$i.a", "PersonCreator[].$append.personName")
     /*  <call-macro name="personNumbering"  field="700" />
   <macro name="personNumbering">
@@ -50,9 +50,9 @@ do list(path:"700[013] ", "var": $i)
   </macro>
 				*/
 		set_array("PersonCreator[].$last.personTitle[]")
-		do list(path: "$i.c", "var":"$ii.c")
-			replace_all("$ii.c", "[,]$", "")
-			copy_field("$ii.c", "PersonCreator[].$last.personTitle[].$append")
+		do list(path: "$i.c", "var":"$j")
+			replace_all("$j", "[,]$", "")
+			copy_field("$j", "PersonCreator[].$last.personTitle[].$append")
 		end
     /*   <call-macro name="personBio"        field="700" />
 		  <macro name="personBio">
@@ -74,10 +74,10 @@ do list(path:"700[013] ", "var": $i)
   </macro>
 		*/
 		set_array("PersonCreator[].$last.personRole[]")
-		do list(path: "$i.e", "var":"$ii.e")
-			prepend("$ii.e", "[")
-			append("$ii.e", "]")
-			copy_field("$ii.e", "PersonCreator[].$last.personRole[].$append")
+		do list(path: "$i.e", "var":"$j")
+			prepend("$j", "[")
+			append("$j", "]")
+			copy_field("$j", "PersonCreator[].$last.personRole[].$append")
 		end
     /*   <call-macro name="personIdentifier" field="700" />
 		  <macro name="personIdentifier">
@@ -89,9 +89,9 @@ do list(path:"700[013] ", "var": $i)
   </macro>
 		*/
 		set_array("PersonCreator[].$last.personIdentifier[]")
-		do list(path: "$i.0", "var":"$ii.0")
-			filter("$ii.0","^\\(DE-588\\).*$")
-			copy_field("$ii.0", "PersonCreator[].$last.personIdentifier[].$append")
+		do list(path: "$i.0", "var":"$j")
+			filter("$j","^\\(DE-588\\).*$")
+			copy_field("$j", "PersonCreator[].$last.personIdentifier[].$append")
 		end
     /*   <call-macro name="identifierGND"    field="700" />
 		  <macro name="identifierGND">
@@ -103,9 +103,9 @@ do list(path:"700[013] ", "var": $i)
   </macro>
 		*/
 		set_array("PersonCreator[].$last.identifierGND[]")
-		do list(path: "$i.0", "var":"$ii.0")
-			filter("$ii.0","(\\?&lt;=\\(DE-588\\)).*$")
-			copy_field("$ii.0", "PersonCreator[].$last.identifierGND[].$append")
+		do list(path: "$i.0", "var":"$j")
+			filter("$j","(?<=\\(DE-588\\)).*$")
+			copy_field("$j", "PersonCreator[].$last.identifierGND[].$append")
 		end
 	end
 	if any_match ("$.[4e]","^([Aa]ut|[Cc]re)")
@@ -121,7 +121,7 @@ do list(path:"700[013] ", "var": $i)
 			>
     </data>
   </macro>*/
-		replace_all("$i.a", "(\\?&lt;!\\p{Upper})\\.$|[,]$", "")
+		replace_all("$i.a", "(?<!\\p{Upper})\\.$|[,]$", "")
 		copy_field("$i.a", "PersonCreator[].$append.personName")
     /*  <call-macro name="personNumbering"  field="700" />
   <macro name="personNumbering">
@@ -143,9 +143,9 @@ do list(path:"700[013] ", "var": $i)
   </macro>
 				*/
 		set_array("PersonCreator[].$last.personTitle[]")
-		do list(path: "$i.c", "var":"$ii.c")
-			replace_all("$ii.c", "[,]$", "")
-			copy_field("$ii.c", "PersonCreator[].$last.personTitle[].$append")
+		do list(path: "$i.c", "var":"$j")
+			replace_all("$j", "[,]$", "")
+			copy_field("$j", "PersonCreator[].$last.personTitle[].$append")
 		end
     /*   <call-macro name="personBio"        field="700" />
 		  <macro name="personBio">
@@ -167,10 +167,10 @@ do list(path:"700[013] ", "var": $i)
   </macro>
 		*/
 		set_array("PersonCreator[].$last.personRole[]")
-		do list(path: "$i.e", "var":"$ii.e")
-			prepend("$ii.e", "[")
-			append("$ii.e", "]")
-			copy_field("$ii.e", "PersonCreator[].$last.personRole[].$append")
+		do list(path: "$i.e", "var":"$j")
+			prepend("$j", "[")
+			append("$j", "]")
+			copy_field("$j", "PersonCreator[].$last.personRole[].$append")
 		end
     /*   <call-macro name="personIdentifier" field="700" />
 		  <macro name="personIdentifier">
@@ -182,9 +182,9 @@ do list(path:"700[013] ", "var": $i)
   </macro>
 		*/
 		set_array("PersonCreator[].$last.personIdentifier[]")
-		do list(path: "$i.0", "var":"$ii.0")
-			filter("$ii.0","^\\(DE-588\\).*$")
-			copy_field("$ii.0", "PersonCreator[].$last.personIdentifier[].$append")
+		do list(path: "$i.0", "var":"$j")
+			filter("$j","^\\(DE-588\\).*$")
+			copy_field("$j", "PersonCreator[].$last.personIdentifier[].$append")
 		end
     /*   <call-macro name="identifierGND"    field="700" />
 		  <macro name="identifierGND">
@@ -196,9 +196,9 @@ do list(path:"700[013] ", "var": $i)
   </macro>
 		*/
 		set_array("PersonCreator[].$last.identifierGND[]")
-		do list(path: "$i.0", "var":"$ii.0")
-			filter("$ii.0","(\\?&lt;=\\(DE-588\\)).*$")
-			copy_field("$ii.0", "PersonCreator[].$last.identifierGND[].$append")
+		do list(path: "$i.0", "var":"$j")
+			filter("$j","(?<=\\(DE-588\\)).*$")
+			copy_field("$j", "PersonCreator[].$last.identifierGND[].$append")
 		end
 	end
 end
