@@ -5,6 +5,7 @@
   "PersonCreator" : [ {
     "personName" : "Bruck, Helmut <<von>>",
     "personRole" : [ "[[Bearb.]]" ],
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)174928939" ],
     "identifierGND" : [ "(DE-588)174928939" ]
   } ]
@@ -27,6 +28,7 @@
 {
   "PersonCreator" : [ {
     "personName" : "Fischer, Gerhard",
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)101317700" ],
     "identifierGND" : [ "(DE-588)101317700" ]
   }, {
@@ -42,6 +44,11 @@
   "PersonCreator" : [ {
     "personName" : "Diehl, Bernhard",
     "personBio" : "1946-",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)172941504",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=172941504",
@@ -70,6 +77,11 @@
 {
   "PersonCreator" : [ {
     "personName" : "Stüve, Georg",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)117358649",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=117358649",
@@ -101,6 +113,7 @@
   "PersonCreator" : [ {
     "personName" : "BOGAR, IMRE",
     "personRole" : [ "[[Bearb.]]" ],
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)187668000" ],
     "identifierGND" : [ "(DE-588)187668000" ]
   } ]
@@ -112,6 +125,11 @@
   "PersonCreator" : [ {
     "personName" : "Lindemann, Peter",
     "personBio" : "1917-",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)17222702X",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=17222702X",
@@ -124,6 +142,7 @@
     } ]
   }, {
     "personName" : "Nagel, Kurt",
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)105059579" ],
     "identifierGND" : [ "(DE-588)105059579" ]
   } ]
@@ -135,6 +154,11 @@
   "PersonCreator" : [ {
     "personName" : "Roeseler, Hans",
     "personBio" : "1893-",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)116593652",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=116593652",
@@ -150,6 +174,7 @@
 {
   "PersonCreator" : [ {
     "personName" : "Gerards, Heinz",
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)107872595" ],
     "identifierGND" : [ "(DE-588)107872595" ]
   }, {
@@ -186,8 +211,14 @@
   "PersonCreator" : [ {
     "personName" : "Clemens August",
     "personNumbering" : "I.",
+    "@personTitle_array" : "true",
     "personTitle" : [ "Köln, Erzbischof" ],
     "personBio" : "1700-1761",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)118634224",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=118634224",
@@ -227,6 +258,7 @@
 {
   "PersonCreator" : [ {
     "personName" : "VOGELSANG, REINHOLD A.",
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)177884681" ],
     "identifierGND" : [ "(DE-588)177884681" ]
   }, {
@@ -259,6 +291,7 @@
 {
   "PersonCreator" : [ {
     "personName" : "Courteault, Paul",
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)101560338" ],
     "identifierGND" : [ "(DE-588)101560338" ]
   } ]
@@ -272,6 +305,7 @@
 {
   "PersonCreator" : [ {
     "personName" : "Rice, N. M.",
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)154087750" ],
     "identifierGND" : [ "(DE-588)154087750" ]
   }, {
@@ -295,6 +329,7 @@
 {
   "PersonCreator" : [ {
     "personName" : "Sem, Jurij A.",
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)103261125" ],
     "identifierGND" : [ "(DE-588)103261125" ]
   }, {
@@ -304,6 +339,7 @@
 {
   "PersonCreator" : [ {
     "personName" : "Mondor, Henri",
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)176669698" ],
     "identifierGND" : [ "(DE-588)176669698" ]
   } ]
@@ -320,6 +356,7 @@
 {
   "PersonCreator" : [ {
     "personName" : "Guenin, Marcel",
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)107317567" ],
     "identifierGND" : [ "(DE-588)107317567" ]
   }, {
@@ -331,6 +368,7 @@
 {
   "PersonCreator" : [ {
     "personName" : "Ovaert, Jean-Louis",
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)151251592" ],
     "identifierGND" : [ "(DE-588)151251592" ]
   }, {
@@ -363,6 +401,7 @@
 {
   "PersonCreator" : [ {
     "personName" : "Schmidt, Klaus J.",
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)111951097" ],
     "identifierGND" : [ "(DE-588)111951097" ]
   } ]
@@ -374,6 +413,11 @@
   "PersonCreator" : [ {
     "personName" : "Fenselau, Catherine",
     "personBio" : "1939-",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)1018725954",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1018725954",
@@ -389,11 +433,13 @@
 {
   "PersonCreator" : [ {
     "personName" : "Buder, Marianne",
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)108735184" ],
     "identifierGND" : [ "(DE-588)108735184" ]
   }, {
     "personName" : "Laisiepen, Klaus",
     "personRole" : [ "[Begründer des Werks]" ],
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)105708305" ],
     "identifierGND" : [ "(DE-588)105708305" ]
   } ]
@@ -406,6 +452,7 @@
 {
   "PersonCreator" : [ {
     "personName" : "McAdams, Joshua A.",
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)141555327" ],
     "identifierGND" : [ "(DE-588)141555327" ]
   }, {
@@ -414,6 +461,11 @@
     "identifierGND" : [ "(DE-588)141555327" ]
   }, {
     "personName" : "Foy, Brian D.",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)130469386",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=130469386",
@@ -445,6 +497,11 @@
   "PersonCreator" : [ {
     "personName" : "Le Bris, Claude",
     "personBio" : "1966-",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)12235138X",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=12235138X",
@@ -460,6 +517,7 @@
 {
   "PersonCreator" : [ {
     "personName" : "Hull, Richard",
+    "@personTitle_array" : "true",
     "personTitle" : [ "Ph. D." ]
   } ]
 }
@@ -472,10 +530,16 @@
 {
   "PersonCreator" : [ {
     "personName" : "Kühn, Robert",
+    "@personIdentifier_array" : "true",
     "personIdentifier" : [ "(DE-588)101324316" ],
     "identifierGND" : [ "(DE-588)101324316" ]
   }, {
     "personName" : "Birett, Karl",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)109185706",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=109185706",
@@ -510,6 +574,11 @@
   "PersonCreator" : [ {
     "personName" : "Althammer, Christoph",
     "personBio" : "1972-",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)129401579",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=129401579",
@@ -536,6 +605,11 @@
   }, {
     "personName" : "Johannsen, Kurt Herbert",
     "personRole" : [ "[Begründer eines Werks]" ],
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)120543613",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=120543613",
@@ -558,6 +632,11 @@
   "PersonCreator" : [ {
     "personName" : "Lüttgens, Sylvia",
     "personBio" : "1946-",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)1142576795",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1142576795",
@@ -584,6 +663,11 @@
   }, {
     "personName" : "Emde, Stefan",
     "personBio" : "1960-",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)1201773784",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1201773784",
@@ -614,6 +698,11 @@
   }, {
     "personName" : "Schubert, Wolfgang",
     "personBio" : "1952-",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)1026875439",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1026875439",
@@ -643,6 +732,11 @@
   "PersonCreator" : [ {
     "personName" : "Knopf, Jan",
     "personBio" : "1944-",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)116260092",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=116260092",
@@ -662,6 +756,11 @@
   "PersonCreator" : [ {
     "personName" : "Birbaumer, Niels-Peter",
     "personBio" : "1945-",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)121603164",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=121603164",
@@ -701,6 +800,11 @@
 {
   "PersonCreator" : [ {
     "personName" : "Skorsetz, Nina",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)1194098134",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1194098134",
@@ -713,6 +817,11 @@
     } ]
   }, {
     "personName" : "Bonanati, Marina",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)1105067130",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1105067130",
@@ -726,6 +835,11 @@
   }, {
     "personName" : "Kucharz, Diemut",
     "personBio" : "1959-",
+    "@personIdentifier_array" : {
+      "1" : "true",
+      "2" : "true",
+      "3" : "true"
+    },
     "personIdentifier" : [ {
       "1" : "(DE-588)12212541X",
       "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=12212541X",
