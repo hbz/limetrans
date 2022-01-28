@@ -12,7 +12,45 @@
       </data>
     </entity>
   </macro>
+
+  <macro name="alma-mms-to-isil">
+    <data name="$[dname]" source="$[source]">
+      <regexp match=".{4}$" />
+      <lookup in="institution-code-to-isil" />
+    </data>
+  </macro>
+
+  <macro name="alma-mms-filter">
+    <combine name="$[dname]" value="${value}" sameEntity="true">
+      <if>
+        <data source="$[entity].$[filter]">
+          <regexp match=".*$[institution-code]$" />
+        </data>
+      </if>
+      <data name="value" source="$[entity].$[source]" />
+    </combine>
+  </macro>
+
+  <macro name="alma-member-filter">
+    <combine name="$[dname]" value="${value}" sameEntity="true">
+      <if>
+        <data source="$[entity].M">
+          <equals string="$[member]" />
+        </data>
+      </if>
+      <data name="value" source="$[entity].$[source]" />
+    </combine>
+  </macro>
 */
+
+/*
+  <call-macro name="alma-member-filter" dname="@mmsiz" entity="MBD  " source="i" />
+*/
+do list(path: "MBD  ", "var": "$i")
+  if any_equal("$i.M", "$[member]")
+    copy_field("$i.i", "@mmsiz")
+  end
+end
 
 /*
   <call-macro name="alma-mms-to-isil" dname="@isil" source="001" />
@@ -23,9 +61,12 @@ copy_field("@institution_code", "@isil")
 lookup("@isil", "institution-code-to-isil")
 
 /*
-  <data name="collection" source="@isil" />
+  <call-macro name="alma-mms-to-isil" dname="@isiliz" source="@mmsiz" />
 */
-copy_field("@isil", "collection")
+copy_field("@mmsiz", "@institution_code_iz")
+parse_text("@institution_code_iz", ".*(.{4})$")
+copy_field("@institution_code_iz", "@isiliz")
+lookup("@isiliz", "institution-code-to-isil")
 
 /*
   <choose name="@sysid">
@@ -40,7 +81,7 @@ copy_field("@isil", "collection")
     </data>
   </choose>
 */
-do list(path: "981  .a", ^var: "$i") # SISIS CATKey
+do list(path: "981  .a", "var": "$i") # SISIS CATKey
   if any_match("$i", "^\\($[isil]\\).*")
     copy_field("$i", "@sysid")
   elsif any_match("$i", "^\\($[sigel]\\).*")
@@ -54,7 +95,7 @@ end
     <regexp match="^\($[catalogid]\).*" />
   </data>
 */
-do list(path: "035  .a", ^var: "$i")
+do list(path: "035  .a", "var": "$i")
   if any_match("$i", "^\\($[catalogid]\\).*")
     if exists("@hbzid")
       remove_field("@hbzid")
@@ -93,6 +134,11 @@ elsif exists("@sysid")
 else
   copy_field("@mmsid", "@id")
 end
+
+/*
+  <data name="collection" source="@isil" />
+*/
+copy_field("@isil", "collection")
 
 /*
   <entity name="TitleUniform">
@@ -139,6 +185,54 @@ copy_field("245[01]?.c", "CreatorStatement.creatorStatement")
 replace_all("CreatorStatement.creatorStatement", "[.]$", "")
 
 /*
+  <entity name="IdentifierAlma" flushWith="record">
+    <data name="identifierMember" source="001">
+      <constant value="$[member]" />
+    </data>
+    <data name="identifierMMS" source="001" />
+    <data name="identifierMMSIZ" source="@mmsiz" />
+    <data name="identifierPID" source="@portfolio" />
+  </entity>
+*/
+add_field("IdentifierAlma.identifierMember", "$[member]")
+copy_field("001", "IdentifierAlma.identifierMMS")
+copy_field("@mmsiz", "IdentifierAlma.identifierMMSIZ")
+
+/*
+  <combine name="@portfolio" value="${value}" sameEntity="true">
+    <if>
+      <data source="POR  .[MA]">
+        <equals string="$[member]" />
+      </data>
+    </if>
+    <data name="value" source="POR  .a" />
+  </combine>
+*/
+do list(path: "POR  ", "var": "$i")
+  # TODO: if any_equal("$i.[MA]", "$[member]")
+  if any_equal("$i.M", "$[member]")
+    if exists("@portfolio")
+      add_field("@portfolio_array", "true")
+    else
+      set_array("@portfolio")
+    end
+    copy_field("$i.a", "@portfolio")
+  elsif any_equal("$i.A", "$[member]")
+    if exists("@portfolio")
+      add_field("@portfolio_array", "true")
+    else
+      set_array("@portfolio")
+    end
+    copy_field("$i.a", "@portfolio")
+  end
+end
+if exists("@portfolio_array")
+  copy_field("@portfolio", "IdentifierAlma.identifierPID[]")
+else
+  copy_field("@portfolio", "IdentifierAlma.identifierPID")
+end
+
+/*
   <entity name="RecordIdentifier" flushWith="@id">
     <data name="identifierForTheRecord" source="@id" />
     <data name="identifierForTheIndex" source="@mmsid" />
@@ -166,7 +260,7 @@ copy_field("@id", "RecordIdentifier.identifierForTheRecord")
     </entity>
   </entity>
 */
-do list(path: "0167 ", ^var: "$i")
+do list(path: "0167 ", "var": "$i")
   if any_match("$i.2", "^DE-600$")
     hbz.limetrans.function.ZDB("$i.a")
     unless exists("IdentifierZDB[]")
@@ -215,7 +309,7 @@ replace_all("Conference.conferenceDate", "\\(|\\)?[,]?$|\\s?:$", "")
 # TODO: only first occurrence
 copy_field("111[012] .c", "Conference.conferencePlace")
 replace_all("Conference.conferencePlace", "\\(|\\)?[;.,]?$", "")
-do list(path: "111[012] .0", ^var: "$i")
+do list(path: "111[012] .0", "var": "$i")
   if any_match("$i", "^\\(DE-588\\).*")
     unless exists("Conference.conferenceIdentifier[]")
       set_array("Conference.conferenceIdentifier[]")
@@ -223,7 +317,7 @@ do list(path: "111[012] .0", ^var: "$i")
     copy_field("$i", "Conference.conferenceIdentifier[].$append")
   end
 end
-do list(path: "111[0123] .0", ^var: "$i")
+do list(path: "111[0123] .0", "var": "$i")
   if any_match("$i", "^\\(DE-588\\).*")
     replace_all("$i", "^\\(DE-588\\)", "")
     unless exists("Conference.identifierGND[]")
@@ -250,22 +344,48 @@ join_field("Conference.conferenceUnit", ". ")
   </entity>
 */
 set_array("TitleStatement[]")
-do list(path: "245??.a", ^var: "$i")
+do list(path: "245??.a", "var": "$i")
   replace_all("$i", "^[©]|\\s?[,.:;/=]?$", "")
   copy_field("$i", "TitleStatement[].$append.titleMain")
 end
-do list(path: "245??.p", ^var: "$i")
+do list(path: "245??.p", "var": "$i")
   replace_all("$i", "\\s?[.]?\\s?$", "")
   # TODO: only first occurrence
   copy_field("$i", "TitleStatement[].$append.titleMain")
 end
 
+/*
+  <entity name="TitleOther">
+    <entity name="title[]" flushWith="record">
+      <data name="" source="246?[ 345678].a">
+        <replace pattern="\.$" with="" />
+      </data>
+    </entity>
+  </entity>
+*/
+do list(path: "246?[ 345678]", "var": "$i")
+  if exists("@title_other")
+    add_field("@title_other_array", "true")
+  else
+    set_array("@title_other")
+  end
+  replace_all("$i.a", "\\.$", "")
+  copy_field("$i.a", "@title_other")
+end
+if exists("@title_other_array")
+  copy_field("@title_other", "TitleOther.title[]")
+else
+  copy_field("@title_other", "TitleOther.title[].$append")
+end
+
 retain(
   "Conference",
   "CreatorStatement",
+  "IdentifierAlma",
   "IdentifierZDB[]",
   "RecordIdentifier",
   "TitleAddendum",
+  "TitleOther",
   "TitleStatement[]",
   "TitleUniform",
   "VolumeDesignation",
