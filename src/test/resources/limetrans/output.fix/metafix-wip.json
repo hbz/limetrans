@@ -1,854 +1,97 @@
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
 {
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Bruck, Helmut <<von>>",
-    "personRole" : [ "[[Bearb.]]" ],
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)174928939" ],
-    "identifierGND" : [ "(DE-588)174928939" ]
+  "RSWK" : [ {
+    "control" : "true"
   } ]
 }
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Fischer, Gerhard",
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)101317700" ],
-    "identifierGND" : [ "(DE-588)101317700" ]
-  }, {
-    "personName" : "Fischer, Gerhard",
-    "personIdentifier" : [ "(DE-588)101317700" ],
-    "identifierGND" : [ "(DE-588)101317700" ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Diehl, Bernhard",
-    "personBio" : "1946-",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)172941504",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=172941504",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|172941504"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)172941504",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=172941504",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|172941504"
-    } ]
-  }, {
-    "personName" : "Diehl, Bernhard",
-    "personBio" : "1946-",
-    "personIdentifier" : [ {
-      "1" : "(DE-588)172941504",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=172941504",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|172941504"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)172941504",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=172941504",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|172941504"
-    } ]
-  } ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Stüve, Georg",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)117358649",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=117358649",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|117358649"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)117358649",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=117358649",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|117358649"
-    } ]
-  }, {
-    "personName" : "Stüve, Georg",
-    "personIdentifier" : [ {
-      "1" : "(DE-588)117358649",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=117358649",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|117358649"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)117358649",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=117358649",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|117358649"
-    } ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "BOGAR, IMRE",
-    "personRole" : [ "[[Bearb.]]" ],
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)187668000" ],
-    "identifierGND" : [ "(DE-588)187668000" ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Lindemann, Peter",
-    "personBio" : "1917-",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)17222702X",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=17222702X",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|17222702X"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)17222702X",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=17222702X",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|17222702X"
-    } ]
-  }, {
-    "personName" : "Nagel, Kurt",
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)105059579" ],
-    "identifierGND" : [ "(DE-588)105059579" ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Roeseler, Hans",
-    "personBio" : "1893-",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)116593652",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=116593652",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|116593652"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)116593652",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=116593652",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|116593652"
-    } ]
-  } ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Gerards, Heinz",
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)107872595" ],
-    "identifierGND" : [ "(DE-588)107872595" ]
-  }, {
-    "personName" : "Gerards, Heinz",
-    "personIdentifier" : [ "(DE-588)107872595" ],
-    "identifierGND" : [ "(DE-588)107872595" ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Clemens August",
-    "personNumbering" : "I.",
-    "@personTitle_array" : "true",
-    "personTitle" : [ "Köln, Erzbischof" ],
-    "personBio" : "1700-1761",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)118634224",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=118634224",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|118634224"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)118634224",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=118634224",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|118634224"
-    } ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "VOGELSANG, REINHOLD A.",
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)177884681" ],
-    "identifierGND" : [ "(DE-588)177884681" ]
-  }, {
-    "personName" : "VOGELSANG, REINHOLD A.",
-    "personIdentifier" : [ "(DE-588)177884681" ],
-    "identifierGND" : [ "(DE-588)177884681" ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Courteault, Paul",
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)101560338" ],
-    "identifierGND" : [ "(DE-588)101560338" ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Rice, N. M.",
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)154087750" ],
-    "identifierGND" : [ "(DE-588)154087750" ]
-  }, {
-    "personName" : "Rice, N. M.",
-    "personIdentifier" : [ "(DE-588)154087750" ],
-    "identifierGND" : [ "(DE-588)154087750" ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Sem, Jurij A.",
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)103261125" ],
-    "identifierGND" : [ "(DE-588)103261125" ]
-  }, {
-    "personName" : "Černecov, V. A."
-  } ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Mondor, Henri",
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)176669698" ],
-    "identifierGND" : [ "(DE-588)176669698" ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Guenin, Marcel",
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)107317567" ],
-    "identifierGND" : [ "(DE-588)107317567" ]
-  }, {
-    "personName" : "Guenin, Marcel",
-    "personIdentifier" : [ "(DE-588)107317567" ],
-    "identifierGND" : [ "(DE-588)107317567" ]
-  } ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Ovaert, Jean-Louis",
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)151251592" ],
-    "identifierGND" : [ "(DE-588)151251592" ]
-  }, {
-    "personName" : "Ovaert, Jean-Louis",
-    "personIdentifier" : [ "(DE-588)151251592" ],
-    "identifierGND" : [ "(DE-588)151251592" ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Drexler, Hans",
-    "personRole" : [ "[author.]" ]
-  }, {
-    "personName" : "Drexler, Hans",
-    "personRole" : [ "[author.]" ]
-  }, {
-    "personName" : "Zeumer, Martin",
-    "personRole" : [ "[author.]" ]
-  }, {
-    "personName" : "Zeumer, Martin",
-    "personRole" : [ "[author.]" ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Schmidt, Klaus J.",
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)111951097" ],
-    "identifierGND" : [ "(DE-588)111951097" ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Fenselau, Catherine",
-    "personBio" : "1939-",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)1018725954",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1018725954",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1018725954"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)1018725954",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1018725954",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1018725954"
-    } ]
-  } ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Buder, Marianne",
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)108735184" ],
-    "identifierGND" : [ "(DE-588)108735184" ]
-  }, {
-    "personName" : "Laisiepen, Klaus",
-    "personRole" : [ "[Begründer des Werks]" ],
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)105708305" ],
-    "identifierGND" : [ "(DE-588)105708305" ]
-  } ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Skipper, Mark"
-  } ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "McAdams, Joshua A.",
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)141555327" ],
-    "identifierGND" : [ "(DE-588)141555327" ]
-  }, {
-    "personName" : "McAdams, Joshua A.",
-    "personIdentifier" : [ "(DE-588)141555327" ],
-    "identifierGND" : [ "(DE-588)141555327" ]
-  }, {
-    "personName" : "Foy, Brian D.",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)130469386",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=130469386",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|130469386"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)130469386",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=130469386",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|130469386"
-    } ]
-  }, {
-    "personName" : "Foy, Brian D.",
-    "personIdentifier" : [ {
-      "1" : "(DE-588)130469386",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=130469386",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|130469386"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)130469386",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=130469386",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|130469386"
-    } ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Le Bris, Claude",
-    "personBio" : "1966-",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)12235138X",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=12235138X",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|12235138X"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)12235138X",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=12235138X",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|12235138X"
-    } ]
-  } ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Hull, Richard",
-    "@personTitle_array" : "true",
-    "personTitle" : [ "Ph. D." ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Kühn, Robert",
-    "@personIdentifier_array" : "true",
-    "personIdentifier" : [ "(DE-588)101324316" ],
-    "identifierGND" : [ "(DE-588)101324316" ]
-  }, {
-    "personName" : "Birett, Karl",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)109185706",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=109185706",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|109185706"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)109185706",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=109185706",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|109185706"
-    } ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Althammer, Christoph",
-    "personBio" : "1972-",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)129401579",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=129401579",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|129401579"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)129401579",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=129401579",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|129401579"
-    } ]
-  }, {
-    "personName" : "Althammer, Christoph",
-    "personBio" : "1972-",
-    "personIdentifier" : [ {
-      "1" : "(DE-588)129401579",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=129401579",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|129401579"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)129401579",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=129401579",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|129401579"
-    } ]
-  }, {
-    "personName" : "Johannsen, Kurt Herbert",
-    "personRole" : [ "[Begründer eines Werks]" ],
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)120543613",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=120543613",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|120543613"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)120543613",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=120543613",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|120543613"
-    } ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Lüttgens, Sylvia",
-    "personBio" : "1946-",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)1142576795",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1142576795",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1142576795"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)1142576795",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1142576795",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1142576795"
-    } ]
-  }, {
-    "personName" : "Lüttgens, Sylvia",
-    "personBio" : "1946-",
-    "personIdentifier" : [ {
-      "1" : "(DE-588)1142576795",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1142576795",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1142576795"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)1142576795",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1142576795",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1142576795"
-    } ]
-  }, {
-    "personName" : "Emde, Stefan",
-    "personBio" : "1960-",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)1201773784",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1201773784",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1201773784"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)1201773784",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1201773784",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1201773784"
-    } ]
-  }, {
-    "personName" : "Emde, Stefan",
-    "personBio" : "1960-",
-    "personIdentifier" : [ {
-      "1" : "(DE-588)1201773784",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1201773784",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1201773784"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)1201773784",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1201773784",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1201773784"
-    } ]
-  }, {
-    "personName" : "Pidoll, Ulrich <<von>>"
-  }, {
-    "personName" : "Pidoll, Ulrich <<von>>"
-  }, {
-    "personName" : "Schubert, Wolfgang",
-    "personBio" : "1952-",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)1026875439",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1026875439",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1026875439"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)1026875439",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1026875439",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1026875439"
-    } ]
-  }, {
-    "personName" : "Schubert, Wolfgang",
-    "personBio" : "1952-",
-    "personIdentifier" : [ {
-      "1" : "(DE-588)1026875439",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1026875439",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1026875439"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)1026875439",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1026875439",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1026875439"
-    } ]
-  } ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Knopf, Jan",
-    "personBio" : "1944-",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)116260092",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=116260092",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|116260092"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)116260092",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=116260092",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|116260092"
-    } ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Birbaumer, Niels-Peter",
-    "personBio" : "1945-",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)121603164",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=121603164",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|121603164"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)121603164",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=121603164",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|121603164"
-    } ]
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Thomas, Stephanie"
-  }, {
-    "personName" : "Thomas, Stephanie"
-  } ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Weldon, H. A."
-  } ]
-}
-{
-  "PersonCreator" : [ {
-    "personName" : "Skorsetz, Nina",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)1194098134",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1194098134",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1194098134"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)1194098134",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1194098134",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1194098134"
-    } ]
-  }, {
-    "personName" : "Bonanati, Marina",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)1105067130",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1105067130",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1105067130"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)1105067130",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=1105067130",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|1105067130"
-    } ]
-  }, {
-    "personName" : "Kucharz, Diemut",
-    "personBio" : "1959-",
-    "@personIdentifier_array" : {
-      "1" : "true",
-      "2" : "true",
-      "3" : "true"
-    },
-    "personIdentifier" : [ {
-      "1" : "(DE-588)12212541X",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=12212541X",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|12212541X"
-    } ],
-    "identifierGND" : [ {
-      "1" : "(DE-588)12212541X",
-      "2" : "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=12212541X",
-      "3" : "(uri) http://viaf.org/viaf/sourceID/DNB|12212541X"
-    } ]
-  } ]
-}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
