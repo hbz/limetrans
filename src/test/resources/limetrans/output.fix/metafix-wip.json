@@ -173,7 +173,40 @@
   "RSWK" : [ ]
 }
 {
-  "RSWK" : [ ]
+  "RSWK" : [ {
+    "control" : "true",
+    "subjectCorporateBodyName" : "Asia Pacific Economic Cooperation (Organization)"
+  }, {
+    "control" : "true",
+    "subjectCorporateBodyName" : "World Trade Organization"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Commerce"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Business & Economics"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Local Commerce"
+  }, {
+    "control" : "true",
+    "subjectGeoName" : "Papua New Guinea"
+  }, {
+    "control" : "true",
+    "subjectGeoName" : "Papua New Guinea"
+  }, {
+    "control" : "true",
+    "subjectGeoName" : "Oceania"
+  }, {
+    "control" : "true",
+    "subjectGeoName" : "Oceania"
+  } ]
+}
+{
+  "RSWK" : [ {
+    "control" : "true",
+    "subjectTopicName" : "Building materials"
+  } ]
 }
 {
   "RSWK" : [ ]
@@ -185,43 +218,16 @@
   "RSWK" : [ ]
 }
 {
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
+  "RSWK" : [ {
+    "control" : "true",
+    "subjectTopicName" : "Microorganisms--Identification"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Mass spectrometry"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Microbiological chemistry"
+  } ]
 }
 {
   "RSWK" : [ ]
@@ -235,6 +241,140 @@
 {
   "RSWK" : [ {
     "control" : "true"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : {
+      "1" : "Management science",
+      "2" : "Industrial management—Environmental aspects",
+      "3" : "Business ethics",
+      "4" : "Environmental economics",
+      "5" : "Business"
+    }
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Nachhaltigkeit;Digitalisierung;Qualität;Innovation;Disruption;Megatrend"
+  } ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ {
+    "control" : "true",
+    "subjectTopicName" : "Nonprofit organizations"
+  }, {
+    "control" : "true",
+    "subjectGenre" : "Case studies",
+    "subjectTopicName" : "Nonprofit organizations"
+  } ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ {
+    "control" : "true",
+    "subjectTopicName" : "Maßtoleranzen"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "DIN18202"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "MaßtoleranzenRohbau"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "MaßtoleranzenAusbau"
+  } ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ {
+    "control" : "true",
+    "subjectTopicName" : "English Literature"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "English"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Languages & Literatures"
+  }, {
+    "control" : "true",
+    "subjectGenre" : "Fiction",
+    "subjectGeoName" : "South Africa"
+  } ]
+}
+{
+  "RSWK" : [ {
+    "control" : "true",
+    "subjectTopicName" : {
+      "1" : "Semiconductors",
+      "2" : "Solid state physics"
+    }
+  }, {
+    "control" : "true",
+    "subjectIdentifier" : [ "https://scigraph.springernature.com/ontologies/product-market-codes/P25150" ],
+    "subjectTopicName" : "Semiconductors"
+  }, {
+    "control" : "true",
+    "subjectIdentifier" : [ "https://scigraph.springernature.com/ontologies/product-market-codes/P25013" ],
+    "subjectTopicName" : "Solid State Physics"
+  } ]
+}
+{
+  "RSWK" : [ {
+    "control" : "true",
+    "subjectPersonName" : "Habermas, Jürgen"
+  }, {
+    "control" : "true",
+    "subjectChronological" : "20th century",
+    "subjectTopicName" : "Philosophy, German"
+  } ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ {
+    "control" : "true",
+    "subjectTopicName" : "Arbeitssicherheit"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Arbeitssicherheit u. Umweltschutz i. d. Chemie"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Chemie"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Elektrizitätslehre"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Elektrotechnik u. Elektronik"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Leistungselektronik"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Physik"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Statische Elektrizität"
   } ]
 }
 {
@@ -253,29 +393,50 @@
   "RSWK" : [ ]
 }
 {
-  "RSWK" : [ ]
+  "RSWK" : [ {
+    "control" : "true",
+    "subjectTopicName" : "Computer software"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Mathematics"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Programming languages (Electronic computers)"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Computer science"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "MATLAB 10;MATLAB;algorithms;engineering;GUI development;robotics;code;recipes;developer;cookbook;source;development;programming;computational science;numerical"
+  } ]
 }
 {
   "RSWK" : [ ]
 }
 {
-  "RSWK" : [ ]
+  "RSWK" : [ {
+    "control" : "true",
+    "subjectTopicName" : "Coding theory"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Information theory"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Data mining"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Application software"
+  }, {
+    "control" : "true",
+    "subjectTopicName" : "Java (Computer program language)"
+  } ]
 }
 {
   "RSWK" : [ ]
 }
 {
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
+  "RSWK" : [ {
+    "control" : "true",
+    "subjectTopicName" : "Education—Research"
+  } ]
 }
