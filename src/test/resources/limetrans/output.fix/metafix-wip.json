@@ -178,42 +178,28 @@
   }, {
     "control_610" : "true"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Commerce"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Business & Economics"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Local Commerce"
+  }, {
+    "control_651" : "true"
   }, {
     "control_651" : "true"
   }, {
     "control_651" : "true"
   }, {
     "control_651" : "true"
-  }, {
-    "control_651" : "true"
   } ]
 }
 {
   "RSWK" : [ {
-    "control_650" : "true"
-  } ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ {
-    "control_650" : "true"
-  }, {
-    "control_650" : "true"
-  }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Building materials"
   } ]
 }
 {
@@ -227,21 +213,14 @@
 }
 {
   "RSWK" : [ {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Microorganisms--Identification"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Mass spectrometry"
   }, {
-    "control_650" : "true"
-  } ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ {
-    "control_650" : "true"
-  }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Microbiological chemistry"
   } ]
 }
 {
@@ -252,51 +231,101 @@
 }
 {
   "RSWK" : [ ]
-}
-{
-  "RSWK" : [ {
-    "control_650" : "true"
-  }, {
-    "control_650" : "true"
-  }, {
-    "control_650" : "true"
-  }, {
-    "control_650" : "true"
-  } ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ ]
-}
-{
-  "RSWK" : [ {
-    "control_650" : "true"
-  }, {
-    "control_650" : "true"
-  }, {
-    "control_650" : "true"
-  }, {
-    "control_651" : "true"
-  } ]
 }
 {
   "RSWK" : [ {
     "control_650" : "true"
   }, {
     "control_650" : "true",
-    "subjectIdentifier" : [ "https://scigraph.springernature.com/ontologies/product-market-codes/P25150" ]
+    "subjectTopicName" : {
+      "1" : "Management science",
+      "2" : "Industrial management—Environmental aspects",
+      "3" : "Business ethics",
+      "4" : "Environmental economics",
+      "5" : "Business"
+    }
   }, {
     "control_650" : "true",
-    "subjectIdentifier" : [ "https://scigraph.springernature.com/ontologies/product-market-codes/P25013" ]
+    "subjectTopicName" : "Nachhaltigkeit;Digitalisierung;Qualität;Innovation;Disruption;Megatrend"
+  } ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ {
+    "control_650" : "true",
+    "subjectTopicName" : "Nonprofit organizations"
+  }, {
+    "control_650" : "true",
+    "subjectTopicName" : "Nonprofit organizations"
+  } ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ {
+    "control_650" : "true",
+    "subjectTopicName" : "Maßtoleranzen"
+  }, {
+    "control_650" : "true",
+    "subjectTopicName" : "DIN18202"
+  }, {
+    "control_650" : "true",
+    "subjectTopicName" : "MaßtoleranzenRohbau"
+  }, {
+    "control_650" : "true",
+    "subjectTopicName" : "MaßtoleranzenAusbau"
+  } ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ ]
+}
+{
+  "RSWK" : [ {
+    "control_650" : "true",
+    "subjectTopicName" : "English Literature"
+  }, {
+    "control_650" : "true",
+    "subjectTopicName" : "English"
+  }, {
+    "control_650" : "true",
+    "subjectTopicName" : "Languages & Literatures"
+  }, {
+    "control_651" : "true"
+  } ]
+}
+{
+  "RSWK" : [ {
+    "control_650" : "true",
+    "subjectTopicName" : {
+      "1" : "Semiconductors",
+      "2" : "Solid state physics"
+    }
+  }, {
+    "control_650" : "true",
+    "subjectTopicName" : "Semiconductors"
+  }, {
+    "control_650" : "true",
+    "subjectTopicName" : "Solid State Physics"
   } ]
 }
 {
   "RSWK" : [ {
     "control_600" : "true"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Philosophy, German"
   } ]
 }
 {
@@ -310,21 +339,29 @@
 }
 {
   "RSWK" : [ {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Arbeitssicherheit"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Arbeitssicherheit u. Umweltschutz i. d. Chemie"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Chemie"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Elektrizitätslehre"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Elektrotechnik u. Elektronik"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Leistungselektronik"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Physik"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Statische Elektrizität"
   } ]
 }
 {
@@ -344,15 +381,20 @@
 }
 {
   "RSWK" : [ {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Computer software"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Mathematics"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Programming languages (Electronic computers)"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Computer science"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "MATLAB 10;MATLAB;algorithms;engineering;GUI development;robotics;code;recipes;developer;cookbook;source;development;programming;computational science;numerical"
   } ]
 }
 {
@@ -360,15 +402,20 @@
 }
 {
   "RSWK" : [ {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Coding theory"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Information theory"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Data mining"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Application software"
   }, {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Java (Computer program language)"
   } ]
 }
 {
@@ -376,6 +423,7 @@
 }
 {
   "RSWK" : [ {
-    "control_650" : "true"
+    "control_650" : "true",
+    "subjectTopicName" : "Education—Research"
   } ]
 }

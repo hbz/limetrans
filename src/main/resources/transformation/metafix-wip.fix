@@ -424,73 +424,14 @@ end
 650*/
 do list(path:"650??", "var":"$i")
 	add_field("RSWK[].$append.control_650", "true")
-	/*
-      <entity name="subjectIdentifier[]" flushWith="600??|6[15][01]??|648??" sameEntity="true">
-        <data name="" source="600??.0|6[15][01]??.0|648??.0" />
-      </entity>
-      <entity name="identifierGND[]" flushWith="600??|6[15][01]??|648??" sameEntity="true">
-        <data name="" source="600??.0|6[15][01]??.0|648??.0">
-          <regexp match="(?&lt;=\(DE-588\)).*$" />
-        </data>*/
-	do list(path:"$i.0", "var":"$j")
-		unless exists("RSWK[].$last.subjectIdentifier[]")
-			set_array("RSWK[].$last.subjectIdentifier[]")
-		end
-		copy_field("$j", "RSWK[].$last.subjectIdentifier[].$append")
-		if any_match("$j", "^\\(DE-588\\).*")
-			replace_all("$j", "^\\(DE-588\\)", "")
-			unless exists("RSWK[].$last.identifierGND[]")
-				set_array("RSWK[].$last.identifierGND[]")
-			end
-			copy_field("$j", "RSWK[].$last.identifierGND[].$append")
-		end
+
+	if exists("$i.a.1")
+		replace_all("$i.a.1","\\.?$","")
+		copy_field("$i.a.1", "RSWK[].$last.subjectTopicName")
+	else		
+		replace_all("$i.a","\\.?$","")
+		copy_field("$i.a", "RSWK[].$last.subjectTopicName")
 	end
-/*		
-				      <data name="subjectGenre" source="6[105]0??.v|6[15]1??.v">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="\.?$" with="" />
-      </data>*/
-	do list(path:"$i.v", "var":"$j")
-		unless exists("RSWK[].$last.subjectGenre")
-			replace_all("$j","\\.?$","")
-			copy_field("$j", "RSWK[].$last.subjectGenre")
-		end
-	end
-			    /*  <data name="subjectChronological" source="6[105]0??.y|6[15]1??.y||648??.a">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="\.?$" with="" />
-      </data>*/
-	do list(path:"$i.y", "var":"$j")
-		unless exists("RSWK[].$last.subjectChronological")
-			replace_all("$j","\\.?$","")
-			copy_field("$j", "RSWK[].$last.subjectChronological")
-		end
-	end
-			    /* 
-			      <data name="subjectTopicName" source="650??.a">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="\.?$" with="" />
-        <unique />
-      </data>*/
-	do list(path:"$i.a", "var":"$j")
-		unless exists("RSWK[].$last.subjectTopicName")
-			replace_all("$j","\\.?$","")
-			copy_field("$j", "RSWK[].$last.subjectTopicName")
-		end
-	end
-			    /* 
-			      <data name="subjectGeoName" source="6[105]0??.z|6[15]1??.z|651??.a">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="\.?$" with="" />
-        <unique />
-      </data>*/
-	do list(path:"$i.z", "var":"$j")
-		unless exists("RSWK[].$last.subjectGeoName")
-			replace_all("$j","\\.?$","")
-			copy_field("$j", "RSWK[].$last.subjectGeoName")
-		end
-	end
-	remove_field("RSWK[].$last.control_650")
 end
 /*
 651
