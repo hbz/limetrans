@@ -1,5 +1,14 @@
 {
   "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "99366597115306441",
@@ -24,6 +33,15 @@
 }
 {
   "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "99366597114806441",
@@ -51,6 +69,16 @@
   "CreatorStatement" : {
     "creatorStatement" : "Kym Anderson, Michael Bosworth"
   },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2009." ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "99366545708706441",
@@ -65,12 +93,23 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)99366545708706441"
-  } ]
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
 }
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : "Manfred Hegger, Hans Drexler, Martin Zeumer"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2014." ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -109,6 +148,16 @@
   "CreatorStatement" : {
     "creatorStatement" : "Marianne Buder ... (Hrsg.). Begr. von Klaus Laisiepen .."
   },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1997-" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990050093380206441",
@@ -131,6 +180,16 @@
 }
 {
   "collection" : "DE-468",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "2011." ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990005255180306447"
@@ -151,6 +210,15 @@
   "TitleAddendum" : {
     "title" : "EMedien 6-2012"
   },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "991000065939706444"
@@ -168,6 +236,15 @@
 }
 {
   "collection" : "DE-A96",
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "991004562349606444"
@@ -185,6 +262,16 @@
 }
 {
   "collection" : "DE-465",
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2019" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "99203866538906446"
@@ -208,6 +295,17 @@
   "CreatorStatement" : {
     "creatorStatement" : "The Gerontological Society of America"
   },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "1995-", "-2008", "1995" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Campus Grifflenberg" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990013054080206447",
@@ -227,6 +325,9 @@
   }, {
     "uid" : "(DE-468)WU000014939"
   } ],
+  "Item" : [ {
+    "callnumber" : "22J45-B"
+  } ],
   "TitleOther" : {
     "title" : [ "<<The>> journals of gerontology / B", "Psychological sciences and social sciences", "Journal of gerontology", "Journal of gerontology" ]
   }
@@ -235,6 +336,17 @@
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : "ed. by: C. Le Bris"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2003" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "taxonomy" : [ "Chemie und Chemische Technik", "Mathematik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -262,6 +374,16 @@
   "CreatorStatement" : {
     "creatorStatement" : "series editor, Dr. Richard Hull"
   },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "©2011-", "2011" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "99368113400306441",
@@ -276,6 +398,9 @@
     "identifierZDB" : "2657415-9"
   }, {
     "identifierZDB" : "2000386-9"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "2046-6080"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Dialogues in Critical Management Studies"
@@ -294,6 +419,16 @@
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : "Doris Haas-Arndt"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "[2015]" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -324,6 +459,16 @@
   "TitleAddendum" : {
     "title" : "Zeitschrift der Gesellschaft Deutscher Chemiker"
   },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2000-", "2000-2010", "2011-2014", "2000" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990110260070206441",
@@ -339,6 +484,48 @@
   "TitleStatement" : [ {
     "titleMain" : "Nachrichten aus der Chemie"
   } ],
+  "PublisherName" : [ {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "2000-" ]
+  }, {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "2000-2010" ]
+  }, {
+    "place" : [ "Frankfurt, M" ],
+    "name" : [ "Ges. Dt. Chemiker" ],
+    "chronology" : [ "teils" ]
+  }, {
+    "place" : [ "Berlin" ],
+    "name" : [ "<<de>> Gruyter" ],
+    "chronology" : [ "2011-2014" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2000-", "2000-2010", "teils", "2011-2014" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "48.2000 -"
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Online-Ausg.",
+    "description" : "Nachrichten aus der Chemie"
+  } ],
+  "DescriptionOfFormerEditionsOrVolumes" : [ {
+    "prefix" : "Vorg.:",
+    "description" : "Nachrichten aus Chemie, Technik und Laboratorium"
+  }, {
+    "prefix" : "Darin aufgegangen",
+    "description" : "Gesellschaft Österreichischer Chemiker: Mitteilungsblatt der Gesellschaft Österreichischer Chemiker"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Chemie"
+  }, {
+    "subject" : "Zeitschrift"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "subject" : "70"
+  } ],
   "xbib" : [ {
     "uid" : "(DE-605)990110260070206441"
   }, {
@@ -352,6 +539,16 @@
 }
 {
   "collection" : "DE-465",
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2013" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "99203913838706446"
@@ -369,6 +566,16 @@
 }
 {
   "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2005" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "99368091563606441",
@@ -383,7 +590,8 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)99368091563606441"
-  } ]
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
 }
 {
   "collection" : "DE-605",
@@ -392,6 +600,16 @@
   },
   "CreatorStatement" : {
     "creatorStatement" : "von Rudolf P. Hübener"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2020." ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -407,7 +625,8 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)99368165410206441"
-  } ]
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
 }
 {
   "collection" : "DE-605",
@@ -416,6 +635,16 @@
   },
   "CreatorStatement" : {
     "creatorStatement" : "Detlef Horster"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "[2010]" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -431,7 +660,8 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)99368053843406441"
-  } ]
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
 }
 {
   "collection" : "DE-605",
@@ -440,6 +670,16 @@
   },
   "CreatorStatement" : {
     "creatorStatement" : "hrsg. von Jan Knopf"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2001-" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -463,6 +703,17 @@
 }
 {
   "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1980-1999" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Geschichte" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990047829090206441",
@@ -488,6 +739,16 @@
   "CreatorStatement" : {
     "creatorStatement" : "hrsg. von Niels Birbaumer .."
   },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2003-" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990129211850206441",
@@ -510,6 +771,17 @@
 }
 {
   "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "1936-", "1936" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Campus Grifflenberg", "Magazin" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990054150240206441",
@@ -535,6 +807,16 @@
 }
 {
   "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "1969-1997", "1969", "1997" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990055814090206441",
@@ -566,6 +848,17 @@
   "CreatorStatement" : {
     "creatorStatement" : "Max Aub"
   },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Spanisch" ],
+    "date" : [ "[abril 2003]" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Campus Grifflenberg" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "9915993472406447",
@@ -575,10 +868,36 @@
     "identifierForTheIndex" : "(DE-468)9915993472406447",
     "identifierForTheRecord" : "(DE-468)9915993472406447"
   },
+  "Language" : [ {
+    "languageSource" : "   "
+  }, {
+    "language" : "Spanisch",
+    "languageSource" : "spa"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "8466310746" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Aub, Max"
+  } ],
   "TitleStatement" : [ {
     "titleMain" : "Campo cerrado"
   } ],
+  "PublisherName" : [ {
+    "place" : [ "Madrid" ],
+    "name" : [ "punto de lectura" ],
+    "chronology" : [ "[abril 2003]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[abril 2003]" ]
+  },
+  "Extent" : {
+    "extent" : "249 Seiten"
+  },
   "xbib" : [ {
     "uid" : "(DE-468)9915993472406447"
+  } ],
+  "Item" : [ {
+    "callnumber" : "FZZ1"
   } ]
 }

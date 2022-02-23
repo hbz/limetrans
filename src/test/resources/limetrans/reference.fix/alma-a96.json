@@ -3,6 +3,16 @@
   "TitleAddendum" : {
     "title" : "limnologia et oecologia regionalis systematis fluminis Amazonas"
   },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1965-" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990151648920206441",
@@ -37,6 +47,16 @@
   "CreatorStatement" : {
     "creatorStatement" : "Hrsg.: Bundesanstalt für Arbeitsschutz und Arbeitsmedizin"
   },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2007-" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990187582740206441",
@@ -65,6 +85,15 @@
 }
 {
   "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "99366597115306441",
@@ -89,6 +118,15 @@
 }
 {
   "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "99366597114806441",
@@ -116,6 +154,15 @@
   "CreatorStatement" : {
     "creatorStatement" : "in Zusammenarbeit mit: Forschungszentrum Jülich (Dipl.-Ing. Karl Heinz Graf)"
   },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "991000043359706444",
@@ -139,6 +186,15 @@
   "CreatorStatement" : {
     "creatorStatement" : "in Zusammenarbeit mit: RWTH Aachen/Institut für Angewandte Medizintechnik (Dipl.-Ing. Stephanie Schmitz)"
   },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "991000048849706444",
@@ -159,6 +215,15 @@
 }
 {
   "collection" : "DE-A96",
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "991001149389706444",
@@ -181,6 +246,15 @@
   "collection" : "DE-A96",
   "CreatorStatement" : {
     "creatorStatement" : "in Zusammenarbeit mit: Uniklinikum Köln/Institute für Humangenetik (Dr. Min Jeong Kye)"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -207,6 +281,16 @@
   },
   "CreatorStatement" : {
     "creatorStatement" : "Günter Kahl"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2004-" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -235,6 +319,16 @@
   "CreatorStatement" : {
     "creatorStatement" : "Kym Anderson, Michael Bosworth"
   },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2009." ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "99366545708706441",
@@ -249,12 +343,23 @@
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)99366545708706441"
-  } ]
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
 }
 {
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : "Manfred Hegger, Hans Drexler, Martin Zeumer"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2014." ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -293,6 +398,16 @@
   "CreatorStatement" : {
     "creatorStatement" : "Marianne Buder ... (Hrsg.). Begr. von Klaus Laisiepen .."
   },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1997-" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990050093380206441",
@@ -319,6 +434,16 @@
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : "Mark Skipper"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2002-" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -347,6 +472,16 @@
   "CreatorStatement" : {
     "creatorStatement" : "in Zusammenarbeit mit: Forschungszentrum Jülich (Dipl.-Ing. Karl Heinz Graf)"
   },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Jülich" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "991000067219706444",
@@ -370,6 +505,16 @@
   "CreatorStatement" : {
     "creatorStatement" : "series editor, Dr. Richard Hull"
   },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "©2011-", "2011" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "99368113400306441",
@@ -380,10 +525,24 @@
     "identifierForTheIndex" : "(DE-605)99368113400306441",
     "identifierForTheRecord" : "(DE-605)99368113400306441"
   },
+  "DateFirst" : {
+    "date" : "2011",
+    "date" : "2011"
+  },
+  "DateLast" : {
+    "date" : "2017"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
   "IdentifierZDB" : [ {
     "identifierZDB" : "2657415-9"
   }, {
     "identifierZDB" : "2000386-9"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "2046-6080"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Dialogues in Critical Management Studies"
@@ -402,6 +561,16 @@
   "collection" : "DE-A96",
   "CreatorStatement" : {
     "creatorStatement" : "in Zusammenarbeit mit: RWTH Aachen/Institut für Angewandte Medizintechnik (Dipl.-Ing. Stephanie Schmitz)"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Jülich" ],
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -425,6 +594,16 @@
   "collection" : "DE-A96",
   "VolumeDesignation" : {
     "volumeDesignation" : "2020,10"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Eupener Straße" ],
+    "carrier" : [ "keine Angabe" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -450,6 +629,17 @@
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : "Doris Haas-Arndt"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "[2015]" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "taxonomy" : [ "Architektur und Bauingenieurwesen" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -482,6 +672,17 @@
   "TitleAddendum" : {
     "title" : "Zeitschrift der Gesellschaft Deutscher Chemiker"
   },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2000-", "2000-2010", "2011-2014", "2000" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Eupener Straße" ],
+    "carrier" : [ "keine Angabe" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990110260070206441",
@@ -496,6 +697,48 @@
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Nachrichten aus der Chemie"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "2000-" ]
+  }, {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "2000-2010" ]
+  }, {
+    "place" : [ "Frankfurt, M" ],
+    "name" : [ "Ges. Dt. Chemiker" ],
+    "chronology" : [ "teils" ]
+  }, {
+    "place" : [ "Berlin" ],
+    "name" : [ "<<de>> Gruyter" ],
+    "chronology" : [ "2011-2014" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2000-", "2000-2010", "teils", "2011-2014" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "48.2000 -"
+  },
+  "HoldingsStatement" : [ {
+    "note" : "im Magazin Eupener Str., ab 2012 im Schuber"
+  } ],
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Online-Ausg.",
+    "description" : "Nachrichten aus der Chemie"
+  } ],
+  "DescriptionOfFormerEditionsOrVolumes" : [ {
+    "prefix" : "Vorg.:",
+    "description" : "Nachrichten aus Chemie, Technik und Laboratorium"
+  }, {
+    "prefix" : "Darin aufgegangen",
+    "description" : "Gesellschaft Österreichischer Chemiker: Mitteilungsblatt der Gesellschaft Österreichischer Chemiker"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Chemie"
+  }, {
+    "subject" : "Zeitschrift"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990110260070206441"
@@ -517,6 +760,15 @@
   },
   "CreatorStatement" : {
     "creatorStatement" : "Zentralverband des Deutschen Baugewerbes .."
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -551,6 +803,16 @@
   "CreatorStatement" : {
     "creatorStatement" : "von Rudolf P. Hübener"
   },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2020." ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "99368165410206441",
@@ -568,7 +830,8 @@
     "uid" : "(DE-605)99368165410206441"
   }, {
     "uid" : "(DE-A96)991004573738506444"
-  } ]
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
 }
 {
   "collection" : "DE-A96",
@@ -577,6 +840,16 @@
   },
   "CreatorStatement" : {
     "creatorStatement" : "ANSI/ISA ; ANSI/ISA"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Eupener Straße" ],
+    "carrier" : [ "keine Angabe" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -602,6 +875,16 @@
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : "hrsg. von Niels Birbaumer .."
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2003-" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -632,6 +915,17 @@
   },
   "CreatorStatement" : {
     "creatorStatement" : "Kai Spichale"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2019" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "taxonomy" : [ "Informatik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",

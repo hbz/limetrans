@@ -1,5 +1,6 @@
 package hbz.limetrans.function;
 
+import org.metafacture.metafix.FixPath;
 import org.metafacture.metafix.Metafix;
 import org.metafacture.metafix.Record;
 import org.metafacture.metafix.api.FixFunction;
@@ -46,7 +47,7 @@ public class ZDB extends AbstractSimpleStatelessFunction implements FixFunction 
 
     @Override
     public void apply(final Metafix aMetafix, final Record aRecord, final List<String> aParams, final Map<String, String> aOptions) {
-        aRecord.transformFields(aParams, this::process);
+        new FixPath(aParams.get(0)).transformIn(aRecord, s -> process(s));
     }
 
 }

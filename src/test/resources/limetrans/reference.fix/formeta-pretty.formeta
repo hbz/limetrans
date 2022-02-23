@@ -11,48 +11,42 @@
 		'b': 'eng',
 		'e': 'pn',
 		'c': 'N$T',
-		'd' {
-			'1': 'OCL',
-			'2': 'OCLCQ',
-			'3': 'DST',
-			'4': 'YDXCP',
-			'5': 'OCLCQ',
-			'6': 'TUU',
-			'7': 'OCLCQ',
-			'8': 'TNF',
-			'9': 'NEG',
-			'10': 'OCLCQ',
-			'11': 'ZCU',
-			'12': 'OCLCF',
-			'13': 'OCLCQ',
-			'14': 'COO',
-			'15': 'OCLCQ'
-		}
+		'd': 'OCL',
+		'd': 'OCLCQ',
+		'd': 'DST',
+		'd': 'YDXCP',
+		'd': 'OCLCQ',
+		'd': 'TUU',
+		'd': 'OCLCQ',
+		'd': 'TNF',
+		'd': 'NEG',
+		'd': 'OCLCQ',
+		'd': 'ZCU',
+		'd': 'OCLCF',
+		'd': 'OCLCQ',
+		'd': 'COO',
+		'd': 'OCLCQ'
 	},
 	'019  ' {
-		'a' {
-			'1': '71799407',
-			'2': '507645203'
-		}
+		'a': '71799407',
+		'a': '507645203'
 	},
 	'020  ' {
-		'1' {
-			'a': '0585020531',
-			'q': '(electronic bk.)'
-		},
-		'2' {
-			'a': '9780585020532',
-			'q': '(electronic bk.)'
-		},
-		'3' {
-			'a': '9780262220460'
-		},
-		'4' {
-			'a': '0262220466'
-		},
-		'5' {
-			'z': '0262220466'
-		}
+		'a': '0585020531',
+		'q': '(electronic bk.)'
+	},
+	'020  ' {
+		'a': '9780585020532',
+		'q': '(electronic bk.)'
+	},
+	'020  ' {
+		'a': '9780262220460'
+	},
+	'020  ' {
+		'a': '0262220466'
+	},
+	'020  ' {
+		'z': '0262220466'
 	},
 	'0291 ' {
 		'a': 'NZ1',
@@ -60,26 +54,22 @@
 	},
 	'035  ' {
 		'a': '(OCoLC)42328784',
-		'z' {
-			'1': '(OCoLC)71799407',
-			'2': '(OCoLC)507645203'
-		}
+		'z': '(OCoLC)71799407',
+		'z': '(OCoLC)507645203'
 	},
 	'050 4' {
 		'a': 'BF311',
 		'b': '.V624 1993eb'
 	},
 	'072 7' {
-		'1' {
-			'a': 'SCI',
-			'x': '090000',
-			'2': 'bisacsh'
-		},
-		'2' {
-			'a': 'PSY',
-			'x': '008000',
-			'2': 'bisacsh'
-		}
+		'a': 'SCI',
+		'x': '090000',
+		'2': 'bisacsh'
+	},
+	'072 7' {
+		'a': 'PSY',
+		'x': '008000',
+		'2': 'bisacsh'
 	},
 	'08204' {
 		'a': '153',
@@ -132,13 +122,11 @@
 		'a': 'Print version record.'
 	},
 	'590  ' {
-		'1' {
-			'b': 'alles'
-		},
-		'2' {
-			'a': 'OCLC',
-			'b': 'WorldCat Holdings'
-		}
+		'b': 'alles'
+	},
+	'590  ' {
+		'a': 'OCLC',
+		'b': 'WorldCat Holdings'
 	},
 	'650 0' {
 		'a': 'Cognitive science.'
@@ -147,21 +135,19 @@
 		'a': 'Cognition.'
 	},
 	'650 7' {
-		'1' {
-			'a': 'SCIENCE',
-			'x': 'Cognitive Science.',
-			'2': 'bisacsh'
-		},
-		'2' {
-			'a': 'PSYCHOLOGY',
-			'x': 'Cognitive Psychology.',
-			'2': 'bisacsh'
-		},
-		'3' {
-			'a': 'Cognitive science.',
-			'2': 'fast',
-			'0': '(OCoLC)fst00866547'
-		}
+		'a': 'SCIENCE',
+		'x': 'Cognitive Science.',
+		'2': 'bisacsh'
+	},
+	'650 7' {
+		'a': 'PSYCHOLOGY',
+		'x': 'Cognitive Psychology.',
+		'2': 'bisacsh'
+	},
+	'650 7' {
+		'a': 'Cognitive science.',
+		'2': 'fast',
+		'0': '(OCoLC)fst00866547'
 	},
 	'655 4' {
 		'a': 'Electronic books.'
@@ -172,35 +158,29 @@
 		't': 'What is cognitive science?.',
 		'd': 'Cambridge, Mass. : MIT Press, ©1993',
 		'z': '0262220466',
-		'w' {
-			'1': '(DLC)   92010167',
-			'2': '(OCoLC)25711827'
-		}
+		'w': '(DLC)   92010167',
+		'w': '(OCoLC)25711827'
 	},
 	'85640' {
-		'1' {
-			'3': 'EBSCOhost',
-			'u': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795'
-		},
-		'2' {
-			'u': 'http://cognet.mit.edu/library/books/view?isbn=0262220466',
-			'z': 'Full text available from MIT CogNet'
-		}
+		'3': 'EBSCOhost',
+		'u': 'http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1795'
+	},
+	'85640' {
+		'u': 'http://cognet.mit.edu/library/books/view?isbn=0262220466',
+		'z': 'Full text available from MIT CogNet'
 	},
 	'8564 ' {
 		'u': 'http://cognet.mit.edu/library/books/view?isbn=0262220466'
 	},
 	'938  ' {
-		'1' {
-			'a': 'EBSCOhost',
-			'b': 'EBSC',
-			'n': '1795'
-		},
-		'2' {
-			'a': 'YBP Library Services',
-			'b': 'YANK',
-			'n': '2302532'
-		}
+		'a': 'EBSCOhost',
+		'b': 'EBSC',
+		'n': '1795'
+	},
+	'938  ' {
+		'a': 'YBP Library Services',
+		'b': 'YANK',
+		'n': '2302532'
 	},
 	'994  ' {
 		'a': '92',
