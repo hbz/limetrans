@@ -5,6 +5,48 @@
     </data>
   </macro>
 
+  <macro name="personName">
+    <data name="$[name]" source="$[field][013] .a">
+      <replace pattern="(?&lt;!\p{Upper})\.$|[,]$" with="" />
+    </data>
+  </macro>
+
+  <macro name="personNumbering">
+    <data name="$[name]" source="$[field][013] .b">
+      <replace pattern="[,]$" with="" />
+    </data>
+  </macro>
+
+  <macro name="personTitle">
+    <entity name="$[name][]" flushWith="$[field][013] " sameEntity="true">
+      <data name="" source="$[field][013] .c">
+        <replace pattern="[,]$" with="" />
+      </data>
+    </entity>
+  </macro>
+
+  <macro name="personBio">
+    <data name="$[name]" source="$[field][013] .d">
+      <replace pattern="[.]$" with="" />
+    </data>
+  </macro>
+
+  <macro name="personRole">
+    <entity name="$[name][]" flushWith="$[field][013] " sameEntity="true">
+      <data name="" source="$[field][013] .e">
+        <compose prefix="[" postfix="]" />
+      </data>
+    </entity>
+  </macro>
+
+  <macro name="personIdentifier">
+    <entity name="$[name][]" flushWith="$[field][013] " sameEntity="true">
+      <data name="" source="$[field][013] .0">
+        <regexp match="^\(DE-588\).*$" />
+      </data>
+    </entity>
+  </macro>
+
   <macro name="identifierGND">
     <entity name="$[name][]" flushWith="$[field][0123] " sameEntity="true">
       <data name="" source="$[field][0123] .0">
@@ -209,7 +251,7 @@ copy_field("@mmsiz", "IdentifierAlma.identifierMMSIZ")
   </combine>
 */
 do list(path: "POR  ", "var": "$i")
-  # TODO: if any_equal("$i.[MA]", "$[member]")
+  # TODO: if any_equal("$i.[MA]", "$[member]") => https://github.com/metafacture/metafacture-fix/issues/115
   if any_equal("$i.M", "$[member]")
     if exists("@portfolio")
       add_field("@portfolio_array", "true")
@@ -242,6 +284,80 @@ copy_field("@mmsid", "RecordIdentifier.identifierForTheIndex")
 copy_field("@id", "RecordIdentifier.identifierForTheRecord")
 
 /*
+  <combine name="@date1" value="${date1}">
+    <if>
+      <all>
+        <data source="@type">
+          <equals string="CR" />
+        </data>
+        <data source="008">
+          <substring start="6" end="7" />
+          <not-equals string="n" />
+        </data>
+      </all>
+    </if>
+    <data name="date1" source="008">
+      <substring start="07" end="11" />
+    </data>
+  </combine>
+  <entity name="DateFirst" flushWith="record">
+    <call-macro name="alma-mms-filter" dname="date" entity="POC  " source="b" filter="a" />
+    <data name="date" source="@date1">
+      <regexp match="^[0-9]+$" />
+      <not-equals string="9999" />
+    </data>
+  </entity>
+*/
+# TODO: DateFirst
+
+/*
+  <combine name="@date2" value="${date2}">
+    <if>
+      <all>
+        <data source="@type">
+          <equals string="CR" />
+        </data>
+        <data source="008">
+          <substring start="6" end="7" />
+          <regexp match="[^cn]" />
+        </data>
+      </all>
+    </if>
+    <data name="date2" source="008">
+      <substring start="11" end="15" />
+    </data>
+  </combine>
+  <entity name="DateLast" flushWith="record">
+    <call-macro name="alma-mms-filter" dname="date" entity="POC  " source="c" filter="a" />
+    <data name="date" source="@date2">
+      <regexp match="^[0-9]+$" />
+      <not-equals string="9999" />
+    </data>
+  </entity>
+*/
+# TODO: DateLast
+
+/*
+  <data name="@language_source_all" source="008">
+    <substring start="35" end="38" />
+  </data>
+  <data name="@language_source_all" source="041[ 01] .[adj]" />
+  <data name="@language_source" source="@language_source_all">
+    <unique />
+  </data>
+  <data name="@language_long" source="@language_source">
+    <lookup in="ISO639-2-to-GND" />
+  </data>
+  <entity name="Language[]" flushWith="record">
+    <entity name="" flushWith="@language_source" reset="true">
+      <data name="language" source="@language_long" />
+      <data name="languageSource" source="@language_source" />
+    </entity>
+  </entity>
+*/
+# TODO: Language[]
+
+/*
   <entity name="IdentifierZDB[]" flushWith="record">
     <entity name="" flushWith="0167 " sameEntity="true">
       <if>
@@ -269,6 +385,94 @@ do list(path: "0167 ", "var": "$i")
     copy_field("$i.a", "IdentifierZDB[].$append.identifierZDB")
   end
 end
+
+/*
+  <entity name="IdentifierISBN[]" flushWith="record">
+    <entity name="" flushWith="020  " sameEntity="true">
+      <entity name="identifierISBN[]" flushWith="020  " sameEntity="true">
+        <if>
+          <data source="020  .a" />
+        </if>
+        <data name="" source="020  .a" />
+        <data name="" source="020  .c" />
+        <data name="" source="020  .q">
+          <replace pattern="^\(|\s?[):;,]\s?$" with="" />
+        </data>
+      </entity>
+    </entity>
+  </entity>
+*/
+# TODO: IdentifierISBN[]
+
+/*
+  <entity name="IdentifierISSN[]" flushWith="record">
+    <entity name="" flushWith="022? " sameEntity="true">
+      <data name="identifierISSN" source="022? .a" />
+    </entity>
+  </entity>
+*/
+# TODO: IdentifierISSN[]
+
+/*
+  <entity name="IdentifierDOI[]" flushWith="record">
+    <entity name="" flushWith="0247?" sameEntity="true">
+      <if>
+        <data source="0247?.2">
+          <equals string="doi" />
+        </data>
+      </if>
+      <data name="standardNumber" source="0247?.a" />
+    </entity>
+  </entity>
+*/
+# TODO: IdentifierDOI[]
+
+/*
+  <entity name="Person[]" flushWith="record">
+    <entity name="" flushWith="100[013] " sameEntity="true">
+      <if>
+        <any flushWith="100[013] ">
+          <none flushWith="100[013] " sameEntity="true">
+            <data source="100[013] .[4e]" />
+          </none>
+          <data source="100[013] .[4e]">
+            <regexp match="^([Aa]ut|[Cc]re)" />
+          </data>
+        </any>
+      </if>
+      <call-macro name="personName"       field="100" />
+      <call-macro name="personNumbering"  field="100" />
+      <call-macro name="personTitle"      field="100" />
+      <call-macro name="personBio"        field="100" />
+      <call-macro name="personRole"       field="100" />
+      <call-macro name="personIdentifier" field="100" />
+      <call-macro name="identifierGND"    field="100" />
+    </entity>
+  </entity>
+*/
+# TODO: Person[]
+
+/*
+  <entity name="CorporateBody[]" flushWith="record">
+    <entity name="" flushWith="[17]10[012] " sameEntity="true">
+      <data name="corporateBodyName" source="[17]10[012] .a">
+        <replace pattern="\.$" with="" />
+      </data>
+      <entity name="corporateBodyNameUnit[]" flushWith="[17]10[012] " sameEntity="true">
+        <data name="" source="[17]10[012] .b">
+          <replace pattern="\.$" with="" />
+        </data>
+      </entity>
+      <entity name="corporateBodyIdentifier[]" flushWith="[17]10[012] " sameEntity="true">
+        <data name="" source="[17]10[012] .0">
+          <regexp match="^\(DE-588\).*$" />
+        </data>
+      </entity>
+      <call-macro name="identifierGND" field="[17]10" />
+    </entity>
+  </entity>
+*/
+# TODO: CorporateBody[]
 
 /*
   <entity name="Conference" flushWith="record">
@@ -311,20 +515,22 @@ copy_field("111[012] .c", "Conference.conferencePlace")
 replace_all("Conference.conferencePlace", "\\(|\\)?[;.,]?$", "")
 do list(path: "111[012] .0", "var": "$i")
   if any_match("$i", "^\\(DE-588\\).*")
-    unless exists("Conference.conferenceIdentifier[]")
-      set_array("Conference.conferenceIdentifier[]")
+    if exists("@conference_identifier")
+      add_field("@conference_identifier_array", "true")
+    else
+      set_array("@conference_identifier")
     end
-    copy_field("$i", "Conference.conferenceIdentifier[].$append")
+    copy_field("$i", "@conference_identifier")
   end
 end
-do list(path: "111[0123] .0", "var": "$i")
-  if any_match("$i", "^\\(DE-588\\).*")
-    replace_all("$i", "^\\(DE-588\\)", "")
-    unless exists("Conference.identifierGND[]")
-      set_array("Conference.identifierGND[]")
-    end
-    copy_field("$i", "Conference.identifierGND[].$append")
-  end
+if exists("@conference_identifier_array")
+  copy_field("@conference_identifier", "Conference.conferenceIdentifier[]")
+  replace_all("@conference_identifier.*", "^\\(DE-588\\)", "")
+  copy_field("@conference_identifier", "Conference.identifierGND[]")
+else
+  copy_field("@conference_identifier", "Conference.conferenceIdentifier[].$append")
+  replace_all("@conference_identifier.*", "^\\(DE-588\\)", "")
+  copy_field("@conference_identifier", "Conference.identifierGND[].$append")
 end
 copy_field("111[012] .e", "Conference.conferenceUnit")
 # TODO: replace_all("Conference.conferenceUnit", "[,.]$", "")
@@ -355,6 +561,153 @@ do list(path: "245??.p", "var": "$i")
 end
 
 /*
+  <combine name="@uid" value="(${isil})${id}">
+    <data name="isil" source="@isiliz" />
+    <data name="id" source="@mmsiz" />
+  </combine>
+  <data name="@uid" source="@hbzid" />
+  <data name="@uid" source="@sysid" />
+  <data name="@uid" source="@mmsid" />
+  <data name="@uid" source="@id" />
+  <entity name="xbib[]" flushWith="record">
+    <entity name="" flushWith="@uid" reset="true">
+      <data name="uid" source="@uid">
+        <unique />
+      </data>
+    </entity>
+  </entity>
+*/
+set_array("xbib[]")
+copy_field("@mmsid", "xbib[].$append.uid")
+copy_field("@hbzid", "xbib[].$append.uid")
+if exists("@mmsiz")
+  paste("xbib[].$append.uid", "~(", "@isiliz", "~)", "@mmsiz", join_char: "")
+end
+copy_field("@sysid", "xbib[].$append.uid")
+copy_field("@id", "xbib[].$append.uid")
+uniq("xbib[]")
+
+/*
+  <entity name="PersonCreator[]" flushWith="record">
+    <entity name="" flushWith="700[013] " sameEntity="true">
+      <if>
+        <any flushWith="700[013] ">
+          <none flushWith="700[013] " sameEntity="true">
+            <data source="700[013] .[4e]" />
+          </none>
+          <data source="700[013] .[4e]">
+            <regexp match="^([Aa]ut|[Cc]re)" />
+          </data>
+        </any>
+      </if>
+      <call-macro name="personName"       field="700" />
+      <call-macro name="personNumbering"  field="700" />
+      <call-macro name="personTitle"      field="700" />
+      <call-macro name="personBio"        field="700" />
+      <call-macro name="personRole"       field="700" />
+      <call-macro name="personIdentifier" field="700" />
+      <call-macro name="identifierGND"    field="700" />
+    </entity>
+  </entity>
+*/
+do list(path: "700[013] ", "var": "$i")
+  if exists("$i.[4e]")
+    # TODO: if any_match("$i.[4e]", "^([Aa]ut|[Cc]re).*") => https://github.com/metafacture/metafacture-fix/issues/115
+    if any_match("$i.4", "^([Aa]ut|[Cc]re).*")
+      unless exists("PersonCreator[]")
+        set_array("PersonCreator[]")
+      end
+      replace_all("$i.a", "(?<!\\p{Upper})[.]$|[,]$", "")
+      copy_field("$i.a", "PersonCreator[].$append.personName")
+      replace_all("$i.b", "[,]$", "")
+      copy_field("$i.b", "PersonCreator[].$last.personNumbering")
+      set_array("PersonCreator[].$last.personTitle[]")
+      do list(path: "$i.c", "var": "$j")
+        replace_all("$j", "[,]$", "")
+        copy_field("$j", "PersonCreator[].$last.personTitle[].$append")
+      end
+      replace_all("$i.d", "[.]$", "")
+      copy_field("$i.d", "PersonCreator[].$last.personBio")
+      set_array("PersonCreator[].$last.personRole[]")
+      do list(path: "$i.e", "var": "$j")
+        paste("PersonCreator[].$last.personRole[].$append", "~[", "$j", "~]", join_char: "")
+      end
+      do list(path: "$i.0", "var": "$j")
+        if any_match("$j", "^\\(DE-588\\).*")
+          unless exists("PersonCreator[].$last.personIdentifier[]")
+            set_array("PersonCreator[].$last.personIdentifier[]")
+            set_array("PersonCreator[].$last.identifierGND[]")
+          end
+          copy_field("$j", "PersonCreator[].$last.personIdentifier[].$append")
+          replace_all("$j", "^\\(DE-588\\)", "")
+          copy_field("$j", "PersonCreator[].$last.identifierGND[].$append")
+        end
+      end
+    elsif any_match("$i.e", "^([Aa]ut|[Cc]re).*")
+      unless exists("PersonCreator[]")
+        set_array("PersonCreator[]")
+      end
+      replace_all("$i.a", "(?<!\\p{Upper})[.]$|[,]$", "")
+      copy_field("$i.a", "PersonCreator[].$append.personName")
+      replace_all("$i.b", "[,]$", "")
+      copy_field("$i.b", "PersonCreator[].$last.personNumbering")
+      set_array("PersonCreator[].$last.personTitle[]")
+      do list(path: "$i.c", "var": "$j")
+        replace_all("$j", "[,]$", "")
+        copy_field("$j", "PersonCreator[].$last.personTitle[].$append")
+      end
+      replace_all("$i.d", "[.]$", "")
+      copy_field("$i.d", "PersonCreator[].$last.personBio")
+      set_array("PersonCreator[].$last.personRole[]")
+      do list(path: "$i.e", "var": "$j")
+        paste("PersonCreator[].$last.personRole[].$append", "~[", "$j", "~]", join_char: "")
+      end
+      do list(path: "$i.0", "var": "$j")
+        if any_match("$j", "^\\(DE-588\\).*")
+          unless exists("PersonCreator[].$last.personIdentifier[]")
+            set_array("PersonCreator[].$last.personIdentifier[]")
+            set_array("PersonCreator[].$last.identifierGND[]")
+          end
+          copy_field("$j", "PersonCreator[].$last.personIdentifier[].$append")
+          replace_all("$j", "^\\(DE-588\\)", "")
+          copy_field("$j", "PersonCreator[].$last.identifierGND[].$append")
+        end
+      end
+    end
+  else
+    unless exists("PersonCreator[]")
+      set_array("PersonCreator[]")
+    end
+    replace_all("$i.a", "(?<!\\p{Upper})[.]$|[,]$", "")
+    copy_field("$i.a", "PersonCreator[].$append.personName")
+    replace_all("$i.b", "[,]$", "")
+    copy_field("$i.b", "PersonCreator[].$last.personNumbering")
+    set_array("PersonCreator[].$last.personTitle[]")
+    do list(path: "$i.c", "var": "$j")
+      replace_all("$j", "[,]$", "")
+      copy_field("$j", "PersonCreator[].$last.personTitle[].$append")
+    end
+    replace_all("$i.d", "[.]$", "")
+    copy_field("$i.d", "PersonCreator[].$last.personBio")
+    set_array("PersonCreator[].$last.personRole[]")
+    do list(path: "$i.e", "var": "$j")
+      paste("PersonCreator[].$last.personRole[].$append", "~[", "$j", "~]", join_char: "")
+    end
+    do list(path: "$i.0", "var": "$j")
+      if any_match("$j", "^\\(DE-588\\).*")
+        unless exists("PersonCreator[].$last.personIdentifier[]")
+          set_array("PersonCreator[].$last.personIdentifier[]")
+          set_array("PersonCreator[].$last.identifierGND[]")
+        end
+        copy_field("$j", "PersonCreator[].$last.personIdentifier[].$append")
+        replace_all("$j", "^\\(DE-588\\)", "")
+        copy_field("$j", "PersonCreator[].$last.identifierGND[].$append")
+      end
+    end
+  end
+end
+
+/*
   <entity name="TitleOther">
     <entity name="title[]" flushWith="record">
       <data name="" source="246?[ 345678].a">
@@ -369,7 +722,7 @@ do list(path: "246?[ 345678]", "var": "$i")
   else
     set_array("@title_other")
   end
-  replace_all("$i.a", "\\.$", "")
+  replace_all("$i.a", "[.]$", "")
   copy_field("$i.a", "@title_other")
 end
 if exists("@title_other_array")
@@ -383,11 +736,13 @@ retain(
   "CreatorStatement",
   "IdentifierAlma",
   "IdentifierZDB[]",
+  "PersonCreator[]",
   "RecordIdentifier",
   "TitleAddendum",
   "TitleOther",
   "TitleStatement[]",
   "TitleUniform",
   "VolumeDesignation",
-  "collection"
+  "collection",
+  "xbib[]"
 )
