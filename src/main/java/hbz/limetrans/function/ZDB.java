@@ -1,4 +1,4 @@
-package hbz.limetrans.metamorph;
+package hbz.limetrans.function;
 
 import org.metafacture.metamorph.api.helpers.AbstractSimpleStatelessFunction;
 
