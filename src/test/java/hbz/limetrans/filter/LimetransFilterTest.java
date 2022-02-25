@@ -101,7 +101,7 @@ public class LimetransFilterTest {
 
     @Test
     public void testRecordId() throws IOException {
-        testEqualsReference("record-id", "001=ocm44959477");
+        testEqualsReference("record-id", "001=ocm44959477 ");
     }
 
     @Test
@@ -128,14 +128,14 @@ public class LimetransFilterTest {
     public void testNestedAny() throws IOException {
         testEqualsReference("nested-any", LimetransFilter.any()
                 .add(LimetransFilter.all().add("650??.a=Mathematics", "@042??.a"))
-                .add(LimetransFilter.all().add("856??.u=~book", "!001=ocm44954079", "!001=ocm47011858")));
+                .add(LimetransFilter.all().add("856??.u=~book", "!001=ocm44954079 ", "!001=ocm47011858 ")));
     }
 
     @Test
     public void testNestedAll() throws IOException {
         testEqualsReference("nested-all", LimetransFilter.all()
                 .add(LimetransFilter.any().add("650??.a=Mathematics", "@042??.a"))
-                .add(LimetransFilter.any().add("856??.u=~book", "!001=ocm44954079", "!001=ocm47011858")));
+                .add(LimetransFilter.any().add("856??.u=~book", "!001=ocm44954079 ", "!001=ocm47011858 ")));
     }
 
     @Test

@@ -5,6 +5,7 @@
       <switch-name-value />
       <regexp match="^(?!type).*" />
       <switch-name-value />
+      <trim />
     </data>
   </rules>
 </metamorph>

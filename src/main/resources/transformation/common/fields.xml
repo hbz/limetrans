@@ -3,7 +3,9 @@
 
   <!-- 0xx -->
   <combine name="@id" value="($[isil])${id}">
-    <data name="id" source="001" />
+    <data name="id" source="001">
+      <trim />
+    </data>
   </combine>
   <entity name="RecordIdentifier" flushWith="@id">
     <data name="identifierForTheRecord" source="@id" />

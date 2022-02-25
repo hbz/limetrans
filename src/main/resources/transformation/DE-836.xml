@@ -13,7 +13,9 @@
 
   <rules xmlns="http://www.culturegraph.org/metamorph">
     <entity name="IdentifierOCLC" flushWith="record">
-      <data name="identifierOCLC" source="001" />
+      <data name="identifierOCLC" source="001">
+        <trim />
+      </data>
     </entity>
   </rules>
 </metamorph>
