@@ -108,6 +108,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     }
 
     private static final boolean METAFIX_IS_DEFAULT = false;
+    private static final boolean ALMA_HYBRID_DEFAULT = true;
 
     public enum Type {
 
@@ -330,14 +331,21 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
             rulesSuffix = "";
 
-            mFilter
-                .add(memberFilter
-                        .add(availableForFilter
-                            .add(sourceSystemFilter.apply("EXLCZ"))))
-                .add(LimetransFilter.any()
-                        .add(sourceSystemFilter.apply("DE-600"))
-                        .add(LimetransFilter.none()
-                            .add(itemFilter)));
+            if (almaSettings.getAsBoolean("hybrid", ALMA_HYBRID_DEFAULT)) {
+                mFilter
+                    .add(memberFilter
+                            .add(availableForFilter
+                                .add(sourceSystemFilter.apply("EXLCZ"))))
+                    .add(LimetransFilter.any()
+                            .add(sourceSystemFilter.apply("DE-600"))
+                            .add(LimetransFilter.none()
+                                .add(itemFilter)));
+            }
+            else {
+                mFilter
+                    .add(memberFilter
+                            .add(availableForFilter));
+            }
         }
 
         return rulesSuffix;
