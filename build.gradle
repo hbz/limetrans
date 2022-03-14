@@ -106,6 +106,7 @@ test {
     testLogging {
         showStandardStreams = true
         exceptionFormat = 'full'
+        events 'SKIPPED'
     }
 
     passSystemProperties(systemProperties)
