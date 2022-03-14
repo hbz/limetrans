@@ -6792,3 +6792,77 @@
     "subjectIdentifier" : [ "(OCoLC)fst00815326" ]
   } ]
 }
+{
+  "collection" : "DE-605",
+  "TypePeriodical" : "Zeitschrift",
+  "dc" : {
+    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1989", "1994" ]
+  },
+  "introx" : {
+    "access" : [ "online" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "99370676979406441",
+    "identifierMMSIZ" : "99370676979406441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99370676979406441",
+    "identifierForTheRecord" : "(DE-605)99370676979406441"
+  },
+  "DateFirst" : {
+    "date" : "1989"
+  },
+  "DateLast" : {
+    "date" : "1994"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2045181-7"
+  }, {
+    "identifierZDB" : "2045181-7"
+  }, {
+    "identifierZDB" : "2045181-7"
+  }, {
+    "identifierZDB" : "2045181-7"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "0934-9758"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Vakuum in der Praxis"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Weinheim, West Germany" ],
+    "name" : [ "VCH" ],
+    "chronology" : [ "1989-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1989-" ]
+  },
+  "Extent" : {
+    "extent" : "volumes : illustrations ; 29 cm"
+  },
+  "DescriptionOfContinuingEditionsOrVolumes" : [ {
+    "prefix" : "Fortgesetzt von",
+    "description" : "Vakuum in Forschung und Praxis"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99370676979406441"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : "Vacuum technology",
+    "subjectGenre" : "Periodicals"
+  }, {
+    "subjectIdentifier" : [ "(OCoLC)fst01163626" ]
+  }, {
+    "subjectTopicName" : "Vacuümtechniek"
+  } ]
+}
