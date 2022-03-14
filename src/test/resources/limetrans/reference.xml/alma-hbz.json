@@ -6731,3 +6731,64 @@
     "subjectTopicName" : "Education—Research"
   } ]
 }
+{
+  "collection" : "DE-605",
+  "TypePeriodical" : "Zeitschrift",
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Zeitschrift", "Sonstiges" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "1982" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "99370677324206441",
+    "identifierMMSIZ" : "99370677324206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99370677324206441",
+    "identifierForTheRecord" : "(DE-605)99370677324206441"
+  },
+  "DateFirst" : {
+    "date" : "1982"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "2151-8009"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Visual arts research"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "[Champaign, Ill.]" ],
+    "name" : [ "University of Illinois Press" ],
+    "chronology" : [ "1982-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1982-" ]
+  },
+  "Description" : {
+    "description" : [ "Refereed/Peer-reviewed" ]
+  },
+  "DescriptionOfFormerEditionsOrVolumes" : [ {
+    "prefix" : "Fortsetzung von",
+    "description" : "Review of Research in Visual Arts Education"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99370677324206441"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : "Art",
+    "subjectGenre" : "Periodicals"
+  }, {
+    "subjectIdentifier" : [ "(OCoLC)fst00815326" ]
+  } ]
+}
