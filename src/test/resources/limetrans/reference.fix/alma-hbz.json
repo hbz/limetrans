@@ -6866,3 +6866,87 @@
     "subjectTopicName" : "Vacuümtechniek"
   } ]
 }
+{
+  "TypePeriodical" : "Zeitschrift",
+  "collection" : "DE-605",
+  "VolumeDesignation" : {
+    "volumeDesignation" : "[...]"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1968", "1992" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990054140540206441",
+    "identifierMMSIZ" : "990054140540206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990054140540206441",
+    "identifierForTheRecord" : "(DE-605)HT002187703"
+  },
+  "DateFirst" : {
+    "date" : "1968"
+  },
+  "DateLast" : {
+    "date" : "1992"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "206310-4"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "0418-8330"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Deutsche Bundesbank",
+    "corporateBodyIdentifier" : [ "(DE-588)1002465-7" ],
+    "identifierGND" : [ "1002465-7" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Monatsberichte der Deutschen Bundesbank"
+  }, {
+    "titleMain" : "Statistische Beihefte"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Frankfurt, M" ],
+    "name" : [ "Bundesbank" ],
+    "chronology" : [ "1968-1992" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1968-1992" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "1968,Apr. - 1992"
+  },
+  "DescriptionOfContinuingEditionsOrVolumes" : [ {
+    "prefix" : "Forts. --->",
+    "description" : "Saisonbereinigte Wirtschaftszahlen"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Deutschland"
+  }, {
+    "subject" : "Wirtschaft"
+  }, {
+    "subject" : "Statistik"
+  }, {
+    "subject" : "Zeitschrift"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990054140540206441"
+  }, {
+    "uid" : "(DE-605)HT002187703"
+  } ],
+  "TitleOther" : {
+    "title" : [ "Monatsberichte der Deutschen Bundesbank / Statistische Beihefte / 4" ]
+  }
+}
