@@ -16,12 +16,10 @@ public class TransformationTestSuite extends ParentRunner<Runner> {
 
     public static final String ROOT_PATH = "src/test/resources/transformation";
 
-    private final List<Runner> mRunners;
+    private final List<Runner> mRunners = new ArrayList<>();
 
     public TransformationTestSuite(final Class<?> aClass, final Limetrans.Type aType) throws InitializationError {
         super(aClass);
-
-        mRunners = new ArrayList<>();
 
         final File root = new File(ROOT_PATH);
         if (!root.exists()) {

@@ -23,10 +23,12 @@ public class TransformationTestRunner extends ParentRunner<TransformationTestCas
     public TransformationTestRunner(final Class<?> aClass, final File aDirectory, final Limetrans.Type aType) throws InitializationError {
         super(aClass);
 
-        mName = aDirectory.getName();
+        final String name = aDirectory.getName();
+        mName = aClass.getName() + "." + name;
+
         mTestCases = new ArrayList<>();
 
-        final String rules = String.format(RULES_PATH, mName, aType.getExtension());
+        final String rules = String.format(RULES_PATH, name, aType.getExtension());
 
         if (!new File(rules).exists()) {
             if (aType.getRequired()) {
@@ -70,7 +72,7 @@ public class TransformationTestRunner extends ParentRunner<TransformationTestCas
 
     @Override
     protected Description describeChild(final TransformationTestCase child) {
-        return Description.createTestDescription(child.getName(), getName());
+        return Description.createTestDescription(getName(), child.getName());
     }
 
     @Override
