@@ -611,7 +611,9 @@
   } ],
   "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
-    "callnumber" : "22J45-B"
+    "identifier" : "DE-468",
+    "callnumber" : "22J45-B",
+    "shelfmark" : "20"
   } ],
   "TitleOther" : {
     "title" : [ "<<The>> journals of gerontology / B", "Psychological sciences and social sciences", "Journal of gerontology", "Journal of gerontology" ]
@@ -1592,6 +1594,14 @@
   "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "07G6"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "07G6",
+    "shelfmark" : "10"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "07G6",
+    "shelfmark" : "04"
   } ]
 }
 {
@@ -1734,7 +1744,9 @@
     "uid" : "(DE-468)9915993472406447"
   } ],
   "Item" : [ {
-    "callnumber" : "FZZ1"
+    "identifier" : "DE-468",
+    "callnumber" : "FZZ1",
+    "shelfmark" : "11"
   } ]
 }
 {

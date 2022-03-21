@@ -1300,16 +1300,21 @@ end
 set_array("Item[]")
 do list(path: "H52??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
-    copy_field("$i.h", "@callnumber")
+    add_field("Item[].$append.__dummy__", "")
+    copy_field("$i.h", "Item[].$last.callnumber")
   end
 end
 do list(path: "ITM  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
+    add_field("Item[].$append.__dummy__", "")
+    add_field("Item[].$last.identifier", "$[isil]")
     copy_field("$i.[cnz]", "@callnumber")
+    uniq("@callnumber")
+    move_field("@callnumber", "Item[].$last.callnumber")
+    copy_field("$i.x", "Item[].$last.shelfmark")
   end
 end
-uniq("@callnumber")
-copy_field("@callnumber", "Item[].$append.callnumber")
+uniq("Item[]")
 
 if any_equal("$[deletion-source]", "$[deletion-value]")
   add_field("$[deletion-literal]", "$[deletion-value]")

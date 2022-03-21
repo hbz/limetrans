@@ -344,6 +344,7 @@
     "uid" : "(DE-A96)534977"
   } ],
   "Item" : [ {
+    "identifier" : "DE-A96",
     "callnumber" : "61 EU 14/15-16B"
   } ]
 }
@@ -396,6 +397,7 @@
     "uid" : "(DE-A96)520553"
   } ],
   "Item" : [ {
+    "identifier" : "DE-A96",
     "callnumber" : "61 BMT 14-82B"
   } ]
 }
@@ -445,6 +447,7 @@
     "uid" : "(DE-A96)619648"
   } ],
   "Item" : [ {
+    "identifier" : "DE-A96",
     "callnumber" : "61 P 15/16-72B"
   } ]
 }
@@ -497,6 +500,7 @@
     "uid" : "(DE-A96)619720"
   } ],
   "Item" : [ {
+    "identifier" : "DE-A96",
     "callnumber" : "61 C 15/16-40B"
   } ]
 }
@@ -947,6 +951,10 @@
   } ],
   "Item" : [ {
     "callnumber" : "61 EU 14/15-16B"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "61 EU 14/15-16B",
+    "shelfmark" : "JUE_Abschl"
   } ]
 }
 {
@@ -1080,6 +1088,10 @@
   } ],
   "Item" : [ {
     "callnumber" : "61 BMT 14-82B"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "61 BMT 14-82B",
+    "shelfmark" : "JUE_Abschl"
   } ]
 }
 {
@@ -1124,6 +1136,10 @@
   } ],
   "Item" : [ {
     "callnumber" : "21 WAE 4(2020,2)"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "21 WAE 4(2020,2)",
+    "shelfmark" : "EUP_Frei"
   } ]
 }
 {
@@ -1356,6 +1372,10 @@
   "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "63 ZS 104"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "63 ZS 104",
+    "shelfmark" : "EUP_ZSMag"
   } ],
   "TitleOther" : {
     "title" : [ "Analytica pro", "EuCheMS newsletter", "Nachrichten für die Karriere", "Nachrichten für die Chemikerkarriere", "Nachrichten aus der Chemiewirtschaft", "Nano", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker" ]
@@ -1587,7 +1607,10 @@
   "Item" : [ {
     "callnumber" : "21 WBS 1-62443-3-3"
   }, {
-    "callnumber" : "EUP-Labor-Höfken-Rechenzentrale"
+    "identifier" : "DE-A96",
+    "callnumber" : "EUP-Labor-Höfken-Rechenzentrale",
+    "callnumber" : "21 WBS 1-62443-3-3",
+    "shelfmark" : "EUP_LabApp"
   } ]
 }
 {

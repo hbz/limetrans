@@ -65,6 +65,7 @@
     "uid" : "(DE-A96)1001"
   } ],
   "Item" : [ {
+    "identifier" : "DE-A96",
     "callnumber" : "21 OEG 2"
   } ]
 }
@@ -136,6 +137,7 @@
   } ],
   "TypePeriodical" : "Schriftenreihe",
   "Item" : [ {
+    "identifier" : "DE-A96",
     "callnumber" : "21 QBB 134"
   } ]
 }
@@ -216,6 +218,7 @@
     "uid" : "(DE-A96)492417"
   } ],
   "Item" : [ {
+    "identifier" : "DE-A96",
     "callnumber" : "61 UTI 12"
   } ],
   "RSWK" : [ {
@@ -331,6 +334,10 @@
   } ],
   "Item" : [ {
     "callnumber" : "11 XBT 11(2017)"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "11 XBT 11(2017)",
+    "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Maßtoleranzen"
@@ -452,6 +459,10 @@
   "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "63 ZS 104"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "63 ZS 104",
+    "shelfmark" : "EUP_ZSMag"
   } ],
   "TitleOther" : {
     "title" : [ "Analytica pro", "EuCheMS newsletter", "Nachrichten für die Karriere", "Nachrichten für die Chemikerkarriere", "Nachrichten aus der Chemiewirtschaft", "Nano", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker" ]
@@ -552,7 +563,10 @@
   "Item" : [ {
     "callnumber" : "51 BFG 9"
   }, {
-    "callnumber" : "BOX-SemApp-Buhl-Drucktechnologie"
+    "identifier" : "DE-A96",
+    "callnumber" : "BOX-SemApp-Buhl-Drucktechnologie",
+    "callnumber" : "51 BFG 9",
+    "shelfmark" : "BOX_SemApp"
   } ]
 }
 {
@@ -653,7 +667,14 @@
   "Item" : [ {
     "callnumber" : "21 TWZ 35"
   }, {
-    "callnumber" : "EUP-Labor-Höfken-Rechenzentrale"
+    "identifier" : "DE-A96",
+    "callnumber" : "EUP-Labor-Höfken-Rechenzentrale",
+    "callnumber" : "21 TWZ 35",
+    "shelfmark" : "EUP_LabApp"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "21 TWZ 35",
+    "shelfmark" : "EUP_Frei"
   } ]
 }
 {
@@ -764,6 +785,10 @@
   } ],
   "Item" : [ {
     "callnumber" : "61 UEC 6"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "61 UEC 6",
+    "shelfmark" : "JUE_Frei"
   } ],
   "PersonCreator" : [ {
     "personName" : "Lüttgens, Sylvia",
@@ -888,6 +913,10 @@
   } ],
   "Item" : [ {
     "callnumber" : "61 TZH 28(2)"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "61 TZH 28(2)",
+    "shelfmark" : "JUE_Frei"
   } ],
   "PersonCreator" : [ {
     "personName" : "Thomas, Stephanie"

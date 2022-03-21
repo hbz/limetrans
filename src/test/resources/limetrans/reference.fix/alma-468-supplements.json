@@ -76,6 +76,7 @@
     "uid" : "(DE-468)990002273520206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "TLS1033"
   } ],
   "PersonCreator" : [ {
@@ -144,6 +145,7 @@
     "uid" : "(DE-468)990002270850206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "DIQ1083"
   } ],
   "TitleOther" : {
@@ -222,6 +224,7 @@
     "uid" : "(DE-468)990002271460206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "FHR1014"
   } ],
   "TitleOther" : {
@@ -331,6 +334,7 @@
     "uid" : "(DE-468)990002272190206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "TBR2636-64"
   } ]
 }
@@ -433,6 +437,7 @@
     "uid" : "(DE-468)990009291070206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "TDW1138"
   } ]
 }
@@ -528,6 +533,7 @@
     "uid" : "(DE-468)990008767690206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "VNC1053"
   } ]
 }
@@ -607,6 +613,7 @@
     "uid" : "(DE-468)990002273490206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "VCA1009"
   } ]
 }
@@ -668,6 +675,7 @@
     "uid" : "(DE-468)990002274480206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "TIQ1251"
   } ],
   "TitleOther" : {
@@ -749,6 +757,7 @@
     "uid" : "(DE-468)990002273650206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "TGM1083"
   } ]
 }
@@ -827,6 +836,7 @@
     "uid" : "(DE-468)990002274340206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "TBR1224-110/122"
   } ]
 }
@@ -924,6 +934,7 @@
     "uid" : "(DE-468)990014420980206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "CBJ1003"
   } ]
 }
@@ -1015,6 +1026,7 @@
     "uid" : "(DE-468)990002269110206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "TBR1224-110/122"
   } ]
 }
@@ -1084,6 +1096,7 @@
     "uid" : "(DE-468)990002270120206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "FBN1010"
   } ],
   "TitleOther" : {
@@ -1150,6 +1163,7 @@
     "uid" : "(DE-468)990002270040206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "EXF1031"
   } ],
   "TitleOther" : {
@@ -1251,6 +1265,7 @@
     "uid" : "(DE-468)990002272340206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "TBR2636-81"
   } ],
   "PersonCreator" : [ {
@@ -1324,6 +1339,7 @@
     "uid" : "(DE-468)990001691680206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "OEG1048"
   } ]
 }
@@ -1433,6 +1449,7 @@
     "uid" : "(DE-468)990007596260206447"
   } ],
   "Item" : [ {
+    "identifier" : "DE-468",
     "callnumber" : "ZZV400937"
   } ]
 }
@@ -1496,6 +1513,10 @@
     "uid" : "(DE-605)HT020611597"
   }, {
     "uid" : "(DE-468)9915887679606447"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-468",
+    "shelfmark" : "21"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Management science"
@@ -1595,7 +1616,9 @@
     "uid" : "(DE-468)990006064090206447"
   } ],
   "Item" : [ {
-    "callnumber" : "PPTQ1653"
+    "identifier" : "DE-468",
+    "callnumber" : "PPTQ1653",
+    "shelfmark" : "47"
   } ]
 }
 {
@@ -1685,9 +1708,13 @@
   } ],
   "TypePeriodical" : "Schriftenreihe",
   "Item" : [ {
-    "callnumber" : "ZFL3157-M,1"
+    "identifier" : "DE-468",
+    "callnumber" : "ZFL3157-M,1",
+    "shelfmark" : "06"
   }, {
-    "callnumber" : "ZFL3157"
+    "identifier" : "DE-468",
+    "callnumber" : "ZFL3157",
+    "shelfmark" : "82"
   } ]
 }
 {
@@ -1761,7 +1788,9 @@
   } ],
   "TypePeriodical" : "Schriftenreihe",
   "Item" : [ {
-    "callnumber" : "QCJ6376"
+    "identifier" : "DE-468",
+    "callnumber" : "QCJ6376",
+    "shelfmark" : "80"
   } ],
   "TitleOther" : {
     "title" : [ "ARH" ]
@@ -1969,6 +1998,14 @@
   "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "07G6"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "07G6",
+    "shelfmark" : "10"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "07G6",
+    "shelfmark" : "04"
   } ]
 }
 {
