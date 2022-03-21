@@ -15,3 +15,11 @@ else
   copy_field("$i.z", "OnlineAccess[].$last.publicnote")
 end
 copy_field("$i.3", "OnlineAccess[].$last.relatedto")
+copy_field("$i.m", "@contact")
+do list(path: "@contact", "var": "$j")
+  split_field("$j", ";")
+  do list(path: "$j", "var": "$k")
+    copy_field("$k", "OnlineAccess[].$last.contact")
+  end
+end
+copy_field("$i.q", "OnlineAccess[].$last.format")
