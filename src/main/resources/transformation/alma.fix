@@ -1264,6 +1264,7 @@ end
 set_array("SubjectGHBLocal[]")
 do list(path: "@SubjectGHBLocal", "var": "$i")
   add_field("SubjectGHBLocal[].$append.__dummy__", "")
+  add_field("SubjectGHBLocal[].$last.source", "$[isil]")
   copy_field("$i", "SubjectGHBLocal[].$last.subject")
 end
 
