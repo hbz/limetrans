@@ -167,11 +167,9 @@
   "Summary" : {
     "abstract" : [ "The countries of the South Pacific have struggled to generate sustainable economic growth since their independence. Interventionist policies have failed in the past here, as they have in all other regions. Business and government leaders in this region are now beginning to acknowledge - as has happened in many other developing country regions over the past two decades - that major reforms are needed to put their economies onto a higher growth path. This study examines the growth record of key Pacific island economies and identifies the reasons for their relatively poor performance. It then looks at the process of globalization that is affecting those and indeed all economies increasingly; and the role the WTO has played in that process." ]
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Print version"
-  } ],
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "9780980623895" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Print version:",
+    "identifierISBN" : "9780980623895"
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "Reprints collection (University of Adelaide Press)" ]
@@ -253,8 +251,8 @@
   "Extent" : {
     "extent" : "1 online resource (87 pages) : illustrations."
   },
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "3-0356-0302-2" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISBN" : "3-0356-0302-2"
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "Basics (Basel, Switzerland)" ]
@@ -478,6 +476,9 @@
   "PublisherName" : [ {
     "name" : [ "Beltz & Gelberg" ]
   } ],
+  "HostItemEntry" : [ {
+    "part" : "p:48 Seiten"
+  } ],
   "xbib" : [ {
     "uid" : "(DE-A96)991004562349606444"
   } ],
@@ -596,9 +597,11 @@
   "Description" : {
     "description" : [ "lokale TA Okt. 2013/ Bestand ausgesondert / Vorg.: Journals of gerontology" ]
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Online-Ausg. --->",
-    "description" : "<<The>> journals of gerontology / B"
+  "OtherEditionEntry" : [ {
+    "relationshipInformation" : "Online-Ausg. --->",
+    "title" : "<<The>> journals of gerontology / B",
+    "controlNumber" : "(DE-605)HT013039109",
+    "identifierForLinkingEntry" : "HT013039109"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Gerontologie"
@@ -682,10 +685,12 @@
     "personIdentifier" : [ "(DE-588)12235138X" ],
     "identifierGND" : [ "12235138X" ]
   } ],
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Erscheint auch als",
-    "description" : "Computational chemistry",
-    "note" : [ "Druckausg." ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Druckausg." ],
+    "title" : "Computational chemistry",
+    "controlNumber" : "(DE-605)HT013719346",
+    "identifierForLinkingEntry" : "HT013719346"
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "Handbook of numerical analysis" ]
@@ -776,6 +781,22 @@
   "DateProper" : {
     "date" : [ "2011-" ]
   },
+  "SubSeriesEntry" : [ {
+    "title" : "Feminists and Queer Theorists Debate the Future of Critical Management Studies",
+    "controlNumber" : "(CKB)3710000001184621",
+    "identifierISBN" : "1-78635-497-7"
+  }, {
+    "title" : "Getting Things Done",
+    "controlNumber" : "(CKB)2670000000421965",
+    "identifierISBN" : "1-78190-955-5"
+  }, {
+    "title" : "The Third Sector",
+    "controlNumber" : "(CKB)2550000000075840",
+    "identifierISBN" : "1-283-35481-0"
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISSN" : "2046-6072"
+  } ],
   "OnlineAccess" : [ {
     "publicnote" : "EZB-NALFO-01634 Emerald BME eBook Series Archive AL",
     "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_WUP/openurl?u.ignore_date_coverage=true&portfolio_pid=5398718960006447&Force_direct=true",
@@ -871,13 +892,14 @@
   "Summary" : {
     "abstract" : [ "ger: Die Integration der haustechnischen Anlagen ist ein wichtiger Aspekt bei der Planung des Architekten. Die Konzeptionierung von Versorgungssträngen und Kreisläufen im Gebäude erfordert ein Verständnis für die Zusammenhänge der Ver- und Entsorgung mit dem Element Wasser. Hierbei geht es vor allem um die Zusammenhänge der einzelnen Kreislaufelemente von der Versorgung mit Trinkwasser, den Verbrauchern im Haus und der Entsorgung von Abwasser bis hin zur Wiedernutzbarmachung von Abwässern. Das Thema der Wassereinsparung bildet dabei einen übergeordneten Rahmen." ]
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Erscheint auch als",
-    "description" : "Haas-Arndt, Doris, 1957-: Wasserkreislauf im Gebäude",
-    "note" : [ "Druck-Ausgabe" ]
-  } ],
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "978-3-0356-0565-5" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "mainEntryHeading" : "Haas-Arndt, Doris, 1957-",
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Druck-Ausgabe" ],
+    "title" : "Wasserkreislauf im Gebäude",
+    "controlNumber" : "(DE-605)HT018577901",
+    "identifierISBN" : "978-3-0356-0565-5",
+    "identifierForLinkingEntry" : "HT018577901"
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://dx.doi.org/10.1515/9783035612974",
@@ -990,16 +1012,73 @@
   "ChronologyAndEnumeration" : {
     "value" : "48.2000 -"
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Online-Ausg.",
-    "description" : "Nachrichten aus der Chemie"
-  } ],
-  "DescriptionOfFormerEditionsOrVolumes" : [ {
-    "prefix" : "Vorg.:",
-    "description" : "Nachrichten aus Chemie, Technik und Laboratorium"
+  "SupplementSpecialIssueEntry" : [ {
+    "mainEntryHeading" : "Gesellschaft Deutscher Chemiker",
+    "publisherStatement" : "Frankfurt, M. : Ges. Dt. Chemiker, 1977-2007",
+    "relationshipInformation" : "Bis 54.2006 Beil.",
+    "title" : "Tätigkeitsbericht / Gesellschaft Deutscher Chemiker",
+    "controlNumber" : "(DE-605)HT003310680",
+    "identifierForLinkingEntry" : "HT003310680"
   }, {
-    "prefix" : "Darin aufgegangen",
-    "description" : "Gesellschaft Österreichischer Chemiker: Mitteilungsblatt der Gesellschaft Österreichischer Chemiker"
+    "mainEntryHeading" : "Gesellschaft Deutscher Chemiker",
+    "publisherStatement" : "Frankfurt am Main : Gesellschaft Deutscher Chemiker e.V., 2008-",
+    "relationshipInformation" : "Ab 55.2007 darin",
+    "title" : "Jahresbericht ... / Gesellschaft Deutscher Chemiker, GDCh",
+    "controlNumber" : "(DE-605)HT015594869",
+    "identifierForLinkingEntry" : "HT015594869"
+  }, {
+    "publisherStatement" : "Cambridge, Mass. : CambridgeSoft Corp., 2004-",
+    "relationshipInformation" : "Beil.:",
+    "title" : "Chem & bio news",
+    "controlNumber" : "(DE-605)HT014825990",
+    "identifierISSN" : "1932-0965",
+    "identifierForLinkingEntry" : "HT014825990"
+  }, {
+    "publisherStatement" : "Frankfurt am Main : Gesellschaft Deutscher Chemiker, [2012?]-",
+    "physicalDescription" : "Bände",
+    "relationshipInformation" : "Supplement",
+    "note" : [ "2012 [?]-" ],
+    "title" : "Nachrichten aus der Chemie. Analytica pro",
+    "controlNumber" : "(DE-605)HT018961311",
+    "identifierForLinkingEntry" : "HT018961311"
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2000-",
+    "physicalDescription" : "Online-Ressource",
+    "relationshipInformation" : "Online-Ausg.",
+    "title" : "Nachrichten aus der Chemie",
+    "controlNumber" : "(DE-605)HT015219020",
+    "identifierISSN" : "1868-0054",
+    "identifierForLinkingEntry" : "HT015219020"
+  } ],
+  "PrecedingEntry" : [ {
+    "publisherStatement" : "Weinheim [u.a.] : Wiley-VCH, 1977-1999",
+    "relationshipInformation" : "Vorg.:",
+    "title" : "Nachrichten aus Chemie, Technik und Laboratorium",
+    "controlNumber" : "(DE-605)HT000286865",
+    "identifierISSN" : "0341-5163",
+    "identifierForLinkingEntry" : "HT000286865"
+  }, {
+    "mainEntryHeading" : "Gesellschaft Österreichischer Chemiker",
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2006-[2018]",
+    "relationshipInformation" : "Darin aufgegangen",
+    "title" : "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker",
+    "controlNumber" : "(DE-605)HT015702445",
+    "identifierForLinkingEntry" : "HT015702445"
+  } ],
+  "NonspecificRelationshipEntry" : [ {
+    "mainEntryHeading" : "Gesellschaft Österreichischer Chemiker",
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2006-[2018]",
+    "relationshipInformation" : "Einzelne H. zugl. H. von",
+    "title" : "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker",
+    "controlNumber" : "(DE-605)HT015702445",
+    "identifierForLinkingEntry" : "HT015702445"
+  }, {
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2013-",
+    "relationshipInformation" : "Einzelne H. zugl. H. von",
+    "title" : "Trendberichte",
+    "controlNumber" : "(DE-605)HT017576091",
+    "identifierForLinkingEntry" : "HT017576091"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Chemie"
@@ -1067,6 +1146,9 @@
   "DateProper" : {
     "date" : [ "2013" ]
   },
+  "HostItemEntry" : [ {
+    "part" : "p:192 S."
+  } ],
   "xbib" : [ {
     "uid" : "(DE-465)99203913838706446"
   } ],
@@ -1201,8 +1283,8 @@
   "Summary" : {
     "abstract" : [ "Das vorliegende Buch gibt eine kompakte Einführung in die Grundlagen der Festkörperphysik, wobei der Schwerpunkt auf den elektrischen und magnetischen Materialeigenschaften liegt. Leser werden nicht nur die kompakte und anschauliche Herangehensweise schätzen, sondern auch die kurzen Abschnitte über die Forschungsgeschichte der Festkörperphysik, die mit wegweisenden Forschern wie Max Planck, Albert Einstein aber auch Heike Kamerlingh Onnes, Eugene Wigner oder Frederick Seitz verbunden ist. Diese helfen dabei, die Entwicklung der Festkörperphysik und ihre unterschiedlichen Theorien und Modelle verstehen und einordnen zu können. Das Buch richtet sich an Studierende der Physik, Ingenieurwissenschaften und Materialwissenschaften bis zum Bachelor. Es kann durch seine anschaulichen Erklärungen und seinen didaktischen Ansatz auch als motivierende Vorstufe und unterstützendes Begleitwerk beim Studium anspruchsvollerer Lehrbücher der Festkörperphysik benutzt werden. Die dritte Auflage enthält eine Reihe von Erweiterungen, besonders im Kapitel über topologische Materialien. Aus dem Inhalt - Kristallgitter - Theorie der Halbleiter, Leiter und Supraleiter - Metalle - Drude-Lorentz-Modell - BCS-Theorie - Hochtemperatur-Supraleiter - Nanostrukturen: Quantenpunkte - Fehler im Kristallgitter Der Autor Rudolf Huebener studierte Physik und Mathematik an der Universität Marburg sowie an den Technischen Hochschulen München und Darmstadt. 1958 promovierte er in Marburg im Fach Experimentalphysik. Nach einer Tätigkeit im Forschungszentrum Karlsruhe und einem Forschungsinstitut bei Albany, New York, USA arbeitete er für 12 Jahre am Argonne National Laboratory bei Chicago, Illinois. 1974 übernahm er einen Lehrstuhl für Experimentalphysik an der Universität Tübingen. Dort lehrte und forschte er bis zu seiner Emeritierung im Jahr 1999." ]
   },
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "3-662-62077-4" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISBN" : "3-662-62077-4"
   } ],
   "OnlineAccess" : [ {
     "publicnote" : "Springer Natur - und Basiswissenschaften incl. Mathematik eBooks 2020 - German Language",
@@ -1282,8 +1364,8 @@
   "Summary" : {
     "abstract" : [ "Jürgen Habermas, der bekannteste Philosoph der deutschen Gegenwart, wird hier in einer knappen und verständlichen Einführung behandelt. Alle Themenbereiche des Habermasschen Denkens werden berücksichtigt und von einem prominenten Kenner der Materie didaktisch klug dargestellt. Es werden nicht nur die Stationen der intellektuellen Entwicklung beschrieben, sondern auch die systematischen Festlegungen. Im Mittelpunkt stehen die politisch-philosophischen Kategorien, mit denen Habermas bis heute in die aktuellen Debatten hineinwirkt. Ein Verzeichnis der Schriften und eine Zeittafel komplettiere" ]
   },
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "3-534-23284-4" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISBN" : "3-534-23284-4"
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "Philosophie (Wissenschaftliche Buchgesellschaft)" ]
@@ -1487,14 +1569,18 @@
     "personIdentifier" : [ "(DE-588)121603164" ],
     "identifierGND" : [ "121603164" ]
   } ],
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Erscheint auch als",
-    "description" : "Enzyklopädie der Psychologie",
-    "note" : [ "Online-Ausg." ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Online-Ausg." ],
+    "title" : "Enzyklopädie der Psychologie",
+    "controlNumber" : "(DE-605)HT019084870",
+    "identifierForLinkingEntry" : "HT019084870"
   } ],
-  "DescriptionOfFormerEditionsOrVolumes" : [ {
-    "prefix" : "Frühere Ausg. mit teilw. anderer Bandeinteilung u.d.T.",
-    "description" : "Enzyklopädie der Psychologie"
+  "PrecedingEntry" : [ {
+    "relationshipInformation" : "Frühere Ausg. mit teilw. anderer Bandeinteilung u.d.T.",
+    "title" : "Enzyklopädie der Psychologie",
+    "controlNumber" : "(DE-605)HT002191371",
+    "identifierForLinkingEntry" : "HT002191371"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Psychologie"
@@ -1564,9 +1650,13 @@
   "Description" : {
     "description" : [ "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson" ]
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Online-Ausg.",
-    "description" : "German life and letters"
+  "AdditionalPhysicalFormEntry" : [ {
+    "publisherStatement" : "Oxford : Wiley-Blackwell, 1936-",
+    "physicalDescription" : "Online-Ressource",
+    "relationshipInformation" : "Online-Ausg.",
+    "title" : "German life and letters",
+    "controlNumber" : "(DE-605)HT012714430",
+    "identifierForLinkingEntry" : "HT012714430"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Deutsch"
@@ -1671,9 +1761,12 @@
   "ChronologyAndEnumeration" : {
     "value" : "1.1969 - 29.1997,2"
   },
-  "DescriptionOfContinuingEditionsOrVolumes" : [ {
-    "prefix" : "Forts.:",
-    "description" : "Tunnels & tunnelling international"
+  "SucceedingEntry" : [ {
+    "publisherStatement" : "Sidcup, Kent : Progressive Media Market, 1997-",
+    "relationshipInformation" : "Forts.:",
+    "title" : "Tunnels & tunnelling international",
+    "controlNumber" : "(DE-605)HT007557531",
+    "identifierForLinkingEntry" : "HT007557531"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Tunnelbau"
@@ -1812,9 +1905,15 @@
   "Description" : {
     "description" : [ "Refereed/Peer-reviewed" ]
   },
-  "DescriptionOfFormerEditionsOrVolumes" : [ {
-    "prefix" : "Fortsetzung von",
-    "description" : "Review of Research in Visual Arts Education"
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISSN" : "0736-0770"
+  } ],
+  "PrecedingEntry" : [ {
+    "title" : "Review of Research in Visual Arts Education",
+    "controlNumber" : "(CKB)991042728725970",
+    "controlNumber" : "(DLC)83642038",
+    "controlNumber" : "(OCoLC)671260450",
+    "identifierISSN" : "2327-7874"
   } ],
   "OnlineAccess" : [ {
     "publicnote" : "EZB-NALJE-00140 JSTOR Museum NK",
@@ -1901,9 +2000,16 @@
   "Extent" : {
     "extent" : "volumes : illustrations ; 29 cm"
   },
-  "DescriptionOfContinuingEditionsOrVolumes" : [ {
-    "prefix" : "Fortgesetzt von",
-    "description" : "Vakuum in Forschung und Praxis"
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISSN" : "0934-9758"
+  }, {
+    "identifierISSN" : "1522-2454"
+  } ],
+  "SucceedingEntry" : [ {
+    "title" : "Vakuum in Forschung und Praxis",
+    "controlNumber" : "(CKB)974740734049",
+    "controlNumber" : "(DLC)2001262337",
+    "identifierISSN" : "1522-2454"
   } ],
   "OnlineAccess" : [ {
     "publicnote" : "EZB-NALIA-00470 Wiley InterScience Backfile Collections NL",
@@ -1992,9 +2098,11 @@
   "ChronologyAndEnumeration" : {
     "value" : "1968,Apr. - 1992"
   },
-  "DescriptionOfContinuingEditionsOrVolumes" : [ {
-    "prefix" : "Forts. --->",
-    "description" : "Saisonbereinigte Wirtschaftszahlen"
+  "SucceedingEntry" : [ {
+    "relationshipInformation" : "Forts. --->",
+    "title" : "Saisonbereinigte Wirtschaftszahlen",
+    "controlNumber" : "(DE-605)HT004449715",
+    "identifierForLinkingEntry" : "HT004449715"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Deutschland"

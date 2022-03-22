@@ -437,16 +437,73 @@
   "HoldingsStatement" : [ {
     "note" : "im Magazin Eupener Str., ab 2012 im Schuber"
   } ],
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Online-Ausg.",
-    "description" : "Nachrichten aus der Chemie"
-  } ],
-  "DescriptionOfFormerEditionsOrVolumes" : [ {
-    "prefix" : "Vorg.:",
-    "description" : "Nachrichten aus Chemie, Technik und Laboratorium"
+  "SupplementSpecialIssueEntry" : [ {
+    "mainEntryHeading" : "Gesellschaft Deutscher Chemiker",
+    "publisherStatement" : "Frankfurt, M. : Ges. Dt. Chemiker, 1977-2007",
+    "relationshipInformation" : "Bis 54.2006 Beil.",
+    "title" : "Tätigkeitsbericht / Gesellschaft Deutscher Chemiker",
+    "controlNumber" : "(DE-605)HT003310680",
+    "identifierForLinkingEntry" : "HT003310680"
   }, {
-    "prefix" : "Darin aufgegangen",
-    "description" : "Gesellschaft Österreichischer Chemiker: Mitteilungsblatt der Gesellschaft Österreichischer Chemiker"
+    "mainEntryHeading" : "Gesellschaft Deutscher Chemiker",
+    "publisherStatement" : "Frankfurt am Main : Gesellschaft Deutscher Chemiker e.V., 2008-",
+    "relationshipInformation" : "Ab 55.2007 darin",
+    "title" : "Jahresbericht ... / Gesellschaft Deutscher Chemiker, GDCh",
+    "controlNumber" : "(DE-605)HT015594869",
+    "identifierForLinkingEntry" : "HT015594869"
+  }, {
+    "publisherStatement" : "Cambridge, Mass. : CambridgeSoft Corp., 2004-",
+    "relationshipInformation" : "Beil.:",
+    "title" : "Chem & bio news",
+    "controlNumber" : "(DE-605)HT014825990",
+    "identifierISSN" : "1932-0965",
+    "identifierForLinkingEntry" : "HT014825990"
+  }, {
+    "publisherStatement" : "Frankfurt am Main : Gesellschaft Deutscher Chemiker, [2012?]-",
+    "physicalDescription" : "Bände",
+    "relationshipInformation" : "Supplement",
+    "note" : [ "2012 [?]-" ],
+    "title" : "Nachrichten aus der Chemie. Analytica pro",
+    "controlNumber" : "(DE-605)HT018961311",
+    "identifierForLinkingEntry" : "HT018961311"
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2000-",
+    "physicalDescription" : "Online-Ressource",
+    "relationshipInformation" : "Online-Ausg.",
+    "title" : "Nachrichten aus der Chemie",
+    "controlNumber" : "(DE-605)HT015219020",
+    "identifierISSN" : "1868-0054",
+    "identifierForLinkingEntry" : "HT015219020"
+  } ],
+  "PrecedingEntry" : [ {
+    "publisherStatement" : "Weinheim [u.a.] : Wiley-VCH, 1977-1999",
+    "relationshipInformation" : "Vorg.:",
+    "title" : "Nachrichten aus Chemie, Technik und Laboratorium",
+    "controlNumber" : "(DE-605)HT000286865",
+    "identifierISSN" : "0341-5163",
+    "identifierForLinkingEntry" : "HT000286865"
+  }, {
+    "mainEntryHeading" : "Gesellschaft Österreichischer Chemiker",
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2006-[2018]",
+    "relationshipInformation" : "Darin aufgegangen",
+    "title" : "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker",
+    "controlNumber" : "(DE-605)HT015702445",
+    "identifierForLinkingEntry" : "HT015702445"
+  } ],
+  "NonspecificRelationshipEntry" : [ {
+    "mainEntryHeading" : "Gesellschaft Österreichischer Chemiker",
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2006-[2018]",
+    "relationshipInformation" : "Einzelne H. zugl. H. von",
+    "title" : "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker",
+    "controlNumber" : "(DE-605)HT015702445",
+    "identifierForLinkingEntry" : "HT015702445"
+  }, {
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2013-",
+    "relationshipInformation" : "Einzelne H. zugl. H. von",
+    "title" : "Trendberichte",
+    "controlNumber" : "(DE-605)HT017576091",
+    "identifierForLinkingEntry" : "HT017576091"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Chemie"
@@ -897,17 +954,10 @@
   "Summary" : {
     "abstract" : [ "Learn from state-of-the-art examples in robotics, motors, detection filters, chemical processes, aircraft, and spacecraft. With this book you will review contemporary MATLAB coding including the latest MATLAB language features and use MATLAB as a software development environment including code organization, GUI development, and algorithm design and testing. Features now covered include the new graph and digraph classes for charts and networks; interactive documents that combine text, code, and output; a new development environment for building apps; locally defined functions in scripts; automatic expansion of dimensions; tall arrays for big data; the new string type; new functions to encode/decode JSON; handling non-English languages; the new class architecture; the Mocking framework; an engine API for Java; the cloud-based MATLAB desktop; the memoize function; and heatmap charts. MATLAB Recipes: A Problem-Solution Approach, Second Edition provides practical, hands-on code snippets and guidance for using MATLAB to build a body of code you can turn to time and again for solving technical problems in your work. Develop algorithms, test them, visualize the results, and pass the code along to others to create a functional code base for your firm. What You Will Learn- Get up to date with the latest MATLAB up to and including MATLAB 2020b- Code in MATLAB- Write applications in MATLAB- Build your own toolbox of MATLAB code to increase your efficiency and effectivenessWho This Book Is For Engineers, data scientists, and students wanting a book rich in examples using MATLAB." ]
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Erscheint auch als",
-    "note" : [ "Online-Ausgabe" ]
-  }, {
-    "prefix" : "Erscheint auch als",
-    "note" : [ "Online-Ausgabe" ]
-  } ],
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "9781484261248" ]
-  }, {
-    "identifierISBN" : [ "9781484261248" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Online-Ausgabe" ],
+    "identifierISBN" : "9781484261248"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
@@ -1004,11 +1054,9 @@
   "Extent" : {
     "extent" : "1 Online-Ressource (XVIII, 170 S. 84 Abb., 57 Abb. in Farbe)"
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Printed edition"
-  } ],
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "9783662616505" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Printed edition",
+    "identifierISBN" : "9783662616505"
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://doi.org/10.1007/978-3-662-61651-2",

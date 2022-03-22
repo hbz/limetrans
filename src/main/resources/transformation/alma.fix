@@ -1118,6 +1118,7 @@ do list(path: "100[013] |700[013] ", "var": "$i")
 end
 move_field("@person", "PersonContributor[]")
 
+/*
 set_array("DescriptionOfRelatedEditions[]")
 add_field("DescriptionOfRelatedEditions[].$append.__dummy__", "")
 copy_field("580  .a", "DescriptionOfRelatedEditions[].$last.description")
@@ -1140,13 +1141,23 @@ do list(path: "77[356]??", "var": "$i")
   move_field("@description", "DescriptionOfRelatedEditions[].$last.description")
   copy_field("$i.n", "DescriptionOfRelatedEditions[].$last.note[]")
 end
+*/
 
 set_array("IdentifierISBNParallel[]")
+/*
 do list(path: "77[356]??", "var": "$i")
   add_field("IdentifierISBNParallel[].$append.__dummy__", "")
   copy_field("$i.z", "IdentifierISBNParallel[].$last.identifierISBN[]")
 end
+*/
+do list(path: "9640s", "var": "$i")
+  if any_equal("$i.V", "086a")
+    add_field("IdentifierISBNParallel[].$append.__dummy__", "")
+    copy_field("$i.[abcdehnpqs]", "IdentifierISBNParallel[].$last.identifierISBN[]")
+  end
+end
 
+/*
 set_array("@descriptionOfEditionsOrVolumes")
 do list(path: "78000", "var": "$i")
   add_field("@prefix", "Fortsetzung von")
@@ -1181,7 +1192,9 @@ do list(path: "78007", "var": "$i")
   include("./alma/descriptionOfEditionsOrVolumes.fix")
 end
 move_field("@descriptionOfEditionsOrVolumes", "DescriptionOfFormerEditionsOrVolumes[]")
+*/
 
+/*
 set_array("@descriptionOfEditionsOrVolumes")
 do list(path: "7850[078]", "var": "$i")
   add_field("@prefix", "Fortgesetzt von")
@@ -1212,6 +1225,38 @@ do list(path: "78506", "var": "$i")
   include("./alma/descriptionOfEditionsOrVolumes.fix")
 end
 move_field("@descriptionOfEditionsOrVolumes", "DescriptionOfContinuingEditionsOrVolumes[]")
+*/
+
+put_vars(linking_entry_source: "760", linking_entry_target: "MainSeriesEntry")
+include("./alma/linkingEntry.fix")
+put_vars(linking_entry_source: "762", linking_entry_target: "SubSeriesEntry")
+include("./alma/linkingEntry.fix")
+put_vars(linking_entry_source: "765", linking_entry_target: "OriginalLanguageEntry")
+include("./alma/linkingEntry.fix")
+put_vars(linking_entry_source: "767", linking_entry_target: "TranslationEntry")
+include("./alma/linkingEntry.fix")
+put_vars(linking_entry_source: "770", linking_entry_target: "SupplementSpecialIssueEntry")
+include("./alma/linkingEntry.fix")
+put_vars(linking_entry_source: "772", linking_entry_target: "SupplementParentEntry")
+include("./alma/linkingEntry.fix")
+put_vars(linking_entry_source: "773", linking_entry_target: "HostItemEntry")
+include("./alma/linkingEntry.fix")
+put_vars(linking_entry_source: "774", linking_entry_target: "ConstituentUnitEntry")
+include("./alma/linkingEntry.fix")
+put_vars(linking_entry_source: "775", linking_entry_target: "OtherEditionEntry")
+include("./alma/linkingEntry.fix")
+put_vars(linking_entry_source: "776", linking_entry_target: "AdditionalPhysicalFormEntry")
+include("./alma/linkingEntry.fix")
+put_vars(linking_entry_source: "777", linking_entry_target: "IssuedWithEntry")
+include("./alma/linkingEntry.fix")
+put_vars(linking_entry_source: "780", linking_entry_target: "PrecedingEntry")
+include("./alma/linkingEntry.fix")
+put_vars(linking_entry_source: "785", linking_entry_target: "SucceedingEntry")
+include("./alma/linkingEntry.fix")
+put_vars(linking_entry_source: "786", linking_entry_target: "DataSourceEntry")
+include("./alma/linkingEntry.fix")
+put_vars(linking_entry_source: "787", linking_entry_target: "NonspecificRelationshipEntry")
+include("./alma/linkingEntry.fix")
 
 if exists("830??")
   set_array("TitleSuper[]")
@@ -1589,45 +1634,60 @@ uniq("RSWK[]")
 retain(
   "$[deletion-literal]",
   "Abstract",
+  "AdditionalPhysicalFormEntry[]",
   "ChronologyAndEnumeration",
   "Conference",
+  "ConstituentUnitEntry[]",
   "CorporateBody[]",
   "CreatorStatement",
+  "DataSourceEntry[]",
   "DateFirst",
   "DateLast",
   "DateProper",
   "Description",
-  "DescriptionOfContinuingEditionsOrVolumes[]",
-  "DescriptionOfFormerEditionsOrVolumes[]",
-  "DescriptionOfRelatedEditions[]",
+# "DescriptionOfContinuingEditionsOrVolumes[]",
+# "DescriptionOfFormerEditionsOrVolumes[]",
+# "DescriptionOfRelatedEditions[]",
   "Edition",
   "Extent",
   "HoldingsStatement[]",
+  "HostItemEntry[]",
   "IdentifierAlma",
   "IdentifierDOI[]",
   "IdentifierISBNParallel[]",
   "IdentifierISBN[]",
   "IdentifierISSN[]",
   "IdentifierZDB[]",
+  "IssuedWithEntry[]",
   "Item[]",
   "Language[]",
+  "MainSeriesEntry[]",
+  "NonspecificRelationshipEntry[]",
   "OnlineAccess[]",
+  "OriginalLanguageEntry[]",
+  "OtherEditionEntry[]",
   "PersonContributor[]",
   "PersonCreator[]",
   "Person[]",
+  "PrecedingEntry[]",
   "PublisherName[]",
   "RSWK[]",
   "Recension",
   "RecordIdentifier",
+  "SubSeriesEntry[]",
   "SubjectGHBLocal[]",
   "SubjectHeadings[]",
+  "SucceedingEntry[]",
   "Summary",
+  "SupplementParentEntry[]",
+  "SupplementSpecialIssueEntry[]",
   "TitleAddendum",
   "TitleOther",
   "TitleStatement[]",
   "TitleSuperVolumeDesignation[]",
   "TitleSuper[]",
   "TitleUniform",
+  "TranslationEntry[]",
   "TypeMedia",
   "TypePeriodical",
   "VolumeDesignation",

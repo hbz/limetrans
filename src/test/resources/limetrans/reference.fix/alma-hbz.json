@@ -63,12 +63,13 @@
   "Description" : {
     "description" : [ "Gesehen am 29.08.07", "Gesehen am 29.08.07" ]
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Druckausg.",
-    "description" : "Amazoniana"
-  }, {
-    "prefix" : "Druckausg.",
-    "description" : "Amazoniana"
+  "AdditionalPhysicalFormEntry" : [ {
+    "publisherStatement" : "Kiel : Weiland, 1965-2007",
+    "relationshipInformation" : "Druckausg.",
+    "title" : "Amazoniana",
+    "controlNumber" : "(DE-605)HT005072303",
+    "identifierISSN" : "0065-6755",
+    "identifierForLinkingEntry" : "HT005072303"
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://www.bibliothek.uni-regensburg.de/ezeit/?2241653",
@@ -210,18 +211,12 @@
   "Description" : {
     "description" : [ "Gesehen am 20.06.11", "Gesehen am 20.06.11", "Gesehen am 20.06.11", "Gesehen am 20.06.11" ]
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Druckausg.",
-    "description" : "Gefährliche Produkte .."
-  }, {
-    "prefix" : "Druckausg.",
-    "description" : "Gefährliche Produkte .."
-  }, {
-    "prefix" : "Druckausg.",
-    "description" : "Gefährliche Produkte .."
-  }, {
-    "prefix" : "Druckausg.",
-    "description" : "Gefährliche Produkte .."
+  "AdditionalPhysicalFormEntry" : [ {
+    "publisherStatement" : "Dortmund ; Berlin ; Dresden : Bundesanst. für Arbeitsschutz und Arbeitsmedizin, 2007-",
+    "relationshipInformation" : "Druckausg.",
+    "title" : "Gefährliche Produkte ...",
+    "controlNumber" : "(DE-605)HT015879195",
+    "identifierForLinkingEntry" : "HT015879195"
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://www.produktsicherheitsportal.de/portal-produktsicherheit/de/Startseite.html",
@@ -285,6 +280,10 @@
   "DateProper" : {
     "date" : [ "1815" ]
   },
+  "HostItemEntry" : [ {
+    "controlNumber" : "(DE-605)HT009275240",
+    "identifierForLinkingEntry" : "HT009275240"
+  } ],
   "xbib" : [ {
     "uid" : "(DE-605)990087639280206441"
   }, {
@@ -425,9 +424,9 @@
   "DateProper" : {
     "date" : [ "2004-" ]
   },
-  "DescriptionOfContinuingEditionsOrVolumes" : [ {
-    "prefix" : "Ab 4. Aufl. u.d.T.",
-    "description" : "Kahl, Günter: The dictionary of genomics, transcriptomics and proteomics"
+  "SucceedingEntry" : [ {
+    "relationshipInformation" : "Ab 4. Aufl. u.d.T.",
+    "title" : "Kahl, Günter: The dictionary of genomics, transcriptomics and proteomics"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Gentechnologie"
@@ -3813,11 +3812,9 @@
   "Summary" : {
     "abstract" : [ "The countries of the South Pacific have struggled to generate sustainable economic growth since their independence. Interventionist policies have failed in the past here, as they have in all other regions. Business and government leaders in this region are now beginning to acknowledge - as has happened in many other developing country regions over the past two decades - that major reforms are needed to put their economies onto a higher growth path. This study examines the growth record of key Pacific island economies and identifies the reasons for their relatively poor performance. It then looks at the process of globalization that is affecting those and indeed all economies increasingly; and the role the WTO has played in that process." ]
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Print version"
-  } ],
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "9780980623895" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Print version:",
+    "identifierISBN" : "9780980623895"
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "Reprints collection (University of Adelaide Press)" ]
@@ -3902,8 +3899,8 @@
   "Extent" : {
     "extent" : "1 online resource (87 pages) : illustrations."
   },
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "3-0356-0302-2" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISBN" : "3-0356-0302-2"
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "Basics (Basel, Switzerland)" ]
@@ -4406,6 +4403,11 @@
   "Description" : {
     "description" : [ "Includes bibliographical references and index", "Includes bibliographical references and index" ]
   },
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "978-0-321-49694-2" ]
+  }, {
+    "identifierISBN" : [ "978-0-321-71826-6" ]
+  } ],
   "OnlineAccess" : [ {
     "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_NETWORK/openurl?u.ignore_date_coverage=true&portfolio_pid=5377717890006442&Force_direct=true",
     "isInternalLinkFor" : "DE-605"
@@ -4561,10 +4563,12 @@
     "personIdentifier" : [ "(DE-588)12235138X" ],
     "identifierGND" : [ "12235138X" ]
   } ],
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Erscheint auch als",
-    "description" : "Computational chemistry",
-    "note" : [ "Druckausg." ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Druckausg." ],
+    "title" : "Computational chemistry",
+    "controlNumber" : "(DE-605)HT013719346",
+    "identifierForLinkingEntry" : "HT013719346"
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "Handbook of numerical analysis" ]
@@ -4635,6 +4639,22 @@
   "DateProper" : {
     "date" : [ "2011-" ]
   },
+  "SubSeriesEntry" : [ {
+    "title" : "Feminists and Queer Theorists Debate the Future of Critical Management Studies",
+    "controlNumber" : "(CKB)3710000001184621",
+    "identifierISBN" : "1-78635-497-7"
+  }, {
+    "title" : "Getting Things Done",
+    "controlNumber" : "(CKB)2670000000421965",
+    "identifierISBN" : "1-78190-955-5"
+  }, {
+    "title" : "The Third Sector",
+    "controlNumber" : "(CKB)2550000000075840",
+    "identifierISBN" : "1-283-35481-0"
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISSN" : "2046-6072"
+  } ],
   "xbib" : [ {
     "uid" : "(DE-605)99368113400306441"
   } ],
@@ -4722,13 +4742,14 @@
   "Summary" : {
     "abstract" : [ "ger: Die Integration der haustechnischen Anlagen ist ein wichtiger Aspekt bei der Planung des Architekten. Die Konzeptionierung von Versorgungssträngen und Kreisläufen im Gebäude erfordert ein Verständnis für die Zusammenhänge der Ver- und Entsorgung mit dem Element Wasser. Hierbei geht es vor allem um die Zusammenhänge der einzelnen Kreislaufelemente von der Versorgung mit Trinkwasser, den Verbrauchern im Haus und der Entsorgung von Abwasser bis hin zur Wiedernutzbarmachung von Abwässern. Das Thema der Wassereinsparung bildet dabei einen übergeordneten Rahmen." ]
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Erscheint auch als",
-    "description" : "Haas-Arndt, Doris, 1957-: Wasserkreislauf im Gebäude",
-    "note" : [ "Druck-Ausgabe" ]
-  } ],
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "978-3-0356-0565-5" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "mainEntryHeading" : "Haas-Arndt, Doris, 1957-",
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Druck-Ausgabe" ],
+    "title" : "Wasserkreislauf im Gebäude",
+    "controlNumber" : "(DE-605)HT018577901",
+    "identifierISBN" : "978-3-0356-0565-5",
+    "identifierForLinkingEntry" : "HT018577901"
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://dx.doi.org/10.1515/9783035612974",
@@ -4899,9 +4920,264 @@
     "personIdentifier" : [ "(DE-588)109185706" ],
     "identifierGND" : [ "109185706" ]
   } ],
-  "DescriptionOfFormerEditionsOrVolumes" : [ {
-    "prefix" : "Darin aufgegangen",
-    "description" : "Gefährliche Stoffe"
+  "SupplementSpecialIssueEntry" : [ {
+    "mainEntryHeading" : "Raths, Hans-Peter",
+    "qualifyingInformation" : "2018",
+    "relationshipInformation" : "Beilage",
+    "title" : "Betriebssicherheitsverordnung",
+    "controlNumber" : "(DE-605)HT019642237",
+    "identifierForLinkingEntry" : "HT019642237"
+  } ],
+  "SupplementParentEntry" : [ {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Weller, Matthias: Haftungsrecht Gefahrstoffe",
+    "controlNumber" : "(DE-605)HT015311871",
+    "identifierForLinkingEntry" : "HT015311871"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Schwede, Joachim: Praxisleitfaden gesetzliche Unfallversicherung (SGB VII)"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Müller, Norbert: GHS - das neue Chemikalienrecht"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Birett, Karl: Umgang mit Gefahrstoffen"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Schünemann, Joachim: Pflichtenheft Gefahrstoffrecht"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Luksch, Andreas: Explosionsschutzdokument richtig erstellen"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Lenz, Kerstin: Pflichtenheft Abfallrecht"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Sichere Lagerung gefährlicher Stoffe"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Symbole für die betriebliche Praxis",
+    "controlNumber" : "(DE-605)HT013322698",
+    "identifierForLinkingEntry" : "HT013322698"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Wagner, Karl: Abfallkatalog",
+    "controlNumber" : "(DE-605)HT014477567",
+    "identifierForLinkingEntry" : "HT014477567"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Arbeitsstättenverordnung 2004",
+    "controlNumber" : "(DE-605)HT014185006",
+    "identifierForLinkingEntry" : "HT014185006"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Janssen, Gabriele: Die Lösemittelbilanz"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Gefahrstoff-Verzeichnis",
+    "controlNumber" : "(DE-605)HT014315889",
+    "identifierForLinkingEntry" : "HT014315889"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Wegweiser zur Schutzstufe nach GefStoffV",
+    "controlNumber" : "(DE-605)HT014708448",
+    "identifierForLinkingEntry" : "HT014708448"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Muster-Betriebsanweisungen"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Gefahrstoff-Etiketten",
+    "controlNumber" : "(DE-605)HT015626729",
+    "identifierForLinkingEntry" : "HT015626729"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Roth, Lutz: Chlorierte Kohlenwasserstoffe"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Janssen, Gabriele: Das Sicherheitsdatenblatt",
+    "controlNumber" : "(DE-605)HT015081849",
+    "identifierForLinkingEntry" : "HT015081849"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Brandhofer, Peter: REACH, die neue Herausforderung für Ihr Unternehmen!",
+    "controlNumber" : "(DE-605)HT015205517",
+    "identifierForLinkingEntry" : "HT015205517"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Klausen, Johannes: Das neue Kreislaufwirtschaftsgesetz - das ändert sich für Sie!",
+    "controlNumber" : "(DE-605)HT017375674",
+    "identifierForLinkingEntry" : "HT017375674"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Janssen, Gabriele: Das Sicherheitsdatenblatt nach REACH"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Both, Ildikó: Abfallnachweisverfahren - das ändert sich für Sie!",
+    "controlNumber" : "(DE-605)HT015206962",
+    "identifierForLinkingEntry" : "HT015206962"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Both, Ildikó: Abfallverbringung - das ändert sich für Sie!",
+    "controlNumber" : "(DE-605)HT015331896",
+    "identifierForLinkingEntry" : "HT015331896"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Brandhofer, Peter: REACH, der nachgeschaltete Anwender",
+    "controlNumber" : "(DE-605)HT016124947",
+    "identifierForLinkingEntry" : "HT016124947"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Schmitt, Martin: Betrieblicher Sanitätsdienst",
+    "controlNumber" : "(DE-605)HT016771145",
+    "identifierForLinkingEntry" : "HT016771145"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Müller, E.-Werner: Unfallrisiko Nr. 1: Verhalten",
+    "controlNumber" : "(DE-605)HT017192906",
+    "identifierForLinkingEntry" : "HT017192906"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Stoffinventar REACH",
+    "controlNumber" : "(DE-605)HT015467556",
+    "identifierForLinkingEntry" : "HT015467556"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Stoffgruppen-Merkblätter",
+    "controlNumber" : "(DE-605)HT015729276",
+    "identifierForLinkingEntry" : "HT015729276"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Wieland, Karen: Umweltschadensgesetz (USchadG) richtig umsetzen",
+    "controlNumber" : "(DE-605)HT015576575",
+    "identifierForLinkingEntry" : "HT015576575"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Umrechnungstool GHS",
+    "controlNumber" : "(DE-605)HT015824070",
+    "identifierForLinkingEntry" : "HT015824070"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Umstufungshelfer GHS",
+    "controlNumber" : "(DE-605)HT016025812",
+    "identifierForLinkingEntry" : "HT016025812"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Auftrag Gefahrgut: Lagerung gefährlicher Stoffe",
+    "controlNumber" : "(DE-605)HT016350266",
+    "identifierForLinkingEntry" : "HT016350266"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Informations- und Formblätter für Betriebsarzt und Sicherheitsfachkraft",
+    "controlNumber" : "(DE-605)HT016551396",
+    "identifierForLinkingEntry" : "HT016551396"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "GHS-Präsentation",
+    "controlNumber" : "(DE-605)HT016728319",
+    "identifierForLinkingEntry" : "HT016728319"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Erste Hilfe bei Gefahrstoff-Notfällen",
+    "controlNumber" : "(DE-605)HT017064520",
+    "identifierForLinkingEntry" : "HT017064520"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Brandhofer, Peter: Chemikalien anwenden unter REACH",
+    "controlNumber" : "(DE-605)HT016989769",
+    "identifierForLinkingEntry" : "HT016989769"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Roth, Lutz: GHS - Hilfe beim Einstufen und Kennzeichnen"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Handlungshilfen für Abfallbeauftragte",
+    "controlNumber" : "(DE-605)HT015767057",
+    "identifierForLinkingEntry" : "HT015767057"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Gefahrstoff-Etiketten nach TRGS 201",
+    "controlNumber" : "(DE-605)HT017622475",
+    "identifierForLinkingEntry" : "HT017622475"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Stöffler, Birgit: Sicheres Arbeiten mit Gefahrstoffen"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Roth, Lutz: Formaldehyd"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Anzeige- und Erlaubnisverordnung (AbfAEV), Nachweisverordnung (NachwV) - das ändert sich für Sie!",
+    "controlNumber" : "(DE-605)HT018249420",
+    "identifierForLinkingEntry" : "HT018249420"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "REACH in der betrieblichen Praxis",
+    "controlNumber" : "(DE-605)HT018347875",
+    "identifierForLinkingEntry" : "HT018347875"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Stöffler, Birgit: Substitution von Gefahrstoffen",
+    "controlNumber" : "(DE-605)HT018535536",
+    "identifierForLinkingEntry" : "HT018535536"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Arbeitsschutzrecht",
+    "controlNumber" : "(DE-605)HT013911364",
+    "identifierForLinkingEntry" : "HT013911364"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Wörterbuch REACH - CLP - Biozide",
+    "controlNumber" : "(DE-605)HT018658201",
+    "identifierForLinkingEntry" : "HT018658201"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Raths, Hans-Peter: Betriebssicherheitsverordnung 2015",
+    "controlNumber" : "(DE-605)HT018617249",
+    "identifierForLinkingEntry" : "HT018617249"
+  }, {
+    "relationshipInformation" : "CD-ROM-Beil. u.d.T.",
+    "title" : "Checklisten Arbeitssicherheit",
+    "controlNumber" : "(DE-605)HT017891699",
+    "identifierForLinkingEntry" : "HT017891699"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Luksch, Andreas: Gefährdungsbeurteilung richtig machen"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Kurth, Sönke: Pflichtenheft Brandschutz"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "REACH in der betrieblichen Praxis",
+    "controlNumber" : "(DE-605)HT019409588",
+    "identifierForLinkingEntry" : "HT019409588"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Born, Michael: Fachkunde Gefahrstoffe",
+    "controlNumber" : "(DE-605)HT019420046",
+    "identifierForLinkingEntry" : "HT019420046"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Meinel, Hubert: Betrieblicher Gesundheitsschutz"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Müller, Ute: Elektronisches Abfallnachweisverfahren",
+    "controlNumber" : "(DE-605)HT019658793",
+    "identifierForLinkingEntry" : "HT019658793"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Brand, Joachim: Gefährliche Abfälle richtig einstufen und klassifizieren",
+    "controlNumber" : "(DE-605)HT019717490",
+    "identifierForLinkingEntry" : "HT019717490"
+  }, {
+    "relationshipInformation" : "Beil. u.d.T.",
+    "title" : "Roth, Lutz: Gemische - Einstufen und Kennzeichnen nach GHS",
+    "controlNumber" : "(DE-605)HT019809803",
+    "identifierForLinkingEntry" : "HT019809803"
+  } ],
+  "PrecedingEntry" : [ {
+    "relationshipInformation" : "Darin aufgegangen",
+    "title" : "Gefährliche Stoffe"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Deutschland"
@@ -5091,16 +5367,73 @@
   "ChronologyAndEnumeration" : {
     "value" : "48.2000 -"
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Online-Ausg.",
-    "description" : "Nachrichten aus der Chemie"
-  } ],
-  "DescriptionOfFormerEditionsOrVolumes" : [ {
-    "prefix" : "Vorg.:",
-    "description" : "Nachrichten aus Chemie, Technik und Laboratorium"
+  "SupplementSpecialIssueEntry" : [ {
+    "mainEntryHeading" : "Gesellschaft Deutscher Chemiker",
+    "publisherStatement" : "Frankfurt, M. : Ges. Dt. Chemiker, 1977-2007",
+    "relationshipInformation" : "Bis 54.2006 Beil.",
+    "title" : "Tätigkeitsbericht / Gesellschaft Deutscher Chemiker",
+    "controlNumber" : "(DE-605)HT003310680",
+    "identifierForLinkingEntry" : "HT003310680"
   }, {
-    "prefix" : "Darin aufgegangen",
-    "description" : "Gesellschaft Österreichischer Chemiker: Mitteilungsblatt der Gesellschaft Österreichischer Chemiker"
+    "mainEntryHeading" : "Gesellschaft Deutscher Chemiker",
+    "publisherStatement" : "Frankfurt am Main : Gesellschaft Deutscher Chemiker e.V., 2008-",
+    "relationshipInformation" : "Ab 55.2007 darin",
+    "title" : "Jahresbericht ... / Gesellschaft Deutscher Chemiker, GDCh",
+    "controlNumber" : "(DE-605)HT015594869",
+    "identifierForLinkingEntry" : "HT015594869"
+  }, {
+    "publisherStatement" : "Cambridge, Mass. : CambridgeSoft Corp., 2004-",
+    "relationshipInformation" : "Beil.:",
+    "title" : "Chem & bio news",
+    "controlNumber" : "(DE-605)HT014825990",
+    "identifierISSN" : "1932-0965",
+    "identifierForLinkingEntry" : "HT014825990"
+  }, {
+    "publisherStatement" : "Frankfurt am Main : Gesellschaft Deutscher Chemiker, [2012?]-",
+    "physicalDescription" : "Bände",
+    "relationshipInformation" : "Supplement",
+    "note" : [ "2012 [?]-" ],
+    "title" : "Nachrichten aus der Chemie. Analytica pro",
+    "controlNumber" : "(DE-605)HT018961311",
+    "identifierForLinkingEntry" : "HT018961311"
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2000-",
+    "physicalDescription" : "Online-Ressource",
+    "relationshipInformation" : "Online-Ausg.",
+    "title" : "Nachrichten aus der Chemie",
+    "controlNumber" : "(DE-605)HT015219020",
+    "identifierISSN" : "1868-0054",
+    "identifierForLinkingEntry" : "HT015219020"
+  } ],
+  "PrecedingEntry" : [ {
+    "publisherStatement" : "Weinheim [u.a.] : Wiley-VCH, 1977-1999",
+    "relationshipInformation" : "Vorg.:",
+    "title" : "Nachrichten aus Chemie, Technik und Laboratorium",
+    "controlNumber" : "(DE-605)HT000286865",
+    "identifierISSN" : "0341-5163",
+    "identifierForLinkingEntry" : "HT000286865"
+  }, {
+    "mainEntryHeading" : "Gesellschaft Österreichischer Chemiker",
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2006-[2018]",
+    "relationshipInformation" : "Darin aufgegangen",
+    "title" : "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker",
+    "controlNumber" : "(DE-605)HT015702445",
+    "identifierForLinkingEntry" : "HT015702445"
+  } ],
+  "NonspecificRelationshipEntry" : [ {
+    "mainEntryHeading" : "Gesellschaft Österreichischer Chemiker",
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2006-[2018]",
+    "relationshipInformation" : "Einzelne H. zugl. H. von",
+    "title" : "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker",
+    "controlNumber" : "(DE-605)HT015702445",
+    "identifierForLinkingEntry" : "HT015702445"
+  }, {
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2013-",
+    "relationshipInformation" : "Einzelne H. zugl. H. von",
+    "title" : "Trendberichte",
+    "controlNumber" : "(DE-605)HT017576091",
+    "identifierForLinkingEntry" : "HT017576091"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Chemie"
@@ -5166,6 +5499,10 @@
   "Description" : {
     "description" : [ "Verl.-Ort anfangs: Dreieich", "Verl.-Ort anfangs: Dreieich", "Verl.-Ort anfangs: Dreieich", "Verl.-Ort anfangs: Dreieich" ]
   },
+  "SupplementParentEntry" : [ {
+    "relationshipInformation" : "Ergänzungshefte u.d.T.",
+    "title" : "Handbuch Arbeitsorganisation Bau"
+  } ],
   "SubjectHeadings" : [ {
     "subject" : "Hochbau"
   }, {
@@ -5314,8 +5651,8 @@
   "Summary" : {
     "abstract" : [ "Das vorliegende Buch gibt eine kompakte Einführung in die Grundlagen der Festkörperphysik, wobei der Schwerpunkt auf den elektrischen und magnetischen Materialeigenschaften liegt. Leser werden nicht nur die kompakte und anschauliche Herangehensweise schätzen, sondern auch die kurzen Abschnitte über die Forschungsgeschichte der Festkörperphysik, die mit wegweisenden Forschern wie Max Planck, Albert Einstein aber auch Heike Kamerlingh Onnes, Eugene Wigner oder Frederick Seitz verbunden ist. Diese helfen dabei, die Entwicklung der Festkörperphysik und ihre unterschiedlichen Theorien und Modelle verstehen und einordnen zu können. Das Buch richtet sich an Studierende der Physik, Ingenieurwissenschaften und Materialwissenschaften bis zum Bachelor. Es kann durch seine anschaulichen Erklärungen und seinen didaktischen Ansatz auch als motivierende Vorstufe und unterstützendes Begleitwerk beim Studium anspruchsvollerer Lehrbücher der Festkörperphysik benutzt werden. Die dritte Auflage enthält eine Reihe von Erweiterungen, besonders im Kapitel über topologische Materialien. Aus dem Inhalt - Kristallgitter - Theorie der Halbleiter, Leiter und Supraleiter - Metalle - Drude-Lorentz-Modell - BCS-Theorie - Hochtemperatur-Supraleiter - Nanostrukturen: Quantenpunkte - Fehler im Kristallgitter Der Autor Rudolf Huebener studierte Physik und Mathematik an der Universität Marburg sowie an den Technischen Hochschulen München und Darmstadt. 1958 promovierte er in Marburg im Fach Experimentalphysik. Nach einer Tätigkeit im Forschungszentrum Karlsruhe und einem Forschungsinstitut bei Albany, New York, USA arbeitete er für 12 Jahre am Argonne National Laboratory bei Chicago, Illinois. 1974 übernahm er einen Lehrstuhl für Experimentalphysik an der Universität Tübingen. Dort lehrte und forschte er bis zu seiner Emeritierung im Jahr 1999." ]
   },
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "3-662-62077-4" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISBN" : "3-662-62077-4"
   } ],
   "OnlineAccess" : [ {
     "publicnote" : "Springer Natur - und Basiswissenschaften incl. Mathematik eBooks 2020 - German Language",
@@ -5396,8 +5733,8 @@
   "Summary" : {
     "abstract" : [ "Jürgen Habermas, der bekannteste Philosoph der deutschen Gegenwart, wird hier in einer knappen und verständlichen Einführung behandelt. Alle Themenbereiche des Habermasschen Denkens werden berücksichtigt und von einem prominenten Kenner der Materie didaktisch klug dargestellt. Es werden nicht nur die Stationen der intellektuellen Entwicklung beschrieben, sondern auch die systematischen Festlegungen. Im Mittelpunkt stehen die politisch-philosophischen Kategorien, mit denen Habermas bis heute in die aktuellen Debatten hineinwirkt. Ein Verzeichnis der Schriften und eine Zeittafel komplettiere" ]
   },
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "3-534-23284-4" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISBN" : "3-534-23284-4"
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "Philosophie (Wissenschaftliche Buchgesellschaft)" ]
@@ -5496,13 +5833,14 @@
     "personIdentifier" : [ "(DE-588)120543613" ],
     "identifierGND" : [ "120543613" ]
   } ],
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Erscheint auch als",
-    "description" : "Althammer, Christoph: Familienrecht",
-    "note" : [ "Druck-Ausgabe" ]
-  } ],
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "9783406753459" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "mainEntryHeading" : "Althammer, Christoph",
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Druck-Ausgabe" ],
+    "title" : "Familienrecht",
+    "controlNumber" : "(DE-605)HT020371784",
+    "identifierISBN" : "9783406753459",
+    "identifierForLinkingEntry" : "HT020371784"
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://beck-online.beck.de/?vpath=bibdata%2Fkomm%2FJoHeEhe_7%2Fcont%2FJoHeEhe%2Ehtm",
@@ -5993,14 +6331,18 @@
     "personIdentifier" : [ "(DE-588)121603164" ],
     "identifierGND" : [ "121603164" ]
   } ],
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Erscheint auch als",
-    "description" : "Enzyklopädie der Psychologie",
-    "note" : [ "Online-Ausg." ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Online-Ausg." ],
+    "title" : "Enzyklopädie der Psychologie",
+    "controlNumber" : "(DE-605)HT019084870",
+    "identifierForLinkingEntry" : "HT019084870"
   } ],
-  "DescriptionOfFormerEditionsOrVolumes" : [ {
-    "prefix" : "Frühere Ausg. mit teilw. anderer Bandeinteilung u.d.T.",
-    "description" : "Enzyklopädie der Psychologie"
+  "PrecedingEntry" : [ {
+    "relationshipInformation" : "Frühere Ausg. mit teilw. anderer Bandeinteilung u.d.T.",
+    "title" : "Enzyklopädie der Psychologie",
+    "controlNumber" : "(DE-605)HT002191371",
+    "identifierForLinkingEntry" : "HT002191371"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Psychologie"
@@ -6067,9 +6409,13 @@
   "Description" : {
     "description" : [ "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson", "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson" ]
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Online-Ausg.",
-    "description" : "German life and letters"
+  "AdditionalPhysicalFormEntry" : [ {
+    "publisherStatement" : "Oxford : Wiley-Blackwell, 1936-",
+    "physicalDescription" : "Online-Ressource",
+    "relationshipInformation" : "Online-Ausg.",
+    "title" : "German life and letters",
+    "controlNumber" : "(DE-605)HT012714430",
+    "identifierForLinkingEntry" : "HT012714430"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Deutsch"
@@ -6157,9 +6503,12 @@
   "ChronologyAndEnumeration" : {
     "value" : "1.1969 - 29.1997,2"
   },
-  "DescriptionOfContinuingEditionsOrVolumes" : [ {
-    "prefix" : "Forts.:",
-    "description" : "Tunnels & tunnelling international"
+  "SucceedingEntry" : [ {
+    "publisherStatement" : "Sidcup, Kent : Progressive Media Market, 1997-",
+    "relationshipInformation" : "Forts.:",
+    "title" : "Tunnels & tunnelling international",
+    "controlNumber" : "(DE-605)HT007557531",
+    "identifierForLinkingEntry" : "HT007557531"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Tunnelbau"
@@ -6236,17 +6585,10 @@
   "Summary" : {
     "abstract" : [ "Learn from state-of-the-art examples in robotics, motors, detection filters, chemical processes, aircraft, and spacecraft. With this book you will review contemporary MATLAB coding including the latest MATLAB language features and use MATLAB as a software development environment including code organization, GUI development, and algorithm design and testing. Features now covered include the new graph and digraph classes for charts and networks; interactive documents that combine text, code, and output; a new development environment for building apps; locally defined functions in scripts; automatic expansion of dimensions; tall arrays for big data; the new string type; new functions to encode/decode JSON; handling non-English languages; the new class architecture; the Mocking framework; an engine API for Java; the cloud-based MATLAB desktop; the memoize function; and heatmap charts. MATLAB Recipes: A Problem-Solution Approach, Second Edition provides practical, hands-on code snippets and guidance for using MATLAB to build a body of code you can turn to time and again for solving technical problems in your work. Develop algorithms, test them, visualize the results, and pass the code along to others to create a functional code base for your firm. What You Will Learn- Get up to date with the latest MATLAB up to and including MATLAB 2020b- Code in MATLAB- Write applications in MATLAB- Build your own toolbox of MATLAB code to increase your efficiency and effectivenessWho This Book Is For Engineers, data scientists, and students wanting a book rich in examples using MATLAB." ]
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Erscheint auch als",
-    "note" : [ "Online-Ausgabe" ]
-  }, {
-    "prefix" : "Erscheint auch als",
-    "note" : [ "Online-Ausgabe" ]
-  } ],
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "9781484261248" ]
-  }, {
-    "identifierISBN" : [ "9781484261248" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Online-Ausgabe" ],
+    "identifierISBN" : "9781484261248"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990369983090206441"
@@ -6340,17 +6682,10 @@
   "Summary" : {
     "abstract" : [ "Application Programming Interfaces (APIs) sind allgegenwärtig, denn Softwareentwickler benutzen sie nicht nur ständig, sondern entwerfen sie häufig auch. Dieses Buch bietet erstmals eine umfassende Anleitung für das vielfältige Thema API-Design. Neben theoretischen Konzepten werden zahlreiche praktische Hinweise und Programmbeispiele für Java-APIs gegeben. Remote APIs in Form von RESTful HTTP, SOAP-Webservices und Messaging, die für moderne Webanwendungen und andere verteilte Systeme enorm wichtig sind, spielen in diesem Buch ebenfalls eine zentrale Rolle. Aus dem Inhalt: - Entwurf leicht benutzbarer APIs - Kompatibilität und Versionierung - Objektkollaboration, Fluent APIs und Thread-Sicherheit - Dokumentation - Skalierbarkeit, Caching - API-ManagementNach der erfolgreichen Lektüre dieses Buches kennen Sie die Grundlagen von APIs und sind in der Lage, objektorientierte APIs für Softwarekomponenten und Remote APIs für verteilte Systeme zu entwerfen. In der zweiten Auflage sind u.a. die Behandlung des API-Standards OData, zusätzliche Informationen über GraphQL, das Jigsaw-Modulsystem von Java und die Metrik Konnaszenz zur Untersuchung der Änderbarkeit von APIs hinzugekommen." ]
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Erscheint auch als",
-    "note" : [ "Druck-Ausgabe" ]
-  }, {
-    "prefix" : "Erscheint auch als",
-    "note" : [ "Druck-Ausgabe" ]
-  } ],
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "9783864906114" ]
-  }, {
-    "identifierISBN" : [ "9783864906114" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Druck-Ausgabe" ],
+    "identifierISBN" : "9783864906114"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Softwareentwicklung"
@@ -6431,11 +6766,9 @@
   "Extent" : {
     "extent" : "1 Online-Ressource (XVIII, 170 S. 84 Abb., 57 Abb. in Farbe)"
   },
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Printed edition"
-  } ],
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "9783662616505" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Printed edition",
+    "identifierISBN" : "9783662616505"
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://doi.org/10.1007/978-3-662-61651-2",
@@ -6618,12 +6951,10 @@
     "personIdentifier" : [ "(DE-588)12212541X" ],
     "identifierGND" : [ "12212541X" ]
   } ],
-  "DescriptionOfRelatedEditions" : [ {
-    "prefix" : "Erscheint auch als",
-    "note" : [ "Druck-Ausgabe" ]
-  } ],
-  "IdentifierISBNParallel" : [ {
-    "identifierISBN" : [ "9783658275280" ]
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Druck-Ausgabe" ],
+    "identifierISBN" : "9783658275280"
   } ],
   "TitleSuper" : [ {
     "titleSuper" : [ "Jahrbuch Grundschulforschung" ]
@@ -6696,9 +7027,15 @@
   "Description" : {
     "description" : [ "Refereed/Peer-reviewed" ]
   },
-  "DescriptionOfFormerEditionsOrVolumes" : [ {
-    "prefix" : "Fortsetzung von",
-    "description" : "Review of Research in Visual Arts Education"
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISSN" : "0736-0770"
+  } ],
+  "PrecedingEntry" : [ {
+    "title" : "Review of Research in Visual Arts Education",
+    "controlNumber" : "(CKB)991042728725970",
+    "controlNumber" : "(DLC)83642038",
+    "controlNumber" : "(OCoLC)671260450",
+    "identifierISSN" : "2327-7874"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)99370677324206441"
@@ -6769,9 +7106,16 @@
   "Extent" : {
     "extent" : "volumes : illustrations ; 29 cm"
   },
-  "DescriptionOfContinuingEditionsOrVolumes" : [ {
-    "prefix" : "Fortgesetzt von",
-    "description" : "Vakuum in Forschung und Praxis"
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISSN" : "0934-9758"
+  }, {
+    "identifierISSN" : "1522-2454"
+  } ],
+  "SucceedingEntry" : [ {
+    "title" : "Vakuum in Forschung und Praxis",
+    "controlNumber" : "(CKB)974740734049",
+    "controlNumber" : "(DLC)2001262337",
+    "identifierISSN" : "1522-2454"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)99370676979406441"
@@ -6849,9 +7193,11 @@
   "ChronologyAndEnumeration" : {
     "value" : "1968,Apr. - 1992"
   },
-  "DescriptionOfContinuingEditionsOrVolumes" : [ {
-    "prefix" : "Forts. --->",
-    "description" : "Saisonbereinigte Wirtschaftszahlen"
+  "SucceedingEntry" : [ {
+    "relationshipInformation" : "Forts. --->",
+    "title" : "Saisonbereinigte Wirtschaftszahlen",
+    "controlNumber" : "(DE-605)HT004449715",
+    "identifierForLinkingEntry" : "HT004449715"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Deutschland"
