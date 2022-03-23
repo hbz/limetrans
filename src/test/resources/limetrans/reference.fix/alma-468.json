@@ -171,8 +171,9 @@
     "relationshipInformation" : "Print version:",
     "identifierISBN" : "9780980623895"
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Reprints collection (University of Adelaide Press)" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Reprints collection (University of Adelaide Press).",
+    "part" : "Economics."
   } ],
   "OnlineAccess" : [ {
     "publicnote" : "JSTOR Books Open Access",
@@ -254,8 +255,8 @@
   "AdditionalPhysicalFormEntry" : [ {
     "identifierISBN" : "3-0356-0302-2"
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Basics (Basel, Switzerland)" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Basics (Basel, Switzerland)"
   } ],
   "OnlineAccess" : [ {
     "publicnote" : "De Gruyter Basics Online",
@@ -692,13 +693,10 @@
     "controlNumber" : "(DE-605)HT013719346",
     "identifierForLinkingEntry" : "HT013719346"
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Handbook of numerical analysis" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "10" ]
-  }, {
-    "volumeDesignation" : [ "10" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Handbook of numerical analysis",
+    "volume" : "10",
+    "designation" : "(DE-605)HT015612803"
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://www.sciencedirect.com/science?_ob=PublicationURL&_tockey=%23TOC%2320481%232003%23999899999%23536518%23FLP%23&_cdi=20481&_pubType=HS&_auth=y&_acct=C000061607&_version=1&_urlVersion=0&_userid=3862678&md5=dab20d268649911fe095998515f2a42d",
@@ -1199,8 +1197,8 @@
   "Description" : {
     "description" : [ "Bibliographic Level Mode of Issuance: Monograph" ]
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "African writers series" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "African writers series."
   } ],
   "OnlineAccess" : [ {
     "publicnote" : "African Writers Series",
@@ -1367,8 +1365,8 @@
   "AdditionalPhysicalFormEntry" : [ {
     "identifierISBN" : "3-534-23284-4"
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Philosophie (Wissenschaftliche Buchgesellschaft)" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Philosophie (Wissenschaftliche Buchgesellschaft)"
   } ],
   "OnlineAccess" : [ {
     "publicnote" : "Wissenschaftliche Buchgesellschaft Philosophie - Einführungen",

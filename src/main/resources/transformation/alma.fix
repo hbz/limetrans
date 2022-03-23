@@ -1258,6 +1258,7 @@ include("./alma/linkingEntry.fix")
 put_vars(linking_entry_source: "787", linking_entry_target: "NonspecificRelationshipEntry")
 include("./alma/linkingEntry.fix")
 
+/*
 if exists("830??")
   set_array("TitleSuper[]")
   do list(path: "830 ?", "var": "$i")
@@ -1267,7 +1268,9 @@ if exists("830??")
   end
 end
 uniq("TitleSuper[]")
+*/
 
+/*
 if exists("830??")
   set_array("TitleSuperVolumeDesignation[]")
   do list(path: "830 ?", "var": "$i")
@@ -1276,6 +1279,19 @@ if exists("830??")
     copy_field("$i.v", "TitleSuperVolumeDesignation[].$last.volumeDesignation[]")
   end
 end
+*/
+set_array("SeriesAddedEntryUniformTitle[]")
+do list(path: "830 ?", "var": "$i")
+  add_field("SeriesAddedEntryUniformTitle[].$append.__dummy__", "")
+  copy_field("$i.a", "SeriesAddedEntryUniformTitle[].$last.title")
+  copy_field("$i.n", "SeriesAddedEntryUniformTitle[].$last.number")
+  copy_field("$i.p", "SeriesAddedEntryUniformTitle[].$last.part")
+  copy_field("$i.v", "SeriesAddedEntryUniformTitle[].$last.volume")
+  do list(path: "$i.w", "var": "$j")
+    copy_field("$j", "SeriesAddedEntryUniformTitle[].$last.designation")
+  end
+end
+uniq("SeriesAddedEntryUniformTitle[]")
 
 set_array("OnlineAccess[]")
 do list(path: "856??", "var": "$i")
@@ -1679,6 +1695,7 @@ retain(
   "SubjectHeadings[]",
   "SucceedingEntry[]",
   "Summary",
+  "SeriesAddedEntryUniformTitle[]",
   "SupplementParentEntry[]",
   "SupplementSpecialIssueEntry[]",
   "TitleAddendum",

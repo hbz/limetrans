@@ -490,21 +490,10 @@
   "Extent" : {
     "extent" : "74 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Arbeiten aus dem Institut für Höhere Studien und Wissenschaftliche Forschung" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "1" ]
-  }, {
-    "volumeDesignation" : [ "1" ]
-  }, {
-    "volumeDesignation" : [ "1" ]
-  }, {
-    "volumeDesignation" : [ "1" ]
-  }, {
-    "volumeDesignation" : [ "1" ]
-  }, {
-    "volumeDesignation" : [ "1" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Arbeiten aus dem Institut für Höhere Studien und Wissenschaftliche Forschung",
+    "volume" : "1",
+    "designation" : "(DE-605)HT001254425"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990059766340206441"
@@ -626,11 +615,9 @@
   "Extent" : {
     "extent" : "218 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Knaur-[Taschenbuch]" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "382" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Knaur-[Taschenbuch]",
+    "volume" : "382"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073412760206441"
@@ -693,11 +680,10 @@
   "Extent" : {
     "extent" : "38 S., 4 Bl. : graph. Darst., Kt. ; 4-o"
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Aus dem Archiv der Deutschen Seewarte" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "42,2" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Aus dem Archiv der Deutschen Seewarte",
+    "volume" : "42,2",
+    "designation" : "(DE-605)HT003574466"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073415180206441"
@@ -748,15 +734,10 @@
   "DateProper" : {
     "date" : [ "1974" ]
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "STANFORD STUDIES IN LANGUAGE AND LITERATURE. 23" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "23" ]
-  }, {
-    "volumeDesignation" : [ "23" ]
-  }, {
-    "volumeDesignation" : [ "23" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "STANFORD STUDIES IN LANGUAGE AND LITERATURE. 23.",
+    "volume" : "23",
+    "designation" : "(DE-605)HT001248403"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990059762910206441"
@@ -874,11 +855,10 @@
   "Extent" : {
     "extent" : "96 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Schriftenreihe / Verband der Wissenschaftlichen Katholischen Studentenvereine Unitas" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "5" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Schriftenreihe / Verband der Wissenschaftlichen Katholischen Studentenvereine Unitas",
+    "volume" : "5",
+    "designation" : "(DE-605)HT001266104"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073411310206441"
@@ -934,11 +914,10 @@
     "personIdentifier" : [ "(DE-588)105059579" ],
     "identifierGND" : [ "105059579" ]
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "WIRTSCHAFTSFUEHRUNG, KYBERNETIK, DATENVERARBEITUNG. BD 11" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "11" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "WIRTSCHAFTSFUEHRUNG, KYBERNETIK, DATENVERARBEITUNG. BD 11",
+    "volume" : "11",
+    "designation" : "(DE-605)HT001237991"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990059759970206441"
@@ -995,19 +974,14 @@
   "Extent" : {
     "extent" : "451 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "BIBLIOTECA DI CULTURA MODERNA" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "BIBLIOTECA DI CULTURA MODERNA",
+    "volume" : "499",
+    "designation" : "(DE-605)HT001243535"
   }, {
-    "titleSuper" : [ "UNIVERSALE LATERZA" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "499" ]
-  }, {
-    "volumeDesignation" : [ "181" ]
-  }, {
-    "volumeDesignation" : [ "499" ]
-  }, {
-    "volumeDesignation" : [ "181" ]
+    "title" : "UNIVERSALE LATERZA",
+    "volume" : "181",
+    "designation" : "(DE-605)HT003012827"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990059763740206441"
@@ -1069,13 +1043,10 @@
     "personIdentifier" : [ "(DE-588)116593652" ],
     "identifierGND" : [ "116593652" ]
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Hefte zur Hochschule" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "2" ]
-  }, {
-    "volumeDesignation" : [ "2" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Hefte zur Hochschule",
+    "volume" : "2",
+    "designation" : "(DE-605)HT014299598"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073417310206441"
@@ -1138,11 +1109,9 @@
   "Extent" : {
     "extent" : "285 S. ; 8-o"
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Kleine Polizei-Bücherei" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "20" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Kleine Polizei-Bücherei",
+    "volume" : "20"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073409010206441"
@@ -1206,21 +1175,10 @@
   "Extent" : {
     "extent" : "IV, 90 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Lecture notes in mathematics" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "64" ]
-  }, {
-    "volumeDesignation" : [ "64" ]
-  }, {
-    "volumeDesignation" : [ "64" ]
-  }, {
-    "volumeDesignation" : [ "64" ]
-  }, {
-    "volumeDesignation" : [ "64" ]
-  }, {
-    "volumeDesignation" : [ "64" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Lecture notes in mathematics",
+    "volume" : "64",
+    "designation" : "(DE-605)HT001253222"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Banach-Raum"
@@ -1344,11 +1302,9 @@
   "Description" : {
     "description" : [ "Aus: Natur und Museum. 96,5. 1966" ]
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Sonderdrucke der Mitglieder / Südasien-Inst. d. Univ. Heidelberg" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "20" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Sonderdrucke der Mitglieder / Südasien-Inst. d. Univ. Heidelberg",
+    "volume" : "20"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073409740206441"
@@ -1519,11 +1475,9 @@
   "Extent" : {
     "extent" : "392 S. ; 8-o"
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Deccan College Monogram Series" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "39" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Deccan College Monogram Series",
+    "volume" : "39"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073416430206441"
@@ -1585,21 +1539,10 @@
   "Extent" : {
     "extent" : "VII, 320 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Pure and applied mathematics" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "44" ]
-  }, {
-    "volumeDesignation" : [ "44" ]
-  }, {
-    "volumeDesignation" : [ "44" ]
-  }, {
-    "volumeDesignation" : [ "44" ]
-  }, {
-    "volumeDesignation" : [ "44" ]
-  }, {
-    "volumeDesignation" : [ "44" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Pure and applied mathematics",
+    "volume" : "44",
+    "designation" : "(DE-605)HT001235103"
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage/2007/06/01/file_109/1947137.pdf",
@@ -1664,11 +1607,10 @@
   "Extent" : {
     "extent" : "29 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Würzburger Abhandlungen aus dem Gesamtgebiet der praktischen Medizin" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "8,10" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Würzburger Abhandlungen aus dem Gesamtgebiet der praktischen Medizin",
+    "volume" : "8,10",
+    "designation" : "(DE-605)HT008402089"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073407760206441"
@@ -1779,11 +1721,10 @@
   "Extent" : {
     "extent" : "171 S. ; 8-o"
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Schriften zur Berufs- u. Betriebsförderung im Einzelhandel" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "43,44" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Schriften zur Berufs- u. Betriebsförderung im Einzelhandel",
+    "volume" : "43,44",
+    "designation" : "(DE-605)HT001263746"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073407900206441"
@@ -1922,17 +1863,10 @@
   "Extent" : {
     "extent" : "X, 105 S. : Ill., graph. Darst."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Astrophysics and space science library" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "18" ]
-  }, {
-    "volumeDesignation" : [ "18" ]
-  }, {
-    "volumeDesignation" : [ "18" ]
-  }, {
-    "volumeDesignation" : [ "18" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Astrophysics and space science library",
+    "volume" : "18",
+    "designation" : "(DE-605)HT001233242"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990059766290206441"
@@ -2050,11 +1984,9 @@
   "Extent" : {
     "extent" : "119 S. ; 8-o"
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Quellen und Wege" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "1" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Quellen und Wege",
+    "volume" : "1"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073412540206441"
@@ -2155,13 +2087,10 @@
   "DateProper" : {
     "date" : [ "1968" ]
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "MATHEMATICS IN SCIENCE AND ENGINEERING. VOL. 45" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "45" ]
-  }, {
-    "volumeDesignation" : [ "45" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "MATHEMATICS IN SCIENCE AND ENGINEERING. VOL. 45.",
+    "volume" : "45",
+    "designation" : "(DE-605)HT001245849"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990059767510206441"
@@ -2225,11 +2154,9 @@
   "Extent" : {
     "extent" : "33 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Bücherei Der jüngste Tag" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "1,16" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Bücherei Der jüngste Tag",
+    "volume" : "1,16"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073412960206441"
@@ -2285,13 +2212,10 @@
   "Extent" : {
     "extent" : "XVII, 281, 324 S. ; 4-o"
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Prognos-Report" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "4" ]
-  }, {
-    "volumeDesignation" : [ "4" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Prognos-Report",
+    "volume" : "4",
+    "designation" : "(DE-605)HT001258314"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073412130206441"
@@ -2342,11 +2266,9 @@
   "Extent" : {
     "extent" : "S. 481 - 542 ; 8-o"
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Jugentliteratur" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "7" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Jugentliteratur",
+    "volume" : "7"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073410050206441"
@@ -2391,11 +2313,9 @@
   "Extent" : {
     "extent" : "13 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Materialien d. Verbandszentrale d. kathol. Arbeiter- u. Knappenvereine Westdeutschlands" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "3" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Materialien d. Verbandszentrale d. kathol. Arbeiter- u. Knappenvereine Westdeutschlands",
+    "volume" : "3"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073416530206441"
@@ -2448,11 +2368,10 @@
   "DateProper" : {
     "date" : [ "1973" ]
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Bibliotheca theologiae practicae" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "28" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Bibliotheca theologiae practicae",
+    "volume" : "28",
+    "designation" : "(DE-605)HT001250963"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073416710206441"
@@ -2511,17 +2430,10 @@
   "Extent" : {
     "extent" : "167 S. : graph. Darst."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Unwin studies in physics and applied mathematics" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "3" ]
-  }, {
-    "volumeDesignation" : [ "3" ]
-  }, {
-    "volumeDesignation" : [ "3" ]
-  }, {
-    "volumeDesignation" : [ "3" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Unwin studies in physics and applied mathematics",
+    "volume" : "3",
+    "designation" : "(DE-605)HT001254966"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990059766540206441"
@@ -2576,21 +2488,10 @@
   "Extent" : {
     "extent" : "117 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "112" ]
-  }, {
-    "volumeDesignation" : [ "112" ]
-  }, {
-    "volumeDesignation" : [ "112" ]
-  }, {
-    "volumeDesignation" : [ "112" ]
-  }, {
-    "volumeDesignation" : [ "112" ]
-  }, {
-    "volumeDesignation" : [ "112" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Memoirs of the American Mathematical Society",
+    "volume" : "112",
+    "designation" : "(DE-605)HT001233099"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990059767330206441"
@@ -2649,19 +2550,10 @@
   "Extent" : {
     "extent" : "246 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Palaestra" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "240" ]
-  }, {
-    "volumeDesignation" : [ "240" ]
-  }, {
-    "volumeDesignation" : [ "240" ]
-  }, {
-    "volumeDesignation" : [ "240" ]
-  }, {
-    "volumeDesignation" : [ "240" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Palaestra",
+    "volume" : "240",
+    "designation" : "(DE-605)HT001247052"
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage/2007/05/18/file_28/1834997.pdf",
@@ -2729,17 +2621,10 @@
   "Extent" : {
     "extent" : "III, 42 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "121" ]
-  }, {
-    "volumeDesignation" : [ "121" ]
-  }, {
-    "volumeDesignation" : [ "121" ]
-  }, {
-    "volumeDesignation" : [ "121" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Memoirs of the American Mathematical Society",
+    "volume" : "121",
+    "designation" : "(DE-605)HT001233099"
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage/2007/06/08/file_19/1991501.pdf",
@@ -2810,15 +2695,10 @@
     "personIdentifier" : [ "(DE-588)101560338" ],
     "identifierGND" : [ "101560338" ]
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Bibliothèque de la Pléiade" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "174" ]
-  }, {
-    "volumeDesignation" : [ "174" ]
-  }, {
-    "volumeDesignation" : [ "174" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Bibliothèque de la Pléiade",
+    "volume" : "174",
+    "designation" : "(DE-605)HT001244094"
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage/2012/08/25/file_28/4627960.pdf",
@@ -2882,11 +2762,9 @@
   "Extent" : {
     "extent" : "132 S. ; 8-o"
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Handbuch der Mittelschulpädagogik .." ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "5" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Handbuch der Mittelschulpädagogik ...",
+    "volume" : "5"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073410330206441"
@@ -2947,11 +2825,9 @@
   "Extent" : {
     "extent" : "113 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Geist und Psyche" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "2052" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Geist und Psyche",
+    "volume" : "2052"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073409780206441"
@@ -3002,13 +2878,10 @@
   "Extent" : {
     "extent" : "VI, 177 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Queen's papers in pure and applied mathematics" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "28" ]
-  }, {
-    "volumeDesignation" : [ "28" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Queen's papers in pure and applied mathematics",
+    "volume" : "28",
+    "designation" : "(DE-605)HT001233503"
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage/2007/08/23/file_139/2011935.pdf",
@@ -3211,11 +3084,9 @@
   "Extent" : {
     "extent" : "131 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Arena-Taschenbuch" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "1004" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Arena-Taschenbuch",
+    "volume" : "1004"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990073414560206441"
@@ -3406,15 +3277,10 @@
     "personIdentifier" : [ "(DE-588)176669698" ],
     "identifierGND" : [ "176669698" ]
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "BIBLIOTHEQUE DE LA PLEIADE. 65" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "65" ]
-  }, {
-    "volumeDesignation" : [ "65" ]
-  }, {
-    "volumeDesignation" : [ "65" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "BIBLIOTHEQUE DE LA PLEIADE. 65.",
+    "volume" : "65",
+    "designation" : "(DE-605)HT001244094"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990059761780206441"
@@ -3463,15 +3329,10 @@
   "DateProper" : {
     "date" : [ "1971" ]
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "DE PETRARQUE A DESCARTES. 1" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "1" ]
-  }, {
-    "volumeDesignation" : [ "1" ]
-  }, {
-    "volumeDesignation" : [ "1" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "DE PETRARQUE A DESCARTES. 1.",
+    "volume" : "1",
+    "designation" : "(DE-605)HT001250456"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990059761500206441"
@@ -3535,15 +3396,10 @@
   "Extent" : {
     "extent" : "68 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Memoirs of the American Mathematical Society" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "10" ]
-  }, {
-    "volumeDesignation" : [ "10" ]
-  }, {
-    "volumeDesignation" : [ "10" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Memoirs of the American Mathematical Society",
+    "volume" : "10",
+    "designation" : "(DE-605)HT001233099"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990059762570206441"
@@ -3666,21 +3522,10 @@
   "Extent" : {
     "extent" : "131 S. : graph. Darst."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Lecture notes in mathematics" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "81" ]
-  }, {
-    "volumeDesignation" : [ "81" ]
-  }, {
-    "volumeDesignation" : [ "81" ]
-  }, {
-    "volumeDesignation" : [ "81" ]
-  }, {
-    "volumeDesignation" : [ "81" ]
-  }, {
-    "volumeDesignation" : [ "81" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Lecture notes in mathematics",
+    "volume" : "81",
+    "designation" : "(DE-605)HT001253222"
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage/2008/05/19/file_182/2366129.pdf",
@@ -3816,8 +3661,9 @@
     "relationshipInformation" : "Print version:",
     "identifierISBN" : "9780980623895"
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Reprints collection (University of Adelaide Press)" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Reprints collection (University of Adelaide Press).",
+    "part" : "Economics."
   } ],
   "OnlineAccess" : [ {
     "publicnote" : "DOAB Directory of Open Access Books",
@@ -3902,8 +3748,8 @@
   "AdditionalPhysicalFormEntry" : [ {
     "identifierISBN" : "3-0356-0302-2"
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Basics (Basel, Switzerland)" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Basics (Basel, Switzerland)"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)99366599897006441"
@@ -4092,19 +3938,10 @@
   "Extent" : {
     "extent" : "140 S."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Transfer" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "10" ]
-  }, {
-    "volumeDesignation" : [ "10" ]
-  }, {
-    "volumeDesignation" : [ "10" ]
-  }, {
-    "volumeDesignation" : [ "10" ]
-  }, {
-    "volumeDesignation" : [ "10" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Transfer",
+    "volume" : "10",
+    "designation" : "(DE-605)HT003430388"
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage/2006/01/25/file_401/1409545.pdf",
@@ -4181,13 +4018,10 @@
     "personIdentifier" : [ "(DE-588)1018725954" ],
     "identifierGND" : [ "1018725954" ]
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "ACS symposium series" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "1065" ]
-  }, {
-    "volumeDesignation" : [ "1065" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "ACS symposium series",
+    "volume" : "1065",
+    "designation" : "(DE-605)HT001233088"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990203911330206441"
@@ -4570,13 +4404,10 @@
     "controlNumber" : "(DE-605)HT013719346",
     "identifierForLinkingEntry" : "HT013719346"
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Handbook of numerical analysis" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "10" ]
-  }, {
-    "volumeDesignation" : [ "10" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Handbook of numerical analysis",
+    "volume" : "10",
+    "designation" : "(DE-605)HT015612803"
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://www.sciencedirect.com/science?_ob=PublicationURL&_tockey=%23TOC%2320481%232003%23999899999%23536518%23FLP%23&_cdi=20481&_pubType=HS&_auth=y&_acct=C000061607&_version=1&_urlVersion=0&_userid=3862678&md5=dab20d268649911fe095998515f2a42d",
@@ -4830,13 +4661,10 @@
   "Extent" : {
     "extent" : "295 S. : graph. Darst."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Europäische Hochschulschriften : Reihe 31, Politikwissenschaft" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "149" ]
-  }, {
-    "volumeDesignation" : [ "149" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Europäische Hochschulschriften : Reihe 31, Politikwissenschaft",
+    "volume" : "149",
+    "designation" : "(DE-605)HT001240725"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Brasilien"
@@ -5566,8 +5394,8 @@
   "Description" : {
     "description" : [ "Bibliographic Level Mode of Issuance: Monograph" ]
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "African writers series" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "African writers series."
   } ],
   "OnlineAccess" : [ {
     "publicnote" : "African Writers Series",
@@ -5736,8 +5564,8 @@
   "AdditionalPhysicalFormEntry" : [ {
     "identifierISBN" : "3-534-23284-4"
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Philosophie (Wissenschaftliche Buchgesellschaft)" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Philosophie (Wissenschaftliche Buchgesellschaft)"
   } ],
   "OnlineAccess" : [ {
     "publicnote" : "Wissenschaftliche Buchgesellschaft Philosophie - Einführungen",
@@ -6858,11 +6686,10 @@
   "PersonContributor" : [ {
     "personName" : "Weldon, H. A."
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Progress in physics" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "9" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Progress in physics",
+    "volume" : "9",
+    "designation" : "(DE-605)HT001235068"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Große Vereinheitlichung"
@@ -6956,11 +6783,10 @@
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : "9783658275280"
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Jahrbuch Grundschulforschung" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "24" ]
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Jahrbuch Grundschulforschung",
+    "volume" : "24",
+    "designation" : "(DE-605)HT017955487"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Grundschulpädagogik"
