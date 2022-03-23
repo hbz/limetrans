@@ -649,6 +649,8 @@ do list(path: "981  .a", "var": "$i") # SISIS CATKey
   end
 end
 
+set_array("IdentifierGBV[]")
+set_array("IdentifierHBZ[]")
 do list(path: "035  .a", "var": "$i")
   if any_match("$i", "\\($[catalogid]\\).*")
     if exists("@hbzid")
@@ -659,6 +661,17 @@ do list(path: "035  .a", "var": "$i")
   elsif any_match("$i", "\\($[isil]\\).*")
     unless exists("@sysid")
       copy_field("$i", "@sysid")
+    end
+  end
+  if any_match("$i", "\\(DE-601\\).*")
+    add_field("IdentifierGBV[].$append.__dummy__", "")
+    replace_all("$i", "^\\(DE-601\\)", "")
+    copy_field("$i", "IdentifierGBV[].$last.identifierGBV")
+  else
+    if any_match("$i", "\\(DE-605\\).*")
+      add_field("IdentifierHBZ[].$append.__dummy__", "")
+      replace_all("$i", "^\\(DE-605\\)", "")
+      copy_field("$i", "IdentifierHBZ[].$last.identifierHBZ")
     end
   end
 end
@@ -1704,6 +1717,8 @@ retain(
   "HostItemEntry[]",
   "IdentifierAlma",
   "IdentifierDOI[]",
+  "IdentifierGBV[]",
+  "IdentifierHBZ[]",
   "IdentifierISBNParallel[]",
   "IdentifierISBN[]",
   "IdentifierISSN[]",
