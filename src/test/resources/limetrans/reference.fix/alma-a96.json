@@ -116,6 +116,10 @@
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ]
   },
+  "SubjectDNB" : [ {
+    "subject" : "650",
+    "subject" : "340"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990187582740206441",
@@ -518,6 +522,12 @@
     "access" : [ "local" ],
     "carrier" : [ "keine Angabe" ]
   },
+  "SubjectRPB" : [ {
+    "subject" : "780"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "WB 1415"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990124532860206441",
@@ -1170,6 +1180,9 @@
     "carrier" : [ "Elektronische Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ]
   },
+  "SubjectRVK" : [ {
+    "subject" : "ZI 8300"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990218476060206441",
@@ -1292,6 +1305,12 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "keine Angabe" ]
   },
+  "SubjectDNB" : [ {
+    "subject" : "540"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "VA 6120"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990110260070206441",
@@ -1471,6 +1490,21 @@
     "access" : [ "local" ],
     "carrier" : [ "keine Angabe" ]
   },
+  "SubjectRVK" : [ {
+    "subject" : "ZI 3850"
+  }, {
+    "subject" : "PD 4760"
+  }, {
+    "subject" : "ZH 2250"
+  }, {
+    "subject" : "ZH 2450"
+  }, {
+    "subject" : "ZH 3900"
+  }, {
+    "subject" : "ZH 3950"
+  }, {
+    "subject" : "ZI 3700"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990047610350206441",
@@ -1708,6 +1742,22 @@
     "access" : [ "local" ],
     "carrier" : [ "keine Angabe" ]
   },
+  "SubjectRPB" : [ {
+    "subject" : "860"
+  }, {
+    "subject" : "865"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "CM 1000"
+  }, {
+    "subject" : "CZ 1300"
+  }, {
+    "subject" : "CP 4000"
+  }, {
+    "subject" : "CQ 2000"
+  }, {
+    "subject" : "CM 3300"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990129211850206441",

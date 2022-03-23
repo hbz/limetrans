@@ -6950,3 +6950,83 @@
     "title" : [ "Monatsberichte der Deutschen Bundesbank / Statistische Beihefte / 4" ]
   }
 }
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Wilhelm Meyer-Stolzenau - Theodor Meyer-Steineg - Günter Plappert - Franz Hofmann - Willy Mewes - Helmut Huchzermeyer"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Hans Huchzermeyer"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2017" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990227096690206441",
+    "identifierMMSIZ" : "990227096690206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990227096690206441",
+    "identifierForTheRecord" : "(DE-605)HT019901949"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783000535116" ]
+  }, {
+    "identifierISBN" : [ "9783000535116" ]
+  }, {
+    "identifierISBN" : [ "9783000535116" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Huchzermeyer, Hans",
+    "personBio" : "1939-",
+    "personIdentifier" : [ "(DE-588)115387412" ],
+    "identifierGND" : [ "115387412" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Sechs Komponisten der ersten Hälfte des 20. Jahrhunderts im Portrait"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Minden/Westf" ],
+    "name" : [ "Huchzen Verlag" ],
+    "chronology" : [ "[2017]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2017]" ]
+  },
+  "Extent" : {
+    "extent" : "295 Seiten : Illustrationen, 1 Diagramm, Noten"
+  },
+  "OnlineAccess" : [ {
+    "uri" : "http://d-nb.info/1171264887/04",
+    "relatedto" : "Inhaltsverzeichnis"
+  }, {
+    "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2018/12/13/file_30/8219872.pdf",
+    "relatedto" : "Inhaltsverzeichnis"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Komponist"
+  }, {
+    "subject" : "Geschichte 1900-1980"
+  }, {
+    "subject" : "Komposition"
+  }, {
+    "subject" : "Geschichte 1933-45"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990227096690206441"
+  }, {
+    "uid" : "(DE-605)HT019901949"
+  } ]
+}

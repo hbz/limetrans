@@ -831,6 +831,9 @@
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ]
   },
+  "SubjectRVK" : [ {
+    "subject" : "ZI 8300"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990218476060206441",
@@ -946,6 +949,12 @@
     "access" : [ "local" ],
     "carrier" : [ "keine Angabe" ]
   },
+  "SubjectDNB" : [ {
+    "subject" : "540"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "VA 6120"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990110260070206441",
@@ -1402,6 +1411,9 @@
     "access" : [ "local" ],
     "carrier" : [ "keine Angabe" ]
   },
+  "SubjectRPB" : [ {
+    "subject" : "200"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990113988060206441",
@@ -1473,6 +1485,24 @@
     "carrier" : [ "keine Angabe" ],
     "taxonomy" : [ "Geschichte" ]
   },
+  "SubjectRPB" : [ {
+    "subject" : "330"
+  }, {
+    "subject" : "338"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "NC 1750"
+  }, {
+    "subject" : "AE 50980"
+  }, {
+    "subject" : "GB 1025"
+  }, {
+    "subject" : "GB 1252"
+  }, {
+    "subject" : "BO 1000"
+  }, {
+    "subject" : "NM 1200"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990047829090206441",
@@ -1534,6 +1564,22 @@
     "access" : [ "local" ],
     "carrier" : [ "keine Angabe" ]
   },
+  "SubjectRPB" : [ {
+    "subject" : "860"
+  }, {
+    "subject" : "865"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "CM 1000"
+  }, {
+    "subject" : "CZ 1300"
+  }, {
+    "subject" : "CP 4000"
+  }, {
+    "subject" : "CQ 2000"
+  }, {
+    "subject" : "CM 3300"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990129211850206441",
@@ -1605,6 +1651,12 @@
     "branch" : [ "Campus Grifflenberg", "Magazin" ],
     "carrier" : [ "keine Angabe" ]
   },
+  "SubjectDNB" : [ {
+    "subject" : "100"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "GA 1000"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990054150240206441",
@@ -2049,6 +2101,17 @@
     "access" : [ "local" ],
     "carrier" : [ "keine Angabe" ]
   },
+  "SubjectDNB" : [ {
+    "subject" : "330",
+    "subject" : "380",
+    "subject" : "650",
+    "subject" : "670",
+    "subject" : "05a",
+    "subject" : "05c"
+  } ],
+  "SubjectRPB" : [ {
+    "subject" : "650 ; 810"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990054140540206441",

@@ -17,6 +17,15 @@
     "carrier" : [ "keine Angabe" ],
     "taxonomy" : [ "Sozialwissenschaften / Soziologie" ]
   },
+  "SubjectRVK" : [ {
+    "subject" : "DU 1000"
+  }, {
+    "subject" : "MS 1030"
+  }, {
+    "subject" : "CV 4000"
+  }, {
+    "subject" : "MS 1000"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990007179200206441",
@@ -250,6 +259,9 @@
     "carrier" : [ "keine Angabe" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ]
   },
+  "SubjectRVK" : [ {
+    "subject" : "ZI 3970"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990225508660206441",
@@ -367,6 +379,12 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "keine Angabe" ]
   },
+  "SubjectDNB" : [ {
+    "subject" : "540"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "VA 6120"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990110260070206441",
@@ -552,6 +570,16 @@
     "carrier" : [ "keine Angabe" ],
     "taxonomy" : [ "Sprach- und Literaturwissenschaften" ]
   },
+  "SubjectRPB" : [ {
+    "subject" : "560"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "AN 17400"
+  }, {
+    "subject" : "OM 920"
+  }, {
+    "subject" : "MS 1190"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990025012090206441",
@@ -651,6 +679,12 @@
     "carrier" : [ "keine Angabe" ],
     "taxonomy" : [ "Informatik" ]
   },
+  "SubjectDNB" : [ {
+    "subject" : "004"
+  } ],
+  "SubjectRPB" : [ {
+    "subject" : "820"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990365245190206441",
@@ -760,6 +794,11 @@
     "carrier" : [ "keine Angabe" ],
     "taxonomy" : [ "Physik" ]
   },
+  "SubjectRPB" : [ {
+    "subject" : "920"
+  }, {
+    "subject" : "900"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "990365065460206441",

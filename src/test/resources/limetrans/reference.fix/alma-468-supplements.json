@@ -229,6 +229,11 @@
     "carrier" : [ "keine Angabe" ],
     "taxonomy" : [ "Mathematik" ]
   },
+  "SubjectRVK" : [ {
+    "subject" : "QH 150"
+  }, {
+    "subject" : "SI 850"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990059764720206441",
@@ -330,6 +335,9 @@
     "carrier" : [ "keine Angabe" ],
     "taxonomy" : [ "Mathematik" ]
   },
+  "SubjectRVK" : [ {
+    "subject" : "SK 230"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990059760570206441",
@@ -423,6 +431,9 @@
     "carrier" : [ "keine Angabe" ],
     "taxonomy" : [ "Biologie" ]
   },
+  "SubjectRPB" : [ {
+    "subject" : "780"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990124532470206441",
@@ -886,6 +897,9 @@
     "carrier" : [ "keine Angabe" ],
     "taxonomy" : [ "Mathematik" ]
   },
+  "SubjectRVK" : [ {
+    "subject" : "SI 810"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990059760220206441",
@@ -1202,6 +1216,15 @@
     "carrier" : [ "keine Angabe" ],
     "taxonomy" : [ "Sozialwissenschaften / Soziologie" ]
   },
+  "SubjectRVK" : [ {
+    "subject" : "DU 1000"
+  }, {
+    "subject" : "MS 1030"
+  }, {
+    "subject" : "CV 4000"
+  }, {
+    "subject" : "MS 1000"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990007179200206441",
@@ -1539,6 +1562,13 @@
     "branch" : [ "Medienstelle", "Campus Grifflenberg" ],
     "carrier" : [ "keine Angabe" ]
   },
+  "SubjectRVK" : [ {
+    "subject" : "ZG 9285"
+  }, {
+    "subject" : "XE 6900"
+  }, {
+    "subject" : "QP 420"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990048309450206441",
@@ -1895,6 +1925,21 @@
     "carrier" : [ "keine Angabe" ],
     "taxonomy" : [ "Wirtschaftswissenschaften", "Architektur und Bauingenieurwesen" ]
   },
+  "SubjectRVK" : [ {
+    "subject" : "ZI 3850"
+  }, {
+    "subject" : "PD 4760"
+  }, {
+    "subject" : "ZH 2250"
+  }, {
+    "subject" : "ZH 2450"
+  }, {
+    "subject" : "ZH 3900"
+  }, {
+    "subject" : "ZH 3950"
+  }, {
+    "subject" : "ZI 3700"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990047610350206441",
@@ -1979,6 +2024,9 @@
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ]
   },
+  "SubjectDNB" : [ {
+    "subject" : "340"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990367446770206441",
@@ -2081,6 +2129,12 @@
     "branch" : [ "Campus Grifflenberg", "Magazin" ],
     "carrier" : [ "keine Angabe" ]
   },
+  "SubjectDNB" : [ {
+    "subject" : "100"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "GA 1000"
+  } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
     "identifierMMS" : "990054150240206441",
@@ -2272,5 +2326,117 @@
     "subjectTopicName" : "Application software"
   }, {
     "subjectTopicName" : "Java (Computer program language)"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Wilhelm Meyer-Stolzenau - Theodor Meyer-Steineg - Günter Plappert - Franz Hofmann - Willy Mewes - Helmut Huchzermeyer"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Hans Huchzermeyer" ]
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2017" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Campus Grifflenberg" ],
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Musikwissenschaft" ]
+  },
+  "SubjectDNB" : [ {
+    "subject" : "780"
+  } ],
+  "SubjectNWBIB" : [ {
+    "subject" : "Nordrhein-Westfalen"
+  }, {
+    "subject" : "Komponisten"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "990227096690206441",
+    "identifierMMSIZ" : "990015636910206447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990227096690206441",
+    "identifierForTheRecord" : "(DE-605)HT019901949"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783000535116" ]
+  }, {
+    "identifierISBN" : [ "9783000535116" ]
+  }, {
+    "identifierISBN" : [ "9783000535116" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Huchzermeyer, Hans",
+    "personBio" : "1939-",
+    "personIdentifier" : [ "(DE-588)115387412" ],
+    "identifierGND" : [ "115387412" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Sechs Komponisten der ersten Hälfte des 20. Jahrhunderts im Portrait"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Minden/Westf" ],
+    "name" : [ "Huchzen Verlag" ],
+    "chronology" : [ "[2017]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2017]" ]
+  },
+  "Extent" : {
+    "extent" : "295 Seiten : Illustrationen, 1 Diagramm, Noten"
+  },
+  "OnlineAccess" : [ {
+    "uri" : "http://d-nb.info/1171264887/04",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "B:DE-101",
+    "format" : "application/pdf"
+  }, {
+    "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2018/12/13/file_30/8219872.pdf",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "B:DE-101",
+    "contact" : "B:DE-101",
+    "format" : "application/pdf"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "B:DE-101",
+    "contact" : "B:DE-101",
+    "contact" : "B:DE-101",
+    "format" : "application/pdf"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Komponist"
+  }, {
+    "subject" : "Geschichte 1900-1980"
+  }, {
+    "subject" : "Komposition"
+  }, {
+    "subject" : "Geschichte 1933-45"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-468",
+    "subject" : "KGH"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990227096690206441"
+  }, {
+    "uid" : "(DE-605)HT019901949"
+  }, {
+    "uid" : "(DE-468)990015636910206447"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-468",
+    "callnumber" : "KGH1023",
+    "shelfmark" : "21"
   } ]
 }
