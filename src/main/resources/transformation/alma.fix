@@ -613,6 +613,15 @@ set_array("@language_long")
 copy_field("@language_source", "@language_long")
 lookup("@language_long.*", "ISO639-2-to-GND", delete: "true")
 
+set_array("Country[]")
+do list(path: "044??.c", "var": "$i")
+  add_field("Country[].$append.__dummy__", "")
+  do list(path: "$i", "var": "$j")
+    replace_all("$j", "^X[A-Z]-", "")
+    copy_field("$j", "Country[].$last.countryISO")
+  end
+end
+
 if any_equal("@type", "CR")
   if none_equal("@008Pos06", "n")
     copy_field("@008Pos07", "@date1")
@@ -1702,6 +1711,7 @@ retain(
   "Conference",
   "ConstituentUnitEntry[]",
   "CorporateBody[]",
+  "Country[]",
   "CreatorStatement",
   "DataSourceEntry[]",
   "DateFirst",
