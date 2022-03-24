@@ -2,6 +2,8 @@ include("./maps.fix")
 include("./maps/alma-branches.fix")
 include("./maps/alma-taxonomy.fix")
 
+hbz.limetrans.function.DropLocal()
+
 /*
   <macro name="regex-del-punctuation-end">
     <data source="$[dsource]" name="$[dname]">
