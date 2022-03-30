@@ -373,6 +373,10 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
             mMaps.forEach(maps::putMap);
         }
 
+        if (pipe instanceof final Metafix metafix) {
+            metafix.setStrictness(Metafix.Strictness.EXPRESSION);
+        }
+
         pipe
             .setReceiver(counter)
             .setReceiver(streamTee);
@@ -399,7 +403,10 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
         try {
             if (aRulesPath.endsWith(Type.METAFIX.getExtension()) || METAFIX_IS_DEFAULT && !aRulesPath.endsWith(Type.METAMORPH.getExtension())) {
-                pipe = new Metafix(aRulesPath, vars);
+                final Metafix metafix = new Metafix(aRulesPath, vars);
+                metafix.setStrictness(Metafix.Strictness.PROCESS);
+
+                pipe = metafix;
                 type = Type.METAFIX;
             }
             else {
