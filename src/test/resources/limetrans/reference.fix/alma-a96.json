@@ -1,4 +1,5 @@
 {
+  "CarrierType" : [ "Online-Ressource" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -105,6 +106,7 @@
   "TypeMedia" : "Elektronische Ressource"
 }
 {
+  "CarrierType" : [ "Online-Ressource" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -603,6 +605,7 @@
   "TypePeriodical" : "Schriftenreihe"
 }
 {
+  "CarrierType" : [ "Online-Ressource" ],
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : [ "Kym Anderson, Michael Bosworth" ]
@@ -697,6 +700,7 @@
   } ]
 }
 {
+  "CarrierType" : [ "Online-Ressource" ],
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : [ "Manfred Hegger, Hans Drexler, Martin Zeumer" ]
@@ -1198,6 +1202,7 @@
   } ]
 }
 {
+  "CarrierType" : [ "Online-Ressource" ],
   "Country" : [ {
     "countryISO" : "CH"
   } ],
@@ -1329,6 +1334,7 @@
   }
 }
 {
+  "CarrierType" : [ "Band" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1340,7 +1346,7 @@
     "title" : "Zeitschrift der Gesellschaft Deutscher Chemiker"
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Schriftenreihe", "Zeitschrift" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2000", "2010", "2011", "2014" ]
@@ -1348,7 +1354,7 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Eupener Straße" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectDNB" : [ {
     "subject" : "540"
@@ -1613,6 +1619,7 @@
   }
 }
 {
+  "CarrierType" : [ "Online-Ressource" ],
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "Eine kompakte Einführung in Geschichte, Entwicklung und Theorie der Festkörperphysik"
@@ -1876,6 +1883,7 @@
   "TypePeriodical" : "Schriftenreihe"
 }
 {
+  "CarrierType" : [ "Online-Ressource" ],
   "Country" : [ {
     "countryISO" : "DE-BW"
   } ],
@@ -1992,6 +2000,7 @@
   "TypeMedia" : "Elektronische Ressource"
 }
 {
+  "CarrierType" : [ "Online-Ressource" ],
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -2072,15 +2081,17 @@
   } ]
 }
 {
+  "CarrierType" : [ "Band" ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
+    "format" : [ "Online-Ressource", "Gedruckte Ressource", "Elektronische Ressource" ],
     "type" : [ "Zeitschrift" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1989", "1994" ]
   },
   "introx" : {
-    "access" : [ "online" ]
+    "access" : [ "online" ],
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",

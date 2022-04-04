@@ -405,6 +405,17 @@ else
     end
   end
 end
+
+set_array("CarrierType[]")
+do list(path: "338??.b", "var": "$i")
+  copy_field("$i", "@carriertype_code")
+  lookup("@carriertype_code", "carrier-type-code", delete: "true")
+  move_field("@carriertype_code", "CarrierType[]")
+  copy_field("$i", "@carriertype_facetcode")
+  lookup("@carriertype_facetcode", "carrier-type-facet-code", delete: "true")
+  move_field("@carriertype_facetcode", "@facet_format")
+end
+uniq("CarrierType[]")
 uniq("@facet_format")
 
 set_array("@facet_type")
@@ -1707,6 +1718,7 @@ retain(
   "$[deletion-literal]",
   "Abstract",
   "AdditionalPhysicalFormEntry[]",
+  "CarrierType[]",
   "ChronologyAndEnumeration",
   "Conference",
   "ConstituentUnitEntry[]",
