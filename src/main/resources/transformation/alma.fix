@@ -406,6 +406,15 @@ else
   end
 end
 
+set_array("ContentType[]")
+do list(path: "336??.b", "var": "$i")
+  do list(path: "$i", "var": "$j")
+    lookup("$j", "content-type-code", delete: "true")
+    copy_field("$j", "ContentType[]")
+  end
+end
+uniq("ContentType[]")
+
 set_array("CarrierType[]")
 do list(path: "338??.b", "var": "$i")
   copy_field("$i", "@carriertype_code")
@@ -1722,6 +1731,7 @@ retain(
   "ChronologyAndEnumeration",
   "Conference",
   "ConstituentUnitEntry[]",
+  "ContentType[]",
   "CorporateBody[]",
   "Country[]",
   "CreatorStatement",

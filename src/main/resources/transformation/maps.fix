@@ -25,6 +25,35 @@ put_map("typeLeader06",
   "t": "B"
 )
 
+# Source: https://www.loc.gov/standards/valuelist/rdacontent.html
+put_map("content-type-code",
+  "cod": "Computerdaten",                                # "Computer dataset",
+  "cop": "Computerprogramm",                             # "Computer program",
+  "crd": "kartografischer Datensatz",                    # "Cartographic dataset",
+  "crf": "kartografische dreidimensionale Form",         # "Cartographic three-dimensional form",
+  "cri": "kartografisches Bild",                         # "Cartographic image",
+  "crm": "kartografisches bewegtes Bild",                # "Cartographic moving image",
+  "crn": "kartografische taktile dreidimensionale Form", # "Cartographic tactile three-dimensional form",
+  "crt": "kartografisches taktiles Bild",                # "Cartographic tactile image",
+  "ntm": "Noten",                                        # "Notated music",
+  "ntv": "Bewegungsnotation",                            # "Notated movement",
+  "prm": "aufgeführte Musik",                            # "Performed music",
+  "snd": "Geräusche",                                    # "Sounds",
+  "spw": "gesprochenes Wort",                            # "Spoken word",
+  "sti": "unbewegtes Bild",                              # "Still image",
+  "tcf": "taktile dreidimensionale Form",                # "Tactile three-dimensional form",
+  "tci": "taktiles Bild",                                # "Tactile image",
+  "tcm": "taktile Noten",                                # "Tactile notated music",
+  "tcn": "taktile Bewegungsnotation",                    # "Tactile notated movement",
+  "tct": "taktiler Text",                                # "Tactile text",
+  "tdf": "dreidimensionale Form",                        # "Three-dimensional form",
+  "tdi": "zweidimensionales bewegtes Bild",              # "Two-dimensional moving image",
+  "tdm": "dreidimensionales bewegtes Bild",              # "Three-dimensional moving image",
+  "txt": "Text",                                         # "Text",
+  "xxx": "Sonstige",                                     # "Other",
+  "zzz": "nicht spezifiziert"                            # "Unspecified"
+)
+
 # See also: https://www.loc.gov/standards/valuelist/rdacarrier.html
 put_map("carrier-type-code",
   "ca": "Magnetbandcartridge",
