@@ -289,6 +289,7 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -640,6 +641,7 @@
 }
 {
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "NL"
   } ],
@@ -841,6 +843,7 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "RSWK", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "CH"
   } ],
@@ -968,6 +971,7 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1440,6 +1444,7 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1526,6 +1531,7 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1610,6 +1616,7 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1708,6 +1715,7 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "GB"
   }, {
@@ -1837,6 +1845,7 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "GB"
   } ],
@@ -2184,6 +2193,7 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "RecordCodes" : [ "teilweise Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-WB", "Sonstiges Regelwerk", "keine Angabe", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],

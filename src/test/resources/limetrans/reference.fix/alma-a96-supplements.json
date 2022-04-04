@@ -1,5 +1,6 @@
 {
   "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -88,6 +89,7 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -168,6 +170,7 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "sonstiges Regelwerk", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "US"
   } ],
@@ -264,6 +267,7 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "säurefreies, alterungsbeständiges Papier" ],
+  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "DE-BY"
   } ],
@@ -397,6 +401,7 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -588,6 +593,7 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -709,6 +715,7 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "DE-BY"
   } ],
@@ -833,6 +840,7 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1000,6 +1008,7 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "Country" : [ {
     "countryISO" : "US"
   } ],
@@ -1107,6 +1116,7 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020603705"
   } ],

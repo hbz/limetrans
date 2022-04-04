@@ -1,6 +1,7 @@
 include("./maps.fix")
 include("./maps/alma-branches.fix")
 include("./maps/alma-format-carrier.fix")
+include("./maps/alma-record-codes.fix")
 include("./maps/alma-taxonomy.fix")
 
 hbz.limetrans.function.DropLocal()
@@ -428,8 +429,32 @@ end
 uniq("CarrierType[]")
 
 set_array("FormatCarrier[]")
+set_array("RecordCodes[]")
 do list(path: "9640s", "var": "$i")
-  if any_equal("$i.F", "050")
+  if any_equal("$i.F", "030")
+    put_vars(record_codes_start: "0")
+    include("./alma/recordCodes.fix")
+    put_vars(record_codes_start: "1")
+    include("./alma/recordCodes.fix")
+    put_vars(record_codes_start: "2")
+    include("./alma/recordCodes.fix")
+    put_vars(record_codes_start: "3")
+    include("./alma/recordCodes.fix")
+    put_vars(record_codes_start: "4")
+    include("./alma/recordCodes.fix")
+    put_vars(record_codes_start: "5")
+    include("./alma/recordCodes.fix")
+    put_vars(record_codes_start: "6")
+    include("./alma/recordCodes.fix")
+    put_vars(record_codes_start: "7")
+    include("./alma/recordCodes.fix")
+    put_vars(record_codes_start: "8")
+    include("./alma/recordCodes.fix")
+    put_vars(record_codes_start: "11")
+    include("./alma/recordCodes.fix")
+    put_vars(record_codes_start: "12")
+    include("./alma/recordCodes.fix")
+  elsif any_equal("$i.F", "050")
     put_vars(format_carrier_start: "0", format_carrier_length: "1")
     include("./alma/formatCarrier.fix")
     put_vars(format_carrier_start: "1", format_carrier_length: "1")
@@ -453,6 +478,7 @@ do list(path: "9640s", "var": "$i")
   end
 end
 uniq("FormatCarrier[]")
+uniq("RecordCodes[]")
 uniq("@facet_format")
 
 set_array("@facet_type")
@@ -1799,6 +1825,7 @@ retain(
   "PublisherName[]",
   "RSWK[]",
   "Recension",
+  "RecordCodes[]",
   "RecordIdentifier",
   "SubSeriesEntry[]",
   "SubjectGHBLocal[]",
