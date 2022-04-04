@@ -1,4 +1,5 @@
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -13,14 +14,14 @@
     "creatorStatement" : [ "Karl M. Setzen" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1971" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ],
+    "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Sozialwissenschaften / Soziologie" ]
   },
   "SubjectRVK" : [ {
@@ -86,6 +87,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -100,13 +102,13 @@
     "creatorStatement" : [ "Klaus J. Schmidt (Hrsg.)" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Schriftenreihe", "Sonstiges" ],
     "language" : [ "Deutsch" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ],
+    "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ]
   },
   "IdentifierAlma" : {
@@ -165,6 +167,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "US"
   } ],
@@ -176,14 +179,14 @@
     "creatorStatement" : [ "Catherine Fenselau, ed. .." ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Englisch" ],
     "date" : [ "2011" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ],
+    "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Chemie und Chemische Technik", "Biologie" ]
   },
   "IdentifierAlma" : {
@@ -260,6 +263,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift", "säurefreies, alterungsbeständiges Papier" ],
   "Country" : [ {
     "countryISO" : "DE-BY"
   } ],
@@ -392,6 +396,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -582,6 +587,7 @@
   }
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -599,7 +605,7 @@
     "creatorStatement" : [ "Marshall McLuhan" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1995" ]
@@ -607,7 +613,7 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Boxgraben" ],
-    "carrier" : [ "keine Angabe" ],
+    "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Sprach- und Literaturwissenschaften" ]
   },
   "SubjectRPB" : [ {
@@ -702,6 +708,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "DE-BY"
   } ],
@@ -825,6 +832,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -991,6 +999,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "US"
   } ],
@@ -1097,6 +1106,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020603705"
   } ],

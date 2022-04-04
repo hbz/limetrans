@@ -1,6 +1,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -95,6 +96,7 @@
   "TypeMedia" : "Elektronische Ressource"
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT004344482"
   } ],
@@ -106,14 +108,14 @@
     "creatorStatement" : [ "[Mitarb.: Helmut von Bruck ...]" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1978" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -166,6 +168,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -400,6 +403,7 @@
   }
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -414,14 +418,14 @@
     "creatorStatement" : [ "Günter Kahl" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Nachschlagewerk", "Schriftenreihe" ],
     "language" : [ "Englisch" ],
     "date" : [ "2004" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
     "subject" : "780"
@@ -482,6 +486,7 @@
   "TypePeriodical" : "Schriftenreihe"
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "AT"
   } ],
@@ -496,14 +501,14 @@
     "creatorStatement" : [ "von J. Roppert u. G. Fischer" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1965" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -554,19 +559,20 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "TT002501966"
   } ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1976" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -616,6 +622,7 @@
   }
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT010112920"
   } ],
@@ -624,14 +631,14 @@
     "creatorStatement" : [ "Monika Schwinn ; Bernhard Diehl" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1975" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -685,6 +692,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DXDE"
   } ],
@@ -699,14 +707,14 @@
     "creatorStatement" : [ "von Heinrich Seilkopf u. Georg Stüve" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1923" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -756,19 +764,20 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT001066042"
   } ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1974" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -811,6 +820,7 @@
   }
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "TT002501982"
   } ],
@@ -819,14 +829,14 @@
     "title" : "= SELECTIONS FROM HUNGARIAN PRIVATE COLLECTIONS"
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1981" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -874,6 +884,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DXDE"
   } ],
@@ -885,14 +896,14 @@
     "creatorStatement" : [ "von Schwerber" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1926" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -938,19 +949,20 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT001065654"
   } ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1972" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -1003,19 +1015,20 @@
   }
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT001066133"
   } ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1971" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -1070,6 +1083,7 @@
   }
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DXDE"
   } ],
@@ -1084,14 +1098,14 @@
     "creatorStatement" : [ "hrsg. von Hans Roeseler" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1918" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -1138,6 +1152,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT010111297"
   } ],
@@ -1149,14 +1164,14 @@
     "creatorStatement" : [ "von Ludwig Schweers u. Heinz Gerards" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1973" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -1211,6 +1226,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1222,14 +1238,14 @@
     "creatorStatement" : [ "Hubert Berens" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1968" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRVK" : [ {
     "subject" : "QH 150"
@@ -1291,6 +1307,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1302,14 +1319,14 @@
     "creatorStatement" : [ "vorgelegt von Ulrich Göbel" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Hochschulschrift", "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2003" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -1356,6 +1373,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT010111610"
   } ],
@@ -1364,14 +1382,14 @@
     "creatorStatement" : [ "Ulrich Schweinfurth" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1966" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -1419,19 +1437,20 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "TT002501986"
   } ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1977" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -1477,6 +1496,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "US"
   } ],
@@ -1491,14 +1511,14 @@
     "creatorStatement" : [ "Patrick A. Gaughan" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Englisch" ],
     "date" : [ "2004" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -1542,6 +1562,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "IN"
   } ],
@@ -1556,14 +1577,14 @@
     "creatorStatement" : [ "by M. C. Sekhar" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1968" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -1607,6 +1628,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "US"
   } ],
@@ -1621,14 +1643,14 @@
     "creatorStatement" : [ "Ernst-August Behrens" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Englisch" ],
     "date" : [ "1972" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRVK" : [ {
     "subject" : "SK 230"
@@ -1691,6 +1713,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DX"
   } ],
@@ -1702,14 +1725,14 @@
     "creatorStatement" : [ "Richard Schwarz" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1908" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -1755,6 +1778,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1766,14 +1790,14 @@
     "title" : "... Münster den 22. Februarii 1720. Clement August"
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1720" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -1815,6 +1839,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT010110824"
   } ],
@@ -1826,14 +1851,14 @@
     "creatorStatement" : [ "von Rudolf Schwarz" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1965" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -1878,6 +1903,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1892,14 +1918,14 @@
     "creatorStatement" : [ "Isolde Debus-Spangenberg" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2004" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
     "subject" : "780"
@@ -1966,6 +1992,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT001066474"
   } ],
@@ -1977,14 +2004,14 @@
     "creatorStatement" : [ "Jean-Claude Pecker" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1970" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -2034,6 +2061,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -2045,14 +2073,14 @@
     "creatorStatement" : [ "vorgelegt von Fabian Walders" ]
   },
   "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "format" : [ "Elektronische Ressource", "Online-Ressource", "Gedruckte Ressource" ],
     "type" : [ "Hochschulschrift", "Monographie" ],
     "language" : [ "Englisch" ],
     "date" : [ "2018" ]
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource", "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -2105,6 +2133,7 @@
   "TypeMedia" : "Elektronische Ressource"
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT010112834"
   } ],
@@ -2113,13 +2142,13 @@
     "creatorStatement" : [ "Otto Schwindrazheim" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -2163,19 +2192,20 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "TT002502162"
   } ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1983" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -2221,19 +2251,20 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT001066638"
   } ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1968" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -2276,6 +2307,7 @@
   }
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT010113000"
   } ],
@@ -2287,14 +2319,14 @@
     "creatorStatement" : [ "Marcel Schwob. [Ber. Übertr. von Arthur Seiffhart]" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1970" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -2342,6 +2374,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "CH"
   } ],
@@ -2356,14 +2389,14 @@
     "creatorStatement" : [ "von Aloys Schwietert u. Reinhold A. Vogelsang unter Mitarb. von Gyula Büti [u.a.]" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1971" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -2412,19 +2445,20 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT010111712"
   } ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1961" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -2463,19 +2497,20 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT010114699"
   } ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1915" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -2513,6 +2548,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "XX"
   } ],
@@ -2527,14 +2563,14 @@
     "creatorStatement" : [ "Sven-Åke Selander" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Hochschulschrift", "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1973" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -2575,6 +2611,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT001066515"
   } ],
@@ -2583,14 +2620,14 @@
     "creatorStatement" : [ "by L. Marder" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1970" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -2640,6 +2677,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "US"
   } ],
@@ -2651,14 +2689,14 @@
     "creatorStatement" : [ "by Tadeusz Bałaban" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Englisch" ],
     "date" : [ "1971" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -2704,6 +2742,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -2718,14 +2757,14 @@
     "creatorStatement" : [ "von Karl Heinrich Bertau" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Hochschulschrift", "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1964" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -2782,6 +2821,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "US"
   } ],
@@ -2793,14 +2833,14 @@
     "creatorStatement" : [ "by Helen Skala" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Englisch" ],
     "date" : [ "1972" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRVK" : [ {
     "subject" : "SI 810"
@@ -2859,6 +2899,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "FR"
   } ],
@@ -2873,14 +2914,14 @@
     "creatorStatement" : [ "Blaise de Monluc. Éd. critique établie et annotée par Paul Courteault" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Französisch" ],
     "date" : [ "1964" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -2939,6 +2980,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT010111835"
   } ],
@@ -2950,14 +2992,14 @@
     "creatorStatement" : [ "von Gottfried Schweizer" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1957" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -3001,6 +3043,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT010111618"
   } ],
@@ -3012,14 +3055,14 @@
     "creatorStatement" : [ "Eduard Schweingruber" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1970" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -3067,19 +3110,20 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT001065670"
   } ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1971" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -3136,6 +3180,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "TT001728222"
   } ],
@@ -3144,14 +3189,14 @@
     "creatorStatement" : [ "Richard Gameson" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1995" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -3211,6 +3256,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "TT001729180"
   } ],
@@ -3219,14 +3265,14 @@
     "creatorStatement" : [ "Anna Sapir Abulafia" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1995" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -3279,6 +3325,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT010113635"
   } ],
@@ -3287,14 +3334,14 @@
     "creatorStatement" : [ "Konrad Seiffert" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1964" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -3338,6 +3385,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "TT001728824"
   } ],
@@ -3349,14 +3397,14 @@
     "creatorStatement" : [ "Hans Halter" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1994" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -3413,6 +3461,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "SUHH"
   } ],
@@ -3491,19 +3540,20 @@
   }
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT001065898"
   } ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1970" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -3552,19 +3602,20 @@
   }
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT001065868"
   } ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1971" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -3607,6 +3658,7 @@
   }
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT001065993"
   } ],
@@ -3615,14 +3667,14 @@
     "creatorStatement" : [ "by S. C. Kleene" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1972" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -3674,6 +3726,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT004617613"
   } ],
@@ -3682,14 +3735,14 @@
     "title" : "Galilean and Lorentz relativity"
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1974" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRVK" : [ {
     "subject" : "UH 8000"
@@ -3746,6 +3799,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -3757,14 +3811,14 @@
     "creatorStatement" : [ "J.-P. Eckmann ; M. Guenin" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Französisch" ],
     "date" : [ "1969" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -3826,19 +3880,20 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT004618247"
   } ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1968" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -4057,6 +4112,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -4071,14 +4127,14 @@
     "creatorStatement" : [ "Karl M. Setzen" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1971" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRVK" : [ {
     "subject" : "DU 1000"
@@ -4131,6 +4187,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -4145,13 +4202,13 @@
     "creatorStatement" : [ "Klaus J. Schmidt (Hrsg.)" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Schriftenreihe", "Sonstiges" ],
     "language" : [ "Deutsch" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -4194,6 +4251,7 @@
   "TypePeriodical" : "Schriftenreihe"
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -4208,14 +4266,14 @@
     "creatorStatement" : [ "Cornelia Lauber" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Hochschulschrift", "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1996" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -4280,6 +4338,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "US"
   } ],
@@ -4291,14 +4350,14 @@
     "creatorStatement" : [ "Catherine Fenselau, ed. .." ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Englisch" ],
     "date" : [ "2011" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -4357,6 +4416,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -4371,14 +4431,14 @@
     "creatorStatement" : [ "Marianne Buder ... (Hrsg.). Begr. von Klaus Laisiepen .." ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Schriftenreihe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1997" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -4434,6 +4494,7 @@
   "TypePeriodical" : "Schriftenreihe"
 }
 {
+  "FormatCarrier" : [ "Medienkombination" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -4505,6 +4566,7 @@
   "TypePeriodical" : "Schriftenreihe"
 }
 {
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "Country" : [ {
     "countryISO" : "US"
   } ],
@@ -4686,6 +4748,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "Country" : [ {
     "countryISO" : "NL"
   } ],
@@ -4857,6 +4920,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "Country" : [ {
     "countryISO" : "CH"
   } ],
@@ -4975,6 +5039,7 @@
   }
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT003447220"
   }, {
@@ -4990,14 +5055,14 @@
     "creatorStatement" : [ "Peter Michael Müller" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Hochschulschrift", "Monographie" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1990" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_NETWORK",
@@ -5054,6 +5119,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -5065,13 +5131,13 @@
     "creatorStatement" : [ "Kühn ; Birett" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Schriftenreihe", "Sonstiges" ],
     "language" : [ "Deutsch" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRVK" : [ {
     "subject" : "ZG 9285"
@@ -5409,6 +5475,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift", "säurefreies, alterungsbeständiges Papier" ],
   "Country" : [ {
     "countryISO" : "DE-BY"
   } ],
@@ -5515,6 +5582,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -5690,6 +5758,7 @@
   }
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -5704,13 +5773,13 @@
     "creatorStatement" : [ "Zentralverband des Deutschen Baugewerbes .." ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Schriftenreihe", "Sonstiges" ],
     "language" : [ "Deutsch" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRVK" : [ {
     "subject" : "ZI 3850"
@@ -6023,6 +6092,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "Country" : [ {
     "countryISO" : "DE-BY"
   } ],
@@ -6140,6 +6210,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -6157,14 +6228,14 @@
     "creatorStatement" : [ "Marshall McLuhan" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1995" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
     "subject" : "560"
@@ -6242,6 +6313,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "DE-BY"
   } ],
@@ -6338,6 +6410,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -6480,6 +6553,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -6494,14 +6568,14 @@
     "creatorStatement" : [ "hrsg. von Jan Knopf" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Schriftenreihe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2001" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -6563,6 +6637,7 @@
   "TypePeriodical" : "Schriftenreihe"
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -6571,14 +6646,14 @@
   } ],
   "collection" : "DE-605",
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Nachschlagewerk", "Schriftenreihe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1980", "1999" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
     "subject" : "330"
@@ -6636,6 +6711,7 @@
   "TypePeriodical" : "Schriftenreihe"
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -6647,14 +6723,14 @@
     "creatorStatement" : [ "hrsg. von Niels Birbaumer .." ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Nachschlagewerk", "Schriftenreihe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2003" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
     "subject" : "860"
@@ -6731,6 +6807,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "GB"
   }, {
@@ -6841,6 +6918,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "GB"
   } ],
@@ -6930,6 +7008,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "US"
   } ],
@@ -7019,6 +7098,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "Country" : [ {
     "countryISO" : "DE-BW"
   } ],
@@ -7122,6 +7202,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020603705"
   } ],
@@ -7222,6 +7303,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "US"
   } ],
@@ -7309,6 +7391,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -7573,6 +7656,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -7584,14 +7668,14 @@
     "volumeDesignation" : "[...]"
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Zeitschrift" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1968", "1992" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectDNB" : [ {
     "subject" : "330",
@@ -7679,6 +7763,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "DE-NW"
   } ],

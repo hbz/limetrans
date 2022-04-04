@@ -1,6 +1,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -109,6 +110,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -521,6 +523,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -535,14 +538,14 @@
     "creatorStatement" : [ "Günter Kahl" ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Nachschlagewerk", "Schriftenreihe" ],
     "language" : [ "Englisch" ],
     "date" : [ "2004" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
     "subject" : "780"
@@ -788,6 +791,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -802,14 +806,14 @@
     "creatorStatement" : [ "Marianne Buder ... (Hrsg.). Begr. von Klaus Laisiepen .." ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Schriftenreihe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1997" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -869,6 +873,7 @@
   "TypePeriodical" : "Schriftenreihe"
 }
 {
+  "FormatCarrier" : [ "Medienkombination" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1208,6 +1213,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "Country" : [ {
     "countryISO" : "CH"
   } ],
@@ -1341,6 +1347,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1531,6 +1538,7 @@
   }
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1545,13 +1553,13 @@
     "creatorStatement" : [ "Zentralverband des Deutschen Baugewerbes .." ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Schriftenreihe", "Sonstiges" ],
     "language" : [ "Deutsch" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRVK" : [ {
     "subject" : "ZI 3850"
@@ -1793,6 +1801,7 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Druckschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1804,14 +1813,14 @@
     "creatorStatement" : [ "hrsg. von Niels Birbaumer .." ]
   },
   "dc" : {
-    "format" : [ "keine Angabe" ],
+    "format" : [ "Gedruckte Ressource" ],
     "type" : [ "Nachschlagewerk", "Schriftenreihe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2003" ]
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
     "subject" : "860"
@@ -1892,6 +1901,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "Country" : [ {
     "countryISO" : "DE-BW"
   } ],
