@@ -2056,7 +2056,7 @@
   }, {
     "uid" : "(DE-468)990009164740206447"
   } ],
-  "TypePeriodical" : "Schriftenreihe",
+  "TypePeriodical" : [ "Schriftenreihe" ],
   "Item" : [ {
     "identifier" : "DE-468",
     "callnumber" : "ZFL3157-M,1",
@@ -2166,7 +2166,7 @@
   }, {
     "uid" : "(DE-468)990015375310206447"
   } ],
-  "TypePeriodical" : "Schriftenreihe",
+  "TypePeriodical" : [ "Schriftenreihe" ],
   "Item" : [ {
     "identifier" : "DE-468",
     "callnumber" : "QCJ6376",
@@ -2302,6 +2302,7 @@
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "vierteljährlich", "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "GB"
   }, {
@@ -2313,7 +2314,7 @@
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Schriftenreihe", "Zeitschrift" ],
+    "type" : [ "Zeitschrift", "Schriftenreihe" ],
     "language" : [ "Englisch" ],
     "date" : [ "1936" ]
   },
@@ -2413,8 +2414,6 @@
   }, {
     "uid" : "(DE-468)990004037860206447"
   } ],
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "07G6"
   }, {

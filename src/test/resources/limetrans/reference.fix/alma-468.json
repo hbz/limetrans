@@ -54,7 +54,7 @@
     "uid" : "(DE-468)9915810639006447"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TypePeriodical" : "Zeitschrift",
+  "TypePeriodical" : [ "Zeitschrift" ],
   "TitleOther" : {
     "title" : [ "Olive Wreath" ]
   }
@@ -106,7 +106,7 @@
     "uid" : "(DE-468)9915810638506447"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TypePeriodical" : "Zeitschrift",
+  "TypePeriodical" : [ "Zeitschrift" ],
   "TitleOther" : {
     "title" : [ "Olio" ]
   }
@@ -367,7 +367,7 @@
   }, {
     "uid" : "(DE-468)990007627960206447"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "collection" : "DE-468",
@@ -630,7 +630,7 @@
   }, {
     "uid" : "(DE-468)WU000014939"
   } ],
-  "TypePeriodical" : "Zeitschrift",
+  "TypePeriodical" : [ "Zeitschrift" ],
   "Item" : [ {
     "identifier" : "DE-468",
     "callnumber" : "22J45-B",
@@ -975,6 +975,7 @@
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "monatlich", "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -987,7 +988,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Schriftenreihe", "Zeitschrift" ],
+    "type" : [ "Zeitschrift", "Schriftenreihe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2000", "2010", "2011", "2014" ]
   },
@@ -1149,8 +1150,6 @@
   }, {
     "uid" : "(DE-468)990008405780206447"
   } ],
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "70N1"
   } ],
@@ -1531,7 +1530,7 @@
   }, {
     "uid" : "(DE-468)990008494220206447"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -1617,7 +1616,7 @@
   }, {
     "uid" : "(DE-468)990003074850206447"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -1715,13 +1714,14 @@
   }, {
     "uid" : "(DE-468)990008797960206447"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "vierteljährlich", "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "GB"
   }, {
@@ -1733,7 +1733,7 @@
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Schriftenreihe", "Zeitschrift" ],
+    "type" : [ "Zeitschrift", "Schriftenreihe" ],
     "language" : [ "Englisch" ],
     "date" : [ "1936" ]
   },
@@ -1833,8 +1833,6 @@
   }, {
     "uid" : "(DE-468)990004037860206447"
   } ],
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "07G6"
   }, {
@@ -1852,6 +1850,7 @@
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "eingestelltes Erscheinen" ],
   "Country" : [ {
     "countryISO" : "GB"
   } ],
@@ -1939,7 +1938,6 @@
   }, {
     "uid" : "(DE-468)990007503320206447"
   } ],
-  "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "82T6"
   } ],
@@ -2088,7 +2086,7 @@
     "uid" : "(DE-468)9915969659906447"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TypePeriodical" : "Zeitschrift",
+  "TypePeriodical" : [ "Zeitschrift" ],
   "RSWK" : [ {
     "subjectTopicName" : "Art",
     "subjectGenre" : "Periodicals"
@@ -2187,7 +2185,7 @@
     "uid" : "(DE-468)9915970521406447"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TypePeriodical" : "Zeitschrift",
+  "TypePeriodical" : [ "Zeitschrift" ],
   "RSWK" : [ {
     "subjectTopicName" : "Vacuum technology",
     "subjectGenre" : "Periodicals"
@@ -2200,6 +2198,7 @@
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "teilweise Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-WB", "Sonstiges Regelwerk", "keine Angabe", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
+  "TypePeriodical" : [ "Zeitschrift", "keine Angabe", "monatlich" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -2304,7 +2303,6 @@
   }, {
     "uid" : "(DE-468)990004013350206447"
   } ],
-  "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "49M16-D"
   } ],

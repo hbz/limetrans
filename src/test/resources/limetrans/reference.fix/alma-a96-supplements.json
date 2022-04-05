@@ -164,7 +164,7 @@
   }, {
     "uid" : "(DE-A96)802"
   } ],
-  "TypePeriodical" : "Schriftenreihe",
+  "TypePeriodical" : [ "Schriftenreihe" ],
   "Item" : [ {
     "identifier" : "DE-A96",
     "callnumber" : "21 QBB 134"
@@ -406,6 +406,7 @@
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "monatlich", "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -418,7 +419,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Schriftenreihe", "Zeitschrift" ],
+    "type" : [ "Zeitschrift", "Schriftenreihe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2000", "2010", "2011", "2014" ]
   },
@@ -582,8 +583,6 @@
   }, {
     "uid" : "(DE-A96)177135"
   } ],
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "63 ZS 104"
   }, {

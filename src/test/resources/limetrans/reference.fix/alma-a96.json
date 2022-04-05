@@ -3,6 +3,7 @@
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -15,7 +16,7 @@
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "keine Angabe" ],
+    "type" : [ "Zeitschrift" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1965" ]
   },
@@ -113,6 +114,7 @@
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "jährlich", "halbjährlich" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -128,7 +130,7 @@
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "keine Angabe" ],
+    "type" : [ "Zeitschrift" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2007" ]
   },
@@ -258,7 +260,7 @@
     "uid" : "(DE-A96)991004536033306444"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TypePeriodical" : "Zeitschrift",
+  "TypePeriodical" : [ "Zeitschrift" ],
   "TitleOther" : {
     "title" : [ "Olive Wreath" ]
   }
@@ -310,7 +312,7 @@
     "uid" : "(DE-A96)991004536032806444"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TypePeriodical" : "Zeitschrift",
+  "TypePeriodical" : [ "Zeitschrift" ],
   "TitleOther" : {
     "title" : [ "Olio" ]
   }
@@ -611,7 +613,7 @@
   }, {
     "uid" : "(DE-A96)202547"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -876,7 +878,7 @@
   }, {
     "uid" : "(DE-A96)150758"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "FormatCarrier" : [ "Medienkombination" ],
@@ -954,7 +956,7 @@
   }, {
     "uid" : "(DE-A96)231536"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "collection" : "DE-A96",
@@ -1359,6 +1361,7 @@
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "monatlich", "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1371,7 +1374,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Schriftenreihe", "Zeitschrift" ],
+    "type" : [ "Zeitschrift", "Schriftenreihe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2000", "2010", "2011", "2014" ]
   },
@@ -1535,8 +1538,6 @@
   }, {
     "uid" : "(DE-A96)177135"
   } ],
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "Item" : [ {
     "callnumber" : "63 ZS 104"
   }, {
@@ -1640,7 +1641,7 @@
   }, {
     "uid" : "(DE-A96)166528"
   } ],
-  "TypePeriodical" : "Schriftenreihe",
+  "TypePeriodical" : [ "Schriftenreihe" ],
   "TitleOther" : {
     "title" : [ "ARH" ]
   }
@@ -1911,7 +1912,7 @@
   }, {
     "uid" : "(DE-A96)391042"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -2108,7 +2109,7 @@
     "uid" : "(DE-A96)991005820384406444"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TypePeriodical" : "Zeitschrift",
+  "TypePeriodical" : [ "Zeitschrift" ],
   "RSWK" : [ {
     "subjectTopicName" : "Art",
     "subjectGenre" : "Periodicals"
@@ -2207,7 +2208,7 @@
     "uid" : "(DE-A96)991005822976806444"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TypePeriodical" : "Zeitschrift",
+  "TypePeriodical" : [ "Zeitschrift" ],
   "RSWK" : [ {
     "subjectTopicName" : "Vacuum technology",
     "subjectGenre" : "Periodicals"

@@ -3,6 +3,7 @@
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -15,7 +16,7 @@
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "keine Angabe" ],
+    "type" : [ "Zeitschrift" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1965" ]
   },
@@ -173,6 +174,7 @@
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "jährlich", "halbjährlich" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -188,7 +190,7 @@
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "keine Angabe" ],
+    "type" : [ "Zeitschrift" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2007" ]
   },
@@ -364,7 +366,7 @@
     "uid" : "(DE-605)99366597115306441"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TypePeriodical" : "Zeitschrift",
+  "TypePeriodical" : [ "Zeitschrift" ],
   "TitleOther" : {
     "title" : [ "Olive Wreath" ]
   }
@@ -402,7 +404,7 @@
     "uid" : "(DE-605)99366597114806441"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TypePeriodical" : "Zeitschrift",
+  "TypePeriodical" : [ "Zeitschrift" ],
   "TitleOther" : {
     "title" : [ "Olio" ]
   }
@@ -490,7 +492,7 @@
   }, {
     "uid" : "(DE-605)HT013905202"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -4361,7 +4363,7 @@
   }, {
     "uid" : "(DE-605)HT003638156"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -4610,7 +4612,7 @@
   }, {
     "uid" : "(DE-605)HT007313557"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "FormatCarrier" : [ "Medienkombination" ],
@@ -4684,7 +4686,7 @@
   }, {
     "uid" : "(DE-605)HT014469732"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
@@ -5601,7 +5603,7 @@
   }, {
     "uid" : "(DE-605)HT002117916"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -5717,6 +5719,7 @@
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "monatlich", "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -5729,7 +5732,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Schriftenreihe", "Zeitschrift" ],
+    "type" : [ "Zeitschrift", "Schriftenreihe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2000", "2010", "2011", "2014" ]
   },
@@ -5885,8 +5888,6 @@
   }, {
     "uid" : "(DE-605)HT012875221"
   } ],
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift",
   "TitleOther" : {
     "title" : [ "Analytica pro", "EuCheMS newsletter", "Nachrichten für die Karriere", "Nachrichten für die Chemikerkarriere", "Nachrichten aus der Chemiewirtschaft", "Nano", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker" ]
   }
@@ -5979,7 +5980,7 @@
   }, {
     "uid" : "(DE-605)HT000011758"
   } ],
-  "TypePeriodical" : "Schriftenreihe",
+  "TypePeriodical" : [ "Schriftenreihe" ],
   "TitleOther" : {
     "title" : [ "ARH" ]
   }
@@ -6780,7 +6781,7 @@
   }, {
     "uid" : "(DE-605)HT013072137"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -6856,7 +6857,7 @@
   }, {
     "uid" : "(DE-605)HT001332689"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -6952,13 +6953,14 @@
   }, {
     "uid" : "(DE-605)HT014051766"
   } ],
-  "TypePeriodical" : "Schriftenreihe"
+  "TypePeriodical" : [ "Schriftenreihe" ]
 }
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "vierteljährlich", "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "GB"
   }, {
@@ -6970,7 +6972,7 @@
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Schriftenreihe", "Zeitschrift" ],
+    "type" : [ "Zeitschrift", "Schriftenreihe" ],
     "language" : [ "Englisch" ],
     "date" : [ "1936" ]
   },
@@ -7062,15 +7064,14 @@
     "uid" : "(DE-605)990054150240206441"
   }, {
     "uid" : "(DE-605)HT002193206"
-  } ],
-  "TypePeriodical" : "Schriftenreihe",
-  "TypePeriodical" : "Zeitschrift"
+  } ]
 }
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "eingestelltes Erscheinen" ],
   "Country" : [ {
     "countryISO" : "GB"
   } ],
@@ -7152,7 +7153,6 @@
   }, {
     "uid" : "(DE-605)HT007028316"
   } ],
-  "TypePeriodical" : "Zeitschrift",
   "TitleOther" : {
     "title" : [ "Tunnels and tunnelling" ]
   }
@@ -7724,7 +7724,7 @@
     "uid" : "(DE-605)99370677324206441"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TypePeriodical" : "Zeitschrift",
+  "TypePeriodical" : [ "Zeitschrift" ],
   "RSWK" : [ {
     "subjectTopicName" : "Art",
     "subjectGenre" : "Periodicals"
@@ -7807,7 +7807,7 @@
     "uid" : "(DE-605)99370676979406441"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TypePeriodical" : "Zeitschrift",
+  "TypePeriodical" : [ "Zeitschrift" ],
   "RSWK" : [ {
     "subjectTopicName" : "Vacuum technology",
     "subjectGenre" : "Periodicals"
@@ -7820,6 +7820,7 @@
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "teilweise Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-WB", "Sonstiges Regelwerk", "keine Angabe", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
+  "TypePeriodical" : [ "Zeitschrift", "keine Angabe", "monatlich" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -7918,7 +7919,6 @@
   }, {
     "uid" : "(DE-605)HT002187703"
   } ],
-  "TypePeriodical" : "Zeitschrift",
   "TitleOther" : {
     "title" : [ "Monatsberichte der Deutschen Bundesbank / Statistische Beihefte / 4" ]
   }

@@ -4,6 +4,7 @@ include("./maps/alma-format-carrier.fix")
 include("./maps/alma-record-codes.fix")
 include("./maps/alma-taxonomy.fix")
 include("./maps/alma-type-monograph.fix")
+include("./maps/alma-type-periodical.fix")
 
 hbz.limetrans.function.DropLocal()
 
@@ -433,6 +434,7 @@ set_array("@facet_type")
 set_array("FormatCarrier[]")
 set_array("RecordCodes[]")
 set_array("TypeMonograph[]")
+set_array("TypePeriodical[]")
 do list(path: "9640s", "var": "$i")
   if any_equal("$i.F", "030")
     put_vars(record_codes_start: "0")
@@ -479,21 +481,48 @@ do list(path: "9640s", "var": "$i")
       include("./alma/formatCarrier.fix")
       put_vars(format_carrier_start: "10", format_carrier_length: "1")
       include("./alma/formatCarrier.fix")
-    elsif any_equal("$i.F", "051")
-      put_vars(type_monograph_start: "0")
-      include("./alma/typeMonograph.fix")
-      put_vars(type_monograph_start: "1")
-      include("./alma/typeMonograph.fix")
-      put_vars(type_monograph_start: "2")
-      include("./alma/typeMonograph.fix")
-      put_vars(type_monograph_start: "3")
-      include("./alma/typeMonograph.fix")
-      put_vars(type_monograph_start: "4")
-      include("./alma/typeMonograph.fix")
-      put_vars(type_monograph_start: "5")
-      include("./alma/typeMonograph.fix")
-      put_vars(type_monograph_start: "6")
-      include("./alma/typeMonograph.fix")
+    else
+      if any_equal("$i.F", "051")
+        put_vars(type_monograph_start: "0")
+        include("./alma/typeMonograph.fix")
+        put_vars(type_monograph_start: "1")
+        include("./alma/typeMonograph.fix")
+        put_vars(type_monograph_start: "2")
+        include("./alma/typeMonograph.fix")
+        put_vars(type_monograph_start: "3")
+        include("./alma/typeMonograph.fix")
+        put_vars(type_monograph_start: "4")
+        include("./alma/typeMonograph.fix")
+        put_vars(type_monograph_start: "5")
+        include("./alma/typeMonograph.fix")
+        put_vars(type_monograph_start: "6")
+        include("./alma/typeMonograph.fix")
+      elsif any_equal("$i.F", "052")
+        put_vars(type_periodical_start: "0", type_periodical_length: "1")
+        include("./alma/typePeriodical.fix")
+        put_vars(type_periodical_start: "1", type_periodical_length: "2")
+        include("./alma/typePeriodical.fix")
+        put_vars(type_periodical_start: "3", type_periodical_length: "2")
+        include("./alma/typePeriodical.fix")
+        put_vars(type_periodical_start: "5", type_periodical_length: "2")
+        include("./alma/typePeriodical.fix")
+        put_vars(type_periodical_start: "7", type_periodical_length: "1")
+        include("./alma/typePeriodical.fix")
+        put_vars(type_periodical_start: "8", type_periodical_length: "1")
+        include("./alma/typePeriodical.fix")
+        put_vars(type_periodical_start: "9", type_periodical_length: "1")
+        include("./alma/typePeriodical.fix")
+        put_vars(type_periodical_start: "10", type_periodical_length: "1")
+        include("./alma/typePeriodical.fix")
+        put_vars(type_periodical_start: "11", type_periodical_length: "1")
+        include("./alma/typePeriodical.fix")
+        put_vars(type_periodical_start: "12", type_periodical_length: "1")
+        include("./alma/typePeriodical.fix")
+        put_vars(type_periodical_start: "13", type_periodical_length: "1")
+        include("./alma/typePeriodical.fix")
+        put_vars(type_periodical_start: "14", type_periodical_length: "1")
+        include("./alma/typePeriodical.fix")
+      end
     end
   end
 end
@@ -1509,9 +1538,10 @@ end
 do list(path: "@facet_type", "var": "$i")
   replace_all("$i", ".*?(Schriftenreihe|(?i)zeitschrift).*", "$1")
   if any_match("$i", "Schriftenreihe|(?i)zeitschrift")
-    copy_field("$i", "TypePeriodical")
+    copy_field("$i", "TypePeriodical[]")
   end
 end
+uniq("TypePeriodical[]")
 
 set_array("Item[]")
 do list(path: "H52??", "var": "$i")
@@ -1868,7 +1898,7 @@ retain(
   "TranslationEntry[]",
   "TypeMedia",
   "TypeMonograph[]",
-  "TypePeriodical",
+  "TypePeriodical[]",
   "VolumeDesignation",
   "collection",
   "dc",
