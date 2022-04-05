@@ -1,5 +1,6 @@
 include("./maps.fix")
 include("./maps/alma-branches.fix")
+include("./maps/alma-extended-type.fix")
 include("./maps/alma-format-carrier.fix")
 include("./maps/alma-record-codes.fix")
 include("./maps/alma-taxonomy.fix")
@@ -431,6 +432,8 @@ end
 uniq("CarrierType[]")
 
 set_array("@facet_type")
+set_array("ExtendedFormat[]")
+set_array("ExtendedType[]")
 set_array("FormatCarrier[]")
 set_array("RecordCodes[]")
 set_array("TypeMonograph[]")
@@ -526,10 +529,39 @@ do list(path: "9640s", "var": "$i")
     end
   end
 end
+
+set_array("introx.music[]")
+do list(path: "348??", "var": "$i")
+  if any_equal("$i.2", "gnd-music")
+    do list(path: "$i.a", "var": "$j")
+      copy_field("$j", "ExtendedType[]")
+      lookup("$j", "extended-type-music", delete: "true")
+      copy_field("$j", "introx.music[]")
+    end
+  end
+end
+do list(path: "655?7", "var": "$i")
+  if any_equal("$i.2", "gnd-content")
+    do list(path: "$i.a", "var": "$j")
+      copy_field("$j", "ExtendedType[]")
+      lookup("$j", "extended-type-content", delete: "true")
+      copy_field("$j", "@facet_type")
+    end
+  elsif any_equal("$i.2", "gnd-carrier")
+    do list(path: "$i.a", "var": "$j")
+      copy_field("$j", "ExtendedFormat[]")
+      lookup("$j", "extended-type-carrier", delete: "true")
+      copy_field("$j", "@facet_format")
+    end
+  end
+end
 uniq("@facet_format")
+uniq("ExtendedFormat[]")
+uniq("ExtendedType[]")
 uniq("FormatCarrier[]")
 uniq("RecordCodes[]")
 uniq("TypeMonograph[]")
+uniq("introx.music[]")
 
 if any_match("@type__008Pos28", "(?:B|CF|CR|M|VM)#[acfilmosz]")
   add_field("@facet_type", "Amtliche Druckschrift")
@@ -1848,6 +1880,8 @@ retain(
 # "DescriptionOfFormerEditionsOrVolumes[]",
 # "DescriptionOfRelatedEditions[]",
   "Edition",
+  "ExtendedFormat[]",
+  "ExtendedType[]",
   "Extent",
   "FormatCarrier[]",
   "HoldingsStatement[]",

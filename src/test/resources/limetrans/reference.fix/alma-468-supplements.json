@@ -2068,6 +2068,7 @@
   } ]
 }
 {
+  "ExtendedType" : [ "Datensammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
   "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Loseblattausgabe" ],
@@ -2300,6 +2301,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "ExtendedType" : [ "Zeitschrift" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "vierteljährlich", "Schriftenreihe" ],
@@ -2531,6 +2533,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "ExtendedType" : [ "Biografie" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Biographie" ],
@@ -2649,5 +2652,191 @@
     "identifier" : "DE-468",
     "callnumber" : "KGH1023",
     "shelfmark" : "21"
+  } ]
+}
+{
+  "ContentType" : [ "Noten" ],
+  "CarrierType" : [ "Band" ],
+  "ExtendedType" : [ "Partitur" ],
+  "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk", "Musikalia" ],
+  "introx" : {
+    "music" : [ "Partitur" ],
+    "access" : [ "local" ],
+    "branch" : [ "Campus Grifflenberg" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ]
+  },
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT002102871"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Heinrich Martens" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie", "Musikalia" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1958" ]
+  },
+  "SubjectRPB" : [ {
+    "subject" : "550"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "990007877550206441",
+    "identifierMMSIZ" : "990003837050206447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990007877550206441",
+    "identifierForTheRecord" : "(DE-605)HT002102871"
+  },
+  "Language" : [ {
+    "languageSource" : "zxx"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Das>> Menuett"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Wolfenbüttel" ],
+    "name" : [ "Möseler Verlag" ],
+    "chronology" : [ "[1958]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[1958]" ]
+  },
+  "Extent" : {
+    "extent" : "1 Partitur (40 Seiten)"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Musikalische Formen in historischen Reihen" ]
+  } ],
+  "Description" : {
+    "description" : [ "Ex. 21 = KHF 1417: Sammelband" ]
+  },
+  "PersonContributor" : [ {
+    "personName" : "Martens, Heinrich",
+    "personBio" : "1876-1964",
+    "personIdentifier" : [ "(DE-588)119352354" ],
+    "identifierGND" : [ "119352354" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "www.folkwang-uni.de/fileadmin/medien/Downloads/Bibliothek/Inhaltsverzeichnisse/HT002102871.pdf",
+    "nonpublicnote" : "Inhaltsverzeichnis",
+    "format" : "application/pdf"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-468",
+    "subject" : "KHF"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990007877550206441"
+  }, {
+    "uid" : "(DE-605)HT002102871"
+  }, {
+    "uid" : "(DE-468)990003837050206447"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-468",
+    "callnumber" : "KHF2528",
+    "shelfmark" : "21"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "KHF1417",
+    "shelfmark" : "21"
+  } ]
+}
+{
+  "ExtendedFormat" : [ "CD-ROM" ],
+  "FormatCarrier" : [ "Optische Speicherplatte(n)" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierGBV" : [ {
+    "identifierGBV" : "478136935"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT014272197"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Hrsg.: ASUE, Arbeitsgemeinschaft für sparsamen und umweltfreundlichen Energieverbrauch e.V" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2004" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Medienstelle" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "taxonomy" : [ "Umwelttechnik, Energie- und Kerntechnik", "Elektrotechnik" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "990134017940206441",
+    "identifierMMSIZ" : "990008943310206447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990134017940206441",
+    "identifierForTheRecord" : "(DE-605)HT014272197"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Arbeitsgemeinschaft für Sparsamen und Umweltfreundlichen Energieverbrauch",
+    "corporateBodyIdentifier" : [ "(DE-588)2056214-7" ],
+    "identifierGND" : [ "2056214-7" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Brennstoffzellen"
+  } ],
+  "Edition" : {
+    "edition" : [ "Stand: 1. Dezember 2004" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Kaiserslautern" ],
+    "name" : [ "Verl. Rationeller Erdgaseinsatz" ],
+    "chronology" : [ "2004" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2004" ]
+  },
+  "Extent" : {
+    "extent" : "1 CD-ROM ; 12 cm"
+  },
+  "SubjectHeadings" : [ {
+    "subject" : "Brennstoffzelle"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-468",
+    "subject" : "ZPO"
+  }, {
+    "source" : "DE-468",
+    "subject" : "XZM"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990134017940206441"
+  }, {
+    "uid" : "(DE-605)HT014272197"
+  }, {
+    "uid" : "(DE-468)990008943310206447"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "Item" : [ {
+    "identifier" : "DE-468",
+    "callnumber" : "ZPO2318",
+    "shelfmark" : "07"
   } ]
 }

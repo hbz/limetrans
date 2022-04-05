@@ -278,3 +278,26 @@
   "Item.callnumber" : [ "KGH1023" ],
   "introx.branch" : [ "Campus Grifflenberg" ]
 }
+{
+  "id" : "HT002102871",
+  "IdentifierAlma" : {
+    "identifierMMS" : "990007877550206441",
+    "identifierMMSIZ" : "990003837050206447"
+  },
+  "SubjectGHBLocal.subject" : [ "KHF" ],
+  "introx.taxonomy" : [ "Musikwissenschaft" ],
+  "Description.description" : [ "Ex. 21 = KHF 1417: Sammelband" ],
+  "Item.callnumber" : [ "KHF2528", "KHF1417" ],
+  "introx.branch" : [ "Campus Grifflenberg" ]
+}
+{
+  "id" : "HT014272197",
+  "IdentifierAlma" : {
+    "identifierMMS" : "990134017940206441",
+    "identifierMMSIZ" : "990008943310206447"
+  },
+  "SubjectGHBLocal.subject" : [ "ZPO", "XZM" ],
+  "introx.taxonomy" : [ "Umwelttechnik, Energie- und Kerntechnik", "Elektrotechnik" ],
+  "Item.callnumber" : [ "ZPO2318" ],
+  "introx.branch" : [ "Medienstelle" ]
+}

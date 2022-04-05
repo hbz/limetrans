@@ -7030,3 +7030,123 @@
     "uid" : "(DE-605)HT019901949"
   } ]
 }
+{
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : "Heinrich Martens"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Musikalia", "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1958" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990007877550206441",
+    "identifierMMSIZ" : "990007877550206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990007877550206441",
+    "identifierForTheRecord" : "(DE-605)HT002102871"
+  },
+  "Language" : [ {
+    "languageSource" : "zxx"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Das>> Menuett"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Wolfenbüttel" ],
+    "name" : [ "Möseler Verlag" ],
+    "chronology" : [ "[1958]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[1958]" ]
+  },
+  "Extent" : {
+    "extent" : "1 Partitur (40 Seiten)"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Musikalische Formen in historischen Reihen" ]
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Martens, Heinrich",
+    "personBio" : "1876-1964",
+    "personIdentifier" : [ "(DE-588)119352354" ],
+    "identifierGND" : [ "119352354" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "www.folkwang-uni.de/fileadmin/medien/Downloads/Bibliothek/Inhaltsverzeichnisse/HT002102871.pdf",
+    "nonpublicnote" : "Inhaltsverzeichnis"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990007877550206441"
+  }, {
+    "uid" : "(DE-605)HT002102871"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : "Hrsg.: ASUE, Arbeitsgemeinschaft für sparsamen und umweltfreundlichen Energieverbrauch e.V"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2004" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990134017940206441",
+    "identifierMMSIZ" : "990134017940206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990134017940206441",
+    "identifierForTheRecord" : "(DE-605)HT014272197"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Arbeitsgemeinschaft für Sparsamen und Umweltfreundlichen Energieverbrauch",
+    "corporateBodyIdentifier" : [ "(DE-588)2056214-7" ],
+    "identifierGND" : [ "2056214-7" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Brennstoffzellen"
+  } ],
+  "Edition" : {
+    "edition" : [ "Stand: 1. Dezember 2004" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Kaiserslautern" ],
+    "name" : [ "Verl. Rationeller Erdgaseinsatz" ],
+    "chronology" : [ "2004" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2004" ]
+  },
+  "Extent" : {
+    "extent" : "1 CD-ROM ; 12 cm"
+  },
+  "SubjectHeadings" : [ {
+    "subject" : "Brennstoffzelle"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990134017940206441"
+  }, {
+    "uid" : "(DE-605)HT014272197"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}

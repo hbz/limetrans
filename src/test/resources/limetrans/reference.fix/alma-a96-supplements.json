@@ -404,6 +404,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "ExtendedType" : [ "Zeitschrift" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "monatlich", "Schriftenreihe" ],
@@ -1219,5 +1220,95 @@
     "subjectTopicName" : "Application software"
   }, {
     "subjectTopicName" : "Java (Computer program language)"
+  } ]
+}
+{
+  "ExtendedFormat" : [ "CD-ROM" ],
+  "FormatCarrier" : [ "Optische Speicherplatte(n)" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierGBV" : [ {
+    "identifierGBV" : "478136935"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT014272197"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Hrsg.: ASUE, Arbeitsgemeinschaft für sparsamen und umweltfreundlichen Energieverbrauch e.V" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2004" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Eupener Straße" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "taxonomy" : [ "Elektrotechnik" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990134017940206441",
+    "identifierMMSIZ" : "991002170689706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990134017940206441",
+    "identifierForTheRecord" : "(DE-605)HT014272197"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Arbeitsgemeinschaft für Sparsamen und Umweltfreundlichen Energieverbrauch",
+    "corporateBodyIdentifier" : [ "(DE-588)2056214-7" ],
+    "identifierGND" : [ "2056214-7" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Brennstoffzellen"
+  } ],
+  "Edition" : {
+    "edition" : [ "Stand: 1. Dezember 2004" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Kaiserslautern" ],
+    "name" : [ "Verl. Rationeller Erdgaseinsatz" ],
+    "chronology" : [ "2004" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2004" ]
+  },
+  "Extent" : {
+    "extent" : "1 CD-ROM ; 12 cm"
+  },
+  "SubjectHeadings" : [ {
+    "subject" : "Brennstoffzelle"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "XZM"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990134017940206441"
+  }, {
+    "uid" : "(DE-605)HT014272197"
+  }, {
+    "uid" : "(DE-A96)991002170689706444"
+  }, {
+    "uid" : "(DE-A96)207934"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "Item" : [ {
+    "callnumber" : "21 XZM 20-CD"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "21 XZM 20-CD",
+    "shelfmark" : "EUP_Frei"
   } ]
 }
