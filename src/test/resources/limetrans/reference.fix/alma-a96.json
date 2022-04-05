@@ -527,6 +527,7 @@
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-DNB", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie", "Sonstiges" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -542,7 +543,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Nachschlagewerk", "Schriftenreihe" ],
+    "type" : [ "Monographie", "Nachschlagewerk", "Schriftenreihe" ],
     "language" : [ "Englisch" ],
     "date" : [ "2004" ]
   },
@@ -796,6 +797,7 @@
 {
   "FormatCarrier" : [ "Druckschrift" ],
   "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -811,7 +813,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Schriftenreihe" ],
+    "type" : [ "Monographie", "Schriftenreihe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1997" ]
   },
@@ -879,6 +881,7 @@
 {
   "FormatCarrier" : [ "Medienkombination" ],
   "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "RSWK", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -891,7 +894,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Schriftenreihe" ],
+    "type" : [ "Monographie", "Schriftenreihe" ],
     "language" : [ "Englisch" ],
     "date" : [ "2002" ]
   },
@@ -1220,6 +1223,7 @@
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "RSWK", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "CH"
   } ],
@@ -1547,6 +1551,7 @@
 {
   "FormatCarrier" : [ "Druckschrift" ],
   "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Loseblattausgabe" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1562,7 +1567,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Schriftenreihe", "Sonstiges" ],
+    "type" : [ "Monographie", "Sonstiges", "Schriftenreihe" ],
     "language" : [ "Deutsch" ]
   },
   "introx" : {
@@ -1811,6 +1816,7 @@
 {
   "FormatCarrier" : [ "Druckschrift" ],
   "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1823,7 +1829,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Nachschlagewerk", "Schriftenreihe" ],
+    "type" : [ "Monographie", "Nachschlagewerk", "Schriftenreihe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2003" ]
   },
@@ -1912,6 +1918,7 @@
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE-BW"
   } ],
