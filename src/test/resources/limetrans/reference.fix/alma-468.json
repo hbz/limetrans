@@ -114,6 +114,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "TypeMediaSpecialPreservation" : [ "Mode of access: internet via World Wide Web.", "System requirements: Adobe Acrobat or other PDF reader (latest version recommended), Internet Explorer or other browser (latest version recommended)." ],
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : [ "Kym Anderson, Michael Bosworth" ]
@@ -644,6 +645,8 @@
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
+  "TypeMediaSpecial" : [ "Online-Ressource" ],
+  "TypeMediaSpecialPreservation" : [ "Internet-Anschluss; Acrobat-Reader" ],
   "Country" : [ {
     "countryISO" : "NL"
   } ],
@@ -977,6 +980,7 @@
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "monatlich", "Schriftenreihe" ],
+  "TypeMediaSpecialPreservation" : [ "Archivierung/Langzeitarchivierung gewährleistet" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -2017,6 +2021,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "TypeMediaSpecialPreservation" : [ "Mode of access: World Wide Web." ],
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],

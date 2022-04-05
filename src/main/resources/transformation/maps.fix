@@ -176,3 +176,14 @@ put_map("carrier-type-facet-code",
   "zu": "Sonstiges",
   "zz": "Sonstiges"
 )
+
+put_map("type-media-special",
+  "Bildliche Darstellung":                  "Bild",
+  "Bildtonträger":                          "Film, Dia, Video",
+  "Elektronische Ressource":                "Elektronische Ressource",
+  "Elektronische Ressource im Fernzugriff": "Online-Ressource",
+  "Medienkombination":                      "Gedruckte Ressource",
+  "Mikroform":                              "Mikroform",
+  "Spiel":                                  "Spiel",
+  "Tonträger":                              "Audio"
+)

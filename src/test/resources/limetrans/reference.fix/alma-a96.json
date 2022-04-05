@@ -117,6 +117,7 @@
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "jährlich", "halbjährlich" ],
+  "TypeMediaSpecialPreservation" : [ "Archivierung/Langzeitarchivierung gewährleistet" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -620,6 +621,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "TypeMediaSpecialPreservation" : [ "Mode of access: internet via World Wide Web.", "System requirements: Adobe Acrobat or other PDF reader (latest version recommended), Internet Explorer or other browser (latest version recommended)." ],
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : [ "Kym Anderson, Michael Bosworth" ]
@@ -1365,6 +1367,7 @@
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "monatlich", "Schriftenreihe" ],
+  "TypeMediaSpecialPreservation" : [ "Archivierung/Langzeitarchivierung gewährleistet" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1924,6 +1927,7 @@
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
+  "TypeMediaSpecialPreservation" : [ "PC / eReader: Für den Download ist die Installation des kostenlosen Adobe Digital Editions Readers notwendig", "Smartphone / Tablet: Für den Download ist die Installation des kostenlosen Bluefire Readers notwendig" ],
   "Country" : [ {
     "countryISO" : "DE-BW"
   } ],
@@ -2042,6 +2046,7 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "TypeMediaSpecialPreservation" : [ "Mode of access: World Wide Web." ],
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],

@@ -408,6 +408,7 @@
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "monatlich", "Schriftenreihe" ],
+  "TypeMediaSpecialPreservation" : [ "Archivierung/Langzeitarchivierung gewährleistet" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1227,6 +1228,7 @@
   "FormatCarrier" : [ "Optische Speicherplatte(n)" ],
   "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
+  "TypeMediaSpecial" : [ "Audio" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -1241,7 +1243,7 @@
     "creatorStatement" : [ "Hrsg.: ASUE, Arbeitsgemeinschaft für sparsamen und umweltfreundlichen Energieverbrauch e.V" ]
   },
   "dc" : {
-    "format" : [ "Elektronische Ressource" ],
+    "format" : [ "Elektronische Ressource", "Audio" ],
     "type" : [ "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2004" ]
@@ -1249,7 +1251,7 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Eupener Straße" ],
-    "carrier" : [ "Elektronische Ressource" ],
+    "carrier" : [ "Elektronische Ressource", "Audio" ],
     "taxonomy" : [ "Elektrotechnik" ]
   },
   "IdentifierAlma" : {
