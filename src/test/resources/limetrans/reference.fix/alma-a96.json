@@ -68,6 +68,9 @@
     "name" : [ "Mühlau [in Komm.]" ],
     "chronology" : [ "1965-" ]
   } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Kiel"
+  } ],
   "DateProper" : {
     "date" : [ "1965-" ]
   },
@@ -183,6 +186,11 @@
     "place" : [ "Dortmund", "Berlin", "Dresden" ],
     "name" : [ "Bundesanst. für Arbeitsschutz und Arbeitsmedizin" ],
     "chronology" : [ "2007-" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Dortmund",
+    "printingPlace" : "Berlin",
+    "printingPlace" : "Dresden"
   } ],
   "DateProper" : {
     "date" : [ "2007-" ]
@@ -607,6 +615,9 @@
     "name" : [ "Wiley-VCH" ],
     "chronology" : [ "2004-" ]
   } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Weinheim"
+  } ],
   "DateProper" : {
     "date" : [ "2004-" ]
   },
@@ -677,6 +688,9 @@
     "place" : [ "Adelaide" ],
     "name" : [ "University of Adelaide Press" ],
     "chronology" : [ "2009" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Adelaide"
   } ],
   "DateProper" : {
     "date" : [ "2009" ]
@@ -775,6 +789,9 @@
     "name" : [ "Birkhäuser" ],
     "chronology" : [ "2014" ]
   } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Basel, Schweiz"
+  } ],
   "DateProper" : {
     "date" : [ "2014" ]
   },
@@ -869,6 +886,9 @@
     "name" : [ "Saur" ],
     "chronology" : [ "1997-" ]
   } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "München [u.a.]"
+  } ],
   "DateProper" : {
     "date" : [ "1997-" ]
   },
@@ -946,6 +966,10 @@
     "place" : [ "Newbury, Berkshire", "[Ismaning]" ],
     "name" : [ "Express Publ", "Hueber" ],
     "chronology" : [ "2002-" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Newbury, Berkshire",
+    "printingPlace" : "[Ismaning]"
   } ],
   "DateProper" : {
     "date" : [ "2002-" ]
@@ -1319,6 +1343,9 @@
     "name" : [ "Birkhäuser" ],
     "chronology" : [ "[2015]" ]
   } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Basel"
+  } ],
   "DateProper" : {
     "date" : [ "[2015]" ]
   },
@@ -1476,6 +1503,13 @@
     "place" : [ "Berlin" ],
     "name" : [ "<<de>> Gruyter" ],
     "chronology" : [ "2011-2014" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Weinheim"
+  }, {
+    "printingPlace" : "Frankfurt, M."
+  }, {
+    "printingPlace" : "Berlin"
   } ],
   "DateProper" : {
     "date" : [ "2000-", "2000-2010", "teils", "2011-2014" ]
@@ -1652,6 +1686,9 @@
     "place" : [ "Neu-Isenburg" ],
     "name" : [ "Zeittechnik-Verl" ]
   } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Neu-Isenburg"
+  } ],
   "Extent" : {
     "extent" : "Losebl.-Ausg."
   },
@@ -1737,6 +1774,9 @@
     "place" : [ "Berlin, Heidelberg" ],
     "name" : [ "Springer Berlin Heidelberg", "Imprint: Springer Spektrum" ],
     "chronology" : [ "2020" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Berlin, Heidelberg"
   } ],
   "DateProper" : {
     "date" : [ "2020" ]
@@ -1918,6 +1958,9 @@
     "name" : [ "Hogrefe, Verl. für Psychologie" ],
     "chronology" : [ "2003-" ]
   } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Göttingen [u.a.]"
+  } ],
   "DateProper" : {
     "date" : [ "2003-" ]
   },
@@ -2027,6 +2070,9 @@
     "place" : [ "Heidelberg" ],
     "name" : [ "dpunkt.verlag" ],
     "chronology" : [ "2019" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Heidelberg"
   } ],
   "DateProper" : {
     "date" : [ "2019" ]

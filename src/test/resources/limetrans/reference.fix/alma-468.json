@@ -158,6 +158,9 @@
     "name" : [ "University of Adelaide Press" ],
     "chronology" : [ "2009" ]
   } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Adelaide"
+  } ],
   "DateProper" : {
     "date" : [ "2009" ]
   },
@@ -250,6 +253,9 @@
     "place" : [ "Basel, Schweiz" ],
     "name" : [ "Birkhäuser" ],
     "chronology" : [ "2014" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Basel, Schweiz"
   } ],
   "DateProper" : {
     "date" : [ "2014" ]
@@ -344,6 +350,9 @@
     "place" : [ "München [u.a.]" ],
     "name" : [ "Saur" ],
     "chronology" : [ "1997-" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "München [u.a.]"
   } ],
   "DateProper" : {
     "date" : [ "1997-" ]
@@ -612,6 +621,11 @@
     "name" : [ "Gerontological Society of America" ],
     "chronology" : [ "-2008" ]
   } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Cary, NC"
+  }, {
+    "printingPlace" : "Washington, DC"
+  } ],
   "DateProper" : {
     "date" : [ "1995-", "-2008" ]
   },
@@ -710,6 +724,9 @@
     "place" : [ "Amsterdam [u.a.]" ],
     "name" : [ "Elsevier" ],
     "chronology" : [ "2003" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Amsterdam [u.a.]"
   } ],
   "DateProper" : {
     "date" : [ "2003" ]
@@ -929,6 +946,9 @@
     "name" : [ "Birkhäuser" ],
     "chronology" : [ "[2015]" ]
   } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Basel"
+  } ],
   "DateProper" : {
     "date" : [ "[2015]" ]
   },
@@ -1079,6 +1099,13 @@
     "place" : [ "Berlin" ],
     "name" : [ "<<de>> Gruyter" ],
     "chronology" : [ "2011-2014" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Weinheim"
+  }, {
+    "printingPlace" : "Frankfurt, M."
+  }, {
+    "printingPlace" : "Berlin"
   } ],
   "DateProper" : {
     "date" : [ "2000-", "2000-2010", "teils", "2011-2014" ]
@@ -1267,6 +1294,9 @@
     "name" : [ "ProQuest LLC" ],
     "chronology" : [ "2005" ]
   } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "[Place of publication not identified]"
+  } ],
   "DateProper" : {
     "date" : [ "2005" ]
   },
@@ -1353,6 +1383,9 @@
     "name" : [ "Springer Berlin Heidelberg", "Imprint: Springer Spektrum" ],
     "chronology" : [ "2020" ]
   } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Berlin, Heidelberg"
+  } ],
   "DateProper" : {
     "date" : [ "2020" ]
   },
@@ -1435,6 +1468,9 @@
     "place" : [ "Darmstadt" ],
     "name" : [ "WBG (Wissenschaftliche Buchgesellschaft)" ],
     "chronology" : [ "[2010]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Darmstadt"
   } ],
   "DateProper" : {
     "date" : [ "[2010]" ]
@@ -1540,6 +1576,9 @@
     "name" : [ "Metzler" ],
     "chronology" : [ "2001-" ]
   } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Stuttgart [u.a.]"
+  } ],
   "DateProper" : {
     "date" : [ "2001-" ]
   },
@@ -1625,6 +1664,9 @@
     "place" : [ "München [u.a.]" ],
     "name" : [ "Artemis-Verl" ],
     "chronology" : [ "1980-1999" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "München [u.a.]"
   } ],
   "DateProper" : {
     "date" : [ "1980-1999" ]
@@ -1717,6 +1759,9 @@
     "place" : [ "Göttingen [u.a.]" ],
     "name" : [ "Hogrefe, Verl. für Psychologie" ],
     "chronology" : [ "2003-" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Göttingen [u.a.]"
   } ],
   "DateProper" : {
     "date" : [ "2003-" ]
@@ -1824,6 +1869,12 @@
   }, {
     "place" : [ "Oxford [u.a.]" ],
     "name" : [ "Blackwell Publ" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Oxford",
+    "printingPlace" : "Malden"
+  }, {
+    "printingPlace" : "Oxford [u.a.]"
   } ],
   "DateProper" : {
     "date" : [ "1936-" ]
@@ -1955,6 +2006,9 @@
     "place" : [ "London" ],
     "name" : [ "Morgan-Grampian Ltd" ]
   } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "London"
+  } ],
   "DateProper" : {
     "date" : [ "1969-1997" ]
   },
@@ -2044,6 +2098,9 @@
     "place" : [ "Madrid" ],
     "name" : [ "punto de lectura" ],
     "chronology" : [ "[abril 2003]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Madrid"
   } ],
   "DateProper" : {
     "date" : [ "[abril 2003]" ]
@@ -2333,6 +2390,9 @@
     "place" : [ "Frankfurt, M" ],
     "name" : [ "Bundesbank" ],
     "chronology" : [ "1968-1992" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Frankfurt, M."
   } ],
   "DateProper" : {
     "date" : [ "1968-1992" ]
