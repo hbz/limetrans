@@ -8,6 +8,9 @@
   "Country" : [ {
     "countryISO" : "DE"
   } ],
+  "IdentifierDNB" : [ {
+    "identifierDNB" : "2241653-5"
+  } ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT014786137"
   } ],
@@ -121,8 +124,14 @@
   "Country" : [ {
     "countryISO" : "DE"
   } ],
+  "IdentifierDNB" : [ {
+    "identifierDNB" : "2614647-2"
+  } ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT016868512"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "734085474"
   } ],
   "collection" : "DE-605",
   "TitleAddendum" : {
@@ -539,6 +548,9 @@
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT013905202"
   } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "605186882"
+  } ],
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "genomics, transcriptomics, proteomics"
@@ -810,6 +822,9 @@
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT007313557"
   } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "611286076"
+  } ],
   "collection" : "DE-605",
   "TitleAddendum" : {
     "title" : "ein Handbuch zur Einführung in die fachliche Informationsarbeit"
@@ -893,6 +908,9 @@
   } ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT014469732"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "179265376"
   } ],
   "collection" : "DE-605",
   "CreatorStatement" : {
@@ -1236,6 +1254,9 @@
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT019344670"
   } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "992517041"
+  } ],
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : [ "Doris Haas-Arndt" ]
@@ -1371,8 +1392,14 @@
   "Country" : [ {
     "countryISO" : "DE"
   } ],
+  "IdentifierDNB" : [ {
+    "identifierDNB" : "2000386-9"
+  } ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT012875221"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "313795126"
   } ],
   "collection" : "DE-605",
   "TitleAddendum" : {
@@ -1565,6 +1592,9 @@
   } ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT000011758"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "1067353326"
   } ],
   "collection" : "DE-605",
   "TitleAddendum" : {
@@ -1831,6 +1861,9 @@
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT014051766"
   } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "63753973"
+  } ],
   "collection" : "DE-605",
   "CreatorStatement" : {
     "creatorStatement" : [ "hrsg. von Niels Birbaumer .." ]
@@ -2047,6 +2080,9 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "TypeMediaSpecialPreservation" : [ "Mode of access: World Wide Web." ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "60617245"
+  } ],
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
@@ -2129,6 +2165,9 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "22694482"
+  } ],
   "collection" : "DE-605",
   "dc" : {
     "format" : [ "Online-Ressource", "Gedruckte Ressource", "Elektronische Ressource" ],
