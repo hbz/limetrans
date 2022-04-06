@@ -7551,6 +7551,9 @@
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : "9783864906114"
   } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : "ZDB-30-PQE"
+  } ],
   "SubjectHeadings" : [ {
     "subject" : "Softwareentwicklung"
   }, {
@@ -7649,6 +7652,9 @@
     "publicnote" : "Springer Technik, Informatik 2020 (ZDB-2-STI)",
     "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_NETWORK/openurl?u.ignore_date_coverage=true&portfolio_pid=53736556350006441&Force_direct=true",
     "isInternalLinkFor" : "DE-605"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : "ZDB-2-STI"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-605",
@@ -7861,6 +7867,9 @@
     "title" : "Jahrbuch Grundschulforschung",
     "volume" : "24",
     "designation" : "(DE-605)HT017955487"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : "ZDB-22-CAN"
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Grundschulpädagogik"
@@ -8417,6 +8426,141 @@
     "uid" : "(DE-605)990134017940206441"
   }, {
     "uid" : "(DE-605)HT014272197"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "ExtendedType" : [ "Zeitschrift" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "vierteljährlich" ],
+  "Country" : [ {
+    "countryISO" : "IT"
+  }, {
+    "countryISO" : "DXDE"
+  }, {
+    "countryISO" : "CH"
+  } ],
+  "IdentifierDNB" : [ {
+    "identifierDNB" : "2206618-4"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT014526528"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "1071487017"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "publ. by the Museum Rietberg Zürich in coop. with the Arthur M. Sackler Gallery, Smithsonian Institution, Washington, DC" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1925" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990139701130206441",
+    "identifierMMSIZ" : "990139701130206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990139701130206441",
+    "identifierForTheRecord" : "(DE-605)HT014526528"
+  },
+  "DateFirst" : {
+    "date" : "1925"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2206618-4"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Institute of Fine Arts",
+    "corporateBodyIdentifier" : [ "(DE-588)1004008-0" ],
+    "identifierGND" : [ "1004008-0" ]
+  }, {
+    "corporateBodyName" : "Museum Rietberg",
+    "corporateBodyIdentifier" : [ "(DE-588)2019229-0" ],
+    "identifierGND" : [ "2019229-0" ]
+  }, {
+    "corporateBodyName" : "Arthur M. Sackler Gallery",
+    "corporateBodyIdentifier" : [ "(DE-588)672126-6" ],
+    "identifierGND" : [ "672126-6" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Artibus Asiae"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Zürich" ],
+    "name" : [ "Museum" ],
+    "chronology" : [ "1925-" ]
+  }, {
+    "place" : [ "Hellerau-Dresden" ],
+    "name" : [ "Avalun" ]
+  }, {
+    "place" : [ "Basel" ],
+    "name" : [ "Brauss-Riggenbach" ]
+  }, {
+    "place" : [ "Ascona" ],
+    "name" : [ "Artibus Asiae" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1925-" ]
+  },
+  "Extent" : {
+    "extent" : "Online-Ressource"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "1.1925 -"
+  },
+  "Description" : {
+    "description" : [ "Beteil. Körp. anfangs: Institute of Fine Arts, New York University" ]
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "publisherStatement" : "Zürich : Museum, 1925-",
+    "relationshipInformation" : "Druckausg.",
+    "title" : "Artibus Asiae",
+    "controlNumber" : "(DE-605)HT005070185",
+    "identifierForLinkingEntry" : "HT005070185"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://www.jstor.org/journal/artibusasiae",
+    "nonpublicnote" : "Digitalisierung; 1.1925 - : jeweils die letzten 6 Jahre nicht verfügbar"
+  }, {
+    "uri" : "http://www.bibliothek.uni-regensburg.de/ezeit/?2206618",
+    "nonpublicnote" : "EZB"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : "ZDB-1-JA3"
+  }, {
+    "classifier" : "ZDB-1-JMC"
+  }, {
+    "classifier" : "ZDB-1-JP1"
+  }, {
+    "classifier" : "ZDB-1-JAS"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Asien"
+  }, {
+    "subject" : "Kunst"
+  }, {
+    "subject" : "Zeitschrift"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990139701130206441"
+  }, {
+    "uid" : "(DE-605)HT014526528"
   } ],
   "TypeMedia" : "Elektronische Ressource"
 }

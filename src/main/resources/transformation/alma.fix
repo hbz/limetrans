@@ -1583,6 +1583,12 @@ do list(path: "POR  ", "var": "$i")
 end
 hbz.limetrans.function.Dedup("OnlineAccess[].*.uri")
 
+set_array("ClassifierDigitization[]")
+do list(path: "962??.e", "var": "$i")
+  add_field("ClassifierDigitization[].$append.__dummy__", "")
+  copy_field("$i", "ClassifierDigitization[].$last.classifier")
+end
+
 set_array("SubjectHeadings[]")
 do list(path: "982  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
@@ -1923,6 +1929,7 @@ retain(
   "AdditionalPhysicalFormEntry[]",
   "CarrierType[]",
   "ChronologyAndEnumeration",
+  "ClassifierDigitization[]",
   "Conference",
   "ConstituentUnitEntry[]",
   "ContentType[]",

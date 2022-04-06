@@ -7150,3 +7150,105 @@
   } ],
   "TypeMedia" : "Elektronische Ressource"
 }
+{
+  "TypePeriodical" : "Zeitschrift",
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : "publ. by the Museum Rietberg Zürich in coop. with the Arthur M. Sackler Gallery, Smithsonian Institution, Washington, DC"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1925" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990139701130206441",
+    "identifierMMSIZ" : "990139701130206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990139701130206441",
+    "identifierForTheRecord" : "(DE-605)HT014526528"
+  },
+  "DateFirst" : {
+    "date" : "1925"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2206618-4"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Institute of Fine Arts",
+    "corporateBodyIdentifier" : [ "(DE-588)1004008-0" ],
+    "identifierGND" : [ "1004008-0" ]
+  }, {
+    "corporateBodyName" : "Museum Rietberg",
+    "corporateBodyIdentifier" : [ "(DE-588)2019229-0" ],
+    "identifierGND" : [ "2019229-0" ]
+  }, {
+    "corporateBodyName" : "Arthur M. Sackler Gallery",
+    "corporateBodyIdentifier" : [ "(DE-588)672126-6" ],
+    "identifierGND" : [ "672126-6" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Artibus Asiae"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Zürich" ],
+    "name" : [ "Museum" ],
+    "chronology" : [ "1925-" ]
+  }, {
+    "place" : [ "Hellerau-Dresden" ],
+    "name" : [ "Avalun" ]
+  }, {
+    "place" : [ "Basel" ],
+    "name" : [ "Brauss-Riggenbach" ]
+  }, {
+    "place" : [ "Ascona" ],
+    "name" : [ "Artibus Asiae" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1925-" ]
+  },
+  "Extent" : {
+    "extent" : "Online-Ressource"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "1.1925 -"
+  },
+  "Description" : {
+    "description" : [ "Beteil. Körp. anfangs: Institute of Fine Arts, New York University" ]
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Druckausg.",
+    "description" : "Artibus Asiae"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://www.jstor.org/journal/artibusasiae",
+    "nonpublicnote" : "Digitalisierung; 1.1925 - : jeweils die letzten 6 Jahre nicht verfügbar"
+  }, {
+    "uri" : "http://www.bibliothek.uni-regensburg.de/ezeit/?2206618",
+    "nonpublicnote" : "EZB"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Asien"
+  }, {
+    "subject" : "Kunst"
+  }, {
+    "subject" : "Zeitschrift"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990139701130206441"
+  }, {
+    "uid" : "(DE-605)HT014526528"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
