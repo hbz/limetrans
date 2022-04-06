@@ -1600,15 +1600,18 @@ do list(path: "962??.e", "var": "$i")
 end
 
 set_array("SubjectHeadings[]")
+set_array("introx.subject[]")
 do list(path: "982  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
     add_field("SubjectHeadings[].$append.__dummy__", "")
     copy_field("$i.b", "SubjectHeadings[].$last.subject")
+    copy_field("$i.b", "introx.subject[]")
   end
 end
 do list(path: "689??", "var": "$i")
   add_field("SubjectHeadings[].$append.__dummy__", "")
   copy_field("$i.a", "SubjectHeadings[].$last.subject")
+  copy_field("$i.a", "introx.subject[]")
 end
 
 set_array("SubjectGHBLocal[]")
@@ -1864,10 +1867,16 @@ end
 do list(path: "650??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
   if exists("$i.a.1")
-    copy_field("$i.a.1", "RSWK[].$last.subjectTopicName")
+    copy_field("$i.a.1", "@subjectTopicName")
   else
-    copy_field("$i.a", "RSWK[].$last.subjectTopicName")
+    copy_field("$i.a", "@subjectTopicName")
   end
+  split_field("@subjectTopicName", ";|--")
+  do list(path: "@subjectTopicName", "var": "$j")
+    replace_all("$j", "[.]$", "")
+    copy_field("$j", "RSWK[].$last.subjectTopicName")
+  end
+  remove_field("@subjectTopicName")
   if exists("$i.z.1")
     copy_field("$i.z.1", "RSWK[].$last.subjectGeoName")
   else
@@ -1927,11 +1936,21 @@ replace_all("RSWK[].*.subjectNameAddendum", "^[(]|[.)]$", "")
 replace_all("RSWK[].*.subjectNumbering", "^[(]|\\s?[);:]?$", "")
 replace_all("RSWK[].*.subjectPersonName", "[,.]$", "")
 replace_all("RSWK[].*.subjectTitleName", "[.]$", "")
-replace_all("RSWK[].*.subjectTopicName", "[.]$", "")
 replace_all("RSWK[].*.subjectUnit", "[.]$", "")
 hbz.limetrans.function.Dedup("RSWK[].*.subjectGeoName")
-hbz.limetrans.function.Dedup("RSWK[].*.subjectTopicName")
+# TODO: hbz.limetrans.function.Dedup("RSWK[].*.subjectTopicName")
 uniq("RSWK[]")
+do list(path: "RSWK[]", "var": "$i")
+  copy_field("$i.subjectConference", "introx.subject[]")
+  copy_field("$i.subjectCorporateBodyName", "introx.subject[]")
+  copy_field("$i.subjectGenre", "introx.subject[]")
+  copy_field("$i.subjectGeoName", "introx.subject[]")
+  copy_field("$i.subjectPersonName", "introx.subject[]")
+  copy_field("$i.subjectTitleName", "introx.subject[]")
+  copy_field("$i.subjectTopicName", "introx.subject[]")
+  copy_field("$i.subjectUnit", "introx.subject[]")
+end
+uniq("introx.subject[]")
 
 retain(
   "$[deletion-literal]",

@@ -272,7 +272,8 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Mathematik" ]
+    "taxonomy" : [ "Mathematik" ],
+    "subject" : [ "Banach-Raum", "Interpolation", "Approximation" ]
   },
   "SubjectRVK" : [ {
     "subject" : "QH 150"
@@ -393,7 +394,8 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Mathematik" ]
+    "taxonomy" : [ "Mathematik" ],
+    "subject" : [ "Ring" ]
   },
   "SubjectRVK" : [ {
     "subject" : "SK 230"
@@ -504,7 +506,8 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Biologie" ]
+    "taxonomy" : [ "Biologie" ],
+    "subject" : [ "Deutschland", "Biowissenschaftler", "Karriereplanung", "Ratgeber" ]
   },
   "SubjectRPB" : [ {
     "subject" : "780"
@@ -943,7 +946,8 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Germanistik" ]
+    "taxonomy" : [ "Germanistik" ],
+    "subject" : [ "Leich" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -1406,7 +1410,8 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Sozialwissenschaften / Soziologie" ]
+    "taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
+    "subject" : [ "Gruppe" ]
   },
   "SubjectRVK" : [ {
     "subject" : "DU 1000"
@@ -1501,7 +1506,8 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Romanistik", "Sprach- und Literaturwissenschaften" ]
+    "taxonomy" : [ "Romanistik", "Sprach- und Literaturwissenschaften" ],
+    "subject" : [ "Deutschland", "Übersetzer", "Französisch", "Literatur" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -1615,7 +1621,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Management science", "Industrial management—Environmental aspects", "Business ethics", "Environmental economics", "Business", "Nachhaltigkeit", "Digitalisierung", "Qualität", "Innovation", "Disruption", "Megatrend" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -1680,7 +1687,12 @@
   }, {
     "subjectTopicName" : "Business"
   }, {
-    "subjectTopicName" : "Nachhaltigkeit;Digitalisierung;Qualität;Innovation;Disruption;Megatrend"
+    "subjectTopicName" : "Nachhaltigkeit",
+    "subjectTopicName" : "Digitalisierung",
+    "subjectTopicName" : "Qualität",
+    "subjectTopicName" : "Innovation",
+    "subjectTopicName" : "Disruption",
+    "subjectTopicName" : "Megatrend"
   } ]
 }
 {
@@ -1714,7 +1726,8 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Wirtschaftswissenschaften" ]
+    "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "subject" : [ "Brasilien", "Auslandsschulden" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -1812,7 +1825,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Medienstelle", "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Deutschland", "Gefährlicher Arbeitsstoff", "Datensammlung" ]
   },
   "SubjectRVK" : [ {
     "subject" : "ZG 9285"
@@ -2191,7 +2205,8 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Haspel" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Wirtschaftswissenschaften", "Architektur und Bauingenieurwesen" ]
+    "taxonomy" : [ "Wirtschaftswissenschaften", "Architektur und Bauingenieurwesen" ],
+    "subject" : [ "Hochbau", "Sollzeit", "Richtwert" ]
   },
   "SubjectRVK" : [ {
     "subject" : "ZI 3850"
@@ -2432,7 +2447,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg", "Magazin" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Deutsch", "Literatur", "Zeitschrift", "Deutschland", "Kultur", "Geschichte" ]
   },
   "SubjectDNB" : [ {
     "subject" : "100"
@@ -2568,7 +2584,8 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
-    "taxonomy" : [ "Informatik" ]
+    "taxonomy" : [ "Informatik" ],
+    "subject" : [ "Coding theory", "Information theory", "Data mining", "Application software", "Java (Computer program language)" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -2684,7 +2701,8 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Musikwissenschaft" ]
+    "taxonomy" : [ "Musikwissenschaft" ],
+    "subject" : [ "Komponist", "Geschichte 1900-1980", "Komposition", "Geschichte 1933-45" ]
   },
   "SubjectDNB" : [ {
     "subject" : "780"
@@ -2916,7 +2934,8 @@
     "access" : [ "local" ],
     "branch" : [ "Medienstelle" ],
     "carrier" : [ "Elektronische Ressource", "Audio" ],
-    "taxonomy" : [ "Umwelttechnik, Energie- und Kerntechnik", "Elektrotechnik" ]
+    "taxonomy" : [ "Umwelttechnik, Energie- und Kerntechnik", "Elektrotechnik" ],
+    "subject" : [ "Brennstoffzelle" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",

@@ -27,7 +27,8 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Sozialwissenschaften / Soziologie" ]
+    "taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
+    "subject" : [ "Gruppe" ]
   },
   "SubjectRVK" : [ {
     "subject" : "DU 1000"
@@ -122,7 +123,8 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Wirtschaftswissenschaften" ]
+    "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "subject" : [ "Logistik", "Just-in-time-Produktion" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -208,7 +210,8 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Chemie und Chemische Technik", "Biologie" ]
+    "taxonomy" : [ "Chemie und Chemische Technik", "Biologie" ],
+    "subject" : [ "Microorganisms", "Identification", "Mass spectrometry", "Microbiological chemistry" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -277,7 +280,8 @@
     "callnumber" : "61 UTI 12"
   } ],
   "RSWK" : [ {
-    "subjectTopicName" : "Microorganisms--Identification"
+    "subjectTopicName" : "Microorganisms",
+    "subjectTopicName" : "Identification"
   }, {
     "subjectTopicName" : "Mass spectrometry"
   }, {
@@ -316,7 +320,8 @@
     "access" : [ "local" ],
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Architektur und Bauingenieurwesen" ]
+    "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "subject" : [ "Maßtoleranzen", "DIN18202", "DIN 18202", "Rohbau", "Ausbau", "MaßtoleranzenRohbau", "MaßtoleranzenAusbau" ]
   },
   "SubjectRVK" : [ {
     "subject" : "ZI 3970"
@@ -458,7 +463,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Eupener Straße" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Chemie", "Zeitschrift" ]
   },
   "SubjectDNB" : [ {
     "subject" : "540"
@@ -666,7 +672,8 @@
     "access" : [ "local" ],
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Sprach- und Literaturwissenschaften" ]
+    "taxonomy" : [ "Sprach- und Literaturwissenschaften" ],
+    "subject" : [ "Informationsgesellschaft", "Kulturwandel", "Massenmedien" ]
   },
   "SubjectRPB" : [ {
     "subject" : "560"
@@ -789,7 +796,8 @@
     "access" : [ "local" ],
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Informatik" ]
+    "taxonomy" : [ "Informatik" ],
+    "subject" : [ "Computersicherheit", "Hacker" ]
   },
   "SubjectDNB" : [ {
     "subject" : "004"
@@ -918,7 +926,8 @@
     "access" : [ "local" ],
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Physik" ]
+    "taxonomy" : [ "Physik" ],
+    "subject" : [ "Elektrostatik", "Elektrostatische Aufladung", "Elektrostatische Entladung", "Gasentladung", "Messtechnik", "Elektrounfall", "Brandgefahr", "Explosion", "Arbeitssicherheit", "Arbeitssicherheit u. Umweltschutz i. d. Chemie", "Chemie", "Elektrizitätslehre", "Elektrotechnik u. Elektronik", "Leistungselektronik", "Physik", "Statische Elektrizität" ]
   },
   "SubjectRPB" : [ {
     "subject" : "920"
@@ -1087,7 +1096,8 @@
     "access" : [ "local" ],
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Informatik" ]
+    "taxonomy" : [ "Informatik" ],
+    "subject" : [ "Computer software", "Mathematics", "Programming languages (Electronic computers)", "Computer science", "MATLAB 10", "MATLAB", "algorithms", "engineering", "GUI development", "robotics", "code", "recipes", "developer", "cookbook", "source", "development", "programming", "computational science", "numerical" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -1170,7 +1180,21 @@
   }, {
     "subjectTopicName" : "Computer science"
   }, {
-    "subjectTopicName" : "MATLAB 10;MATLAB;algorithms;engineering;GUI development;robotics;code;recipes;developer;cookbook;source;development;programming;computational science;numerical"
+    "subjectTopicName" : "MATLAB 10",
+    "subjectTopicName" : "MATLAB",
+    "subjectTopicName" : "algorithms",
+    "subjectTopicName" : "engineering",
+    "subjectTopicName" : "GUI development",
+    "subjectTopicName" : "robotics",
+    "subjectTopicName" : "code",
+    "subjectTopicName" : "recipes",
+    "subjectTopicName" : "developer",
+    "subjectTopicName" : "cookbook",
+    "subjectTopicName" : "source",
+    "subjectTopicName" : "development",
+    "subjectTopicName" : "programming",
+    "subjectTopicName" : "computational science",
+    "subjectTopicName" : "numerical"
   } ]
 }
 {
@@ -1198,7 +1222,8 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
-    "taxonomy" : [ "Informatik" ]
+    "taxonomy" : [ "Informatik" ],
+    "subject" : [ "Coding theory", "Information theory", "Data mining", "Application software", "Java (Computer program language)" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -1313,7 +1338,8 @@
     "access" : [ "local" ],
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Elektronische Ressource", "Audio" ],
-    "taxonomy" : [ "Elektrotechnik" ]
+    "taxonomy" : [ "Elektrotechnik" ],
+    "subject" : [ "Brennstoffzelle" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",

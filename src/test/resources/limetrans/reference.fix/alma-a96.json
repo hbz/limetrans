@@ -574,7 +574,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Gentechnologie", "Wörterbuch" ]
   },
   "SubjectRPB" : [ {
     "subject" : "780"
@@ -657,7 +658,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "subject" : [ "Asia Pacific Economic Cooperation (Organization)", "World Trade Organization", "Commerce", "Business & Economics", "Local Commerce", "Papua New Guinea", "Oceania" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -756,7 +758,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "subject" : [ "Building materials" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -857,7 +860,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Information und Dokumentation" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -944,7 +948,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Englisch", "Grammatik", "Aufgabensammlung", "Wortschatz" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -1073,7 +1078,8 @@
     "date" : [ "2011" ]
   },
   "introx" : {
-    "access" : [ "online" ]
+    "access" : [ "online" ],
+    "subject" : [ "Nonprofit organizations", "Case studies" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -1155,6 +1161,7 @@
   "RSWK" : [ {
     "subjectTopicName" : "Nonprofit organizations"
   }, {
+    "subjectTopicName" : "Nonprofit organizations",
     "subjectGenre" : "Case studies"
   } ]
 }
@@ -1294,7 +1301,8 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
-    "taxonomy" : [ "Architektur und Bauingenieurwesen" ]
+    "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "subject" : [ "Gebäude", "Wasserversorgung", "Abwasserbeseitigung", "Haustechnik", "Wasserkreislauf" ]
   },
   "SubjectRVK" : [ {
     "subject" : "ZI 8300"
@@ -1441,7 +1449,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Eupener Straße" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Chemie", "Zeitschrift" ]
   },
   "SubjectDNB" : [ {
     "subject" : "540"
@@ -1644,7 +1653,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Hochbau", "Sollzeit", "Richtwert" ]
   },
   "SubjectRVK" : [ {
     "subject" : "ZI 3850"
@@ -1738,7 +1748,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "subject" : [ "Semiconductors", "Solid state physics", "Solid State Physics" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -1806,6 +1817,7 @@
   }, {
     "subjectTopicName" : "Solid state physics"
   }, {
+    "subjectTopicName" : "Semiconductors",
     "subjectIdentifier" : [ "https://scigraph.springernature.com/ontologies/product-market-codes/P25150" ]
   }, {
     "subjectTopicName" : "Solid State Physics",
@@ -1916,7 +1928,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Psychologie" ]
   },
   "SubjectRPB" : [ {
     "subject" : "860"
@@ -2026,7 +2039,8 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
-    "taxonomy" : [ "Informatik" ]
+    "taxonomy" : [ "Informatik" ],
+    "subject" : [ "Softwareentwicklung", "API", "Java", "Web Services", "Verteiltes System" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -2141,7 +2155,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "subject" : [ "Periodicals", "Art" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -2208,6 +2223,7 @@
     "subjectTopicName" : "Art",
     "subjectGenre" : "Periodicals"
   }, {
+    "subjectTopicName" : "Art",
     "subjectIdentifier" : [ "(OCoLC)fst00815326" ]
   } ]
 }
@@ -2226,7 +2242,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Periodicals", "Vacuum technology", "Vacuümtechniek" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -2310,6 +2327,7 @@
     "subjectTopicName" : "Vacuum technology",
     "subjectGenre" : "Periodicals"
   }, {
+    "subjectTopicName" : "Vacuum technology",
     "subjectIdentifier" : [ "(OCoLC)fst01163626" ]
   }, {
     "subjectTopicName" : "Vacuümtechniek"
