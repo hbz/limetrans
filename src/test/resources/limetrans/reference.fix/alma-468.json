@@ -579,7 +579,7 @@
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
-    "type" : [ "Zeitschrift" ],
+    "type" : [ "Zeitschrift", "Teil eines Werkes" ],
     "language" : [ "Englisch" ],
     "date" : [ "1995", "2008" ]
   },
@@ -2382,7 +2382,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Zeitschrift" ],
+    "type" : [ "Zeitschrift", "Teil eines Werkes" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1968", "1992" ]
   },

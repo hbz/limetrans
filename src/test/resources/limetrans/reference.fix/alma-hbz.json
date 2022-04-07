@@ -303,12 +303,18 @@
   "VolumeDesignation" : {
     "volumeDesignation" : "45"
   },
+  "RecordIdentifierSuper" : [ {
+    "recordIdentifierSuper" : "(DE-605)HT009275240"
+  } ],
+  "SortableVolumeDesignation" : [ {
+    "volumeDesignation" : "45"
+  } ],
   "CreatorStatement" : {
     "creatorStatement" : [ "Kotzebue" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Teil eines Werkes" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1815" ]
   },
@@ -8456,7 +8462,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Zeitschrift" ],
+    "type" : [ "Zeitschrift", "Teil eines Werkes" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1968", "1992" ]
   },

@@ -1235,7 +1235,7 @@
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Teil eines Werkes" ],
     "language" : [ "keine Angabe" ]
   },
   "introx" : {
@@ -1838,12 +1838,15 @@
   "VolumeDesignation" : {
     "volumeDesignation" : "62443-3-3"
   },
+  "RecordIdentifierSuper" : [ {
+    "recordIdentifierSuper" : "991000192569706444"
+  } ],
   "CreatorStatement" : {
     "creatorStatement" : [ "ANSI/ISA ; ANSI/ISA" ]
   },
   "dc" : {
     "format" : [ "keine Angabe" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Teil eines Werkes" ],
     "language" : [ "keine Angabe" ]
   },
   "introx" : {

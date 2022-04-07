@@ -611,7 +611,6 @@ end
 do list(path: "538??|5831?", "var": "$i")
   copy_field("$i.a", "TypeMediaSpecialPreservation[]")
 end
-uniq("@facet_format")
 uniq("ExtendedFormat[]")
 uniq("ExtendedType[]")
 uniq("FormatCarrier[]")
@@ -813,7 +812,6 @@ else
     end
   end
 end
-uniq("@facet_type")
 
 copy_field("008", "@language_source")
 substring("@language_source", "35", "3")
@@ -939,9 +937,21 @@ end
 
 do list(path: "245??.n", "var": "$i")
   unless exists("VolumeDesignation.volumeDesignation")
+    add_field("@facet_type", "Teil eines Werkes")
     replace_all("$i", "\\s?[,./:=]?\\s?$", "")
     copy_field("$i", "VolumeDesignation.volumeDesignation")
   end
+end
+set_array("RecordIdentifierSuper[]")
+set_array("SortableVolumeDesignation[]")
+do list(path: "7730?", "var": "$i")
+  if exists("$i.q")
+    add_field("@facet_type", "Teil eines Werkes")
+    add_field("SortableVolumeDesignation[].$append.__dummy__", "")
+    copy_field("$i.q", "SortableVolumeDesignation[].$last.volumeDesignation")
+  end
+  add_field("RecordIdentifierSuper[].$append.__dummy__", "")
+  copy_field("$i.w", "RecordIdentifierSuper[].$last.recordIdentifierSuper")
 end
 
 set_array("CreatorStatement.creatorStatement[]")
@@ -951,6 +961,7 @@ do list(path: "245[01]?.c", "var": "$i")
 end
 
 if exists("@facet_format")
+  uniq("@facet_format")
   copy_field("@facet_format", "dc.format[]")
   if any_equal("@facet_format", "Online-Ressource")
     if none_equal("@facet_format", "Elektronische Ressource")
@@ -961,6 +972,7 @@ else
   add_field("dc.format[]", "keine Angabe")
 end
 if exists("@facet_type")
+  uniq("@facet_type")
   copy_field("@facet_type", "dc.type[]")
 else
   add_field("dc.type[]", "keine Angabe")
@@ -2059,9 +2071,11 @@ retain(
   "Recension",
   "RecordCodes[]",
   "RecordIdentifier",
+  "RecordIdentifierSuper[]",
   "SecondaryEditionPublicationDate[]",
   "SecondaryEditionTitleSuper[]",
   "SeriesAddedEntryUniformTitle[]",
+  "SortableVolumeDesignation[]",
   "SoundCharacteristics[]",
   "SubSeriesEntry[]",
   "SubjectDNB[]",
