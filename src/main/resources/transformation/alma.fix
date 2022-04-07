@@ -1375,6 +1375,20 @@ do list(path: "H52??", "var": "$i")
   end
 end
 
+set_array("DescriptionOfContent[]")
+do list(path: "50[15]??", "var": "$i")
+  add_field("DescriptionOfContent[].$append.__dummy__", "")
+  copy_field("$i.a", "DescriptionOfContent[].$last.description")
+  copy_field("$i.r", "DescriptionOfContent[].$last.creator")
+  copy_field("$i.t", "DescriptionOfContent[].$last.note")
+end
+
+set_array("DescriptionOfExpression[]")
+do list(path: "546??", "var": "$i")
+  add_field("DescriptionOfExpression[].$append.__dummy__", "")
+  copy_field("$i.a", "DescriptionOfExpression[].$last.description")
+end
+
 copy_field("5203 .[ab]", "Abstract.abstract[]")
 copy_field("5201 .[ab]", "Recension.abstract[]")
 copy_field("520  .[ab]", "Summary.abstract[]")
@@ -1970,7 +1984,9 @@ retain(
   "DateLast",
   "DateProper",
   "Description",
+  "DescriptionOfContent[]",
 # "DescriptionOfContinuingEditionsOrVolumes[]",
+  "DescriptionOfExpression[]",
 # "DescriptionOfFormerEditionsOrVolumes[]",
 # "DescriptionOfRelatedEditions[]",
   "Edition",

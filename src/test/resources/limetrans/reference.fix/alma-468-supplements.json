@@ -439,6 +439,9 @@
   "Extent" : {
     "extent" : "VII, 320 S."
   },
+  "DescriptionOfExpression" : [ {
+    "description" : "Aus dem Dt. übers."
+  } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Pure and applied mathematics",
     "volume" : "44",
@@ -658,6 +661,9 @@
   "Extent" : {
     "extent" : "X, 105 S. : Ill., graph. Darst."
   },
+  "DescriptionOfExpression" : [ {
+    "description" : "Aus d. Franz. übers."
+  } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Astrophysics and space science library",
     "volume" : "18",
@@ -1660,6 +1666,9 @@
   "Extent" : {
     "extent" : "263 p. ; 384 grams"
   },
+  "DescriptionOfContent" : [ {
+    "description" : "Inhaltsverzeichnis.- Aktueller wissensstand im forschungsgebiet.- Grundlagen von nachhaltigen und verantwortungsvollen geschäften.- Aktuelle ökologische, gesellschaftliche und ökonomische entwicklungen im kontext von digitalisierung und innovation.- Aktuell laufende programme und initiativen zur förderung von nachhaltigen und verantwortungsvollen geschäften im kontext von digitalisierung.- persönliche beiträge und studien.- Studie über die effekte und auswirkungen der digitalisierung und innovation zur unterstützung von nachhaltigen und verantwortungsvollen geschäften.- Entwicklung eines modelles für nachhaltige servicequalität am beispiel von business services im kontext von digitalisierung.- Entwicklung eines integrativen modelles für nachhaltige und verantwortungsvolle geschäfte im kontext von digitalisierung und innovativen veränderungen."
+  } ],
   "Summary" : {
     "abstract" : [ "Katrin Marquardt leistet mit diesem Buch einen Beitrag zur Vertiefung des theoretischen und praktischen Wissens in den Themengebieten Nachhaltigkeit und soziale Verantwortlichkeit, zu Programmen und Initiativen zur Förderung der Nachhaltigkeit und zur Digitalisierung der europäischen Industrie, sowie zu Digitalisierung und Innovationen im Kontext von nachhaltigen und verantwortungsvollen Business.\n\n  Im Rahmen der Forschung wurden klassische und digitale Geschäftsmodellen untersucht, die aktuellen ökonomischen, gesellschaftlichen und ökologischen Megatrends und das Wesen der Disruption analysiert, ein Modell für nachhaltige Servicequalität am Beispiel von Business Services und ein integratives Modell für nachhaltiges und verantwortungsvolles Business aufbauend auf Digitalisierung, Innovation und Qualität entwickelt. \n\n  Katrin Marquardt ist aktuell als Projektmanager ein Horizont 2020 Projekt tätig. Ziel des Projektes ist es, das große Potenzial für kollektives Handeln und die Vernetzung von Einzelpersonen, Gruppen und Körperschaften von Landwirten und Landverwaltern freizusetzen, zu stärken und zu organisieren.\n\n  Ihre Expertise als Projekt-, Transition- und Operation Manger eignete sie sich in verschiedenen international agierenden Unternehmen des Finanzwesens, der IT- und Telekommunikationswirtschaft und des Bildungswesens in Deutschland, Ungarn, Rumänien und England an." ]
   },
@@ -2870,6 +2879,9 @@
   "Description" : {
     "description" : [ "Ex. 21 = KHF 1417: Sammelband" ]
   },
+  "DescriptionOfExpression" : [ {
+    "description" : "Enthaltene Textteile deutsch"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Martens, Heinrich",
     "personBio" : "1876-1964",
@@ -2997,5 +3009,223 @@
     "identifier" : "DE-468",
     "callnumber" : "ZPO2318",
     "shelfmark" : "07"
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "ExtendedType" : [ "Konferenzschrift" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks", "Konferenzschrift" ],
+  "Country" : [ {
+    "countryISO" : "DE-BE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT020024637"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "I. Gleichheit und Vielfalt, II. Rechtliche Verarbeitung des technischen und medizinischen Wandels : Berichte und Diskussionen auf der Tagung der Vereinigung der Deutschen Staatsrechtslehrer in Bonn vom 3.-6. Oktober 2018"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Redaktion: Ute Sacksofsky (Frankfurt a.M.)" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie", "Konferenzschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2019" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Campus Grifflenberg" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Rechtswissenschaft" ],
+    "subject" : [ "Gleichheit", "Vielfalt", "Technischer Fortschritt", "Rechtsanwendung", "Rechtsphilosophie" ]
+  },
+  "SubjectRVK" : [ {
+    "subject" : "PM 8200"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "990228330710206441",
+    "identifierMMSIZ" : "990015542430206447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990228330710206441",
+    "identifierForTheRecord" : "(DE-605)HT020024637"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783110643381", "Festeinband : EUR 129.95 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3110643383" ]
+  }, {
+    "identifierISBN" : [ "9783110643381", "Festeinband : EUR 129.95 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3110643383" ]
+  }, {
+    "identifierISBN" : [ "9783110643381", "Festeinband : EUR 129.95 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3110643383" ]
+  }, {
+    "identifierISBN" : [ "9783110643381", "Festeinband : EUR 129.95 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3110643383" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Walter de Gruyter GmbH & Co. KG",
+    "corporateBodyIdentifier" : [ "(DE-588)10095502-2" ],
+    "identifierGND" : [ "10095502-2" ]
+  } ],
+  "Conference" : {
+    "conferenceName" : "Vereinigung der Deutschen Staatsrechtslehrer",
+    "corporateBodyNameeNumber" : "78.",
+    "conferenceDate" : "2018",
+    "conferencePlace" : "Bonn",
+    "conferenceIdentifier" : [ "(DE-588)1166612848" ],
+    "identifierGND" : [ "1166612848" ],
+    "conferenceUnit" : "Tagung"
+  },
+  "TitleStatement" : [ {
+    "titleMain" : "Gleichheit, Vielfalt, technischer Wandel"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Berlin", "Boston" ],
+    "name" : [ "De Gruyter" ],
+    "chronology" : [ "[2019]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Berlin",
+    "printingPlace" : "Boston"
+  } ],
+  "DateProper" : {
+    "date" : [ "[2019]" ]
+  },
+  "Extent" : {
+    "extent" : "555 Seiten ; 24 x 16 cm"
+  },
+  "DescriptionOfContent" : [ {
+    "creator" : "Steffen Augsberg, Friederike Wapler",
+    "note" : "Gleichheit angesichts von Vielfalt als Gegenstand des philosophischen und des juristischen Diskurses"
+  }, {
+    "creator" : "Wolfram Cremer, Benjamin Schindler",
+    "note" : "Rechtsanwendungsgleichheit in Mehrebenensystemen"
+  }, {
+    "creator" : "Annette Guckelberger, Hanno Kube",
+    "note" : "E-Government: Ein Paradigmenwechsel in Verwaltung und Verwaltungsrecht?"
+  }, {
+    "creator" : "Gernot Sydow, Angelika Siehr",
+    "note" : "Regulierungsauftrag für den Staat im Bereich der Fortpflanzungsmedizin?"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Sacksofsky, Ute",
+    "personBio" : "1960-",
+    "personIdentifier" : [ "(DE-588)132505746" ],
+    "identifierGND" : [ "132505746" ]
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Online-Ausgabe, EPUB" ],
+    "identifierISBN" : "9783110644258"
+  }, {
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Online-Ausgabe, PDF" ],
+    "title" : "Gleichheit, Vielfalt, technischer Wandel",
+    "controlNumber" : "(DE-605)HT020474556",
+    "identifierISBN" : "9783110645651",
+    "identifierForLinkingEntry" : "HT020474556"
+  } ],
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Veröffentlichungen der Vereinigung der Deutschen Staatsrechtslehrer",
+    "volume" : "78",
+    "designation" : "(DE-605)HT001231731"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://www.degruyter.com/search?f_0=isbnissn&q_0=9783110643381&searchTitles=true",
+    "contact" : "X:MVB"
+  }, {
+    "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2019/06/06/file_11/8476562.pdf",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "X:MVB",
+    "contact" : "B:DE-101",
+    "format" : "application/pdf"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "X:MVB",
+    "contact" : "B:DE-101",
+    "contact" : "B:DE-101",
+    "format" : "application/pdf"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Gleichheit"
+  }, {
+    "subject" : "Vielfalt"
+  }, {
+    "subject" : "Technischer Fortschritt"
+  }, {
+    "subject" : "Rechtsanwendung"
+  }, {
+    "subject" : "Rechtsphilosophie"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-468",
+    "subject" : "QMS"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990228330710206441"
+  }, {
+    "uid" : "(DE-605)HT020024637"
+  }, {
+    "uid" : "(DE-468)990015542430206447"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-468",
+    "callnumber" : "QMS1339-78",
+    "shelfmark" : "47"
+  } ],
+  "PersonCreator" : [ {
+    "personName" : "Augsberg, Steffen",
+    "personBio" : "1976-",
+    "personIdentifier" : [ "(DE-588)135831474" ],
+    "identifierGND" : [ "135831474" ]
+  }, {
+    "personName" : "Wapler, Friederike",
+    "personBio" : "1971-",
+    "personIdentifier" : [ "(DE-588)1042646317" ],
+    "identifierGND" : [ "1042646317" ]
+  }, {
+    "personName" : "Cremer, Wolfram",
+    "personBio" : "1963-",
+    "personIdentifier" : [ "(DE-588)128741554" ],
+    "identifierGND" : [ "128741554" ]
+  }, {
+    "personName" : "Schindler, Benjamin",
+    "personBio" : "1971-",
+    "personIdentifier" : [ "(DE-588)136151590" ],
+    "identifierGND" : [ "136151590" ]
+  }, {
+    "personName" : "Guckelberger, Annette",
+    "personBio" : "1968-",
+    "personIdentifier" : [ "(DE-588)128821167" ],
+    "identifierGND" : [ "128821167" ]
+  }, {
+    "personName" : "Kube, Hanno",
+    "personBio" : "1970-",
+    "personIdentifier" : [ "(DE-588)129076333" ],
+    "identifierGND" : [ "129076333" ]
+  }, {
+    "personName" : "Sydow, Gernot",
+    "personBio" : "1969-",
+    "personIdentifier" : [ "(DE-588)12230991X" ],
+    "identifierGND" : [ "12230991X" ]
+  }, {
+    "personName" : "Siehr, Angelika",
+    "personIdentifier" : [ "(DE-588)1124089969" ],
+    "identifierGND" : [ "1124089969" ]
   } ]
 }
