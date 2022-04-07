@@ -1994,3 +1994,77 @@
     "title" : [ "Monatsberichte der Deutschen Bundesbank / Statistische Beihefte / 4" ]
   }
 }
+{
+  "TypePeriodical" : "Schriftenreihe",
+  "TypePeriodical" : "Zeitschrift",
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "ein militärisches Journal"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Schriftenreihe", "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1781", "1787" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "990056352000206441",
+    "identifierMMSIZ" : "990007683040206447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990056352000206441",
+    "identifierForTheRecord" : "(DE-605)HT007439286"
+  },
+  "DateFirst" : {
+    "date" : "1781"
+  },
+  "DateLast" : {
+    "date" : "1787"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "988351-4"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Bellona"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Dresden" ],
+    "name" : [ "Walther" ],
+    "chronology" : [ "1781-1787" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1781-1787" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "1.1781 - 20.1787; damit Ersch. eingest."
+  },
+  "HoldingsStatement" : [ {
+    "note" : "Mikrofiche-Ausg.: Hildesheim : Olms"
+  } ],
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Digital. Ausg.",
+    "description" : "Bellona"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "subject" : "07"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990056352000206441"
+  }, {
+    "uid" : "(DE-605)HT007439286"
+  }, {
+    "uid" : "(DE-468)990007683040206447"
+  } ],
+  "Item" : [ {
+    "callnumber" : "07D16"
+  } ]
+}

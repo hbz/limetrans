@@ -675,6 +675,15 @@
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
+  "PublicationPlaceOfSecondaryEdition" : [ {
+    "name" : "[Amsterdam]"
+  } ],
+  "PublisherNameOfSecondaryEdition" : [ {
+    "name" : "Elsevier"
+  } ],
+  "SecondaryEditionPublicationDate" : [ {
+    "secondaryEdition" : "2009"
+  } ],
   "TypeMediaSpecial" : [ "Online-Ressource" ],
   "TypeMediaSpecialPreservation" : [ "Internet-Anschluss; Acrobat-Reader" ],
   "Country" : [ {
@@ -2475,4 +2484,112 @@
   "TitleOther" : {
     "title" : [ "Monatsberichte der Deutschen Bundesbank / Statistische Beihefte / 4" ]
   }
+}
+{
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "RecordCodes" : [ "Autopsie", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "eingestelltes Erscheinen", "Schriftenreihe" ],
+  "PublicationPlaceOfSecondaryEdition" : [ {
+    "name" : "Hildesheim"
+  } ],
+  "PublisherNameOfSecondaryEdition" : [ {
+    "name" : "Olms"
+  } ],
+  "SecondaryEditionPublicationDate" : [ {
+    "secondaryEdition" : "1996-1996"
+  } ],
+  "SecondaryEditionTitleSuper" : [ {
+    "secondaryEdition" : "Deutsche Zeitschriften des 18. und 19. Jahrhunderts"
+  } ],
+  "Country" : [ {
+    "countryISO" : "DXDE"
+  } ],
+  "IdentifierDNB" : [ {
+    "identifierDNB" : "988351-4"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT007439286"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "183339834"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "ein militärisches Journal"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Zeitschrift", "Schriftenreihe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1781", "1787" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "SubjectDNB" : [ {
+    "subject" : "355"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "990056352000206441",
+    "identifierMMSIZ" : "990007683040206447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990056352000206441",
+    "identifierForTheRecord" : "(DE-605)HT007439286"
+  },
+  "DateFirst" : {
+    "date" : "1781"
+  },
+  "DateLast" : {
+    "date" : "1787"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "988351-4"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Bellona"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Dresden" ],
+    "name" : [ "Walther" ],
+    "chronology" : [ "1781-1787" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Dresden"
+  } ],
+  "DateProper" : {
+    "date" : [ "1781-1787" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "1.1781 - 20.1787; damit Ersch. eingest."
+  },
+  "HoldingsStatement" : [ {
+    "note" : "Mikrofiche-Ausg.: Hildesheim : Olms"
+  } ],
+  "OtherEditionEntry" : [ {
+    "relationshipInformation" : "Digital. Ausg.",
+    "title" : "Bellona",
+    "controlNumber" : "(DE-605)HT017466700",
+    "identifierForLinkingEntry" : "HT017466700"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-468",
+    "subject" : "07"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990056352000206441"
+  }, {
+    "uid" : "(DE-605)HT007439286"
+  }, {
+    "uid" : "(DE-468)990007683040206447"
+  } ],
+  "Item" : [ {
+    "callnumber" : "07D16"
+  } ]
 }

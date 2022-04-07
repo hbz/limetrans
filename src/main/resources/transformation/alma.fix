@@ -556,6 +556,21 @@ do list(path: "655?7", "var": "$i")
   end
 end
 
+set_array("PublicationPlaceOfSecondaryEdition[]")
+set_array("PublisherNameOfSecondaryEdition[]")
+set_array("SecondaryEditionPublicationDate[]")
+set_array("SecondaryEditionTitleSuper[]")
+do list(path: "533??", "var": "$i")
+  add_field("PublicationPlaceOfSecondaryEdition[].$append.__dummy__", "")
+  copy_field("$i.b", "PublicationPlaceOfSecondaryEdition[].$last.name")
+  add_field("PublisherNameOfSecondaryEdition[].$append.__dummy__", "")
+  copy_field("$i.c", "PublisherNameOfSecondaryEdition[].$last.name")
+  add_field("SecondaryEditionPublicationDate[].$append.__dummy__", "")
+  copy_field("$i.d", "SecondaryEditionPublicationDate[].$last.secondaryEdition")
+  add_field("SecondaryEditionTitleSuper[].$append.__dummy__", "")
+  copy_field("$i.f", "SecondaryEditionTitleSuper[].$last.secondaryEdition")
+end
+
 set_array("TypeMediaSpecial[]")
 set_array("TypeMediaSpecialPreservation[]")
 do list(path: "340??", "var": "$i")
@@ -2036,12 +2051,16 @@ retain(
   "PersonCreator[]",
   "Person[]",
   "PrecedingEntry[]",
+  "PublicationPlaceOfSecondaryEdition[]",
   "PublicationPlace[]",
+  "PublisherNameOfSecondaryEdition[]",
   "PublisherName[]",
   "RSWK[]",
   "Recension",
   "RecordCodes[]",
   "RecordIdentifier",
+  "SecondaryEditionPublicationDate[]",
+  "SecondaryEditionTitleSuper[]",
   "SeriesAddedEntryUniformTitle[]",
   "SoundCharacteristics[]",
   "SubSeriesEntry[]",
