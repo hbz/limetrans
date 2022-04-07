@@ -4,242 +4,6 @@ include("./maps/alma-taxonomy.fix")
 
 hbz.limetrans.function.DropLocal()
 
-/*
-  <macro name="regex-del-punctuation-end">
-    <data source="$[dsource]" name="$[dname]">
-      <replace pattern="^[©]|\s?[,.:;/=]?$" with="" />
-    </data>
-  </macro>
-*/
-#replace_all("$i", "^[©]|\\s?[,.:;/=]?$", "")
-
-/*
-  <macro name="personName">
-    <data name="$[name]" source="$[field][013] .a">
-      <replace pattern="(?&lt;!\p{Upper})\.$|[,]$" with="" />
-    </data>
-  </macro>
-*/
-#replace_all("$i.a", "(?<!\\p{Upper})[.]$|[,]$", "")
-#copy_field("$i.a", "@person.$append.personName")
-
-/*
-  <macro name="personNumbering">
-    <data name="$[name]" source="$[field][013] .b">
-      <replace pattern="[,]$" with="" />
-    </data>
-  </macro>
-*/
-#replace_all("$i.b", "[,]$", "")
-#copy_field("$i.b", "@person.$last.personNumbering")
-
-/*
-  <macro name="personTitle">
-    <entity name="$[name][]" flushWith="$[field][013] " sameEntity="true">
-      <data name="" source="$[field][013] .c">
-        <replace pattern="[,]$" with="" />
-      </data>
-    </entity>
-  </macro>
-*/
-#set_array("@person.$last.personTitle[]")
-#do list(path: "$i.c", "var": "$j")
-#  replace_all("$j", "[,]$", "")
-#  copy_field("$j", "@person.$last.personTitle[]")
-#end
-
-/*
-  <macro name="personBio">
-    <data name="$[name]" source="$[field][013] .d">
-      <replace pattern="[.]$" with="" />
-    </data>
-  </macro>
-*/
-#replace_all("$i.d", "[.]$", "")
-#copy_field("$i.d", "@person.$last.personBio")
-
-/*
-  <macro name="personRole">
-    <entity name="$[name][]" flushWith="$[field][013] " sameEntity="true">
-      <data name="" source="$[field][013] .e">
-        <compose prefix="[" postfix="]" />
-      </data>
-    </entity>
-  </macro>
-*/
-#set_array("@person.$last.personRole[]")
-#do list(path: "$i.e", "var": "$j")
-#  paste("@person.$last.personRole[]", "~[", "$j", "~]", join_char: "")
-#end
-
-/*
-  <macro name="personIdentifier">
-    <entity name="$[name][]" flushWith="$[field][013] " sameEntity="true">
-      <data name="" source="$[field][013] .0">
-        <regexp match="^\(DE-588\).*$" />
-      </data>
-    </entity>
-  </macro>
-
-  <macro name="identifierGND">
-    <entity name="$[name][]" flushWith="$[field][0123] " sameEntity="true">
-      <data name="" source="$[field][0123] .0">
-        <regexp match="(?&lt;=\(DE-588\)).*$" />
-      </data>
-    </entity>
-  </macro>
-*/
-#set_array("@person.$last.personIdentifier[]")
-#set_array("@person.$last.identifierGND[]")
-#do list(path: "$i.0", "var": "$j")
-#  if any_match("$j", "\\(DE-588\\).*")
-#    copy_field("$j", "@person.$last.personIdentifier[]")
-#    replace_all("$j", "^\\(DE-588\\)", "")
-#    copy_field("$j", "@person.$last.identifierGND[]")
-#  end
-#end
-
-/*
-  <macro name="alma-mms-to-isil">
-    <data name="$[dname]" source="$[source]">
-      <regexp match=".{4}$" />
-      <lookup in="institution-code-to-isil" />
-    </data>
-  </macro>
-*/
-#copy_field("$[source]", "@$[source]")
-#parse_text("@$[source]", ".*(.{4})$")
-#copy_field("@$[source]", "$[dname]")
-#lookup("$[dname]", "institution-code-to-isil", delete: "true")
-
-/*
-  <macro name="alma-mms-filter">
-    <combine name="$[dname]" value="${value}" sameEntity="true">
-      <if>
-        <data source="$[entity].$[filter]">
-          <regexp match=".*$[institution-code]$" />
-        </data>
-      </if>
-      <data name="value" source="$[entity].$[source]" />
-    </combine>
-  </macro>
-*/
-#do list(path: "$[entity]", "var": "$i")
-#  if any_match("$i.$[filter]", ".*$[institution-code]")
-#    copy_field("$i.$[source]", "$[dname]")
-#  end
-#end
-
-/*
-  <macro name="alma-member-filter">
-    <combine name="$[dname]" value="${value}" sameEntity="true">
-      <if>
-        <data source="$[entity].M">
-          <equals string="$[member]" />
-        </data>
-      </if>
-      <data name="value" source="$[entity].$[source]" />
-    </combine>
-  </macro>
-*/
-#do list(path: "$[entity]", "var": "$i")
-#  if any_equal("$i.M", "$[member]")
-#    copy_field("$i.$[source]", "$[dname]")
-#  end
-#end
-
-/*
-  <data source="leader" name="@LeaderPos06">
-    <substring start="06" end="07" />
-  </data>
-  <data source="leader" name="@LeaderPos07">
-    <substring start="07" end="08" />
-  </data>
-  <data source="leader" name="@LeaderPos19">
-    <substring start="19" end="20" />
-  </data>
-  <data source="006" name="@006Pos00">
-    <substring start="00" end="01" />
-  </data>
-  <data source="006" name="@006Pos04">
-    <substring start="04" end="06" />
-  </data>
-  <data source="006" name="@006Pos06">
-    <substring start="06" end="07" />
-  </data>
-  <data source="006" name="@006Pos07">
-    <substring start="07" end="08" />
-  </data>
-  <data source="006" name="@006Pos08">
-    <substring start="08" end="09" />
-  </data>
-  <data source="006" name="@006Pos09">
-    <substring start="09" end="10" />
-  </data>
-  <data source="006" name="@006Pos10">
-    <substring start="10" end="11" />
-  </data>
-  <data source="006" name="@006Pos11">
-    <substring start="11" end="12" />
-  </data>
-  <data source="006" name="@006Pos12">
-    <substring start="12" end="13" />
-  </data>
-  <data source="006" name="@006Pos13">
-    <substring start="13" end="14" />
-  </data>
-  <data source="006" name="@006Pos14">
-    <substring start="14" end="15" />
-  </data>
-  <data source="006" name="@006Pos16">
-    <substring start="16" end="17" />
-  </data>
-  <data source="006" name="@006Pos17">
-    <substring start="17" end="18" />
-  </data>
-  <data source="007" name="@007Pos00">
-    <substring start="00" end="01" />
-  </data>
-  <data source="007" name="@007Pos01">
-    <substring start="01" end="02" />
-  </data>
-  <data source="008" name="@008Pos21">
-    <substring start="21" end="22" />
-  </data>
-  <data source="008" name="@008Pos23">
-    <substring start="23" end="24" />
-  </data>
-  <data source="008" name="@008Pos24">
-    <substring start="24" end="25" />
-  </data>
-  <data source="008" name="@008Pos25">
-    <substring start="25" end="26" />
-  </data>
-  <data source="008" name="@008Pos26">
-    <substring start="26" end="27" />
-  </data>
-  <data source="008" name="@008Pos27">
-    <substring start="27" end="28" />
-  </data>
-  <data source="008" name="@008Pos28">
-    <substring start="28" end="29" />
-  </data>
-  <data source="008" name="@008Pos29">
-    <substring start="29" end="30" />
-  </data>
-  <data source="008" name="@008Pos33">
-    <substring start="33" end="34" />
-  </data>
-  <data source="008" name="@008Pos30">
-    <substring start="30" end="31" />
-  </data>
-  <data source="008" name="@008Pos31">
-    <substring start="31" end="32" />
-  </data>
-  <data source="008" name="@008Pos34">
-    <substring start="34" end="35" />
-  </data>
-*/
 copy_field("leader", "@LeaderPos05")
 substring("@LeaderPos05", "5", "1")
 copy_field("leader", "@LeaderPos06")
@@ -328,37 +92,6 @@ substring("@008Pos33", "33", "1")
 copy_field("008", "@008Pos34")
 substring("@008Pos34", "34", "1")
 
-/*
-  <data source="@LeaderPos06" name="@type">
-    <lookup in="typeLeader06" />
-  </data>
-  <combine name="@type" value="B">
-    <if>
-      <all>
-        <data source="@LeaderPos06">
-          <equals string="a" />
-        </data>
-        <data source="@LeaderPos07">
-          <regexp match="[acdm]" />
-        </data>
-      </all>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@type" value="CR">
-    <if>
-      <all>
-        <data source="@LeaderPos06">
-          <equals string="a" />
-        </data>
-        <data source="@LeaderPos07">
-          <regexp match="[bis]" />
-        </data>
-      </all>
-    </if>
-    <data source="001" />
-  </combine>
-*/
 copy_field("@LeaderPos06", "@type")
 lookup("@type", "typeLeader06", delete: "true")
 if any_equal("@LeaderPos06", "a")
@@ -395,515 +128,6 @@ paste("@type__008Pos31", "@type", "@008Pos31", join_char: "#")
 paste("@type__008Pos33", "@type", "@008Pos33", join_char: "#")
 paste("@type__008Pos34", "@type", "@008Pos34", join_char: "#")
 
-/*
-  <combine name="@facet_format" value="Audio">
-    <if>
-      <any>
-        <data source="@LeaderPos06">
-          <regexp match="[ij]" />
-        </data>
-        <data source="@006Pos00">
-          <regexp match="[ij]" />
-        </data>
-        <all>
-          <data source="@007Pos00">
-            <regexp match="[s]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="CF" />
-          </data>
-          <data source="@008Pos26">
-            <equals string="h" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <equals string="m" />
-          </data>
-          <data source="@006Pos09">
-            <equals string="h" />
-          </data>
-        </all>
-        <data source="337  .a">
-          <equals string="audio" />
-        </data>
-        <data source="337  .b">
-          <equals string="s" />
-        </data>
-        <data source="338  .a">
-          <equals string="Audiodisk" />
-        </data>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_format" value="Bild">
-    <if>
-      <any>
-        <all>
-          <data source="@007Pos00">
-            <equals string="k" />
-          </data>
-          <data source="@007Pos01">
-            <regexp match="[cdefhijklnpqrsuvz]" />
-          </data>
-        </all>
-        <data source="@007Pos00">
-          <equals string="r" />
-        </data>
-        <all>
-          <data source="@type">
-            <equals string="M" />
-          </data>
-          <data source="@008Pos3[34]">
-            <regexp match="[jo]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[ef]" />
-          </data>
-          <data source="@006Pos1[67]">
-            <regexp match="[jo]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="VM" />
-          </data>
-          <data source="@008Pos33">
-            <regexp match="[dikln]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[gkor]" />
-          </data>
-          <data source="@006Pos16">
-            <regexp match="[dikln]" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_format" value="Elektronische Ressource">
-    <if>
-      <any>
-        <data source="@LeaderPos06">
-          <equals string="m" />
-        </data>
-        <data source="@006Pos00">
-          <equals string="m" />
-        </data>
-        <data source="@007Pos00">
-          <equals string="c" />
-        </data>
-        <all>
-          <data source="@type">
-            <regexp match="^(B|Mu|CR|MX)$" />
-          </data>
-          <data source="@008Pos23">
-            <regexp match="[sq]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[acdijpst]" />
-          </data>
-          <data source="@006Pos06">
-            <regexp match="[qs]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[efgkor]" />
-          </data>
-          <data source="@006Pos12">
-            <regexp match="[qs]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <regexp match="^(M|VM)$" />
-          </data>
-          <data source="@008Pos29">
-            <regexp match="[sq]" />
-          </data>
-        </all>
-        <data source="337  .a">
-          <regexp match="^(Computermedien|computer|computermedien|informatique)$" />
-        </data>
-        <data source="337  .b">
-          <equals string="c" />
-        </data>
-        <data source="338  .a">
-          <regexp match="^(Computerdisk|computer disc)$" />
-        </data>
-        <data source="338  .b">
-          <equals string="cd" />
-        </data>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_format" value="Film, Dia, Video">
-    <if>
-      <any>
-        <data source="@007Pos00">
-          <regexp match="[gmv]" />
-        </data>
-        <all>
-          <data source="@type">
-            <equals string="VM" />
-          </data>
-          <data source="@008Pos33">
-            <regexp match="[fmstv]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[gkor]" />
-          </data>
-          <data source="@006Pos16">
-            <regexp match="[fmstv]" />
-          </data>
-        </all>
-        <data source="337  .a">
-          <equals string="video" />
-        </data>
-        <data source="337  .b">
-          <equals string="v" />
-        </data>
-        <data source="338  .a">
-          <regexp match="^(Videodisk|videodisc)$" />
-        </data>
-        <data source="338  .b">
-          <equals string="vd" />
-        </data>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_format" value="Gedruckte Ressource">
-    <if>
-      <any>
-        <data source="@LeaderPos06|@006Pos00">
-          <regexp match="[op]" />
-        </data>
-        <all>
-          <data source="@007Pos00">
-            <equals string="k" />
-          </data>
-          <data source="@007Pos01">
-            <regexp match="[fjs]" />
-          </data>
-        </all>
-        <data source="@007Pos00">
-          <equals string="o" />
-        </data>
-        <all>
-          <data source="@007Pos00">
-            <equals string="t" />
-          </data>
-          <data source="@007Pos01">
-            <regexp match="[ab]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <regexp match="^(B|Mu|CR|MX)$" />
-          </data>
-          <data source="@008Pos23">
-            <regexp match="[dr]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[acdijpst]" />
-          </data>
-          <data source="@006Pos06">
-            <regexp match="[dr]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <regexp match="^(M|VM)$" />
-          </data>
-          <data source="@008Pos29">
-            <regexp match="[dr]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[efgkor]" />
-          </data>
-          <data source="@006Pos12">
-            <regexp match="[dr]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="VM" />
-          </data>
-          <data source="@008Pos33">
-            <equals string="b" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[gkor]" />
-          </data>
-          <data source="@006Pos16">
-            <equals string="b" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_format" value="Landkarte">
-    <if>
-      <any>
-        <data source="@LeaderPos06">
-          <regexp match="[ef]" />
-        </data>
-        <data source="@006Pos00">
-          <regexp match="[ef]" />
-        </data>
-        <data source="@007Pos00">
-          <regexp match="[ad]" />
-        </data>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_format" value="Mikroform">
-    <if>
-      <any>
-        <data source="@007Pos00">
-          <equals string="h" />
-        </data>
-        <all>
-          <data source="@type">
-            <regexp match="^(M|VM)$" />
-          </data>
-          <data source="@008Pos29">
-            <regexp match="[abc]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[efgkor]" />
-          </data>
-          <data source="@006Pos12">
-            <regexp match="[abc]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[acdijpst]" />
-          </data>
-          <data source="@006Pos06">
-            <regexp match="[abc]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <regexp match="^(B|Mu|CR|MX)$" />
-          </data>
-          <data source="@008Pos23">
-            <regexp match="[abc]" />
-          </data>
-        </all>
-        <data source="337  .a">
-          <regexp match="^(Mikroform|microform)$" />
-        </data>
-        <data source="337  .b">
-          <equals string="h" />
-        </data>
-        <data source="338  .a">
-          <regexp match="^(microfiche|microfilm roll)$" />
-        </data>
-        <data source="338  .b">
-          <regexp match="he|hj" />
-        </data>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_format" value="Online-Ressource">
-    <if>
-      <any>
-        <all>
-          <data source="@type">
-            <regexp match="^(B|Mu|CF|CR|MX)$" />
-          </data>
-          <data source="@008Pos23">
-            <equals string="o" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <regexp match="^(M|VM)$" />
-          </data>
-          <data source="@008Pos29">
-            <equals string="o" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[acdijpstm]" />
-          </data>
-          <data source="@006Pos06">
-            <equals string="o" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[efgkor]" />
-          </data>
-          <data source="@006Pos12">
-            <equals string="o" />
-          </data>
-        </all>
-        <data source="338  .a">
-          <regexp match="^(online bron|online resource|online-ressource|Online-Ressource|ressource en ligne)$" />
-        </data>
-        <data source="338  .b">
-          <equals string="cr" />
-        </data>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_format" value="Sonstiges">
-    <if>
-      <any>
-        <all>
-          <data source="@007Pos00">
-            <equals string="t" />
-          </data>
-          <data source="@007Pos01">
-            <equals string="c" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[acdijpst]" />
-          </data>
-          <data source="@006Pos06">
-            <equals string="f" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <regexp match="^(B|CR|Mu|MX)$" />
-          </data>
-          <data source="@008Pos23">
-            <equals string="f" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <regexp match="^(M|VM)$" />
-          </data>
-          <data source="@008Pos29">
-            <equals string="f" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[efgkor]" />
-          </data>
-          <data source="@006Pos12">
-            <equals string="f" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="VM" />
-          </data>
-          <data source="@008Pos33">
-            <equals string="p" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[gkor]" />
-          </data>
-          <data source="@006Pos16">
-            <equals string="p" />
-          </data>
-        </all>
-        <data source="338  .a">
-          <regexp match="^(Gegenstand|Karte)$" />
-        </data>
-        <data source="338  .b">
-          <regexp match="n[or]" />
-        </data>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_format" value="Spiel">
-    <if>
-      <any>
-        <all>
-          <data source="@006Pos00">
-            <equals string="m" />
-          </data>
-          <data source="@006Pos09">
-            <equals string="g" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="CF" />
-          </data>
-          <data source="@008Pos26">
-            <equals string="g" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="M" />
-          </data>
-          <data source="@008Pos3[34]">
-            <regexp match="[pn]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[ef]" />
-          </data>
-          <data source="@006Pos1[67]">
-            <regexp match="[pn]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="VM" />
-          </data>
-          <data source="@008Pos33">
-            <equals string="g" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[gkor]" />
-          </data>
-          <data source="@006Pos16">
-            <equals string="g" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-*/
 set_array("@facet_format")
 if any_match("@LeaderPos06", "[ij]")
   add_field("@facet_format", "Audio")
@@ -1183,514 +407,6 @@ else
 end
 uniq("@facet_format")
 
-/*
-  <combine name="@facet_type" value="Amtliche Druckschrift">
-    <if>
-      <any>
-        <all>
-          <data source="@type">
-            <regexp match="^(B|CF|CR|M|VM)$" />
-          </data>
-          <data source="@008Pos28">
-            <regexp match="[acfilmosz]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[aefgkmorst]" />
-          </data>
-          <data source="@006Pos11">
-            <regexp match="[acfilmosz]" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_type" value="Aufsatz">
-    <if>
-      <any>
-        <all>
-          <data source="@type">
-            <equals string="B" />
-          </data>
-          <data source="@008Pos33">
-            <equals string="e" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[at]" />
-          </data>
-          <data source="@006Pos16">
-            <equals string="e" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <regexp match="^(B|CR)$" />
-          </data>
-          <data source="@008Pos2[4567]">
-            <equals string="g" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[ast]" />
-          </data>
-          <data source="@006Pos0[789]|@006Pos10">
-            <equals string="g" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_type" value="Bibliografie">
-    <if>
-      <any>
-        <all>
-          <data source="@type">
-            <regexp match="^(B|CR)$" />
-          </data>
-          <data source="@008Pos2[4567]">
-            <regexp match="[bknq]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[ast]" />
-          </data>
-          <data source="@006Pos0[789]|@006Pos10">
-            <regexp match="[bknq]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="CF" />
-          </data>
-          <data source="@008Pos26">
-            <equals string="e" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <equals string="m" />
-          </data>
-          <data source="@006Pos09">
-            <equals string="e" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_type" value="Biografie">
-    <if>
-      <any>
-        <all>
-          <data source="@type">
-            <equals string="B" />
-          </data>
-          <data source="@008Pos34">
-            <regexp match="[abc]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[at]" />
-          </data>
-          <data source="@006Pos17">
-            <regexp match="[abc]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="Mu" />
-          </data>
-          <data source="@008Pos3[01]">
-            <regexp match="[ab]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[cdij]" />
-          </data>
-          <data source="@006Pos1[34]">
-            <regexp match="[ab]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="CR" />
-          </data>
-          <data source="@008Pos2[4567]">
-            <equals string="h" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <equals string="s" />
-          </data>
-          <data source="@006Pos0[789]|@006Pos10">
-            <equals string="h" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_type" value="Festschrift">
-    <if>
-      <any>
-        <all>
-          <data source="@type">
-            <equals string="B" />
-          </data>
-          <data source="@008Pos30">
-            <equals string="1" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[at]" />
-          </data>
-          <data source="@006Pos13">
-            <equals string="1" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_type" value="Gesetz">
-    <if>
-      <any>
-        <all>
-          <data source="@type">
-            <regexp match="^(B|CR)$" />
-          </data>
-          <data source="@008Pos2[4567]">
-            <equals string="l" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[ast]" />
-          </data>
-          <data source="@006Pos0[789]|@006Pos10">
-            <equals string="l" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_type" value="Hochschulschrift">
-    <if>
-      <any>
-        <all>
-          <data source="@type">
-            <regexp match="^(B|CR)$" />
-          </data>
-          <data source="@008Pos2[4567]">
-            <equals string="m" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[ast]" />
-          </data>
-          <data source="@006Pos0[789]|@006Pos10">
-            <equals string="m" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_type" value="Konferenzschrift">
-    <if>
-      <any>
-        <all>
-          <data source="@type">
-            <regexp match="^(B|CR)$" />
-          </data>
-          <data source="@008Pos29">
-            <equals string="1" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[ast]" />
-          </data>
-          <data source="@006Pos12">
-            <equals string="1" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="Mu" />
-          </data>
-          <data source="@008Pos3[01]">
-            <equals string="c" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[cdij]" />
-          </data>
-          <data source="@006Pos1[34]">
-            <equals string="c" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_type" value="Monographie">
-    <if>
-      <all>
-        <data source="@LeaderPos07">
-          <regexp match="[adm]" />
-        </data>
-        <none>
-          <data source="@LeaderPos19">
-            <equals string="a" />
-          </data>
-        </none>
-      </all>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_type" value="Musikalia">
-    <if>
-      <any>
-        <data source="@LeaderPos06">
-          <regexp match="[cdj]" />
-        </data>
-        <data source="@006Pos00">
-          <regexp match="[cdj]" />
-        </data>
-        <data source="@007Pos00">
-          <equals string="q" />
-        </data>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_type" value="Nachschlagewerk">
-    <if>
-      <any>
-        <all>
-          <data source="@type">
-            <regexp match="^(B|CR)$" />
-          </data>
-          <data source="@008Pos2[4567]">
-            <regexp match="[der]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[ast]" />
-          </data>
-          <data source="@006Pos0[789]|@006Pos10">
-            <regexp match="[der]" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_type" value="Norm">
-    <if>
-      <any>
-        <all>
-          <data source="@type">
-            <regexp match="^(B|CR)$" />
-          </data>
-          <data source="@008Pos2[4567]">
-            <equals string="u" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[ast]" />
-          </data>
-          <data source="@006Pos0[789]|@006Pos10">
-            <equals string="u" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_type" value="Schriftenreihe">
-    <if>
-      <any>
-        <data source="@LeaderPos07">
-          <equals string="c" />
-        </data>
-        <data source="@LeaderPos19">
-          <equals string="a" />
-        </data>
-        <all>
-          <data source="@type">
-            <equals string="CR" />
-          </data>
-          <data source="@008Pos21">
-            <equals string="m" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <equals string="s" />
-          </data>
-          <data source="@006Pos04">
-            <equals string="m" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <!-- <combine name="@facet_type" value="Schulbuch">
-  </combine> -->
-  <combine name="@facet_type" value="Sonstiges">
-    <if>
-      <any>
-        <all>
-          <data source="@007Pos00">
-            <equals string="t" />
-          </data>
-          <data source="@007Pos01">
-            <equals string="d" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="M" />
-          </data>
-          <data source="@008Pos3[34]">
-            <equals string="r" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[ef]" />
-          </data>
-          <data source="@006Pos1[67]">
-            <equals string="r" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <regexp match="^(B|CR)$" />
-          </data>
-          <data source="@008Pos2[4567]">
-            <regexp match="[acis]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[ast]" />
-          </data>
-          <data source="@006Pos0[789]|@006Pos10">
-            <regexp match="[acis]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="B" />
-          </data>
-          <data source="@008Pos2[4567]">
-            <regexp match="[j2]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[at]" />
-          </data>
-          <data source="@006Pos0[789]|@006Pos10">
-            <regexp match="[j2]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="B" />
-          </data>
-          <data source="@008Pos33">
-            <equals string="m" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <regexp match="[at]" />
-          </data>
-          <data source="@006Pos16">
-            <equals string="m" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="CR" />
-          </data>
-          <data source="@008Pos21">
-            <equals string="l" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <equals string="s" />
-          </data>
-          <data source="@006Pos04">
-            <equals string="l" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-  <combine name="@facet_type" value="Zeitschrift">
-    <if>
-      <any>
-        <all>
-          <data source="@type">
-            <equals string="CR" />
-          </data>
-          <data source="@008Pos21">
-            <regexp match="[np]" />
-          </data>
-        </all>
-        <all>
-          <data source="@type">
-            <equals string="CR" />
-          </data>
-          <data source="@008Pos2[4567]">
-            <equals string="y" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <equals string="s" />
-          </data>
-          <data source="@006Pos04">
-            <regexp match="[np]" />
-          </data>
-        </all>
-        <all>
-          <data source="@006Pos00">
-            <equals string="s" />
-          </data>
-          <data source="@006Pos0[789]|@006Pos10">
-            <equals string="y" />
-          </data>
-        </all>
-      </any>
-    </if>
-    <data source="001" />
-  </combine>
-*/
 set_array("@facet_type")
 if any_match("@type__008Pos28", "(?:B|CF|CR|M|VM)#[acfilmosz]")
   add_field("@facet_type", "Amtliche Druckschrift")
@@ -1887,18 +603,6 @@ else
 end
 uniq("@facet_type")
 
-/*
-  <data name="@language_source_all" source="008">
-    <substring start="35" end="38" />
-  </data>
-  <data name="@language_source_all" source="041[ 01] .[adj]" />
-  <data name="@language_source" source="@language_source_all">
-    <unique />
-  </data>
-  <data name="@language_long" source="@language_source">
-    <lookup in="ISO639-2-to-GND" />
-  </data>
-*/
 copy_field("008", "@language_source")
 substring("@language_source", "35", "3")
 do list(path: "041[ 01] .[adj]", "var": "$i")
@@ -1909,40 +613,6 @@ set_array("@language_long")
 copy_field("@language_source", "@language_long")
 lookup("@language_long.*", "ISO639-2-to-GND", delete: "true")
 
-/*
-  <combine name="@date1" value="${date1}">
-    <if>
-      <all>
-        <data source="@type">
-          <equals string="CR" />
-        </data>
-        <data source="008">
-          <substring start="6" end="7" />
-          <not-equals string="n" />
-        </data>
-      </all>
-    </if>
-    <data name="date1" source="008">
-      <substring start="07" end="11" />
-    </data>
-  </combine>
-  <combine name="@date2" value="${date2}">
-    <if>
-      <all>
-        <data source="@type">
-          <equals string="CR" />
-        </data>
-        <data source="008">
-          <substring start="6" end="7" />
-          <regexp match="[^cn]" />
-        </data>
-      </all>
-    </if>
-    <data name="date2" source="008">
-      <substring start="11" end="15" />
-    </data>
-  </combine>
-*/
 if any_equal("@type", "CR")
   if none_equal("@008Pos06", "n")
     copy_field("@008Pos07", "@date1")
@@ -1954,44 +624,22 @@ end
 
 vacuum()
 
-/*
-  <call-macro name="alma-member-filter" dname="@mmsiz" entity="MBD  " source="i" />
-*/
 do list(path: "MBD  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
     copy_field("$i.i", "@mmsiz")
   end
 end
 
-/*
-  <call-macro name="alma-mms-to-isil" dname="@isil" source="001" />
-*/
 copy_field("001", "@institution_code")
 parse_text("@institution_code", ".*(.{4})$")
 copy_field("@institution_code", "@isil")
 lookup("@isil", "institution-code-to-isil", delete: "true")
 
-/*
-  <call-macro name="alma-mms-to-isil" dname="@isiliz" source="@mmsiz" />
-*/
 copy_field("@mmsiz", "@institution_code_iz")
 parse_text("@institution_code_iz", ".*(.{4})$")
 copy_field("@institution_code_iz", "@isiliz")
 lookup("@isiliz", "institution-code-to-isil", delete: "true")
 
-/*
-  <choose name="@sysid">
-    <data source="981  .a"> <!-- SISIS CATKey -->
-      <regexp match="^\($[isil]\).*" />
-    </data>
-    <data source="981  .a"> <!-- SISIS CATKey -->
-      <regexp match="^\($[sigel]\)(.*)" format="($[isil])${1}" />
-    </data>
-    <data source="035  .a">
-      <regexp match="^\($[isil]\).*" />
-    </data>
-  </choose>
-*/
 do list(path: "981  .a", "var": "$i") # SISIS CATKey
   if any_match("$i", "\\($[isil]\\).*")
     copy_field("$i", "@sysid")
@@ -2001,11 +649,6 @@ do list(path: "981  .a", "var": "$i") # SISIS CATKey
   end
 end
 
-/*
-  <data name="@hbzid" source="035  .a">
-    <regexp match="^\($[catalogid]\).*" />
-  </data>
-*/
 do list(path: "035  .a", "var": "$i")
   if any_match("$i", "\\($[catalogid]\\).*")
     if exists("@hbzid")
@@ -2020,25 +663,8 @@ do list(path: "035  .a", "var": "$i")
   end
 end
 
-/*
-  <combine name="@mmsid" value="(${isil})${id}">
-    <data name="isil" source="@isil" />
-    <data name="id" source="001" />
-  </combine>
-*/
 paste("@mmsid", "~(", "@isil", "~)", "001", join_char: "")
 
-/*
-  <choose name="@id">
-    <data source="@hbzid">
-      <compose postfix="$[id-suffix]" />
-    </data>
-    <data source="@sysid">
-      <compose postfix="$[id-suffix]" />
-    </data>
-    <data source="@mmsid" />
-  </choose>
-*/
 if exists("@hbzid")
   paste("@id", "@hbzid", "$[id-suffix]", join_char: "")
 elsif exists("@sysid")
@@ -2047,31 +673,13 @@ else
   copy_field("@mmsid", "@id")
 end
 
-/*
-  <data name="collection" source="@isil" />
-*/
 copy_field("@isil", "collection")
 
-/*
-  <entity name="TitleUniform">
-    <data name="titleUniform" source="240??.a">
-      <replace pattern="\.?$" with="" />
-    </data>
-  </entity>
-*/
 do list(path: "240??.a", "var": "$i")
   replace_all("$i", "[.]$", "")
   copy_field("$i", "TitleUniform.titleUniform")
 end
 
-/*
-  <entity name="TitleAddendum">
-    <data name="title" source="245??.b">
-      <occurrence only="1" />
-      <replace pattern="\s?[./]\s?$" with="" />
-    </data>
-  </entity>
-*/
 do list(path: "245??.b", "var": "$i")
   unless exists("TitleAddendum.title")
     replace_all("$i", "\\s?[./]\\s?$", "")
@@ -2079,14 +687,6 @@ do list(path: "245??.b", "var": "$i")
   end
 end
 
-/*
-  <entity name="VolumeDesignation">
-    <data name="volumeDesignation" source="245??.n">
-      <occurrence only="1" />
-      <replace pattern="\s?[,./:=]?\s?$" with="" />
-    </data>
-  </entity>
-*/
 do list(path: "245??.n", "var": "$i")
   unless exists("VolumeDesignation.volumeDesignation")
     replace_all("$i", "\\s?[,./:=]?\\s?$", "")
@@ -2094,92 +694,12 @@ do list(path: "245??.n", "var": "$i")
   end
 end
 
-/*
-  <entity name="CreatorStatement">
-    <data name="creatorStatement" source="245[01]?.c">
-      <replace pattern="[.]$" with="" />
-    </data>
-  </entity>
-*/
 set_array("CreatorStatement.creatorStatement[]")
 do list(path: "245[01]?.c", "var": "$i")
   replace_all("$i", "[.]$", "")
   copy_field("$i", "CreatorStatement.creatorStatement[]")
 end
 
-/*
-  <entity name="dc" flushWith="record">
-    <entity name="format[]" flushWith="record">
-      <data name="" source="@facet_format">
-        <unique/>
-      </data>
-      <combine name="" value="Elektronische Ressource">
-        <if>
-          <all>
-            <any>
-              <data source="@facet_format">
-                <equals string="Online-Ressource" />
-              </data>
-            </any>
-            <none>
-              <data source="@facet_format">
-                <equals string="Elektronische Ressource" />
-              </data>
-            </none>
-          </all>
-        </if>
-        <data source="001" />
-      </combine>
-    </entity>
-    <entity name="format[]">
-      <if>
-        <none>
-          <data source="@facet_format" />
-        </none>
-      </if>
-      <data name="" source="001">
-        <constant value="keine Angabe" />
-      </data>
-    </entity>
-
-    <entity name="type[]" flushWith="record">
-      <data name="" source="@facet_type" />
-    </entity>
-    <entity name="type[]">
-      <if>
-        <none>
-          <data source="@facet_type" />
-        </none>
-      </if>
-      <data name="" source="001">
-        <constant value="keine Angabe" />
-      </data>
-    </entity>
-
-    <entity name="language[]" flushWith="record">
-      <data name="" source="@language_long" />
-    </entity>
-    <entity name="language[]">
-      <if>
-        <none>
-          <data source="@language_long" />
-        </none>
-      </if>
-      <data name="" source="001">
-        <constant value="keine Angabe" />
-      </data>
-    </entity>
-
-    <entity name="date[]" flushWith="record">
-      <data name="" source="260[ 23] .c|264[ 23]1.c|@date[12]">
-        <split delimiter="[,-]" />
-        <regexp match="\d{4}" />
-        <not-equals string="9999" />
-        <unique />
-      </data>
-    </entity>
-  </entity>
-*/
 if exists("@facet_format")
   copy_field("@facet_format", "dc.format[]")
   if any_equal("@facet_format", "Online-Ressource")
@@ -2219,64 +739,6 @@ do list(path: "@date_flat", "var": "$i")
 end
 uniq("dc.date[]")
 
-/*
-  <call-macro name="alma-member-filter" dname="@current_library" entity="ITM  " source="w" />
-  <call-macro name="alma-member-filter" dname="@current_location" entity="ITM  " source="x" />
-  <entity name="introx" flushWith="record">
-    <entity name="access[]" flushWith="record">
-      <data name="" source="@facet_format">
-        <equals string="Online-Ressource" />
-        <constant value="online" />
-        <unique/>
-      </data>
-    </entity>
-    <entity name="access[]">
-      <if>
-        <none>
-          <data source="@facet_format">
-            <equals string="Online-Ressource" />
-          </data>
-        </none>
-      </if>
-      <data name="" source="001">
-        <constant value="local" />
-      </data>
-    </entity>
-
-    <entity name="branch[]" flushWith="record">
-      <data name="" source="@current_library">
-        <lookup in="alma-library-to-branch-$[isil]" />
-        <unique />
-      </data>
-      <data name="" source="@current_location">
-        <lookup in="alma-location-to-branch-$[isil]" />
-        <unique />
-      </data>
-    </entity>
-
-    <entity name="carrier[]" flushWith="record">
-      <data name="" source="@facet_format">
-        <not-equals string="Online-Ressource" />
-      </data>
-    </entity>
-    <entity name="carrier[]">
-      <if>
-        <none>
-          <data source="@facet_format" />
-        </none>
-      </if>
-      <data name="" source="001">
-        <constant value="keine Angabe" />
-      </data>
-    </entity>
-    <entity name="taxonomy[]" flushWith="record">
-      <data name="" source="@SubjectGHBLocal">
-        <lookup in="alma-notation-to-taxonomy" />
-        <unique />
-      </data>
-    </entity>
-  </entity>
-*/
 if any_equal("@facet_format", "Online-Ressource")
   add_field("introx.access[]", "online")
 else
@@ -2326,30 +788,10 @@ lookup("@taxonomy.*", "alma-notation-to-taxonomy", delete: "true")
 uniq("@taxonomy")
 move_field("@taxonomy", "introx.taxonomy[]")
 
-/*
-  <entity name="IdentifierAlma" flushWith="record">
-    <data name="identifierMember" source="001">
-      <constant value="$[member]" />
-    </data>
-    <data name="identifierMMS" source="001" />
-    <data name="identifierMMSIZ" source="@mmsiz" />
-    <data name="identifierPID" source="@portfolio" />
-  </entity>
-*/
 add_field("IdentifierAlma.identifierMember", "$[member]")
 copy_field("001", "IdentifierAlma.identifierMMS")
 copy_field("@mmsiz", "IdentifierAlma.identifierMMSIZ")
 
-/*
-  <combine name="@portfolio" value="${value}" sameEntity="true">
-    <if>
-      <data source="POR  .[MA]">
-        <equals string="$[member]" />
-      </data>
-    </if>
-    <data name="value" source="POR  .a" />
-  </combine>
-*/
 set_array("@portfolio")
 do list(path: "POR  ", "var": "$i")
   if any_equal("$i.[MA]", "$[member]")
@@ -2358,24 +800,9 @@ do list(path: "POR  ", "var": "$i")
 end
 copy_field("@portfolio", "IdentifierAlma.identifierPID")
 
-/*
-  <entity name="RecordIdentifier" flushWith="@id">
-    <data name="identifierForTheRecord" source="@id" />
-    <data name="identifierForTheIndex" source="@mmsid" />
-  </entity>
-*/
 copy_field("@mmsid", "RecordIdentifier.identifierForTheIndex")
 copy_field("@id", "RecordIdentifier.identifierForTheRecord")
 
-/*
-  <entity name="DateFirst" flushWith="record">
-    <call-macro name="alma-mms-filter" dname="date" entity="POC  " source="b" filter="a" />
-    <data name="date" source="@date1">
-      <regexp match="^[0-9]+$" />
-      <not-equals string="9999" />
-    </data>
-  </entity>
-*/
 do list(path: "POC  ", "var": "$i")
   if any_match("$i.a", ".*$[institution-code]")
     copy_field("$i.b", "DateFirst.date")
@@ -2388,15 +815,6 @@ if any_match("@date1", "\\d+")
   end
 end
 
-/*
-  <entity name="DateLast" flushWith="record">
-    <call-macro name="alma-mms-filter" dname="date" entity="POC  " source="c" filter="a" />
-    <data name="date" source="@date2">
-      <regexp match="^[0-9]+$" />
-      <not-equals string="9999" />
-    </data>
-  </entity>
-*/
 do list(path: "POC  ", "var": "$i")
   if any_match("$i.a", ".*$[institution-code]")
     copy_field("$i.c", "DateLast.date")
@@ -2409,14 +827,6 @@ if any_match("@date2", "\\d+")
   end
 end
 
-/*
-  <entity name="Language[]" flushWith="record">
-    <entity name="" flushWith="@language_source" reset="true">
-      <data name="language" source="@language_long" />
-      <data name="languageSource" source="@language_source" />
-    </entity>
-  </entity>
-*/
 set_array("Language[]")
 do list(path: "@language_source", "var": "$i")
   add_field("Language[].$append.__dummy__", "")
@@ -2426,25 +836,6 @@ do list(path: "@language_source", "var": "$i")
   copy_field("$i", "Language[].$last.languageSource")
 end
 
-/*
-  <entity name="IdentifierZDB[]" flushWith="record">
-    <entity name="" flushWith="0167 " sameEntity="true">
-      <if>
-        <any flushWith="0167 ">
-          <none flushWith="0167 " sameEntity="true">
-            <data source="0167 .2" />
-          </none>
-          <data source="0167 .2">
-            <equals string="DE-600" />
-          </data>
-        </any>
-      </if>
-      <data name="identifierZDB" source="0167 .a">
-        <java class="hbz.limetrans.function.ZDB" />
-      </data>
-    </entity>
-  </entity>
-*/
 set_array("IdentifierZDB[]")
 do list(path: "0167 ", "var": "$i")
   if any_equal("$i.2", "DE-600")
@@ -2454,22 +845,6 @@ do list(path: "0167 ", "var": "$i")
   end
 end
 
-/*
-  <entity name="IdentifierISBN[]" flushWith="record">
-    <entity name="" flushWith="020  " sameEntity="true">
-      <entity name="identifierISBN[]" flushWith="020  " sameEntity="true">
-        <if>
-          <data source="020  .a" />
-        </if>
-        <data name="" source="020  .a" />
-        <data name="" source="020  .c" />
-        <data name="" source="020  .q">
-          <replace pattern="^\(|\s?[):;,]\s?$" with="" />
-        </data>
-      </entity>
-    </entity>
-  </entity>
-*/
 set_array("IdentifierISBN[]")
 do list(path: "020  ", "var": "$i")
   if exists("$i.a")
@@ -2483,31 +858,12 @@ do list(path: "020  ", "var": "$i")
   end
 end
 
-/*
-  <entity name="IdentifierISSN[]" flushWith="record">
-    <entity name="" flushWith="022? " sameEntity="true">
-      <data name="identifierISSN" source="022? .a" />
-    </entity>
-  </entity>
-*/
 set_array("IdentifierISSN[]")
 do list(path: "022? ", "var": "$i")
   add_field("IdentifierISSN[].$append.__dummy__", "")
   copy_field("$i.a", "IdentifierISSN[].$last.identifierISSN")
 end
 
-/*
-  <entity name="IdentifierDOI[]" flushWith="record">
-    <entity name="" flushWith="0247?" sameEntity="true">
-      <if>
-        <data source="0247?.2">
-          <equals string="doi" />
-        </data>
-      </if>
-      <data name="standardNumber" source="0247?.a" />
-    </entity>
-  </entity>
-*/
 set_array("IdentifierDOI[]")
 do list(path: "0247?", "var": "$i")
   if any_equal("$i.2", "doi")
@@ -2516,29 +872,6 @@ do list(path: "0247?", "var": "$i")
   end
 end
 
-/*
-  <entity name="Person[]" flushWith="record">
-    <entity name="" flushWith="100[013] " sameEntity="true">
-      <if>
-        <any flushWith="100[013] ">
-          <none flushWith="100[013] " sameEntity="true">
-            <data source="100[013] .[4e]" />
-          </none>
-          <data source="100[013] .[4e]">
-            <regexp match="^([Aa]ut|[Cc]re)" />
-          </data>
-        </any>
-      </if>
-      <call-macro name="personName"       field="100" />
-      <call-macro name="personNumbering"  field="100" />
-      <call-macro name="personTitle"      field="100" />
-      <call-macro name="personBio"        field="100" />
-      <call-macro name="personRole"       field="100" />
-      <call-macro name="personIdentifier" field="100" />
-      <call-macro name="identifierGND"    field="100" />
-    </entity>
-  </entity>
-*/
 set_array("@person")
 do list(path: "100[013] ", "var": "$i")
   if exists("$i.[4e]")
@@ -2551,26 +884,6 @@ do list(path: "100[013] ", "var": "$i")
 end
 move_field("@person", "Person[]")
 
-/*
-  <entity name="CorporateBody[]" flushWith="record">
-    <entity name="" flushWith="[17]10[012] " sameEntity="true">
-      <data name="corporateBodyName" source="[17]10[012] .a">
-        <replace pattern="\.$" with="" />
-      </data>
-      <entity name="corporateBodyNameUnit[]" flushWith="[17]10[012] " sameEntity="true">
-        <data name="" source="[17]10[012] .b">
-          <replace pattern="\.$" with="" />
-        </data>
-      </entity>
-      <entity name="corporateBodyIdentifier[]" flushWith="[17]10[012] " sameEntity="true">
-        <data name="" source="[17]10[012] .0">
-          <regexp match="^\(DE-588\).*$" />
-        </data>
-      </entity>
-      <call-macro name="identifierGND" field="[17]10" />
-    </entity>
-  </entity>
-*/
 set_array("CorporateBody[]")
 do list(path: "[17]10[012] ", "var": "$i")
   add_field("CorporateBody[].$append.__dummy__", "")
@@ -2593,35 +906,6 @@ do list(path: "[17]10[012] ", "var": "$i")
   end
 end
 
-/*
-  <entity name="Conference" flushWith="record">
-    <data name="conferenceName" source="111[012] .a">
-      <replace pattern="[.,]$" with="" />
-    </data>
-    <data name="conferencePlace" source="111[012] .c">
-      <replace pattern="\(|\)?[;.,]?$" with="" />
-      <occurrence only="1" />
-    </data>
-    <data name="conferenceDate" source="111[012] .d">
-      <replace pattern="\(|\)?[,]?$|\s?:$" with="" />
-    </data>
-    <concat name="conferenceUnit" delimiter=". ">
-      <data source="111[012] .e">
-        <replace pattern="[,.]$" with="" />
-      </data>
-    </concat>
-    <data name="corporateBodyNameeNumber" source="111[012] .n"><!-- [sic] -->
-      <replace pattern="\(|\)?[,]?$|\s?[;:]$" with="" />
-      <occurrence only="1" />
-    </data>
-    <entity name="conferenceIdentifier[]" flushWith="111[012] " sameEntity="true">
-      <data name="" source="111[012] .0">
-        <regexp match="^\(DE-588\).*$" />
-      </data>
-    </entity>
-    <call-macro name="identifierGND" field="111" />
-  </entity>
-*/
 do list(path: "111[012] .a", "var": "$i")
   replace_all("$i", "[.,]$", "")
   copy_field("$i", "Conference.conferenceName")
@@ -2657,19 +941,6 @@ do list(path: "111[012] .e", "var": "$i")
 end
 join_field("Conference.conferenceUnit", ". ")
 
-/*
-  <entity name="TitleStatement[]" flushWith="record">
-    <entity name="" flushWith="record">
-      <call-macro name="regex-del-punctuation-end" dsource="245??.a" dname="titleMain" />
-    </entity>
-    <entity name="" flushWith="record">
-      <data name="titleMain" source="245??.p">
-        <occurrence only="1" />
-        <replace pattern="\s?\.?\s?$" with="" />
-      </data>
-    </entity>
-  </entity>
-*/
 set_array("TitleStatement[]")
 do list(path: "245??.a", "var": "$i")
   add_field("TitleStatement[].$append.__dummy__", "")
@@ -2685,36 +956,12 @@ end
 add_field("TitleStatement[].$append.__dummy__", "")
 move_field("@titleMain", "TitleStatement[].$last.titleMain")
 
-/*
-  <entity name="Edition">
-    <entity name="edition[]" flushWith="record">
-      <data name="" source="250  .a">
-        <replace pattern="\s?[=/]$" with="" />
-      </data>
-    </entity>
-  </entity>
-*/
 set_array("Edition.edition[]")
 do list(path: "250  .a", "var": "$i")
   replace_all("$i", "\\s?[=/]$", "")
   copy_field("$i", "Edition.edition[]")
 end
 
-/*
-  <entity name="PublisherName[]" flushWith="record">
-    <entity name="" flushWith="260[ 23] |264[ 23][ 1]" sameEntity="true">
-      <entity name="place[]" flushWith="260[ 23] |264[ 23][ 1]" sameEntity="true">
-        <call-macro name="regex-del-punctuation-end" dsource="260[ 23] .a|264[ 23][ 1].a" dname="" />
-      </entity>
-      <entity name="name[]" flushWith="260[ 23] |264[ 23][ 1]" sameEntity="true">
-        <call-macro name="regex-del-punctuation-end" dsource="260[ 23] .b|264[ 23][ 1].b" dname="" />
-      </entity>
-      <entity name="chronology[]" flushWith="260[ 23] |264[ 23][ 1]" sameEntity="true">
-        <call-macro name="regex-del-punctuation-end" dsource="260[ 23] .c|264[ 23][ 1].c" dname="" />
-      </entity>
-    </entity>
-  </entity>
-*/
 set_array("PublisherName[]")
 do list(path: "260[ 23] |264[ 23][ 1]", "var": "$i")
   set_hash("@publisher")
@@ -2733,13 +980,6 @@ do list(path: "260[ 23] |264[ 23][ 1]", "var": "$i")
   move_field("@publisher", "PublisherName[]")
 end
 
-/*
-  <entity name="DateProper">
-    <entity name="date[]" flushWith="record">
-      <call-macro name="regex-del-punctuation-end" dsource="260[ 23] .c|264[ 23][ 1].c" dname="" />
-    </entity>
-  </entity>
-*/
 do list(path: "260[ 23] |264[ 23][ 1]", "var": "$i")
   do list(path: "$i.c", "var": "$j")
     replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
@@ -2747,138 +987,6 @@ do list(path: "260[ 23] |264[ 23][ 1]", "var": "$i")
   end
 end
 
-/*
-  <data name="@300a1" source="300  .a">
-    <occurrence only="1" />
-    <replace pattern="\s?[:;+\(]?$" with="" />
-  </data>
-  <data name="@300a2" source="300  .a">
-    <occurrence only="2" />
-    <replace pattern="\s?[:;+\)]?$" with="" />
-  </data>
-  <data name="@300b" source="300  .b">
-    <replace pattern="\s?[:;+\(]?$" with="" />
-  </data>
-  <data name="@300c1" source="300  .c">
-    <occurrence only="1" />
-    <replace pattern="\.?\s?[+\(]?$" with="" />
-  </data>
-  <data name="@300c2" source="300  .c">
-    <occurrence only="2" />
-    <replace pattern="\.?\s?[:;+\)]?$" with="" />
-  </data>
-  <data name="@300e" source="300  .e">
-    <replace pattern="\.?\s?\(?$" with="" />
-  </data>
-
-  <combine name="@300a2_punct" value="${a2})">
-    <if>
-      <all>
-        <data source="@300a2" />
-        <none>
-          <data source="@300c2" />
-        </none>
-      </all>
-    </if>
-    <data name="a2" source="@300a2" />
-  </combine>
-  <combine name="@300a2_punct" value="${a2} ; ">
-    <if>
-      <all>
-        <data source="@300a2" />
-        <data source="@300c2" />
-      </all>
-    </if>
-    <data name="a2" source="@300a2" />
-  </combine>
-  <combine name="@300b_punct" value=" : ${b}">
-    <if>
-      <all>
-        <data source="@300b" />
-        <data source="@300a1" />
-      </all>
-    </if>
-    <data name="b" source="@300b" />
-  </combine>
-  <combine name="@300c1_punct" value=" ; ${c1}">
-    <if>
-      <all>
-        <data source="@300c1" />
-        <data source="@300a1|@300b" />
-      </all>
-    </if>
-    <data name="c1" source="@300c1" />
-  </combine>
-  <combine name="@300c2_punct" value="${c2})">
-    <data name="c2" source="@300c2" />
-  </combine>
-  <combine name="@300e_punct" value=" ; ${e}">
-    <if>
-      <all>
-        <data source="300  .e" />
-        <data source="@300[ac]1|@300b" />
-        <none>
-          <data source="@300[ac]2" />
-        </none>
-      </all>
-    </if>
-    <data name="e" source="@300e" />
-  </combine>
-  <combine name="@300e_punct" value=" ; ${e} (">
-    <if>
-      <all>
-        <data source="300  .e" />
-        <data source="@300[ac]1|@300b" />
-        <data source="@300[ac]2" />
-      </all>
-    </if>
-    <data name="e" source="@300e" />
-  </combine>
-
-  <entity name="Extent">
-    <combine name="extent" value="${a1}${b}${c1}${e}${a2}${c2}">
-      <choose name="a1">
-        <data source="@300a1" />
-        <data source="300*">
-          <constant value="" />
-        </data>
-      </choose>
-      <choose name="b">
-        <data source="@300b_punct" />
-        <data source="@300b" />
-        <data source="300*">
-          <constant value="" />
-        </data>
-      </choose>
-      <choose name="c1">
-        <data source="@300c1_punct" />
-        <data source="@300c1" />
-        <data source="300*">
-          <constant value="" />
-        </data>
-      </choose>
-      <choose name="e">
-        <data source="@300e_punct" />
-        <data source="@300e" />
-        <data source="300*">
-          <constant value="" />
-        </data>
-      </choose>
-      <choose name="a2">
-        <data source="@300a2_punct" />
-        <data source="300*">
-          <constant value="" />
-        </data>
-      </choose>
-      <choose name="c2">
-        <data source="@300c2_punct" />
-        <data source="300*">
-          <constant value="" />
-        </data>
-      </choose>
-    </combine>
-  </entity>
-*/
 set_array("@300a")
 copy_field("300  .a", "@300a")
 if exists("@300a.1")
@@ -2942,30 +1050,9 @@ if exists("300  .e")
 end
 paste("Extent.extent", "@300a1", "@300b_punct", "@300c1_punct", "@300e_punct", "@300a2_punct", "@300c2_punct", join_char: "")
 
-/*
-  <entity name="ChronologyAndEnumeration">
-    <concat name="value" delimiter=" ; ">
-      <data source="3620 .a" />
-    </concat>
-  </entity>
-*/
 copy_field("3620 .a", "ChronologyAndEnumeration.value")
 join_field("ChronologyAndEnumeration.value", " ; ")
 
-/*
-  <entity name="TitleSuper[]" flushWith="record">
-    <if>
-      <none flushWith="record">
-        <data source="830??" />
-      </none>
-    </if>
-    <entity name="" flushWith="490[01] " sameEntity="true" >
-      <entity name="titleSuper[]" flushWith="490[01] " sameEntity="true">
-        <call-macro name="regex-del-punctuation-end" dsource="490[01] .a" dname="" />
-      </entity>
-    </entity>
-  </entity>
-*/
 unless exists("830??")
   set_array("TitleSuper[]")
   do list(path: "490[01] ", "var": "$i")
@@ -2978,20 +1065,6 @@ unless exists("830??")
   end
 end
 
-/*
-  <entity name="TitleSuperVolumeDesignation[]" flushWith="record">
-    <if>
-      <none flushWith="record">
-        <data source="830??" />
-      </none>
-    </if>
-    <entity name="" flushWith="490[01] " sameEntity="true">
-      <entity name="volumeDesignation[]" flushWith="490[01] " sameEntity="true">
-        <call-macro name="regex-del-punctuation-end" dsource="490[01] .v" dname="" />
-      </entity>
-    </entity>
-  </entity>
-*/
 unless exists("830??")
   set_array("TitleSuperVolumeDesignation[]")
   do list(path: "490[01] ", "var": "$i")
@@ -3003,19 +1076,6 @@ unless exists("830??")
   end
 end
 
-/*
-  <call-macro name="alma-member-filter" dname="@description" entity="989  " source="a" />
-  <entity name="Description">
-    <entity name="description[]" flushWith="record">
-      <data name="" source="500  .a" />
-      <data name="" source="@description">
-        <regexp match="$[regexp.description]" />
-        <unique />
-      </data>
-      <call-macro name="alma-mms-filter" dname="" entity="H52??" source="z" filter="8" />
-    </entity>
-  </entity>
-*/
 set_array("@description")
 do list(path: "989  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
@@ -3032,40 +1092,10 @@ do list(path: "H52??", "var": "$i")
   end
 end
 
-/*
-  <entity name="Abstract">
-    <entity name="abstract[]" flushWith="record">
-      <data name="" source="5203 .[ab]" />
-    </entity>
-  </entity>
-*/
 copy_field("5203 .[ab]", "Abstract.abstract[]")
-
-/*
-  <entity name="Recension">
-    <entity name="abstract[]" flushWith="record">
-      <data name="" source="5201 .[ab]" />
-    </entity>
-  </entity>
-*/
 copy_field("5201 .[ab]", "Recension.abstract[]")
-
-/*
-  <entity name="Summary">
-    <entity name="abstract[]" flushWith="record">
-      <data name="" source="520  .[ab]" />
-    </entity>
-  </entity>
-*/
 copy_field("520  .[ab]", "Summary.abstract[]")
 
-/*
-  <entity name="HoldingsStatement[]" flushWith="record">
-    <entity name="" flushWith="H66??" sameEntity="true">
-      <call-macro name="alma-mms-filter" dname="note" entity="H66??" source="z" filter="8" />
-    </entity>
-  </entity>
-*/
 set_array("HoldingsStatement[]")
 do list(path: "H66??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
@@ -3074,48 +1104,6 @@ do list(path: "H66??", "var": "$i")
   end
 end
 
-/*
-  <entity name="PersonContributor[]" flushWith="record">
-    <entity name="" flushWith="record">
-      <if>
-        <all flushWith="record">
-          <data source="100[013] .[4e]" />
-          <none flushWith="record">
-            <data source="100[013] .[4e]">
-              <regexp match="^([Aa]ut|[Cc]re)" />
-            </data>
-          </none>
-        </all>
-      </if>
-      <call-macro name="personName"       field="100" />
-      <call-macro name="personNumbering"  field="100" />
-      <call-macro name="personTitle"      field="100" />
-      <call-macro name="personBio"        field="100" />
-      <call-macro name="personRole"       field="100" />
-      <call-macro name="personIdentifier" field="100" />
-      <call-macro name="identifierGND"    field="100" />
-    </entity>
-    <entity name="" flushWith="700[013] " sameEntity="true">
-      <if>
-        <all flushWith="700[013] " sameEntity="true">
-          <data source="700[013] .[4e]" />
-          <none flushWith="700[013] " sameEntity="true">
-            <data source="700[013] .[4e]">
-              <regexp match="^([Aa]ut|[Cc]re)" />
-            </data>
-          </none>
-        </all>
-      </if>
-      <call-macro name="personName"       field="700" />
-      <call-macro name="personNumbering"  field="700" />
-      <call-macro name="personTitle"      field="700" />
-      <call-macro name="personBio"        field="700" />
-      <call-macro name="personRole"       field="700" />
-      <call-macro name="personIdentifier" field="700" />
-      <call-macro name="identifierGND"    field="700" />
-    </entity>
-  </entity>
-*/
 set_array("@person")
 do list(path: "100[013] |700[013] ", "var": "$i")
   if exists("$i.[4e]")
@@ -3126,27 +1114,6 @@ do list(path: "100[013] |700[013] ", "var": "$i")
 end
 move_field("@person", "PersonContributor[]")
 
-/*
-  <entity name="DescriptionOfRelatedEditions[]" flushWith="record">
-    <entity name="" flushWith="77[356]??|580  " sameEntity="true">
-      <concat name="description" delimiter=": " flushWith="77[356]??">
-        <data source="77[356]??.a">
-          <replace pattern="[.:]?$" with="" />
-        </data>
-        <data source="77[356]??.t">
-          <replace pattern="\.?$" with="" />
-        </data>
-      </concat>
-      <data name="description" source="580  .a" />
-      <data name="prefix" source="77[356]??.i">
-        <replace pattern=":?$" with="" />
-      </data>
-      <entity name="note[]" flushWith="77[356]??" sameEntity="true">
-        <data name="" source="77[356]??.n" />
-      </entity>
-    </entity>
-  </entity>
-*/
 set_array("DescriptionOfRelatedEditions[]")
 add_field("DescriptionOfRelatedEditions[].$append.__dummy__", "")
 copy_field("580  .a", "DescriptionOfRelatedEditions[].$last.description")
@@ -3170,59 +1137,12 @@ do list(path: "77[356]??", "var": "$i")
   copy_field("$i.n", "DescriptionOfRelatedEditions[].$last.note[]")
 end
 
-/*
-  <entity name="IdentifierISBNParallel[]" flushWith="record">
-    <entity name="" flushWith="77[356]??" sameEntity="true">
-      <entity name="identifierISBN[]" flushWith="77[356]??" sameEntity="true">
-        <data name="" source="77[356]??.z" />
-      </entity>
-    </entity>
-  </entity>
-*/
 set_array("IdentifierISBNParallel[]")
 do list(path: "77[356]??", "var": "$i")
   add_field("IdentifierISBNParallel[].$append.__dummy__", "")
   copy_field("$i.z", "IdentifierISBNParallel[].$last.identifierISBN[]")
 end
 
-/*
-  <entity name="DescriptionOfFormerEditionsOrVolumes[]" flushWith="record">
-    <entity name="" flushWith="7800[01234567]" sameEntity="true">
-      <choose name="prefix" flushWith="7800[01234567].t" sameEntity="true">
-        <data source="7800[0123567].i" />
-        <data source="78000.t">
-          <constant value="Fortsetzung von" />
-        </data>
-        <data source="78001.t">
-          <constant value="Teilweise Fortsetzung von" />
-        </data>
-        <data source="78002.t">
-          <constant value="Ersatz von" />
-        </data>
-        <data source="78003.t">
-          <constant value="Teilweise Ersatz von" />
-        </data>
-        <data source="78004.t">
-          <constant value="Vereinigung von" />
-        </data>
-        <data source="78005.t">
-          <constant value="Darin aufgegangen" />
-        </data>
-        <data source="78006.t">
-          <constant value="Teilweise darin aufgegangen" />
-        </data>
-        <data source="78007.t">
-          <constant value="Abgespalten von" />
-        </data>
-      </choose>
-      <concat name="description" delimiter=": " flushWith="7800[01234567]">
-        <data source="7800[01234567].a" />
-        <data source="7800[01234567].t" />
-      </concat>
-      <data name="note" source="7800[01234567].n" />
-    </entity>
-  </entity>
-*/
 set_array("@descriptionOfEditionsOrVolumes")
 do list(path: "78000", "var": "$i")
   add_field("@prefix", "Fortsetzung von")
@@ -3258,41 +1178,6 @@ do list(path: "78007", "var": "$i")
 end
 move_field("@descriptionOfEditionsOrVolumes", "DescriptionOfFormerEditionsOrVolumes[]")
 
-/*
-  <entity name="DescriptionOfContinuingEditionsOrVolumes[]" flushWith="record">
-    <entity name="" flushWith="7850[012345678]" sameEntity="true">
-      <choose name="prefix" flushWith="7850[012345678].t" sameEntity="true">
-        <data source="7850[012345678].i" />
-        <data source="7850[078].t">
-          <constant value="Fortgesetzt von" />
-        </data>
-        <data source="78501.t">
-          <constant value="Teilweise fortgesetzt von" />
-        </data>
-        <data source="78502.t">
-          <constant value="Ersetzt durch" />
-        </data>
-        <data source="78503.t">
-          <constant value="Teilweise ersetzt durch" />
-        </data>
-        <data source="78504.t">
-          <constant value="Aufgegangen in" />
-        </data>
-        <data source="78505.t">
-          <constant value="Teilweise aufgegangen in" />
-        </data>
-        <data source="78506.t">
-          <constant value="Gesplittet in" />
-        </data>
-      </choose>
-      <concat name="description" delimiter=": " flushWith="7850[012345678]">
-        <data source="7850[012345678].a" />
-        <data source="7850[012345678].t" />
-      </concat>
-      <data name="note" source="7850[012345678].n" />
-    </entity>
-  </entity>
-*/
 set_array("@descriptionOfEditionsOrVolumes")
 do list(path: "7850[078]", "var": "$i")
   add_field("@prefix", "Fortgesetzt von")
@@ -3324,15 +1209,6 @@ do list(path: "78506", "var": "$i")
 end
 move_field("@descriptionOfEditionsOrVolumes", "DescriptionOfContinuingEditionsOrVolumes[]")
 
-/*
-  <entity name="TitleSuper[]" flushWith="record">
-    <entity name="" flushWith="830 ?" sameEntity="true">
-      <entity name="titleSuper[]" flushWith="830 ?" sameEntity="true">
-        <call-macro name="regex-del-punctuation-end" dsource="830 ?.a" dname="" />
-      </entity>
-    </entity>
-  </entity>
-*/
 if exists("830??")
   set_array("TitleSuper[]")
   do list(path: "830 ?", "var": "$i")
@@ -3343,15 +1219,6 @@ if exists("830??")
 end
 uniq("TitleSuper[]")
 
-/*
-  <entity name="TitleSuperVolumeDesignation[]" flushWith="record">
-    <entity name="" flushWith="830 ?" sameEntity="true">
-      <entity name="volumeDesignation[]" flushWith="830 ?" sameEntity="true">
-        <call-macro name="regex-del-punctuation-end" dsource="830 ?.v" dname="" />
-      </entity>
-    </entity>
-  </entity>
-*/
 if exists("830??")
   set_array("TitleSuperVolumeDesignation[]")
   do list(path: "830 ?", "var": "$i")
@@ -3361,47 +1228,6 @@ if exists("830??")
   end
 end
 
-/*
-  <entity name="OnlineAccess[]" flushWith="record">
-    <entity name="" flushWith="856??" sameEntity="true">
-      <if>
-        <any flushWith="856??">
-          <none flushWith="856??" sameEntity="true">
-            <data source="856??.M" />
-          </none>
-          <data source="856??.M">
-            <equals string="$[member]" />
-          </data>
-        </any>
-      </if>
-      <data name="uri" source="856??.u">
-        <occurrence only="1" sameEntity="true" />
-        <unique />
-      </data>
-      <data name="nonpublicnote" source="856??.x">
-        <occurrence only="1" sameEntity="true" />
-      </data>
-      <data name="publicnote" source="856??.z">
-        <occurrence only="1" sameEntity="true" />
-      </data>
-      <data name="relatedto" source="856??.3" />
-    </entity>
-    <entity name="" flushWith="POR  " sameEntity="true">
-      <if>
-        <data source="POR  .[MA]">
-          <equals string="$[member]" />
-        </data>
-      </if>
-      <data name="uri" source="POR  .D">
-        <replace pattern="$[network]" with="$[member]" />
-      </data>
-      <data name="isInternalLinkFor" source="POR  .D">
-        <constant value="$[isil]" />
-      </data>
-      <data name="publicnote" source="POR  .q" />
-    </entity>
-  </entity>
-*/
 set_array("OnlineAccess[]")
 do list(path: "856??", "var": "$i")
   if exists("$i.M")
@@ -3423,15 +1249,6 @@ do list(path: "POR  ", "var": "$i")
 end
 hbz.limetrans.function.Dedup("OnlineAccess[].*.uri")
 
-/*
-  <call-macro name="alma-member-filter" dname="@SubjectHeadings" entity="982  " source="b" />
-  <data name="@SubjectHeadings" source="689??.a" />
-  <entity name="SubjectHeadings[]" flushWith="record">
-    <entity name="" flushWith="@SubjectHeadings" reset="true">
-      <data name="subject" source="@SubjectHeadings" />
-    </entity>
-  </entity>
-*/
 set_array("SubjectHeadings[]")
 do list(path: "982  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
@@ -3444,45 +1261,12 @@ do list(path: "689??", "var": "$i")
   copy_field("$i.a", "SubjectHeadings[].$last.subject")
 end
 
-/*
-  <call-macro name="alma-member-filter" dname="@SubjectGHBLocal" entity="983  " source="b" />
-  <combine name="@SubjectGHBLocal" value="${value}" sameEntity="true">
-    <if>
-      <data source="084  .2">
-        <equals string="ghbs" />
-      </data>
-    </if>
-    <data name="value" source="084  .a" />
-  </combine>
-  <entity name="SubjectGHBLocal[]" flushWith="record">
-    <entity name="" flushWith="@SubjectGHBLocal" reset="true">
-      <data name="subject" source="@SubjectGHBLocal" />
-    </entity>
-  </entity>
-*/
 set_array("SubjectGHBLocal[]")
 do list(path: "@SubjectGHBLocal", "var": "$i")
   add_field("SubjectGHBLocal[].$append.__dummy__", "")
   copy_field("$i", "SubjectGHBLocal[].$last.subject")
 end
 
-/*
-  <combine name="@uid" value="(${isil})${id}">
-    <data name="isil" source="@isiliz" />
-    <data name="id" source="@mmsiz" />
-  </combine>
-  <data name="@uid" source="@hbzid" />
-  <data name="@uid" source="@sysid" />
-  <data name="@uid" source="@mmsid" />
-  <data name="@uid" source="@id" />
-  <entity name="xbib[]" flushWith="record">
-    <entity name="" flushWith="@uid" reset="true">
-      <data name="uid" source="@uid">
-        <unique />
-      </data>
-    </entity>
-  </entity>
-*/
 set_array("xbib[]")
 copy_field("@mmsid", "xbib[].$append.uid")
 copy_field("@hbzids", "xbib[].$append.uid")
@@ -3493,18 +1277,6 @@ copy_field("@sysid", "xbib[].$append.uid")
 copy_field("@id", "xbib[].$append.uid")
 uniq("xbib[]")
 
-/*
-  <choose name="TypeMedia" flushWith="record">
-    <data source="@facet_format">
-      <!-- matches: Bild; Audio; Film, Dia, Video; Elektronische Ressource -->
-      <regexp match="^[BAFE].*" />
-    </data>
-    <data source="@facet_format">
-      <equals string="Online-Ressource" />
-      <constant value="Elektronische Ressource" />
-    </data>
-  </choose>
-*/
 do list(path: "@facet_format", "var": "$i")
   unless exists("TypeMedia")
     if any_match("$i", "[BAFE].*")
@@ -3518,11 +1290,6 @@ unless exists("TypeMedia")
   end
 end
 
-/*
-  <data name="TypePeriodical" source="@facet_type">
-    <regexp match="Schriftenreihe|(?i)zeitschrift" />
-  </data>
-*/
 do list(path: "@facet_type", "var": "$i")
   replace_all("$i", ".*?(Schriftenreihe|(?i)zeitschrift).*", "$1")
   if any_match("$i", "Schriftenreihe|(?i)zeitschrift")
@@ -3530,18 +1297,6 @@ do list(path: "@facet_type", "var": "$i")
   end
 end
 
-/*
-  <call-macro name="alma-mms-filter" dname="@callnumber" entity="H52??" source="h" filter="8" />
-  <call-macro name="alma-member-filter" dname="@callnumber" entity="ITM  " source="[cnz]" />
-  <entity name="Item[]" flushWith="record">
-    <entity name="" flushWith="@callnumber" reset="true">
-      <data name="callnumber" source="@callnumber">
-        <not-equals string="" />
-        <unique />
-      </data>
-    </entity>
-  </entity>
-*/
 set_array("Item[]")
 do list(path: "H52??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
@@ -3556,47 +1311,12 @@ end
 uniq("@callnumber")
 copy_field("@callnumber", "Item[].$append.callnumber")
 
-/*
-  <choose name="$[deletion-literal]"> <!-- DEL -->
-    <data source="$[deletion-source]">
-      <equals string="$[deletion-value]" />
-    </data>
-    <data source="leader">
-      <substring start="5" end="6" />
-      <equals string="d" />
-      <constant value="$[deletion-value]" />
-    </data>
-  </choose>
-*/
 if any_equal("$[deletion-source]", "$[deletion-value]")
   add_field("$[deletion-literal]", "$[deletion-value]")
 elsif any_equal("@LeaderPos05", "d")
   add_field("$[deletion-literal]", "$[deletion-value]")
 end
 
-/*
-  <entity name="PersonCreator[]" flushWith="record">
-    <entity name="" flushWith="700[013] " sameEntity="true">
-      <if>
-        <any flushWith="700[013] ">
-          <none flushWith="700[013] " sameEntity="true">
-            <data source="700[013] .[4e]" />
-          </none>
-          <data source="700[013] .[4e]">
-            <regexp match="^([Aa]ut|[Cc]re)" />
-          </data>
-        </any>
-      </if>
-      <call-macro name="personName"       field="700" />
-      <call-macro name="personNumbering"  field="700" />
-      <call-macro name="personTitle"      field="700" />
-      <call-macro name="personBio"        field="700" />
-      <call-macro name="personRole"       field="700" />
-      <call-macro name="personIdentifier" field="700" />
-      <call-macro name="identifierGND"    field="700" />
-    </entity>
-  </entity>
-*/
 set_array("@person")
 do list(path: "700[013] ", "var": "$i")
   if exists("$i.[4e]")
@@ -3609,15 +1329,6 @@ do list(path: "700[013] ", "var": "$i")
 end
 move_field("@person", "PersonCreator[]")
 
-/*
-  <entity name="TitleOther">
-    <entity name="title[]" flushWith="record">
-      <data name="" source="246?[ 345678].a">
-        <replace pattern="\.$" with="" />
-      </data>
-    </entity>
-  </entity>
-*/
 set_array("TitleOther.title[]")
 do list(path: "246?[ 345678].a", "var": "$i")
   do list(path: "$i", "var": "$j")
@@ -3625,80 +1336,6 @@ do list(path: "246?[ 345678].a", "var": "$i")
     copy_field("$j", "TitleOther.title[]")
   end
 end
-
-/*
-  <entity name="RSWK[]" flushWith="record">
-    <entity name="" flushWith="600??|6[15][01]??|648??" sameEntity="true">
-      <data name="subjectTopicName" source="650??.a">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="\.?$" with="" />
-        <unique />
-      </data>
-      <data name="subjectGeoName" source="6[105]0??.z|6[15]1??.z|651??.a">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="\.?$" with="" />
-        <unique />
-      </data>
-      <data name="subjectChronological" source="6[105]0??.y|6[15]1??.y||648??.a">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="\.?$" with="" />
-      </data>
-      <data name="subjectConference" source="611??.a">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="\.?$" with="" />
-      </data>
-      <data name="subjectCorporateBodyName" source="610??.a">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="\.?$" with="" />
-      </data>
-      <data name="subjectCorporateBodySubUnit" source="610??.b">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="\.?$" with="" />
-      </data>
-      <data name="subjectDate" source="600??.d|611??.d">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="\s?[:.]?$" with="" />
-      </data>
-      <data name="subjectGenre" source="6[105]0??.v|6[15]1??.v">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="\.?$" with="" />
-      </data>
-      <data name="subjectNumbering" source="61[01]??.n">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="^[(]|\s?[);:]?$" with="" />
-      </data>
-      <data name="subjectPersonName" source="600??.a">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="[,.]?$" with="" />
-      </data>
-      <data name="subjectTitleName" source="6[01]0??.t|611??.t">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="\.?$" with="" />
-      </data>
-      <data name="subjectUnit" source="61[10]??.p" >
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="\.?$" with="" />
-      </data>
-      <data name="subjectNameAddendum" source="600??.c">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="^[(]|[.)]?$" with="" />
-      </data>
-      <data name="subjectGeoAddendum" source="61[01]??.c">
-        <occurrence only="1" sameEntity="true" />
-        <replace pattern="^[(]|[.)]?$" with="" />
-      </data>
-
-      <entity name="subjectIdentifier[]" flushWith="600??|6[15][01]??|648??" sameEntity="true">
-        <data name="" source="600??.0|6[15][01]??.0|648??.0" />
-      </entity>
-      <entity name="identifierGND[]" flushWith="600??|6[15][01]??|648??" sameEntity="true">
-        <data name="" source="600??.0|6[15][01]??.0|648??.0">
-          <regexp match="(?&lt;=\(DE-588\)).*$" />
-        </data>
-      </entity>
-    </entity>
-  </entity>
-*/
 
 set_array("RSWK[]")
 do list(path: "600??", "var": "$i")
