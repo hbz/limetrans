@@ -2640,6 +2640,9 @@
   "Extent" : {
     "extent" : "1 Online-Ressource (XVIII, 170 S. 84 Abb., 57 Abb. in Farbe)"
   },
+  "FileCharacteristics" : [ {
+    "encodingFormat" : "PDF"
+  } ],
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Printed edition",
     "identifierISBN" : "9783662616505"
@@ -3227,5 +3230,133 @@
     "personName" : "Siehr, Angelika",
     "personIdentifier" : [ "(DE-588)1124089969" ],
     "identifierGND" : [ "1124089969" ]
+  } ]
+}
+{
+  "ContentType" : [ "zweidimensionales bewegtes Bild" ],
+  "CarrierType" : [ "Videodisk" ],
+  "ExtendedFormat" : [ "DVD-Video" ],
+  "FormatCarrier" : [ "Optische Speicherplatte(n)" ],
+  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT018979712"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "1074691269"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "ein Film von François Truffaut ; Jeanne Moreau, Henri Serre, Oskar Werner" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Film, Dia, Video" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch", "Französisch" ],
+    "date" : [ "2011" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Medienstelle" ],
+    "carrier" : [ "Elektronische Ressource", "Film, Dia, Video" ],
+    "subject" : [ "Jules et Jim" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "990211507080206441",
+    "identifierMMSIZ" : "990015518760206447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990211507080206441",
+    "identifierForTheRecord" : "(DE-605)HT018979712"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  }, {
+    "language" : "Französisch",
+    "languageSource" : "fre"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Jules und Jim"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Leipzig" ],
+    "name" : [ "Kinowelt Home Entertainment" ],
+    "chronology" : [ "[2011]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Leipzig"
+  } ],
+  "DateProper" : {
+    "date" : [ "[2011]" ]
+  },
+  "Extent" : {
+    "extent" : "1 DVD-Video (102 min) ; 12 cm, in Behältnis 19 x 14 x 2 cm"
+  },
+  "FileCharacteristics" : [ {
+    "encodingFormat" : "DVD-Video",
+    "regionalEncoding" : "Region 2"
+  } ],
+  "SoundCharacteristics" : [ {
+    "typeOfRecording" : "digital"
+  } ],
+  "VideoCharacteristics" : [ {
+    "broadcastStandard" : "PAL"
+  } ],
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Arthaus" ]
+  } ],
+  "Description" : {
+    "description" : [ "Bildformat: 2,35:1 (anamorph)", "Extras: Trailer, Wendecover", "F, 1961", "Bildformat: 2,35:1 (anamorph)", "Extras: Trailer, Wendecover", "F, 1961", "Bildformat: 2,35:1 (anamorph)", "Extras: Trailer, Wendecover", "F, 1961" ]
+  },
+  "DescriptionOfExpression" : [ {
+    "description" : "Sprachen: deutsch, französisch"
+  }, {
+    "description" : "Untertitel: deutsch"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Truffaut, François",
+    "personBio" : "1932-1984",
+    "personIdentifier" : [ "(DE-588)118624202" ],
+    "identifierGND" : [ "118624202" ]
+  }, {
+    "personName" : "Moreau, Jeanne",
+    "personBio" : "1928-2017",
+    "personIdentifier" : [ "(DE-588)118864688" ],
+    "identifierGND" : [ "118864688" ]
+  }, {
+    "personName" : "Serre, Henri",
+    "personBio" : "1931-",
+    "personIdentifier" : [ "(DE-588)130482501" ],
+    "identifierGND" : [ "130482501" ]
+  }, {
+    "personName" : "Werner, Oskar",
+    "personBio" : "1922-1984",
+    "personIdentifier" : [ "(DE-588)118767186" ],
+    "identifierGND" : [ "118767186" ]
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Jules et Jim"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-468",
+    "subject" : "KNKS"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990211507080206441"
+  }, {
+    "uid" : "(DE-605)HT018979712"
+  }, {
+    "uid" : "(DE-468)990015518760206447"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "Item" : [ {
+    "identifier" : "DE-468",
+    "callnumber" : "KNKS1839",
+    "shelfmark" : "07"
   } ]
 }

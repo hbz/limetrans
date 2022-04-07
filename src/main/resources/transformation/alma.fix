@@ -1333,6 +1333,23 @@ if exists("300  .e")
 end
 paste("Extent.extent", "@300a1", "@300b_punct", "@300c1_punct", "@300e_punct", "@300a2_punct", "@300c2_punct", join_char: "")
 
+set_array("FileCharacteristics[]")
+set_array("SoundCharacteristics[]")
+set_array("VideoCharacteristics[]")
+do list(path: "344??", "var": "$i")
+  add_field("SoundCharacteristics[].$append.__dummy__", "")
+  copy_field("$i.a", "SoundCharacteristics[].$last.typeOfRecording")
+end
+do list(path: "346??", "var": "$i")
+  add_field("VideoCharacteristics[].$append.__dummy__", "")
+  copy_field("$i.b", "VideoCharacteristics[].$last.broadcastStandard")
+end
+do list(path: "347??", "var": "$i")
+  add_field("FileCharacteristics[].$append.__dummy__", "")
+  copy_field("$i.b", "FileCharacteristics[].$last.encodingFormat")
+  copy_field("$i.e", "FileCharacteristics[].$last.regionalEncoding")
+end
+
 copy_field("3620 .a", "ChronologyAndEnumeration.value")
 join_field("ChronologyAndEnumeration.value", " ; ")
 
@@ -1993,6 +2010,7 @@ retain(
   "ExtendedFormat[]",
   "ExtendedType[]",
   "Extent",
+  "FileCharacteristics[]",
   "FormatCarrier[]",
   "HoldingsStatement[]",
   "HostItemEntry[]",
@@ -2024,16 +2042,17 @@ retain(
   "Recension",
   "RecordCodes[]",
   "RecordIdentifier",
+  "SeriesAddedEntryUniformTitle[]",
+  "SoundCharacteristics[]",
   "SubSeriesEntry[]",
+  "SubjectDNB[]",
   "SubjectGHBLocal[]",
   "SubjectHeadings[]",
-  "SucceedingEntry[]",
-  "Summary",
-  "SeriesAddedEntryUniformTitle[]",
-  "SubjectDNB[]",
   "SubjectNWBIB[]",
   "SubjectRPB[]",
   "SubjectRVK[]",
+  "SucceedingEntry[]",
+  "Summary",
   "SupplementParentEntry[]",
   "SupplementSpecialIssueEntry[]",
   "TitleAddendum",
@@ -2044,10 +2063,11 @@ retain(
   "TitleUniform",
   "TranslationEntry[]",
   "TypeMedia",
-  "TypeMediaSpecial[]",
   "TypeMediaSpecialPreservation[]",
+  "TypeMediaSpecial[]",
   "TypeMonograph[]",
   "TypePeriodical[]",
+  "VideoCharacteristics[]",
   "VolumeDesignation",
   "collection",
   "dc",

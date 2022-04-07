@@ -7461,3 +7461,85 @@
     "identifierGND" : [ "1124089969" ]
   } ]
 }
+{
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : "ein Film von François Truffaut ; Jeanne Moreau, Henri Serre, Oskar Werner"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Film, Dia, Video" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch", "Französisch" ],
+    "date" : [ "2011" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Elektronische Ressource", "Film, Dia, Video" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990211507080206441",
+    "identifierMMSIZ" : "990211507080206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990211507080206441",
+    "identifierForTheRecord" : "(DE-605)HT018979712"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  }, {
+    "language" : "Französisch",
+    "languageSource" : "fre"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Jules und Jim"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Leipzig" ],
+    "name" : [ "Kinowelt Home Entertainment" ],
+    "chronology" : [ "[2011]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2011]" ]
+  },
+  "Extent" : {
+    "extent" : "1 DVD-Video (102 min) ; 12 cm, in Behältnis 19 x 14 x 2 cm"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Arthaus" ]
+  } ],
+  "Description" : {
+    "description" : [ "Bildformat: 2,35:1 (anamorph)", "Extras: Trailer, Wendecover", "F, 1961", "Bildformat: 2,35:1 (anamorph)", "Extras: Trailer, Wendecover", "F, 1961", "Bildformat: 2,35:1 (anamorph)", "Extras: Trailer, Wendecover", "F, 1961" ]
+  },
+  "PersonContributor" : [ {
+    "personName" : "Truffaut, François",
+    "personBio" : "1932-1984",
+    "personIdentifier" : [ "(DE-588)118624202" ],
+    "identifierGND" : [ "118624202" ]
+  }, {
+    "personName" : "Moreau, Jeanne",
+    "personBio" : "1928-2017",
+    "personIdentifier" : [ "(DE-588)118864688" ],
+    "identifierGND" : [ "118864688" ]
+  }, {
+    "personName" : "Serre, Henri",
+    "personBio" : "1931-",
+    "personIdentifier" : [ "(DE-588)130482501" ],
+    "identifierGND" : [ "130482501" ]
+  }, {
+    "personName" : "Werner, Oskar",
+    "personBio" : "1922-1984",
+    "personIdentifier" : [ "(DE-588)118767186" ],
+    "identifierGND" : [ "118767186" ]
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Jules et Jim"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990211507080206441"
+  }, {
+    "uid" : "(DE-605)HT018979712"
+  } ],
+  "TypeMedia" : "Film, Dia, Video"
+}
