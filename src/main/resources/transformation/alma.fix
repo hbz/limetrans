@@ -1185,7 +1185,7 @@ end
 move_field("@person", "Person[]")
 
 set_array("CorporateBody[]")
-do list(path: "[17]10[012] ", "var": "$i")
+do list(path: "[17]1[01][012] ", "var": "$i")
   add_field("CorporateBody[].$append.__dummy__", "")
   do list(path: "$i.a", "var": "$j")
     replace_all("$j", "[.]$", "")
@@ -1195,6 +1195,9 @@ do list(path: "[17]10[012] ", "var": "$i")
     replace_all("$j", "[.]$", "")
     copy_field("$j", "CorporateBody[].$last.corporateBodyNameUnit[]")
   end
+  copy_field("$i.d", "CorporateBody[].$last.corporateBodyDate[]")
+  copy_field("$i.g", "CorporateBody[].$last.corporateBodyOther[]")
+  copy_field("$i.n", "CorporateBody[].$last.corporateBodyNumber[]")
   set_array("CorporateBody[].$last.corporateBodyIdentifier[]")
   set_array("CorporateBody[].$last.identifierGND[]")
   do list(path: "$i.0", "var": "$j")

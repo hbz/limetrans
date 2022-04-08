@@ -1623,6 +1623,7 @@
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Electric Gallery",
+    "corporateBodyOther" : [ "Toronto" ],
     "corporateBodyIdentifier" : [ "(DE-588)16107805-9" ],
     "identifierGND" : [ "16107805-9" ]
   }, {
@@ -2470,6 +2471,7 @@
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Refectoire des Jacobins",
+    "corporateBodyOther" : [ "Toulouse" ],
     "corporateBodyIdentifier" : [ "(DE-588)16313575-7" ],
     "identifierGND" : [ "16313575-7" ]
   }, {
@@ -8105,6 +8107,13 @@
   }, {
     "identifierISBN" : [ "3764331690" ]
   } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Workshop on Grand Unification",
+    "corporateBodyDate" : [ "1983" ],
+    "corporateBodyNumber" : [ "4" ],
+    "corporateBodyIdentifier" : [ "(DE-588)1091890-5", "(DE-588)1234567-8" ],
+    "identifierGND" : [ "1091890-5", "1234567-8" ]
+  } ],
   "Conference" : {
     "conferenceName" : "Workshop on Grand Unification",
     "corporateBodyNameeNumber" : "4",
@@ -8197,6 +8206,13 @@
   } ],
   "IdentifierISBN" : [ {
     "identifierISBN" : [ "9783658275297", "eBook" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Deutsche Gesellschaft für Erziehungswissenschaft",
+    "corporateBodyDate" : [ "2018" ],
+    "corporateBodyNumber" : [ "27." ],
+    "corporateBodyIdentifier" : [ "(DE-588)119466900X" ],
+    "identifierGND" : [ "119466900X" ]
   } ],
   "Conference" : {
     "conferenceName" : "Deutsche Gesellschaft für Erziehungswissenschaft",
@@ -8898,6 +8914,7 @@
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Institute of Fine Arts",
+    "corporateBodyOther" : [ "Columbia University" ],
     "corporateBodyIdentifier" : [ "(DE-588)1004008-0" ],
     "identifierGND" : [ "1004008-0" ]
   }, {
@@ -8906,6 +8923,7 @@
     "identifierGND" : [ "2019229-0" ]
   }, {
     "corporateBodyName" : "Arthur M. Sackler Gallery",
+    "corporateBodyOther" : [ "Washington, DC" ],
     "corporateBodyIdentifier" : [ "(DE-588)672126-6" ],
     "identifierGND" : [ "672126-6" ]
   } ],
@@ -9049,6 +9067,12 @@
     "identifierISBN" : [ "3110643383" ]
   } ],
   "CorporateBody" : [ {
+    "corporateBodyName" : "Vereinigung der Deutschen Staatsrechtslehrer",
+    "corporateBodyDate" : [ "2018" ],
+    "corporateBodyNumber" : [ "78." ],
+    "corporateBodyIdentifier" : [ "(DE-588)1166612848" ],
+    "identifierGND" : [ "1166612848" ]
+  }, {
     "corporateBodyName" : "Walter de Gruyter GmbH & Co. KG",
     "corporateBodyIdentifier" : [ "(DE-588)10095502-2" ],
     "identifierGND" : [ "10095502-2" ]
@@ -9393,5 +9417,94 @@
     "uid" : "(DE-605)990056352000206441"
   }, {
     "uid" : "(DE-605)HT007439286"
+  } ]
+}
+{
+  "ExtendedType" : [ "Konferenzschrift" ],
+  "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk", "Konferenzschrift" ],
+  "Country" : [ {
+    "countryISO" : "GB"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT006307272"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "832212291"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "select papers from the proceedings of the Eleventh Viking Congress, Thurso and Kirkwall, 22 August - 1 September 1989"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "ed. by Colleen E. Batey .." ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie", "Konferenzschrift" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "1993" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Wikinger" ]
+  },
+  "SubjectRVK" : [ {
+    "subject" : "NM 5800"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "990023871200206441",
+    "identifierMMSIZ" : "990023871200206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990023871200206441",
+    "identifierForTheRecord" : "(DE-605)HT006307272"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "0748604308", ": £ 25.00" ]
+  }, {
+    "identifierISBN" : [ "0748604308", ": £ 25.00" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Viking Congress",
+    "corporateBodyDate" : [ "1989" ],
+    "corporateBodyNumber" : [ "11" ],
+    "corporateBodyIdentifier" : [ "(DE-588)5108981-6" ],
+    "identifierGND" : [ "5108981-6" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<The>> Viking age in Caithness, Orkney and the North Atlantic"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Edinburgh" ],
+    "name" : [ "Edinburgh Univ. Press" ],
+    "chronology" : [ "1993" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Edinburgh"
+  } ],
+  "DateProper" : {
+    "date" : [ "1993" ]
+  },
+  "Extent" : {
+    "extent" : "XVI, 554 S. : Ill., graph. Darst., Kt."
+  },
+  "PersonContributor" : [ {
+    "personName" : "Batey, Colleen E."
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Wikinger"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990023871200206441"
+  }, {
+    "uid" : "(DE-605)HT006307272"
   } ]
 }

@@ -3081,6 +3081,12 @@
     "identifierISBN" : [ "3110643383" ]
   } ],
   "CorporateBody" : [ {
+    "corporateBodyName" : "Vereinigung der Deutschen Staatsrechtslehrer",
+    "corporateBodyDate" : [ "2018" ],
+    "corporateBodyNumber" : [ "78." ],
+    "corporateBodyIdentifier" : [ "(DE-588)1166612848" ],
+    "identifierGND" : [ "1166612848" ]
+  }, {
     "corporateBodyName" : "Walter de Gruyter GmbH & Co. KG",
     "corporateBodyIdentifier" : [ "(DE-588)10095502-2" ],
     "identifierGND" : [ "10095502-2" ]
@@ -3358,5 +3364,107 @@
     "identifier" : "DE-468",
     "callnumber" : "KNKS1839",
     "shelfmark" : "07"
+  } ]
+}
+{
+  "ExtendedType" : [ "Konferenzschrift" ],
+  "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk", "Konferenzschrift" ],
+  "Country" : [ {
+    "countryISO" : "GB"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT006307272"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "832212291"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "select papers from the proceedings of the Eleventh Viking Congress, Thurso and Kirkwall, 22 August - 1 September 1989"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "ed. by Colleen E. Batey .." ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie", "Konferenzschrift" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "1993" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Campus Grifflenberg" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
+    "subject" : [ "Wikinger" ]
+  },
+  "SubjectRVK" : [ {
+    "subject" : "NM 5800"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "990023871200206441",
+    "identifierMMSIZ" : "990007169000206447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990023871200206441",
+    "identifierForTheRecord" : "(DE-605)HT006307272"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "0748604308", ": £ 25.00" ]
+  }, {
+    "identifierISBN" : [ "0748604308", ": £ 25.00" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Viking Congress",
+    "corporateBodyDate" : [ "1989" ],
+    "corporateBodyNumber" : [ "11" ],
+    "corporateBodyIdentifier" : [ "(DE-588)5108981-6" ],
+    "identifierGND" : [ "5108981-6" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<The>> Viking age in Caithness, Orkney and the North Atlantic"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Edinburgh" ],
+    "name" : [ "Edinburgh Univ. Press" ],
+    "chronology" : [ "1993" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Edinburgh"
+  } ],
+  "DateProper" : {
+    "date" : [ "1993" ]
+  },
+  "Extent" : {
+    "extent" : "XVI, 554 S. : Ill., graph. Darst., Kt."
+  },
+  "PersonContributor" : [ {
+    "personName" : "Batey, Colleen E."
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Wikinger"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-468",
+    "subject" : "LCN"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990023871200206441"
+  }, {
+    "uid" : "(DE-605)HT006307272"
+  }, {
+    "uid" : "(DE-468)990007169000206447"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-468",
+    "callnumber" : "LCN1478",
+    "shelfmark" : "21"
   } ]
 }
