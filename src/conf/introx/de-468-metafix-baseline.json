@@ -1,0 +1,25 @@
+{
+  "isil": "DE-468",
+  "path": "/mnt/datenportal/export/alma/prod/",
+  "alma": {
+    "hybrid": false
+  },
+  "input": {
+    "queue": {
+      "path": "${path}",
+      "pattern": "baseline.xml.bgzf"
+    }
+  },
+  "output": {
+    "elasticsearch": {
+      "index": {
+        "type": "titel",
+        "name": "${isil}-introx-metafix-",
+        "timewindow": "yyyyMMdd",
+        "settings": "classpath:/elasticsearch/hbztitle-settings.json",
+        "mapping": "classpath:/elasticsearch/hbztitle-mapping.json",
+        "idKey": "RecordIdentifier.identifierForTheIndex"
+      }
+    }
+  }
+}

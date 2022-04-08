@@ -1,0 +1,26 @@
+{
+  "isil": "DE-Bi10",
+  "path": "/mnt/datenportal/export/alma/prod/",
+  "alma": {
+    "hybrid": false
+  },
+  "input": {
+    "queue": {
+      "path": "${path}",
+      "pattern": "update.xml.bgzf"
+    }
+  },
+  "output": {
+    "elasticsearch": {
+      "index": {
+        "type": "titel",
+        "name": "${isil}-introx-metafix-",
+        "settings": "classpath:/elasticsearch/hbztitle-settings.json",
+        "mapping": "classpath:/elasticsearch/hbztitle-mapping.json",
+        "idKey": "RecordIdentifier.identifierForTheIndex"
+      },
+      "deletionLiteral": "DEL",
+      "update": true
+    }
+  }
+}
