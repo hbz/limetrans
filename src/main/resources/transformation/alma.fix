@@ -1945,6 +1945,11 @@ do list(path: "650??", "var": "$i")
   else
     copy_field("$i.y", "RSWK[].$last.subjectChronological")
   end
+  if exists("$i.x.1")
+    copy_field("$i.x.1", "RSWK[].$last.subjectAddendum")
+  else
+    copy_field("$i.x", "RSWK[].$last.subjectAddendum")
+  end
   if exists("$i.v.1")
     copy_field("$i.v.1", "RSWK[].$last.subjectGenre")
   else
@@ -1982,6 +1987,7 @@ do list(path: "651??", "var": "$i")
   end
 end
 replace_all("RSWK[].*.identifierGND[]", "^\\(DE-588\\)", "")
+replace_all("RSWK[].*.subjectAddendum", "[.]$", "")
 replace_all("RSWK[].*.subjectChronological", "[.]$", "")
 replace_all("RSWK[].*.subjectConference", "[.]$", "")
 replace_all("RSWK[].*.subjectCorporateBodyName", "[.]$", "")
