@@ -9,6 +9,7 @@ include("./maps/alma-type-periodical.fix")
 
 hbz.limetrans.function.DropLocal()
 
+# MARC/leader
 copy_field("leader", "@LeaderPos05")
 substring("@LeaderPos05", "5", "1")
 copy_field("leader", "@LeaderPos06")
@@ -19,6 +20,7 @@ copy_field("leader", "@LeaderPos19")
 substring("@LeaderPos19", "19", "1")
 copy_field("008", "@008Pos06")
 substring("@008Pos06", "6", "1")
+# MARC/006
 do list(path: "006", "var": "$i")
   copy_field("$i", "@006Pos00_i")
   substring("@006Pos00_i", "0", "1")
@@ -60,6 +62,7 @@ do list(path: "006", "var": "$i")
   substring("@006Pos17_i", "17", "1")
   move_field("@006Pos17_i", "@006Pos17")
 end
+# MARC/007
 do list(path: "007", "var": "$i")
   copy_field("$i", "@007Pos00_i")
   substring("@007Pos00_i", "0", "1")
@@ -68,6 +71,7 @@ do list(path: "007", "var": "$i")
   substring("@007Pos01_i", "1", "1")
   move_field("@007Pos01_i", "@007Pos01")
 end
+# MARC/008
 copy_field("008", "@008Pos07")
 substring("@008Pos07", "7", "4")
 copy_field("008", "@008Pos11")
@@ -133,6 +137,7 @@ paste("@type__008Pos31", "@type", "@008Pos31", join_char: "#")
 paste("@type__008Pos33", "@type", "@008Pos33", join_char: "#")
 paste("@type__008Pos34", "@type", "@008Pos34", join_char: "#")
 
+# MARC/337, MARC/338
 set_array("@facet_format")
 if any_match("@LeaderPos06", "[ij]")
   add_field("@facet_format", "Audio")
@@ -188,6 +193,7 @@ else
     end
   end
 end
+# MARC/337, MARC/338
 if any_equal("@LeaderPos06|@006Pos00", "m")
   add_field("@facet_format", "Elektronische Ressource")
 else
@@ -227,6 +233,7 @@ else
     end
   end
 end
+# MARC/337, MARC/338
 if any_match("@007Pos00", "[gmv]")
   add_field("@facet_format", "Film, Dia, Video")
 else
@@ -294,6 +301,7 @@ if any_match("@LeaderPos06|@006Pos00", "[ef]")
 elsif any_match("@007Pos00", "[ad]")
   add_field("@facet_format", "Landkarte")
 end
+# MARC/337, MARC/338
 if any_equal("@007Pos00", "h")
   add_field("@facet_format", "Mikroform")
 else
@@ -329,6 +337,7 @@ else
     end
   end
 end
+# MARC/338
 if any_match("338  .a", "online bron|online resource|online-ressource|Online-Ressource|ressource en ligne")
   add_field("@facet_format", "Online-Ressource")
 else
@@ -352,6 +361,7 @@ else
     end
   end
 end
+# MARC/338
 if any_match("338  .a", "Gegenstand|Karte")
   add_field("@facet_format", "Sonstiges")
 else
@@ -411,6 +421,7 @@ else
   end
 end
 
+# MARC/336
 set_array("ContentType[]")
 do list(path: "336??.b", "var": "$i")
   do list(path: "$i", "var": "$j")
@@ -420,6 +431,7 @@ do list(path: "336??.b", "var": "$i")
 end
 uniq("ContentType[]")
 
+# MARC/338
 set_array("CarrierType[]")
 do list(path: "338??.b", "var": "$i")
   copy_field("$i", "@carriertype_code")
@@ -431,6 +443,7 @@ do list(path: "338??.b", "var": "$i")
 end
 uniq("CarrierType[]")
 
+# MARC/964
 set_array("@facet_type")
 set_array("ExtendedFormat[]")
 set_array("ExtendedType[]")
@@ -530,6 +543,7 @@ do list(path: "9640s", "var": "$i")
   end
 end
 
+# MARC/348
 set_array("introx.music[]")
 do list(path: "348??", "var": "$i")
   if any_equal("$i.2", "gnd-music")
@@ -540,6 +554,7 @@ do list(path: "348??", "var": "$i")
     end
   end
 end
+# MARC/655
 do list(path: "655?7", "var": "$i")
   if any_equal("$i.2", "gnd-content")
     do list(path: "$i.a", "var": "$j")
@@ -556,6 +571,7 @@ do list(path: "655?7", "var": "$i")
   end
 end
 
+# MARC/533
 set_array("PublicationPlaceOfSecondaryEdition[]")
 set_array("PublisherNameOfSecondaryEdition[]")
 set_array("SecondaryEditionPublicationDate[]")
@@ -571,6 +587,7 @@ do list(path: "533??", "var": "$i")
   copy_field("$i.f", "SecondaryEditionTitleSuper[].$last.secondaryEdition")
 end
 
+# MARC/340
 set_array("TypeMediaSpecial[]")
 set_array("TypeMediaSpecialPreservation[]")
 do list(path: "340??", "var": "$i")
@@ -608,6 +625,7 @@ do list(path: "340??", "var": "$i")
     add_field("@facet_format", "Sonstiges")
   end
 end
+# MARC/538, MARC/583
 do list(path: "538??|5831?", "var": "$i")
   copy_field("$i.a", "TypeMediaSpecialPreservation[]")
 end
@@ -813,6 +831,7 @@ else
   end
 end
 
+# MARC/008, MARC/041
 copy_field("008", "@language_source")
 substring("@language_source", "35", "3")
 do list(path: "041[ 01] .[adj]", "var": "$i")
@@ -823,6 +842,7 @@ set_array("@language_long")
 copy_field("@language_source", "@language_long")
 lookup("@language_long.*", "ISO639-2-to-GND", delete: "true")
 
+# MARC/044
 set_array("Country[]")
 do list(path: "044??.c", "var": "$i")
   add_field("Country[].$append.__dummy__", "")
@@ -843,12 +863,14 @@ end
 
 vacuum()
 
+# MARC/MBD
 do list(path: "MBD  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
     copy_field("$i.i", "@mmsiz")
   end
 end
 
+# MARC/001
 copy_field("001", "@institution_code")
 parse_text("@institution_code", ".*(.{4})$")
 copy_field("@institution_code", "@isil")
@@ -859,6 +881,7 @@ parse_text("@institution_code_iz", ".*(.{4})$")
 copy_field("@institution_code_iz", "@isiliz")
 lookup("@isiliz", "institution-code-to-isil", delete: "true")
 
+# MARC/981
 do list(path: "981  .a", "var": "$i") # SISIS CATKey
   if any_match("$i", "\\($[isil]\\).*")
     copy_field("$i", "@sysid")
@@ -868,6 +891,7 @@ do list(path: "981  .a", "var": "$i") # SISIS CATKey
   end
 end
 
+# MARC/035
 set_array("IdentifierDNB[]")
 set_array("IdentifierGBV[]")
 set_array("IdentifierHBZ[]")
@@ -923,11 +947,13 @@ end
 
 copy_field("@isil", "collection")
 
+# MARC/240
 do list(path: "240??.a", "var": "$i")
   replace_all("$i", "[.]$", "")
   copy_field("$i", "TitleUniform.titleUniform")
 end
 
+# MARC/245
 do list(path: "245??.b", "var": "$i")
   unless exists("TitleAddendum.title")
     replace_all("$i", "\\s?[./]\\s?$", "")
@@ -942,6 +968,7 @@ do list(path: "245??.n", "var": "$i")
     copy_field("$i", "VolumeDesignation.volumeDesignation")
   end
 end
+# MARC/773
 set_array("RecordIdentifierSuper[]")
 set_array("SortableVolumeDesignation[]")
 do list(path: "7730?", "var": "$i")
@@ -954,6 +981,7 @@ do list(path: "7730?", "var": "$i")
   copy_field("$i.w", "RecordIdentifierSuper[].$last.recordIdentifierSuper")
 end
 
+# MARC/245
 set_array("CreatorStatement.creatorStatement[]")
 do list(path: "245[01]?.c", "var": "$i")
   replace_all("$i", "[.]$", "")
@@ -982,6 +1010,7 @@ if exists("@language_long")
 else
   add_field("dc.language[]", "keine Angabe")
 end
+# MARC/260, MARC/264
 copy_field("260[ 23] .c", "@date")
 do list(path: "264[ 23]1.c", "var": "$i")
   copy_field("$i", "@date")
@@ -1006,6 +1035,7 @@ if any_equal("@facet_format", "Online-Ressource")
 else
   add_field("introx.access[]", "local")
 end
+# MARC/ITM
 set_array("@current_library")
 do list(path: "ITM  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
@@ -1015,6 +1045,7 @@ end
 lookup("@current_library.*", "alma-library-to-branch-$[isil]", delete: "true")
 uniq("@current_library")
 move_field("@current_library", "introx.branch[]")
+# MARC/ITM
 set_array("@current_location")
 do list(path: "ITM  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
@@ -1033,12 +1064,14 @@ if exists("@facet_format")
 else
   add_field("introx.carrier[]", "keine Angabe")
 end
+# MARC/983
 set_array("@SubjectGHBLocal")
 do list(path: "983  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
     copy_field("$i.b", "@SubjectGHBLocal")
   end
 end
+# MARC/084
 set_array("SubjectDNB[]")
 set_array("SubjectNWBIB[]")
 set_array("SubjectRPB[]")
@@ -1084,10 +1117,12 @@ lookup("@taxonomy.*", "alma-notation-to-taxonomy", delete: "true")
 move_field("@taxonomy", "introx.taxonomy[]")
 uniq("introx.taxonomy[]")
 
+# MARC/001
 add_field("IdentifierAlma.identifierMember", "$[member]")
 copy_field("001", "IdentifierAlma.identifierMMS")
 copy_field("@mmsiz", "IdentifierAlma.identifierMMSIZ")
 
+# MARC/POR
 set_array("@portfolio")
 do list(path: "POR  ", "var": "$i")
   if any_equal("$i.[MA]", "$[member]")
@@ -1099,6 +1134,7 @@ copy_field("@portfolio", "IdentifierAlma.identifierPID")
 copy_field("@mmsid", "RecordIdentifier.identifierForTheIndex")
 copy_field("@id", "RecordIdentifier.identifierForTheRecord")
 
+# MARC/POC
 do list(path: "POC  ", "var": "$i")
   if any_match("$i.a", ".*$[institution-code]")
     copy_field("$i.b", "DateFirst.date")
@@ -1111,6 +1147,7 @@ if any_match("@date1", "\\d+")
   end
 end
 
+# MARC/POC
 do list(path: "POC  ", "var": "$i")
   if any_match("$i.a", ".*$[institution-code]")
     copy_field("$i.c", "DateLast.date")
@@ -1132,6 +1169,7 @@ do list(path: "@language_source", "var": "$i")
   copy_field("$i", "Language[].$last.languageSource")
 end
 
+# MARC/016
 set_array("IdentifierZDB[]")
 do list(path: "0167 ", "var": "$i")
   if any_equal("$i.2", "DE-600")
@@ -1141,6 +1179,7 @@ do list(path: "0167 ", "var": "$i")
   end
 end
 
+# MARC/020
 set_array("IdentifierISBN[]")
 do list(path: "020  ", "var": "$i")
   if exists("$i.a")
@@ -1154,6 +1193,7 @@ do list(path: "020  ", "var": "$i")
   end
 end
 
+# MARC/022
 set_array("IdentifierISSN[]")
 do list(path: "022? ", "var": "$i")
   add_field("IdentifierISSN[].$append.__dummy__", "")
@@ -1164,6 +1204,7 @@ do list(path: "022? ", "var": "$i")
   end
 end
 
+# MARC/024
 set_array("IdentifierDOI[]")
 do list(path: "0247?", "var": "$i")
   if any_equal("$i.2", "doi")
@@ -1172,6 +1213,7 @@ do list(path: "0247?", "var": "$i")
   end
 end
 
+# MARC/100
 set_array("@person")
 do list(path: "100[013] ", "var": "$i")
   if exists("$i.[4e]")
@@ -1184,6 +1226,7 @@ do list(path: "100[013] ", "var": "$i")
 end
 move_field("@person", "Person[]")
 
+# MARC/110, MARC/111, MARC/710, MARC/711
 set_array("CorporateBody[]")
 do list(path: "[17]1[01][012] ", "var": "$i")
   add_field("CorporateBody[].$append.__dummy__", "")
@@ -1209,6 +1252,7 @@ do list(path: "[17]1[01][012] ", "var": "$i")
   end
 end
 
+# MARC/111
 do list(path: "111[012] .a", "var": "$i")
   replace_all("$i", "[.,]$", "")
   copy_field("$i", "Conference.conferenceName")
@@ -1244,6 +1288,7 @@ do list(path: "111[012] .e", "var": "$i")
 end
 join_field("Conference.conferenceUnit", ". ")
 
+# MARC/245
 set_array("TitleStatement[]")
 do list(path: "245??.a", "var": "$i")
   add_field("TitleStatement[].$append.__dummy__", "")
@@ -1259,12 +1304,14 @@ end
 add_field("TitleStatement[].$append.__dummy__", "")
 move_field("@titleMain", "TitleStatement[].$last.titleMain")
 
+# MARC/250
 set_array("Edition.edition[]")
 do list(path: "250  .a", "var": "$i")
   replace_all("$i", "\\s?[=/]$", "")
   copy_field("$i", "Edition.edition[]")
 end
 
+# MARC/260
 set_array("PublisherName[]")
 do list(path: "260[ 23] |264[ 23][ 1]", "var": "$i")
   set_hash("@publisher")
@@ -1283,6 +1330,7 @@ do list(path: "260[ 23] |264[ 23][ 1]", "var": "$i")
   move_field("@publisher", "PublisherName[]")
 end
 
+# MARC/264
 set_array("PublicationPlace[]")
 do list(path: "264?[13]", "var": "$i")
   add_field("PublicationPlace[].$append.__dummy__", "")
@@ -1293,6 +1341,7 @@ do list(path: "264?[13]", "var": "$i")
 end
 uniq("PublicationPlace[]")
 
+# MARC/260
 do list(path: "260[ 23] |264[ 23][ 1]", "var": "$i")
   do list(path: "$i.c", "var": "$j")
     replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
@@ -1300,6 +1349,7 @@ do list(path: "260[ 23] |264[ 23][ 1]", "var": "$i")
   end
 end
 
+# MARC/300
 set_array("@300a")
 copy_field("300  .a", "@300a")
 if exists("@300a.1")
@@ -1363,6 +1413,7 @@ if exists("300  .e")
 end
 paste("Extent.extent", "@300a1", "@300b_punct", "@300c1_punct", "@300e_punct", "@300a2_punct", "@300c2_punct", join_char: "")
 
+# MARC/344
 set_array("FileCharacteristics[]")
 set_array("SoundCharacteristics[]")
 set_array("VideoCharacteristics[]")
@@ -1370,21 +1421,26 @@ do list(path: "344??", "var": "$i")
   add_field("SoundCharacteristics[].$append.__dummy__", "")
   copy_field("$i.a", "SoundCharacteristics[].$last.typeOfRecording")
 end
+# MARC/346
 do list(path: "346??", "var": "$i")
   add_field("VideoCharacteristics[].$append.__dummy__", "")
   copy_field("$i.b", "VideoCharacteristics[].$last.broadcastStandard")
 end
+# MARC/347
 do list(path: "347??", "var": "$i")
   add_field("FileCharacteristics[].$append.__dummy__", "")
   copy_field("$i.b", "FileCharacteristics[].$last.encodingFormat")
   copy_field("$i.e", "FileCharacteristics[].$last.regionalEncoding")
 end
 
+# MARC/362
 copy_field("3620 .a", "ChronologyAndEnumeration.value")
 join_field("ChronologyAndEnumeration.value", " ; ")
 
+# MARC/490
 unless exists("830??")
   set_array("TitleSuper[]")
+  set_array("TitleSuperVolumeDesignation[]")
   do list(path: "490[01] ", "var": "$i")
     add_field("TitleSuper[].$append.__dummy__", "")
     do list(path: "$i.a", "var": "$j")
@@ -1392,12 +1448,6 @@ unless exists("830??")
       replace_all("@490_a", "^[©]|\\s?[,.:;/=]?$", "")
       move_field("@490_a", "TitleSuper[].$last.titleSuper[]")
     end
-  end
-end
-
-unless exists("830??")
-  set_array("TitleSuperVolumeDesignation[]")
-  do list(path: "490[01] ", "var": "$i")
     add_field("TitleSuperVolumeDesignation[].$append.__dummy__", "")
     do list(path: "$i.v", "var": "$j")
       replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
@@ -1406,6 +1456,7 @@ unless exists("830??")
   end
 end
 
+# MARC/989
 set_array("@description")
 do list(path: "989  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
@@ -1414,14 +1465,17 @@ do list(path: "989  ", "var": "$i")
 end
 filter("@description", "^$[regexp.description]$")
 uniq("@description")
+# MARC/500
 copy_field("500  .a", "Description.description[]")
 move_field("@description", "Description.description[]")
+# MARC/H52
 do list(path: "H52??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
     copy_field("$i.z", "Description.description[]")
   end
 end
 
+# MARC/501, MARC/505
 set_array("DescriptionOfContent[]")
 do list(path: "50[15]??", "var": "$i")
   add_field("DescriptionOfContent[].$append.__dummy__", "")
@@ -1430,16 +1484,19 @@ do list(path: "50[15]??", "var": "$i")
   copy_field("$i.t", "DescriptionOfContent[].$last.note")
 end
 
+# MARC/546
 set_array("DescriptionOfExpression[]")
 do list(path: "546??", "var": "$i")
   add_field("DescriptionOfExpression[].$append.__dummy__", "")
   copy_field("$i.a", "DescriptionOfExpression[].$last.description")
 end
 
+# MARC/520
 copy_field("5203 .[ab]", "Abstract.abstract[]")
 copy_field("5201 .[ab]", "Recension.abstract[]")
 copy_field("520  .[ab]", "Summary.abstract[]")
 
+# MARC/H66
 set_array("HoldingsStatement[]")
 do list(path: "H66??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
@@ -1448,8 +1505,9 @@ do list(path: "H66??", "var": "$i")
   end
 end
 
+# MARC/100, MARC/700
 set_array("@person")
-do list(path: "100[013] |700[013] ", "var": "$i")
+do list(path: "[17]00[013] ", "var": "$i")
   if exists("$i.[4e]")
     if none_match("$i.[4e]", "(?:[Aa]ut|[Cc]re).*")
       include("./alma/personCreator.fix")
@@ -1459,9 +1517,11 @@ end
 move_field("@person", "PersonContributor[]")
 
 /*
+# MARC/580
 set_array("DescriptionOfRelatedEditions[]")
 add_field("DescriptionOfRelatedEditions[].$append.__dummy__", "")
 copy_field("580  .a", "DescriptionOfRelatedEditions[].$last.description")
+# MARC/773, MARC/775, MARC/776
 do list(path: "77[356]??", "var": "$i")
   add_field("DescriptionOfRelatedEditions[].$append.__dummy__", "")
   do list(path: "$i.i", "var": "$j")
@@ -1485,11 +1545,13 @@ end
 
 set_array("IdentifierISBNParallel[]")
 /*
+# MARC/773, MARC/775, MARC/776
 do list(path: "77[356]??", "var": "$i")
   add_field("IdentifierISBNParallel[].$append.__dummy__", "")
   copy_field("$i.z", "IdentifierISBNParallel[].$last.identifierISBN[]")
 end
 */
+# MARC/964
 do list(path: "9640s", "var": "$i")
   if any_equal("$i.V", "086a")
     add_field("IdentifierISBNParallel[].$append.__dummy__", "")
@@ -1498,6 +1560,7 @@ do list(path: "9640s", "var": "$i")
 end
 
 /*
+# MARC/780
 set_array("@descriptionOfEditionsOrVolumes")
 do list(path: "78000", "var": "$i")
   add_field("@prefix", "Fortsetzung von")
@@ -1535,6 +1598,7 @@ move_field("@descriptionOfEditionsOrVolumes", "DescriptionOfFormerEditionsOrVolu
 */
 
 /*
+# MARC/785
 set_array("@descriptionOfEditionsOrVolumes")
 do list(path: "7850[078]", "var": "$i")
   add_field("@prefix", "Fortgesetzt von")
@@ -1567,38 +1631,54 @@ end
 move_field("@descriptionOfEditionsOrVolumes", "DescriptionOfContinuingEditionsOrVolumes[]")
 */
 
+# MARC/760
 put_vars(linking_entry_source: "760", linking_entry_target: "MainSeriesEntry")
 include("./alma/linkingEntry.fix")
+# MARC/762
 put_vars(linking_entry_source: "762", linking_entry_target: "SubSeriesEntry")
 include("./alma/linkingEntry.fix")
+# MARC/765
 put_vars(linking_entry_source: "765", linking_entry_target: "OriginalLanguageEntry")
 include("./alma/linkingEntry.fix")
+# MARC/767
 put_vars(linking_entry_source: "767", linking_entry_target: "TranslationEntry")
 include("./alma/linkingEntry.fix")
+# MARC/770
 put_vars(linking_entry_source: "770", linking_entry_target: "SupplementSpecialIssueEntry")
 include("./alma/linkingEntry.fix")
+# MARC/772
 put_vars(linking_entry_source: "772", linking_entry_target: "SupplementParentEntry")
 include("./alma/linkingEntry.fix")
+# MARC/773
 put_vars(linking_entry_source: "773", linking_entry_target: "HostItemEntry")
 include("./alma/linkingEntry.fix")
+# MARC/774
 put_vars(linking_entry_source: "774", linking_entry_target: "ConstituentUnitEntry")
 include("./alma/linkingEntry.fix")
+# MARC/775
 put_vars(linking_entry_source: "775", linking_entry_target: "OtherEditionEntry")
 include("./alma/linkingEntry.fix")
+# MARC/776
 put_vars(linking_entry_source: "776", linking_entry_target: "AdditionalPhysicalFormEntry")
 include("./alma/linkingEntry.fix")
+# MARC/777
 put_vars(linking_entry_source: "777", linking_entry_target: "IssuedWithEntry")
 include("./alma/linkingEntry.fix")
+# MARC/780
 put_vars(linking_entry_source: "780", linking_entry_target: "PrecedingEntry")
 include("./alma/linkingEntry.fix")
+# MARC/785
 put_vars(linking_entry_source: "785", linking_entry_target: "SucceedingEntry")
 include("./alma/linkingEntry.fix")
+# MARC/786
 put_vars(linking_entry_source: "786", linking_entry_target: "DataSourceEntry")
 include("./alma/linkingEntry.fix")
+# MARC/787
 put_vars(linking_entry_source: "787", linking_entry_target: "NonspecificRelationshipEntry")
 include("./alma/linkingEntry.fix")
 
 /*
+# MARC/830
 if exists("830??")
   set_array("TitleSuper[]")
   do list(path: "830 ?", "var": "$i")
@@ -1611,6 +1691,7 @@ uniq("TitleSuper[]")
 */
 
 /*
+# MARC/830
 if exists("830??")
   set_array("TitleSuperVolumeDesignation[]")
   do list(path: "830 ?", "var": "$i")
@@ -1620,6 +1701,7 @@ if exists("830??")
   end
 end
 */
+# MARC/830
 set_array("SeriesAddedEntryUniformTitle[]")
 do list(path: "830 ?", "var": "$i")
   add_field("SeriesAddedEntryUniformTitle[].$append.__dummy__", "")
@@ -1633,6 +1715,7 @@ do list(path: "830 ?", "var": "$i")
 end
 uniq("SeriesAddedEntryUniformTitle[]")
 
+# MARC/856
 set_array("OnlineAccess[]")
 do list(path: "856??", "var": "$i")
   if exists("$i.M")
@@ -1643,6 +1726,7 @@ do list(path: "856??", "var": "$i")
     include("./alma/onlineAccess.fix")
   end
 end
+# MARC/POR
 do list(path: "POR  ", "var": "$i")
   if any_equal("$i.[MA]", "$[member]")
     add_field("OnlineAccess[].$append.__dummy__", "")
@@ -1654,12 +1738,14 @@ do list(path: "POR  ", "var": "$i")
 end
 hbz.limetrans.function.Dedup("OnlineAccess[].*.uri")
 
+# MARC/962
 set_array("ClassifierDigitization[]")
 do list(path: "962??.e", "var": "$i")
   add_field("ClassifierDigitization[].$append.__dummy__", "")
   copy_field("$i", "ClassifierDigitization[].$last.classifier")
 end
 
+# MARC/982
 set_array("SubjectHeadings[]")
 set_array("introx.subject[]")
 do list(path: "982  ", "var": "$i")
@@ -1669,6 +1755,7 @@ do list(path: "982  ", "var": "$i")
     copy_field("$i.b", "introx.subject[]")
   end
 end
+# MARC/689
 do list(path: "689??", "var": "$i")
   add_field("SubjectHeadings[].$append.__dummy__", "")
   copy_field("$i.a", "SubjectHeadings[].$last.subject")
@@ -1713,6 +1800,7 @@ do list(path: "@facet_type", "var": "$i")
 end
 uniq("TypePeriodical[]")
 
+# MARC/H52
 set_array("Item[]")
 do list(path: "H52??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
@@ -1720,6 +1808,7 @@ do list(path: "H52??", "var": "$i")
     copy_field("$i.h", "Item[].$last.callnumber")
   end
 end
+# MARC/ITM
 do list(path: "ITM  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
     add_field("Item[].$append.__dummy__", "")
@@ -1732,12 +1821,14 @@ do list(path: "ITM  ", "var": "$i")
 end
 uniq("Item[]")
 
+# MARC/DEL
 if any_equal("$[deletion-source]", "$[deletion-value]")
   add_field("$[deletion-literal]", "$[deletion-value]")
 elsif any_equal("@LeaderPos05", "d")
   add_field("$[deletion-literal]", "$[deletion-value]")
 end
 
+# MARC/700
 set_array("@person")
 do list(path: "700[013] ", "var": "$i")
   if exists("$i.[4e]")
@@ -1750,6 +1841,7 @@ do list(path: "700[013] ", "var": "$i")
 end
 move_field("@person", "PersonCreator[]")
 
+# MARC/246
 set_array("TitleOther.title[]")
 do list(path: "246?[ 345678].a", "var": "$i")
   do list(path: "$i", "var": "$j")
@@ -1758,6 +1850,7 @@ do list(path: "246?[ 345678].a", "var": "$i")
   end
 end
 
+# MARC/600
 set_array("RSWK[]")
 do list(path: "600??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
@@ -1803,6 +1896,7 @@ do list(path: "600??", "var": "$i")
     end
   end
 end
+# MARC/610
 do list(path: "610??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
   if exists("$i.z.1")
@@ -1857,6 +1951,7 @@ do list(path: "610??", "var": "$i")
     end
   end
 end
+# MARC/611
 do list(path: "611??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
   if exists("$i.z.1")
@@ -1911,6 +2006,7 @@ do list(path: "611??", "var": "$i")
     end
   end
 end
+# MARC/648
 do list(path: "648??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
   if exists("$i.a.1")
@@ -1925,6 +2021,7 @@ do list(path: "648??", "var": "$i")
     end
   end
 end
+# MARC/650
 do list(path: "650??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
   if exists("$i.a.1")
@@ -1965,6 +2062,7 @@ do list(path: "650??", "var": "$i")
     end
   end
 end
+# MARC/651
 do list(path: "651??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
   if exists("$i.a.1")
