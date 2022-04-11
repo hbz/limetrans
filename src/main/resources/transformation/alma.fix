@@ -1484,6 +1484,25 @@ do list(path: "50[15]??", "var": "$i")
   copy_field("$i.t", "DescriptionOfContent[].$last.note")
 end
 
+# MARC/502
+set_array("DescriptionOfThesis[]")
+do list(path: "502??", "var": "$i")
+  add_field("DescriptionOfThesis[].$append.__dummy__", "")
+  copy_field("$i.a", "DescriptionOfThesis[].$last.description")
+  copy_field("$i.b", "DescriptionOfThesis[].$last.type")
+  copy_field("$i.c", "DescriptionOfThesis[].$last.place")
+  copy_field("$i.d", "DescriptionOfThesis[].$last.year")
+end
+
+# MARC/515
+set_array("DescriptionOfIssuance[]")
+do list(path: "515??", "var": "$i")
+  add_field("DescriptionOfIssuance[].$append.__dummy__", "")
+  copy_field("$i.a", "DescriptionOfIssuance[].$last.description")
+  copy_field("$i.r", "DescriptionOfIssuance[].$last.creator")
+  copy_field("$i.t", "DescriptionOfIssuance[].$last.note")
+end
+
 # MARC/546
 set_array("DescriptionOfExpression[]")
 do list(path: "546??", "var": "$i")
@@ -2139,7 +2158,9 @@ retain(
 # "DescriptionOfContinuingEditionsOrVolumes[]",
   "DescriptionOfExpression[]",
 # "DescriptionOfFormerEditionsOrVolumes[]",
+  "DescriptionOfIssuance[]",
 # "DescriptionOfRelatedEditions[]",
+  "DescriptionOfThesis[]",
   "Edition",
   "ExtendedFormat[]",
   "ExtendedType[]",
