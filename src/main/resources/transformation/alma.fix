@@ -1205,11 +1205,34 @@ do list(path: "022? ", "var": "$i")
 end
 
 # MARC/024
+set_array("IdentifierISMN[]")
+do list(path: "0242?", "var": "$i")
+  add_field("IdentifierISMN[].$append.__dummy__", "")
+  copy_field("$i.a", "IdentifierISMN[].$last.identifierISMN")
+end
 set_array("IdentifierDOI[]")
 do list(path: "0247?", "var": "$i")
   if any_equal("$i.2", "doi")
     add_field("IdentifierDOI[].$append.__dummy__", "")
     copy_field("$i.a", "IdentifierDOI[].$last.standardNumber")
+  end
+end
+
+# MARC/028
+set_array("IdentifierSheetMusic[]")
+do list(path: "028[35]2", "var": "$i")
+  add_field("IdentifierSheetMusic[].$append.__dummy__", "")
+  copy_field("$i.a", "IdentifierSheetMusic[].$last.standardNumber")
+end
+
+# MARC/029
+set_array("IdentifierSerial[]")
+do list(path: "029??", "var": "$i")
+  add_field("IdentifierSerial[].$append.__dummy__", "")
+  do list(path: "$i.a", "var": "$j")
+    copy_field("$j", "IdentifierSerial[].$last.identifierISSN")
+    hbz.limetrans.function.ISSN("$j")
+    move_field("$j", "IdentifierSerial[].$last.identifierISSNNormalized")
   end
 end
 
@@ -2176,8 +2199,11 @@ retain(
   "IdentifierHBZ[]",
   "IdentifierISBNParallel[]",
   "IdentifierISBN[]",
+  "IdentifierISMN[]",
   "IdentifierISSN[]",
   "IdentifierOCLC[]",
+  "IdentifierSerial[]",
+  "IdentifierSheetMusic[]",
   "IdentifierZDB[]",
   "IssuedWithEntry[]",
   "Item[]",
