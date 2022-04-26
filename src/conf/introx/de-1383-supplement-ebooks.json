@@ -2,14 +2,9 @@
   "sigel": "1383",
   "isil": "DE-${sigel}",
   "input": {
-    "queue1": {
+    "queue": {
       "path": "/mnt/herakles/${isil}/upload/",
       "pattern": "{${sigel}_psyc_marc,ProQuest_${sigel}_Express-XML_*}.xml"
-    },
-    "queue2": {
-      "path": "/mnt/herakles/${isil}/upload/",
-      "pattern": "${sigel}_hanser.mrc",
-      "processor" : "MARC21RECORDS"
     }
   },
   "output": {
