@@ -102,6 +102,11 @@ public class LimetransTransformationTest extends AbstractLimetransTest {
     }
 
     @Test
+    public void testAlmaA96Postprocess() throws IOException {
+        testAlmaEqualsReference("a96-postprocess");
+    }
+
+    @Test
     public void testElasticsearch() throws IOException {
         testElasticsearchEqualsReference("elasticsearch", "");
     }

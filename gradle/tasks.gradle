@@ -40,4 +40,5 @@ def execTask = { name, main ->
 }
 
 execTask('filter', "${project.group}.filter.Main")
+execTask('verify-links', "${project.group}.function.VerifyLinks")
 execTask('transformation', "${project.group}.Main")

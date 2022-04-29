@@ -1,0 +1,3741 @@
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "ExtendedType" : [ "Zeitschrift" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierDNB" : [ {
+    "identifierDNB" : "2241653-5"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT014786137"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "limnologia et oecologia regionalis systematis fluminis Amazonas"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1965" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990151648920206441",
+    "identifierMMSIZ" : "991001938529706444",
+    "identifierPID" : "5333993100006444",
+    "identifierPID" : "5333993120006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990151648920206441",
+    "identifierForTheRecord" : "(DE-605)HT014786137"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2241653-5"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "0065-6755",
+    "identifierISSNNormalized" : "00656755"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Instituto Nacional de Pesquisas da Amazônia",
+    "corporateBodyIdentifier" : [ "(DE-588)2014487-8" ],
+    "identifierGND" : [ "2014487-8" ]
+  }, {
+    "corporateBodyName" : "Max-Planck-Institut für Limnologie",
+    "corporateBodyNameUnit" : [ "Arbeitsgruppe Tropenökologie" ],
+    "corporateBodyIdentifier" : [ "(DE-588)511736-7" ],
+    "identifierGND" : [ "511736-7" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Amazoniana"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Kiel" ],
+    "name" : [ "Mühlau [in Komm.]" ],
+    "chronology" : [ "1965-" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Kiel"
+  } ],
+  "DateProper" : {
+    "date" : [ "1965-" ]
+  },
+  "Extent" : {
+    "extent" : "Online-Ressource"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "1.1965/68 - 19.2006/07; damit Ersch. eingest."
+  },
+  "Description" : {
+    "description" : [ "Gesehen am 29.08.07" ]
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "publisherStatement" : "Kiel : Weiland, 1965-2007",
+    "relationshipInformation" : "Druckausg.",
+    "title" : "Amazoniana",
+    "controlNumber" : "(DE-605)HT005072303",
+    "identifierISSN" : "0065-6755",
+    "identifierForLinkingEntry" : "HT005072303",
+    "verifyingIdentifierForLinkingEntry" : "HT005072303"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://www.bibliothek.uni-regensburg.de/ezeit/?2241653",
+    "nonpublicnote" : "EZB"
+  }, {
+    "uri" : "http://www.mpil-ploen.mpg.de/mpiltj.htm",
+    "nonpublicnote" : "Verlag; 1.1965/68 - 16.2000/01: Contents; 17.2002/03 -19.2006/07: Volltexte",
+    "publicnote" : "kostenfrei"
+  }, {
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5333993100006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  }, {
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5333993120006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990151648920206441"
+  }, {
+    "uid" : "(DE-605)HT014786137"
+  }, {
+    "uid" : "(DE-A96)991001938529706444"
+  }, {
+    "uid" : "(DE-A96)220727"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "ExtendedType" : [ "Zeitschrift" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "jährlich", "halbjährlich" ],
+  "TypeMediaSpecialPreservation" : [ "Archivierung/Langzeitarchivierung gewährleistet" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierDNB" : [ {
+    "identifierDNB" : "2614647-2"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT016868512"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "734085474"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Informationsdienst zum Geräte- und Produktsicherheitsgesetz GPSG"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Hrsg.: Bundesanstalt für Arbeitsschutz und Arbeitsmedizin" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2007" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "SubjectDNB" : [ {
+    "subject" : "650",
+    "subject" : "340"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990187582740206441",
+    "identifierMMSIZ" : "991003235479706444",
+    "identifierPID" : "5335977570006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990187582740206441",
+    "identifierForTheRecord" : "(DE-605)HT016868512"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2614647-2"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Bundesanstalt für Arbeitsschutz und Arbeitsmedizin",
+    "corporateBodyIdentifier" : [ "(DE-588)5185811-3" ],
+    "identifierGND" : [ "5185811-3" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Gefährliche Produkte .."
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Dortmund", "Berlin", "Dresden" ],
+    "name" : [ "Bundesanst. für Arbeitsschutz und Arbeitsmedizin" ],
+    "chronology" : [ "2007-" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Dortmund",
+    "printingPlace" : "Berlin",
+    "printingPlace" : "Dresden"
+  } ],
+  "DateProper" : {
+    "date" : [ "2007-" ]
+  },
+  "Extent" : {
+    "extent" : "Online-Ressource"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "2007 -"
+  },
+  "Description" : {
+    "description" : [ "Gesehen am 20.06.11" ]
+  },
+  "DescriptionOfIssuance" : [ {
+    "description" : "Ersch. bis 2008 2x jährl., ab 2009 jährl."
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "publisherStatement" : "Dortmund ; Berlin ; Dresden : Bundesanst. für Arbeitsschutz und Arbeitsmedizin, 2007-",
+    "relationshipInformation" : "Druckausg.",
+    "title" : "Gefährliche Produkte ...",
+    "controlNumber" : "(DE-605)HT015879195",
+    "identifierForLinkingEntry" : "HT015879195",
+    "verifyingIdentifierForLinkingEntry" : "HT015879195"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://www.produktsicherheitsportal.de/portal-produktsicherheit/de/Startseite.html",
+    "nonpublicnote" : "Verlag",
+    "publicnote" : "kostenfrei"
+  }, {
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5335977570006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990187582740206441"
+  }, {
+    "uid" : "(DE-605)HT016868512"
+  }, {
+    "uid" : "(DE-A96)991003235479706444"
+  }, {
+    "uid" : "(DE-A96)292292"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
+{
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Englisch" ]
+  },
+  "introx" : {
+    "access" : [ "online" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99366597115306441",
+    "identifierMMSIZ" : "991004536033306444",
+    "identifierPID" : "539971760006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99366597115306441",
+    "identifierForTheRecord" : "(DE-605)99366597115306441"
+  },
+  "DateFirst" : {
+    "date" : "0000"
+  },
+  "DateLast" : {
+    "date" : "9999"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Olive Wreath: A Monthly Magazine, Devoted to Odd Fellowship & Its Literature (via EBSCO Host)"
+  } ],
+  "PublisherName" : [ {
+    "name" : [ "American Antiquarian Society Historical Periodicals via EBSCO Host" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://www.bibliothek.uni-regensburg.de/ezeit/?2241653",
+    "nonpublicnote" : "EZB"
+  }, {
+    "publicnote" : "EZB-NALAS-00438 AAS Historical Periodicals 5 NL",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=539971760006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99366597115306441"
+  }, {
+    "uid" : "(DE-A96)991004536033306444"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : [ "Zeitschrift" ],
+  "TitleOther" : {
+    "title" : [ "Olive Wreath" ]
+  }
+}
+{
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Englisch" ]
+  },
+  "introx" : {
+    "access" : [ "online" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99366597114806441",
+    "identifierMMSIZ" : "991004536032806444",
+    "identifierPID" : "539971820006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99366597114806441",
+    "identifierForTheRecord" : "(DE-605)99366597114806441"
+  },
+  "DateFirst" : {
+    "date" : "1111"
+  },
+  "DateLast" : {
+    "date" : "8888"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Olio: A Monthly Magazine for Railroad & Steamboat Reading (via EBSCO Host)"
+  } ],
+  "PublisherName" : [ {
+    "name" : [ "American Antiquarian Society Historical Periodicals via EBSCO Host" ]
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "EZB-NALAS-00438 AAS Historical Periodicals 5 NL",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=539971820006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99366597114806441"
+  }, {
+    "uid" : "(DE-A96)991004536032806444"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : [ "Zeitschrift" ],
+  "TitleOther" : {
+    "title" : [ "Olio" ]
+  }
+}
+{
+  "collection" : "DE-A96",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "in Zusammenarbeit mit: Forschungszentrum Jülich (Dipl.-Ing. Karl Heinz Graf)" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Hochschulschrift", "Monographie" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "991000043359706444",
+    "identifierMMSIZ" : "991000043359706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991000043359706444",
+    "identifierForTheRecord" : "(DE-A96)534977"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Schuller, Dimitri"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Konstruktion, Bau und Inbetriebnahme einer Tieftemperaturkühlkammer eines Rastertunnelmikroskops"
+  } ],
+  "PublisherName" : [ {
+    "chronology" : [ "2014" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2014" ]
+  },
+  "DescriptionOfThesis" : [ {
+    "description" : "Aachen, FH, Bachelorarbeit, 2015"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Wählisch, Georg",
+    "personRole" : [ "[Betreuer]" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-A96)991000043359706444"
+  }, {
+    "uid" : "(DE-A96)534977"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-A96",
+    "callnumber" : "61 EU 14/15-16B"
+  } ]
+}
+{
+  "collection" : "DE-A96",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "in Zusammenarbeit mit: RWTH Aachen/Institut für Angewandte Medizintechnik (Dipl.-Ing. Stephanie Schmitz)" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Hochschulschrift", "Monographie" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "991000048849706444",
+    "identifierMMSIZ" : "991000048849706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991000048849706444",
+    "identifierForTheRecord" : "(DE-A96)520553"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Henning, Patrick"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Untersuchung des Einflusses verschiedener Strukturen von Polycarbonaturethanvliesen auf die Hämokompatibilität"
+  } ],
+  "PublisherName" : [ {
+    "chronology" : [ "2014" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2014" ]
+  },
+  "DescriptionOfThesis" : [ {
+    "description" : "Aachen, FH, Bachelorarbeit, 2014"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Behbahani, Mehdi",
+    "personRole" : [ "[Betreuer]" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-A96)991000048849706444"
+  }, {
+    "uid" : "(DE-A96)520553"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-A96",
+    "callnumber" : "61 BMT 14-82B"
+  } ]
+}
+{
+  "collection" : "DE-A96",
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Hochschulschrift", "Monographie" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "991001149389706444",
+    "identifierMMSIZ" : "991001149389706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991001149389706444",
+    "identifierForTheRecord" : "(DE-A96)619648"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Heierhoff, Nils"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Konzeption eines Rahmenwerks zur anwendungsorientierten Konfiguration eines BeagleBone-Cluster-Systems mit Docker"
+  } ],
+  "PublisherName" : [ {
+    "chronology" : [ "2016" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2016" ]
+  },
+  "DescriptionOfThesis" : [ {
+    "description" : "Aachen, FH, Bachelorarbeit, 2016"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Sander, Volker",
+    "personRole" : [ "[Betreuer]" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-A96)991001149389706444"
+  }, {
+    "uid" : "(DE-A96)619648"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-A96",
+    "callnumber" : "61 P 15/16-72B"
+  } ]
+}
+{
+  "collection" : "DE-A96",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "in Zusammenarbeit mit: Uniklinikum Köln/Institute für Humangenetik (Dr. Min Jeong Kye)" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Hochschulschrift", "Monographie" ],
+    "language" : [ "Englisch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "991001128369706444",
+    "identifierMMSIZ" : "991001128369706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991001128369706444",
+    "identifierForTheRecord" : "(DE-A96)619720"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "Person" : [ {
+    "personName" : "Brecht, Johanna"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Characterization of microRNA processing enzyme, Drosha in Spinal Muscular Atrophy"
+  } ],
+  "PublisherName" : [ {
+    "chronology" : [ "2016" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2016" ]
+  },
+  "DescriptionOfThesis" : [ {
+    "description" : "Aachen, FH, Bachelorarbeit, 2016"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Seibler, Jost",
+    "personRole" : [ "[Betreuer]" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-A96)991001128369706444"
+  }, {
+    "uid" : "(DE-A96)619720"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-A96",
+    "callnumber" : "61 C 15/16-40B"
+  } ]
+}
+{
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-DNB", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie", "Sonstiges" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT013905202"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "605186882"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "genomics, transcriptomics, proteomics"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Günter Kahl" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie", "Nachschlagewerk", "Schriftenreihe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2004" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Gentechnologie", "Wörterbuch" ]
+  },
+  "SubjectRPB" : [ {
+    "subject" : "780"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "WB 1415"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990124532860206441",
+    "identifierMMSIZ" : "991001492349706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990124532860206441",
+    "identifierForTheRecord" : "(DE-605)HT013905202"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3527307656", "Gb. : ca. CHF 442.00 (freier Pr.), ca. EUR 299.00 (freier Pr.)" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Kahl, Günter",
+    "personBio" : "1943-",
+    "personIdentifier" : [ "(DE-588)133130754" ],
+    "identifierGND" : [ "133130754" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<The>> dictionary of gene technology"
+  } ],
+  "Edition" : {
+    "edition" : [ "3., rev. and enl. ed." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "2004-" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Weinheim"
+  } ],
+  "DateProper" : {
+    "date" : [ "2004-" ]
+  },
+  "DescriptionOfIssuance" : [ {
+    "description" : "Erschienen: Bd. 1 - 2"
+  } ],
+  "SucceedingEntry" : [ {
+    "relationshipInformation" : "Ab 4. Aufl. u.d.T.",
+    "title" : "Kahl, Günter: The dictionary of genomics, transcriptomics and proteomics"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Gentechnologie"
+  }, {
+    "subject" : "Wörterbuch"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990124532860206441"
+  }, {
+    "uid" : "(DE-605)HT013905202"
+  }, {
+    "uid" : "(DE-A96)991001492349706444"
+  }, {
+    "uid" : "(DE-A96)202547"
+  } ],
+  "TypePeriodical" : [ "Schriftenreihe" ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "TypeMediaSpecialPreservation" : [ "Mode of access: internet via World Wide Web.", "System requirements: Adobe Acrobat or other PDF reader (latest version recommended), Internet Explorer or other browser (latest version recommended)." ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Kym Anderson, Michael Bosworth" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2009" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "subject" : [ "Asia Pacific Economic Cooperation (Organization)", "World Trade Organization", "Commerce", "Business & Economics", "Local Commerce", "Papua New Guinea", "Oceania" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99366545708706441",
+    "identifierPID" : "53220529730006441",
+    "identifierPID" : "53221949450006441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99366545708706441",
+    "identifierForTheRecord" : "(DE-605)99366545708706441"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9780980623826  ‡q (ebook)" ]
+  }, {
+    "identifierISBN" : [ "0980623820 ‡q (ebook)" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "University of Adelaide Press,"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Reforming trade policy in Papua New Guinea and the Pacific Islands"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Adelaide" ],
+    "name" : [ "University of Adelaide Press" ],
+    "chronology" : [ "2009" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Adelaide"
+  } ],
+  "DateProper" : {
+    "date" : [ "2009" ]
+  },
+  "Extent" : {
+    "extent" : "1 online resource (xiv, 203 pages) : digital, PDF file(s)."
+  },
+  "Description" : {
+    "description" : [ "Bibliographic Level Mode of Issuance: Monograph" ]
+  },
+  "DescriptionOfExpression" : [ {
+    "description" : "English"
+  } ],
+  "Summary" : {
+    "abstract" : [ "The countries of the South Pacific have struggled to generate sustainable economic growth since their independence. Interventionist policies have failed in the past here, as they have in all other regions. Business and government leaders in this region are now beginning to acknowledge - as has happened in many other developing country regions over the past two decades - that major reforms are needed to put their economies onto a higher growth path. This study examines the growth record of key Pacific island economies and identifies the reasons for their relatively poor performance. It then looks at the process of globalization that is affecting those and indeed all economies increasingly; and the role the WTO has played in that process." ]
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Print version:",
+    "identifierISBN" : "9780980623895"
+  } ],
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Reprints collection (University of Adelaide Press).",
+    "part" : "Economics."
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "DOAB Directory of Open Access Books",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53220529730006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  }, {
+    "publicnote" : "JSTOR Books Open Access",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53221949450006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99366545708706441"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectCorporateBodyName" : "Asia Pacific Economic Cooperation (Organization)"
+  }, {
+    "subjectCorporateBodyName" : "World Trade Organization"
+  }, {
+    "subjectTopicName" : "Commerce"
+  }, {
+    "subjectTopicName" : "Business & Economics"
+  }, {
+    "subjectTopicName" : "Local Commerce"
+  }, {
+    "subjectGeoName" : "Papua New Guinea"
+  }, {
+    "subjectGeoName" : "Oceania"
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Manfred Hegger, Hans Drexler, Martin Zeumer" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2014" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "subject" : [ "Building materials" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99366599897006441",
+    "identifierMMSIZ" : "991004535412906444",
+    "identifierPID" : "539683590006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99366599897006441",
+    "identifierForTheRecord" : "(DE-605)99366599897006441"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3-0356-1246-3" ]
+  }, {
+    "identifierISBN" : [ "3-0356-1160-2" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Hegger, Manfred",
+    "personRole" : [ "[author.]" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Materialität"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Basel, Schweiz" ],
+    "name" : [ "Birkhäuser" ],
+    "chronology" : [ "2014" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Basel, Schweiz"
+  } ],
+  "DateProper" : {
+    "date" : [ "2014" ]
+  },
+  "Extent" : {
+    "extent" : "1 online resource (87 pages) : illustrations."
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISBN" : "3-0356-0302-2"
+  } ],
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Basics (Basel, Switzerland)"
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "De Gruyter Basics Online",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=539683590006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99366599897006441"
+  }, {
+    "uid" : "(DE-A96)991004535412906444"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "PersonCreator" : [ {
+    "personName" : "Drexler, Hans",
+    "personRole" : [ "[author.]" ]
+  }, {
+    "personName" : "Zeumer, Martin",
+    "personRole" : [ "[author.]" ]
+  } ],
+  "TitleOther" : {
+    "title" : [ "Basics entwerfen materialität" ]
+  },
+  "RSWK" : [ {
+    "subjectTopicName" : "Building materials"
+  } ]
+}
+{
+  "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT000816547"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "1069992069"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "eine Einführung"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Karl M. Setzen" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1971" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
+    "subject" : [ "Gruppe" ]
+  },
+  "SubjectRVK" : [ {
+    "subject" : "DU 1000"
+  }, {
+    "subject" : "MS 1030"
+  }, {
+    "subject" : "CV 4000"
+  }, {
+    "subject" : "MS 1000"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990007179200206441",
+    "identifierMMSIZ" : "991001031859706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990007179200206441",
+    "identifierForTheRecord" : "(DE-605)HT000816547"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Setzen, Karl M.",
+    "personIdentifier" : [ "(DE-588)177401427" ],
+    "identifierGND" : [ "177401427" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Die>> Gruppe als soziales Grundgebilde"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Heidenheim an der Brenz" ],
+    "name" : [ "Heidenheimer Verl.-Anst" ],
+    "chronology" : [ "1971" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Heidenheim an der Brenz"
+  } ],
+  "DateProper" : {
+    "date" : [ "1971" ]
+  },
+  "Extent" : {
+    "extent" : "103 S. : graph. Darst."
+  },
+  "SubjectHeadings" : [ {
+    "subject" : "Gruppe"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "OEG"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990007179200206441"
+  }, {
+    "uid" : "(DE-605)HT000816547"
+  }, {
+    "uid" : "(DE-A96)991001031859706444"
+  }, {
+    "uid" : "(DE-A96)1001"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-A96",
+    "callnumber" : "21 OEG 2"
+  } ]
+}
+{
+  "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Loseblattausgabe" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT003638156"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "1070353813"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Strategien, Konzepte und Lösungen für die JIT-Beschaffung, -Produktion und -Distribution"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Klaus J. Schmidt (Hrsg.)" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie", "Sonstiges", "Schriftenreihe" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "subject" : [ "Logistik", "Just-in-time-Produktion" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990048857150206441",
+    "identifierMMSIZ" : "991001031669706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990048857150206441",
+    "identifierForTheRecord" : "(DE-605)HT003638156"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Handbuch Logistik und Produktionsmanagement"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Landsberg/Lech" ],
+    "name" : [ "Verl. Moderne Industrie" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Landsberg/Lech"
+  } ],
+  "Extent" : {
+    "extent" : "Losebl.-Ausg."
+  },
+  "Description" : {
+    "description" : [ "vorhanden mit Stand: Mai 2004" ]
+  },
+  "PersonContributor" : [ {
+    "personName" : "Schmidt, Klaus J.",
+    "personIdentifier" : [ "(DE-588)111951097" ],
+    "identifierGND" : [ "111951097" ]
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Logistik"
+  }, {
+    "subject" : "Just-in-time-Produktion"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "QBB"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990048857150206441"
+  }, {
+    "uid" : "(DE-605)HT003638156"
+  }, {
+    "uid" : "(DE-A96)991001031669706444"
+  }, {
+    "uid" : "(DE-A96)802"
+  } ],
+  "TypePeriodical" : [ "Schriftenreihe" ],
+  "Item" : [ {
+    "identifier" : "DE-A96",
+    "callnumber" : "21 QBB 134"
+  } ]
+}
+{
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "sonstiges Regelwerk", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks", "Sonstiges" ],
+  "Country" : [ {
+    "countryISO" : "US"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT018264803"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "838518862"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Catherine Fenselau, ed. .." ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2011" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Chemie und Chemische Technik", "Biologie" ],
+    "subject" : [ "Microorganisms", "Identification", "Mass spectrometry", "Microbiological chemistry" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990203911330206441",
+    "identifierMMSIZ" : "991000618589706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990203911330206441",
+    "identifierForTheRecord" : "(DE-605)HT018264803"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9780841226128" ]
+  }, {
+    "identifierISBN" : [ "0841226121", "(hbk.) No price" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Rapid characterization of microorganisms by mass spectrometry"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Washington, DC" ],
+    "name" : [ "American Chemical Society" ],
+    "chronology" : [ "2011" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Washington, DC"
+  } ],
+  "DateProper" : {
+    "date" : [ "2011" ]
+  },
+  "Extent" : {
+    "extent" : "VIII, 237 S. : Ill., graph. Darst."
+  },
+  "PersonContributor" : [ {
+    "personName" : "Fenselau, Catherine",
+    "personBio" : "1939-",
+    "personIdentifier" : [ "(DE-588)1018725954" ],
+    "identifierGND" : [ "1018725954" ]
+  } ],
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "ACS symposium series",
+    "volume" : "1065",
+    "designation" : "(DE-605)HT001233088"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "UTI"
+  }, {
+    "source" : "DE-A96",
+    "subject" : "VOW"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990203911330206441"
+  }, {
+    "uid" : "(DE-605)HT018264803"
+  }, {
+    "uid" : "(DE-A96)991000618589706444"
+  }, {
+    "uid" : "(DE-A96)492417"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-A96",
+    "callnumber" : "61 UTI 12"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Microorganisms",
+    "subjectTopicName" : "Identification"
+  }, {
+    "subjectTopicName" : "Mass spectrometry"
+  }, {
+    "subjectTopicName" : "Microbiological chemistry"
+  } ]
+}
+{
+  "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT007313557"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "611286076"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "ein Handbuch zur Einführung in die fachliche Informationsarbeit"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Marianne Buder ... (Hrsg.). Begr. von Klaus Laisiepen .." ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie", "Schriftenreihe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1997" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Information und Dokumentation" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990050093380206441",
+    "identifierMMSIZ" : "991001206629706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990050093380206441",
+    "identifierForTheRecord" : "(DE-605)HT007313557"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3598113099", "Gb. : DM 248.00" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Grundlagen der praktischen Information und Dokumentation"
+  } ],
+  "Edition" : {
+    "edition" : [ "4. völlig neu gefaßte Ausg." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "München [u.a.]" ],
+    "name" : [ "Saur" ],
+    "chronology" : [ "1997-" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "München [u.a.]"
+  } ],
+  "DateProper" : {
+    "date" : [ "1997-" ]
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "DGD-Schriftenreihe" ]
+  } ],
+  "DescriptionOfIssuance" : [ {
+    "description" : "Erschienen: Bd. 1 - 2"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Buder, Marianne",
+    "personIdentifier" : [ "(DE-588)108735184" ],
+    "identifierGND" : [ "108735184" ]
+  }, {
+    "personName" : "Laisiepen, Klaus",
+    "personRole" : [ "[Begründer des Werks]" ],
+    "personIdentifier" : [ "(DE-588)105708305" ],
+    "identifierGND" : [ "105708305" ]
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Information und Dokumentation"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990050093380206441"
+  }, {
+    "uid" : "(DE-605)HT007313557"
+  }, {
+    "uid" : "(DE-A96)991001206629706444"
+  }, {
+    "uid" : "(DE-A96)150758"
+  } ],
+  "TypePeriodical" : [ "Schriftenreihe" ]
+}
+{
+  "FormatCarrier" : [ "Medienkombination" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "RSWK", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT014469732"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "179265376"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Mark Skipper" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie", "Schriftenreihe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2002" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Englisch", "Grammatik", "Aufgabensammlung", "Wortschatz" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990139139240206441",
+    "identifierMMSIZ" : "991002138299706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990139139240206441",
+    "identifierForTheRecord" : "(DE-605)HT014469732"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Advanced grammar & vocabulary"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Newbury, Berkshire", "[Ismaning]" ],
+    "name" : [ "Express Publ", "Hueber" ],
+    "chronology" : [ "2002-" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Newbury, Berkshire",
+    "printingPlace" : "[Ismaning]"
+  } ],
+  "DateProper" : {
+    "date" : [ "2002-" ]
+  },
+  "Description" : {
+    "description" : [ "2. Verl. und Hueber-ISBN's eingeklebt" ]
+  },
+  "DescriptionOfIssuance" : [ {
+    "description" : "Erschienen: Erschienen: Student's book, Key, Teacher's book sowie CD bzw. Tonkassetten"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Skipper, Mark"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Englisch"
+  }, {
+    "subject" : "Grammatik"
+  }, {
+    "subject" : "Aufgabensammlung"
+  }, {
+    "subject" : "Englisch"
+  }, {
+    "subject" : "Wortschatz"
+  }, {
+    "subject" : "Aufgabensammlung"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990139139240206441"
+  }, {
+    "uid" : "(DE-605)HT014469732"
+  }, {
+    "uid" : "(DE-A96)991002138299706444"
+  }, {
+    "uid" : "(DE-A96)231536"
+  } ],
+  "TypePeriodical" : [ "Schriftenreihe" ]
+}
+{
+  "collection" : "DE-A96",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "in Zusammenarbeit mit: Forschungszentrum Jülich (Dipl.-Ing. Karl Heinz Graf)" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Hochschulschrift", "Monographie" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Jülich" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "991000067219706444",
+    "identifierMMSIZ" : "991000067219706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991000067219706444",
+    "identifierForTheRecord" : "(DE-A96)534977"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Schuller, Dimitri"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Konstruktion, Bau und Inbetriebnahme einer Tieftemperaturkühlkammer eines Rastertunnelmikroskops"
+  } ],
+  "PublisherName" : [ {
+    "chronology" : [ "2014" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2014" ]
+  },
+  "DescriptionOfThesis" : [ {
+    "description" : "Aachen, FH, Bachelorarbeit, 2015"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Wählisch, Georg",
+    "personRole" : [ "[Betreuer]" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-A96)991000067219706444"
+  }, {
+    "uid" : "(DE-A96)534977"
+  } ],
+  "Item" : [ {
+    "callnumber" : "61 EU 14/15-16B"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "61 EU 14/15-16B",
+    "shelfmark" : "JUE_Abschl"
+  } ]
+}
+{
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "series editor, Dr. Richard Hull" ]
+  },
+  "dc" : {
+    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2011" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "subject" : [ "Nonprofit organizations", "Case studies" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99368113400306441",
+    "identifierMMSIZ" : "991004553223406444",
+    "identifierPID" : "5349876900006444",
+    "identifierPID" : "5352070550006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99368113400306441",
+    "identifierForTheRecord" : "(DE-605)99368113400306441"
+  },
+  "DateFirst" : {
+    "date" : "2011",
+    "date" : "2011"
+  },
+  "DateLast" : {
+    "date" : "2017"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2657415-9"
+  }, {
+    "identifierZDB" : "2000386-9"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "2046-6080",
+    "identifierISSNNormalized" : "20466080"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Dialogues in Critical Management Studies"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Bingley, U.K." ],
+    "name" : [ "Emerald Group Publishing Limited" ],
+    "chronology" : [ "2011-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2011-" ]
+  },
+  "SubSeriesEntry" : [ {
+    "title" : "Feminists and Queer Theorists Debate the Future of Critical Management Studies",
+    "controlNumber" : "(CKB)3710000001184621",
+    "identifierISBN" : "1-78635-497-7"
+  }, {
+    "title" : "Getting Things Done",
+    "controlNumber" : "(CKB)2670000000421965",
+    "identifierISBN" : "1-78190-955-5"
+  }, {
+    "title" : "The Third Sector",
+    "controlNumber" : "(CKB)2550000000075840",
+    "identifierISBN" : "1-283-35481-0"
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISSN" : "2046-6072"
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "EZB-NALFO-01634 Emerald BME eBook Series Archive AL",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5349876900006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  }, {
+    "publicnote" : "EZB-NALFO-01634 Emerald BME eBook Series Archive AL",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5352070550006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99368113400306441"
+  }, {
+    "uid" : "(DE-A96)991004553223406444"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "PersonCreator" : [ {
+    "personName" : "Hull, Richard",
+    "personTitle" : [ "Ph. D." ]
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Nonprofit organizations",
+    "subjectAddendum" : "Management"
+  }, {
+    "subjectTopicName" : "Nonprofit organizations",
+    "subjectAddendum" : "Management",
+    "subjectGenre" : "Case studies"
+  } ]
+}
+{
+  "collection" : "DE-A96",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "in Zusammenarbeit mit: RWTH Aachen/Institut für Angewandte Medizintechnik (Dipl.-Ing. Stephanie Schmitz)" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Hochschulschrift", "Monographie" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Jülich" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "991000073589706444",
+    "identifierMMSIZ" : "991000073589706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991000073589706444",
+    "identifierForTheRecord" : "(DE-A96)520553"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Henning, Patrick"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Untersuchung des Einflusses verschiedener Strukturen von Polycarbonaturethanvliesen auf die Hämokompatibilität"
+  } ],
+  "PublisherName" : [ {
+    "chronology" : [ "2014" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2014" ]
+  },
+  "DescriptionOfThesis" : [ {
+    "description" : "Aachen, FH, Bachelorarbeit, 2014"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Behbahani, Mehdi",
+    "personRole" : [ "[Betreuer]" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-A96)991000073589706444"
+  }, {
+    "uid" : "(DE-A96)520553"
+  } ],
+  "Item" : [ {
+    "callnumber" : "61 BMT 14-82B"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "61 BMT 14-82B",
+    "shelfmark" : "JUE_Abschl"
+  } ]
+}
+{
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT020611813"
+  } ],
+  "collection" : "DE-A96",
+  "VolumeDesignation" : {
+    "volumeDesignation" : "2020,10"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie", "Teil eines Werkes" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Eupener Straße" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "991004279679706444",
+    "identifierMMSIZ" : "991004279679706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991004279679706444",
+    "identifierForTheRecord" : "(DE-605)HT020611813"
+  },
+  "Language" : [ {
+    "languageSource" : "und"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Karriere in der IT - Ratgeber, Tipps, Praxis"
+  } ],
+  "Description" : {
+    "description" : [ "notiz" ]
+  },
+  "xbib" : [ {
+    "uid" : "(DE-A96)991004279679706444"
+  }, {
+    "uid" : "(DE-605)HT020611813"
+  }, {
+    "uid" : "(DE-A96)983960"
+  } ],
+  "Item" : [ {
+    "callnumber" : "21 WAE 4(2020,2)"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "21 WAE 4(2020,2)",
+    "shelfmark" : "EUP_Frei"
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "RSWK", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "Country" : [ {
+    "countryISO" : "CH"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT019344670"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "992517041"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Doris Haas-Arndt" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2015" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "subject" : [ "Gebäude", "Wasserversorgung", "Abwasserbeseitigung", "Haustechnik", "Wasserkreislauf" ]
+  },
+  "SubjectRVK" : [ {
+    "subject" : "ZI 8300"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990218476060206441",
+    "identifierMMSIZ" : "991001913779706444",
+    "identifierPID" : "5349657840006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990218476060206441",
+    "identifierForTheRecord" : "(DE-605)HT019344670"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783035612974", "PDF" ]
+  }, {
+    "identifierISBN" : [ "9783035613162", "EPUB" ]
+  }, {
+    "identifierISBN" : [ "9783035612974", "PDF" ]
+  }, {
+    "identifierISBN" : [ "9783035613162", "EPUB" ]
+  }, {
+    "identifierISBN" : [ "9783035612974", "PDF" ]
+  }, {
+    "identifierISBN" : [ "9783035613162", "EPUB" ]
+  } ],
+  "IdentifierDOI" : [ {
+    "standardNumber" : "10.1515/9783035612974"
+  } ],
+  "Person" : [ {
+    "personName" : "Haas-Arndt, Doris",
+    "personBio" : "1957-",
+    "personIdentifier" : [ "(DE-588)121619087" ],
+    "identifierGND" : [ "121619087" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Wasserkreislauf im Gebäude"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Basel" ],
+    "name" : [ "Birkhäuser" ],
+    "chronology" : [ "[2015]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Basel"
+  } ],
+  "DateProper" : {
+    "date" : [ "[2015]" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource (81 Seiten)"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Basics" ]
+  } ],
+  "Description" : {
+    "description" : [ "\"Erscheinungsdatum: Mai 2017\" - Startseite", "Erscheinungsjahr der Printausgabe: 2015", "vorhanden: neu170711" ]
+  },
+  "Summary" : {
+    "abstract" : [ "ger: Die Integration der haustechnischen Anlagen ist ein wichtiger Aspekt bei der Planung des Architekten. Die Konzeptionierung von Versorgungssträngen und Kreisläufen im Gebäude erfordert ein Verständnis für die Zusammenhänge der Ver- und Entsorgung mit dem Element Wasser. Hierbei geht es vor allem um die Zusammenhänge der einzelnen Kreislaufelemente von der Versorgung mit Trinkwasser, den Verbrauchern im Haus und der Entsorgung von Abwasser bis hin zur Wiedernutzbarmachung von Abwässern. Das Thema der Wassereinsparung bildet dabei einen übergeordneten Rahmen." ]
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "mainEntryHeading" : "Haas-Arndt, Doris, 1957-",
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Druck-Ausgabe" ],
+    "title" : "Wasserkreislauf im Gebäude",
+    "controlNumber" : "(DE-605)HT018577901",
+    "identifierISBN" : "978-3-0356-0565-5",
+    "identifierForLinkingEntry" : "HT018577901",
+    "verifyingIdentifierForLinkingEntry" : "HT018577901"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://dx.doi.org/10.1515/9783035612974",
+    "nonpublicnote" : "Resolving-System"
+  }, {
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5349657840006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Gebäude"
+  }, {
+    "subject" : "Wasserversorgung"
+  }, {
+    "subject" : "Gebäude"
+  }, {
+    "subject" : "Abwasserbeseitigung"
+  }, {
+    "subject" : "Haustechnik"
+  }, {
+    "subject" : "Wasserkreislauf"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "ZFQ"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990218476060206441"
+  }, {
+    "uid" : "(DE-605)HT019344670"
+  }, {
+    "uid" : "(DE-A96)991001913779706444"
+  }, {
+    "uid" : "(DE-A96)704756"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "TitleOther" : {
+    "title" : [ "Basics Wasserkreislauf im Gebäude", "Basics Haustechnik Wasserkreislauf im Gebäude" ]
+  }
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift", "säurefreies, alterungsbeständiges Papier" ],
+  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "Country" : [ {
+    "countryISO" : "DE-BY"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT019743301"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "963838529"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "sicherer Umgang mit der DIN 18202 : mit gewerkespezifischen Regeln für den Roh- und Ausbau auf dem Stand VOB 2016"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Petra Derler" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2017" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Bayernallee" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "subject" : [ "Maßtoleranzen", "DIN18202", "DIN 18202", "Rohbau", "Ausbau", "MaßtoleranzenRohbau", "MaßtoleranzenAusbau" ]
+  },
+  "SubjectRVK" : [ {
+    "subject" : "ZI 3970"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990225508660206441",
+    "identifierMMSIZ" : "991002764539706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990225508660206441",
+    "identifierForTheRecord" : "(DE-605)HT019743301"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783811101180", "Broschur" ]
+  }, {
+    "identifierISBN" : [ "9783811101180", "Broschur" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Derler, Petra",
+    "personIdentifier" : [ "(DE-588)115793771" ],
+    "identifierGND" : [ "115793771" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Maßtoleranzen im Baualltag"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Kissing" ],
+    "name" : [ "Weka Media" ],
+    "chronology" : [ "[2017]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Kissing"
+  } ],
+  "DateProper" : {
+    "date" : [ "[2017]" ]
+  },
+  "Extent" : {
+    "extent" : "348 Seiten : Illustrationen, Diagramme ; 21 cm ; CD-ROM (12 cm)"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Praxislösungen" ]
+  } ],
+  "Description" : {
+    "description" : [ "CD-ROM: Titel-Nr.: CD8198-2003" ]
+  },
+  "Summary" : {
+    "abstract" : [ "Ohne Probleme halten Sie die zulässigen Maßtoleranzen ein. Sie sorgen für einen reibungslosen Bauablauf ohne Nachbesserungen oder Minderungen. Die Toleranznorm DIN 18202 rechtssicher auslegen und Haftungsfälle vermeiden!Am Anfang eines jeden Bauvorhabens werden die Abmessungen und die Lage von Bauwerken und -teilen geplant. Auf dem langen Weg zum fertigen Gebäude drohen jedoch häufig Abweichungen. Dafür gibt es zahlreiche Gründe: Messungenauigkeiten, Fehler bei der Fertigung oder beim Einbau sowie äußere Einflüsse wie z.B. Temperatur, Feuchtigkeit oder Lasteinwirkung.Maßtoleranzen sind für Architekten und Ingenieure enorm wichtig, denn sie bilden und definieren den Korridorzwischen normgerechtem Bauen und Baumangel. Bis zu welchem Grad sind Abweichungen zu tolerieren? Aufwelche Regelwerke können sich Architekten und Ingenieure berufen? Wie können sie ein Gebäude so planen und bauen, dass die zulässigen Abweichungen eingehalten und nicht überschritten werden? Wo liegen die Ursachen für Abweichungen? Die überarbeitete Neuauflage des Fachbuchs „Maßtoleranzen im Baualltag“ liefert das nötige Know-how für das normgerechte Bauen bei Maßabweichungen. Mit diesem Wissen lassen sich die bestehenden Normen rechtssicher interpretieren und teure Haftungsfälle somit vermeiden.Im Zentrum der Betrachtung steht dabei zum einen die DIN 18202, zum anderen die vielen weiteren Normen und Regelungen, die zu beachten sind. Berücksichtigt sind dabei auch die Änderungen der VOB 2016. Die gewerkebezogene Darstellung erleichtert das schnelle Finden der einschlägigen Regelungen. Die beiliegende CD-ROM enthält eine Sammlung aktueller Schadensfälle zu allen neuralgischen Punkten eines Gebäudes: Verbindungsbauteile, Fassade, Fugen, Rohbau, Baugrund etc. Hierbei wird auch der baurechtliche Hintergrund analysiert. Sie schützen sich vor teuren Haftungsansprüchen und Mangelbeseitigungskosten.", "Mithilfe von wertvollen Praxishinweisen zum maßgerechten Planen und Bauen nach DIN 18202 wissen Sie stets, worauf Sie achten müssen. Sie haben hieb- und stichfeste Argumente für jedes Gewerk: Übersichten für alle Gewerke des Roh- und Ausbaus zeigen, welche Maßtoleranzen in den einzelnen Gewerken zu berücksichtigen sind. Alle aktuellen Normen einschließlich VOB 2016 sind berücksichtigt. Schadensfälle inkl." ]
+  },
+  "OnlineAccess" : [ {
+    "uri" : "http://bvbr.bib-bvb.de:8991/F?func=service&doc_library=BVB01&local_base=BVB01&doc_number=029315686&sequence=000001&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA",
+    "publicnote" : "Inhaltsverzeichnis"
+  }, {
+    "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2019/05/01/file_98/8419987.pdf",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "B:DE-101",
+    "format" : "application/pdf"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "B:DE-101",
+    "contact" : "B:DE-101",
+    "format" : "application/pdf"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Maßtoleranzen"
+  }, {
+    "subject" : "DIN18202"
+  }, {
+    "subject" : "DIN 18202"
+  }, {
+    "subject" : "Rohbau"
+  }, {
+    "subject" : "Ausbau"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "XBT"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990225508660206441"
+  }, {
+    "uid" : "(DE-605)HT019743301"
+  }, {
+    "uid" : "(DE-A96)991002764539706444"
+  }, {
+    "uid" : "(DE-A96)803462"
+  } ],
+  "Item" : [ {
+    "callnumber" : "11 XBT 11(2017)"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "11 XBT 11(2017)",
+    "shelfmark" : "BAY_Frei"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Maßtoleranzen"
+  }, {
+    "subjectTopicName" : "DIN18202"
+  }, {
+    "subjectTopicName" : "MaßtoleranzenRohbau"
+  }, {
+    "subjectTopicName" : "MaßtoleranzenAusbau"
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "ExtendedType" : [ "Zeitschrift" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "monatlich", "Schriftenreihe" ],
+  "TypeMediaSpecialPreservation" : [ "Archivierung/Langzeitarchivierung gewährleistet" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierDNB" : [ {
+    "identifierDNB" : "2000386-9"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT012875221"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "313795126"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Zeitschrift der Gesellschaft Deutscher Chemiker"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Zeitschrift", "Schriftenreihe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2000", "2010", "2011", "2014" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Eupener Straße" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Chemie", "Zeitschrift" ]
+  },
+  "SubjectDNB" : [ {
+    "subject" : "540"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "VA 6120"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990110260070206441",
+    "identifierMMSIZ" : "991000209759706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990110260070206441",
+    "identifierForTheRecord" : "(DE-605)HT012875221"
+  },
+  "DateFirst" : {
+    "date" : "2000"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2000386-9"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "1439-9598",
+    "identifierISSNNormalized" : "14399598"
+  }, {
+    "identifierISSN" : "1439-9598",
+    "identifierISSNNormalized" : "14399598"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Gesellschaft Deutscher Chemiker",
+    "corporateBodyIdentifier" : [ "(DE-588)2012027-8" ],
+    "identifierGND" : [ "2012027-8" ]
+  }, {
+    "corporateBodyName" : "Gesellschaft Österreichischer Chemiker",
+    "corporateBodyIdentifier" : [ "(DE-588)5137928-4" ],
+    "identifierGND" : [ "5137928-4" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Nachrichten aus der Chemie"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "2000-" ]
+  }, {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "2000-2010" ]
+  }, {
+    "place" : [ "Frankfurt, M" ],
+    "name" : [ "Ges. Dt. Chemiker" ],
+    "chronology" : [ "teils" ]
+  }, {
+    "place" : [ "Berlin" ],
+    "name" : [ "<<de>> Gruyter" ],
+    "chronology" : [ "2011-2014" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Weinheim"
+  }, {
+    "printingPlace" : "Frankfurt, M."
+  }, {
+    "printingPlace" : "Berlin"
+  } ],
+  "DateProper" : {
+    "date" : [ "2000-", "2000-2010", "teils", "2011-2014" ]
+  },
+  "Extent" : {
+    "extent" : "30 cm"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "48.2000 -"
+  },
+  "DescriptionOfContent" : [ {
+    "description" : "Ungezählte Beil.: EuCheMS newsletter; Nachrichten für die Karriere; Nachrichten für die Chemikerkarriere; Nachrichten aus der Chemiewirtschaft; Nano; früher: Analytica pro"
+  } ],
+  "DescriptionOfIssuance" : [ {
+    "description" : "Ersch. monatl."
+  } ],
+  "HoldingsStatement" : [ {
+    "note" : "im Magazin Eupener Str., ab 2012 im Schuber"
+  } ],
+  "SupplementSpecialIssueEntry" : [ {
+    "mainEntryHeading" : "Gesellschaft Deutscher Chemiker",
+    "publisherStatement" : "Frankfurt, M. : Ges. Dt. Chemiker, 1977-2007",
+    "relationshipInformation" : "Bis 54.2006 Beil.",
+    "title" : "Tätigkeitsbericht / Gesellschaft Deutscher Chemiker",
+    "controlNumber" : "(DE-605)HT003310680",
+    "identifierForLinkingEntry" : "HT003310680",
+    "verifyingIdentifierForLinkingEntry" : "HT003310680"
+  }, {
+    "mainEntryHeading" : "Gesellschaft Deutscher Chemiker",
+    "publisherStatement" : "Frankfurt am Main : Gesellschaft Deutscher Chemiker e.V., 2008-",
+    "relationshipInformation" : "Ab 55.2007 darin",
+    "title" : "Jahresbericht ... / Gesellschaft Deutscher Chemiker, GDCh",
+    "controlNumber" : "(DE-605)HT015594869",
+    "identifierForLinkingEntry" : "HT015594869",
+    "verifyingIdentifierForLinkingEntry" : "HT015594869"
+  }, {
+    "publisherStatement" : "Cambridge, Mass. : CambridgeSoft Corp., 2004-",
+    "relationshipInformation" : "Beil.:",
+    "title" : "Chem & bio news",
+    "controlNumber" : "(DE-605)HT014825990",
+    "identifierISSN" : "1932-0965",
+    "identifierForLinkingEntry" : "HT014825990",
+    "verifyingIdentifierForLinkingEntry" : "HT014825990"
+  }, {
+    "publisherStatement" : "Frankfurt am Main : Gesellschaft Deutscher Chemiker, [2012?]-",
+    "physicalDescription" : "Bände",
+    "relationshipInformation" : "Supplement",
+    "note" : [ "2012 [?]-" ],
+    "title" : "Nachrichten aus der Chemie. Analytica pro",
+    "controlNumber" : "(DE-605)HT018961311",
+    "identifierForLinkingEntry" : "HT018961311",
+    "verifyingIdentifierForLinkingEntry" : "HT018961311"
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2000-",
+    "physicalDescription" : "Online-Ressource",
+    "relationshipInformation" : "Online-Ausg.",
+    "title" : "Nachrichten aus der Chemie",
+    "controlNumber" : "(DE-605)HT015219020",
+    "identifierISSN" : "1868-0054",
+    "identifierForLinkingEntry" : "HT015219020",
+    "verifyingIdentifierForLinkingEntry" : "HT015219020"
+  } ],
+  "PrecedingEntry" : [ {
+    "publisherStatement" : "Weinheim [u.a.] : Wiley-VCH, 1977-1999",
+    "relationshipInformation" : "Vorg.:",
+    "title" : "Nachrichten aus Chemie, Technik und Laboratorium",
+    "controlNumber" : "(DE-605)HT000286865",
+    "identifierISSN" : "0341-5163",
+    "identifierForLinkingEntry" : "HT000286865",
+    "verifiedIdentifierForLinkingEntry" : "HT000286865",
+    "verifyingIdentifierForLinkingEntry" : "HT000286865"
+  }, {
+    "mainEntryHeading" : "Gesellschaft Österreichischer Chemiker",
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2006-[2018]",
+    "relationshipInformation" : "Darin aufgegangen",
+    "title" : "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker",
+    "controlNumber" : "(DE-605)HT015702445",
+    "identifierForLinkingEntry" : "HT015702445",
+    "verifyingIdentifierForLinkingEntry" : "HT015702445"
+  } ],
+  "NonspecificRelationshipEntry" : [ {
+    "mainEntryHeading" : "Gesellschaft Österreichischer Chemiker",
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2006-[2018]",
+    "relationshipInformation" : "Einzelne H. zugl. H. von",
+    "title" : "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker",
+    "controlNumber" : "(DE-605)HT015702445",
+    "identifierForLinkingEntry" : "HT015702445",
+    "verifyingIdentifierForLinkingEntry" : "HT015702445"
+  }, {
+    "publisherStatement" : "Weinheim : Wiley-VCH, 2013-",
+    "relationshipInformation" : "Einzelne H. zugl. H. von",
+    "title" : "Trendberichte",
+    "controlNumber" : "(DE-605)HT017576091",
+    "identifierForLinkingEntry" : "HT017576091",
+    "verifyingIdentifierForLinkingEntry" : "HT017576091"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Chemie"
+  }, {
+    "subject" : "Zeitschrift"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990110260070206441"
+  }, {
+    "uid" : "(DE-605)HT012875221"
+  }, {
+    "uid" : "(DE-A96)991000209759706444"
+  }, {
+    "uid" : "(DE-A96)177135"
+  } ],
+  "Item" : [ {
+    "callnumber" : "63 ZS 104"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "63 ZS 104",
+    "shelfmark" : "EUP_ZSMag"
+  } ],
+  "TitleOther" : {
+    "title" : [ "Analytica pro", "EuCheMS newsletter", "Nachrichten für die Karriere", "Nachrichten für die Chemikerkarriere", "Nachrichten aus der Chemiewirtschaft", "Nano", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker" ]
+  }
+}
+{
+  "ExtendedType" : [ "Datensammlung" ],
+  "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Loseblattausgabe" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT000011758"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "1067353326"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "ARH"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Zentralverband des Deutschen Baugewerbes .." ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie", "Sonstiges", "Schriftenreihe" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Hochbau", "Sollzeit", "Richtwert" ]
+  },
+  "SubjectRVK" : [ {
+    "subject" : "ZI 3850"
+  }, {
+    "subject" : "PD 4760"
+  }, {
+    "subject" : "ZH 2250"
+  }, {
+    "subject" : "ZH 2450"
+  }, {
+    "subject" : "ZH 3900"
+  }, {
+    "subject" : "ZH 3950"
+  }, {
+    "subject" : "ZI 3700"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990047610350206441",
+    "identifierMMSIZ" : "991001257929706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990047610350206441",
+    "identifierForTheRecord" : "(DE-605)HT000011758"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Zentralverband Deutsches Baugewerbe",
+    "corporateBodyIdentifier" : [ "(DE-588)9563-1" ],
+    "identifierGND" : [ "9563-1" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Arbeitszeit-Richtwerte Hochbau"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Neu-Isenburg" ],
+    "name" : [ "Zeittechnik-Verl" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Neu-Isenburg"
+  } ],
+  "Extent" : {
+    "extent" : "Losebl.-Ausg."
+  },
+  "Description" : {
+    "description" : [ "Verl.-Ort anfangs: Dreieich" ]
+  },
+  "SupplementParentEntry" : [ {
+    "relationshipInformation" : "Ergänzungshefte u.d.T.",
+    "title" : "Handbuch Arbeitsorganisation Bau"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Hochbau"
+  }, {
+    "subject" : "Sollzeit"
+  }, {
+    "subject" : "Richtwert"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990047610350206441"
+  }, {
+    "uid" : "(DE-605)HT000011758"
+  }, {
+    "uid" : "(DE-A96)991001257929706444"
+  }, {
+    "uid" : "(DE-A96)166528"
+  } ],
+  "TypePeriodical" : [ "Schriftenreihe" ],
+  "TitleOther" : {
+    "title" : [ "ARH" ]
+  }
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Eine kompakte Einführung in Geschichte, Entwicklung und Theorie der Festkörperphysik"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "von Rudolf P. Hübener" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2020" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "subject" : [ "Semiconductors", "Solid state physics", "Solid State Physics" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99368165410206441",
+    "identifierMMSIZ" : "991004573738506444",
+    "identifierPID" : "5356526470006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99368165410206441",
+    "identifierForTheRecord" : "(DE-605)99368165410206441"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3-662-62078-2" ]
+  } ],
+  "IdentifierDOI" : [ {
+    "standardNumber" : "10.1007/978-3-662-62078-6"
+  } ],
+  "Person" : [ {
+    "personName" : "Hübener, Rudolf P.",
+    "personRole" : [ "[author.]" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Leiter, Halbleiter, Supraleiter"
+  } ],
+  "Edition" : {
+    "edition" : [ "3rd ed. 2020." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Berlin, Heidelberg" ],
+    "name" : [ "Springer Berlin Heidelberg", "Imprint: Springer Spektrum" ],
+    "chronology" : [ "2020" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Berlin, Heidelberg"
+  } ],
+  "DateProper" : {
+    "date" : [ "2020" ]
+  },
+  "Extent" : {
+    "extent" : "1 online resource (XVII, 247 S. 121 Abb., 34 Abb. in Farbe.)"
+  },
+  "DescriptionOfContent" : [ {
+    "description" : "Rasante Entwicklung -- Geordnete Gitter in Kristallen -- Ständige Bewegung im Kristallgitter -- Elektrischer Leiter oder Isolator?- Energiebänder -- Metalle gehorchen den Verboten der Quantenstatistik -- Weniger ist mehr: Halbleiter -- Kreisende Elektronen in hohen Magnetfeldern -- Der Rekord: Supraleiter -- Die Überraschung: Hochtemperatur-Supraleitung -- Magnetismus: Ordnung bei den Elementarmagneten -- Nanostrukturen: Übergitter, Quantendrähte und Quantenpunkte -- Fehler im Kristallgitter: nützlich oder schädlich?- Anhang."
+  } ],
+  "Summary" : {
+    "abstract" : [ "Das vorliegende Buch gibt eine kompakte Einführung in die Grundlagen der Festkörperphysik, wobei der Schwerpunkt auf den elektrischen und magnetischen Materialeigenschaften liegt. Leser werden nicht nur die kompakte und anschauliche Herangehensweise schätzen, sondern auch die kurzen Abschnitte über die Forschungsgeschichte der Festkörperphysik, die mit wegweisenden Forschern wie Max Planck, Albert Einstein aber auch Heike Kamerlingh Onnes, Eugene Wigner oder Frederick Seitz verbunden ist. Diese helfen dabei, die Entwicklung der Festkörperphysik und ihre unterschiedlichen Theorien und Modelle verstehen und einordnen zu können. Das Buch richtet sich an Studierende der Physik, Ingenieurwissenschaften und Materialwissenschaften bis zum Bachelor. Es kann durch seine anschaulichen Erklärungen und seinen didaktischen Ansatz auch als motivierende Vorstufe und unterstützendes Begleitwerk beim Studium anspruchsvollerer Lehrbücher der Festkörperphysik benutzt werden. Die dritte Auflage enthält eine Reihe von Erweiterungen, besonders im Kapitel über topologische Materialien. Aus dem Inhalt - Kristallgitter - Theorie der Halbleiter, Leiter und Supraleiter - Metalle - Drude-Lorentz-Modell - BCS-Theorie - Hochtemperatur-Supraleiter - Nanostrukturen: Quantenpunkte - Fehler im Kristallgitter Der Autor Rudolf Huebener studierte Physik und Mathematik an der Universität Marburg sowie an den Technischen Hochschulen München und Darmstadt. 1958 promovierte er in Marburg im Fach Experimentalphysik. Nach einer Tätigkeit im Forschungszentrum Karlsruhe und einem Forschungsinstitut bei Albany, New York, USA arbeitete er für 12 Jahre am Argonne National Laboratory bei Chicago, Illinois. 1974 übernahm er einen Lehrstuhl für Experimentalphysik an der Universität Tübingen. Dort lehrte und forschte er bis zu seiner Emeritierung im Jahr 1999." ]
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISBN" : "3-662-62077-4"
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "Springer Natur - und Basiswissenschaften incl. Mathematik eBooks 2020 - German Language",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5356526470006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99368165410206441"
+  }, {
+    "uid" : "(DE-A96)991004573738506444"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : "Semiconductors"
+  }, {
+    "subjectTopicName" : "Solid state physics"
+  }, {
+    "subjectTopicName" : "Semiconductors",
+    "subjectIdentifier" : [ "https://scigraph.springernature.com/ontologies/product-market-codes/P25150" ]
+  }, {
+    "subjectTopicName" : "Solid State Physics",
+    "subjectIdentifier" : [ "https://scigraph.springernature.com/ontologies/product-market-codes/P25013" ]
+  } ]
+}
+{
+  "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT006546809"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "845003794"
+  } ],
+  "collection" : "DE-605",
+  "TitleUniform" : {
+    "titleUniform" : "<<The>> Gutenberg galaxy"
+  },
+  "TitleAddendum" : {
+    "title" : "das Ende des Buchzeitalters"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Marshall McLuhan" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1995" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Boxgraben" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Sprach- und Literaturwissenschaften" ],
+    "subject" : [ "Informationsgesellschaft", "Kulturwandel", "Massenmedien" ]
+  },
+  "SubjectRPB" : [ {
+    "subject" : "560"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "AN 17400"
+  }, {
+    "subject" : "OM 920"
+  }, {
+    "subject" : "MS 1190"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990025012090206441",
+    "identifierMMSIZ" : "991001499669706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990025012090206441",
+    "identifierForTheRecord" : "(DE-605)HT006546809"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3893199993", "Pp. : DM 38.00, sfr 39.00, S 296.00" ]
+  }, {
+    "identifierISBN" : [ "3893199004" ]
+  }, {
+    "identifierISBN" : [ "3893199993", "Pp. : DM 38.00, sfr 39.00, S 296.00" ]
+  }, {
+    "identifierISBN" : [ "3893199004" ]
+  }, {
+    "identifierISBN" : [ "3893199993", "Pp. : DM 38.00, sfr 39.00, S 296.00" ]
+  }, {
+    "identifierISBN" : [ "3893199004" ]
+  }, {
+    "identifierISBN" : [ "3893199993", "Pp. : DM 38.00, sfr 39.00, S 296.00" ]
+  }, {
+    "identifierISBN" : [ "3893199004" ]
+  } ],
+  "Person" : [ {
+    "personName" : "McLuhan, Marshall",
+    "personBio" : "1911-1980",
+    "personIdentifier" : [ "(DE-588)118729977" ],
+    "identifierGND" : [ "118729977" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Die>> Gutenberg-Galaxis"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Bonn [u.a.]" ],
+    "name" : [ "Addison-Wesley" ],
+    "chronology" : [ "1995" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Bonn [u.a.]"
+  } ],
+  "DateProper" : {
+    "date" : [ "1995" ]
+  },
+  "Extent" : {
+    "extent" : "XVIII, 375 S."
+  },
+  "DescriptionOfExpression" : [ {
+    "description" : "Aus d. Engl. übers."
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Informationsgesellschaft"
+  }, {
+    "subject" : "Kulturwandel"
+  }, {
+    "subject" : "Massenmedien"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "BFG"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990025012090206441"
+  }, {
+    "uid" : "(DE-605)HT006546809"
+  }, {
+    "uid" : "(DE-A96)991001499669706444"
+  }, {
+    "uid" : "(DE-A96)131412"
+  } ],
+  "Item" : [ {
+    "callnumber" : "51 BFG 9"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "BOX-SemApp-Buhl-Drucktechnologie",
+    "callnumber" : "51 BFG 9",
+    "shelfmark" : "BOX_SemApp"
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "Country" : [ {
+    "countryISO" : "DE-BY"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT020331882"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "das Praxisbuch"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Wolfram Gieseke" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2020" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Eupener Straße" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Informatik" ],
+    "subject" : [ "Computersicherheit", "Hacker" ]
+  },
+  "SubjectDNB" : [ {
+    "subject" : "004"
+  } ],
+  "SubjectRPB" : [ {
+    "subject" : "820"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990365245190206441",
+    "identifierMMSIZ" : "991001346159706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990365245190206441",
+    "identifierForTheRecord" : "(DE-605)HT020331882"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783959821889", ": EUR 19.95 (DE), EUR 20.60 (AT)" ]
+  }, {
+    "identifierISBN" : [ "3959821883" ]
+  }, {
+    "identifierISBN" : [ "9783959821889", ": EUR 19.95 (DE), EUR 20.60 (AT)" ]
+  }, {
+    "identifierISBN" : [ "3959821883" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Gieseke, Wolfram",
+    "personBio" : "1971-",
+    "personIdentifier" : [ "(DE-588)141678259" ],
+    "identifierGND" : [ "141678259" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Markt+Technik Verlag GmbH",
+    "corporateBodyIdentifier" : [ "(DE-588)1065428669" ],
+    "identifierGND" : [ "1065428669" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Die>> ultimative Anti-Hacker-Bibel"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Burgthann" ],
+    "name" : [ "Markt + Technik" ],
+    "chronology" : [ "[2020]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Burgthann"
+  } ],
+  "DateProper" : {
+    "date" : [ "[2020]" ]
+  },
+  "Extent" : {
+    "extent" : "364 Seiten : Illustrationen"
+  },
+  "OnlineAccess" : [ {
+    "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2020/04/30/file_10/8855155.pdf",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "B:DE-101",
+    "format" : "application/pdf"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "B:DE-101",
+    "contact" : "B:DE-101",
+    "format" : "application/pdf"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Computersicherheit"
+  }, {
+    "subject" : "Hacker"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "TWZ"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990365245190206441"
+  }, {
+    "uid" : "(DE-605)HT020331882"
+  }, {
+    "uid" : "(DE-A96)991001346159706444"
+  }, {
+    "uid" : "(DE-A96)952501"
+  } ],
+  "Item" : [ {
+    "callnumber" : "21 TWZ 35"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "EUP-Labor-Höfken-Rechenzentrale",
+    "callnumber" : "21 TWZ 35",
+    "shelfmark" : "EUP_LabApp"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "21 TWZ 35",
+    "shelfmark" : "EUP_Frei"
+  } ]
+}
+{
+  "collection" : "DE-A96",
+  "VolumeDesignation" : {
+    "volumeDesignation" : "62443-3-3"
+  },
+  "RecordIdentifierSuper" : [ {
+    "recordIdentifierSuper" : "991000192569706444"
+  } ],
+  "CreatorStatement" : {
+    "creatorStatement" : [ "ANSI/ISA ; ANSI/ISA" ]
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie", "Teil eines Werkes" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Eupener Straße" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "991000192699706444",
+    "identifierMMSIZ" : "991000192699706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991000192699706444",
+    "identifierForTheRecord" : "(DE-A96)499667"
+  },
+  "Language" : [ {
+    "languageSource" : "und"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9780876640395" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "American National Standards Institute",
+    "corporateBodyIdentifier" : [ "(DE-588)55095-4" ],
+    "identifierGND" : [ "55095-4" ]
+  }, {
+    "corporateBodyName" : "American National Standards Institute"
+  }, {
+    "corporateBodyName" : "International Society of Automation"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Part 3-3: System security requirements and security levels"
+  }, {
+    "titleMain" : "Security for industrial automation and control systems"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Research Triangle Park, NC" ],
+    "name" : [ "ISA" ]
+  }, {
+    "chronology" : [ "2013" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2013" ]
+  },
+  "Extent" : {
+    "extent" : "81 S. : Ill., graph. Darst."
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Security for industrial automation and control systems" ]
+  } ],
+  "HostItemEntry" : [ {
+    "controlNumber" : "991000192569706444"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-A96)991000192699706444"
+  }, {
+    "uid" : "(DE-A96)499667"
+  } ],
+  "Item" : [ {
+    "callnumber" : "21 WBS 1-62443-3-3"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "EUP-Labor-Höfken-Rechenzentrale",
+    "callnumber" : "21 WBS 1-62443-3-3",
+    "shelfmark" : "EUP_LabApp"
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT020313959"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Durchschauen - Kontrollieren - Einsetzen"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Günter Lüttgens, Wolfgang Schubert, Sylvia Lüttgens, Ulrich von Pidoll und Stefan Emde" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2020" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Jülich" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Physik" ],
+    "subject" : [ "Elektrostatik", "Elektrostatische Aufladung", "Elektrostatische Entladung", "Gasentladung", "Messtechnik", "Elektrounfall", "Brandgefahr", "Explosion", "Arbeitssicherheit", "Arbeitssicherheit u. Umweltschutz i. d. Chemie", "Chemie", "Elektrizitätslehre", "Elektrotechnik u. Elektronik", "Leistungselektronik", "Physik", "Statische Elektrizität" ]
+  },
+  "SubjectRPB" : [ {
+    "subject" : "920"
+  }, {
+    "subject" : "900"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990365065460206441",
+    "identifierMMSIZ" : "991001366429706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990365065460206441",
+    "identifierForTheRecord" : "(DE-605)HT020313959"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783527413720", "EUR109.00" ]
+  }, {
+    "identifierISBN" : [ "9783527413720", "EUR109.00" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Lüttgens, Günter",
+    "personBio" : "1933-",
+    "personIdentifier" : [ "(DE-588)109296443" ],
+    "identifierGND" : [ "109296443" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Statische Elektrizität"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Weinheim, Germany" ],
+    "name" : [ "WILEY-VCH" ],
+    "chronology" : [ "[2020]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Weinheim, Germany"
+  } ],
+  "DateProper" : {
+    "date" : [ "[2020]" ]
+  },
+  "Extent" : {
+    "extent" : "XXII, 470 Seiten : Illustrationen ; 244 mm"
+  },
+  "Description" : {
+    "description" : [ "Titelzusatz auf dem Umschlag: Durchschauen - Überwachen - Anwenden" ]
+  },
+  "Summary" : {
+    "abstract" : [ "Verständnis und Kontrolle statischer Elektrizität sind von elementarer Bedeutung in vielen Industriezweigen, in erster Linie mit Blick auf die potentiellen Gefahren. Daher sind die Erkennung und Vermeidung von Gefahren durch statische Aufladungen immer wichtiger geworden und haben die Entwicklung neuer und präziser Messmethoden befördert. Andererseits können statische Aufladungen auch nutzbringend eingesetzt werden. Vielfältige Anwendungen werden beschrieben.Statische Elektrizität ? Durchschauen ? Überwachen ? Anwenden informiert zunächst über Brand- und Explosionsgefahren. Entstehung von Aufladung und daraus resultierende Entladungserscheinungen werden veranschaulicht.Ein großer Teil des Buches befasst sich mit Messtechnik, Vermeidung von Gefahren und Störungen sowie Beseitigung unerwünschter Aufladung. Fallstudien und Beschreibung von Demonstrationsexperimenten vermitteln den Bezug zur Praxis.Ohne Normen geht es nicht; auch darüber wird berichtet. Der stetig zunehmenden Anwendung statischer Elektrizität ist ein eigenes Kapitel über den gezielten Einsatz von Aufladungen vorbehalten und soll die Kreativität der Leser anregen. Zu guter Letzt sind im Mathematischen Werkzeugkasten alle relevanten Formeln einsortiert.* Praxisperspektive: geschrieben von Autoren mit langjähriger Forschungs- und Beratungserfahrung* Durchblick: Beschreibung von Demonstrationsexperimenten zur besseren Veranschaulichung* Fallstudien: aus den Fehlern Anderer lernen* Zusatzmaterial: kurze Videos zeigen die - teils drastischen - Auswirkungen statischer Aufladungen" ]
+  },
+  "OnlineAccess" : [ {
+    "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2020/02/06/file_16/8817236.pdf",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "B:DE-101",
+    "format" : "application/pdf"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "B:DE-101",
+    "contact" : "B:DE-101",
+    "format" : "application/pdf"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Elektrostatik"
+  }, {
+    "subject" : "Elektrostatische Aufladung"
+  }, {
+    "subject" : "Elektrostatische Entladung"
+  }, {
+    "subject" : "Gasentladung"
+  }, {
+    "subject" : "Messtechnik"
+  }, {
+    "subject" : "Elektrounfall"
+  }, {
+    "subject" : "Brandgefahr"
+  }, {
+    "subject" : "Explosion"
+  }, {
+    "subject" : "Arbeitssicherheit"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "UEC"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990365065460206441"
+  }, {
+    "uid" : "(DE-605)HT020313959"
+  }, {
+    "uid" : "(DE-A96)991001366429706444"
+  }, {
+    "uid" : "(DE-A96)940901"
+  } ],
+  "Item" : [ {
+    "callnumber" : "61 UEC 6"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "61 UEC 6",
+    "shelfmark" : "JUE_Frei"
+  } ],
+  "PersonCreator" : [ {
+    "personName" : "Lüttgens, Sylvia",
+    "personBio" : "1946-",
+    "personIdentifier" : [ "(DE-588)1142576795" ],
+    "identifierGND" : [ "1142576795" ]
+  }, {
+    "personName" : "Emde, Stefan",
+    "personBio" : "1960-",
+    "personIdentifier" : [ "(DE-588)1201773784" ],
+    "identifierGND" : [ "1201773784" ]
+  }, {
+    "personName" : "Pidoll, Ulrich <<von>>"
+  }, {
+    "personName" : "Schubert, Wolfgang",
+    "personBio" : "1952-",
+    "personIdentifier" : [ "(DE-588)1026875439" ],
+    "identifierGND" : [ "1026875439" ]
+  } ],
+  "TitleOther" : {
+    "title" : [ "Statische Elektrizität : Durchschauen - Überwachen - Anwenden" ]
+  },
+  "RSWK" : [ {
+    "subjectTopicName" : "Arbeitssicherheit"
+  }, {
+    "subjectTopicName" : "Arbeitssicherheit u. Umweltschutz i. d. Chemie"
+  }, {
+    "subjectTopicName" : "Chemie"
+  }, {
+    "subjectTopicName" : "Elektrizitätslehre"
+  }, {
+    "subjectTopicName" : "Elektrotechnik u. Elektronik"
+  }, {
+    "subjectTopicName" : "Leistungselektronik"
+  }, {
+    "subjectTopicName" : "Physik"
+  }, {
+    "subjectTopicName" : "Statische Elektrizität"
+  } ]
+}
+{
+  "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT014051766"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "63753973"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "hrsg. von Niels Birbaumer .." ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie", "Nachschlagewerk", "Schriftenreihe" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2003" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Psychologie" ]
+  },
+  "SubjectRPB" : [ {
+    "subject" : "860"
+  }, {
+    "subject" : "865"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "CM 1000"
+  }, {
+    "subject" : "CZ 1300"
+  }, {
+    "subject" : "CP 4000"
+  }, {
+    "subject" : "CQ 2000"
+  }, {
+    "subject" : "CM 3300"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990129211850206441",
+    "identifierMMSIZ" : "991005391079706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990129211850206441",
+    "identifierForTheRecord" : "(DE-605)HT014051766"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Enzyklopädie der Psychologie"
+  } ],
+  "Edition" : {
+    "edition" : [ "[Neubearb. ab 2003]" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Göttingen [u.a.]" ],
+    "name" : [ "Hogrefe, Verl. für Psychologie" ],
+    "chronology" : [ "2003-" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Göttingen [u.a.]"
+  } ],
+  "DateProper" : {
+    "date" : [ "2003-" ]
+  },
+  "PersonContributor" : [ {
+    "personName" : "Birbaumer, Niels-Peter",
+    "personBio" : "1945-",
+    "personIdentifier" : [ "(DE-588)121603164" ],
+    "identifierGND" : [ "121603164" ]
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Online-Ausg." ],
+    "title" : "Enzyklopädie der Psychologie",
+    "controlNumber" : "(DE-605)HT019084870",
+    "identifierForLinkingEntry" : "HT019084870",
+    "verifiedIdentifierForLinkingEntry" : "HT019084870",
+    "verifyingIdentifierForLinkingEntry" : "HT019084870"
+  } ],
+  "PrecedingEntry" : [ {
+    "relationshipInformation" : "Frühere Ausg. mit teilw. anderer Bandeinteilung u.d.T.",
+    "title" : "Enzyklopädie der Psychologie",
+    "controlNumber" : "(DE-605)HT002191371",
+    "identifierForLinkingEntry" : "HT002191371",
+    "verifyingIdentifierForLinkingEntry" : "HT002191371"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Psychologie"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990129211850206441"
+  }, {
+    "uid" : "(DE-605)HT014051766"
+  }, {
+    "uid" : "(DE-A96)991005391079706444"
+  }, {
+    "uid" : "(DE-A96)391042"
+  } ],
+  "TypePeriodical" : [ "Schriftenreihe" ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "FormatCarrier" : [ "Druckschrift" ],
+  "RecordCodes" : [ "Autopsie", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "Country" : [ {
+    "countryISO" : "US"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT020805013"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "a problem-solution approach"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2021" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Jülich" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Informatik" ],
+    "subject" : [ "Computer software", "Mathematics", "Programming languages (Electronic computers)", "Computer science", "MATLAB 10", "MATLAB", "algorithms", "engineering", "GUI development", "robotics", "code", "recipes", "developer", "cookbook", "source", "development", "programming", "computational science", "numerical" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990369983090206441",
+    "identifierMMSIZ" : "991004989759706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990369983090206441",
+    "identifierForTheRecord" : "(DE-605)HT020805013"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9781484261231" ]
+  }, {
+    "identifierISBN" : [ "9781484261231" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Paluszek, Michael"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "MATLAB recipes"
+  } ],
+  "Edition" : {
+    "edition" : [ "Second edition" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Berkeley" ],
+    "name" : [ "Apress" ],
+    "chronology" : [ "[2021]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Berkeley"
+  } ],
+  "DateProper" : {
+    "date" : [ "[2021]" ]
+  },
+  "Extent" : {
+    "extent" : "XIX, 415 Seiten : Illustrationen ; 824 grams"
+  },
+  "Summary" : {
+    "abstract" : [ "Learn from state-of-the-art examples in robotics, motors, detection filters, chemical processes, aircraft, and spacecraft. With this book you will review contemporary MATLAB coding including the latest MATLAB language features and use MATLAB as a software development environment including code organization, GUI development, and algorithm design and testing. Features now covered include the new graph and digraph classes for charts and networks; interactive documents that combine text, code, and output; a new development environment for building apps; locally defined functions in scripts; automatic expansion of dimensions; tall arrays for big data; the new string type; new functions to encode/decode JSON; handling non-English languages; the new class architecture; the Mocking framework; an engine API for Java; the cloud-based MATLAB desktop; the memoize function; and heatmap charts. MATLAB Recipes: A Problem-Solution Approach, Second Edition provides practical, hands-on code snippets and guidance for using MATLAB to build a body of code you can turn to time and again for solving technical problems in your work. Develop algorithms, test them, visualize the results, and pass the code along to others to create a functional code base for your firm. What You Will Learn- Get up to date with the latest MATLAB up to and including MATLAB 2020b- Code in MATLAB- Write applications in MATLAB- Build your own toolbox of MATLAB code to increase your efficiency and effectivenessWho This Book Is For Engineers, data scientists, and students wanting a book rich in examples using MATLAB." ]
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Online-Ausgabe" ],
+    "identifierISBN" : "9781484261248"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "TZH"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990369983090206441"
+  }, {
+    "uid" : "(DE-605)HT020805013"
+  }, {
+    "uid" : "(DE-A96)991004989759706444"
+  }, {
+    "uid" : "(DE-A96)1034613"
+  } ],
+  "Item" : [ {
+    "callnumber" : "61 TZH 28(2)"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "61 TZH 28(2)",
+    "shelfmark" : "JUE_Frei"
+  } ],
+  "PersonCreator" : [ {
+    "personName" : "Thomas, Stephanie"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Computer software"
+  }, {
+    "subjectTopicName" : "Mathematics"
+  }, {
+    "subjectTopicName" : "Programming languages (Electronic computers)"
+  }, {
+    "subjectTopicName" : "Computer science"
+  }, {
+    "subjectTopicName" : "MATLAB 10",
+    "subjectTopicName" : "MATLAB",
+    "subjectTopicName" : "algorithms",
+    "subjectTopicName" : "engineering",
+    "subjectTopicName" : "GUI development",
+    "subjectTopicName" : "robotics",
+    "subjectTopicName" : "code",
+    "subjectTopicName" : "recipes",
+    "subjectTopicName" : "developer",
+    "subjectTopicName" : "cookbook",
+    "subjectTopicName" : "source",
+    "subjectTopicName" : "development",
+    "subjectTopicName" : "programming",
+    "subjectTopicName" : "computational science",
+    "subjectTopicName" : "numerical"
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "TypeMediaSpecialPreservation" : [ "PC / eReader: Für den Download ist die Installation des kostenlosen Adobe Digital Editions Readers notwendig", "Smartphone / Tablet: Für den Download ist die Installation des kostenlosen Bluefire Readers notwendig" ],
+  "Country" : [ {
+    "countryISO" : "DE-BW"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT020069184"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Praxishandbuch für Java- und Webservice-Entwickler"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Kai Spichale" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2019" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "taxonomy" : [ "Informatik" ],
+    "subject" : [ "Softwareentwicklung", "API", "Java", "Web Services", "Verteiltes System" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990228777590206441",
+    "identifierMMSIZ" : "991001675579706444",
+    "identifierPID" : "5387670440006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990228777590206441",
+    "identifierForTheRecord" : "(DE-605)HT020069184"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783960886020", "epdf" ]
+  }, {
+    "identifierISBN" : [ "9783960886037", "epub" ]
+  }, {
+    "identifierISBN" : [ "9783960886044", "mobi" ]
+  }, {
+    "identifierISBN" : [ "9783960886020", "epdf" ]
+  }, {
+    "identifierISBN" : [ "9783960886037", "epub" ]
+  }, {
+    "identifierISBN" : [ "9783960886044", "mobi" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Spichale, Kai",
+    "personIdentifier" : [ "(DE-588)112194647X" ],
+    "identifierGND" : [ "112194647X" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "API-Design"
+  } ],
+  "Edition" : {
+    "edition" : [ "2., überarbeitete und erweiterte Auflage" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Heidelberg" ],
+    "name" : [ "dpunkt.verlag" ],
+    "chronology" : [ "2019" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Heidelberg"
+  } ],
+  "DateProper" : {
+    "date" : [ "2019" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource (xxii, 359 Seiten) : Illustrationen, Diagramme ; 24 cm x 16.5 cm"
+  },
+  "Description" : {
+    "description" : [ "Literaturverzeichnis: Seite 351-356." ]
+  },
+  "Summary" : {
+    "abstract" : [ "Application Programming Interfaces (APIs) sind allgegenwärtig, denn Softwareentwickler benutzen sie nicht nur ständig, sondern entwerfen sie häufig auch. Dieses Buch bietet erstmals eine umfassende Anleitung für das vielfältige Thema API-Design. Neben theoretischen Konzepten werden zahlreiche praktische Hinweise und Programmbeispiele für Java-APIs gegeben. Remote APIs in Form von RESTful HTTP, SOAP-Webservices und Messaging, die für moderne Webanwendungen und andere verteilte Systeme enorm wichtig sind, spielen in diesem Buch ebenfalls eine zentrale Rolle. Aus dem Inhalt: - Entwurf leicht benutzbarer APIs - Kompatibilität und Versionierung - Objektkollaboration, Fluent APIs und Thread-Sicherheit - Dokumentation - Skalierbarkeit, Caching - API-ManagementNach der erfolgreichen Lektüre dieses Buches kennen Sie die Grundlagen von APIs und sind in der Lage, objektorientierte APIs für Softwarekomponenten und Remote APIs für verteilte Systeme zu entwerfen. In der zweiten Auflage sind u.a. die Behandlung des API-Standards OData, zusätzliche Informationen über GraphQL, das Jigsaw-Modulsystem von Java und die Metrik Konnaszenz zur Untersuchung der Änderbarkeit von APIs hinzugekommen." ]
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Erscheint auch als",
+    "note" : [ "Druck-Ausgabe" ],
+    "identifierISBN" : "9783864906114"
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "Ebook Central Perpetual, DDA and Subscription Titles",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5387670440006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : "ZDB-30-PQE"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Softwareentwicklung"
+  }, {
+    "subject" : "API"
+  }, {
+    "subject" : "Java"
+  }, {
+    "subject" : "Web Services"
+  }, {
+    "subject" : "Verteiltes System"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "TWP"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990228777590206441"
+  }, {
+    "uid" : "(DE-605)HT020069184"
+  }, {
+    "uid" : "(DE-A96)991001675579706444"
+  }, {
+    "uid" : "(DE-A96)993327"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT020603705"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Aktuelle Ansätze verstehen - mit Beispielen in Java und Greenfoot"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "von Uwe Lorenz" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2020" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "taxonomy" : [ "Informatik" ],
+    "subject" : [ "Coding theory", "Information theory", "Data mining", "Application software", "Java (Computer program language)" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990367970500206441",
+    "identifierPID" : "53736556350006441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990367970500206441",
+    "identifierForTheRecord" : "(DE-605)HT020603705"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783662616512" ]
+  }, {
+    "identifierISBN" : [ "9783662616512" ]
+  } ],
+  "IdentifierDOI" : [ {
+    "standardNumber" : "10.1007/978-3-662-61651-2"
+  } ],
+  "Person" : [ {
+    "personName" : "Lorenz, Uwe"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Reinforcement Learning"
+  } ],
+  "Edition" : {
+    "edition" : [ "1st ed. 2020" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Berlin, Heidelberg" ],
+    "name" : [ "Springer Berlin Heidelberg", "Imprint: Springer Vieweg" ],
+    "chronology" : [ "2020" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Berlin, Heidelberg"
+  } ],
+  "DateProper" : {
+    "date" : [ "2020" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource (XVIII, 170 S. 84 Abb., 57 Abb. in Farbe)"
+  },
+  "FileCharacteristics" : [ {
+    "encodingFormat" : "PDF"
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Printed edition",
+    "identifierISBN" : "9783662616505"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://doi.org/10.1007/978-3-662-61651-2",
+    "nonpublicnote" : "Resolving-System"
+  }, {
+    "publicnote" : "Springer Technik, Informatik 2020 (ZDB-2-STI)",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53736556350006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : "ZDB-2-STI"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "TWP"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990367970500206441"
+  }, {
+    "uid" : "(DE-605)HT020603705"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : "Coding theory"
+  }, {
+    "subjectTopicName" : "Information theory"
+  }, {
+    "subjectTopicName" : "Data mining"
+  }, {
+    "subjectTopicName" : "Application software"
+  }, {
+    "subjectTopicName" : "Java (Computer program language)"
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "TypeMediaSpecialPreservation" : [ "Mode of access: World Wide Web." ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "60617245"
+  } ],
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Sonstiges", "Zeitschrift" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "1982" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "subject" : [ "Periodicals", "Art" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99370677324206441",
+    "identifierMMSIZ" : "991005820384406444",
+    "identifierPID" : "5385153140006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99370677324206441",
+    "identifierForTheRecord" : "(DE-605)99370677324206441"
+  },
+  "DateFirst" : {
+    "date" : "2007",
+    "date" : "1982"
+  },
+  "DateLast" : {
+    "date" : "2011"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "2151-8009",
+    "identifierISSNNormalized" : "21518009"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Visual arts research"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "[Champaign, Ill.]" ],
+    "name" : [ "University of Illinois Press" ],
+    "chronology" : [ "1982-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1982-" ]
+  },
+  "Description" : {
+    "description" : [ "Refereed/Peer-reviewed" ]
+  },
+  "DescriptionOfIssuance" : [ {
+    "description" : "Issue 17- called also v. 9, no. 1- ; seasonal designation dropped with 1998; one issue published in 2003; issue 58 called also v. 29, no. 1 but constitutes v. 30, no. 1."
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISSN" : "0736-0770"
+  } ],
+  "PrecedingEntry" : [ {
+    "title" : "Review of Research in Visual Arts Education",
+    "controlNumber" : "(CKB)991042728725970",
+    "controlNumber" : "(DLC)83642038",
+    "controlNumber" : "(OCoLC)671260450",
+    "identifierISSN" : "2327-7874"
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "EBSCOhost Art & Architecture Source",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5385153140006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99370677324206441"
+  }, {
+    "uid" : "(DE-A96)991005820384406444"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : [ "Zeitschrift" ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Art",
+    "subjectAddendum" : "Research",
+    "subjectGenre" : "Periodicals"
+  }, {
+    "subjectTopicName" : "Art",
+    "subjectAddendum" : "Research",
+    "subjectIdentifier" : [ "(OCoLC)fst00815326" ]
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "22694482"
+  } ],
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Online-Ressource", "Gedruckte Ressource", "Elektronische Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1989", "1994" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Periodicals", "Vacuum technology", "Vacuümtechniek" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99370676979406441",
+    "identifierMMSIZ" : "991005822976806444",
+    "identifierPID" : "5385974320006444",
+    "identifierPID" : "5386526280006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99370676979406441",
+    "identifierForTheRecord" : "(DE-605)99370676979406441"
+  },
+  "DateFirst" : {
+    "date" : "1989",
+    "date" : "2000",
+    "date" : "1989"
+  },
+  "DateLast" : {
+    "date" : "2005",
+    "date" : "1994"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2045181-7"
+  }, {
+    "identifierZDB" : "2045181-7"
+  }, {
+    "identifierZDB" : "2045181-7"
+  }, {
+    "identifierZDB" : "2045181-7"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "0934-9758",
+    "identifierISSNNormalized" : "09349758"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Vakuum in der Praxis"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Weinheim, West Germany" ],
+    "name" : [ "VCH" ],
+    "chronology" : [ "1989-" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1989-" ]
+  },
+  "Extent" : {
+    "extent" : "volumes : illustrations ; 29 cm"
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISSN" : "0934-9758"
+  }, {
+    "identifierISSN" : "1522-2454"
+  } ],
+  "SucceedingEntry" : [ {
+    "title" : "Vakuum in Forschung und Praxis",
+    "controlNumber" : "(CKB)974740734049",
+    "controlNumber" : "(DLC)2001262337",
+    "identifierISSN" : "1522-2454"
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "EZB-NALIA-00470 Wiley InterScience Backfile Collections NL",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5385974320006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  }, {
+    "publicnote" : "Wiley DEAL",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5386526280006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99370676979406441"
+  }, {
+    "uid" : "(DE-A96)991005822976806444"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : [ "Zeitschrift" ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Vacuum technology",
+    "subjectGenre" : "Periodicals"
+  }, {
+    "subjectTopicName" : "Vacuum technology",
+    "subjectIdentifier" : [ "(OCoLC)fst01163626" ]
+  }, {
+    "subjectTopicName" : "Vacuümtechniek"
+  } ]
+}
+{
+  "ExtendedFormat" : [ "CD-ROM" ],
+  "FormatCarrier" : [ "Optische Speicherplatte(n)" ],
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "TypeMediaSpecial" : [ "Audio" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierGBV" : [ {
+    "identifierGBV" : "478136935"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT014272197"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "1071310350"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Hrsg.: ASUE, Arbeitsgemeinschaft für sparsamen und umweltfreundlichen Energieverbrauch e.V" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Audio" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2004" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Eupener Straße" ],
+    "carrier" : [ "Elektronische Ressource", "Audio" ],
+    "taxonomy" : [ "Elektrotechnik" ],
+    "subject" : [ "Brennstoffzelle" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990134017940206441",
+    "identifierMMSIZ" : "991002170689706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990134017940206441",
+    "identifierForTheRecord" : "(DE-605)HT014272197"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Arbeitsgemeinschaft für Sparsamen und Umweltfreundlichen Energieverbrauch",
+    "corporateBodyIdentifier" : [ "(DE-588)2056214-7" ],
+    "identifierGND" : [ "2056214-7" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Brennstoffzellen"
+  } ],
+  "Edition" : {
+    "edition" : [ "Stand: 1. Dezember 2004" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Kaiserslautern" ],
+    "name" : [ "Verl. Rationeller Erdgaseinsatz" ],
+    "chronology" : [ "2004" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Kaiserslautern"
+  } ],
+  "DateProper" : {
+    "date" : [ "2004" ]
+  },
+  "Extent" : {
+    "extent" : "1 CD-ROM ; 12 cm"
+  },
+  "SubjectHeadings" : [ {
+    "subject" : "Brennstoffzelle"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "XZM"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990134017940206441"
+  }, {
+    "uid" : "(DE-605)HT014272197"
+  }, {
+    "uid" : "(DE-A96)991002170689706444"
+  }, {
+    "uid" : "(DE-A96)207934"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "Item" : [ {
+    "callnumber" : "21 XZM 20-CD"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "21 XZM 20-CD",
+    "shelfmark" : "EUP_Frei"
+  } ]
+}
+{
+  "ContentType" : [ "zweidimensionales bewegtes Bild" ],
+  "CarrierType" : [ "Videodisk" ],
+  "ExtendedFormat" : [ "DVD-Video" ],
+  "FormatCarrier" : [ "Optische Speicherplatte(n)" ],
+  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT018979712"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "1074691269"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "ein Film von François Truffaut ; Jeanne Moreau, Henri Serre, Oskar Werner" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Film, Dia, Video" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch", "Französisch" ],
+    "date" : [ "2011" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Boxgraben" ],
+    "carrier" : [ "Elektronische Ressource", "Film, Dia, Video" ],
+    "subject" : [ "Jules et Jim" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990211507080206441",
+    "identifierMMSIZ" : "991003666769706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990211507080206441",
+    "identifierForTheRecord" : "(DE-605)HT018979712"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  }, {
+    "language" : "Französisch",
+    "languageSource" : "fre"
+  } ],
+  "IdentifierSheetMusic" : [ {
+    "standardNumber" : "503426"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Jules und Jim"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Leipzig" ],
+    "name" : [ "Kinowelt Home Entertainment" ],
+    "chronology" : [ "[2011]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Leipzig"
+  } ],
+  "DateProper" : {
+    "date" : [ "[2011]" ]
+  },
+  "Extent" : {
+    "extent" : "1 DVD-Video (102 min) ; 12 cm, in Behältnis 19 x 14 x 2 cm"
+  },
+  "FileCharacteristics" : [ {
+    "encodingFormat" : "DVD-Video",
+    "regionalEncoding" : "Region 2"
+  } ],
+  "SoundCharacteristics" : [ {
+    "typeOfRecording" : "digital"
+  } ],
+  "VideoCharacteristics" : [ {
+    "broadcastStandard" : "PAL"
+  } ],
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Arthaus" ]
+  } ],
+  "Description" : {
+    "description" : [ "Bildformat: 2,35:1 (anamorph)", "Extras: Trailer, Wendecover", "F, 1961" ]
+  },
+  "DescriptionOfExpression" : [ {
+    "description" : "Sprachen: deutsch, französisch"
+  }, {
+    "description" : "Untertitel: deutsch"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Truffaut, François",
+    "personBio" : "1932-1984",
+    "personIdentifier" : [ "(DE-588)118624202" ],
+    "identifierGND" : [ "118624202" ]
+  }, {
+    "personName" : "Moreau, Jeanne",
+    "personBio" : "1928-2017",
+    "personIdentifier" : [ "(DE-588)118864688" ],
+    "identifierGND" : [ "118864688" ]
+  }, {
+    "personName" : "Serre, Henri",
+    "personBio" : "1931-",
+    "personIdentifier" : [ "(DE-588)130482501" ],
+    "identifierGND" : [ "130482501" ]
+  }, {
+    "personName" : "Werner, Oskar",
+    "personBio" : "1922-1984",
+    "personIdentifier" : [ "(DE-588)118767186" ],
+    "identifierGND" : [ "118767186" ]
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Jules et Jim"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "KNLT"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990211507080206441"
+  }, {
+    "uid" : "(DE-605)HT018979712"
+  }, {
+    "uid" : "(DE-A96)991003666769706444"
+  }, {
+    "uid" : "(DE-A96)626124"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "Item" : [ {
+    "callnumber" : "51 KNLT 59"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "51 KNLT 59",
+    "shelfmark" : "BOX_Filme"
+  } ]
+}

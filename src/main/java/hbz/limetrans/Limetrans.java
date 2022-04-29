@@ -1,6 +1,7 @@
 package hbz.limetrans;
 
 import hbz.limetrans.filter.LimetransFilter;
+import hbz.limetrans.function.VerifyLinks;
 import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.Helpers;
 import hbz.limetrans.util.Settings;
@@ -24,6 +25,7 @@ import org.metafacture.statistics.Counter;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -153,6 +155,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     private final String mJsonPath;
     private final String mRulesPath;
     private final Type mType;
+    private final boolean mPostprocess;
     private final boolean mPrettyPrinting;
 
     public Limetrans(final Settings aSettings) throws IOException {
@@ -197,6 +200,8 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
             defaultRulesPath = null;
         }
 
+        mPostprocess = aSettings.getAsBoolean("postprocess", false);
+
         mRulesPath = Helpers.getPath(getClass(), pathForType(aSettings.get("transformation-rules", defaultRulesPath)));
     }
 
@@ -235,6 +240,10 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
             final int index = isil.indexOf('-');
             if (index > 0) {
                 mVars.put("sigel", isil.substring(index + 1));
+            }
+
+            if (aSettings.containsSetting("path")) {
+                mVars.put("isil-path", Paths.get(aSettings.get("path"), isil).toString());
             }
         }
     }
@@ -362,6 +371,10 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         final StreamPipe<StreamReceiver> pipe = getStreamPipe(mRulesPath, mVars,
                 t -> LOGGER.info("Starting {} transformation: {}", t, mRulesPath));
 
+        if (mPostprocess) {
+            VerifyLinks.setup(mVars);
+        }
+
         final StreamTee streamTee = new StreamTee();
         final Counter counter = new Counter();
 
@@ -388,6 +401,10 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         final Filter filter = mFilter.isEmpty() ? null : mFilter.toFilter();
         mInputQueues.stream().map(i -> i.process(pipe, filter))
             .collect(Collectors.toList()).forEach(FileOpener::closeStream);
+
+        if (mPostprocess) {
+            VerifyLinks.reset();
+        }
 
         LOGGER.info("Finished transformation ({})", counter);
     }

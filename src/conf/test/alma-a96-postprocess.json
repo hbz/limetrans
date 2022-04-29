@@ -1,0 +1,21 @@
+{
+  "isil": "DE-A96",
+  "path": "src/test/resources/limetrans/input/",
+  "postprocess": true,
+  "alma": {
+    "hybrid": false,
+    "regexp": {
+      "description": ".*vorhanden.*"
+    }
+  },
+  "input": {
+    "queue": {
+      "path": "${path}",
+      "pattern": "alma.xml"
+    }
+  },
+  "output": {
+    "json": "src/test/resources/limetrans/output%s/alma-a96-postprocess.json",
+    "pretty-printing": true
+  }
+}
