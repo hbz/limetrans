@@ -1,13 +1,13 @@
 def (root, extension) = [file('.').toPath(), '.json']
 
 def camelize = { it.replaceAll(~/\b./) { it[0].toUpperCase() } }
+def taskName = { prefix, name -> prefix + camelize(name).replaceAll('[^a-zA-Z0-9]', '') }
 
 def propTask = { group, list ->
     def prop = "${project.group}.${group}"
 
     list.each { value ->
-        task(group + camelize(value), group: group,
-                description: "Sets -D${prop}=${value}") {
+        task(taskName(group, value), group: group, description: "Sets -D${prop}=${value}") {
             doLast { System.properties[prop] = value }
         }
     }
@@ -20,8 +20,7 @@ file('src/conf').eachDir {
     def (group, path, map) = [it.getName(), it.toPath(), [:].withDefault { [] }]
 
     def indexTask = { name, list ->
-        task(group + name.replaceAll('[^a-zA-Z0-9]', ''), type: JavaExec, group: group,
-                description: list.collect { root.relativize(it.toPath()) }) {
+        task(taskName(group, name), type: JavaExec, group: group, description: list.collect { root.relativize(it.toPath()) }) {
             classpath = sourceSets.main.runtimeClasspath
             mainClass = "${project.group}.Main"
             args list
@@ -29,18 +28,16 @@ file('src/conf').eachDir {
     }
 
     it.eachFileMatch(~/.*\Q${extension}\E/) {
-        def name = camelize(it.getName().minus(extension))
-        indexTask(name, [it])
+        indexTask(it.getName().minus(extension), [it])
     }
 }
 
 def execTask = { name, main ->
-    task('exec' + camelize(name), type: JavaExec, group: 'Exec',
-            description: 'Execute ' + main + '.') {
+    task(taskName('exec', name), type: JavaExec, group: 'Exec', description: 'Execute ' + main + '.') {
         classpath = sourceSets.main.runtimeClasspath
         mainClass = main
     }
 }
 
-execTask('transformation', "${project.group}.Main")
 execTask('filter', "${project.group}.filter.Main")
+execTask('transformation', "${project.group}.Main")
