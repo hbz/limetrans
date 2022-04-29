@@ -10,9 +10,6 @@ import java.io.IOException;
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryMXBean;
 import java.lang.management.MemoryUsage;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.concurrent.atomic.LongAccumulator;
 import java.util.concurrent.atomic.LongAdder;
@@ -27,8 +24,7 @@ public final class Main {
     private static final String MEMLOG = "memlog";
 
     private static final long MS = 1000;
-    private static final long KB = 1024;
-    private static final long MB = KB * KB;
+    private static final long MB = 1024 * 1024;
 
     private static final String[] INDEX_SETTING = new String[]{"output", "elasticsearch", "index"};
 
@@ -122,7 +118,7 @@ public final class Main {
 
         new Limetrans(setup(aArgs)).process();
 
-        final Long rss = MemLog.getRss();
+        final Long rss = Helpers.getRss();
         final MemoryUsage heap = MemLog.getHeap();
         final MemoryUsage nonHeap = MemLog.getNonHeap();
 
@@ -155,9 +151,6 @@ public final class Main {
     private static class MemLog {
 
         private static final MemoryMXBean MBEAN = ManagementFactory.getMemoryMXBean();
-
-        private static final Path STATUS = Paths.get("/proc/self/status");
-        private static final Pattern RSS_PATTERN = Pattern.compile("\\AVmRSS:\\s+(\\d+)\\s+kB");
 
         private final LongAccumulator mMaxCommitted = new LongAccumulator(Long::max, Long.MIN_VALUE);
         private final LongAccumulator mMaxRss = new LongAccumulator(Long::max, Long.MIN_VALUE);
@@ -194,7 +187,7 @@ public final class Main {
                                 "Current Memory: heap.used=%dM, nonheap.used=%dM, heap.committed=%dM, nonheap.committed=%dM",
                                 heapUsed, nonHeapUsed, heapCommitted, nonHeapCommitted));
 
-                    final Long rss = getRss();
+                    final Long rss = Helpers.getRss();
 
                     if (rss != null) {
                         mMaxRss.accumulate(rss);
@@ -228,22 +221,6 @@ public final class Main {
 
         private static MemoryUsage getNonHeap() {
             return MBEAN.getNonHeapMemoryUsage();
-        }
-
-        private static Long getRss() {
-            try {
-                for (final String line : Files.readAllLines(STATUS)) {
-                    final Matcher matcher = RSS_PATTERN.matcher(line);
-
-                    if (matcher.matches()) {
-                        return Long.parseLong(matcher.group(1)) / KB;
-                    }
-                }
-            }
-            catch (final IOException e) {
-            }
-
-            return null;
         }
 
         @Override

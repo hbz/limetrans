@@ -10,12 +10,15 @@ import java.io.StringWriter;
 import java.io.Writer;
 import java.net.URL;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
@@ -26,8 +29,12 @@ import javax.xml.transform.stream.StreamSource;
 public class Helpers {
 
     public static final String GROUP_PREFIX = "hbz.limetrans.";
-
     public static final String CLASSPATH_PREFIX = "classpath:";
+
+    private static final long KB = 1024;
+
+    private static final Path STATUS = Paths.get("/proc/self/status");
+    private static final Pattern RSS_PATTERN = Pattern.compile("\\AVmRSS:\\s+(\\d+)\\s+kB");
 
     private static final TransformerFactory TRANSFORMER_FACTORY = TransformerFactory.newInstance();
     private static final String INDENT_AMOUNT_KEY = "{http://xml.apache.org/xslt}indent-amount";
@@ -115,6 +122,22 @@ public class Helpers {
         else {
             return aPath;
         }
+    }
+
+    public static Long getRss() {
+        try {
+            for (final String line : Files.readAllLines(STATUS)) {
+                final Matcher matcher = RSS_PATTERN.matcher(line);
+
+                if (matcher.matches()) {
+                    return Long.parseLong(matcher.group(1)) / KB;
+                }
+            }
+        }
+        catch (final IOException e) {
+        }
+
+        return null;
     }
 
     public static void updateTestFile(final String aTarget, final Supplier<String> aSupplier) throws IOException {
