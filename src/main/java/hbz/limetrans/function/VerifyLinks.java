@@ -40,10 +40,15 @@ public class VerifyLinks implements FixFunction {
     private static final FileCompression COMPRESSION = FileCompression.AUTO;
 
     private static final Map<String, List<String>> LINK_MAP = new HashMap<>();
+    private static final Map<String, List<String>> SUPER_MAP = new HashMap<>();
+
+    private static final String SUPER_SOURCE = "xbib[].uid";
 
     private static final Map<String, LongAdder> LINK_COUNTER = new HashMap<>();
+    private static final Map<String, LongAdder> SUPER_COUNTER = new HashMap<>();
 
     private static Predicate<String> linkPredicate;
+    private static Predicate<String> superPredicate;
 
     static {
         /*
@@ -79,6 +84,10 @@ public class VerifyLinks implements FixFunction {
                     "SourceIdentifier[]" // TODO
         ));
         */
+
+        SUPER_MAP.put("superIdentifier", List.of(
+                    "RecordIdentifier"
+        ));
     }
 
     private final Map<String, Set<String>> idSetCache = new HashMap<>();
@@ -105,6 +114,7 @@ public class VerifyLinks implements FixFunction {
 
         final Set<String> idSet = loadIdSet(ISIL_PATH_FORMAT.formatted(isilPath, ""), true);
         final Set<String> skipIdSet = loadIdSet(ISIL_PATH_FORMAT.formatted(isilPath, "skip"), false);
+        final Set<String> superIdSet = loadIdSet(ISIL_PATH_FORMAT.formatted(isilPath, "super"), true);
 
         if (idSet != null) {
             final Predicate<String> predicate = id -> idSet.contains(id) && !skipIdSet.contains(id);
@@ -122,7 +132,10 @@ public class VerifyLinks implements FixFunction {
             linkPredicate = null;
         }
 
+        superPredicate = superIdSet != null ? superIdSet::contains : null;
+
         LINK_COUNTER.clear();
+        SUPER_COUNTER.clear();
     }
 
     public static void reset() {
@@ -130,12 +143,21 @@ public class VerifyLinks implements FixFunction {
             linkPredicate = null;
             LOGGER.info("Verified links: {}", LINK_COUNTER);
         }
+
+        if (superPredicate != null) {
+            superPredicate = null;
+            LOGGER.info("Verified super identifiers: {}", SUPER_COUNTER);
+        }
     }
 
     @Override
     public void apply(final Metafix aMetafix, final Record aRecord, final List<String> aParams, final Map<String, String> aOptions) {
         if (linkPredicate != null) {
             verifyLinks(aRecord, LINK_MAP, null, linkPredicate, LINK_COUNTER);
+        }
+
+        if (superPredicate != null) {
+            verifyLinks(aRecord, SUPER_MAP, SUPER_SOURCE, superPredicate, SUPER_COUNTER);
         }
     }
 
