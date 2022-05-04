@@ -1313,11 +1313,6 @@ join_field("Conference.conferenceUnit", ". ")
 
 # MARC/245
 set_array("TitleStatement[]")
-do list(path: "245??.a", "var": "$i")
-  add_field("TitleStatement[].$append.__dummy__", "")
-  replace_all("$i", "^[©]|\\s?[,.:;/=]?$", "")
-  copy_field("$i", "TitleStatement[].$last.titleMain")
-end
 do list(path: "245??.p", "var": "$i")
   unless exists("@titleMain")
     replace_all("$i", "\\s?[.]?\\s?$", "")
@@ -1326,6 +1321,11 @@ do list(path: "245??.p", "var": "$i")
 end
 add_field("TitleStatement[].$append.__dummy__", "")
 move_field("@titleMain", "TitleStatement[].$last.titleMain")
+do list(path: "245??.a", "var": "$i")
+  add_field("TitleStatement[].$append.__dummy__", "")
+  replace_all("$i", "^[©]|\\s?[,.:;/=]?$", "")
+  copy_field("$i", "TitleStatement[].$last.titleMain")
+end
 
 # MARC/250
 set_array("Edition.edition[]")
