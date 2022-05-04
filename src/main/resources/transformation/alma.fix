@@ -1487,7 +1487,6 @@ do list(path: "989  ", "var": "$i")
   end
 end
 filter("@description", "^$[regexp.description]$")
-uniq("@description")
 # MARC/500
 copy_field("500  .a", "Description.description[]")
 move_field("@description", "Description.description[]")
@@ -1497,6 +1496,7 @@ do list(path: "H52??", "var": "$i")
     copy_field("$i.z", "Description.description[]")
   end
 end
+uniq("Description.description[]")
 
 # MARC/501, MARC/505
 set_array("DescriptionOfContent[]")
