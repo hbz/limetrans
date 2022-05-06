@@ -11,7 +11,7 @@
   "input": {
     "queue": {
       "path": "${path}",
-      "pattern": "alma.xml"
+      "pattern": "alma.xml.gz"
     }
   },
   "output": {
