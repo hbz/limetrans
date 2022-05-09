@@ -1790,27 +1790,29 @@ do list(path: "962??.e", "var": "$i")
 end
 
 # MARC/982
-set_array("SubjectHeadings[]")
-set_array("introx.subject[]")
+set_array("@subjectHeadings")
 do list(path: "982  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
-    add_field("SubjectHeadings[].$append.__dummy__", "")
-    copy_field("$i.b", "SubjectHeadings[].$last.subject")
-    copy_field("$i.b", "introx.subject[]")
+    copy_field("$i.b", "@subjectHeadings")
     copy_field("$i.a", "@subjectTopicName")
     split_field("@subjectTopicName", ";|\\*")
     do list(path: "@subjectTopicName", "var": "$j")
-      copy_field("$j", "SubjectHeadings[].$last.subject")
-      copy_field("$j", "introx.subject[]")
+      copy_field("$j", "@subjectHeadings")
     end
     remove_field("@subjectTopicName")
   end
 end
 # MARC/689
 do list(path: "689??", "var": "$i")
+  copy_field("$i.a", "@subjectHeadings")
+end
+uniq("@subjectHeadings")
+set_array("SubjectHeadings[]")
+set_array("introx.subject[]")
+do list(path: "@subjectHeadings", "var": "$i")
   add_field("SubjectHeadings[].$append.__dummy__", "")
-  copy_field("$i.a", "SubjectHeadings[].$last.subject")
-  copy_field("$i.a", "introx.subject[]")
+  copy_field("$i", "SubjectHeadings[].$last.subject")
+  copy_field("$i", "introx.subject[]")
 end
 
 set_array("SubjectGHBLocal[]")
