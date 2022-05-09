@@ -321,7 +321,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
-    "subject" : [ "Maßtoleranzen", "DIN18202", "DIN 18202", "Rohbau", "Ausbau", "MaßtoleranzenRohbau", "MaßtoleranzenAusbau" ]
+    "subject" : [ "Maßtoleranzen", "DIN18202", "MaßtoleranzenRohbau", "MaßtoleranzenAusbau", "DIN 18202", "Rohbau", "Ausbau" ]
   },
   "SubjectRVK" : [ {
     "subject" : "ZI 3970"
@@ -393,6 +393,10 @@
     "subject" : "Maßtoleranzen"
   }, {
     "subject" : "DIN18202"
+  }, {
+    "subject" : "MaßtoleranzenRohbau"
+  }, {
+    "subject" : "MaßtoleranzenAusbau"
   }, {
     "subject" : "DIN 18202"
   }, {
@@ -936,7 +940,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Physik" ],
-    "subject" : [ "Elektrostatik", "Elektrostatische Aufladung", "Elektrostatische Entladung", "Gasentladung", "Messtechnik", "Elektrounfall", "Brandgefahr", "Explosion", "Arbeitssicherheit", "Arbeitssicherheit u. Umweltschutz i. d. Chemie", "Chemie", "Elektrizitätslehre", "Elektrotechnik u. Elektronik", "Leistungselektronik", "Physik", "Statische Elektrizität" ]
+    "subject" : [ "Arbeitssicherheit", "Arbeitssicherheit u. Umweltschutz i. d. Chemie", "Chemie", "Elektrizitätslehre", "Elektrotechnik u. Elektronik", "Leistungselektronik", "Physik", "Statische Elektrizität", "Elektrostatik", "Elektrostatische Aufladung", "Elektrostatische Entladung", "Gasentladung", "Messtechnik", "Elektrounfall", "Brandgefahr", "Explosion" ]
   },
   "SubjectRPB" : [ {
     "subject" : "920"
@@ -1002,6 +1006,22 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Arbeitssicherheit"
+  }, {
+    "subject" : "Arbeitssicherheit u. Umweltschutz i. d. Chemie"
+  }, {
+    "subject" : "Chemie"
+  }, {
+    "subject" : "Elektrizitätslehre"
+  }, {
+    "subject" : "Elektrotechnik u. Elektronik"
+  }, {
+    "subject" : "Leistungselektronik"
+  }, {
+    "subject" : "Physik"
+  }, {
+    "subject" : "Statische Elektrizität"
+  }, {
     "subject" : "Elektrostatik"
   }, {
     "subject" : "Elektrostatische Aufladung"
@@ -1156,6 +1176,31 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe" ],
     "identifierISBN" : "9781484261248"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Computer software"
+  }, {
+    "subject" : "Mathematics"
+  }, {
+    "subject" : "Programming languages (Electronic computers)"
+  }, {
+    "subject" : "Computer science"
+  }, {
+    "subject" : "MATLAB 10",
+    "subject" : "MATLAB",
+    "subject" : "algorithms",
+    "subject" : "engineering",
+    "subject" : "GUI development",
+    "subject" : "robotics",
+    "subject" : "code",
+    "subject" : "recipes",
+    "subject" : "developer",
+    "subject" : "cookbook",
+    "subject" : "source",
+    "subject" : "development",
+    "subject" : "programming",
+    "subject" : "computational science",
+    "subject" : "numerical"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
@@ -1782,7 +1827,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
-    "subject" : [ "Kunststudium", "Geschichte 1760-1900", "Kunstwissenschaft", "Geschichte", "Kunstgeschichte" ]
+    "subject" : [ "Kunstgeschichte / Wissenschaftsdisziplin", "Kunststudium", "Geschichte 1760-1900", "Kunstwissenschaft", "Geschichte", "Kunstgeschichte" ]
   },
   "SubjectRVK" : [ {
     "subject" : "LH 62040"
@@ -1857,6 +1902,8 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Kunstgeschichte / Wissenschaftsdisziplin"
+  }, {
     "subject" : "Kunststudium"
   }, {
     "subject" : "Geschichte 1760-1900"
@@ -4560,7 +4607,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
-    "subject" : [ "Stadtmodell", "Utopie", "Geschichte", "Idealstadt" ]
+    "subject" : [ "Soziologie", "Stadtutopien", "Städtebau", "Urbanistik", "Utopie", "Zukunftsmodelle", "Stadtmodell", "Geschichte", "Idealstadt" ]
   },
   "SubjectRVK" : [ {
     "subject" : "MS 1750"
@@ -4622,6 +4669,18 @@
     "designation" : "(DE-605)HT001245599"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Soziologie"
+  }, {
+    "subject" : "Stadtutopien"
+  }, {
+    "subject" : "Städtebau"
+  }, {
+    "subject" : "Urbanistik"
+  }, {
+    "subject" : "Utopie"
+  }, {
+    "subject" : "Zukunftsmodelle"
+  }, {
     "subject" : "Stadtmodell"
   }, {
     "subject" : "Utopie"
@@ -6026,7 +6085,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
-    "subject" : [ "Architektur", "Geschichte 1950-1990" ]
+    "subject" : [ "Architekturgeschichte / 20. Jahrhundert", "Architektur", "Geschichte 1950-1990" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -6084,6 +6143,8 @@
     "identifierForLinkingEntry" : "HT000199988"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Architekturgeschichte / 20. Jahrhundert"
+  }, {
     "subject" : "Architektur"
   }, {
     "subject" : "Geschichte 1950-1990"
@@ -6909,7 +6970,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Europäische Union", "Umweltbezogenes Management" ]
+    "subject" : [ "Deutschland", "EU-Staaten", "Haftung", "Klein- und Mittelunternehmen", "Personalentwicklung", "Qualitätsmanagement", "Umweltmanagement", "Wirtschaftsprüfung", "Öffentlichkeitsarbeit", "Europäische Union", "Umweltbezogenes Management" ]
   },
   "SubjectRVK" : [ {
     "subject" : "AR 28300"
@@ -6984,6 +7045,34 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Deutschland"
+  }, {
+    "subject" : "EU-Staaten"
+  }, {
+    "subject" : "Haftung"
+  }, {
+    "subject" : "Klein- und Mittelunternehmen"
+  }, {
+    "subject" : "Personalentwicklung"
+  }, {
+    "subject" : "Qualitätsmanagement"
+  }, {
+    "subject" : "Umweltmanagement"
+  }, {
+    "subject" : "Umweltmanagement",
+    "subject" : "Wirtschaftsprüfung",
+    "subject" : "Qualitätsmanagement",
+    "subject" : "Klein- und Mittelunternehmen",
+    "subject" : "Haftung",
+    "subject" : "Personalentwicklung",
+    "subject" : "Öffentlichkeitsarbeit",
+    "subject" : "Deutschland",
+    "subject" : "EU-Staaten"
+  }, {
+    "subject" : "Wirtschaftsprüfung"
+  }, {
+    "subject" : "Öffentlichkeitsarbeit"
+  }, {
     "subject" : "Europäische Union"
   }, {
     "subject" : "Umweltbezogenes Management"
@@ -7924,7 +8013,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Deutschland", "Klein- und Mittelbetrieb", "Risikokapital", "Finanzierung", "Internationaler Vergleich" ]
+    "subject" : [ "Deutschland / Klein- und Mittelbetrieb / Risikokapital / Finanzierung / Internationaler Vergleich", "Deutschland", "Klein- und Mittelbetrieb", "Risikokapital", "Finanzierung", "Internationaler Vergleich" ]
   },
   "SubjectRVK" : [ {
     "subject" : "QP 752"
@@ -7996,6 +8085,8 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Deutschland / Klein- und Mittelbetrieb / Risikokapital / Finanzierung / Internationaler Vergleich"
+  }, {
     "subject" : "Deutschland"
   }, {
     "subject" : "Klein- und Mittelbetrieb"
@@ -8065,7 +8156,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Europäische Union", "Geldpolitik", "Geldtheorie" ]
+    "subject" : [ "Geldpolitik", "Geldtheorie", "Europäische Union" ]
   },
   "SubjectRPB" : [ {
     "subject" : "650"
@@ -8153,6 +8244,10 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Geldpolitik"
+  }, {
+    "subject" : "Geldtheorie"
+  }, {
     "subject" : "Europäische Union"
   }, {
     "subject" : "Geldpolitik"
@@ -8212,7 +8307,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Management" ]
+    "subject" : [ "Industrielle Psychologie / Organisationspsychologie", "Management" ]
   },
   "SubjectRPB" : [ {
     "subject" : "650"
@@ -8305,6 +8400,8 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Industrielle Psychologie / Organisationspsychologie"
+  }, {
     "subject" : "Management"
   } ],
   "SubjectGHBLocal" : [ {
@@ -8926,7 +9023,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Unternehmen", "Coaching" ]
+    "subject" : [ "Industrielle Psychologie / Personalentwicklung", "Unternehmen", "Coaching" ]
   },
   "SubjectRVK" : [ {
     "subject" : "CV 4000"
@@ -9004,6 +9101,8 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Industrielle Psychologie / Personalentwicklung"
+  }, {
     "subject" : "Unternehmen"
   }, {
     "subject" : "Coaching"
@@ -12877,6 +12976,15 @@
     "personIdentifier" : [ "(DE-588)136844022" ],
     "identifierGND" : [ "136844022" ]
   } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Film"
+  }, {
+    "subject" : "Spielfilm"
+  }, {
+    "subject" : "bushi (Krieger, Samurai)"
+  }, {
+    "subject" : "Krieg"
+  } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "KNLK"
@@ -15673,6 +15781,8 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Landschaftsplanung"
+  }, {
     "subject" : "Landschaftsplanung"
   }, {
     "subject" : "Freifläche"
@@ -19267,6 +19377,9 @@
     "contact" : "V:DE-605",
     "contact" : "X:ids",
     "format" : "application/pdf"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "ARCHITECTURE / Urban & Land Use Planning"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",

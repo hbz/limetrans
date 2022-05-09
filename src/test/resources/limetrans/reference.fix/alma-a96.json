@@ -3945,6 +3945,8 @@
   "SubjectHeadings" : [ {
     "subject" : "Straßenbau"
   }, {
+    "subject" : "Straßenbau"
+  }, {
     "subject" : "Straßenverkehrstechnik"
   } ],
   "xbib" : [ {
@@ -7706,7 +7708,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Straßenbau" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -7755,6 +7758,9 @@
     "title" : "Forschung Straßenbau und Straßenverkehrstechnik",
     "controlNumber" : "(DE-605)HT001232891",
     "identifierForLinkingEntry" : "HT001232891"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Straßenbau"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990052620680206441"
@@ -11803,6 +11809,8 @@
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Stadtverkehr"
+  }, {
+    "subject" : "Stadtverkehr"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990052780540206441"
@@ -13483,7 +13491,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Architektur" ]
+    "subject" : [ "Entwurf", "Architektur" ]
   },
   "SubjectRPB" : [ {
     "subject" : "450"
@@ -13533,6 +13541,8 @@
     "identifierForLinkingEntry" : "HT008165916"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Entwurf"
+  }, {
     "subject" : "Architektur"
   } ],
   "xbib" : [ {
@@ -15263,6 +15273,8 @@
     "description" : "Erschienen: Bd. 1 - 2; Erfolgstest; Kontrolle des Erfolgstests"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Netzplantechnik"
+  }, {
     "subject" : "Netzplantechnik"
   } ],
   "xbib" : [ {
@@ -23494,7 +23506,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Kapitalmarkt", "Finanzwirtschaft", "Geldwirtschaft" ]
+    "subject" : [ "Finanzierung / Wörterbuch", "Geld / Wörterbuch", "Geldtheorie / Wörterbuch", "Kapitlamarkt / Wörterbuch", "Kreditwesen / Wörterbuch", "Volkswirtschaftslehre / Aufsatzsammlung", "Kapitalmarkt", "Finanzwirtschaft", "Geldwirtschaft" ]
   },
   "SubjectRPB" : [ {
     "subject" : "650"
@@ -23566,6 +23578,18 @@
     "title" : "The new Palgrave"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Finanzierung / Wörterbuch"
+  }, {
+    "subject" : "Geld / Wörterbuch"
+  }, {
+    "subject" : "Geldtheorie / Wörterbuch"
+  }, {
+    "subject" : "Kapitlamarkt / Wörterbuch"
+  }, {
+    "subject" : "Kreditwesen / Wörterbuch"
+  }, {
+    "subject" : "Volkswirtschaftslehre / Aufsatzsammlung"
+  }, {
     "subject" : "Kapitalmarkt"
   }, {
     "subject" : "Finanzwirtschaft"
@@ -25886,7 +25910,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Deutschland", "Betriebliche Fortbildung", "Großbetrieb", "Evaluation" ]
+    "subject" : [ "Pädagogische Psychologie", "Weiterbildung", "Deutschland", "Betriebliche Fortbildung", "Großbetrieb", "Evaluation" ]
   },
   "SubjectRVK" : [ {
     "subject" : "CW 5800"
@@ -25953,6 +25977,10 @@
     "identifierForLinkingEntry" : "HT013196335"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Pädagogische Psychologie"
+  }, {
+    "subject" : "Weiterbildung"
+  }, {
     "subject" : "Deutschland"
   }, {
     "subject" : "Betriebliche Fortbildung"

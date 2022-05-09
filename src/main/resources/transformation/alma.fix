@@ -1797,6 +1797,13 @@ do list(path: "982  ", "var": "$i")
     add_field("SubjectHeadings[].$append.__dummy__", "")
     copy_field("$i.b", "SubjectHeadings[].$last.subject")
     copy_field("$i.b", "introx.subject[]")
+    copy_field("$i.a", "@subjectTopicName")
+    split_field("@subjectTopicName", ";|\\*")
+    do list(path: "@subjectTopicName", "var": "$j")
+      copy_field("$j", "SubjectHeadings[].$last.subject")
+      copy_field("$j", "introx.subject[]")
+    end
+    remove_field("@subjectTopicName")
   end
 end
 # MARC/689
