@@ -28,3 +28,4 @@ do list(path: "$i.0", "var": "$j")
     copy_field("$j", "@person.$last.identifierGND[]")
   end
 end
+uniq("@person")
