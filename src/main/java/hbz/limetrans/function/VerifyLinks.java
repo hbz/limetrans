@@ -64,13 +64,20 @@ public class VerifyLinks implements FixFunction {
 
         LINK_MAP.put("identifierForLinkingEntry", List.of(
                     "AdditionalPhysicalFormEntry[]",
+                    "ConstituentUnitEntry[]",
+                    "DataSourceEntry[]",
+                    "HostItemEntry[]",
                     "IssuedWithEntry[]",
+                    "MainSeriesEntry[]",
                     "NonspecificRelationshipEntry[]",
+                    "OriginalLanguageEntry[]",
                     "OtherEditionEntry[]",
                     "PrecedingEntry[]",
+                    "SubSeriesEntry[]",
                     "SucceedingEntry[]",
                     "SupplementParentEntry[]",
-                    "SupplementSpecialIssueEntry[]"
+                    "SupplementSpecialIssueEntry[]",
+                    "TranslationEntry[]"
         ));
 
         /*
