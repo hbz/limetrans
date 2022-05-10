@@ -1928,10 +1928,12 @@
   "PublisherName" : [ {
     "place" : [ "Oxford", "Malden" ],
     "name" : [ "Wiley-Blackwell" ],
-    "chronology" : [ "1936-" ]
+    "chronology" : [ "1936-" ],
+    "period" : "1936-"
   }, {
     "place" : [ "Oxford [u.a.]" ],
-    "name" : [ "Blackwell Publ" ]
+    "name" : [ "Blackwell Publ" ],
+    "period" : "anfangs"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Oxford",
@@ -2058,10 +2060,12 @@
   "PublisherName" : [ {
     "place" : [ "London" ],
     "name" : [ "Miller Freeman" ],
-    "chronology" : [ "1969-1997" ]
+    "chronology" : [ "1969-1997" ],
+    "period" : "1969-1997"
   }, {
     "place" : [ "London" ],
-    "name" : [ "Morgan-Grampian Ltd" ]
+    "name" : [ "Morgan-Grampian Ltd" ],
+    "period" : "anfangs"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "London"
@@ -7113,13 +7117,16 @@
   "PublisherName" : [ {
     "place" : [ "Wiesbaden" ],
     "name" : [ "Sachverständigenrat zur Begutachtung der Gesamtwirtschaftlichen Entwicklung" ],
-    "chronology" : [ "1965-" ]
+    "chronology" : [ "1965-" ],
+    "period" : "1965-"
   }, {
     "place" : [ "Stuttgart" ],
-    "name" : [ "Kohlhammer" ]
+    "name" : [ "Kohlhammer" ],
+    "period" : "1965-1988"
   }, {
     "place" : [ "Stuttgart" ],
-    "name" : [ "Metzler-Poeschel" ]
+    "name" : [ "Metzler-Poeschel" ],
+    "period" : "1989-2002"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Wiesbaden"
@@ -12832,16 +12839,20 @@
   "PublisherName" : [ {
     "place" : [ "Berlin ; München ; Boston, Mass" ],
     "name" : [ "<<De>> Gruyter" ],
-    "chronology" : [ "1967-[2019]" ]
+    "chronology" : [ "1967-[2019]" ],
+    "period" : "1967-[2019]"
   }, {
     "place" : [ "Düsseldorf" ],
-    "name" : [ "Schwann" ]
+    "name" : [ "Schwann" ],
+    "period" : "anfangs"
   }, {
     "place" : [ "Berlin ; Boston, Mass" ],
-    "name" : [ "<<De>> Gruyter" ]
+    "name" : [ "<<De>> Gruyter" ],
+    "period" : "teils"
   }, {
     "place" : [ "Berlin ; New York, NY" ],
-    "name" : [ "<<de>> Gruyter" ]
+    "name" : [ "<<de>> Gruyter" ],
+    "period" : "teils"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Berlin ; München ; Boston, Mass."
@@ -14162,13 +14173,16 @@
   "PublisherName" : [ {
     "place" : [ "Grünwald" ],
     "name" : [ "Atwerb-Verl" ],
-    "chronology" : [ "1955-2003" ]
+    "chronology" : [ "1955-2003" ],
+    "period" : "1955-2003"
   }, {
     "place" : [ "Percha" ],
-    "name" : [ "R. S. Schulz" ]
+    "name" : [ "R. S. Schulz" ],
+    "period" : "anfangs"
   }, {
     "place" : [ "München", "Bad Kissingen", "Baden-Baden", "Berlin", "Düsseldorf", "Heidelberg" ],
-    "name" : [ "Pflaum" ]
+    "name" : [ "Pflaum" ],
+    "period" : "früher"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Grünwald"
@@ -15220,7 +15234,8 @@
   "PublisherName" : [ {
     "place" : [ "Berlin [u.a.]" ],
     "name" : [ "Beuth [u.a.]" ],
-    "chronology" : [ "1976-" ]
+    "chronology" : [ "1976-" ],
+    "period" : "1976-"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Berlin [u.a.]"
@@ -31752,7 +31767,8 @@
   "PublisherName" : [ {
     "place" : [ "Opladen" ],
     "name" : [ "Westdt. Verl" ],
-    "chronology" : [ "1970-1993" ]
+    "chronology" : [ "1970-1993" ],
+    "period" : "1970-1993"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Opladen"
@@ -38849,13 +38865,16 @@
   "PublisherName" : [ {
     "place" : [ "Köln" ],
     "name" : [ "Verein Beitr. zur Feministischen Theorie und Praxis e.V" ],
-    "chronology" : [ "1978-2008" ]
+    "chronology" : [ "1978-2008" ],
+    "period" : "1978-2008"
   }, {
     "place" : [ "München" ],
-    "name" : [ "Verl. Frauenoffensive" ]
+    "name" : [ "Verl. Frauenoffensive" ],
+    "period" : "anfangs"
   }, {
     "place" : [ "Köln" ],
-    "name" : [ "Verein Sozialwiss. Forschung und Praxis für Frauen" ]
+    "name" : [ "Verein Sozialwiss. Forschung und Praxis für Frauen" ],
+    "period" : "früher"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Köln"
@@ -46103,10 +46122,12 @@
   "PublisherName" : [ {
     "place" : [ "Hamburg" ],
     "name" : [ "Argument-Verl" ],
-    "chronology" : [ "1976-2007" ]
+    "chronology" : [ "1976-2007" ],
+    "period" : "1976-2007"
   }, {
     "place" : [ "Berlin" ],
-    "name" : [ "Argument-Verl" ]
+    "name" : [ "Argument-Verl" ],
+    "period" : "anfangs"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Hamburg"
@@ -50616,10 +50637,12 @@
   "PublisherName" : [ {
     "place" : [ "London" ],
     "name" : [ "Wiley-Academy" ],
-    "chronology" : [ "1977-" ]
+    "chronology" : [ "1977-" ],
+    "period" : "1977-"
   }, {
     "place" : [ "London" ],
-    "name" : [ "Archit. Design a. Acad. Ed" ]
+    "name" : [ "Archit. Design a. Acad. Ed" ],
+    "period" : "anfangs"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "London"
@@ -53860,13 +53883,16 @@
   "PublisherName" : [ {
     "place" : [ "London" ],
     "name" : [ "LRB Ltd" ],
-    "chronology" : [ "1979-" ]
+    "chronology" : [ "1979-" ],
+    "period" : "1979-"
   }, {
     "place" : [ "Orange, Conn" ],
-    "name" : [ "Ellsworth" ]
+    "name" : [ "Ellsworth" ],
+    "period" : "anfangs"
   }, {
     "place" : [ "London" ],
-    "name" : [ "The London review of Books" ]
+    "name" : [ "The London review of Books" ],
+    "period" : "2.Verl. anfangs"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "London"
@@ -54133,12 +54159,15 @@
   "PublisherName" : [ {
     "place" : [ "Bonn" ],
     "name" : [ "Verl. Rheinischer Merkur" ],
-    "chronology" : [ "1946-2010" ]
+    "chronology" : [ "1946-2010" ],
+    "period" : "1946-2010"
   }, {
     "place" : [ "Koblenz" ],
-    "name" : [ "Verl. Rheinischer Merkur" ]
+    "name" : [ "Verl. Rheinischer Merkur" ],
+    "period" : "früher"
   }, {
-    "place" : [ "Köln" ]
+    "place" : [ "Köln" ],
+    "period" : "anfangs"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Bonn"
@@ -57760,7 +57789,8 @@
   "PublisherName" : [ {
     "place" : [ "Madrid" ],
     "name" : [ "El País" ],
-    "chronology" : [ "1976-" ]
+    "chronology" : [ "1976-" ],
+    "period" : "1976-"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Madrid"
@@ -63322,7 +63352,8 @@
   } ],
   "PublisherName" : [ {
     "place" : [ "London" ],
-    "chronology" : [ "1929-1991" ]
+    "chronology" : [ "1929-1991" ],
+    "period" : "1929-1991"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "London"
@@ -67800,7 +67831,8 @@
   "PublisherName" : [ {
     "place" : [ "Chicago, Ill" ],
     "name" : [ "Advertising Publ" ],
-    "chronology" : [ "1930-11.September 2017" ]
+    "chronology" : [ "1930-11.September 2017" ],
+    "period" : "1930-11.September 2017"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Chicago, Ill."
@@ -67938,10 +67970,12 @@
   "PublisherName" : [ {
     "place" : [ "London" ],
     "name" : [ "Guardian Newspaper" ],
-    "chronology" : [ "1791-" ]
+    "chronology" : [ "1791-" ],
+    "period" : "1791-"
   }, {
     "place" : [ "London" ],
-    "name" : [ "Clement" ]
+    "name" : [ "Clement" ],
+    "period" : "früher"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "London"
@@ -68174,10 +68208,12 @@
   "PublisherName" : [ {
     "place" : [ "Heidelberg" ],
     "name" : [ "Frick" ],
-    "chronology" : [ "1848-1849" ]
+    "chronology" : [ "1848-1849" ],
+    "period" : "1848-1849"
   }, {
     "place" : [ "Heidelberg" ],
-    "name" : [ "Renner & Wolf" ]
+    "name" : [ "Renner & Wolf" ],
+    "period" : "anfangs"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Heidelberg"
@@ -68295,7 +68331,8 @@
   "PublisherName" : [ {
     "place" : [ "Paris" ],
     "name" : [ "Pariser Tageblatt" ],
-    "chronology" : [ "1933-1936" ]
+    "chronology" : [ "1933-1936" ],
+    "period" : "1933-1936"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Paris"
@@ -68420,7 +68457,8 @@
   "PublisherName" : [ {
     "place" : [ "Köln" ],
     "name" : [ "Kölner Stadt-Anzeiger" ],
-    "chronology" : [ "1876-" ]
+    "chronology" : [ "1876-" ],
+    "period" : "1876-"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Köln"
@@ -70192,7 +70230,8 @@
   "PublisherName" : [ {
     "place" : [ "Hannover", "Stuttgart" ],
     "name" : [ "Bundesanst", "Schweizerbart" ],
-    "chronology" : [ "1973-1997" ]
+    "chronology" : [ "1973-1997" ],
+    "period" : "1973-1997"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Hannover",
@@ -70342,7 +70381,8 @@
   "PublisherName" : [ {
     "place" : [ "Hannover", "Stuttgart" ],
     "name" : [ "Bundesanst", "Schweizerbart" ],
-    "chronology" : [ "1973-2011" ]
+    "chronology" : [ "1973-2011" ],
+    "period" : "1973-2011"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Hannover",
@@ -70482,7 +70522,8 @@
   "PublisherName" : [ {
     "place" : [ "Hannover", "Stuttgart" ],
     "name" : [ "Bundesanst", "Schweizerbart" ],
-    "chronology" : [ "1972-2003" ]
+    "chronology" : [ "1972-2003" ],
+    "period" : "1972-2003"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Hannover",
@@ -70632,7 +70673,8 @@
   "PublisherName" : [ {
     "place" : [ "Berlin ; Heidelberg [u.a]" ],
     "name" : [ "Springer" ],
-    "chronology" : [ "2002-" ]
+    "chronology" : [ "2002-" ],
+    "period" : "2002-"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Berlin ; Heidelberg [u.a]"

@@ -1345,6 +1345,7 @@ do list(path: "260[ 23] |264[ 23][ 1]", "var": "$i")
     copy_field("$j", "PublisherName[].$last.chronology[]")
     copy_field("$j", "DateProper.date[]")
   end
+  copy_field("$i.3", "PublisherName[].$last.period")
 end
 # MARC/264
 do list(path: "264?[13]", "var": "$i")

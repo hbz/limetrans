@@ -5754,7 +5754,8 @@
   "PublisherName" : [ {
     "place" : [ "Berlin [u.a.]" ],
     "name" : [ "Beuth [u.a.]" ],
-    "chronology" : [ "1976-" ]
+    "chronology" : [ "1976-" ],
+    "period" : "1976-"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Berlin [u.a.]"
@@ -10200,7 +10201,8 @@
   "PublisherName" : [ {
     "place" : [ "Opladen" ],
     "name" : [ "Westdt. Verl" ],
-    "chronology" : [ "1970-1993" ]
+    "chronology" : [ "1970-1993" ],
+    "period" : "1970-1993"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Opladen"
@@ -17379,10 +17381,12 @@
   "PublisherName" : [ {
     "place" : [ "London" ],
     "name" : [ "Wiley-Academy" ],
-    "chronology" : [ "1977-" ]
+    "chronology" : [ "1977-" ],
+    "period" : "1977-"
   }, {
     "place" : [ "London" ],
-    "name" : [ "Archit. Design a. Acad. Ed" ]
+    "name" : [ "Archit. Design a. Acad. Ed" ],
+    "period" : "anfangs"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "London"
@@ -29893,7 +29897,8 @@
   "PublisherName" : [ {
     "place" : [ "Baden-Baden" ],
     "name" : [ "Nomos" ],
-    "chronology" : [ "2008-" ]
+    "chronology" : [ "2008-" ],
+    "period" : "2008-"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Baden-Baden"
@@ -29982,7 +29987,8 @@
   "PublisherName" : [ {
     "place" : [ "Baden-Baden" ],
     "name" : [ "Nomos" ],
-    "chronology" : [ "2014-" ]
+    "chronology" : [ "2014-" ],
+    "period" : "2014-"
   } ],
   "PublicationPlace" : [ {
     "printingPlace" : "Baden-Baden"
