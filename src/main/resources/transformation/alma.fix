@@ -1327,27 +1327,26 @@ do list(path: "250  .a", "var": "$i")
   copy_field("$i", "Edition.edition[]")
 end
 
-# MARC/260
+# MARC/260, MARC/264
 set_array("PublisherName[]")
+set_array("PublicationPlace[]")
 do list(path: "260[ 23] |264[ 23][ 1]", "var": "$i")
-  set_hash("@publisher")
+  add_field("PublisherName[].$append.__dummy__", "")
   do list(path: "$i.a", "var": "$j")
     replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
-    copy_field("$j", "@publisher.place[]")
+    copy_field("$j", "PublisherName[].$last.place[]")
   end
   do list(path: "$i.b", "var": "$j")
     replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
-    copy_field("$j", "@publisher.name[]")
+    copy_field("$j", "PublisherName[].$last.name[]")
   end
   do list(path: "$i.c", "var": "$j")
     replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
-    copy_field("$j", "@publisher.chronology[]")
+    copy_field("$j", "PublisherName[].$last.chronology[]")
+    copy_field("$j", "DateProper.date[]")
   end
-  move_field("@publisher", "PublisherName[]")
 end
-
 # MARC/264
-set_array("PublicationPlace[]")
 do list(path: "264?[13]", "var": "$i")
   add_field("PublicationPlace[].$append.__dummy__", "")
   do list(path: "$i.a", "var": "$j")
@@ -1356,14 +1355,6 @@ do list(path: "264?[13]", "var": "$i")
   end
 end
 uniq("PublicationPlace[]")
-
-# MARC/260
-do list(path: "260[ 23] |264[ 23][ 1]", "var": "$i")
-  do list(path: "$i.c", "var": "$j")
-    replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
-    copy_field("$j", "DateProper.date[]")
-  end
-end
 
 # MARC/300
 set_array("@300a")
