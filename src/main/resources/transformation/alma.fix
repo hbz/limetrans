@@ -1124,15 +1124,6 @@ add_field("IdentifierAlma.identifierMember", "$[member]")
 copy_field("001", "IdentifierAlma.identifierMMS")
 copy_field("@mmsiz", "IdentifierAlma.identifierMMSIZ")
 
-# MARC/POR
-set_array("@portfolio")
-do list(path: "POR  ", "var": "$i")
-  if any_equal("$i.[MA]", "$[member]")
-    copy_field("$i.a", "@portfolio")
-  end
-end
-copy_field("@portfolio", "IdentifierAlma.identifierPID")
-
 copy_field("@mmsid", "RecordIdentifier.identifierForTheIndex")
 copy_field("@id", "RecordIdentifier.identifierForTheRecord")
 
@@ -1771,13 +1762,17 @@ do list(path: "856??", "var": "$i")
   end
 end
 # MARC/POR
+set_array("IdentifierAlma.identifierPID")
 do list(path: "POR  ", "var": "$i")
   if any_equal("$i.[MA]", "$[member]")
-    add_field("OnlineAccess[].$append.__dummy__", "")
-    copy_field("$i.q", "OnlineAccess[].$last.publicnote")
-    replace_all("$i.D", "$[network]", "$[member]")
-    copy_field("$i.D", "OnlineAccess[].$last.uri")
-    add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
+    if none_equal("$i.b", "Not Available")
+      copy_field("$i.a", "IdentifierAlma.identifierPID")
+      add_field("OnlineAccess[].$append.__dummy__", "")
+      copy_field("$i.q", "OnlineAccess[].$last.publicnote")
+      replace_all("$i.D", "$[network]", "$[member]")
+      copy_field("$i.D", "OnlineAccess[].$last.uri")
+      add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
+    end
   end
 end
 hbz.limetrans.function.Dedup("OnlineAccess[].*.uri")
