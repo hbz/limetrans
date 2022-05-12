@@ -123,22 +123,7 @@ public class VerifyLinks implements FixFunction {
         final Set<String> skipIdSet = loadIdSet(ISIL_PATH_FORMAT.formatted(isilPath, "skip"), false);
         final Set<String> superIdSet = loadIdSet(ISIL_PATH_FORMAT.formatted(isilPath, "super"), true);
 
-        if (idSet != null) {
-            final Predicate<String> predicate = id -> idSet.contains(id) && !skipIdSet.contains(id);
-
-            final String catalogid = aVars.get("catalogid");
-            if (catalogid != null) {
-                final String prefix = "(" + catalogid + ")";
-                linkPredicate = id -> predicate.test(id) || predicate.test(prefix + id);
-            }
-            else {
-                linkPredicate = predicate;
-            }
-        }
-        else {
-            linkPredicate = null;
-        }
-
+        linkPredicate = idSet != null ? id -> idSet.contains(id) && !skipIdSet.contains(id) : null;
         superPredicate = superIdSet != null ? superIdSet::contains : null;
 
         LINK_COUNTER.clear();
