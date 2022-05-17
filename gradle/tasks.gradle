@@ -1,4 +1,4 @@
-def (root, extension) = [file('.').toPath(), '.json']
+def (root, extension, skel, required) = [file('.').toPath(), '.json', 'template', ['isil']]
 
 def camelize = { it.replaceAll(~/\b./) { it[0].toUpperCase() } }
 def taskName = { prefix, name -> prefix + camelize(name).replaceAll('[^a-zA-Z0-9]', '') }
@@ -17,7 +17,7 @@ def propTask = { group, list ->
 propTask('env', ['prod', 'dev', 'd7test', 'local', 'ignore'])
 
 file('src/conf').eachDir {
-    def (group, path, map) = [it.getName(), it.toPath(), [:].withDefault { [] }]
+    def (group, path) = [it.getName(), it.toPath()]
 
     def indexTask = { name, list ->
         task(taskName(group, name), type: JavaExec, group: group, description: list.collect { root.relativize(it.toPath()) }) {
@@ -27,8 +27,31 @@ file('src/conf').eachDir {
         }
     }
 
+    def newTask = { source ->
+        def name = taskName(group, 'new')
+        def groupTask = project.tasks.findByName(name) ?:
+            task(name, group: group, description: "Adds new configuration ${required}") {
+                doLast {
+                    def missing = required.findAll { !project.hasProperty(it) }
+                    if (missing) throw new InvalidUserDataException(
+                        'Missing ' + missing.collect { "-P${it}=..." })
+                }
+            }
+
+        groupTask.doLast {
+            copy {
+                from source
+                into path
+
+                rename skel, isil.toLowerCase()
+                expand(isil: isil)
+            }
+        }
+    }
+
     it.eachFileMatch(~/.*\Q${extension}\E/) {
-        indexTask(it.getName().minus(extension), [it])
+        def name = it.getName().minus(extension)
+        name.startsWith(skel) ? newTask(it) : indexTask(name, [it])
     }
 }
 
