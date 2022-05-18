@@ -1444,6 +1444,7 @@ end
 # MARC/362
 copy_field("3620 .a", "ChronologyAndEnumeration.value")
 join_field("ChronologyAndEnumeration.value", " ; ")
+copy_field("3621 .a", "ChronologyAndEnumeration.unformattedValue[]")
 
 # MARC/490
 unless exists("830??")
