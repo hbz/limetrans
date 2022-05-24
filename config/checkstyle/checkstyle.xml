@@ -76,7 +76,9 @@
         <module name="LocalFinalVariableName"/>
         <module name="LocalVariableName"/>
         <module name="MagicNumber"/>
-        <module name="MemberName"/>
+        <module name="MemberName">
+            <property name="format" value="^m[A-Z][a-zA-Z0-9]*$"/>
+        </module>
         <module name="MethodLength" />
         <module name="MethodName"/>
         <module name="MethodParamPad"/>
@@ -111,7 +113,7 @@
         <module name="PackageName"/>
         <module name="ParameterAssignment"/>
         <module name="ParameterName">
-            <property name="format" value="^[a-z][A-Z][a-zA-Z0-9]+$"/>
+            <property name="format" value="^a[A-Z][a-zA-Z0-9]+$"/>
             <property name="ignoreOverridden" value="true"/>
         </module>
         <module name="ParameterNumber">

@@ -10,15 +10,15 @@ import java.util.Map;
 
 public class Once implements FixContext {
 
-    private boolean executed;
+    private boolean mExecuted;
 
     public Once() {
     }
 
     @Override
     public void execute(final Metafix metafix, final Record record, final List<String> params, final Map<String, String> options, final RecordTransformer recordTransformer) {
-        if (!executed) {
-            executed = true;
+        if (!mExecuted) {
+            mExecuted = true;
             recordTransformer.transform(record);
         }
     }

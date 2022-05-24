@@ -53,7 +53,7 @@ public class ElasticsearchClient {
     private Client mClient;
     private ElasticsearchServer mServer;
     private boolean mDeleteOnExit;
-    private int numRecords;
+    private int mNumRecords;
 
     public ElasticsearchClient(final Settings aSettings) {
         LOGGER.debug("Settings: {}", aSettings);
@@ -136,7 +136,7 @@ public class ElasticsearchClient {
     }
 
     public void reset() {
-        numRecords = 0;
+        mNumRecords = 0;
 
         setClient(mSettings.getAsArray("host"), mSettings.get("embeddedPath"));
         waitForYellowStatus();
@@ -144,7 +144,7 @@ public class ElasticsearchClient {
     }
 
     public void inc() {
-        ++numRecords;
+        ++mNumRecords;
     }
 
     public void close() {
@@ -271,7 +271,7 @@ public class ElasticsearchClient {
             return;
         }
 
-        if (numRecords == 0) {
+        if (mNumRecords == 0) {
             LOGGER.warn("No docs, skipping index switch");
             return;
         }

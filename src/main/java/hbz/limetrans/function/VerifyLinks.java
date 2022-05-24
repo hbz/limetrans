@@ -97,8 +97,6 @@ public class VerifyLinks implements FixFunction {
         ));
     }
 
-    private final Map<String, Set<String>> idSetCache = new HashMap<>();
-
     public VerifyLinks() {
     }
 
