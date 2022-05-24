@@ -12,6 +12,7 @@ import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.action.bulk.BulkResponse;
 import org.elasticsearch.client.Client;
+import org.elasticsearch.client.transport.NoNodeAvailableException;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.cluster.metadata.AliasMetaData;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
@@ -326,6 +327,10 @@ public class ElasticsearchClient {
         })).build();
 
         addClientTransport(client, aHosts);
+
+        if (client.connectedNodes().isEmpty()) {
+            throw new NoNodeAvailableException("No cluster nodes available: " + client.transportAddresses());
+        }
 
         return client;
     }
