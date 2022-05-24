@@ -7,6 +7,7 @@ import hbz.limetrans.util.Settings;
 import com.carrotsearch.hppc.cursors.ObjectCursor;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.elasticsearch.action.admin.cluster.health.ClusterHealthResponse;
 import org.elasticsearch.action.admin.indices.alias.IndicesAliasesRequestBuilder;
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
@@ -16,6 +17,7 @@ import org.elasticsearch.client.transport.NoNodeAvailableException;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.cluster.metadata.AliasMetaData;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
+import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.index.IndexNotFoundException;
 
 import java.io.IOException;
@@ -384,8 +386,12 @@ public class ElasticsearchClient {
     }
 
     private void waitForYellowStatus() {
-        mClient.admin().cluster().prepareHealth()
-            .setWaitForYellowStatus().get();
+        final ClusterHealthResponse healthResponse = mClient.admin().cluster().prepareHealth()
+            .setWaitForYellowStatus().setTimeout(TimeValue.timeValueSeconds(30)).get(); // checkstyle-disable-line MagicNumber
+
+        if (healthResponse.isTimedOut()) {
+            throw new RuntimeException("Cluster unhealthy: status = " + healthResponse.getStatus());
+        }
     }
 
     private void addClientTransport(final TransportClient aClient, final String[] aHosts) {
