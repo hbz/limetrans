@@ -7,11 +7,16 @@ import hbz.limetrans.util.Settings;
 import com.carrotsearch.hppc.cursors.ObjectCursor;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.elasticsearch.action.ActionRequest;
 import org.elasticsearch.action.admin.cluster.health.ClusterHealthResponse;
 import org.elasticsearch.action.admin.indices.alias.IndicesAliasesRequestBuilder;
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
-import org.elasticsearch.action.bulk.BulkRequestBuilder;
+import org.elasticsearch.action.bulk.BulkProcessor;
+import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.bulk.BulkResponse;
+import org.elasticsearch.action.delete.DeleteRequest;
+import org.elasticsearch.action.index.IndexRequest;
+import org.elasticsearch.action.update.UpdateRequest;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.NoNodeAvailableException;
 import org.elasticsearch.client.transport.TransportClient;
@@ -29,12 +34,15 @@ import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.LongAdder;
 import java.util.function.Consumer;
 import java.util.regex.Pattern;
 
-public class ElasticsearchClient {
+public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstractionCoupling|ClassFanOutComplexity
 
-    public static final int MAX_BULK_ACTIONS = 100_000;
+    public static final int MAX_BULK_ACTIONS = 1000;
+    public static final int MAX_BULK_REQUESTS = 2;
 
     private static final Logger LOGGER = LogManager.getLogger();
 
@@ -48,11 +56,13 @@ public class ElasticsearchClient {
     private final String mAliasName;
     private final String mIndexName;
     private final int mBulkActions;
+    private final int mBulkRequests;
 
-    private BulkRequestBuilder mBulkRequest;
+    private BulkProcessor mBulkProcessor;
     private Client mClient;
     private ElasticsearchServer mServer;
     private boolean mDeleteOnExit;
+    private boolean mFailed;
     private int mNumRecords;
 
     public ElasticsearchClient(final Settings aSettings) {
@@ -60,6 +70,9 @@ public class ElasticsearchClient {
 
         mSettings = aSettings;
         mIndexSettings = getIndexSettings(aSettings);
+
+        mBulkActions = aSettings.getAsInt("maxbulkactions", MAX_BULK_ACTIONS);
+        mBulkRequests = aSettings.getAsInt("maxbulkrequests", MAX_BULK_REQUESTS);
 
         reset();
 
@@ -91,8 +104,6 @@ public class ElasticsearchClient {
             close();
             throw e;
         }
-
-        mBulkActions = aSettings.getAsInt("maxbulkactions", MAX_BULK_ACTIONS);
     }
 
     public ElasticsearchClient(final String aIndexName, final String aIndexType) {
@@ -136,15 +147,21 @@ public class ElasticsearchClient {
     }
 
     public void reset() {
+        mFailed = false;
         mNumRecords = 0;
+        mBulkProcessor = null;
 
         setClient(mSettings.getAsArray("host"), mSettings.get("embeddedPath"));
         waitForYellowStatus();
-        startBulk();
+        createBulk();
     }
 
     public void inc() {
         ++mNumRecords;
+    }
+
+    public void flush() {
+        closeBulk();
     }
 
     public void close() {
@@ -152,7 +169,7 @@ public class ElasticsearchClient {
     }
 
     public void close(final boolean aSwitchIndex) {
-        flush();
+        closeBulk();
 
         if (aSwitchIndex) {
             switchIndex();
@@ -166,58 +183,97 @@ public class ElasticsearchClient {
         }
     }
 
-    public void flush() {
-        flush(1);
-    }
-
-    public void flush(final int aNum) {
-        flush(mBulkRequest.numberOfActions() >= aNum);
-    }
-
-    public void flush(final boolean aFlush) {
-        if (!aFlush) {
-            return;
-        }
-
-        LOGGER.info("Flushing bulk ({})", mBulkRequest.numberOfActions());
-
-        final BulkResponse bulkResponse = mBulkRequest.get();
-
-        startBulk();
-        refreshIndex();
-
-        if (bulkResponse.hasFailures()) {
-            onBulkFailure(bulkResponse);
-        }
-    }
-
     public void addBulkIndex(final String aId, final String aDocument) {
-        flush(mBulkActions);
-        mBulkRequest.add(mClient
-                .prepareIndex(getIndexName(), getIndexType(), aId)
-                .setSource(aDocument));
+        addBulk(new IndexRequest(getIndexName(), getIndexType(), aId).source(aDocument));
     }
 
     public void addBulkUpdate(final String aId, final String aDocument) {
-        flush(mBulkActions);
-        mBulkRequest.add(mClient
-                .prepareUpdate(getIndexName(), getIndexType(), aId)
-                .setDoc(aDocument));
+        addBulk(new UpdateRequest(getIndexName(), getIndexType(), aId).doc(aDocument));
     }
 
     public void addBulkDelete(final String aId) {
-        flush(mBulkActions);
-        mBulkRequest.add(mClient
-                .prepareDelete(getIndexName(), getIndexType(), aId));
+        addBulk(new DeleteRequest(getIndexName(), getIndexType(), aId));
     }
 
-    public void onBulkFailure(final BulkResponse aBulkResponse) {
-        throw new LimetransException(aBulkResponse.buildFailureMessage());
+    private void addBulk(final ActionRequest aRequest) {
+        if (mBulkProcessor == null) {
+            createBulk();
+        }
+
+        mBulkProcessor.add(aRequest);
     }
 
-    private void startBulk() {
-        LOGGER.info("Starting bulk");
-        mBulkRequest = mClient.prepareBulk();
+    private void createBulk() {
+        LOGGER.info("Creating bulk processor [actions={}, requests={}]", mBulkActions, mBulkRequests);
+
+        final BulkProcessor.Listener listener = new BulkProcessor.Listener() { // checkstyle-disable-line AnonInnerLength
+
+            @Override
+            public void beforeBulk(final long aId, final BulkRequest aRequest) {
+                LOGGER.debug("Before bulk {} [actions={}, bytes={}]",
+                        aId, aRequest.numberOfActions(), aRequest.estimatedSizeInBytes());
+            }
+
+            @Override
+            public void afterBulk(final long aId, final BulkRequest aRequest, final BulkResponse aResponse) {
+                final LongAdder failed = new LongAdder();
+                final LongAdder succeeded = new LongAdder();
+
+                aResponse.forEach(r -> {
+                    if ("delete".equals(r.getOpType())) {
+                        // ignore
+                    }
+                    else if (r.isFailed()) {
+                        failed.increment();
+                        LOGGER.warn("Bulk {} item {} failed: {}", aId, r.getItemId(), r.getFailureMessage());
+                    }
+                    else {
+                        succeeded.increment();
+                    }
+                });
+
+                LOGGER.debug("After bulk {} [succeeded={}, failed={}, took={}]",
+                        aId, succeeded.sum(), failed.sum(), aResponse.getTook().millis());
+            }
+
+            @Override
+            public void afterBulk(final long aId, final BulkRequest aRequest, final Throwable aThrowable) {
+                LOGGER.error("Bulk " + aId + " failed: " + aThrowable.getMessage(), aThrowable);
+                mFailed = true;
+            }
+
+        };
+
+        mBulkProcessor = BulkProcessor.builder(mClient, listener)
+            .setConcurrentRequests(mBulkRequests)
+            .setBulkActions(mBulkActions)
+            .build();
+    }
+
+    private void closeBulk() {
+        if (mBulkProcessor == null) {
+            return;
+        }
+
+        try {
+            mBulkProcessor.flush();
+
+            if (mBulkProcessor.awaitClose(2, TimeUnit.MINUTES)) {
+                LOGGER.info("All bulk requests complete");
+            }
+            else {
+                LOGGER.warn("Some bulk requests still pending");
+            }
+        }
+        catch (final InterruptedException e) {
+            LOGGER.error("Flushing bulk processor interrupted", e);
+            mFailed = true;
+        }
+
+        mBulkProcessor.close();
+        mBulkProcessor = null;
+
+        refreshIndex();
     }
 
     public String getIndexType() {
@@ -268,6 +324,11 @@ public class ElasticsearchClient {
     private void switchIndex() { // checkstyle-disable-line ReturnCount
         final String aliasName = getAliasName();
         if (aliasName == null) {
+            return;
+        }
+
+        if (mFailed) {
+            LOGGER.warn("Failed, skipping index switch");
             return;
         }
 

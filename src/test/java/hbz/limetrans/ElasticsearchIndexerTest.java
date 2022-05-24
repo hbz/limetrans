@@ -5,7 +5,6 @@ import hbz.limetrans.util.LimetransException;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.function.ThrowingRunnable;
 
 public class ElasticsearchIndexerTest {
 
@@ -292,7 +291,7 @@ public class ElasticsearchIndexerTest {
     }
 
     @Test
-    public void testShouldFailToUpdateDocumentWithChangedId() {
+    public void testShouldNotUpdateDocumentWithChangedId() {
         final String doc = "{'L1':'V1','L2':'V2','L3':'V3'}";
 
         setIndexer("update");
@@ -306,11 +305,13 @@ public class ElasticsearchIndexerTest {
         mIndexer.literal(LITERAL2, VALUE4);
         mIndexer.endRecord();
 
-        expectBulkFailure(mIndexer::flush, "ID2");
+        mIndexer.flush();
+
+        assertMissing(ID2);
     }
 
     @Test
-    public void testShouldFailToUpdateMissingDocument() {
+    public void testShouldNotUpdateMissingDocument() {
         setIndexer("update");
 
         assertMissing(ID1);
@@ -320,7 +321,9 @@ public class ElasticsearchIndexerTest {
         mIndexer.literal(LITERAL2, VALUE3);
         mIndexer.endRecord();
 
-        expectBulkFailure(mIndexer::flush, "ID1");
+        mIndexer.flush();
+
+        assertMissing(ID1);
     }
 
     @Test
@@ -468,14 +471,6 @@ public class ElasticsearchIndexerTest {
 
     private void assertMissing(final String aId) {
         Assert.assertNull(mClient.getDocument(aId));
-    }
-
-    private void expectBulkFailure(final ThrowingRunnable aRunnable, final String aId) {
-        final String expected = "failure in bulk execution:\n[0]: index [index1], type [type1], id [" + aId +
-            "], message [[index1][[index1][-1]] DocumentMissingException[[type1][" + aId + "]: document missing]]";
-
-        final Throwable ex = Assert.assertThrows(RuntimeException.class, aRunnable);
-        Assert.assertEquals(expected, ex.getMessage());
     }
 
     private void insertDocument(final String aId, final String aDocument) {
