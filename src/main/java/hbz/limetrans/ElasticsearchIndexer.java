@@ -49,7 +49,6 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
         mId = id;
         mIsDeletion = false;
 
-        mClient.inc();
         mJsonEncoder.startRecord(id);
     }
 

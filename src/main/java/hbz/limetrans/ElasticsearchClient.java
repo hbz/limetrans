@@ -54,6 +54,8 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
     private static final String SETTINGS_SEPARATOR = ".";
 
     private final ByteSizeValue mBulkSize;
+    private final LongAdder mFailedCounter = new LongAdder();
+    private final LongAdder mSucceededCounter = new LongAdder();
     private final Settings mIndexSettings;
     private final Settings mSettings;
     private final String mAliasName;
@@ -66,7 +68,6 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
     private ElasticsearchServer mServer;
     private boolean mDeleteOnExit;
     private boolean mFailed;
-    private int mNumRecords;
 
     public ElasticsearchClient(final Settings aSettings) {
         LOGGER.debug("Settings: {}", aSettings);
@@ -152,16 +153,14 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
 
     public void reset() {
         mFailed = false;
-        mNumRecords = 0;
         mBulkProcessor = null;
+
+        mFailedCounter.reset();
+        mSucceededCounter.reset();
 
         setClient(mSettings.getAsArray("host"), mSettings.get("embeddedPath"));
         waitForYellowStatus();
         createBulk();
-    }
-
-    public void inc() {
-        ++mNumRecords;
     }
 
     public void flush() {
@@ -236,6 +235,9 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
                     }
                 });
 
+                mFailedCounter.add(failed.sum());
+                mSucceededCounter.add(succeeded.sum());
+
                 LOGGER.debug("After bulk {} [succeeded={}, failed={}, took={}]",
                         aId, succeeded.sum(), failed.sum(), aResponse.getTook().millis());
             }
@@ -279,6 +281,14 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
         mBulkProcessor = null;
 
         refreshIndex();
+    }
+
+    public long getSucceeded() {
+        return mSucceededCounter.sum();
+    }
+
+    public long getFailed() {
+        return mFailedCounter.sum();
     }
 
     public String getIndexType() {
@@ -332,24 +342,26 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
             return;
         }
 
-        if (mFailed) {
-            LOGGER.warn("Failed, skipping index switch");
-            return;
-        }
-
-        if (mNumRecords == 0) {
-            LOGGER.warn("No docs, skipping index switch");
-            return;
-        }
-
         final String newIndex = getIndexName();
-        final String oldIndex = getAliasIndex(getAliasName());
+        final String oldIndex = getAliasIndex(aliasName);
+
+        final String suffix = " [index=" + newIndex + ", alias=" + aliasName + "]";
+
+        if (mFailed) {
+            LOGGER.warn("Failed, skipping index switch" + suffix);
+            return;
+        }
+
+        if (getSucceeded() == 0) {
+            LOGGER.warn("No docs, skipping index switch" + suffix);
+            return;
+        }
+
+        LOGGER.info("Documents ingested: {} succeeded, {} failed" + suffix, getSucceeded(), getFailed());
 
         if (newIndex.equals(oldIndex)) {
             return;
         }
-
-        LOGGER.info("Switching index alias: {}", aliasName);
 
         final IndicesAliasesRequestBuilder aliasesRequest = mClient.admin().indices()
             .prepareAliases();
