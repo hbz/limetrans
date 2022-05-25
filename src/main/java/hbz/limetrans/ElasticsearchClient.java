@@ -32,10 +32,13 @@ import java.net.UnknownHostException;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.LongAdder;
 import java.util.function.Consumer;
 import java.util.regex.Pattern;
@@ -51,15 +54,27 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
     private static final String INDEX_KEY = "index";
     private static final String INDEX_NAME_KEY = "name";
     private static final String INDEX_TYPE_KEY = "type";
+
+    private static final String INDEX_REFRESH_KEY = "refresh_interval";
+    private static final String INDEX_REPLICA_KEY = "number_of_replicas";
+
+    private static final String DEFAULT_REFRESH_INTERVAL = "30s";
+    private static final Integer DEFAULT_REPLICA_COUNT = 1;
+
+    private static final String BULK_REFRESH_INTERVAL = "-1";
+    private static final Integer BULK_REPLICA_COUNT = 0;
+
     private static final String SETTINGS_SEPARATOR = ".";
 
     private final ByteSizeValue mBulkSize;
+    private final Integer mNumberOfReplicas;
     private final LongAdder mFailedCounter = new LongAdder();
     private final LongAdder mSucceededCounter = new LongAdder();
     private final Settings mIndexSettings;
     private final Settings mSettings;
     private final String mAliasName;
     private final String mIndexName;
+    private final String mRefreshInterval;
     private final int mBulkActions;
     private final int mBulkRequests;
 
@@ -68,6 +83,7 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
     private ElasticsearchServer mServer;
     private boolean mDeleteOnExit;
     private boolean mFailed;
+    private boolean mIndexCreated;
 
     public ElasticsearchClient(final Settings aSettings) {
         LOGGER.debug("Settings: {}", aSettings);
@@ -78,6 +94,9 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
         mBulkActions = aSettings.getAsInt("maxbulkactions", MAX_BULK_ACTIONS);
         mBulkRequests = aSettings.getAsInt("maxbulkrequests", MAX_BULK_REQUESTS);
         mBulkSize = ByteSizeValue.parseBytesSizeValue(aSettings.get("maxbulksize", MAX_BULK_SIZE), "maxbulksize");
+
+        mNumberOfReplicas = mIndexSettings.getAsInt(INDEX_REPLICA_KEY, DEFAULT_REPLICA_COUNT);
+        mRefreshInterval = mIndexSettings.get(INDEX_REFRESH_KEY, DEFAULT_REFRESH_INTERVAL);
 
         reset();
 
@@ -106,7 +125,7 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
             }
         }
         catch (final RuntimeException e) { // checkstyle-disable-line IllegalCatch
-            close();
+            closeClient();
             throw e;
         }
     }
@@ -153,6 +172,7 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
 
     public void reset() {
         mFailed = false;
+        mIndexCreated = false;
         mBulkProcessor = null;
 
         mFailedCounter.reset();
@@ -160,11 +180,11 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
 
         setClient(mSettings.getAsArray("host"), mSettings.get("embeddedPath"));
         waitForYellowStatus();
-        createBulk();
     }
 
     public void flush() {
         closeBulk();
+        refreshIndex();
     }
 
     public void close() {
@@ -173,15 +193,19 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
 
     public void close(final boolean aSwitchIndex) {
         closeBulk();
+        refreshIndex();
 
         if (aSwitchIndex) {
             switchIndex();
         }
 
+        closeClient();
+    }
+
+    private void closeClient() {
         mClient.close();
 
         if (mServer != null) {
-            LOGGER.info("Shutting down embedded server");
             mServer.shutdown(getDeleteOnExit());
         }
     }
@@ -255,6 +279,8 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
             .setBulkSize(mBulkSize)
             .setConcurrentRequests(mBulkRequests)
             .build();
+
+        updateIndexSettings();
     }
 
     private void closeBulk() {
@@ -280,7 +306,7 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
         mBulkProcessor.close();
         mBulkProcessor = null;
 
-        refreshIndex();
+        updateIndexSettings();
     }
 
     public long getSucceeded() {
@@ -416,10 +442,11 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
     }
 
     private Client newClient(final String aDataDir) {
-        LOGGER.info("Starting embedded server: {}", aDataDir);
+        final AtomicReference<ElasticsearchServer> server = new AtomicReference<>();
+        final Client client = ElasticsearchServer.getClient(aDataDir, server::set);
 
-        mServer = new ElasticsearchServer(aDataDir);
-        return mServer.getClient();
+        mServer = server.get();
+        return client;
     }
 
     private void checkIndex() {
@@ -451,6 +478,8 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
         addIndexMapping(createRequest);
 
         createRequest.get();
+
+        mIndexCreated = true;
     }
 
     private void refreshIndex() {
@@ -484,6 +513,30 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
             catch (final UnknownHostException e) {
                 throw new LimetransException(e);
             }
+        }
+    }
+
+    private void updateIndexSettings() {
+        final boolean bulk = mBulkProcessor != null;
+        final Map<String, Object> indexSettings = new HashMap<>();
+
+        if (mNumberOfReplicas != null && mIndexCreated) {
+            indexSettings.put(INDEX_REPLICA_KEY, bulk ? BULK_REPLICA_COUNT : mNumberOfReplicas);
+        }
+
+        if (mRefreshInterval != null) {
+            indexSettings.put(INDEX_REFRESH_KEY, bulk ? BULK_REFRESH_INTERVAL : mRefreshInterval);
+        }
+
+        if (!indexSettings.isEmpty()) {
+            final Map<String, Object> updateSettings = new HashMap<>();
+            updateSettings.put(INDEX_KEY, indexSettings);
+
+            LOGGER.info("Updating index settings {} bulk: {}: {}",
+                    bulk ? "before" : "after", getIndexName(), updateSettings);
+
+            mClient.admin().indices()
+                .prepareUpdateSettings(getIndexName()).setSettings(updateSettings).get();
         }
     }
 
