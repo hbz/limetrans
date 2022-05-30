@@ -22,6 +22,7 @@ import org.elasticsearch.client.transport.NoNodeAvailableException;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.cluster.metadata.AliasMetaData;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
+import org.elasticsearch.common.unit.ByteSizeValue;
 import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.index.IndexNotFoundException;
 
@@ -41,6 +42,7 @@ import java.util.regex.Pattern;
 
 public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstractionCoupling|ClassFanOutComplexity
 
+    public static final String MAX_BULK_SIZE = "-1";
     public static final int MAX_BULK_ACTIONS = 1000;
     public static final int MAX_BULK_REQUESTS = 2;
 
@@ -51,6 +53,7 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
     private static final String INDEX_TYPE_KEY = "type";
     private static final String SETTINGS_SEPARATOR = ".";
 
+    private final ByteSizeValue mBulkSize;
     private final Settings mIndexSettings;
     private final Settings mSettings;
     private final String mAliasName;
@@ -73,6 +76,7 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
 
         mBulkActions = aSettings.getAsInt("maxbulkactions", MAX_BULK_ACTIONS);
         mBulkRequests = aSettings.getAsInt("maxbulkrequests", MAX_BULK_REQUESTS);
+        mBulkSize = ByteSizeValue.parseBytesSizeValue(aSettings.get("maxbulksize", MAX_BULK_SIZE), "maxbulksize");
 
         reset();
 
@@ -204,7 +208,7 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
     }
 
     private void createBulk() {
-        LOGGER.info("Creating bulk processor [actions={}, requests={}]", mBulkActions, mBulkRequests);
+        LOGGER.info("Creating bulk processor [actions={}, requests={}, size={}]", mBulkActions, mBulkRequests, mBulkSize);
 
         final BulkProcessor.Listener listener = new BulkProcessor.Listener() { // checkstyle-disable-line AnonInnerLength
 
@@ -245,8 +249,9 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
         };
 
         mBulkProcessor = BulkProcessor.builder(mClient, listener)
-            .setConcurrentRequests(mBulkRequests)
             .setBulkActions(mBulkActions)
+            .setBulkSize(mBulkSize)
+            .setConcurrentRequests(mBulkRequests)
             .build();
     }
 
