@@ -1450,6 +1450,7 @@ copy_field("3621 .a", "ChronologyAndEnumeration.unformattedValue[]")
 unless exists("830??")
   set_array("TitleSuper[]")
   set_array("TitleSuperVolumeDesignation[]")
+  set_array("SeriesAddedEntryUniformTitle[]")
   do list(path: "490[01] ", "var": "$i")
     add_field("TitleSuper[].$append.__dummy__", "")
     do list(path: "$i.a", "var": "$j")
@@ -1462,6 +1463,9 @@ unless exists("830??")
       replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
       copy_field("$j", "TitleSuperVolumeDesignation[].$last.volumeDesignation[]")
     end
+    add_field("SeriesAddedEntryUniformTitle[].$append.__dummy__", "")
+    copy_field("$i.a", "SeriesAddedEntryUniformTitle[].$last.title")
+    copy_field("$i.v", "SeriesAddedEntryUniformTitle[].$last.volume")
   end
 end
 
@@ -1730,7 +1734,9 @@ if exists("830??")
 end
 */
 # MARC/830
-set_array("SeriesAddedEntryUniformTitle[]")
+unless exists("SeriesAddedEntryUniformTitle[]")
+  set_array("SeriesAddedEntryUniformTitle[]")
+end
 do list(path: "830 ?", "var": "$i")
   add_field("SeriesAddedEntryUniformTitle[].$append.__dummy__", "")
   copy_field("$i.a", "SeriesAddedEntryUniformTitle[].$last.title")
