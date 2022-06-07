@@ -2160,6 +2160,12 @@ do list(path: "RSWK[]", "var": "$i")
   copy_field("$i.subjectTopicName", "introx.subject[]")
   copy_field("$i.subjectUnit", "introx.subject[]")
 end
+# MARC/653
+set_array("Subject[]")
+do list(path: "653??", "var": "$i")
+  copy_field("$i.a", "Subject[].$append.subject")
+end
+uniq("Subject[]")
 uniq("introx.subject[]")
 
 retain(
@@ -2241,6 +2247,7 @@ retain(
   "SubjectNWBIB[]",
   "SubjectRPB[]",
   "SubjectRVK[]",
+  "Subject[]",
   "SucceedingEntry[]",
   "Summary",
   "SupplementParentEntry[]",
