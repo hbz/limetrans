@@ -1,6 +1,9 @@
 rootProject.name = 'limetrans'
 
 gradle.rootProject {
+    def baseUrl = project.hasProperty('git.baseUrl') ?
+        project.getProperty('git.baseUrl') : null
+
     ext {
         versions = [
             'checkstyle'        : '9.0',
@@ -67,7 +70,7 @@ gradle.rootProject {
             else {
                 args.version = { branch = version }
 
-                gitRepository("${args.base}/${args.repo}") {
+                gitRepository("${baseUrl ?: args.base}/${args.repo}") {
                     args.modules.each { producesModule(it) }
                 }
             }
