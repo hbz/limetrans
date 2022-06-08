@@ -15,31 +15,6 @@ def passSystemProperties = {
     }
 }
 
-ext {
-    versions = [
-        'checkstyle'        : '9.0',
-        'commons-cli'       : '1.3.1',
-        'commons-io'        : '2.7',
-        'commons-validator' : '1.5.1',
-        'elasticsearch'     : '2.2.1',
-        'jackson'           : '2.13.2.2',
-        'jdk'               : '17',
-        'junit'             : '4.13.1',
-        'log4j'             : '2.17.1',
-        'metafacture'       : '5.3.2',
-        'metafix'           : '0.2.0'
-    ]
-}
-
-project.properties.each { key, value ->
-    if (value instanceof String && !value.isEmpty()) {
-        def parts = key.split('\\.')
-        if (parts.size() == 2 && parts[0] == 'versions') {
-            versions[parts[1]] = value
-        }
-    }
-}
-
 apply from: 'gradle/tasks.gradle'
 
 repositories {
@@ -49,6 +24,18 @@ repositories {
 }
 
 dependencies {
+    gitModules.each { key, args ->
+        args.modules.each {
+            implementation(it) {
+                version(args.version)
+
+                if (args.containsKey('dependency')) {
+                    args.dependency(it)
+                }
+            }
+        }
+    }
+
     implementation "com.fasterxml.jackson.core:jackson-databind:${versions.jackson}"
     implementation "commons-cli:commons-cli:${versions['commons-cli']}"
     implementation "commons-io:commons-io:${versions['commons-io']}"
@@ -58,22 +45,6 @@ dependencies {
     implementation "org.apache.logging.log4j:log4j-core:${versions.log4j}"
     implementation "org.apache.logging.log4j:log4j-slf4j-impl:${versions.log4j}"
     implementation "org.elasticsearch:elasticsearch:${versions.elasticsearch}"
-    implementation "org.metafacture:metafacture-biblio:${versions.metafacture}"
-    implementation "org.metafacture:metafacture-commons:${versions.metafacture}"
-    implementation "org.metafacture:metafacture-formeta:${versions.metafacture}"
-    implementation "org.metafacture:metafacture-framework:${versions.metafacture}"
-    implementation "org.metafacture:metafacture-io:${versions.metafacture}"
-    implementation "org.metafacture:metafacture-javaintegration:${versions.metafacture}"
-    implementation "org.metafacture:metafacture-json:${versions.metafacture}"
-    implementation "org.metafacture:metafacture-mangling:${versions.metafacture}"
-    implementation "org.metafacture:metafacture-plumbing:${versions.metafacture}"
-    implementation "org.metafacture:metafacture-statistics:${versions.metafacture}"
-    implementation "org.metafacture:metafacture-strings:${versions.metafacture}"
-    implementation "org.metafacture:metafacture-xml:${versions.metafacture}"
-    implementation("org.metafacture:metafix:${versions.metafix}") {
-        exclude group: 'org.slf4j', module: 'slf4j-simple'
-    }
-    implementation "org.metafacture:metamorph:${versions.metafacture}"
 }
 
 sourceSets {
