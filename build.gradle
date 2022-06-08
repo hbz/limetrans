@@ -31,6 +31,15 @@ ext {
     ]
 }
 
+project.properties.each { key, value ->
+    if (value instanceof String && !value.isEmpty()) {
+        def parts = key.split('\\.')
+        if (parts.size() == 2 && parts[0] == 'versions') {
+            versions[parts[1]] = value
+        }
+    }
+}
+
 apply from: 'gradle/tasks.gradle'
 
 repositories {
