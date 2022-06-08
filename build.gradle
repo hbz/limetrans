@@ -86,6 +86,16 @@ checkstyle {
     checkstyleTest.enabled = false // TODO: Enable
 }
 
+def printVersions = {
+    versions.sort().each { key, value -> println "- ${key}=${value}" }
+}
+
+task versions(description: 'Prints dependency versions.') {
+    doFirst { printVersions() }
+}
+
+compileJava.doFirst { printVersions() }
+
 tasks.withType(JavaCompile) {
     'all -processing -rawtypes -serial'.split().each {
         options.compilerArgs << "-Xlint:${it}"
