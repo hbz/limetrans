@@ -65,3 +65,48 @@ def execTask = { name, main ->
 execTask('filter', "${project.group}.filter.Main")
 execTask('verify-links', "${project.group}.function.VerifyLinks")
 execTask('transformation', "${project.group}.Main")
+
+def (matrixPairs, matrixProduct, matrixMultiply) = [[], []]
+testMatrix.each { key, list ->
+    list.add(0, '')
+    matrixPairs << list.collect() { [key, it] }
+}
+matrixMultiply = { product, pairs ->
+    def tail = pairs.tail()
+
+    pairs.head().each {
+        def list = product + [it]
+        tail.isEmpty() ? matrixProduct << list : matrixMultiply(list, tail)
+    }
+}
+matrixMultiply([], matrixPairs)
+
+task matrix(group: 'Verification', description: 'Runs all checks for test matrix.') {
+    doFirst {
+        def (prefix, failed) = ["-P${versionsProperty.prefix}${versionsProperty.separator}", []]
+
+        matrixProduct.each {
+            def list = it.collect { "${it[0]}=${it[1]}" }
+            def text = list.join(' ')
+
+            def result = exec {
+                logger.lifecycle("Matrix: ${text}")
+
+                executable './gradlew'
+                ignoreExitValue true
+
+                args '--console=plain', '--no-daemon', 'check'
+                args list.collect { "${prefix}${it}" }
+            }
+
+            if (result.exitValue != 0) {
+                failed << text
+            }
+        }
+
+        if (!failed.isEmpty()) {
+            failed.add(0, "${failed.size()} FAILED:")
+            throw new GradleException(failed.join("\n- "))
+        }
+    }
+}

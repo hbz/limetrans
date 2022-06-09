@@ -19,6 +19,15 @@ gradle.rootProject {
             'metafix'           : '0.2.0'
         ]
 
+        testMatrix = [
+            metafacture: [
+                'master-SNAPSHOT'
+            ],
+            metafix: [
+                'master'
+            ]
+        ]
+
         gitModules = [
             metafacture: [
                 base: 'https://github.com/metafacture',
@@ -50,12 +59,18 @@ gradle.rootProject {
                 }
             ]
         ]
+
+        versionsProperty = [
+            prefix: 'versions',
+            separator: '.'
+        ]
     }
 
+    def separator = "\\Q${versionsProperty.separator}\\E"
     rootProject.properties.each { key, value ->
         if (value instanceof String && !value.isEmpty()) {
-            def parts = key.split('\\.')
-            if (parts.size() == 2 && parts[0] == 'versions') {
+            def parts = key.split(separator)
+            if (parts.size() == 2 && parts[0] == versionsProperty.prefix) {
                 versions[parts[1]] = value
             }
         }
