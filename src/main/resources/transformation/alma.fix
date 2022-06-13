@@ -576,6 +576,7 @@ end
 # MARC/533
 set_array("PublicationPlaceOfSecondaryEdition[]")
 set_array("PublisherNameOfSecondaryEdition[]")
+set_array("ReproductionNote[]")
 set_array("SecondaryEditionPublicationDate[]")
 set_array("SecondaryEditionTitleSuper[]")
 do list(path: "533??", "var": "$i")
@@ -587,6 +588,14 @@ do list(path: "533??", "var": "$i")
   copy_field("$i.d", "SecondaryEditionPublicationDate[].$last.secondaryEdition")
   add_field("SecondaryEditionTitleSuper[].$append.__dummy__", "")
   copy_field("$i.f", "SecondaryEditionTitleSuper[].$last.secondaryEdition")
+  add_field("ReproductionNote[].$append.__dummy__", "")
+  copy_field("$i.a", "ReproductionNote[].$last.type")
+  copy_field("$i.b", "ReproductionNote[].$last.place")
+  copy_field("$i.c", "ReproductionNote[].$last.agency")
+  copy_field("$i.d", "ReproductionNote[].$last.date")
+  copy_field("$i.e", "ReproductionNote[].$last.description")
+  copy_field("$i.f", "ReproductionNote[].$last.series")
+  copy_field("$i.7", "ReproductionNote[].$last.data")
 end
 
 # MARC/340
@@ -2236,6 +2245,7 @@ retain(
   "RecordCodes[]",
   "RecordIdentifier",
   "RecordIdentifierSuper[]",
+  "ReproductionNote[]",
   "SecondaryEditionPublicationDate[]",
   "SecondaryEditionTitleSuper[]",
   "SeriesAddedEntryUniformTitle[]",

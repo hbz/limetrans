@@ -691,6 +691,12 @@
   "PublisherNameOfSecondaryEdition" : [ {
     "name" : "Elsevier"
   } ],
+  "ReproductionNote" : [ {
+    "type" : "Digitalisierte Ausg.",
+    "place" : "[Amsterdam]",
+    "agency" : "Elsevier",
+    "date" : "2009"
+  } ],
   "SecondaryEditionPublicationDate" : [ {
     "secondaryEdition" : "2009"
   } ],
@@ -2527,6 +2533,13 @@
   } ],
   "PublisherNameOfSecondaryEdition" : [ {
     "name" : "Olms"
+  } ],
+  "ReproductionNote" : [ {
+    "type" : "Mikrofiche-Ausg.: Hildesheim : Olms, 1996. 20 Mikrofiches. (Deutsche Zeitschriften des 18. und 19.Jahrhunderts)",
+    "place" : "Hildesheim",
+    "agency" : "Olms",
+    "date" : "1996-1996",
+    "series" : "Deutsche Zeitschriften des 18. und 19. Jahrhunderts"
   } ],
   "SecondaryEditionPublicationDate" : [ {
     "secondaryEdition" : "1996-1996"
@@ -53917,6 +53930,15 @@
     "name" : "UMI",
     "name" : "Mikrofilm-Ausg."
   } ],
+  "ReproductionNote" : [ {
+    "type" : "Mikrofilm-Ausg.: Ann Arbor, Mich. : UMI",
+    "place" : "Mikrofilm-Ausg.",
+    "place" : "Ann Arbor, Mich.",
+    "place" : "Mikrofilm-Ausg.",
+    "agency" : "Mikrofilm-Ausg.",
+    "agency" : "UMI",
+    "agency" : "Mikrofilm-Ausg."
+  } ],
   "Country" : [ {
     "countryISO" : "US"
   }, {
@@ -54166,6 +54188,18 @@
     "name" : "Mikropress",
     "name" : "Mikrofilm-Ausg.",
     "name" : "Staatsbibliothek zu Berlin"
+  } ],
+  "ReproductionNote" : [ {
+    "type" : "Mikrofilm-Ausg.: Bonn : Mikropress. - Mikrofilm-Ausg.: Berlin : Staatsbibliothek zu Berlin. - Mikrofiche-Ausg.: Hamburg : Alpha-Com Ges. für Mikroverfilmung",
+    "place" : "Mikrofilm-Ausg.",
+    "place" : "Bonn",
+    "place" : "Mikrofilm-Ausg.",
+    "place" : "Berlin",
+    "agency" : "Mikrofilm-Ausg.",
+    "agency" : "Mikropress",
+    "agency" : "Mikrofilm-Ausg.",
+    "agency" : "Staatsbibliothek zu Berlin",
+    "series" : "Alpha-Journal"
   } ],
   "SecondaryEditionTitleSuper" : [ {
     "secondaryEdition" : "Alpha-Journal"
@@ -57819,6 +57853,18 @@
     "name" : "Mikropress",
     "name" : "Mikrofilm-Ausg.",
     "name" : "Research Publ. Internat"
+  } ],
+  "ReproductionNote" : [ {
+    "type" : "Mikrofilm-Ausg.: Bonn : Mikropress. - Mikrofilm-Ausg.: Woodbridge, Conn. [u.a.] : Research Publ. Internat, 1995. Mikrofilme ; 35 mm",
+    "place" : "Mikrofilm-Ausg.",
+    "place" : "Bonn",
+    "place" : "Mikrofilm-Ausg.",
+    "place" : "Woodbridge, Conn. [u.a.]",
+    "agency" : "Mikrofilm-Ausg.",
+    "agency" : "Mikropress",
+    "agency" : "Mikrofilm-Ausg.",
+    "agency" : "Research Publ. Internat",
+    "date" : "1995-1995"
   } ],
   "SecondaryEditionPublicationDate" : [ {
     "secondaryEdition" : "1995-1995"
@@ -67934,6 +67980,9 @@
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
   "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Zeitung", "eingestelltes Erscheinen", "wöchentlich", "Zeitschrift" ],
+  "ReproductionNote" : [ {
+    "type" : "Mikrofiche-Ausg."
+  } ],
   "Country" : [ {
     "countryISO" : "US"
   } ],
@@ -68077,6 +68126,17 @@
     "name" : "EP Microform Ltd.",
     "name" : "Mikrofilm-Ausgabe",
     "name" : "British Museum"
+  } ],
+  "ReproductionNote" : [ {
+    "type" : "Mikrofilm-Ausgabe: Wakefield : EP Microform Ltd. - Mikrofilm-Ausg.: London : British Museum",
+    "place" : "Mikrofilm-Ausgabe",
+    "place" : "Wakefield",
+    "place" : "Mikrofilm-Ausgabe",
+    "place" : "London",
+    "agency" : "Mikrofilm-Ausgabe",
+    "agency" : "EP Microform Ltd.",
+    "agency" : "Mikrofilm-Ausgabe",
+    "agency" : "British Museum"
   } ],
   "Country" : [ {
     "countryISO" : "GB"
@@ -68429,6 +68489,15 @@
     "name" : "Die Deutsche Bibliothek",
     "name" : "MFA"
   } ],
+  "ReproductionNote" : [ {
+    "type" : "Mikrofilm-Ausg.: Frankfurt, Main : Die Deutsche Bibliothek, 2000. - Mikrofilm-Ausg.: Marne-la-Vallée : Association pour la Conservation et la Reproduction Photographique de la Presse. - Mikrofilm-Ausg.: Dortmund : MFA.(Antinationalsozialistische deutsche Exilliteratur 1933 - 1945)",
+    "place" : "Frankfurt, Main",
+    "place" : "Dortmund",
+    "agency" : "Die Deutsche Bibliothek",
+    "agency" : "MFA",
+    "date" : "2000-2000",
+    "series" : "Antinationalsozialistische deutsche Exilliteratur 1933 - 1945"
+  } ],
   "SecondaryEditionPublicationDate" : [ {
     "secondaryEdition" : "2000-2000"
   } ],
@@ -68566,6 +68635,17 @@
     "name" : "Die Deutsche Bibliothek",
     "name" : "Mikrofilm-Ausg.",
     "name" : "Mikrofilmarchiv der Deutschsprachigen Presse"
+  } ],
+  "ReproductionNote" : [ {
+    "type" : "Mikrofilm-Ausg.: Frankfurt, M. : Die Deutsche Bibliothek. - Mikrofilm-Ausg.: Dortmund : Mikrofilmarchiv der deutschsprachigen Presse",
+    "place" : "Mikrofilm-Ausg.",
+    "place" : "Frankfurt, M.",
+    "place" : "Mikrofilm-Ausg.",
+    "place" : "Dortmund",
+    "agency" : "Mikrofilm-Ausg.",
+    "agency" : "Die Deutsche Bibliothek",
+    "agency" : "Mikrofilm-Ausg.",
+    "agency" : "Mikrofilmarchiv der Deutschsprachigen Presse"
   } ],
   "TypeMediaSpecialPreservation" : [ "Archivierung/Langzeitarchivierung gewährleistet" ],
   "Country" : [ {
