@@ -1,13 +1,13 @@
 def (root, extension, skel, required) = [file('.').toPath(), '.json', 'template', ['isil']]
 
 def camelize = { it.replaceAll(~/\b./) { it[0].toUpperCase() } }
-def taskName = { prefix, name -> prefix + camelize(name).replaceAll('[^a-zA-Z0-9]', '') }
+def taskName = { prefix, list -> prefix + list.collect { camelize(it) }.join('').replaceAll('[^a-zA-Z0-9]', '') }
 
 def propTask = { group, list ->
     def prop = "${project.group}.${group}"
 
     list.each { value ->
-        task(taskName(group, value), group: group, description: "Sets -D${prop}=${value}") {
+        task(taskName(group, [value]), group: group, description: "Sets -D${prop}=${value}") {
             doLast { System.properties[prop] = value }
         }
     }
@@ -20,7 +20,7 @@ file('src/conf').eachDir {
     def (group, path) = [it.getName(), it.toPath()]
 
     def indexTask = { name, list ->
-        task(taskName(group, name), type: JavaExec, group: group, description: list.collect { root.relativize(it.toPath()) }) {
+        task(taskName(group, [name]), type: JavaExec, group: group, description: list.collect { root.relativize(it.toPath()) }) {
             classpath = sourceSets.main.runtimeClasspath
             mainClass = "${project.group}.Main"
             args list
@@ -28,7 +28,7 @@ file('src/conf').eachDir {
     }
 
     def newTask = { source ->
-        def name = taskName(group, 'new')
+        def name = taskName(group, ['new'])
         def groupTask = project.tasks.findByName(name) ?:
             task(name, group: group, description: "Adds new configuration ${required}") {
                 doLast {
@@ -56,7 +56,7 @@ file('src/conf').eachDir {
 }
 
 def execTask = { name, main ->
-    task(taskName('exec', name), type: JavaExec, group: 'Exec', description: 'Execute ' + main + '.') {
+    task(taskName('exec', [name]), type: JavaExec, group: 'Exec', description: 'Execute ' + main + '.') {
         classpath = sourceSets.main.runtimeClasspath
         mainClass = main
     }
@@ -81,32 +81,18 @@ matrixMultiply = { product, pairs ->
 }
 matrixMultiply([], matrixPairs)
 
-task matrix(group: 'Verification', description: 'Runs all checks for test matrix.') {
-    doFirst {
-        def (prefix, failed) = ["-P${versionsProperty.prefix}${versionsProperty.separator}", []]
+task matrix(group: 'Verification', description: 'Runs all checks for test matrix.')
 
-        matrixProduct.each {
-            def list = it.collect { "${it[0]}=${it[1]}" }
-            def text = list.join(' ')
+matrixProduct.each {
+    def (text, prop) = ["Matrix: ${it.collect { "${it[0]}=${it[1]}" }.join(' ')}", [:]]
+    it.each { prop["${versionsProperty.prefix}${versionsProperty.separator}${it[0]}"] = it[1] }
 
-            def result = exec {
-                logger.lifecycle("Matrix: ${text}")
+    task(taskName('matrix', it.flatten()), type: GradleBuild, group: 'Verification', description: text) {
+        startParameter.projectProperties = prop
 
-                executable './gradlew'
-                ignoreExitValue true
+        buildName = "[${text}]"
+        tasks = ['check']
 
-                args '--console=plain', '--no-daemon', 'check'
-                args list.collect { "${prefix}${it}" }
-            }
-
-            if (result.exitValue != 0) {
-                failed << text
-            }
-        }
-
-        if (!failed.isEmpty()) {
-            failed.add(0, "${failed.size()} FAILED:")
-            throw new GradleException(failed.join("\n- "))
-        }
+        matrix.dependsOn it
     }
 }
