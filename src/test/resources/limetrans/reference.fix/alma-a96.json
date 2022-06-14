@@ -2215,6 +2215,9 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
+  "CurrentPublicationFrequency" : [ {
+    "frequency" : "Semiannual"
+  } ],
   "TypeMediaSpecialPreservation" : [ "Mode of access: World Wide Web." ],
   "IdentifierOCLC" : [ {
     "identifierOCLC" : "60617245"
@@ -2311,6 +2314,9 @@
 {
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
+  "CurrentPublicationFrequency" : [ {
+    "frequency" : "Quarterly"
+  } ],
   "IdentifierOCLC" : [ {
     "identifierOCLC" : "22694482"
   } ],

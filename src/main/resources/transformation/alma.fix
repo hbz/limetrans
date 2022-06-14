@@ -582,6 +582,24 @@ do list(path: "655?7", "var": "$i")
   end
 end
 
+# MARC/310
+set_array("CurrentPublicationFrequency[]")
+do list(path: "310??", "var": "$i")
+  add_field("CurrentPublicationFrequency[].$append.__dummy__", "")
+  copy_field("$i.a", "CurrentPublicationFrequency[].$last.frequency")
+  copy_field("$i.b", "CurrentPublicationFrequency[].$last.date")
+  copy_field("$i.0", "CurrentPublicationFrequency[].$last.identifier")
+end
+
+# MARC/321
+set_array("FormerPublicationFrequency[]")
+do list(path: "321??", "var": "$i")
+  add_field("FormerPublicationFrequency[].$append.__dummy__", "")
+  copy_field("$i.a", "FormerPublicationFrequency[].$last.frequency")
+  copy_field("$i.b", "FormerPublicationFrequency[].$last.date")
+  copy_field("$i.0", "FormerPublicationFrequency[].$last.identifier")
+end
+
 # MARC/533
 set_array("PublicationPlaceOfSecondaryEdition[]")
 set_array("PublisherNameOfSecondaryEdition[]")
@@ -2209,6 +2227,7 @@ retain(
   "CorporateBody[]",
   "Country[]",
   "CreatorStatement",
+  "CurrentPublicationFrequency[]",
   "DataSourceEntry[]",
   "DateFirst",
   "DateLast",
@@ -2227,6 +2246,7 @@ retain(
   "Extent",
   "FileCharacteristics[]",
   "FormatCarrier[]",
+  "FormerPublicationFrequency[]",
   "HoldingsStatement[]",
   "HostItemEntry[]",
   "IdentifierAlma",
