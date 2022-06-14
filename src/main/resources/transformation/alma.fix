@@ -1593,6 +1593,13 @@ do list(path: "[17]00[013] ", "var": "$i")
 end
 move_field("@person", "PersonContributor[]")
 
+# MARC/588
+set_array("SourceOfDescriptionNote[]")
+do list(path: "588??", "var": "$i")
+  add_field("SourceOfDescriptionNote[].$append.__dummy__", "")
+  copy_field("$i.a", "SourceOfDescriptionNote[].$last.note")
+end
+
 /*
 # MARC/580
 set_array("DescriptionOfRelatedEditions[]")
@@ -2289,6 +2296,7 @@ retain(
   "SeriesAddedEntryUniformTitle[]",
   "SortableVolumeDesignation[]",
   "SoundCharacteristics[]",
+  "SourceOfDescriptionNote[]",
   "SubSeriesEntry[]",
   "SubjectDNB[]",
   "SubjectGHBLocal[]",
