@@ -557,8 +557,17 @@ do list(path: "348??", "var": "$i")
   end
 end
 # MARC/655
+set_array("TypeHeading[]")
 do list(path: "655?7", "var": "$i")
   if any_equal("$i.2", "gnd-content")
+    add_field("TypeHeading[].$append.__dummy__", "")
+    copy_field("$i.a", "TypeHeading[].$last.term")
+    copy_field("$i.v", "TypeHeading[].$last.form")
+    copy_field("$i.x", "TypeHeading[].$last.general")
+    copy_field("$i.y", "TypeHeading[].$last.chronology")
+    copy_field("$i.z", "TypeHeading[].$last.geography")
+    copy_field("$i.0", "TypeHeading[].$last.identifier")
+    copy_field("$i.3", "TypeHeading[].$last.materials")
     do list(path: "$i.a", "var": "$j")
       copy_field("$j", "ExtendedType[]")
       lookup("$j", "extended-type-content", delete: "true")
@@ -2270,6 +2279,7 @@ retain(
   "TitleSuper[]",
   "TitleUniform",
   "TranslationEntry[]",
+  "TypeHeading[]",
   "TypeMedia",
   "TypeMediaSpecialPreservation[]",
   "TypeMediaSpecial[]",
