@@ -967,6 +967,14 @@ end
 
 copy_field("@isil", "collection")
 
+# MARC/210
+set_array("AbbreviatedTitle[]")
+do list(path: "210??", "var": "$i")
+  add_field("AbbreviatedTitle[].$append.__dummy__", "")
+  copy_field("$i.a", "AbbreviatedTitle[].$last.title")
+  copy_field("$i.b", "AbbreviatedTitle[].$last.qualifier")
+end
+
 # MARC/240
 do list(path: "240??.a", "var": "$i")
   replace_all("$i", "[.]$", "")
@@ -2189,6 +2197,7 @@ uniq("introx.subject[]")
 
 retain(
   "$[deletion-literal]",
+  "AbbreviatedTitle[]",
   "Abstract",
   "AdditionalPhysicalFormEntry[]",
   "CarrierType[]",
