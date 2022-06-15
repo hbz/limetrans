@@ -869,6 +869,15 @@ else
   end
 end
 
+if any_equal("@facet_type", "Datenbank")
+  add_field("@facet_format", "Datenbank")
+  if exists("@facet_type.1")
+    filter("@facet_type", "^Datenbank$", invert: "true")
+  else
+    remove_field("@facet_type")
+  end
+end
+
 # MARC/008, MARC/041
 copy_field("008", "@language_source")
 substring("@language_source", "35", "3")
