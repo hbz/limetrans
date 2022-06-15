@@ -362,7 +362,7 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
             .format(LocalDate.now());
     }
 
-    private void switchIndex() { // checkstyle-disable-line ReturnCount
+    private void switchIndex() { // checkstyle-disable-line CyclomaticComplexity|ReturnCount
         final String aliasName = getAliasName();
         if (aliasName == null) {
             return;
@@ -394,7 +394,7 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
 
         final Set<String> aliases = new HashSet<>();
 
-        if (oldIndex == null) {
+        if (oldIndex == null || !indexExists(oldIndex)) {
             aliasesRequest.addAlias(newIndex, aliasName);
             aliases.add(aliasName);
         }
@@ -488,8 +488,12 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
     }
 
     private boolean indexExists() {
+        return indexExists(getIndexName());
+    }
+
+    private boolean indexExists(final String aIndexName) {
         return mClient.admin().indices()
-            .prepareExists(getIndexName()).get().isExists();
+            .prepareExists(aIndexName).get().isExists();
     }
 
     private void waitForYellowStatus() {
