@@ -149,6 +149,10 @@
             "cql.allIndexes"
           ]
         },
+        "shelfmark": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
         "subject": {
           "type": "string",
           "index": "not_analyzed"
@@ -968,6 +972,14 @@
           "doc_values": false,
           "copy_to": [
             "introx.localCallNumber"
+          ]
+        },
+        "shelfmark": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "introx.shelfmark"
           ]
         }
       }
