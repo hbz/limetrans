@@ -1812,7 +1812,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Bildband" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1978" ]
   },
@@ -2420,7 +2420,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie", "Sonstiges" ],
+    "type" : [ "Monographie", "Sonstiges", "Ausstellungskatalog" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1978" ]
   },
@@ -2767,7 +2767,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1978" ]
   },
@@ -3410,7 +3410,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Bildband" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1981" ]
   },
@@ -4588,7 +4588,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie", "Sonstiges" ],
+    "type" : [ "Monographie", "Sonstiges", "Ausstellungskatalog" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1979" ]
   },
@@ -4864,7 +4864,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie", "Sonstiges", "Schriftenreihe" ],
+    "type" : [ "Monographie", "Sonstiges", "Kommentar", "Schriftenreihe" ],
     "language" : [ "Deutsch" ]
   },
   "introx" : {
@@ -5518,7 +5518,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie", "Sonstiges", "Schriftenreihe" ],
+    "type" : [ "Monographie", "Sonstiges", "Kommentar", "Schriftenreihe" ],
     "language" : [ "Deutsch" ]
   },
   "introx" : {
@@ -6292,7 +6292,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Aufsatzsammlung" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "1990" ]
   },
@@ -6411,7 +6411,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie", "Schriftenreihe" ],
+    "type" : [ "Monographie", "Kommentar", "Schriftenreihe" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1992" ]
   },
@@ -6670,7 +6670,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1994" ]
   },
@@ -8266,7 +8266,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1999" ]
   },
@@ -8420,7 +8420,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1999" ]
   },
@@ -8574,7 +8574,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Sonstiges" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1999" ]
   },
@@ -8717,7 +8717,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Aufsatzsammlung" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1999" ]
   },
@@ -9285,7 +9285,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1999" ]
   },
@@ -9409,7 +9409,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1999" ]
   },
@@ -9883,7 +9883,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Bildband" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1999" ]
   },
@@ -10325,7 +10325,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Ausstellungskatalog" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1999" ]
   },
@@ -10449,7 +10449,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie", "Sonstiges" ],
+    "type" : [ "Monographie", "Sonstiges", "Ausstellungskatalog" ],
     "language" : [ "Deutsch", "Englisch" ],
     "date" : [ "1999" ]
   },
@@ -10587,7 +10587,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Bildband" ],
     "language" : [ "Deutsch" ],
     "date" : [ "1999" ]
   },
@@ -10958,7 +10958,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Beispielsammlung" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2000" ]
   },
@@ -11079,7 +11079,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Beispielsammlung" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2000" ]
   },
@@ -11434,7 +11434,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Ausstellungskatalog" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2000" ]
   },
@@ -11765,7 +11765,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Bildband" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2002" ]
   },
@@ -11867,7 +11867,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Bildband" ],
     "language" : [ "Englisch" ],
     "date" : [ "2003" ]
   },
@@ -12094,7 +12094,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Lehrmittel" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2003" ]
   },
@@ -12226,7 +12226,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie", "Sonstiges" ],
+    "type" : [ "Monographie", "Sonstiges", "Ausstellungskatalog" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2001" ]
   },
@@ -13234,7 +13234,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Bildband" ],
     "language" : [ "Englisch" ],
     "date" : [ "2003" ]
   },
@@ -13938,7 +13938,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Einführung" ],
     "language" : [ "Englisch" ],
     "date" : [ "2006" ]
   },
@@ -14067,7 +14067,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Beispielsammlung" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2006" ]
   },
@@ -14282,7 +14282,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Aufsatzsammlung" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2007" ]
   },
@@ -14423,7 +14423,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2008" ]
   },
@@ -14702,7 +14702,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Bildband" ],
     "language" : [ "Englisch" ],
     "date" : [ "2008" ]
   },
@@ -14961,7 +14961,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie", "Sonstiges" ],
+    "type" : [ "Monographie", "Sonstiges", "Bildband" ],
     "language" : [ "Englisch" ],
     "date" : [ "2009" ]
   },
@@ -15338,7 +15338,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Bildband" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2011" ]
   },
@@ -15481,7 +15481,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie", "Konferenzschrift" ],
+    "type" : [ "Monographie", "Konferenzschrift", "Ausstellungskatalog" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2012" ]
   },
@@ -15784,7 +15784,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie", "Sonstiges" ],
+    "type" : [ "Monographie", "Sonstiges", "Ausstellungskatalog" ],
     "language" : [ "Deutsch", "Englisch" ],
     "date" : [ "2013" ]
   },
@@ -16072,7 +16072,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie", "Sonstiges" ],
+    "type" : [ "Monographie", "Sonstiges", "Ausstellungskatalog" ],
     "language" : [ "Englisch" ],
     "date" : [ "2015" ]
   },
@@ -16494,7 +16494,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
     "language" : [ "Englisch" ],
     "date" : [ "2017" ]
   },
@@ -16624,7 +16624,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2017" ]
   },
@@ -16818,7 +16818,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2017" ]
   },
@@ -17017,7 +17017,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Aufsatzsammlung" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2017" ]
   },
@@ -17762,7 +17762,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Führer" ],
     "language" : [ "Deutsch", "Englisch" ],
     "date" : [ "2017" ]
   },
@@ -18005,7 +18005,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Sonstiges", "Aufgabensammlung" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2017" ]
   },
@@ -18111,7 +18111,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Führer" ],
     "language" : [ "Englisch" ],
     "date" : [ "2017" ]
   },
@@ -18228,7 +18228,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Führer" ],
     "language" : [ "Englisch" ],
     "date" : [ "2017" ]
   },
@@ -18499,7 +18499,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2018" ]
   },
@@ -18684,7 +18684,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2018" ]
   },
@@ -19006,7 +19006,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Aufsatzsammlung", "Bildband" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2018" ]
   },
@@ -19432,7 +19432,7 @@
   },
   "dc" : {
     "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2019" ]
   },
