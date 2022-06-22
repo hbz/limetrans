@@ -869,6 +869,13 @@ else
   end
 end
 
+if exists("700??")
+  unless exists("100??")
+    add_field("@facet_type", "Sammelwerk")
+    filter("@facet_type", "^Monographie$", invert: "true")
+  end
+end
+
 if any_equal("@facet_type", "Datenbank")
   add_field("@facet_format", "Datenbank")
   if exists("@facet_type.1")
