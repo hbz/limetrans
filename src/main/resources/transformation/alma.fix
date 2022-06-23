@@ -10,12 +10,7 @@ do hbz.limetrans.function.Once()
 end
 
 hbz.limetrans.function.DropLocal()
-
-if exists("008.1")
-  copy_field("008.1", "@008")
-  remove_field("008")
-  move_field("@008", "008")
-end
+hbz.limetrans.function.DropRepeated("008")
 
 # MARC/leader
 copy_field("leader", "@LeaderPos05")
