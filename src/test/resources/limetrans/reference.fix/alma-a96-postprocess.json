@@ -57123,3 +57123,85 @@
   } ],
   "TypeMedia" : "Elektronische Ressource"
 }
+{
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Englisch" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "subject" : [ "Electronic journals", "Social Sciences", "Humanities", "Iran" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99371368699806441",
+    "identifierMMSIZ" : "991005896151006444",
+    "identifierPID" : "53102519390006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99371368699806441",
+    "identifierForTheRecord" : "(DE-605)99371368699806441",
+    "verifyingSuperIdentifier" : "(DE-605)99371368699806441",
+    "verifyingSuperIdentifier" : "(DE-A96)991005896151006444"
+  },
+  "DateFirst" : {
+    "date" : "2008"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "2820-9893",
+    "identifierISSNNormalized" : "28209893"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "فصلنامه بورس اوراق بهادار"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Iran, Islamic Republic of" ],
+    "name" : [ "Securities Exchange" ]
+  } ],
+  "Description" : {
+    "description" : [ "Refereed/Peer-reviewed" ]
+  },
+  "DescriptionOfExpression" : [ {
+    "description" : "Articles are in Persian."
+  } ],
+  "Summary" : {
+    "abstract" : [ "Devoted to research and scholarship in Economics and Finance." ]
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISSN" : "2228-5431"
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "DOAJ Directory of Open Access Journals - Not for CDI Discovery",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53102519390006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99371368699806441"
+  }, {
+    "uid" : "(DE-A96)991005896151006444"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : [ "Zeitschrift" ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Electronic journals",
+    "subjectIdentifier" : [ "(OCoLC)fst00907317" ]
+  }, {
+    "subjectTopicName" : "Social Sciences",
+    "subjectAddendum" : "Periodicals",
+    "subjectIdentifier" : [ "(OCoLC)fst001122939" ]
+  }, {
+    "subjectTopicName" : "Humanities",
+    "subjectAddendum" : "Periodicals",
+    "subjectIdentifier" : [ "(OCoLC)fst0096361" ]
+  }, {
+    "subjectGeoName" : "Iran",
+    "subjectIdentifier" : [ "(OCoLC)fst01204889" ]
+  } ]
+}
