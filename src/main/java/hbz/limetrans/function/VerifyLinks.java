@@ -4,20 +4,11 @@ import hbz.limetrans.util.Helpers;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.metafacture.io.FileCompression;
 import org.metafacture.metafix.Metafix;
 import org.metafacture.metafix.Record;
 import org.metafacture.metafix.Value;
 import org.metafacture.metafix.api.FixFunction;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.nio.file.attribute.FileTime;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -36,8 +27,6 @@ public class VerifyLinks implements FixFunction {
 
     private static final String VERIFYING_PREFIX = "verifying";
     private static final String VERIFIED_PREFIX = "verified";
-
-    private static final FileCompression COMPRESSION = FileCompression.AUTO;
 
     private static final Map<String, List<String>> LINK_MAP = new HashMap<>();
     private static final Map<String, List<String>> SUPER_MAP = new HashMap<>();
@@ -176,30 +165,7 @@ public class VerifyLinks implements FixFunction {
 
     private static Set<String> loadIdSet(final String aPath, final boolean aRequired) {
         final Set<String> set = new HashSet<>();
-        final File file = new File(aPath);
-
-        final Long rssBefore = Helpers.getRss();
-
-        if (aRequired || file.exists()) {
-            try (
-                InputStream inputStream = new FileInputStream(aPath);
-                InputStream decompressor = COMPRESSION.createDecompressor(inputStream, true);
-                Reader reader = new InputStreamReader(decompressor);
-                BufferedReader bufferedReader = new BufferedReader(reader)
-            ) {
-                bufferedReader.lines().forEach(set::add);
-            }
-            catch (final IOException e) {
-                LOGGER.error("Failed to load ID set: " + aPath, e);
-                return null;
-            }
-        }
-
-        final Long rssAfter = Helpers.getRss();
-        LOGGER.info("Loaded ID set: {} [mtime={}, count={}, rss={}M]", aPath,
-                file.exists() ? FileTime.fromMillis(file.lastModified()) : null, set.size(), rssAfter - rssBefore);
-
-        return set;
+        return Helpers.loadFile(aPath, aRequired, "ID set", set::add, set::size, LOGGER) ? set : null;
     }
 
 }

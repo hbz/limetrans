@@ -1,9 +1,15 @@
 package hbz.limetrans.util;
 
+import org.apache.logging.log4j.Logger;
+import org.metafacture.io.FileCompression;
+
+import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.StringReader;
 import java.io.StringWriter;
@@ -13,6 +19,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.nio.file.attribute.FileTime;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -26,7 +33,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
-public class Helpers {
+public class Helpers { // checkstyle-disable-line ClassDataAbstractionCoupling|ClassFanOutComplexity
 
     public static final String GROUP_PREFIX = "hbz.limetrans.";
     public static final String CLASSPATH_PREFIX = "classpath:";
@@ -38,6 +45,8 @@ public class Helpers {
 
     private static final TransformerFactory TRANSFORMER_FACTORY = TransformerFactory.newInstance();
     private static final String INDENT_AMOUNT_KEY = "{http://xml.apache.org/xslt}indent-amount";
+
+    private static final FileCompression COMPRESSION = FileCompression.AUTO;
 
     private Helpers() {
         throw new IllegalAccessError("Utility class");
@@ -99,6 +108,33 @@ public class Helpers {
         }
 
         return settingsBuilder.build();
+    }
+
+    public static boolean loadFile(final String aPath, final boolean aRequired, final String aDescription, final Consumer<String> aConsumer, final Supplier<Integer> aSupplier, final Logger aLogger) {
+        final File file = new File(aPath);
+
+        final Long rssBefore = getRss();
+
+        if (aRequired || file.exists()) {
+            try (
+                InputStream inputStream = new FileInputStream(aPath);
+                InputStream decompressor = COMPRESSION.createDecompressor(inputStream, true);
+                Reader reader = new InputStreamReader(decompressor);
+                BufferedReader bufferedReader = new BufferedReader(reader)
+            ) {
+                bufferedReader.lines().forEach(aConsumer);
+            }
+            catch (final IOException e) {
+                aLogger.error("Failed to load " + aDescription + ": " + aPath, e);
+                return false;
+            }
+        }
+
+        final Long rssAfter = getRss();
+        aLogger.info("Loaded {}: {} [mtime={}, count={}, rss={}M]", aDescription, aPath,
+                file.exists() ? FileTime.fromMillis(file.lastModified()) : null, aSupplier.get(), rssAfter - rssBefore);
+
+        return true;
     }
 
     public static String slurpFile(final String aPath) throws IOException {
