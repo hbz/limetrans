@@ -72093,3 +72093,89 @@
     "title" : [ "DBU Bauband", "DBU Bauband" ]
   }
 }
+{
+  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB" ],
+  "Country" : [ {
+    "countryISO" : "DXDE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT007102881"
+  } ],
+  "collection" : "DE-605",
+  "VolumeDesignation" : {
+    "volumeDesignation" : "6"
+  },
+  "RecordIdentifierSuper" : [ {
+    "recordIdentifierSuper" : "(DE-605)HT000006434"
+  } ],
+  "SortableVolumeDesignation" : [ {
+    "volumeDesignation" : "6"
+  } ],
+  "CreatorStatement" : {
+    "creatorStatement" : [ "hrsg. von Adelbert Keller" ]
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Sammelwerk", "Teil eines Werkes" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1877" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Germanistik" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "990084158540206441",
+    "identifierMMSIZ" : "990000016530106467"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990084158540206441",
+    "identifierForTheRecord" : "(DE-605)HT007102881"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "[Von der Mynne Kraft]"
+  }, {
+    "titleMain" : "Altdeutsche Gedichte"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Tübingen" ],
+    "name" : [ "Fues" ],
+    "chronology" : [ "1877" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Tübingen"
+  } ],
+  "DateProper" : {
+    "date" : [ "1877" ]
+  },
+  "Extent" : {
+    "extent" : "4 S."
+  },
+  "PersonContributor" : [ {
+    "personName" : "Keller, Adelbert <<von>>",
+    "personBio" : "1812-1883",
+    "personIdentifier" : [ "(DE-588)118831216" ],
+    "identifierGND" : [ "118831216" ]
+  } ],
+  "HostItemEntry" : [ {
+    "controlNumber" : "(DE-605)HT000006434",
+    "identifierForLinkingEntry" : "(DE-605)HT000006434"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-468",
+    "subject" : "CBP"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990084158540206441"
+  }, {
+    "uid" : "(DE-605)HT007102881"
+  }, {
+    "uid" : "()990000016530106467"
+  } ]
+}
