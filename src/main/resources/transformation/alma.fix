@@ -1032,6 +1032,7 @@ do list(path: "245??.n", "var": "$i")
   end
 end
 # MARC/773
+set_array("@host_callnumber")
 set_array("RecordIdentifierSuper[]")
 set_array("SortableVolumeDesignation[]")
 do list(path: "7730?", "var": "$i")
@@ -1043,6 +1044,8 @@ do list(path: "7730?", "var": "$i")
   add_field("RecordIdentifierSuper[].$append.__dummy__", "")
   copy_field("$i.w", "RecordIdentifierSuper[].$last.recordIdentifierSuper")
 end
+copy_field("7731?.w", "@host_callnumber")
+lookup("@host_callnumber.*", "alma-item-callnumber", delete: "true")
 
 # MARC/245
 set_array("CreatorStatement.creatorStatement[]")
@@ -1934,6 +1937,11 @@ do list(path: "ITM  ", "var": "$i")
     move_field("@callnumber", "Item[].$last.callnumber")
     copy_field("$i.x", "Item[].$last.shelfmark")
   end
+end
+split_field("@host_callnumber", "\\u001F")
+do list(path: "@host_callnumber", "var": "$i")
+  add_field("Item[].$append.__dummy__", "")
+  copy_field("$i", "Item[].$last.callnumber")
 end
 uniq("Item[]")
 

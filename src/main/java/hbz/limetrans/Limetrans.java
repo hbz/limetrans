@@ -248,7 +248,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         }
     }
 
-    private String initializeAlma(final Settings aSettings) {
+    private String initializeAlma(final Settings aSettings) { // checkstyle-disable-line JavaNCSS
         // Export ("PubHub") BGZF contains a large XML file; increase limits for XML parser.
         // »The accumulated size of entities is "50,000,001" that exceeded the "50,000,000" limit set by "FEATURE_SECURE_PROCESSING".«
         // https://docs.oracle.com/en/java/javase/13/security/java-api-xml-processing-jaxp-security-guide.html#GUID-82F8C206-F2DF-4204-9544-F96155B1D258__TABLE_RQ1_3PY_HHB
@@ -276,6 +276,16 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         mVars.put("id-suffix", almaSettings.get("id-suffix", ""));
 
         mMaps.put("institution-code-to-isil", INSTITUTION_CODE_TO_ISIL);
+
+        final Map<String, String> callnumberMap = new HashMap<>();
+        mMaps.put("alma-item-callnumber", callnumberMap);
+
+        Helpers.loadFile(mVars.get("isil-path") + ".callnumber.kv.bgzf", false, "callnumber map", l -> {
+            final String[] parts = l.split("\u001D");
+            if (parts.length == 2) {
+                callnumberMap.put(parts[0], parts[1]);
+            }
+        }, callnumberMap::size, LOGGER);
 
         final String rulesSuffix;
 
