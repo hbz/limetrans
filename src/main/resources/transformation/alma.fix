@@ -1620,120 +1620,14 @@ do list(path: "588??", "var": "$i")
   copy_field("$i.a", "SourceOfDescriptionNote[].$last.note")
 end
 
-/*
-# MARC/580
-set_array("DescriptionOfRelatedEditions[]")
-add_field("DescriptionOfRelatedEditions[].$append.__dummy__", "")
-copy_field("580  .a", "DescriptionOfRelatedEditions[].$last.description")
-# MARC/773, MARC/775, MARC/776
-do list(path: "77[356]??", "var": "$i")
-  add_field("DescriptionOfRelatedEditions[].$append.__dummy__", "")
-  do list(path: "$i.i", "var": "$j")
-    copy_field("$j", "@77x_i")
-    replace_all("@77x_i", ":$", "")
-    move_field("@77x_i", "DescriptionOfRelatedEditions[].$last.prefix")
-  end
-  set_array("@description")
-  replace_all("$i.a", "[.:]$", "")
-  copy_field("$i.a", "@description")
-  do list(path: "$i.t", "var": "$j")
-    copy_field("$j", "@77x_t")
-    replace_all("@77x_t", "[.]$", "")
-    move_field("@77x_t", "@description")
-  end
-  join_field("@description", ": ")
-  move_field("@description", "DescriptionOfRelatedEditions[].$last.description")
-  copy_field("$i.n", "DescriptionOfRelatedEditions[].$last.note[]")
-end
-*/
-
-set_array("IdentifierISBNParallel[]")
-/*
-# MARC/773, MARC/775, MARC/776
-do list(path: "77[356]??", "var": "$i")
-  add_field("IdentifierISBNParallel[].$append.__dummy__", "")
-  copy_field("$i.z", "IdentifierISBNParallel[].$last.identifierISBN[]")
-end
-*/
 # MARC/964
+set_array("IdentifierISBNParallel[]")
 do list(path: "9640s", "var": "$i")
   if any_equal("$i.V", "086a")
     add_field("IdentifierISBNParallel[].$append.__dummy__", "")
     copy_field("$i.[abcdehnpqs]", "IdentifierISBNParallel[].$last.identifierISBN[]")
   end
 end
-
-/*
-# MARC/780
-set_array("@descriptionOfEditionsOrVolumes")
-do list(path: "78000", "var": "$i")
-  add_field("@prefix", "Fortsetzung von")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-do list(path: "78001", "var": "$i")
-  add_field("@prefix", "Teilweise Fortsetzung von")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-do list(path: "78002", "var": "$i")
-  add_field("@prefix", "Ersatz von")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-do list(path: "78003", "var": "$i")
-  add_field("@prefix", "Teilweise Ersatz von")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-do list(path: "78004", "var": "$i")
-  add_field("@prefix", "Vereinigung von")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-do list(path: "78005", "var": "$i")
-  add_field("@prefix", "Darin aufgegangen")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-do list(path: "78006", "var": "$i")
-  add_field("@prefix", "Teilweise darin aufgegangen")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-do list(path: "78007", "var": "$i")
-  add_field("@prefix", "Abgespalten von")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-move_field("@descriptionOfEditionsOrVolumes", "DescriptionOfFormerEditionsOrVolumes[]")
-*/
-
-/*
-# MARC/785
-set_array("@descriptionOfEditionsOrVolumes")
-do list(path: "7850[078]", "var": "$i")
-  add_field("@prefix", "Fortgesetzt von")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-do list(path: "78501", "var": "$i")
-  add_field("@prefix", "Teilweise fortgesetzt von")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-do list(path: "78502", "var": "$i")
-  add_field("@prefix", "Ersetzt durch")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-do list(path: "78503", "var": "$i")
-  add_field("@prefix", "Teilweise ersetzt durch")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-do list(path: "78504", "var": "$i")
-  add_field("@prefix", "Aufgegangen in")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-do list(path: "78505", "var": "$i")
-  add_field("@prefix", "Teilweise aufgegangen in")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-do list(path: "78506", "var": "$i")
-  add_field("@prefix", "Gesplittet in")
-  include("./alma/descriptionOfEditionsOrVolumes.fix")
-end
-move_field("@descriptionOfEditionsOrVolumes", "DescriptionOfContinuingEditionsOrVolumes[]")
-*/
 
 # MARC/760
 put_vars(linking_entry_source: "760", linking_entry_target: "MainSeriesEntry")
@@ -1781,30 +1675,6 @@ include("./alma/linkingEntry.fix")
 put_vars(linking_entry_source: "787", linking_entry_target: "NonspecificRelationshipEntry")
 include("./alma/linkingEntry.fix")
 
-/*
-# MARC/830
-if exists("830??")
-  set_array("TitleSuper[]")
-  do list(path: "830 ?", "var": "$i")
-    add_field("TitleSuper[].$append.__dummy__", "")
-    replace_all("$i.a", "^[©]|\\s?[,.:;/=]?$", "")
-    copy_field("$i.a", "TitleSuper[].$last.titleSuper[]")
-  end
-end
-uniq("TitleSuper[]")
-*/
-
-/*
-# MARC/830
-if exists("830??")
-  set_array("TitleSuperVolumeDesignation[]")
-  do list(path: "830 ?", "var": "$i")
-    add_field("TitleSuperVolumeDesignation[].$append.__dummy__", "")
-    replace_all("$i.v", "^[©]|\\s?[,.:;/=]?$", "")
-    copy_field("$i.v", "TitleSuperVolumeDesignation[].$last.volumeDesignation[]")
-  end
-end
-*/
 # MARC/830
 unless exists("SeriesAddedEntryUniformTitle[]")
   set_array("SeriesAddedEntryUniformTitle[]")
@@ -2266,11 +2136,8 @@ retain(
   "DateProper",
   "Description",
   "DescriptionOfContent[]",
-# "DescriptionOfContinuingEditionsOrVolumes[]",
   "DescriptionOfExpression[]",
-# "DescriptionOfFormerEditionsOrVolumes[]",
   "DescriptionOfIssuance[]",
-# "DescriptionOfRelatedEditions[]",
   "DescriptionOfThesis[]",
   "Edition",
   "ExtendedFormat[]",
