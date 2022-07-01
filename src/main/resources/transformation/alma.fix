@@ -1045,6 +1045,7 @@ do list(path: "7730?", "var": "$i")
   copy_field("$i.w", "RecordIdentifierSuper[].$last.recordIdentifierSuper")
 end
 copy_field("7731?.w", "@host_callnumber")
+lookup("@host_callnumber.*", "alma-alias")
 lookup("@host_callnumber.*", "alma-item-callnumber", delete: "true")
 
 # MARC/245

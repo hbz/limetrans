@@ -277,15 +277,8 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
         mMaps.put("institution-code-to-isil", INSTITUTION_CODE_TO_ISIL);
 
-        final Map<String, String> callnumberMap = new HashMap<>();
-        mMaps.put("alma-item-callnumber", callnumberMap);
-
-        Helpers.loadFile(mVars.get("isil-path") + ".callnumber.kv.bgzf", false, "callnumber map", l -> {
-            final String[] parts = l.split("\u001D");
-            if (parts.length == 2) {
-                callnumberMap.put(parts[0], parts[1]);
-            }
-        }, callnumberMap::size, LOGGER);
+        loadMap("alma-alias", "alias");
+        loadMap("alma-item-callnumber", "callnumber");
 
         final String rulesSuffix;
 
@@ -509,6 +502,18 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
     /*package-private*/ int getInputQueueSize() {
         return mInputQueues.stream().mapToInt(FileQueue::size).sum();
+    }
+
+    private void loadMap(final String aName, final String aKey) {
+        final Map<String, String> map = new HashMap<>();
+        mMaps.put(aName, map);
+
+        Helpers.loadFile("%s.%s.kv.bgzf".formatted(mVars.get("isil-path"), aKey), false, aKey + " map", l -> {
+            final String[] parts = l.split("\u001D");
+            if (parts.length == 2) {
+                map.put(parts[0], parts[1]);
+            }
+        }, map::size, LOGGER);
     }
 
 }
