@@ -32975,3 +32975,177 @@
     "subjectIdentifier" : [ "(OCoLC)fst01204889" ]
   } ]
 }
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "Country" : [ {
+    "countryISO" : "DE-NW"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "922048350"
+  } ],
+  "collection" : "DE-836",
+  "TitleAddendum" : {
+    "title" : "das umfassende Handbuch ; [aktuell zu Debian 8 \"Jessie\" ; Installation, Konfiguration, Administration, Office, Internet, Audio, Video und Shell, Netzwerk einrichten, für Sicherheit sorgen, Serverdienste, Systemd und GRUB nutzen]"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Heike Jurzik" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2015" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Debian GNU/LINUX 8.0" ]
+  },
+  "SubjectDNB" : [ {
+    "subject" : "004"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "ST 261"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "991006253889706485",
+    "identifierMMSIZ" : "991006253889706485"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-836)991006253889706485",
+    "identifierForTheRecord" : "(DE-836)991006253889706485"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783836237628" ]
+  }, {
+    "identifierISBN" : [ "3836237628" ]
+  } ],
+  "IdentifierSerial" : [ {
+    "identifierISSN" : "GBVCP"
+  }, {
+    "identifierISSN" : "GBVCP"
+  }, {
+    "identifierISSN" : "DEBBG"
+  }, {
+    "identifierISSN" : "CHVBK"
+  }, {
+    "identifierISSN" : "CHVBK"
+  }, {
+    "identifierISSN" : "CHVBK"
+  }, {
+    "identifierISSN" : "CHDSB"
+  }, {
+    "identifierISSN" : "CHBIS"
+  }, {
+    "identifierISSN" : "CHABN"
+  }, {
+    "identifierISSN" : "GWDNB"
+  } ],
+  "Person" : [ {
+    "personName" : "Jurzik, Heike",
+    "personRole" : [ "[Verfasser]" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Galileo Press"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Debian GNU, Linux"
+  } ],
+  "Edition" : {
+    "edition" : [ "6., aktualisierte Aufl." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Bonn" ],
+    "name" : [ "Rheinwerk" ],
+    "chronology" : [ "2015" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Bonn"
+  } ],
+  "DateProper" : {
+    "date" : [ "2015" ]
+  },
+  "Extent" : {
+    "extent" : "800 S. : Ill. ; 25 cm"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Rheinwerk computing" ]
+  } ],
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Rheinwerk computing"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://d-nb.info/1070547018/04",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "B:DE-101",
+    "format" : "application/pdf"
+  }, {
+    "uri" : "http://deposit.dnb.de/cgi-bin/dokserv?id=5232346&prov=M&dok_var=1&dok_ext=htm",
+    "relatedto" : "Inhaltstext",
+    "contact" : "B:DE-101",
+    "contact" : "X:MVB",
+    "format" : "text/html"
+  }, {
+    "uri" : "http://bvbr.bib-bvb.de:8991/F?func=service&doc_library=BVB01&local_base=BVB01&doc_number=028108516&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "B:DE-101",
+    "contact" : "X:MVB"
+  }, {
+    "uri" : "http://bvbr.bib-bvb.de:8991/F?func=service&doc_library=BVB01&local_base=BVB01&doc_number=028108516&sequence=000001&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "B:DE-101",
+    "contact" : "X:MVB"
+  }, {
+    "uri" : "http://d-nb.info/1070547018/04",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "B:DE-101",
+    "contact" : "X:MVB"
+  }, {
+    "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2015/09/26/file_18/6432227.pdf",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "B:DE-101",
+    "contact" : "X:MVB",
+    "format" : "application/pdf"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)991006253889706485"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-A96",
+    "callnumber" : "0303854",
+    "callnumber" : "TWRF 120(6)",
+    "shelfmark" : "Freihand_F"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Debian GNU/LINUX 8.0"
+  } ],
+  "Subject" : [ {
+    "subject" : "(Produktform)Hardback"
+  }, {
+    "subject" : "(BISAC Subject Heading)COM000000"
+  }, {
+    "subject" : "(BIC Subject Heading)U"
+  }, {
+    "subject" : "Linux"
+  }, {
+    "subject" : "Jessie"
+  }, {
+    "subject" : "Kofler"
+  }, {
+    "subject" : "Squeeze"
+  }, {
+    "subject" : "Server"
+  }, {
+    "subject" : "vi"
+  }, {
+    "subject" : "emacs"
+  }, {
+    "subject" : "(VLB-WN)1634: Hardcover, Softcover / Informatik, EDV/Betriebssysteme, Benutzeroberflächen"
+  } ]
+}
