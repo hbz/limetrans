@@ -958,9 +958,18 @@ do list(path: "035  .a", "var": "$i")
     end
     copy_field("$i", "@hbzid")
     copy_field("$i", "@hbzids")
-  elsif any_match("$i", "\\($[isil]\\).*")
+  elsif any_match("$i", "\\(DE-836\\).*")
     unless exists("@sysid")
       copy_field("$i", "@sysid")
+      replace_all("@sysid", "^\\(DE-836\\)(\\d{8})-49hbz_fhm$", "(DE-836)ocm$1")
+      replace_all("@sysid", "^\\(DE-836\\)(\\d{9})-49hbz_fhm$", "(DE-836)ocn$1")
+      replace_all("@sysid", "^\\(DE-836\\)(\\d{10,})-49hbz_fhm$", "(DE-836)on$1")
+    end
+  else
+    if any_match("$i", "\\($[isil]\\).*")
+      unless exists("@sysid")
+        copy_field("$i", "@sysid")
+      end
     end
   end
   if any_match("$i", "\\(DE-600\\).*")
