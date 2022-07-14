@@ -964,6 +964,7 @@ do list(path: "035  .a", "var": "$i")
       replace_all("@sysid", "^\\(DE-836\\)(\\d{8})-49hbz_fhm$", "(DE-836)ocm$1")
       replace_all("@sysid", "^\\(DE-836\\)(\\d{9})-49hbz_fhm$", "(DE-836)ocn$1")
       replace_all("@sysid", "^\\(DE-836\\)(\\d{10,})-49hbz_fhm$", "(DE-836)on$1")
+      copy_field("@sysid", "bib.identifierAuthority=mab")
     end
   else
     if any_match("$i", "\\($[isil]\\).*")
@@ -2226,6 +2227,7 @@ retain(
   "TypePeriodical[]",
   "VideoCharacteristics[]",
   "VolumeDesignation",
+  "bib",
   "collection",
   "dc",
   "introx",
