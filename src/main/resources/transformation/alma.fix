@@ -1432,6 +1432,13 @@ do list(path: "264?[13]", "var": "$i")
 end
 uniq("PublicationPlace[]")
 
+# MARC/263
+set_array("DescriptionOfEstimatedPublicationDate")
+do list(path: "263??", "var": "$i")
+  add_field("DescriptionOfEstimatedPublicationDate[].$append.__dummy__", "")
+  copy_field("$i.a", "DescriptionOfEstimatedPublicationDate[].$last.description")
+end
+
 # MARC/300
 set_array("@300a")
 copy_field("300  .a", "@300a")
@@ -2147,6 +2154,7 @@ retain(
   "DateProper",
   "Description",
   "DescriptionOfContent[]",
+  "DescriptionOfEstimatedPublicationDate[]",
   "DescriptionOfExpression[]",
   "DescriptionOfIssuance[]",
   "DescriptionOfThesis[]",
