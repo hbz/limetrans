@@ -1295,7 +1295,7 @@ end
 
 # MARC/029
 set_array("IdentifierSerial[]")
-do list(path: "029??", "var": "$i")
+do list(path: "029[ab]?", "var": "$i")
   add_field("IdentifierSerial[].$append.__dummy__", "")
   do list(path: "$i.a", "var": "$j")
     copy_field("$j", "IdentifierSerial[].$last.identifierISSN")
