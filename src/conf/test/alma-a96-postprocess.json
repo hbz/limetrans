@@ -6,7 +6,7 @@
     "hybrid": false,
     "regexp": {
       "description": ".*vorhanden.*",
-      "temporaryCallnumberLocation": ".*_SemApp"
+      "temporaryCallnumberLocation": ".*_(?:Lab|Sem)App"
     }
   },
   "input": {
