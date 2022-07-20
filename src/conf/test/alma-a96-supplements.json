@@ -3,7 +3,8 @@
   "alma": {
     "supplements": true,
     "regexp": {
-      "description": ".*vorhanden.*"
+      "description": ".*vorhanden.*",
+      "temporaryCallnumberLocation": ".*_SemApp"
     }
   },
   "input": {

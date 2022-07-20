@@ -5,7 +5,8 @@
   "alma": {
     "hybrid": false,
     "regexp": {
-      "description": ".*vorhanden.*"
+      "description": ".*vorhanden.*",
+      "temporaryCallnumberLocation": ".*_SemApp"
     }
   },
   "input": {
