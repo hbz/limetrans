@@ -304,7 +304,10 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
             .add(deletionFilter);
 
         final Settings regexp = almaSettings.getAsSettings("regexp");
-        Stream.of("description").forEach(k -> mVars.put("regexp." + k, regexp.get(k, ".*")));
+        Stream.of(
+                "description",
+                "temporaryCallnumberLocation"
+        ).forEach(k -> mVars.put("regexp." + k, regexp.get(k, ".*")));
 
         final Consumer<String> setDeletion = deletionLiteral -> {
             if (deletionLiteral != null) {
