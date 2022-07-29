@@ -68,6 +68,7 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
 
     private final ByteSizeValue mBulkSize;
     private final Integer mNumberOfReplicas;
+    private final LongAdder mDeletedCounter = new LongAdder();
     private final LongAdder mFailedCounter = new LongAdder();
     private final LongAdder mSucceededCounter = new LongAdder();
     private final Settings mIndexSettings;
@@ -243,12 +244,13 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
 
             @Override
             public void afterBulk(final long aId, final BulkRequest aRequest, final BulkResponse aResponse) {
+                final LongAdder deleted = new LongAdder();
                 final LongAdder failed = new LongAdder();
                 final LongAdder succeeded = new LongAdder();
 
                 aResponse.forEach(r -> {
                     if ("delete".equals(r.getOpType())) {
-                        // ignore
+                        deleted.increment();
                     }
                     else if (r.isFailed()) {
                         failed.increment();
@@ -259,11 +261,12 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
                     }
                 });
 
+                mDeletedCounter.add(deleted.sum());
                 mFailedCounter.add(failed.sum());
                 mSucceededCounter.add(succeeded.sum());
 
-                LOGGER.debug("After bulk {} [succeeded={}, failed={}, took={}]",
-                        aId, succeeded.sum(), failed.sum(), aResponse.getTook().millis());
+                LOGGER.debug("After bulk {} [succeeded={}, failed={}, deleted={}, took={}]",
+                        aId, succeeded.sum(), failed.sum(), deleted.sum(), aResponse.getTook().millis());
             }
 
             @Override
@@ -315,6 +318,10 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
 
     public long getFailed() {
         return mFailedCounter.sum();
+    }
+
+    public long getDeleted() {
+        return mDeletedCounter.sum();
     }
 
     public String getIndexType() {
@@ -383,7 +390,8 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
             return;
         }
 
-        LOGGER.info("Documents ingested: {} succeeded, {} failed" + suffix, getSucceeded(), getFailed());
+        LOGGER.info("Documents ingested: {} succeeded, {} failed, {} deleted" + suffix,
+                getSucceeded(), getFailed(), getDeleted());
 
         if (newIndex.equals(oldIndex)) {
             return;

@@ -54,7 +54,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertDocument(ID1, "{}");
-        assertBulkCounts(1, 0);
+        assertBulkCounts(1, 0, 0);
     }
 
     @Test
@@ -70,7 +70,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertDocument(ID1, "{'L1':'V1','L2':'V2','L3':'V3'}");
-        assertBulkCounts(1, 0);
+        assertBulkCounts(1, 0, 0);
     }
 
     @Test
@@ -91,7 +91,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertDocument(ID1, "{'En1':{'L1':'V1','L2':'V2'},'En2':{'L1':'V1','L2':'V2'}}");
-        assertBulkCounts(1, 0);
+        assertBulkCounts(1, 0, 0);
     }
 
     @Test
@@ -109,7 +109,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertDocument(ID1, "{'En1':{'En2':{'L1':'V1'}}}");
-        assertBulkCounts(1, 0);
+        assertBulkCounts(1, 0, 0);
     }
 
     @Test
@@ -127,7 +127,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertDocument(ID1, "{'Li1':['V1','V2','V3']}");
-        assertBulkCounts(1, 0);
+        assertBulkCounts(1, 0, 0);
     }
 
     @Test
@@ -150,7 +150,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertDocument(ID1, "{'Li1':[{'L1':'V1','L2':'V2'},{'L3':'V3','L4':'V4'}]}");
-        assertBulkCounts(1, 0);
+        assertBulkCounts(1, 0, 0);
     }
 
     @Test
@@ -173,7 +173,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertDocument(ID1, "{'Li1':[['V1','V2'],['V3','V4']]}");
-        assertBulkCounts(1, 0);
+        assertBulkCounts(1, 0, 0);
     }
 
     @Test
@@ -188,7 +188,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertDocument(ID1, "{'L1':'V1','L1':'V2'}");
-        assertBulkCounts(1, 0);
+        assertBulkCounts(1, 0, 0);
     }
 
     @Test
@@ -210,7 +210,7 @@ public class ElasticsearchIndexerTest {
 
         assertDocument(ID1, "{'L1':'V1','L2':'V2','L3':'V3'}");
         assertDocument(ID2, "{'L1':'V2','L2':'V3'}");
-        assertBulkCounts(2, 0);
+        assertBulkCounts(2, 0, 0);
     }
 
     @Test
@@ -234,7 +234,7 @@ public class ElasticsearchIndexerTest {
 
         assertDocument(ID1, "{'L1':'V1','L2':'V2','L3':'V3'}");
         assertDocument(ID2, "{'L1':'V2','L2':'V3'}");
-        assertBulkCounts(2, 0);
+        assertBulkCounts(2, 0, 0);
     }
 
     @Test
@@ -255,7 +255,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertDocument(ID1, "{'L1':'V2','L2':'V3'}");
-        assertBulkCounts(2, 0);
+        assertBulkCounts(2, 0, 0);
     }
 
     @Test
@@ -278,7 +278,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertDocument(ID1, "{'L1':'V2','L2':'V3'}");
-        assertBulkCounts(2, 0);
+        assertBulkCounts(2, 0, 0);
     }
 
     @Test
@@ -300,7 +300,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertDocument(ID1, doc2);
-        assertBulkCounts(1, 0);
+        assertBulkCounts(1, 0, 0);
     }
 
     @Test
@@ -321,7 +321,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertMissing(ID2);
-        assertBulkCounts(0, 1);
+        assertBulkCounts(0, 1, 0);
     }
 
     @Test
@@ -338,7 +338,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertMissing(ID1);
-        assertBulkCounts(0, 1);
+        assertBulkCounts(0, 1, 0);
     }
 
     @Test
@@ -357,7 +357,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertMissing(ID1);
-        assertBulkCounts(0, 0);
+        assertBulkCounts(0, 0, 1);
     }
 
     @Test
@@ -372,7 +372,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertMissing(ID1);
-        assertBulkCounts(0, 0);
+        assertBulkCounts(0, 0, 1);
     }
 
     @Test
@@ -391,7 +391,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertDocument(ID1, doc);
-        assertBulkCounts(0, 0);
+        assertBulkCounts(0, 0, 1);
     }
 
     @Test
@@ -413,7 +413,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertMissing(ID1);
-        assertBulkCounts(0, 0);
+        assertBulkCounts(0, 0, 1);
     }
 
     @Test
@@ -435,7 +435,7 @@ public class ElasticsearchIndexerTest {
         mIndexer.flush();
 
         assertDocument(ID1, doc);
-        assertBulkCounts(1, 0);
+        assertBulkCounts(1, 0, 0);
     }
 
     @Test
@@ -468,7 +468,7 @@ public class ElasticsearchIndexerTest {
 
         assertMissing(ID1);
         assertDocument(ID2, doc2);
-        assertBulkCounts(1, 0);
+        assertBulkCounts(1, 0, 1);
     }
 
     @Test
@@ -486,9 +486,10 @@ public class ElasticsearchIndexerTest {
         mIndexer = new ElasticsearchIndexer(mClient, aBulkAction);
     }
 
-    private void assertBulkCounts(final long aSucceeded, final long aFailed) {
+    private void assertBulkCounts(final long aSucceeded, final long aFailed, final long aDeleted) {
         Assert.assertEquals("succeeded", aSucceeded, mClient.getSucceeded());
         Assert.assertEquals("failed", aFailed, mClient.getFailed());
+        Assert.assertEquals("deleted", aDeleted, mClient.getDeleted());
     }
 
     private void assertDocument(final String aId, final String aExpected) {
