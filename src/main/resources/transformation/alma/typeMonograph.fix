@@ -1,5 +1,4 @@
-copy_field("$i.A", "@typeMonograph")
-substring("@typeMonograph", "$[type_monograph_start]", "1")
+call_macro("substring", source: "$i.A", target: "@typeMonograph", start: "$[type_monograph_start]")
 copy_field("@typeMonograph", "@typeMonographFacet")
 lookup("@typeMonograph", "alma-type-monograph-$[type_monograph_start]", delete: "true")
 move_field("@typeMonograph", "TypeMonograph[]")

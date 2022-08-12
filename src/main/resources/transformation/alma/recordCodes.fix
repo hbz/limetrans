@@ -1,4 +1,3 @@
-copy_field("$i.A", "@recordCodes")
-substring("@recordCodes", "$[record_codes_start]", "1")
+call_macro("substring", source: "$i.A", target: "@recordCodes", start: "$[record_codes_start]")
 lookup("@recordCodes", "alma-record-codes-$[record_codes_start]", delete: "true")
 move_field("@recordCodes", "RecordCodes[]")

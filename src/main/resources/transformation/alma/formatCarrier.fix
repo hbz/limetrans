@@ -1,5 +1,4 @@
-copy_field("$i.A", "@formatCarrier")
-substring("@formatCarrier", "$[format_carrier_start]", "$[format_carrier_length]")
+call_macro("substring", source: "$i.A", target: "@formatCarrier", start: "$[format_carrier_start]", length: "$[format_carrier_length]")
 copy_field("@formatCarrier", "@formatCarrierFacet")
 lookup("@formatCarrier", "alma-format-carrier-$[format_carrier_start]", delete: "true")
 move_field("@formatCarrier", "FormatCarrier[]")

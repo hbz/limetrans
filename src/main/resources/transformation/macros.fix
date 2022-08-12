@@ -1,0 +1,9 @@
+do put_macro("copy-substring", length: "1")
+  call_macro("substring", source: "$[source]", target: "$[target]-substring", start: "$[start]", length: "$[length]")
+  move_field("$[target]-substring", "$[target]")
+end
+
+do put_macro("substring", length: "1")
+  copy_field("$[source]", "$[target]")
+  substring("$[target]", "$[start]", "$[length]")
+end

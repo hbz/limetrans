@@ -1,5 +1,4 @@
-copy_field("$i.A", "@typePeriodical")
-substring("@typePeriodical", "$[type_periodical_start]", "$[type_periodical_length]")
+call_macro("substring", source: "$i.A", target: "@typePeriodical", start: "$[type_periodical_start]", length: "$[type_periodical_length]")
 copy_field("@typePeriodical", "@typePeriodicalFacet")
 lookup("@typePeriodical", "alma-type-periodical-$[type_periodical_start]", delete: "true")
 move_field("@typePeriodical", "TypePeriodical[]")
