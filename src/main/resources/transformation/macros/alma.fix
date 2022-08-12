@@ -1,0 +1,32 @@
+do put_macro("alma-record-codes")
+  call_macro("substring", source: "$i.A", target: "@recordCodes", start: "$[start]")
+  lookup("@recordCodes", "alma-record-codes-$[start]", delete: "true")
+  move_field("@recordCodes", "RecordCodes[]")
+end
+
+do put_macro("alma-format-carrier", length: "1")
+  call_macro("substring", source: "$i.A", target: "@formatCarrier", start: "$[start]", length: "$[length]")
+  copy_field("@formatCarrier", "@formatCarrierFacet")
+  lookup("@formatCarrier", "alma-format-carrier-$[start]", delete: "true")
+  move_field("@formatCarrier", "FormatCarrier[]")
+  lookup("@formatCarrierFacet", "alma-format-carrier-facet-$[start]", delete: "true")
+  move_field("@formatCarrierFacet", "@facet_format")
+end
+
+do put_macro("alma-type-monograph")
+  call_macro("substring", source: "$i.A", target: "@typeMonograph", start: "$[start]")
+  copy_field("@typeMonograph", "@typeMonographFacet")
+  lookup("@typeMonograph", "alma-type-monograph-$[start]", delete: "true")
+  move_field("@typeMonograph", "TypeMonograph[]")
+  lookup("@typeMonographFacet", "alma-type-monograph-facet-$[start]", delete: "true")
+  move_field("@typeMonographFacet", "@facet_type")
+end
+
+do put_macro("alma-type-periodical", length: "1")
+  call_macro("substring", source: "$i.A", target: "@typePeriodical", start: "$[start]", length: "$[length]")
+  copy_field("@typePeriodical", "@typePeriodicalFacet")
+  lookup("@typePeriodical", "alma-type-periodical-$[start]", delete: "true")
+  move_field("@typePeriodical", "TypePeriodical[]")
+  lookup("@typePeriodicalFacet", "alma-type-periodical-facet-$[start]", delete: "true")
+  move_field("@typePeriodicalFacet", "@facet_type")
+end
