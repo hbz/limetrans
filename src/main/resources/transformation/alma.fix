@@ -888,10 +888,8 @@ do list(path: "264[ 23]1.c", "var": "$i")
 end
 copy_field("@date[12]", "@date")
 split_field("@date", "[,-]")
+flatten("@date")
 do list(path: "@date", "var": "$i")
-  copy_field("$i", "@date_flat")
-end
-do list(path: "@date_flat", "var": "$i")
   replace_all("$i", ".*?(\\d{4}).*", "$1")
   if any_match("$i", "\\d{4}")
     unless any_equal("$i", "9999")
@@ -1538,10 +1536,8 @@ do list(path: "982  ", "var": "$i")
     copy_field("$i.b", "@subjectHeadings")
     copy_field("$i.a", "@subjectTopicName")
     split_field("@subjectTopicName", ";|\\*")
-    do list(path: "@subjectTopicName", "var": "$j")
-      copy_field("$j", "@subjectHeadings")
-    end
-    remove_field("@subjectTopicName")
+    flatten("@subjectTopicName")
+    move_field("@subjectTopicName", "@subjectHeadings")
   end
 end
 # MARC/689
