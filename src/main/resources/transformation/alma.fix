@@ -1551,41 +1551,13 @@ end
 set_array("RSWK[]")
 do list(path: "600??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
-  if exists("$i.z.1")
-    copy_field("$i.z.1", "RSWK[].$last.subjectGeoName")
-  else
-    copy_field("$i.z", "RSWK[].$last.subjectGeoName")
-  end
-  if exists("$i.y.1")
-    copy_field("$i.y.1", "RSWK[].$last.subjectChronological")
-  else
-    copy_field("$i.y", "RSWK[].$last.subjectChronological")
-  end
-  if exists("$i.d.1")
-    copy_field("$i.d.1", "RSWK[].$last.subjectDate")
-  else
-    copy_field("$i.d", "RSWK[].$last.subjectDate")
-  end
-  if exists("$i.v.1")
-    copy_field("$i.v.1", "RSWK[].$last.subjectGenre")
-  else
-    copy_field("$i.v", "RSWK[].$last.subjectGenre")
-  end
-  if exists("$i.a.1")
-    copy_field("$i.a.1", "RSWK[].$last.subjectPersonName")
-  else
-    copy_field("$i.a", "RSWK[].$last.subjectPersonName")
-  end
-  if exists("$i.t.1")
-    copy_field("$i.t.1", "RSWK[].$last.subjectTitleName")
-  else
-    copy_field("$i.t", "RSWK[].$last.subjectTitleName")
-  end
-  if exists("$i.c.1")
-    copy_field("$i.c.1", "RSWK[].$last.subjectNameAddendum")
-  else
-    copy_field("$i.c", "RSWK[].$last.subjectNameAddendum")
-  end
+  call_macro("copy-first-item", source: "$i.z", target: "RSWK[].$last.subjectGeoName")
+  call_macro("copy-first-item", source: "$i.y", target: "RSWK[].$last.subjectChronological")
+  call_macro("copy-first-item", source: "$i.d", target: "RSWK[].$last.subjectDate")
+  call_macro("copy-first-item", source: "$i.v", target: "RSWK[].$last.subjectGenre")
+  call_macro("copy-first-item", source: "$i.a", target: "RSWK[].$last.subjectPersonName")
+  call_macro("copy-first-item", source: "$i.t", target: "RSWK[].$last.subjectTitleName")
+  call_macro("copy-first-item", source: "$i.c", target: "RSWK[].$last.subjectNameAddendum")
   do list(path: "$i.0", "var": "$j")
     copy_field("$j", "RSWK[].$last.subjectIdentifier[]")
     if any_match("$j", "\\(DE-588\\).*")
@@ -1596,51 +1568,15 @@ end
 # MARC/610
 do list(path: "610??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
-  if exists("$i.z.1")
-    copy_field("$i.z.1", "RSWK[].$last.subjectGeoName")
-  else
-    copy_field("$i.z", "RSWK[].$last.subjectGeoName")
-  end
-  if exists("$i.y.1")
-    copy_field("$i.y.1", "RSWK[].$last.subjectChronological")
-  else
-    copy_field("$i.y", "RSWK[].$last.subjectChronological")
-  end
-  if exists("$i.a.1")
-    copy_field("$i.a.1", "RSWK[].$last.subjectCorporateBodyName")
-  else
-    copy_field("$i.a", "RSWK[].$last.subjectCorporateBodyName")
-  end
-  if exists("$i.b.1")
-    copy_field("$i.b.1", "RSWK[].$last.subjectCorporateBodySubUnit")
-  else
-    copy_field("$i.b", "RSWK[].$last.subjectCorporateBodySubUnit")
-  end
-  if exists("$i.v.1")
-    copy_field("$i.v.1", "RSWK[].$last.subjectGenre")
-  else
-    copy_field("$i.v", "RSWK[].$last.subjectGenre")
-  end
-  if exists("$i.n.1")
-    copy_field("$i.n.1", "RSWK[].$last.subjectNumbering")
-  else
-    copy_field("$i.n", "RSWK[].$last.subjectNumbering")
-  end
-  if exists("$i.t.1")
-    copy_field("$i.t.1", "RSWK[].$last.subjectTitleName")
-  else
-    copy_field("$i.t", "RSWK[].$last.subjectTitleName")
-  end
-  if exists("$i.p.1")
-    copy_field("$i.p.1", "RSWK[].$last.subjectUnit")
-  else
-    copy_field("$i.p", "RSWK[].$last.subjectUnit")
-  end
-  if exists("$i.c.1")
-    copy_field("$i.c.1", "RSWK[].$last.subjectGeoAddendum")
-  else
-    copy_field("$i.c", "RSWK[].$last.subjectGeoAddendum")
-  end
+  call_macro("copy-first-item", source: "$i.z", target: "RSWK[].$last.subjectGeoName")
+  call_macro("copy-first-item", source: "$i.y", target: "RSWK[].$last.subjectChronological")
+  call_macro("copy-first-item", source: "$i.a", target: "RSWK[].$last.subjectCorporateBodyName")
+  call_macro("copy-first-item", source: "$i.b", target: "RSWK[].$last.subjectCorporateBodySubUnit")
+  call_macro("copy-first-item", source: "$i.v", target: "RSWK[].$last.subjectGenre")
+  call_macro("copy-first-item", source: "$i.n", target: "RSWK[].$last.subjectNumbering")
+  call_macro("copy-first-item", source: "$i.t", target: "RSWK[].$last.subjectTitleName")
+  call_macro("copy-first-item", source: "$i.p", target: "RSWK[].$last.subjectUnit")
+  call_macro("copy-first-item", source: "$i.c", target: "RSWK[].$last.subjectGeoAddendum")
   do list(path: "$i.0", "var": "$j")
     copy_field("$j", "RSWK[].$last.subjectIdentifier[]")
     if any_match("$j", "\\(DE-588\\).*")
@@ -1651,51 +1587,15 @@ end
 # MARC/611
 do list(path: "611??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
-  if exists("$i.z.1")
-    copy_field("$i.z.1", "RSWK[].$last.subjectGeoName")
-  else
-    copy_field("$i.z", "RSWK[].$last.subjectGeoName")
-  end
-  if exists("$i.y.1")
-    copy_field("$i.y.1", "RSWK[].$last.subjectChronological")
-  else
-    copy_field("$i.y", "RSWK[].$last.subjectChronological")
-  end
-  if exists("$i.a.1")
-    copy_field("$i.a.1", "RSWK[].$last.subjectConference")
-  else
-    copy_field("$i.a", "RSWK[].$last.subjectConference")
-  end
-  if exists("$i.d.1")
-    copy_field("$i.d.1", "RSWK[].$last.subjectDate")
-  else
-    copy_field("$i.d", "RSWK[].$last.subjectDate")
-  end
-  if exists("$i.v.1")
-    copy_field("$i.v.1", "RSWK[].$last.subjectGenre")
-  else
-    copy_field("$i.v", "RSWK[].$last.subjectGenre")
-  end
-  if exists("$i.n.1")
-    copy_field("$i.n.1", "RSWK[].$last.subjectNumbering")
-  else
-    copy_field("$i.n", "RSWK[].$last.subjectNumbering")
-  end
-  if exists("$i.t.1")
-    copy_field("$i.t.1", "RSWK[].$last.subjectTitleName")
-  else
-    copy_field("$i.t", "RSWK[].$last.subjectTitleName")
-  end
-  if exists("$i.p.1")
-    copy_field("$i.p.1", "RSWK[].$last.subjectUnit")
-  else
-    copy_field("$i.p", "RSWK[].$last.subjectUnit")
-  end
-  if exists("$i.c.1")
-    copy_field("$i.c.1", "RSWK[].$last.subjectGeoAddendum")
-  else
-    copy_field("$i.c", "RSWK[].$last.subjectGeoAddendum")
-  end
+  call_macro("copy-first-item", source: "$i.z", target: "RSWK[].$last.subjectGeoName")
+  call_macro("copy-first-item", source: "$i.y", target: "RSWK[].$last.subjectChronological")
+  call_macro("copy-first-item", source: "$i.a", target: "RSWK[].$last.subjectConference")
+  call_macro("copy-first-item", source: "$i.d", target: "RSWK[].$last.subjectDate")
+  call_macro("copy-first-item", source: "$i.v", target: "RSWK[].$last.subjectGenre")
+  call_macro("copy-first-item", source: "$i.n", target: "RSWK[].$last.subjectNumbering")
+  call_macro("copy-first-item", source: "$i.t", target: "RSWK[].$last.subjectTitleName")
+  call_macro("copy-first-item", source: "$i.p", target: "RSWK[].$last.subjectUnit")
+  call_macro("copy-first-item", source: "$i.c", target: "RSWK[].$last.subjectGeoAddendum")
   do list(path: "$i.0", "var": "$j")
     copy_field("$j", "RSWK[].$last.subjectIdentifier[]")
     if any_match("$j", "\\(DE-588\\).*")
@@ -1706,11 +1606,7 @@ end
 # MARC/648
 do list(path: "648??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
-  if exists("$i.a.1")
-    copy_field("$i.a.1", "RSWK[].$last.subjectChronological")
-  else
-    copy_field("$i.a", "RSWK[].$last.subjectChronological")
-  end
+  call_macro("copy-first-item", source: "$i.a", target: "RSWK[].$last.subjectChronological")
   do list(path: "$i.0", "var": "$j")
     copy_field("$j", "RSWK[].$last.subjectIdentifier[]")
     if any_match("$j", "\\(DE-588\\).*")
@@ -1721,37 +1617,17 @@ end
 # MARC/650
 do list(path: "650??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
-  if exists("$i.a.1")
-    copy_field("$i.a.1", "@subjectTopicName")
-  else
-    copy_field("$i.a", "@subjectTopicName")
-  end
+  call_macro("copy-first-item", source: "$i.a", target: "@subjectTopicName")
   split_field("@subjectTopicName", ";|--")
   do list(path: "@subjectTopicName", "var": "$j")
     replace_all("$j", "[.]$", "")
     copy_field("$j", "RSWK[].$last.subjectTopicName")
   end
   remove_field("@subjectTopicName")
-  if exists("$i.z.1")
-    copy_field("$i.z.1", "RSWK[].$last.subjectGeoName")
-  else
-    copy_field("$i.z", "RSWK[].$last.subjectGeoName")
-  end
-  if exists("$i.y.1")
-    copy_field("$i.y.1", "RSWK[].$last.subjectChronological")
-  else
-    copy_field("$i.y", "RSWK[].$last.subjectChronological")
-  end
-  if exists("$i.x.1")
-    copy_field("$i.x.1", "RSWK[].$last.subjectAddendum")
-  else
-    copy_field("$i.x", "RSWK[].$last.subjectAddendum")
-  end
-  if exists("$i.v.1")
-    copy_field("$i.v.1", "RSWK[].$last.subjectGenre")
-  else
-    copy_field("$i.v", "RSWK[].$last.subjectGenre")
-  end
+  call_macro("copy-first-item", source: "$i.z", target: "RSWK[].$last.subjectGeoName")
+  call_macro("copy-first-item", source: "$i.y", target: "RSWK[].$last.subjectChronological")
+  call_macro("copy-first-item", source: "$i.x", target: "RSWK[].$last.subjectAddendum")
+  call_macro("copy-first-item", source: "$i.v", target: "RSWK[].$last.subjectGenre")
   do list(path: "$i.0", "var": "$j")
     copy_field("$j", "RSWK[].$last.subjectIdentifier[]")
     if any_match("$j", "\\(DE-588\\).*")
@@ -1762,21 +1638,9 @@ end
 # MARC/651
 do list(path: "651??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
-  if exists("$i.a.1")
-    copy_field("$i.a.1", "RSWK[].$last.subjectGeoName")
-  else
-    copy_field("$i.a", "RSWK[].$last.subjectGeoName")
-  end
-  if exists("$i.y.1")
-    copy_field("$i.y.1", "RSWK[].$last.subjectChronological")
-  else
-    copy_field("$i.y", "RSWK[].$last.subjectChronological")
-  end
-  if exists("$i.v.1")
-    copy_field("$i.v.1", "RSWK[].$last.subjectGenre")
-  else
-    copy_field("$i.v", "RSWK[].$last.subjectGenre")
-  end
+  call_macro("copy-first-item", source: "$i.a", target: "RSWK[].$last.subjectGeoName")
+  call_macro("copy-first-item", source: "$i.y", target: "RSWK[].$last.subjectChronological")
+  call_macro("copy-first-item", source: "$i.v", target: "RSWK[].$last.subjectGenre")
   do list(path: "$i.0", "var": "$j")
     copy_field("$j", "RSWK[].$last.subjectIdentifier[]")
     if any_match("$j", "\\(DE-588\\).*")

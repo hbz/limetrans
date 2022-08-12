@@ -1,3 +1,11 @@
+do put_macro("copy-first-item")
+  if exists("$[source].1")
+    copy_field("$[source].1", "$[target]")
+  else
+    copy_field("$[source]", "$[target]")
+  end
+end
+
 do put_macro("copy-substring", length: "1")
   call_macro("substring", source: "$[source]", target: "$[target]-substring", start: "$[start]", length: "$[length]")
   move_field("$[target]-substring", "$[target]")
