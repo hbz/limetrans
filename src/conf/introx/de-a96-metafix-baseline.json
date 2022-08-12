@@ -3,7 +3,6 @@
   "path": "/mnt/datenportal/export/alma/prod/",
   "postprocess": true,
   "alma": {
-    "hybrid": false,
     "regexp": {
       "description": ".*vorhanden.*",
       "temporaryCallnumberLocation": ".*_(?:Lab|Sem)App"

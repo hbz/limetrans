@@ -1,6 +1,8 @@
 {
   "isil": "DE-468",
-  "alma": {},
+  "alma": {
+    "hybrid": true
+  },
   "input": {
     "queue": {
       "path": "/mnt/datenportal/export/alma/prod/",

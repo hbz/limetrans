@@ -1,6 +1,8 @@
 {
   "isil": "DE-605",
-  "alma": {},
+  "alma": {
+    "hybrid": true
+  },
   "input": {
     "queue": {
       "path": "src/test/resources/limetrans/input/",
