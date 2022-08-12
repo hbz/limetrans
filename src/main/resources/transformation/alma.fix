@@ -144,160 +144,90 @@ paste("@type__008Pos34", "@type", "@008Pos34", join_char: "#")
 set_array("@facet_format")
 if any_match("@LeaderPos06", "[ij]")
   add_field("@facet_format", "Audio")
-else
-  if any_match("@006Pos00", "[ij]")
-    add_field("@facet_format", "Audio")
-  else
-    if any_equal("@007Pos00", "s")
-      add_field("@facet_format", "Audio")
-    else
-      if any_equal("337  .a", "audio")
-        add_field("@facet_format", "Audio")
-      else
-        if any_equal("337  .b", "s")
-          add_field("@facet_format", "Audio")
-        else
-          if any_equal("338  .a", "Audiodisk")
-            add_field("@facet_format", "Audio")
-          else
-            if any_equal("@type__008Pos26", "CF#h")
-              add_field("@facet_format", "Audio")
-            else
-              if any_equal("@006Pos00__006Pos09", "m#h")
-                add_field("@facet_format", "Audio")
-              end
-            end
-          end
-        end
-      end
-    end
-  end
+elsif any_match("@006Pos00", "[ij]")
+  add_field("@facet_format", "Audio")
+elsif any_equal("@007Pos00", "s")
+  add_field("@facet_format", "Audio")
+elsif any_equal("337  .a", "audio")
+  add_field("@facet_format", "Audio")
+elsif any_equal("337  .b", "s")
+  add_field("@facet_format", "Audio")
+elsif any_equal("338  .a", "Audiodisk")
+  add_field("@facet_format", "Audio")
+elsif any_equal("@type__008Pos26", "CF#h")
+  add_field("@facet_format", "Audio")
+elsif any_equal("@006Pos00__006Pos09", "m#h")
+  add_field("@facet_format", "Audio")
 end
 if any_equal("@007Pos00", "r")
   add_field("@facet_format", "Bild")
-else
-  if any_match("@007Pos00__007Pos01", "k#[cdefhijklnpqrsuvz]")
-    add_field("@facet_format", "Bild")
-  else
-    if any_match("@type__008Pos33|@type__008Pos34", "M#[jo]")
-      add_field("@facet_format", "Bild")
-    else
-      if any_match("@006Pos00__006Pos16|@006Pos00__006Pos17", "[ef]#[jo]")
-        add_field("@facet_format", "Bild")
-      else
-        if any_match("@type__008Pos33", "VM#[dikln]")
-          add_field("@facet_format", "Bild")
-        else
-          if any_match("@006Pos00__006Pos16", "[gkor]#[dikln]")
-            add_field("@facet_format", "Bild")
-          end
-        end
-      end
-    end
-  end
+elsif any_match("@007Pos00__007Pos01", "k#[cdefhijklnpqrsuvz]")
+  add_field("@facet_format", "Bild")
+elsif any_match("@type__008Pos33|@type__008Pos34", "M#[jo]")
+  add_field("@facet_format", "Bild")
+elsif any_match("@006Pos00__006Pos16|@006Pos00__006Pos17", "[ef]#[jo]")
+  add_field("@facet_format", "Bild")
+elsif any_match("@type__008Pos33", "VM#[dikln]")
+  add_field("@facet_format", "Bild")
+elsif any_match("@006Pos00__006Pos16", "[gkor]#[dikln]")
+  add_field("@facet_format", "Bild")
 end
 # MARC/337, MARC/338
 if any_equal("@LeaderPos06|@006Pos00", "m")
   add_field("@facet_format", "Elektronische Ressource")
-else
-  if any_match("337  .a", "Computermedien|computer|computermedien|informatique")
-    add_field("@facet_format", "Elektronische Ressource")
-  else
-    if any_equal("337  .b", "c")
-      add_field("@facet_format", "Elektronische Ressource")
-    else
-      if any_match("338  .a", "Computerdisk|computer disc")
-        add_field("@facet_format", "Elektronische Ressource")
-      else
-        if any_equal("338  .b", "cd")
-          add_field("@facet_format", "Elektronische Ressource")
-        else
-          if any_equal("@007Pos00", "c")
-            add_field("@facet_format", "Elektronische Ressource")
-          else
-            if any_match("@type__008Pos23", "(?:B|Mu|CR|MX)#[sq]")
-              add_field("@facet_format", "Elektronische Ressource")
-            else
-              if any_match("@006Pos00__006Pos06", "[acdijpst]#[qs]")
-                add_field("@facet_format", "Bild")
-              else
-                if any_match("@006Pos00__006Pos12", "[efgkor]#[qs]")
-                  add_field("@facet_format", "Bild")
-                else
-                  if any_match("@type__008Pos29", "(?:M|VM)#[sq]")
-                    add_field("@facet_format", "Elektronische Ressource")
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
-    end
-  end
+elsif any_match("337  .a", "Computermedien|computer|computermedien|informatique")
+  add_field("@facet_format", "Elektronische Ressource")
+elsif any_equal("337  .b", "c")
+  add_field("@facet_format", "Elektronische Ressource")
+elsif any_match("338  .a", "Computerdisk|computer disc")
+  add_field("@facet_format", "Elektronische Ressource")
+elsif any_equal("338  .b", "cd")
+  add_field("@facet_format", "Elektronische Ressource")
+elsif any_equal("@007Pos00", "c")
+  add_field("@facet_format", "Elektronische Ressource")
+elsif any_match("@type__008Pos23", "(?:B|Mu|CR|MX)#[sq]")
+  add_field("@facet_format", "Elektronische Ressource")
+elsif any_match("@006Pos00__006Pos06", "[acdijpst]#[qs]")
+  add_field("@facet_format", "Bild")
+elsif any_match("@006Pos00__006Pos12", "[efgkor]#[qs]")
+  add_field("@facet_format", "Bild")
+elsif any_match("@type__008Pos29", "(?:M|VM)#[sq]")
+  add_field("@facet_format", "Elektronische Ressource")
 end
 # MARC/337, MARC/338
 if any_match("@007Pos00", "[gmv]")
   add_field("@facet_format", "Film, Dia, Video")
-else
-  if any_equal("337  .a", "video")
-    add_field("@facet_format", "Film, Dia, Video")
-  else
-    if any_equal("337  .b", "v")
-      add_field("@facet_format", "Film, Dia, Video")
-    else
-      if any_match("338  .a", "Videodisk|videodisc")
-        add_field("@facet_format", "Film, Dia, Video")
-      else
-        if any_equal("338  .b", "vd")
-          add_field("@facet_format", "Film, Dia, Video")
-        else
-          if any_match("@type__008Pos33", "VM#[fmstv]")
-            add_field("@facet_format", "Film, Dia, Video")
-          else
-            if any_match("@006Pos00__006Pos16", "[gkor]#[fmstv]")
-              add_field("@facet_format", "Film, Dia, Video")
-            end
-          end
-        end
-      end
-    end
-  end
+elsif any_equal("337  .a", "video")
+  add_field("@facet_format", "Film, Dia, Video")
+elsif any_equal("337  .b", "v")
+  add_field("@facet_format", "Film, Dia, Video")
+elsif any_match("338  .a", "Videodisk|videodisc")
+  add_field("@facet_format", "Film, Dia, Video")
+elsif any_equal("338  .b", "vd")
+  add_field("@facet_format", "Film, Dia, Video")
+elsif any_match("@type__008Pos33", "VM#[fmstv]")
+  add_field("@facet_format", "Film, Dia, Video")
+elsif any_match("@006Pos00__006Pos16", "[gkor]#[fmstv]")
+  add_field("@facet_format", "Film, Dia, Video")
 end
 if any_match("@LeaderPos06|@006Pos00", "[op]")
   add_field("@facet_format", "Gedruckte Ressource")
-else
-  if any_equal("@007Pos00", "o")
-    add_field("@facet_format", "Gedruckte Ressource")
-  else
-    if any_match("@007Pos00__007Pos01", "k#[fjs]|t#[ab]")
-      add_field("@facet_format", "Gedruckte Ressource")
-    else
-      if any_match("@type__008Pos23", "(?:B|Mu|CR|MX)#[dr]")
-        add_field("@facet_format", "Gedruckte Ressource")
-      else
-        if any_match("@006Pos00__006Pos06", "[acdijpst]#[dr]")
-          add_field("@facet_format", "Gedruckte Ressource")
-        else
-          if any_match("@type__008Pos29", "(?:M|VM)#[dr]")
-            add_field("@facet_format", "Gedruckte Ressource")
-          else
-            if any_match("@006Pos00__006Pos12", "[efgkor]#[dr]")
-              add_field("@facet_format", "Gedruckte Ressource")
-            else
-              if any_equal("@type__008Pos33", "VM#b")
-                add_field("@facet_format", "Gedruckte Ressource")
-              else
-                if any_match("@006Pos00__006Pos16", "[gkor]#b")
-                  add_field("@facet_format", "Gedruckte Ressource")
-                end
-              end
-            end
-          end
-        end
-      end
-    end
-  end
+elsif any_equal("@007Pos00", "o")
+  add_field("@facet_format", "Gedruckte Ressource")
+elsif any_match("@007Pos00__007Pos01", "k#[fjs]|t#[ab]")
+  add_field("@facet_format", "Gedruckte Ressource")
+elsif any_match("@type__008Pos23", "(?:B|Mu|CR|MX)#[dr]")
+  add_field("@facet_format", "Gedruckte Ressource")
+elsif any_match("@006Pos00__006Pos06", "[acdijpst]#[dr]")
+  add_field("@facet_format", "Gedruckte Ressource")
+elsif any_match("@type__008Pos29", "(?:M|VM)#[dr]")
+  add_field("@facet_format", "Gedruckte Ressource")
+elsif any_match("@006Pos00__006Pos12", "[efgkor]#[dr]")
+  add_field("@facet_format", "Gedruckte Ressource")
+elsif any_equal("@type__008Pos33", "VM#b")
+  add_field("@facet_format", "Gedruckte Ressource")
+elsif any_match("@006Pos00__006Pos16", "[gkor]#b")
+  add_field("@facet_format", "Gedruckte Ressource")
 end
 if any_match("@LeaderPos06|@006Pos00", "[ef]")
   add_field("@facet_format", "Landkarte")
@@ -307,121 +237,69 @@ end
 # MARC/337, MARC/338
 if any_equal("@007Pos00", "h")
   add_field("@facet_format", "Mikroform")
-else
-  if any_match("337  .a", "Mikroform|microform")
-    add_field("@facet_format", "Mikroform")
-  else
-    if any_equal("337  .b", "h")
-      add_field("@facet_format", "Mikroform")
-    else
-      if any_match("338  .a", "microfiche|microfilm roll")
-        add_field("@facet_format", "Mikroform")
-      else
-        if any_match("338  .b", "h[ej]")
-          add_field("@facet_format", "Mikroform")
-        else
-          if any_match("@type__008Pos29", "(?:M|VM)#[abc]")
-            add_field("@facet_format", "Mikroform")
-          else
-            if any_match("@006Pos00__006Pos12", "[efgkor]#[abc]")
-              add_field("@facet_format", "Mikroform")
-            else
-              if any_match("@006Pos00__006Pos06", "[acdijpst]#[abc]")
-                add_field("@facet_format", "Mikroform")
-              else
-                if any_match("@type__008Pos23", "(?:B|Mu|CR|MX)#[abc]")
-                  add_field("@facet_format", "Mikroform")
-                end
-              end
-            end
-          end
-        end
-      end
-    end
-  end
+elsif any_match("337  .a", "Mikroform|microform")
+  add_field("@facet_format", "Mikroform")
+elsif any_equal("337  .b", "h")
+  add_field("@facet_format", "Mikroform")
+elsif any_match("338  .a", "microfiche|microfilm roll")
+  add_field("@facet_format", "Mikroform")
+elsif any_match("338  .b", "h[ej]")
+  add_field("@facet_format", "Mikroform")
+elsif any_match("@type__008Pos29", "(?:M|VM)#[abc]")
+  add_field("@facet_format", "Mikroform")
+elsif any_match("@006Pos00__006Pos12", "[efgkor]#[abc]")
+  add_field("@facet_format", "Mikroform")
+elsif any_match("@006Pos00__006Pos06", "[acdijpst]#[abc]")
+  add_field("@facet_format", "Mikroform")
+elsif any_match("@type__008Pos23", "(?:B|Mu|CR|MX)#[abc]")
+  add_field("@facet_format", "Mikroform")
 end
 # MARC/338
 if any_match("338  .a", "online bron|online resource|online-ressource|Online-Ressource|ressource en ligne")
   add_field("@facet_format", "Online-Ressource")
-else
-  if any_equal("338  .b", "cr")
-    add_field("@facet_format", "Online-Ressource")
-  else
-    if any_match("@type__008Pos23", "(?:B|Mu|CF|CR|MX)#o")
-      add_field("@facet_format", "Online-Ressource")
-    else
-      if any_match("@type__008Pos29", "(?:M|VM)#o")
-        add_field("@facet_format", "Online-Ressource")
-      else
-        if any_match("@006Pos00__006Pos06", "[acdijpstm]#o")
-          add_field("@facet_format", "Online-Ressource")
-        else
-          if any_match("@006Pos00__006Pos12", "[efgkor]#o")
-            add_field("@facet_format", "Online-Ressource")
-          end
-        end
-      end
-    end
-  end
+elsif any_equal("338  .b", "cr")
+  add_field("@facet_format", "Online-Ressource")
+elsif any_match("@type__008Pos23", "(?:B|Mu|CF|CR|MX)#o")
+  add_field("@facet_format", "Online-Ressource")
+elsif any_match("@type__008Pos29", "(?:M|VM)#o")
+  add_field("@facet_format", "Online-Ressource")
+elsif any_match("@006Pos00__006Pos06", "[acdijpstm]#o")
+  add_field("@facet_format", "Online-Ressource")
+elsif any_match("@006Pos00__006Pos12", "[efgkor]#o")
+  add_field("@facet_format", "Online-Ressource")
 end
 # MARC/338
 if any_match("338  .a", "Gegenstand|Karte")
   add_field("@facet_format", "Sonstiges")
-else
-  if any_match("338  .b", "n[or]")
-    add_field("@facet_format", "Sonstiges")
-  else
-    if any_equal("@007Pos00__007Pos01", "t#c")
-      add_field("@facet_format", "Sonstiges")
-    else
-      if any_match("@006Pos00__006Pos06", "[acdijpst]#f")
-        add_field("@facet_format", "Sonstiges")
-      else
-        if any_match("@type__008Pos23", "(?:B|CR|Mu|MX)#f")
-          add_field("@facet_format", "Sonstiges")
-        else
-          if any_match("@type__008Pos29", "(?:M|VM)#f")
-            add_field("@facet_format", "Sonstiges")
-          else
-            if any_match("@006Pos00__006Pos12", "[efgkor]#f")
-              add_field("@facet_format", "Sonstiges")
-            else
-              if any_equal("@type__008Pos33", "VM#p")
-                add_field("@facet_format", "Sonstiges")
-              else
-                if any_equal("@006Pos00__006Pos16", "[gkor]#p")
-                  add_field("@facet_format", "Sonstiges")
-                end
-              end
-            end
-          end
-        end
-      end
-    end
-  end
+elsif any_match("338  .b", "n[or]")
+  add_field("@facet_format", "Sonstiges")
+elsif any_equal("@007Pos00__007Pos01", "t#c")
+  add_field("@facet_format", "Sonstiges")
+elsif any_match("@006Pos00__006Pos06", "[acdijpst]#f")
+  add_field("@facet_format", "Sonstiges")
+elsif any_match("@type__008Pos23", "(?:B|CR|Mu|MX)#f")
+  add_field("@facet_format", "Sonstiges")
+elsif any_match("@type__008Pos29", "(?:M|VM)#f")
+  add_field("@facet_format", "Sonstiges")
+elsif any_match("@006Pos00__006Pos12", "[efgkor]#f")
+  add_field("@facet_format", "Sonstiges")
+elsif any_equal("@type__008Pos33", "VM#p")
+  add_field("@facet_format", "Sonstiges")
+elsif any_equal("@006Pos00__006Pos16", "[gkor]#p")
+  add_field("@facet_format", "Sonstiges")
 end
 if any_equal("@006Pos00__006Pos09", "m#g")
   add_field("@facet_format", "Spiel")
-else
-  if any_equal("@type__008Pos26", "CF#g")
-    add_field("@facet_format", "Spiel")
-  else
-    if any_match("@type__008Pos33|@type__008Pos34", "M#[pn]")
-      add_field("@facet_format", "Spiel")
-    else
-      if any_match("@006Pos00__006Pos16|@006Pos00__006Pos17", "[ef]#[pn]")
-        add_field("@facet_format", "Spiel")
-      else
-        if any_equal("@type__008Pos33", "VM#g")
-          add_field("@facet_format", "Spiel")
-        else
-          if any_match("@006Pos00__006Pos16", "[gkor]#g")
-            add_field("@facet_format", "Spiel")
-          end
-        end
-      end
-    end
-  end
+elsif any_equal("@type__008Pos26", "CF#g")
+  add_field("@facet_format", "Spiel")
+elsif any_match("@type__008Pos33|@type__008Pos34", "M#[pn]")
+  add_field("@facet_format", "Spiel")
+elsif any_match("@006Pos00__006Pos16|@006Pos00__006Pos17", "[ef]#[pn]")
+  add_field("@facet_format", "Spiel")
+elsif any_equal("@type__008Pos33", "VM#g")
+  add_field("@facet_format", "Spiel")
+elsif any_match("@006Pos00__006Pos16", "[gkor]#g")
+  add_field("@facet_format", "Spiel")
 end
 
 # MARC/336
@@ -478,71 +356,67 @@ do list(path: "9640s", "var": "$i")
     include("./alma/recordCodes.fix")
     put_vars(record_codes_start: "12")
     include("./alma/recordCodes.fix")
-  else
-    if any_equal("$i.F", "050")
-      put_vars(format_carrier_start: "0", format_carrier_length: "1")
-      include("./alma/formatCarrier.fix")
-      put_vars(format_carrier_start: "1", format_carrier_length: "1")
-      include("./alma/formatCarrier.fix")
-      put_vars(format_carrier_start: "2", format_carrier_length: "1")
-      include("./alma/formatCarrier.fix")
-      put_vars(format_carrier_start: "3", format_carrier_length: "1")
-      include("./alma/formatCarrier.fix")
-      put_vars(format_carrier_start: "4", format_carrier_length: "1")
-      include("./alma/formatCarrier.fix")
-      put_vars(format_carrier_start: "5", format_carrier_length: "2")
-      include("./alma/formatCarrier.fix")
-      put_vars(format_carrier_start: "7", format_carrier_length: "1")
-      include("./alma/formatCarrier.fix")
-      put_vars(format_carrier_start: "8", format_carrier_length: "1")
-      include("./alma/formatCarrier.fix")
-      put_vars(format_carrier_start: "9", format_carrier_length: "1")
-      include("./alma/formatCarrier.fix")
-      put_vars(format_carrier_start: "10", format_carrier_length: "1")
-      include("./alma/formatCarrier.fix")
-    else
-      if any_equal("$i.F", "051")
-        put_vars(type_monograph_start: "0")
-        include("./alma/typeMonograph.fix")
-        put_vars(type_monograph_start: "1")
-        include("./alma/typeMonograph.fix")
-        put_vars(type_monograph_start: "2")
-        include("./alma/typeMonograph.fix")
-        put_vars(type_monograph_start: "3")
-        include("./alma/typeMonograph.fix")
-        put_vars(type_monograph_start: "4")
-        include("./alma/typeMonograph.fix")
-        put_vars(type_monograph_start: "5")
-        include("./alma/typeMonograph.fix")
-        put_vars(type_monograph_start: "6")
-        include("./alma/typeMonograph.fix")
-      elsif any_equal("$i.F", "052")
-        put_vars(type_periodical_start: "0", type_periodical_length: "1")
-        include("./alma/typePeriodical.fix")
-        put_vars(type_periodical_start: "1", type_periodical_length: "2")
-        include("./alma/typePeriodical.fix")
-        put_vars(type_periodical_start: "3", type_periodical_length: "2")
-        include("./alma/typePeriodical.fix")
-        put_vars(type_periodical_start: "5", type_periodical_length: "2")
-        include("./alma/typePeriodical.fix")
-        put_vars(type_periodical_start: "7", type_periodical_length: "1")
-        include("./alma/typePeriodical.fix")
-        put_vars(type_periodical_start: "8", type_periodical_length: "1")
-        include("./alma/typePeriodical.fix")
-        put_vars(type_periodical_start: "9", type_periodical_length: "1")
-        include("./alma/typePeriodical.fix")
-        put_vars(type_periodical_start: "10", type_periodical_length: "1")
-        include("./alma/typePeriodical.fix")
-        put_vars(type_periodical_start: "11", type_periodical_length: "1")
-        include("./alma/typePeriodical.fix")
-        put_vars(type_periodical_start: "12", type_periodical_length: "1")
-        include("./alma/typePeriodical.fix")
-        put_vars(type_periodical_start: "13", type_periodical_length: "1")
-        include("./alma/typePeriodical.fix")
-        put_vars(type_periodical_start: "14", type_periodical_length: "1")
-        include("./alma/typePeriodical.fix")
-      end
-    end
+  elsif any_equal("$i.F", "050")
+    put_vars(format_carrier_start: "0", format_carrier_length: "1")
+    include("./alma/formatCarrier.fix")
+    put_vars(format_carrier_start: "1", format_carrier_length: "1")
+    include("./alma/formatCarrier.fix")
+    put_vars(format_carrier_start: "2", format_carrier_length: "1")
+    include("./alma/formatCarrier.fix")
+    put_vars(format_carrier_start: "3", format_carrier_length: "1")
+    include("./alma/formatCarrier.fix")
+    put_vars(format_carrier_start: "4", format_carrier_length: "1")
+    include("./alma/formatCarrier.fix")
+    put_vars(format_carrier_start: "5", format_carrier_length: "2")
+    include("./alma/formatCarrier.fix")
+    put_vars(format_carrier_start: "7", format_carrier_length: "1")
+    include("./alma/formatCarrier.fix")
+    put_vars(format_carrier_start: "8", format_carrier_length: "1")
+    include("./alma/formatCarrier.fix")
+    put_vars(format_carrier_start: "9", format_carrier_length: "1")
+    include("./alma/formatCarrier.fix")
+    put_vars(format_carrier_start: "10", format_carrier_length: "1")
+    include("./alma/formatCarrier.fix")
+  elsif any_equal("$i.F", "051")
+    put_vars(type_monograph_start: "0")
+    include("./alma/typeMonograph.fix")
+    put_vars(type_monograph_start: "1")
+    include("./alma/typeMonograph.fix")
+    put_vars(type_monograph_start: "2")
+    include("./alma/typeMonograph.fix")
+    put_vars(type_monograph_start: "3")
+    include("./alma/typeMonograph.fix")
+    put_vars(type_monograph_start: "4")
+    include("./alma/typeMonograph.fix")
+    put_vars(type_monograph_start: "5")
+    include("./alma/typeMonograph.fix")
+    put_vars(type_monograph_start: "6")
+    include("./alma/typeMonograph.fix")
+  elsif any_equal("$i.F", "052")
+    put_vars(type_periodical_start: "0", type_periodical_length: "1")
+    include("./alma/typePeriodical.fix")
+    put_vars(type_periodical_start: "1", type_periodical_length: "2")
+    include("./alma/typePeriodical.fix")
+    put_vars(type_periodical_start: "3", type_periodical_length: "2")
+    include("./alma/typePeriodical.fix")
+    put_vars(type_periodical_start: "5", type_periodical_length: "2")
+    include("./alma/typePeriodical.fix")
+    put_vars(type_periodical_start: "7", type_periodical_length: "1")
+    include("./alma/typePeriodical.fix")
+    put_vars(type_periodical_start: "8", type_periodical_length: "1")
+    include("./alma/typePeriodical.fix")
+    put_vars(type_periodical_start: "9", type_periodical_length: "1")
+    include("./alma/typePeriodical.fix")
+    put_vars(type_periodical_start: "10", type_periodical_length: "1")
+    include("./alma/typePeriodical.fix")
+    put_vars(type_periodical_start: "11", type_periodical_length: "1")
+    include("./alma/typePeriodical.fix")
+    put_vars(type_periodical_start: "12", type_periodical_length: "1")
+    include("./alma/typePeriodical.fix")
+    put_vars(type_periodical_start: "13", type_periodical_length: "1")
+    include("./alma/typePeriodical.fix")
+    put_vars(type_periodical_start: "14", type_periodical_length: "1")
+    include("./alma/typePeriodical.fix")
   end
 end
 
@@ -678,99 +552,63 @@ uniq("introx.music[]")
 
 if any_match("@type__008Pos28", "(?:B|CF|CR|M|VM)#[acfilmosz]")
   add_field("@facet_type", "Amtliche Druckschrift")
-else
-  if any_match("@006Pos00__006Pos11", "[aefgkmorst]#[acfilmosz]")
-    add_field("@facet_type", "Amtliche Druckschrift")
-  end
+elsif any_match("@006Pos00__006Pos11", "[aefgkmorst]#[acfilmosz]")
+  add_field("@facet_type", "Amtliche Druckschrift")
 end
 if any_equal("@type__008Pos33", "B#e")
   add_field("@facet_type", "Aufsatz")
-else
-  if any_match("@006Pos00__006Pos16", "[at]#e")
-    add_field("@facet_type", "Aufsatz")
-  else
-    if any_match("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "(?:B|CR)#g")
-      add_field("@facet_type", "Aufsatz")
-    else
-      if any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[ast]#g")
-        add_field("@facet_type", "Aufsatz")
-      end
-    end
-  end
+elsif any_match("@006Pos00__006Pos16", "[at]#e")
+  add_field("@facet_type", "Aufsatz")
+elsif any_match("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "(?:B|CR)#g")
+  add_field("@facet_type", "Aufsatz")
+elsif any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[ast]#g")
+  add_field("@facet_type", "Aufsatz")
 end
 if any_match("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "(?:B|CR)#[bknq]")
   add_field("@facet_type", "Bibliografie")
-else
-  if any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[ast]#[bknq]")
-    add_field("@facet_type", "Bibliografie")
-  else
-    if any_equal("@type__008Pos26", "CF#e")
-      add_field("@facet_type", "Bibliografie")
-    else
-      if any_equal("@006Pos00__006Pos09", "m#e")
-        add_field("@facet_type", "Bibliografie")
-      end
-    end
-  end
+elsif any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[ast]#[bknq]")
+  add_field("@facet_type", "Bibliografie")
+elsif any_equal("@type__008Pos26", "CF#e")
+  add_field("@facet_type", "Bibliografie")
+elsif any_equal("@006Pos00__006Pos09", "m#e")
+  add_field("@facet_type", "Bibliografie")
 end
 if any_match("@type__008Pos34", "B#[abc]")
   add_field("@facet_type", "Biografie")
-else
-  if any_match("@006Pos00__006Pos17", "[at]#[abc]")
-    add_field("@facet_type", "Biografie")
-  else
-    if any_match("@type__008Pos30|@type__008Pos31", "Mu#[ab]")
-      add_field("@facet_type", "Biografie")
-    else
-      if any_match("@006Pos00__006Pos13|@006Pos00__006Pos14", "[cdij]#[ab]")
-        add_field("@facet_type", "Biografie")
-      else
-        if any_equal("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "CR#h")
-          add_field("@facet_type", "Biografie")
-        else
-          if any_equal("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "s#h")
-            add_field("@facet_type", "Biografie")
-          end
-        end
-      end
-    end
-  end
+elsif any_match("@006Pos00__006Pos17", "[at]#[abc]")
+  add_field("@facet_type", "Biografie")
+elsif any_match("@type__008Pos30|@type__008Pos31", "Mu#[ab]")
+  add_field("@facet_type", "Biografie")
+elsif any_match("@006Pos00__006Pos13|@006Pos00__006Pos14", "[cdij]#[ab]")
+  add_field("@facet_type", "Biografie")
+elsif any_equal("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "CR#h")
+  add_field("@facet_type", "Biografie")
+elsif any_equal("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "s#h")
+  add_field("@facet_type", "Biografie")
 end
 if any_equal("@type__008Pos30", "B#1")
   add_field("@facet_type", "Festschrift")
-else
-  if any_match("@006Pos00__006Pos13", "[at]#1")
-    add_field("@facet_type", "Festschrift")
-  end
+elsif any_match("@006Pos00__006Pos13", "[at]#1")
+  add_field("@facet_type", "Festschrift")
 end
 if any_match("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "(?:B|CR)#l")
   add_field("@facet_type", "Gesetz")
-else
-  if any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[ast]#l")
-    add_field("@facet_type", "Gesetz")
-  end
+elsif any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[ast]#l")
+  add_field("@facet_type", "Gesetz")
 end
 if any_match("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "(?:B|CR)#m")
   add_field("@facet_type", "Hochschulschrift")
-else
-  if any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[ast]#m")
-    add_field("@facet_type", "Hochschulschrift")
-  end
+elsif any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[ast]#m")
+  add_field("@facet_type", "Hochschulschrift")
 end
 if any_match("@type__008Pos29", "(?:B|CR)#1")
   add_field("@facet_type", "Konferenzschrift")
-else
-  if any_match("@006Pos00__006Pos12", "[ast]#1")
-    add_field("@facet_type", "Konferenzschrift")
-  else
-    if any_equal("@type__008Pos30|@type__008Pos31", "Mu#c")
-      add_field("@facet_type", "Konferenzschrift")
-    else
-      if any_match("@006Pos00__006Pos13|@006Pos00__006Pos14", "[cdij]#c")
-        add_field("@facet_type", "Konferenzschrift")
-      end
-    end
-  end
+elsif any_match("@006Pos00__006Pos12", "[ast]#1")
+  add_field("@facet_type", "Konferenzschrift")
+elsif any_equal("@type__008Pos30|@type__008Pos31", "Mu#c")
+  add_field("@facet_type", "Konferenzschrift")
+elsif any_match("@006Pos00__006Pos13|@006Pos00__006Pos14", "[cdij]#c")
+  add_field("@facet_type", "Konferenzschrift")
 end
 if any_match("@LeaderPos07", "[adm]")
   if none_equal("@LeaderPos19", "a")
@@ -784,90 +622,54 @@ elsif any_equal("@007Pos00", "q")
 end
 if any_match("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "(?:B|CR)#[der]")
   add_field("@facet_type", "Nachschlagewerk")
-else
-  if any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[ast]#[der]")
-    add_field("@facet_type", "Nachschlagewerk")
-  end
+elsif any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[ast]#[der]")
+  add_field("@facet_type", "Nachschlagewerk")
 end
 if any_match("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "(?:B|CR)#u")
   add_field("@facet_type", "Norm")
-else
-  if any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[ast]#u")
-    add_field("@facet_type", "Norm")
-  end
+elsif any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[ast]#u")
+  add_field("@facet_type", "Norm")
 end
 if any_equal("@LeaderPos07", "c")
   add_field("@facet_type", "Schriftenreihe")
-else
-  if any_equal("@LeaderPos19", "a")
-    add_field("@facet_type", "Schriftenreihe")
-  else
-    if any_equal("@type__008Pos21", "CR#m")
-      add_field("@facet_type", "Schriftenreihe")
-    else
-      if any_equal("@006Pos00__006Pos04", "s#m")
-        add_field("@facet_type", "Schriftenreihe")
-      end
-    end
-  end
+elsif any_equal("@LeaderPos19", "a")
+  add_field("@facet_type", "Schriftenreihe")
+elsif any_equal("@type__008Pos21", "CR#m")
+  add_field("@facet_type", "Schriftenreihe")
+elsif any_equal("@006Pos00__006Pos04", "s#m")
+  add_field("@facet_type", "Schriftenreihe")
 end
 if any_equal("@007Pos00__007Pos01", "t#d")
   add_field("@facet_type", "Sonstiges")
-else
-  if any_equal("@type__008Pos33|@type__008Pos34", "M#r")
-    add_field("@facet_type", "Sonstiges")
-  else
-    if any_match("@006Pos00__006Pos16|@006Pos00__006Pos17", "[ef]#r")
-      add_field("@facet_type", "Sonstiges")
-    else
-      if any_match("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "(?:B|CR)#[acis]")
-        add_field("@facet_type", "Sonstiges")
-      else
-        if any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[ast]#[acis]")
-          add_field("@facet_type", "Sonstiges")
-        else
-          if any_match("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "B#[j2]")
-            add_field("@facet_type", "Sonstiges")
-          else
-            if any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[at]#[j2]")
-              add_field("@facet_type", "Sonstiges")
-            else
-              if any_equal("@type__008Pos33", "B#m")
-                add_field("@facet_type", "Sonstiges")
-              else
-                if any_match("@006Pos00__006Pos16", "[at]#m")
-                  add_field("@facet_type", "Sonstiges")
-                else
-                  if any_equal("@type__008Pos21", "CR#l")
-                    add_field("@facet_type", "Sonstiges")
-                  else
-                    if any_equal("@006Pos00__006Pos04", "s#l")
-                      add_field("@facet_type", "Sonstiges")
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
-    end
-  end
+elsif any_equal("@type__008Pos33|@type__008Pos34", "M#r")
+  add_field("@facet_type", "Sonstiges")
+elsif any_match("@006Pos00__006Pos16|@006Pos00__006Pos17", "[ef]#r")
+  add_field("@facet_type", "Sonstiges")
+elsif any_match("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "(?:B|CR)#[acis]")
+  add_field("@facet_type", "Sonstiges")
+elsif any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[ast]#[acis]")
+  add_field("@facet_type", "Sonstiges")
+elsif any_match("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "B#[j2]")
+  add_field("@facet_type", "Sonstiges")
+elsif any_match("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "[at]#[j2]")
+  add_field("@facet_type", "Sonstiges")
+elsif any_equal("@type__008Pos33", "B#m")
+  add_field("@facet_type", "Sonstiges")
+elsif any_match("@006Pos00__006Pos16", "[at]#m")
+  add_field("@facet_type", "Sonstiges")
+elsif any_equal("@type__008Pos21", "CR#l")
+  add_field("@facet_type", "Sonstiges")
+elsif any_equal("@006Pos00__006Pos04", "s#l")
+  add_field("@facet_type", "Sonstiges")
 end
 if any_match("@type__008Pos21", "CR#[np]")
   add_field("@facet_type", "Zeitschrift")
-else
-  if any_equal("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "CR#y")
-    add_field("@facet_type", "Zeitschrift")
-  else
-    if any_match("@006Pos00__006Pos04", "s#[np]")
-      add_field("@facet_type", "Zeitschrift")
-    else
-      if any_equal("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "s#y")
-        add_field("@facet_type", "Zeitschrift")
-      end
-    end
-  end
+elsif any_equal("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "CR#y")
+  add_field("@facet_type", "Zeitschrift")
+elsif any_match("@006Pos00__006Pos04", "s#[np]")
+  add_field("@facet_type", "Zeitschrift")
+elsif any_equal("@006Pos00__006Pos07|@006Pos00__006Pos08|@006Pos00__006Pos09|@006Pos00__006Pos10", "s#y")
+  add_field("@facet_type", "Zeitschrift")
 end
 
 if exists("700??")
@@ -966,36 +768,28 @@ do list(path: "035  .a", "var": "$i")
       replace_all("@sysid", "^\\(DE-836\\)(\\d{10,})-49hbz_fhm$", "(DE-836)on$1")
       copy_field("@sysid", "bib.identifierAuthority=mab")
     end
-  else
-    if any_match("$i", "\\($[isil]\\).*")
-      unless exists("@sysid")
-        copy_field("$i", "@sysid")
-      end
+  elsif any_match("$i", "\\($[isil]\\).*")
+    unless exists("@sysid")
+      copy_field("$i", "@sysid")
     end
   end
   if any_match("$i", "\\(DE-600\\).*")
     add_field("IdentifierDNB[].$append.__dummy__", "")
     replace_all("$i", "^\\(DE-600\\)", "")
     copy_field("$i", "IdentifierDNB[].$last.identifierDNB")
-  else
-    if any_match("$i", "\\(DE-601\\).*")
-      add_field("IdentifierGBV[].$append.__dummy__", "")
-      replace_all("$i", "^\\(DE-601\\)", "")
-      copy_field("$i", "IdentifierGBV[].$last.identifierGBV")
-    else
-      if any_match("$i", "\\(DE-605\\).*")
-        add_field("IdentifierHBZ[].$append.__dummy__", "")
-        replace_all("$i", "^\\(DE-605\\)", "")
-        copy_field("$i", "IdentifierHBZ[].$last.identifierHBZ")
-      else
-        if any_match("$i", "\\(OCoLC\\).*")
-          add_field("IdentifierOCLC[].$append.__dummy__", "")
-          do list(path: "$i", "var": "$j")
-            replace_all("$j", "^\\(OCoLC\\)", "")
-            copy_field("$j", "IdentifierOCLC[].$last.identifierOCLC")
-          end
-        end
-      end
+  elsif any_match("$i", "\\(DE-601\\).*")
+    add_field("IdentifierGBV[].$append.__dummy__", "")
+    replace_all("$i", "^\\(DE-601\\)", "")
+    copy_field("$i", "IdentifierGBV[].$last.identifierGBV")
+  elsif any_match("$i", "\\(DE-605\\).*")
+    add_field("IdentifierHBZ[].$append.__dummy__", "")
+    replace_all("$i", "^\\(DE-605\\)", "")
+    copy_field("$i", "IdentifierHBZ[].$last.identifierHBZ")
+  elsif any_match("$i", "\\(OCoLC\\).*")
+    add_field("IdentifierOCLC[].$append.__dummy__", "")
+    do list(path: "$i", "var": "$j")
+      replace_all("$j", "^\\(OCoLC\\)", "")
+      copy_field("$j", "IdentifierOCLC[].$last.identifierOCLC")
     end
   end
 end
@@ -1158,34 +952,26 @@ add_field("@current_isil", "$[isil]")
 do list(path: "084  ", "var": "$i")
   if any_equal("$i.2", "ghbs")
     copy_field("$i.a", "@SubjectGHBLocal")
-  else
-    if any_equal("$i.2", "nwbib")
-      add_field("SubjectNWBIB[].$append.__dummy__", "")
-      copy_field("$i.a", "SubjectNWBIB[].$last.subject")
+  elsif any_equal("$i.2", "nwbib")
+    add_field("SubjectNWBIB[].$append.__dummy__", "")
+    copy_field("$i.a", "SubjectNWBIB[].$last.subject")
+  elsif any_equal("$i.2", "rpb")
+    add_field("SubjectRPB[].$append.__dummy__", "")
+    if any_equal("@current_isil", "DE-107")
+      copy_field("$i.a", "@subjectRPB")
+      lookup("@subjectRPB", "alma-rpb-to-taxonomy", delete: "true")
+      move_field("@subjectRPB", "introx.taxonomy[]")
+      lookup("$i.a", "alma-rpb-to-taxonomy")
+      copy_field("$i.a", "SubjectRPB[].$last.subject")
     else
-      if any_equal("$i.2", "rpb")
-        add_field("SubjectRPB[].$append.__dummy__", "")
-        if any_equal("@current_isil", "DE-107")
-          copy_field("$i.a", "@subjectRPB")
-          lookup("@subjectRPB", "alma-rpb-to-taxonomy", delete: "true")
-          move_field("@subjectRPB", "introx.taxonomy[]")
-          lookup("$i.a", "alma-rpb-to-taxonomy")
-          copy_field("$i.a", "SubjectRPB[].$last.subject")
-        else
-          copy_field("$i.a", "SubjectRPB[].$last.subject")
-        end
-      else
-        if any_equal("$i.2", "rvk")
-          add_field("SubjectRVK[].$append.__dummy__", "")
-          copy_field("$i.a", "SubjectRVK[].$last.subject")
-        else
-          if any_equal("$i.2", "sdnb")
-            add_field("SubjectDNB[].$append.__dummy__", "")
-            copy_field("$i.a", "SubjectDNB[].$last.subject")
-          end
-        end
-      end
+      copy_field("$i.a", "SubjectRPB[].$last.subject")
     end
+  elsif any_equal("$i.2", "rvk")
+    add_field("SubjectRVK[].$append.__dummy__", "")
+    copy_field("$i.a", "SubjectRVK[].$last.subject")
+  elsif any_equal("$i.2", "sdnb")
+    add_field("SubjectDNB[].$append.__dummy__", "")
+    copy_field("$i.a", "SubjectDNB[].$last.subject")
   end
 end
 set_array("@taxonomy")
