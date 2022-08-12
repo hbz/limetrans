@@ -1,3 +1,10 @@
+do put_macro("alma-mms-to-isil")
+  copy_field("$[source]", "@$[target]-code")
+  parse_text("@$[target]-code", ".*(.{4})$")
+  move_field("@$[target]-code", "$[target]")
+  lookup("$[target]", "institution-code-to-isil", delete: "true")
+end
+
 do put_macro("alma-record-codes")
   call_macro("substring", source: "$i.A", target: "@recordCodes", start: "$[start]")
   lookup("@recordCodes", "alma-record-codes-$[start]", delete: "true")

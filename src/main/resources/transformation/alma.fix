@@ -641,15 +641,8 @@ do list(path: "MBD  ", "var": "$i")
 end
 
 # MARC/001
-copy_field("001", "@institution_code")
-parse_text("@institution_code", ".*(.{4})$")
-copy_field("@institution_code", "@isil")
-lookup("@isil", "institution-code-to-isil", delete: "true")
-
-copy_field("@mmsiz", "@institution_code_iz")
-parse_text("@institution_code_iz", ".*(.{4})$")
-copy_field("@institution_code_iz", "@isiliz")
-lookup("@isiliz", "institution-code-to-isil", delete: "true")
+call_macro("alma-mms-to-isil", source: "001", target: "@isil")
+call_macro("alma-mms-to-isil", source: "@mmsiz", target: "@isiliz")
 
 # MARC/981
 do list(path: "981  .a", "var": "$i") # SISIS CATKey
