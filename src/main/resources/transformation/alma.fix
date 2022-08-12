@@ -1,4 +1,4 @@
-do hbz.limetrans.function.Once()
+do once()
   include("./maps.fix")
   include("./maps/alma-branches.fix")
   include("./maps/alma-extended-type.fix")
