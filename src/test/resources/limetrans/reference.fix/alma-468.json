@@ -20679,7 +20679,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Schriftenreihe" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -20729,6 +20730,9 @@
     "title" : "Veröffentlichungen des Instituts für Deutsche Kultur und Geschichte Südosteuropas (IKGS) an der Ludwig-Maximilians-Universität München / Wissenschaftliche Reihe",
     "controlNumber" : "(DE-605)HT015510223",
     "identifierForLinkingEntry" : "(DE-605)HT015510223"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Schriftenreihe"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990052610790206441"
@@ -22305,7 +22309,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Straßenbau" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -22354,6 +22359,9 @@
     "title" : "Forschung Straßenbau und Straßenverkehrstechnik",
     "controlNumber" : "(DE-605)HT001232891",
     "identifierForLinkingEntry" : "(DE-605)HT001232891"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Straßenbau"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990052620680206441"
@@ -41879,7 +41887,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Architektur" ]
+    "subject" : [ "Entwurf", "Architektur" ]
   },
   "SubjectRPB" : [ {
     "subject" : "450"
@@ -41929,6 +41937,8 @@
     "identifierForLinkingEntry" : "(DE-605)HT008165916"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Entwurf"
+  }, {
     "subject" : "Architektur"
   } ],
   "xbib" : [ {
@@ -60941,7 +60951,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Unterrichtsmethode" ]
+    "subject" : [ "Didaktik / Unterricht", "Unterrichtsmethode" ]
   },
   "SubjectRPB" : [ {
     "subject" : "120"
@@ -61006,6 +61016,8 @@
     "identifierForLinkingEntry" : "(DE-605)HT019011448"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Didaktik / Unterricht"
+  }, {
     "subject" : "Unterrichtsmethode"
   } ],
   "xbib" : [ {
@@ -64038,7 +64050,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Westfalen", "Technisches Denkmal" ]
+    "subject" : [ "Museumsführer", "Westfalen", "Technisches Denkmal" ]
   },
   "SubjectNWBIB" : [ {
     "subject" : "Westfalen"
@@ -64097,6 +64109,8 @@
     "identifierForLinkingEntry" : "(DE-605)HT017794853"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Museumsführer"
+  }, {
     "subject" : "Westfalen"
   }, {
     "subject" : "Technisches Denkmal"
@@ -67759,7 +67773,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Kapitalmarkt", "Finanzwirtschaft", "Geldwirtschaft" ]
+    "subject" : [ "Finanzierung / Wörterbuch", "Geld / Wörterbuch", "Geldtheorie / Wörterbuch", "Kapitlamarkt / Wörterbuch", "Kreditwesen / Wörterbuch", "Volkswirtschaftslehre / Aufsatzsammlung", "Kapitalmarkt", "Finanzwirtschaft", "Geldwirtschaft" ]
   },
   "SubjectRPB" : [ {
     "subject" : "650"
@@ -67831,6 +67845,18 @@
     "title" : "The new Palgrave"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Finanzierung / Wörterbuch"
+  }, {
+    "subject" : "Geld / Wörterbuch"
+  }, {
+    "subject" : "Geldtheorie / Wörterbuch"
+  }, {
+    "subject" : "Kapitlamarkt / Wörterbuch"
+  }, {
+    "subject" : "Kreditwesen / Wörterbuch"
+  }, {
+    "subject" : "Volkswirtschaftslehre / Aufsatzsammlung"
+  }, {
     "subject" : "Kapitalmarkt"
   }, {
     "subject" : "Finanzwirtschaft"
@@ -69416,7 +69442,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Deutschland", "Sozialpolitik", "Geschichte" ]
+    "subject" : [ "Deutschland / Sozialpolitik", "Deutschland / Sozialpolitik / Geschichte", "Deutschland / Sozialpolitik / Geschichte <1800-1990>", "Deutschland / Sozialpolitik / Geschichte <1800-1992>", "Deutschland", "Sozialpolitik", "Geschichte" ]
   },
   "SubjectRPB" : [ {
     "subject" : "380"
@@ -69485,6 +69511,14 @@
     "identifierForLinkingEntry" : "(DE-605)HT019275197"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Deutschland / Sozialpolitik"
+  }, {
+    "subject" : "Deutschland / Sozialpolitik / Geschichte"
+  }, {
+    "subject" : "Deutschland / Sozialpolitik / Geschichte <1800-1990>"
+  }, {
+    "subject" : "Deutschland / Sozialpolitik / Geschichte <1800-1992>"
+  }, {
     "subject" : "Deutschland"
   }, {
     "subject" : "Sozialpolitik"
@@ -71495,7 +71529,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Informatik" ],
-    "subject" : [ "Software Engineering" ]
+    "subject" : [ "Software Engineering / Lehrbuch", "Softwareentwicklung / Lehrbuch", "Software Engineering" ]
   },
   "SubjectRPB" : [ {
     "subject" : "820"
@@ -71563,6 +71597,10 @@
     "identifierForLinkingEntry" : "(DE-605)HT008179754"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Software Engineering / Lehrbuch"
+  }, {
+    "subject" : "Softwareentwicklung / Lehrbuch"
+  }, {
     "subject" : "Software Engineering"
   } ],
   "SubjectGHBLocal" : [ {

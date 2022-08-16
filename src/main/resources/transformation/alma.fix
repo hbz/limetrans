@@ -1431,8 +1431,8 @@ do list(path: "982  ", "var": "$i")
     move_field("@subjectTopicName", "@subjectHeadings")
   end
 end
-# MARC/689
-do list(path: "689??", "var": "$i")
+# MARC/688, MARC/689
+do list(path: "68[89]??", "var": "$i")
   copy_field("$i.a", "@subjectHeadings")
 end
 uniq("@subjectHeadings")

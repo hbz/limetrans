@@ -27,7 +27,8 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Mathematik" ]
+    "taxonomy" : [ "Mathematik" ],
+    "subject" : [ "Statistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -74,6 +75,9 @@
     "title" : "Arbeiten aus dem Institut für Höhere Studien und Wissenschaftliche Forschung",
     "volume" : "1",
     "designation" : "(DE-605)HT001254425"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Statistik"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -3805,7 +3809,8 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Musikwissenschaft" ]
+    "taxonomy" : [ "Musikwissenschaft" ],
+    "subject" : [ "Drei - Singstimme (2), Basso continuo / Duett, Vokalkonzert", "Vier - Singstimme (3), Basso continuo / Terzett, Vokalkonzert", "Fünf - Singstimme (4), Basso continuo / Quartett, Vokalkonzert", "Sieben - Singstimme (3), Violine (2), Violone, Basso continuo / Terzett, Ritornell", "Sieben - Singstimme (3), Violine (2), Violone, Basso continuo / Terzett, Lied", "Sieben - Singstimme (6), Basso continuo / Sextett", "Singstimme (hoch), Gemischter Chor (6stg), Basso continuo", "Gemischter Chor (2) (a cappella) / Vokalkonzert" ]
   },
   "SubjectRPB" : [ {
     "subject" : "550"
@@ -3888,6 +3893,23 @@
     "volume" : "NF,22",
     "designation" : "(DE-605)HT001317377"
   } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Drei - Singstimme (2), Basso continuo / Duett, Vokalkonzert"
+  }, {
+    "subject" : "Vier - Singstimme (3), Basso continuo / Terzett, Vokalkonzert"
+  }, {
+    "subject" : "Fünf - Singstimme (4), Basso continuo / Quartett, Vokalkonzert"
+  }, {
+    "subject" : "Sieben - Singstimme (3), Violine (2), Violone, Basso continuo / Terzett, Ritornell"
+  }, {
+    "subject" : "Sieben - Singstimme (3), Violine (2), Violone, Basso continuo / Terzett, Lied"
+  }, {
+    "subject" : "Sieben - Singstimme (6), Basso continuo / Sextett"
+  }, {
+    "subject" : "Singstimme (hoch), Gemischter Chor (6stg), Basso continuo"
+  }, {
+    "subject" : "Gemischter Chor (2) (a cappella) / Vokalkonzert"
+  } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
     "subject" : "KGV"
@@ -3938,7 +3960,8 @@
     "music" : [ "Partitur" ],
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Singstimme (4), Orchester / Oratorium" ]
   },
   "Country" : [ {
     "countryISO" : "DE"
@@ -4035,6 +4058,9 @@
     "title" : "Hallische Händel-Ausgabe. Serie 1, Oratorien und große Kantaten",
     "volume" : "1,4,1",
     "designation" : "(DE-605)HT001324877"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Singstimme (4), Orchester / Oratorium"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -6478,7 +6504,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Geschichte" ],
-    "subject" : [ "Flavier", "Geschichte", "Römisches Reich", "Geschichte 69-96" ]
+    "subject" : [ "Flavier / Kaiserhaus / Rom", "Flavier", "Geschichte", "Römisches Reich", "Geschichte 69-96" ]
   },
   "SubjectRPB" : [ {
     "subject" : "330"
@@ -6551,6 +6577,8 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Flavier / Kaiserhaus / Rom"
+  }, {
     "subject" : "Flavier"
   }, {
     "subject" : "Geschichte"
@@ -6735,7 +6763,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Olympische Spiele", "Geschichte 776 v. Chr.-393" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -6781,6 +6810,11 @@
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Lebendige Antike"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Olympische Spiele"
+  }, {
+    "subject" : "Geschichte 776 v. Chr.-393"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -8806,7 +8840,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Swedenborg, Emanuel", "Rezeption", "Oetinger, Friedrich Christoph", "Kant, Immanuel" ]
+    "subject" : [ "Rezeption", "Deutschland", "Geschichte", "Swedenborg, Emanuel", "Oetinger, Friedrich Christoph", "Kant, Immanuel" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -8845,9 +8879,13 @@
     "extent" : "XI, 351 S."
   },
   "SubjectHeadings" : [ {
-    "subject" : "Swedenborg, Emanuel"
-  }, {
     "subject" : "Rezeption"
+  }, {
+    "subject" : "Deutschland"
+  }, {
+    "subject" : "Geschichte"
+  }, {
+    "subject" : "Swedenborg, Emanuel"
   }, {
     "subject" : "Oetinger, Friedrich Christoph"
   }, {
@@ -9762,7 +9800,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Pädagogik" ],
-    "subject" : [ "Schulberatung" ]
+    "subject" : [ "Pädagogische Psychologie", "Schulberatung" ]
   },
   "SubjectRPB" : [ {
     "subject" : "120"
@@ -9840,6 +9878,8 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Pädagogische Psychologie"
+  }, {
     "subject" : "Schulberatung"
   } ],
   "SubjectGHBLocal" : [ {
@@ -12170,7 +12210,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Pädagogik" ],
-    "subject" : [ "Didaktik", "Allgemeine Didaktik" ]
+    "subject" : [ "Fachdidaktik", "Theorie", "Didaktik", "Allgemeine Didaktik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "120"
@@ -12245,6 +12285,10 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Fachdidaktik"
+  }, {
+    "subject" : "Theorie"
+  }, {
     "subject" : "Didaktik"
   }, {
     "subject" : "Allgemeine Didaktik"
@@ -12534,7 +12578,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Germanistik" ],
-    "subject" : [ "Politische Sprache" ]
+    "subject" : [ "Kommunikation", "Politik", "Semantik", "Sprache", "Politische Sprache" ]
   },
   "SubjectRPB" : [ {
     "subject" : "150"
@@ -12598,6 +12642,14 @@
     "title" : "Sprachwissenschaftliche Studienbücher : Abteilung 2"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Kommunikation"
+  }, {
+    "subject" : "Politik"
+  }, {
+    "subject" : "Semantik"
+  }, {
+    "subject" : "Sprache"
+  }, {
     "subject" : "Politische Sprache"
   } ],
   "SubjectGHBLocal" : [ {
@@ -13988,7 +14040,7 @@
     "branch" : [ "Campus Grifflenberg", "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
-    "subject" : [ "Bürgerbeteiligung", "Staat", "Planung" ]
+    "subject" : [ "Anwaltsplanung", "Apathie", "Beteiligungsverfahren", "Bürgerbeteiligung", "Direkte Demokratie", "Mediationsverfahren", "Mitbestimmung, politische", "Partizipation", "Planung / Politische Beteiligung*Planung", "Planungszelle", "Staat", "Planung" ]
   },
   "SubjectRPB" : [ {
     "subject" : "610"
@@ -14070,7 +14122,25 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Anwaltsplanung"
+  }, {
+    "subject" : "Apathie"
+  }, {
+    "subject" : "Beteiligungsverfahren"
+  }, {
     "subject" : "Bürgerbeteiligung"
+  }, {
+    "subject" : "Direkte Demokratie"
+  }, {
+    "subject" : "Mediationsverfahren"
+  }, {
+    "subject" : "Mitbestimmung, politische"
+  }, {
+    "subject" : "Partizipation"
+  }, {
+    "subject" : "Planung / Politische Beteiligung*Planung"
+  }, {
+    "subject" : "Planungszelle"
   }, {
     "subject" : "Staat"
   }, {
@@ -14552,7 +14622,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Dienstleistung", "Marketing" ]
+    "subject" : [ "Dienstleistung / Marketing", "Dienstleistung", "Marketing" ]
   },
   "SubjectRPB" : [ {
     "subject" : "650"
@@ -14616,6 +14686,8 @@
     "identifierGND" : [ "120119226" ]
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Dienstleistung / Marketing"
+  }, {
     "subject" : "Dienstleistung"
   }, {
     "subject" : "Marketing"
@@ -15439,7 +15511,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Europa", "Ideengeschichte 1800-1960", "Ideengeschichte 1800-1950" ]
+    "subject" : [ "Abendland", "Europa", "Ideengeschichte 1800-1960", "Ideengeschichte 1800-1950" ]
   },
   "SubjectRVK" : [ {
     "subject" : "CC 8200"
@@ -15483,6 +15555,8 @@
     "description" : "Aus dem Span. übers."
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Abendland"
+  }, {
     "subject" : "Europa"
   }, {
     "subject" : "Ideengeschichte 1800-1960"
@@ -15968,7 +16042,7 @@
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kommunikationswissenschaften / Publizistik" ],
-    "subject" : [ "Massenmedien", "Wörterbuch" ]
+    "subject" : [ "Gesellschaft", "Kommunikation", "Medienlexikon", "Staat", "Massenmedien", "Wörterbuch" ]
   },
   "SubjectRPB" : [ {
     "subject" : "620"
@@ -16040,6 +16114,14 @@
     "extent" : "253 S."
   },
   "SubjectHeadings" : [ {
+    "subject" : "Gesellschaft"
+  }, {
+    "subject" : "Kommunikation"
+  }, {
+    "subject" : "Medienlexikon"
+  }, {
+    "subject" : "Staat"
+  }, {
     "subject" : "Massenmedien"
   }, {
     "subject" : "Wörterbuch"
@@ -16250,7 +16332,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Geographie / Geowissenschaften" ],
-    "subject" : [ "Wirtschaftsgeologie", "Rohstoffwirtschaft" ]
+    "subject" : [ "Bergbau*Entwicklungsländer*Evaluierung*Lagerung*Rohstoff*Rohstoffmarkt*Rohstoffpolitik", "Geologie / Wirtschaftsgeologie", "Rohstoffwirtschaft*Wirtschaftsgeologie", "Wirtschaftsgeologie", "Rohstoffwirtschaft" ]
   },
   "SubjectRVK" : [ {
     "subject" : "QT 200"
@@ -16335,6 +16417,12 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Bergbau*Entwicklungsländer*Evaluierung*Lagerung*Rohstoff*Rohstoffmarkt*Rohstoffpolitik"
+  }, {
+    "subject" : "Geologie / Wirtschaftsgeologie"
+  }, {
+    "subject" : "Rohstoffwirtschaft*Wirtschaftsgeologie"
+  }, {
     "subject" : "Wirtschaftsgeologie"
   }, {
     "subject" : "Rohstoffwirtschaft"
@@ -17844,7 +17932,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Geographie / Geowissenschaften" ],
-    "subject" : [ "Göttingen", "Stadtentwicklung" ]
+    "subject" : [ "Bauordnung", "Denkmalschutz", "Flächennutzung", "Geschichte", "Innenstadt", "Niedersachsen", "Siedlungsgeographie", "Siedlungsgeschichte", "Stadtentwicklung", "Stadtgeographie", "Stadtgeschichte", "Stadtplanung", "Stadtsanierung", "Stadtstruktur", "Verwaltung", "Wirtschaftsstruktur", "Wohnen", "Wohnungsbau", "Göttingen" ]
   },
   "SubjectRPB" : [ {
     "subject" : "710"
@@ -17919,9 +18007,43 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
-    "subject" : "Göttingen"
+    "subject" : "Bauordnung"
+  }, {
+    "subject" : "Denkmalschutz"
+  }, {
+    "subject" : "Flächennutzung"
+  }, {
+    "subject" : "Geschichte"
+  }, {
+    "subject" : "Innenstadt"
+  }, {
+    "subject" : "Niedersachsen"
+  }, {
+    "subject" : "Siedlungsgeographie"
+  }, {
+    "subject" : "Siedlungsgeschichte"
   }, {
     "subject" : "Stadtentwicklung"
+  }, {
+    "subject" : "Stadtgeographie"
+  }, {
+    "subject" : "Stadtgeschichte"
+  }, {
+    "subject" : "Stadtplanung"
+  }, {
+    "subject" : "Stadtsanierung"
+  }, {
+    "subject" : "Stadtstruktur"
+  }, {
+    "subject" : "Verwaltung"
+  }, {
+    "subject" : "Wirtschaftsstruktur"
+  }, {
+    "subject" : "Wohnen"
+  }, {
+    "subject" : "Wohnungsbau"
+  }, {
+    "subject" : "Göttingen"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -18070,7 +18192,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Biologie" ],
-    "subject" : [ "Mittelmeerraum", "Gehölze" ]
+    "subject" : [ "Mittelmeerraum", "Pflanzengeographie", "Vegetation", "Gehölze" ]
   },
   "SubjectRPB" : [ {
     "subject" : "780"
@@ -18149,6 +18271,10 @@
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Mittelmeerraum"
+  }, {
+    "subject" : "Pflanzengeographie"
+  }, {
+    "subject" : "Vegetation"
   }, {
     "subject" : "Gehölze"
   } ],
@@ -19533,7 +19659,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Religionswissenschaft / Theologie" ],
-    "subject" : [ "Redaktion", "Traditionsgeschichtliche Forschung" ]
+    "subject" : [ "Altes Testament", "Religionspädagogik", "Redaktion", "Traditionsgeschichtliche Forschung" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -19584,6 +19710,11 @@
     "contact" : "V:DE-605",
     "contact" : "X:migimw",
     "format" : "application/pdf"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Altes Testament"
+  }, {
+    "subject" : "Religionspädagogik"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -20723,7 +20854,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg", "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Politische Ethik" ]
+    "subject" : [ "BRD / Zeitzeugen", "Politische Ethik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "450"
@@ -20767,6 +20898,8 @@
     "extent" : "XXXIX, 389 S."
   },
   "SubjectHeadings" : [ {
+    "subject" : "BRD / Zeitzeugen"
+  }, {
     "subject" : "Politische Ethik"
   } ],
   "SubjectGHBLocal" : [ {
@@ -23052,7 +23185,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Haspel" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Olbrich, Joseph Maria" ]
+    "subject" : [ "Darmstadt", "Jugendstil", "Mathildenhöhe", "Wiener_Secession", "Olbrich, Joseph Maria" ]
   },
   "SubjectRPB" : [ {
     "subject" : "510"
@@ -23103,6 +23236,14 @@
     "identifierGND" : [ "119118467" ]
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Darmstadt"
+  }, {
+    "subject" : "Jugendstil"
+  }, {
+    "subject" : "Mathildenhöhe"
+  }, {
+    "subject" : "Wiener_Secession"
+  }, {
     "subject" : "Olbrich, Joseph Maria"
   } ],
   "SubjectGHBLocal" : [ {
@@ -26708,7 +26849,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
-    "subject" : [ "Deutschland", "Jugend" ]
+    "subject" : [ "Jugend", "Jugendbewegungen", "Deutschland" ]
   },
   "SubjectRPB" : [ {
     "subject" : "630"
@@ -26766,9 +26907,11 @@
     "identifierGND" : [ "118556711" ]
   } ],
   "SubjectHeadings" : [ {
-    "subject" : "Deutschland"
-  }, {
     "subject" : "Jugend"
+  }, {
+    "subject" : "Jugendbewegungen"
+  }, {
+    "subject" : "Deutschland"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -26911,7 +27054,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Deutschland", "Jugendarbeitslosigkeit" ]
+    "subject" : [ "Aufsatzsammlung", "Jugendarbeitslosigkeit", "Jugendarbeitslosigkeit*Aufsatzsammlung", "Deutschland" ]
   },
   "SubjectRPB" : [ {
     "subject" : "630"
@@ -26981,9 +27124,13 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
-    "subject" : "Deutschland"
+    "subject" : "Aufsatzsammlung"
   }, {
     "subject" : "Jugendarbeitslosigkeit"
+  }, {
+    "subject" : "Jugendarbeitslosigkeit*Aufsatzsammlung"
+  }, {
+    "subject" : "Deutschland"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -27052,7 +27199,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Deutschland", "Berufsbildungspolitik", "Jugendarbeitslosigkeit" ]
+    "subject" : [ "Aufsatzsammlung", "Berufsbildungsreform", "Deutschland <Bundesrepublik>", "Deutschland <Bundesrepublik>*Berufsbildungsreform*Jugendarbeitslosigkeit*Aufsatzsammlung", "Jugendarbeitslosigkeit", "Deutschland", "Berufsbildungspolitik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "120"
@@ -27120,11 +27267,19 @@
     "identifierGND" : [ "143580744" ]
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Aufsatzsammlung"
+  }, {
+    "subject" : "Berufsbildungsreform"
+  }, {
+    "subject" : "Deutschland <Bundesrepublik>"
+  }, {
+    "subject" : "Deutschland <Bundesrepublik>*Berufsbildungsreform*Jugendarbeitslosigkeit*Aufsatzsammlung"
+  }, {
+    "subject" : "Jugendarbeitslosigkeit"
+  }, {
     "subject" : "Deutschland"
   }, {
     "subject" : "Berufsbildungspolitik"
-  }, {
-    "subject" : "Jugendarbeitslosigkeit"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -28101,7 +28256,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
-    "subject" : [ "Jugendkultur" ]
+    "subject" : [ "Gewalt", "Jugend", "Jugendkultur", "Provokationen", "Widerstand" ]
   },
   "SubjectRVK" : [ {
     "subject" : "DU 3000"
@@ -28185,7 +28340,15 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Gewalt"
+  }, {
+    "subject" : "Jugend"
+  }, {
     "subject" : "Jugendkultur"
+  }, {
+    "subject" : "Provokationen"
+  }, {
+    "subject" : "Widerstand"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -29679,7 +29842,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Psychotherapie" ]
+    "subject" : [ "Psychotherapeut", "Klient", "Methode", "Psychotherapie" ]
   },
   "SubjectRPB" : [ {
     "subject" : "860"
@@ -29736,6 +29899,13 @@
     "title" : "Kindler-Taschenbücher",
     "volume" : "2050",
     "designation" : "(DE-605)HT002093345"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Psychotherapeut"
+  }, {
+    "subject" : "Klient"
+  }, {
+    "subject" : "Methode"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -30252,7 +30422,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Deutschland", "Unterwanderung", "Tarnorganisation", "Infiltration", "Kommunismus" ]
+    "subject" : [ "Deutsche Demokratische Republik / DDR*Bundesrepublik Deutschland*Propaganda*Spionage / Geheimdienst", "Deutschland", "Unterwanderung", "Tarnorganisation", "Infiltration", "Kommunismus" ]
   },
   "SubjectRVK" : [ {
     "subject" : "MG 15378"
@@ -30291,6 +30461,8 @@
     "extent" : "97 S. : Ill., Notenbeisp."
   },
   "SubjectHeadings" : [ {
+    "subject" : "Deutsche Demokratische Republik / DDR*Bundesrepublik Deutschland*Propaganda*Spionage / Geheimdienst"
+  }, {
     "subject" : "Deutschland"
   }, {
     "subject" : "Unterwanderung"
@@ -30437,7 +30609,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Frankreich", "Politische Institution", "Geschichte 1630-1830", "Wirtschaft", "Sozialgeschichte 1630-1830" ]
+    "subject" : [ "Wirtschaftsgeschichte / Revolution", "Frankreich", "Politische Institution", "Geschichte 1630-1830", "Wirtschaft", "Sozialgeschichte 1630-1830" ]
   },
   "SubjectRPB" : [ {
     "subject" : "330"
@@ -30513,6 +30685,8 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Wirtschaftsgeschichte / Revolution"
+  }, {
     "subject" : "Frankreich"
   }, {
     "subject" : "Politische Institution"
@@ -34589,7 +34763,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Kind", "Zahl", "Zahlbegriff", "Entwicklung", "Entwicklungspsychologie" ]
   },
   "SubjectRPB" : [ {
     "subject" : "120"
@@ -34644,6 +34819,17 @@
   "DescriptionOfExpression" : [ {
     "description" : "Aus d. Franz. übers."
   } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Kind"
+  }, {
+    "subject" : "Zahl"
+  }, {
+    "subject" : "Zahlbegriff"
+  }, {
+    "subject" : "Entwicklung"
+  }, {
+    "subject" : "Entwicklungspsychologie"
+  } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
     "subject" : "JNQE"
@@ -34694,7 +34880,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Magazin", "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Entwicklung", "Kind", "Zahlbegriff" ]
   },
   "SubjectRPB" : [ {
     "subject" : "860"
@@ -34746,6 +34933,13 @@
   } ],
   "DescriptionOfExpression" : [ {
     "description" : "Aus dem Franz. übers."
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Entwicklung"
+  }, {
+    "subject" : "Kind"
+  }, {
+    "subject" : "Zahlbegriff"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -36182,7 +36376,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Hoffnung", "Geschichtsphilosophie" ]
+    "subject" : [ "Geschichtsphilosophie", "Hoffnung" ]
   },
   "SubjectRPB" : [ {
     "subject" : "400"
@@ -36229,9 +36423,9 @@
     "extent" : "138 S."
   },
   "SubjectHeadings" : [ {
-    "subject" : "Hoffnung"
-  }, {
     "subject" : "Geschichtsphilosophie"
+  }, {
+    "subject" : "Hoffnung"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -39646,7 +39840,7 @@
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Psychologie" ],
-    "subject" : [ "Sozialpsychologie", "Theorie" ]
+    "subject" : [ "Sozialpsychologie / Allgemeine Darstellungen", "Sozialpsychologie", "Theorie" ]
   },
   "SubjectRPB" : [ {
     "subject" : "860"
@@ -39701,6 +39895,8 @@
     "description" : "Aus dem Engl. übers."
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Sozialpsychologie / Allgemeine Darstellungen"
+  }, {
     "subject" : "Sozialpsychologie"
   }, {
     "subject" : "Theorie"
@@ -41706,7 +41902,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Religionswissenschaft / Theologie" ],
-    "subject" : [ "Psalmen", "Einführung" ]
+    "subject" : [ "Theologie", "Psalmen", "Einführung" ]
   },
   "SubjectRPB" : [ {
     "subject" : "450"
@@ -41752,6 +41948,9 @@
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Arbeitsbücher für die Aus- und Weiterbildung kirchlicher Mitarbeiter"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Theologie"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -43516,7 +43715,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Gruppendynamik" ]
+    "subject" : [ "Gruppen", "Gruppenprozeß", "Soziale Rollen", "Sozialisation", "Gruppendynamik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "860"
@@ -43591,6 +43790,14 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Gruppen"
+  }, {
+    "subject" : "Gruppenprozeß"
+  }, {
+    "subject" : "Soziale Rollen"
+  }, {
+    "subject" : "Sozialisation"
+  }, {
     "subject" : "Gruppendynamik"
   } ],
   "SubjectGHBLocal" : [ {
@@ -44566,7 +44773,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Religionswissenschaft / Theologie" ],
-    "subject" : [ "Seelsorge", "Gottesdienst", "Spiritualität" ]
+    "subject" : [ "Gottesdienst", "Frömmigkeit", "Seelsorge", "Spiritualität" ]
   },
   "SubjectRPB" : [ {
     "subject" : "450"
@@ -44617,9 +44824,11 @@
     "extent" : "228 S."
   },
   "SubjectHeadings" : [ {
-    "subject" : "Seelsorge"
-  }, {
     "subject" : "Gottesdienst"
+  }, {
+    "subject" : "Frömmigkeit"
+  }, {
+    "subject" : "Seelsorge"
   }, {
     "subject" : "Spiritualität"
   } ],
@@ -44669,7 +44878,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Psychologie" ],
-    "subject" : [ "Persönlichkeitsbeurteilung" ]
+    "subject" : [ "Psychologische Diagnostik / Tests / Fragebögen", "Persönlichkeitsbeurteilung" ]
   },
   "SubjectRPB" : [ {
     "subject" : "860"
@@ -44741,6 +44950,8 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Psychologische Diagnostik / Tests / Fragebögen"
+  }, {
     "subject" : "Persönlichkeitsbeurteilung"
   } ],
   "SubjectGHBLocal" : [ {
@@ -46177,7 +46388,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Sowjetunion", "Weltwirtschaft" ]
+    "subject" : [ "Planwirtschaft / Marktwirtschaft", "Sowjetunion / Weltwirtschaft", "Sowjetunion", "Weltwirtschaft" ]
   },
   "SubjectRVK" : [ {
     "subject" : "MF 9100"
@@ -46223,6 +46434,10 @@
     "extent" : "XIV, 292 S."
   },
   "SubjectHeadings" : [ {
+    "subject" : "Planwirtschaft / Marktwirtschaft"
+  }, {
+    "subject" : "Sowjetunion / Weltwirtschaft"
+  }, {
     "subject" : "Sowjetunion"
   }, {
     "subject" : "Weltwirtschaft"
@@ -50862,7 +51077,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Deutschland", "Staat", "Gründung", "Vorgeschichte" ]
+    "subject" : [ "Deutschland <DDR> / Entstehung / Geschichte", "Deutschland <DDR> / Geschichte 1945-1978", "Deutschland", "Staat", "Gründung", "Vorgeschichte" ]
   },
   "SubjectRVK" : [ {
     "subject" : "MG 81030"
@@ -50931,6 +51146,10 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Deutschland <DDR> / Entstehung / Geschichte"
+  }, {
+    "subject" : "Deutschland <DDR> / Geschichte 1945-1978"
+  }, {
     "subject" : "Deutschland"
   }, {
     "subject" : "Staat"
@@ -53742,7 +53961,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Psychologie" ],
-    "subject" : [ "Freud, Sigmund", "Psychoanalyse", "Gesellschaftsbild" ]
+    "subject" : [ "Freud, Sigmund / Psychoanalyse / Theorie", "Psychoanalyse / Sozialwissenschaften", "Freud, Sigmund", "Psychoanalyse", "Gesellschaftsbild" ]
   },
   "SubjectRVK" : [ {
     "subject" : "CU 2000"
@@ -53820,6 +54039,10 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Freud, Sigmund / Psychoanalyse / Theorie"
+  }, {
+    "subject" : "Psychoanalyse / Sozialwissenschaften"
+  }, {
     "subject" : "Freud, Sigmund"
   }, {
     "subject" : "Psychoanalyse"
@@ -54662,7 +54885,7 @@
     "branch" : [ "Campus Haspel" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
-    "subject" : [ "Stadtmodell", "Utopie", "Geschichte", "Idealstadt" ]
+    "subject" : [ "Soziologie", "Stadtutopien", "Städtebau", "Urbanistik", "Utopie", "Zukunftsmodelle", "Stadtmodell", "Geschichte", "Idealstadt" ]
   },
   "SubjectRVK" : [ {
     "subject" : "MS 1750"
@@ -54730,9 +54953,19 @@
     "designation" : "(DE-605)HT001245599"
   } ],
   "SubjectHeadings" : [ {
-    "subject" : "Stadtmodell"
+    "subject" : "Soziologie"
+  }, {
+    "subject" : "Stadtutopien"
+  }, {
+    "subject" : "Städtebau"
+  }, {
+    "subject" : "Urbanistik"
   }, {
     "subject" : "Utopie"
+  }, {
+    "subject" : "Zukunftsmodelle"
+  }, {
+    "subject" : "Stadtmodell"
   }, {
     "subject" : "Geschichte"
   }, {
@@ -61002,7 +61235,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Ländliche Entwicklung", "Ressourcen", "Ökosystem", "Ökologie", "Entwicklungsländer", "Landwirtschaft", "Natürliche Ressourcen", "Agrarproduktion" ]
+    "subject" : [ "Agrarproduktion*Entwicklungshilfe", "Entwicklungsländer / Agrarproduktion / Natürliche Ressourcen", "Entwicklungsländer / Landwirtschaft / Natürliche Ressourcen", "Ländliche Entwicklung / Ressourcen /Kongress / Feldafing <1983>", "Ländliche Entwicklung / Ökologie / Kongreß / Feldafing <1983>", "Melioration*Ländliche Entwicklung / Kongreß / Feldafing <1983>", "Nahrung*Ländlicher Raum", "Pflanzenschutz*Ökologie / Kongreß / Feldafing <1983>", "Ressourcenschutz", "Rural Development*Ländliche Entwicklung / Tropen / Kongress / Feldafing <1983>", "Tropen*Kongress*Agrarproduktion / Natürliche Ressourcen", "Ökologie / Ländliche Entwicklung / Tropen / Kongress / Feldafing <1983>", "Ökosystem / Ländliche Entwicklung / Kongreß / Feldafing <1983>", "Überweidung*Landwirtschaft / Natürliche Ressourcen", "Ländliche Entwicklung", "Ressourcen", "Ökosystem", "Ökologie", "Entwicklungsländer", "Landwirtschaft", "Natürliche Ressourcen", "Agrarproduktion" ]
   },
   "SubjectRVK" : [ {
     "subject" : "QS 000"
@@ -61082,6 +61315,34 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Agrarproduktion*Entwicklungshilfe"
+  }, {
+    "subject" : "Entwicklungsländer / Agrarproduktion / Natürliche Ressourcen"
+  }, {
+    "subject" : "Entwicklungsländer / Landwirtschaft / Natürliche Ressourcen"
+  }, {
+    "subject" : "Ländliche Entwicklung / Ressourcen /Kongress / Feldafing <1983>"
+  }, {
+    "subject" : "Ländliche Entwicklung / Ökologie / Kongreß / Feldafing <1983>"
+  }, {
+    "subject" : "Melioration*Ländliche Entwicklung / Kongreß / Feldafing <1983>"
+  }, {
+    "subject" : "Nahrung*Ländlicher Raum"
+  }, {
+    "subject" : "Pflanzenschutz*Ökologie / Kongreß / Feldafing <1983>"
+  }, {
+    "subject" : "Ressourcenschutz"
+  }, {
+    "subject" : "Rural Development*Ländliche Entwicklung / Tropen / Kongress / Feldafing <1983>"
+  }, {
+    "subject" : "Tropen*Kongress*Agrarproduktion / Natürliche Ressourcen"
+  }, {
+    "subject" : "Ökologie / Ländliche Entwicklung / Tropen / Kongress / Feldafing <1983>"
+  }, {
+    "subject" : "Ökosystem / Ländliche Entwicklung / Kongreß / Feldafing <1983>"
+  }, {
+    "subject" : "Überweidung*Landwirtschaft / Natürliche Ressourcen"
+  }, {
     "subject" : "Ländliche Entwicklung"
   }, {
     "subject" : "Ressourcen"
@@ -61918,7 +62179,7 @@
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Empirische Sozialforschung" ]
+    "subject" : [ "Befunde", "Effektgrößen", "Empirie", "Empirische Sozialforschung", "Forschungsidee", "Grundgesamtheiten", "Gültigkeit", "Kriterien", "Literatur", "Methoden", "Operationalisierung", "Skalenniveau", "Tauglichkeit" ]
   },
   "SubjectRPB" : [ {
     "subject" : "630"
@@ -61981,7 +62242,31 @@
     "title" : "Bortz, Jürgen: Forschungsmethoden und Evaluation"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Befunde"
+  }, {
+    "subject" : "Effektgrößen"
+  }, {
+    "subject" : "Empirie"
+  }, {
     "subject" : "Empirische Sozialforschung"
+  }, {
+    "subject" : "Forschungsidee"
+  }, {
+    "subject" : "Grundgesamtheiten"
+  }, {
+    "subject" : "Gültigkeit"
+  }, {
+    "subject" : "Kriterien"
+  }, {
+    "subject" : "Literatur"
+  }, {
+    "subject" : "Methoden"
+  }, {
+    "subject" : "Operationalisierung"
+  }, {
+    "subject" : "Skalenniveau"
+  }, {
+    "subject" : "Tauglichkeit"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -62034,7 +62319,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Deutschland", "Kommentar" ]
+    "subject" : [ "Deutschland / Hochschulrahmengesetz / Kommentar", "Deutschland", "Kommentar" ]
   },
   "SubjectRVK" : [ {
     "subject" : "AL 22300"
@@ -62116,6 +62401,8 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Deutschland / Hochschulrahmengesetz / Kommentar"
+  }, {
     "subject" : "Deutschland"
   }, {
     "subject" : "Kommentar"
@@ -62181,7 +62468,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Demokratie", "Politische Ordnung" ]
+    "subject" : [ "Arbeiterparteien", "Außenpolitik", "BRD", "Clausewitz, C.v.", "Demokratie", "Demokratietheorie", "Eliten", "Gewaltenteilung", "Gewerkschaften", "Informationsgesellschaft", "Konflikt", "Konsens", "Krieg", "Macht", "Marktwirtschaft", "Massenmedien", "Medien", "Ordnung", "Ost-West-Beziehungen", "Pluralismus", "Politikberatung", "Politikwissenschaft", "Politische Kultur", "Politischer Prozeß", "Wahlen", "Wirtschaftspolitik", "Wohlfahrtsstaat", "Zyklentheorie", "politische Bildung", "Politische Ordnung" ]
   },
   "SubjectRVK" : [ {
     "subject" : "MB 1200"
@@ -62259,7 +62546,63 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Arbeiterparteien"
+  }, {
+    "subject" : "Außenpolitik"
+  }, {
+    "subject" : "BRD"
+  }, {
+    "subject" : "Clausewitz, C.v."
+  }, {
     "subject" : "Demokratie"
+  }, {
+    "subject" : "Demokratietheorie"
+  }, {
+    "subject" : "Eliten"
+  }, {
+    "subject" : "Gewaltenteilung"
+  }, {
+    "subject" : "Gewerkschaften"
+  }, {
+    "subject" : "Informationsgesellschaft"
+  }, {
+    "subject" : "Konflikt"
+  }, {
+    "subject" : "Konsens"
+  }, {
+    "subject" : "Krieg"
+  }, {
+    "subject" : "Macht"
+  }, {
+    "subject" : "Marktwirtschaft"
+  }, {
+    "subject" : "Massenmedien"
+  }, {
+    "subject" : "Medien"
+  }, {
+    "subject" : "Ordnung"
+  }, {
+    "subject" : "Ost-West-Beziehungen"
+  }, {
+    "subject" : "Pluralismus"
+  }, {
+    "subject" : "Politikberatung"
+  }, {
+    "subject" : "Politikwissenschaft"
+  }, {
+    "subject" : "Politische Kultur"
+  }, {
+    "subject" : "Politischer Prozeß"
+  }, {
+    "subject" : "Wahlen"
+  }, {
+    "subject" : "Wirtschaftspolitik"
+  }, {
+    "subject" : "Wohlfahrtsstaat"
+  }, {
+    "subject" : "Zyklentheorie"
+  }, {
+    "subject" : "politische Bildung"
   }, {
     "subject" : "Politische Ordnung"
   } ],
@@ -63543,7 +63886,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
-    "subject" : [ "Deutschland", "Mann", "Einstellung", "Frau", "Soziale Situation" ]
+    "subject" : [ "Frauenbild", "Geschlechterrolle / Mann / Umfrage", "Lebensführung", "Mann", "Mann / Rollenverhalten", "Mann / Soziale Rolle", "Tabelle", "Deutschland", "Einstellung", "Frau", "Soziale Situation" ]
   },
   "SubjectRVK" : [ {
     "subject" : "CR 6000"
@@ -63609,9 +63952,21 @@
     "identifierForLinkingEntry" : "(DE-605)HT003152050"
   } ],
   "SubjectHeadings" : [ {
-    "subject" : "Deutschland"
+    "subject" : "Frauenbild"
+  }, {
+    "subject" : "Geschlechterrolle / Mann / Umfrage"
+  }, {
+    "subject" : "Lebensführung"
   }, {
     "subject" : "Mann"
+  }, {
+    "subject" : "Mann / Rollenverhalten"
+  }, {
+    "subject" : "Mann / Soziale Rolle"
+  }, {
+    "subject" : "Tabelle"
+  }, {
+    "subject" : "Deutschland"
   }, {
     "subject" : "Einstellung"
   }, {
@@ -64162,7 +64517,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Christsein gestalten", "Kirche" ]
+    "subject" : [ "Datenerhebung", "Evangelische Kirche in Deutschland", "Christsein gestalten", "Kirche" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -64220,6 +64575,10 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Datenerhebung"
+  }, {
+    "subject" : "Evangelische Kirche in Deutschland"
+  }, {
     "subject" : "Christsein gestalten"
   } ],
   "SubjectGHBLocal" : [ {
@@ -64806,7 +65165,7 @@
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Finanzierung" ]
+    "subject" : [ "Finanzierung / Aufsatzsammlung", "Finanzierung" ]
   },
   "SubjectRPB" : [ {
     "subject" : "650"
@@ -64875,6 +65234,8 @@
     "identifierForLinkingEntry" : "(DE-605)HT013126674"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Finanzierung / Aufsatzsammlung"
+  }, {
     "subject" : "Finanzierung"
   } ],
   "SubjectGHBLocal" : [ {
@@ -65936,7 +66297,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Geldpolitik", "Geldtheorie" ]
+    "subject" : [ "Geldpolitik", "Geldtheorie", "Geldtheorie / Einführung", "Geldtheorie / Geldpolitik", "Geldtheorie*Geldpolitik*Geldtheorie / Einführung*Geldtheorie / Geldpolitik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "650"
@@ -66015,6 +66376,12 @@
     "subject" : "Geldpolitik"
   }, {
     "subject" : "Geldtheorie"
+  }, {
+    "subject" : "Geldtheorie / Einführung"
+  }, {
+    "subject" : "Geldtheorie / Geldpolitik"
+  }, {
+    "subject" : "Geldtheorie*Geldpolitik*Geldtheorie / Einführung*Geldtheorie / Geldpolitik"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -66718,7 +67085,7 @@
     "branch" : [ "Campus Haspel" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
-    "subject" : [ "Architektur", "Geschichte 1950-1990" ]
+    "subject" : [ "Architekturgeschichte / 20. Jahrhundert", "Architektur", "Geschichte 1950-1990" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -66779,6 +67146,8 @@
     "identifierForLinkingEntry" : "(DE-605)HT000199988"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Architekturgeschichte / 20. Jahrhundert"
+  }, {
     "subject" : "Architektur"
   }, {
     "subject" : "Geschichte 1950-1990"
@@ -67181,7 +67550,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Japan", "Auslandsmarkt", "Marktzugang", "Marketingstrategie", "Deutschland" ]
+    "subject" : [ "Auslandsgeschäft / Japan", "Deutschland <Bundesrepublik> / Unternehmen / Markterschließung / Japan", "Deutschland <Bundesrepublik> / Unternehmen / Marktzugang / Japan", "Exportmarketing / Japan", "Japan / Auslandsmarkt / Marktzugang / Marketingstrategie / Deutschland <Bundesrepublik>", "Japan / Marketing", "Japan / Marktzugang", "Japan", "Auslandsmarkt", "Marktzugang", "Marketingstrategie", "Deutschland" ]
   },
   "SubjectRVK" : [ {
     "subject" : "QG 870"
@@ -67250,6 +67619,20 @@
     "designation" : "(DE-605)HT001249569"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Auslandsgeschäft / Japan"
+  }, {
+    "subject" : "Deutschland <Bundesrepublik> / Unternehmen / Markterschließung / Japan"
+  }, {
+    "subject" : "Deutschland <Bundesrepublik> / Unternehmen / Marktzugang / Japan"
+  }, {
+    "subject" : "Exportmarketing / Japan"
+  }, {
+    "subject" : "Japan / Auslandsmarkt / Marktzugang / Marketingstrategie / Deutschland <Bundesrepublik>"
+  }, {
+    "subject" : "Japan / Marketing"
+  }, {
+    "subject" : "Japan / Marktzugang"
+  }, {
     "subject" : "Japan"
   }, {
     "subject" : "Auslandsmarkt"
@@ -67771,7 +68154,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Symbol", "Religion", "Tiefenpsychologie", "Bibel", "Exegese", "Feministische Theologie", "Traumdeutung", "Religiöses Symbol" ]
+    "subject" : [ "Feminismus", "Bibel", "Religion / Bild", "Traum", "Tiefenpsychologie", "Symbol", "Religion", "Exegese", "Feministische Theologie", "Traumdeutung", "Religiöses Symbol" ]
   },
   "SubjectRPB" : [ {
     "subject" : "860"
@@ -67834,13 +68217,19 @@
     "designation" : "(DE-605)HT003793547"
   } ],
   "SubjectHeadings" : [ {
-    "subject" : "Symbol"
+    "subject" : "Feminismus"
   }, {
-    "subject" : "Religion"
+    "subject" : "Bibel"
+  }, {
+    "subject" : "Religion / Bild"
+  }, {
+    "subject" : "Traum"
   }, {
     "subject" : "Tiefenpsychologie"
   }, {
-    "subject" : "Bibel"
+    "subject" : "Symbol"
+  }, {
+    "subject" : "Religion"
   }, {
     "subject" : "Exegese"
   }, {
@@ -68437,7 +68826,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Regierungsbezirk Oberfranken", "Investitionsentscheidung", "Abschreibung", "IHK-Bezirk Mittlerer Neckar" ]
+    "subject" : [ "Abschreibung / Investitionsverhalten", "Deutschland / Abschreibung / Investitionsverhalten / Steuerrecht", "Mittlerer Neckar <IHK-Bezirk> / Investitionsentscheidung / Abschreibung / Umfrage", "Oberfranken / Investitionsentscheidung / Abschreibung / Umfrage", "Steuerrecht / Abschreibung / Investitionsverhalten", "Regierungsbezirk Oberfranken", "Investitionsentscheidung", "Abschreibung", "IHK-Bezirk Mittlerer Neckar" ]
   },
   "SubjectRVK" : [ {
     "subject" : "QP 720"
@@ -68502,6 +68891,16 @@
     "designation" : "(DE-605)HT003159793"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Abschreibung / Investitionsverhalten"
+  }, {
+    "subject" : "Deutschland / Abschreibung / Investitionsverhalten / Steuerrecht"
+  }, {
+    "subject" : "Mittlerer Neckar <IHK-Bezirk> / Investitionsentscheidung / Abschreibung / Umfrage"
+  }, {
+    "subject" : "Oberfranken / Investitionsentscheidung / Abschreibung / Umfrage"
+  }, {
+    "subject" : "Steuerrecht / Abschreibung / Investitionsverhalten"
+  }, {
     "subject" : "Regierungsbezirk Oberfranken"
   }, {
     "subject" : "Investitionsentscheidung"
@@ -70654,7 +71053,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
-    "subject" : [ "Qualitative Sozialforschung" ]
+    "subject" : [ "Feldforschung", "Sozialisation", "Qualitative Sozialforschung" ]
   },
   "SubjectRVK" : [ {
     "subject" : "CM 3600"
@@ -70743,6 +71142,10 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Feldforschung"
+  }, {
+    "subject" : "Sozialisation"
+  }, {
     "subject" : "Qualitative Sozialforschung"
   } ],
   "SubjectGHBLocal" : [ {
@@ -70941,7 +71344,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Mitarbeiter", "Umfrage" ]
+    "subject" : [ "Industrielle Psychologie / Wirtschaftspsychologie", "Mitarbeiter", "Psychologie", "Umfrage" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -71017,7 +71420,11 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Industrielle Psychologie / Wirtschaftspsychologie"
+  }, {
     "subject" : "Mitarbeiter"
+  }, {
+    "subject" : "Psychologie"
   }, {
     "subject" : "Umfrage"
   } ],
@@ -71070,7 +71477,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Europäische Union", "Umweltbezogenes Management" ]
+    "subject" : [ "Deutschland", "EU-Staaten", "Haftung", "Klein- und Mittelunternehmen", "Personalentwicklung", "Qualitätsmanagement", "Umweltmanagement", "Umweltmanagement*Wirtschaftsprüfung*Qualitätsmanagement*Klein- und Mittelunternehmen*Haftung*Personalentwicklung*Öffentlichkeitsarbeit*Deutschland*EU-Staaten", "Wirtschaftsprüfung", "Öffentlichkeitsarbeit", "Europäische Union", "Umweltbezogenes Management" ]
   },
   "SubjectRVK" : [ {
     "subject" : "AR 28300"
@@ -71148,6 +71555,26 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Deutschland"
+  }, {
+    "subject" : "EU-Staaten"
+  }, {
+    "subject" : "Haftung"
+  }, {
+    "subject" : "Klein- und Mittelunternehmen"
+  }, {
+    "subject" : "Personalentwicklung"
+  }, {
+    "subject" : "Qualitätsmanagement"
+  }, {
+    "subject" : "Umweltmanagement"
+  }, {
+    "subject" : "Umweltmanagement*Wirtschaftsprüfung*Qualitätsmanagement*Klein- und Mittelunternehmen*Haftung*Personalentwicklung*Öffentlichkeitsarbeit*Deutschland*EU-Staaten"
+  }, {
+    "subject" : "Wirtschaftsprüfung"
+  }, {
+    "subject" : "Öffentlichkeitsarbeit"
+  }, {
     "subject" : "Europäische Union"
   }, {
     "subject" : "Umweltbezogenes Management"
@@ -73243,7 +73670,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Pädagogik" ],
-    "subject" : [ "Universität Hamburg", "Hochschuldidaktik", "Wissenschaftliche Weiterbildung", "Akademischer Mittelbau" ]
+    "subject" : [ "Akademischer Mittelbau / Didaktik / Hochschuldidaktik / Lehrerbildung / Lehrerverhalten / Qualifikation / Unterrichtsmethode", "Universität Hamburg", "Hochschuldidaktik", "Wissenschaftliche Weiterbildung", "Akademischer Mittelbau" ]
   },
   "SubjectRVK" : [ {
     "subject" : "AL 32000"
@@ -73322,6 +73749,8 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Akademischer Mittelbau / Didaktik / Hochschuldidaktik / Lehrerbildung / Lehrerverhalten / Qualifikation / Unterrichtsmethode"
+  }, {
     "subject" : "Universität Hamburg"
   }, {
     "subject" : "Hochschuldidaktik"
@@ -73647,7 +74076,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Psychologie" ],
-    "subject" : [ "Klinische Psychologie", "Psychology, Clinical" ]
+    "subject" : [ "Klinische Psychologie / Allgemeine Darstellungen", "Klinische Psychologie", "Psychology, Clinical" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -73722,6 +74151,8 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Klinische Psychologie / Allgemeine Darstellungen"
+  }, {
     "subject" : "Klinische Psychologie"
   } ],
   "SubjectGHBLocal" : [ {
@@ -74711,7 +75142,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Deutschland", "Sozialstruktur", "Sozialgeschichte 1949-1989" ]
+    "subject" : [ "BRD", "DDR", "Deutschland", "Europa", "Klassenstruktur / BRD", "Schichten, gesellschaftliche / BRD", "Sozialer Wandel", "Sozialordnung / BRD", "Sozialstruktur", "Sozialstruktur / BRD", "Staatsgründung", "Wiedervereinigung", "sozialer Wandel", "Sozialgeschichte 1949-1989" ]
   },
   "SubjectRPB" : [ {
     "subject" : "630"
@@ -74789,9 +75220,31 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "BRD"
+  }, {
+    "subject" : "DDR"
+  }, {
     "subject" : "Deutschland"
   }, {
+    "subject" : "Europa"
+  }, {
+    "subject" : "Klassenstruktur / BRD"
+  }, {
+    "subject" : "Schichten, gesellschaftliche / BRD"
+  }, {
+    "subject" : "Sozialer Wandel"
+  }, {
+    "subject" : "Sozialordnung / BRD"
+  }, {
     "subject" : "Sozialstruktur"
+  }, {
+    "subject" : "Sozialstruktur / BRD"
+  }, {
+    "subject" : "Staatsgründung"
+  }, {
+    "subject" : "Wiedervereinigung"
+  }, {
+    "subject" : "sozialer Wandel"
   }, {
     "subject" : "Sozialgeschichte 1949-1989"
   } ],
@@ -75137,7 +75590,7 @@
     "branch" : [ "Magazin", "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Deutschland", "Klein- und Mittelbetrieb", "Risikokapital", "Finanzierung", "Internationaler Vergleich" ]
+    "subject" : [ "Deutschland / Klein- und Mittelbetrieb / Risikokapital / Finanzierung / Internationaler Vergleich", "Deutschland", "Klein- und Mittelbetrieb", "Risikokapital", "Finanzierung", "Internationaler Vergleich" ]
   },
   "SubjectRVK" : [ {
     "subject" : "QP 752"
@@ -75209,6 +75662,8 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Deutschland / Klein- und Mittelbetrieb / Risikokapital / Finanzierung / Internationaler Vergleich"
+  }, {
     "subject" : "Deutschland"
   }, {
     "subject" : "Klein- und Mittelbetrieb"
@@ -75292,7 +75747,7 @@
     "branch" : [ "Lehrbuchsammlung 91", "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Psychologie" ],
-    "subject" : [ "Testkonstruktion" ]
+    "subject" : [ "Diagnostik", "Methodenlehre", "Psychodiagnostik", "Psychologische Diagnostik / Testtheorie / Testkonstruktion", "Test", "Testkonstruktion" ]
   },
   "SubjectRVK" : [ {
     "subject" : "CM 3000"
@@ -75389,6 +75844,16 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Diagnostik"
+  }, {
+    "subject" : "Methodenlehre"
+  }, {
+    "subject" : "Psychodiagnostik"
+  }, {
+    "subject" : "Psychologische Diagnostik / Testtheorie / Testkonstruktion"
+  }, {
+    "subject" : "Test"
+  }, {
     "subject" : "Testkonstruktion"
   } ],
   "SubjectGHBLocal" : [ {
@@ -75697,7 +76162,7 @@
     "branch" : [ "Lehrbuchsammlung 91", "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Europäische Union", "Geldpolitik", "Geldtheorie" ]
+    "subject" : [ "Geldpolitik", "Geldtheorie", "Europäische Union" ]
   },
   "SubjectRPB" : [ {
     "subject" : "650"
@@ -75788,11 +76253,11 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
-    "subject" : "Europäische Union"
-  }, {
     "subject" : "Geldpolitik"
   }, {
     "subject" : "Geldtheorie"
+  }, {
+    "subject" : "Europäische Union"
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
@@ -76183,7 +76648,7 @@
     "branch" : [ "Campus Grifflenberg", "Lehrbuchsammlung 91" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Management" ]
+    "subject" : [ "Industrielle Psychologie / Organisationspsychologie", "Management" ]
   },
   "SubjectRPB" : [ {
     "subject" : "650"
@@ -76279,6 +76744,8 @@
     "format" : "application/pdf"
   } ],
   "SubjectHeadings" : [ {
+    "subject" : "Industrielle Psychologie / Organisationspsychologie"
+  }, {
     "subject" : "Management"
   } ],
   "SubjectGHBLocal" : [ {
@@ -76518,7 +76985,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Bioklimatologie", "Luftreinhaltung" ]
+    "subject" : [ "Aerosol", "Bioklima", "Biologische Luftverunreinigung", "Chemie", "Emission", "Flugzeug", "Handbuch", "Hygiene", "Immission", "Klima", "Luft", "Luftreinhaltung", "Luftverunreinigung", "Megacity", "Mikroklima", "Richtlinien", "Schadstoff", "Smog", "Stadtklima", "Staub", "Umwelt", "Umweltschutz", "Urbanisierung", "Wetter", "Ökologie", "Bioklimatologie" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -76571,9 +77038,57 @@
     "identifierForLinkingEntry" : "(DE-605)HT014235912"
   } ],
   "SubjectHeadings" : [ {
-    "subject" : "Bioklimatologie"
+    "subject" : "Aerosol"
+  }, {
+    "subject" : "Bioklima"
+  }, {
+    "subject" : "Biologische Luftverunreinigung"
+  }, {
+    "subject" : "Chemie"
+  }, {
+    "subject" : "Emission"
+  }, {
+    "subject" : "Flugzeug"
+  }, {
+    "subject" : "Handbuch"
+  }, {
+    "subject" : "Hygiene"
+  }, {
+    "subject" : "Immission"
+  }, {
+    "subject" : "Klima"
+  }, {
+    "subject" : "Luft"
   }, {
     "subject" : "Luftreinhaltung"
+  }, {
+    "subject" : "Luftverunreinigung"
+  }, {
+    "subject" : "Megacity"
+  }, {
+    "subject" : "Mikroklima"
+  }, {
+    "subject" : "Richtlinien"
+  }, {
+    "subject" : "Schadstoff"
+  }, {
+    "subject" : "Smog"
+  }, {
+    "subject" : "Stadtklima"
+  }, {
+    "subject" : "Staub"
+  }, {
+    "subject" : "Umwelt"
+  }, {
+    "subject" : "Umweltschutz"
+  }, {
+    "subject" : "Urbanisierung"
+  }, {
+    "subject" : "Wetter"
+  }, {
+    "subject" : "Ökologie"
+  }, {
+    "subject" : "Bioklimatologie"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990051291370206441"
