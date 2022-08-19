@@ -473,8 +473,8 @@ public class ElasticsearchIndexerTest {
 
     @Test
     public void testShouldDenyIllegalBulkAction() {
-        final Throwable ex = Assert.assertThrows(LimetransException.class, () -> setIndexer("XXX"));
-        Assert.assertEquals("Illegal bulk action: XXX", ex.getMessage());
+        final Throwable ex = Assert.assertThrows(LimetransException.class, () -> setIndexer("invalid"));
+        Assert.assertEquals("Illegal bulk action: invalid", ex.getMessage());
     }
 
     private void setIndexer() {
