@@ -6,8 +6,8 @@
     </Console>
   </Appenders>
   <Loggers>
-    <Logger name="org.elasticsearch" level="ERROR" />
-    <Logger name="org.metafacture.metafix" level="WARN" />
+    <Logger name="org.elasticsearch" level="${env:LIMETRANS_ELASTICSEARCH_LOGLEVEL:-ERROR}" />
+    <Logger name="org.metafacture.metafix" level="${env:LIMETRANS_METAFIX_LOGLEVEL:-WARN}" />
     <Root level="${env:LIMETRANS_LOGLEVEL:-WARN}">
       <AppenderRef ref="Console" />
     </Root>
