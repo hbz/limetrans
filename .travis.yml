@@ -16,7 +16,6 @@ cache:
 env:
   global:
     - LIMETRANS_LOGLEVEL=DEBUG
-    - LIMETRANS_TRANSFORMATIONQUALITY_APPENDER=Console
 
 script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
