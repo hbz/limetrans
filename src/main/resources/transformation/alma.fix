@@ -825,6 +825,11 @@ set_array("@current_location")
 do list(path: "ITM  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
     copy_field("$i.x", "@current_location")
+    if all_match("$i.x", "^$[regexp.suppressedLocation]$")
+      add_field("@suppressed_location", "true")
+    else
+      add_field("@unsuppressed_location", "true")
+    end
   end
 end
 lookup("@current_location.*", "alma-location-to-branch-$[isil]", delete: "true")
@@ -1408,6 +1413,7 @@ do list(path: "POR  ", "var": "$i")
       replace_all("$i.D", "$[network]", "$[member]")
       copy_field("$i.D", "OnlineAccess[].$last.uri")
       add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
+      add_field("@unsuppressed_location", "true")
     end
   end
 end
@@ -1674,6 +1680,12 @@ do list(path: "653??", "var": "$i")
 end
 uniq("Subject[]")
 uniq("introx.subject[]")
+
+if exists("@suppressed_location")
+  unless exists("@unsuppressed_location")
+    reject()
+  end
+end
 
 retain(
   "$[deletion-literal]",

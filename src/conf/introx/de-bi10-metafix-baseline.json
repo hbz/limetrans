@@ -2,7 +2,11 @@
   "isil": "DE-Bi10",
   "path": "/mnt/datenportal/export/alma/prod/",
   "postprocess": true,
-  "alma": {},
+  "alma": {
+    "regexp": {
+      "suppressedLocation": "(?:BiblVerw|CM_Schran|Dauerausl|ILL|ILL_CB|ILL_CM)"
+    }
+  },
   "input": {
     "queue": {
       "path": "${path}",

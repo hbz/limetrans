@@ -4,6 +4,7 @@
     "hybrid": true,
     "regexp": {
       "description": ".*vorhanden.*",
+      "suppressedLocation": "SUPPRESSED",
       "temporaryCallnumberLocation": ".*_(?:Lab|Sem)App"
     }
   },
