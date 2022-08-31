@@ -1681,6 +1681,17 @@ end
 uniq("Subject[]")
 uniq("introx.subject[]")
 
+# MARC/242
+set_array("TranslatedTitle[]")
+do list(path: "242??", "var": "$i")
+  add_field("TranslatedTitle[].$append.__dummy__", "")
+  copy_field("$i.a", "TranslatedTitle[].$last.title")
+  copy_field("$i.y", "TranslatedTitle[].$last.languageSource")
+  copy_field("$i.y", "@language")
+  lookup("@language", "ISO639-2-to-GND", delete: "true")
+  move_field("@language", "TranslatedTitle[].$last.language")
+end
+
 if exists("@suppressed_location")
   unless exists("@unsuppressed_location")
     reject()
@@ -1780,6 +1791,7 @@ retain(
   "TitleSuperVolumeDesignation[]",
   "TitleSuper[]",
   "TitleUniform",
+  "TranslatedTitle[]",
   "TranslationEntry[]",
   "TypeHeading[]",
   "TypeMedia",
