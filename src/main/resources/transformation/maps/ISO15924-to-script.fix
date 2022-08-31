@@ -1,0 +1,15 @@
+put_map("ISO15924-to-script",
+  # source: https://www.loc.gov/marc/bibliographic/ecbdcntf.html
+  "$1": "Chinesisch, Japanisch, Koreanisch",
+  "(2": "Hebräisch",
+  "(3": "Arabisch",
+  "(B": "Lateinisch",
+  "(N": "Kyrillisch",
+  "(S": "Griechisch",
+
+  # source: https://wiki.dnb.de/download/attachments/106042227/AH-003.pdf
+  "Cyrl": "Kyrillisch",
+  "Hant": "Chinesisch (Langzeichen)",
+  "Jpan": "Japanisch (Kanji, Hiragana und Katakana)",
+  "Kana": "Katakana"
+)

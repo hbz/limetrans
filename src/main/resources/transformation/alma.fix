@@ -1692,6 +1692,19 @@ do list(path: "242??", "var": "$i")
   move_field("@language", "TranslatedTitle[].$last.language")
 end
 
+# MARC/880
+set_array("AlternateGraphicRepresentation[]")
+do list(path: "880??", "var": "$i")
+  if exists("$i.M")
+    if any_equal("$i.M", "$[member]")
+      include("./alma/alternateGraphicRepresentation.fix")
+    end
+  else
+    include("./alma/alternateGraphicRepresentation.fix")
+  end
+end
+uniq("AlternateGraphicRepresentation[]")
+
 if exists("@suppressed_location")
   unless exists("@unsuppressed_location")
     reject()
@@ -1703,6 +1716,7 @@ retain(
   "AbbreviatedTitle[]",
   "Abstract",
   "AdditionalPhysicalFormEntry[]",
+  "AlternateGraphicRepresentation[]",
   "CarrierType[]",
   "ChronologyAndEnumeration",
   "ClassifierDigitization[]",
