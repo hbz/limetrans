@@ -1,7 +1,7 @@
 add_field("AlternateGraphicRepresentation[].$append.__dummy__", "")
 
 copy_field("$i.6", "@linkage")
-parse_text("@linkage", "(?<tag>...)-(?<occurrence>..)/(?<script>.*)(?:/(?<orientation>.*))?")
+parse_text("@linkage", "(?<tag>...)-(?<occurrence>..)(?:/(?<script>.*))?(?:/(?<orientation>.*))?")
 
 if any_equal("@linkage.tag", "100")
   set_field("@key", "personalName")

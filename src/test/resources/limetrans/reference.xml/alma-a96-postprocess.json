@@ -42205,3 +42205,84 @@
     "callnumber" : "A 256 WEIS"
   } ]
 }
+{
+  "collection" : "DE-605",
+  "TypePeriodical" : "Zeitschrift",
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Russisch" ],
+    "date" : [ "1960" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99370687419206441",
+    "identifierMMSIZ" : "991005846516606444",
+    "identifierPID" : "53103172440006444",
+    "identifierPID" : "5391676770006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99370687419206441",
+    "identifierForTheRecord" : "(DE-605)99370687419206441"
+  },
+  "DateFirst" : {
+    "date" : "1960",
+    "date" : "1960",
+    "date" : "2000"
+  },
+  "Language" : [ {
+    "language" : "Russisch",
+    "languageSource" : "rus"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Akademii︠a︡ nauk SSSR",
+    "corporateBodyNameUnit" : [ "Sibirskoe otdelenie" ]
+  }, {
+    "corporateBodyName" : "Rossiĭskai︠a︡ akademii︠a︡ nauk",
+    "corporateBodyNameUnit" : [ "Sibirskoe otdelenie" ]
+  }, {
+    "corporateBodyName" : "Institut matematiki im. S.L. Soboleva"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Sibirskiĭ matematicheskiĭ zhurnal"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Moskva" ],
+    "name" : [ "Rossiĭskai︠a︡ akademii︠a︡ nauk" ]
+  } ],
+  "Extent" : {
+    "extent" : "1 online resource (volumes)"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "T. 1 (maĭ/ii︠u︡nʹ 1960)-"
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Print version",
+    "description" : "Sibirskiĭ matematicheskiĭ zhurnal"
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "EZB-FREE-01830 free EZB journals Mathematics",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53103172440006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  }, {
+    "publicnote" : "ROAD: Directory of Open Access Scholarly Resources",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5391676770006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99370687419206441"
+  }, {
+    "uid" : "(DE-A96)991005846516606444"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : "Mathematics",
+    "subjectGenre" : "Periodicals"
+  }, {
+    "subjectIdentifier" : [ "(OCoLC)fst01012163" ]
+  } ]
+}
