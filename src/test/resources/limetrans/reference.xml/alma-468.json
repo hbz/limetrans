@@ -54561,3 +54561,136 @@
     "uid" : "(DE-605)HT007102881"
   } ]
 }
+{
+  "collection" : "DE-468",
+  "TitleAddendum" : {
+    "title" : "cómo conciben los hispanohablantes la gramática"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Ángel López García"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Spanisch" ],
+    "date" : [ "2005" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Campus Grifflenberg" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "9916026572806447",
+    "identifierMMSIZ" : "9916026572806447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-468)9916026572806447",
+    "identifierForTheRecord" : "(DE-468)9916026572806447"
+  },
+  "Language" : [ {
+    "language" : "Spanisch",
+    "languageSource" : "spa"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "847635620X" ]
+  } ],
+  "Person" : [ {
+    "personName" : "López García, Ángel",
+    "personBio" : "1949-",
+    "personIdentifier" : [ "(DE-588)115129987" ],
+    "identifierGND" : [ "115129987" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Gramática cognitiva para profesores de español L2"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Madrid" ],
+    "name" : [ "Arco/Libros, S.L" ],
+    "chronology" : [ "[2005]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2005]" ]
+  },
+  "Extent" : {
+    "extent" : "246 Seiten : Illustrationen"
+  },
+  "xbib" : [ {
+    "uid" : "(DE-468)9916026572806447"
+  } ],
+  "Item" : [ {
+    "callnumber" : "FZZ1009"
+  } ]
+}
+{
+  "collection" : "DE-468",
+  "CreatorStatement" : {
+    "creatorStatement" : "von Elena Meliveo, Edgar Knerr und Javier Creamdes, Hermann Josef Knipper"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Spanisch", "Deutsch" ],
+    "date" : [ "2000" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Campus Grifflenberg" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "9916026372806447",
+    "identifierMMSIZ" : "9916026372806447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-468)9916026372806447",
+    "identifierForTheRecord" : "(DE-468)9916026372806447"
+  },
+  "Language" : [ {
+    "language" : "Spanisch",
+    "languageSource" : "spa"
+  }, {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3125192307" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Meliveo, Elena"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Thematischer Wirtschaftswortschatz Spanisch"
+  } ],
+  "Edition" : {
+    "edition" : [ "1. Auflage" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Stuttgart", "Düsseldorf", "Leipzig" ],
+    "name" : [ "Ernst Klett Verlag" ],
+    "chronology" : [ "2000" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2000" ]
+  },
+  "Extent" : {
+    "extent" : "384 Seiten : Illustrationen"
+  },
+  "xbib" : [ {
+    "uid" : "(DE-468)9916026372806447"
+  } ],
+  "Item" : [ {
+    "callnumber" : "FZZ1018"
+  } ],
+  "PersonCreator" : [ {
+    "personName" : "Knerr, Edgar"
+  }, {
+    "personName" : "Creamdes, Javier"
+  }, {
+    "personName" : "Knipper, Hermann Josef",
+    "personIdentifier" : [ "(DE-588)131356577" ],
+    "identifierGND" : [ "131356577" ]
+  } ]
+}
