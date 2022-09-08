@@ -483,6 +483,9 @@
     "place" : [ "Stuttgart" ],
     "name" : [ "UTB" ]
   } ],
+  "Description" : {
+    "description" : [ "Ebook-Paket" ]
+  },
   "xbib" : [ {
     "uid" : "(DE-A96)991000065939706444"
   } ],
@@ -2283,7 +2286,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Romanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -2323,6 +2327,10 @@
   "Extent" : {
     "extent" : "249 Seiten"
   },
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-468",
+    "subject" : "FZZ"
+  } ],
   "xbib" : [ {
     "uid" : "(DE-468)9915993472406447"
   } ],
@@ -74320,7 +74328,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Romanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -74361,6 +74370,13 @@
   "Extent" : {
     "extent" : "246 Seiten : Illustrationen"
   },
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-468",
+    "subject" : "FZZ"
+  }, {
+    "source" : "DE-468",
+    "subject" : "FZC"
+  } ],
   "xbib" : [ {
     "uid" : "(DE-468)9916026572806447"
   } ],
@@ -74390,7 +74406,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Romanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -74436,6 +74453,13 @@
   "Extent" : {
     "extent" : "384 Seiten : Illustrationen"
   },
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-468",
+    "subject" : "FZZ"
+  }, {
+    "source" : "DE-468",
+    "subject" : "FOY"
+  } ],
   "xbib" : [ {
     "uid" : "(DE-468)9916026372806447"
   } ],

@@ -847,7 +847,7 @@ end
 # MARC/983
 set_array("@SubjectGHBLocal")
 do list(path: "983  ", "var": "$i")
-  if any_equal("$i.M", "$[member]")
+  if hbz.limetrans.function.MemberLocal("$i")
     copy_field("$i.[ab]", "@SubjectGHBLocal")
   end
 end
@@ -1251,7 +1251,7 @@ end
 # MARC/989
 set_array("@description")
 do list(path: "989  ", "var": "$i")
-  if any_equal("$i.M", "$[member]")
+  if hbz.limetrans.function.MemberLocal("$i")
     copy_field("$i.a", "@description")
   end
 end
@@ -1394,11 +1394,7 @@ uniq("SeriesAddedEntryUniformTitle[]")
 # MARC/856
 set_array("OnlineAccess[]")
 do list(path: "856??", "var": "$i")
-  if exists("$i.M")
-    if any_equal("$i.M", "$[member]")
-      include("./alma/onlineAccess.fix")
-    end
-  else
+  if hbz.limetrans.function.MemberLocal("$i")
     include("./alma/onlineAccess.fix")
   end
 end
@@ -1429,7 +1425,7 @@ end
 # MARC/982
 set_array("@subjectHeadings")
 do list(path: "982  ", "var": "$i")
-  if any_equal("$i.M", "$[member]")
+  if hbz.limetrans.function.MemberLocal("$i")
     copy_field("$i.b", "@subjectHeadings")
     copy_field("$i.a", "@subjectTopicName")
     split_field("@subjectTopicName", ";|\\*")
@@ -1695,11 +1691,7 @@ end
 # MARC/880
 set_array("AlternateGraphicRepresentation[]")
 do list(path: "880??", "var": "$i")
-  if exists("$i.M")
-    if any_equal("$i.M", "$[member]")
-      include("./alma/alternateGraphicRepresentation.fix")
-    end
-  else
+  if hbz.limetrans.function.MemberLocal("$i")
     include("./alma/alternateGraphicRepresentation.fix")
   end
 end

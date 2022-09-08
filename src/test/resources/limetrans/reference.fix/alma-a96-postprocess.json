@@ -1667,7 +1667,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Eupener Straße" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Ingenieurwissenschaft / Technik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -1690,6 +1691,10 @@
   "Description" : {
     "description" : [ "notiz" ]
   },
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "WAE"
+  } ],
   "xbib" : [ {
     "uid" : "(DE-A96)991004279679706444"
   }, {
@@ -2892,7 +2897,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Eupener Straße" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Ingenieurwissenschaft / Technik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -2945,6 +2951,10 @@
   } ],
   "HostItemEntry" : [ {
     "controlNumber" : "991000192569706444"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "WBS"
   } ],
   "xbib" : [ {
     "uid" : "(DE-A96)991000192699706444"
