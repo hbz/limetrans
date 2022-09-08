@@ -1,5 +1,5 @@
 set_array("$[target][]")
-do list(path: "$[linking_entry_source][ 0]?", "var": "$i")
+do list(path: "$[source][ 0]?", "var": "$i")
   add_field("$[target][].$append.__dummy__", "")
   copy_field("$i.a", "$[target][].$last.mainEntryHeading")
   copy_field("$i.b", "$[target][].$last.edition")

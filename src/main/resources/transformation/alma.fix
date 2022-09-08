@@ -1344,36 +1344,22 @@ do list(path: "9640s", "var": "$i")
   end
 end
 
-# MARC/760
-include("./alma/linkingEntry.fix", linking_entry_source: "760", target: "MainSeriesEntry")
-# MARC/762
-include("./alma/linkingEntry.fix", linking_entry_source: "762", target: "SubSeriesEntry")
-# MARC/765
-include("./alma/linkingEntry.fix", linking_entry_source: "765", target: "OriginalLanguageEntry")
-# MARC/767
-include("./alma/linkingEntry.fix", linking_entry_source: "767", target: "TranslationEntry")
-# MARC/770
-include("./alma/linkingEntry.fix", linking_entry_source: "770", target: "SupplementSpecialIssueEntry")
-# MARC/772
-include("./alma/linkingEntry.fix", linking_entry_source: "772", target: "SupplementParentEntry")
-# MARC/773
-include("./alma/linkingEntry.fix", linking_entry_source: "773", target: "HostItemEntry")
-# MARC/774
-include("./alma/linkingEntry.fix", linking_entry_source: "774", target: "ConstituentUnitEntry")
-# MARC/775
-include("./alma/linkingEntry.fix", linking_entry_source: "775", target: "OtherEditionEntry")
-# MARC/776
-include("./alma/linkingEntry.fix", linking_entry_source: "776", target: "AdditionalPhysicalFormEntry")
-# MARC/777
-include("./alma/linkingEntry.fix", linking_entry_source: "777", target: "IssuedWithEntry")
-# MARC/780
-include("./alma/linkingEntry.fix", linking_entry_source: "780", target: "PrecedingEntry")
-# MARC/785
-include("./alma/linkingEntry.fix", linking_entry_source: "785", target: "SucceedingEntry")
-# MARC/786
-include("./alma/linkingEntry.fix", linking_entry_source: "786", target: "DataSourceEntry")
-# MARC/787
-include("./alma/linkingEntry.fix", linking_entry_source: "787", target: "NonspecificRelationshipEntry")
+# MARC/760, MARC/762, MARC/765, MARC/767, MARC/770, MARC/772, MARC/773, MARC/774, MARC/775, MARC/776, MARC/777, MARC/780, MARC/785, MARC/786, MARC/787
+include("./alma/linkingEntry.fix", source: "760", target: "MainSeriesEntry")
+include("./alma/linkingEntry.fix", source: "762", target: "SubSeriesEntry")
+include("./alma/linkingEntry.fix", source: "765", target: "OriginalLanguageEntry")
+include("./alma/linkingEntry.fix", source: "767", target: "TranslationEntry")
+include("./alma/linkingEntry.fix", source: "770", target: "SupplementSpecialIssueEntry")
+include("./alma/linkingEntry.fix", source: "772", target: "SupplementParentEntry")
+include("./alma/linkingEntry.fix", source: "773", target: "HostItemEntry")
+include("./alma/linkingEntry.fix", source: "774", target: "ConstituentUnitEntry")
+include("./alma/linkingEntry.fix", source: "775", target: "OtherEditionEntry")
+include("./alma/linkingEntry.fix", source: "776", target: "AdditionalPhysicalFormEntry")
+include("./alma/linkingEntry.fix", source: "777", target: "IssuedWithEntry")
+include("./alma/linkingEntry.fix", source: "780", target: "PrecedingEntry")
+include("./alma/linkingEntry.fix", source: "785", target: "SucceedingEntry")
+include("./alma/linkingEntry.fix", source: "786", target: "DataSourceEntry")
+include("./alma/linkingEntry.fix", source: "787", target: "NonspecificRelationshipEntry")
 
 # MARC/830
 unless exists("SeriesAddedEntryUniformTitle[]")
@@ -1395,7 +1381,19 @@ uniq("SeriesAddedEntryUniformTitle[]")
 set_array("OnlineAccess[]")
 do list(path: "856??", "var": "$i")
   if hbz.limetrans.function.MemberLocal("$i")
-    include("./alma/onlineAccess.fix")
+    add_field("OnlineAccess[].$append.__dummy__", "")
+    call_macro("copy-first-item", source: "$i.u", target: "OnlineAccess[].$last.uri")
+    call_macro("copy-first-item", source: "$i.x", target: "OnlineAccess[].$last.nonpublicnote")
+    call_macro("copy-first-item", source: "$i.z", target: "OnlineAccess[].$last.publicnote")
+    copy_field("$i.3", "OnlineAccess[].$last.relatedto")
+    copy_field("$i.m", "@contact")
+    do list(path: "@contact", "var": "$j")
+      split_field("$j", ";")
+      do list(path: "$j", "var": "$k")
+        copy_field("$k", "OnlineAccess[].$last.contact")
+      end
+    end
+    copy_field("$i.q", "OnlineAccess[].$last.format")
   end
 end
 # MARC/POR
@@ -1692,7 +1690,71 @@ end
 set_array("AlternateGraphicRepresentation[]")
 do list(path: "880??", "var": "$i")
   if hbz.limetrans.function.MemberLocal("$i")
-    include("./alma/alternateGraphicRepresentation.fix")
+    add_field("AlternateGraphicRepresentation[].$append.__dummy__", "")
+
+    copy_field("$i.6", "@linkage")
+    parse_text("@linkage", "(?<tag>...)-(?<occurrence>..)(?:/(?<script>.*))?(?:/(?<orientation>.*))?")
+
+    if is_hash("@linkage")
+      if any_equal("@linkage.tag", "100")
+        set_field("@key", "personalName")
+      elsif any_equal("@linkage.tag", "110")
+        set_field("@key", "corporateName")
+      elsif any_equal("@linkage.tag", "245")
+        if any_equal("$i.9", "F:359")
+          set_field("@key", "creatorStatement")
+          copy_field("$i.c", "@value")
+        elsif any_equal("$i.9", "F:335")
+          set_field("@key", "titleAddendum")
+          copy_field("$i.b", "@value")
+        else
+          set_field("@key", "titleStatement")
+        end
+      elsif any_equal("@linkage.tag", "246")
+        set_field("@key", "titleOther")
+      elsif any_equal("@linkage.tag", "250")
+        set_field("@key", "editionStatement")
+      elsif any_equal("@linkage.tag", "264")
+        set_field("@key", "publicationStatement")
+      elsif any_equal("@linkage.tag", "490")
+        if any_equal("$i.9", "F:455")
+          set_field("@key", "volumeDesignation")
+          copy_field("$i.v", "@value")
+        else
+          set_field("@key", "seriesStatement")
+        end
+      elsif any_equal("@linkage.tag", "500")
+        set_field("@key", "description")
+      elsif any_equal("@linkage.tag", "610")
+        set_field("@key", "subjectHeading")
+      elsif any_equal("@linkage.tag", "650")
+        set_field("@key", "subjectHeading")
+      elsif any_equal("@linkage.tag", "700")
+        set_field("@key", "personalName")
+      elsif any_equal("@linkage.tag", "710")
+        set_field("@key", "corporateName")
+      end
+
+      copy_field("@key", "AlternateGraphicRepresentation[].$last.key")
+
+      if exists("@value")
+        move_field("@value", "AlternateGraphicRepresentation[].$last.value")
+      else
+        copy_field("$i.a", "AlternateGraphicRepresentation[].$last.value")
+      end
+
+      if any_equal("@key", "publicationStatement")
+        copy_field("$i.b", "AlternateGraphicRepresentation[].$last.name")
+        copy_field("$i.c", "AlternateGraphicRepresentation[].$last.chronology")
+      end
+
+      copy_field("@linkage.script", "AlternateGraphicRepresentation[].$last.scriptSource")
+      lookup("@linkage.script", "ISO15924-to-script", delete: "true")
+      copy_field("@linkage.script", "AlternateGraphicRepresentation[].$last.script")
+    end
+
+    remove_field("@key")
+    remove_field("@linkage")
   end
 end
 uniq("AlternateGraphicRepresentation[]")
