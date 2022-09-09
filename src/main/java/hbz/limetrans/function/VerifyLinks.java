@@ -36,8 +36,8 @@ public class VerifyLinks implements FixFunction {
     private static final Map<String, LongAdder> LINK_COUNTER = new HashMap<>();
     private static final Map<String, LongAdder> SUPER_COUNTER = new HashMap<>();
 
-    private static Predicate<String> linkPredicate;
-    private static Predicate<String> superPredicate;
+    private static Predicate<String> linkPredicate; // checkstyle-disable-line StaticVariableName
+    private static Predicate<String> superPredicate; // checkstyle-disable-line StaticVariableName
 
     static {
         /*
