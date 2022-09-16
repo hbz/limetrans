@@ -11,6 +11,12 @@ do put_macro("copy-substring", length: "1")
   move_field("$[target]-substring", "$[target]")
 end
 
+do put_macro("remove-nonsort")
+  replace_all("$[source]", "[\\u0098\\u009C\\u00AC]", "")
+  replace_all("$[source]", "<<(.*?)>>", "$1")
+  #replace_all("$[source]", "<(.*?)>", "[$1]")
+end
+
 do put_macro("substring", length: "1")
   copy_field("$[source]", "$[target]")
   substring("$[target]", "$[start]", "$[length]")

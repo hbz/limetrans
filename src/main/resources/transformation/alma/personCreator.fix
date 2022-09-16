@@ -1,6 +1,7 @@
 add_field("@person.$append.__dummy__", "")
 do list(path: "$i.a", "var": "$j")
   replace_all("$j", "(?<!\\p{Upper})[.]$|[,]$", "")
+  call_macro("remove-nonsort", source: "$j")
   copy_field("$j", "@person.$last.personName")
 end
 do list(path: "$i.b", "var": "$j")
