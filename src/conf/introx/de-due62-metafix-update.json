@@ -2,7 +2,11 @@
   "isil": "DE-Due62",
   "path": "/mnt/datenportal/export/alma/prod/",
   "postprocess": true,
-  "alma": {},
+  "alma": {
+    "regexp": {
+      "suppressedLocation": "AusS"
+    }
+  },
   "input": {
     "queue": {
       "path": "${path}",
