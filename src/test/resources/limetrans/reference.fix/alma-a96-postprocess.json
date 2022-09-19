@@ -3,7 +3,6 @@
   "CarrierType" : [ "Online-Ressource" ],
   "ExtendedType" : [ "Zeitschrift" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation" ],
   "TypeHeading" : [ {
     "term" : "Zeitschrift",
@@ -134,7 +133,6 @@
   "CarrierType" : [ "Online-Ressource" ],
   "ExtendedType" : [ "Zeitschrift" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "jährlich", "halbjährlich" ],
   "TypeHeading" : [ {
     "term" : "Zeitschrift",
@@ -604,7 +602,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-DNB", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie", "Sonstiges" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -919,7 +916,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -1021,7 +1017,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Loseblattausgabe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -1115,7 +1110,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "sonstiges Regelwerk", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks", "Sonstiges" ],
   "Country" : [ {
     "countryISO" : "US"
@@ -1230,7 +1224,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -1331,7 +1324,6 @@
 }
 {
   "FormatCarrier" : [ "Medienkombination" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "RSWK", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -1719,7 +1711,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "RSWK", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "CH"
@@ -1868,7 +1859,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "säurefreies, alterungsbeständiges Papier" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE-BY"
@@ -2034,7 +2024,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Zeitschrift" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "monatlich", "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Zeitschrift",
@@ -2356,7 +2345,6 @@
 {
   "ExtendedType" : [ "Datensammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Loseblattausgabe" ],
   "TypeHeading" : [ {
     "term" : "Datensammlung",
@@ -2567,7 +2555,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -2704,7 +2691,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE-BY"
@@ -2975,7 +2961,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -3171,7 +3156,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -3287,7 +3271,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "US"
@@ -3478,7 +3461,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "PC / eReader: Für den Download ist die Installation des kostenlosen Adobe Digital Editions Readers notwendig", "Smartphone / Tablet: Für den Download ist die Installation des kostenlosen Bluefire Readers notwendig" ],
   "Country" : [ {
@@ -3611,7 +3593,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020603705"
@@ -3947,7 +3928,6 @@
 {
   "ExtendedFormat" : [ "CD-ROM" ],
   "FormatCarrier" : [ "Optische Speicherplatte(n)" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecial" : [ "Audio" ],
   "Country" : [ {
@@ -4051,7 +4031,6 @@
   "CarrierType" : [ "Videodisk" ],
   "ExtendedFormat" : [ "DVD-Video" ],
   "FormatCarrier" : [ "Optische Speicherplatte(n)" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -4191,7 +4170,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT000000017"
@@ -4285,7 +4263,6 @@
 {
   "ExtendedType" : [ "Bildband" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "ohne Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Bildband",
@@ -4403,7 +4380,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -4546,7 +4522,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Loseblattausgabe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -4698,7 +4673,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -4807,7 +4781,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -4914,7 +4887,6 @@
 {
   "ExtendedType" : [ "Ausstellungskatalog" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Katalog" ],
   "TypeHeading" : [ {
     "term" : "Ausstellungskatalog",
@@ -5045,7 +5017,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -5164,7 +5135,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -5278,7 +5248,6 @@
 {
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -5393,7 +5362,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -5505,7 +5473,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -5616,7 +5583,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "Country" : [ {
     "countryISO" : "NL"
@@ -5731,7 +5697,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -5840,7 +5805,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -5955,7 +5919,6 @@
 {
   "ExtendedType" : [ "Bildband" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Bildband",
@@ -6067,7 +6030,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -6168,7 +6130,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "konvertierte Altdaten", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT000369648"
@@ -6299,7 +6260,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -6431,7 +6391,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -6577,7 +6536,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Festschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -6691,7 +6649,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "CH"
@@ -6803,7 +6760,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DXDE"
@@ -6906,7 +6862,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -7043,7 +6998,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "CH"
@@ -7170,7 +7124,6 @@
 {
   "ExtendedType" : [ "Ausstellungskatalog" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks", "Katalog" ],
   "TypeHeading" : [ {
     "term" : "Ausstellungskatalog",
@@ -7324,7 +7277,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -7468,7 +7420,6 @@
 {
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -7581,7 +7532,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -7673,7 +7623,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "US"
@@ -7789,7 +7738,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -7891,7 +7839,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -7989,7 +7936,6 @@
 {
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -8083,7 +8029,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -8177,7 +8122,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -8269,7 +8213,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -8371,7 +8314,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -8466,7 +8408,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "Schul- / Universitätsschrift" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -8556,7 +8497,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -8658,7 +8598,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DDDE"
@@ -8755,7 +8694,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -8860,7 +8798,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "US"
@@ -8943,7 +8880,6 @@
 {
   "ExtendedType" : [ "Konferenzschrift" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Konferenzschrift",
@@ -9048,7 +8984,6 @@
 {
   "ExtendedType" : [ "Forschungsbericht" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Forschungsbericht",
@@ -9155,7 +9090,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -9244,7 +9178,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -9329,7 +9262,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -9405,7 +9337,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -9520,7 +9451,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -9623,7 +9553,6 @@
 {
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -9736,7 +9665,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -9833,7 +9761,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -9926,7 +9853,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -10021,7 +9947,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -10101,7 +10026,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "GB"
@@ -10190,7 +10114,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "NL"
@@ -10290,7 +10213,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "CH"
@@ -10389,7 +10311,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -10508,7 +10429,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DXDE"
@@ -10605,7 +10525,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -10690,7 +10609,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -10776,7 +10694,6 @@
 {
   "ExtendedType" : [ "Norm" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "Normschrift" ],
   "TypeHeading" : [ {
     "term" : "Norm",
@@ -11099,7 +11016,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -11182,7 +11098,6 @@
 {
   "ExtendedType" : [ "Wörterbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Wörterbuch" ],
   "TypeHeading" : [ {
     "term" : "Wörterbuch",
@@ -11301,7 +11216,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -11451,7 +11365,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -11549,7 +11462,6 @@
 {
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -11659,7 +11571,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "NL"
@@ -11750,7 +11661,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "GB"
@@ -11841,7 +11751,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "GB"
@@ -11933,7 +11842,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "Bibliothekskatalog" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -12018,7 +11926,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE-NW"
@@ -12108,7 +12015,6 @@
 {
   "ExtendedType" : [ "Aufsatzsammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Aufsatzsammlung",
@@ -12225,7 +12131,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -12302,7 +12207,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -12398,7 +12302,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -12507,7 +12410,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -12588,7 +12490,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -12745,7 +12646,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -12831,7 +12731,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -12926,7 +12825,6 @@
 {
   "ExtendedType" : [ "Aufsatzsammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Aufsatzsammlung",
@@ -13016,7 +12914,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -13098,7 +12995,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -13195,7 +13091,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -13295,7 +13190,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -13395,7 +13289,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -13479,7 +13372,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -13563,7 +13455,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -13671,7 +13562,6 @@
 {
   "ExtendedType" : [ "Bericht" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Bericht",
@@ -13764,7 +13654,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -13852,7 +13741,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -13934,7 +13822,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -14026,7 +13913,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -14161,7 +14047,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -14256,7 +14141,6 @@
 {
   "ExtendedType" : [ "Zeitschrift" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe", "Zeitschrift" ],
   "TypeHeading" : [ {
     "term" : "Zeitschrift",
@@ -14367,7 +14251,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -14455,7 +14338,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -14568,7 +14450,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -14666,7 +14547,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -14755,7 +14635,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -14836,7 +14715,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -14920,7 +14798,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -15011,7 +14888,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -15108,7 +14984,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE-NW"
@@ -15205,7 +15080,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DXDE"
@@ -15286,7 +15160,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "CH"
@@ -15383,7 +15256,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -15457,7 +15329,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -15554,7 +15425,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -15630,7 +15500,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "GB"
@@ -15715,7 +15584,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -15826,7 +15694,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -15936,7 +15803,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -16037,7 +15903,6 @@
 {
   "ExtendedType" : [ "Zeitschrift" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "Zeitschrift" ],
   "TypeHeading" : [ {
     "term" : "Zeitschrift",
@@ -16145,7 +16010,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -16246,7 +16110,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -16327,7 +16190,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -16409,7 +16271,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -16500,7 +16361,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -16592,7 +16452,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "CH"
@@ -16709,7 +16568,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -16811,7 +16669,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT001254783"
@@ -16893,7 +16750,6 @@
 {
   "ExtendedType" : [ "Bericht" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Bericht",
@@ -16995,7 +16851,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -17084,7 +16939,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -17204,7 +17058,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -17285,7 +17138,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -17382,7 +17234,6 @@
 {
   "ExtendedType" : [ "Forschungsbericht" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Forschungsbericht",
@@ -17496,7 +17347,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DX"
@@ -17574,7 +17424,6 @@
 {
   "ExtendedType" : [ "Zeitschrift" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "Zeitschrift" ],
   "TypeHeading" : [ {
     "term" : "Zeitschrift",
@@ -17685,7 +17534,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -17764,7 +17612,6 @@
 {
   "ExtendedType" : [ "Zeitschrift" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "Zeitschrift" ],
   "TypeHeading" : [ {
     "term" : "Zeitschrift",
@@ -17895,7 +17742,6 @@
 {
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -18005,7 +17851,6 @@
 {
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -18121,7 +17966,6 @@
 {
   "ExtendedType" : [ "Zeitschrift" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe", "Zeitschrift" ],
   "TypeHeading" : [ {
     "term" : "Zeitschrift",
@@ -18228,7 +18072,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -18315,7 +18158,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -18402,7 +18244,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -18495,7 +18336,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -18580,7 +18420,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -18690,7 +18529,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "GB"
@@ -18769,7 +18607,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -18855,7 +18692,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -18944,7 +18780,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -19053,7 +18888,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Lehrbuch" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -19154,7 +18988,6 @@
 {
   "ExtendedType" : [ "Wörterbuch", "Mehrsprachiges Wörterbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Wörterbuch" ],
   "TypeHeading" : [ {
     "term" : "Wörterbuch",
@@ -19262,7 +19095,6 @@
 {
   "ExtendedType" : [ "Fachkunde" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Fachkunde",
@@ -19362,7 +19194,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -19462,7 +19293,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -19547,7 +19377,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -19680,7 +19509,6 @@
 {
   "ExtendedType" : [ "Aufgabensammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Aufgabensammlung",
@@ -19784,7 +19612,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -19913,7 +19740,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -20022,7 +19848,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -20122,7 +19947,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DDDE"
@@ -20217,7 +20041,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -20304,7 +20127,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "ohne Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -20380,7 +20202,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie" ],
   "Country" : [ {
     "countryISO" : "DXDE"
@@ -20462,7 +20283,6 @@
 {
   "ExtendedType" : [ "Wörterbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie" ],
   "TypeHeading" : [ {
     "term" : "Wörterbuch",
@@ -20560,7 +20380,6 @@
 {
   "ExtendedType" : [ "Aufsatzsammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Aufsatzsammlung",
@@ -20666,7 +20485,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -20787,7 +20605,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -20877,7 +20694,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -20973,7 +20789,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -21106,7 +20921,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -21198,7 +21012,6 @@
 {
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -21300,7 +21113,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "CH"
@@ -21407,7 +21219,6 @@
 {
   "ExtendedType" : [ "Wörterbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie", "Lieferungswerk" ],
   "TypeHeading" : [ {
     "term" : "Wörterbuch",
@@ -21518,7 +21329,6 @@
 {
   "ExtendedType" : [ "Atlas" ],
   "FormatCarrier" : [ "Landkarten" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Atlas",
@@ -21630,7 +21440,6 @@
 {
   "ExtendedType" : [ "Biografie" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie" ],
   "TypeHeading" : [ {
     "term" : "Biografie",
@@ -21746,7 +21555,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -21847,7 +21655,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -21932,7 +21739,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -22005,7 +21811,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -22090,7 +21895,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -22174,7 +21978,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -22258,7 +22061,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -22345,7 +22147,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DXDE"
@@ -22437,7 +22238,6 @@
 {
   "ExtendedType" : [ "Forschungsbericht" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Forschungsbericht",
@@ -22578,7 +22378,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -22732,7 +22531,6 @@
 {
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -22840,7 +22638,6 @@
 {
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -22946,7 +22743,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "US"
@@ -23046,7 +22842,6 @@
 {
   "ExtendedType" : [ "Kommentar" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Loseblattausgabe" ],
   "TypeHeading" : [ {
     "term" : "Kommentar",
@@ -23201,7 +22996,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -23339,7 +23133,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -23426,7 +23219,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -23507,7 +23299,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -23599,7 +23390,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -23702,7 +23492,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Zeitschrift" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "alle zwei Monate", "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Zeitschrift",
@@ -23814,7 +23603,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "AT"
@@ -23902,7 +23690,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -23984,7 +23771,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -24093,7 +23879,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -24187,7 +23972,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -24271,7 +24055,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -24356,7 +24139,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "US"
@@ -24469,7 +24251,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -24572,7 +24353,6 @@
 {
   "ExtendedType" : [ "Zeitschrift" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "Zeitschrift" ],
   "TypeHeading" : [ {
     "term" : "Zeitschrift",
@@ -24670,7 +24450,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -24785,7 +24564,6 @@
 {
   "ExtendedType" : [ "Wörterbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Wörterbuch" ],
   "TypeHeading" : [ {
     "term" : "Wörterbuch",
@@ -24908,7 +24686,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -25014,7 +24791,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -25122,7 +24898,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "NL"
@@ -25239,7 +25014,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "Konferenzschrift / Kongressbericht" ],
   "Country" : [ {
     "countryISO" : "US"
@@ -25340,7 +25114,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB" ],
   "Country" : [ {
     "countryISO" : "DX"
   } ],
@@ -25457,7 +25230,6 @@
   } ]
 }
 {
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -25591,7 +25363,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -25675,7 +25446,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -25754,7 +25524,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE-NW"
@@ -25865,7 +25634,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -26014,7 +25782,6 @@
 {
   "ExtendedType" : [ "Kommentar" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Loseblattausgabe" ],
   "TypeHeading" : [ {
     "term" : "Kommentar",
@@ -26181,7 +25948,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -26330,7 +26096,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT002709216"
@@ -26462,7 +26227,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "ohne Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -26588,7 +26352,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -26695,7 +26458,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -26796,7 +26558,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT002850110"
@@ -26883,7 +26644,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -26977,7 +26737,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -27061,7 +26820,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -27156,7 +26914,6 @@
 {
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 304" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -27313,7 +27070,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "CH"
@@ -27410,7 +27166,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -27488,7 +27243,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -27570,7 +27324,6 @@
 {
   "ExtendedType" : [ "Kunstführer" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Kunstführer",
@@ -27684,7 +27437,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -27772,7 +27524,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -27863,7 +27614,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -27963,7 +27713,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -28036,7 +27785,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -28126,7 +27874,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -28204,7 +27951,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -28295,7 +28041,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -28385,7 +28130,6 @@
 {
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -28510,7 +28254,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -28605,7 +28348,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -28687,7 +28429,6 @@
 {
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -28803,7 +28544,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "US"
@@ -28901,7 +28641,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "Bibliothekskatalog" ],
   "Country" : [ {
     "countryISO" : "AT"
@@ -28996,7 +28735,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -29094,7 +28832,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -29212,7 +28949,6 @@
 {
   "ExtendedType" : [ "Wörterbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie" ],
   "TypeHeading" : [ {
     "term" : "Wörterbuch",
@@ -29331,7 +29067,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -29458,7 +29193,6 @@
 {
   "ExtendedType" : [ "Fachkunde" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Fachkunde",
@@ -29555,7 +29289,6 @@
 {
   "ExtendedType" : [ "Inventar" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Inventar",
@@ -29689,7 +29422,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -29790,7 +29522,6 @@
 {
   "ExtendedType" : [ "Aufsatzsammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Aufsatzsammlung",
@@ -29913,7 +29644,6 @@
 {
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -30021,7 +29751,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT004164481"
@@ -30113,7 +29842,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "BE"
@@ -30183,7 +29911,6 @@
 {
   "ExtendedType" : [ "Konferenzschrift" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Konferenzschrift" ],
   "TypeHeading" : [ {
     "term" : "Konferenzschrift",
@@ -30276,7 +30003,6 @@
 {
   "ExtendedType" : [ "Wörterbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Wörterbuch" ],
   "TypeHeading" : [ {
     "term" : "Wörterbuch",
@@ -30403,7 +30129,6 @@
 {
   "ExtendedType" : [ "Bibliografie" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Bibliographie" ],
   "TypeHeading" : [ {
     "term" : "Bibliografie",
@@ -30521,7 +30246,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT004187549"
@@ -30611,7 +30335,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -30698,7 +30421,6 @@
 {
   "ExtendedType" : [ "Kommentar" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Kommentar",
@@ -30808,7 +30530,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT004202599"
@@ -30902,7 +30623,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -30995,7 +30715,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DX"
@@ -31071,7 +30790,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DXDE"
@@ -31137,7 +30855,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "US"
@@ -31228,7 +30945,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "GB"
@@ -31305,7 +31021,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -31394,7 +31109,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 304" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -31498,7 +31212,6 @@
 {
   "ExtendedType" : [ "Ausstellungskatalog" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Katalog" ],
   "TypeHeading" : [ {
     "term" : "Ausstellungskatalog",
@@ -31590,7 +31303,6 @@
 {
   "ExtendedType" : [ "Wörterbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Wörterbuch", "Enzyklopädie" ],
   "TypeHeading" : [ {
     "term" : "Wörterbuch",
@@ -31730,7 +31442,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT004231265"
@@ -31817,7 +31528,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -31939,7 +31649,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -32030,7 +31739,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "IT"
@@ -32104,7 +31812,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "CH"
@@ -32212,7 +31919,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "NL"
@@ -32293,7 +31999,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -32474,7 +32179,6 @@
 {
   "ExtendedType" : [ "Ausstellungskatalog" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Katalog" ],
   "TypeHeading" : [ {
     "term" : "Ausstellungskatalog",
@@ -32601,7 +32305,6 @@
 {
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -32713,7 +32416,6 @@
 {
   "ExtendedType" : [ "Kommentar" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Kommentar",
@@ -32842,7 +32544,6 @@
 {
   "ExtendedType" : [ "Aufsatzsammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Aufsatzsammlung",
@@ -32944,7 +32645,6 @@
 {
   "ExtendedType" : [ "Wörterbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Wörterbuch" ],
   "TypeHeading" : [ {
     "term" : "Wörterbuch",
@@ -33016,7 +32716,6 @@
 }
 {
   "FormatCarrier" : [ "Medienkombination" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -33107,7 +32806,6 @@
 {
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -33196,7 +32894,6 @@
 {
   "ExtendedType" : [ "Fachkunde" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Fachkunde",
@@ -33285,7 +32982,6 @@
 {
   "ExtendedType" : [ "Quelle" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Quelle",
@@ -33396,7 +33092,6 @@
 {
   "ExtendedType" : [ "Wörterbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie" ],
   "TypeHeading" : [ {
     "term" : "Wörterbuch",
@@ -33505,7 +33200,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "CH"
@@ -33606,7 +33300,6 @@
 {
   "ExtendedType" : [ "Aufgabensammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Aufgabensammlung",
@@ -33698,7 +33391,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT004286622"
@@ -33769,7 +33461,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -33868,7 +33559,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -33972,7 +33662,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -34113,7 +33802,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -34229,7 +33917,6 @@
 {
   "ExtendedType" : [ "Wörterbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Wörterbuch" ],
   "TypeHeading" : [ {
     "term" : "Wörterbuch",
@@ -34340,7 +34027,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -34453,7 +34139,6 @@
 {
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -34618,7 +34303,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -34743,7 +34427,6 @@
 {
   "ExtendedType" : [ "Kommentar" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Kommentar",
@@ -34868,7 +34551,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -35017,7 +34699,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "US"
@@ -35127,7 +34808,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "CH"
@@ -35242,7 +34922,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -35359,7 +35038,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -35518,7 +35196,6 @@
 {
   "ExtendedType" : [ "Aufgabensammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Aufgabensammlung",
@@ -35638,7 +35315,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -35764,7 +35440,6 @@
 {
   "ExtendedType" : [ "Mehrsprachiges Wörterbuch", "Wörterbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Wörterbuch" ],
   "TypeHeading" : [ {
     "term" : "Mehrsprachiges Wörterbuch",
@@ -35924,7 +35599,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Loseblattausgabe" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT007126336"
@@ -35994,7 +35668,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT007126870"
@@ -36097,7 +35770,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "AAAT"
@@ -36174,7 +35846,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT007163382"
@@ -36241,7 +35912,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -36363,7 +36033,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -36481,7 +36150,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -36633,7 +36301,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "US"
@@ -36719,7 +36386,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -36829,7 +36495,6 @@
 {
   "ExtendedType" : [ "Bildband", "Werkverzeichnis" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Bildband",
@@ -36952,7 +36617,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT007317101"
@@ -37019,7 +36683,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -37126,7 +36789,6 @@
 {
   "ExtendedType" : [ "Konferenzschrift" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Konferenzschrift" ],
   "TypeHeading" : [ {
     "term" : "Konferenzschrift",
@@ -37267,7 +36929,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -37345,7 +37006,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -37533,7 +37193,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -37640,7 +37299,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -37723,7 +37381,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -37871,7 +37528,6 @@
 {
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -38090,7 +37746,6 @@
 {
   "ExtendedType" : [ "Wörterbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk", "Enzyklopädie" ],
   "TypeHeading" : [ {
     "term" : "Wörterbuch",
@@ -38202,7 +37857,6 @@
 {
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -38374,7 +38028,6 @@
 {
   "ExtendedType" : [ "Praktikum" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Praktikum",
@@ -38544,7 +38197,6 @@
 {
   "ExtendedType" : [ "Aufsatzsammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Aufsatzsammlung",
@@ -38694,7 +38346,6 @@
 {
   "ExtendedFormat" : [ "CD-ROM" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -38838,7 +38489,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -38990,7 +38640,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -39134,7 +38783,6 @@
 {
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -39280,7 +38928,6 @@
 {
   "ExtendedType" : [ "Kommentar" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Kommentar",
@@ -39489,7 +39136,6 @@
 {
   "ExtendedType" : [ "Kommentar" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "TypeHeading" : [ {
     "term" : "Kommentar",
@@ -39595,7 +39241,6 @@
 {
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -39726,7 +39371,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -39832,7 +39476,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -39965,7 +39608,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -40092,7 +39734,6 @@
 {
   "ExtendedType" : [ "Bildband" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Bildband",
@@ -40228,7 +39869,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -40357,7 +39997,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "CH"
@@ -40457,7 +40096,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -40567,7 +40205,6 @@
 {
   "ExtendedType" : [ "Ausstellungskatalog" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Ausstellungskatalog",
@@ -40695,7 +40332,6 @@
 {
   "ExtendedType" : [ "Ausstellungskatalog" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Katalog" ],
   "TypeHeading" : [ {
     "term" : "Ausstellungskatalog",
@@ -40844,7 +40480,6 @@
 {
   "ExtendedType" : [ "Bildband" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Bildband",
@@ -40971,7 +40606,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -41122,7 +40756,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -41243,7 +40876,6 @@
 {
   "ExtendedType" : [ "Beispielsammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Beispielsammlung",
@@ -41368,7 +41000,6 @@
 {
   "ExtendedType" : [ "Beispielsammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Beispielsammlung",
@@ -41499,7 +41130,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "maschinelle Umsetzung aus AACR", "Sonstiges Regelwerk", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -41611,7 +41241,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-DNB", "RSWK", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Katalog", "Sonstiges" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -41736,7 +41365,6 @@
 {
   "ExtendedType" : [ "Ausstellungskatalog" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Ausstellungskatalog",
@@ -41865,7 +41493,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -41986,7 +41613,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "Country" : [ {
     "countryISO" : "ES"
@@ -42088,7 +41714,6 @@
 {
   "ExtendedType" : [ "Bildband" ],
   "FormatCarrier" : [ "Druckschrift", "säurefreies, alterungsbeständiges Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-DNB", "RSWK", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "TypeHeading" : [ {
     "term" : "Bildband",
@@ -42193,7 +41818,6 @@
 {
   "ExtendedType" : [ "Bildband" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "maschinelle Umsetzung einer Titelaufnahme", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "TypeHeading" : [ {
     "term" : "Bildband",
@@ -42303,7 +41927,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "säurefreies, alterungsbeständiges Papier" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -42425,7 +42048,6 @@
 {
   "ExtendedType" : [ "Lehrmittel" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrmittel",
@@ -42559,7 +42181,6 @@
 {
   "ExtendedType" : [ "Ausstellungskatalog" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Katalog", "Sonstiges" ],
   "TypeHeading" : [ {
     "term" : "Ausstellungskatalog",
@@ -42690,7 +42311,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -42933,7 +42553,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "maschinelle Umsetzung aus AACR", "Sonstiges Regelwerk", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "GB"
@@ -43076,7 +42695,6 @@
 {
   "ExtendedType" : [ "Mehrsprachiges Wörterbuch", "Wörterbuch" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-DNB", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Wörterbuch", "Sonstiges" ],
   "TypeHeading" : [ {
     "term" : "Mehrsprachiges Wörterbuch",
@@ -43228,7 +42846,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "Country" : [ {
     "countryISO" : "DE-NW"
@@ -43352,7 +42969,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -43446,7 +43062,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -43551,7 +43166,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -43656,7 +43270,6 @@
 }
 {
   "FormatCarrier" : [ "Optische Speicherplatte(n)" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecial" : [ "Film, Dia, Video" ],
   "Country" : [ {
@@ -43808,7 +43421,6 @@
 {
   "ExtendedType" : [ "Bildband" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Bildband",
@@ -43927,7 +43539,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB" ],
   "Country" : [ {
     "countryISO" : "CH"
   } ],
@@ -44045,7 +43656,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -44119,7 +43729,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DX"
@@ -44194,7 +43803,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -44276,7 +43884,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "säurefreies, alterungsbeständiges Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-DNB", "RSWK", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -44414,7 +44021,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "Country" : [ {
     "countryISO" : "DE-RP"
@@ -44537,7 +44143,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -44655,7 +44260,6 @@
 }
 {
   "FormatCarrier" : [ "Optische Speicherplatte(n)" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 304" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -44792,7 +44396,6 @@
 {
   "ExtendedType" : [ "Einführung" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "maschinelle Umsetzung aus AACR", "Sonstiges Regelwerk", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Einführung",
@@ -44937,7 +44540,6 @@
 {
   "ExtendedType" : [ "Beispielsammlung" ],
   "FormatCarrier" : [ "Druckschrift", "säurefreies, alterungsbeständiges Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "RSWK", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 304" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "TypeHeading" : [ {
     "term" : "Beispielsammlung",
@@ -45059,7 +44661,6 @@
 }
 {
   "FormatCarrier" : [ "Optische Speicherplatte(n)" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 304" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecial" : [ "Film, Dia, Video" ],
   "Country" : [ {
@@ -45166,7 +44767,6 @@
 {
   "ExtendedType" : [ "Aufsatzsammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Aufsatzsammlung",
@@ -45314,7 +44914,6 @@
 {
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -45475,7 +45074,6 @@
 }
 {
   "FormatCarrier" : [ "Optische Speicherplatte(n)" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 304" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecial" : [ "Film, Dia, Video" ],
   "Country" : [ {
@@ -45600,7 +45198,6 @@
 {
   "ExtendedType" : [ "Bildband" ],
   "FormatCarrier" : [ "Druckschrift", "säurefreies, alterungsbeständiges Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "RSWK", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "TypeHeading" : [ {
     "term" : "Bildband",
@@ -45737,7 +45334,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -45870,7 +45466,6 @@
 {
   "ExtendedType" : [ "Bildband" ],
   "FormatCarrier" : [ "Druckschrift", "säurefreies, alterungsbeständiges Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "RSWK", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 304" ],
   "TypeMonograph" : [ "einbändiges Werk", "Katalog" ],
   "TypeHeading" : [ {
     "term" : "Bildband",
@@ -45996,7 +45591,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -46131,7 +45725,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -46261,7 +45854,6 @@
 {
   "ExtendedType" : [ "Bildband" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "TypeHeading" : [ {
     "term" : "Bildband",
@@ -46405,7 +45997,6 @@
 {
   "ExtendedType" : [ "Ausstellungskatalog" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 310" ],
   "TypeMonograph" : [ "einbändiges Werk", "Konferenzschrift", "Sonstiges" ],
   "TypeHeading" : [ {
     "term" : "Ausstellungskatalog",
@@ -46577,7 +46168,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB" ],
   "Country" : [ {
     "countryISO" : "CH"
   } ],
@@ -46719,7 +46309,6 @@
 {
   "ExtendedType" : [ "Ausstellungskatalog" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Katalog", "Sonstiges" ],
   "TypeHeading" : [ {
     "term" : "Ausstellungskatalog",
@@ -46871,7 +46460,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "Sonstiges Regelwerk", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Sonstiges" ],
   "Country" : [ {
     "countryISO" : "CH"
@@ -47014,7 +46602,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Ausstellungskatalog" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk", "Katalog" ],
   "TypeHeading" : [ {
     "term" : "Ausstellungskatalog",
@@ -47173,7 +46760,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE-BW"
@@ -47300,7 +46886,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -47506,7 +47091,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RDA", "Sonstiges Regelwerk", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -47650,7 +47234,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "ISO 646 (IRV) + ISO 5426", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -48113,7 +47696,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -48320,7 +47902,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Aufsatzsammlung" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Aufsatzsammlung",
@@ -48523,7 +48104,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE-BY"
@@ -48683,7 +48263,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader" ],
   "Country" : [ {
@@ -48798,7 +48377,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -48921,7 +48499,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE-BW"
@@ -49107,7 +48684,6 @@
   "CarrierType" : [ "Online-Ressource" ],
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -49207,7 +48783,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -49344,7 +48919,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -49485,7 +49059,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Führer" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "TypeHeading" : [ {
     "term" : "Führer",
@@ -49623,7 +49196,6 @@
   "CarrierType" : [ "Online-Ressource" ],
   "ExtendedType" : [ "Bildband", "Werkverzeichnis" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RDA", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Bildband",
@@ -49779,7 +49351,6 @@
 }
 {
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "ISO 646 (IRV) + ISO 5426", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "fortlaufende Publikation" ],
   "TypeMediaSpecial" : [ "Online-Ressource" ],
   "Country" : [ {
@@ -49877,7 +49448,6 @@
   "CarrierType" : [ "Online-Ressource" ],
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "unregelmäßig" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -49961,7 +49531,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE-BW"
@@ -50191,7 +49760,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader ; zum Download Adobe Digital Editions" ],
   "Country" : [ {
@@ -50322,7 +49890,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader ; zum Download Adobe Digital Editions" ],
   "Country" : [ {
@@ -50443,7 +50010,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader ; zum Download Adobe Digital Editions" ],
   "Country" : [ {
@@ -50561,7 +50127,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader ; zum Download Adobe Digital Editions" ],
   "Country" : [ {
@@ -50681,7 +50246,6 @@
   "ContentType" : [ "unbewegtes Bild" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "Country" : [ {
     "countryISO" : "DE-NW"
@@ -50781,7 +50345,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader ; zum Download Adobe Digital Editions" ],
   "Country" : [ {
@@ -50916,7 +50479,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader ; zum Download Adobe Digital Editions" ],
   "Country" : [ {
@@ -51037,7 +50599,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader ; zum Download Adobe Digital Editions" ],
   "Country" : [ {
@@ -51174,7 +50735,6 @@
   "CarrierType" : [ "Online-Ressource" ],
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "fortlaufende Publikation", "unregelmäßig" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -51269,7 +50829,6 @@
   "CarrierType" : [ "Online-Ressource" ],
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "fortlaufende Publikation", "unregelmäßig" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -51375,7 +50934,6 @@
   "CarrierType" : [ "Online-Ressource" ],
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "fortlaufende Publikation", "unregelmäßig" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -51479,7 +51037,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE-BW"
@@ -51605,7 +51162,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "mehrbändiges begrenztes Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -51707,7 +51263,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "ISO 646 (IRV) + ISO 5426", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "fortlaufende Publikation", "unregelmäßig" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -51802,7 +51357,6 @@
   "CarrierType" : [ "Online-Ressource" ],
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "ISO 646 (IRV) + ISO 5426", "RDA", "Sonstiges Regelwerk", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "keine Angabe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -51893,7 +51447,6 @@
   "CarrierType" : [ "Online-Ressource" ],
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -51987,7 +51540,6 @@
   "CarrierType" : [ "Online-Ressource" ],
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -52076,7 +51628,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "Country" : [ {
     "countryISO" : "DE-BE"
@@ -52243,7 +51794,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "fortlaufende Publikation", "unregelmäßig" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -52327,7 +51877,6 @@
   "CarrierType" : [ "Online-Ressource" ],
   "ExtendedType" : [ "Monografische Reihe" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TypeHeading" : [ {
     "term" : "Monografische Reihe",
@@ -52416,7 +51965,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader ; zum Download Adobe Digital Editions" ],
   "Country" : [ {
@@ -52555,7 +52103,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "US"
@@ -52669,7 +52216,6 @@
 }
 {
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "ISO 646 (IRV) + ISO 5426", "RAK-DNB", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "fortlaufende Publikation" ],
   "TypeMediaSpecial" : [ "Online-Ressource" ],
   "Country" : [ {
@@ -52747,7 +52293,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader ; zum Download Adobe Digital Editions" ],
   "Country" : [ {
@@ -52885,7 +52430,6 @@
 }
 {
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Sonstiges Regelwerk", "keine Angabe", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypePeriodical" : [ "Schriftenreihe", "keine Angabe", "unregelmäßig" ],
   "TypeMediaSpecial" : [ "Online-Ressource" ],
   "Country" : [ {
@@ -52963,7 +52507,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader ; zum Download Adobe Digital Editions" ],
   "Country" : [ {
@@ -53100,7 +52643,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader ; zum Download Adobe Digital Editions" ],
   "Country" : [ {
@@ -53213,7 +52755,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Formelsammlung", "Aufgabensammlung" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Formelsammlung",
@@ -53329,7 +52870,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Kunstführer" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "DIN 31628, Stufe 2", "sonstiger Zeichencode", "RDA", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "TypeHeading" : [ {
     "term" : "Kunstführer",
@@ -53456,7 +52996,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Kunstführer" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "CIP-Aufnahme", "DIN 31628, Stufe 2", "sonstiger Zeichencode", "RDA", "keine Angabe", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "TypeHeading" : [ {
     "term" : "Kunstführer",
@@ -53583,7 +53122,6 @@
   "ExtendedFormat" : [ "DVD-Video" ],
   "ExtendedType" : [ "Film" ],
   "FormatCarrier" : [ "Bildplatte (Videodisc)", "Optische Speicherplatte(n)" ],
-  "RecordCodes" : [ "Autopsie", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Film",
@@ -53739,7 +53277,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -53959,7 +53496,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -54116,7 +53652,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE-BY"
@@ -54301,7 +53836,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Aufsatzsammlung", "Bildband" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Sachtitelwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Aufsatzsammlung",
@@ -54466,7 +54000,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader ; zum Download Adobe Digital Editions" ],
   "Country" : [ {
@@ -54594,7 +54127,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader ; zum Download Adobe Digital Editions" ],
   "Country" : [ {
@@ -54732,7 +54264,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Sonstiger Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeMediaSpecialPreservation" : [ "Adobe Acrobat Reader ; zum Download Adobe Digital Editions" ],
   "Country" : [ {
@@ -54868,7 +54399,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE-BE"
@@ -55050,7 +54580,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Unicode / ISO 10646 (UTF 8)", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "unselbständig erschienenes Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020101605"
@@ -55145,7 +54674,6 @@
   "CarrierType" : [ "Band" ],
   "ExtendedType" : [ "Lehrbuch" ],
   "FormatCarrier" : [ "Druckschrift", "Papier" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "TypeHeading" : [ {
     "term" : "Lehrbuch",
@@ -55337,7 +54865,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020195582"
@@ -55430,7 +54957,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020196277"
@@ -55523,7 +55049,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020197728"
@@ -55616,7 +55141,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Band" ],
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "GB"
@@ -55740,7 +55264,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020216011"
@@ -55840,7 +55363,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020217010"
@@ -55942,7 +55464,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020217569"
@@ -56041,7 +55562,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020217653"
@@ -56139,7 +55659,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020217835"
@@ -56237,7 +55756,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020217847"
@@ -56351,7 +55869,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020218389"
@@ -56453,7 +55970,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020219883"
@@ -56551,7 +56067,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020220491"
@@ -56642,7 +56157,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020220801"
@@ -56746,7 +56260,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020220959"
@@ -56845,7 +56358,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020223268"
@@ -56947,7 +56459,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020223378"
@@ -57053,7 +56564,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020223749"
@@ -57157,7 +56667,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020224335"
@@ -57258,7 +56767,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020224805"
@@ -57359,7 +56867,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020224856"
@@ -57457,7 +56964,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020226217"
@@ -57559,7 +57065,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020226481"
@@ -57654,7 +57159,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020227490"
@@ -57752,7 +57256,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020228222"
@@ -57850,7 +57353,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020229676"
@@ -57950,7 +57452,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "Unicode / ISO 10646 (UTF 8)", "Urheberwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "IdentifierHBZ" : [ {
     "identifierHBZ" : "HT020230754"
@@ -58046,7 +57547,6 @@
   "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
-  "RecordCodes" : [ "Autopsie", "ISO 646 (IRV) + ISO 5426", "RDA", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE-NW"
@@ -58435,7 +57935,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -58539,7 +58038,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -58643,7 +58141,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -58747,7 +58244,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -58857,7 +58353,6 @@
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
-  "RecordCodes" : [ "Autopsie", "MAB-Zeichenvorrat", "Unicode / ISO 10646 (UTF 8)", "RAK-WB", "Verfasserwerk", "Ordnungssachtitel ist der Inhalt des Feldes 331" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "Country" : [ {
     "countryISO" : "DE"

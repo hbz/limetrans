@@ -6,7 +6,6 @@ do once()
   include("./maps/alma-branches.fix")
   include("./maps/alma-extended-type.fix")
   include("./maps/alma-format-carrier.fix")
-  include("./maps/alma-record-codes.fix")
   include("./maps/alma-taxonomy.fix")
   include("./maps/alma-type-monograph.fix")
   include("./maps/alma-type-periodical.fix")
@@ -283,23 +282,10 @@ set_array("@facet_type")
 set_array("ExtendedFormat[]")
 set_array("ExtendedType[]")
 set_array("FormatCarrier[]")
-set_array("RecordCodes[]")
 set_array("TypeMonograph[]")
 set_array("TypePeriodical[]")
 do list(path: "9640s", "var": "$i")
-  if any_equal("$i.F", "030")
-    call_macro("alma-record-codes", start: "0")
-    call_macro("alma-record-codes", start: "1")
-    call_macro("alma-record-codes", start: "2")
-    call_macro("alma-record-codes", start: "3")
-    call_macro("alma-record-codes", start: "4")
-    call_macro("alma-record-codes", start: "5")
-    call_macro("alma-record-codes", start: "6")
-    call_macro("alma-record-codes", start: "7")
-    call_macro("alma-record-codes", start: "8")
-    call_macro("alma-record-codes", start: "11")
-    call_macro("alma-record-codes", start: "12")
-  elsif any_equal("$i.F", "050")
+  if any_equal("$i.F", "050")
     call_macro("alma-format-carrier", start: "0")
     call_macro("alma-format-carrier", start: "1")
     call_macro("alma-format-carrier", start: "2")
@@ -460,7 +446,6 @@ end
 uniq("ExtendedFormat[]")
 uniq("ExtendedType[]")
 uniq("FormatCarrier[]")
-uniq("RecordCodes[]")
 uniq("TypeMediaSpecial[]")
 uniq("TypeMonograph[]")
 uniq("introx.music[]")
@@ -1845,7 +1830,6 @@ retain(
   "PublisherName[]",
   "RSWK[]",
   "Recension",
-  "RecordCodes[]",
   "RecordIdentifier",
   "RecordIdentifierSuper[]",
   "ReproductionNote[]",

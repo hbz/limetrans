@@ -5,12 +5,6 @@ do put_macro("alma-mms-to-isil")
   lookup("$[target]", "institution-code-to-isil", delete: "true")
 end
 
-do put_macro("alma-record-codes")
-  call_macro("substring", source: "$i.A", target: "@recordCodes", start: "$[start]")
-  lookup("@recordCodes", "alma-record-codes-$[start]", delete: "true")
-  move_field("@recordCodes", "RecordCodes[]")
-end
-
 do put_macro("alma-format-carrier", length: "1")
   call_macro("substring", source: "$i.A", target: "@formatCarrier", start: "$[start]", length: "$[length]")
   copy_field("@formatCarrier", "@formatCarrierFacet")
