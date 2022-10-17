@@ -3537,6 +3537,7 @@
     "access" : [ "local" ],
     "branch" : [ "Medienstelle" ],
     "carrier" : [ "Elektronische Ressource", "Film, Dia, Video" ],
+    "taxonomy" : [ "Theater- und Filmwissenschaften" ],
     "subject" : [ "Jules et Jim" ]
   },
   "IdentifierAlma" : {
@@ -3930,6 +3931,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ],
     "subject" : [ "Singstimme (4), Orchester / Oratorium" ]
   },
   "Country" : [ {
@@ -4163,6 +4165,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Anglistik" ],
     "subject" : [ "Bellow, Saul", "Israel" ]
   },
   "IdentifierAlma" : {
@@ -4380,6 +4383,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Below, Nicolaus von", "Hitler, Adolf", "Geschichte 1937-1945" ]
   },
   "IdentifierAlma" : {
@@ -4591,7 +4595,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -5016,6 +5021,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
     "subject" : [ "Rechtskundeunterricht", "Arbeitsgemeinschaft", "Gymnasium", "Oberstufe" ]
   },
   "SubjectRPB" : [ {
@@ -5542,7 +5548,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Geographie / Geowissenschaften" ],
+    "taxonomy" : [ "Geographie / Geowissenschaften", "Kunst" ],
     "subject" : [ "Rheinland", "Dorf" ]
   },
   "SubjectRPB" : [ {
@@ -5792,7 +5798,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Anglistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -5872,7 +5879,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Anglistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -5958,7 +5966,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Anglistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "230"
@@ -6048,7 +6057,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Anglistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -6226,7 +6236,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ]
   },
   "SubjectRPB" : [ {
     "subject" : "450"
@@ -6322,6 +6333,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Alte Geschichte" ]
   },
   "SubjectRPB" : [ {
@@ -6579,6 +6591,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Antonius, Marcus", "Römisches Reich", "Geschichte 82 v. Chr.-30 v. Chr." ]
   },
   "SubjectRPB" : [ {
@@ -6707,6 +6720,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Sport" ],
     "subject" : [ "Olympische Spiele", "Geschichte 776 v. Chr.-393" ]
   },
   "IdentifierAlma" : {
@@ -6919,6 +6933,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Benjamin, Walter", "Scholem, Gershom" ]
   },
   "IdentifierAlma" : {
@@ -7132,7 +7147,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -7227,7 +7243,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -7316,7 +7333,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -7397,7 +7415,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -7618,6 +7637,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Pädagogik" ],
     "subject" : [ "Schule", "Wirtschaft" ]
   },
   "SubjectRPB" : [ {
@@ -7731,6 +7751,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ],
     "subject" : [ "Solmisation", "Musikerziehung" ]
   },
   "SubjectRPB" : [ {
@@ -7928,7 +7949,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Anglistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "230"
@@ -8154,6 +8176,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Deutsch", "Literatur", "Asozialität", "Geschichte 1750-1810" ]
   },
   "SubjectRVK" : [ {
@@ -8367,6 +8390,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Pädagogik" ],
     "subject" : [ "Pädagogik", "Ethik" ]
   },
   "SubjectRPB" : [ {
@@ -8477,6 +8501,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Romanistik" ],
     "subject" : [ "Diderot, Denis" ]
   },
   "IdentifierAlma" : {
@@ -8575,7 +8600,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -8763,6 +8789,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Rezeption", "Deutschland", "Geschichte", "Swedenborg, Emanuel", "Oetinger, Friedrich Christoph", "Kant, Immanuel" ]
   },
   "IdentifierAlma" : {
@@ -8861,6 +8888,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ],
     "subject" : [ "Beethoven, Ludwig van" ]
   },
   "SubjectRPB" : [ {
@@ -9047,6 +9075,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ],
     "subject" : [ "Schubert, Franz" ]
   },
   "SubjectRPB" : [ {
@@ -9455,6 +9484,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Musik", "Literatur" ]
   },
   "SubjectRPB" : [ {
@@ -9979,6 +10009,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Stift Berchtesgaden", "Geschichte" ]
   },
   "IdentifierAlma" : {
@@ -10091,6 +10122,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Dakien", "Archäologie" ]
   },
   "SubjectRVK" : [ {
@@ -10204,6 +10236,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Graff, Anton" ]
   },
   "IdentifierAlma" : {
@@ -10640,6 +10673,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Bergengruen, Werner" ]
   },
   "IdentifierAlma" : {
@@ -10738,7 +10772,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -10837,7 +10872,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -11870,6 +11906,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Pädagogik" ],
     "subject" : [ "Didaktik" ]
   },
   "SubjectRPB" : [ {
@@ -12000,6 +12037,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Pädagogik" ],
     "subject" : [ "Sowjetunion", "Didaktik" ]
   },
   "SubjectRPB" : [ {
@@ -12239,6 +12277,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Klassische Philologie" ],
     "subject" : [ "Mameranus, Nicolaus" ]
   },
   "IdentifierAlma" : {
@@ -13012,6 +13051,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Rheinland", "Wirtschaft", "Geschichte 1789-1834" ]
   },
   "SubjectRPB" : [ {
@@ -13484,6 +13524,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Kierkegaard, Søren", "Dialektik", "Existenzphilosophie" ]
   },
   "IdentifierAlma" : {
@@ -13815,6 +13856,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ],
     "subject" : [ "Beethoven, Ludwig van" ]
   },
   "SubjectRPB" : [ {
@@ -14191,6 +14233,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Psychologie" ],
     "subject" : [ "Erziehung", "Tiefenpsychologie", "Geschichte 1913-1966", "Geschichte 1900-1966" ]
   },
   "SubjectRPB" : [ {
@@ -14606,7 +14649,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -15473,6 +15517,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Sowjetunion", "Exiltheater", "Deutsche", "Geschichte 1932-1937" ]
   },
   "IdentifierAlma" : {
@@ -15672,6 +15717,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Dilthey, Wilhelm" ]
   },
   "SubjectRPB" : [ {
@@ -15779,6 +15825,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg", "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Pädagogik", "Dilthey, Wilhelm" ]
   },
   "SubjectRVK" : [ {
@@ -16624,6 +16671,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Goethe, Johann Wolfgang von", "Rezension", "Geschichte 1788-1831" ]
   },
   "IdentifierAlma" : {
@@ -17471,6 +17519,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Psychologie" ],
     "subject" : [ "Schuld", "Psychotherapie", "Theologie" ]
   },
   "SubjectRPB" : [ {
@@ -17570,7 +17619,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -18366,7 +18416,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -18450,6 +18501,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Christologie" ]
   },
   "IdentifierAlma" : {
@@ -18543,6 +18595,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Predigt" ]
   },
   "SubjectRPB" : [ {
@@ -18634,6 +18687,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Glaube", "Vernunft" ]
   },
   "IdentifierAlma" : {
@@ -18725,7 +18779,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -18819,6 +18874,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ],
     "subject" : [ "Sowjetunion", "Musik", "Geschichte 1920-1930" ]
   },
   "IdentifierAlma" : {
@@ -18946,6 +19002,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Thraker", "Goldschmiedekunst" ]
   },
   "SubjectRPB" : [ {
@@ -19254,7 +19311,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -19804,7 +19862,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -19993,7 +20052,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "270"
@@ -20080,7 +20140,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -20459,7 +20520,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ]
   },
   "SubjectRPB" : [ {
     "subject" : "500"
@@ -20546,6 +20608,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Weihnachten", "Predigtsammlung" ]
   },
   "SubjectRPB" : [ {
@@ -20667,6 +20730,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg", "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Religionswissenschaft / Theologie" ],
     "subject" : [ "BRD / Zeitzeugen", "Politische Ethik" ]
   },
   "SubjectRPB" : [ {
@@ -20896,7 +20960,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Romanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -21780,6 +21845,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Heinrich" ]
   },
   "IdentifierAlma" : {
@@ -22059,7 +22125,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -22422,6 +22489,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Beuys, Joseph", "Ströher, Karl", "Sammlung" ]
   },
   "SubjectNWBIB" : [ {
@@ -22529,7 +22597,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kommunikationswissenschaften / Publizistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "560"
@@ -22621,6 +22690,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Anglistik" ],
     "subject" : [ "Conrad, Joseph" ]
   },
   "IdentifierAlma" : {
@@ -22752,6 +22822,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Eichendorff, Joseph von" ]
   },
   "IdentifierAlma" : {
@@ -22871,6 +22942,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ],
     "subject" : [ "Haydn, Joseph" ]
   },
   "SubjectRPB" : [ {
@@ -22976,6 +23048,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Haspel" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
     "subject" : [ "Darmstadt", "Jugendstil", "Mathildenhöhe", "Wiener_Secession", "Olbrich, Joseph Maria" ]
   },
   "SubjectRPB" : [ {
@@ -23080,7 +23153,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -23160,7 +23234,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Romanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -23234,7 +23309,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Romanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -23592,6 +23668,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Allgemeine Nachschlagewerke" ],
     "subject" : [ "Johannes Gutenberg-Universität Mainz", "Geschichte 1477-1977" ]
   },
   "SubjectRPB" : [ {
@@ -24295,7 +24372,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -24382,7 +24460,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -24471,7 +24550,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -24569,7 +24649,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -24751,7 +24832,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -24864,6 +24946,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Jünger, Ernst", "Kirchhorst", "Besetzung", "Geschichte 1945-1948" ]
   },
   "SubjectRPB" : [ {
@@ -24964,7 +25047,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -25049,6 +25133,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Körperbau", "Sprache" ]
   },
   "SubjectRPB" : [ {
@@ -25141,7 +25226,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -25230,7 +25316,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -25311,7 +25398,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "400"
@@ -25398,7 +25486,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -25563,7 +25652,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -25740,6 +25830,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Jünger, Friedrich Georg" ]
   },
   "SubjectRPB" : [ {
@@ -25827,7 +25918,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ]
   },
   "SubjectRPB" : [ {
     "subject" : "400"
@@ -25920,6 +26012,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Park", "Symmetrie", "Literatur", "Rhodos" ]
   },
   "SubjectRPB" : [ {
@@ -26030,6 +26123,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Jünger, Friedrich Georg" ]
   },
   "SubjectRPB" : [ {
@@ -26121,6 +26215,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Spiel" ]
   },
   "SubjectRPB" : [ {
@@ -26314,7 +26409,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -27539,6 +27635,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Psychologie" ],
     "subject" : [ "Jugendpsychotherapie" ]
   },
   "SubjectRPB" : [ {
@@ -29187,7 +29284,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Anglistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -29468,6 +29566,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Walser, Robert" ]
   },
   "IdentifierAlma" : {
@@ -29567,6 +29666,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Psychologie" ],
     "subject" : [ "Psychotherapeut", "Klient", "Methode", "Psychotherapie" ]
   },
   "SubjectRPB" : [ {
@@ -29766,6 +29866,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Hunnen", "Geschichte" ]
   },
   "IdentifierAlma" : {
@@ -29863,7 +29964,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -30326,6 +30428,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Wirtschaftsgeschichte / Revolution", "Frankreich", "Politische Institution", "Geschichte 1630-1830", "Wirtschaft", "Sozialgeschichte 1630-1830" ]
   },
   "SubjectRPB" : [ {
@@ -30476,6 +30579,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Religionswissenschaft / Theologie" ],
     "subject" : [ "Magie", "Soziologische Theorie" ]
   },
   "IdentifierAlma" : {
@@ -30690,6 +30794,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Teilhard de Chardin, Pierre" ]
   },
   "SubjectRPB" : [ {
@@ -30976,7 +31081,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -31057,6 +31163,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg", "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Magritte, René" ]
   },
   "IdentifierAlma" : {
@@ -31693,6 +31800,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ],
     "subject" : [ "Glocke" ]
   },
   "SubjectRPB" : [ {
@@ -31785,7 +31893,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -32437,6 +32546,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Deutsch", "Lyrik" ]
   },
   "SubjectRPB" : [ {
@@ -32936,6 +33046,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Maillol, Aristide" ]
   },
   "IdentifierAlma" : {
@@ -33188,6 +33299,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ],
     "subject" : [ "Händel, Georg Friedrich" ]
   },
   "SubjectRPB" : [ {
@@ -33542,6 +33654,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Schmidt, Arno", "Sprache", "Sprachstil" ]
   },
   "IdentifierAlma" : {
@@ -34088,6 +34201,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Erkenntnistheorie" ]
   },
   "SubjectRPB" : [ {
@@ -34204,6 +34318,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Kognitive Balance", "Kognitive Entwicklung" ]
   },
   "SubjectRPB" : [ {
@@ -34329,6 +34444,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg", "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Kind", "Zeitbewusstsein" ]
   },
   "SubjectRPB" : [ {
@@ -34443,6 +34559,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Kind", "Zahl", "Zahlbegriff", "Entwicklung", "Entwicklungspsychologie" ]
   },
   "SubjectRPB" : [ {
@@ -34559,6 +34676,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin", "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Entwicklung", "Kind", "Zahlbegriff" ]
   },
   "SubjectRPB" : [ {
@@ -34675,7 +34793,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ]
   },
   "SubjectRPB" : [ {
     "subject" : "860"
@@ -34772,6 +34891,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Kinderpsychologie", "Kind", "Entwicklung" ]
   },
   "SubjectRPB" : [ {
@@ -34894,6 +35014,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Weltbild", "Kind", "Kognitive Entwicklung" ]
   },
   "SubjectRPB" : [ {
@@ -35012,6 +35133,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Picard, Max", "Italien" ]
   },
   "SubjectRPB" : [ {
@@ -35107,6 +35229,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Picasso, Pablo", "Zeichnung", "Geschichte 1966-1968" ]
   },
   "IdentifierAlma" : {
@@ -35391,6 +35514,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Pädagogik" ],
     "subject" : [ "Deutschland", "Erwachsenenbildung", "Geschichte 1830-1933" ]
   },
   "SubjectRPB" : [ {
@@ -35506,6 +35630,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Trier", "Kultur", "Geschichte" ]
   },
   "IdentifierAlma" : {
@@ -36040,6 +36165,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Geschichtsphilosophie", "Hoffnung" ]
   },
   "SubjectRPB" : [ {
@@ -36140,7 +36266,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ]
   },
   "SubjectRPB" : [ {
     "subject" : "400"
@@ -36536,7 +36663,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Philosophie" ]
   },
   "SubjectRPB" : [ {
     "subject" : "450"
@@ -37092,6 +37220,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ],
     "subject" : [ "Schütz, Heinrich" ]
   },
   "SubjectRPB" : [ {
@@ -37440,6 +37569,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Adenauer, Konrad", "Heuss, Theodor", "Deutschland", "Politik", "Geschichte 1949-1959", "Parlamentarismus" ]
   },
   "SubjectRPB" : [ {
@@ -37698,6 +37828,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Herten", "Stadtgeografie" ]
   },
   "SubjectRPB" : [ {
@@ -38020,7 +38151,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -38114,7 +38246,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ]
   },
   "SubjectRPB" : [ {
     "subject" : "510"
@@ -38444,7 +38577,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg", "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Wirtschaftswissenschaften" ]
+    "taxonomy" : [ "Wirtschaftswissenschaften", "Geschichte" ]
   },
   "SubjectRPB" : [ {
     "subject" : "380"
@@ -38738,7 +38871,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -38823,6 +38957,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Lyrik", "Geschichte 1900-" ]
   },
   "SubjectRVK" : [ {
@@ -38942,7 +39077,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "550"
@@ -39215,7 +39351,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Anglistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -39583,6 +39720,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Gauguin, Paul" ]
   },
   "IdentifierAlma" : {
@@ -40133,6 +40271,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Deutschland", "Staatslehre", "Staatsform" ]
   },
   "SubjectRPB" : [ {
@@ -40336,6 +40475,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Musil, Robert", "Gesellschaft" ]
   },
   "SubjectRPB" : [ {
@@ -40435,7 +40575,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ]
   },
   "SubjectRPB" : [ {
     "subject" : "510"
@@ -40780,6 +40921,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Klassische Philologie" ],
     "subject" : [ "Quintilianus, Marcus Fabius" ]
   },
   "SubjectRVK" : [ {
@@ -40881,6 +41023,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Groth, Klaus" ]
   },
   "IdentifierAlma" : {
@@ -40980,6 +41123,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Gelegenheitsgedicht" ]
   },
   "SubjectRPB" : [ {
@@ -41320,7 +41464,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -41613,7 +41758,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -41700,7 +41846,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -41775,6 +41922,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Arnim, Achim von" ]
   },
   "IdentifierAlma" : {
@@ -41870,7 +42018,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -41960,7 +42109,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -42052,7 +42202,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -42139,7 +42290,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -42215,6 +42367,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Novalis", "Geistliches Lied", "Deutschland", "Kirchenlied", "Geschichte 1620-1785" ]
   },
   "IdentifierAlma" : {
@@ -42307,6 +42460,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Süddeutschland", "Christliche Kunst", "Sakralbau", "Geschichte 1600-1750", "Barock" ]
   },
   "SubjectRPB" : [ {
@@ -42425,7 +42579,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -42931,6 +43086,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Rembrandt", "Radierung" ]
   },
   "IdentifierAlma" : {
@@ -43309,6 +43465,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Psychologie" ],
     "subject" : [ "Gruppen", "Gruppenprozeß", "Soziale Rollen", "Sozialisation", "Gruppendynamik" ]
   },
   "SubjectRPB" : [ {
@@ -43438,6 +43595,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Religionswissenschaft / Theologie" ],
     "subject" : [ "Synagoge", "Kirche", "Geschichte 500-1500", "Juden", "Christ" ]
   },
   "SubjectRPB" : [ {
@@ -43647,6 +43805,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Freytag, Gustav" ]
   },
   "IdentifierAlma" : {
@@ -44920,6 +45079,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Anglistik" ],
     "subject" : [ "Auden, Wystan H.", "Geschichte 1930-1939", "Zeithintergrund" ]
   },
   "IdentifierAlma" : {
@@ -46192,7 +46352,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -46533,6 +46694,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Athen", "Geschichte", "Geschichte Anfänge-404 v. Chr." ]
   },
   "SubjectRVK" : [ {
@@ -46654,6 +46816,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Sparta", "Geschichte" ]
   },
   "SubjectRPB" : [ {
@@ -46857,6 +47020,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Religionswissenschaft / Theologie" ],
     "subject" : [ "Spahn, Martin" ]
   },
   "IdentifierAlma" : {
@@ -47624,6 +47788,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Pädagogik" ],
     "subject" : [ "Religionspädagogik" ]
   },
   "SubjectRPB" : [ {
@@ -47848,6 +48013,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Deutschland", "Geschichte" ]
   },
   "SubjectRVK" : [ {
@@ -48537,6 +48703,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Deutsch", "Literatur", "Frau", "Geschichte 800-1900" ]
   },
   "IdentifierAlma" : {
@@ -48633,6 +48800,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Wirtschaftswissenschaften" ],
     "subject" : [ "Weber, Max", "Politische Bildung" ]
   },
   "SubjectRPB" : [ {
@@ -48928,6 +49096,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Senefelder, Alois", "Lithografie" ]
   },
   "IdentifierAlma" : {
@@ -49047,6 +49216,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Religionswissenschaft / Theologie" ],
     "subject" : [ "Christliche Sozialethik" ]
   },
   "SubjectRPB" : [ {
@@ -49283,6 +49453,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin", "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ],
     "subject" : [ "Webern, Anton", "Jone, Hildegard", "Humplik, Josef" ]
   },
   "IdentifierAlma" : {
@@ -49381,7 +49552,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -49544,6 +49716,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ],
     "subject" : [ "Schauspielkunst" ]
   },
   "IdentifierAlma" : {
@@ -49725,6 +49898,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Luther, Martin", "Ökumenische Bewegung", "Ökumenische Theologie" ]
   },
   "SubjectRPB" : [ {
@@ -49917,6 +50091,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Landschaftsmalerei", "Geschichte 1700-1960" ]
   },
   "SubjectRPB" : [ {
@@ -50056,6 +50231,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Oranje-Nassau, Willem van" ]
   },
   "SubjectRPB" : [ {
@@ -50262,6 +50438,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Klassische Philologie" ],
     "subject" : [ "Propertius, Sextus" ]
   },
   "IdentifierAlma" : {
@@ -50472,6 +50649,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg", "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Sudetenland", "Arbeiterbewegung", "Geschichte", "Sozialdemokratie" ]
   },
   "SubjectRPB" : [ {
@@ -50602,6 +50780,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Deutschland <DDR> / Entstehung / Geschichte", "Deutschland <DDR> / Geschichte 1945-1978", "Deutschland", "Staat", "Gründung", "Vorgeschichte" ]
   },
   "SubjectRVK" : [ {
@@ -51278,6 +51457,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Musikwissenschaft" ],
     "subject" : [ "Griechenland", "Musik", "Geschichte" ]
   },
   "IdentifierAlma" : {
@@ -51537,6 +51717,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Jugoslawien", "Deutsche", "Geschichte 1918-1978" ]
   },
   "IdentifierAlma" : {
@@ -51664,6 +51845,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Buber, Martin" ]
   },
   "IdentifierAlma" : {
@@ -51970,7 +52152,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Anglistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -52394,7 +52577,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Psychologie" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -52984,6 +53168,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Religionswissenschaft / Theologie" ],
     "subject" : [ "Nestor", "Kirchenväter", "Mönch" ]
   },
   "SubjectRPB" : [ {
@@ -53186,6 +53371,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Hegel, Georg Wilhelm Friedrich", "Geist", "Philosophie" ]
   },
   "SubjectRVK" : [ {
@@ -53458,7 +53644,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Psychologie" ],
+    "taxonomy" : [ "Kulturwissenschaften", "Psychologie" ],
     "subject" : [ "Freud, Sigmund / Psychoanalyse / Theorie", "Psychoanalyse / Sozialwissenschaften", "Freud, Sigmund", "Psychoanalyse", "Gesellschaftsbild" ]
   },
   "SubjectRVK" : [ {
@@ -53975,6 +54161,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Architekturzeichnung", "Geschichte 1479-1979", "Kunstbibliothek Berlin" ]
   },
   "SubjectRPB" : [ {
@@ -56291,7 +56478,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik", "Kulturwissenschaften" ]
   },
   "SubjectRPB" : [ {
     "subject" : "100"
@@ -60285,7 +60473,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -60863,6 +61052,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
     "subject" : [ "Paulus", "Theologie" ]
   },
   "SubjectRVK" : [ {
@@ -61516,6 +61706,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Religionswissenschaft / Theologie" ],
     "subject" : [ "Evangelische Theologie", "Theologie", "Biblische Theologie" ]
   },
   "SubjectRVK" : [ {
@@ -61772,6 +61963,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Rechtswissenschaft" ],
     "subject" : [ "Deutschland / Hochschulrahmengesetz / Kommentar", "Deutschland", "Kommentar" ]
   },
   "SubjectRVK" : [ {
@@ -61920,6 +62112,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Politikwissenschaft" ],
     "subject" : [ "Arbeiterparteien", "Außenpolitik", "BRD", "Clausewitz, C.v.", "Demokratie", "Demokratietheorie", "Eliten", "Gewaltenteilung", "Gewerkschaften", "Informationsgesellschaft", "Konflikt", "Konsens", "Krieg", "Macht", "Marktwirtschaft", "Massenmedien", "Medien", "Ordnung", "Ost-West-Beziehungen", "Pluralismus", "Politikberatung", "Politikwissenschaft", "Politische Kultur", "Politischer Prozeß", "Wahlen", "Wirtschaftspolitik", "Wohlfahrtsstaat", "Zyklentheorie", "politische Bildung", "Politische Ordnung" ]
   },
   "SubjectRVK" : [ {
@@ -62370,6 +62563,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Bellini, Giovanni", "Venedig", "Vecellio, Tiziano", "Santa Maria dei Frari", "Pesaro", "Mäzenatentum", "Altarblatt", "Geschichte 1450-1575" ]
   },
   "SubjectRVK" : [ {
@@ -62495,6 +62689,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Turnier", "Geschichte 1060-1500" ]
   },
   "IdentifierAlma" : {
@@ -63734,6 +63929,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Museum Insel Hombroich" ]
   },
   "SubjectNWBIB" : [ {
@@ -63830,6 +64026,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Theater- und Filmwissenschaften" ],
     "subject" : [ "Kinderfilm", "Jugendfilm", "Deutsches Sprachgebiet", "Geschichte 1928-1982", "Geschichte 1916-1982" ]
   },
   "IdentifierAlma" : {
@@ -64328,6 +64525,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Rechtswissenschaft" ],
     "subject" : [ "Deutschland" ]
   },
   "SubjectRPB" : [ {
@@ -64507,7 +64705,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -64985,6 +65184,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Psychologie" ],
     "subject" : [ "Selbstdestruktion", "Self Mutilation", "Mental Disorders", "Autoimmune Diseases" ]
   },
   "IdentifierAlma" : {
@@ -65330,6 +65530,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Rechtswissenschaft" ],
     "subject" : [ "Deutschland", "Eingruppierung", "Vergütung" ]
   },
   "SubjectRPB" : [ {
@@ -65572,7 +65773,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Psychologie" ],
+    "taxonomy" : [ "Philosophie", "Psychologie" ],
     "subject" : [ "Leib-Seele-Problem" ]
   },
   "IdentifierAlma" : {
@@ -65993,7 +66194,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Geschichte" ]
+    "taxonomy" : [ "Geschichte", "Allgemeine Nachschlagewerke" ]
   },
   "SubjectRPB" : [ {
     "subject" : "330"
@@ -66755,6 +66956,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Nordirland", "Geschichte <1968-1988>" ]
   },
   "IdentifierAlma" : {
@@ -67215,6 +67417,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Psychologie" ],
     "subject" : [ "Down-Syndrom", "Down Syndrome" ]
   },
   "SubjectRVK" : [ {
@@ -67334,6 +67537,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Kunst", "Geschichte" ]
   },
   "IdentifierAlma" : {
@@ -67561,6 +67765,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Psychologie" ],
     "subject" : [ "Feminismus", "Bibel", "Religion / Bild", "Traum", "Tiefenpsychologie", "Symbol", "Religion", "Exegese", "Feministische Theologie", "Traumdeutung", "Religiöses Symbol" ]
   },
   "SubjectRPB" : [ {
@@ -69635,7 +69840,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Anglistik" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -70152,7 +70358,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Religionswissenschaft / Theologie" ]
+    "taxonomy" : [ "Kulturwissenschaften", "Religionswissenschaft / Theologie" ]
   },
   "SubjectRPB" : [ {
     "subject" : "450"
@@ -71021,6 +71227,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ],
     "subject" : [ "Deutschland", "Geschichte", "Mythos" ]
   },
   "SubjectRPB" : [ {
@@ -72585,7 +72792,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Geschichte" ]
   },
   "SubjectRPB" : [ {
     "subject" : "330"
@@ -73322,6 +73530,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Pädagogik" ],
     "subject" : [ "Mediendidaktik" ]
   },
   "SubjectRPB" : [ {
@@ -74497,6 +74706,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
     "subject" : [ "BRD", "DDR", "Deutschland", "Europa", "Klassenstruktur / BRD", "Schichten, gesellschaftliche / BRD", "Sozialer Wandel", "Sozialordnung / BRD", "Sozialstruktur", "Sozialstruktur / BRD", "Staatsgründung", "Wiedervereinigung", "sozialer Wandel", "Sozialgeschichte 1949-1989" ]
   },
   "SubjectRPB" : [ {
@@ -75391,7 +75601,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
-    "carrier" : [ "keine Angabe" ]
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Germanistik" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -76489,6 +76700,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Rechtswissenschaft" ],
     "subject" : [ "Jugendrecht" ]
   },
   "SubjectRPB" : [ {
@@ -77605,6 +77817,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Rechtswissenschaft" ],
     "subject" : [ "Deutschland", "Insolvenzrecht" ]
   },
   "IdentifierAlma" : {
@@ -78134,6 +78347,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kommunikationswissenschaften / Publizistik" ],
     "subject" : [ "Walter de Gruyter & Co.", "Geschichte" ]
   },
   "IdentifierAlma" : {
@@ -78392,6 +78606,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Haspel" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
     "subject" : [ "Hansaviertel", "Städtebau", "Architektur", "Geschichte 1945-1999" ]
   },
   "SubjectRVK" : [ {
@@ -78650,6 +78865,7 @@
     "access" : [ "local" ],
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Penn, Irving", "Modefotografie", "Miyake, Issei", "Mode" ]
   },
   "IdentifierAlma" : {
@@ -79419,6 +79635,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Architektur und Bauingenieurwesen", "Kunst" ],
     "subject" : [ "Perrault, Claude", "Architektur", "Ludwig" ]
   },
   "SubjectRVK" : [ {
@@ -79794,6 +80011,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Anglistik" ],
     "subject" : [ "Steinbeck, John", "Rezeption", "Geschichte" ]
   },
   "IdentifierAlma" : {
@@ -81747,7 +81965,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Medienstelle", "Campus Grifflenberg" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ]
   },
   "SubjectRPB" : [ {
     "subject" : "400"
@@ -82993,6 +83212,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kunst" ],
     "subject" : [ "Rodin, Auguste", "Rosso, Medardo", "Brâncuşi, Constantin", "Plastik", "Kunstausstellung", "Präsentation" ]
   },
   "IdentifierAlma" : {
@@ -84659,7 +84879,8 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Medienstelle" ],
-    "carrier" : [ "Elektronische Ressource", "Film, Dia, Video" ]
+    "carrier" : [ "Elektronische Ressource", "Film, Dia, Video" ],
+    "taxonomy" : [ "Theater- und Filmwissenschaften" ]
   },
   "SubjectRPB" : [ {
     "subject" : "530"
@@ -85879,6 +86100,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Psychologie" ],
     "subject" : [ "Beziehungen", "Psychoanalyse", "Sozialarbeit" ]
   },
   "IdentifierAlma" : {
@@ -86320,6 +86542,7 @@
     "access" : [ "local" ],
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Agrar-, Forst- und Lebensmittelwissenschaften" ],
     "subject" : [ "Milch", "Lebensmittelchemie" ]
   },
   "SubjectDNB" : [ {
