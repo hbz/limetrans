@@ -1409,6 +1409,8 @@ do list(path: "POR  ", "var": "$i")
       copy_field("$i.D", "OnlineAccess[].$last.uri")
       add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
       add_field("@unsuppressed_location", "true")
+    else
+      add_field("@suppressed_location", "true")
     end
   end
 end
