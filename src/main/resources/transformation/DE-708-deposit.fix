@@ -1,0 +1,157 @@
+do once()
+  include("./macros.fix")
+  include("./maps.fix")
+
+  put_var("catalogid", "")
+  put_map("extended-type-content",
+    "article": "Artikel",
+    "book": "Buch",
+    "conference_publication": "Konferenzschrift",
+    "encyclopedia": "Nachschlagewerk",
+    "issue": "Zeitschriftenheft",
+    "journal": "Zeitschrift",
+    "series": "Schriftenreihe",
+    "thesis": "Dissertation"
+  )
+end
+
+include("./marc/fixedLengthDataElements.fix")
+include("./marc/_facet_format.fix")
+include("./marc/contentType.fix")
+include("./marc/carrierType.fix")
+
+set_array("@facet_type")
+do list(path: "655 4.a", "var": "$i")
+  lookup("$i", "extended-type-content", delete: "true")
+  copy_field("$i", "@facet_type.$append")
+end
+include("./marc/_facet_type-2.fix")
+
+vacuum()
+
+add_field("@isil", "DE-708-deposit")
+copy_field("@isil", "collection")
+
+include("./marc/abbreviatedTitle.fix")
+include("./marc/titleAddendum.fix")
+
+include("./marc/recordIdentifierSuper.fix")
+do list(path: "RecordIdentifierSuper[]", "var": "$i")
+  if exists("$i.recordIdentifierSuper")
+    paste("$i.recordIdentifierSuper", "~(", "@isil", "~)", "$i.recordIdentifierSuper", join_char: "")
+  end
+end
+
+include("./marc/creatorStatement.fix")
+include("./marc/dc_format.fix")
+include("./marc/dc_type.fix")
+include("./marc/dc_language.fix")
+include("./marc/dc_date.fix")
+include("./marc/introx_access.fix")
+include("./marc/introx_carrier.fix")
+include("./marc/otherClassificationNumber.fix")
+uniq("introx.taxonomy[]")
+
+paste("@id", "~(", "@isil", "~)", "001", join_char: "")
+copy_field("@id", "RecordIdentifier.identifierForTheRecord")
+
+include("./marc/identifierDOI.fix")
+include("./marc/person.fix")
+include("./marc/corporateBody.fix")
+include("./marc/titleStatement.fix")
+include("./marc/edition.fix")
+
+do list(path: "260??", "var": "$i")
+  remove_field("$i.c")
+end
+set_array("PublisherName[]")
+set_array("PublicationPlace[]")
+include("./marc/publisherName.fix")
+include("./marc/publicationPlace.fix")
+
+include("./marc/extent.fix")
+include("./marc/titleSuper.fix")
+include("./marc/description.fix")
+include("./marc/abstract.fix")
+include("./marc/personContributor.fix")
+
+include("./marc/linkingEntries.fix")
+do list(path: "HostItemEntry[]|ConstituentUnitEntry[]|PrecedingEntry[]|SucceedingEntry[]", "var": "$i")
+  if exists("$i.controlNumber")
+    paste("$i.controlNumber", "~(", "@isil", "~)", "$i.controlNumber", join_char: "")
+    copy_field("$i.controlNumber", "$i.verifiedIdentifierForLinkingEntry")
+  end
+end
+
+include("./marc/seriesAddedEntryUniformTitle.fix")
+
+do list(path: "856??", "var": "$i")
+  if any_equal("$i.y", "preview")
+    remove_field("$i.*")
+  end
+end
+include("./marc/onlineAccess.fix")
+
+set_array("xbib[]")
+copy_field("@id", "xbib[].$append.uid")
+uniq("xbib[]")
+
+include("./marc/personCreator.fix")
+include("./marc/titleOther.fix")
+include("./marc/rswk.fix")
+include("./marc/translatedTitle.fix")
+
+hbz.limetrans.function.Dedup("OnlineAccess[].*.uri")
+
+retain(
+  "AbbreviatedTitle[]",
+  "Abstract",
+  "AdditionalPhysicalFormEntry[]",
+  "CarrierType[]",
+  "ConstituentUnitEntry[]",
+  "ContentType[]",
+  "CorporateBody[]",
+  "CreatorStatement",
+  "DataSourceEntry[]",
+  "Description[]",
+  "Edition",
+  "Extent",
+  "HostItemEntry[]",
+  "IdentifierDOI[]",
+  "IssuedWithEntry[]",
+  "MainSeriesEntry[]",
+  "NonspecificRelationshipEntry[]",
+  "OnlineAccess[]",
+  "OriginalLanguageEntry[]",
+  "OtherEditionEntry[]",
+  "PersonContributor[]",
+  "PersonCreator[]",
+  "Person[]",
+  "PrecedingEntry[]",
+  "PublicationPlace[]",
+  "PublisherName[]",
+  "RSWK[]",
+  "Recension",
+  "RecordIdentifier",
+  "RecordIdentifierSuper[]",
+  "SeriesAddedEntryUniformTitle[]",
+  "SortableVolumeDesignation[]",
+  "SubSeriesEntry[]",
+  "SubjectDNB[]",
+  "SucceedingEntry[]",
+  "Summary",
+  "SupplementParentEntry[]",
+  "SupplementSpecialIssueEntry[]",
+  "TitleAddendum",
+  "TitleOther",
+  "TitleStatement[]",
+  "TitleSuper[]",
+  "TranslatedTitle[]",
+  "TranslationEntry[]",
+  "collection",
+  "dc",
+  "introx",
+  "xbib[]"
+)
+
+vacuum()

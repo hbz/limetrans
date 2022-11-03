@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc21:collection xmlns:marc21="http://www.loc.gov/MARC21/slim">
+  <marc21:record xmlns:marc21="http://www.loc.gov/MARC21/slim">
+    <marc21:leader>     nac  22     uu 4500</marc21:leader>
+    <marc21:controlfield tag="001">mir_mods_00000004</marc21:controlfield>
+    <marc21:datafield tag="035" ind1=" " ind2=" ">
+      <marc21:subfield code="a">mir_mods_00000004</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="040" ind1=" " ind2=" ">
+      <marc21:subfield code="b">ger</marc21:subfield>
+      <marc21:subfield code="c">DE-601</marc21:subfield>
+      <marc21:subfield code="e">rda</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="084" ind1=" " ind2=" ">
+      <marc21:subfield code="a">370</marc21:subfield>
+      <marc21:subfield code="2">sdnb</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="100" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Acker, Heike</marc21:subfield>
+      <marc21:subfield code="e">Author</marc21:subfield>
+      <marc21:subfield code="4">aut</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)141069678</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="245" ind1="1" ind2="0">
+      <marc21:subfield code="a">Marxistisches Denken in der Pädagogik</marc21:subfield>
+      <marc21:subfield code="b">Messianische und prometheische Strukturen im Kontext einer Erziehungstheorie</marc21:subfield>
+      <marc21:subfield code="c">Acker, Heike;Bast, Roland</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="260" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Hagen</marc21:subfield>
+      <marc21:subfield code="b">FernUniversität in Hagen</marc21:subfield>
+      <marc21:subfield code="c">2010</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="264" ind1=" " ind2="1">
+      <marc21:subfield code="c">2010</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="300" ind1=" " ind2=" ">
+      <marc21:subfield code="a">398 Seiten</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="336" ind1=" " ind2=" ">
+      <marc21:subfield code="a">text</marc21:subfield>
+      <marc21:subfield code="b">txt</marc21:subfield>
+      <marc21:subfield code="2">rdacontent</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="337" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Computermedien</marc21:subfield>
+      <marc21:subfield code="b">c</marc21:subfield>
+      <marc21:subfield code="2">rdamedia</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="338" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Online-Ressource</marc21:subfield>
+      <marc21:subfield code="b">cr</marc21:subfield>
+      <marc21:subfield code="2">rdacarrier</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="650" ind1="" ind2="4">
+      <marc21:subfield code="a">Marxistische Pädagogik</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="655" ind1=" " ind2="4">
+      <marc21:subfield code="a">thesis</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="700" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Bast, Roland</marc21:subfield>
+      <marc21:subfield code="e">Thesis advisor</marc21:subfield>
+      <marc21:subfield code="4">ths</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)108519740</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="700" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Pfundtner, Raimund</marc21:subfield>
+      <marc21:subfield code="e">Reviewer</marc21:subfield>
+      <marc21:subfield code="4">rev</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)132907690</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="710" ind1="2" ind2=" ">
+      <marc21:subfield code="a">Faculty of Cultural and Social Sciences</marc21:subfield>
+      <marc21:subfield code="b">Institut für Bildungswissenschaft und Medienforschung</marc21:subfield>
+      <marc21:subfield code="b">Ehemalige Lehrstühle</marc21:subfield>
+      <marc21:subfield code="b">Arbeitsbereich Systematische Pädagogik (nur Magister) (Apl.-Prof. Dr. Roland Bast)</marc21:subfield>
+      <marc21:subfield code="e">host institution</marc21:subfield>
+      <marc21:subfield code="4">his</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000004</marc21:subfield>
+      <marc21:subfield code="y">object in context</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/servlets/MCRFileNodeServlet/Document_derivate_00000002/Diss_Acker.pdf</marc21:subfield>
+      <marc21:subfield code="y">raw object</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/rsc/thumbnail/mir_mods_00000004.png</marc21:subfield>
+      <marc21:subfield code="y">preview</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000004</marc21:subfield>
+      <marc21:subfield code="y">uri</marc21:subfield>
+    </marc21:datafield>
+  </marc21:record>
+  <marc21:record xmlns:marc21="http://www.loc.gov/MARC21/slim">
+    <marc21:leader>     nac  22     uu 4500</marc21:leader>
+    <marc21:controlfield tag="001">mir_mods_00000110</marc21:controlfield>
+    <marc21:datafield tag="035" ind1=" " ind2=" ">
+      <marc21:subfield code="a">mir_mods_00000110</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="040" ind1=" " ind2=" ">
+      <marc21:subfield code="b">ger</marc21:subfield>
+      <marc21:subfield code="c">DE-601</marc21:subfield>
+      <marc21:subfield code="e">rda</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="084" ind1=" " ind2=" ">
+      <marc21:subfield code="a">004</marc21:subfield>
+      <marc21:subfield code="2">sdnb</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="100" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Kienle, Andrea</marc21:subfield>
+      <marc21:subfield code="e">Author</marc21:subfield>
+      <marc21:subfield code="4">aut</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)124723470</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="245" ind1="1" ind2="0">
+      <marc21:subfield code="a">Computerunterstützung für die Organisation menschlicher Kommunikationsprozesse</marc21:subfield>
+      <marc21:subfield code="b">Anforderungsanalyse und Systemgestaltung</marc21:subfield>
+      <marc21:subfield code="c">Kienle, Andrea</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="260" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Hagen</marc21:subfield>
+      <marc21:subfield code="b">FernUniversität in Hagen</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="264" ind1=" " ind2="1">
+      <marc21:subfield code="c">2009</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="300" ind1=" " ind2=" ">
+      <marc21:subfield code="a">224 Seiten</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="336" ind1=" " ind2=" ">
+      <marc21:subfield code="a">text</marc21:subfield>
+      <marc21:subfield code="b">txt</marc21:subfield>
+      <marc21:subfield code="2">rdacontent</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="337" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Computermedien</marc21:subfield>
+      <marc21:subfield code="b">c</marc21:subfield>
+      <marc21:subfield code="2">rdamedia</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="338" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Online-Ressource</marc21:subfield>
+      <marc21:subfield code="b">cr</marc21:subfield>
+      <marc21:subfield code="2">rdacarrier</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="490" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Research Report</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="520" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Die in diesem Bericht zusammengefassten Beiträge befassen sich mit der Computerunterstützung für die Organisation menschlicher Kommunikationsprozesse. Die Problemanalyse dieses Gegenstandsbereiches zeigt, dass das Problem in drei Facetten zu betrachten ist. Zum einen sind es die Merkmale der Kommunikationsunterstützung selbst, die der Organisation der Kommunikationsprozesse dienlich sein können. Zum zweiten kann sich die Gestaltung des technischen Systems mit speziellen Funktionalitäten der Prozesstransparenz und -unterstützung gezielt auf die Organisation der Kommunikationsprozesse beziehen. Zum dritten kann die Unterstützung einer begleitenden Moderatorenrolle positiven Einfluss auf die Organisation der Kommunikationsprozesse haben. Aufbauend auf den im Rahmen der Anforderungsanalyse zusammengestellten Anforderungen wurden einsatztaugliche Prototypen konzipiert und in Software umgesetzt, die Gestaltungsvarianten für die drei Facetten beinhalten. Diese Prototypen wurden in realen Situationen eingesetzt und evaluiert. Die Evaluationen führten schließlich zu fundierten Designprinzipien für die Unterstützung der Organisation von Kommunikationsprozessen.</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="655" ind1=" " ind2="4">
+      <marc21:subfield code="a">thesis</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="700" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Haake, Jörg M.</marc21:subfield>
+      <marc21:subfield code="e">Reviewer</marc21:subfield>
+      <marc21:subfield code="4">rev</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)112929931</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="710" ind1="2" ind2=" ">
+      <marc21:subfield code="a">Faculty of Mathematics and Computer Science</marc21:subfield>
+      <marc21:subfield code="b">Informatik</marc21:subfield>
+      <marc21:subfield code="b">Kooperative Systeme (Prof. Dr. Jörg M. Haake)</marc21:subfield>
+      <marc21:subfield code="e">host institution</marc21:subfield>
+      <marc21:subfield code="4">his</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="810" ind1="2" ind2=" ">
+      <marc21:subfield code="a">FernUniversität in Hagen</marc21:subfield>
+      <marc21:subfield code="b">Fakultät für Mathematik und Informatik</marc21:subfield>
+      <marc21:subfield code="e">Publisher</marc21:subfield>
+      <marc21:subfield code="4">pbl</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="830" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Research Report</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000111</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000110</marc21:subfield>
+      <marc21:subfield code="y">object in context</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/servlets/MCRFileNodeServlet/mir_derivate_00000130/Habil_Kienle_Kommunikationsprozesse_2009.pdf</marc21:subfield>
+      <marc21:subfield code="y">raw object</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/rsc/thumbnail/mir_mods_00000110.png</marc21:subfield>
+      <marc21:subfield code="y">preview</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000110</marc21:subfield>
+      <marc21:subfield code="y">uri</marc21:subfield>
+    </marc21:datafield>
+  </marc21:record>
+  <marc21:record xmlns:marc21="http://www.loc.gov/MARC21/slim">
+    <marc21:leader>     nac  22     uu 4500</marc21:leader>
+    <marc21:controlfield tag="001">mir_mods_00000111</marc21:controlfield>
+    <marc21:datafield tag="022" ind1=" " ind2=" ">
+      <marc21:subfield code="z">1865-3944</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="035" ind1=" " ind2=" ">
+      <marc21:subfield code="a">mir_mods_00000111</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="040" ind1=" " ind2=" ">
+      <marc21:subfield code="b">ger</marc21:subfield>
+      <marc21:subfield code="c">DE-601</marc21:subfield>
+      <marc21:subfield code="e">rda</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="245" ind1="1" ind2="0">
+      <marc21:subfield code="a">Research Report</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="264" ind1=" " ind2="1">
+      <marc21:subfield code="a">Hagen</marc21:subfield>
+      <marc21:subfield code="b">FernUniversität in Hagen</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="336" ind1=" " ind2=" ">
+      <marc21:subfield code="a">text</marc21:subfield>
+      <marc21:subfield code="b">txt</marc21:subfield>
+      <marc21:subfield code="2">rdacontent</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="337" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Computermedien</marc21:subfield>
+      <marc21:subfield code="b">c</marc21:subfield>
+      <marc21:subfield code="2">rdamedia</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="338" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Online-Ressource</marc21:subfield>
+      <marc21:subfield code="b">cr</marc21:subfield>
+      <marc21:subfield code="2">rdacarrier</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="520" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Die Reihe dient der online-Veröffentlichung von Forschungsberichten oder Beiträgen, z.B. um anderweitig noch nicht veröffentlichte Beiträge zitierbar zu machen. Beiträge in der Reihe werden als PDF auf dem deposit-Dokumentenserver der UB archiviert und der Öffentlichkeit dauerhaft zur Verfügung gestellt. Sie werden auch bei der Deutschen Nationalbibliothek gemeldet und indexiert.</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="655" ind1=" " ind2="4">
+      <marc21:subfield code="a">series</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="710" ind1="2" ind2=" ">
+      <marc21:subfield code="a">FernUniversität in Hagen</marc21:subfield>
+      <marc21:subfield code="b">Fakultät für Mathematik und Informatik</marc21:subfield>
+      <marc21:subfield code="e">Publisher</marc21:subfield>
+      <marc21:subfield code="4">pbl</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Kerdels, Jochen; Peters, Gabriele; Faculty of Mathematics and Computer Science, Informatik, Mensch-Computer-Interaktion (Prof. Dr. Gabriele Peters)</marc21:subfield>
+      <marc21:subfield code="t">Computational Model of Grid Cells based on a Recursive Growing Neural Gas</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000438</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Garstka, Jens; Peters, Gabriele; Faculty of Mathematics and Computer Science, Informatik, Mensch-Computer-Interaktion (Prof. Dr. Gabriele Peters)</marc21:subfield>
+      <marc21:subfield code="t">Learning strategies to select point cloud descriptors for large-scale 3-D object classification</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000492</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Peters, Gabriele; Faculty of Mathematics and Computer Science, Informatik, Mensch-Computer-Interaktion (Prof. Dr. Gabriele Peters)</marc21:subfield>
+      <marc21:subfield code="t">Forschungsbericht 2010 – 2013, Lehrgebiet Mensch-Computer-Interaktion, FernUniversität in Hagen</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000248</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Peters, Gabriele; Faculty of Mathematics and Computer Science, Informatik, Mensch-Computer-Interaktion (Prof. Dr. Gabriele Peters)</marc21:subfield>
+      <marc21:subfield code="t">Research Report 2010 – 2013, Human-Computer Interaction, FernUniversität in Hagen</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000249</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Garstka, Jens; Peters, Gabriele; Faculty of Mathematics and Computer Science, Informatik, Mensch-Computer-Interaktion (Prof. Dr. Gabriele Peters)</marc21:subfield>
+      <marc21:subfield code="t">Learning strategies to select point cloud descriptors for 3D object classification</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000250</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Schümmer, Till; Haake, Jörg M.; Römhild, Christoph; Faculty of Mathematics and Computer Science, Informatik, Kooperative Systeme (Prof. Dr. Jörg M. Haake)</marc21:subfield>
+      <marc21:subfield code="t">PATONGO</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000291</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Akbari, Mostafa; Böhnstedt, Doreen; Bremer, Claudia; Faculty of Mathematics and Computer Science, Informatik, Softwaretechnik und Theorie der Programmierung (Prof. Dr. Jörg Desel)</marc21:subfield>
+      <marc21:subfield code="t">Mobile Learning - Einsatz mobiler Endgeräte im Lernen, Wissenserwerb sowie der Lehr-/Lernorganisation</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000247</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Hoppe, H. Ulrich; Kienle, Andrea; Krämer, Nicole; Faculty of Mathematics and Computer Science, Informatik, Softwaretechnik und Theorie der Programmierung (Prof. Dr. Jörg Desel)</marc21:subfield>
+      <marc21:subfield code="t">Workshop zu Web2.0 in der beruflichen Weiterbildung im Rahmen der DeLFI 2012, Hagen</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000251</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Kerdels, Jochen; Peters, Gabriele; Faculty of Mathematics and Computer Science, Informatik, Mensch-Computer-Interaktion (Prof. Dr. Gabriele Peters)</marc21:subfield>
+      <marc21:subfield code="t">generalized computational model for modeling and simulation of complex systems</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000268</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Porten, Oliver van; Faculty of Mathematics and Computer Science, Informatik, Ehemalige Lehrstühle, Datenverarbeitungstechnik (Prof. Dr.-Ing. Bernd J. Krämer)</marc21:subfield>
+      <marc21:subfield code="t">Development and Evaluation of a Graphical Notation for Modelling Resource-Oriented Applications</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000293</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Werrmann, Jan; Faculty of Mathematics and Computer Science, Informatik, Ehemalige Lehrstühle, Datenverarbeitungstechnik (Prof. Dr.-Ing. Bernd J. Krämer)</marc21:subfield>
+      <marc21:subfield code="t">Modellierung im Kontext</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000296</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Kienle, Andrea; Haake, Jörg M.; Faculty of Mathematics and Computer Science, Informatik, Kooperative Systeme (Prof. Dr. Jörg M. Haake)</marc21:subfield>
+      <marc21:subfield code="t">Computerunterstützung für die Organisation menschlicher Kommunikationsprozesse</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000110</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Bayrak, Coskun; Bowerman, Chris; Krämer, Bernd J.; Faculty of Mathematics and Computer Science, Informatik, Ehemalige Lehrstühle, Datenverarbeitungstechnik (Prof. Dr.-Ing. Bernd J. Krämer)</marc21:subfield>
+      <marc21:subfield code="t">Fourth Colloquium on International Engineering Education</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000246</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Veiel, Dirk; Haake, Jörg M.; Lukosch, Stephan; Faculty of Mathematics and Computer Science, Informatik, Kooperative Systeme (Prof. Dr. Jörg M. Haake)</marc21:subfield>
+      <marc21:subfield code="t">Extending a shared workspace environment with context-based adaptations</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000294</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Mühlpfordt, Martin; Haake, Jörg M.; Faculty of Mathematics and Computer Science, Informatik, Kooperative Systeme (Prof. Dr. Jörg M. Haake)</marc21:subfield>
+      <marc21:subfield code="t">Integration Dualer Interaktionsräume</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000433</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Agrusti, Francesco; Keegan, Desmond; Kismihok, Gabor; Krämer, Bernd J.; Faculty of Mathematics and Computer Science, Informatik, Ehemalige Lehrstühle, Datenverarbeitungstechnik (Prof. Dr.-Ing. Bernd J. Krämer)</marc21:subfield>
+      <marc21:subfield code="t">impact of new technologies on distance learning students</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000245</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Keegan, Desmond; Kismihok, Gabor; Krämer, Bernd J.; Faculty of Mathematics and Computer Science, Informatik, Ehemalige Lehrstühle, Datenverarbeitungstechnik (Prof. Dr.-Ing. Bernd J. Krämer)</marc21:subfield>
+      <marc21:subfield code="t">Auswirkungen neuer Technologien auf Studierende an Fernuniversitäten</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000253</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Keegan, Desmond; Kismihok, Gabor; Krämer, Bernd J.; Faculty of Mathematics and Computer Science, Informatik, Ehemalige Lehrstühle, Datenverarbeitungstechnik (Prof. Dr.-Ing. Bernd J. Krämer)</marc21:subfield>
+      <marc21:subfield code="t">Impact of new technologies on distance learning students</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000254</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Lukosch, Stephan; Veiel, Dirk; Haake, Jörg M.; Faculty of Mathematics and Computer Science, Informatik, Ehemalige Lehrstühle, Verteilte Systeme für kooperative Arbeits-/Lernumgebungen (Jun.-Prof. Dr. Stephan Lukosch)</marc21:subfield>
+      <marc21:subfield code="t">Towards a context-adaptive integrated shared work environment</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000271</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Kaderali, Firoz; Faculty of Mathematics and Computer Science, Elektrotechnik, Ehemalige Lehrstühle, Kommunikationssysteme (Prof. Dr.-Ing. Firoz Kaderali)</marc21:subfield>
+      <marc21:subfield code="t">Auf dem Weg in eine technisierte Gesellschaft?</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000252</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Krämer, Bernd J.; Faculty of Mathematics and Computer Science, Informatik, Ehemalige Lehrstühle, Datenverarbeitungstechnik (Prof. Dr.-Ing. Bernd J. Krämer)</marc21:subfield>
+      <marc21:subfield code="t">Datenanalyse-Bericht über die Auswirkungen moderner IuK-Technik auf das Lernen an Fernuniversitäten</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000270</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Krämer, Bernd J.; Faculty of Mathematics and Computer Science, Informatik, Ehemalige Lehrstühle, Datenverarbeitungstechnik (Prof. Dr.-Ing. Bernd J. Krämer)</marc21:subfield>
+      <marc21:subfield code="t">Data Analysis Report on the Impact of Technology on Learning in Open Universities and Distance Education</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000269</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000111</marc21:subfield>
+      <marc21:subfield code="y">object in context</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000111</marc21:subfield>
+      <marc21:subfield code="y">uri</marc21:subfield>
+    </marc21:datafield>
+  </marc21:record>
+  <marc21:record xmlns:marc21="http://www.loc.gov/MARC21/slim">
+    <marc21:leader>     nac  22     uu 4500</marc21:leader>
+    <marc21:controlfield tag="001">mir_mods_00000181</marc21:controlfield>
+    <marc21:datafield tag="035" ind1=" " ind2=" ">
+      <marc21:subfield code="a">mir_mods_00000181</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="040" ind1=" " ind2=" ">
+      <marc21:subfield code="b">ger</marc21:subfield>
+      <marc21:subfield code="c">DE-601</marc21:subfield>
+      <marc21:subfield code="e">rda</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="084" ind1=" " ind2=" ">
+      <marc21:subfield code="a">510</marc21:subfield>
+      <marc21:subfield code="2">sdnb</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="100" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Böttcher, Roger</marc21:subfield>
+      <marc21:subfield code="e">Author</marc21:subfield>
+      <marc21:subfield code="4">aut</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)130898988</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="245" ind1="1" ind2="0">
+      <marc21:subfield code="a">Einführung in die Theorie der algebraischen Kurven und deren Eigenschaften</marc21:subfield>
+      <marc21:subfield code="c">Böttcher, Roger</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="250" ind1=" " ind2=" ">
+      <marc21:subfield code="a">3. Auflage</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="260" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Hagen</marc21:subfield>
+      <marc21:subfield code="b">FernUniversität in Hagen</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="264" ind1=" " ind2="1">
+      <marc21:subfield code="c">2006</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="300" ind1=" " ind2=" ">
+      <marc21:subfield code="a">IV, 416 Seiten</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="336" ind1=" " ind2=" ">
+      <marc21:subfield code="a">text</marc21:subfield>
+      <marc21:subfield code="b">txt</marc21:subfield>
+      <marc21:subfield code="2">rdacontent</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="337" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Computermedien</marc21:subfield>
+      <marc21:subfield code="b">c</marc21:subfield>
+      <marc21:subfield code="2">rdamedia</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="338" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Online-Ressource</marc21:subfield>
+      <marc21:subfield code="b">cr</marc21:subfield>
+      <marc21:subfield code="2">rdacarrier</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="500" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Dipl., FernUniversität in Hagen, 2006 - erweiterte und veränderte Fassung</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="520" ind1=" " ind2=" ">
+      <marc21:subfield code="a">In der algebraischen Geometrie werden Fragestellungen bzgl. räumlicher Beziehungen durch einen Vorgang des besonderen Modellierens von Geometrie in Fragestellungen der Algebra verwandelt. Diese Arbeitsweise wird hier an dem Begriff der Kurve diskutiert, der zu den fruchtbarsten Konzeptionen der reinen und angewandten Mathematik gehört. Gegenstand dieser Einführung in die Theorie der algebraischen Kurven, die als Nullstellenmengen von Polynomen über Ringe oder Körper definiert werden, sind ebene affine und projektive Kurven. Dabei können letztere als eine Kompaktifizierung der affinen Kurven angesehen werden, die es erlauben, die Klassifikation und das Schnittverhalten - mit weitreichenden Anwendungen - sehr übersichtlich zu gestalten. Von besonderer Bedeutung ist die Betrachtung komplexer Kurven, weil erst der algebraisch abgeschlossene Körper der komplexen Zahlen weitreichende Aussagen über die Struktur der Kurven ermöglicht. Die Theorie der algebraischen Kurven wird hier bis zu ersten Ergebnissen der Schnitttheorie - mit Anwendungen auf Quadriken und Kubiken - und der Vorstellung der Plückerschen Formeln entwickelt; viel Wert wird auf Beispiele und konkrete Berechnungen gelegt, welche die Theorie vertiefen und veranschaulichen sollen. Der Schwerpunkt der Arbeit - als Teilgebiet der algebraischen Geometrie - liegt mehr auf die Herausarbeitung geometrischer Aspekte und ihrer algebraischen Formulierung, weniger auf den Ausbau des Kurvenbegriffes auf möglichst umfassende algebraische Konzeptionen.</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="650" ind1="" ind2="4">
+      <marc21:subfield code="a">Algebraische Kurven</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="700" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Duma, Andrei</marc21:subfield>
+      <marc21:subfield code="e">Reviewer</marc21:subfield>
+      <marc21:subfield code="4">rev</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)108213935</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="710" ind1="2" ind2=" ">
+      <marc21:subfield code="a">Faculty of Mathematics and Computer Science</marc21:subfield>
+      <marc21:subfield code="b">Mathematik</marc21:subfield>
+      <marc21:subfield code="b">Ehemalige Lehrstühle</marc21:subfield>
+      <marc21:subfield code="b">Komplexe Analysis (Prof. Dr. Andrei Duma)</marc21:subfield>
+      <marc21:subfield code="e">host institution</marc21:subfield>
+      <marc21:subfield code="4">his</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000181</marc21:subfield>
+      <marc21:subfield code="y">object in context</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/servlets/MCRFileNodeServlet/mir_derivate_00000182/Dipl_Boettcher_Algebraische_Kurven_2006.pdf</marc21:subfield>
+      <marc21:subfield code="y">raw object</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/rsc/thumbnail/mir_mods_00000181.png</marc21:subfield>
+      <marc21:subfield code="y">preview</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000181</marc21:subfield>
+      <marc21:subfield code="y">uri</marc21:subfield>
+    </marc21:datafield>
+  </marc21:record>
+  <marc21:record xmlns:marc21="http://www.loc.gov/MARC21/slim">
+    <marc21:leader>     nac  22     uu 4500</marc21:leader>
+    <marc21:controlfield tag="001">mir_mods_00000207</marc21:controlfield>
+    <marc21:datafield tag="035" ind1=" " ind2=" ">
+      <marc21:subfield code="a">mir_mods_00000207</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="040" ind1=" " ind2=" ">
+      <marc21:subfield code="b">ger</marc21:subfield>
+      <marc21:subfield code="c">DE-601</marc21:subfield>
+      <marc21:subfield code="e">rda</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="084" ind1=" " ind2=" ">
+      <marc21:subfield code="a">330</marc21:subfield>
+      <marc21:subfield code="2">sdnb</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="100" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Knütter, Rolf</marc21:subfield>
+      <marc21:subfield code="e">Author</marc21:subfield>
+      <marc21:subfield code="4">aut</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)133754812</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="245" ind1="1" ind2="0">
+      <marc21:subfield code="a">Zentralbank-Kommunikation und Finanzstabilität</marc21:subfield>
+      <marc21:subfield code="b">eine Bestandsaufnahme</marc21:subfield>
+      <marc21:subfield code="c">Knütter, Rolf;Mohr, Benjamin</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="264" ind1=" " ind2="1">
+      <marc21:subfield code="a">Hagen</marc21:subfield>
+      <marc21:subfield code="b">FernUniversität in Hagen</marc21:subfield>
+      <marc21:subfield code="c">2008</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="300" ind1=" " ind2=" ">
+      <marc21:subfield code="a">66 Seiten</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="336" ind1=" " ind2=" ">
+      <marc21:subfield code="a">text</marc21:subfield>
+      <marc21:subfield code="b">txt</marc21:subfield>
+      <marc21:subfield code="2">rdacontent</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="337" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Computermedien</marc21:subfield>
+      <marc21:subfield code="b">c</marc21:subfield>
+      <marc21:subfield code="2">rdamedia</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="338" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Online-Ressource</marc21:subfield>
+      <marc21:subfield code="b">cr</marc21:subfield>
+      <marc21:subfield code="2">rdacarrier</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="490" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Diskussionsbeiträge der Fakultät für Wirtschaftswissenschaft  der FernUniversität in Hagen</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="520" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Die Studie geht der Frage nach, welche Auswirkungen Zentralbank- Kommunikation auf Finanzstabilität haben kann. Wir legen die grundlegenden Konzepte der Finanzstabilität sowie der Zentralbank-Kommunikation dar, indem wir einen Überblick über die einschlägige Literatur der jeweiligen Themenkomplexe geben. Ziel dieses Surveys ist, die relevante Literatur zu diskutieren und Schlussfolgerungen im Hinblick auf die Fragestellung zu ziehen, ob Zentralbank-Kommunikation die Finanzmärkte bewegen kann. Dabei systematisieren wir die Kommunikationskanäle in Instrumente bezüglich des geldpolitischen Entscheidungsverhaltens und Instrumente des Zentralbank-Berichtswesens. Die von uns betrachten Studien deuten darauf hin, dass Zentralbanken die Finanzmärkte mittels der ihnen zur Verfügung stehenden Kommunikationskanäle bewegen können. Obwohl unsere Schlussfolgerungen nahe legen, dass Zentralbanken auf lange Sicht sogar in stabilisierender Art und Weise auf diese Einfluss nehmen können, besteht diesbezüglich noch grundlegender Forschungsbedarf. Schließlich betrachtet diese Studie Zentralbank-Kommunikation im Lichte der Subprimekrise.</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="650" ind1="" ind2="4">
+      <marc21:subfield code="a">Zentralbank-Kommunikation</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="650" ind1="" ind2="4">
+      <marc21:subfield code="a">Transparenz</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="650" ind1="" ind2="4">
+      <marc21:subfield code="a">Finanzstabilität</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="650" ind1="" ind2="4">
+      <marc21:subfield code="a">Volatilität</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="655" ind1=" " ind2="4">
+      <marc21:subfield code="a">book</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="700" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Mohr, Benjamin</marc21:subfield>
+      <marc21:subfield code="e">Author</marc21:subfield>
+      <marc21:subfield code="4">aut</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)137111304</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="710" ind1="2" ind2=" ">
+      <marc21:subfield code="a">Faculty of Business Administration and Economics</marc21:subfield>
+      <marc21:subfield code="b">Volkswirtschaftslehre</marc21:subfield>
+      <marc21:subfield code="b">Makroökonomik (Univ.-Prof. Dr. Helmut Wagner)</marc21:subfield>
+      <marc21:subfield code="e">host institution</marc21:subfield>
+      <marc21:subfield code="4">his</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="810" ind1="2" ind2=" ">
+      <marc21:subfield code="a">FernUniversität in Hagen</marc21:subfield>
+      <marc21:subfield code="b">Fakultät für Wirtschaftswissenschaft</marc21:subfield>
+      <marc21:subfield code="e">Publisher</marc21:subfield>
+      <marc21:subfield code="4">pbl</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="830" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Diskussionsbeiträge der Fakultät für Wirtschaftswissenschaft  der FernUniversität in Hagen</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000206</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000207</marc21:subfield>
+      <marc21:subfield code="y">object in context</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/servlets/MCRFileNodeServlet/mir_derivate_00000548/Knütter_Mohr_Zentralbank-Kommunikation_2008.pdf</marc21:subfield>
+      <marc21:subfield code="y">raw object</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/rsc/thumbnail/mir_mods_00000207.png</marc21:subfield>
+      <marc21:subfield code="y">preview</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000207</marc21:subfield>
+      <marc21:subfield code="y">uri</marc21:subfield>
+    </marc21:datafield>
+  </marc21:record>
+  <marc21:record xmlns:marc21="http://www.loc.gov/MARC21/slim">
+    <marc21:leader>     nac  22     uu 4500</marc21:leader>
+    <marc21:controlfield tag="001">mir_mods_00000211</marc21:controlfield>
+    <marc21:datafield tag="035" ind1=" " ind2=" ">
+      <marc21:subfield code="a">mir_mods_00000211</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="040" ind1=" " ind2=" ">
+      <marc21:subfield code="b">ger</marc21:subfield>
+      <marc21:subfield code="c">DE-601</marc21:subfield>
+      <marc21:subfield code="e">rda</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="084" ind1=" " ind2=" ">
+      <marc21:subfield code="a">000</marc21:subfield>
+      <marc21:subfield code="2">sdnb</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="100" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Fechner, Bernhard</marc21:subfield>
+      <marc21:subfield code="e">Author</marc21:subfield>
+      <marc21:subfield code="4">aut</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)136114873</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="245" ind1="1" ind2="2">
+      <marc21:subfield code="a">A fault-tolerant voting scheme for multithreaded environments</marc21:subfield>
+      <marc21:subfield code="c">Fechner, Bernhard;Keller, Jörg</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="264" ind1=" " ind2="1">
+      <marc21:subfield code="c">2004</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="300" ind1=" " ind2=" ">
+      <marc21:subfield code="a">5 Spalten</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="336" ind1=" " ind2=" ">
+      <marc21:subfield code="a">text</marc21:subfield>
+      <marc21:subfield code="b">txt</marc21:subfield>
+      <marc21:subfield code="2">rdacontent</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="337" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Computermedien</marc21:subfield>
+      <marc21:subfield code="b">c</marc21:subfield>
+      <marc21:subfield code="2">rdamedia</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="338" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Online-Ressource</marc21:subfield>
+      <marc21:subfield code="b">cr</marc21:subfield>
+      <marc21:subfield code="2">rdacarrier</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="520" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Voting schemes are widely used in fault-tolerant systems, mainly systems which imply temporal or component redundancy. We present a voting scheme for multithreaded environments which is based on the observation that a faulttolerant system which does not know its history can not distinguish between transient (SEUs) and permanent errors, caused by use of a faulty component. The history of errors is used to predict future errors and to determine if a permanent or transient error occurred. Only in the former case a repair is necessary; in the latter case recovery is sufficient. Using prediction and credibility points we are able to tell if a system failure is likely to occur soon. The more credibility a version has, the more likely it will compute a correct result. Therefore we can use credibility points in connection with thread priorisation to increase performance.</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="655" ind1=" " ind2="4">
+      <marc21:subfield code="a">article</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="700" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Keller, Jörg</marc21:subfield>
+      <marc21:subfield code="e">Author</marc21:subfield>
+      <marc21:subfield code="4">aut</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)132286769</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="710" ind1="2" ind2=" ">
+      <marc21:subfield code="a">Faculty of Mathematics and Computer Science</marc21:subfield>
+      <marc21:subfield code="b">Informatik</marc21:subfield>
+      <marc21:subfield code="b">Parallelität und VLSI (Prof. Dr. Jörg Keller)</marc21:subfield>
+      <marc21:subfield code="e">host institution</marc21:subfield>
+      <marc21:subfield code="4">his</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="773" ind1="0" ind2=" ">
+      <marc21:subfield code="a">; IEEE Computer Society. Technical Committee on Parallel Processing (TCPP)</marc21:subfield>
+      <marc21:subfield code="t">International Conference on Parallel Computing in Electrical Engineering, 2004</marc21:subfield>
+      <marc21:subfield code="h">XVIII, 404 Seiten</marc21:subfield>
+      <marc21:subfield code="z">0-7695-2080-4</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000212</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000211</marc21:subfield>
+      <marc21:subfield code="y">object in context</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/servlets/MCRFileNodeServlet/mir_derivate_00000208/Fechner_Keller_voting_scheme_2004.pdf</marc21:subfield>
+      <marc21:subfield code="y">raw object</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/rsc/thumbnail/mir_mods_00000211.png</marc21:subfield>
+      <marc21:subfield code="y">preview</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000211</marc21:subfield>
+      <marc21:subfield code="y">uri</marc21:subfield>
+    </marc21:datafield>
+  </marc21:record>
+  <marc21:record xmlns:marc21="http://www.loc.gov/MARC21/slim">
+    <marc21:leader>     nac  22     uu 4500</marc21:leader>
+    <marc21:controlfield tag="001">mir_mods_00000212</marc21:controlfield>
+    <marc21:datafield tag="020" ind1=" " ind2=" ">
+      <marc21:subfield code="z">0-7695-2080-4</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="035" ind1=" " ind2=" ">
+      <marc21:subfield code="a">mir_mods_00000212</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="040" ind1=" " ind2=" ">
+      <marc21:subfield code="b">ger</marc21:subfield>
+      <marc21:subfield code="c">DE-601</marc21:subfield>
+      <marc21:subfield code="e">rda</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="084" ind1=" " ind2=" ">
+      <marc21:subfield code="a">000</marc21:subfield>
+      <marc21:subfield code="2">sdnb</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="245" ind1="1" ind2="0">
+      <marc21:subfield code="a">International Conference on Parallel Computing in Electrical Engineering, 2004</marc21:subfield>
+      <marc21:subfield code="b">Sept. 7 - 10, 2004, [Dresden, Germany ; PARELEC 2004 ; Workshop on System Design Automation (SDA) ; proceedings]</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="264" ind1=" " ind2="1">
+      <marc21:subfield code="a">Los Alamitos, California</marc21:subfield>
+      <marc21:subfield code="b">IEEE Computer Society</marc21:subfield>
+      <marc21:subfield code="c">2004</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="300" ind1=" " ind2=" ">
+      <marc21:subfield code="a">XVIII, 404 Seiten</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="336" ind1=" " ind2=" ">
+      <marc21:subfield code="a">text</marc21:subfield>
+      <marc21:subfield code="b">txt</marc21:subfield>
+      <marc21:subfield code="2">rdacontent</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="337" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Computermedien</marc21:subfield>
+      <marc21:subfield code="b">c</marc21:subfield>
+      <marc21:subfield code="2">rdamedia</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="338" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Online-Ressource</marc21:subfield>
+      <marc21:subfield code="b">cr</marc21:subfield>
+      <marc21:subfield code="2">rdacarrier</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="655" ind1=" " ind2="4">
+      <marc21:subfield code="a">conference_publication</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="710" ind1="2" ind2=" ">
+      <marc21:subfield code="a">IEEE Computer Society</marc21:subfield>
+      <marc21:subfield code="b">Technical Committee on Parallel Processing (TCPP)</marc21:subfield>
+      <marc21:subfield code="e">Publisher</marc21:subfield>
+      <marc21:subfield code="4">pbl</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="711" ind1="2" ind2=" ">
+      <marc21:subfield code="a">Parallel Computing in Electrical Engineering (4. : 2004 September 7-10 : Dresden, Deustschland)</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Fechner, Bernhard; Keller, Jörg; Faculty of Mathematics and Computer Science, Informatik, Parallelität und VLSI (Prof. Dr. Jörg Keller)</marc21:subfield>
+      <marc21:subfield code="t">fault-tolerant voting scheme for multithreaded environments</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000211</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000212</marc21:subfield>
+      <marc21:subfield code="y">object in context</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000212</marc21:subfield>
+      <marc21:subfield code="y">uri</marc21:subfield>
+    </marc21:datafield>
+  </marc21:record>
+  <marc21:record xmlns:marc21="http://www.loc.gov/MARC21/slim">
+    <marc21:leader>     nam  22     uu 4500</marc21:leader>
+    <marc21:controlfield tag="001">mir_mods_00000428</marc21:controlfield>
+    <marc21:datafield tag="022" ind1=" " ind2=" ">
+      <marc21:subfield code="a">1564-6394</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="035" ind1=" " ind2=" ">
+      <marc21:subfield code="a">mir_mods_00000428</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="040" ind1=" " ind2=" ">
+      <marc21:subfield code="b">ger</marc21:subfield>
+      <marc21:subfield code="c">DE-601</marc21:subfield>
+      <marc21:subfield code="e">rda</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="084" ind1=" " ind2=" ">
+      <marc21:subfield code="a">330</marc21:subfield>
+      <marc21:subfield code="2">sdnb</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="210" ind1="1" ind2=" ">
+      <marc21:subfield code="a">WDR</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="245" ind1="1" ind2="0">
+      <marc21:subfield code="a">World development report</marc21:subfield>
+      <marc21:subfield code="c">The World Bank</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="264" ind1=" " ind2="1">
+      <marc21:subfield code="a">Washington, DC</marc21:subfield>
+      <marc21:subfield code="b">The World Bank</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="336" ind1=" " ind2=" ">
+      <marc21:subfield code="a">text</marc21:subfield>
+      <marc21:subfield code="b">txt</marc21:subfield>
+      <marc21:subfield code="2">rdacontent</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="337" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Computermedien</marc21:subfield>
+      <marc21:subfield code="b">c</marc21:subfield>
+      <marc21:subfield code="2">rdamedia</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="338" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Online-Ressource</marc21:subfield>
+      <marc21:subfield code="b">cr</marc21:subfield>
+      <marc21:subfield code="2">rdacarrier</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="520" ind1=" " ind2=" ">
+      <marc21:subfield code="a">The World Bank’s World Development Report, published annually since 1978, is an invaluable guide to the economic, social, and environmental state of the world today. Each report provides in-depth analysis and policy recommendations on a specific and important aspect of development—from agriculture, the role of the state, transition economies, and labor to infrastructure, health, the environment, and poverty. Through the quality and timeliness of the information it provides, the report has become a highly influential publication that is used by many multilateral and bilateral international organizations, national governments, scholars, civil society networks and groups, and other global thought leaders to support their decision-making processes. This corporate flagship undergoes extensive internal and external review and is one of the key outputs of the World Bank's Development Economics unit. (https://openknowledge.worldbank.org/handle/10986/2124)</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="650" ind1="" ind2="4">
+      <marc21:subfield code="a">Internationale Wirtschaftsmärkte</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="655" ind1=" " ind2="4">
+      <marc21:subfield code="a">series</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="700" ind1="1" ind2=" ">
+      <marc21:subfield code="a">The World Bank</marc21:subfield>
+      <marc21:subfield code="e">Editor</marc21:subfield>
+      <marc21:subfield code="4">edt</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">The World Bank; Universitätsbibliothek Hagen (Digitale Sammlungen), Digitalisate und Netzpublikationen</marc21:subfield>
+      <marc21:subfield code="t">Learning to Realize Educations's Promise</marc21:subfield>
+      <marc21:subfield code="z">978-1-4648-1098-5</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00001388</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">The World Bank; Universitätsbibliothek Hagen (Digitale Sammlungen), Digitalisate und Netzpublikationen</marc21:subfield>
+      <marc21:subfield code="t">Governance and the Law</marc21:subfield>
+      <marc21:subfield code="z">978-1-4648-0951-4</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00001381</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">The World Bank; Universitätsbibliothek Hagen (Digitale Sammlungen), Digitalisate und Netzpublikationen</marc21:subfield>
+      <marc21:subfield code="t">Digital Dividends</marc21:subfield>
+      <marc21:subfield code="z">978-1-4648-0672-8</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000429</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">The World Bank; Universitätsbibliothek Hagen (Digitale Sammlungen), Digitalisate und Netzpublikationen</marc21:subfield>
+      <marc21:subfield code="t">Mind, society, and behavior</marc21:subfield>
+      <marc21:subfield code="z">978-1-4648-0343-7</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000430</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="774" ind1="0" ind2=" ">
+      <marc21:subfield code="a">The World Bank; Universitätsbibliothek Hagen (Digitale Sammlungen), Digitalisate und Netzpublikationen</marc21:subfield>
+      <marc21:subfield code="t">Risk and opportunity</marc21:subfield>
+      <marc21:subfield code="z">978-0-8213-9982-8</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000434</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000428</marc21:subfield>
+      <marc21:subfield code="y">object in context</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000428</marc21:subfield>
+      <marc21:subfield code="y">uri</marc21:subfield>
+    </marc21:datafield>
+  </marc21:record>
+  <marc21:record xmlns:marc21="http://www.loc.gov/MARC21/slim">
+    <marc21:leader>     nam  22     uu 4500</marc21:leader>
+    <marc21:controlfield tag="001">mir_mods_00000555</marc21:controlfield>
+    <marc21:datafield tag="035" ind1=" " ind2=" ">
+      <marc21:subfield code="a">mir_mods_00000555</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="040" ind1=" " ind2=" ">
+      <marc21:subfield code="b">ger</marc21:subfield>
+      <marc21:subfield code="c">DE-601</marc21:subfield>
+      <marc21:subfield code="e">rda</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="084" ind1=" " ind2=" ">
+      <marc21:subfield code="a">300</marc21:subfield>
+      <marc21:subfield code="2">sdnb</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="100" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Junge, Thorsten</marc21:subfield>
+      <marc21:subfield code="e">Author</marc21:subfield>
+      <marc21:subfield code="4">aut</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)1047171945</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="245" ind1="1" ind2="0">
+      <marc21:subfield code="a">Vorwort</marc21:subfield>
+      <marc21:subfield code="c">Junge, Thorsten;Clausen, Dennis</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="264" ind1=" " ind2="1">
+      <marc21:subfield code="c">2016</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="300" ind1=" " ind2=" ">
+      <marc21:subfield code="a">9 Seiten</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="336" ind1=" " ind2=" ">
+      <marc21:subfield code="a">text</marc21:subfield>
+      <marc21:subfield code="b">txt</marc21:subfield>
+      <marc21:subfield code="2">rdacontent</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="337" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Computermedien</marc21:subfield>
+      <marc21:subfield code="b">c</marc21:subfield>
+      <marc21:subfield code="2">rdamedia</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="338" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Online-Ressource</marc21:subfield>
+      <marc21:subfield code="b">cr</marc21:subfield>
+      <marc21:subfield code="2">rdacarrier</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="655" ind1=" " ind2="4">
+      <marc21:subfield code="a">article</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="700" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Clausen, Dennis</marc21:subfield>
+      <marc21:subfield code="e">Author</marc21:subfield>
+      <marc21:subfield code="4">aut</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)1045663530</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="710" ind1="2" ind2=" ">
+      <marc21:subfield code="a">Faculty of Cultural and Social Sciences</marc21:subfield>
+      <marc21:subfield code="b">Institut für Bildungswissenschaft und Medienforschung</marc21:subfield>
+      <marc21:subfield code="b">Bildungstheorie und Medienpädagogik (Prof. Dr. Claudia de Witt)</marc21:subfield>
+      <marc21:subfield code="e">host institution</marc21:subfield>
+      <marc21:subfield code="4">his</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="773" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Junge, Thorsten; Schumacher, Claudia; Clausen, Dennis; Faculty of Cultural and Social Sciences, Institut für Bildungswissenschaft und Medienforschung, Bildungstheorie und Medienpädagogik (Prof. Dr. Claudia de Witt)</marc21:subfield>
+      <marc21:subfield code="t">Digitale Spiele im Diskurs</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000554</marc21:subfield>
+      <marc21:subfield code="n">Es gibt keine durchgehende Zählung.&#13;
+Seit Oktober 2017 hat die Zeitschrift einen zusätzlichen Herausgeber: Frau Claudia Schumacher</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="785" ind1="0" ind2="0">
+      <marc21:subfield code="a">Junge, Thorsten; Schumacher, Claudia; Clausen, Dennis; Faculty of Cultural and Social Sciences, Institut für Bildungswissenschaft und Medienforschung, Bildungstheorie und Medienpädagogik (Prof. Dr. Claudia de Witt)</marc21:subfield>
+      <marc21:subfield code="t">Editorial der Herausgeber</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00001391</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000555</marc21:subfield>
+      <marc21:subfield code="y">object in context</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/servlets/MCRFileNodeServlet/mir_derivate_00000573/DSiD_Vorwort_2016.pdf</marc21:subfield>
+      <marc21:subfield code="y">raw object</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/rsc/thumbnail/mir_mods_00000555.png</marc21:subfield>
+      <marc21:subfield code="y">preview</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00000555</marc21:subfield>
+      <marc21:subfield code="y">uri</marc21:subfield>
+    </marc21:datafield>
+  </marc21:record>
+  <marc21:record xmlns:marc21="http://www.loc.gov/MARC21/slim">
+    <marc21:leader>     nam  22     uu 4500</marc21:leader>
+    <marc21:controlfield tag="001">mir_mods_00001391</marc21:controlfield>
+    <marc21:datafield tag="024" ind1="7" ind2=" ">
+      <marc21:subfield code="a">10.18445/20180806-115758-0</marc21:subfield>
+      <marc21:subfield code="2">doi</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="035" ind1=" " ind2=" ">
+      <marc21:subfield code="a">mir_mods_00001391</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="040" ind1=" " ind2=" ">
+      <marc21:subfield code="b">ger</marc21:subfield>
+      <marc21:subfield code="c">DE-601</marc21:subfield>
+      <marc21:subfield code="e">rda</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="084" ind1=" " ind2=" ">
+      <marc21:subfield code="a">300</marc21:subfield>
+      <marc21:subfield code="2">sdnb</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="100" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Junge, Thorsten</marc21:subfield>
+      <marc21:subfield code="e">Author</marc21:subfield>
+      <marc21:subfield code="4">aut</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)1047171945</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="245" ind1="1" ind2="0">
+      <marc21:subfield code="a">Editorial der Herausgeber</marc21:subfield>
+      <marc21:subfield code="c">Junge, Thorsten;Schumacher, Claudia;Clausen, Dennis</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="264" ind1=" " ind2="1">
+      <marc21:subfield code="c">2018</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="300" ind1=" " ind2=" ">
+      <marc21:subfield code="a">10 Seiten</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="336" ind1=" " ind2=" ">
+      <marc21:subfield code="a">text</marc21:subfield>
+      <marc21:subfield code="b">txt</marc21:subfield>
+      <marc21:subfield code="2">rdacontent</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="337" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Computermedien</marc21:subfield>
+      <marc21:subfield code="b">c</marc21:subfield>
+      <marc21:subfield code="2">rdamedia</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="338" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Online-Ressource</marc21:subfield>
+      <marc21:subfield code="b">cr</marc21:subfield>
+      <marc21:subfield code="2">rdacarrier</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="655" ind1=" " ind2="4">
+      <marc21:subfield code="a">article</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="700" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Schumacher, Claudia</marc21:subfield>
+      <marc21:subfield code="e">Author</marc21:subfield>
+      <marc21:subfield code="4">aut</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="700" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Clausen, Dennis</marc21:subfield>
+      <marc21:subfield code="e">Author</marc21:subfield>
+      <marc21:subfield code="4">aut</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)1045663530</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="710" ind1="2" ind2=" ">
+      <marc21:subfield code="a">Faculty of Cultural and Social Sciences</marc21:subfield>
+      <marc21:subfield code="b">Institut für Bildungswissenschaft und Medienforschung</marc21:subfield>
+      <marc21:subfield code="b">Bildungstheorie und Medienpädagogik (Prof. Dr. Claudia de Witt)</marc21:subfield>
+      <marc21:subfield code="e">host institution</marc21:subfield>
+      <marc21:subfield code="4">his</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="773" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Junge, Thorsten; Schumacher, Claudia; Clausen, Dennis; Faculty of Cultural and Social Sciences, Institut für Bildungswissenschaft und Medienforschung, Bildungstheorie und Medienpädagogik (Prof. Dr. Claudia de Witt)</marc21:subfield>
+      <marc21:subfield code="t">Digitale Spiele im Diskurs</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000554</marc21:subfield>
+      <marc21:subfield code="n">Es gibt keine durchgehende Zählung.&#13;
+Seit Oktober 2017 hat die Zeitschrift einen zusätzlichen Herausgeber: Frau Claudia Schumacher</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="773" ind1="0" ind2=" ">
+      <marc21:subfield code="t">Digitale Spiele im Diskurs</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="780" ind1="0" ind2="0">
+      <marc21:subfield code="a">Junge, Thorsten; Clausen, Dennis; Faculty of Cultural and Social Sciences, Institut für Bildungswissenschaft und Medienforschung, Bildungstheorie und Medienpädagogik (Prof. Dr. Claudia de Witt)</marc21:subfield>
+      <marc21:subfield code="t">Vorwort</marc21:subfield>
+      <marc21:subfield code="h">9 Seiten</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00000555</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00001391</marc21:subfield>
+      <marc21:subfield code="y">object in context</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/servlets/MCRFileNodeServlet/mir_derivate_00001648/DSiD_Editorial_der_Herausgeber_2018.pdf</marc21:subfield>
+      <marc21:subfield code="y">raw object</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/rsc/thumbnail/mir_mods_00001391.png</marc21:subfield>
+      <marc21:subfield code="y">preview</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00001391</marc21:subfield>
+      <marc21:subfield code="y">uri</marc21:subfield>
+    </marc21:datafield>
+  </marc21:record>
+  <marc21:record xmlns:marc21="http://www.loc.gov/MARC21/slim">
+    <marc21:leader>     nam  22     uu 4500</marc21:leader>
+    <marc21:controlfield tag="001">mir_mods_00001440</marc21:controlfield>
+    <marc21:datafield tag="024" ind1="7" ind2=" ">
+      <marc21:subfield code="a">10.18445/20180919-090052-0</marc21:subfield>
+      <marc21:subfield code="2">doi</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="035" ind1=" " ind2=" ">
+      <marc21:subfield code="a">mir_mods_00001440</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="040" ind1=" " ind2=" ">
+      <marc21:subfield code="b">ger</marc21:subfield>
+      <marc21:subfield code="c">DE-601</marc21:subfield>
+      <marc21:subfield code="e">rda</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="084" ind1=" " ind2=" ">
+      <marc21:subfield code="a">510</marc21:subfield>
+      <marc21:subfield code="2">sdnb</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="100" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Felten, Michael</marc21:subfield>
+      <marc21:subfield code="e">Author</marc21:subfield>
+      <marc21:subfield code="4">aut</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)142659266</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="245" ind1="1" ind2="0">
+      <marc21:subfield code="a">Seminarberichte Nr. 75</marc21:subfield>
+      <marc21:subfield code="c">Dozentinnen und Dozenten der Mathematik;Felten, Michael</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="246" ind1="3" ind2=" ">
+      <marc21:subfield code="a">Boundedness of First Order Cesàro Means in Jacobi Spaces and Weighted Approximation on [-1, 1]</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="264" ind1=" " ind2="1">
+      <marc21:subfield code="a">Hagen</marc21:subfield>
+      <marc21:subfield code="b">FernUniversität in Hagen</marc21:subfield>
+      <marc21:subfield code="c">2004</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="300" ind1=" " ind2=" ">
+      <marc21:subfield code="a">170 Seiten</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="336" ind1=" " ind2=" ">
+      <marc21:subfield code="a">text</marc21:subfield>
+      <marc21:subfield code="b">txt</marc21:subfield>
+      <marc21:subfield code="2">rdacontent</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="337" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Computermedien</marc21:subfield>
+      <marc21:subfield code="b">c</marc21:subfield>
+      <marc21:subfield code="2">rdamedia</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="338" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Online-Ressource</marc21:subfield>
+      <marc21:subfield code="b">cr</marc21:subfield>
+      <marc21:subfield code="2">rdacarrier</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="490" ind1="0" ind2=" ">
+      <marc21:subfield code="a">Seminarberichte aus dem Fachbereich Mathematik der FernUniversität in Hagen</marc21:subfield>
+      <marc21:subfield code="b">hrsg. von den Dozentinnen und Dozenten der Mathematik</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="500" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Zugl.: Habilitation, FernUniversität, 2003</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="710" ind1="2" ind2=" ">
+      <marc21:subfield code="a">Dozentinnen und Dozenten der Mathematik</marc21:subfield>
+      <marc21:subfield code="e">Editor</marc21:subfield>
+      <marc21:subfield code="4">edt</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="710" ind1="2" ind2=" ">
+      <marc21:subfield code="a">Faculty of Mathematics and Computer Science</marc21:subfield>
+      <marc21:subfield code="e">host institution</marc21:subfield>
+      <marc21:subfield code="4">his</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="800" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Dozentinnen</marc21:subfield>
+      <marc21:subfield code="b">und Dozenten der Mathematik</marc21:subfield>
+      <marc21:subfield code="e">Editor</marc21:subfield>
+      <marc21:subfield code="4">edt</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="810" ind1="2" ind2=" ">
+      <marc21:subfield code="a">Faculty of Mathematics and Computer Science</marc21:subfield>
+      <marc21:subfield code="4">his</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="830" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Seminarberichte aus dem Fachbereich Mathematik der FernUniversität in Hagen</marc21:subfield>
+      <marc21:subfield code="b">hrsg. von den Dozentinnen und Dozenten der Mathematik</marc21:subfield>
+      <marc21:subfield code="w">mir_mods_00001324</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00001440</marc21:subfield>
+      <marc21:subfield code="y">object in context</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/servlets/MCRFileNodeServlet/mir_derivate_00001711/SB_MA_Hagen_75_2004.pdf</marc21:subfield>
+      <marc21:subfield code="y">raw object</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/rsc/thumbnail/mir_mods_00001440.png</marc21:subfield>
+      <marc21:subfield code="y">preview</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00001440</marc21:subfield>
+      <marc21:subfield code="y">uri</marc21:subfield>
+    </marc21:datafield>
+  </marc21:record>
+  <marc21:record xmlns:marc21="http://www.loc.gov/MARC21/slim">
+    <marc21:leader>     nam  22     uu 4500</marc21:leader>
+    <marc21:controlfield tag="001">mir_mods_00001869</marc21:controlfield>
+    <marc21:datafield tag="024" ind1="7" ind2=" ">
+      <marc21:subfield code="a">10.18445/20220910-121730-0</marc21:subfield>
+      <marc21:subfield code="2">doi</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="035" ind1=" " ind2=" ">
+      <marc21:subfield code="a">mir_mods_00001869</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="040" ind1=" " ind2=" ">
+      <marc21:subfield code="b">ger</marc21:subfield>
+      <marc21:subfield code="c">DE-601</marc21:subfield>
+      <marc21:subfield code="e">rda</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="084" ind1=" " ind2=" ">
+      <marc21:subfield code="a">340</marc21:subfield>
+      <marc21:subfield code="2">sdnb</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="100" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Ladendorf, Oliver</marc21:subfield>
+      <marc21:subfield code="e">Author</marc21:subfield>
+      <marc21:subfield code="4">aut</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)124607314</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="242" ind1="1" ind2="0">
+      <marc21:subfield code="a">Patentability of embryonic stem cells</marc21:subfield>
+      <marc21:subfield code="c">Ladendorf, Oliver;Völzmann-Stickelbrock, Barbara</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="245" ind1="1" ind2="0">
+      <marc21:subfield code="a">Die Patentfähigkeit embryonaler Stammzellen</marc21:subfield>
+      <marc21:subfield code="c">Ladendorf, Oliver;Völzmann-Stickelbrock, Barbara</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="260" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Hagen</marc21:subfield>
+      <marc21:subfield code="b">FernUniversität in Hagen</marc21:subfield>
+      <marc21:subfield code="c">2013</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="264" ind1=" " ind2="1">
+      <marc21:subfield code="c">2013</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="300" ind1=" " ind2=" ">
+      <marc21:subfield code="a">VII, 50 Seiten</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="336" ind1=" " ind2=" ">
+      <marc21:subfield code="a">text</marc21:subfield>
+      <marc21:subfield code="b">txt</marc21:subfield>
+      <marc21:subfield code="2">rdacontent</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="337" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Computermedien</marc21:subfield>
+      <marc21:subfield code="b">c</marc21:subfield>
+      <marc21:subfield code="2">rdamedia</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="338" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Online-Ressource</marc21:subfield>
+      <marc21:subfield code="b">cr</marc21:subfield>
+      <marc21:subfield code="2">rdacarrier</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="520" ind1=" " ind2=" ">
+      <marc21:subfield code="a">Die Arbeit befasst sich mit der Patentierbarkeit embryonaler Stammzellen. Die Thematik embryonaler Zellen ist sowohl ethisch, wie auch patentrechtlich extrem komplex und hat auf der ethisch-interpretatorischen Seite, als auch im Kontext der Gesetzgebung und Rechtsprechung in der letzten Dekade Anlass zu vielfältigen und kaum zu lösenden Konflikten gegeben. Die Patentierung von humanen embryonalen Stammzellen in den EPÜ-Vertragsstaaten und den EU-Mitgliedsstaaten wurde dabei durch die zentrale Instanz der BiopatRiLi und ihre jeweiligen Implementierungen in nationalem und supranationalem Recht in einer Weise reguliert, welche aufgrund der zugrundliegenden widerstreitenden politischen Interessen der europäischen Staaten und der europäischen Parteien eine eindeutige und klare Definition zentraler Elemente wie "Embryo" oder "Verwendung menschlicher Embryonen" verhindert hat. Diese Tatsache hat in Folge zu mehreren gerichtlichen Auseinandersetzungen auf verschiedenen Ebenen des europäischen Patentrechts geführt, welche teilweise inkongruente Ergebnissen erbracht haben.</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="650" ind1="" ind2="4">
+      <marc21:subfield code="a">Patentierbarkeit, embryonale Stammzelle</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="655" ind1=" " ind2="4">
+      <marc21:subfield code="a">thesis</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="700" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Völzmann-Stickelbrock, Barbara</marc21:subfield>
+      <marc21:subfield code="e">Thesis advisor</marc21:subfield>
+      <marc21:subfield code="4">ths</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)135610885</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="700" ind1="1" ind2=" ">
+      <marc21:subfield code="a">Völzmann-Stickelbrock, Barbara</marc21:subfield>
+      <marc21:subfield code="e">Reviewer</marc21:subfield>
+      <marc21:subfield code="4">rev</marc21:subfield>
+      <marc21:subfield code="0">(DE-588)135610885</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="710" ind1="2" ind2=" ">
+      <marc21:subfield code="a">Faculty of Law</marc21:subfield>
+      <marc21:subfield code="b">Lehrstühle</marc21:subfield>
+      <marc21:subfield code="b">Lehrstuhl für Bürgerliches Recht, Wirtschaftsrecht, Gewerblicher Rechtsschutz, Urheberrecht und Zivilprozessrecht (Prof. Dr. Barbara Völzmann-Stickelbrock)</marc21:subfield>
+      <marc21:subfield code="e">host institution</marc21:subfield>
+      <marc21:subfield code="4">his</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00001869</marc21:subfield>
+      <marc21:subfield code="y">object in context</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/servlets/MCRFileNodeServlet/mir_derivate_00002380/BA_Ladendorf_Patentfähigkeit_2013.pdf</marc21:subfield>
+      <marc21:subfield code="y">raw object</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/rsc/thumbnail/mir_mods_00001869.png</marc21:subfield>
+      <marc21:subfield code="y">preview</marc21:subfield>
+    </marc21:datafield>
+    <marc21:datafield tag="856" ind1=" " ind2=" ">
+      <marc21:subfield code="u">https://reposis-test.gbv.de/hagen/receive/mir_mods_00001869</marc21:subfield>
+      <marc21:subfield code="y">uri</marc21:subfield>
+    </marc21:datafield>
+  </marc21:record>
+</marc21:collection>

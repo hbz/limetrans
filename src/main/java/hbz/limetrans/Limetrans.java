@@ -5,6 +5,7 @@ import hbz.limetrans.function.VerifyLinks;
 import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.Helpers;
 import hbz.limetrans.util.InputQueue;
+import hbz.limetrans.util.OaiPmhQueue;
 import hbz.limetrans.util.Settings;
 import hbz.limetrans.util.SisisSupplement;
 
@@ -240,6 +241,9 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
                 catch (final IOException e) {
                     throw new UncheckedIOException(e);
                 }
+            }
+            else if (k.startsWith("oaipmh")) {
+                inputQueue = new OaiPmhQueue(settings);
             }
             else {
                 LOGGER.warn("Unsupported input type: {}", k);

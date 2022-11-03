@@ -1,0 +1,21 @@
+{
+  "isil": "DE-708",
+  "input": {
+    "oaipmh": {
+      "uri": "https://ub-deposit.fernuni-hagen.de/servlets/OAIDataProvider"
+    }
+  },
+  "output": {
+    "elasticsearch": {
+      "index": {
+        "type": "titel",
+        "name": "${isil}-deposit-introx-metafix-",
+        "timewindow": "yyyyMMdd",
+        "settings": "classpath:/elasticsearch/hbztitle-settings.json",
+        "mapping": "classpath:/elasticsearch/hbztitle-mapping.json",
+        "idKey": "RecordIdentifier.identifierForTheRecord"
+      }
+    }
+  },
+  "transformation-rules": "classpath:/transformation/${isil}-deposit.fix"
+}
