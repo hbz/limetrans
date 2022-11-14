@@ -80,7 +80,7 @@ gradle.rootProject {
     sourceControl {
         gitModules.each { key, args ->
             def version = versions[key]
-            if (version.matches(~/\d+(?:\..*)?|.*-SNAPSHOT/)) {
+            if (version.matches(~/\d+(?:\..*)?|.*-rc\d+|.*-SNAPSHOT/)) {
                 args.version = { prefer version }
             }
             else {
