@@ -101,10 +101,13 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
 
         reset();
 
+        final boolean update = aSettings.getAsBoolean("update", false);
+        final boolean delete = aSettings.getAsBoolean("delete", false);
+
         final String indexName = mIndexSettings.get(INDEX_NAME_KEY).toLowerCase();
         final String timeWindow = getTimeWindow();
 
-        if (timeWindow != null) {
+        if (timeWindow != null && !update) {
             mIndexName = indexName + timeWindow;
             mAliasName = indexName;
         }
@@ -116,11 +119,11 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
         }
 
         try {
-            if (aSettings.getAsBoolean("update", false)) {
+            if (update) {
                 LOGGER.info("Checking index: {}", getIndexName());
                 checkIndex();
             }
-            else if (aSettings.getAsBoolean("delete", false) || !indexExists()) {
+            else if (delete || !indexExists()) {
                 LOGGER.info("Setting up index: {}", getIndexName());
                 setupIndex();
             }
