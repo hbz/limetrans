@@ -5,7 +5,7 @@
   "input": {
     "queue1": {
       "path": "${path}",
-      "pattern": "{hanser_ebooks_LBZ,NBE_*_gesamt,WBG *}.mrc",
+      "pattern": "{hanser_ebooks_LBZ,NBE_*_gesamt,utb_report,WBG *}.mrc",
       "processor" : "MARC21RECORDS"
     },
     "queue2": {
