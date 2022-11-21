@@ -1,11 +1,16 @@
 {
   "sigel": "107",
   "isil": "DE-${sigel}",
+  "path": "/mnt/herakles/${isil}/upload/",
   "input": {
-    "queue": {
-      "path": "/mnt/herakles/${isil}/upload/",
+    "queue1": {
+      "path": "${path}",
       "pattern": "{hanser_ebooks_LBZ,NBE_*_gesamt,WBG *}.mrc",
       "processor" : "MARC21RECORDS"
+    },
+    "queue2": {
+      "path": "${path}",
+      "pattern": "Narr_Francke_Attempto_elibrary-marcxml.xml"
     }
   },
   "output": {
