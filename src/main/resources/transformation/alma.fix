@@ -814,9 +814,9 @@ do list(path: "ITM  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
     copy_field("$i.x", "@current_location")
     if all_match("$i.x", "^$[regexp.suppressedLocation]$")
-      add_field("@suppressed_location", "true")
+      add_field("@suppressed", "true")
     else
-      add_field("@unsuppressed_location", "true")
+      add_field("@unsuppressed", "true")
     end
   end
 end
@@ -1408,9 +1408,9 @@ do list(path: "POR  ", "var": "$i")
       replace_all("$i.D", "$[network]", "$[member]")
       copy_field("$i.D", "OnlineAccess[].$last.uri")
       add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
-      add_field("@unsuppressed_location", "true")
+      add_field("@unsuppressed", "true")
     else
-      add_field("@suppressed_location", "true")
+      add_field("@suppressed", "true")
     end
   end
 end
@@ -1765,8 +1765,8 @@ do list(path: "880??", "var": "$i")
 end
 uniq("AlternateGraphicRepresentation[]")
 
-if exists("@suppressed_location")
-  unless exists("@unsuppressed_location")
+if exists("@suppressed")
+  unless exists("@unsuppressed")
     reject()
   end
 end
