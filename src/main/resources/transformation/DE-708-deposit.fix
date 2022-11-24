@@ -52,6 +52,8 @@ include("./marc/introx_carrier.fix")
 include("./marc/otherClassificationNumber.fix")
 uniq("introx.taxonomy[]")
 
+add_field("introx.localCollection", "deposit_hagen")
+
 paste("@id", "~(", "@isil", "~)", "001", join_char: "")
 copy_field("@id", "RecordIdentifier.identifierForTheRecord")
 
