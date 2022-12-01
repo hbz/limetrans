@@ -57604,6 +57604,105 @@
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "9930447972402006441",
+    "identifierMMSIZ" : "991001917329706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)9930447972402006441",
+    "identifierForTheRecord" : "(DE-605)HT010626779",
+    "verifyingSuperIdentifier" : "(DE-605)9930447972402006441",
+    "verifyingSuperIdentifier" : "(DE-605)HT010626779",
+    "verifyingSuperIdentifier" : "(DE-A96)991001917329706444"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3784111394", "Kunststoff : ca. DM 28.00, ca. sfr 26.50, ca. S 205.00" ]
+  }, {
+    "identifierISBN" : [ "3784111394", "Kunststoff : ca. DM 28.00, ca. sfr 26.50, ca. S 205.00" ]
+  }, {
+    "identifierISBN" : [ "3784111394", "Kunststoff : ca. DM 28.00, ca. sfr 26.50, ca. S 205.00" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Weiss, Gabriele"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Wenn die roten Katzen tanzen .."
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Freiburg im Breisgau" ],
+    "name" : [ "Lambertus" ],
+    "chronology" : [ "1999" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Freiburg im Breisgau"
+  } ],
+  "DateProper" : {
+    "date" : [ "1999" ]
+  },
+  "Extent" : {
+    "extent" : "261 S. : Ill."
+  },
+  "SubjectHeadings" : [ {
+    "subject" : "Darstellendes Spiel"
+  }, {
+    "subject" : "Sonderpädagogik"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "IBUA"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)9930447972402006441"
+  }, {
+    "uid" : "(DE-605)HT010626779"
+  }, {
+    "uid" : "(DE-A96)991001917329706444"
+  } ],
+  "Item" : [ {
+    "callnumber" : "11 IBUA 114"
+  }, {
+    "identifier" : "DE-A96",
+    "callnumber" : "11 IBUA 114",
+    "callnumber" : "013280101",
+    "shelfmark" : "SUPPRESSED"
+  } ]
+}
+{
+  "FormatCarrier" : [ "Druckschrift" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT010626779"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "76031469"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Jeux dramatiques für soziale und heilpädagogische Berufe"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Gabriele Weiss" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1999" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Pädagogik" ],
+    "subject" : [ "Darstellendes Spiel", "Sonderpädagogik" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
     "identifierMMS" : "994044797240206441",
     "identifierMMSIZ" : "991001917329706444",
     "identifierPID" : "53703716030006444"
