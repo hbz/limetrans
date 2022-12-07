@@ -4,15 +4,16 @@ import hbz.limetrans.filter.LimetransFilter;
 import hbz.limetrans.function.VerifyLinks;
 import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.Helpers;
+import hbz.limetrans.util.InputQueue;
 import hbz.limetrans.util.Settings;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.metafacture.formeta.FormetaEncoder;
 import org.metafacture.formeta.formatter.FormatterStyle;
+import org.metafacture.framework.LifeCycle;
 import org.metafacture.framework.StreamPipe;
 import org.metafacture.framework.StreamReceiver;
-import org.metafacture.io.FileOpener;
 import org.metafacture.io.ObjectWriter;
 import org.metafacture.json.JsonEncoder;
 import org.metafacture.mangling.RecordIdChanger;
@@ -147,7 +148,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     }
 
     private final LimetransFilter mFilter;
-    private final List<FileQueue> mInputQueues = new ArrayList<>();
+    private final List<InputQueue> mInputQueues = new ArrayList<>();
     private final Map<String, Map<String, String>> mMaps = new HashMap<>();
     private final Map<String, String> mVars = new HashMap<>();
     private final Settings mElasticsearchSettings;
@@ -207,16 +208,12 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
     private void initializeInput(final Settings aSettings) {
         aSettings.getAsSettings("input").forEach((s, k) -> {
+            final Settings settings = s.getAsSettings(k);
+            final InputQueue inputQueue;
+
             if (k.startsWith("queue")) {
                 try {
-                    final FileQueue inputQueue = new FileQueue(s.getAsSettings(k));
-
-                    if (inputQueue.isEmpty()) {
-                        LOGGER.warn("Empty input queue: {}", k);
-                    }
-                    else {
-                        mInputQueues.add(inputQueue);
-                    }
+                    inputQueue = new FileQueue(settings);
                 }
                 catch (final IOException e) {
                     throw new UncheckedIOException(e);
@@ -224,6 +221,14 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
             }
             else {
                 LOGGER.warn("Unsupported input type: {}", k);
+                return;
+            }
+
+            if (inputQueue.isEmpty()) {
+                LOGGER.warn("Empty input queue: {}", k);
+            }
+            else {
+                mInputQueues.add(inputQueue);
             }
         });
 
@@ -410,7 +415,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
         final Filter filter = mFilter.isEmpty() ? null : mFilter.toFilter();
         mInputQueues.stream().map(i -> i.process(pipe, filter))
-            .collect(Collectors.toList()).forEach(FileOpener::closeStream);
+            .collect(Collectors.toList()).forEach(LifeCycle::closeStream);
 
         if (mPostprocess) {
             VerifyLinks.reset();
@@ -508,7 +513,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     }
 
     /*package-private*/ int getInputQueueSize() {
-        return mInputQueues.stream().mapToInt(FileQueue::size).sum();
+        return mInputQueues.stream().mapToInt(InputQueue::size).sum();
     }
 
     private void loadMap(final String aName, final String aKey) {

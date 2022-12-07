@@ -6,6 +6,7 @@ import org.metafacture.biblio.marc21.Marc21Decoder;
 import org.metafacture.biblio.marc21.MarcXmlHandler;
 import org.metafacture.formeta.FormetaDecoder;
 import org.metafacture.formeta.FormetaRecordsReader;
+import org.metafacture.framework.LifeCycle;
 import org.metafacture.framework.Sender;
 import org.metafacture.framework.StreamReceiver;
 import org.metafacture.io.FileOpener;
@@ -35,7 +36,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
-public class FileQueue implements Iterable<String> {
+public class FileQueue implements InputQueue, Iterable<String> {
 
     private enum Processor { // checkstyle-disable-line ClassDataAbstractionCoupling
 
@@ -146,19 +147,18 @@ public class FileQueue implements Iterable<String> {
         return mQueue.iterator();
     }
 
+    @Override
     public boolean isEmpty() {
         return mQueue.isEmpty();
     }
 
+    @Override
     public int size() {
         return mQueue.size();
     }
 
-    public FileOpener process(final StreamReceiver aReceiver) {
-        return process(aReceiver, null);
-    }
-
-    public <T extends StreamReceiver & Sender<StreamReceiver>> FileOpener process(final StreamReceiver aReceiver, final T aSender) {
+    @Override
+    public <T extends StreamReceiver & Sender<StreamReceiver>> LifeCycle process(final StreamReceiver aReceiver, final T aSender) {
         final FileOpener opener = new FileOpener();
         opener.setDecompressConcatenated(true);
 
