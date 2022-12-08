@@ -1,0 +1,188 @@
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "ExtendedType" : [ "Lehrbuch" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
+  "TypeHeading" : [ {
+    "term" : "Lehrbuch",
+    "identifier" : "(DE-588)4123623-3"
+  } ],
+  "Country" : [ {
+    "countryISO" : "DE-BW"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT018902109"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "932023789"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Erwin Märtlbauer, Heinz Becker (Hg.)" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Lehrbuch", "Sammelwerk" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2016" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Milch", "Lebensmittelchemie" ]
+  },
+  "SubjectDNB" : [ {
+    "subject" : "630"
+  } ],
+  "SubjectRPB" : [ {
+    "subject" : "760"
+  }, {
+    "subject" : "850"
+  }, {
+    "subject" : "970"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHM",
+    "identifierMMS" : "990210731060206441",
+    "identifierMMSIZ" : "991000350799706485"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990210731060206441",
+    "identifierForTheRecord" : "(DE-605)HT018902109"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3825286649" ]
+  }, {
+    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3825286649" ]
+  }, {
+    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3825286649" ]
+  }, {
+    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3825286649" ]
+  }, {
+    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3825286649" ]
+  }, {
+    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3825286649" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Milchkunde und Milchhygiene"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Stuttgart" ],
+    "name" : [ "Verlag Eugen Ulmer" ],
+    "chronology" : [ "[2016]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Stuttgart"
+  } ],
+  "DateProper" : {
+    "date" : [ "[2016]" ]
+  },
+  "Extent" : {
+    "extent" : "368 Seiten : Illustrationen, Diagramme ; 24 cm x 17 cm"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "utb", "Agrarwissenschaften, Veterinärmedizin, Lebensmittelwissenschaften" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "8664" ]
+  } ],
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "utb",
+    "title" : "Agrarwissenschaften, Veterinärmedizin, Lebensmittelwissenschaften",
+    "volume" : "8664"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Märtlbauer, Erwin"
+  }, {
+    "personName" : "Becker, Heinz",
+    "personBio" : "1948-",
+    "personIdentifier" : [ "(DE-588)1033629324" ],
+    "identifierGND" : [ "1033629324" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2017/02/07/file_10/7080672.pdf",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "V:DE-605",
+    "contact" : "X:migimw",
+    "format" : "application/pdf"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "V:DE-605",
+    "contact" : "X:migimw",
+    "contact" : "V:DE-605",
+    "contact" : "X:migimw",
+    "format" : "application/pdf"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Milch"
+  }, {
+    "subject" : "Lebensmittelchemie"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990210731060206441"
+  }, {
+    "uid" : "(DE-605)HT018902109"
+  }, {
+    "uid" : "(DE-836)991000350799706485"
+  } ],
+  "Item" : [ {
+    "callnumber" : "RRZ 137+1"
+  }, {
+    "callnumber" : "RRZ 137+2"
+  }, {
+    "callnumber" : "RRZ 137+4"
+  }, {
+    "callnumber" : "RRZ 137+3"
+  }, {
+    "callnumber" : "RRZ 137"
+  }, {
+    "identifier" : "DE-836",
+    "callnumber" : "RRZ 137+3",
+    "callnumber" : "0356674",
+    "shelfmark" : "Freihand_F"
+  }, {
+    "identifier" : "DE-836",
+    "callnumber" : "RRZ 137+4",
+    "callnumber" : "0356675",
+    "shelfmark" : "Freihand_F"
+  }, {
+    "identifier" : "DE-836",
+    "callnumber" : "RRZ 137+2",
+    "callnumber" : "0356673",
+    "shelfmark" : "Freihand_F"
+  }, {
+    "identifier" : "DE-836",
+    "callnumber" : "RRZ 137",
+    "callnumber" : "0333381",
+    "shelfmark" : "Freihand_F"
+  }, {
+    "identifier" : "DE-836",
+    "callnumber" : "RRZ 137+1",
+    "callnumber" : "0356213",
+    "shelfmark" : "Freihand_F"
+  } ],
+  "Subject" : [ {
+    "subject" : "Milchhygiene"
+  }, {
+    "subject" : "Milchkunde"
+  }, {
+    "subject" : "Technologie der Milch"
+  } ]
+}
