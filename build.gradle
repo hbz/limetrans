@@ -88,6 +88,8 @@ tasks.withType(JavaExec) {
         languageVersion = java.toolchain.languageVersion
     }
 
+    maxHeapSize = '8G'
+
     doFirst { passSystemProperties(systemProperties) }
 }
 
@@ -98,7 +100,8 @@ test {
         events 'SKIPPED'
     }
 
-    passSystemProperties(systemProperties)
-
+    maxHeapSize = '2G'
     maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+
+    passSystemProperties(systemProperties)
 }
