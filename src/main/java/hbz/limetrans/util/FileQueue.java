@@ -178,8 +178,8 @@ public class FileQueue implements InputQueue, Iterable<String> {
 
         for (final String fileName : this) {
             final File file = new File(fileName);
-            final String msg = String.format("%s file: %s [mtime=%s]",
-                    mProcessor, fileName, FileTime.fromMillis(file.lastModified()));
+            final String msg = String.format("%s file: %s [mtime=%s, size=%s]", mProcessor, fileName,
+                    FileTime.fromMillis(file.lastModified()), Helpers.byteCountToDisplaySize(file.length()));
 
             if (file.length() > 0) {
                 LOGGER.info("Processing " + msg);

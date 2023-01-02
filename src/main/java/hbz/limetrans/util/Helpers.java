@@ -39,6 +39,7 @@ public class Helpers { // checkstyle-disable-line ClassDataAbstractionCoupling|C
     public static final String CLASSPATH_PREFIX = "classpath:";
 
     private static final long KB = 1024;
+    private static final String[] DISPLAY_SIZE = new String[]{"B", "K", "M", "G", "T", "P", "E"};
 
     private static final Path STATUS = Paths.get("/proc/self/status");
     private static final Pattern RSS_PATTERN = Pattern.compile("\\AVmRSS:\\s+(\\d+)\\s+kB");
@@ -131,8 +132,12 @@ public class Helpers { // checkstyle-disable-line ClassDataAbstractionCoupling|C
         }
 
         final Long rssAfter = getRss();
-        aLogger.info("Loaded {}: {} [mtime={}, count={}, rss={}M]", aDescription, aPath,
-                file.exists() ? FileTime.fromMillis(file.lastModified()) : null, aSupplier.get(), rssAfter - rssBefore);
+        final boolean fileExists = file.exists();
+        aLogger.info("Loaded {}: {} [mtime={}, size={}, count={}, rss={}]", aDescription, aPath,
+                fileExists ? FileTime.fromMillis(file.lastModified()) : null,
+                fileExists ? byteCountToDisplaySize(file.length()) : null,
+                aSupplier.get(),
+                byteCountToDisplaySize(rssAfter - rssBefore, 2));
 
         return true;
     }
@@ -200,6 +205,21 @@ public class Helpers { // checkstyle-disable-line ClassDataAbstractionCoupling|C
             System.err.println(e);
             return aString;
         }
+    }
+
+    public static String byteCountToDisplaySize(final long aSize) {
+        return byteCountToDisplaySize(aSize, 0);
+    }
+
+    private static String byteCountToDisplaySize(final long aSize, final int aExponent) {
+        for (int i = 0; i < DISPLAY_SIZE.length - aExponent; ++i) {
+            final double quotient = aSize / Math.pow(KB, i);
+            if (quotient < KB) {
+                return "%.1f%s".formatted(quotient, DISPLAY_SIZE[i + aExponent]);
+            }
+        }
+
+        return "%s%s".formatted(aSize, DISPLAY_SIZE[aExponent]);
     }
 
 }
