@@ -608,6 +608,8 @@ do list(path: "044??.c", "var": "$i")
   end
 end
 
+# MARC/008
+copy_field("@008Pos07", "@date")
 if any_equal("@type", "CR")
   if none_equal("@008Pos06", "n")
     copy_field("@008Pos07", "@date1")
