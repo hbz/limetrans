@@ -1798,9 +1798,14 @@ do list(path: "880??", "var": "$i")
 end
 uniq("AlternateGraphicRepresentation[]")
 
+# MARC/DEL
 if exists("@suppressed")
   unless exists("@unsuppressed")
-    reject()
+    if str_equal("$[deletion-enabled]", "true")
+      add_field("$[deletion-literal]", "$[deletion-value]")
+    else
+      reject()
+    end
   end
 end
 

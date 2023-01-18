@@ -322,6 +322,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
             if (deletionLiteral != null) {
                 final String[] deletion = almaDeletion.split("=");
 
+                mVars.put("deletion-enabled", "true");
                 mVars.put("deletion-literal", deletionLiteral);
                 mVars.put("deletion-source", deletion[0]);
                 mVars.put("deletion-value", deletion[1]);
@@ -330,6 +331,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
                     .add(deletionFilter);
             }
             else {
+                mVars.put("deletion-enabled", "false");
                 mVars.put("deletion-literal", "-");
                 mVars.put("deletion-source", "-");
                 mVars.put("deletion-value", "-");
@@ -354,7 +356,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         }
         else {
             setDeletion.accept(almaSettings.get("deletion-literal",
-                        mElasticsearchSettings != null ?  mElasticsearchSettings.get("deletionLiteral") : null));
+                        mElasticsearchSettings != null ? mElasticsearchSettings.get("deletionLiteral") : null));
 
             rulesSuffix = "";
 
