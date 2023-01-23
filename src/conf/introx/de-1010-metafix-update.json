@@ -2,7 +2,11 @@
   "isil": "DE-1010",
   "path": "/data/pubhub/export/alma/prod/",
   "postprocess": true,
-  "alma": {},
+  "alma": {
+    "regexp": {
+      "suppressedLocation": "(?:08|28|38|FB|NBB|VB)"
+    }
+  },
   "input": {
     "queue": {
       "path": "${path}",
