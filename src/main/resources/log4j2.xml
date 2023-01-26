@@ -4,12 +4,16 @@
     <Console name="Console" target="SYSTEM_OUT">
       <PatternLayout pattern="%d{yyyy-MM-dd'T'HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
     </Console>
+    <File name="File" fileName="build.log">
+      <PatternLayout pattern="%d{yyyy-MM-dd'T'HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+    </File>
   </Appenders>
   <Loggers>
     <Logger name="org.elasticsearch.bootstrap" level="${env:LIMETRANS_ELASTICSEARCH_LOGLEVEL:-ERROR}" />
     <Logger name="org.metafacture.metafix" level="${env:LIMETRANS_METAFIX_LOGLEVEL:-INFO}" />
     <Root level="${env:LIMETRANS_LOGLEVEL:-INFO}">
       <AppenderRef ref="Console" />
+      <AppenderRef ref="File" />
     </Root>
   </Loggers>
 </Configuration>
