@@ -1578,6 +1578,16 @@ do list(path: "246?[ 345678].a", "var": "$i")
   end
 end
 
+# MARC/249
+set_array("CompilationTitle.title[]")
+do list(path: "249??.a", "var": "$i")
+  do list(path: "$i", "var": "$j")
+    replace_all("$j", "[.]$", "")
+    call_macro("remove-nonsort", source: "$j")
+    copy_field("$j", "CompilationTitle.title[]")
+  end
+end
+
 # MARC/600
 set_array("RSWK[]")
 do list(path: "600??", "var": "$i")
@@ -1818,6 +1828,7 @@ retain(
   "CarrierType[]",
   "ChronologyAndEnumeration",
   "ClassifierDigitization[]",
+  "CompilationTitle",
   "Conference",
   "ConstituentUnitEntry[]",
   "ContentType[]",
