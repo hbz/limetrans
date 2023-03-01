@@ -116,14 +116,19 @@ public final class Main {
         final Integer interval = Helpers.getProperty(MEMLOG, Integer::parseInt, 10);
         final MemLog memlog = interval != null ? new MemLog(interval) : null;
 
-        new Limetrans(setup(aArgs)).process();
+        try {
+            new Limetrans(setup(aArgs)).process();
+        }
+        finally {
+            final Long rss = Helpers.getRss();
+            final MemoryUsage heap = MemLog.getHeap();
+            final MemoryUsage nonHeap = MemLog.getNonHeap();
 
-        final Long rss = Helpers.getRss();
-        final MemoryUsage heap = MemLog.getHeap();
-        final MemoryUsage nonHeap = MemLog.getNonHeap();
-
-        LOGGER.info("Final Memory: {}M/{}M" + (rss != null ? String.format(" (%dM)", rss) : "") + (memlog != null ? String.format(" [%s]", memlog) : ""),
-                (heap.getUsed() + nonHeap.getUsed()) / MB, (heap.getCommitted() + nonHeap.getCommitted()) / MB);
+            LOGGER.info("Final Memory: {}M/{}M" +
+                    (rss != null ? String.format(" (%dM)", rss) : "") +
+                    (memlog != null ? String.format(" [%s]", memlog) : ""),
+                    (heap.getUsed() + nonHeap.getUsed()) / MB, (heap.getCommitted() + nonHeap.getCommitted()) / MB);
+        }
     }
 
     private static Settings setup(final String[] aArgs) throws IOException {
@@ -236,7 +241,9 @@ public final class Main {
             }
 
             return String.format("used.max=%dM, used.avg=%dM, committed.max=%dM, committed.avg=%dM, rss.max=%dM, rss.avg=%dM",
-                    mMaxUsed.get(), mTotalUsed.sum() / mCount.sum(), mMaxCommitted.get(), mTotalCommitted.sum() / mCount.sum(), mMaxRss.get(), mTotalRss.sum() / mCount.sum());
+                    mMaxUsed.get(), mTotalUsed.sum() / mCount.sum(),
+                    mMaxCommitted.get(), mTotalCommitted.sum() / mCount.sum(),
+                    mMaxRss.get(), mTotalRss.sum() / mCount.sum());
         }
 
     }
