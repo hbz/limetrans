@@ -17,7 +17,7 @@ gradle.rootProject {
             'junit'         : '4.13.1',
             'log4j'         : '2.17.1',
             'metafacture'   : '5.5.0',
-            'metafix'       : '0.3.0'
+            'metafix'       : '0.4.0'
         ]
 
         testMatrix = [
