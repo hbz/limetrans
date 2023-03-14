@@ -1,3 +1,8 @@
+put_map("alma-library-to-branch-DE-1383",
+  "KAM": "Standort Kamp-Lintfort",
+  "KLE": "Standort Kleve"
+)
+
 put_map("alma-library-to-branch-DE-1393",
   "1393": "Campus Mülheim",
   "BOT":  "Campus Bottrop"
@@ -61,6 +66,26 @@ put_map("alma-location-to-branch-DE-468",
   "91": "Lehrbuchsammlung 91",
   "93": "Campus Haspel",
   "95": "Campus Freudenberg"
+)
+
+put_map("alma-library-to-branch-DE-743",
+  "DT": "Detmold",
+  "HX": "Höxter",
+  "LE": "Lemgo"
+)
+
+put_map("alma-library-to-branch-DE-829",
+  "KRS": "Campus Krefeld Süd",
+  "KRW": "Campus Krefeld West",
+  "MG":  "Campus Mönchengladbach"
+)
+
+put_map("alma-library-to-branch-DE-832",
+  "DEUTZ": "Deutz",
+  "GUM":   "Gummersbach",
+  "LEV":   "Leverkusen",
+  "SUED":  "Südstadt"
+  # Zentralmagazin?
 )
 
 put_map("alma-library-to-branch-DE-A96",
