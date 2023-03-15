@@ -10,7 +10,7 @@
     },
     "queue2": {
       "path": "${path}",
-      "pattern": "Narr_Francke_Attempto_elibrary-marcxml.xml"
+      "pattern": "{Meiner_export_*,Narr_Francke_Attempto_elibrary-marcxml}.xml"
     }
   },
   "output": {
