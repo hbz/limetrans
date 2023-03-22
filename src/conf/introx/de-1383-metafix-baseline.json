@@ -2,7 +2,11 @@
   "isil": "DE-1383",
   "path": "/data/pubhub/export/alma/eu03/",
   "postprocess": true,
-  "alma": {},
+  "alma": {
+    "regexp": {
+      "suppressedLocation": "(?:KAM|KLE) [AP]FL"
+    }
+  },
   "input": {
     "queue": {
       "path": "${path}",

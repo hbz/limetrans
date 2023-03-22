@@ -2,7 +2,11 @@
   "isil": "DE-832",
   "path": "/data/pubhub/export/alma/eu03/",
   "postprocess": true,
-  "alma": {},
+  "alma": {
+    "regexp": {
+      "suppressedLocation": "(?:LOESCH_D|LOESCH_G|LOESCH_L|LOESCH_S|PFL)"
+    }
+  },
   "input": {
     "queue": {
       "path": "${path}",

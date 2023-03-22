@@ -2,7 +2,11 @@
   "isil": "DE-51",
   "path": "/data/pubhub/export/alma/eu03/",
   "postprocess": true,
-  "alma": {},
+  "alma": {
+    "regexp": {
+      "suppressedLocation": "RES_SHARE"
+    }
+  },
   "input": {
     "queue": {
       "path": "${path}",
