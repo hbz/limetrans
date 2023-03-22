@@ -15,11 +15,13 @@ public class DropRepeated implements FixFunction {
 
     @Override
     public void apply(final Metafix aMetafix, final Record aRecord, final List<String> aParams, final Map<String, String> aOptions) {
+        final int index = Integer.parseInt(aOptions.getOrDefault("index", "1")) - 1;
+
         aParams.forEach(field -> {
             final Value value = aRecord.get(field);
 
             if (value != null) {
-                value.matchType().ifArray(a -> aRecord.set(field, a.get(0)));
+                value.matchType().ifArray(a -> aRecord.set(field, a.get(index)));
             }
         });
     }

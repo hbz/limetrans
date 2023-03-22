@@ -13,6 +13,7 @@ do list(path: "$i.c", "var": "$j")
   replace_all("$j", "[,]$", "")
   copy_field("$j", "@person.$last.personTitle[]")
 end
+hbz.limetrans.function.DropRepeated("$i.d", index: "2")
 replace_all("$i.d", "[.]$", "")
 copy_field("$i.d", "@person.$last.personBio")
 set_array("@person.$last.personRole[]")
