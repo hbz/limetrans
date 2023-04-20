@@ -10,7 +10,7 @@
     },
     "queue2": {
       "path": "${path}",
-      "pattern": "{Meiner_export_*,Narr_Francke_Attempto_elibrary-marcxml}.xml"
+      "pattern": "{Meiner_export_*,Narr_Francke_Attempto_elibrary-marcxml,SpringerNature_Books_MARCXML_*}.xml"
     }
   },
   "output": {
