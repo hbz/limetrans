@@ -961,6 +961,16 @@
             "cql.allIndexes",
             "dc.identifier"
           ]
+        },
+        "identifierZDBFull": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=mab",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
         }
       }
     },

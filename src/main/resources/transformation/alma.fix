@@ -670,8 +670,12 @@ do list(path: "035  .a", "var": "$i")
   end
   if any_match("$i", "\\(DE-600\\).*")
     add_field("IdentifierDNB[].$append.__dummy__", "")
+    add_field("IdentifierZDB[].$append.__dummy__", "")
+    copy_field("$i", "@zdbid")
     replace_all("$i", "^\\(DE-600\\)", "")
     copy_field("$i", "IdentifierDNB[].$last.identifierDNB")
+    copy_field("$i", "IdentifierZDB[].$last.identifierZDB")
+    copy_field("@zdbid", "IdentifierZDB[].$last.identifierZDBFull")
   elsif any_match("$i", "\\(DE-601\\).*")
     add_field("IdentifierGBV[].$append.__dummy__", "")
     replace_all("$i", "^\\(DE-601\\)", "")
@@ -940,9 +944,13 @@ do list(path: "0167 ", "var": "$i")
   if any_equal("$i.2", "DE-600")
     add_field("IdentifierZDB[].$append.__dummy__", "")
     hbz.limetrans.function.ZDB("$i.a")
-    copy_field("$i.a", "IdentifierZDB[].$last.identifierZDB")
+    if exists("$i.a")
+      copy_field("$i.a", "IdentifierZDB[].$last.identifierZDB")
+      paste("IdentifierZDB[].$last.identifierZDBFull", "~(", "$i.2", "~)", "$i.a", join_char: "")
+    end
   end
 end
+uniq("IdentifierZDB[]")
 
 # MARC/020
 set_array("IdentifierISBN[]")
