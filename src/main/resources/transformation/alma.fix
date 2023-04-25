@@ -670,8 +670,13 @@ do list(path: "035  .a", "var": "$i")
   end
   if any_match("$i", "\\(DE-600\\).*")
     add_field("IdentifierDNB[].$append.__dummy__", "")
+    add_field("IdentifierZDB[].$append.__dummy__", "")
+    unless exists("@zdbid")
+      copy_field("$i", "@zdbid")
+    end
     replace_all("$i", "^\\(DE-600\\)", "")
     copy_field("$i", "IdentifierDNB[].$last.identifierDNB")
+    copy_field("$i", "IdentifierZDB[].$last.identifierZDB")
   elsif any_match("$i", "\\(DE-601\\).*")
     add_field("IdentifierGBV[].$append.__dummy__", "")
     replace_all("$i", "^\\(DE-601\\)", "")
@@ -693,6 +698,8 @@ paste("@mmsid", "~(", "@isil", "~)", "001", join_char: "")
 
 if exists("@hbzid")
   paste("@id", "@hbzid", "$[id-suffix]", join_char: "")
+elsif exists("@zdbid")
+  paste("@id", "@zdbid", "$[id-suffix]", join_char: "")
 elsif exists("@sysid")
   paste("@id", "@sysid", "$[id-suffix]", join_char: "")
 else
@@ -943,6 +950,7 @@ do list(path: "0167 ", "var": "$i")
     copy_field("$i.a", "IdentifierZDB[].$last.identifierZDB")
   end
 end
+uniq("IdentifierZDB[]")
 
 # MARC/020
 set_array("IdentifierISBN[]")
