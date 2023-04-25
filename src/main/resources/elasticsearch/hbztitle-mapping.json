@@ -807,6 +807,28 @@
         }
       }
     },
+    "IdentifierHBZ": {
+      "properties": {
+        "identifierHBZ": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "identifierHBZFull": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=mab",
+            "dc.identifier"
+          ]
+        }
+      }
+    },
     "IdentifierISBN": {
       "properties": {
         "identifierISBN": {

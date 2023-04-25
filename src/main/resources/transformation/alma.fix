@@ -10,6 +10,8 @@ do once()
   include("./maps/alma-taxonomy.fix")
   include("./maps/alma-type-monograph.fix")
   include("./maps/alma-type-periodical.fix")
+
+  put_filemap("./maps/alma-hbz-to-zdb.tsv.gz", "alma-zdb-to-hbz", sep_char: " ", key_column: "1", value_column: "0")
 end
 
 hbz.limetrans.function.DropLocal()
@@ -670,6 +672,7 @@ do list(path: "035  .a", "var": "$i")
   end
   if any_match("$i", "\\(DE-600\\).*")
     add_field("IdentifierDNB[].$append.__dummy__", "")
+    add_field("IdentifierHBZ[].$append.__dummy__", "")
     add_field("IdentifierZDB[].$append.__dummy__", "")
     unless exists("@zdbid")
       copy_field("$i", "@zdbid")
@@ -677,12 +680,20 @@ do list(path: "035  .a", "var": "$i")
     replace_all("$i", "^\\(DE-600\\)", "")
     copy_field("$i", "IdentifierDNB[].$last.identifierDNB")
     copy_field("$i", "IdentifierZDB[].$last.identifierZDB")
+    lookup("$i", "alma-zdb-to-hbz", delete: "true")
+    if exists("$i")
+      paste("IdentifierHBZ[].$last.identifierHBZFull", "~(DE-605)", "$i", join_char: "")
+      copy_field("IdentifierHBZ[].$last.identifierHBZFull", "@hbzids")
+      copy_field("$i", "IdentifierHBZ[].$last.identifierHBZ")
+    end
   elsif any_match("$i", "\\(DE-601\\).*")
     add_field("IdentifierGBV[].$append.__dummy__", "")
     replace_all("$i", "^\\(DE-601\\)", "")
     copy_field("$i", "IdentifierGBV[].$last.identifierGBV")
   elsif any_match("$i", "\\(DE-605\\).*")
     add_field("IdentifierHBZ[].$append.__dummy__", "")
+    copy_field("$i", "IdentifierHBZ[].$last.identifierHBZFull")
+    copy_field("$i", "@hbzids")
     replace_all("$i", "^\\(DE-605\\)", "")
     copy_field("$i", "IdentifierHBZ[].$last.identifierHBZ")
   elsif any_match("$i", "\\(OCoLC\\).*")
@@ -693,6 +704,7 @@ do list(path: "035  .a", "var": "$i")
     end
   end
 end
+uniq("IdentifierHBZ[]")
 
 paste("@mmsid", "~(", "@isil", "~)", "001", join_char: "")
 
