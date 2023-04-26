@@ -23620,3 +23620,181 @@
     "shelfmark" : "SUPPRESSED"
   } ]
 }
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT021573674"
+  } ],
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2022" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "subject" : [ "Electrical & Electronics Engineering" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99371734302206441",
+    "identifierPID" : "53798390670006441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99371734302206441",
+    "identifierForTheRecord" : "(DE-605)HT021573674"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9781119788829" ]
+  } ],
+  "IdentifierDOI" : [ {
+    "standardNumber" : "10.1002/9781119788829"
+  } ],
+  "Person" : [ {
+    "personName" : "Ur Rehman"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Interference Mitigation in Device-to-Device Communications"
+  } ],
+  "PublisherName" : [ {
+    "name" : [ "John Wiley & Sons, Inc" ],
+    "chronology" : [ "2022-03-18" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2022-03-18" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource"
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISBN" : "9781119788799"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119788829"
+  }, {
+    "publicnote" : "Wiley eBooks EBA bis 31.12.2023 (ZDB-35-Wiley-EBA)",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53798390670006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : "ZDB-35-Wiley-EBA"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99371734302206441"
+  }, {
+    "uid" : "(DE-605)HT021573674"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectPersonName" : "Electrical & Electronics Engineering"
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT021864797"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Behavior, Ecology, and Conservation of an Iconic Species"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Craig Packer" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2023" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "subject" : [ "Lion / Behavior / Africa, East", "NATURE / Animals / Big Cats" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99372015733106441",
+    "identifierPID" : "53816391610006441",
+    "identifierPID" : "53816391670006441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99372015733106441",
+    "identifierForTheRecord" : "(DE-605)HT021864797"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9780691235950" ]
+  } ],
+  "IdentifierDOI" : [ {
+    "standardNumber" : "10.1515/9780691235950"
+  } ],
+  "Person" : [ {
+    "personName" : "Packer, Craig"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "The Lion"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Princeton, NJ" ],
+    "name" : [ "Princeton University Press" ],
+    "chronology" : [ "[2023]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Princeton, NJ"
+  } ],
+  "DateProper" : {
+    "date" : [ "[2023]" ]
+  },
+  "Extent" : {
+    "extent" : "1 online resource (376 p.) : 173 color illus. 5 tables"
+  },
+  "Abstract" : {
+    "abstract" : [ "An authoritative, accessible, and gorgeously illustrated exploration into the lives of these remarkable animalsLions are the only social cat. They hunt together, raise cubs together, and defend territories together against neighbors and strangers. Lions also rest atop their ecological pyramid, with profound impacts on competitors and prey alike, but their future is far from assured. Craig Packer interweaves his discoveries from more than forty years of research—including a substantial body of new findings—to provide an unforgettable portrait of the African lion. He shares insights into the intricacies of lion life from birth until death and describes efforts to conserve lions in an increasingly crowded continent. With a wealth of breathtaking photographs by Daniel Rosengren, The Lion sheds light on a host of intriguing scientific questions, such as why males have manes, why lions are social, how sociality limits and stabilizes lion populations, how close inbreeding affects lion health, why lions become man-eaters, how lions and people can best be protected from each other, and how to ensure the lion’s survival into the next century.Engagingly written by the world’s foremost expert on African lionsIntegrates a wealth of findings from two of the most comprehensive field studies on any animalFeatures hundreds of stunning photographs that capture a broad range of lion behaviors, ecological interactions, and conservation challengesBlends vivid field anecdotes and graphics to give the reader a sense of adventuring into the lion’s world" ]
+  },
+  "OnlineAccess" : [ {
+    "uri" : "https://doi.org/10.1515/9780691235950"
+  }, {
+    "uri" : "https://www.degruyter.com/isbn/9780691235950"
+  }, {
+    "uri" : "https://www.degruyter.com/document/cover/isbn/9780691235950/original",
+    "relatedto" : "Cover"
+  }, {
+    "publicnote" : "De Gruyter E-Books EBA bis 31.12.2023 (ZDB-23-DGG-eba)",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53816391610006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  }, {
+    "publicnote" : "De Gruyter E-Books EBA bis 31.12.2023 (ZDB-23-DGG-eba)",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53816391670006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : "ZDB-23-DGG-eba"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99372015733106441"
+  }, {
+    "uid" : "(DE-605)HT021864797"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : "Lion / Behavior / Africa, East"
+  }, {
+    "subjectTopicName" : "NATURE / Animals / Big Cats"
+  } ]
+}
