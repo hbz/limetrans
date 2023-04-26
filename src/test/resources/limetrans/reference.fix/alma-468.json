@@ -74077,3 +74077,1227 @@
   } ],
   "DEL" : "Y"
 }
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "ExtendedType" : [ "Zeitschrift" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "TypePeriodical" : [ "Zeitschrift", "fortlaufende Publikation", "monatlich", "Schriftenreihe" ],
+  "TypeHeading" : [ {
+    "term" : "Zeitschrift",
+    "identifier" : "(DE-588)4067488-5"
+  } ],
+  "TypeMediaSpecialPreservation" : [ "Archivierung/Langzeitarchivierung gewährleistet" ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierDNB" : [ {
+    "identifierDNB" : "2134354-8"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZ" : "HT013925093"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "961358085"
+  } ],
+  "collection" : "DE-605",
+  "AbbreviatedTitle" : [ {
+    "title" : "Gas- Wasserfach, Wasser - Abwasser"
+  }, {
+    "title" : "GWF, Gas- Wasserfach: Wasser/Abwasser"
+  }, {
+    "title" : "GWF, Wasser - Abwasser"
+  } ],
+  "VolumeDesignation" : {
+    "volumeDesignation" : "Wasser + Abwasser : die technisch-wissenschaftliche Zeitschrift für Wassergewinnung und Wasserversorgung"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Zeitschrift", "Schriftenreihe", "Teil eines Werkes" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2001" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Campus Haspel" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "subject" : [ "Wasserversorgung", "Zeitschrift", "Gasversorgung", "Abwasser", "Wasser" ]
+  },
+  "SubjectDNB" : [ {
+    "subject" : "624",
+    "subject" : "330"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "QR 600"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "990124729640206441",
+    "identifierMMSIZ" : "990008773670206447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990124729640206441",
+    "identifierForTheRecord" : "(DE-605)HT013925093"
+  },
+  "DateFirst" : {
+    "date" : "2001"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2134354-8"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "0016-3651",
+    "identifierISSNNormalized" : "00163651"
+  }, {
+    "identifierISSN" : "0016-3651",
+    "identifierISSNNormalized" : "00163651"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Gewässerschutz, Wasserreinigung und Abwassertechnik"
+  }, {
+    "titleMain" : "GWF"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Essen" ],
+    "name" : [ "Vulkan-Verlag" ],
+    "chronology" : [ "2001-" ],
+    "period" : "2001-"
+  }, {
+    "place" : [ "München" ],
+    "name" : [ "Oldenbourg-Industrieverl" ],
+    "period" : "2001-2012"
+  }, {
+    "place" : [ "München" ],
+    "name" : [ "DIV, Dt. Industrieverl" ],
+    "period" : "früher"
+  }, {
+    "place" : [ "Essen" ],
+    "name" : [ "DIV, Deutscher Industrieverlag" ],
+    "period" : "?-2018,9"
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Essen"
+  }, {
+    "printingPlace" : "München"
+  } ],
+  "DateProper" : {
+    "date" : [ "2001-" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "142.2001 -"
+  },
+  "DescriptionOfContent" : [ {
+    "description" : "Ungezählte Beil.: Extra; Special; ab 2009: GWF international, the leading specialist journal for water and wastewater"
+  } ],
+  "DescriptionOfIssuance" : [ {
+    "description" : "Ersch. monatl."
+  } ],
+  "HoldingsStatement" : [ {
+    "note" : "[N=157.2016,9; special 13.2008]"
+  } ],
+  "SupplementSpecialIssueEntry" : [ {
+    "mainEntryHeading" : "Bundesverband der Deutschen Gas- und Wasserwirtschaft",
+    "publisherStatement" : "München : Oldenbourg, 1975-",
+    "relationshipInformation" : "Beil.:",
+    "title" : "Jahresbericht / Auszug / Bundesverband der Deutschen Gas- und Wasserwirtschaft e.V., (BGW)",
+    "controlNumber" : "(DE-605)HT012167388",
+    "identifierForLinkingEntry" : "(DE-605)HT012167388"
+  }, {
+    "mainEntryHeading" : "Bundesvereinigung der Firmen im Gas- und Wasserfach",
+    "publisherStatement" : "München : Oldenburg, 1980-",
+    "relationshipInformation" : "Beil.:",
+    "title" : "Jahresbericht / Bundesvereinigung der Firmen im Gas- und Wasserfach e.V. Köln-Marienburg",
+    "controlNumber" : "(DE-605)HT007439469",
+    "identifierForLinkingEntry" : "(DE-605)HT007439469"
+  }, {
+    "mainEntryHeading" : "Haupttagung des Deutschen Gas- und Wasserfachs",
+    "publisherStatement" : "München : Oldenbourg, 1970-",
+    "relationshipInformation" : "Beil.:",
+    "title" : "Berichte / Haupttagung des Deutschen Gas- und Wasserfaches",
+    "controlNumber" : "(DE-605)HT006932450",
+    "identifierForLinkingEntry" : "(DE-605)HT006932450"
+  }, {
+    "publisherStatement" : "Essen : Vulkan-Verlag GmbH, 1970-",
+    "relationshipInformation" : "Beil.:",
+    "title" : "Recht und Steuern im Gas- und Wasserfach",
+    "controlNumber" : "(DE-605)HT006907223",
+    "identifierForLinkingEntry" : "(DE-605)HT006907223"
+  }, {
+    "publisherStatement" : "München : DIV, Dt. Industrie-Verl., 2011-2013",
+    "relationshipInformation" : "Ab 2011 Sonderausg.",
+    "title" : "Wasserstoff",
+    "controlNumber" : "(DE-605)HT017029028",
+    "identifierForLinkingEntry" : "(DE-605)HT017029028"
+  }, {
+    "publisherStatement" : "Essen : DIV Deutscher Industrieverlag, [2016-2019]",
+    "physicalDescription" : "Bände",
+    "relationshipInformation" : "Supplement",
+    "note" : [ "2016-2019" ],
+    "title" : "WaterSolutions",
+    "controlNumber" : "(DE-605)HT018984777",
+    "identifierISSN" : "2509-2731",
+    "identifierForLinkingEntry" : "(DE-605)HT018984777"
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "publisherStatement" : "München : Deutscher Industrieverl., 2001-[2015]",
+    "relationshipInformation" : "Jubiläumsausg. 2009 ersch. zus. mit",
+    "title" : "GWF / Gas, Erdgas. Gas, Erdgas",
+    "controlNumber" : "(DE-605)HT013925094",
+    "identifierISSN" : "0016-4909",
+    "identifierForLinkingEntry" : "(DE-605)HT013925094"
+  }, {
+    "publisherStatement" : "München : Oldenbourg, 1998-2007",
+    "physicalDescription" : "CD-ROMs",
+    "relationshipInformation" : "CD-ROM-Ausg.",
+    "title" : "Das Gas- und Wasserfach / Wasser, Abwasser. Wasser, Abwasser",
+    "controlNumber" : "(DE-605)HT010292350",
+    "identifierForLinkingEntry" : "(DE-605)HT010292350"
+  }, {
+    "publisherStatement" : "München : Deutscher Industrieverl., 2005-",
+    "physicalDescription" : "Online-Ressource",
+    "relationshipInformation" : "Online-Ausg.",
+    "title" : "GWF / Wasser, Abwasser. Wasser, Abwasser",
+    "controlNumber" : "(DE-605)HT015219263",
+    "identifierISSN" : "0016-4909",
+    "identifierForLinkingEntry" : "(DE-605)HT015219263"
+  } ],
+  "PrecedingEntry" : [ {
+    "publisherStatement" : "München : Oldenburg-Industrieverl., 1956-2000",
+    "relationshipInformation" : "Fortsetzung von",
+    "title" : "Das Gas- und Wasserfach / Wasser, Abwasser. Ausgabe Wasser, Abwasser",
+    "controlNumber" : "(DE-605)HT002192922",
+    "identifierISSN" : "0016-3651",
+    "identifierForLinkingEntry" : "(DE-605)HT002192922"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Wasserversorgung"
+  }, {
+    "subject" : "Zeitschrift"
+  }, {
+    "subject" : "Gasversorgung"
+  }, {
+    "subject" : "Abwasser"
+  }, {
+    "subject" : "Wasser"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-468",
+    "subject" : "82"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990124729640206441"
+  }, {
+    "uid" : "(DE-605)HT013925093"
+  }, {
+    "uid" : "(DE-468)990008773670206447"
+  } ],
+  "Item" : [ {
+    "callnumber" : "82G1"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-600",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-320",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1890",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1870",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1530",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-310",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-300",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-170",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-150",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-690",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-670",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1830",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1850",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-650",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-620",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1910",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1250",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-990",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1270",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1090",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1070",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-970",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-940",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1300",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-920",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1290",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1050",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1020",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1000",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-350",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1810",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1770",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-720",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-270",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1610",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-380",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-760",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2190",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-220",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2010",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2150",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-470",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-560",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-520",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1970",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-180",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-110",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1490",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1560",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-30",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1440",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2080",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2090",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2050",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-430",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-410",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1710",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-810",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-820",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1670",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-840",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-460",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2140",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2110",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-440",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-860",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-20",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-10",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1650",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1350",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1150",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1170",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1410",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1400",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-490",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1640",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1780",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-890",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-260",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-770",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-740",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2160",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2020",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-530",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2210",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2220",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1990",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1930",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1310",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1230",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1080",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-200",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-950",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-80",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1120",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1590",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1380",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-50",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1470",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1210",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-590",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-330",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1900",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1880",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-280",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-160",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-340",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-140",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-680",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1920",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-640",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1840",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1860",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-660",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-610",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-190",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-120",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-100",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-70",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1570",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1480",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1550",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1500",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1460",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1520",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1430",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-510",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-360",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1800",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-710",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1760",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-880",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1620",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1740",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-240",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-800",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-750",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1960",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2000",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-550",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1260",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1110",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1280",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-980",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-850",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-930",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1010",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1060",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1340",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1140",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1180",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2070",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1730",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2040",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2100",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-420",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-400",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-390",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1680",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1720",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1700",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2130",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2120",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-450",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1200",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1320",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-40",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1370",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-60",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1220",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1130",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1420",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1390",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1980",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1790",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-480",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-700",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1630",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1600",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2200",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-570",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-790",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1750",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-250",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-210",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-730",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-540",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2170",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-2030",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1950",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1540",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-870",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1660",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-130",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-900",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1030",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1510",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1160",
+    "shelfmark" : "80"
+  }, {
+    "identifier" : "DE-468",
+    "callnumber" : "82G1",
+    "callnumber" : "892317-1360",
+    "shelfmark" : "80"
+  } ],
+  "TitleOther" : {
+    "title" : [ "GWF / Wasser + Abwasser", "GWF international, the leading specialist journal for water and wastewater", "Das Gas- und Wasserfach / Ausgabe Wasser, Abwasser", "GWF international" ]
+  }
+}
