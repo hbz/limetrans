@@ -683,6 +683,9 @@ do list(path: "035  .a", "var": "$i")
     lookup("$i", "alma-zdb-to-hbz", delete: "true")
     if exists("$i")
       paste("IdentifierHBZ[].$last.identifierHBZFull", "~(DE-605)", "$i", join_char: "")
+      unless exists("@hbzid")
+        copy_field("IdentifierHBZ[].$last.identifierHBZFull", "@hbzid")
+      end
       copy_field("IdentifierHBZ[].$last.identifierHBZFull", "@hbzids")
       copy_field("$i", "IdentifierHBZ[].$last.identifierHBZ")
     end
