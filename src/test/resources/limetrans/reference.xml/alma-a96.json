@@ -25498,3 +25498,120 @@
     "subjectIdentifier" : [ "(OCoLC)fst01036493" ]
   } ]
 }
+{
+  "TypePeriodical" : "Zeitschrift",
+  "collection" : "DE-605",
+  "VolumeDesignation" : {
+    "volumeDesignation" : "[...]"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2001", "2012", "2018" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Bayernallee" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990124729640206441",
+    "identifierMMSIZ" : "991000332329706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990124729640206441",
+    "identifierForTheRecord" : "(DE-A96)200088"
+  },
+  "DateFirst" : {
+    "date" : "2001"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2134354-8"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "0016-3651"
+  }, {
+    "identifierISSN" : "0016-3651"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "GWF"
+  }, {
+    "titleMain" : "Wasser + Abwasser : die technisch-wissenschaftliche Zeitschrift für Wassergewinnung und Wasserversorgung, Gewässerschutz, Wasserreinigung und Abwassertechnik"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Essen" ],
+    "name" : [ "Vulkan-Verlag" ],
+    "chronology" : [ "2001-" ]
+  }, {
+    "place" : [ "München" ],
+    "name" : [ "Oldenbourg-Industrieverl" ],
+    "chronology" : [ "2001-2012" ]
+  }, {
+    "place" : [ "München" ],
+    "name" : [ "DIV, Dt. Industrieverl" ],
+    "chronology" : [ "früher" ]
+  }, {
+    "place" : [ "Essen" ],
+    "name" : [ "DIV, Deutscher Industrieverlag" ],
+    "chronology" : [ "?-2018,9" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2001-", "2001-2012", "früher", "?-2018,9" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "142.2001 -"
+  },
+  "HoldingsStatement" : [ {
+    "note" : "Sonderstandort"
+  } ],
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Jubiläumsausg. 2009 ersch. zus. mit",
+    "description" : "GWF / Gas, Erdgas. Gas, Erdgas"
+  }, {
+    "prefix" : "CD-ROM-Ausg.",
+    "description" : "<<Das>> Gas- und Wasserfach / Wasser, Abwasser. Wasser, Abwasser"
+  }, {
+    "prefix" : "Online-Ausg.",
+    "description" : "GWF / Wasser, Abwasser. Wasser, Abwasser"
+  } ],
+  "DescriptionOfFormerEditionsOrVolumes" : [ {
+    "prefix" : "Fortsetzung von",
+    "description" : "<<Das>> Gas- und Wasserfach / Wasser, Abwasser. Ausgabe Wasser, Abwasser"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Wasserversorgung"
+  }, {
+    "subject" : "Zeitschrift"
+  }, {
+    "subject" : "Gasversorgung"
+  }, {
+    "subject" : "Zeitschrift"
+  }, {
+    "subject" : "Abwasser"
+  }, {
+    "subject" : "Zeitschrift"
+  }, {
+    "subject" : "Wasser"
+  }, {
+    "subject" : "Zeitschrift"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990124729640206441"
+  }, {
+    "uid" : "(DE-A96)991000332329706444"
+  }, {
+    "uid" : "(DE-A96)200088"
+  } ],
+  "Item" : [ {
+    "callnumber" : "13 Z 102"
+  } ],
+  "TitleOther" : {
+    "title" : [ "GWF international, the leading specialist journal for water and wastewater", "<<Das>> Gas- und Wasserfach / Ausgabe Wasser, Abwasser", "GWF international" ]
+  }
+}
