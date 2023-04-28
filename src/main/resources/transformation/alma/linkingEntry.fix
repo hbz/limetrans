@@ -16,18 +16,8 @@ do list(path: "$[source][ 0]?", "var": "$i")
   copy_field("$i.x", "$[target][].$last.identifierISSN")
   copy_field("$i.z", "$[target][].$last.identifierISBN")
   do list(path: "$i.w", "var": "$j")
-    if any_match("$j", "\\($[catalogid]\\).*")
+    if any_match("$j", "\\((?:$[catalogid]|DE-600)\\).*")
       copy_field("$j", "$[target][].$last.identifierForLinkingEntry")
-    elsif any_match("$j", "\\(DE-600\\).*")
-      copy_field("$j", "$i.@zdbid")
-      replace_all("$i.@zdbid", "^\\(DE-600\\)", "")
-      lookup("$i.@zdbid", "alma-zdb-to-hbz", delete: "true")
-      if exists("$i.@zdbid")
-        paste("$[target][].$last.identifierForLinkingEntry", "~($[catalogid])", "$i.@zdbid", join_char: "")
-        remove_field("$i.@zdbid")
-      else
-        copy_field("$j", "$[target][].$last.identifierForLinkingEntry")
-      end
     end
   end
 end
