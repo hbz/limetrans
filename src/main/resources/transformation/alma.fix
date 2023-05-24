@@ -1158,7 +1158,7 @@ end
 uniq("PublicationPlace[]")
 
 # MARC/263
-set_array("DescriptionOfEstimatedPublicationDate")
+set_array("DescriptionOfEstimatedPublicationDate[]")
 do list(path: "263??", "var": "$i")
   add_field("DescriptionOfEstimatedPublicationDate[].$append.__dummy__", "")
   copy_field("$i.a", "DescriptionOfEstimatedPublicationDate[].$last.description")
