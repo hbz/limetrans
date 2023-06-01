@@ -666,6 +666,10 @@ do list(path: "035  .a", "var": "$i")
       copy_field("@sysid", "bib.identifierAuthority=mab")
     end
   elsif any_match("$i", "\\($[isil]\\).*")
+    if any_match("@sysid", ".*-49hbz_.*")
+      remove_field("@sysid")
+    end
+
     unless exists("@sysid")
       copy_field("$i", "@sysid")
     end
