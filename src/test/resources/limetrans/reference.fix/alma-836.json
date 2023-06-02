@@ -390,3 +390,98 @@
     "subjectIdentifier" : [ "(OCoLC)fst01036493" ]
   } ]
 }
+{
+  "ContentType" : [ "Text" ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "02262727"
+  } ],
+  "bib" : {
+    "identifierAuthority=mab" : "(DE-836)2262727-49hbz_fhm"
+  },
+  "collection" : "DE-836",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "1954", "1960" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ],
+    "subject" : [ "Electronics", "Periodicals", "Radio", "Électronique", "Périodiques", "electronic engineering" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHM",
+    "identifierMMS" : "991000000629706485",
+    "identifierMMSIZ" : "991000000629706485"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-836)991000000629706485",
+    "identifierForTheRecord" : "(DE-836)2262727-49hbz_fhm"
+  },
+  "DateFirst" : {
+    "date" : "1954"
+  },
+  "DateLast" : {
+    "date" : "1960"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "0096-1639",
+    "identifierISSNNormalized" : "00961639"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Institute of Radio Engineers",
+    "corporateBodyNameUnit" : [ "Professional Group on Aerospace and Navigational Electronics" ]
+  }, {
+    "corporateBodyName" : "Institute of Radio Engineers",
+    "corporateBodyNameUnit" : [ "Professional Group on Aerospace and Navigational Electronics" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "IRE transactions on aeronautical and navigational electronics"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "[New York]" ],
+    "name" : [ "[Institute of Radio Engineers]" ]
+  } ],
+  "Extent" : {
+    "extent" : "illustrations ; 28 cm"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "v. ANE-1-7; Mar. 1954-Dec. 1960."
+  },
+  "PrecedingEntry" : [ {
+    "mainEntryHeading" : "Institute of Radio Engineers. Professional Group on Airborne Electronics.",
+    "title" : "Transactions. PGAE"
+  } ],
+  "SucceedingEntry" : [ {
+    "mainEntryHeading" : "IRE transactions on aerospace and navigational electronics"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)991000000629706485"
+  }, {
+    "uid" : "(DE-836)2262727-49hbz_fhm"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Electronics"
+  }, {
+    "subjectTopicName" : "Radio",
+    "subjectGenre" : "Periodicals"
+  }, {
+    "subjectTopicName" : "Électronique"
+  }, {
+    "subjectTopicName" : "Radio",
+    "subjectGenre" : "Périodiques"
+  }, {
+    "subjectTopicName" : "electronic engineering"
+  }, {
+    "subjectTopicName" : "Electronics",
+    "subjectIdentifier" : [ "(OCoLC)fst00907538" ]
+  }, {
+    "subjectTopicName" : "Radio",
+    "subjectIdentifier" : [ "(OCoLC)fst01087053" ]
+  } ]
+}
