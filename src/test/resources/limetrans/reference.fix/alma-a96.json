@@ -33114,9 +33114,7 @@
   },
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ {
-      "$append" : "Teil eines Werkes"
-    } ],
+    "type" : [ "Teil eines Werkes" ],
     "language" : [ "keine Angabe" ],
     "date" : [ "2022" ]
   },

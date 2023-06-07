@@ -751,6 +751,9 @@ end
 
 do list(path: "245??.n", "var": "$i")
   unless exists("VolumeDesignation.volumeDesignation")
+    unless exists("@facet_type")
+      set_array("@facet_type")
+    end
     add_field("@facet_type.$append", "Teil eines Werkes")
     replace_all("$i", "\\s?[,./:=]?\\s?$", "")
     copy_field("$i", "VolumeDesignation.volumeDesignation")
@@ -762,6 +765,9 @@ set_array("RecordIdentifierSuper[]")
 set_array("SortableVolumeDesignation[]")
 do list(path: "7730?", "var": "$i")
   if exists("$i.q")
+    unless exists("@facet_type")
+      set_array("@facet_type")
+    end
     add_field("@facet_type.$append", "Teil eines Werkes")
     add_field("SortableVolumeDesignation[].$append.__dummy__", "")
     copy_field("$i.q", "SortableVolumeDesignation[].$last.volumeDesignation")
