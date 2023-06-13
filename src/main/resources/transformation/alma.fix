@@ -24,25 +24,40 @@ call_macro("substring", source: "leader", target: "@LeaderPos07", start: "7")
 call_macro("substring", source: "leader", target: "@LeaderPos19", start: "19")
 call_macro("substring", source: "008", target: "@008Pos06", start: "6")
 # MARC/006
+set_array("@006Pos00")
+set_array("@006Pos04")
+set_array("@006Pos06")
+set_array("@006Pos07")
+set_array("@006Pos08")
+set_array("@006Pos09")
+set_array("@006Pos10")
+set_array("@006Pos11")
+set_array("@006Pos12")
+set_array("@006Pos13")
+set_array("@006Pos14")
+set_array("@006Pos16")
+set_array("@006Pos17")
 do list(path: "006", "var": "$i")
-  call_macro("copy-substring", source: "$i", target: "@006Pos00", start: "0")
-  call_macro("copy-substring", source: "$i", target: "@006Pos04", start: "4", length: "2")
-  call_macro("copy-substring", source: "$i", target: "@006Pos06", start: "6")
-  call_macro("copy-substring", source: "$i", target: "@006Pos07", start: "7")
-  call_macro("copy-substring", source: "$i", target: "@006Pos08", start: "8")
-  call_macro("copy-substring", source: "$i", target: "@006Pos09", start: "9")
-  call_macro("copy-substring", source: "$i", target: "@006Pos10", start: "10")
-  call_macro("copy-substring", source: "$i", target: "@006Pos11", start: "11")
-  call_macro("copy-substring", source: "$i", target: "@006Pos12", start: "12")
-  call_macro("copy-substring", source: "$i", target: "@006Pos13", start: "13")
-  call_macro("copy-substring", source: "$i", target: "@006Pos14", start: "14")
-  call_macro("copy-substring", source: "$i", target: "@006Pos16", start: "16")
-  call_macro("copy-substring", source: "$i", target: "@006Pos17", start: "17")
+  call_macro("copy-substring", source: "$i", target: "@006Pos00.$append", start: "0")
+  call_macro("copy-substring", source: "$i", target: "@006Pos04.$append", start: "4", length: "2")
+  call_macro("copy-substring", source: "$i", target: "@006Pos06.$append", start: "6")
+  call_macro("copy-substring", source: "$i", target: "@006Pos07.$append", start: "7")
+  call_macro("copy-substring", source: "$i", target: "@006Pos08.$append", start: "8")
+  call_macro("copy-substring", source: "$i", target: "@006Pos09.$append", start: "9")
+  call_macro("copy-substring", source: "$i", target: "@006Pos10.$append", start: "10")
+  call_macro("copy-substring", source: "$i", target: "@006Pos11.$append", start: "11")
+  call_macro("copy-substring", source: "$i", target: "@006Pos12.$append", start: "12")
+  call_macro("copy-substring", source: "$i", target: "@006Pos13.$append", start: "13")
+  call_macro("copy-substring", source: "$i", target: "@006Pos14.$append", start: "14")
+  call_macro("copy-substring", source: "$i", target: "@006Pos16.$append", start: "16")
+  call_macro("copy-substring", source: "$i", target: "@006Pos17.$append", start: "17")
 end
 # MARC/007
+set_array("@007Pos00")
+set_array("@007Pos01")
 do list(path: "007", "var": "$i")
-  call_macro("copy-substring", source: "$i", target: "@007Pos00", start: "0")
-  call_macro("copy-substring", source: "$i", target: "@007Pos01", start: "1")
+  call_macro("copy-substring", source: "$i", target: "@007Pos00.$append", start: "0")
+  call_macro("copy-substring", source: "$i", target: "@007Pos01.$append", start: "1")
 end
 # MARC/008
 call_macro("substring", source: "008", target: "@008Pos07", start: "7", length: "4")
@@ -69,6 +84,8 @@ if any_equal("@LeaderPos06", "a")
     set_field("@type", "CR")
   end
 end
+
+vacuum()
 
 paste("@006Pos00__006Pos04", "@006Pos00", "@006Pos04", join_char: "#")
 paste("@006Pos00__006Pos06", "@006Pos00", "@006Pos06", join_char: "#")
@@ -263,7 +280,7 @@ set_array("ContentType[]")
 do list(path: "336??.b", "var": "$i")
   do list(path: "$i", "var": "$j")
     lookup("$j", "content-type-code", delete: "true")
-    copy_field("$j", "ContentType[]")
+    copy_field("$j", "ContentType[].$append")
   end
 end
 uniq("ContentType[]")
@@ -273,10 +290,10 @@ set_array("CarrierType[]")
 do list(path: "338??.b", "var": "$i")
   copy_field("$i", "@carriertype_code")
   lookup("@carriertype_code", "carrier-type-code", delete: "true")
-  move_field("@carriertype_code", "CarrierType[]")
+  move_field("@carriertype_code", "CarrierType[].$append")
   copy_field("$i", "@carriertype_facetcode")
   lookup("@carriertype_facetcode", "carrier-type-facet-code", delete: "true")
-  move_field("@carriertype_facetcode", "@facet_format")
+  move_field("@carriertype_facetcode", "@facet_format.$append")
 end
 uniq("CarrierType[]")
 
@@ -328,9 +345,9 @@ set_array("introx.music[]")
 do list(path: "348??", "var": "$i")
   if any_equal("$i.2", "gnd-music")
     do list(path: "$i.a", "var": "$j")
-      copy_field("$j", "ExtendedType[]")
+      copy_field("$j", "ExtendedType[].$append")
       lookup("$j", "extended-type-music", delete: "true")
-      copy_field("$j", "introx.music[]")
+      copy_field("$j", "introx.music[].$append")
     end
   end
 end
@@ -347,15 +364,15 @@ do list(path: "655?7", "var": "$i")
     copy_field("$i.0", "TypeHeading[].$last.identifier")
     copy_field("$i.3", "TypeHeading[].$last.materials")
     do list(path: "$i.a", "var": "$j")
-      copy_field("$j", "ExtendedType[]")
+      copy_field("$j", "ExtendedType[].$append")
       lookup("$j", "extended-type-content", delete: "true")
-      copy_field("$j", "@facet_type")
+      copy_field("$j", "@facet_type.$append")
     end
   elsif any_equal("$i.2", "gnd-carrier")
     do list(path: "$i.a", "var": "$j")
-      copy_field("$j", "ExtendedFormat[]")
+      copy_field("$j", "ExtendedFormat[].$append")
       lookup("$j", "extended-type-carrier", delete: "true")
-      copy_field("$j", "@facet_format")
+      copy_field("$j", "@facet_format.$append")
     end
   end
 end
@@ -410,8 +427,8 @@ set_array("TypeMediaSpecialPreservation[]")
 do list(path: "340??", "var": "$i")
   do list(path: "$i.a", "var": "$j")
     lookup("$j", "type-media-special", delete: "true")
-    copy_field("$j", "TypeMediaSpecial[]")
-    copy_field("$j", "@facet_format")
+    copy_field("$j", "TypeMediaSpecial[].$append")
+    copy_field("$j", "@facet_format.$append")
   end
   if any_match("$i.a", ".*(?:Audio|CD|Compact-Disc|Compact-Disk|Kompaktkassette|Magnetbandkassette|Schallpl\\.|Schallplatte|Tonkassette).*")
     add_field("TypeMediaSpecial[].$append", "Audio")
@@ -444,7 +461,7 @@ do list(path: "340??", "var": "$i")
 end
 # MARC/538, MARC/583
 do list(path: "538??|5831?", "var": "$i")
-  copy_field("$i.a", "TypeMediaSpecialPreservation[]")
+  copy_field("$i.a", "TypeMediaSpecialPreservation[].$append")
 end
 uniq("ExtendedFormat[]")
 uniq("ExtendedType[]")
@@ -592,13 +609,14 @@ if any_equal("@facet_type", "Datenbank")
 end
 
 # MARC/008, MARC/041
-call_macro("substring", source: "008", target: "@language_source", start: "35", length: "3")
+set_array("@language_source")
+call_macro("substring", source: "008", target: "@language_source.$append", start: "35", length: "3")
 do list(path: "041[ 01] .[adj]", "var": "$i")
-  copy_field("$i", "@language_source")
+  copy_field("$i", "@language_source.$append")
 end
 uniq("@language_source")
 set_array("@language_long")
-copy_field("@language_source", "@language_long")
+copy_field("@language_source", "@language_long.$append")
 lookup("@language_long.*", "ISO639-2-to-GND", delete: "true")
 
 # MARC/044
@@ -612,7 +630,8 @@ do list(path: "044??.c", "var": "$i")
 end
 
 # MARC/008
-copy_field("@008Pos07", "@date")
+set_array("@date")
+copy_field("@008Pos07", "@date.$append")
 if any_equal("@type", "CR")
   if none_equal("@008Pos06", "n")
     copy_field("@008Pos07", "@date1")
@@ -650,13 +669,14 @@ set_array("IdentifierDNB[]")
 set_array("IdentifierGBV[]")
 set_array("IdentifierHBZ[]")
 set_array("IdentifierOCLC[]")
+set_array("@hbzids")
 do list(path: "035  .a", "var": "$i")
   if any_match("$i", "\\($[catalogid]\\).*")
     if exists("@hbzid")
       remove_field("@hbzid")
     end
     copy_field("$i", "@hbzid")
-    copy_field("$i", "@hbzids")
+    copy_field("$i", "@hbzids.$append")
   elsif any_match("$i", "\\(DE-836\\).*")
     unless exists("@sysid")
       copy_field("$i", "@sysid")
@@ -688,7 +708,7 @@ do list(path: "035  .a", "var": "$i")
     lookup("$i", "alma-zdb-to-hbz", delete: "true")
     if exists("$i")
       paste("IdentifierHBZ[].$last.identifierHBZFull", "~(DE-605)", "$i", join_char: "")
-      copy_field("IdentifierHBZ[].$last.identifierHBZFull", "@hbzids")
+      copy_field("IdentifierHBZ[].$last.identifierHBZFull", "@hbzids.$append")
       copy_field("$i", "IdentifierHBZ[].$last.identifierHBZ")
     end
   elsif any_match("$i", "\\(DE-601\\).*")
@@ -698,7 +718,7 @@ do list(path: "035  .a", "var": "$i")
   elsif any_match("$i", "\\(DE-605\\).*")
     add_field("IdentifierHBZ[].$append.__dummy__", "")
     copy_field("$i", "IdentifierHBZ[].$last.identifierHBZFull")
-    copy_field("$i", "@hbzids")
+    copy_field("$i", "@hbzids.$append")
     replace_all("$i", "^\\(DE-605\\)", "")
     copy_field("$i", "IdentifierHBZ[].$last.identifierHBZ")
   elsif any_match("$i", "\\(OCoLC\\).*")
@@ -775,7 +795,7 @@ do list(path: "7730?", "var": "$i")
   add_field("RecordIdentifierSuper[].$append.__dummy__", "")
   copy_field("$i.w", "RecordIdentifierSuper[].$last.recordIdentifierSuper")
 end
-copy_field("7731?.w", "@host_callnumber")
+copy_field("7731?.w", "@host_callnumber.$append")
 lookup("@host_callnumber.*", "alma-alias")
 lookup("@host_callnumber.*", "alma-item-callnumber", delete: "true")
 
@@ -783,13 +803,13 @@ lookup("@host_callnumber.*", "alma-item-callnumber", delete: "true")
 set_array("CreatorStatement.creatorStatement[]")
 do list(path: "245[01]?.c", "var": "$i")
   replace_all("$i", "[.]$", "")
-  copy_field("$i", "CreatorStatement.creatorStatement[]")
+  copy_field("$i", "CreatorStatement.creatorStatement[].$append")
 end
 
 if exists("@facet_format")
   uniq("@facet_format")
   set_array("dc.format[]")
-  copy_field("@facet_format", "dc.format[]")
+  copy_field("@facet_format", "dc.format[].$append")
   if any_equal("@facet_format", "Online-Ressource")
     if none_equal("@facet_format", "Elektronische Ressource")
       add_field("dc.format[].$append", "Elektronische Ressource")
@@ -810,43 +830,50 @@ else
   add_field("dc.language[]", "keine Angabe")
 end
 # MARC/260, MARC/264
-copy_field("260[ 23] .c", "@date")
-do list(path: "264[ 23]1.c", "var": "$i")
-  copy_field("$i", "@date")
+unless exists("@date")
+  set_array("@date")
 end
-copy_field("@date[12]", "@date")
+copy_field("260[ 23] .c", "@date.$append")
+do list(path: "264[ 23]1.c", "var": "$i")
+  copy_field("$i", "@date.$append")
+end
+copy_field("@date[12]", "@date.$append")
 split_field("@date", "[,-]")
 flatten("@date")
+set_array("dc.date[]")
 do list(path: "@date", "var": "$i")
   replace_all("$i", ".*?(\\d{4}).*", "$1")
   if any_match("$i", "\\d{4}")
     unless any_equal("$i", "9999")
-      copy_field("$i", "dc.date[]")
+      copy_field("$i", "dc.date[].$append")
     end
   end
 end
 uniq("dc.date[]")
 
+set_array("introx.access[]")
+set_array("introx.branch[]")
+set_array("introx.carrier[]")
 if any_equal("@facet_format", "Online-Ressource")
-  add_field("introx.access[]", "online")
+  add_field("introx.access[].$append", "online")
 else
-  add_field("introx.access[]", "local")
+  add_field("introx.access[].$append", "local")
 end
 # MARC/ITM
 set_array("@current_library")
 do list(path: "ITM  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
-    copy_field("$i.w", "@current_library")
+    copy_field("$i.w", "@current_library.$append")
   end
 end
 lookup("@current_library.*", "alma-library-to-branch-$[isil]", delete: "true")
 uniq("@current_library")
-move_field("@current_library", "introx.branch[]")
+move_field("@current_library", "introx.branch[].$append")
 # MARC/ITM
 set_array("@current_location")
 do list(path: "ITM  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
-    copy_field("$i.x", "@current_location")
+    copy_field("$i.x", "@current_location.$append")
     if all_match("$i.x", "^$[regexp.suppressedLocation]$")
       add_field("@suppressed", "true")
     else
@@ -866,11 +893,11 @@ do list(path: "H52??", "var": "$i")
 end
 lookup("@current_location.*", "alma-location-to-branch-$[isil]", delete: "true")
 uniq("@current_location")
-move_field("@current_location", "introx.branch[]")
+move_field("@current_location", "introx.branch[].$append")
 if exists("@facet_format")
   do list(path: "@facet_format", "var": "$i")
     unless any_equal("$i", "Online-Ressource")
-      copy_field("$i", "introx.carrier[]")
+      copy_field("$i", "introx.carrier[].$append")
     end
   end
 else
@@ -880,7 +907,7 @@ end
 set_array("@SubjectGHBLocal")
 do list(path: "983  ", "var": "$i")
   if hbz.limetrans.function.MemberLocal("$i")
-    copy_field("$i.[ab]", "@SubjectGHBLocal")
+    copy_field("$i.[ab]", "@SubjectGHBLocal.$append")
   end
 end
 # MARC/084
@@ -892,7 +919,7 @@ set_array("introx.taxonomy[]")
 add_field("@current_isil", "$[isil]")
 do list(path: "084  ", "var": "$i")
   if any_equal("$i.2", "ghbs")
-    copy_field("$i.a", "@SubjectGHBLocal")
+    copy_field("$i.a", "@SubjectGHBLocal.$append")
   elsif any_equal("$i.2", "nwbib")
     add_field("SubjectNWBIB[].$append.__dummy__", "")
     copy_field("$i.a", "SubjectNWBIB[].$last.subject")
@@ -901,7 +928,7 @@ do list(path: "084  ", "var": "$i")
     if any_equal("@current_isil", "DE-107")
       copy_field("$i.a", "@subjectRPB")
       lookup("@subjectRPB", "alma-rpb-to-taxonomy", delete: "true")
-      move_field("@subjectRPB", "introx.taxonomy[]")
+      move_field("@subjectRPB", "introx.taxonomy[].$append")
       lookup("$i.a", "alma-rpb-to-taxonomy")
       copy_field("$i.a", "SubjectRPB[].$last.subject")
     else
@@ -918,7 +945,7 @@ end
 do list(path: "@SubjectGHBLocal", "var": "$i")
   call_macro("substring", source: "$i", target: "@taxonomy", start: "0", length: "3")
   lookup("@taxonomy", "alma-notation-to-taxonomy", delete: "true")
-  move_field("@taxonomy", "introx.taxonomy[]")
+  move_field("@taxonomy", "introx.taxonomy[].$append")
 end
 uniq("introx.taxonomy[]")
 
@@ -931,28 +958,30 @@ copy_field("@mmsid", "RecordIdentifier.identifierForTheIndex")
 copy_field("@id", "RecordIdentifier.identifierForTheRecord")
 
 # MARC/POC
+set_array("DateFirst.date")
 do list(path: "POC  ", "var": "$i")
   if any_match("$i.a", ".*$[institution-code]")
-    copy_field("$i.b", "DateFirst.date")
+    copy_field("$i.b", "DateFirst.date.$append")
   end
 end
 uniq("DateFirst.date")
 if any_match("@date1", "\\d+")
   if none_equal("@date1", "9999")
-    copy_field("@date1", "DateFirst.date")
+    copy_field("@date1", "DateFirst.date.$append")
   end
 end
 
 # MARC/POC
+set_array("DateLast.date")
 do list(path: "POC  ", "var": "$i")
   if any_match("$i.a", ".*$[institution-code]")
-    copy_field("$i.c", "DateLast.date")
+    copy_field("$i.c", "DateLast.date.$append")
   end
 end
 uniq("DateLast.date")
 if any_match("@date2", "\\d+")
   if none_equal("@date2", "9999")
-    copy_field("@date2", "DateLast.date")
+    copy_field("@date2", "DateLast.date.$append")
   end
 end
 
@@ -981,11 +1010,12 @@ set_array("IdentifierISBN[]")
 do list(path: "020  ", "var": "$i")
   if exists("$i.a")
     add_field("IdentifierISBN[].$append.__dummy__", "")
-    copy_field("$i.a", "IdentifierISBN[].$last.identifierISBN[]")
-    copy_field("$i.c", "IdentifierISBN[].$last.identifierISBN[]")
+    set_array("IdentifierISBN[].$last.identifierISBN[]")
+    copy_field("$i.a", "IdentifierISBN[].$last.identifierISBN[].$append")
+    copy_field("$i.c", "IdentifierISBN[].$last.identifierISBN[].$append")
     do list(path: "$i.q", "var": "$j")
       replace_all("$j", "^\\(|\\s?[):;,]\\s?$", "")
-      copy_field("$j", "IdentifierISBN[].$last.identifierISBN[]")
+      copy_field("$j", "IdentifierISBN[].$last.identifierISBN[].$append")
     end
   end
 end
@@ -1055,9 +1085,10 @@ do list(path: "[17]1[01][012] ", "var": "$i")
     call_macro("remove-nonsort", source: "$j")
     copy_field("$j", "CorporateBody[].$last.corporateBodyName")
   end
+  set_array("CorporateBody[].$last.corporateBodyNameUnit[]")
   do list(path: "$i.b", "var": "$j")
     replace_all("$j", "[.]$", "")
-    copy_field("$j", "CorporateBody[].$last.corporateBodyNameUnit[]")
+    copy_field("$j", "CorporateBody[].$last.corporateBodyNameUnit[].$append")
   end
   copy_field("$i.d", "CorporateBody[].$last.corporateBodyDate[]")
   copy_field("$i.g", "CorporateBody[].$last.corporateBodyOther[]")
@@ -1066,9 +1097,9 @@ do list(path: "[17]1[01][012] ", "var": "$i")
   set_array("CorporateBody[].$last.identifierGND[]")
   do list(path: "$i.0", "var": "$j")
     if any_match("$j", "\\(DE-588\\).*")
-      copy_field("$j", "CorporateBody[].$last.corporateBodyIdentifier[]")
+      copy_field("$j", "CorporateBody[].$last.corporateBodyIdentifier[].$append")
       replace_all("$j", "^\\(DE-588\\)", "")
-      copy_field("$j", "CorporateBody[].$last.identifierGND[]")
+      copy_field("$j", "CorporateBody[].$last.identifierGND[].$append")
     end
   end
 end
@@ -1098,14 +1129,15 @@ set_array("Conference.conferenceIdentifier[]")
 set_array("Conference.identifierGND[]")
 do list(path: "111[012] .0", "var": "$i")
   if any_match("$i", "\\(DE-588\\).*")
-    copy_field("$i", "Conference.conferenceIdentifier[]")
+    copy_field("$i", "Conference.conferenceIdentifier[].$append")
     replace_all("$i", "^\\(DE-588\\)", "")
-    copy_field("$i", "Conference.identifierGND[]")
+    copy_field("$i", "Conference.identifierGND[].$append")
   end
 end
+set_array("Conference.conferenceUnit")
 do list(path: "111[012] .e", "var": "$i")
   replace_all("$i", "[,.]$", "")
-  copy_field("$i", "Conference.conferenceUnit")
+  copy_field("$i", "Conference.conferenceUnit.$append")
 end
 join_field("Conference.conferenceUnit", ". ")
 
@@ -1135,7 +1167,7 @@ end
 set_array("Edition.edition[]")
 do list(path: "250  .a", "var": "$i")
   replace_all("$i", "\\s?[=/]$", "")
-  copy_field("$i", "Edition.edition[]")
+  copy_field("$i", "Edition.edition[].$append")
 end
 
 # MARC/260, MARC/264
@@ -1143,28 +1175,35 @@ set_array("PublisherName[]")
 set_array("PublicationPlace[]")
 do list(path: "260[ 23] |264[ 23][ 1]", "var": "$i")
   add_field("PublisherName[].$append.__dummy__", "")
+  set_array("PublisherName[].$last.place[]")
   do list(path: "$i.a", "var": "$j")
     replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
-    copy_field("$j", "PublisherName[].$last.place[]")
+    copy_field("$j", "PublisherName[].$last.place[].$append")
   end
+  set_array("PublisherName[].$last.name[]")
   do list(path: "$i.b", "var": "$j")
     replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
     call_macro("remove-nonsort", source: "$j")
-    copy_field("$j", "PublisherName[].$last.name[]")
+    copy_field("$j", "PublisherName[].$last.name[].$append")
   end
+  set_array("PublisherName[].$last.chronology[]")
   do list(path: "$i.c", "var": "$j")
     replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
-    copy_field("$j", "PublisherName[].$last.chronology[]")
-    copy_field("$j", "DateProper.date[]")
+    copy_field("$j", "PublisherName[].$last.chronology[].$append")
+    unless exists("DateProper.date[]")
+      set_array("DateProper.date[]")
+    end
+    copy_field("$j", "DateProper.date[].$append")
   end
   copy_field("$i.3", "PublisherName[].$last.period")
 end
 # MARC/264
 do list(path: "264?[13]", "var": "$i")
   add_field("PublicationPlace[].$append.__dummy__", "")
+  set_array("PublicationPlace[].$last.printingPlace")
   do list(path: "$i.a", "var": "$j")
     replace_all("$j", " :$", "")
-    copy_field("$j", "PublicationPlace[].$last.printingPlace")
+    copy_field("$j", "PublicationPlace[].$last.printingPlace.$append")
   end
 end
 uniq("PublicationPlace[]")
@@ -1178,7 +1217,7 @@ end
 
 # MARC/300
 set_array("@300a")
-copy_field("300  .a", "@300a")
+copy_field("300  .a", "@300a.$append")
 if exists("@300a.1")
   copy_field("@300a.1", "@300a1")
   replace_all("@300a1", "\\s?[:;+(]?$", "")
@@ -1192,7 +1231,7 @@ do list(path: "300  .b", "var": "$i")
   copy_field("$i", "@300b")
 end
 set_array("@300c")
-copy_field("300  .c", "@300c")
+copy_field("300  .c", "@300c.$append")
 if exists("@300c.1")
   copy_field("@300c.1", "@300c1")
   replace_all("@300c1", "[.]?\\s?[:;+(]?$", "")
@@ -1270,16 +1309,18 @@ set_array("TitleSuper[]")
 set_array("TitleSuperVolumeDesignation[]")
 do list(path: "490[01] ", "var": "$i")
   add_field("TitleSuper[].$append.__dummy__", "")
+  set_array("TitleSuper[].$last.titleSuper[]")
   do list(path: "$i.a", "var": "$j")
     copy_field("$j", "@490_a")
     replace_all("@490_a", "^[©]|\\s?[,.:;/=]?$", "")
     call_macro("remove-nonsort", source: "@490_a")
-    move_field("@490_a", "TitleSuper[].$last.titleSuper[]")
+    move_field("@490_a", "TitleSuper[].$last.titleSuper[].$append")
   end
   add_field("TitleSuperVolumeDesignation[].$append.__dummy__", "")
+  set_array("TitleSuperVolumeDesignation[].$last.volumeDesignation[]")
   do list(path: "$i.v", "var": "$j")
     replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
-    copy_field("$j", "TitleSuperVolumeDesignation[].$last.volumeDesignation[]")
+    copy_field("$j", "TitleSuperVolumeDesignation[].$last.volumeDesignation[].$append")
   end
   unless exists("830??")
     unless exists("SeriesAddedEntryUniformTitle[]")
@@ -1296,17 +1337,18 @@ end
 set_array("@description")
 do list(path: "989  ", "var": "$i")
   if hbz.limetrans.function.MemberLocal("$i")
-    copy_field("$i.a", "@description")
+    copy_field("$i.a", "@description.$append")
   end
 end
 filter("@description", "^$[regexp.description]$")
 # MARC/500
-copy_field("500  .a", "Description.description[]")
-move_field("@description", "Description.description[]")
+set_array("Description.description[]")
+copy_field("500  .a", "Description.description[].$append")
+move_field("@description", "Description.description[].$append")
 # MARC/H52
 do list(path: "H52??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
-    copy_field("$i.z", "Description.description[]")
+    copy_field("$i.z", "Description.description[].$append")
   end
 end
 uniq("Description.description[]")
@@ -1432,10 +1474,11 @@ do list(path: "856??", "var": "$i")
     call_macro("copy-first-item", source: "$i.z", target: "OnlineAccess[].$last.publicnote")
     copy_field("$i.3", "OnlineAccess[].$last.relatedto")
     copy_field("$i.m", "@contact")
+    set_array("OnlineAccess[].$last.contact")
     do list(path: "@contact", "var": "$j")
       split_field("$j", ";")
       do list(path: "$j", "var": "$k")
-        copy_field("$k", "OnlineAccess[].$last.contact")
+        copy_field("$k", "OnlineAccess[].$last.contact.$append")
       end
     end
     remove_field("@contact")
@@ -1447,18 +1490,18 @@ set_array("IdentifierAlma.identifierPID")
 do list(path: "POR  ", "var": "$i")
   if any_equal("$i.[MA]", "$[member]")
     if none_equal("$i.b", "Not Available")
-      copy_field("$i.a", "IdentifierAlma.identifierPID")
+      copy_field("$i.a", "IdentifierAlma.identifierPID.$append")
       add_field("OnlineAccess[].$append.__dummy__", "")
       copy_field("$i.D", "@uri")
       replace_all("@uri", "$[network]", "$[member]")
       copy_field("$i.q", "@publicnote")
       call_macro("remove-nonsort", source: "@publicnote")
       set_array("@info")
-      copy_field("$i.n", "@info")
+      copy_field("$i.n", "@info.$append")
       copy_field("$i.q", "@collection")
       lookup("@collection", "alma-collection-to-info-$[isil]", delete: "true")
       if exists("@collection")
-        move_field("@collection", "@info")
+        move_field("@collection", "@info.$append")
       else
         if exists("$i.s")
           copy_field("$i.s", "@license")
@@ -1467,7 +1510,7 @@ do list(path: "POR  ", "var": "$i")
           add_field("@license", "__missing")
           lookup("@license", "alma-license-to-info-$[isil]", delete: "true")
         end
-        move_field("@license", "@info")
+        move_field("@license", "@info.$append")
       end
       unless is_empty("@info")
         join_field("@info", "; ")
@@ -1499,16 +1542,16 @@ end
 set_array("@subjectHeadings")
 do list(path: "982  ", "var": "$i")
   if hbz.limetrans.function.MemberLocal("$i")
-    copy_field("$i.b", "@subjectHeadings")
+    copy_field("$i.b", "@subjectHeadings.$append")
     copy_field("$i.a", "@subjectTopicName")
     split_field("@subjectTopicName", ";|\\*")
     flatten("@subjectTopicName")
-    move_field("@subjectTopicName", "@subjectHeadings")
+    move_field("@subjectTopicName", "@subjectHeadings.$append")
   end
 end
 # MARC/688, MARC/689
 do list(path: "68[89]??", "var": "$i")
-  copy_field("$i.a", "@subjectHeadings")
+  copy_field("$i.a", "@subjectHeadings.$append")
 end
 uniq("@subjectHeadings")
 set_array("SubjectHeadings[]")
@@ -1517,7 +1560,7 @@ do list(path: "@subjectHeadings", "var": "$i")
   add_field("SubjectHeadings[].$append.__dummy__", "")
   call_macro("remove-nonsort", source: "$i")
   copy_field("$i", "SubjectHeadings[].$last.subject")
-  copy_field("$i", "introx.subject[]")
+  copy_field("$i", "introx.subject[].$append")
 end
 
 set_array("SubjectGHBLocal[]")
@@ -1529,7 +1572,9 @@ end
 
 set_array("xbib[]")
 copy_field("@mmsid", "xbib[].$append.uid")
-copy_field("@hbzids", "xbib[].$append.uid")
+do list(path: "@hbzids", "var": "$i")
+  copy_field("$i", "xbib[].$append.uid")
+end
 if exists("@mmsiz")
   paste("xbib[].$append.uid", "~(", "@isiliz", "~)", "@mmsiz", join_char: "")
 end
@@ -1550,10 +1595,13 @@ unless exists("TypeMedia")
   end
 end
 
+unless exists("TypePeriodical[]")
+  set_array("TypePeriodical[]")
+end
 do list(path: "@facet_type", "var": "$i")
   replace_all("$i", ".*?(Schriftenreihe|(?i)zeitschrift).*", "$1")
   if any_match("$i", "Schriftenreihe|(?i)zeitschrift")
-    copy_field("$i", "TypePeriodical[]")
+    copy_field("$i", "TypePeriodical[].$append")
   end
 end
 uniq("TypePeriodical[]")
@@ -1571,12 +1619,14 @@ do list(path: "ITM  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
     add_field("Item[].$append.__dummy__", "")
     add_field("Item[].$last.identifier", "$[isil]")
-    copy_field("$i.[bcn]", "@callnumber")
+    set_array("@callnumber")
+    copy_field("$i.[bcn]", "@callnumber.$append")
     if any_match("$i.x", "$[regexp.temporaryCallnumberLocation]")
-      copy_field("$i.z", "@callnumber")
+      copy_field("$i.z", "@callnumber.$append")
     end
     uniq("@callnumber")
-    move_field("@callnumber", "Item[].$last.callnumber")
+    set_array("Item[].$last.callnumber")
+    move_field("@callnumber", "Item[].$last.callnumber.$append")
     copy_field("$i.x", "Item[].$last.shelfmark")
   end
 end
@@ -1613,7 +1663,7 @@ do list(path: "246?[ 345678].a", "var": "$i")
   do list(path: "$i", "var": "$j")
     replace_all("$j", "[.]$", "")
     call_macro("remove-nonsort", source: "$j")
-    copy_field("$j", "TitleOther.title[]")
+    copy_field("$j", "TitleOther.title[].$append")
   end
 end
 
@@ -1623,7 +1673,7 @@ do list(path: "249??.a", "var": "$i")
   do list(path: "$i", "var": "$j")
     replace_all("$j", "[.]$", "")
     call_macro("remove-nonsort", source: "$j")
-    copy_field("$j", "CompilationTitle.title[]")
+    copy_field("$j", "CompilationTitle.title[].$append")
   end
 end
 
@@ -1638,10 +1688,12 @@ do list(path: "600??", "var": "$i")
   call_macro("copy-first-item", source: "$i.a", target: "RSWK[].$last.subjectPersonName")
   call_macro("copy-first-item", source: "$i.t", target: "RSWK[].$last.subjectTitleName")
   call_macro("copy-first-item", source: "$i.c", target: "RSWK[].$last.subjectNameAddendum")
+  set_array("RSWK[].$last.subjectIdentifier[]")
+  set_array("RSWK[].$last.identifierGND[]")
   do list(path: "$i.0", "var": "$j")
-    copy_field("$j", "RSWK[].$last.subjectIdentifier[]")
+    copy_field("$j", "RSWK[].$last.subjectIdentifier[].$append")
     if any_match("$j", "\\(DE-588\\).*")
-      copy_field("$j", "RSWK[].$last.identifierGND[]")
+      copy_field("$j", "RSWK[].$last.identifierGND[].$append")
     end
   end
 end
@@ -1657,10 +1709,12 @@ do list(path: "610??", "var": "$i")
   call_macro("copy-first-item", source: "$i.t", target: "RSWK[].$last.subjectTitleName")
   call_macro("copy-first-item", source: "$i.p", target: "RSWK[].$last.subjectUnit")
   call_macro("copy-first-item", source: "$i.c", target: "RSWK[].$last.subjectGeoAddendum")
+  set_array("RSWK[].$last.subjectIdentifier[]")
+  set_array("RSWK[].$last.identifierGND[]")
   do list(path: "$i.0", "var": "$j")
-    copy_field("$j", "RSWK[].$last.subjectIdentifier[]")
+    copy_field("$j", "RSWK[].$last.subjectIdentifier[].$append")
     if any_match("$j", "\\(DE-588\\).*")
-      copy_field("$j", "RSWK[].$last.identifierGND[]")
+      copy_field("$j", "RSWK[].$last.identifierGND[].$append")
     end
   end
 end
@@ -1676,10 +1730,12 @@ do list(path: "611??", "var": "$i")
   call_macro("copy-first-item", source: "$i.t", target: "RSWK[].$last.subjectTitleName")
   call_macro("copy-first-item", source: "$i.p", target: "RSWK[].$last.subjectUnit")
   call_macro("copy-first-item", source: "$i.c", target: "RSWK[].$last.subjectGeoAddendum")
+  set_array("RSWK[].$last.subjectIdentifier[]")
+  set_array("RSWK[].$last.identifierGND[]")
   do list(path: "$i.0", "var": "$j")
-    copy_field("$j", "RSWK[].$last.subjectIdentifier[]")
+    copy_field("$j", "RSWK[].$last.subjectIdentifier[].$append")
     if any_match("$j", "\\(DE-588\\).*")
-      copy_field("$j", "RSWK[].$last.identifierGND[]")
+      copy_field("$j", "RSWK[].$last.identifierGND[].$append")
     end
   end
 end
@@ -1687,10 +1743,12 @@ end
 do list(path: "648??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
   call_macro("copy-first-item", source: "$i.a", target: "RSWK[].$last.subjectChronological")
+  set_array("RSWK[].$last.subjectIdentifier[]")
+  set_array("RSWK[].$last.identifierGND[]")
   do list(path: "$i.0", "var": "$j")
-    copy_field("$j", "RSWK[].$last.subjectIdentifier[]")
+    copy_field("$j", "RSWK[].$last.subjectIdentifier[].$append")
     if any_match("$j", "\\(DE-588\\).*")
-      copy_field("$j", "RSWK[].$last.identifierGND[]")
+      copy_field("$j", "RSWK[].$last.identifierGND[].$append")
     end
   end
 end
@@ -1699,19 +1757,22 @@ do list(path: "650??", "var": "$i")
   add_field("RSWK[].$append.__dummy__", "")
   call_macro("copy-first-item", source: "$i.a", target: "@subjectTopicName")
   split_field("@subjectTopicName", ";|--")
+  set_array("RSWK[].$last.subjectTopicName")
   do list(path: "@subjectTopicName", "var": "$j")
     replace_all("$j", "[.]$", "")
-    copy_field("$j", "RSWK[].$last.subjectTopicName")
+    copy_field("$j", "RSWK[].$last.subjectTopicName.$append")
   end
   remove_field("@subjectTopicName")
   call_macro("copy-first-item", source: "$i.z", target: "RSWK[].$last.subjectGeoName")
   call_macro("copy-first-item", source: "$i.y", target: "RSWK[].$last.subjectChronological")
   call_macro("copy-first-item", source: "$i.x", target: "RSWK[].$last.subjectAddendum")
   call_macro("copy-first-item", source: "$i.v", target: "RSWK[].$last.subjectGenre")
+  set_array("RSWK[].$last.subjectIdentifier[]")
+  set_array("RSWK[].$last.identifierGND[]")
   do list(path: "$i.0", "var": "$j")
-    copy_field("$j", "RSWK[].$last.subjectIdentifier[]")
+    copy_field("$j", "RSWK[].$last.subjectIdentifier[].$append")
     if any_match("$j", "\\(DE-588\\).*")
-      copy_field("$j", "RSWK[].$last.identifierGND[]")
+      copy_field("$j", "RSWK[].$last.identifierGND[].$append")
     end
   end
 end
@@ -1721,10 +1782,12 @@ do list(path: "651??", "var": "$i")
   call_macro("copy-first-item", source: "$i.a", target: "RSWK[].$last.subjectGeoName")
   call_macro("copy-first-item", source: "$i.y", target: "RSWK[].$last.subjectChronological")
   call_macro("copy-first-item", source: "$i.v", target: "RSWK[].$last.subjectGenre")
+  set_array("RSWK[].$last.subjectIdentifier[]")
+  set_array("RSWK[].$last.identifierGND[]")
   do list(path: "$i.0", "var": "$j")
-    copy_field("$j", "RSWK[].$last.subjectIdentifier[]")
+    copy_field("$j", "RSWK[].$last.subjectIdentifier[].$append")
     if any_match("$j", "\\(DE-588\\).*")
-      copy_field("$j", "RSWK[].$last.identifierGND[]")
+      copy_field("$j", "RSWK[].$last.identifierGND[].$append")
     end
   end
 end
@@ -1745,14 +1808,14 @@ replace_all("RSWK[].*.subjectTitleName", "[.]$", "")
 replace_all("RSWK[].*.subjectUnit", "[.]$", "")
 uniq("RSWK[]")
 do list(path: "RSWK[]", "var": "$i")
-  copy_field("$i.subjectConference", "introx.subject[]")
-  copy_field("$i.subjectCorporateBodyName", "introx.subject[]")
-  copy_field("$i.subjectGenre", "introx.subject[]")
-  copy_field("$i.subjectGeoName", "introx.subject[]")
-  copy_field("$i.subjectPersonName", "introx.subject[]")
-  copy_field("$i.subjectTitleName", "introx.subject[]")
-  copy_field("$i.subjectTopicName", "introx.subject[]")
-  copy_field("$i.subjectUnit", "introx.subject[]")
+  copy_field("$i.subjectConference", "introx.subject[].$append")
+  copy_field("$i.subjectCorporateBodyName", "introx.subject[].$append")
+  copy_field("$i.subjectGenre", "introx.subject[].$append")
+  copy_field("$i.subjectGeoName", "introx.subject[].$append")
+  copy_field("$i.subjectPersonName", "introx.subject[].$append")
+  copy_field("$i.subjectTitleName", "introx.subject[].$append")
+  copy_field("$i.subjectTopicName", "introx.subject[].$append")
+  copy_field("$i.subjectUnit", "introx.subject[].$append")
 end
 # MARC/653
 set_array("Subject[]")

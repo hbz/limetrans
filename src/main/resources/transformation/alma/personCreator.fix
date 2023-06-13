@@ -11,7 +11,7 @@ end
 set_array("@person.$last.personTitle[]")
 do list(path: "$i.c", "var": "$j")
   replace_all("$j", "[,]$", "")
-  copy_field("$j", "@person.$last.personTitle[]")
+  copy_field("$j", "@person.$last.personTitle[].$append")
 end
 hbz.limetrans.function.DropRepeated("$i.d", index: "2")
 replace_all("$i.d", "[.]$", "")
@@ -19,15 +19,15 @@ copy_field("$i.d", "@person.$last.personBio")
 set_array("@person.$last.personRole[]")
 do list(path: "$i.e", "var": "$j")
   paste("@personRole", "~[", "$j", "~]", join_char: "")
-  move_field("@personRole", "@person.$last.personRole[]")
+  move_field("@personRole", "@person.$last.personRole[].$append")
 end
 set_array("@person.$last.personIdentifier[]")
 set_array("@person.$last.identifierGND[]")
 do list(path: "$i.0", "var": "$j")
   if any_match("$j", "\\(DE-588\\).*")
-    copy_field("$j", "@person.$last.personIdentifier[]")
+    copy_field("$j", "@person.$last.personIdentifier[].$append")
     replace_all("$j", "^\\(DE-588\\)", "")
-    copy_field("$j", "@person.$last.identifierGND[]")
+    copy_field("$j", "@person.$last.identifierGND[].$append")
   end
 end
 uniq("@person")
