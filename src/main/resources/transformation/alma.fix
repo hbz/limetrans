@@ -1438,6 +1438,7 @@ do list(path: "856??", "var": "$i")
         copy_field("$k", "OnlineAccess[].$last.contact")
       end
     end
+    remove_field("@contact")
     copy_field("$i.q", "OnlineAccess[].$last.format")
   end
 end
