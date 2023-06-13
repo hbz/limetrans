@@ -1,14 +1,15 @@
 do put_macro("copy-first-item")
   if exists("$[source].1")
-    copy_field("$[source].1", "$[target]")
+    copy_field("$[source].1", "@copy-first-item")
   else
-    copy_field("$[source]", "$[target]")
+    copy_field("$[source]", "@copy-first-item")
   end
+  move_field("@copy-first-item", "$[target]")
 end
 
 do put_macro("copy-substring", length: "1")
-  call_macro("substring", source: "$[source]", target: "$[target]-substring", start: "$[start]", length: "$[length]")
-  move_field("$[target]-substring", "$[target]")
+  call_macro("substring", source: "$[source]", target: "@copy-substring", start: "$[start]", length: "$[length]")
+  move_field("@copy-substring", "$[target]")
 end
 
 do put_macro("remove-nonsort")
@@ -26,6 +27,7 @@ do put_macro("remove-nonsort-string")
 end
 
 do put_macro("substring", length: "1")
-  copy_field("$[source]", "$[target]")
-  substring("$[target]", "$[start]", "$[length]")
+  copy_field("$[source]", "@substring")
+  substring("@substring", "$[start]", "$[length]")
+  move_field("@substring", "$[target]")
 end
