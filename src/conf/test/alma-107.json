@@ -1,0 +1,17 @@
+{
+  "isil": "DE-107",
+  "alma": {
+    "hybrid": true,
+    "deletion-literal": "DEL"
+  },
+  "input": {
+    "queue": {
+      "path": "src/test/resources/limetrans/input/",
+      "pattern": "alma.xml.gz"
+    }
+  },
+  "output": {
+    "json": "src/test/resources/limetrans/output%s/alma-107.json",
+    "pretty-printing": true
+  }
+}

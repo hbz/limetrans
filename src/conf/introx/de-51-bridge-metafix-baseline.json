@@ -1,0 +1,28 @@
+{
+  "isil": "DE-51",
+  "path": "/data/pubhub/export/alma/prod/",
+  "postprocess": true,
+  "alma": {
+    "regexp": {
+      "suppressedLocation": "RES_SHARE"
+    }
+  },
+  "input": {
+    "queue": {
+      "path": "${path}",
+      "pattern": "baseline.xml.bgzf"
+    }
+  },
+  "output": {
+    "elasticsearch": {
+      "index": {
+        "type": "titel",
+        "name": "${isil}-bridge-introx-metafix-",
+        "timewindow": "yyyyMMdd",
+        "settings": "classpath:/elasticsearch/hbztitle-settings.json",
+        "mapping": "classpath:/elasticsearch/hbztitle-mapping.json",
+        "idKey": "RecordIdentifier.identifierForTheIndex"
+      }
+    }
+  }
+}

@@ -17,6 +17,11 @@ public class AlmaTransformationTest extends LimetransTransformationTest {
     }
 
     @Test
+    public void testAlma107() throws IOException {
+        testAlmaEqualsReference("107");
+    }
+
+    @Test
     public void testAlma468() throws IOException {
         testAlmaEqualsReference("468");
     }
