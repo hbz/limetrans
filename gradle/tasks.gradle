@@ -16,6 +16,9 @@ def propTask = { group, list ->
 // See hbz.limetrans.Main.Env.
 propTask('env', ['prod', 'dev', 'd7test', 'local', 'ignore'])
 
+// See hbz.limetrans.Limetrans.Type.
+propTask('type', ['fix', 'morph'])
+
 file('src/conf').eachDir {
     def (group, path) = [it.getName(), it.toPath()]
 
