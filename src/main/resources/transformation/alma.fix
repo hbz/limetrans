@@ -1351,16 +1351,16 @@ do list(path: "989  ", "var": "$i")
 end
 filter("@description", "^$[regexp.description]$")
 # MARC/500
-set_array("Description.description[]")
-copy_field("500  .a", "Description.description[].$append")
-move_field("@description", "Description.description[].$append")
+set_array("Description[]")
+copy_field("500  .a", "Description[].$append.description")
+move_field("@description", "Description[].$append.description")
 # MARC/H52
 do list(path: "H52??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
-    copy_field("$i.z", "Description.description[].$append")
+    copy_field("$i.z", "Description[].$append.description")
   end
 end
-uniq("Description.description[]")
+uniq("Description[]")
 
 # MARC/501, MARC/505
 set_array("DescriptionOfContent[]")
@@ -1951,7 +1951,7 @@ retain(
   "DateFirst",
   "DateLast",
   "DateProper",
-  "Description",
+  "Description[]",
   "DescriptionOfContent[]",
   "DescriptionOfEstimatedPublicationDate[]",
   "DescriptionOfExpression[]",

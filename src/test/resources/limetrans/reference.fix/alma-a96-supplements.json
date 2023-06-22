@@ -157,9 +157,9 @@
   "DescriptionOfProvenance" : [ {
     "description" : "Bibliothek Hans Werner Henze"
   } ],
-  "Description" : {
-    "description" : [ "vorhanden mit Stand: Mai 2004" ]
-  },
+  "Description" : [ {
+    "description" : "vorhanden mit Stand: Mai 2004"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Schmidt, Klaus J.",
     "personIdentifier" : [ "(DE-588)111951097" ],
@@ -387,9 +387,9 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Praxislösungen"
   } ],
-  "Description" : {
-    "description" : [ "CD-ROM: Titel-Nr.: CD8198-2003" ]
-  },
+  "Description" : [ {
+    "description" : "CD-ROM: Titel-Nr.: CD8198-2003"
+  } ],
   "Summary" : {
     "abstract" : [ "Ohne Probleme halten Sie die zulässigen Maßtoleranzen ein. Sie sorgen für einen reibungslosen Bauablauf ohne Nachbesserungen oder Minderungen. Die Toleranznorm DIN 18202 rechtssicher auslegen und Haftungsfälle vermeiden!Am Anfang eines jeden Bauvorhabens werden die Abmessungen und die Lage von Bauwerken und -teilen geplant. Auf dem langen Weg zum fertigen Gebäude drohen jedoch häufig Abweichungen. Dafür gibt es zahlreiche Gründe: Messungenauigkeiten, Fehler bei der Fertigung oder beim Einbau sowie äußere Einflüsse wie z.B. Temperatur, Feuchtigkeit oder Lasteinwirkung.Maßtoleranzen sind für Architekten und Ingenieure enorm wichtig, denn sie bilden und definieren den Korridorzwischen normgerechtem Bauen und Baumangel. Bis zu welchem Grad sind Abweichungen zu tolerieren? Aufwelche Regelwerke können sich Architekten und Ingenieure berufen? Wie können sie ein Gebäude so planen und bauen, dass die zulässigen Abweichungen eingehalten und nicht überschritten werden? Wo liegen die Ursachen für Abweichungen? Die überarbeitete Neuauflage des Fachbuchs „Maßtoleranzen im Baualltag“ liefert das nötige Know-how für das normgerechte Bauen bei Maßabweichungen. Mit diesem Wissen lassen sich die bestehenden Normen rechtssicher interpretieren und teure Haftungsfälle somit vermeiden.Im Zentrum der Betrachtung steht dabei zum einen die DIN 18202, zum anderen die vielen weiteren Normen und Regelungen, die zu beachten sind. Berücksichtigt sind dabei auch die Änderungen der VOB 2016. Die gewerkebezogene Darstellung erleichtert das schnelle Finden der einschlägigen Regelungen. Die beiliegende CD-ROM enthält eine Sammlung aktueller Schadensfälle zu allen neuralgischen Punkten eines Gebäudes: Verbindungsbauteile, Fassade, Fugen, Rohbau, Baugrund etc. Hierbei wird auch der baurechtliche Hintergrund analysiert. Sie schützen sich vor teuren Haftungsansprüchen und Mangelbeseitigungskosten.", "Mithilfe von wertvollen Praxishinweisen zum maßgerechten Planen und Bauen nach DIN 18202 wissen Sie stets, worauf Sie achten müssen. Sie haben hieb- und stichfeste Argumente für jedes Gewerk: Übersichten für alle Gewerke des Roh- und Ausbaus zeigen, welche Maßtoleranzen in den einzelnen Gewerken zu berücksichtigen sind. Alle aktuellen Normen einschließlich VOB 2016 sind berücksichtigt. Schadensfälle inkl." ]
   },
@@ -1157,9 +1157,9 @@
   "Extent" : {
     "extent" : "XXII, 470 Seiten : Illustrationen ; 244 mm"
   },
-  "Description" : {
-    "description" : [ "Titelzusatz auf dem Umschlag: Durchschauen - Überwachen - Anwenden" ]
-  },
+  "Description" : [ {
+    "description" : "Titelzusatz auf dem Umschlag: Durchschauen - Überwachen - Anwenden"
+  } ],
   "Summary" : {
     "abstract" : [ "Verständnis und Kontrolle statischer Elektrizität sind von elementarer Bedeutung in vielen Industriezweigen, in erster Linie mit Blick auf die potentiellen Gefahren. Daher sind die Erkennung und Vermeidung von Gefahren durch statische Aufladungen immer wichtiger geworden und haben die Entwicklung neuer und präziser Messmethoden befördert. Andererseits können statische Aufladungen auch nutzbringend eingesetzt werden. Vielfältige Anwendungen werden beschrieben.Statische Elektrizität ? Durchschauen ? Überwachen ? Anwenden informiert zunächst über Brand- und Explosionsgefahren. Entstehung von Aufladung und daraus resultierende Entladungserscheinungen werden veranschaulicht.Ein großer Teil des Buches befasst sich mit Messtechnik, Vermeidung von Gefahren und Störungen sowie Beseitigung unerwünschter Aufladung. Fallstudien und Beschreibung von Demonstrationsexperimenten vermitteln den Bezug zur Praxis.Ohne Normen geht es nicht; auch darüber wird berichtet. Der stetig zunehmenden Anwendung statischer Elektrizität ist ein eigenes Kapitel über den gezielten Einsatz von Aufladungen vorbehalten und soll die Kreativität der Leser anregen. Zu guter Letzt sind im Mathematischen Werkzeugkasten alle relevanten Formeln einsortiert.* Praxisperspektive: geschrieben von Autoren mit langjähriger Forschungs- und Beratungserfahrung* Durchblick: Beschreibung von Demonstrationsexperimenten zur besseren Veranschaulichung* Fallstudien: aus den Fehlern Anderer lernen* Zusatzmaterial: kurze Videos zeigen die - teils drastischen - Auswirkungen statischer Aufladungen" ]
   },
@@ -1757,9 +1757,13 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Arthaus"
   } ],
-  "Description" : {
-    "description" : [ "Bildformat: 2,35:1 (anamorph)", "Extras: Trailer, Wendecover", "F, 1961" ]
-  },
+  "Description" : [ {
+    "description" : "Bildformat: 2,35:1 (anamorph)"
+  }, {
+    "description" : "Extras: Trailer, Wendecover"
+  }, {
+    "description" : "F, 1961"
+  } ],
   "DescriptionOfExpression" : [ {
     "description" : "Sprachen: deutsch, französisch"
   }, {
@@ -3259,9 +3263,9 @@
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "<reise>" ]
   } ],
-  "Description" : {
-    "description" : [ "Hier auch später erschienene, unveränderte Nachdrucke" ]
-  },
+  "Description" : [ {
+    "description" : "Hier auch später erschienene, unveränderte Nachdrucke"
+  } ],
   "DescriptionOfExpression" : [ {
     "description" : "Aus d. Engl. übers."
   } ],
@@ -3371,9 +3375,9 @@
   "Extent" : {
     "extent" : "56 S."
   },
-  "Description" : {
-    "description" : [ "Aus: Studium generale, 13.1960" ]
-  },
+  "Description" : [ {
+    "description" : "Aus: Studium generale, 13.1960"
+  } ],
   "SubjectHeadings" : [ {
     "subject" : "Licht"
   }, {
@@ -4779,9 +4783,9 @@
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "84" ]
   } ],
-  "Description" : {
-    "description" : [ "Ausstellungskatalog" ]
-  },
+  "Description" : [ {
+    "description" : "Ausstellungskatalog"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Berckenhagen, Ekhart",
     "personBio" : "1923-2001",
@@ -5072,9 +5076,11 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Beck'sche Steuerkommentare"
   } ],
-  "Description" : {
-    "description" : [ "CD-ROM u.d.T.: DBA-Texte-CD", "1. - 9. Aufl. verfaßt von H. Debatin und R. Korn" ]
-  },
+  "Description" : [ {
+    "description" : "CD-ROM u.d.T.: DBA-Texte-CD"
+  }, {
+    "description" : "1. - 9. Aufl. verfaßt von H. Debatin und R. Korn"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Debatin, Helmut",
     "personBio" : "1926-2011",
@@ -5214,9 +5220,9 @@
   "Extent" : {
     "extent" : "XXII, 597 S. : Ill., zahlr. graph. Darst."
   },
-  "Description" : {
-    "description" : [ "Literaturverz. S. 561 - 585" ]
-  },
+  "Description" : [ {
+    "description" : "Literaturverz. S. 561 - 585"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Hausen, Helmuth"
   }, {
@@ -5591,9 +5597,9 @@
   "Extent" : {
     "extent" : "XIX, 592 S. : Ill., graph. Darst."
   },
-  "Description" : {
-    "description" : [ "Literaturangaben" ]
-  },
+  "Description" : [ {
+    "description" : "Literaturangaben"
+  } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "8. Aufl. u.d.T.",
     "title" : "Wasser",
@@ -5751,9 +5757,9 @@
   "Extent" : {
     "extent" : "Losebl.-Ausg."
   },
-  "Description" : {
-    "description" : [ "Auf d. Umschlag.: Tipke-Kruse" ]
-  },
+  "Description" : [ {
+    "description" : "Auf d. Umschlag.: Tipke-Kruse"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Tipke, Klaus",
     "personBio" : "1925-2021",
@@ -7176,9 +7182,9 @@
   "Extent" : {
     "extent" : "XVI, 272 S. : Ill., graph. Darst."
   },
-  "Description" : {
-    "description" : [ "Hier auch später erschienene, unveränderte Nachdrucke" ]
-  },
+  "Description" : [ {
+    "description" : "Hier auch später erschienene, unveränderte Nachdrucke"
+  } ],
   "SubjectHeadings" : [ {
     "subject" : "LATEX"
   } ],
@@ -9079,9 +9085,9 @@
   "Extent" : {
     "extent" : "XIII, 282 S. : Ill., graph. Darst."
   },
-  "Description" : {
-    "description" : [ "Literaturverz. S. [267] - 280" ]
-  },
+  "Description" : [ {
+    "description" : "Literaturverz. S. [267] - 280"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Bach, Volker"
   } ],
@@ -10615,9 +10621,9 @@
   "Extent" : {
     "extent" : "557 S. : Ill."
   },
-  "Description" : {
-    "description" : [ "Literaturverz: S. 551 - 557" ]
-  },
+  "Description" : [ {
+    "description" : "Literaturverz: S. 551 - 557"
+  } ],
   "SubjectHeadings" : [ {
     "subject" : "USA"
   }, {
@@ -12413,9 +12419,9 @@
   "Extent" : {
     "extent" : "Ca. 160 Seiten : Illustrationen ; 24 cm"
   },
-  "Description" : {
-    "description" : [ "... im Rahmen eines interdisziplinären Projektes zum Thema SUPERMARKT" ]
-  },
+  "Description" : [ {
+    "description" : "... im Rahmen eines interdisziplinären Projektes zum Thema SUPERMARKT"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Vogel, Manfred",
     "personBio" : "1946-2008",
@@ -13636,9 +13642,11 @@
   "Extent" : {
     "extent" : "1 DVD-Video (152 Min.) : farb., PAL2, teilw. stereo, teilw. mono, Bildformat 1.85:1, 16:9 Widescreen ; 12 cm"
   },
-  "Description" : {
-    "description" : [ "Orig.: 1980", "Freigegeben ab 12 Jahren" ]
-  },
+  "Description" : [ {
+    "description" : "Orig.: 1980"
+  }, {
+    "description" : "Freigegeben ab 12 Jahren"
+  } ],
   "DescriptionOfContent" : [ {
     "description" : "Sonderausstattung: Szenenauswahl, mehrsprachige Untertitel"
   }, {
@@ -14385,9 +14393,13 @@
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "[2]" ]
   } ],
-  "Description" : {
-    "description" : [ "Orig.: 1993", "Freigegeben ab 12 Jahren", "Bonusmaterial (ca. 62 Min.): Trailer zu Blau, Weiss und Rot ; Filmlektion von Krzysztof Kieslowski ; Interviews mit Julie Delpy und Marin Karmitz (Produktion) ; Making of ; Cast & Crew Infos ; Programmvorschau ; DVD Rom-Part" ]
-  },
+  "Description" : [ {
+    "description" : "Orig.: 1993"
+  }, {
+    "description" : "Freigegeben ab 12 Jahren"
+  }, {
+    "description" : "Bonusmaterial (ca. 62 Min.): Trailer zu Blau, Weiss und Rot ; Filmlektion von Krzysztof Kieslowski ; Interviews mit Julie Delpy und Marin Karmitz (Produktion) ; Making of ; Cast & Crew Infos ; Programmvorschau ; DVD Rom-Part"
+  } ],
   "DescriptionOfExpression" : [ {
     "description" : "Sprachen: dt., franz."
   }, {
@@ -14771,9 +14783,13 @@
   "Extent" : {
     "extent" : "2 DVD-Videos (84 Min.) : Ländercode 2, farb., Bildformat 1,33:1 [4:3], Dolby Digital 5.1 ; 12 cm ; 4 Bildkt., 1 Poster"
   },
-  "Description" : {
-    "description" : [ "Orig.: US 2005", "Freigegeben ab 6 Jahren", "Enth.: Disc 1: [Hauptfilm], Disc 2: Special features: Interviews; extended dances; Bonusszenen; Kinotrailer; Postkarten & Poster" ]
-  },
+  "Description" : [ {
+    "description" : "Orig.: US 2005"
+  }, {
+    "description" : "Freigegeben ab 6 Jahren"
+  }, {
+    "description" : "Enth.: Disc 1: [Hauptfilm], Disc 2: Special features: Interviews; extended dances; Bonusszenen; Kinotrailer; Postkarten & Poster"
+  } ],
   "DescriptionOfExpression" : [ {
     "description" : "Sprachen: engl."
   }, {
@@ -15186,9 +15202,13 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Studio-Ghibli-DVD-Collection"
   } ],
-  "Description" : {
-    "description" : [ "Orig.: JP 1988", "Bonus: Making of ; Storyboards zum kompletten Film ; Original Opening & Ending ; Orignal japanische Trailer & TV-Spots ; Studio Ghibli auf DVD", "Freigegeben ohne Altersbeschränkung" ]
-  },
+  "Description" : [ {
+    "description" : "Orig.: JP 1988"
+  }, {
+    "description" : "Bonus: Making of ; Storyboards zum kompletten Film ; Original Opening & Ending ; Orignal japanische Trailer & TV-Spots ; Studio Ghibli auf DVD"
+  }, {
+    "description" : "Freigegeben ohne Altersbeschränkung"
+  } ],
   "DescriptionOfExpression" : [ {
     "description" : "Sprachen: Dt., Jap."
   }, {
@@ -15574,9 +15594,9 @@
   "Extent" : {
     "extent" : "296 S. : überw. Ill., graph. Darst."
   },
-  "Description" : {
-    "description" : [ "Franz. Original-Ausg. als Ausstellungskatalog" ]
-  },
+  "Description" : [ {
+    "description" : "Franz. Original-Ausg. als Ausstellungskatalog"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Ho, Hey"
   } ],
@@ -16106,9 +16126,11 @@
   "Extent" : {
     "extent" : "215 S. : zahlr. Ill."
   },
-  "Description" : {
-    "description" : [ "Der Sachtitel enthält ein Herzsymbol für \"love\"", "4 Hefte in Mappe mit einem aufgeklebten 1-Cent-Stück: Heft 1: Verpackung, Bunte Nekropolis ; Heft 2: Inhalt, Konsum ; Heft 3: Kunst, Gesellschaft, \"Luxus für alle!\" Discountprinzip ; Heft 4: Texte, Firmenphilosophien" ]
-  },
+  "Description" : [ {
+    "description" : "Der Sachtitel enthält ein Herzsymbol für \"love\""
+  }, {
+    "description" : "4 Hefte in Mappe mit einem aufgeklebten 1-Cent-Stück: Heft 1: Verpackung, Bunte Nekropolis ; Heft 2: Inhalt, Konsum ; Heft 3: Kunst, Gesellschaft, \"Luxus für alle!\" Discountprinzip ; Heft 4: Texte, Firmenphilosophien"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Spieler, Reinhard",
     "personBio" : "1964-",
@@ -16287,9 +16309,9 @@
   "Extent" : {
     "extent" : "158 S. : überw. Ill."
   },
-  "Description" : {
-    "description" : [ "Gewinner des World Press Photo des Jahres 2011: Samuel Aranda" ]
-  },
+  "Description" : [ {
+    "description" : "Gewinner des World Press Photo des Jahres 2011: Samuel Aranda"
+  } ],
   "HostItemEntry" : [ {
     "controlNumber" : "(DE-605)HT006393315",
     "identifierForLinkingEntry" : "(DE-605)HT006393315"
@@ -16405,9 +16427,9 @@
   "Extent" : {
     "extent" : "144 S. : überw. Ill., überw. farb."
   },
-  "Description" : {
-    "description" : [ "Text dt., engl." ]
-  },
+  "Description" : [ {
+    "description" : "Text dt., engl."
+  } ],
   "PersonContributor" : [ {
     "personName" : "Linder",
     "personBio" : "1954-",
@@ -16982,9 +17004,11 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Always learning"
   } ],
-  "Description" : {
-    "description" : [ "Translation from the English language edition (3rd edition)", "Übungsbuch zum Lehrbuch \"Grundlagen der Finanzwirtschaft\" von Jonathan Berk/Peter DeMarzo - 3., aktualisierte Auflage 2016" ]
-  },
+  "Description" : [ {
+    "description" : "Translation from the English language edition (3rd edition)"
+  }, {
+    "description" : "Übungsbuch zum Lehrbuch \"Grundlagen der Finanzwirtschaft\" von Jonathan Berk/Peter DeMarzo - 3., aktualisierte Auflage 2016"
+  } ],
   "DescriptionOfExpression" : [ {
     "description" : "Aus dem Englischen übersetzt"
   } ],
@@ -18167,9 +18191,9 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Beck-online"
   } ],
-  "Description" : {
-    "description" : [ "Erscheint teilweise auch als Teil eines Bundles mit dem Titel \"Arbeitsrechts-Handbuch und arbeitsrechtliches Formular- und Verfahrenshandbuch\"" ]
-  },
+  "Description" : [ {
+    "description" : "Erscheint teilweise auch als Teil eines Bundles mit dem Titel \"Arbeitsrechts-Handbuch und arbeitsrechtliches Formular- und Verfahrenshandbuch\""
+  } ],
   "PersonContributor" : [ {
     "personName" : "Schaub, Günter",
     "personBio" : "1933-2013",
@@ -18621,9 +18645,9 @@
   "Extent" : {
     "extent" : "340 Seiten : Illustrationen"
   },
-  "Description" : {
-    "description" : [ "Vollständig und mit möglichen Lösungsvarianten gelöste Übungsaufgaben" ]
-  },
+  "Description" : [ {
+    "description" : "Vollständig und mit möglichen Lösungsvarianten gelöste Übungsaufgaben"
+  } ],
   "HostItemEntry" : [ {
     "controlNumber" : "(DE-605)HT019530618",
     "identifierForLinkingEntry" : "(DE-605)HT019530618"
@@ -19370,9 +19394,15 @@
   "VideoCharacteristics" : [ {
     "broadcastStandard" : "PAL"
   } ],
-  "Description" : {
-    "description" : [ "Original: USA, UK, Ungarn, Kanada 2017", "Bildformat: 16:9 widescreen, 2.40:1", "Bonus: Blade Runner 101, Vorwort 2036: Nexus dawn, 2048: nowhere to run, 2022: blackout", "Untertitel: Deutsch, Englisch, Arabisch, Französisch, Holländisch, Türkisch" ]
-  },
+  "Description" : [ {
+    "description" : "Original: USA, UK, Ungarn, Kanada 2017"
+  }, {
+    "description" : "Bildformat: 16:9 widescreen, 2.40:1"
+  }, {
+    "description" : "Bonus: Blade Runner 101, Vorwort 2036: Nexus dawn, 2048: nowhere to run, 2022: blackout"
+  }, {
+    "description" : "Untertitel: Deutsch, Englisch, Arabisch, Französisch, Holländisch, Türkisch"
+  } ],
   "DescriptionOfExpression" : [ {
     "description" : "Sprache: Deutsch, Englisch, Französisch"
   } ],
@@ -20532,9 +20562,9 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Lernbücher Jura"
   } ],
-  "Description" : {
-    "description" : [ "Auf dem vorderen Umschlag: Mit vielen Fällen, Beispielen und Übersichten" ]
-  },
+  "Description" : [ {
+    "description" : "Auf dem vorderen Umschlag: Mit vielen Fällen, Beispielen und Übersichten"
+  } ],
   "OnlineAccess" : [ {
     "uri" : "http://deposit.dnb.de/cgi-bin/dokserv?id=cf8abd48a8f7482197f63cfb9a8caaf4&prov=M&dok_var=1&dok_ext=htm",
     "relatedto" : "Inhaltstext",

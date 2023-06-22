@@ -2038,9 +2038,13 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Ecomed Sicherheit"
   } ],
-  "Description" : {
-    "description" : [ "Früher im Verl. Moderne Industrie, München, erschienen", "Disketten und Beil. \"Wagner, Karl: Abfallkatalog\", \"Arbeitsstättenverordnung 2004\" und \"Gefahrstoffetiketten - Druckprogramm, Ausg. 2006\" nicht vorhanden. *** Zum Nachweis einzelner Beilagen bitte immer auch unter deren Titel recherchieren.", "Disketten und Beilage \"Wagner, Karl: Abfallkatalog\", \"Arbeitsstättenverordnung 2004\" und \"Gefahrstoffetiketten - Druckprogramm, Ausgabe 2006\" nicht vorhanden" ]
-  },
+  "Description" : [ {
+    "description" : "Früher im Verl. Moderne Industrie, München, erschienen"
+  }, {
+    "description" : "Disketten und Beil. \"Wagner, Karl: Abfallkatalog\", \"Arbeitsstättenverordnung 2004\" und \"Gefahrstoffetiketten - Druckprogramm, Ausg. 2006\" nicht vorhanden. *** Zum Nachweis einzelner Beilagen bitte immer auch unter deren Titel recherchieren."
+  }, {
+    "description" : "Disketten und Beilage \"Wagner, Karl: Abfallkatalog\", \"Arbeitsstättenverordnung 2004\" und \"Gefahrstoffetiketten - Druckprogramm, Ausgabe 2006\" nicht vorhanden"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Kühn, Robert",
     "personIdentifier" : [ "(DE-588)101324316" ],
@@ -2419,9 +2423,9 @@
   "Extent" : {
     "extent" : "Losebl.-Ausg."
   },
-  "Description" : {
-    "description" : [ "Verl.-Ort anfangs: Dreieich" ]
-  },
+  "Description" : [ {
+    "description" : "Verl.-Ort anfangs: Dreieich"
+  } ],
   "SupplementParentEntry" : [ {
     "relationshipInformation" : "Ergänzungshefte u.d.T.",
     "title" : "Handbuch Arbeitsorganisation Bau"
@@ -2694,9 +2698,9 @@
   "ChronologyAndEnumeration" : {
     "value" : "1.1936/37 - 4.1939,1; N.S. 1.1947/48 -"
   },
-  "Description" : {
-    "description" : [ "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson" ]
-  },
+  "Description" : [ {
+    "description" : "Einzelne Hefte auch als \"Special number\" bez.. - Repr.: New York, NY : Johnson"
+  } ],
   "DescriptionOfIssuance" : [ {
     "description" : "Erscheint 4x jährl."
   } ],
@@ -3147,9 +3151,9 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Musikalische Formen in historischen Reihen"
   } ],
-  "Description" : {
-    "description" : [ "Ex. 21 = KHF 1417: Sammelband" ]
-  },
+  "Description" : [ {
+    "description" : "Ex. 21 = KHF 1417: Sammelband"
+  } ],
   "DescriptionOfExpression" : [ {
     "description" : "Enthaltene Textteile deutsch"
   } ],
@@ -3604,9 +3608,13 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Arthaus"
   } ],
-  "Description" : {
-    "description" : [ "Bildformat: 2,35:1 (anamorph)", "Extras: Trailer, Wendecover", "F, 1961" ]
-  },
+  "Description" : [ {
+    "description" : "Bildformat: 2,35:1 (anamorph)"
+  }, {
+    "description" : "Extras: Trailer, Wendecover"
+  }, {
+    "description" : "F, 1961"
+  } ],
   "DescriptionOfExpression" : [ {
     "description" : "Sprachen: deutsch, französisch"
   }, {
@@ -3844,9 +3852,9 @@
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "N.F., 22" ]
   } ],
-  "Description" : {
-    "description" : [ "Enth.: Irenodiae, oder Friedens-Gesäng : newe geistliche Konzert [Einheitssacht.: Irenodiae oder Friedensgesäng] / Johannes Werlin. Musicalische Friedens-Gesänge [Einheitssacht.: Musicalische Friedens-Gesänger] / Sigmund Theophil Staden. Suspirium Germaniae Publicum [Einheitssacht.: Suspirum Germaniae publicum] / Melchior Franck. Da pacem Domine [Einheitssacht.: Da pacem Domine] / Andreas Berger" ]
-  },
+  "Description" : [ {
+    "description" : "Enth.: Irenodiae, oder Friedens-Gesäng : newe geistliche Konzert [Einheitssacht.: Irenodiae oder Friedensgesäng] / Johannes Werlin. Musicalische Friedens-Gesänge [Einheitssacht.: Musicalische Friedens-Gesänger] / Sigmund Theophil Staden. Suspirium Germaniae Publicum [Einheitssacht.: Suspirum Germaniae publicum] / Melchior Franck. Da pacem Domine [Einheitssacht.: Da pacem Domine] / Andreas Berger"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Hanheide, Stefan",
     "personBio" : "1960-",
@@ -11755,9 +11763,9 @@
   "Extent" : {
     "extent" : "IX, 213 S. : Ill., graph. Darst., Kt."
   },
-  "Description" : {
-    "description" : [ "Teilausg. des Orig.-Werks" ]
-  },
+  "Description" : [ {
+    "description" : "Teilausg. des Orig.-Werks"
+  } ],
   "DescriptionOfExpression" : [ {
     "description" : "Aus dem Franz. übers."
   } ],
@@ -13400,9 +13408,9 @@
   "Extent" : {
     "extent" : "XXVI, 467 S."
   },
-  "Description" : {
-    "description" : [ "Bibliogr. H. Diels S. [XIV] - XXVI" ]
-  },
+  "Description" : [ {
+    "description" : "Bibliogr. H. Diels S. [XIV] - XXVI"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Burkert, Walter",
     "personBio" : "1931-2015",
@@ -16496,9 +16504,9 @@
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "9725/9728" ]
   } ],
-  "Description" : {
-    "description" : [ "Literaturverz. S. 271 - 274" ]
-  },
+  "Description" : [ {
+    "description" : "Literaturverz. S. 271 - 274"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Koch, Hans-Albrecht",
     "personBio" : "1946-",
@@ -17192,9 +17200,9 @@
   "Extent" : {
     "extent" : "367 S."
   },
-  "Description" : {
-    "description" : [ "Enth. auf S. 313 - 352 eine Auswahlbibliogr. zu Goethe und seinem dramatischen Werk" ]
-  },
+  "Description" : [ {
+    "description" : "Enth. auf S. 313 - 352 eine Auswahlbibliogr. zu Goethe und seinem dramatischen Werk"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Hinderer, Walter",
     "personBio" : "1934-",
@@ -18907,9 +18915,9 @@
   "Extent" : {
     "extent" : "67 S.: 50 ILL. (FARB.)"
   },
-  "Description" : {
-    "description" : [ "EST: VINCENT VAN GOGH <DT.>" ]
-  },
+  "Description" : [ {
+    "description" : "EST: VINCENT VAN GOGH <DT.>"
+  } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
     "subject" : "KDEG"
@@ -19243,9 +19251,9 @@
   "Extent" : {
     "extent" : "231 S."
   },
-  "Description" : {
-    "description" : [ "Hildesheim, Hochschule, Phil. Diss., 1980" ]
-  },
+  "Description" : [ {
+    "description" : "Hildesheim, Hochschule, Phil. Diss., 1980"
+  } ],
   "SubjectHeadings" : [ {
     "subject" : "Theologische Akademie Celle"
   }, {
@@ -22644,9 +22652,9 @@
   "Extent" : {
     "extent" : "56, 54 S. : zahlr. Ill."
   },
-  "Description" : {
-    "description" : [ "Ausstellungskatalog" ]
-  },
+  "Description" : [ {
+    "description" : "Ausstellungskatalog"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Beuys, Joseph",
     "personBio" : "1921-1986",
@@ -29878,9 +29886,9 @@
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "2050 : Geist und Psyche" ]
   } ],
-  "Description" : {
-    "description" : [ "Lizenzausg. des Verl. Rascher, Zürich" ]
-  },
+  "Description" : [ {
+    "description" : "Lizenzausg. des Verl. Rascher, Zürich"
+  } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Kindler-Taschenbücher",
     "volume" : "2050",
@@ -32107,9 +32115,9 @@
   "Extent" : {
     "extent" : "22 S."
   },
-  "Description" : {
-    "description" : [ "Vortr. auf der Tagung der Liturgischen Konferenz Niedersachsens ... 1937 in Isenhagen" ]
-  },
+  "Description" : [ {
+    "description" : "Vortr. auf der Tagung der Liturgischen Konferenz Niedersachsens ... 1937 in Isenhagen"
+  } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
     "subject" : "JKYS"
@@ -32184,9 +32192,9 @@
   "Extent" : {
     "extent" : "347 S."
   },
-  "Description" : {
-    "description" : [ "Bremen, Univ., Diss., 1980" ]
-  },
+  "Description" : [ {
+    "description" : "Bremen, Univ., Diss., 1980"
+  } ],
   "SubjectHeadings" : [ {
     "subject" : "Leben"
   } ],
@@ -33173,9 +33181,9 @@
   "Extent" : {
     "extent" : "IX, 254 S., S. X-LIV"
   },
-  "Description" : {
-    "description" : [ "Mannheim, Univ., Diss., 1978" ]
-  },
+  "Description" : [ {
+    "description" : "Mannheim, Univ., Diss., 1978"
+  } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-468",
     "subject" : "ZZX"
@@ -34455,9 +34463,9 @@
   "Extent" : {
     "extent" : "168 S."
   },
-  "Description" : {
-    "description" : [ "Bibliographie d. Werke Piagets: S. 147 - 168. - Verl. auf d. Haupttitels.: Walter-Verl., Olten. - Durch den Verl. Klett-Cotta übernommene Ausg." ]
-  },
+  "Description" : [ {
+    "description" : "Bibliographie d. Werke Piagets: S. 147 - 168. - Verl. auf d. Haupttitels.: Walter-Verl., Olten. - Durch den Verl. Klett-Cotta übernommene Ausg."
+  } ],
   "SubjectHeadings" : [ {
     "subject" : "Erkenntnistheorie"
   } ],
@@ -37572,9 +37580,9 @@
   "Extent" : {
     "extent" : "127 S."
   },
-  "Description" : {
-    "description" : [ "Literaturverz. S. 106 - 127" ]
-  },
+  "Description" : [ {
+    "description" : "Literaturverz. S. 106 - 127"
+  } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2016/04/03/file_3/6696864.pdf",
     "relatedto" : "Inhaltsverzeichnis",
@@ -39738,9 +39746,9 @@
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "9987" ]
   } ],
-  "Description" : {
-    "description" : [ "Hier auch spätere, unveränderte Nachdrucke" ]
-  },
+  "Description" : [ {
+    "description" : "Hier auch spätere, unveränderte Nachdrucke"
+  } ],
   "DescriptionOfExpression" : [ {
     "description" : "Aus d. Engl. übers."
   } ],
@@ -42615,9 +42623,9 @@
   "Extent" : {
     "extent" : "341 S."
   },
-  "Description" : {
-    "description" : [ "Bonn, Univ., Phil. Fak., Diss. 1973" ]
-  },
+  "Description" : [ {
+    "description" : "Bonn, Univ., Phil. Fak., Diss. 1973"
+  } ],
   "SubjectHeadings" : [ {
     "subject" : "Novalis"
   }, {
@@ -44369,9 +44377,9 @@
   "Extent" : {
     "extent" : "XI, 280 S."
   },
-  "Description" : {
-    "description" : [ "MUENCHEN, UNIV., DISS., 1980" ]
-  },
+  "Description" : [ {
+    "description" : "MUENCHEN, UNIV., DISS., 1980"
+  } ],
   "SubjectHeadings" : [ {
     "subject" : "Bayern"
   }, {
@@ -45342,9 +45350,9 @@
   "Extent" : {
     "extent" : "295 S."
   },
-  "Description" : {
-    "description" : [ "Mannheim, Univ., Fak. f. Sprach- und Literaturwiss., Diss., 1974" ]
-  },
+  "Description" : [ {
+    "description" : "Mannheim, Univ., Fak. f. Sprach- und Literaturwiss., Diss., 1974"
+  } ],
   "SubjectHeadings" : [ {
     "subject" : "Auden, Wystan H."
   }, {
@@ -45877,9 +45885,9 @@
   "Extent" : {
     "extent" : "228 S."
   },
-  "Description" : {
-    "description" : [ "Zugl.: Heidelberg, Univ., Habil.-Schr., 1975" ]
-  },
+  "Description" : [ {
+    "description" : "Zugl.: Heidelberg, Univ., Habil.-Schr., 1975"
+  } ],
   "SubjectHeadings" : [ {
     "subject" : "Karl Ludwig"
   }, {
@@ -47297,9 +47305,9 @@
   "Extent" : {
     "extent" : "XVI, 257 S."
   },
-  "Description" : {
-    "description" : [ "Teilw. aus: Römische Quartalschrift 73 (1978) u. 74 (1979)" ]
-  },
+  "Description" : [ {
+    "description" : "Teilw. aus: Römische Quartalschrift 73 (1978) u. 74 (1979)"
+  } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage/2009/04/26/file_21/2974581.pdf",
     "relatedto" : "Inhaltsverzeichnis",
@@ -49097,9 +49105,9 @@
   "Extent" : {
     "extent" : "225 S."
   },
-  "Description" : {
-    "description" : [ "Hier auch später erschienene, unveränderte Nachdrucke" ]
-  },
+  "Description" : [ {
+    "description" : "Hier auch später erschienene, unveränderte Nachdrucke"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Heieck, Ludwig",
     "personBio" : "1913-1985",
@@ -51486,9 +51494,9 @@
   "Extent" : {
     "extent" : "92 S."
   },
-  "Description" : {
-    "description" : [ "Aus:: Frankfurter Zeitung ; Jg. 1926" ]
-  },
+  "Description" : [ {
+    "description" : "Aus:: Frankfurter Zeitung ; Jg. 1926"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Heidebroek, Enno"
   } ],
@@ -52162,9 +52170,9 @@
   "Extent" : {
     "extent" : "287 S."
   },
-  "Description" : {
-    "description" : [ "Bibliogr.: M. Buber S. 276 - 285" ]
-  },
+  "Description" : [ {
+    "description" : "Bibliogr.: M. Buber S. 276 - 285"
+  } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Spätere Ausg. u.d.T.",
     "title" : "Wehr, Gerhard: Martin Buber"
@@ -52777,9 +52785,13 @@
   "Extent" : {
     "extent" : "Losebl.-Ausg."
   },
-  "Description" : {
-    "description" : [ "Früherer Name d. Hrsg.: Deutscher Verein von Gas- und Wasserfachmännern", "Früher im ZfGW-Verl., Frankfurt/Main, erschienen", "Loseblattsammlung, zur Fortsetzung bestellt. Weiterer Bestand siehe Stücktitelaufnahmen" ]
-  },
+  "Description" : [ {
+    "description" : "Früherer Name d. Hrsg.: Deutscher Verein von Gas- und Wasserfachmännern"
+  }, {
+    "description" : "Früher im ZfGW-Verl., Frankfurt/Main, erschienen"
+  }, {
+    "description" : "Loseblattsammlung, zur Fortsetzung bestellt. Weiterer Bestand siehe Stücktitelaufnahmen"
+  } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab 2001 bis 2009 u.d.T.",
     "title" : "Deutsche Vereinigung des Gas- und Wasserfaches: DVGW-Regelwerk Gas, Wasser",
@@ -54492,9 +54504,9 @@
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "84" ]
   } ],
-  "Description" : {
-    "description" : [ "Ausstellungskatalog" ]
-  },
+  "Description" : [ {
+    "description" : "Ausstellungskatalog"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Berckenhagen, Ekhart",
     "personBio" : "1923-2001",
@@ -55381,9 +55393,9 @@
   "ChronologyAndEnumeration" : {
     "value" : "3.F. 27.1942 - 279.2007"
   },
-  "Description" : {
-    "description" : [ "Hauptsacht. anfangs: Abhandlungen der Akademie der Wissenschaften in Göttingen, Philologisch-Historische Klasse. - Mit diesem Titel erschienen auch die Nachdruck-Ausgaben der Neuen Folge, Bd. 1 - 25" ]
-  },
+  "Description" : [ {
+    "description" : "Hauptsacht. anfangs: Abhandlungen der Akademie der Wissenschaften in Göttingen, Philologisch-Historische Klasse. - Mit diesem Titel erschienen auch die Nachdruck-Ausgaben der Neuen Folge, Bd. 1 - 25"
+  } ],
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Gesellschaft der Wissenschaften <Göttingen> / Philologisch-Historische Klasse: Abhandlungen der Gesellschaft der Wissenschaften zu Göttingen, Philologisch-Historische Klasse",
@@ -55549,9 +55561,9 @@
   "ChronologyAndEnumeration" : {
     "value" : "73.1947/50(1950),2 -"
   },
-  "Description" : {
-    "description" : [ "Anfangs im Verl. Böhlau, Wien, erschienen" ]
-  },
+  "Description" : [ {
+    "description" : "Anfangs im Verl. Böhlau, Wien, erschienen"
+  } ],
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Akademie der Wissenschaften <Wien> / Philosophisch-Historische Klasse: Denkschriften",
@@ -56252,9 +56264,11 @@
   "ChronologyAndEnumeration" : {
     "value" : "1970/71(1971) - 1989/91(1993); 2000 - 2006; 2018 -"
   },
-  "Description" : {
-    "description" : [ "Hauptsacht. teils: Membership directory and annual report. - Hauptsacht. teils: Jahrbuch / Rheinischer Verein für Denkmalpflege und Landschaftsschutz", "Verl.-Ang. wechselt" ]
-  },
+  "Description" : [ {
+    "description" : "Hauptsacht. teils: Membership directory and annual report. - Hauptsacht. teils: Jahrbuch / Rheinischer Verein für Denkmalpflege und Landschaftsschutz"
+  }, {
+    "description" : "Verl.-Ang. wechselt"
+  } ],
   "DescriptionOfIssuance" : [ {
     "description" : "1992 - 1999 und 2007 - 2017 nicht ersch.; ersch. unregelmäßig"
   } ],
@@ -56362,9 +56376,11 @@
   "Extent" : {
     "extent" : "Losebl.-Ausg."
   },
-  "Description" : {
-    "description" : [ "Früherer Name des Hrsg.: Deutscher Verein von Gas- und Wasserfachmännern", "Früher im ZfGW-Verl., Frankfurt/Main, erschienen" ]
-  },
+  "Description" : [ {
+    "description" : "Früherer Name des Hrsg.: Deutscher Verein von Gas- und Wasserfachmännern"
+  }, {
+    "description" : "Früher im ZfGW-Verl., Frankfurt/Main, erschienen"
+  } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab 2001 bis 2009 u.d.T.",
     "title" : "Deutsche Vereinigung des Gas- und Wasserfaches: DVGW-Regelwerk Wasser",
@@ -58334,9 +58350,9 @@
   "Extent" : {
     "extent" : "XXII, 597 S. : Ill., zahlr. graph. Darst."
   },
-  "Description" : {
-    "description" : [ "Literaturverz. S. 561 - 585" ]
-  },
+  "Description" : [ {
+    "description" : "Literaturverz. S. 561 - 585"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Hausen, Helmuth"
   }, {
@@ -61510,9 +61526,13 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "WEKA-Praxislösungen"
   } ],
-  "Description" : {
-    "description" : [ "Hrsg. anfangs: Horst-Günter Holl", "Verl.-Angabe anfangs: Kissing: WEKA-Fachverl. für Geschäftsführung und Management", "Zum Nachweis einzelner Beilagen bitte immer auch unter deren Titel recherchieren" ]
-  },
+  "Description" : [ {
+    "description" : "Hrsg. anfangs: Horst-Günter Holl"
+  }, {
+    "description" : "Verl.-Angabe anfangs: Kissing: WEKA-Fachverl. für Geschäftsführung und Management"
+  }, {
+    "description" : "Zum Nachweis einzelner Beilagen bitte immer auch unter deren Titel recherchieren"
+  } ],
   "DescriptionOfIssuance" : [ {
     "description" : "Erscheinungsbeginn: 1986; neues Grundwerk: April 2001. - Mit Erg.-Lfg. 88 (Mai 2018) Ersch. eingestellt und durch \"Controlling mit Excel\" fortgeführt"
   } ],
@@ -63283,9 +63303,9 @@
   "Extent" : {
     "extent" : "243 S. : Ill., graph. Darst., Kt."
   },
-  "Description" : {
-    "description" : [ "Literaturverz. S. 236 - 242" ]
-  },
+  "Description" : [ {
+    "description" : "Literaturverz. S. 236 - 242"
+  } ],
   "DescriptionOfThesis" : [ {
     "description" : "Hamburg, Hochsch. für Bildende Künste, Diss., 1984"
   } ],
@@ -64882,9 +64902,9 @@
   "Extent" : {
     "extent" : "Losebl.-Ausg. ; 1 CD-ROM (12 cm)"
   },
-  "Description" : {
-    "description" : [ "CD-ROM-Beilage, HHR-Report und Jahresband nicht mehr vorhanden" ]
-  },
+  "Description" : [ {
+    "description" : "CD-ROM-Beilage, HHR-Report und Jahresband nicht mehr vorhanden"
+  } ],
   "DescriptionOfIssuance" : [ {
     "description" : "Erscheinungsbeginn: 1950"
   } ],
@@ -65872,9 +65892,9 @@
   "Extent" : {
     "extent" : "Losebl.-Ausg."
   },
-  "Description" : {
-    "description" : [ "Nicht zur Fortsetzung bestellt. - Bestand: Grundwerk und Ergänzungen bis einschließlich Erg.-Lfg. 61 (1999)" ]
-  },
+  "Description" : [ {
+    "description" : "Nicht zur Fortsetzung bestellt. - Bestand: Grundwerk und Ergänzungen bis einschließlich Erg.-Lfg. 61 (1999)"
+  } ],
   "DescriptionOfIssuance" : [ {
     "description" : "Erscheinungsbeginn: 1969"
   } ],
@@ -67769,9 +67789,9 @@
   "Extent" : {
     "extent" : "XII,283 S.: Ill."
   },
-  "Description" : {
-    "description" : [ "Literaturverz. S. 259-266" ]
-  },
+  "Description" : [ {
+    "description" : "Literaturverz. S. 259-266"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Schmid, Franz",
     "personBio" : "1920-1997",
@@ -71702,9 +71722,11 @@
   "Extent" : {
     "extent" : "Losebl.-Ausg. ; 2 Beil. (Getr. Zählung)"
   },
-  "Description" : {
-    "description" : [ "Anfangs im Verl. Wehner, Verl. für Brandschutzpublikationen, Eggenfelden, erschienen", "CD-ROM-Ausg. früher u.d.T.: Die Landesbauordnungen im Überblick. Brandschutz am Bau. Bauvorschriften-CD. - Beil. u.d.T.: Brandschutz ... kompakt. - Beil. u.d.T.: Brandschutz ... in der Tasche. - Beil. u.d.T.: Brandschutz pocket. - 35. Erg.-Lfg. (Dez. 2018) in eigenem Ordner u.d.T.: DIN 4102-4 + Eurocodes - Klassifizierte Baustoffe und Bauteile" ]
-  },
+  "Description" : [ {
+    "description" : "Anfangs im Verl. Wehner, Verl. für Brandschutzpublikationen, Eggenfelden, erschienen"
+  }, {
+    "description" : "CD-ROM-Ausg. früher u.d.T.: Die Landesbauordnungen im Überblick. Brandschutz am Bau. Bauvorschriften-CD. - Beil. u.d.T.: Brandschutz ... kompakt. - Beil. u.d.T.: Brandschutz ... in der Tasche. - Beil. u.d.T.: Brandschutz pocket. - 35. Erg.-Lfg. (Dez. 2018) in eigenem Ordner u.d.T.: DIN 4102-4 + Eurocodes - Klassifizierte Baustoffe und Bauteile"
+  } ],
   "DescriptionOfIssuance" : [ {
     "description" : "Erscheinungsbeginn: 1995"
   } ],
@@ -72633,9 +72655,9 @@
   "Extent" : {
     "extent" : "307 S."
   },
-  "Description" : {
-    "description" : [ "Literaturverz. S. 301 - 307" ]
-  },
+  "Description" : [ {
+    "description" : "Literaturverz. S. 301 - 307"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Möller, Horst",
     "personBio" : "1943-",
@@ -77044,9 +77066,9 @@
   "Extent" : {
     "extent" : "Losebl.-Ausg. ; 1 CD-ROM (12 cm)"
   },
-  "Description" : {
-    "description" : [ "Suppl.-Bd. Loseblattsammlung \"Praxismaterialien für die Jugendhilfe und Sozialarbeit\" nicht vorhanden" ]
-  },
+  "Description" : [ {
+    "description" : "Suppl.-Bd. Loseblattsammlung \"Praxismaterialien für die Jugendhilfe und Sozialarbeit\" nicht vorhanden"
+  } ],
   "DescriptionOfIssuance" : [ {
     "description" : "Erscheinungsbeginn: 1998"
   } ],
@@ -77340,9 +77362,9 @@
   "Extent" : {
     "extent" : "XIII, 282 S. : Ill., graph. Darst."
   },
-  "Description" : {
-    "description" : [ "Literaturverz. S. [267] - 280" ]
-  },
+  "Description" : [ {
+    "description" : "Literaturverz. S. [267] - 280"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Bach, Volker"
   } ],
@@ -78160,9 +78182,9 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Beck'sche Textausgaben"
   } ],
-  "Description" : {
-    "description" : [ "Enth. u.a.: Insolvenzordnung. AnfechtungsG [Einheitssacht.: Anfechtungsgesetz]" ]
-  },
+  "Description" : [ {
+    "description" : "Enth. u.a.: Insolvenzordnung. AnfechtungsG [Einheitssacht.: Anfechtungsgesetz]"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Gerhardt, Walter",
     "personBio" : "1934-",
@@ -80353,9 +80375,9 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Studies in American literature and culture : Literary criticism in perspective"
   } ],
-  "Description" : {
-    "description" : [ "Hier auch später erschienene, unveränderte Nachdrucke" ]
-  },
+  "Description" : [ {
+    "description" : "Hier auch später erschienene, unveränderte Nachdrucke"
+  } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage/2012/06/19/file_32/4544051.pdf",
     "relatedto" : "Inhaltsverzeichnis",
@@ -82319,9 +82341,9 @@
   "Extent" : {
     "extent" : "X, 142, 142 S. ; 1 CD-ROM (12 cm)"
   },
-  "Description" : {
-    "description" : [ "CD-ROM u.d.T.: Nachbericht zu KGW IX 1 - 6; Faksimiles W II 1, W II 2" ]
-  },
+  "Description" : [ {
+    "description" : "CD-ROM u.d.T.: Nachbericht zu KGW IX 1 - 6; Faksimiles W II 1, W II 2"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Colli, Giorgio",
     "personBio" : "1917-1979",
@@ -83957,9 +83979,11 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Always learning"
   } ],
-  "Description" : {
-    "description" : [ "Translation from the English language edition (3rd edition)", "Übungsbuch zum Lehrbuch \"Grundlagen der Finanzwirtschaft\" von Jonathan Berk/Peter DeMarzo - 3., aktualisierte Auflage 2016" ]
-  },
+  "Description" : [ {
+    "description" : "Translation from the English language edition (3rd edition)"
+  }, {
+    "description" : "Übungsbuch zum Lehrbuch \"Grundlagen der Finanzwirtschaft\" von Jonathan Berk/Peter DeMarzo - 3., aktualisierte Auflage 2016"
+  } ],
   "DescriptionOfExpression" : [ {
     "description" : "Aus dem Englischen übersetzt"
   } ],
@@ -84928,9 +84952,9 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Beck-online"
   } ],
-  "Description" : {
-    "description" : [ "Erscheint teilweise auch als Teil eines Bundles mit dem Titel \"Arbeitsrechts-Handbuch und arbeitsrechtliches Formular- und Verfahrenshandbuch\"" ]
-  },
+  "Description" : [ {
+    "description" : "Erscheint teilweise auch als Teil eines Bundles mit dem Titel \"Arbeitsrechts-Handbuch und arbeitsrechtliches Formular- und Verfahrenshandbuch\""
+  } ],
   "PersonContributor" : [ {
     "personName" : "Schaub, Günter",
     "personBio" : "1933-2013",
@@ -85208,9 +85232,15 @@
   "VideoCharacteristics" : [ {
     "broadcastStandard" : "PAL"
   } ],
-  "Description" : {
-    "description" : [ "Original: USA, UK, Ungarn, Kanada 2017", "Bildformat: 16:9 widescreen, 2.40:1", "Bonus: Blade Runner 101, Vorwort 2036: Nexus dawn, 2048: nowhere to run, 2022: blackout", "Untertitel: Deutsch, Englisch, Arabisch, Französisch, Holländisch, Türkisch" ]
-  },
+  "Description" : [ {
+    "description" : "Original: USA, UK, Ungarn, Kanada 2017"
+  }, {
+    "description" : "Bildformat: 16:9 widescreen, 2.40:1"
+  }, {
+    "description" : "Bonus: Blade Runner 101, Vorwort 2036: Nexus dawn, 2048: nowhere to run, 2022: blackout"
+  }, {
+    "description" : "Untertitel: Deutsch, Englisch, Arabisch, Französisch, Holländisch, Türkisch"
+  } ],
   "DescriptionOfExpression" : [ {
     "description" : "Sprache: Deutsch, Englisch, Französisch"
   } ],
@@ -85384,9 +85414,9 @@
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "NomosKommentar"
   } ],
-  "Description" : {
-    "description" : [ "Auf dem Buchrücken: VwVfG" ]
-  },
+  "Description" : [ {
+    "description" : "Auf dem Buchrücken: VwVfG"
+  } ],
   "OnlineAccess" : [ {
     "uri" : "http://deposit.dnb.de/cgi-bin/dokserv?id=3c903af613bc43ce9cfe22a6fa6e4a35&prov=M&dok_var=1&dok_ext=htm",
     "relatedto" : "Inhaltstext",
@@ -85755,9 +85785,9 @@
   "TitleSuperVolumeDesignation" : [ {
     "volumeDesignation" : [ "Band 23" ]
   } ],
-  "Description" : {
-    "description" : [ "\"Auf der 21. Jahrestagung der Deutschen Gesellschaft für Tourismuswissenschaft (GDT) wurden diese Herausforderungen unter dem Thema \"Internationalisierung des Tourismus - Tourismus im Wandel\" thematisiert\" - Geleitwort, Seite 5" ]
-  },
+  "Description" : [ {
+    "description" : "\"Auf der 21. Jahrestagung der Deutschen Gesellschaft für Tourismuswissenschaft (GDT) wurden diese Herausforderungen unter dem Thema \"Internationalisierung des Tourismus - Tourismus im Wandel\" thematisiert\" - Geleitwort, Seite 5"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Groß, Sven",
     "personBio" : "1969-",
@@ -86046,9 +86076,9 @@
   "Extent" : {
     "extent" : "XII, 792 Seiten"
   },
-  "Description" : {
-    "description" : [ "Enthält: Lieferung 1 (2000) - 10 (2019)" ]
-  },
+  "Description" : [ {
+    "description" : "Enthält: Lieferung 1 (2000) - 10 (2019)"
+  } ],
   "PersonContributor" : [ {
     "personName" : "Noth, Martin",
     "personBio" : "1902-1968",

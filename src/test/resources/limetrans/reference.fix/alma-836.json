@@ -76,9 +76,9 @@
     "place" : [ "Stuttgart" ],
     "name" : [ "UTB" ]
   } ],
-  "Description" : {
-    "description" : [ "Ebook-Paket" ]
-  },
+  "Description" : [ {
+    "description" : "Ebook-Paket"
+  } ],
   "xbib" : [ {
     "uid" : "(DE-A96)991000065939706444"
   } ],
@@ -302,9 +302,9 @@
   "ChronologyAndEnumeration" : {
     "unformattedValue" : [ "Began with vol. 1, issue 1 (Jan./Feb. 1976)." ]
   },
-  "Description" : {
-    "description" : [ "Some issues also have distinctive titles." ]
-  },
+  "Description" : [ {
+    "description" : "Some issues also have distinctive titles."
+  } ],
   "DescriptionOfIssuance" : [ {
     "description" : "Some issues combined."
   } ],
