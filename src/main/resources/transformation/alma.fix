@@ -1335,9 +1335,18 @@ end
 
 # MARC/989
 set_array("@description")
+set_array("DescriptionOfProvenance[]")
+set_array("introx.provenance[]")
+do list(path: "985  ", "var": "$i")
+  if hbz.limetrans.function.MemberLocal("$i")
+    copy_field("$i.a", "DescriptionOfProvenance[].$append.description")
+    copy_field("$i.a", "introx.provenance[].$append")
+  end
+end
 do list(path: "989  ", "var": "$i")
   if hbz.limetrans.function.MemberLocal("$i")
     copy_field("$i.a", "@description.$append")
+    copy_field("$i.a", "introx.provenance[].$append")
   end
 end
 filter("@description", "^$[regexp.description]$")
@@ -1947,6 +1956,7 @@ retain(
   "DescriptionOfEstimatedPublicationDate[]",
   "DescriptionOfExpression[]",
   "DescriptionOfIssuance[]",
+  "DescriptionOfProvenance[]",
   "DescriptionOfThesis[]",
   "Edition",
   "ExtendedFormat[]",

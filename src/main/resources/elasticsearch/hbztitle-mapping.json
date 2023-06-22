@@ -149,6 +149,11 @@
             "cql.allIndexes"
           ]
         },
+        "provenance": {
+          "type": "string",
+          "analyzer": "default",
+          "search_analyzer": "search"
+        },
         "shelfmark": {
           "type": "string",
           "index": "not_analyzed"
