@@ -38,6 +38,9 @@ do put_macro("alma-subject-common")
   replace_all("RSWK[].$last.subjectPersonName", "[,.]$", "")
   replace_all("RSWK[].$last.subjectTitleName", "[.]$", "")
   replace_all("RSWK[].$last.subjectUnit", "[.]$", "")
+  call_macro("remove-nonsort", source: "RSWK[].$last.subjectPersonName")
+  call_macro("remove-nonsort", source: "RSWK[].$last.subjectTitleName")
+  call_macro("remove-nonsort", source: "RSWK[].$last.subjectTopicName")
 end
 
 do put_macro("alma-subject-personal-name")

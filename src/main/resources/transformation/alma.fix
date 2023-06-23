@@ -1560,7 +1560,9 @@ do list(path: "982  ", "var": "$i")
 end
 # MARC/688, MARC/689
 do list(path: "68[89]??", "var": "$i")
-  copy_field("$i.a", "@subjectHeadings.$append")
+  unless any_match("$i.D", "[pbsfg]")
+    copy_field("$i.a", "@subjectHeadings.$append")
+  end
 end
 uniq("@subjectHeadings")
 set_array("SubjectHeadings[]")
@@ -1705,6 +1707,20 @@ do list(path: "650??", "var": "$i")
 end
 do list(path: "651??", "var": "$i")
   call_macro("alma-subject-geographic-name")
+end
+# MARC/689
+do list(path: "689??", "var": "$i")
+  if any_equal("$i.D", "p")
+    call_macro("alma-subject-personal-name")
+  elsif any_equal("$i.D", "b")
+    call_macro("alma-subject-corporate-name")
+  elsif any_equal("$i.D", "f")
+    call_macro("alma-subject-meeting-name")
+  elsif any_equal("$i.D", "s")
+    call_macro("alma-subject-topical-term")
+  elsif any_equal("$i.D", "g")
+    call_macro("alma-subject-geographic-name")
+  end
 end
 uniq("RSWK[]")
 do list(path: "RSWK[]", "var": "$i")

@@ -129,11 +129,6 @@
     "contact" : "X:migimw",
     "format" : "application/pdf"
   } ],
-  "SubjectHeadings" : [ {
-    "subject" : "Milch"
-  }, {
-    "subject" : "Lebensmittelchemie"
-  } ],
   "xbib" : [ {
     "uid" : "(DE-605)990210731060206441"
   }, {
@@ -176,6 +171,15 @@
     "callnumber" : "RRZ 137+1",
     "callnumber" : "0356213",
     "shelfmark" : "Freihand_F"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Milch",
+    "subjectIdentifier" : [ "(DE-588)4039264-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040392643", "(uri) http://viaf.org/viaf/sourceID/DNB|040392643" ],
+    "identifierGND" : [ "4039264-8" ]
+  }, {
+    "subjectTopicName" : "Lebensmittelchemie",
+    "subjectIdentifier" : [ "(DE-588)4034873-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040348733", "(uri) http://viaf.org/viaf/sourceID/DNB|040348733" ],
+    "identifierGND" : [ "4034873-8" ]
   } ],
   "Subject" : [ {
     "subject" : "Milchhygiene"
