@@ -94,6 +94,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Gruppe",
+    "combinedLabel" : "Gruppe",
     "subjectIdentifier" : [ "(DE-588)4022378-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040223787", "(uri) http://viaf.org/viaf/sourceID/DNB|040223787" ],
     "identifierGND" : [ "4022378-4" ]
   } ]
@@ -188,10 +189,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Logistik",
+    "combinedLabel" : "Logistik",
     "subjectIdentifier" : [ "(DE-588)4036210-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040362108", "(uri) http://viaf.org/viaf/sourceID/DNB|040362108" ],
     "identifierGND" : [ "4036210-3" ]
   }, {
     "subjectTopicName" : "Just-in-time-Produktion",
+    "combinedLabel" : "Just-in-time-Produktion",
     "subjectIdentifier" : [ "(DE-588)4140040-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041400402", "(uri) http://viaf.org/viaf/sourceID/DNB|041400402" ],
     "identifierGND" : [ "4140040-9" ]
   } ]
@@ -224,7 +227,7 @@
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Chemie und Chemische Technik", "Biologie" ],
     "provenance" : [ "neu1406" ],
-    "subject" : [ "Microorganisms", "Identification", "Mass spectrometry", "Microbiological chemistry" ]
+    "subject" : [ "Microorganisms, Identification", "Mass spectrometry", "Microbiological chemistry" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -301,11 +304,14 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Microorganisms",
-    "subjectTopicName" : "Identification"
+    "subjectTopicName" : "Identification",
+    "combinedLabel" : "Microorganisms, Identification"
   }, {
-    "subjectTopicName" : "Mass spectrometry"
+    "subjectTopicName" : "Mass spectrometry",
+    "combinedLabel" : "Mass spectrometry"
   }, {
-    "subjectTopicName" : "Microbiological chemistry"
+    "subjectTopicName" : "Microbiological chemistry",
+    "combinedLabel" : "Microbiological chemistry"
   } ]
 }
 {
@@ -342,7 +348,7 @@
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
     "provenance" : [ "neu1807" ],
-    "subject" : [ "Maßtoleranzen", "DIN18202", "MaßtoleranzenRohbau", "MaßtoleranzenAusbau", "DIN 18202", "Rohbau", "Ausbau" ]
+    "subject" : [ "Maßtoleranzen", "DIN18202", "MaßtoleranzenRohbau", "MaßtoleranzenAusbau", "DIN 18202", "Rohbau", "Ausbau (Bauwesen)" ]
   },
   "SubjectRVK" : [ {
     "subject" : "ZI 3970"
@@ -449,19 +455,25 @@
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
-    "subjectTopicName" : "Maßtoleranzen"
+    "subjectTopicName" : "Maßtoleranzen",
+    "combinedLabel" : "Maßtoleranzen"
   }, {
-    "subjectTopicName" : "DIN18202"
+    "subjectTopicName" : "DIN18202",
+    "combinedLabel" : "DIN18202"
   }, {
-    "subjectTopicName" : "MaßtoleranzenRohbau"
+    "subjectTopicName" : "MaßtoleranzenRohbau",
+    "combinedLabel" : "MaßtoleranzenRohbau"
   }, {
-    "subjectTopicName" : "MaßtoleranzenAusbau"
+    "subjectTopicName" : "MaßtoleranzenAusbau",
+    "combinedLabel" : "MaßtoleranzenAusbau"
   }, {
     "subjectTopicName" : "Rohbau",
+    "combinedLabel" : "Rohbau",
     "subjectIdentifier" : [ "(DE-588)4178345-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04178345X", "(uri) http://viaf.org/viaf/sourceID/DNB|04178345X" ],
     "identifierGND" : [ "4178345-1" ]
   }, {
     "subjectTopicName" : "Ausbau",
+    "combinedLabel" : "Ausbau (Bauwesen)",
     "subjectIdentifier" : [ "(DE-588)4003672-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040036723", "(uri) http://viaf.org/viaf/sourceID/DNB|040036723" ],
     "identifierGND" : [ "4003672-8" ]
   } ],
@@ -782,6 +794,7 @@
   },
   "RSWK" : [ {
     "subjectTopicName" : "Chemie",
+    "combinedLabel" : "Chemie",
     "subjectIdentifier" : [ "(DE-588)4009816-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040098168", "(uri) http://viaf.org/viaf/sourceID/DNB|040098168" ],
     "identifierGND" : [ "4009816-3" ]
   } ]
@@ -911,14 +924,17 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Informationsgesellschaft",
+    "combinedLabel" : "Informationsgesellschaft",
     "subjectIdentifier" : [ "(DE-588)4114011-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041140117", "(uri) http://viaf.org/viaf/sourceID/DNB|041140117" ],
     "identifierGND" : [ "4114011-4" ]
   }, {
     "subjectTopicName" : "Kulturwandel",
+    "combinedLabel" : "Kulturwandel",
     "subjectIdentifier" : [ "(DE-588)4033596-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040335968", "(uri) http://viaf.org/viaf/sourceID/DNB|040335968" ],
     "identifierGND" : [ "4033596-3" ]
   }, {
     "subjectTopicName" : "Massenmedien",
+    "combinedLabel" : "Massenmedien",
     "subjectIdentifier" : [ "(DE-588)4037877-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040378772", "(uri) http://viaf.org/viaf/sourceID/DNB|040378772" ],
     "identifierGND" : [ "4037877-9" ]
   } ]
@@ -1050,10 +1066,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Computersicherheit",
+    "combinedLabel" : "Computersicherheit",
     "subjectIdentifier" : [ "(DE-588)4274324-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=042743249", "(uri) http://viaf.org/viaf/sourceID/DNB|042743249" ],
     "identifierGND" : [ "4274324-2" ]
   }, {
     "subjectTopicName" : "Hacker",
+    "combinedLabel" : "Hacker",
     "subjectIdentifier" : [ "(DE-588)4113821-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04113821X", "(uri) http://viaf.org/viaf/sourceID/DNB|04113821X" ],
     "identifierGND" : [ "4113821-1" ]
   } ],
@@ -1255,55 +1273,72 @@
     "title" : [ "Statische Elektrizität : Durchschauen - Überwachen - Anwenden" ]
   },
   "RSWK" : [ {
-    "subjectTopicName" : "Arbeitssicherheit"
+    "subjectTopicName" : "Arbeitssicherheit",
+    "combinedLabel" : "Arbeitssicherheit"
   }, {
-    "subjectTopicName" : "Arbeitssicherheit u. Umweltschutz i. d. Chemie"
+    "subjectTopicName" : "Arbeitssicherheit u. Umweltschutz i. d. Chemie",
+    "combinedLabel" : "Arbeitssicherheit u. Umweltschutz i. d. Chemie"
   }, {
-    "subjectTopicName" : "Chemie"
+    "subjectTopicName" : "Chemie",
+    "combinedLabel" : "Chemie"
   }, {
-    "subjectTopicName" : "Elektrizitätslehre"
+    "subjectTopicName" : "Elektrizitätslehre",
+    "combinedLabel" : "Elektrizitätslehre"
   }, {
-    "subjectTopicName" : "Elektrotechnik u. Elektronik"
+    "subjectTopicName" : "Elektrotechnik u. Elektronik",
+    "combinedLabel" : "Elektrotechnik u. Elektronik"
   }, {
-    "subjectTopicName" : "Leistungselektronik"
+    "subjectTopicName" : "Leistungselektronik",
+    "combinedLabel" : "Leistungselektronik"
   }, {
-    "subjectTopicName" : "Physik"
+    "subjectTopicName" : "Physik",
+    "combinedLabel" : "Physik"
   }, {
-    "subjectTopicName" : "Statische Elektrizität"
+    "subjectTopicName" : "Statische Elektrizität",
+    "combinedLabel" : "Statische Elektrizität"
   }, {
     "subjectTopicName" : "Elektrostatik",
+    "combinedLabel" : "Elektrostatik",
     "subjectIdentifier" : [ "(DE-588)4151975-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041519752", "(uri) http://viaf.org/viaf/sourceID/DNB|041519752" ],
     "identifierGND" : [ "4151975-9" ]
   }, {
     "subjectTopicName" : "Elektrostatische Aufladung",
+    "combinedLabel" : "Elektrostatische Aufladung",
     "subjectIdentifier" : [ "(DE-588)4194245-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041942450", "(uri) http://viaf.org/viaf/sourceID/DNB|041942450" ],
     "identifierGND" : [ "4194245-0" ]
   }, {
     "subjectTopicName" : "Elektrostatische Entladung",
+    "combinedLabel" : "Elektrostatische Entladung",
     "subjectIdentifier" : [ "(DE-588)4401020-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=946780781", "(uri) http://viaf.org/viaf/sourceID/DNB|946780781" ],
     "identifierGND" : [ "4401020-5" ]
   }, {
     "subjectTopicName" : "Gasentladung",
+    "combinedLabel" : "Gasentladung",
     "subjectIdentifier" : [ "(DE-588)4139645-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041396456", "(uri) http://viaf.org/viaf/sourceID/DNB|041396456" ],
     "identifierGND" : [ "4139645-5" ]
   }, {
     "subjectTopicName" : "Messtechnik",
+    "combinedLabel" : "Messtechnik",
     "subjectIdentifier" : [ "(DE-588)4114575-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041145755", "(uri) http://viaf.org/viaf/sourceID/DNB|041145755" ],
     "identifierGND" : [ "4114575-6" ]
   }, {
     "subjectTopicName" : "Elektrounfall",
+    "combinedLabel" : "Elektrounfall",
     "subjectIdentifier" : [ "(DE-588)4014403-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040144038", "(uri) http://viaf.org/viaf/sourceID/DNB|040144038" ],
     "identifierGND" : [ "4014403-3" ]
   }, {
     "subjectTopicName" : "Brandgefahr",
+    "combinedLabel" : "Brandgefahr",
     "subjectIdentifier" : [ "(DE-588)4603129-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=959686401", "(uri) http://viaf.org/viaf/sourceID/DNB|959686401" ],
     "identifierGND" : [ "4603129-7" ]
   }, {
     "subjectTopicName" : "Explosion",
+    "combinedLabel" : "Explosion",
     "subjectIdentifier" : [ "(DE-588)4016009-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040160092", "(uri) http://viaf.org/viaf/sourceID/DNB|040160092" ],
     "identifierGND" : [ "4016009-9" ]
   }, {
     "subjectTopicName" : "Arbeitssicherheit",
+    "combinedLabel" : "Arbeitssicherheit",
     "subjectIdentifier" : [ "(DE-588)4068817-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040688178", "(uri) http://viaf.org/viaf/sourceID/DNB|040688178" ],
     "identifierGND" : [ "4068817-3" ]
   } ],
@@ -1343,7 +1378,7 @@
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Informatik" ],
     "provenance" : [ "neu2102" ],
-    "subject" : [ "Computer software", "Mathematics", "Programming languages (Electronic computers)", "Computer science", "MATLAB 10", "MATLAB", "algorithms", "engineering", "GUI development", "robotics", "code", "recipes", "developer", "cookbook", "source", "development", "programming", "computational science", "numerical" ]
+    "subject" : [ "Computer software", "Mathematics", "Programming languages (Electronic computers)", "Computer science", "MATLAB 10", "MATLAB", "algorithms", "engineering", "GUI development", "robotics", "code", "recipes", "developer", "cookbook", "source", "development", "programming", "computational science", "numerical", "MATLAB 10, MATLAB, algorithms, engineering, GUI development, robotics, code, recipes, developer, cookbook, source, development, programming, computational science, numerical" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -1457,13 +1492,17 @@
     "personName" : "Thomas, Stephanie"
   } ],
   "RSWK" : [ {
-    "subjectTopicName" : "Computer software"
+    "subjectTopicName" : "Computer software",
+    "combinedLabel" : "Computer software"
   }, {
-    "subjectTopicName" : "Mathematics"
+    "subjectTopicName" : "Mathematics",
+    "combinedLabel" : "Mathematics"
   }, {
-    "subjectTopicName" : "Programming languages (Electronic computers)"
+    "subjectTopicName" : "Programming languages (Electronic computers)",
+    "combinedLabel" : "Programming languages (Electronic computers)"
   }, {
-    "subjectTopicName" : "Computer science"
+    "subjectTopicName" : "Computer science",
+    "combinedLabel" : "Computer science"
   }, {
     "subjectTopicName" : "MATLAB 10",
     "subjectTopicName" : "MATLAB",
@@ -1479,7 +1518,8 @@
     "subjectTopicName" : "development",
     "subjectTopicName" : "programming",
     "subjectTopicName" : "computational science",
-    "subjectTopicName" : "numerical"
+    "subjectTopicName" : "numerical",
+    "combinedLabel" : "MATLAB 10, MATLAB, algorithms, engineering, GUI development, robotics, code, recipes, developer, cookbook, source, development, programming, computational science, numerical"
   } ],
   "Subject" : [ {
     "subject" : "Mathematische & Statistische Software"
@@ -1604,15 +1644,20 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "RSWK" : [ {
-    "subjectTopicName" : "Coding theory"
+    "subjectTopicName" : "Coding theory",
+    "combinedLabel" : "Coding theory"
   }, {
-    "subjectTopicName" : "Information theory"
+    "subjectTopicName" : "Information theory",
+    "combinedLabel" : "Information theory"
   }, {
-    "subjectTopicName" : "Data mining"
+    "subjectTopicName" : "Data mining",
+    "combinedLabel" : "Data mining"
   }, {
-    "subjectTopicName" : "Application software"
+    "subjectTopicName" : "Application software",
+    "combinedLabel" : "Application software"
   }, {
-    "subjectTopicName" : "Java (Computer program language)"
+    "subjectTopicName" : "Java (Computer program language)",
+    "combinedLabel" : "Java (Computer program language)"
   } ]
 }
 {
@@ -1712,6 +1757,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Brennstoffzelle",
+    "combinedLabel" : "Brennstoffzelle",
     "subjectIdentifier" : [ "(DE-588)4008195-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040081958", "(uri) http://viaf.org/viaf/sourceID/DNB|040081958" ],
     "identifierGND" : [ "4008195-3" ]
   } ]
@@ -1886,7 +1932,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
-    "subject" : [ "Rheinbrücke Düsseldorf-Neuss" ]
+    "subject" : [ "Rheinbrücke Düsseldorf-Neuss (Düsseldorf)" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -1948,6 +1994,7 @@
   },
   "RSWK" : [ {
     "subjectGeoName" : "Rheinbrücke Düsseldorf-Neuss",
+    "combinedLabel" : "Rheinbrücke Düsseldorf-Neuss (Düsseldorf)",
     "subjectIdentifier" : [ "(DE-588)4842542-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=976430347", "(uri) http://viaf.org/viaf/sourceID/DNB|976430347" ],
     "identifierGND" : [ "4842542-4" ]
   } ]
@@ -2066,6 +2113,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Besteck",
+    "combinedLabel" : "Besteck",
     "subjectIdentifier" : [ "(DE-588)4144935-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041449355", "(uri) http://viaf.org/viaf/sourceID/DNB|041449355" ],
     "identifierGND" : [ "4144935-6" ]
   } ]
@@ -2101,7 +2149,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
-    "subject" : [ "Kunstgeschichte / Wissenschaftsdisziplin", "Geschichte 1760-1900", "Geschichte", "Kunststudium", "Kunstwissenschaft", "Kunstgeschichte" ]
+    "subject" : [ "Kunstgeschichte / Wissenschaftsdisziplin", "Geschichte 1760-1900", "Geschichte", "Kunststudium", "Kunstwissenschaft", "Kunstgeschichte (Fach)" ]
   },
   "SubjectRVK" : [ {
     "subject" : "LH 62040"
@@ -2202,14 +2250,17 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Kunststudium",
+    "combinedLabel" : "Kunststudium",
     "subjectIdentifier" : [ "(DE-588)4166084-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041660846", "(uri) http://viaf.org/viaf/sourceID/DNB|041660846" ],
     "identifierGND" : [ "4166084-5" ]
   }, {
     "subjectTopicName" : "Kunstwissenschaft",
+    "combinedLabel" : "Kunstwissenschaft",
     "subjectIdentifier" : [ "(DE-588)4120632-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041206320", "(uri) http://viaf.org/viaf/sourceID/DNB|041206320" ],
     "identifierGND" : [ "4120632-0" ]
   }, {
     "subjectTopicName" : "Kunstgeschichte",
+    "combinedLabel" : "Kunstgeschichte (Fach)",
     "subjectIdentifier" : [ "(DE-588)4138803-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041388038", "(uri) http://viaf.org/viaf/sourceID/DNB|041388038" ],
     "identifierGND" : [ "4138803-3" ]
   } ]
@@ -2465,6 +2516,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Kunst",
+    "combinedLabel" : "Kunst",
     "subjectIdentifier" : [ "(DE-588)4114333-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041143337", "(uri) http://viaf.org/viaf/sourceID/DNB|041143337" ],
     "identifierGND" : [ "4114333-4" ]
   } ]
@@ -2696,6 +2748,7 @@
   "RSWK" : [ {
     "subjectDate" : "1861-1944",
     "subjectPersonName" : "Maillol, Aristide",
+    "combinedLabel" : "Maillol, Aristide",
     "subjectIdentifier" : [ "(DE-588)118730274", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=118730274", "(uri) http://viaf.org/viaf/sourceID/DNB|118730274" ],
     "identifierGND" : [ "118730274" ]
   } ]
@@ -2814,6 +2867,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Physik",
+    "combinedLabel" : "Physik",
     "subjectIdentifier" : [ "(DE-588)4045956-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04045956X", "(uri) http://viaf.org/viaf/sourceID/DNB|04045956X" ],
     "identifierGND" : [ "4045956-1" ]
   } ]
@@ -3036,6 +3090,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Festkörperphysik",
+    "combinedLabel" : "Festkörperphysik",
     "subjectIdentifier" : [ "(DE-588)4016921-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040169219", "(uri) http://viaf.org/viaf/sourceID/DNB|040169219" ],
     "identifierGND" : [ "4016921-2" ]
   } ]
@@ -3146,6 +3201,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Bauschaden",
+    "combinedLabel" : "Bauschaden",
     "subjectIdentifier" : [ "(DE-588)4004927-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040049272", "(uri) http://viaf.org/viaf/sourceID/DNB|040049272" ],
     "identifierGND" : [ "4004927-9" ]
   } ]
@@ -3470,10 +3526,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Licht",
+    "combinedLabel" : "Licht",
     "subjectIdentifier" : [ "(DE-588)4035596-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040355969", "(uri) http://viaf.org/viaf/sourceID/DNB|040355969" ],
     "identifierGND" : [ "4035596-2" ]
   }, {
     "subjectTopicName" : "Kunst",
+    "combinedLabel" : "Kunst",
     "subjectIdentifier" : [ "(DE-588)4114333-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041143337", "(uri) http://viaf.org/viaf/sourceID/DNB|041143337" ],
     "identifierGND" : [ "4114333-4" ]
   } ]
@@ -3586,6 +3644,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Physikalische Chemie",
+    "combinedLabel" : "Physikalische Chemie",
     "subjectIdentifier" : [ "(DE-588)4045959-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040459594", "(uri) http://viaf.org/viaf/sourceID/DNB|040459594" ],
     "identifierGND" : [ "4045959-7" ]
   } ]
@@ -3699,6 +3758,7 @@
   "RSWK" : [ {
     "subjectDate" : "1746-1828",
     "subjectPersonName" : "Goya y Lucientes, Francisco José de",
+    "combinedLabel" : "Goya y Lucientes, Francisco José de",
     "subjectIdentifier" : [ "(DE-588)118541064" ],
     "identifierGND" : [ "118541064" ]
   } ]
@@ -3792,18 +3852,22 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Landwirtschaft",
+    "combinedLabel" : "Landwirtschaft",
     "subjectIdentifier" : [ "(DE-588)4034402-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040344029", "(uri) http://viaf.org/viaf/sourceID/DNB|040344029" ],
     "identifierGND" : [ "4034402-2" ]
   }, {
     "subjectTopicName" : "Architektur",
+    "combinedLabel" : "Architektur",
     "subjectIdentifier" : [ "(DE-588)4002851-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040028518", "(uri) http://viaf.org/viaf/sourceID/DNB|040028518" ],
     "identifierGND" : [ "4002851-3" ]
   }, {
     "subjectTopicName" : "Landschaftsgebundenes Bauen",
+    "combinedLabel" : "Landschaftsgebundenes Bauen",
     "subjectIdentifier" : [ "(DE-588)4140255-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041402553", "(uri) http://viaf.org/viaf/sourceID/DNB|041402553" ],
     "identifierGND" : [ "4140255-8" ]
   }, {
     "subjectTopicName" : "Landwirtschaftliches Gebäude",
+    "combinedLabel" : "Landwirtschaftliches Gebäude",
     "subjectIdentifier" : [ "(DE-588)4192360-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04192360X", "(uri) http://viaf.org/viaf/sourceID/DNB|04192360X" ],
     "identifierGND" : [ "4192360-1" ]
   } ]
@@ -3933,6 +3997,7 @@
   "RSWK" : [ {
     "subjectDate" : "1840-1926",
     "subjectPersonName" : "Monet, Claude",
+    "combinedLabel" : "Monet, Claude",
     "subjectIdentifier" : [ "(DE-588)11858345X", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=11858345X", "(uri) http://viaf.org/viaf/sourceID/DNB|11858345X" ],
     "identifierGND" : [ "11858345X" ]
   } ]
@@ -4062,6 +4127,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Ästhetische Erziehung",
+    "combinedLabel" : "Ästhetische Erziehung",
     "subjectIdentifier" : [ "(DE-588)4000628-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04000628X", "(uri) http://viaf.org/viaf/sourceID/DNB|04000628X" ],
     "identifierGND" : [ "4000628-1" ]
   } ]
@@ -4195,26 +4261,32 @@
   } ],
   "RSWK" : [ {
     "subjectGeoName" : "Deutschland",
+    "combinedLabel" : "Deutschland",
     "subjectIdentifier" : [ "(DE-588)4011882-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040118827", "(uri) http://viaf.org/viaf/sourceID/DNB|040118827" ],
     "identifierGND" : [ "4011882-4" ]
   }, {
     "subjectTopicName" : "Familienleben",
+    "combinedLabel" : "Familienleben",
     "subjectIdentifier" : [ "(DE-588)4193364-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041933648", "(uri) http://viaf.org/viaf/sourceID/DNB|041933648" ],
     "identifierGND" : [ "4193364-3" ]
   }, {
     "subjectTopicName" : "Alltag",
+    "combinedLabel" : "Alltag",
     "subjectIdentifier" : [ "(DE-588)4001307-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040013073", "(uri) http://viaf.org/viaf/sourceID/DNB|040013073" ],
     "identifierGND" : [ "4001307-8" ]
   }, {
     "subjectTopicName" : "Familie",
+    "combinedLabel" : "Familie",
     "subjectIdentifier" : [ "(DE-588)4016397-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040163970", "(uri) http://viaf.org/viaf/sourceID/DNB|040163970" ],
     "identifierGND" : [ "4016397-0" ]
   }, {
     "subjectTopicName" : "Volkskunde",
+    "combinedLabel" : "Volkskunde",
     "subjectIdentifier" : [ "(DE-588)4078937-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040789373", "(uri) http://viaf.org/viaf/sourceID/DNB|040789373" ],
     "identifierGND" : [ "4078937-8" ]
   }, {
     "subjectTopicName" : "Kultur",
+    "combinedLabel" : "Kultur",
     "subjectIdentifier" : [ "(DE-588)4125698-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041256980", "(uri) http://viaf.org/viaf/sourceID/DNB|041256980" ],
     "identifierGND" : [ "4125698-0" ]
   } ]
@@ -4328,10 +4400,12 @@
   "RSWK" : [ {
     "subjectDate" : "1771-1834",
     "subjectPersonName" : "Senefelder, Alois",
+    "combinedLabel" : "Senefelder, Alois",
     "subjectIdentifier" : [ "(DE-588)118613219", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=118613219", "(uri) http://viaf.org/viaf/sourceID/DNB|118613219" ],
     "identifierGND" : [ "118613219" ]
   }, {
     "subjectTopicName" : "Lithografie",
+    "combinedLabel" : "Lithografie",
     "subjectIdentifier" : [ "(DE-588)4036042-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040360423", "(uri) http://viaf.org/viaf/sourceID/DNB|040360423" ],
     "identifierGND" : [ "4036042-8" ]
   } ]
@@ -4441,10 +4515,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Weihnachten",
+    "combinedLabel" : "Weihnachten",
     "subjectIdentifier" : [ "(DE-588)4065075-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040650758", "(uri) http://viaf.org/viaf/sourceID/DNB|040650758" ],
     "identifierGND" : [ "4065075-3" ]
   }, {
     "subjectTopicName" : "Brauch",
+    "combinedLabel" : "Brauch",
     "subjectIdentifier" : [ "(DE-588)4008017-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04008017X", "(uri) http://viaf.org/viaf/sourceID/DNB|04008017X" ],
     "identifierGND" : [ "4008017-1" ]
   } ]
@@ -4678,6 +4754,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Landschaftsmalerei",
+    "combinedLabel" : "Landschaftsmalerei",
     "subjectIdentifier" : [ "(DE-588)4114355-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041143558", "(uri) http://viaf.org/viaf/sourceID/DNB|041143558" ],
     "identifierGND" : [ "4114355-3" ]
   } ]
@@ -4803,6 +4880,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Physik",
+    "combinedLabel" : "Physik",
     "subjectIdentifier" : [ "(DE-588)4045956-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04045956X", "(uri) http://viaf.org/viaf/sourceID/DNB|04045956X" ],
     "identifierGND" : [ "4045956-1" ]
   } ]
@@ -4846,7 +4924,7 @@
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
     "provenance" : [ "neu0801" ],
-    "subject" : [ "Geschichte 1479-1979", "Architekturzeichnung", "Kunstbibliothek Berlin" ]
+    "subject" : [ "Geschichte 1479-1979", "Architekturzeichnung", "Kunstbibliothek Berlin (Berlin, West)" ]
   },
   "SubjectRPB" : [ {
     "subject" : "510"
@@ -4956,10 +5034,12 @@
   },
   "RSWK" : [ {
     "subjectTopicName" : "Architekturzeichnung",
+    "combinedLabel" : "Architekturzeichnung",
     "subjectIdentifier" : [ "(DE-588)4068827-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040688275", "(uri) http://viaf.org/viaf/sourceID/DNB|040688275" ],
     "identifierGND" : [ "4068827-6" ]
   }, {
     "subjectCorporateBodyName" : "Kunstbibliothek Berlin",
+    "combinedLabel" : "Kunstbibliothek Berlin (Berlin, West)",
     "subjectIdentifier" : [ "(DE-588)2016702-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=004752589", "(uri) http://viaf.org/viaf/sourceID/DNB|004752589" ],
     "identifierGND" : [ "2016702-7" ]
   } ]
@@ -5100,14 +5180,17 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Stadtmodell",
+    "combinedLabel" : "Stadtmodell",
     "subjectIdentifier" : [ "(DE-588)4455033-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=950490423", "(uri) http://viaf.org/viaf/sourceID/DNB|950490423" ],
     "identifierGND" : [ "4455033-9" ]
   }, {
     "subjectTopicName" : "Utopie",
+    "combinedLabel" : "Utopie",
     "subjectIdentifier" : [ "(DE-588)4041251-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040412512", "(uri) http://viaf.org/viaf/sourceID/DNB|040412512" ],
     "identifierGND" : [ "4041251-9" ]
   }, {
     "subjectTopicName" : "Idealstadt",
+    "combinedLabel" : "Idealstadt",
     "subjectIdentifier" : [ "(DE-588)4161207-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041612078", "(uri) http://viaf.org/viaf/sourceID/DNB|041612078" ],
     "identifierGND" : [ "4161207-3" ]
   } ]
@@ -5264,6 +5347,7 @@
   },
   "RSWK" : [ {
     "subjectTopicName" : "Doppelbesteuerungsabkommen",
+    "combinedLabel" : "Doppelbesteuerungsabkommen",
     "subjectIdentifier" : [ "(DE-588)4070544-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040705447", "(uri) http://viaf.org/viaf/sourceID/DNB|040705447" ],
     "identifierGND" : [ "4070544-4" ]
   } ]
@@ -5399,6 +5483,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Tieftemperaturtechnik",
+    "combinedLabel" : "Tieftemperaturtechnik",
     "subjectIdentifier" : [ "(DE-588)4078299-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040782999", "(uri) http://viaf.org/viaf/sourceID/DNB|040782999" ],
     "identifierGND" : [ "4078299-2" ]
   } ]
@@ -5780,10 +5865,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Wasseranalyse",
+    "combinedLabel" : "Wasseranalyse",
     "subjectIdentifier" : [ "(DE-588)4079058-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040790584", "(uri) http://viaf.org/viaf/sourceID/DNB|040790584" ],
     "identifierGND" : [ "4079058-7" ]
   }, {
     "subjectTopicName" : "Wasseraufbereitung",
+    "combinedLabel" : "Wasseraufbereitung",
     "subjectIdentifier" : [ "(DE-588)4064698-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04064698X", "(uri) http://viaf.org/viaf/sourceID/DNB|04064698X" ],
     "identifierGND" : [ "4064698-1" ]
   } ]
@@ -5952,11 +6039,13 @@
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Deutschland",
     "subjectTitleName" : "Abgabenordnung",
+    "combinedLabel" : "Deutschland",
     "subjectIdentifier" : [ "(DE-588)4120819-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041208196", "(uri) http://viaf.org/viaf/sourceID/DNB|041208196" ],
     "identifierGND" : [ "4120819-5" ]
   }, {
     "subjectCorporateBodyName" : "Deutschland",
     "subjectTitleName" : "Finanzgerichtsordnung",
+    "combinedLabel" : "Deutschland",
     "subjectIdentifier" : [ "(DE-588)4113563-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041135636", "(uri) http://viaf.org/viaf/sourceID/DNB|041135636" ],
     "identifierGND" : [ "4113563-5" ]
   } ]
@@ -6093,17 +6182,21 @@
     "shelfmark" : "JUE_Frei"
   } ],
   "RSWK" : [ {
-    "subjectTopicName" : "Metals"
+    "subjectTopicName" : "Metals",
+    "combinedLabel" : "Metals"
   }, {
     "subjectTopicName" : "Metall",
+    "combinedLabel" : "Metall",
     "subjectIdentifier" : [ "(DE-588)4038860-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040388603", "(uri) http://viaf.org/viaf/sourceID/DNB|040388603" ],
     "identifierGND" : [ "4038860-8" ]
   }, {
     "subjectTopicName" : "Vorkommen",
+    "combinedLabel" : "Vorkommen",
     "subjectIdentifier" : [ "(DE-588)4188678-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04188678X", "(uri) http://viaf.org/viaf/sourceID/DNB|04188678X" ],
     "identifierGND" : [ "4188678-1" ]
   }, {
     "subjectTopicName" : "Umweltbelastung",
+    "combinedLabel" : "Umweltbelastung",
     "subjectIdentifier" : [ "(DE-588)4061619-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040616193", "(uri) http://viaf.org/viaf/sourceID/DNB|040616193" ],
     "identifierGND" : [ "4061619-8" ]
   } ]
@@ -6231,10 +6324,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Werkzeugmaschine",
+    "combinedLabel" : "Werkzeugmaschine",
     "subjectIdentifier" : [ "(DE-588)4065604-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040656047", "(uri) http://viaf.org/viaf/sourceID/DNB|040656047" ],
     "identifierGND" : [ "4065604-4" ]
   }, {
     "subjectTopicName" : "Spanende Bearbeitung",
+    "combinedLabel" : "Spanende Bearbeitung",
     "subjectIdentifier" : [ "(DE-588)4055957-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040559572", "(uri) http://viaf.org/viaf/sourceID/DNB|040559572" ],
     "identifierGND" : [ "4055957-9" ]
   } ]
@@ -6356,10 +6451,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Brunnen",
+    "combinedLabel" : "Brunnen",
     "subjectIdentifier" : [ "(DE-588)4008491-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040084914", "(uri) http://viaf.org/viaf/sourceID/DNB|040084914" ],
     "identifierGND" : [ "4008491-7" ]
   }, {
     "subjectTopicName" : "Garten",
+    "combinedLabel" : "Garten",
     "subjectIdentifier" : [ "(DE-588)4019286-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040192865", "(uri) http://viaf.org/viaf/sourceID/DNB|040192865" ],
     "identifierGND" : [ "4019286-6" ]
   } ]
@@ -6464,6 +6561,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Werbegrafik",
+    "combinedLabel" : "Werbegrafik",
     "subjectIdentifier" : [ "(DE-588)4079177-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040791777", "(uri) http://viaf.org/viaf/sourceID/DNB|040791777" ],
     "identifierGND" : [ "4079177-4" ]
   } ]
@@ -6588,6 +6686,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Architektur",
+    "combinedLabel" : "Architektur",
     "subjectIdentifier" : [ "(DE-588)4002851-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040028518", "(uri) http://viaf.org/viaf/sourceID/DNB|040028518" ],
     "identifierGND" : [ "4002851-3" ]
   } ]
@@ -6710,6 +6809,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Kunst",
+    "combinedLabel" : "Kunst",
     "subjectIdentifier" : [ "(DE-588)4114333-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041143337", "(uri) http://viaf.org/viaf/sourceID/DNB|041143337" ],
     "identifierGND" : [ "4114333-4" ]
   } ]
@@ -6838,6 +6938,7 @@
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Deutschland",
     "subjectTitleName" : "Aktiengesetz",
+    "combinedLabel" : "Deutschland",
     "subjectIdentifier" : [ "(DE-588)4122039-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041220390", "(uri) http://viaf.org/viaf/sourceID/DNB|041220390" ],
     "identifierGND" : [ "4122039-0" ]
   } ]
@@ -6973,10 +7074,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Technische Optik",
+    "combinedLabel" : "Technische Optik",
     "subjectIdentifier" : [ "(DE-588)4078181-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04078181X", "(uri) http://viaf.org/viaf/sourceID/DNB|04078181X" ],
     "identifierGND" : [ "4078181-1" ]
   }, {
     "subjectTopicName" : "Optisches Bauelement",
+    "combinedLabel" : "Optisches Bauelement",
     "subjectIdentifier" : [ "(DE-588)4172681-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041726812", "(uri) http://viaf.org/viaf/sourceID/DNB|041726812" ],
     "identifierGND" : [ "4172681-9" ]
   } ]
@@ -7139,6 +7242,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Wavelet",
+    "combinedLabel" : "Wavelet",
     "subjectIdentifier" : [ "(DE-588)4215427-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=042154278", "(uri) http://viaf.org/viaf/sourceID/DNB|042154278" ],
     "identifierGND" : [ "4215427-3" ]
   } ]
@@ -7283,6 +7387,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Konjunkturtheorie",
+    "combinedLabel" : "Konjunkturtheorie",
     "subjectIdentifier" : [ "(DE-588)4125557-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041255577", "(uri) http://viaf.org/viaf/sourceID/DNB|041255577" ],
     "identifierGND" : [ "4125557-4" ]
   } ]
@@ -7318,7 +7423,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Informatik" ],
-    "subject" : [ "LATEX" ]
+    "subject" : [ "LATEX (Programm)" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -7391,6 +7496,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "LATEX",
+    "combinedLabel" : "LATEX (Programm)",
     "subjectIdentifier" : [ "(DE-588)4192618-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041926188", "(uri) http://viaf.org/viaf/sourceID/DNB|041926188" ],
     "identifierGND" : [ "4192618-3" ]
   } ]
@@ -7426,7 +7532,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
-    "subject" : [ "Deutschland", "EU-Staaten", "Haftung", "Klein- und Mittelunternehmen", "Personalentwicklung", "Qualitätsmanagement", "Umweltmanagement", "Wirtschaftsprüfung", "Öffentlichkeitsarbeit", "Umweltmanagement*Wirtschaftsprüfung*Qualitätsmanagement*Klein- und Mittelunternehmen*Haftung*Personalentwicklung*Öffentlichkeitsarbeit*Deutschland*EU-Staaten", "Europäische Union", "Audit-Verordnung", "Umweltbezogenes Management" ]
+    "subject" : [ "Deutschland", "EU-Staaten", "Haftung", "Klein- und Mittelunternehmen", "Personalentwicklung", "Qualitätsmanagement", "Umweltmanagement", "Wirtschaftsprüfung", "Öffentlichkeitsarbeit", "Umweltmanagement*Wirtschaftsprüfung*Qualitätsmanagement*Klein- und Mittelunternehmen*Haftung*Personalentwicklung*Öffentlichkeitsarbeit*Deutschland*EU-Staaten", "Europäische Union", "Umweltbezogenes Management", "Audit-Verordnung" ]
   },
   "SubjectRVK" : [ {
     "subject" : "AR 28300"
@@ -7545,10 +7651,12 @@
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Europäische Union",
     "subjectTitleName" : "Audit-Verordnung",
+    "combinedLabel" : "Europäische Union",
     "subjectIdentifier" : [ "(DE-588)4356720-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=942797116", "(uri) http://viaf.org/viaf/sourceID/DNB|942797116" ],
     "identifierGND" : [ "4356720-4" ]
   }, {
     "subjectTopicName" : "Umweltbezogenes Management",
+    "combinedLabel" : "Umweltbezogenes Management",
     "subjectIdentifier" : [ "(DE-588)4201709-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=042017092", "(uri) http://viaf.org/viaf/sourceID/DNB|042017092" ],
     "identifierGND" : [ "4201709-9" ]
   } ]
@@ -7669,10 +7777,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Wärmeschutz",
+    "combinedLabel" : "Wärmeschutz",
     "subjectIdentifier" : [ "(DE-588)4064200-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040642003", "(uri) http://viaf.org/viaf/sourceID/DNB|040642003" ],
     "identifierGND" : [ "4064200-8" ]
   }, {
     "subjectTopicName" : "Kälteschutz",
+    "combinedLabel" : "Kälteschutz",
     "subjectIdentifier" : [ "(DE-588)4162986-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041629868", "(uri) http://viaf.org/viaf/sourceID/DNB|041629868" ],
     "identifierGND" : [ "4162986-3" ]
   } ]
@@ -7827,14 +7937,17 @@
   },
   "RSWK" : [ {
     "subjectTopicName" : "Werkstoffkunde",
+    "combinedLabel" : "Werkstoffkunde",
     "subjectIdentifier" : [ "(DE-588)4079184-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04079184X", "(uri) http://viaf.org/viaf/sourceID/DNB|04079184X" ],
     "identifierGND" : [ "4079184-1" ]
   }, {
     "subjectTopicName" : "Englisch",
+    "combinedLabel" : "Englisch",
     "subjectIdentifier" : [ "(DE-588)4014777-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040147770", "(uri) http://viaf.org/viaf/sourceID/DNB|040147770" ],
     "identifierGND" : [ "4014777-0" ]
   }, {
     "subjectTopicName" : "Deutsch",
+    "combinedLabel" : "Deutsch",
     "subjectIdentifier" : [ "(DE-588)4113292-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041132920", "(uri) http://viaf.org/viaf/sourceID/DNB|041132920" ],
     "identifierGND" : [ "4113292-0" ]
   } ]
@@ -7936,6 +8049,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Holzbau",
+    "combinedLabel" : "Holzbau",
     "subjectIdentifier" : [ "(DE-588)4025677-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040256774", "(uri) http://viaf.org/viaf/sourceID/DNB|040256774" ],
     "identifierGND" : [ "4025677-7" ]
   } ]
@@ -8198,6 +8312,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Schweißen",
+    "combinedLabel" : "Schweißen",
     "subjectIdentifier" : [ "(DE-588)4053870-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040538702", "(uri) http://viaf.org/viaf/sourceID/DNB|040538702" ],
     "identifierGND" : [ "4053870-9" ]
   } ]
@@ -8337,6 +8452,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Autonomer Roboter",
+    "combinedLabel" : "Autonomer Roboter",
     "subjectIdentifier" : [ "(DE-588)4304075-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=043040756", "(uri) http://viaf.org/viaf/sourceID/DNB|043040756" ],
     "identifierGND" : [ "4304075-5" ]
   } ]
@@ -8517,14 +8633,17 @@
   },
   "RSWK" : [ {
     "subjectTopicName" : "Automatisierungssystem",
+    "combinedLabel" : "Automatisierungssystem",
     "subjectIdentifier" : [ "(DE-588)4112648-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041126483", "(uri) http://viaf.org/viaf/sourceID/DNB|041126483" ],
     "identifierGND" : [ "4112648-8" ]
   }, {
     "subjectTopicName" : "Verteiltes System",
+    "combinedLabel" : "Verteiltes System",
     "subjectIdentifier" : [ "(DE-588)4238872-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=042388724", "(uri) http://viaf.org/viaf/sourceID/DNB|042388724" ],
     "identifierGND" : [ "4238872-7" ]
   }, {
     "subjectTopicName" : "Programmierung",
+    "combinedLabel" : "Programmierung",
     "subjectIdentifier" : [ "(DE-588)4076370-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040763706", "(uri) http://viaf.org/viaf/sourceID/DNB|040763706" ],
     "identifierGND" : [ "4076370-5" ]
   } ]
@@ -8661,22 +8780,27 @@
   } ],
   "RSWK" : [ {
     "subjectGeoName" : "Deutschland",
+    "combinedLabel" : "Deutschland",
     "subjectIdentifier" : [ "(DE-588)4011882-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040118827", "(uri) http://viaf.org/viaf/sourceID/DNB|040118827" ],
     "identifierGND" : [ "4011882-4" ]
   }, {
     "subjectTopicName" : "Klein- und Mittelbetrieb",
+    "combinedLabel" : "Klein- und Mittelbetrieb",
     "subjectIdentifier" : [ "(DE-588)4031031-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040310310", "(uri) http://viaf.org/viaf/sourceID/DNB|040310310" ],
     "identifierGND" : [ "4031031-0" ]
   }, {
     "subjectTopicName" : "Risikokapital",
+    "combinedLabel" : "Risikokapital",
     "subjectIdentifier" : [ "(DE-588)4124067-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041240677", "(uri) http://viaf.org/viaf/sourceID/DNB|041240677" ],
     "identifierGND" : [ "4124067-4" ]
   }, {
     "subjectTopicName" : "Finanzierung",
+    "combinedLabel" : "Finanzierung",
     "subjectIdentifier" : [ "(DE-588)4017182-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040171825", "(uri) http://viaf.org/viaf/sourceID/DNB|040171825" ],
     "identifierGND" : [ "4017182-6" ]
   }, {
     "subjectTopicName" : "Internationaler Vergleich",
+    "combinedLabel" : "Internationaler Vergleich",
     "subjectIdentifier" : [ "(DE-588)4120509-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04120509X", "(uri) http://viaf.org/viaf/sourceID/DNB|04120509X" ],
     "identifierGND" : [ "4120509-1" ]
   } ]
@@ -8893,14 +9017,17 @@
   } ],
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Europäische Union",
+    "combinedLabel" : "Europäische Union",
     "subjectIdentifier" : [ "(DE-588)5098525-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=940431181", "(uri) http://viaf.org/viaf/sourceID/DNB|940431181" ],
     "identifierGND" : [ "5098525-5" ]
   }, {
     "subjectTopicName" : "Geldpolitik",
+    "combinedLabel" : "Geldpolitik",
     "subjectIdentifier" : [ "(DE-588)4019902-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040199029", "(uri) http://viaf.org/viaf/sourceID/DNB|040199029" ],
     "identifierGND" : [ "4019902-2" ]
   }, {
     "subjectTopicName" : "Geldtheorie",
+    "combinedLabel" : "Geldtheorie",
     "subjectIdentifier" : [ "(DE-588)4121333-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041213335", "(uri) http://viaf.org/viaf/sourceID/DNB|041213335" ],
     "identifierGND" : [ "4121333-6" ]
   } ]
@@ -9070,6 +9197,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Management",
+    "combinedLabel" : "Management",
     "subjectIdentifier" : [ "(DE-588)4037278-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040372782", "(uri) http://viaf.org/viaf/sourceID/DNB|040372782" ],
     "identifierGND" : [ "4037278-9" ]
   } ]
@@ -9236,6 +9364,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Mikrobiologie",
+    "combinedLabel" : "Mikrobiologie",
     "subjectIdentifier" : [ "(DE-588)4316357-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=043163572", "(uri) http://viaf.org/viaf/sourceID/DNB|043163572" ],
     "identifierGND" : [ "4316357-9" ]
   } ]
@@ -9376,18 +9505,22 @@
   },
   "RSWK" : [ {
     "subjectTopicName" : "Unternehmen",
+    "combinedLabel" : "Unternehmen",
     "subjectIdentifier" : [ "(DE-588)4061963-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04061963X", "(uri) http://viaf.org/viaf/sourceID/DNB|04061963X" ],
     "identifierGND" : [ "4061963-1" ]
   }, {
     "subjectTopicName" : "Intranet",
+    "combinedLabel" : "Intranet",
     "subjectIdentifier" : [ "(DE-588)4435933-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=94941381X", "(uri) http://viaf.org/viaf/sourceID/DNB|94941381X" ],
     "identifierGND" : [ "4435933-0" ]
   }, {
     "subjectTopicName" : "Organisatorisches Lernen",
+    "combinedLabel" : "Organisatorisches Lernen",
     "subjectIdentifier" : [ "(DE-588)4198012-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041980123", "(uri) http://viaf.org/viaf/sourceID/DNB|041980123" ],
     "identifierGND" : [ "4198012-8" ]
   }, {
     "subjectTopicName" : "Wissensorganisation",
+    "combinedLabel" : "Wissensorganisation",
     "subjectIdentifier" : [ "(DE-588)4205605-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=042056055", "(uri) http://viaf.org/viaf/sourceID/DNB|042056055" ],
     "identifierGND" : [ "4205605-6" ]
   } ]
@@ -9525,14 +9658,17 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Unternehmen",
+    "combinedLabel" : "Unternehmen",
     "subjectIdentifier" : [ "(DE-588)4061963-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04061963X", "(uri) http://viaf.org/viaf/sourceID/DNB|04061963X" ],
     "identifierGND" : [ "4061963-1" ]
   }, {
     "subjectTopicName" : "Internet",
+    "combinedLabel" : "Internet",
     "subjectIdentifier" : [ "(DE-588)4308416-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=043084168", "(uri) http://viaf.org/viaf/sourceID/DNB|043084168" ],
     "identifierGND" : [ "4308416-3" ]
   }, {
     "subjectTopicName" : "Electronic Commerce",
+    "combinedLabel" : "Electronic Commerce",
     "subjectIdentifier" : [ "(DE-588)4592128-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=959116044", "(uri) http://viaf.org/viaf/sourceID/DNB|959116044" ],
     "identifierGND" : [ "4592128-3" ]
   } ]
@@ -9681,6 +9817,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Electronic Commerce",
+    "combinedLabel" : "Electronic Commerce",
     "subjectIdentifier" : [ "(DE-588)4592128-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=959116044", "(uri) http://viaf.org/viaf/sourceID/DNB|959116044" ],
     "identifierGND" : [ "4592128-3" ]
   } ]
@@ -9820,10 +9957,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Unternehmen",
+    "combinedLabel" : "Unternehmen",
     "subjectIdentifier" : [ "(DE-588)4061963-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04061963X", "(uri) http://viaf.org/viaf/sourceID/DNB|04061963X" ],
     "identifierGND" : [ "4061963-1" ]
   }, {
     "subjectTopicName" : "Coaching",
+    "combinedLabel" : "Coaching",
     "subjectIdentifier" : [ "(DE-588)4148114-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041481143", "(uri) http://viaf.org/viaf/sourceID/DNB|041481143" ],
     "identifierGND" : [ "4148114-8" ]
   } ]
@@ -9968,6 +10107,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Produktionswirtschaft",
+    "combinedLabel" : "Produktionswirtschaft",
     "subjectIdentifier" : [ "(DE-588)4123986-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041239865", "(uri) http://viaf.org/viaf/sourceID/DNB|041239865" ],
     "identifierGND" : [ "4123986-6" ]
   } ]
@@ -10099,6 +10239,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Magnetochemie",
+    "combinedLabel" : "Magnetochemie",
     "subjectIdentifier" : [ "(DE-588)4114489-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041144899", "(uri) http://viaf.org/viaf/sourceID/DNB|041144899" ],
     "identifierGND" : [ "4114489-2" ]
   } ]
@@ -10202,10 +10343,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Qualitätsmanagement",
+    "combinedLabel" : "Qualitätsmanagement",
     "subjectIdentifier" : [ "(DE-588)4219057-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=042190576", "(uri) http://viaf.org/viaf/sourceID/DNB|042190576" ],
     "identifierGND" : [ "4219057-5" ]
   }, {
     "subjectTopicName" : "Baubetrieb",
+    "combinedLabel" : "Baubetrieb",
     "subjectIdentifier" : [ "(DE-588)4004704-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040047040", "(uri) http://viaf.org/viaf/sourceID/DNB|040047040" ],
     "identifierGND" : [ "4004704-0" ]
   } ]
@@ -10242,7 +10385,7 @@
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
     "provenance" : [ "neu0006" ],
-    "subject" : [ "Geschichte 1945-1999", "Hansaviertel", "Städtebau", "Architektur" ]
+    "subject" : [ "Geschichte 1945-1999", "Hansaviertel (Berlin)", "Städtebau", "Architektur" ]
   },
   "SubjectRVK" : [ {
     "subject" : "ZH 4917"
@@ -10333,14 +10476,17 @@
   } ],
   "RSWK" : [ {
     "subjectGeoName" : "Hansaviertel",
+    "combinedLabel" : "Hansaviertel (Berlin)",
     "subjectIdentifier" : [ "(DE-588)4577993-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=958343691", "(uri) http://viaf.org/viaf/sourceID/DNB|958343691" ],
     "identifierGND" : [ "4577993-4" ]
   }, {
     "subjectTopicName" : "Städtebau",
+    "combinedLabel" : "Städtebau",
     "subjectIdentifier" : [ "(DE-588)4056795-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040567958", "(uri) http://viaf.org/viaf/sourceID/DNB|040567958" ],
     "identifierGND" : [ "4056795-3" ]
   }, {
     "subjectTopicName" : "Architektur",
+    "combinedLabel" : "Architektur",
     "subjectIdentifier" : [ "(DE-588)4002851-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040028518", "(uri) http://viaf.org/viaf/sourceID/DNB|040028518" ],
     "identifierGND" : [ "4002851-3" ]
   } ]
@@ -10460,14 +10606,17 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Wissensmanagement",
+    "combinedLabel" : "Wissensmanagement",
     "subjectIdentifier" : [ "(DE-588)4561842-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=957571917", "(uri) http://viaf.org/viaf/sourceID/DNB|957571917" ],
     "identifierGND" : [ "4561842-2" ]
   }, {
     "subjectTopicName" : "Betriebliches Informationssystem",
+    "combinedLabel" : "Betriebliches Informationssystem",
     "subjectIdentifier" : [ "(DE-588)4069386-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040693864", "(uri) http://viaf.org/viaf/sourceID/DNB|040693864" ],
     "identifierGND" : [ "4069386-7" ]
   }, {
     "subjectTopicName" : "CD-ROM",
+    "combinedLabel" : "CD-ROM",
     "subjectIdentifier" : [ "(DE-588)4139307-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041393074", "(uri) http://viaf.org/viaf/sourceID/DNB|041393074" ],
     "identifierGND" : [ "4139307-7" ]
   } ]
@@ -10600,19 +10749,23 @@
   "RSWK" : [ {
     "subjectDate" : "1917-2009",
     "subjectPersonName" : "Penn, Irving",
+    "combinedLabel" : "Penn, Irving",
     "subjectIdentifier" : [ "(DE-588)118739891", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=118739891", "(uri) http://viaf.org/viaf/sourceID/DNB|118739891" ],
     "identifierGND" : [ "118739891" ]
   }, {
     "subjectTopicName" : "Modefotografie",
+    "combinedLabel" : "Modefotografie",
     "subjectIdentifier" : [ "(DE-588)4137739-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041377397", "(uri) http://viaf.org/viaf/sourceID/DNB|041377397" ],
     "identifierGND" : [ "4137739-4" ]
   }, {
     "subjectDate" : "1938-",
     "subjectPersonName" : "Miyake, Issei",
+    "combinedLabel" : "Miyake, Issei",
     "subjectIdentifier" : [ "(DE-588)118867571", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=118867571", "(uri) http://viaf.org/viaf/sourceID/DNB|118867571" ],
     "identifierGND" : [ "118867571" ]
   }, {
     "subjectTopicName" : "Mode",
+    "combinedLabel" : "Mode",
     "subjectIdentifier" : [ "(DE-588)4039792-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040397920", "(uri) http://viaf.org/viaf/sourceID/DNB|040397920" ],
     "identifierGND" : [ "4039792-0" ]
   } ]
@@ -10741,6 +10894,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Doppelte Fassade",
+    "combinedLabel" : "Doppelte Fassade",
     "subjectIdentifier" : [ "(DE-588)4544026-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=956418465", "(uri) http://viaf.org/viaf/sourceID/DNB|956418465" ],
     "identifierGND" : [ "4544026-8" ]
   } ]
@@ -10838,10 +10992,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Selbstbild",
+    "combinedLabel" : "Selbstbild",
     "subjectIdentifier" : [ "(DE-588)4077349-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040773493", "(uri) http://viaf.org/viaf/sourceID/DNB|040773493" ],
     "identifierGND" : [ "4077349-8" ]
   }, {
     "subjectTopicName" : "Kunst",
+    "combinedLabel" : "Kunst",
     "subjectIdentifier" : [ "(DE-588)4114333-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041143337", "(uri) http://viaf.org/viaf/sourceID/DNB|041143337" ],
     "identifierGND" : [ "4114333-4" ]
   } ]
@@ -10949,10 +11105,12 @@
   } ],
   "RSWK" : [ {
     "subjectGeoName" : "USA",
+    "combinedLabel" : "USA",
     "subjectIdentifier" : [ "(DE-588)4078704-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040787044", "(uri) http://viaf.org/viaf/sourceID/DNB|040787044" ],
     "identifierGND" : [ "4078704-7" ]
   }, {
     "subjectTopicName" : "Kultfilm",
+    "combinedLabel" : "Kultfilm",
     "subjectIdentifier" : [ "(DE-588)4347836-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=941860582", "(uri) http://viaf.org/viaf/sourceID/DNB|941860582" ],
     "identifierGND" : [ "4347836-0" ]
   } ]
@@ -11077,14 +11235,17 @@
   "RSWK" : [ {
     "subjectDate" : "1960-",
     "subjectPersonName" : "Uebele, Andreas",
+    "combinedLabel" : "Uebele, Andreas",
     "subjectIdentifier" : [ "(DE-588)121767647", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=121767647", "(uri) http://viaf.org/viaf/sourceID/DNB|121767647" ],
     "identifierGND" : [ "121767647" ]
   }, {
     "subjectTopicName" : "Typografie",
+    "combinedLabel" : "Typografie",
     "subjectIdentifier" : [ "(DE-588)4136341-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041363418", "(uri) http://viaf.org/viaf/sourceID/DNB|041363418" ],
     "identifierGND" : [ "4136341-3" ]
   }, {
     "subjectTopicName" : "Visuelle Kommunikation",
+    "combinedLabel" : "Visuelle Kommunikation",
     "subjectIdentifier" : [ "(DE-588)4131112-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041311124", "(uri) http://viaf.org/viaf/sourceID/DNB|041311124" ],
     "identifierGND" : [ "4131112-7" ]
   } ]
@@ -11235,6 +11396,7 @@
   },
   "RSWK" : [ {
     "subjectTopicName" : "Video-Installation",
+    "combinedLabel" : "Video-Installation",
     "subjectIdentifier" : [ "(DE-588)4347940-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=941868346", "(uri) http://viaf.org/viaf/sourceID/DNB|941868346" ],
     "identifierGND" : [ "4347940-6" ]
   } ]
@@ -11361,6 +11523,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Villa",
+    "combinedLabel" : "Villa",
     "subjectIdentifier" : [ "(DE-588)4063532-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040635325", "(uri) http://viaf.org/viaf/sourceID/DNB|040635325" ],
     "identifierGND" : [ "4063532-6" ]
   } ]
@@ -11509,6 +11672,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Leistungselektronik",
+    "combinedLabel" : "Leistungselektronik",
     "subjectIdentifier" : [ "(DE-588)4035235-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040352358", "(uri) http://viaf.org/viaf/sourceID/DNB|040352358" ],
     "identifierGND" : [ "4035235-3" ]
   } ]
@@ -11624,14 +11788,17 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Farbgestaltung",
+    "combinedLabel" : "Farbgestaltung",
     "subjectIdentifier" : [ "(DE-588)4153709-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041537092", "(uri) http://viaf.org/viaf/sourceID/DNB|041537092" ],
     "identifierGND" : [ "4153709-9" ]
   }, {
     "subjectTopicName" : "Farbenlehre",
+    "combinedLabel" : "Farbenlehre",
     "subjectIdentifier" : [ "(DE-588)4113517-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041135172", "(uri) http://viaf.org/viaf/sourceID/DNB|041135172" ],
     "identifierGND" : [ "4113517-9" ]
   }, {
     "subjectTopicName" : "Theorie",
+    "combinedLabel" : "Theorie",
     "subjectIdentifier" : [ "(DE-588)4059787-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040597873", "(uri) http://viaf.org/viaf/sourceID/DNB|040597873" ],
     "identifierGND" : [ "4059787-8" ]
   } ]
@@ -11754,6 +11921,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Wintergarten",
+    "combinedLabel" : "Wintergarten",
     "subjectIdentifier" : [ "(DE-588)4066331-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040663310", "(uri) http://viaf.org/viaf/sourceID/DNB|040663310" ],
     "identifierGND" : [ "4066331-0" ]
   } ]
@@ -11881,10 +12049,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Architektin",
+    "combinedLabel" : "Architektin",
     "subjectIdentifier" : [ "(DE-588)4131695-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041316959", "(uri) http://viaf.org/viaf/sourceID/DNB|041316959" ],
     "identifierGND" : [ "4131695-2" ]
   }, {
     "subjectTopicName" : "Haus",
+    "combinedLabel" : "Haus",
     "subjectIdentifier" : [ "(DE-588)4023693-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040236935", "(uri) http://viaf.org/viaf/sourceID/DNB|040236935" ],
     "identifierGND" : [ "4023693-6" ]
   } ]
@@ -11993,9 +12163,11 @@
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
-    "subjectTopicName" : "Layout (Printing)"
+    "subjectTopicName" : "Layout (Printing)",
+    "combinedLabel" : "Layout (Printing)"
   }, {
-    "subjectTopicName" : "Graphic design (Typography)"
+    "subjectTopicName" : "Graphic design (Typography)",
+    "combinedLabel" : "Graphic design (Typography)"
   } ]
 }
 {
@@ -12116,10 +12288,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Hausrat",
+    "combinedLabel" : "Hausrat",
     "subjectIdentifier" : [ "(DE-588)4132060-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041320603", "(uri) http://viaf.org/viaf/sourceID/DNB|041320603" ],
     "identifierGND" : [ "4132060-8" ]
   }, {
     "subjectTopicName" : "Design",
+    "combinedLabel" : "Design",
     "subjectIdentifier" : [ "(DE-588)4011510-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040115100", "(uri) http://viaf.org/viaf/sourceID/DNB|040115100" ],
     "identifierGND" : [ "4011510-0" ]
   } ]
@@ -12245,14 +12419,17 @@
   "RSWK" : [ {
     "subjectDate" : "ca. 20./21. Jh",
     "subjectPersonName" : "Miess, Heinrich",
+    "combinedLabel" : "Miess, Heinrich",
     "subjectIdentifier" : [ "(DE-588)123234611", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=123234611", "(uri) http://viaf.org/viaf/sourceID/DNB|123234611" ],
     "identifierGND" : [ "123234611" ]
   }, {
     "subjectTopicName" : "Sammlung",
+    "combinedLabel" : "Sammlung",
     "subjectIdentifier" : [ "(DE-588)4128844-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041288440", "(uri) http://viaf.org/viaf/sourceID/DNB|041288440" ],
     "identifierGND" : [ "4128844-0" ]
   }, {
     "subjectTopicName" : "Fotomontage",
+    "combinedLabel" : "Fotomontage",
     "subjectIdentifier" : [ "(DE-588)4045920-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040459209", "(uri) http://viaf.org/viaf/sourceID/DNB|040459209" ],
     "identifierGND" : [ "4045920-2" ]
   } ]
@@ -12289,7 +12466,7 @@
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Informatik" ],
     "provenance" : [ "neu0310" ],
-    "subject" : [ "Apache" ]
+    "subject" : [ "Apache (Programm)" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -12372,6 +12549,7 @@
   },
   "RSWK" : [ {
     "subjectTopicName" : "Apache",
+    "combinedLabel" : "Apache (Programm)",
     "subjectIdentifier" : [ "(DE-588)4460947-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=950791229", "(uri) http://viaf.org/viaf/sourceID/DNB|950791229" ],
     "identifierGND" : [ "4460947-4" ]
   } ]
@@ -12572,10 +12750,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Einfamilienhaus",
+    "combinedLabel" : "Einfamilienhaus",
     "subjectIdentifier" : [ "(DE-588)4013843-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040138437", "(uri) http://viaf.org/viaf/sourceID/DNB|040138437" ],
     "identifierGND" : [ "4013843-4" ]
   }, {
     "subjectTopicName" : "Ländlicher Raum",
+    "combinedLabel" : "Ländlicher Raum",
     "subjectIdentifier" : [ "(DE-588)4034026-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040340260", "(uri) http://viaf.org/viaf/sourceID/DNB|040340260" ],
     "identifierGND" : [ "4034026-0" ]
   } ]
@@ -12684,10 +12864,12 @@
   "RSWK" : [ {
     "subjectDate" : "1969-",
     "subjectPersonName" : "Wilkin, Charles",
+    "combinedLabel" : "Wilkin, Charles",
     "subjectIdentifier" : [ "(DE-588)124562663", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=124562663", "(uri) http://viaf.org/viaf/sourceID/DNB|124562663" ],
     "identifierGND" : [ "124562663" ]
   }, {
     "subjectTopicName" : "Grafik",
+    "combinedLabel" : "Grafik",
     "subjectIdentifier" : [ "(DE-588)4021845-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040218457", "(uri) http://viaf.org/viaf/sourceID/DNB|040218457" ],
     "identifierGND" : [ "4021845-4" ]
   } ]
@@ -12723,7 +12905,7 @@
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
     "provenance" : [ "neu0307" ],
-    "subject" : [ "Universität Essen", "Supermarkt", "Karikatur", "Projekt" ]
+    "subject" : [ "Universität Essen Fachbereich Gestaltung, Kunsterziehung", "Supermarkt (Motiv)", "Karikatur", "Projekt" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -12805,18 +12987,22 @@
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Universität Essen",
     "subjectCorporateBodySubUnit" : "Fachbereich Gestaltung, Kunsterziehung",
+    "combinedLabel" : "Universität Essen Fachbereich Gestaltung, Kunsterziehung",
     "subjectIdentifier" : [ "(DE-588)2074020-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=007237588", "(uri) http://viaf.org/viaf/sourceID/DNB|007237588" ],
     "identifierGND" : [ "2074020-7" ]
   }, {
     "subjectTopicName" : "Supermarkt",
+    "combinedLabel" : "Supermarkt (Motiv)",
     "subjectIdentifier" : [ "(DE-588)4732111-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=967639204", "(uri) http://viaf.org/viaf/sourceID/DNB|967639204" ],
     "identifierGND" : [ "4732111-8" ]
   }, {
     "subjectTopicName" : "Karikatur",
+    "combinedLabel" : "Karikatur",
     "subjectIdentifier" : [ "(DE-588)4029670-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040296709", "(uri) http://viaf.org/viaf/sourceID/DNB|040296709" ],
     "identifierGND" : [ "4029670-2" ]
   }, {
     "subjectTopicName" : "Projekt",
+    "combinedLabel" : "Projekt",
     "subjectIdentifier" : [ "(DE-588)4115645-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041156455", "(uri) http://viaf.org/viaf/sourceID/DNB|041156455" ],
     "identifierGND" : [ "4115645-6" ]
   } ]
@@ -12948,6 +13134,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Mathematikunterricht",
+    "combinedLabel" : "Mathematikunterricht",
     "subjectIdentifier" : [ "(DE-588)4037949-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040379493", "(uri) http://viaf.org/viaf/sourceID/DNB|040379493" ],
     "identifierGND" : [ "4037949-8" ]
   } ]
@@ -13079,10 +13266,12 @@
   "RSWK" : [ {
     "subjectDate" : "1887-1953",
     "subjectPersonName" : "Schindler, Rudolph Michael",
+    "combinedLabel" : "Schindler, Rudolph Michael",
     "subjectIdentifier" : [ "(DE-588)118795023", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=118795023", "(uri) http://viaf.org/viaf/sourceID/DNB|118795023" ],
     "identifierGND" : [ "118795023" ]
   }, {
     "subjectTopicName" : "Architektur",
+    "combinedLabel" : "Architektur",
     "subjectIdentifier" : [ "(DE-588)4002851-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040028518", "(uri) http://viaf.org/viaf/sourceID/DNB|040028518" ],
     "identifierGND" : [ "4002851-3" ]
   } ]
@@ -13122,7 +13311,7 @@
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Informatik" ],
     "provenance" : [ "neu0309, neu0311, neu0312, neu0708, neu0911" ],
-    "subject" : [ "PROLOG" ]
+    "subject" : [ "PROLOG (Programmiersprache)" ]
   },
   "SubjectRVK" : [ {
     "subject" : "ST 250 P89"
@@ -13323,6 +13512,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "PROLOG",
+    "combinedLabel" : "PROLOG (Programmiersprache)",
     "subjectIdentifier" : [ "(DE-588)4047464-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04047464X", "(uri) http://viaf.org/viaf/sourceID/DNB|04047464X" ],
     "identifierGND" : [ "4047464-1" ]
   } ]
@@ -13458,9 +13648,11 @@
     "personName" : "Elliott, John A."
   } ],
   "RSWK" : [ {
-    "subjectTopicName" : "Accounting"
+    "subjectTopicName" : "Accounting",
+    "combinedLabel" : "Accounting"
   }, {
     "subjectTopicName" : "Finanzbuchhaltung",
+    "combinedLabel" : "Finanzbuchhaltung",
     "subjectIdentifier" : [ "(DE-588)4113562-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041135628", "(uri) http://viaf.org/viaf/sourceID/DNB|041135628" ],
     "identifierGND" : [ "4113562-3" ]
   } ]
@@ -13608,18 +13800,22 @@
   },
   "RSWK" : [ {
     "subjectTopicName" : "Chemie",
+    "combinedLabel" : "Chemie",
     "subjectIdentifier" : [ "(DE-588)4009816-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040098168", "(uri) http://viaf.org/viaf/sourceID/DNB|040098168" ],
     "identifierGND" : [ "4009816-3" ]
   }, {
     "subjectTopicName" : "Technische Chemie",
+    "combinedLabel" : "Technische Chemie",
     "subjectIdentifier" : [ "(DE-588)4078178-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04078178X", "(uri) http://viaf.org/viaf/sourceID/DNB|04078178X" ],
     "identifierGND" : [ "4078178-1" ]
   }, {
     "subjectTopicName" : "Englisch",
+    "combinedLabel" : "Englisch",
     "subjectIdentifier" : [ "(DE-588)4014777-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040147770", "(uri) http://viaf.org/viaf/sourceID/DNB|040147770" ],
     "identifierGND" : [ "4014777-0" ]
   }, {
     "subjectTopicName" : "Deutsch",
+    "combinedLabel" : "Deutsch",
     "subjectIdentifier" : [ "(DE-588)4113292-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041132920", "(uri) http://viaf.org/viaf/sourceID/DNB|041132920" ],
     "identifierGND" : [ "4113292-0" ]
   } ]
@@ -13735,22 +13931,27 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Betriebssystem",
+    "combinedLabel" : "Betriebssystem",
     "subjectIdentifier" : [ "(DE-588)4006216-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040062163", "(uri) http://viaf.org/viaf/sourceID/DNB|040062163" ],
     "identifierGND" : [ "4006216-8" ]
   }, {
     "subjectTopicName" : "Hacker",
+    "combinedLabel" : "Hacker",
     "subjectIdentifier" : [ "(DE-588)4113821-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04113821X", "(uri) http://viaf.org/viaf/sourceID/DNB|04113821X" ],
     "identifierGND" : [ "4113821-1" ]
   }, {
     "subjectTopicName" : "Internet",
+    "combinedLabel" : "Internet",
     "subjectIdentifier" : [ "(DE-588)4308416-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=043084168", "(uri) http://viaf.org/viaf/sourceID/DNB|043084168" ],
     "identifierGND" : [ "4308416-3" ]
   }, {
     "subjectTopicName" : "Computersicherheit",
+    "combinedLabel" : "Computersicherheit",
     "subjectIdentifier" : [ "(DE-588)4274324-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=042743249", "(uri) http://viaf.org/viaf/sourceID/DNB|042743249" ],
     "identifierGND" : [ "4274324-2" ]
   }, {
     "subjectTopicName" : "Datensicherung",
+    "combinedLabel" : "Datensicherung",
     "subjectIdentifier" : [ "(DE-588)4011144-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04011144X", "(uri) http://viaf.org/viaf/sourceID/DNB|04011144X" ],
     "identifierGND" : [ "4011144-1" ]
   } ]
@@ -14101,13 +14302,17 @@
     "title" : [ "La sombra del guerrero" ]
   },
   "RSWK" : [ {
-    "subjectTopicName" : "Film"
+    "subjectTopicName" : "Film",
+    "combinedLabel" : "Film"
   }, {
-    "subjectTopicName" : "Spielfilm"
+    "subjectTopicName" : "Spielfilm",
+    "combinedLabel" : "Spielfilm"
   }, {
-    "subjectTopicName" : "bushi (Krieger, Samurai)"
+    "subjectTopicName" : "bushi (Krieger, Samurai)",
+    "combinedLabel" : "bushi (Krieger, Samurai)"
   }, {
-    "subjectTopicName" : "Krieg"
+    "subjectTopicName" : "Krieg",
+    "combinedLabel" : "Krieg"
   } ]
 }
 {
@@ -14221,19 +14426,23 @@
   "RSWK" : [ {
     "subjectDate" : "1971-",
     "subjectPersonName" : "Bouroullec, Ronan",
+    "combinedLabel" : "Bouroullec, Ronan",
     "subjectIdentifier" : [ "(DE-588)124709176", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=124709176", "(uri) http://viaf.org/viaf/sourceID/DNB|124709176" ],
     "identifierGND" : [ "124709176" ]
   }, {
     "subjectDate" : "1976-",
     "subjectPersonName" : "Bouroullec, Erwan",
+    "combinedLabel" : "Bouroullec, Erwan",
     "subjectIdentifier" : [ "(DE-588)124709168", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=124709168", "(uri) http://viaf.org/viaf/sourceID/DNB|124709168" ],
     "identifierGND" : [ "124709168" ]
   }, {
     "subjectTopicName" : "Möbel",
+    "combinedLabel" : "Möbel",
     "subjectIdentifier" : [ "(DE-588)4039860-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040398609", "(uri) http://viaf.org/viaf/sourceID/DNB|040398609" ],
     "identifierGND" : [ "4039860-2" ]
   }, {
     "subjectTopicName" : "Design",
+    "combinedLabel" : "Design",
     "subjectIdentifier" : [ "(DE-588)4011510-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040115100", "(uri) http://viaf.org/viaf/sourceID/DNB|040115100" ],
     "identifierGND" : [ "4011510-0" ]
   } ]
@@ -14479,14 +14688,17 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Interkulturelles Management",
+    "combinedLabel" : "Interkulturelles Management",
     "subjectIdentifier" : [ "(DE-588)4343519-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=94150235X", "(uri) http://viaf.org/viaf/sourceID/DNB|94150235X" ],
     "identifierGND" : [ "4343519-1" ]
   }, {
     "subjectTopicName" : "Arbeitsgruppe",
+    "combinedLabel" : "Arbeitsgruppe",
     "subjectIdentifier" : [ "(DE-588)4124562-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041245628", "(uri) http://viaf.org/viaf/sourceID/DNB|041245628" ],
     "identifierGND" : [ "4124562-3" ]
   }, {
     "subjectTopicName" : "Kommunikation",
+    "combinedLabel" : "Kommunikation",
     "subjectIdentifier" : [ "(DE-588)4031883-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040318834", "(uri) http://viaf.org/viaf/sourceID/DNB|040318834" ],
     "identifierGND" : [ "4031883-7" ]
   } ]
@@ -14606,14 +14818,17 @@
   },
   "RSWK" : [ {
     "subjectTopicName" : "Geschäftsbericht",
+    "combinedLabel" : "Geschäftsbericht",
     "subjectIdentifier" : [ "(DE-588)4129201-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041292014", "(uri) http://viaf.org/viaf/sourceID/DNB|041292014" ],
     "identifierGND" : [ "4129201-7" ]
   }, {
     "subjectTopicName" : "Grafische Darstellung",
+    "combinedLabel" : "Grafische Darstellung",
     "subjectIdentifier" : [ "(DE-588)4129552-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041295528", "(uri) http://viaf.org/viaf/sourceID/DNB|041295528" ],
     "identifierGND" : [ "4129552-3" ]
   }, {
     "subjectTopicName" : "Gestaltung",
+    "combinedLabel" : "Gestaltung",
     "subjectIdentifier" : [ "(DE-588)4157139-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041571398", "(uri) http://viaf.org/viaf/sourceID/DNB|041571398" ],
     "identifierGND" : [ "4157139-3" ]
   } ]
@@ -14731,6 +14946,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Straßenbau",
+    "combinedLabel" : "Straßenbau",
     "subjectIdentifier" : [ "(DE-588)4057887-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040578879", "(uri) http://viaf.org/viaf/sourceID/DNB|040578879" ],
     "identifierGND" : [ "4057887-2" ]
   } ]
@@ -15008,9 +15224,11 @@
     "identifierGND" : [ "172559529" ]
   } ],
   "RSWK" : [ {
-    "subjectTopicName" : "Fluid mechanics"
+    "subjectTopicName" : "Fluid mechanics",
+    "combinedLabel" : "Fluid mechanics"
   }, {
     "subjectTopicName" : "Strömungsmechanik",
+    "combinedLabel" : "Strömungsmechanik",
     "subjectIdentifier" : [ "(DE-588)4077970-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04077970X", "(uri) http://viaf.org/viaf/sourceID/DNB|04077970X" ],
     "identifierGND" : [ "4077970-1" ]
   } ]
@@ -15127,18 +15345,22 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Einfamilienhaus",
+    "combinedLabel" : "Einfamilienhaus",
     "subjectIdentifier" : [ "(DE-588)4013843-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040138437", "(uri) http://viaf.org/viaf/sourceID/DNB|040138437" ],
     "identifierGND" : [ "4013843-4" ]
   }, {
     "subjectTopicName" : "Umbau",
+    "combinedLabel" : "Umbau",
     "subjectIdentifier" : [ "(DE-588)4061577-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040615774", "(uri) http://viaf.org/viaf/sourceID/DNB|040615774" ],
     "identifierGND" : [ "4061577-7" ]
   }, {
     "subjectTopicName" : "Anbau",
+    "combinedLabel" : "Anbau",
     "subjectIdentifier" : [ "(DE-588)4564812-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=957689683", "(uri) http://viaf.org/viaf/sourceID/DNB|957689683" ],
     "identifierGND" : [ "4564812-8" ]
   }, {
     "subjectTopicName" : "Aufstockung",
+    "combinedLabel" : "Aufstockung",
     "subjectIdentifier" : [ "(DE-588)4281853-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=042818532", "(uri) http://viaf.org/viaf/sourceID/DNB|042818532" ],
     "identifierGND" : [ "4281853-9" ]
   } ]
@@ -15382,26 +15604,32 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Bauen im Bestand",
+    "combinedLabel" : "Bauen im Bestand",
     "subjectIdentifier" : [ "(DE-588)4817881-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=974035610", "(uri) http://viaf.org/viaf/sourceID/DNB|974035610" ],
     "identifierGND" : [ "4817881-0" ]
   }, {
     "subjectTopicName" : "Massivbau",
+    "combinedLabel" : "Massivbau",
     "subjectIdentifier" : [ "(DE-588)4037897-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040378977", "(uri) http://viaf.org/viaf/sourceID/DNB|040378977" ],
     "identifierGND" : [ "4037897-4" ]
   }, {
     "subjectTopicName" : "Bauschaden",
+    "combinedLabel" : "Bauschaden",
     "subjectIdentifier" : [ "(DE-588)4004927-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040049272", "(uri) http://viaf.org/viaf/sourceID/DNB|040049272" ],
     "identifierGND" : [ "4004927-9" ]
   }, {
     "subjectTopicName" : "Instandsetzung",
+    "combinedLabel" : "Instandsetzung",
     "subjectIdentifier" : [ "(DE-588)4027151-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04027151X", "(uri) http://viaf.org/viaf/sourceID/DNB|04027151X" ],
     "identifierGND" : [ "4027151-1" ]
   }, {
     "subjectTopicName" : "Bewehrung",
+    "combinedLabel" : "Bewehrung",
     "subjectIdentifier" : [ "(DE-588)4006325-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040063259", "(uri) http://viaf.org/viaf/sourceID/DNB|040063259" ],
     "identifierGND" : [ "4006325-2" ]
   }, {
     "subjectTopicName" : "Verstärkungswerkstoff",
+    "combinedLabel" : "Verstärkungswerkstoff",
     "subjectIdentifier" : [ "(DE-588)4303769-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=043037690", "(uri) http://viaf.org/viaf/sourceID/DNB|043037690" ],
     "identifierGND" : [ "4303769-0" ]
   } ]
@@ -15560,6 +15788,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Thermodynamik",
+    "combinedLabel" : "Thermodynamik",
     "subjectIdentifier" : [ "(DE-588)4059827-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040598276", "(uri) http://viaf.org/viaf/sourceID/DNB|040598276" ],
     "identifierGND" : [ "4059827-5" ]
   } ]
@@ -15821,10 +16050,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Architektur",
+    "combinedLabel" : "Architektur",
     "subjectIdentifier" : [ "(DE-588)4002851-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040028518", "(uri) http://viaf.org/viaf/sourceID/DNB|040028518" ],
     "identifierGND" : [ "4002851-3" ]
   }, {
     "subjectTopicName" : "Kunststoff",
+    "combinedLabel" : "Kunststoff",
     "subjectIdentifier" : [ "(DE-588)4033676-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04033676X", "(uri) http://viaf.org/viaf/sourceID/DNB|04033676X" ],
     "identifierGND" : [ "4033676-1" ]
   } ]
@@ -15956,6 +16187,7 @@
   "RSWK" : [ {
     "subjectDate" : "1920-1991",
     "subjectPersonName" : "Flusser, Vilém",
+    "combinedLabel" : "Flusser, Vilém",
     "subjectIdentifier" : [ "(DE-588)119200716", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=119200716", "(uri) http://viaf.org/viaf/sourceID/DNB|119200716" ],
     "identifierGND" : [ "119200716" ]
   } ]
@@ -16078,14 +16310,17 @@
   } ],
   "RSWK" : [ {
     "subjectGeoName" : "Europa",
+    "combinedLabel" : "Europa",
     "subjectIdentifier" : [ "(DE-588)4015701-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040157016", "(uri) http://viaf.org/viaf/sourceID/DNB|040157016" ],
     "identifierGND" : [ "4015701-5" ]
   }, {
     "subjectTopicName" : "Mehrfamilienhaus",
+    "combinedLabel" : "Mehrfamilienhaus",
     "subjectIdentifier" : [ "(DE-588)4038373-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040383733", "(uri) http://viaf.org/viaf/sourceID/DNB|040383733" ],
     "identifierGND" : [ "4038373-8" ]
   }, {
     "subjectTopicName" : "Kollektive Wohnform",
+    "combinedLabel" : "Kollektive Wohnform",
     "subjectIdentifier" : [ "(DE-588)4211955-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=042119553", "(uri) http://viaf.org/viaf/sourceID/DNB|042119553" ],
     "identifierGND" : [ "4211955-8" ]
   } ]
@@ -16219,6 +16454,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Markenpolitik",
+    "combinedLabel" : "Markenpolitik",
     "subjectIdentifier" : [ "(DE-588)4144679-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041446798", "(uri) http://viaf.org/viaf/sourceID/DNB|041446798" ],
     "identifierGND" : [ "4144679-3" ]
   } ]
@@ -16255,7 +16491,7 @@
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Informatik" ],
     "provenance" : [ "neu1104" ],
-    "subject" : [ "Objektorientierte Programmierung", "Java" ]
+    "subject" : [ "Objektorientierte Programmierung", "Java (Programmiersprache)" ]
   },
   "SubjectRPB" : [ {
     "subject" : "820"
@@ -16344,10 +16580,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Objektorientierte Programmierung",
+    "combinedLabel" : "Objektorientierte Programmierung",
     "subjectIdentifier" : [ "(DE-588)4233947-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=042339472", "(uri) http://viaf.org/viaf/sourceID/DNB|042339472" ],
     "identifierGND" : [ "4233947-9" ]
   }, {
     "subjectTopicName" : "Java",
+    "combinedLabel" : "Java (Programmiersprache)",
     "subjectIdentifier" : [ "(DE-588)4401313-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=946807736", "(uri) http://viaf.org/viaf/sourceID/DNB|946807736" ],
     "identifierGND" : [ "4401313-9" ]
   } ]
@@ -16487,6 +16725,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Passivhaus",
+    "combinedLabel" : "Passivhaus",
     "subjectIdentifier" : [ "(DE-588)4521893-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=955013585", "(uri) http://viaf.org/viaf/sourceID/DNB|955013585" ],
     "identifierGND" : [ "4521893-6" ]
   } ]
@@ -16651,22 +16890,27 @@
   },
   "RSWK" : [ {
     "subjectGeoName" : "Deutschland",
+    "combinedLabel" : "Deutschland",
     "subjectIdentifier" : [ "(DE-588)4011882-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040118827", "(uri) http://viaf.org/viaf/sourceID/DNB|040118827" ],
     "identifierGND" : [ "4011882-4" ]
   }, {
     "subjectTopicName" : "Discountgeschäft",
+    "combinedLabel" : "Discountgeschäft",
     "subjectIdentifier" : [ "(DE-588)4203166-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=042031664", "(uri) http://viaf.org/viaf/sourceID/DNB|042031664" ],
     "identifierGND" : [ "4203166-7" ]
   }, {
     "subjectTopicName" : "Konsumgesellschaft",
+    "combinedLabel" : "Konsumgesellschaft",
     "subjectIdentifier" : [ "(DE-588)4165119-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041651197", "(uri) http://viaf.org/viaf/sourceID/DNB|041651197" ],
     "identifierGND" : [ "4165119-4" ]
   }, {
     "subjectTopicName" : "Rezeption",
+    "combinedLabel" : "Rezeption",
     "subjectIdentifier" : [ "(DE-588)4049716-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04049716X", "(uri) http://viaf.org/viaf/sourceID/DNB|04049716X" ],
     "identifierGND" : [ "4049716-1" ]
   }, {
     "subjectTopicName" : "Kunst",
+    "combinedLabel" : "Kunst",
     "subjectIdentifier" : [ "(DE-588)4114333-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041143337", "(uri) http://viaf.org/viaf/sourceID/DNB|041143337" ],
     "identifierGND" : [ "4114333-4" ]
   } ]
@@ -16847,7 +17091,7 @@
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
     "provenance" : [ "neu1307" ],
-    "subject" : [ "Linder", "Collage", "Fotomontage", "Frau", "Sexualisierung" ]
+    "subject" : [ "Linder", "Collage", "Fotomontage", "Frau (Motiv)", "Sexualisierung" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -16949,22 +17193,27 @@
   "RSWK" : [ {
     "subjectDate" : "1954-",
     "subjectPersonName" : "Linder",
+    "combinedLabel" : "Linder",
     "subjectIdentifier" : [ "(DE-588)132201658", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=132201658", "(uri) http://viaf.org/viaf/sourceID/DNB|132201658" ],
     "identifierGND" : [ "132201658" ]
   }, {
     "subjectTopicName" : "Collage",
+    "combinedLabel" : "Collage",
     "subjectIdentifier" : [ "(DE-588)4010384-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040103846", "(uri) http://viaf.org/viaf/sourceID/DNB|040103846" ],
     "identifierGND" : [ "4010384-5" ]
   }, {
     "subjectTopicName" : "Fotomontage",
+    "combinedLabel" : "Fotomontage",
     "subjectIdentifier" : [ "(DE-588)4045920-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040459209", "(uri) http://viaf.org/viaf/sourceID/DNB|040459209" ],
     "identifierGND" : [ "4045920-2" ]
   }, {
     "subjectTopicName" : "Frau",
+    "combinedLabel" : "Frau (Motiv)",
     "subjectIdentifier" : [ "(DE-588)4113617-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041136179", "(uri) http://viaf.org/viaf/sourceID/DNB|041136179" ],
     "identifierGND" : [ "4113617-2" ]
   }, {
     "subjectTopicName" : "Sexualisierung",
+    "combinedLabel" : "Sexualisierung",
     "subjectIdentifier" : [ "(DE-588)4181107-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041811070", "(uri) http://viaf.org/viaf/sourceID/DNB|041811070" ],
     "identifierGND" : [ "4181107-0" ]
   } ]
@@ -17101,14 +17350,17 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Landschaftsplanung",
+    "combinedLabel" : "Landschaftsplanung",
     "subjectIdentifier" : [ "(DE-588)4034354-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040343545", "(uri) http://viaf.org/viaf/sourceID/DNB|040343545" ],
     "identifierGND" : [ "4034354-6" ]
   }, {
     "subjectTopicName" : "Freifläche",
+    "combinedLabel" : "Freifläche",
     "subjectIdentifier" : [ "(DE-588)4018319-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04018319X", "(uri) http://viaf.org/viaf/sourceID/DNB|04018319X" ],
     "identifierGND" : [ "4018319-1" ]
   }, {
     "subjectTopicName" : "Kennzahl",
+    "combinedLabel" : "Kennzahl",
     "subjectIdentifier" : [ "(DE-588)4114166-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041141660", "(uri) http://viaf.org/viaf/sourceID/DNB|041141660" ],
     "identifierGND" : [ "4114166-0" ]
   } ]
@@ -17259,14 +17511,17 @@
   } ],
   "RSWK" : [ {
     "subjectGeoName" : "Belgien",
+    "combinedLabel" : "Belgien",
     "subjectIdentifier" : [ "(DE-588)4005406-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040054063", "(uri) http://viaf.org/viaf/sourceID/DNB|040054063" ],
     "identifierGND" : [ "4005406-8" ]
   }, {
     "subjectTopicName" : "Mode",
+    "combinedLabel" : "Mode",
     "subjectIdentifier" : [ "(DE-588)4039792-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040397920", "(uri) http://viaf.org/viaf/sourceID/DNB|040397920" ],
     "identifierGND" : [ "4039792-0" ]
   }, {
     "subjectTopicName" : "Design",
+    "combinedLabel" : "Design",
     "subjectIdentifier" : [ "(DE-588)4011510-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040115100", "(uri) http://viaf.org/viaf/sourceID/DNB|040115100" ],
     "identifierGND" : [ "4011510-0" ]
   } ],
@@ -17395,10 +17650,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Zahnrad",
+    "combinedLabel" : "Zahnrad",
     "subjectIdentifier" : [ "(DE-588)4067333-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040673332", "(uri) http://viaf.org/viaf/sourceID/DNB|040673332" ],
     "identifierGND" : [ "4067333-9" ]
   }, {
     "subjectTopicName" : "Fertigung",
+    "combinedLabel" : "Fertigung",
     "subjectIdentifier" : [ "(DE-588)4016899-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040168999", "(uri) http://viaf.org/viaf/sourceID/DNB|040168999" ],
     "identifierGND" : [ "4016899-2" ]
   } ]
@@ -17603,6 +17860,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Finanzierung",
+    "combinedLabel" : "Finanzierung",
     "subjectIdentifier" : [ "(DE-588)4017182-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040171825", "(uri) http://viaf.org/viaf/sourceID/DNB|040171825" ],
     "identifierGND" : [ "4017182-6" ]
   } ]
@@ -17646,7 +17904,7 @@
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
     "provenance" : [ "neu1908" ],
-    "subject" : [ "Strategic planning", "Case studies", "Strategisches Management" ]
+    "subject" : [ "Strategic planning", "Strategisches Management", "Case studies" ]
   },
   "SubjectRVK" : [ {
     "subject" : "QP 320"
@@ -17739,12 +17997,15 @@
     "identifierGND" : [ "1117047784" ]
   } ],
   "RSWK" : [ {
-    "subjectTopicName" : "Strategic planning"
+    "subjectTopicName" : "Strategic planning",
+    "combinedLabel" : "Strategic planning"
   }, {
     "subjectTopicName" : "Strategic planning",
-    "subjectGenre" : "Case studies"
+    "subjectGenre" : "Case studies",
+    "combinedLabel" : "Strategic planning"
   }, {
     "subjectTopicName" : "Strategisches Management",
+    "combinedLabel" : "Strategisches Management",
     "subjectIdentifier" : [ "(DE-588)4124261-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041242610", "(uri) http://viaf.org/viaf/sourceID/DNB|041242610" ],
     "identifierGND" : [ "4124261-0" ]
   } ]
@@ -18166,6 +18427,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Elektrische Messtechnik",
+    "combinedLabel" : "Elektrische Messtechnik",
     "subjectIdentifier" : [ "(DE-588)4124827-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041248279", "(uri) http://viaf.org/viaf/sourceID/DNB|041248279" ],
     "identifierGND" : [ "4124827-2" ]
   } ],
@@ -18391,10 +18653,12 @@
   } ],
   "RSWK" : [ {
     "subjectGeoName" : "Deutschland",
+    "combinedLabel" : "Deutschland",
     "subjectIdentifier" : [ "(DE-588)4011882-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040118827", "(uri) http://viaf.org/viaf/sourceID/DNB|040118827" ],
     "identifierGND" : [ "4011882-4" ]
   }, {
     "subjectTopicName" : "Allgemeines Verwaltungsrecht",
+    "combinedLabel" : "Allgemeines Verwaltungsrecht",
     "subjectIdentifier" : [ "(DE-588)4117367-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041173678", "(uri) http://viaf.org/viaf/sourceID/DNB|041173678" ],
     "identifierGND" : [ "4117367-3" ]
   } ],
@@ -18558,18 +18822,22 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Stadtplanung",
+    "combinedLabel" : "Stadtplanung",
     "subjectIdentifier" : [ "(DE-588)4056754-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040567540", "(uri) http://viaf.org/viaf/sourceID/DNB|040567540" ],
     "identifierGND" : [ "4056754-0" ]
   }, {
     "subjectTopicName" : "Altengerechtes Wohnen",
+    "combinedLabel" : "Altengerechtes Wohnen",
     "subjectIdentifier" : [ "(DE-588)4525200-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=955303796", "(uri) http://viaf.org/viaf/sourceID/DNB|955303796" ],
     "identifierGND" : [ "4525200-2" ]
   }, {
     "subjectTopicName" : "Kollektive Wohnform",
+    "combinedLabel" : "Kollektive Wohnform",
     "subjectIdentifier" : [ "(DE-588)4211955-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=042119553", "(uri) http://viaf.org/viaf/sourceID/DNB|042119553" ],
     "identifierGND" : [ "4211955-8" ]
   }, {
     "subjectTopicName" : "Stadtviertel",
+    "combinedLabel" : "Stadtviertel",
     "subjectIdentifier" : [ "(DE-588)4077814-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040778142", "(uri) http://viaf.org/viaf/sourceID/DNB|040778142" ],
     "identifierGND" : [ "4077814-9" ]
   } ],
@@ -18926,6 +19194,7 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "E-Health",
+    "combinedLabel" : "E-Health",
     "subjectIdentifier" : [ "(DE-588)7542254-2", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=981171052", "(uri) http://viaf.org/viaf/sourceID/DNB|981171052" ],
     "identifierGND" : [ "7542254-2" ]
   } ],
@@ -19826,6 +20095,7 @@
   } ],
   "RSWK" : [ {
     "subjectGeoName" : "Barcelona",
+    "combinedLabel" : "Barcelona",
     "subjectIdentifier" : [ "(DE-588)4004503-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04004503X", "(uri) http://viaf.org/viaf/sourceID/DNB|04004503X" ],
     "identifierGND" : [ "4004503-1" ]
   } ]
@@ -20163,26 +20433,32 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Elektrotechnik",
+    "combinedLabel" : "Elektrotechnik",
     "subjectIdentifier" : [ "(DE-588)4014390-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040143902", "(uri) http://viaf.org/viaf/sourceID/DNB|040143902" ],
     "identifierGND" : [ "4014390-9" ]
   }, {
     "subjectTopicName" : "Elektrisches Netzwerk",
+    "combinedLabel" : "Elektrisches Netzwerk",
     "subjectIdentifier" : [ "(DE-588)4014214-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040142140", "(uri) http://viaf.org/viaf/sourceID/DNB|040142140" ],
     "identifierGND" : [ "4014214-0" ]
   }, {
     "subjectTopicName" : "Grundschaltung",
+    "combinedLabel" : "Grundschaltung",
     "subjectIdentifier" : [ "(DE-588)4497217-9", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=95336013X", "(uri) http://viaf.org/viaf/sourceID/DNB|95336013X" ],
     "identifierGND" : [ "4497217-9" ]
   }, {
     "subjectTopicName" : "Elektrisches Bauelement",
+    "combinedLabel" : "Elektrisches Bauelement",
     "subjectIdentifier" : [ "(DE-588)4070746-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040707466", "(uri) http://viaf.org/viaf/sourceID/DNB|040707466" ],
     "identifierGND" : [ "4070746-5" ]
   }, {
     "subjectTopicName" : "Wechselstrom",
+    "combinedLabel" : "Wechselstrom",
     "subjectIdentifier" : [ "(DE-588)4064931-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040649318", "(uri) http://viaf.org/viaf/sourceID/DNB|040649318" ],
     "identifierGND" : [ "4064931-3" ]
   }, {
     "subjectTopicName" : "Gleichstrom",
+    "combinedLabel" : "Gleichstrom",
     "subjectIdentifier" : [ "(DE-588)4021242-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040212424", "(uri) http://viaf.org/viaf/sourceID/DNB|040212424" ],
     "identifierGND" : [ "4021242-7" ]
   } ],
@@ -20364,18 +20640,22 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Nanoelektronik",
+    "combinedLabel" : "Nanoelektronik",
     "subjectIdentifier" : [ "(DE-588)4732034-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=967629209", "(uri) http://viaf.org/viaf/sourceID/DNB|967629209" ],
     "identifierGND" : [ "4732034-5" ]
   }, {
     "subjectTopicName" : "Halbleiterelektronik",
+    "combinedLabel" : "Halbleiterelektronik",
     "subjectIdentifier" : [ "(DE-588)4140120-7", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041401204", "(uri) http://viaf.org/viaf/sourceID/DNB|041401204" ],
     "identifierGND" : [ "4140120-7" ]
   }, {
     "subjectTopicName" : "Elektronisches Bauelement",
+    "combinedLabel" : "Elektronisches Bauelement",
     "subjectIdentifier" : [ "(DE-588)4014360-0", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040143600", "(uri) http://viaf.org/viaf/sourceID/DNB|040143600" ],
     "identifierGND" : [ "4014360-0" ]
   }, {
     "subjectTopicName" : "Feldeffekttransistor",
+    "combinedLabel" : "Feldeffekttransistor",
     "subjectIdentifier" : [ "(DE-588)4131472-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041314727", "(uri) http://viaf.org/viaf/sourceID/DNB|041314727" ],
     "identifierGND" : [ "4131472-4" ]
   } ]
@@ -20523,14 +20803,17 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Nachrichtentechnik",
+    "combinedLabel" : "Nachrichtentechnik",
     "subjectIdentifier" : [ "(DE-588)4041066-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040410668", "(uri) http://viaf.org/viaf/sourceID/DNB|040410668" ],
     "identifierGND" : [ "4041066-3" ]
   }, {
     "subjectTopicName" : "Signalverarbeitung",
+    "combinedLabel" : "Signalverarbeitung",
     "subjectIdentifier" : [ "(DE-588)4054947-1", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04054947X", "(uri) http://viaf.org/viaf/sourceID/DNB|04054947X" ],
     "identifierGND" : [ "4054947-1" ]
   }, {
     "subjectTopicName" : "Digitales Nachrichtenübertragungssystem",
+    "combinedLabel" : "Digitales Nachrichtenübertragungssystem",
     "subjectIdentifier" : [ "(DE-588)4191730-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041917308", "(uri) http://viaf.org/viaf/sourceID/DNB|041917308" ],
     "identifierGND" : [ "4191730-3" ]
   } ],
@@ -20608,7 +20891,7 @@
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
     "provenance" : [ "neu1811" ],
-    "subject" : [ "Geschichte", "Hofburg" ]
+    "subject" : [ "Geschichte", "Hofburg (Wien)" ]
   },
   "SubjectDNB" : [ {
     "subject" : "720"
@@ -20706,6 +20989,7 @@
   } ],
   "RSWK" : [ {
     "subjectGeoName" : "Hofburg",
+    "combinedLabel" : "Hofburg (Wien)",
     "subjectIdentifier" : [ "(DE-588)4244475-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=042444756", "(uri) http://viaf.org/viaf/sourceID/DNB|042444756" ],
     "identifierGND" : [ "4244475-5" ]
   } ],
@@ -20887,10 +21171,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Lärmschutz",
+    "combinedLabel" : "Lärmschutz",
     "subjectIdentifier" : [ "(DE-588)4034054-5", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040340546", "(uri) http://viaf.org/viaf/sourceID/DNB|040340546" ],
     "identifierGND" : [ "4034054-5" ]
   }, {
     "subjectTopicName" : "Hochbau",
+    "combinedLabel" : "Hochbau",
     "subjectIdentifier" : [ "(DE-588)4025188-3", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040251888", "(uri) http://viaf.org/viaf/sourceID/DNB|040251888" ],
     "identifierGND" : [ "4025188-3" ]
   } ],
@@ -21003,7 +21289,8 @@
     "personName" : "A. Ross, David"
   } ],
   "RSWK" : [ {
-    "subjectTopicName" : "Public aspects of medicine"
+    "subjectTopicName" : "Public aspects of medicine",
+    "combinedLabel" : "Public aspects of medicine"
   } ]
 }
 {
@@ -21168,10 +21455,12 @@
   } ],
   "RSWK" : [ {
     "subjectGeoName" : "Deutschland",
+    "combinedLabel" : "Deutschland",
     "subjectIdentifier" : [ "(DE-588)4011882-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040118827", "(uri) http://viaf.org/viaf/sourceID/DNB|040118827" ],
     "identifierGND" : [ "4011882-4" ]
   }, {
     "subjectTopicName" : "Gesellschaftsrecht",
+    "combinedLabel" : "Gesellschaftsrecht",
     "subjectIdentifier" : [ "(DE-588)4020646-4", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040206467", "(uri) http://viaf.org/viaf/sourceID/DNB|040206467" ],
     "identifierGND" : [ "4020646-4" ]
   } ],
@@ -21285,7 +21574,8 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "RSWK" : [ {
-    "subjectTopicName" : "Social sciences (General)"
+    "subjectTopicName" : "Social sciences (General)",
+    "combinedLabel" : "Social sciences (General)"
   } ]
 }
 {
@@ -21376,7 +21666,8 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "RSWK" : [ {
-    "subjectTopicName" : "Technology (General)"
+    "subjectTopicName" : "Technology (General)",
+    "combinedLabel" : "Technology (General)"
   } ]
 }
 {
@@ -21467,7 +21758,8 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "RSWK" : [ {
-    "subjectTopicName" : "Technology (General)"
+    "subjectTopicName" : "Technology (General)",
+    "combinedLabel" : "Technology (General)"
   } ]
 }
 {
@@ -21587,7 +21879,8 @@
     "identifierGND" : [ "1196881626" ]
   } ],
   "RSWK" : [ {
-    "subjectTopicName" : "ARCHITECTURE / Urban & Land Use Planning"
+    "subjectTopicName" : "ARCHITECTURE / Urban & Land Use Planning",
+    "combinedLabel" : "ARCHITECTURE / Urban & Land Use Planning"
   } ]
 }
 {
@@ -23948,10 +24241,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Darstellendes Spiel",
+    "combinedLabel" : "Darstellendes Spiel",
     "subjectIdentifier" : [ "(DE-588)4148811-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041488113", "(uri) http://viaf.org/viaf/sourceID/DNB|041488113" ],
     "identifierGND" : [ "4148811-8" ]
   }, {
     "subjectTopicName" : "Sonderpädagogik",
+    "combinedLabel" : "Sonderpädagogik",
     "subjectIdentifier" : [ "(DE-588)4077513-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040775135", "(uri) http://viaf.org/viaf/sourceID/DNB|040775135" ],
     "identifierGND" : [ "4077513-6" ]
   } ]
@@ -24054,10 +24349,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Darstellendes Spiel",
+    "combinedLabel" : "Darstellendes Spiel",
     "subjectIdentifier" : [ "(DE-588)4148811-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041488113", "(uri) http://viaf.org/viaf/sourceID/DNB|041488113" ],
     "identifierGND" : [ "4148811-8" ]
   }, {
     "subjectTopicName" : "Sonderpädagogik",
+    "combinedLabel" : "Sonderpädagogik",
     "subjectIdentifier" : [ "(DE-588)4077513-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040775135", "(uri) http://viaf.org/viaf/sourceID/DNB|040775135" ],
     "identifierGND" : [ "4077513-6" ]
   } ]
@@ -24155,10 +24452,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Darstellendes Spiel",
+    "combinedLabel" : "Darstellendes Spiel",
     "subjectIdentifier" : [ "(DE-588)4148811-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041488113", "(uri) http://viaf.org/viaf/sourceID/DNB|041488113" ],
     "identifierGND" : [ "4148811-8" ]
   }, {
     "subjectTopicName" : "Sonderpädagogik",
+    "combinedLabel" : "Sonderpädagogik",
     "subjectIdentifier" : [ "(DE-588)4077513-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040775135", "(uri) http://viaf.org/viaf/sourceID/DNB|040775135" ],
     "identifierGND" : [ "4077513-6" ]
   } ]
@@ -24267,10 +24566,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Darstellendes Spiel",
+    "combinedLabel" : "Darstellendes Spiel",
     "subjectIdentifier" : [ "(DE-588)4148811-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041488113", "(uri) http://viaf.org/viaf/sourceID/DNB|041488113" ],
     "identifierGND" : [ "4148811-8" ]
   }, {
     "subjectTopicName" : "Sonderpädagogik",
+    "combinedLabel" : "Sonderpädagogik",
     "subjectIdentifier" : [ "(DE-588)4077513-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040775135", "(uri) http://viaf.org/viaf/sourceID/DNB|040775135" ],
     "identifierGND" : [ "4077513-6" ]
   } ]
@@ -24379,10 +24680,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Darstellendes Spiel",
+    "combinedLabel" : "Darstellendes Spiel",
     "subjectIdentifier" : [ "(DE-588)4148811-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041488113", "(uri) http://viaf.org/viaf/sourceID/DNB|041488113" ],
     "identifierGND" : [ "4148811-8" ]
   }, {
     "subjectTopicName" : "Sonderpädagogik",
+    "combinedLabel" : "Sonderpädagogik",
     "subjectIdentifier" : [ "(DE-588)4077513-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040775135", "(uri) http://viaf.org/viaf/sourceID/DNB|040775135" ],
     "identifierGND" : [ "4077513-6" ]
   } ]
@@ -24463,7 +24766,8 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "RSWK" : [ {
-    "subjectPersonName" : "Electrical & Electronics Engineering"
+    "subjectPersonName" : "Electrical & Electronics Engineering",
+    "combinedLabel" : "Electrical & Electronics Engineering"
   } ]
 }
 {
@@ -24562,8 +24866,10 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "RSWK" : [ {
-    "subjectTopicName" : "Lion / Behavior / Africa, East"
+    "subjectTopicName" : "Lion / Behavior / Africa, East",
+    "combinedLabel" : "Lion / Behavior / Africa, East"
   }, {
-    "subjectTopicName" : "NATURE / Animals / Big Cats"
+    "subjectTopicName" : "NATURE / Animals / Big Cats",
+    "combinedLabel" : "NATURE / Animals / Big Cats"
   } ]
 }

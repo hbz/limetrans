@@ -15,6 +15,26 @@ do put_macro("alma-format-carrier", length: "1")
 end
 
 do put_macro("alma-subject-common")
+  set_array("@combined_label")
+  copy_field("$i.a", "@combined_label.$append")
+  copy_field("$i.b", "@combined_label.$append")
+  join_field("@combined_label", " ")
+  split_field("@combined_label", ";|--")
+  replace_all("@combined_label.*", "(?<!\\p{Upper})[.]$|[,]$", "")
+  join_field("@combined_label", ", ")
+  if exists("$i.c")
+    paste("@combined_label", "@combined_label", "~, ", "$i.c", join_char: "")
+  end
+  if exists("$i.g")
+    paste("@combined_label", "@combined_label", "~ (", "$i.g", "~)", join_char: "")
+  end
+  if exists("$i.x")
+    paste("@combined_label", "@combined_label", "~/", "$i.x")
+  end
+  replace_all("@combined_label", "([a-z])[.]$", "$1")
+  call_macro("remove-nonsort", source: "@combined_label")
+  copy_field("@combined_label", "RSWK[].$last.combinedLabel")
+  move_field("@combined_label", "introx.subject[].$append")
   set_array("RSWK[].$last.subjectIdentifier[]")
   set_array("RSWK[].$last.identifierGND[]")
   do list(path: "$i.0", "var": "$j")

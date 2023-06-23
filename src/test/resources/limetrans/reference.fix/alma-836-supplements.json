@@ -174,10 +174,12 @@
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Milch",
+    "combinedLabel" : "Milch",
     "subjectIdentifier" : [ "(DE-588)4039264-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040392643", "(uri) http://viaf.org/viaf/sourceID/DNB|040392643" ],
     "identifierGND" : [ "4039264-8" ]
   }, {
     "subjectTopicName" : "Lebensmittelchemie",
+    "combinedLabel" : "Lebensmittelchemie",
     "subjectIdentifier" : [ "(DE-588)4034873-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040348733", "(uri) http://viaf.org/viaf/sourceID/DNB|040348733" ],
     "identifierGND" : [ "4034873-8" ]
   } ],
@@ -265,7 +267,8 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "RSWK" : [ {
-    "subjectPersonName" : "Electrical & Electronics Engineering"
+    "subjectPersonName" : "Electrical & Electronics Engineering",
+    "combinedLabel" : "Electrical & Electronics Engineering"
   } ]
 }
 {
@@ -364,8 +367,10 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "RSWK" : [ {
-    "subjectTopicName" : "Lion / Behavior / Africa, East"
+    "subjectTopicName" : "Lion / Behavior / Africa, East",
+    "combinedLabel" : "Lion / Behavior / Africa, East"
   }, {
-    "subjectTopicName" : "NATURE / Animals / Big Cats"
+    "subjectTopicName" : "NATURE / Animals / Big Cats",
+    "combinedLabel" : "NATURE / Animals / Big Cats"
   } ]
 }

@@ -256,7 +256,7 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
-    "subject" : [ "Periodicals", "Brain", "Neurochemistry", "Neuropsychology", "Research", "Cerveau", "Neurochimie", "Neuropsychologie", "Périodiques", "Recherche", "brains", "research (function)" ]
+    "subject" : [ "Brain", "Neurochemistry", "Neuropsychology", "Research", "Brain / Periodicals", "Neurochemistry / Periodicals", "Neuropsychology / Periodicals", "Cerveau / Périodiques", "Neurochimie / Périodiques", "Neuropsychologie / Périodiques", "Cerveau", "Neurochimie", "Recherche", "brains", "research (function)", "Periodicals", "Périodiques" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHM",
@@ -334,60 +334,81 @@
   "TypePeriodical" : [ "Zeitschrift" ],
   "RSWK" : [ {
     "subjectTopicName" : "Brain",
-    "subjectGenre" : "Periodicals"
+    "subjectGenre" : "Periodicals",
+    "combinedLabel" : "Brain"
   }, {
     "subjectTopicName" : "Neurochemistry",
-    "subjectGenre" : "Periodicals"
+    "subjectGenre" : "Periodicals",
+    "combinedLabel" : "Neurochemistry"
   }, {
     "subjectTopicName" : "Neuropsychology",
-    "subjectGenre" : "Periodicals"
-  }, {
-    "subjectTopicName" : "Brain"
-  }, {
-    "subjectTopicName" : "Research"
+    "subjectGenre" : "Periodicals",
+    "combinedLabel" : "Neuropsychology"
   }, {
     "subjectTopicName" : "Brain",
-    "subjectAddendum" : "Periodicals"
-  }, {
-    "subjectTopicName" : "Neurochemistry",
-    "subjectAddendum" : "Periodicals"
-  }, {
-    "subjectTopicName" : "Neuropsychology",
-    "subjectAddendum" : "Periodicals"
-  }, {
-    "subjectTopicName" : "Cerveau",
-    "subjectAddendum" : "Périodiques"
-  }, {
-    "subjectTopicName" : "Neurochimie",
-    "subjectAddendum" : "Périodiques"
-  }, {
-    "subjectTopicName" : "Neuropsychologie",
-    "subjectAddendum" : "Périodiques"
-  }, {
-    "subjectTopicName" : "Cerveau",
-    "subjectGenre" : "Périodiques"
-  }, {
-    "subjectTopicName" : "Neurochimie",
-    "subjectGenre" : "Périodiques"
-  }, {
-    "subjectTopicName" : "Cerveau"
-  }, {
-    "subjectTopicName" : "Recherche"
-  }, {
-    "subjectTopicName" : "brains"
-  }, {
-    "subjectTopicName" : "research (function)"
+    "combinedLabel" : "Brain"
   }, {
     "subjectTopicName" : "Research",
+    "combinedLabel" : "Research"
+  }, {
+    "subjectTopicName" : "Brain",
+    "subjectAddendum" : "Periodicals",
+    "combinedLabel" : "Brain / Periodicals"
+  }, {
+    "subjectTopicName" : "Neurochemistry",
+    "subjectAddendum" : "Periodicals",
+    "combinedLabel" : "Neurochemistry / Periodicals"
+  }, {
+    "subjectTopicName" : "Neuropsychology",
+    "subjectAddendum" : "Periodicals",
+    "combinedLabel" : "Neuropsychology / Periodicals"
+  }, {
+    "subjectTopicName" : "Cerveau",
+    "subjectAddendum" : "Périodiques",
+    "combinedLabel" : "Cerveau / Périodiques"
+  }, {
+    "subjectTopicName" : "Neurochimie",
+    "subjectAddendum" : "Périodiques",
+    "combinedLabel" : "Neurochimie / Périodiques"
+  }, {
+    "subjectTopicName" : "Neuropsychologie",
+    "subjectAddendum" : "Périodiques",
+    "combinedLabel" : "Neuropsychologie / Périodiques"
+  }, {
+    "subjectTopicName" : "Cerveau",
+    "subjectGenre" : "Périodiques",
+    "combinedLabel" : "Cerveau"
+  }, {
+    "subjectTopicName" : "Neurochimie",
+    "subjectGenre" : "Périodiques",
+    "combinedLabel" : "Neurochimie"
+  }, {
+    "subjectTopicName" : "Cerveau",
+    "combinedLabel" : "Cerveau"
+  }, {
+    "subjectTopicName" : "Recherche",
+    "combinedLabel" : "Recherche"
+  }, {
+    "subjectTopicName" : "brains",
+    "combinedLabel" : "brains"
+  }, {
+    "subjectTopicName" : "research (function)",
+    "combinedLabel" : "research (function)"
+  }, {
+    "subjectTopicName" : "Research",
+    "combinedLabel" : "Research",
     "subjectIdentifier" : [ "(OCoLC)fst01095153" ]
   }, {
     "subjectTopicName" : "Brain",
+    "combinedLabel" : "Brain",
     "subjectIdentifier" : [ "(OCoLC)fst00837570" ]
   }, {
     "subjectTopicName" : "Neurochemistry",
+    "combinedLabel" : "Neurochemistry",
     "subjectIdentifier" : [ "(OCoLC)fst01036329" ]
   }, {
     "subjectTopicName" : "Neuropsychology",
+    "combinedLabel" : "Neuropsychology",
     "subjectIdentifier" : [ "(OCoLC)fst01036493" ]
   } ]
 }
@@ -409,7 +430,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "keine Angabe" ],
-    "subject" : [ "Electronics", "Periodicals", "Radio", "Électronique", "Périodiques", "electronic engineering" ]
+    "subject" : [ "Electronics", "Radio", "Électronique", "electronic engineering", "Periodicals", "Périodiques" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHM",
@@ -467,22 +488,29 @@
     "uid" : "(DE-836)ocm02262727"
   } ],
   "RSWK" : [ {
-    "subjectTopicName" : "Electronics"
+    "subjectTopicName" : "Electronics",
+    "combinedLabel" : "Electronics"
   }, {
     "subjectTopicName" : "Radio",
-    "subjectGenre" : "Periodicals"
+    "subjectGenre" : "Periodicals",
+    "combinedLabel" : "Radio"
   }, {
-    "subjectTopicName" : "Électronique"
+    "subjectTopicName" : "Électronique",
+    "combinedLabel" : "Électronique"
   }, {
     "subjectTopicName" : "Radio",
-    "subjectGenre" : "Périodiques"
+    "subjectGenre" : "Périodiques",
+    "combinedLabel" : "Radio"
   }, {
-    "subjectTopicName" : "electronic engineering"
+    "subjectTopicName" : "electronic engineering",
+    "combinedLabel" : "electronic engineering"
   }, {
     "subjectTopicName" : "Electronics",
+    "combinedLabel" : "Electronics",
     "subjectIdentifier" : [ "(OCoLC)fst00907538" ]
   }, {
     "subjectTopicName" : "Radio",
+    "combinedLabel" : "Radio",
     "subjectIdentifier" : [ "(OCoLC)fst01087053" ]
   } ]
 }

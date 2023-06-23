@@ -1724,13 +1724,9 @@ do list(path: "689??", "var": "$i")
 end
 uniq("RSWK[]")
 do list(path: "RSWK[]", "var": "$i")
-  copy_field("$i.subjectConference", "introx.subject[].$append")
-  copy_field("$i.subjectCorporateBodyName", "introx.subject[].$append")
   copy_field("$i.subjectGenre", "introx.subject[].$append")
-  copy_field("$i.subjectGeoName", "introx.subject[].$append")
-  copy_field("$i.subjectPersonName", "introx.subject[].$append")
+  #copy_field("$i.subjectGeoName", "introx.subject[].$append")
   copy_field("$i.subjectTitleName", "introx.subject[].$append")
-  copy_field("$i.subjectTopicName", "introx.subject[].$append")
   copy_field("$i.subjectUnit", "introx.subject[].$append")
 end
 # MARC/653
