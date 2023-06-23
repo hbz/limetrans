@@ -1686,135 +1686,26 @@ do list(path: "249??.a", "var": "$i")
   end
 end
 
-# MARC/600
+# MARC/600, MARC/610, MARC/611, MARC/648, MARC/650, MARC/651
 set_array("RSWK[]")
 do list(path: "600??", "var": "$i")
-  add_field("RSWK[].$append.__dummy__", "")
-  call_macro("copy-first-item", source: "$i.z", target: "RSWK[].$last.subjectGeoName")
-  call_macro("copy-first-item", source: "$i.y", target: "RSWK[].$last.subjectChronological")
-  call_macro("copy-first-item", source: "$i.d", target: "RSWK[].$last.subjectDate")
-  call_macro("copy-first-item", source: "$i.v", target: "RSWK[].$last.subjectGenre")
-  call_macro("copy-first-item", source: "$i.a", target: "RSWK[].$last.subjectPersonName")
-  call_macro("copy-first-item", source: "$i.t", target: "RSWK[].$last.subjectTitleName")
-  call_macro("copy-first-item", source: "$i.c", target: "RSWK[].$last.subjectNameAddendum")
-  set_array("RSWK[].$last.subjectIdentifier[]")
-  set_array("RSWK[].$last.identifierGND[]")
-  do list(path: "$i.0", "var": "$j")
-    copy_field("$j", "RSWK[].$last.subjectIdentifier[].$append")
-    if any_match("$j", "\\(DE-588\\).*")
-      copy_field("$j", "RSWK[].$last.identifierGND[].$append")
-    end
-  end
+  call_macro("alma-subject-personal-name")
 end
-# MARC/610
 do list(path: "610??", "var": "$i")
-  add_field("RSWK[].$append.__dummy__", "")
-  call_macro("copy-first-item", source: "$i.z", target: "RSWK[].$last.subjectGeoName")
-  call_macro("copy-first-item", source: "$i.y", target: "RSWK[].$last.subjectChronological")
-  call_macro("copy-first-item", source: "$i.a", target: "RSWK[].$last.subjectCorporateBodyName")
-  call_macro("copy-first-item", source: "$i.b", target: "RSWK[].$last.subjectCorporateBodySubUnit")
-  call_macro("copy-first-item", source: "$i.v", target: "RSWK[].$last.subjectGenre")
-  call_macro("copy-first-item", source: "$i.n", target: "RSWK[].$last.subjectNumbering")
-  call_macro("copy-first-item", source: "$i.t", target: "RSWK[].$last.subjectTitleName")
-  call_macro("copy-first-item", source: "$i.p", target: "RSWK[].$last.subjectUnit")
-  call_macro("copy-first-item", source: "$i.c", target: "RSWK[].$last.subjectGeoAddendum")
-  set_array("RSWK[].$last.subjectIdentifier[]")
-  set_array("RSWK[].$last.identifierGND[]")
-  do list(path: "$i.0", "var": "$j")
-    copy_field("$j", "RSWK[].$last.subjectIdentifier[].$append")
-    if any_match("$j", "\\(DE-588\\).*")
-      copy_field("$j", "RSWK[].$last.identifierGND[].$append")
-    end
-  end
+  call_macro("alma-subject-corporate-name")
 end
-# MARC/611
 do list(path: "611??", "var": "$i")
-  add_field("RSWK[].$append.__dummy__", "")
-  call_macro("copy-first-item", source: "$i.z", target: "RSWK[].$last.subjectGeoName")
-  call_macro("copy-first-item", source: "$i.y", target: "RSWK[].$last.subjectChronological")
-  call_macro("copy-first-item", source: "$i.a", target: "RSWK[].$last.subjectConference")
-  call_macro("copy-first-item", source: "$i.d", target: "RSWK[].$last.subjectDate")
-  call_macro("copy-first-item", source: "$i.v", target: "RSWK[].$last.subjectGenre")
-  call_macro("copy-first-item", source: "$i.n", target: "RSWK[].$last.subjectNumbering")
-  call_macro("copy-first-item", source: "$i.t", target: "RSWK[].$last.subjectTitleName")
-  call_macro("copy-first-item", source: "$i.p", target: "RSWK[].$last.subjectUnit")
-  call_macro("copy-first-item", source: "$i.c", target: "RSWK[].$last.subjectGeoAddendum")
-  set_array("RSWK[].$last.subjectIdentifier[]")
-  set_array("RSWK[].$last.identifierGND[]")
-  do list(path: "$i.0", "var": "$j")
-    copy_field("$j", "RSWK[].$last.subjectIdentifier[].$append")
-    if any_match("$j", "\\(DE-588\\).*")
-      copy_field("$j", "RSWK[].$last.identifierGND[].$append")
-    end
-  end
+  call_macro("alma-subject-meeting-name")
 end
-# MARC/648
 do list(path: "648??", "var": "$i")
-  add_field("RSWK[].$append.__dummy__", "")
-  call_macro("copy-first-item", source: "$i.a", target: "RSWK[].$last.subjectChronological")
-  set_array("RSWK[].$last.subjectIdentifier[]")
-  set_array("RSWK[].$last.identifierGND[]")
-  do list(path: "$i.0", "var": "$j")
-    copy_field("$j", "RSWK[].$last.subjectIdentifier[].$append")
-    if any_match("$j", "\\(DE-588\\).*")
-      copy_field("$j", "RSWK[].$last.identifierGND[].$append")
-    end
-  end
+  call_macro("alma-subject-chronological-term")
 end
-# MARC/650
 do list(path: "650??", "var": "$i")
-  add_field("RSWK[].$append.__dummy__", "")
-  call_macro("copy-first-item", source: "$i.a", target: "@subjectTopicName")
-  split_field("@subjectTopicName", ";|--")
-  set_array("RSWK[].$last.subjectTopicName")
-  do list(path: "@subjectTopicName", "var": "$j")
-    replace_all("$j", "[.]$", "")
-    copy_field("$j", "RSWK[].$last.subjectTopicName.$append")
-  end
-  remove_field("@subjectTopicName")
-  call_macro("copy-first-item", source: "$i.z", target: "RSWK[].$last.subjectGeoName")
-  call_macro("copy-first-item", source: "$i.y", target: "RSWK[].$last.subjectChronological")
-  call_macro("copy-first-item", source: "$i.x", target: "RSWK[].$last.subjectAddendum")
-  call_macro("copy-first-item", source: "$i.v", target: "RSWK[].$last.subjectGenre")
-  set_array("RSWK[].$last.subjectIdentifier[]")
-  set_array("RSWK[].$last.identifierGND[]")
-  do list(path: "$i.0", "var": "$j")
-    copy_field("$j", "RSWK[].$last.subjectIdentifier[].$append")
-    if any_match("$j", "\\(DE-588\\).*")
-      copy_field("$j", "RSWK[].$last.identifierGND[].$append")
-    end
-  end
+  call_macro("alma-subject-topical-term")
 end
-# MARC/651
 do list(path: "651??", "var": "$i")
-  add_field("RSWK[].$append.__dummy__", "")
-  call_macro("copy-first-item", source: "$i.a", target: "RSWK[].$last.subjectGeoName")
-  call_macro("copy-first-item", source: "$i.y", target: "RSWK[].$last.subjectChronological")
-  call_macro("copy-first-item", source: "$i.v", target: "RSWK[].$last.subjectGenre")
-  set_array("RSWK[].$last.subjectIdentifier[]")
-  set_array("RSWK[].$last.identifierGND[]")
-  do list(path: "$i.0", "var": "$j")
-    copy_field("$j", "RSWK[].$last.subjectIdentifier[].$append")
-    if any_match("$j", "\\(DE-588\\).*")
-      copy_field("$j", "RSWK[].$last.identifierGND[].$append")
-    end
-  end
+  call_macro("alma-subject-geographic-name")
 end
-replace_all("RSWK[].*.identifierGND[]", "^\\(DE-588\\)", "")
-replace_all("RSWK[].*.subjectAddendum", "[.]$", "")
-replace_all("RSWK[].*.subjectChronological", "[.]$", "")
-replace_all("RSWK[].*.subjectConference", "[.]$", "")
-replace_all("RSWK[].*.subjectCorporateBodyName", "[.]$", "")
-replace_all("RSWK[].*.subjectCorporateBodySubUnit", "[.]$", "")
-replace_all("RSWK[].*.subjectDate", "\\s?[:.]?$", "")
-replace_all("RSWK[].*.subjectGenre", "[.]$", "")
-replace_all("RSWK[].*.subjectGeoAddendum", "^[(]|[.)]$", "")
-replace_all("RSWK[].*.subjectGeoName", "[.]$", "")
-replace_all("RSWK[].*.subjectNameAddendum", "^[(]|[.)]$", "")
-replace_all("RSWK[].*.subjectNumbering", "^[(]|\\s?[);:]?$", "")
-replace_all("RSWK[].*.subjectPersonName", "[,.]$", "")
-replace_all("RSWK[].*.subjectTitleName", "[.]$", "")
-replace_all("RSWK[].*.subjectUnit", "[.]$", "")
 uniq("RSWK[]")
 do list(path: "RSWK[]", "var": "$i")
   copy_field("$i.subjectConference", "introx.subject[].$append")
