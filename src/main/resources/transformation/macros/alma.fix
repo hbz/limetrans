@@ -25,6 +25,9 @@ do put_macro("alma-subject-common")
   if exists("$i.c")
     paste("@combined_label", "@combined_label", "~, ", "$i.c", join_char: "")
   end
+  if exists("$i.d")
+    paste("@combined_label", "@combined_label", "~ (", "$i.d", "~)", join_char: "")
+  end
   if exists("$i.g")
     paste("@combined_label", "@combined_label", "~ (", "$i.g", "~)", join_char: "")
   end

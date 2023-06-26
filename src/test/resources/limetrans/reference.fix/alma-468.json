@@ -1700,7 +1700,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Brecht, Bertolt" ]
+    "subject" : [ "Brecht, Bertolt (1898-1956)" ]
   },
   "SubjectRPB" : [ {
     "subject" : "200"
@@ -1765,7 +1765,7 @@
   "RSWK" : [ {
     "subjectDate" : "1898-1956",
     "subjectPersonName" : "Brecht, Bertolt",
-    "combinedLabel" : "Brecht, Bertolt",
+    "combinedLabel" : "Brecht, Bertolt (1898-1956)",
     "subjectIdentifier" : [ "(DE-588)118514768", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=118514768", "(uri) http://viaf.org/viaf/sourceID/DNB|118514768" ],
     "identifierGND" : [ "118514768" ]
   } ]
@@ -8072,7 +8072,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Lilienthal, Otto", "Luftfahrt", "Geschichte" ]
+    "subject" : [ "Lilienthal, Otto (1848-1896)", "Luftfahrt", "Geschichte" ]
   },
   "SubjectRPB" : [ {
     "subject" : "700"
@@ -8134,7 +8134,7 @@
   "RSWK" : [ {
     "subjectDate" : "1848-1896",
     "subjectPersonName" : "Lilienthal, Otto",
-    "combinedLabel" : "Lilienthal, Otto",
+    "combinedLabel" : "Lilienthal, Otto (1848-1896)",
     "subjectIdentifier" : [ "(DE-588)118572970", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=118572970", "(uri) http://viaf.org/viaf/sourceID/DNB|118572970" ],
     "identifierGND" : [ "118572970" ]
   }, {
@@ -36669,7 +36669,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Wagner, Richard", "Mythos" ]
+    "subject" : [ "Wagner, Richard (1813-1883)", "Mythos" ]
   },
   "SubjectRVK" : [ {
     "subject" : "LP 66484"
@@ -36741,7 +36741,7 @@
   "RSWK" : [ {
     "subjectDate" : "1813-1883",
     "subjectPersonName" : "Wagner, Richard",
-    "combinedLabel" : "Wagner, Richard",
+    "combinedLabel" : "Wagner, Richard (1813-1883)",
     "subjectIdentifier" : [ "(DE-588)118594117", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=118594117", "(uri) http://viaf.org/viaf/sourceID/DNB|118594117" ],
     "identifierGND" : [ "118594117" ]
   }, {
@@ -43294,7 +43294,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kulturwissenschaften" ],
-    "subject" : [ "Marx, Karl", "Engels, Friedrich" ]
+    "subject" : [ "Marx, Karl (1818-1883)", "Engels, Friedrich (1820-1895)" ]
   },
   "SubjectRPB" : [ {
     "subject" : "400"
@@ -43374,13 +43374,13 @@
   "RSWK" : [ {
     "subjectDate" : "1818-1883",
     "subjectPersonName" : "Marx, Karl",
-    "combinedLabel" : "Marx, Karl",
+    "combinedLabel" : "Marx, Karl (1818-1883)",
     "subjectIdentifier" : [ "(DE-588)118578537", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=118578537", "(uri) http://viaf.org/viaf/sourceID/DNB|118578537" ],
     "identifierGND" : [ "118578537" ]
   }, {
     "subjectDate" : "1820-1895",
     "subjectPersonName" : "Engels, Friedrich",
-    "combinedLabel" : "Engels, Friedrich",
+    "combinedLabel" : "Engels, Friedrich (1820-1895)",
     "subjectIdentifier" : [ "(DE-588)118530380", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=118530380", "(uri) http://viaf.org/viaf/sourceID/DNB|118530380" ],
     "identifierGND" : [ "118530380" ]
   } ]
@@ -60317,7 +60317,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Pirckheimer, Willibald" ]
+    "subject" : [ "Pirckheimer, Willibald (1470-1530)" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -60373,7 +60373,7 @@
   "RSWK" : [ {
     "subjectDate" : "1470-1530",
     "subjectPersonName" : "Pirckheimer, Willibald",
-    "combinedLabel" : "Pirckheimer, Willibald",
+    "combinedLabel" : "Pirckheimer, Willibald (1470-1530)",
     "subjectIdentifier" : [ "(DE-588)118594605", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=118594605", "(uri) http://viaf.org/viaf/sourceID/DNB|118594605" ],
     "identifierGND" : [ "118594605" ]
   } ]
@@ -69972,7 +69972,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Geschichte 1989-1992", "Documenta, Kassel", "Kunst" ]
+    "subject" : [ "Geschichte 1989-1992", "Documenta, Kassel (1992)", "Kunst" ]
   },
   "SubjectRPB" : [ {
     "subject" : "500"
@@ -70057,7 +70057,7 @@
     "subjectDate" : "1992",
     "subjectNumbering" : "9",
     "subjectGeoAddendum" : "Kassel",
-    "combinedLabel" : "Documenta, Kassel",
+    "combinedLabel" : "Documenta, Kassel (1992)",
     "subjectIdentifier" : [ "(DE-588)2121702-6", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=007688938", "(uri) http://viaf.org/viaf/sourceID/DNB|007688938" ],
     "identifierGND" : [ "2121702-6" ]
   }, {
@@ -71893,7 +71893,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kommunikationswissenschaften / Publizistik" ],
-    "subject" : [ "Geschichte 1900-1995", "Illustration", "Sammlung", "Kritter, Ulrich von" ]
+    "subject" : [ "Geschichte 1900-1995", "Illustration", "Sammlung", "Kritter, Ulrich von (1910-1999)" ]
   },
   "SubjectRPB" : [ {
     "subject" : "560"
@@ -71976,7 +71976,7 @@
   }, {
     "subjectDate" : "1910-1999",
     "subjectPersonName" : "Kritter, Ulrich von",
-    "combinedLabel" : "Kritter, Ulrich von",
+    "combinedLabel" : "Kritter, Ulrich von (1910-1999)",
     "subjectIdentifier" : [ "(DE-588)119029138" ],
     "identifierGND" : [ "119029138" ]
   } ]
@@ -73702,7 +73702,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kulturwissenschaften" ],
-    "subject" : [ "Harnack, Adolf von" ]
+    "subject" : [ "Harnack, Adolf von (1851-1930)" ]
   },
   "SubjectRPB" : [ {
     "subject" : "450"
@@ -73774,7 +73774,7 @@
   "RSWK" : [ {
     "subjectDate" : "1851-1930",
     "subjectPersonName" : "Harnack, Adolf von",
-    "combinedLabel" : "Harnack, Adolf von",
+    "combinedLabel" : "Harnack, Adolf von (1851-1930)",
     "subjectIdentifier" : [ "(DE-588)118546058" ],
     "identifierGND" : [ "118546058" ]
   } ]
@@ -74488,7 +74488,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "subject" : [ "Geschichte 1900-1995", "Illustration", "Sammlung", "Kritter, Ulrich von" ]
+    "subject" : [ "Geschichte 1900-1995", "Illustration", "Sammlung", "Kritter, Ulrich von (1910-1999)" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_WUP",
@@ -74558,7 +74558,7 @@
   }, {
     "subjectDate" : "1910-1999",
     "subjectPersonName" : "Kritter, Ulrich von",
-    "combinedLabel" : "Kritter, Ulrich von",
+    "combinedLabel" : "Kritter, Ulrich von (1910-1999)",
     "subjectIdentifier" : [ "(DE-588)119029138" ],
     "identifierGND" : [ "119029138" ]
   } ]
