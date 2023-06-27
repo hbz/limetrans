@@ -953,8 +953,11 @@ do list(path: "084  ", "var": "$i")
 end
 do list(path: "@SubjectGHBLocal", "var": "$i")
   call_macro("substring", source: "$i", target: "@taxonomy", start: "0", length: "3")
+  copy_field("@taxonomy", "@local_taxonomy")
   lookup("@taxonomy", "alma-notation-to-taxonomy", delete: "true")
   move_field("@taxonomy", "introx.taxonomy[].$append")
+  lookup("@local_taxonomy", "alma-notation-to-taxonomy-$[isil]", delete: "true")
+  move_field("@local_taxonomy", "introx.taxonomy[].$append")
 end
 uniq("introx.taxonomy[]")
 
