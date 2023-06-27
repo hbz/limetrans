@@ -1625,6 +1625,13 @@ do list(path: "H52??", "var": "$i")
     copy_field("$i.h", "Item[].$last.callnumber")
   end
 end
+# MARC/992
+do list(path: "992??", "var": "$i")
+  if hbz.limetrans.function.MemberLocal("$i")
+    add_field("Item[].$append.__dummy__", "")
+    copy_field("$i.a", "Item[].$last.callnumber")
+  end
+end
 # MARC/ITM
 do list(path: "ITM  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
