@@ -28,6 +28,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
+    "person" : [ "Setzen, Karl M." ],
     "subject" : [ "Gruppe" ]
   },
   "SubjectRVK" : [ {
@@ -128,6 +129,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Schmidt, Klaus J." ],
     "provenance" : [ "Bibliothek Hans Werner Henze", "vorhanden mit Stand: Mai 2004" ],
     "subject" : [ "Logistik", "Just-in-time-Produktion" ]
   },
@@ -226,6 +228,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Chemie und Chemische Technik", "Biologie" ],
+    "person" : [ "Fenselau, Catherine (1939-)" ],
     "provenance" : [ "neu1406" ],
     "subject" : [ "Microorganisms, Identification", "Mass spectrometry", "Microbiological chemistry" ]
   },
@@ -347,6 +350,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Derler, Petra" ],
     "provenance" : [ "neu1807" ],
     "subject" : [ "Maßtoleranzen", "DIN18202", "MaßtoleranzenRohbau", "MaßtoleranzenAusbau", "DIN 18202", "Rohbau", "Ausbau (Bauwesen)" ]
   },
@@ -833,6 +837,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Sprach- und Literaturwissenschaften" ],
+    "person" : [ "McLuhan, Marshall (1911-1980)" ],
     "subject" : [ "Informationsgesellschaft", "Kulturwandel", "Massenmedien" ]
   },
   "SubjectRPB" : [ {
@@ -969,6 +974,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Informatik" ],
+    "person" : [ "Gieseke, Wolfram (1971-)" ],
     "provenance" : [ "neu2002, neu2102" ],
     "subject" : [ "Computersicherheit", "Hacker" ]
   },
@@ -1149,6 +1155,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Physik" ],
+    "person" : [ "Lüttgens, Günter (1933-)", "Lüttgens, Sylvia (1946-)", "Emde, Stefan (1960-)", "Pidoll, Ulrich von", "Schubert, Wolfgang (1952-)" ],
     "provenance" : [ "neu2001" ],
     "subject" : [ "Arbeitssicherheit", "Arbeitssicherheit u. Umweltschutz i. d. Chemie", "Chemie", "Elektrizitätslehre", "Elektrotechnik u. Elektronik", "Leistungselektronik", "Physik", "Statische Elektrizität", "Elektrostatik", "Elektrostatische Aufladung", "Elektrostatische Entladung", "Gasentladung", "Messtechnik", "Elektrounfall", "Brandgefahr", "Explosion" ]
   },
@@ -1377,6 +1384,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Informatik" ],
+    "person" : [ "Paluszek, Michael", "Thomas, Stephanie" ],
     "provenance" : [ "neu2102" ],
     "subject" : [ "Computer software", "Mathematics", "Programming languages (Electronic computers)", "Computer science", "MATLAB 10", "MATLAB", "algorithms", "engineering", "GUI development", "robotics", "code", "recipes", "developer", "cookbook", "source", "development", "programming", "computational science", "numerical", "MATLAB 10, MATLAB, algorithms, engineering, GUI development, robotics, code, recipes, developer, cookbook, source, development, programming, computational science, numerical" ]
   },
@@ -1569,6 +1577,7 @@
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
     "taxonomy" : [ "Informatik" ],
+    "person" : [ "Lorenz, Uwe" ],
     "subject" : [ "Coding theory", "Information theory", "Data mining", "Application software", "Java (Computer program language)" ]
   },
   "IdentifierAlma" : {
@@ -1793,6 +1802,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Elektronische Ressource", "Film, Dia, Video" ],
     "taxonomy" : [ "Theater- und Filmwissenschaften" ],
+    "person" : [ "Truffaut, François (1932-1984)", "Moreau, Jeanne (1928-2017)", "Serre, Henri (1931-)", "Werner, Oskar (1922-1984)" ],
     "provenance" : [ "neu1606" ],
     "subject" : [ "Jules et Jim" ]
   },
@@ -2035,6 +2045,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kulturwissenschaften", "Design, Gestaltung", "Kunst" ],
+    "person" : [ "Benker, Gertrud" ],
     "subject" : [ "Geschichte", "Besteck" ]
   },
   "SubjectRVK" : [ {
@@ -2149,6 +2160,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Dilly, Heinrich (1941-2019)" ],
     "subject" : [ "Kunstgeschichte / Wissenschaftsdisziplin", "Geschichte 1760-1900", "Geschichte", "Kunststudium", "Kunstwissenschaft", "Kunstgeschichte (Fach)" ]
   },
   "SubjectRVK" : [ {
@@ -2295,7 +2307,8 @@
     "access" : [ "local" ],
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Fahrzeug- und Verkehrstechnik" ]
+    "taxonomy" : [ "Fahrzeug- und Verkehrstechnik" ],
+    "person" : [ "Konitzer, Heribert" ]
   },
   "SubjectRVK" : [ {
     "subject" : "PN 622"
@@ -2443,6 +2456,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Gombrich, Ernst H. (1909-2001)" ],
     "subject" : [ "Geschichte", "Kunst" ]
   },
   "IdentifierAlma" : {
@@ -2551,7 +2565,8 @@
     "access" : [ "local" ],
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Ingenieurwissenschaft / Technik" ]
+    "taxonomy" : [ "Ingenieurwissenschaft / Technik" ],
+    "person" : [ "Kollbrunner, Curt F. (1907-1983)", "Meister, Martin" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -2660,6 +2675,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Maillol, Aristide (1861-1944)", "Peters, Hans Albert (1937-2014)", "Vierny, Dina (1919-2009)" ],
     "subject" : [ "Maillol, Aristide (1861-1944)" ]
   },
   "IdentifierAlma" : {
@@ -2781,6 +2797,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Physik" ],
+    "person" : [ "Kleinert, Andreas" ],
     "subject" : [ "Geschichte 1800-1900", "Physik" ]
   },
   "SubjectRPB" : [ {
@@ -2902,7 +2919,8 @@
     "access" : [ "local" ],
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Kunst" ]
+    "taxonomy" : [ "Kunst" ],
+    "person" : [ "Picasso, Pablo (1881-1973)", "Thimme, Jürgen" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -3013,6 +3031,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Physik" ],
+    "person" : [ "Pick, Heinz" ],
     "subject" : [ "Festkörperphysik" ]
   },
   "SubjectRPB" : [ {
@@ -3123,6 +3142,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Pilny, Franz" ],
     "subject" : [ "Bauschaden" ]
   },
   "SubjectRVK" : [ {
@@ -3233,7 +3253,8 @@
     "access" : [ "local" ],
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Architektur und Bauingenieurwesen" ]
+    "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Pinder, Wilhelm (1878-1947)", "Hege, Walter (1893-1955)" ]
   },
   "SubjectRPB" : [ {
     "subject" : "510"
@@ -3340,7 +3361,8 @@
     "access" : [ "local" ],
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Kunst" ]
+    "taxonomy" : [ "Kunst" ],
+    "person" : [ "Freytag, Heinrich" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -3453,6 +3475,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Sedlmayr, Hans (1896-1984)" ],
     "subject" : [ "Licht", "Kunst" ]
   },
   "SubjectRPB" : [ {
@@ -3564,6 +3587,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Chemie und Chemische Technik" ],
+    "person" : [ "Sehon, Hannes" ],
     "subject" : [ "Physikalische Chemie" ]
   },
   "SubjectRVK" : [ {
@@ -3682,6 +3706,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Bihalji-Merin, Oto (1904-1993)", "Goya y Lucientes, Francisco José de (1746-1828)" ],
     "subject" : [ "Goya y Lucientes, Francisco José de (1746-1828)" ]
   },
   "SubjectRPB" : [ {
@@ -3794,6 +3819,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Seilnacht, Willy" ],
     "subject" : [ "Landwirtschaft", "Architektur", "Landschaftsgebundenes Bauen", "Landwirtschaftliches Gebäude" ]
   },
   "IdentifierAlma" : {
@@ -3900,6 +3926,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Seitz, William C.", "Monet, Claude (1840-1926)" ],
     "subject" : [ "Monet, Claude (1840-1926)" ]
   },
   "SubjectRVK" : [ {
@@ -4033,6 +4060,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Selle, Gert (1933-)" ],
     "subject" : [ "Geschichte", "Ästhetische Erziehung" ]
   },
   "IdentifierAlma" : {
@@ -4163,6 +4191,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kulturwissenschaften" ],
+    "person" : [ "Weber, Annemarie (1953-)" ],
     "subject" : [ "Geschichte <1830-1980>", "Geschichte 1850-1982", "Geschichte <1815-1980>", "Deutschland", "Familienleben", "Alltag", "Familie", "Volkskunde", "Kultur" ]
   },
   "SubjectRPB" : [ {
@@ -4319,6 +4348,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Weber, Wilhelm (1918-1999)" ],
     "subject" : [ "Senefelder, Alois (1771-1834)", "Lithografie" ]
   },
   "IdentifierAlma" : {
@@ -4441,6 +4471,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kulturwissenschaften" ],
+    "person" : [ "Weber-Kellermann, Ingeborg (1918-1993)" ],
     "subject" : [ "Geschichte", "Weihnachten", "Brauch" ]
   },
   "IdentifierAlma" : {
@@ -4555,7 +4586,8 @@
     "access" : [ "local" ],
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Architektur und Bauingenieurwesen" ]
+    "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Wedepohl, Theodor" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -4654,6 +4686,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Wedewer, Rolf (1932-2010)" ],
     "subject" : [ "Geschichte 1700-1960", "Landschaftsmalerei" ]
   },
   "SubjectRPB" : [ {
@@ -4790,6 +4823,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Physik" ],
+    "person" : [ "Sambûrsqî, Šemûʾēl (1900-1990)", "Anaximander, Milesius (v610-v546)" ],
     "subject" : [ "Geschichte", "Physik" ]
   },
   "SubjectRPB" : [ {
@@ -4923,6 +4957,7 @@
     "branch" : [ "Bayernallee", "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Berckenhagen, Ekhart (1923-2001)" ],
     "provenance" : [ "neu0801" ],
     "subject" : [ "Geschichte 1479-1979", "Architekturzeichnung", "Kunstbibliothek Berlin (Berlin, West)" ]
   },
@@ -5075,6 +5110,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
+    "person" : [ "Schumpp, Mechthild" ],
     "subject" : [ "Soziologie", "Stadtutopien", "Städtebau", "Urbanistik", "Utopie", "Zukunftsmodelle", "Geschichte", "Stadtmodell", "Idealstadt" ]
   },
   "SubjectRVK" : [ {
@@ -5230,6 +5266,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Rechtswissenschaft" ],
+    "person" : [ "Debatin, Helmut (1926-2011)", "Korn, Rudolf", "Wassermeyer, Franz (1940-)" ],
     "subject" : [ "Doppelbesteuerungsabkommen" ]
   },
   "SubjectRPB" : [ {
@@ -5383,6 +5420,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Maschinenbau" ],
+    "person" : [ "Hausen, Helmuth", "Linde, Hermann" ],
     "subject" : [ "Tieftemperaturtechnik" ]
   },
   "SubjectRVK" : [ {
@@ -5523,7 +5561,8 @@
     "access" : [ "local" ],
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Kunst" ]
+    "taxonomy" : [ "Kunst" ],
+    "person" : [ "Klapheck, Richard (1883-1939)" ]
   },
   "SubjectRPB" : [ {
     "subject" : "130"
@@ -5634,7 +5673,8 @@
     "access" : [ "local" ],
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "keine Angabe" ],
-    "taxonomy" : [ "Kunst" ]
+    "taxonomy" : [ "Kunst" ],
+    "person" : [ "Frutiger, Adrian (1928-2015)", "Heiderhoff, Horst (1934-1987)" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -5759,6 +5799,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Umwelttechnik, Energie- und Kerntechnik" ],
+    "person" : [ "Höll, Karl (1901-1997)" ],
     "subject" : [ "Wasseranalyse", "Wasseraufbereitung" ]
   },
   "SubjectRVK" : [ {
@@ -5910,6 +5951,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Rechtswissenschaft" ],
+    "person" : [ "Tipke, Klaus (1925-2021)", "Kruse, Heinrich Wilhelm (1931-2019)" ],
     "provenance" : [ "neu2202" ],
     "subject" : [ "Deutschland", "Abgabenordnung", "Finanzgerichtsordnung" ]
   },
@@ -6081,6 +6123,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Chemie und Chemische Technik" ],
+    "person" : [ "Merian, Ernest (1921-1995)" ],
     "subject" : [ "Metals", "Metall", "Vorkommen", "Umweltbelastung" ]
   },
   "SubjectRVK" : [ {
@@ -6229,6 +6272,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Maschinenbau" ],
+    "person" : [ "Charchut, Werner", "Tschätsch, Heinz (1924-2010)" ],
     "subject" : [ "Werkzeugmaschine", "Spanende Bearbeitung" ]
   },
   "SubjectRPB" : [ {
@@ -6365,6 +6409,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Thomas, Roland" ],
     "subject" : [ "Brunnen", "Garten" ]
   },
   "SubjectRVK" : [ {
@@ -6489,6 +6534,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Design, Gestaltung" ],
+    "person" : [ "Kröplien, Manfred (1937-)" ],
     "subject" : [ "Werbegrafik" ]
   },
   "IdentifierAlma" : {
@@ -6594,6 +6640,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Joedicke, Jürgen (1925-2015)" ],
     "subject" : [ "Architekturgeschichte / 20. Jahrhundert", "Geschichte 1950-1990", "Architektur" ]
   },
   "IdentifierAlma" : {
@@ -6727,6 +6774,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Sozialwissenschaften / Soziologie" ],
+    "person" : [ "Berger, John (1926-2017)" ],
     "subject" : [ "Geschichte", "Kunst" ]
   },
   "IdentifierAlma" : {
@@ -6850,6 +6898,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Rechtswissenschaft" ],
+    "person" : [ "Hopt, Klaus J. (1940-)", "Gadow, Wilhelm" ],
     "provenance" : [ "neu9911" ],
     "subject" : [ "Deutschland", "Aktiengesetz" ]
   },
@@ -6974,6 +7023,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Ingenieurwissenschaft / Technik" ],
+    "person" : [ "Naumann, Helmut", "Schröder, Gottfried (1928-)" ],
     "subject" : [ "Technische Optik", "Optisches Bauelement" ]
   },
   "SubjectRVK" : [ {
@@ -7120,6 +7170,7 @@
     "branch" : [ "Eupener Straße", "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Mathematik" ],
+    "person" : [ "Louis, Alfred Karl (1949-)", "Maaß, Peter (1959-)", "Rieder, Andreas (1963-)" ],
     "subject" : [ "Wavelet" ]
   },
   "SubjectRPB" : [ {
@@ -7278,6 +7329,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Tichy, Gunther (1937-)" ],
     "subject" : [ "Konjunkturtheorie" ]
   },
   "SubjectRVK" : [ {
@@ -7423,6 +7475,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Informatik" ],
+    "person" : [ "Lamport, Leslie (1941-)" ],
     "subject" : [ "LATEX (Programm)" ]
   },
   "IdentifierAlma" : {
@@ -7532,6 +7585,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Zenk, Georg" ],
     "subject" : [ "Deutschland", "EU-Staaten", "Haftung", "Klein- und Mittelunternehmen", "Personalentwicklung", "Qualitätsmanagement", "Umweltmanagement", "Wirtschaftsprüfung", "Öffentlichkeitsarbeit", "Umweltmanagement*Wirtschaftsprüfung*Qualitätsmanagement*Klein- und Mittelunternehmen*Haftung*Personalentwicklung*Öffentlichkeitsarbeit*Deutschland*EU-Staaten", "Europäische Union", "Umweltbezogenes Management", "Audit-Verordnung" ]
   },
   "SubjectRVK" : [ {
@@ -7689,6 +7743,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Umwelttechnik, Energie- und Kerntechnik" ],
+    "person" : [ "Cammerer, Walter F. (1920-2013)" ],
     "subject" : [ "Wärmeschutz", "Kälteschutz" ]
   },
   "SubjectRPB" : [ {
@@ -7826,6 +7881,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Ingenieurwissenschaft / Technik" ],
+    "person" : [ "Goetzel, Claus G. (1913-)", "Goetzel, Lilo K." ],
     "subject" : [ "Werkstoffkunde", "Englisch", "Deutsch" ]
   },
   "SubjectRPB" : [ {
@@ -7980,6 +8036,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Ruske, Wolfgang" ],
     "subject" : [ "Holzbau" ]
   },
   "IdentifierAlma" : {
@@ -8089,7 +8146,8 @@
     "access" : [ "local" ],
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "Ingenieurwissenschaft / Technik" ]
+    "taxonomy" : [ "Ingenieurwissenschaft / Technik" ],
+    "person" : [ "Baltes, Heinrich P." ]
   },
   "SubjectRPB" : [ {
     "subject" : "920"
@@ -8198,6 +8256,7 @@
     "branch" : [ "Jülich", "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Maschinenbau" ],
+    "person" : [ "Schulze, Günter", "Krafka, Helmut", "Neumann, Peter" ],
     "subject" : [ "Schweißen" ]
   },
   "SubjectRPB" : [ {
@@ -8352,6 +8411,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Maschinenbau" ],
+    "person" : [ "Levi, Paul" ],
     "subject" : [ "Autonomer Roboter" ]
   },
   "SubjectRVK" : [ {
@@ -8488,6 +8548,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Ingenieurwissenschaft / Technik" ],
+    "person" : [ "Neumann, Peter" ],
     "subject" : [ "IEC 61131", "Automatisierungssystem", "Verteiltes System", "Programmierung" ]
   },
   "SubjectRVK" : [ {
@@ -8679,6 +8740,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Leopold, Günter", "Frommann, Holger (1954-)" ],
     "provenance" : [ "neu9911" ],
     "subject" : [ "Deutschland / Klein- und Mittelbetrieb / Risikokapital / Finanzierung / Internationaler Vergleich", "Deutschland", "Klein- und Mittelbetrieb", "Risikokapital", "Finanzierung", "Internationaler Vergleich" ]
   },
@@ -8841,6 +8903,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Duwendag, Dieter (1938-)" ],
     "provenance" : [ "neu9906, neu0201" ],
     "subject" : [ "Geldpolitik", "Geldtheorie", "Europäische Union" ]
   },
@@ -9068,6 +9131,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Staehle, Wolfgang H. (1938-1992)", "Conrad, Peter" ],
     "provenance" : [ "neu0101" ],
     "subject" : [ "Industrielle Psychologie / Organisationspsychologie", "Management" ]
   },
@@ -9235,6 +9299,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Biologie" ],
+    "person" : [ "Süßmuth, Roland (1934-)" ],
     "provenance" : [ "neu0007, neu0008, neu0311" ],
     "subject" : [ "Mikrobiologie" ]
   },
@@ -9405,6 +9470,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Bach, Volker" ],
     "provenance" : [ "neu0002" ],
     "subject" : [ "Unternehmen", "Intranet", "Organisatorisches Lernen", "Wissensorganisation" ]
   },
@@ -9557,6 +9623,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource", "Elektronische Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Krause, Jörg (1964-)" ],
     "provenance" : [ "neu9911" ],
     "subject" : [ "Unternehmen", "Internet", "Electronic Commerce" ]
   },
@@ -9704,6 +9771,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Merz, Michael (1964-)" ],
     "provenance" : [ "neu0005" ],
     "subject" : [ "Electronic Commerce" ]
   },
@@ -9853,6 +9921,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Rauen, Christopher (1969-)" ],
     "provenance" : [ "neu0006" ],
     "subject" : [ "Industrielle Psychologie / Personalentwicklung", "Unternehmen", "Coaching" ]
   },
@@ -10000,6 +10069,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Steinbuch, Pitter A." ],
     "provenance" : [ "neu0101" ],
     "subject" : [ "Produktionswirtschaft" ]
   },
@@ -10148,6 +10218,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Chemie und Chemische Technik" ],
+    "person" : [ "Lueken, Heiko" ],
     "provenance" : [ "neu0001" ],
     "subject" : [ "Magnetochemie" ]
   },
@@ -10275,6 +10346,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Berg, Jürgen", "Surmann, Christoph" ],
     "provenance" : [ "neu0003" ],
     "subject" : [ "Qualitätsmanagement", "Baubetrieb" ]
   },
@@ -10384,6 +10456,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Dolff-Bonekämper, Gabriele (1952-)", "Schmidt, Franziska" ],
     "provenance" : [ "neu0006" ],
     "subject" : [ "Geschichte 1945-1999", "Hansaviertel (Berlin)", "Städtebau", "Architektur" ]
   },
@@ -10522,6 +10595,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Gentsch, Peter" ],
     "provenance" : [ "neu0112" ],
     "subject" : [ "Wissensmanagement", "Betriebliches Informationssystem", "CD-ROM" ]
   },
@@ -10660,6 +10734,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kulturwissenschaften" ],
+    "person" : [ "Penn, Irving (1917-2009)", "Holborn, Mark (1949-)", "Miyake, Issei (1938-)" ],
     "provenance" : [ "neu0001" ],
     "subject" : [ "Penn, Irving (1917-2009)", "Modefotografie", "Miyake, Issei (1938-)", "Mode" ]
   },
@@ -10801,6 +10876,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Oesterle, Eberhard" ],
     "provenance" : [ "neu0005, neu0011, neu0112" ],
     "subject" : [ "Doppelte Fassade" ]
   },
@@ -10927,6 +11003,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Strunk, Marion (1949-)" ],
     "provenance" : [ "neu0001" ],
     "subject" : [ "Selbstbild", "Kunst" ]
   },
@@ -11033,6 +11110,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Theater- und Filmwissenschaften" ],
+    "person" : [ "Bronfen, Elisabeth (1958-)" ],
     "provenance" : [ "neu9912" ],
     "subject" : [ "Geschichte", "USA", "Kultfilm" ]
   },
@@ -11153,6 +11231,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Uebele, Andreas (1960-)" ],
     "provenance" : [ "neu0002" ],
     "subject" : [ "Uebele, Andreas (1960-)", "Typografie", "Visuelle Kommunikation" ]
   },
@@ -11288,6 +11367,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Frohne, Ursula (1958-)" ],
     "provenance" : [ "neu0002,neu0507" ],
     "subject" : [ "Geschichte 1990-1999", "Video-Installation" ]
   },
@@ -11437,6 +11517,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Asensio Cerver, Francisco (1942-)", "Garcia, Belén" ],
     "provenance" : [ "neu0005" ],
     "subject" : [ "Villa" ]
   },
@@ -11559,6 +11640,7 @@
     "branch" : [ "Jülich", "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Elektrotechnik" ],
+    "person" : [ "Jäger, Rainer", "Stein, Edgar H." ],
     "subject" : [ "Leistungselektronik" ]
   },
   "SubjectRPB" : [ {
@@ -11708,6 +11790,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Küppers, Harald (1928-)" ],
     "provenance" : [ "neu0008" ],
     "subject" : [ "Farbgestaltung", "Farbenlehre", "Theorie" ]
   },
@@ -11839,6 +11922,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Timm, Ulrich" ],
     "provenance" : [ "neu0011" ],
     "subject" : [ "Wintergarten" ]
   },
@@ -11962,6 +12046,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Laufner, Odile", "Ernst, Monika" ],
     "provenance" : [ "neu0011" ],
     "subject" : [ "Architektin", "Haus" ]
   },
@@ -12201,6 +12286,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Design, Gestaltung" ],
+    "person" : [ "Adam, Jörg" ],
     "provenance" : [ "neu0212" ],
     "subject" : [ "Hausrat", "Design" ]
   },
@@ -12465,6 +12551,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Informatik" ],
+    "person" : [ "Eilebrecht, Lars", "Rath, Nikolaus", "Rohde, Thomas" ],
     "provenance" : [ "neu0310" ],
     "subject" : [ "Apache (Programm)" ]
   },
@@ -12685,6 +12772,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Cuito, Aurora" ],
     "provenance" : [ "neu0211" ],
     "subject" : [ "Einfamilienhaus", "Ländlicher Raum" ]
   },
@@ -12793,6 +12881,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Design, Gestaltung" ],
+    "person" : [ "Wilkin, Charles", "Klanten, Robert (1964-)" ],
     "provenance" : [ "neu0308", "coe/Stp" ],
     "subject" : [ "Wilkin, Charles (1969-)", "Grafik" ]
   },
@@ -12904,6 +12993,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Gralingen, Christian", "Vogel, Manfred (1946-2008)" ],
     "provenance" : [ "neu0307" ],
     "subject" : [ "Universität Essen Fachbereich Gestaltung, Kunsterziehung", "Supermarkt (Motiv)", "Karikatur", "Projekt" ]
   },
@@ -13043,6 +13133,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Mathematik" ],
+    "person" : [ "Küstenmacher, Werner Tiki (1953-)", "Partoll, Heinz", "Wagner, Irmgard" ],
     "provenance" : [ "neu0411" ],
     "subject" : [ "Mathematikunterricht" ]
   },
@@ -13177,6 +13268,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Schindler, Rudolph Michael (1887-1953)", "Smith, Elizabeth A. T. (1958-)", "Darling, Michael" ],
     "provenance" : [ "neu0605" ],
     "subject" : [ "Schindler, Rudolph Michael (1887-1953)", "Architektur" ]
   },
@@ -13310,6 +13402,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Informatik" ],
+    "person" : [ "Clocksin, William F. (1955-)", "Mellish, Christopher S. (1954-)" ],
     "provenance" : [ "neu0309, neu0311, neu0312, neu0708, neu0911" ],
     "subject" : [ "PROLOG (Programmiersprache)" ]
   },
@@ -13545,6 +13638,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Horngren, Charles T. (1926-)", "Sundem, Gary L. (1944-)", "Elliott, John A." ],
     "provenance" : [ "neu0405" ],
     "subject" : [ "Accounting", "Finanzbuchhaltung" ]
   },
@@ -13693,6 +13787,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Chemie und Chemische Technik" ],
+    "person" : [ "Gross, Helmut", "Arndt, Karl-Friedrich (1948-2015)" ],
     "provenance" : [ "neu0410" ],
     "subject" : [ "Chemie", "Technische Chemie", "Englisch", "Deutsch" ]
   },
@@ -13851,6 +13946,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Informatik" ],
+    "person" : [ "Mcclure, Stuart", "Scambray, Joel", "Kurtz, George" ],
     "provenance" : [ "neu0407" ],
     "subject" : [ "Betriebssystem", "Hacker", "Internet", "Computersicherheit", "Datensicherung" ]
   },
@@ -13992,6 +14088,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Nitsch, Hermann (1938-)" ],
     "provenance" : [ "neu0312" ]
   },
   "IdentifierAlma" : {
@@ -14094,6 +14191,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Nitsch, Hermann (1938-)" ],
     "provenance" : [ "neu0312" ]
   },
   "IdentifierAlma" : {
@@ -14192,6 +14290,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Elektronische Ressource", "Film, Dia, Video" ],
     "taxonomy" : [ "Theater- und Filmwissenschaften" ],
+    "person" : [ "Kurosawa, Akira (1910-1998)", "Nakadai, Tatsuya (1932-)", "Yamazaki, Tsutomu (1936-)" ],
     "provenance" : [ "neu0310" ],
     "subject" : [ "Film", "Spielfilm", "bushi (Krieger, Samurai)", "Krieg" ]
   },
@@ -14348,6 +14447,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Design, Gestaltung" ],
+    "person" : [ "Bouroullec, Ronan (1971-)", "Bouroullec, Erwan (1976-)" ],
     "provenance" : [ "neu0606" ],
     "subject" : [ "Bouroullec, Ronan (1971-)", "Bouroullec, Erwan (1976-)", "Möbel", "Design" ]
   },
@@ -14486,6 +14586,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Ingenieurwissenschaft / Technik" ],
+    "person" : [ "Möllerke, Georg" ],
     "provenance" : [ "neu0310" ]
   },
   "IdentifierAlma" : {
@@ -14592,6 +14693,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Hecht-El Minshawi, Béatrice (1947-)" ],
     "provenance" : [ "neu0703" ],
     "subject" : [ "Interkulturelles Management", "Arbeitsgruppe", "Kommunikation" ]
   },
@@ -14734,6 +14836,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Design, Gestaltung" ],
+    "person" : [ "Dietz, Kirsten (1967-)", "Rädeker, Jochen (1967-)", "Schubert, Niels (1962-)" ],
     "provenance" : [ "neu0408, neu0505" ],
     "subject" : [ "Geschäftsbericht", "Grafische Darstellung", "Gestaltung" ]
   },
@@ -14864,6 +14967,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Wiehler, Hans-Günther (1923-2013)" ],
     "provenance" : [ "neu0504" ],
     "subject" : [ "Straßenbau" ]
   },
@@ -14978,7 +15082,8 @@
     "access" : [ "local" ],
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Elektronische Ressource" ],
-    "taxonomy" : [ "Theater- und Filmwissenschaften" ]
+    "taxonomy" : [ "Theater- und Filmwissenschaften" ],
+    "person" : [ "Piesiewicz, Krzysztof (1945-)", "Zamachowski, Zbigniew (1961-)", "Delpy, Julie (1969-)", "Preisner, Zbigniew (1955-)" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -15121,6 +15226,7 @@
     "branch" : [ "Eupener Straße", "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Ingenieurwissenschaft / Technik" ],
+    "person" : [ "Munson, Bruce Roy (1940-)", "Young, Donald F. (1928-)", "Okiishi, Theodore Hisao (1939-)" ],
     "provenance" : [ "neu0507, neu0508" ],
     "subject" : [ "Fluid mechanics", "Strömungsmechanik" ]
   },
@@ -15269,6 +15375,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Richardson, Phyllis" ],
     "provenance" : [ "neu0611, neu0710" ],
     "subject" : [ "Einfamilienhaus", "Umbau", "Anbau", "Aufstockung" ]
   },
@@ -15397,6 +15504,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Elektronische Ressource", "Film, Dia, Video" ],
     "taxonomy" : [ "Theater- und Filmwissenschaften" ],
+    "person" : [ "LaChapelle, David (1963-)" ],
     "provenance" : [ "neu0804" ]
   },
   "IdentifierAlma" : {
@@ -15509,6 +15617,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Dehn, Frank (1970-)", "Biegholdt, Hans-Alexander" ],
     "provenance" : [ "neu0705" ],
     "subject" : [ "Bauen im Bestand", "Massivbau", "Bauschaden", "Instandsetzung", "Bewehrung", "Verstärkungswerkstoff" ]
   },
@@ -15667,6 +15776,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Ingenieurwissenschaft / Technik" ],
+    "person" : [ "Weigand, Bernhard (1962-)", "Köhler, Jürgen", "Wolfersdorf, Jens von (1963-)" ],
     "provenance" : [ "neu0810" ],
     "subject" : [ "Thermodynamik" ]
   },
@@ -15822,6 +15932,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Elektronische Ressource", "Film, Dia, Video" ],
     "taxonomy" : [ "Theater- und Filmwissenschaften" ],
+    "person" : [ "Miyazaki, Hayao (1941-)", "Hisaishi, Joe (1950-)" ],
     "provenance" : [ "neu0712" ]
   },
   "IdentifierAlma" : {
@@ -15955,6 +16066,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen", "Chemie und Chemische Technik" ],
+    "person" : [ "Uffelen, Chris van (1966-)", "Steybe, Sophie" ],
     "provenance" : [ "neu0810" ],
     "subject" : [ "Geschichte 1996-2008", "Architektur", "Kunststoff" ]
   },
@@ -16091,6 +16203,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Philosophie", "Sozialwissenschaften / Soziologie" ],
+    "person" : [ "Bidlo, Oliver (1973-)" ],
     "provenance" : [ "neu0903" ],
     "subject" : [ "Flusser, Vilém (1920-1991)" ]
   },
@@ -16225,6 +16338,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Ho, Hey" ],
     "provenance" : [ "neu0910" ],
     "subject" : [ "Europa", "Mehrfamilienhaus", "Kollektive Wohnform" ]
   },
@@ -16353,6 +16467,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Esch, Franz-Rudolf (1960-)" ],
     "provenance" : [ "neu1004" ],
     "subject" : [ "Markenpolitik" ]
   },
@@ -16490,6 +16605,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Informatik" ],
+    "person" : [ "Dornberger, Rolf (1969-)", "Telesko, Rainer" ],
     "provenance" : [ "neu1104" ],
     "subject" : [ "Objektorientierte Programmierung", "Java (Programmiersprache)" ]
   },
@@ -16626,6 +16742,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Sternthal, Barbara (1961-)", "Eisenberger, Harald (1971-)" ],
     "provenance" : [ "neu1112" ],
     "subject" : [ "Passivhaus" ]
   },
@@ -16769,6 +16886,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Sozialwissenschaften / Soziologie", "Wirtschaftswissenschaften", "Kunst" ],
+    "person" : [ "Spieler, Reinhard (1964-)", "Dücker, Burckhard" ],
     "provenance" : [ "neu1203", "Sie finden die 4 Einzelhefte im Regal als gebundenes Buch" ],
     "subject" : [ "Geschichte 1960-2011", "Deutschland", "Discountgeschäft", "Konsumgesellschaft", "Rezeption", "Kunst" ]
   },
@@ -17090,6 +17208,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kunst" ],
+    "person" : [ "Linder (1954-)", "Görner, Veit (1953-)", "Dietz, Heinrich" ],
     "provenance" : [ "neu1307" ],
     "subject" : [ "Linder (1954-)", "Collage", "Fotomontage", "Frau (Motiv)", "Sexualisierung" ]
   },
@@ -17249,6 +17368,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Zimmermann, Astrid (1967-)" ],
     "provenance" : [ "neu1410" ],
     "subject" : [ "Landschaftsplanung", "Freifläche", "Kennzahl" ]
   },
@@ -17406,6 +17526,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kulturwissenschaften", "Design, Gestaltung" ],
+    "person" : [ "Vervaeren, Didier", "Bernheim, Nele" ],
     "provenance" : [ "neu1510" ],
     "subject" : [ "Geschichte", "Belgien", "Mode", "Design" ]
   },
@@ -17564,6 +17685,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Maschinenbau" ],
+    "person" : [ "Bausch, Thomas" ],
     "provenance" : [ "neu1508, neu1602" ],
     "subject" : [ "Zahnrad", "Fertigung" ]
   },
@@ -17693,6 +17815,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Berk, Jonathan B. (1962-)", "DeMarzo, Peter M." ],
     "provenance" : [ "neu1512" ],
     "subject" : [ "Finanzierung" ]
   },
@@ -17903,6 +18026,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "David, Fred R.", "David, Forest R." ],
     "provenance" : [ "neu1908" ],
     "subject" : [ "Strategic planning", "Strategisches Management", "Case studies" ]
   },
@@ -18048,6 +18172,7 @@
     "branch" : [ "Eupener Straße", "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Elektrotechnik" ],
+    "person" : [ "Mühl, Thomas (1956-)" ],
     "provenance" : [ "neu1702, neu1703" ],
     "subject" : [ "Elektrische Messtechnik" ]
   },
@@ -18504,6 +18629,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Rechtswissenschaft" ],
+    "person" : [ "Maurer, Hartmut (1931-)", "Waldhoff, Christian (1965-)" ],
     "provenance" : [ "neu1710" ],
     "subject" : [ "Deutschland", "Allgemeines Verwaltungsrecht" ]
   },
@@ -18712,6 +18838,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Sinning, Heidi (1965-)" ],
     "provenance" : [ "neu1709" ],
     "subject" : [ "Stadtplanung", "Altengerechtes Wohnen", "Kollektive Wohnform", "Stadtviertel" ]
   },
@@ -18916,7 +19043,8 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
-    "taxonomy" : [ "Rechtswissenschaft" ]
+    "taxonomy" : [ "Rechtswissenschaft" ],
+    "person" : [ "Ahrendt, Martina (1967-)", "Schaub, Günter (1933-2013)" ]
   },
   "SubjectRPB" : [ {
     "subject" : "600"
@@ -19075,6 +19203,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Wirtschaftswissenschaften" ],
+    "person" : [ "Trill, Roland (1952-)" ],
     "provenance" : [ "neu1901" ],
     "subject" : [ "E-Health" ]
   },
@@ -19262,6 +19391,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Ingenieurwissenschaft / Technik" ],
+    "person" : [ "Kunow, Annette" ],
     "provenance" : [ "neu1712, neu1901" ]
   },
   "IdentifierAlma" : {
@@ -19395,6 +19525,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Ingenieurwissenschaft / Technik" ],
+    "person" : [ "Kunow, Annette" ],
     "provenance" : [ "neu1712, neu1901" ]
   },
   "IdentifierAlma" : {
@@ -19531,6 +19662,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Hölz, Christoph (1962-)", "Tragbar, Klaus (1959-)", "Weiss, Veronika" ],
     "provenance" : [ "neu1712" ]
   },
   "IdentifierAlma" : {
@@ -19660,6 +19792,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Informatik", "Wirtschaftswissenschaften", "Mathematik" ],
+    "person" : [ "Fox, John (1947-)" ],
     "provenance" : [ "neu1802" ]
   },
   "IdentifierAlma" : {
@@ -19781,6 +19914,7 @@
     "branch" : [ "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Medizin und Medizinische Technik" ],
+    "person" : [ "Anders, Monika" ],
     "provenance" : [ "neu1802" ]
   },
   "IdentifierAlma" : {
@@ -19887,6 +20021,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Bokern, Anneke (1971-)", "Vlok, Paul" ],
     "provenance" : [ "neu1802" ]
   },
   "IdentifierAlma" : {
@@ -20010,6 +20145,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Kárász, Lorenzo (1981-)" ],
     "provenance" : [ "neu1802" ],
     "subject" : [ "Barcelona" ]
   },
@@ -20136,6 +20272,7 @@
     "branch" : [ "Boxgraben" ],
     "carrier" : [ "Elektronische Ressource", "Film, Dia, Video" ],
     "taxonomy" : [ "Theater- und Filmwissenschaften" ],
+    "person" : [ "Villeneuve, Denis (1967-)", "Fancher, Hampton (1938-)", "Green, Michael (ca. 20. Jh)", "Zimmer, Hans (1957-)", "Wallfisch, Benjamin (1979-)", "Gosling, Ryan (1980-)", "Ford, Harrison (1942-)" ],
     "provenance" : [ "neu1804" ]
   },
   "SubjectRPB" : [ {
@@ -20299,6 +20436,7 @@
     "branch" : [ "Jülich", "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Elektrotechnik" ],
+    "person" : [ "Scholz, Reinhard" ],
     "provenance" : [ "neu1807, neu1808" ],
     "subject" : [ "Elektrotechnik", "Elektrisches Netzwerk", "Grundschaltung", "Elektrisches Bauelement", "Wechselstrom", "Gleichstrom" ]
   },
@@ -20532,6 +20670,7 @@
     "branch" : [ "Jülich", "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Elektrotechnik" ],
+    "person" : [ "Klös, Alexander" ],
     "provenance" : [ "neu1809", "neu1810" ],
     "subject" : [ "Nanoelektronik", "Halbleiterelektronik", "Elektronisches Bauelement", "Feldeffekttransistor" ]
   },
@@ -20693,6 +20832,7 @@
     "branch" : [ "Eupener Straße", "Jülich" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Elektrotechnik" ],
+    "person" : [ "Roppel, Carsten" ],
     "provenance" : [ "neu1810" ],
     "subject" : [ "Nachrichtentechnik", "Signalverarbeitung", "Digitales Nachrichtenübertragungssystem" ]
   },
@@ -20890,6 +21030,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Sahl, Reinhold", "Leggatt-Hofer, Renate", "Buchinger, Günther (1968-)" ],
     "provenance" : [ "neu1811" ],
     "subject" : [ "Geschichte", "Hofburg (Wien)" ]
   },
@@ -21045,6 +21186,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Fischer, Heinz-Martin", "Schneider, Martin" ],
     "provenance" : [ "neu1905" ],
     "subject" : [ "Lärmschutz", "Hochbau" ]
   },
@@ -21219,6 +21361,7 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "G. Smith, Peter", "H. Morrow, Richard", "A. Ross, David" ],
     "subject" : [ "Public aspects of medicine" ]
   },
   "IdentifierAlma" : {
@@ -21328,6 +21471,7 @@
     "branch" : [ "Eupener Straße" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Rechtswissenschaft" ],
+    "person" : [ "Mock, Sebastian (1976-)" ],
     "provenance" : [ "neu2002" ],
     "subject" : [ "Deutschland", "Gesellschaftsrecht" ]
   },
@@ -21505,6 +21649,7 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Behar, Katherine" ],
     "subject" : [ "Social sciences (General)" ]
   },
   "IdentifierAlma" : {
@@ -21597,6 +21742,7 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Stein, Denis" ],
     "subject" : [ "Technology (General)" ]
   },
   "IdentifierAlma" : {
@@ -21689,6 +21835,7 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Mennerich, Christian" ],
     "subject" : [ "Technology (General)" ]
   },
   "IdentifierAlma" : {
@@ -21792,6 +21939,7 @@
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "person" : [ "Bobisse, Riccardo", "Pavia, Andrea" ],
     "provenance" : [ "neu1910" ],
     "subject" : [ "ARCHITECTURE / Urban & Land Use Planning" ]
   },
@@ -22005,7 +22153,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Chelliah, Raja J." ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -22102,7 +22251,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Flanagan, Robert J." ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -22394,7 +22544,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Chauvet, Marcelle", "Benes, Jaromir", "Kamenik, Ondra", "Kumhof, Michael", "Laxton, Douglas", "Mursula, Susanna", "Selody, Jack G." ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -22506,7 +22657,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Tolo, Willa Boots J." ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -22791,7 +22943,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Das, Udaibir S.", "Quintyn, Marc" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -22890,7 +23043,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Palomba, Geremia" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -22990,7 +23144,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Jones, Matthew T." ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -23090,7 +23245,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Kamar, Bassem", "Carlotti, Jean-Etienne", "Krueger, Russell C." ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -23194,7 +23350,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Woo, D.", "Gray, Simon" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -23293,7 +23450,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Peiris, Shanaka J.", "Barnichon, Régis" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -23392,7 +23550,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Saxena, Sweta Chaman", "Cerra, Valerie" ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -23590,7 +23749,8 @@
   },
   "introx" : {
     "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ]
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Stone, Mark R." ]
   },
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -24173,6 +24333,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Pädagogik" ],
+    "person" : [ "Weiss, Gabriele" ],
     "subject" : [ "Darstellendes Spiel", "Sonderpädagogik" ]
   },
   "IdentifierAlma" : {
@@ -24281,6 +24442,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Pädagogik" ],
+    "person" : [ "Weiss, Gabriele" ],
     "subject" : [ "Darstellendes Spiel", "Sonderpädagogik" ]
   },
   "IdentifierAlma" : {
@@ -24389,6 +24551,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Pädagogik" ],
+    "person" : [ "Weiss, Gabriele" ],
     "subject" : [ "Darstellendes Spiel", "Sonderpädagogik" ]
   },
   "IdentifierAlma" : {
@@ -24492,6 +24655,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Pädagogik" ],
+    "person" : [ "Weiss, Gabriele" ],
     "subject" : [ "Darstellendes Spiel", "Sonderpädagogik" ]
   },
   "IdentifierAlma" : {
@@ -24606,6 +24770,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Pädagogik" ],
+    "person" : [ "Weiss, Gabriele" ],
     "subject" : [ "Darstellendes Spiel", "Sonderpädagogik" ]
   },
   "IdentifierAlma" : {
@@ -24709,6 +24874,7 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Ur Rehman" ],
     "subject" : [ "Electrical & Electronics Engineering" ]
   },
   "IdentifierAlma" : {
@@ -24795,6 +24961,7 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Packer, Craig" ],
     "subject" : [ "Lion / Behavior / Africa, East", "NATURE / Animals / Big Cats" ]
   },
   "IdentifierAlma" : {

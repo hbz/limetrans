@@ -1065,6 +1065,7 @@ end
 
 # MARC/100
 set_array("@person")
+set_array("introx.person[]")
 do list(path: "100[013] ", "var": "$i")
   if exists("$i.[4e]")
     if any_match("$i.[4e]", "(?:[Aa]ut|[Cc]re).*")
@@ -1074,6 +1075,7 @@ do list(path: "100[013] ", "var": "$i")
     include("./alma/personCreator.fix")
   end
 end
+uniq("@person")
 move_field("@person", "Person[]")
 
 # MARC/110, MARC/111, MARC/710, MARC/711
@@ -1421,6 +1423,7 @@ do list(path: "[17]00[013] ", "var": "$i")
     end
   end
 end
+uniq("@person")
 move_field("@person", "PersonContributor[]")
 
 # MARC/588
@@ -1673,6 +1676,8 @@ do list(path: "700[013] ", "var": "$i")
     include("./alma/personCreator.fix")
   end
 end
+uniq("@person")
+uniq("introx.person[]")
 move_field("@person", "PersonCreator[]")
 
 # MARC/246

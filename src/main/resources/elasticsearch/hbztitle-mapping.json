@@ -149,6 +149,10 @@
             "cql.allIndexes"
           ]
         },
+        "person": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
         "provenance": {
           "type": "string",
           "analyzer": "default",
@@ -1048,6 +1052,15 @@
             "gndo:preferredNameForThePerson",
             "gndo:variantNameForThePerson"
           ],
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "personBio": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
           "copy_to": [
             "bib.namePersonal",
             "cql.allIndexes"
