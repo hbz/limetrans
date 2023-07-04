@@ -753,6 +753,16 @@ do list(path: "210??", "var": "$i")
   copy_field("$i.b", "AbbreviatedTitle[].$last.qualifier")
 end
 
+# MARC/130
+set_array("TitlePreferred[]")
+do list(path: "130??", "var": "$i")
+  add_field("TitlePreferred[].$append.__dummy__", "")
+  replace_all("$i.a", "[.]$", "")
+  call_macro("remove-nonsort", source: "$i.a")
+  copy_field("$i.a", "TitlePreferred[].$last.title")
+  copy_field("$i.g", "TitlePreferred[].$last.prefix")
+end
+
 # MARC/240
 do list(path: "240??.a", "var": "$i")
   replace_all("$i", "[.]$", "")
@@ -1937,6 +1947,7 @@ retain(
   "TitleAddendum",
   "TitleOther",
   "TitlePart[]",
+  "TitlePreferred[]",
   "TitleStatement[]",
   "TitleSuperVolumeDesignation[]",
   "TitleSuper[]",

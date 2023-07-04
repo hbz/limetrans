@@ -3945,6 +3945,9 @@
     "identifierOCLC" : "60617245"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "Visual arts research (Online)"
+  } ],
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
     "type" : [ "Sonstiges", "Zeitschrift" ],
@@ -4279,6 +4282,9 @@
     "identifierOCLC" : "1074691269"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "Jules et Jim"
+  } ],
   "CreatorStatement" : {
     "creatorStatement" : [ "ein Film von François Truffaut ; Jeanne Moreau, Henri Serre, Oskar Werner" ]
   },
@@ -5893,6 +5899,10 @@
     "identifierOCLC" : "1067261828"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "Travel photography",
+    "prefix" : "dt."
+  } ],
   "CreatorStatement" : {
     "creatorStatement" : [ "von der Redaktion der Time-Life-Bücher. [Die fachliche Bearb. der dt. Ausg. dieses Buches besorgte Heinrich Freytag]" ]
   },
@@ -7399,6 +7409,10 @@
     "identifierOCLC" : "246720751"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "Physical thought from the presocratics to the quantum physicists",
+    "prefix" : "dt."
+  } ],
   "TitleAddendum" : {
     "title" : "2500 Jahre physikalischen Denkens ; Texte von Anaximander bis Pauli"
   },
@@ -33054,6 +33068,10 @@
     "identifierOCLC" : "600482765"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "France romane",
+    "prefix" : "dt."
+  } ],
   "CreatorStatement" : {
     "creatorStatement" : [ "Raymond Oursel" ]
   },
@@ -42420,6 +42438,10 @@
     "identifierOCLC" : "76006353"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "Casas sorprendentes",
+    "prefix" : "dt."
+  } ],
   "TitleAddendum" : {
     "title" : "Meisterwerke neuester Architektur"
   },
@@ -46434,6 +46456,10 @@
     "identifierOCLC" : "1071317902"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "Blanc",
+    "prefix" : "dt."
+  } ],
   "CreatorStatement" : {
     "creatorStatement" : [ "von Krzysztof Kieslowski. Zbigniew Zamachowski ; Julie Delpy ... Drehbuch: Krzysztof Piesiewicz ... Orig.-Musik: Zbigniew Preisner" ]
   },
@@ -46731,6 +46757,10 @@
     "identifierOCLC" : "162331615"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "House plus",
+    "prefix" : "dt."
+  } ],
   "TitleAddendum" : {
     "title" : "innovative Ideen für Anbau, Aufstockung und Erweiterung"
   },
@@ -46864,6 +46894,10 @@
     "identifierOCLC" : "1072005973"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "Rize",
+    "prefix" : "dt."
+  } ],
   "TitleAddendum" : {
     "title" : "uns hält nichts auf!"
   },
@@ -47308,6 +47342,9 @@
     "identifierOCLC" : "1074643999"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "Tonari no Totoro"
+  } ],
   "CreatorStatement" : {
     "creatorStatement" : [ "ein Film von Hayao Miyazaki. Musik Joe Hisaishi" ]
   },
@@ -47726,6 +47763,10 @@
     "identifierOCLC" : "316576079"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "Nouvelles formes d'habitat collectif en Europe",
+    "prefix" : "engl."
+  } ],
   "CreatorStatement" : {
     "creatorStatement" : [ "ed. by Arc en Rêve Centre d'Architecture. [Original graphics concept: Hey Ho ...]" ]
   },
@@ -60770,6 +60811,9 @@
   }, {
     "title" : "Brain res. bull.",
     "qualifier" : "(Online)"
+  } ],
+  "TitlePreferred" : [ {
+    "title" : "Brain research bulletin (Online)"
   } ],
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],

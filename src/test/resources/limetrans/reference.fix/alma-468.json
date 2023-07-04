@@ -2461,6 +2461,9 @@
     "identifierOCLC" : "60617245"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "Visual arts research (Online)"
+  } ],
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
     "type" : [ "Sonstiges", "Zeitschrift" ],
@@ -45316,6 +45319,10 @@
     "identifierOCLC" : "256331406"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "Marketing management",
+    "prefix" : "dt."
+  } ],
   "TitleAddendum" : {
     "title" : "Analyse, Planung und Kontrolle"
   },
@@ -76640,6 +76647,9 @@
   }, {
     "title" : "Brain res. bull.",
     "qualifier" : "(Online)"
+  } ],
+  "TitlePreferred" : [ {
+    "title" : "Brain research bulletin (Online)"
   } ],
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],

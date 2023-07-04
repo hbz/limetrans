@@ -2466,6 +2466,9 @@
     "identifierOCLC" : "60617245"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "Visual arts research (Online)"
+  } ],
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
     "type" : [ "Sonstiges", "Zeitschrift" ],
@@ -25047,6 +25050,10 @@
     "identifierOCLC" : "600482765"
   } ],
   "collection" : "DE-605",
+  "TitlePreferred" : [ {
+    "title" : "France romane",
+    "prefix" : "dt."
+  } ],
   "CreatorStatement" : {
     "creatorStatement" : [ "Raymond Oursel" ]
   },
@@ -33822,6 +33829,9 @@
   }, {
     "title" : "Brain res. bull.",
     "qualifier" : "(Online)"
+  } ],
+  "TitlePreferred" : [ {
+    "title" : "Brain research bulletin (Online)"
   } ],
   "dc" : {
     "format" : [ "Elektronische Ressource", "Online-Ressource" ],
