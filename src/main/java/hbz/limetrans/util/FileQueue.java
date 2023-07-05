@@ -90,7 +90,10 @@ public class FileQueue implements InputQueue, Iterable<String> {
                 .setReceiver(new LineReader())
                 .setReceiver(recorder)
                 .setReceiver(decoder);
-        });
+        }),
+
+        SISIS_SUPER(aOpener -> SISIS.process(aOpener)
+                .setReceiver(new SisisSuperFilter()));
 
         private final Function<FileOpener, Sender<StreamReceiver>> mFunction;
 

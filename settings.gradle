@@ -38,6 +38,7 @@ gradle.rootProject {
                 modules: [
                     'org.metafacture:metafacture-biblio',
                     'org.metafacture:metafacture-commons',
+                    'org.metafacture:metafacture-flowcontrol',
                     'org.metafacture:metafacture-formeta',
                     'org.metafacture:metafacture-framework',
                     'org.metafacture:metafacture-io',

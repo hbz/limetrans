@@ -2,14 +2,15 @@
   "isil": "DE-107",
   "path": "/mnt/herakles/${isil}/upload/",
   "input": {
-    "queue1": {
+    "queue-onleihe": {
       "path": "${path}",
-      "pattern": "{hanser_ebooks_LBZ,NBE_*_gesamt,utb_report,WBG *,zdb41utb-tit}.mrc",
-      "processor" : "MARC21RECORDS"
+      "pattern": "unload_Onleihe.TIT",
+      "processor" : "SISIS"
     },
-    "queue2": {
+    "queue-zeitschriften": {
       "path": "${path}",
-      "pattern": "{Meiner_export_*,Narr_Francke_Attempto_elibrary-marcxml,SpringerNature_Books_MARCXML_*}.xml"
+      "pattern": "unload_ZSBaende.TIT",
+      "processor" : "SISIS_SUPER"
     }
   },
   "output": {
@@ -24,5 +25,5 @@
       }
     }
   },
-  "transformation-rules": "classpath:/transformation/${isil}-ebooks.xml"
+  "transformation-rules": "classpath:/transformation/${isil}-bridge-supplement-sisis.fix"
 }

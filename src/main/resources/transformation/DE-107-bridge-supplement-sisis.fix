@@ -1,0 +1,394 @@
+do once()
+  include("./macros.fix")
+  include("./maps.fix")
+end
+
+add_field("@isil", "DE-107")
+copy_field("@isil", "collection")
+
+# SISIS/0000
+paste("@id", "~(", "@isil", "~)", "_id", join_char: "")
+set_array("xbib[]")
+copy_field("@id", "RecordIdentifier.verifyingSuperIdentifier")
+unless any_equal("2900.*", "Onleihe")
+  copy_field("@id", "RecordIdentifier.isContextLocal")
+end
+copy_field("@id", "xbib[].$append.uid")
+copy_field("@id", "RecordIdentifier.identifierForTheRecord")
+
+# SISIS/0015
+set_array("Language[]")
+do list(path: "0015.*", "var": "$i")
+  split_field("$i", ";")
+  do list(path: "$i", "var": "$j")
+    add_field("Language[].$append.__dummy__", "")
+    copy_field("$j", "@language")
+    lookup("@language", "ISO639-2-to-GND", delete: "true")
+    move_field("@language", "Language[].$last.language")
+    copy_field("$j", "Language[].$last.languageSource")
+  end
+end
+
+# SISIS/0025
+set_array("Identifier.identifierGeneric[]")
+copy_field("0025.*", "Identifier.identifierGeneric[].$append")
+
+# SISIS/0027
+copy_field("0027", "IdentifierLocal.identifierLocal")
+
+# SISIS/0028
+copy_field("0028", "IdentifierNorm.identifierNorm")
+
+# SISIS/0089
+do list(path: "0089.*", "var": "$i")
+  unless exists("VolumeDesignation.volumeDesignation")
+    unless exists("@facet_type")
+      set_array("@facet_type")
+    end
+    add_field("@facet_type.$append", "Teil eines Werkes")
+    copy_field("$i", "VolumeDesignation.volumeDesignation")
+  end
+end
+
+# SISIS/0100
+set_array("Person[]")
+do list(path: "0100.*", "var": "$i")
+  copy_field("$i", "Person[].$append.personName")
+end
+uniq("Person[]")
+
+# SISIS/0101
+set_array("PersonContributor[]")
+do list(path: "0101.*", "var": "$i")
+  copy_field("$i", "PersonContributor[].$append.personName")
+end
+
+# SISIS/0102
+set_array("PersonIdentifier[]")
+do list(path: "0102.*", "var": "$i")
+  copy_field("$i", "PersonIdentifier[].$append.personIdentifier")
+end
+
+# SISIS/0200, SISIS/0201
+set_array("CorporateBody[]")
+do list(path: "0200.*", "var": "$i")
+  copy_field("$i", "CorporateBody[].$append.corporateBodyName")
+end
+do list(path: "0201.*", "var": "$i")
+  copy_field("$i", "CorporateBody[].$append.corporateBodyName")
+end
+
+# SISIS/0202
+set_array("CorporateBodyIdentifier[]")
+do list(path: "0202.*", "var": "$i")
+  copy_field("$i", "CorporateBodyIdentifier[].$append.corporateBodyIdentifier")
+end
+
+# SISIS/0300
+copy_field("0300", "Collection.collection")
+
+# SISIS/0331
+set_array("TitleStatement[]")
+do list(path: "0331.*", "var": "$i")
+  if is_hash("$i")
+    do list(path: "$i.*", "var": "$j")
+      call_macro("remove-nonsort", source: "$j")
+      copy_field("$j", "TitleStatement[].$append.titleMain")
+    end
+  else
+    call_macro("remove-nonsort", source: "$i")
+    copy_field("$i", "TitleStatement[].$append.titleMain")
+  end
+end
+uniq("TitleStatement[]")
+
+# SISIS/0334
+copy_field("0334", "TypeMedia")
+
+# SISIS/0335
+set_array("TitleAddendum.title[]")
+do list(path: "0335.*", "var": "$i")
+  if is_hash("$i")
+    do list(path: "$i.*", "var": "$j")
+      call_macro("remove-nonsort", source: "$j")
+      copy_field("$j", "TitleAddendum.title[].$append")
+    end
+  else
+    call_macro("remove-nonsort", source: "$i")
+    copy_field("$i", "TitleAddendum.title[].$append")
+  end
+end
+
+# SISIS/0359
+copy_field("0359", "CreatorStatement.creatorStatement")
+
+# SISIS/0370, SISIS/0670
+set_array("TitleOther[]")
+do list(path: "0370.*", "var": "$i")
+  copy_field("$i", "TitleOther[].$append.title")
+end
+do list(path: "0670.*", "var": "$i")
+  copy_field("$i", "TitleOther[].$append.title")
+end
+
+# SISIS/0410
+set_array("PublicationPlace[]")
+do list(path: "0410.*", "var": "$i")
+  if is_hash("$i")
+    do list(path: "$i.*", "var": "$j")
+      call_macro("remove-nonsort", source: "$j")
+      copy_field("$j", "PublicationPlace[].$append.printingPlace")
+    end
+  else
+    call_macro("remove-nonsort", source: "$i")
+    copy_field("$i", "PublicationPlace[].$append.printingPlace")
+  end
+end
+
+# SISIS/0412
+set_array("PublisherName[]")
+do list(path: "0412.*", "var": "$i")
+  if is_hash("$i")
+    do list(path: "$i.*", "var": "$j")
+      call_macro("remove-nonsort", source: "$j")
+      copy_field("$j", "PublisherName[].$append.name")
+    end
+  else
+    call_macro("remove-nonsort", source: "$i")
+    copy_field("$i", "PublisherName[].$append.name")
+  end
+end
+
+# SISIS/0424
+copy_field("0424", "DateProper.date")
+
+# SISIS/0425
+set_array("Date[]")
+do list(path: "0024.*", "var": "$i")
+  copy_field("$i", "Date[].$append.date")
+end
+do list(path: "0425.*", "var": "$i")
+  copy_field("$i", "Date[].$append.date")
+end
+uniq("Date[]")
+
+# SISIS/0433, SISIS/0473
+set_array("Extent[]")
+do list(path: "0433.*", "var": "$i")
+  copy_field("$i", "Extent[].$append.extent")
+end
+copy_field("0437", "Extent[].$append.extent")
+
+# SISIS/0451, SISIS/0453, SISIS/0455
+set_array("SeriesStatement[]")
+do list_as("$t": "0451.*", "$d": "0453.*", "$v": "0455.*")
+  add_field("SeriesStatement[].$append.__dummy__", "")
+  call_macro("remove-nonsort", source: "$t")
+  copy_field("$t", "SeriesStatement[].$last.title")
+  copy_field("$v", "SeriesStatement[].$last.volume")
+  if exists("$d")
+    if any_match("$d", "\\(.*")
+      copy_field("$d", "SeriesStatement[].$last.designation")
+    else
+      paste("SeriesStatement[].$last.designation", "~(DE-605)", "$d", join_char: "")
+    end
+  end
+end
+hbz.limetrans.function.Dedup("SeriesStatement[].*.title")
+
+# SISIS/0501
+set_array("Description[]")
+do list(path: "0501.*", "var": "$i")
+  copy_field("$i", "Description[].$append.description")
+end
+
+# SISIS/0516
+set_array("DescriptionOfExpression[]")
+do list(path: "0516.*", "var": "$i")
+  copy_field("$i", "DescriptionOfExpression[].$append.description")
+end
+
+# SISIS/0540, SISIS/0541
+set_array("IdentifierISBN[]")
+do list(path: "0540.*", "var": "$i")
+  copy_field("$i", "IdentifierISBN[].$append.identifierISBN")
+end
+do list(path: "0541.*", "var": "$i")
+  copy_field("$i", "IdentifierISBN[].$append.identifierISBN")
+end
+
+# SISIS/0600
+do list(path: "0600.*", "var": "$i")
+  copy_field("$i", "Description[].$append.description")
+end
+
+# SISIS/0653
+set_array("FormatElectronic[]")
+do list(path: "0653.*", "var": "$i")
+  copy_field("$i", "FormatElectronic[].$append.format")
+end
+
+# SISIS/0662
+set_array("OnlineAccessScopedLink[]")
+do list(path: "0662.*", "var": "$i")
+  copy_field("$i", "OnlineAccessScopedLink[].$append.url")
+end
+
+# SISIS/0663
+set_array("OnlineAccessScopedLabel[]")
+do list(path: "0663.*", "var": "$i")
+  add_field("OnlineAccessScopedLabel[].$append.__dummy__", "")
+  copy_field("@isil", "OnlineAccessScopedLabel[].$last.scopeIdentifier")
+  copy_field("$i", "OnlineAccessScopedLabel[].$last.scope")
+end
+
+# SISIS/0710
+set_array("SubjectOther[]")
+do list(path: "0710.*", "var": "$i")
+  copy_field("$i", "SubjectOther[].$append.subject")
+end
+
+# SISIS/0720
+set_array("Subject[]")
+do list(path: "0720.*", "var": "$i")
+  copy_field("$i", "Subject[].$append.subject")
+end
+
+# SISIS/0751
+set_array("AbstractCreator[]")
+do list(path: "0751.*", "var": "$i")
+  copy_field("$i", "AbstractCreator[].$append.abstract")
+end
+
+# SISIS/0800, SISIS/0802, SISIS/0807, SISIS/0809
+set_array("FormatCarrier[]")
+if any_equal("0800", "a")
+  add_field("FormatCarrier[].$append", "Druckschrift")
+else
+  copy_field("0800", "FormatCarrier[].$append")
+end
+if any_equal("0802", "a")
+  add_field("FormatCarrier[].$append", "Papier")
+elsif any_equal("0802", "b")
+  add_field("FormatCarrier[].$append", "säurefreies, alterungsbeständiges Papier")
+end
+if any_equal("0807", "a")
+  add_field("FormatCarrier[].$append", "nicht spezifiziert")
+elsif any_equal("0807", "b")
+  add_field("FormatCarrier[].$append", "Diskette(n)")
+elsif any_equal("0807", "d")
+  add_field("FormatCarrier[].$append", "Optische Speicherplatte(n)")
+elsif any_equal("0807", "e")
+  add_field("FormatCarrier[].$append", "Einsteckmodul(e)")
+elsif any_equal("0807", "g")
+  add_field("FormatCarrier[].$append", "Computerdatei(en) im Fernzugriff")
+end
+if any_equal("0809", "a")
+  add_field("FormatCarrier[].$append", "Landkarten")
+end
+
+# SISIS/0902, SISIS/0912, SISIS/0922
+set_array("SubjectRSWK[]")
+do list(path: "0902.*", "var": "$i")
+  copy_field("$i", "SubjectRSWK[].$append.subjectName")
+end
+do list(path: "0912.*", "var": "$i")
+  copy_field("$i", "SubjectRSWK[].$append.subjectName")
+end
+do list(path: "0922.*", "var": "$i")
+  copy_field("$i", "SubjectRSWK[].$append.subjectName")
+end
+
+# SISIS_SUPER/9010
+set_array("RecordIdentifierSuper[]")
+do list(path: "9010.*", "var": "$i")
+  paste("RecordIdentifierSuper[].$append.recordIdentifierSuper", "~(DE-605)", "$i", join_char: "")
+end
+
+set_array("dc.date[]")
+copy_field("DateProper.date", "dc.date[].$append")
+copy_field("Date[].*.date", "dc.date[].$append")
+replace_all("dc.date[].*", "(\\d{4}).*", "$1")
+filter("dc.date[]", "^\\d+$")
+uniq("dc.date[]")
+
+set_array("dc.language[]")
+copy_field("Language[].*.language", "dc.language[].$append")
+
+if any_equal("2900.*", "Onleihe")
+  add_field("introx.access", "online")
+  set_array("dc.format[]", "Online-Ressource", "Elektronische Ressource")
+else
+  add_field("introx.access", "local")
+  if exists("TypeMedia")
+    copy_field("TypeMedia", "dc.format[]")
+    copy_field("TypeMedia", "introx.carrier[]")
+  else
+    if any_equal("FormatCarrier[].*", "Druckschrift")
+      set_array("dc.format[]", "Gedruckte Ressource")
+      set_array("introx.carrier[]", "Gedruckte Ressource")
+    end
+    if any_equal("FormatCarrier[].*", "Landkarten")
+      set_array("dc.format[]", "Landkarte")
+      set_array("introx.carrier[]", "Landkarte")
+    end
+  end
+end
+
+set_array("dc.type[]")
+copy_field("@facet_type", "dc.type[].$append")
+
+set_array("introx.subject[]")
+do list(path: "SubjectRSWK[].*.subjectName", "var": "$i")
+  split_field("$i", "\\s*[/;]\\s*")
+  do list(path: "$i", "var": "$j")
+    copy_field("$j", "introx.subject[].$append")
+  end
+end
+uniq("introx.subject[]")
+
+vacuum()
+
+retain(
+  "AbstractCreator[]",
+  "Collection",
+  "CorporateBodyIdentifier[]",
+  "CorporateBody[]",
+  "CreatorStatement",
+  "DateProper",
+  "Date[]",
+  "DescriptionOfExpression[]",
+  "Description[]",
+  "Extent[]",
+  "FormatCarrier[]",
+  "FormatElectronic[]",
+  "Identifier",
+  "IdentifierISBN[]",
+  "IdentifierLocal",
+  "IdentifierNorm",
+  "Language[]",
+  "OnlineAccessScopedLabel[]",
+  "OnlineAccessScopedLink[]",
+  "PersonContributor[]",
+  "PersonIdentifier[]",
+  "Person[]",
+  "PublicationPlace[]",
+  "PublisherName[]",
+  "RecordIdentifier",
+  "RecordIdentifierSuper[]",
+  "SeriesStatement[]",
+  "SubjectOther[]",
+  "SubjectRSWK[]",
+  "Subject[]",
+  "TitleAddendum",
+  "TitleOther[]",
+  "TitleStatement[]",
+  "TypeMedia",
+  "VolumeDesignation",
+  "collection",
+  "dc",
+  "introx",
+  "xbib[]"
+)
+
+vacuum()
