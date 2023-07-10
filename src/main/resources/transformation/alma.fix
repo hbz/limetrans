@@ -757,7 +757,6 @@ end
 set_array("TitlePreferred[]")
 do list(path: "130??", "var": "$i")
   add_field("TitlePreferred[].$append.__dummy__", "")
-  replace_all("$i.a", "[.]$", "")
   call_macro("remove-nonsort", source: "$i.a")
   copy_field("$i.a", "TitlePreferred[].$last.title")
   copy_field("$i.g", "TitlePreferred[].$last.prefix")
