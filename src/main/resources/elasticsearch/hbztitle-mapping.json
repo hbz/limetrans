@@ -247,6 +247,18 @@
         }
       }
     },
+    "ClassifierLocal": {
+      "properties": {
+        "classifier": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
     "CompilationTitle": {
       "properties": {
         "title": {
