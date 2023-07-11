@@ -769,6 +769,88 @@ do list(path: "240??.a", "var": "$i")
   copy_field("$i", "TitleUniform.titleUniform")
 end
 
+# MARC/100, MARC/240, MARC/700
+set_array("TitleWork[]")
+do list(path: "100??", "var": "$i")
+  if any_match("$i.4", "cmp|cre")
+    copy_field("$i.a", "$i.@title")
+    if exists("$i.d")
+      paste("$i.@title", "$i.@title", "~ (", "$i.d", "~)", join_char: "")
+    end
+    do list(path: "240??", "var": "$j")
+      paste("$i.@title", "$i.@title", "~. ", "$j.a", join_char: "")
+      if exists("$j.p")
+        paste("$i.@title", "$i.@title", "~ <", "$j.p", "~>", join_char: "")
+      end
+      set_array("$j.@medium")
+      copy_field("$j.m", "$j.@medium.$append")
+      join_field("$j.@medium", ", ")
+      unless is_empty("$j.@medium")
+        paste("$i.@title", "$i.@title", "~ für ", "$j.@medium", join_char: "")
+      end
+      set_array("$j.@number")
+      copy_field("$j.n", "$j.@number.$append")
+      join_field("$j.@number", ", ")
+      unless is_empty("$j.@number")
+        paste("$i.@title", "$i.@title", "~, ", "$j.@number", join_char: "")
+      end
+      if exists("$j.r")
+        paste("$i.@title", "$i.@title", "~, ", "$j.r", join_char: "")
+      end
+      if exists("$j.f")
+        paste("$i.@title", "$i.@title", "~, ", "$j.f", join_char: "")
+      end
+      set_array("$j.@suffix")
+      copy_field("$j.k", "$j.@suffix.$append")
+      copy_field("$j.o", "$j.@suffix.$append")
+      join_field("$j.@suffix", ", ")
+      unless is_empty("$j.@suffix")
+        paste("$i.@title", "$i.@title", "~ (", "$j.@suffix", "~)", join_char: "")
+      end
+    end
+    copy_field("$i.@title", "TitleWork[].$append.titleWork")
+  end
+end
+do list(path: "700??", "var": "$i")
+  if exists("$i.t")
+    copy_field("$i.a", "$i.@title")
+    if exists("$i.d")
+      paste("$i.@title", "$i.@title", "~ (", "$i.d", "~)", join_char: "")
+    end
+    paste("$i.@title", "$i.@title", "~. ", "$i.t", join_char: "")
+    if exists("$i.p")
+      paste("$i.@title", "$i.@title", "~ <", "$i.p", "~>", join_char: "")
+    end
+    set_array("$i.@medium")
+    copy_field("$i.m", "$i.@medium.$append")
+    join_field("$i.@medium", ", ")
+    unless is_empty("$i.@medium")
+      paste("$i.@title", "$i.@title", "~ für ", "$i.@medium", join_char: "")
+    end
+    set_array("$i.@number")
+    copy_field("$i.n", "$i.@number.$append")
+    join_field("$i.@number", ", ")
+    unless is_empty("$i.@number")
+      paste("$i.@title", "$i.@title", "~, ", "$i.@number", join_char: "")
+    end
+    if exists("$i.r")
+      paste("$i.@title", "$i.@title", "~, ", "$i.r", join_char: "")
+    end
+    if exists("$i.f")
+      paste("$i.@title", "$i.@title", "~, ", "$i.f", join_char: "")
+    end
+    set_array("$i.@suffix")
+    copy_field("$i.k", "$i.@suffix.$append")
+    copy_field("$i.o", "$i.@suffix.$append")
+    join_field("$i.@suffix", ", ")
+    unless is_empty("$i.@suffix")
+      paste("$i.@title", "$i.@title", "~ (", "$i.@suffix", "~)", join_char: "")
+    end
+    copy_field("$i.@title", "TitleWork[].$append.titleWork")
+  end
+end
+uniq("TitleWork[]")
+
 # MARC/245
 do list(path: "245??.b", "var": "$i")
   unless exists("TitleAddendum.title")
@@ -1954,6 +2036,7 @@ retain(
   "TitleSuperVolumeDesignation[]",
   "TitleSuper[]",
   "TitleUniform",
+  "TitleWork[]",
   "TranslatedTitle[]",
   "TranslationEntry[]",
   "TypeHeading[]",
