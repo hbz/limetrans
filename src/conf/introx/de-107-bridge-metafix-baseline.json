@@ -2,7 +2,12 @@
   "isil": "DE-107",
   "path": "/data/pubhub/export/alma/prod/",
   "postprocess": true,
-  "alma": {},
+  "alma": {
+    "sisis-supplements": {
+      "0010": "/mnt/herakles/${isil}/upload/unload_ZSBaende.TIT",
+      "0600": "/mnt/herakles/${isil}/upload/unload_Bemerkungen.TIT"
+    }
+  },
   "input": {
     "queue": {
       "path": "${path}",

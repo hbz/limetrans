@@ -677,6 +677,10 @@ do list(path: "035  .a", "var": "$i")
     end
     copy_field("$i", "@hbzid")
     copy_field("$i", "@hbzids.$append")
+    unless exists("@sisis_supplement")
+      copy_field("$i", "@sisis_supplement")
+      replace_all("@sisis_supplement", "^\\($[catalogid]\\)", "")
+    end
   elsif any_match("$i", "\\(DE-836\\).*")
     unless exists("@sysid")
       copy_field("$i", "@sysid")
@@ -707,6 +711,9 @@ do list(path: "035  .a", "var": "$i")
     copy_field("$i", "IdentifierZDB[].$last.identifierZDB")
     lookup("$i", "alma-zdb-to-hbz", delete: "true")
     if exists("$i")
+      unless exists("@sisis_supplement")
+        copy_field("$i", "@sisis_supplement")
+      end
       paste("IdentifierHBZ[].$last.identifierHBZFull", "~(DE-605)", "$i", join_char: "")
       copy_field("IdentifierHBZ[].$last.identifierHBZFull", "@hbzids.$append")
       copy_field("$i", "IdentifierHBZ[].$last.identifierHBZ")
@@ -1053,6 +1060,13 @@ copy_field("@mmsiz", "IdentifierAlma.identifierMMSIZ")
 
 copy_field("@mmsid", "RecordIdentifier.identifierForTheIndex")
 copy_field("@id", "RecordIdentifier.identifierForTheRecord")
+
+copy_field("@sisis_supplement", "@sisis_supplement-0010")
+lookup("@sisis_supplement-0010", "sisis-supplement-0010", delete: "true")
+if exists("@sisis_supplement-0010")
+  prepend("@sisis_supplement-0010", "(DE-605)")
+  move_field("@sisis_supplement-0010", "RecordIdentifier.verifiedSuperIdentifier")
+end
 
 # MARC/POC
 set_array("DateFirst.date")
@@ -1453,6 +1467,10 @@ filter("@description", "^$[regexp.description]$")
 set_array("Description[]")
 copy_field("500  .a", "Description[].$append.description")
 move_field("@description", "Description[].$append.description")
+copy_field("@sisis_supplement", "@sisis_supplement-0600")
+lookup("@sisis_supplement-0600", "sisis-supplement-0600", delete: "true")
+split_field("@sisis_supplement-0600", "\\u001F")
+move_field("@sisis_supplement-0600", "Description[].$append.description")
 # MARC/H52
 do list(path: "H52??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")

@@ -66,8 +66,9 @@ def execTask = { name, main ->
 }
 
 execTask('filter', "${project.group}.filter.Main")
-execTask('verify-links', "${project.group}.function.VerifyLinks")
+execTask('sisis-supplement', "${project.group}.util.SisisSupplement")
 execTask('transformation', "${project.group}.Main")
+execTask('verify-links', "${project.group}.function.VerifyLinks")
 
 def (matrixPairs, matrixProduct, matrixMultiply) = [[], []]
 testMatrix.each { key, list ->

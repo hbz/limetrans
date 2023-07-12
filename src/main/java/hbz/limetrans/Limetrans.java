@@ -6,6 +6,7 @@ import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.Helpers;
 import hbz.limetrans.util.InputQueue;
 import hbz.limetrans.util.Settings;
+import hbz.limetrans.util.SisisSupplement;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -303,6 +304,9 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         mVars.put("id-suffix", almaSettings.get("id-suffix", ""));
 
         mMaps.put("institution-code-to-isil", INSTITUTION_CODE_TO_ISIL);
+
+        almaSettings.getAsSettings("sisis-supplements").forEach((s, k) ->
+                mMaps.put("sisis-supplement-" + k, new SisisSupplement(s.get(k), k)));
 
         loadMap("alma-alias", "alias");
         loadMap("alma-item-callnumber", "callnumber");
