@@ -14,6 +14,7 @@ import org.metafacture.io.LineReader;
 import org.metafacture.io.RecordReader;
 import org.metafacture.io.TarReader;
 import org.metafacture.json.JsonDecoder;
+import org.metafacture.strings.LineRecorder;
 import org.metafacture.strings.StreamUnicodeNormalizer;
 import org.metafacture.xml.XmlDecoder;
 
@@ -77,7 +78,19 @@ public class FileQueue implements InputQueue, Iterable<String> {
 
         MARCXML(aOpener -> aOpener
                 .setReceiver(new XmlDecoder())
-                .setReceiver(new MarcXmlHandler()));
+                .setReceiver(new MarcXmlHandler())),
+
+        SISIS(aOpener -> {
+            final MultiLineDecoder decoder = SisisSupplement.getDecoder();
+
+            final LineRecorder recorder = new LineRecorder();
+            recorder.setRecordMarkerRegexp(decoder.getRecordEndPattern());
+
+            return aOpener
+                .setReceiver(new LineReader())
+                .setReceiver(recorder)
+                .setReceiver(decoder);
+        });
 
         private final Function<FileOpener, Sender<StreamReceiver>> mFunction;
 
