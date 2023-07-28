@@ -1491,7 +1491,7 @@ end
 set_array("DescriptionOfExpression[]")
 do list(path: "546??", "var": "$i")
   add_field("DescriptionOfExpression[].$append.__dummy__", "")
-  copy_field("$i.a", "DescriptionOfExpression[].$last.description")
+  copy_field("$i.[ab]", "DescriptionOfExpression[].$last.description")
 end
 
 # MARC/520
