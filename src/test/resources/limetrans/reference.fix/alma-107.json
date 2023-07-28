@@ -377,6 +377,454 @@
   } ]
 }
 {
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "PublicationPlaceOfSecondaryEdition" : [ {
+    "name" : "Koblenz"
+  } ],
+  "PublisherNameOfSecondaryEdition" : [ {
+    "name" : "Landesbibliothekszentrum Rheinland-Pfalz"
+  } ],
+  "ReproductionNote" : [ {
+    "type" : "Digitalisierte Ausg.",
+    "place" : "Koblenz",
+    "agency" : "Landesbibliothekszentrum Rheinland-Pfalz",
+    "date" : "2013",
+    "series" : "dilibri - digitale Sammlung Rheinland-Pfalz"
+  } ],
+  "SecondaryEditionPublicationDate" : [ {
+    "secondaryEdition" : "2013"
+  } ],
+  "SecondaryEditionTitleSuper" : [ {
+    "secondaryEdition" : "dilibri - digitale Sammlung Rheinland-Pfalz"
+  } ],
+  "TypeMediaSpecial" : [ "Online-Ressource" ],
+  "TypeMediaSpecialPreservation" : [ "Archivierung/Langzeitarchivierung gewährleistet" ],
+  "Country" : [ {
+    "countryISO" : "DXDE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)CT001004925",
+    "identifierHBZ" : "CT001004925"
+  } ],
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1854" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "taxonomy" : [ "720 Geowissenschaften", "850 Medizin", "130 Landeskunde Region Koblenz", "140 Pflichtexemplar Region Koblenz" ],
+    "subject" : [ "Online-Ressource", "Sinzig", "Mineralquelle", "Mineralwasser" ]
+  },
+  "SubjectRPB" : [ {
+    "subject" : "720 Geowissenschaften"
+  }, {
+    "subject" : "850 Medizin"
+  }, {
+    "subject" : "130 Landeskunde Region Koblenz"
+  }, {
+    "subject" : "140 Pflichtexemplar Region Koblenz"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_BRIDGE_LBZ",
+    "identifierMMS" : "990197294760206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990197294760206441",
+    "identifierForTheRecord" : "(DE-605)CT001004925"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Kurze Nachrichten in Betreff des eisenfreien Mineral-Wassers des Königlich Preußischen concessionierten Sinziger Mineral-Brunnens"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Neuwied" ],
+    "name" : [ "Strüder" ],
+    "chronology" : [ "[1854]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Neuwied"
+  } ],
+  "DateProper" : {
+    "date" : [ "[1854]" ]
+  },
+  "Extent" : {
+    "extent" : "7 S."
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "relationshipInformation" : "Elektronische Reproduktion von",
+    "title" : "Kurze Nachrichten in Betreff des eisenfreien Mineral-Wassers des Königlich Preußischen concessionierten Sinziger Mineral-Brunnens",
+    "controlNumber" : "(DE-605)HT017672355",
+    "identifierForLinkingEntry" : "(DE-605)HT017672355"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://nbn-resolving.de/urn:nbn:de:0128-1-38807",
+    "nonpublicnote" : "Resolving-System",
+    "publicnote" : "kostenfrei",
+    "relatedto" : "Volltext",
+    "format" : "text/html"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : "ldd"
+  }, {
+    "classifier" : "dilibri"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Online-Ressource"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990197294760206441"
+  }, {
+    "uid" : "(DE-605)CT001004925"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectGeoName" : "Sinzig",
+    "combinedLabel" : "Sinzig",
+    "subjectIdentifier" : [ "(DE-588)4055137-4", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040551377", "http://viaf.org/viaf/sourceID/DNB|040551377" ],
+    "identifierGND" : [ "4055137-4" ]
+  }, {
+    "subjectTopicName" : "Mineralquelle",
+    "combinedLabel" : "Mineralquelle",
+    "subjectIdentifier" : [ "(DE-588)4170037-5", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041700376", "http://viaf.org/viaf/sourceID/DNB|041700376" ],
+    "identifierGND" : [ "4170037-5" ]
+  }, {
+    "subjectTopicName" : "Mineralwasser",
+    "combinedLabel" : "Mineralwasser",
+    "subjectIdentifier" : [ "(DE-588)4114605-0", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041146050", "http://viaf.org/viaf/sourceID/DNB|041146050" ],
+    "identifierGND" : [ "4114605-0" ]
+  } ]
+}
+{
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "PublicationPlaceOfSecondaryEdition" : [ {
+    "name" : "Koblenz"
+  } ],
+  "PublisherNameOfSecondaryEdition" : [ {
+    "name" : "Landesbibliothekszentrum Rheinland-Pfalz"
+  } ],
+  "ReproductionNote" : [ {
+    "type" : "Digitalisierte Ausg.",
+    "place" : "Koblenz",
+    "agency" : "Landesbibliothekszentrum Rheinland-Pfalz",
+    "date" : "2008",
+    "series" : "dilibri - digitale Sammlung Rheinland-Pfalz"
+  } ],
+  "SecondaryEditionPublicationDate" : [ {
+    "secondaryEdition" : "2008"
+  } ],
+  "SecondaryEditionTitleSuper" : [ {
+    "secondaryEdition" : "dilibri - digitale Sammlung Rheinland-Pfalz"
+  } ],
+  "TypeMediaSpecial" : [ "Online-Ressource" ],
+  "TypeMediaSpecialPreservation" : [ "Archivierung/Langzeitarchivierung gewährleistet" ],
+  "Country" : [ {
+    "countryISO" : "DXDE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)CT001000185",
+    "identifierHBZ" : "CT001000185"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "ein Beitrag zur Heimatkunde"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Nikolaus Irsch" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1911" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "taxonomy" : [ "120 Erziehung, Bildung, Unterricht", "130 Landeskunde Region Koblenz", "140 Pflichtexemplar Region Koblenz", "510 Architektur" ],
+    "person" : [ "Irsch, Nikolaus" ],
+    "subject" : [ "Geschichte 1910", "Online-Ressource", "Geschichte 1100-1250", "Peter-Joerres-Gymnasium Ahrweiler", "Landkreis Ahrweiler", "Romanik", "Baudenkmal" ]
+  },
+  "SubjectRPB" : [ {
+    "subject" : "120 Erziehung, Bildung, Unterricht"
+  }, {
+    "subject" : "130 Landeskunde Region Koblenz"
+  }, {
+    "subject" : "140 Pflichtexemplar Region Koblenz"
+  }, {
+    "subject" : "510 Architektur"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_BRIDGE_LBZ",
+    "identifierMMS" : "990173183580206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990173183580206441",
+    "identifierForTheRecord" : "(DE-605)CT001000185"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Irsch, Nikolaus"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Romanische Bauten im Kreise Ahrweiler"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Ahrweiler" ],
+    "chronology" : [ "1911" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Ahrweiler"
+  } ],
+  "DateProper" : {
+    "date" : [ "1911" ]
+  },
+  "Extent" : {
+    "extent" : "49 S."
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "mainEntryHeading" : "Irsch, Nikolaus",
+    "relationshipInformation" : "Elektronische Reproduktion von",
+    "seriesStatement" : "Bericht über das Schuljahr / Progymnasium Ahrweiler-Neuenahr mit Ersatzunterricht für das Griechische",
+    "title" : "Romanische Bauten im Kreise Ahrweiler",
+    "controlNumber" : "(DE-605)HT009249129",
+    "identifierForLinkingEntry" : "(DE-605)HT009249129"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://nbn-resolving.de/urn:nbn:de:0128-1-1949",
+    "nonpublicnote" : "Resolving-System",
+    "publicnote" : "kostenfrei",
+    "relatedto" : "Volltext",
+    "format" : "text/html"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : "ldd"
+  }, {
+    "classifier" : "dilibri"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Geschichte 1910"
+  }, {
+    "subject" : "Online-Ressource"
+  }, {
+    "subject" : "Geschichte 1100-1250"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990173183580206441"
+  }, {
+    "uid" : "(DE-605)CT001000185"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectCorporateBodyName" : "Peter-Joerres-Gymnasium Ahrweiler",
+    "combinedLabel" : "Peter-Joerres-Gymnasium Ahrweiler",
+    "subjectIdentifier" : [ "(DE-588)10065262-1", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=96952711X", "http://viaf.org/viaf/sourceID/DNB|96952711X" ],
+    "identifierGND" : [ "10065262-1" ]
+  }, {
+    "subjectGeoName" : "Landkreis Ahrweiler",
+    "combinedLabel" : "Landkreis Ahrweiler",
+    "subjectIdentifier" : [ "(DE-588)4000827-7", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040008274", "http://viaf.org/viaf/sourceID/DNB|040008274" ],
+    "identifierGND" : [ "4000827-7" ]
+  }, {
+    "subjectTopicName" : "Romanik",
+    "combinedLabel" : "Romanik",
+    "subjectIdentifier" : [ "(DE-588)4050482-7", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040504824", "http://viaf.org/viaf/sourceID/DNB|040504824" ],
+    "identifierGND" : [ "4050482-7" ]
+  }, {
+    "subjectTopicName" : "Baudenkmal",
+    "combinedLabel" : "Baudenkmal",
+    "subjectIdentifier" : [ "(DE-588)4004973-5", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040049736", "http://viaf.org/viaf/sourceID/DNB|040049736" ],
+    "identifierGND" : [ "4004973-5" ]
+  } ]
+}
+{
+  "ContentType" : [ "Text", "unbewegtes Bild" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "ExtendedType" : [ "Amtliche Publikation", "Bildband" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks", "Konferenzschrift" ],
+  "TypeHeading" : [ {
+    "term" : "Amtliche Publikation",
+    "identifier" : "(DE-588)4142300-8"
+  }, {
+    "term" : "Bildband",
+    "identifier" : "(DE-588)4145395-5"
+  } ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT020283267",
+    "identifierHBZ" : "HT020283267"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Text: Andreas Weidner, Fotos: Andreas Weidner" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie", "Konferenzschrift", "Amtliche Druckschrift", "Bildband" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2017" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "taxonomy" : [ "740 Umweltschutz, Raumordnung, Landschaftsgestaltung", "106 Amtsdruckschriften allgemein", "130 Landeskunde Region Koblenz" ],
+    "person" : [ "Weidner, Andreas" ]
+  },
+  "SubjectRPB" : [ {
+    "subject" : "740 Umweltschutz, Raumordnung, Landschaftsgestaltung"
+  }, {
+    "subject" : "106 Amtsdruckschriften allgemein"
+  }, {
+    "subject" : "139"
+  }, {
+    "subject" : "130 Landeskunde Region Koblenz"
+  }, {
+    "subject" : "147"
+  }, {
+    "subject" : "rpb843020"
+  }, {
+    "subject" : "rpbr_99_o131_"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_BRIDGE_LBZ",
+    "identifierMMS" : "990364756910206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990364756910206441",
+    "identifierForTheRecord" : "(DE-605)HT020283267"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Weidner, Andreas"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Gebiets-Album Schenkenberg bei Sinzig"
+  } ],
+  "Edition" : {
+    "edition" : [ "Stand: Jan. 2017" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Mainz" ],
+    "name" : [ "Landesamt für Umwelt Rheinland-Pfalz" ],
+    "chronology" : [ "Januar 2017" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Mainz"
+  } ],
+  "DateProper" : {
+    "date" : [ "Januar 2017" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource (11 Seiten)"
+  },
+  "FileCharacteristics" : [ {
+    "encodingFormat" : "PDF"
+  } ],
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Messen, Bewerten, Beraten" ]
+  } ],
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "Messen, Bewerten, Beraten"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://www.edoweb-rlp.de/resource/edoweb:7032983",
+    "nonpublicnote" : "Archivierte Online-Ressource"
+  }, {
+    "nonpublicnote" : "kostenfrei",
+    "publicnote" : "Archivierte Online-Ressource"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990364756910206441"
+  }, {
+    "uid" : "(DE-605)HT020283267"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
+{
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "TypeMediaSpecial" : [ "Online-Ressource" ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)TT002234368",
+    "identifierHBZ" : "TT002234368"
+  } ],
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "taxonomy" : [ "130 Landeskunde Region Koblenz" ],
+    "subject" : [ "Westum, Sinzig, Franken, Koisdorf, Bad-Bodendorf, Löhndorf" ]
+  },
+  "SubjectRPB" : [ {
+    "subject" : "130 Landeskunde Region Koblenz"
+  }, {
+    "subject" : "A - Rheinland (geo)"
+  }, {
+    "subject" : "A.100000 - Allgemeine Landeskunde"
+  }, {
+    "subject" : "rpb100000"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_BRIDGE_LBZ",
+    "identifierMMS" : "990154316180206441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990154316180206441",
+    "identifierForTheRecord" : "(DE-605)TT002234368"
+  },
+  "Language" : [ {
+    "languageSource" : "###"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Sinzig-Westum",
+    "corporateBodyIdentifier" : [ "(DE-588)4682533-2" ],
+    "identifierGND" : [ "4682533-2" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Westum, ein Ort bei Sinzig"
+  } ],
+  "Description" : [ {
+    "description" : "Westum, ein Ort bei Sinzig"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://www.westum.de"
+  }, {
+    "uri" : "https://www.edoweb-rlp.de/resource/edoweb:1054",
+    "nonpublicnote" : "Archivierte Online-Ressource"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Westum, Sinzig, Franken, Koisdorf, Bad-Bodendorf, Löhndorf"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990154316180206441"
+  }, {
+    "uid" : "(DE-605)TT002234368"
+  } ],
+  "TypeMedia" : "Elektronische Ressource"
+}
+{
   "ExtendedType" : [ "Aufsatzsammlung" ],
   "FormatCarrier" : [ "Druckschrift" ],
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],

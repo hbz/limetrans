@@ -3,6 +3,10 @@
   "path": "/data/pubhub/export/alma/prod/",
   "postprocess": true,
   "alma": {
+    "filter": [
+      "962??.e=dilibri",
+      "85640.u=~www\\.edoweb-rlp\\.de"
+    ],
     "sisis-supplements": {
       "0010": "/mnt/herakles/${isil}/upload/unload_ZSBaende.TIT",
       "0600": "/mnt/herakles/${isil}/upload/unload_Bemerkungen.TIT"

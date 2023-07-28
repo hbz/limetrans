@@ -2,7 +2,11 @@
   "isil": "DE-107",
   "alma": {
     "hybrid": true,
-    "deletion-literal": "DEL"
+    "deletion-literal": "DEL",
+    "filter": [
+      "962??.e=dilibri",
+      "85640.u=~www\\.edoweb-rlp\\.de"
+    ]
   },
   "input": {
     "queue": {

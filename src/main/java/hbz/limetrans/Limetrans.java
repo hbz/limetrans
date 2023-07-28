@@ -321,7 +321,8 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
         // MBD$$M=memberCode OR POR$$M=memberCode
         final LimetransFilter memberFilter = LimetransFilter.any()
-            .add("MBD  .M|POR  .M=" + memberCode);
+            .add("MBD  .M|POR  .M=" + memberCode)
+            .add(almaSettings.getAsArray("filter"));
 
         // MBD$$M=49HBZ_NETWORK AND ITM$$M=memberCode
         final LimetransFilter itemFilter = LimetransFilter.all()
