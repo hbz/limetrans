@@ -91792,3 +91792,165 @@
     "combinedLabel" : "NATURE / Animals / Big Cats"
   } ]
 }
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "Country" : [ {
+    "countryISO" : "LB"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT030069654",
+    "identifierHBZ" : "HT030069654"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "1197835433"
+  } ],
+  "collection" : "DE-605",
+  "TitleUniform" : {
+    "titleUniform" : "Grundfragen der Philosophie"
+  },
+  "TitleAddendum" : {
+    "title" : "\"muškilāt\" muḫtāra min \"al-manṭiq\" : muḥādara Frāibūrġ li-daurat as-šitāʾ 1938/37"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Mārtin Hāidiġar ; aʿaddahā li-n-našr Frīdrīḫ-Fīlhilm fūn Hirmān ; tarǧama wa-taḥqīq wa-taʿlīq Ismāʿīl Muṣṣadiq ; murāǧaʿat Mušīr ʿAun" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Arabisch" ],
+    "date" : [ "2018" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Campus Grifflenberg" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Kulturwissenschaften" ],
+    "person" : [ "Heidegger, Martin (1889-1976)", "Herrmann, Friedrich-Wilhelm von (1934-2022)", "Mossadeq, Ismail el", "ʻAun, Mušīr Bāsīl" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_WUP",
+    "identifierMMS" : "99372703660606441",
+    "identifierMMSIZ" : "9916078972506447"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99372703660606441",
+    "identifierForTheRecord" : "(DE-605)HT030069654"
+  },
+  "Language" : [ {
+    "language" : "Arabisch",
+    "languageSource" : "ara"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9789959296597" ]
+  }, {
+    "identifierISBN" : [ "9959296598" ]
+  }, {
+    "identifierISBN" : [ "9789959296597" ]
+  }, {
+    "identifierISBN" : [ "9959296598" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Heidegger, Martin",
+    "personBio" : "1889-1976",
+    "personIdentifier" : [ "(DE-588)118547798" ],
+    "identifierGND" : [ "118547798" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Al- Asʾila al-asasīya li-l-falsafa"
+  } ],
+  "Edition" : {
+    "edition" : [ "Aṭ-Ṭabʿa al-ūlā" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Bairūt" ],
+    "chronology" : [ "Dār al-Kitāb al-Ǧadīd al-Muttaḥida$h2018" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Bairūt"
+  } ],
+  "DateProper" : {
+    "date" : [ "Dār al-Kitāb al-Ǧadīd al-Muttaḥida$h2018" ]
+  },
+  "Extent" : {
+    "extent" : "254 Seiten"
+  },
+  "Description" : [ {
+    "description" : "Übersetzung nach: Heidegger, Martin: Gesamtausgabe. Frankfurt am Main: Klostermann ; Bd. 45. 2. Aufl. 1992"
+  } ],
+  "DescriptionOfExpression" : [ {
+    "description" : "Text arabisch. Aus dem Deutschen übersetzt"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Herrmann, Friedrich-Wilhelm von",
+    "personBio" : "1934-2022",
+    "personIdentifier" : [ "(DE-588)121515362" ],
+    "identifierGND" : [ "121515362" ]
+  }, {
+    "personName" : "Mossadeq, Ismail el",
+    "personIdentifier" : [ "(DE-588)1158328486" ],
+    "identifierGND" : [ "1158328486" ]
+  }, {
+    "personName" : "ʻAun, Mušīr Bāsīl"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-468",
+    "subject" : "JHGA"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99372703660606441"
+  }, {
+    "uid" : "(DE-605)HT030069654"
+  }, {
+    "uid" : "(DE-468)9916078972506447"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-468",
+    "callnumber" : "JHGA1011",
+    "callnumber" : "W00350188",
+    "shelfmark" : "21"
+  } ],
+  "AlternateGraphicRepresentation" : [ {
+    "key" : "personalName",
+    "value" : "هيدگر, مارتين",
+    "scriptSource" : "Arab",
+    "script" : "Arabisch"
+  }, {
+    "key" : "personalName",
+    "value" : "مصدق, إسماعيل ال",
+    "scriptSource" : "Arab",
+    "script" : "Arabisch"
+  }, {
+    "key" : "personalName",
+    "value" : "عون, مشير باسيل",
+    "scriptSource" : "Arab",
+    "script" : "Arabisch"
+  }, {
+    "key" : "titleStatement",
+    "value" : "الأسئلة الأساسية للفلسفة",
+    "scriptSource" : "Arab",
+    "script" : "Arabisch"
+  }, {
+    "key" : "titleAddendum",
+    "value" : "مشكلات مختارة من \"المنطق\" : محاضرة فرايبورغ لدورة الشتاء 38/1937",
+    "scriptSource" : "Arab",
+    "script" : "Arabisch"
+  }, {
+    "key" : "creatorStatement",
+    "value" : "مارتن هايدغر ؛ أعدها للنشر فريدريخ-فيلهلم فون هرمان ؛ ترجمة وتحقيق وتعليق إسماعيل المصدق ؛ مراجعة مشير عون",
+    "scriptSource" : "Arab",
+    "script" : "Arabisch"
+  }, {
+    "key" : "editionStatement",
+    "value" : "الطبعة الأولى",
+    "scriptSource" : "Arab",
+    "script" : "Arabisch"
+  }, {
+    "key" : "publicationStatement",
+    "value" : "بيروت",
+    "name" : "دار الكتاب الجديد المتحدة",
+    "chronology" : "2018",
+    "scriptSource" : "Arab",
+    "script" : "Arabisch"
+  } ]
+}
