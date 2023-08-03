@@ -1611,3 +1611,241 @@
     "callnumber" : "F 193"
   } ]
 }
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "ExtendedType" : [ "Zeitschrift" ],
+  "TypeHeading" : [ {
+    "term" : "Zeitschrift",
+    "identifier" : "(DE-588)4067488-5"
+  } ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierDNB" : [ {
+    "identifierDNB" : "2099448-5"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT013573991",
+    "identifierHBZ" : "HT013573991"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "1068834707"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2099448-5"
+  } ],
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2003" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "SubjectDNB" : [ {
+    "subject" : "070",
+    "subject" : "790"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_BRIDGE_LBZ",
+    "identifierMMS" : "990118971540206441",
+    "identifierMMSIZ" : "99158985507506"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990118971540206441",
+    "identifierForTheRecord" : "(DE-600)2099448-5"
+  },
+  "DateFirst" : {
+    "date" : "2003"
+  },
+  "DateLast" : {
+    "date" : "2003"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Piccola"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Speyer" ],
+    "name" : [ "Klambt" ],
+    "chronology" : [ "2003-2003" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Speyer"
+  } ],
+  "DateProper" : {
+    "date" : [ "2003-2003" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "2003,4-16; [N.F.] 2003,9-25; damit Ersch. eingest."
+  },
+  "DescriptionOfContent" : [ {
+    "description" : "Ungezählte Beil.: Extra"
+  } ],
+  "DescriptionOfIssuance" : [ {
+    "description" : "2003,1-3 nicht ersch. - Periodizität: 14-tägl.; anfangs wöchentl."
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990118971540206441"
+  }, {
+    "uid" : "(DE-605)HT013573991"
+  }, {
+    "uid" : "(DE-107)99158985507506"
+  }, {
+    "uid" : "(DE-600)2099448-5"
+  } ],
+  "TypePeriodical" : [ "Zeitschrift" ],
+  "Item" : [ {
+    "callnumber" : "Per. 17125a"
+  }, {
+    "callnumber" : "Per. 17125"
+  } ],
+  "TitleOther" : {
+    "title" : [ "Piccola / Extra" ]
+  }
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "ExtendedType" : [ "Zeitschrift", "Wörterbuch" ],
+  "TypeHeading" : [ {
+    "term" : "Zeitschrift",
+    "identifier" : "(DE-588)4067488-5"
+  }, {
+    "term" : "Wörterbuch",
+    "identifier" : "(DE-588)4066724-8",
+    "identifier" : "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040667243",
+    "identifier" : "http://viaf.org/viaf/sourceID/DNB|040667243"
+  } ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierDNB" : [ {
+    "identifierDNB" : "230691-8"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT006917986",
+    "identifierHBZ" : "HT006917986"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "311184867"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "230691-8"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Medizin u. Biologie, Chemie u. Physik, Mathematik u. Informatik, Geowiss. u. Astronomie, Bau- u. Verkehrstechnik, Elektro- u. Energietechnik, Verfahrens- u. Werkstofftechnik"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Hrsg. von Frieder Schuh" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Zeitschrift", "Nachschlagewerk", "Sammelwerk" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1982", "1983" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "person" : [ "Schuh, Frieder" ],
+    "subject" : [ "Wörterbuch", "Naturwissenschaften", "Technik" ]
+  },
+  "SubjectDNB" : [ {
+    "subject" : "500",
+    "subject" : "600"
+  } ],
+  "SubjectRVK" : [ {
+    "subject" : "TB 1010"
+  }, {
+    "subject" : "TB 1010 S385"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_BRIDGE_LBZ",
+    "identifierMMS" : "990054880420206441",
+    "identifierMMSIZ" : "99156434607506"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990054880420206441",
+    "identifierForTheRecord" : "(DE-600)230691-8"
+  },
+  "DateFirst" : {
+    "date" : "1982"
+  },
+  "DateLast" : {
+    "date" : "1983"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Enzyklopädie Naturwissenschaft und Technik"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Landsberg", "München" ],
+    "name" : [ "Verl. Moderne Industrie" ],
+    "chronology" : [ "1982-1983" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Landsberg",
+    "printingPlace" : "München"
+  } ],
+  "DateProper" : {
+    "date" : [ "1982-1983" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "1979/81; Jahresbd. 1982 - 1983; damit Ersch. eingest."
+  },
+  "Description" : [ {
+    "description" : "Sonderausg.: Weinheim : Zweiburgen-Verl."
+  } ],
+  "HoldingsStatement" : [ {
+    "note" : "Standort Lesesaal"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Schuh, Frieder"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Wörterbuch"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990054880420206441"
+  }, {
+    "uid" : "(DE-605)HT006917986"
+  }, {
+    "uid" : "(DE-107)99156434607506"
+  }, {
+    "uid" : "(DE-600)230691-8"
+  } ],
+  "TypePeriodical" : [ "Zeitschrift" ],
+  "Item" : [ {
+    "callnumber" : "2a 2193a"
+  }, {
+    "callnumber" : "LS NN 20"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Naturwissenschaften",
+    "combinedLabel" : "Naturwissenschaften",
+    "subjectIdentifier" : [ "(DE-588)4041421-8", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040414213", "http://viaf.org/viaf/sourceID/DNB|040414213" ],
+    "identifierGND" : [ "4041421-8" ]
+  }, {
+    "subjectTopicName" : "Wörterbuch",
+    "combinedLabel" : "Wörterbuch",
+    "subjectIdentifier" : [ "(DE-588)4066724-8", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040667243", "http://viaf.org/viaf/sourceID/DNB|040667243" ],
+    "identifierGND" : [ "4066724-8" ]
+  }, {
+    "subjectTopicName" : "Technik",
+    "combinedLabel" : "Technik",
+    "subjectIdentifier" : [ "(DE-588)4059205-4", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040592057", "http://viaf.org/viaf/sourceID/DNB|040592057" ],
+    "identifierGND" : [ "4059205-4" ]
+  } ]
+}

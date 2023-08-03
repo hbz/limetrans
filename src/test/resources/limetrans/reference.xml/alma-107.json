@@ -1004,3 +1004,158 @@
     "callnumber" : "F 193"
   } ]
 }
+{
+  "TypePeriodical" : "Zeitschrift",
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2003" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_BRIDGE_LBZ",
+    "identifierMMS" : "990118971540206441",
+    "identifierMMSIZ" : "99158985507506"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990118971540206441",
+    "identifierForTheRecord" : "(DE-605)990118971540206441"
+  },
+  "DateFirst" : {
+    "date" : "2003"
+  },
+  "DateLast" : {
+    "date" : "2003"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2099448-5"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Piccola"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Speyer" ],
+    "name" : [ "Klambt" ],
+    "chronology" : [ "2003-2003" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2003-2003" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "2003,4-16; [N.F.] 2003,9-25; damit Ersch. eingest."
+  },
+  "xbib" : [ {
+    "uid" : "(DE-605)990118971540206441"
+  }, {
+    "uid" : "(DE-107)99158985507506"
+  } ],
+  "Item" : [ {
+    "callnumber" : "Per. 17125a"
+  }, {
+    "callnumber" : "Per. 17125"
+  } ],
+  "TitleOther" : {
+    "title" : [ "Piccola / Extra" ]
+  }
+}
+{
+  "TypePeriodical" : "Zeitschrift",
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Medizin u. Biologie, Chemie u. Physik, Mathematik u. Informatik, Geowiss. u. Astronomie, Bau- u. Verkehrstechnik, Elektro- u. Energietechnik, Verfahrens- u. Werkstofftechnik"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Hrsg. von Frieder Schuh"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1982", "1983" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_BRIDGE_LBZ",
+    "identifierMMS" : "990054880420206441",
+    "identifierMMSIZ" : "99156434607506"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990054880420206441",
+    "identifierForTheRecord" : "(DE-605)990054880420206441"
+  },
+  "DateFirst" : {
+    "date" : "1982"
+  },
+  "DateLast" : {
+    "date" : "1983"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "230691-8"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Enzyklopädie Naturwissenschaft und Technik"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Landsberg", "München" ],
+    "name" : [ "Verl. Moderne Industrie" ],
+    "chronology" : [ "1982-1983" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1982-1983" ]
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "1979/81; Jahresbd. 1982 - 1983; damit Ersch. eingest."
+  },
+  "Description" : {
+    "description" : [ "Sonderausg.: Weinheim : Zweiburgen-Verl." ]
+  },
+  "HoldingsStatement" : [ {
+    "note" : "Standort Lesesaal"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Schuh, Frieder"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Naturwissenschaften"
+  }, {
+    "subject" : "Wörterbuch"
+  }, {
+    "subject" : "Technik"
+  }, {
+    "subject" : "Wörterbuch"
+  }, {
+    "subject" : "Naturwissenschaften"
+  }, {
+    "subject" : "Wörterbuch"
+  }, {
+    "subject" : "Technik"
+  }, {
+    "subject" : "Wörterbuch"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990054880420206441"
+  }, {
+    "uid" : "(DE-107)99156434607506"
+  } ],
+  "Item" : [ {
+    "callnumber" : "2a 2193a"
+  }, {
+    "callnumber" : "LS NN 20"
+  } ]
+}
