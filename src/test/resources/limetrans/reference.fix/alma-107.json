@@ -331,6 +331,12 @@
   "DescriptionOfIssuance" : [ {
     "description" : "Ersch. unregelmäßig; anfangs als CD-ROM-Ausg., ab Version 2.5.2011 als DVD-Ausg."
   } ],
+  "HoldingsStatement" : [ {
+    "holdingsStatement" : "2000; Version 2.5.2011; 2.11.2012; 2.17.2013; 2.23.2014; 2.41.2017; 2.47.2018; 2.71.2022 -",
+    "source" : "DE-107",
+    "callnumber" : "DB 251",
+    "sortIndicator" : "1"
+  } ],
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "Wiesbaden : Kommunal- und Schul-Verlag, 1959-",
     "physicalDescription" : "Bände (Loseblattsammlung)",
@@ -1151,7 +1157,10 @@
     "description" : "Periodizität: 6x wöchentl."
   } ],
   "HoldingsStatement" : [ {
-    "note" : "Zugriff an Arbeitsplätzen in den LBZ-Bibliotheken"
+    "holdingsStatement" : "66.2010,178(4.Aug.) - 76.2020,105(6.Mai)",
+    "note" : [ "Zugriff an Arbeitsplätzen in den LBZ-Bibliotheken" ],
+    "source" : "DE-107",
+    "sortIndicator" : "1"
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "Ludwigshafen : Rheinpfalz Verl. und Dr., 2010-",
@@ -1299,6 +1308,12 @@
   },
   "DescriptionOfIssuance" : [ {
     "description" : "Periodizität: 6x wöchentl."
+  } ],
+  "HoldingsStatement" : [ {
+    "holdingsStatement" : "62.2006,254 - 76.2020,105",
+    "source" : "DE-107",
+    "callnumber" : "Z 187/U",
+    "sortIndicator" : "1"
   } ],
   "SupplementSpecialIssueEntry" : [ {
     "publisherStatement" : "Ludwigshafen : Rheinpfalz-Verl. u. Dr., 1997-[2020]",
@@ -1464,6 +1479,12 @@
   "DescriptionOfIssuance" : [ {
     "description" : "Vorg. als ungezählte Beil. bei der Hauptztg.; Periodizität: wöchentl."
   } ],
+  "HoldingsStatement" : [ {
+    "holdingsStatement" : "1926,27.März - 1931,16.Mai",
+    "source" : "DE-107",
+    "callnumber" : "Palat. 210",
+    "sortIndicator" : "1"
+  } ],
   "SupplementParentEntry" : [ {
     "publisherStatement" : "Neustadt, Haardt : Pfälzische Verl.-Anst., 1923-1933",
     "relationshipInformation" : "Beil. zu:",
@@ -1576,13 +1597,25 @@
     "description" : "Periodizität: wöchentl."
   } ],
   "HoldingsStatement" : [ {
-    "note" : "2.Ex."
+    "holdingsStatement" : "107.1937",
+    "note" : [ "2.Ex." ],
+    "callnumber" : "Per. 13501",
+    "sortIndicator" : "4"
   }, {
-    "note" : "Ex. nicht benutzbar; Mikrofilm bestellen"
+    "holdingsStatement" : "95.1925 - 109.1939,1",
+    "note" : [ "Ex. nicht benutzbar; Mikrofilm bestellen" ],
+    "callnumber" : "Palat. 39",
+    "sortIndicator" : "3"
   }, {
-    "note" : "Mikrofilm. - 2. Ex."
+    "holdingsStatement" : "95.1925 - 109.1939,1",
+    "note" : [ "Mikrofilm. - 2. Ex." ],
+    "callnumber" : "F 356",
+    "sortIndicator" : "2"
   }, {
-    "note" : "Mikrofilm"
+    "holdingsStatement" : "95.1925 - 109.1939,1",
+    "note" : [ "Mikrofilm" ],
+    "callnumber" : "F 193",
+    "sortIndicator" : "1"
   } ],
   "SupplementParentEntry" : [ {
     "publisherStatement" : "Pirmasens : Deil, 1884-",
@@ -1691,6 +1724,16 @@
   } ],
   "DescriptionOfIssuance" : [ {
     "description" : "2003,1-3 nicht ersch. - Periodizität: 14-tägl.; anfangs wöchentl."
+  } ],
+  "HoldingsStatement" : [ {
+    "introductoryPhrase" : "[N.F.]",
+    "holdingsStatement" : "2003,9-25",
+    "callnumber" : "Per. 17125a",
+    "sortIndicator" : "2"
+  }, {
+    "holdingsStatement" : "2003,4-16",
+    "callnumber" : "Per. 17125",
+    "sortIndicator" : "1"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990118971540206441"
@@ -1809,7 +1852,16 @@
     "description" : "Sonderausg.: Weinheim : Zweiburgen-Verl."
   } ],
   "HoldingsStatement" : [ {
-    "note" : "Standort Lesesaal"
+    "holdingsStatement" : "1982 - 1983",
+    "note" : [ "Standort Lesesaal" ],
+    "callnumber" : "2a 2193a",
+    "shelfmark" : "S 303 Enz",
+    "sortIndicator" : "1"
+  }, {
+    "holdingsStatement" : "Jahresbd. 1982 - 1983",
+    "source" : "DE-Zw1",
+    "callnumber" : "LS NN 20",
+    "sortIndicator" : "1"
   } ],
   "PersonContributor" : [ {
     "personName" : "Schuh, Frieder"

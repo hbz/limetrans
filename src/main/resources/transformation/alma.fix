@@ -1524,9 +1524,34 @@ copy_field("520  .[ab]", "Summary.abstract[]")
 set_array("HoldingsStatement[]")
 do list(path: "H66??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
-    add_field("HoldingsStatement[].$append.__dummy__", "")
-    copy_field("$i.z", "HoldingsStatement[].$last.note")
+    if in("$i.8", "HoldingsStatement[].*.@id")
+      do list(path: "HoldingsStatement[]", "var": "$j")
+        if in("$i.8", "$j.@id")
+          copy_field("$i.9", "$j.introductoryPhrase")
+          copy_field("$i.a", "$j.holdingsStatement")
+          copy_field("$i.z", "$j.note[].$append")
+        end
+      end
+    else
+      add_field("HoldingsStatement[].$append.__dummy__", "")
+      copy_field("$i.8", "HoldingsStatement[].$last.@id")
+      copy_field("$i.9", "HoldingsStatement[].$last.introductoryPhrase")
+      copy_field("$i.a", "HoldingsStatement[].$last.holdingsStatement")
+      set_array("HoldingsStatement[].$last.note[]")
+      copy_field("$i.z", "HoldingsStatement[].$last.note[].$append")
+      do list(path: "H52??", "var": "$j")
+        if in("$i.8", "$j.8")
+          copy_field("$j.a", "HoldingsStatement[].$last.source")
+          copy_field("$j.h", "HoldingsStatement[].$last.callnumber")
+          copy_field("$j.j", "HoldingsStatement[].$last.shelfmark")
+          copy_field("$j.t", "HoldingsStatement[].$last.sortIndicator")
+        end
+      end
+    end
   end
+end
+do list(path: "HoldingsStatement[]", "var": "$i")
+  remove_field("$i.@id")
 end
 
 # MARC/100, MARC/700

@@ -1250,6 +1250,11 @@
   "DescriptionOfIssuance" : [ {
     "description" : "Ersch. monatl."
   } ],
+  "HoldingsStatement" : [ {
+    "holdingsStatement" : "48.2000 - 55.2007",
+    "source" : "DE-468",
+    "callnumber" : "70N1"
+  } ],
   "SupplementSpecialIssueEntry" : [ {
     "mainEntryHeading" : "Gesellschaft Deutscher Chemiker",
     "publisherStatement" : "Frankfurt, M. : Ges. Dt. Chemiker, 1977-2007",
@@ -2099,6 +2104,20 @@
   "DescriptionOfIssuance" : [ {
     "description" : "Erscheint 4x jährl."
   } ],
+  "HoldingsStatement" : [ {
+    "holdingsStatement" : "44.1990/91 - 63.2010",
+    "source" : "DE-468",
+    "callnumber" : "07G6"
+  }, {
+    "introductoryPhrase" : "- Index zu",
+    "holdingsStatement" : "1936/86(1990)",
+    "source" : "DE-468",
+    "callnumber" : "07G6"
+  }, {
+    "introductoryPhrase" : "N.S.",
+    "holdingsStatement" : "1.1947/48 - 43.1989/90",
+    "callnumber" : "07G6"
+  } ],
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "Oxford : Wiley-Blackwell, 1936-",
     "physicalDescription" : "Online-Ressource",
@@ -2337,6 +2356,13 @@
   "ChronologyAndEnumeration" : {
     "value" : "1.1969 - 29.1997,2"
   },
+  "HoldingsStatement" : [ {
+    "holdingsStatement" : "22.1990 - 29.1997,2",
+    "callnumber" : "82T6"
+  }, {
+    "holdingsStatement" : "11.1979 - 21.1989",
+    "callnumber" : "82T6"
+  } ],
   "SucceedingEntry" : [ {
     "publisherStatement" : "Sidcup, Kent : Progressive Media Market, 1997-",
     "relationshipInformation" : "Forts.:",
@@ -2772,6 +2798,13 @@
   "ChronologyAndEnumeration" : {
     "value" : "1968,Apr. - 1992"
   },
+  "HoldingsStatement" : [ {
+    "holdingsStatement" : "1972; 1974 - 1990",
+    "callnumber" : "49M16-D"
+  }, {
+    "holdingsStatement" : "1991 - 1992",
+    "callnumber" : "49M16-D"
+  } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Saisonbereinigte Wirtschaftszahlen",
@@ -2909,7 +2942,9 @@
     "value" : "1.1781 - 20.1787; damit Ersch. eingest."
   },
   "HoldingsStatement" : [ {
-    "note" : "Mikrofiche-Ausg.: Hildesheim : Olms"
+    "holdingsStatement" : "1.1781 - 20.1787",
+    "note" : [ "Mikrofiche-Ausg.: Hildesheim : Olms" ],
+    "callnumber" : "07D16"
   } ],
   "OtherEditionEntry" : [ {
     "relationshipInformation" : "Digital. Ausg.",
@@ -7628,7 +7663,8 @@
     "description" : "Teils ohne Jg.-Zählung"
   } ],
   "HoldingsStatement" : [ {
-    "note" : "Einzelbandnachweis mit Monographiensignatur"
+    "note" : [ "Einzelbandnachweis mit Monographiensignatur" ],
+    "source" : "DE-468"
   } ],
   "SupplementSpecialIssueEntry" : [ {
     "mainEntryHeading" : "Deutschland <Bundesrepublik> / Bundesregierung",
@@ -14960,6 +14996,13 @@
   },
   "DescriptionOfIssuance" : [ {
     "description" : "1956 - 1971; 1992,6 nicht ersch."
+  } ],
+  "HoldingsStatement" : [ {
+    "callnumber" : "46P6",
+    "holdingsStatement" : "1992 - 2003"
+  }, {
+    "holdingsStatement" : "1975,1",
+    "callnumber" : "MEHE1012"
   } ],
   "SupplementParentEntry" : [ {
     "publisherStatement" : "München : Hanns-Seidel-Stiftung, 1954-",
@@ -40303,9 +40346,17 @@
     "description" : "Ersch. jährl. ca. 3x"
   } ],
   "HoldingsStatement" : [ {
-    "note" : "9/10.1983 u. 11.1984: 2. Aufl. - Weitere Hefte: Einzelgignatur"
+    "holdingsStatement" : "9/10.1983 - 28.1990",
+    "note" : [ "9/10.1983 u. 11.1984: 2. Aufl. - Weitere Hefte: Einzelgignatur" ],
+    "callnumber" : "46B8"
   }, {
-    "note" : "Weitere Hefte: Einzelsignatur"
+    "introductoryPhrase" : "Bibliographie",
+    "holdingsStatement" : "1-25/26.1978/89(1989)",
+    "callnumber" : "46B8"
+  }, {
+    "holdingsStatement" : "29.1991 - 69.2008",
+    "note" : [ "Weitere Hefte: Einzelsignatur" ],
+    "callnumber" : "46B8"
   } ],
   "NonspecificRelationshipEntry" : [ {
     "mainEntryHeading" : "Historikerinnentreffen",
@@ -48161,7 +48212,10 @@
     "description" : "Ersch. teils halbjährl., teils jährl."
   } ],
   "HoldingsStatement" : [ {
-    "note" : "Bd. 1: 2. Aufl. 1979. Weitere Bände s. Einzelsignaturen"
+    "holdingsStatement" : "1.1976 - 13.1988",
+    "note" : [ "Bd. 1: 2. Aufl. 1979. Weitere Bände s. Einzelsignaturen" ],
+    "source" : "DE-468",
+    "callnumber" : "46J29"
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "Hamburg : Argument-Verl., 1976-2007",
@@ -52851,7 +52905,16 @@
     "description" : "Ersch. alle 2 Monate; Nr. 194-199 in d. Zählung übergangen; ersch. auch selbst."
   } ],
   "HoldingsStatement" : [ {
-    "note" : "Weitere Hefte: Einzelsignatur"
+    "source" : "DE-468",
+    "callnumber" : "82A19",
+    "introductoryPhrase" : "Nr.",
+    "holdingsStatement" : "10.1978 - 39.1982; 41.1982 - 61.1986; 63.1986 - 70.1987; 77.1989 - 139.1999; 141.1999 - 193.2008; 200.2009 - 207.2010"
+  }, {
+    "note" : [ "Weitere Hefte: Einzelsignatur" ],
+    "source" : "DE-468",
+    "callnumber" : "WSI1543",
+    "introductoryPhrase" : "Nr.",
+    "holdingsStatement" : "183.2006; 185.2007; 188.2007; 192.2008; 200.2009"
   } ],
   "NonspecificRelationshipEntry" : [ {
     "publisherStatement" : "London : Wiley-Academy, 1946-",
@@ -56203,7 +56266,14 @@
     "description" : "Periodizität: 14-tägl."
   } ],
   "HoldingsStatement" : [ {
-    "note" : "[N=37.2015,24; 38.2016,9; 40.2018,1]"
+    "holdingsStatement" : "13.1991 - 38.2016,11(2.Juni); 39.2017 -",
+    "note" : [ "[N=37.2015,24; 38.2016,9; 40.2018,1]" ],
+    "source" : "DE-468",
+    "callnumber" : "10L15"
+  }, {
+    "holdingsStatement" : "7.1985 - 12.1990",
+    "source" : "DE-468",
+    "callnumber" : "10L15"
   } ],
   "SupplementParentEntry" : [ {
     "publisherStatement" : "New York, NY : Hederman, 1963-",
@@ -58356,9 +58426,10 @@
     "description" : "ZKZ: 5889"
   } ],
   "HoldingsStatement" : [ {
-    "note" : "[N=8.1953,1-26]"
-  }, {
-    "note" : "Mikrofilm"
+    "holdingsStatement" : "2.1947,3 - 29.1974,51",
+    "note" : [ "[N=8.1953,1-26]", "Mikrofilm" ],
+    "source" : "DE-468",
+    "callnumber" : "01R16"
   } ],
   "SupplementSpecialIssueEntry" : [ {
     "publisherStatement" : "Bonn : Verl. Deutsche Zeitung, 2008-2009",
@@ -62123,7 +62194,8 @@
     "description" : "36.2011,12357(23.Apr.)u.12359(25.Apr.)u.12365(01.Mai.)u.12397(02.Juni)u.12408(13.Juni)u.12523(06.Okt.)u.12608(31.Dez.); 37.2012,12635(28.Jan.)u.12692(25.März)u.12704(07.Apr.)u.12728(01.Mai)u.12810(22.Juli); 38.2013,13058(29.März); 40.2015,13787(03.Apr.)u.13788(04.Apr.) nicht ersch.; Periodizität: tägl."
   } ],
   "HoldingsStatement" : [ {
-    "note" : "Bestand: die jeweils letzten drei Monate; aktuelle Ausg.: Zeitungsauslage BZ 07, ältere Ausg. Fachbibliothek 1"
+    "note" : [ "Bestand: die jeweils letzten drei Monate; aktuelle Ausg.: Zeitungsauslage BZ 07, ältere Ausg. Fachbibliothek 1" ],
+    "source" : "DE-468"
   } ],
   "SupplementSpecialIssueEntry" : [ {
     "publisherStatement" : "Madrid, 1988-1991",
@@ -63582,6 +63654,10 @@
   },
   "DescriptionOfExpression" : [ {
     "description" : "In d. Vorlage fälschl. vom Verlag vergebene ISSN: 0340-3718"
+  } ],
+  "HoldingsStatement" : [ {
+    "holdingsStatement" : "1.1987 - 9.1996(1997)",
+    "callnumber" : "QMS1428"
   } ],
   "OtherEditionEntry" : [ {
     "relationshipInformation" : "Engl. Ausg.",
@@ -66917,6 +66993,11 @@
   "DescriptionOfIssuance" : [ {
     "description" : "Teils mit Jg.-Zählung"
   } ],
+  "HoldingsStatement" : [ {
+    "holdingsStatement" : "22.1988",
+    "source" : "DE-468",
+    "callnumber" : "AVY1159"
+  } ],
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
@@ -67893,7 +67974,10 @@
     "description" : "110.1983,2835 nicht ersch.; Periodizität: wöchentl."
   } ],
   "HoldingsStatement" : [ {
-    "note" : "[N=Nr.1073; 1119-1120;1296-1348; 1373; 1375-1400; 1544; 1555; 1565; 1587; 1619; 1658; 1669; 1696; 1701; 1707; 1762-1787; 1789; 1890; 1934; 1987; 2154; 2496; 2507; 2835-2837; 2914; 2931; 3048-3054; 3056-3065]"
+    "holdingsStatement" : "41.1949,1046 - 119.1988,3066",
+    "note" : [ "[N=Nr.1073; 1119-1120;1296-1348; 1373; 1375-1400; 1544; 1555; 1565; 1587; 1619; 1658; 1669; 1696; 1701; 1707; 1762-1787; 1789; 1890; 1934; 1987; 2154; 2496; 2507; 2835-2837; 2914; 2931; 3048-3054; 3056-3065]" ],
+    "source" : "DE-468",
+    "callnumber" : "99A27"
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "Farmington Mill, Mich. : Gale, Cengage Company, [2019?]-",
@@ -72460,6 +72544,10 @@
   "Description" : [ {
     "description" : "Zusatz 1994: <<the>> international compilation of the best typographic design"
   } ],
+  "HoldingsStatement" : [ {
+    "holdingsStatement" : "2.1997",
+    "callnumber" : "JZP4969"
+  } ],
   "NonspecificRelationshipEntry" : [ {
     "relationshipInformation" : "1=214 von",
     "title" : "Graphis publications",
@@ -72839,7 +72927,10 @@
     "description" : "Periodizität: wöchentl."
   } ],
   "HoldingsStatement" : [ {
-    "note" : "[L=49;57;58]; [N=70.1999,4u.6u.19u.25;72.2001,42;77.2006,29]"
+    "holdingsStatement" : "46.1975 - 77.2006,50",
+    "note" : [ "[L=49;57;58]; [N=70.1999,4u.6u.19u.25;72.2001,42;77.2006,29]" ],
+    "source" : "DE-468",
+    "callnumber" : "49A25"
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "Chicago, Ill. : Crain Communications, 1990-",
@@ -73000,7 +73091,8 @@
     "description" : "Haupttitelstelle zeitweilig mit Staatswappen"
   } ],
   "HoldingsStatement" : [ {
-    "note" : "Bestand: die jeweils letzten drei Monate; Standort: Magazin; aktuelle Ausg.: Zeitungsauslage BZ 07"
+    "note" : [ "Bestand: die jeweils letzten drei Monate; Standort: Magazin; aktuelle Ausg.: Zeitungsauslage BZ 07" ],
+    "source" : "DE-468"
   } ],
   "SupplementSpecialIssueEntry" : [ {
     "title" : "Beil. ---> Sunday plus"
@@ -73132,7 +73224,9 @@
     "description" : "Periodizität: unregelmäßig"
   } ],
   "HoldingsStatement" : [ {
-    "note" : "[N=4.1982/83,1]"
+    "holdingsStatement" : "1.1979/80 - 7.1986,3",
+    "note" : [ "[N=4.1982/83,1]" ],
+    "callnumber" : "ZA970"
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990052497980206441"
@@ -73236,9 +73330,9 @@
     "description" : "Mikrofilm: Bonn: Mikropress"
   } ],
   "HoldingsStatement" : [ {
-    "note" : "[N=1849,18.März]"
-  }, {
-    "note" : "Mikrofilm"
+    "holdingsStatement" : "Probenr. 1848,8.März u.18.März; 1848,1.Apr. - 1849,21.Juni",
+    "note" : [ "[N=1849,18.März]", "Mikrofilm" ],
+    "callnumber" : "01R6"
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "Heidelberg : Universitätsbibliothek Heidelberg, 2018-2019",
@@ -73367,9 +73461,9 @@
     "description" : "Periodizität: tägl."
   } ],
   "HoldingsStatement" : [ {
-    "note" : "[L=1934]"
-  }, {
-    "note" : "Mikrofilm"
+    "holdingsStatement" : "1933,12.Dez. - 1936,11.Juni",
+    "note" : [ "[L=1934]", "Mikrofilm" ],
+    "callnumber" : "07P9"
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "Paris : Pariser Tageblatt, 1933-1936",
@@ -73511,7 +73605,8 @@
     "description" : "Periodizität: tägl."
   } ],
   "HoldingsStatement" : [ {
-    "note" : "Bestand: die jeweils letzten drei Monate; Standort: Magazin; aktuelle Ausg.: Zeitungsauslage BZ 07"
+    "note" : [ "Bestand: die jeweils letzten drei Monate; Standort: Magazin; aktuelle Ausg.: Zeitungsauslage BZ 07" ],
+    "source" : "DE-468"
   } ],
   "SupplementSpecialIssueEntry" : [ {
     "publisherStatement" : "Köln : Kölner Stadt-Anzeiger, 1989-",
@@ -75407,7 +75502,9 @@
     "description" : "Beteil. Körp. bis 1974: Bundesanstalt für Bodenforschung und die Geologischen Landesämter der Bundesrepublik Deutschland"
   } ],
   "HoldingsStatement" : [ {
-    "note" : "[N=26-27]"
+    "holdingsStatement" : "1.1973 - 29.1993",
+    "note" : [ "[N=26-27]" ],
+    "callnumber" : "43G11"
   } ],
   "PrecedingEntry" : [ {
     "publisherStatement" : "Hannover : Bundesanst., 1950-1972",
@@ -75585,7 +75682,9 @@
     "description" : "Beteil. Körp. bis 1974: Bundesanstalt für Bodenforschung und die Geologischen Landesämter der Bundesrepublik Deutschland"
   } ],
   "HoldingsStatement" : [ {
-    "note" : "[N=47]"
+    "holdingsStatement" : "1.1973 - 49.1991",
+    "note" : [ "[N=47]" ],
+    "callnumber" : "43G10"
   } ],
   "PrecedingEntry" : [ {
     "publisherStatement" : "Hannover : Bundesanst., 1950-1972",
@@ -75744,7 +75843,9 @@
     "description" : "Beteil. Körp. bis 1974: Bundesanstalt für Bodenforschung und die Geologischen Landesämter der Bundesrepublik Deutschland"
   } ],
   "HoldingsStatement" : [ {
-    "note" : "[N=94]"
+    "holdingsStatement" : "1.1972 - 99.1992",
+    "note" : [ "[N=94]" ],
+    "callnumber" : "43G9"
   } ],
   "PrecedingEntry" : [ {
     "publisherStatement" : "Hannover : Bundesanst., 1950-1972",
@@ -75909,6 +76010,11 @@
   "ChronologyAndEnumeration" : {
     "value" : "24.2002 -"
   },
+  "HoldingsStatement" : [ {
+    "holdingsStatement" : "25.2003 - 32.2010",
+    "source" : "DE-468",
+    "callnumber" : "49O16"
+  } ],
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "Berlin ; Heidelberg ; New York, NY : Springer, 1979-",
     "physicalDescription" : "Online-Ressource",
@@ -77225,7 +77331,10 @@
     "description" : "Ersch. monatl."
   } ],
   "HoldingsStatement" : [ {
-    "note" : "[N=157.2016,9; special 13.2008]"
+    "holdingsStatement" : "142.2001 -",
+    "note" : [ "[N=157.2016,9; special 13.2008]" ],
+    "source" : "DE-468",
+    "callnumber" : "82G1"
   } ],
   "SupplementSpecialIssueEntry" : [ {
     "mainEntryHeading" : "Bundesverband der Deutschen Gas- und Wasserwirtschaft",

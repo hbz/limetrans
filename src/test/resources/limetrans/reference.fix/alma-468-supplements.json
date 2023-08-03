@@ -2793,6 +2793,20 @@
   "DescriptionOfIssuance" : [ {
     "description" : "Erscheint 4x jährl."
   } ],
+  "HoldingsStatement" : [ {
+    "holdingsStatement" : "44.1990/91 - 63.2010",
+    "source" : "DE-468",
+    "callnumber" : "07G6"
+  }, {
+    "introductoryPhrase" : "- Index zu",
+    "holdingsStatement" : "1936/86(1990)",
+    "source" : "DE-468",
+    "callnumber" : "07G6"
+  }, {
+    "introductoryPhrase" : "N.S.",
+    "holdingsStatement" : "1.1947/48 - 43.1989/90",
+    "callnumber" : "07G6"
+  } ],
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "Oxford : Wiley-Blackwell, 1936-",
     "physicalDescription" : "Online-Ressource",
@@ -61682,7 +61696,14 @@
     "description" : "Periodizität: 14-tägl."
   } ],
   "HoldingsStatement" : [ {
-    "note" : "[N=37.2015,24; 38.2016,9; 40.2018,1]"
+    "holdingsStatement" : "13.1991 - 38.2016,11(2.Juni); 39.2017 -",
+    "note" : [ "[N=37.2015,24; 38.2016,9; 40.2018,1]" ],
+    "source" : "DE-468",
+    "callnumber" : "10L15"
+  }, {
+    "holdingsStatement" : "7.1985 - 12.1990",
+    "source" : "DE-468",
+    "callnumber" : "10L15"
   } ],
   "SupplementParentEntry" : [ {
     "publisherStatement" : "New York, NY : Hederman, 1963-",
@@ -68061,6 +68082,10 @@
   },
   "DescriptionOfExpression" : [ {
     "description" : "In d. Vorlage fälschl. vom Verlag vergebene ISSN: 0340-3718"
+  } ],
+  "HoldingsStatement" : [ {
+    "holdingsStatement" : "1.1987 - 9.1996(1997)",
+    "callnumber" : "QMS1428"
   } ],
   "OtherEditionEntry" : [ {
     "relationshipInformation" : "Engl. Ausg.",
@@ -84929,6 +84954,11 @@
   "ChronologyAndEnumeration" : {
     "value" : "24.2002 -"
   },
+  "HoldingsStatement" : [ {
+    "holdingsStatement" : "25.2003 - 32.2010",
+    "source" : "DE-468",
+    "callnumber" : "49O16"
+  } ],
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "Berlin ; Heidelberg ; New York, NY : Springer, 1979-",
     "physicalDescription" : "Online-Ressource",
