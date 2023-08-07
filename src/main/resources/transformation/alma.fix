@@ -1321,6 +1321,14 @@ do list(path: "264?[13]", "var": "$i")
 end
 uniq("PublicationPlace[]")
 
+# MARC/751
+set_array("PublicationPlaceOther[]")
+do list(path: "751??", "var": "$i")
+  add_field("PublicationPlaceOther[].$append.__dummy__", "")
+  copy_field("$i.a", "PublicationPlaceOther[].$last.publicationPlace")
+end
+uniq("PublicationPlaceOther[]")
+
 # MARC/263
 set_array("DescriptionOfEstimatedPublicationDate[]")
 do list(path: "263??", "var": "$i")
@@ -2060,6 +2068,7 @@ retain(
   "PrecedingEntry[]",
   "PublicationPlaceOfSecondaryEdition[]",
   "PublicationPlace[]",
+  "PublicationPlaceOther[]",
   "PublisherNameOfSecondaryEdition[]",
   "PublisherName[]",
   "RSWK[]",
