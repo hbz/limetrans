@@ -1338,7 +1338,19 @@ end
 
 # MARC/300
 set_array("@300a")
-copy_field("300  .a", "@300a.$append")
+set_array("@300c")
+do list(path: "300  ", "var": "$i")
+  copy_field("$i.a", "@300a.$append")
+  do list(path: "$i.b", "var": "$j")
+    replace_all("$j", "\\s?[:;+(]?$", "")
+    copy_field("$j", "@300b")
+  end
+  copy_field("$i.c", "@300c.$append")
+  do list(path: "$i.e", "var": "$j")
+    replace_all("$j", "[.]?\\s?\\(?$", "")
+    copy_field("$j", "@300e")
+  end
+end
 if exists("@300a.1")
   copy_field("@300a.1", "@300a1")
   replace_all("@300a1", "\\s?[:;+(]?$", "")
@@ -1347,12 +1359,6 @@ if exists("@300a.2")
   copy_field("@300a.2", "@300a2")
   replace_all("@300a2", "\\s?[:;+)]?$", "")
 end
-do list(path: "300  .b", "var": "$i")
-  replace_all("$i", "\\s?[:;+(]?$", "")
-  copy_field("$i", "@300b")
-end
-set_array("@300c")
-copy_field("300  .c", "@300c.$append")
 if exists("@300c.1")
   copy_field("@300c.1", "@300c1")
   replace_all("@300c1", "[.]?\\s?[:;+(]?$", "")
@@ -1360,10 +1366,6 @@ end
 if exists("@300c.2")
   copy_field("@300c.2", "@300c2")
   replace_all("@300c2", "[.]?\\s?[:;+)]?$", "")
-end
-do list(path: "300  .e", "var": "$i")
-  replace_all("$i", "[.]?\\s?\\(?$", "")
-  copy_field("$i", "@300e")
 end
 if exists("@300a2")
   if exists("@300c2")
