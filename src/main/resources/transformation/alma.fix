@@ -1254,20 +1254,14 @@ end
 join_field("Conference.conferenceUnit", ". ")
 
 # MARC/245
-set_array("TitlePart[]")
+set_array("SubseriesStatement[]")
 do list(path: "245??.p", "var": "$i")
   replace_all("$i", "\\s?[.]?\\s?$", "")
   call_macro("remove-nonsort", source: "$i")
-  if exists("@titleMain")
-    add_field("TitlePart[].$append.__dummy__", "")
-    copy_field("$i", "TitlePart[].$last.title")
-  else
-    copy_field("$i", "@titleMain")
-  end
+  add_field("SubseriesStatement[].$append.__dummy__", "")
+  copy_field("$i", "SubseriesStatement[].$last.title")
 end
 set_array("TitleStatement[]")
-add_field("TitleStatement[].$append.__dummy__", "")
-move_field("@titleMain", "TitleStatement[].$last.titleMain")
 do list(path: "245??.a", "var": "$i")
   add_field("TitleStatement[].$append.__dummy__", "")
   replace_all("$i", "^[©]|\\s?[,.:;/=]?$", "")
@@ -2092,13 +2086,13 @@ retain(
   "SubjectRPB[]",
   "SubjectRVK[]",
   "Subject[]",
+  "SubseriesStatement[]",
   "SucceedingEntry[]",
   "Summary",
   "SupplementParentEntry[]",
   "SupplementSpecialIssueEntry[]",
   "TitleAddendum",
   "TitleOther",
-  "TitlePart[]",
   "TitlePreferred[]",
   "TitleStatement[]",
   "TitleSuperVolumeDesignation[]",

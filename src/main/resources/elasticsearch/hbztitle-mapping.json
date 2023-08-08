@@ -2945,19 +2945,6 @@
         }
       }
     },
-    "TitlePart": {
-      "properties": {
-        "title": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false,
-          "copy_to": [
-            "cql.allIndexes",
-            "dc.title"
-          ]
-        }
-      }
-    },
     "TitlePreferred": {
       "properties": {
         "title": {
