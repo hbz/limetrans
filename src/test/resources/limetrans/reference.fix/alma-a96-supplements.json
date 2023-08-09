@@ -796,7 +796,7 @@
     "shelfmark" : "EUP_ZSMag"
   } ],
   "TitleOther" : {
-    "title" : [ "Analytica pro", "EuCheMS newsletter", "Nachrichten für die Karriere", "Nachrichten für die Chemikerkarriere", "Nachrichten aus der Chemiewirtschaft", "Nano", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker" ]
+    "title" : [ "Analytica pro", "EuCheMS newsletter", "Nachrichten für die Karriere", "Nachrichten für die Chemikerkarriere", "Nachrichten aus der Chemiewirtschaft", "Nano", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker" ]
   },
   "RSWK" : [ {
     "subjectTopicName" : "Chemie",
@@ -6762,6 +6762,9 @@
     "callnumber" : "11 WYX 49",
     "shelfmark" : "BAY_Frei"
   } ],
+  "TitleOther" : {
+    "title" : [ "Architektur Umbruch" ]
+  },
   "RSWK" : [ {
     "subjectTopicName" : "Architektur",
     "combinedLabel" : "Architektur",
@@ -7013,7 +7016,7 @@
     "shelfmark" : "EUP_Praes"
   } ],
   "TitleOther" : {
-    "title" : [ "AktG", "AktG" ]
+    "title" : [ "AktG" ]
   },
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Deutschland",
@@ -12670,7 +12673,7 @@
     "personName" : "Rohde, Thomas"
   } ],
   "TitleOther" : {
-    "title" : [ "Apache Webserver" ]
+    "title" : [ "Apache Webserver", "Web-Server" ]
   },
   "RSWK" : [ {
     "subjectTopicName" : "Apache",
@@ -12775,7 +12778,10 @@
     "identifier" : "DE-A96",
     "callnumber" : "11 WVA 12",
     "shelfmark" : "BAY_Frei"
-  } ]
+  } ],
+  "TitleOther" : {
+    "title" : [ "Architecture and energy" ]
+  }
 }
 {
   "ExtendedType" : [ "Bildband" ],
@@ -13929,7 +13935,7 @@
     "shelfmark" : "JUE_Praes"
   } ],
   "TitleOther" : {
-    "title" : [ "Langenscheidt dictionary of chemistry and chemical technology English German", "Fachwörterbuch Chemie und chemische Technik Englisch-Deutsch", "Dictionary of chemistry and chemical technology English German" ]
+    "title" : [ "Langenscheidt dictionary of chemistry and chemical technology English German", "Fachwörterbuch Chemie und chemische Technik Englisch-Deutsch", "Dictionary of chemistry and chemical technology English German", "Langenscheidt Fachwörterbuch" ]
   },
   "RSWK" : [ {
     "subjectTopicName" : "Chemie",
@@ -14436,7 +14442,7 @@
     "shelfmark" : "BOX_Filme"
   } ],
   "TitleOther" : {
-    "title" : [ "La sombra del guerrero" ]
+    "title" : [ "Der Schatten des Kriegers", "Der Schatten des Krieges", "La sombra del guerrero" ]
   },
   "RSWK" : [ {
     "subjectTopicName" : "Film",
@@ -19814,7 +19820,10 @@
     "identifier" : "DE-A96",
     "callnumber" : "11 WZR 56",
     "shelfmark" : "BAY_Frei"
-  } ]
+  } ],
+  "TitleOther" : {
+    "title" : [ "Architectural guide Innsbruck" ]
+  }
 }
 {
   "ContentType" : [ "Text" ],

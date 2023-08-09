@@ -370,6 +370,9 @@
   "Item" : [ {
     "callnumber" : "DB 251"
   } ],
+  "TitleOther" : {
+    "title" : [ "Praxis der Kommunalverwaltung / Landesausgabe Rheinland-Pfalz" ]
+  },
   "RSWK" : [ {
     "subjectGeoName" : "Rheinland-Pfalz",
     "combinedLabel" : "Rheinland-Pfalz",
@@ -491,6 +494,9 @@
     "uid" : "(DE-605)CT001004925"
   } ],
   "TypeMedia" : "Elektronische Ressource",
+  "TitleOther" : {
+    "title" : [ "konzessionierten" ]
+  },
   "RSWK" : [ {
     "subjectGeoName" : "Sinzig",
     "combinedLabel" : "Sinzig",
@@ -1202,7 +1208,10 @@
     "uid" : "(DE-600)2556980-6"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TypePeriodical" : [ "Zeitschrift" ]
+  "TypePeriodical" : [ "Zeitschrift" ],
+  "TitleOther" : {
+    "title" : [ "Die Rheinpfalz <Ludwigshafen> / Pfälzer Tageblatt / R" ]
+  }
 }
 {
   "ContentType" : [ "Text" ],
@@ -1400,7 +1409,10 @@
   "TypePeriodical" : [ "Zeitschrift" ],
   "Item" : [ {
     "callnumber" : "Z 187/U"
-  } ]
+  } ],
+  "TitleOther" : {
+    "title" : [ "Die Rheinpfalz <Ludwigshafen> / Pfälzer Tageblatt / R" ]
+  }
 }
 {
   "ContentType" : [ "Text" ],
