@@ -858,13 +858,12 @@ do list(path: "700??", "var": "$i")
 end
 uniq("TitleWork[]")
 
-# MARC/245
+# MARC/245, MARC/249
+set_array("TitleAddendum.title[]")
 do list(path: "245??.b", "var": "$i")
-  unless exists("TitleAddendum.title")
-    replace_all("$i", "\\s?[./]\\s?$", "")
-    call_macro("remove-nonsort", source: "$i")
-    copy_field("$i", "TitleAddendum.title")
-  end
+  replace_all("$i", "\\s?[./]\\s?$", "")
+  call_macro("remove-nonsort", source: "$i")
+  copy_field("$i", "TitleAddendum.title[].$append")
 end
 
 do list(path: "245??.n", "var": "$i")
