@@ -1684,6 +1684,15 @@ do list(path: "POR  ", "var": "$i")
     end
   end
 end
+copy_field("@sisis_supplement", "@sisis_supplement-2662")
+lookup("@sisis_supplement-2662", "sisis-supplement-2662", delete: "true")
+split_field("@sisis_supplement-2662", "\\u001F")
+do list(path: "@sisis_supplement-2662", "var": "$i")
+  add_field("OnlineAccess[].$append.__dummy__", "")
+  add_field("OnlineAccess[].$last.publicnote", "Zugang für Kunden des LBZ")
+  copy_field("$i", "OnlineAccess[].$last.uri")
+  add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
+end
 hbz.limetrans.function.Dedup("OnlineAccess[].*.uri")
 
 # MARC/962
