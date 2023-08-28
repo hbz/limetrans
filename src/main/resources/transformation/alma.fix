@@ -12,6 +12,7 @@ do once()
   include("./maps/alma-type-periodical.fix")
 
   put_filemap("./maps/alma-hbz-to-zdb.tsv.gz", "alma-zdb-to-hbz", sep_char: " ", key_column: "1", value_column: "0")
+  put_filemap("./maps/alma-rvk-to-taxonomy.tsv.gz", "alma-rvk-to-taxonomy", sep_char: "\t")
 end
 
 hbz.limetrans.function.DropLocal()
@@ -1013,6 +1014,7 @@ set_array("SubjectNWBIB[]")
 set_array("SubjectRPB[]")
 set_array("SubjectRVK[]")
 set_array("introx.taxonomy[]")
+set_array("introx.taxonomyRVK[]")
 add_field("@current_isil", "$[isil]")
 do list(path: "084  ", "var": "$i")
   if any_equal("$i.2", "ghbs")
@@ -1036,7 +1038,16 @@ do list(path: "084  ", "var": "$i")
     end
   elsif any_equal("$i.2", "rvk")
     add_field("SubjectRVK[].$append.__dummy__", "")
-    copy_field("$i.a", "SubjectRVK[].$last.subject")
+    set_array("SubjectRVK[].$last.subject")
+    do list(path: "$i.a", "var": "$j")
+      copy_field("$j", "@subjectRVK")
+      lookup("@subjectRVK", "alma-rvk-to-taxonomy", delete: "true")
+      if exists("@subjectRVK")
+        paste("@subjectRVK", "$j", "@subjectRVK")
+      end
+      move_field("@subjectRVK", "introx.taxonomyRVK[].$append")
+      copy_field("$j", "SubjectRVK[].$last.subject.$append")
+    end
   elsif any_equal("$i.2", "sdnb")
     add_field("SubjectDNB[].$append.__dummy__", "")
     copy_field("$i.a", "SubjectDNB[].$last.subject")
@@ -1051,6 +1062,7 @@ do list(path: "@SubjectGHBLocal", "var": "$i")
   move_field("@local_taxonomy", "introx.taxonomy[].$append")
 end
 uniq("introx.taxonomy[]")
+uniq("introx.taxonomyRVK[]")
 
 # MARC/001
 add_field("IdentifierAlma.identifierMember", "$[member]")

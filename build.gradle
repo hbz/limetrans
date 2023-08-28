@@ -100,7 +100,7 @@ test {
         events 'SKIPPED'
     }
 
-    maxHeapSize = '8G'
+    maxHeapSize = '10G'
     maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
 
     passSystemProperties(systemProperties)

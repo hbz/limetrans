@@ -613,6 +613,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "WB 1415 Genetik" ],
     "person" : [ "Kahl, Günter (1943-)" ],
     "subject" : [ "Wörterbuch", "Gentechnologie" ]
   },
@@ -1435,6 +1436,7 @@
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
+    "taxonomyRVK" : [ "ZI 8300 Allgemeines" ],
     "person" : [ "Haas-Arndt, Doris (1957-)" ],
     "provenance" : [ "vorhanden: neu170711" ],
     "subject" : [ "Gebäude", "Wasserversorgung", "Abwasserbeseitigung", "Haustechnik", "Wasserkreislauf" ]
@@ -1921,6 +1923,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZI 3850 Baukostenrechnung, Bauwert", "PD 4760 Gesetzestexte, Materialien, Entwürfe, Reformliteratur", "ZH 2250 Amtliches Schrifttum, insbesondere Gesetze und Verordnungen", "ZH 2450 Fachwörterbücher einsprachig", "ZH 3900 Bauvorschriften, -Ausführungsbestimmungen", "ZH 3950 Verdingungsordnung für Bauleistungen (VOB) ; Honorarordnung für Architekten und Ingenieure (HOAI); Standardleistungsbücher (StLB)", "ZI 3700 Allgemeines" ],
     "subject" : [ "Hochbau", "Sollzeit", "Richtwert" ]
   },
   "SubjectRVK" : [ {
@@ -2228,6 +2231,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "CM 1000 Allgemeine und einführende Werke", "CZ 1300 Allgemeines", "CP 4000 Kognitive Prozesse (Denken, Urteil, Problemlösen, Begriffsbildung, Assoziation)", "CQ 2000 Entwicklung kognitiver und sensorischer Funktionen", "CM 3300 Evaluation" ],
     "person" : [ "Birbaumer, Niels-Peter (1945-)" ],
     "subject" : [ "Psychologie" ]
   },
@@ -3859,6 +3863,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZO 2050 Biografische Lexika; Biografiensammlungen" ],
     "subject" : [ "Lilienthal, Otto (1848-1896)", "Luftfahrt", "Geschichte" ]
   },
   "SubjectRPB" : [ {
@@ -4147,6 +4152,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZN 8460 Hochspannungsisoliertechnik" ],
     "subject" : [ "Hochspannungsisolierung" ]
   },
   "SubjectRVK" : [ {
@@ -4251,6 +4257,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZI 6400 Allgemeines" ],
     "subject" : [ "Straßenbau", "Straßenverkehrstechnik" ]
   },
   "SubjectRPB" : [ {
@@ -4593,7 +4600,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "US 2200 Einzelne Hypothesen und Modelle, z.B. Theorie der Schwarzen Löcher" ]
   },
   "SubjectRPB" : [ {
     "subject" : "100"
@@ -4803,6 +4811,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "PN 278 Staatshaftung", "PD 6180 Amtspflichtverletzung", "PP 5325 Monographien" ],
     "subject" : [ "Deutschland", "Steuerrecht" ]
   },
   "SubjectRVK" : [ {
@@ -6319,6 +6328,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "GB 1490 Einsprachige allgemeine Wörterbücher der deutschen Sprache", "AH 11000 Akademie- und umfassende Wörterbücher", "AH 11012 Rechtschreibwörterbücher", "AH 11026 Fremdwörterbücher", "AH 11038 Grammatikalische Wörterbücher", "AH 11022 Synonymwörterbücher", "AH 11034 Stilwörterbücher", "AH 11032 Bedeutungswörterbücher", "GB 1554 Rechtschreibwörterbücher", "AH 11005 Mehrbändige erklärende Wörterbücher" ],
     "person" : [ "Drosdowski, Günther (1926-2000)" ],
     "subject" : [ "Deutsch" ]
   },
@@ -6676,6 +6686,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "AN 96000 Allgemeines", "QR 700 Allgemeines", "AN 91100 Einrichtung und Ausstattung von Informationsstellen", "AN 91000 International, Allgemeines" ],
     "subject" : [ "Bibliothek", "Dokumentation" ]
   },
   "SubjectRVK" : [ {
@@ -6781,7 +6792,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "QB 000 Allgemeine Lexika", "QH 100 Allgemeines" ]
   },
   "SubjectRVK" : [ {
     "subject" : "QB 000"
@@ -7217,6 +7229,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "QV 200 Allgemeines", "QX 000 Allgemeines. Soziale Sicherheit", "MS 6500 Sozialpolitik, Sozialstaat", "QB 910 Aufsatzsammlungen vermischten Inhalts" ],
     "subject" : [ "Deutschland (Bundesrepublik)", "Soziales System" ]
   },
   "SubjectRVK" : [ {
@@ -7489,6 +7502,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ND 5140 Sphragistik einzelner deutscher Gebietskörperschaften" ],
     "subject" : [ "Geschichte", "Rheinland", "Stadtsiegel", "Siegel", "Stadt" ]
   },
   "SubjectRVK" : [ {
@@ -7691,6 +7705,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "RS 56232 Luftbilder und Luftbildauswertung, Satellitenbilder, Fernerkundung" ],
     "subject" : [ "Kenia", "Trockengebiet", "Fernerkundung" ]
   },
   "SubjectRVK" : [ {
@@ -9481,6 +9496,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "AP 14100 Kommunikation und Staat", "QR 700 Allgemeines" ],
     "subject" : [ "Telekommunikation", "Privatisierung", "Entstaatlichung", "Wettbewerb", "Telekommunikationspolitik", "USA", "Privates Fernsehen", "Deutschland (Bundesrepublik)" ]
   },
   "SubjectRVK" : [ {
@@ -11133,7 +11149,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "QR 800 Allgemeines" ]
   },
   "SubjectRVK" : [ {
     "subject" : "QR 800"
@@ -11563,6 +11580,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "QW 300 Verbrauchsforschung und Verbraucherverhalten", "AP 17480 Aussage" ],
     "subject" : [ "Volkswirtschaft", "Betriebswirtschaftslehre" ]
   },
   "SubjectRVK" : [ {
@@ -11853,6 +11871,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "QG 000 Allgemeines", "QB 910 Aufsatzsammlungen vermischten Inhalts" ],
     "subject" : [ "Hamburgisches Welt-Wirtschafts-Archiv" ]
   },
   "SubjectRVK" : [ {
@@ -12039,6 +12058,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "QB 910 Aufsatzsammlungen vermischten Inhalts" ],
     "subject" : [ "Lateinamerika", "Auslandsschulden", "Entwicklungsländer" ]
   },
   "SubjectRVK" : [ {
@@ -12336,6 +12356,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZO 3800 Nahverkehr" ],
     "subject" : [ "Stadtverkehr" ]
   },
   "SubjectRVK" : [ {
@@ -13959,6 +13980,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "SK 400 Allgemeine Lehrbücher der Analysis" ],
     "person" : [ "Forster, Otto (1937-)" ],
     "subject" : [ "Analysis", "Lehrbuch" ]
   },
@@ -14284,6 +14306,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZM 2550 Handbücher und Enzyklopädien", "QP 540 Allgemeines", "ZM 8000 Allgemeine, zusammenfassende Darstellungen", "ZM 3600 mechanische", "ZM 9000 Allgemeines" ],
     "person" : [ "Spur, Günter (1928-2013)" ],
     "subject" : [ "Fertigung" ]
   },
@@ -14466,6 +14489,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "UF 1500 Technische Mechanik", "ZM 3000 Allgemeine Darstellungen zur Werkstoffwissenschaft", "UF 1200 Statik", "UF 1900 Kinematik", "UF 1800 Festigkeitslehre" ],
     "person" : [ "Assmann, Bruno", "Selke, Peter" ],
     "subject" : [ "Technische Mechanik" ]
   },
@@ -14606,6 +14630,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "QH 100 Allgemeines", "SK 950 Mathematische Methoden in den Naturwissenschaften" ],
     "person" : [ "Collatz, Lothar (1910-1990)", "Bredendiek, Elsbeth" ],
     "subject" : [ "Angewandte Mathematik" ]
   },
@@ -14703,6 +14728,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "MR 1050 Allgemeine (philosophische) Abhandlungen", "CI 1320 Gesamtausgaben, Werke, Gesammelte Werke", "CB 4100 Gesammelte Abhandlungen einzelner Gelehrter", "MR 5350 Kritische Theorie, Frankfurter Schule", "MQ 1600 Textsammlungen (nicht spezielle Reader); Festschriften", "BF 5000 Werke" ],
     "person" : [ "Adorno, Theodor W. (1903-1969)", "Tiedemann, Rolf (1932-2018)", "Adorno, Gretel (1902-1993)" ]
   },
   "SubjectRPB" : [ {
@@ -15049,6 +15075,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZN 2650 Aufgabensammlungen" ],
     "person" : [ "Lindner, Helmut (1907-1984)", "Balcke, Edgar" ],
     "subject" : [ "Elektrotechnik" ]
   },
@@ -15144,6 +15171,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "CC 6350 Naturwissenschaftliche Werke" ],
     "person" : [ "Ludwig, Günther" ],
     "subject" : [ "Theoretische Physik" ]
   },
@@ -15228,6 +15256,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "LK 47086 Kunstführer, Bildbände Kunst; Kunsttopografie" ],
     "person" : [ "Rahtgens, Hugo (1872-1946)" ]
   },
   "SubjectRVK" : [ {
@@ -15387,6 +15416,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZG 8550 Enzyklopädien" ],
     "person" : [ "Lueger, Otto (1843-1911)", "Ehrhardt, Alfred" ],
     "subject" : [ "Technik" ]
   },
@@ -15593,6 +15623,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "SK 400 Allgemeine Lehrbücher der Analysis", "QH 150 Analysis (Differential-/Integralrechnung, Differentialgleichungen) Stochastische Differentialgleichungen s. QH 237" ],
     "person" : [ "Martensen, Erich (1927-)" ],
     "subject" : [ "Analysis" ]
   },
@@ -15804,6 +15835,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZI 9300 Ingenieur-Vermessung", "ZI 6840 Siedlungswasserwirtschaft allgemein, Siedlungswasserbau", "ZI 8300 Allgemeines" ],
     "person" : [ "Martz, Georg (1923-)" ],
     "subject" : [ "Siedlungswasserbau" ]
   },
@@ -15900,6 +15932,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "CG 5340 Gesamtausgaben, Werke, Gesammelte Werke", "MS 4715 Marxismus, Materialismus", "NK 6776 Quellen", "BF 6410 Werke", "PI 6000 Gesamtdarstellungen", "QE 800 Einzelne Wissenschaftler (einschließlich biografisches Material)", "MC 8110 Gesamtausgaben", "QC 071 Veröffentlichungen 1861 bis 1929 (einschließlich späterer Nachdrucke)", "DD 8100 Primärliteratur" ],
     "person" : [ "Marx, Karl (1818-1883)", "Engels, Friedrich (1820-1895)" ]
   },
   "SubjectRPB" : [ {
@@ -16034,6 +16067,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "QH 400 Allgemeines, Gesamtdarstellungen", "QH 452 Netzplantechnik", "ST 330 Bildverarbeitung und Mustererkennung" ],
     "person" : [ "Maucksch, Wolfgang" ],
     "subject" : [ "Netzplantechnik" ]
   },
@@ -16130,6 +16164,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "SK 200 Algebra, Allgemeine Lehrbücher, Galois-Theorie, Körpererweiterung" ],
     "person" : [ "Meyberg, Kurt (1936-)" ],
     "subject" : [ "Algebra" ]
   },
@@ -16349,6 +16384,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "LH 13440 Deutschland" ],
     "person" : [ "Schmitt, Otto (1890-1951)" ],
     "subject" : [ "Geschichte", "Deutschland", "Kunst" ]
   },
@@ -16463,6 +16499,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Landkarte" ],
+    "taxonomyRVK" : [ "NR 1800 Stadtgeschichte", "NR 7300 Landesgeschichte" ],
     "person" : [ "Stoob, Heinz (1919-1997)" ],
     "subject" : [ "Geschichte", "Deutschland", "Stadt" ]
   },
@@ -16579,6 +16616,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "LH 13100 Internationale Künstlerlexika" ],
     "person" : [ "Vollmer, Hans" ],
     "subject" : [ "Künstler" ]
   },
@@ -18194,7 +18232,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "QN 200 Konjunkturschwankungen. Konjunkturprognosen", "QC 330 Konjunkturtheorie" ]
   },
   "SubjectRVK" : [ {
     "subject" : "QN 200"
@@ -18308,7 +18347,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZH 3150 Bauästhetik" ]
   },
   "SubjectRVK" : [ {
     "subject" : "ZH 3150"
@@ -19034,6 +19074,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "CM 1000 Allgemeine und einführende Werke" ],
     "person" : [ "Birbaumer, Niels-Peter (1945-)" ],
     "subject" : [ "Psychologie" ]
   },
@@ -19357,6 +19398,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZG 8540 Fachwörterbücher mehrsprachig", "HE 310 Fachwörterbuch", "HF 145 Fachsprache der Technik", "AH 16110 Deutsch" ],
     "person" : [ "Oppermann, Alfred (1909-1985)" ],
     "subject" : [ "Englisch", "Technik", "Deutsch" ]
   },
@@ -19481,6 +19523,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "QP 100 Allgemeines", "QP 120 Gesamtdarstellungen der Betriebswirtschaftslehre" ],
     "person" : [ "Bitz, Michael (1943-)", "Baetge, Jörg (1937-)" ],
     "subject" : [ "Betriebswirtschaftslehre" ]
   },
@@ -19586,6 +19629,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "SK 220 Lineare Algebra (einschl. Determinanten, Matrizen und Vektoren)" ],
     "person" : [ "Zurmühl, Rudolf (1904-1966)", "Falk, Sigurd (1921-)" ],
     "subject" : [ "Matrizenrechnung" ]
   },
@@ -20054,6 +20098,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "PF 400 Ausbildungsverhältnisse, Lehr-, Anlern- und Volontärverhältnis, Berufsausbildung" ],
     "subject" : [ "Deutschland (Bundesrepublik)", "Ausbildungsplatz", "Verfassungsrecht", "Betriebliche Ausbildung", "Bereitstellung", "Rechtsgutachten", "Arbeitgeber" ]
   },
   "SubjectRVK" : [ {
@@ -20622,6 +20667,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "UM 1000 Allgemeines", "UC 100 Allgemeine Lehrbücher der Physik", "UF 1000 Mechanik allgemein", "UH 1000 Elektrizitätslehre allgemein, Elektromagnetismus, Klassische Feldtheorie", "UK 1000 Quantentheorie, allgemein Nichtrelativistische Quantentheorie" ],
     "person" : [ "Feynman, Richard P. (1918-1988)", "Leighton, Robert B. (1919-1997)", "Sands, Matthew L. (1919-2014)" ],
     "subject" : [ "Physik" ]
   },
@@ -21017,6 +21063,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "LH 60370 Inventarisation, Dokumentation, Foto-Archivierung und Aufnahmeverzeichnisse staatlicher Bildstellen. Baudenkmalkunde und begleitende Bauforschung" ],
     "person" : [ "Dehio, Georg (1850-1932)", "Gall, Ernst (1888-1958)" ],
     "subject" : [ "Deutschland" ]
   },
@@ -21206,6 +21253,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZH 4981 Nordamerika allgemein", "LI 99999 Sonstige (CSN der Person)" ],
     "subject" : [ "Skidmore, Owings and Merrill LLP (Chicago, Ill.; New York, NY)" ]
   },
   "SubjectRVK" : [ {
@@ -21792,6 +21840,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "VC 5010 Lehrbücher" ],
     "person" : [ "Latscha, Hans Peter (1937-)", "Klein, Helmut A. (1949-)", "Kazmaier, Uli (1960-)", "Linti, Gerald W. (1962-)" ],
     "subject" : [ "Chemistry, Organic", "Chemistry, Analytical", "Chemie" ]
   },
@@ -22478,6 +22527,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "CM 1000 Allgemeine und einführende Werke" ],
     "person" : [ "Leplow, Bernd (1953-)", "Selg, Herbert (1935-2017)" ],
     "subject" : [ "Psychology", "Psychologie" ]
   },
@@ -22601,6 +22651,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "VC 1000 Nachschlage- und Tabellenwerke, Fachlexika und Handbücher für die Allgemeine Chemie", "VC 5000 Gesamtdarstellungen" ],
     "person" : [ "Römpp, Hermann (1901-1964)", "Falbe, Jürgen (1933-)" ],
     "subject" : [ "Chemie" ]
   },
@@ -22959,6 +23010,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZL 6000 Allgemeines", "QP 543 Fertigungsverfahren" ],
     "person" : [ "Weck, Manfred (1937-)" ],
     "subject" : [ "Werkzeugmaschine" ]
   },
@@ -23060,6 +23112,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ST 150 Hardware, Rechnerarchitektur allgemein, von-Neumann-Architektur" ],
     "person" : [ "Schiffmann, Wolfram (1956-)", "Schmitz, Robert", "Weiland, Jürgen (1966-)", "Bähring, Helmut", "Hönig, Udo" ],
     "subject" : [ "Technische Informatik" ]
   },
@@ -23163,6 +23216,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "VN 9360 Allgemeines", "RB 10354 Grundwasser- und Quellenkunde", "RB 10363 Angewandte Gewässerkunde", "WK 6700 Grundwasser", "AR 22480 Chemische Verunreinigung", "AR 22400 Wasserverschmutzung, Allgemeines", "RB 10915 Naturschutz, Landschaftspflege, Landschaftsgestaltung, Umweltschutz", "AR 22140 Grundwasser, Quellen" ],
     "subject" : [ "Grundwasser", "Schadstoffbelastung" ]
   },
   "SubjectRPB" : [ {
@@ -23433,6 +23487,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZN 2450 Fachwörterbücher für Elektrotechnik und Elektronik, allgemein oder mehrere Teilgebiete umfassend, einsprachig", "SR 200 Fachwörterbücher", "ZN 2455 Fachwörterbücher für Elektrotechnik und Elektronik allgemein oder mehrere Teilgebiete umfassend, mehrsprachig", "AB 59900 Abkürzungen von Zeitschriften- und Serientiteln", "ZG 8520 Abkürzungsverzeichnisse" ],
     "person" : [ "Wennrich, Peter" ],
     "subject" : [ "Elektrotechnik", "Abkürzung", "Elektronik", "Datentechnik", "Informationsverarbeitung" ]
   },
@@ -24078,6 +24133,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "RB 10909 Regional- und Stadtplanung", "ZH 9300 Stadtplanung allgemein", "RC 20909 Regional- und Stadtplanung" ],
     "person" : [ "Bochnig, Stefan" ],
     "subject" : [ "Stadt", "Freifläche" ]
   },
@@ -24306,6 +24362,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ST 200 Allgemeines, Netzmanagement", "ST 201 Einzelne Systeme", "ST 206 Protokolle, Dienste (A-Z)" ],
     "person" : [ "Comer, Douglas (1949-)", "Stevens, David L. (1962-)" ],
     "subject" : [ "TCP/IP" ]
   },
@@ -24569,6 +24626,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "LH 61080 Kunstpsychologie und Künstlerpsychologie", "IH 60480 Gesammelte Werke und Einzelwerke" ],
     "person" : [ "Malraux, André (1901-1976)" ],
     "subject" : [ "Kunstpsychologie" ]
   },
@@ -24771,6 +24829,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "QK 000 Allgemeines", "QK 620 Kapitalmärkte allgemein" ],
     "person" : [ "Newman, Peter" ],
     "subject" : [ "Finanzierung / Wörterbuch", "Geld / Wörterbuch", "Geldtheorie / Wörterbuch", "Kapitlamarkt / Wörterbuch", "Kreditwesen / Wörterbuch", "Volkswirtschaftslehre / Aufsatzsammlung", "Kapitalmarkt", "Finanzwirtschaft", "Geldwirtschaft" ]
   },
@@ -25008,6 +25067,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "QP 360 Planung und Kontrolle, Allgemeines" ],
     "subject" : [ "Projektmanagement" ]
   },
   "SubjectRPB" : [ {
@@ -25489,6 +25549,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "BF 7020 Werke" ],
     "person" : [ "Simmel, Georg (1858-1918)", "Rammstedt, Otthein (1938-2020)", "Dahme, Heinz-Jürgen (1949-)", "Köhnke, Klaus Christian (1953-2013)", "Frisby, David (1944-)", "Kramme, Rüdiger (1952-2010)", "Cavalli, Alessandro (1939-)", "Behr, Michael (1960-)", "Oakes, Guy (1946-)", "Röttgers, Kurt (1944-)", "Rammstedt, Angela (1943-2018)", "Latzel, Klaus (1955-)", "Kösser, Uta (1942-)", "Kruckis, Hans-Martin (1957-)", "Fitzi, Gregor (1963-)", "Papilloud, Christian (19XX-)", "Watier, Patrick (19XX-)" ]
   },
   "SubjectRVK" : [ {
@@ -25915,6 +25976,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZL 4140 Lager", "ZL 6130 Bauelemente, Lager, Schwingungen, Starrheit, Geräuschverhalten, Antriebe, Vorschub" ],
     "person" : [ "Bartz, Wilfried J. (1934-)" ],
     "subject" : [ "Gleitlager" ]
   },
@@ -26484,6 +26546,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "UC 550 Große Physikalische Enzyklopädien und Lexika" ],
     "person" : [ "Meyers, Robert A. (1936-)" ],
     "subject" : [ "Physik" ]
   },
@@ -26583,6 +26646,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ST 110 Allgemeine Darstellungen (Lehrbücher, Einführungen etc.)" ],
     "person" : [ "Appelrath, Hans-Jürgen (1952-2016)", "Ludewig, Jochen (1947-)", "Spiegel, André (1969-)" ],
     "subject" : [ "Informatik", "MODULA 2" ]
   },
@@ -26694,6 +26758,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZN 2650 Aufgabensammlungen" ],
     "person" : [ "Mattes, Heinz" ],
     "subject" : [ "Elektrizitätslehre" ]
   },
@@ -26778,6 +26843,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ST 150 Hardware, Rechnerarchitektur allgemein, von-Neumann-Architektur" ],
     "person" : [ "Ameling, Walter" ],
     "subject" : [ "Computer" ]
   },
@@ -26853,6 +26919,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZN 8500 Allgemeines" ],
     "person" : [ "Handschin, Edmund (1941-)" ],
     "subject" : [ "Elektrische Energieübertragung", "Netzleittechnik" ]
   },
@@ -27055,6 +27122,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "SK 900 Numerische Mathematik", "SK 920 Numerische Lösungen von Operatorgleichungen," ],
     "person" : [ "Deuflhard, Peter (1944-2019)", "Hohmann, Andreas (1964-)", "Bornemann, Folkmar (1967-)", "Weiser, Martin (1970-)" ],
     "subject" : [ "Numerische Mathematik" ]
   },
@@ -27285,6 +27353,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "PL 375 Gesamtdarstellungen", "MG 15060 Juristische Abhandlungen", "PL 310 Verfassungsgeschichte der Bundesrepublik Deutschland, einschließlich Besatzungszeit; Entstehungsgeschichte des Grundgesetzes; Verfassungsgeschichte seit der Wiedervereinigung" ],
     "person" : [ "Münch, Ingo von (1932-)" ],
     "subject" : [ "Staatsrecht" ]
   },
@@ -27398,6 +27467,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "CW 5800 Personalbeurteilung", "DL 4000 Allgemeines und Deutschland", "QV 578 Personalplanung, Personalpolitik" ],
     "person" : [ "Götz, Klaus (1957-)" ],
     "subject" : [ "Pädagogische Psychologie", "Weiterbildung", "Deutschland", "Betriebliche Fortbildung", "Großbetrieb", "Evaluation" ]
   },
@@ -27782,6 +27852,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "QP 624 Produkt- und Sortimentsgestaltung" ],
     "person" : [ "Bruhn, Manfred (1949-)" ],
     "subject" : [ "Markenartikel", "Markenpolitik" ]
   },
@@ -27903,6 +27974,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "SK 400 Allgemeine Lehrbücher der Analysis", "QH 150 Analysis (Differential-/Integralrechnung, Differentialgleichungen) Stochastische Differentialgleichungen s. QH 237" ],
     "person" : [ "Forster, Otto (1937-)", "Szymczak, Thomas", "Wessoly, Rüdiger" ],
     "subject" : [ "Analysis" ]
   },
@@ -28015,7 +28087,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZO 5000 Allgemeines" ]
   },
   "SubjectRVK" : [ {
     "subject" : "ZO 5000"
@@ -28554,6 +28627,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZH 4800 Leben und Werk einzelner Architekten (CSN des Namens)", "LI 99999 Sonstige (CSN der Person)" ],
     "person" : [ "Mack, Gerhard (1956-)", "Herzog, Jacques (1950-)", "Meuron, Pierre de (1950-)" ],
     "subject" : [ "Herzog & de Meuron", "Architektur" ]
   },
@@ -28740,6 +28814,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "VC 6000 Allgemeines", "SK 950 Mathematische Methoden in den Naturwissenschaften", "VC 5200 Aufgabensammlungen; \"Problem und Antwort\"; Chemisches Rechnen; SI-Einheiten; Stöchiometrie (-) s.a. VB 4090 Lern- und Prüfungsprogramme s.a. VC 6000 ff." ],
     "person" : [ "Brunner, Götz (1938-)" ],
     "subject" : [ "Mathematik", "Chemie", "Chemometrie", "Stöchiometrie" ]
   },
@@ -28928,6 +29003,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ZL 4650 Hydraulik im Maschinenbau" ],
     "person" : [ "Murrenhoff, Hubertus (1953-)", "Schmitz, Katharina (1986-)" ],
     "subject" : [ "Fluidtechnik" ]
   },
@@ -29234,6 +29310,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "PD 2340 Erman" ],
     "person" : [ "Erman, Walter (1904-1982)", "Westermann, Harm Peter (1938-)", "Aderhold, Lutz (1951-)" ],
     "subject" : [ "Deutschland", "Bürgerliches Gesetzbuch" ]
   },
@@ -33439,6 +33516,7 @@
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
     "taxonomy" : [ "Kulturwissenschaften", "Psychologie" ],
+    "taxonomyRVK" : [ "BE 2150 Einzelprobleme", "BE 2400 Allgemeines", "BE 2100 Gesamtdarstellungen", "CR 5000 Intelligenz; Begabung; Kreativität" ],
     "person" : [ "Kurz, Melanie (1976-)" ],
     "provenance" : [ "neu200451" ],
     "subject" : [ "Ideengeschichte", "Geschichte", "Inspiration", "Kreativität", "Kunstproduktion", "Mythos" ]
@@ -33682,6 +33760,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "ST 261 Einzelne Betriebssysteme (A-Z)" ],
     "person" : [ "Jurzik, Heike" ],
     "subject" : [ "Debian GNU/LINUX 8.0" ]
   },
@@ -34181,6 +34260,7 @@
     "access" : [ "local" ],
     "branch" : [ "Bayernallee" ],
     "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomyRVK" : [ "QR 600 Öffentliche Versorgungseinrichtungen. Elektrizität. Gas. Wasser" ],
     "subject" : [ "Zeitschrift", "Wasserversorgung", "Gasversorgung", "Abwasser", "Wasser" ]
   },
   "SubjectDNB" : [ {
