@@ -5,6 +5,7 @@ import hbz.limetrans.util.LimetransException;
 import hbz.limetrans.util.Settings;
 
 import com.carrotsearch.hppc.cursors.ObjectCursor;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.elasticsearch.action.ActionRequest;
@@ -40,6 +41,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.LongAdder;
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.regex.Pattern;
 
@@ -256,6 +258,7 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
                         deleted.increment();
                     }
                     else if (r.isFailed()) {
+                        mFailed = true;
                         failed.increment();
                         LOGGER.warn("Bulk {} item {} failed: {}", aId, r.getItemId(), r.getFailureMessage());
                     }
@@ -381,20 +384,21 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
         final String newIndex = getIndexName();
         final String oldIndex = getAliasIndex(aliasName);
 
-        final String suffix = " [index=" + newIndex + ", alias=" + aliasName + "]";
+        final BiConsumer<Level, String> log = (l, m) -> LOGGER.log(l, m +
+                ": {} succeeded, {} failed, {} deleted [index={}, alias={}]",
+                getSucceeded(), getFailed(), getDeleted(), newIndex, aliasName);
 
         if (mFailed) {
-            LOGGER.warn("Failed, skipping index switch" + suffix);
+            log.accept(Level.WARN, "Failed, skipping index switch");
             return;
         }
 
         if (getSucceeded() == 0) {
-            LOGGER.warn("No docs, skipping index switch" + suffix);
+            log.accept(Level.WARN, "No docs, skipping index switch");
             return;
         }
 
-        LOGGER.info("Documents ingested: {} succeeded, {} failed, {} deleted" + suffix,
-                getSucceeded(), getFailed(), getDeleted());
+        log.accept(Level.INFO, "Documents ingested");
 
         if (newIndex.equals(oldIndex)) {
             return;
