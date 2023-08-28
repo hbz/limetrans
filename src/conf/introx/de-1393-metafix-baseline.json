@@ -2,7 +2,9 @@
   "isil": "DE-1393",
   "path": "/data/pubhub/export/alma/prod/",
   "postprocess": true,
-  "alma": {},
+  "alma": {
+    "suppressedLocation": "(?:ILL|SF_MH|UNASSIGNED)"
+  },
   "input": {
     "queue": {
       "path": "${path}",

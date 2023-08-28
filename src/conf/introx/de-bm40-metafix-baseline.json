@@ -2,7 +2,9 @@
   "isil": "DE-Bm40",
   "path": "/data/pubhub/export/alma/prod/",
   "postprocess": true,
-  "alma": {},
+  "alma": {
+    "suppressedLocation": "OUT_RS_REQ"
+  },
   "input": {
     "queue": {
       "path": "${path}",

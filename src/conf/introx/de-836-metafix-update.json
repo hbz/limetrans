@@ -2,7 +2,9 @@
   "isil": "DE-836",
   "path": "/data/pubhub/export/alma/prod/",
   "postprocess": true,
-  "alma": {},
+  "alma": {
+    "suppressedLocation": "(?:DMB_F|DMB_H|DMB_S|ILL|LBA_V|PB_V|Stb_B|TsH_F|TsH_S|TsM_F|TsM_H|TsM_L|TsM_S|TsT_H|TsT_L|TsT_S)"
+  },
   "input": {
     "queue": {
       "path": "${path}",
