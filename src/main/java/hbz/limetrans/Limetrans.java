@@ -48,13 +48,14 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
         // checkstyle-disable-begin MethodParamPad
         DE_1010 ("6456", "49HBZ_WHS",        "Westfälische HS Gelsenkirchen"),
+        DE_51   ("6480", "49HBZ_DET",        "HS für Musik Detmold / Lippische LB"),      // DE-51 = Lippische LB, DE-575 = HS für Musik Detmold
         DE_1032 ("6474", "49HBZ_KHO",        "Katholische HS NRW, Köln"),
         DE_1044 ("6452", "49HBZ_BRS",        "HS Bonn-Rhein-Sieg"),
         DE_107  ("7506", "49HBZ_BRIDGE_LBZ", "Landesbibliothekszentrum Rheinland-Pfalz"), // DE-107 = Pfälzische LB, DE-929 = Rheinische LB, DE-Zw1 = Bibliotheca Bipontina
         DE_1140 ("6484", "49HBZ_RFH",        "Rheinische Fachhochschule Köln"),
-        DE_1156 ("6459", "49HBZ_FUK",        "Folkwang Universität der Künste"),    // DE-1156 = Essen, DE-1156a = Bochum, DE-1156b = Duisburg, DE-1156c = Zollverein
-        DE_1383 ("6479", "49HBZ_RHW",        "HS Rhein-Waal"),                      // DE-1383 = Kleve, DE-1383a = Kamp-Lintfort
-        DE_1393 ("6453", "49HBZ_RUW",        "HS Ruhr West"),                       // DE-1393 = Mülheim, DE-1393-BOT = Bottrop
+        DE_1156 ("6459", "49HBZ_FUK",        "Folkwang Universität der Künste"),          // DE-1156 = Essen, DE-1156a = Bochum, DE-1156b = Duisburg, DE-1156c = Zollverein
+        DE_1383 ("6479", "49HBZ_RHW",        "HS Rhein-Waal"),                            // DE-1383 = Kleve, DE-1383a = Kamp-Lintfort
+        DE_1393 ("6453", "49HBZ_RUW",        "HS Ruhr West"),                             // DE-1393 = Mülheim, DE-1393-BOT = Bottrop
         DE_1866 ("6481", "49HBZ_HGB",        "HS für Gesundheit, Bochum"),
         DE_1972 ("6457", "49HBZ_RSH",        "Robert Schumann HS Düsseldorf"),
         DE_290  ("6445", "49HBZ_UBD",        "UB Dortmund"),
@@ -62,9 +63,9 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         DE_361  ("6442", "49HBZ_BIE",        "UB Bielefeld"),
         DE_38   ("6476", "49HBZ_UBK",        "USB Köln"),
         DE_385  ("6470", "49HBZ_UBT",        "UB Trier"),
-        DE_386  ("7476", "49HBZ_RTU",        "UB Kaiserslautern-Landau"),           // DE-386 = Kaiserslautern, DE-Lan1 = Landau
-        DE_38M  ("6472", "49HBZ_ZBM",        "ZB MED, Köln/Bonn"),                  // DE-38M = Köln, DE-98 = Bonn
-        DE_465  ("6446", "49HBZ_UDE",        "UB Duisburg-Essen"),                  // DE-464 = Duisburg, DE-465 = Essen
+        DE_386  ("7476", "49HBZ_RTU",        "UB Kaiserslautern-Landau"),                 // DE-386 = Kaiserslautern, DE-Lan1 = Landau
+        DE_38M  ("6472", "49HBZ_ZBM",        "ZB MED, Köln/Bonn"),                        // DE-38M = Köln, DE-98 = Bonn
+        DE_465  ("6446", "49HBZ_UDE",        "UB Duisburg-Essen"),                        // DE-464 = Duisburg, DE-465 = Essen
         DE_466  ("6463", "49HBZ_PAD",        "UB Paderborn"),
         DE_467  ("6462", "49HBZ_SIE",        "UB Siegen"),
         DE_468  ("6447", "49HBZ_WUP",        "UB Wuppertal"),
@@ -78,7 +79,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         DE_82   ("6448", "49HBZ_UBA",        "RWTH Aachen"),
         DE_829  ("8056", "49HBZ_HSN",        "HS Niederrhein"),
         DE_832  ("6477", "49HBZ_THK",        "TH Köln"),
-        DE_836  ("6485", "49HBZ_FHM",        "FH Münster / Kunstakademie Münster"), // DE-836 = FH, DE-Mue301 = Kunstakademie
+        DE_836  ("6485", "49HBZ_FHM",        "FH Münster / Kunstakademie Münster"),       // DE-836 = FH, DE-Mue301 = Kunstakademie
         DE_956  ("6483", "49HBZ_EVH",        "Evangelische HS Rheinland-Westfalen-Lippe"),
         DE_A96  ("6444", "49HBZ_FHA",        "FHB Aachen"),
         DE_Bi10 ("6450", "49HBZ_HBI",        "HS Bielefeld"),
@@ -89,7 +90,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         DE_Due62("6455", "49HBZ_HSD",        "HS Düsseldorf"),
         DE_Hag4 ("6461", "49HBZ_FSW",        "FH Hagen / Südwestfalen"),
         DE_Kn185("6473", "49HBZ_KHM",        "Kunsthochschule für Medien Köln"),
-        DE_Kn38 ("6460", "49HBZ_HMT",        "HS für Musik und Tanz, Köln"),        // DE-Kn38 = HfMt, DE-Kn38-T = Zentrum für Zeitgenössischen Tanz
+        DE_Kn38 ("6460", "49HBZ_HMT",        "HS für Musik und Tanz, Köln"),              // DE-Kn38 = HfMt, DE-Kn38-T = Zentrum für Zeitgenössischen Tanz
         DE_Kn41 ("6478", "49HBZ_ZBS",        "Deutsche Sporthochschule Köln"),
         DE_Kob7 ("8057", "49HBZ_UKO",        "UB Koblenz");
         // checkstyle-disable-end
