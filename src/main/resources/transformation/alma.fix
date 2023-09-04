@@ -1956,6 +1956,8 @@ do list(path: "880??", "var": "$i")
         end
       elsif any_equal("@linkage.tag", "246")
         set_field("@key", "titleOther")
+      elsif any_equal("@linkage.tag", "249")
+        set_field("@key", "compilationTitle")
       elsif any_equal("@linkage.tag", "250")
         set_field("@key", "editionStatement")
       elsif any_equal("@linkage.tag", "264")
