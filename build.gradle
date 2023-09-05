@@ -37,6 +37,7 @@ dependencies {
     }
 
     implementation "com.fasterxml.jackson.core:jackson-databind:${versions.jackson}"
+    implementation "com.github.samtools:htsjdk:${versions.htsjdk}"
     implementation "commons-cli:commons-cli:${versions['commons-cli']}"
     implementation "commons-io:commons-io:${versions['commons-io']}"
     implementation "junit:junit:${versions.junit}"

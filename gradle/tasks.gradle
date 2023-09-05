@@ -58,17 +58,18 @@ file('src/conf').eachDir {
     }
 }
 
-def execTask = { name, main ->
+[
+    'bgzf'             : 'util.BGZF',
+    'filter'           : 'filter.Main',
+    'sisis-supplement' : 'util.SisisSupplement',
+    'transformation'   : 'Main',
+    'verify-links'     : 'function.VerifyLinks'
+].each { name, main ->
     task(taskName('exec', [name]), type: JavaExec, group: 'Exec', description: 'Execute ' + main + '.') {
         classpath = sourceSets.main.runtimeClasspath
-        mainClass = main
+        mainClass = "${project.group}.${main}"
     }
 }
-
-execTask('filter', "${project.group}.filter.Main")
-execTask('sisis-supplement', "${project.group}.util.SisisSupplement")
-execTask('transformation', "${project.group}.Main")
-execTask('verify-links', "${project.group}.function.VerifyLinks")
 
 def (matrixPairs, matrixProduct, matrixMultiply) = [[], []]
 testMatrix.each { key, list ->
