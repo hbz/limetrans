@@ -113,7 +113,7 @@ test {
     }
 
     jvmArgs = lmdbJvmArgs
-    maxHeapSize = '10G'
+    maxHeapSize = '8G'
     maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
 
     passSystemProperties(systemProperties)

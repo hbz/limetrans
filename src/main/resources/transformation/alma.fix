@@ -12,7 +12,7 @@ do once()
   include("./maps/alma-type-periodical.fix")
 
   put_filemap("./maps/alma-hbz-to-zdb.tsv.gz", "alma-zdb-to-hbz", sep_char: " ", key_column: "1", value_column: "0")
-  put_filemap("./maps/alma-rvk-to-taxonomy.tsv.gz", "alma-rvk-to-taxonomy", sep_char: "\t")
+  hbz.limetrans.function.PutLmdbMap("./maps/alma-rvk-to-taxonomy.lmdb.gz", "alma-rvk-to-taxonomy")
 end
 
 hbz.limetrans.function.DropLocal()

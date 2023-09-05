@@ -6,16 +6,26 @@ import org.lmdbjava.EnvFlags;
 import org.lmdbjava.EnvInfo;
 import org.lmdbjava.Stat;
 import org.lmdbjava.Txn;
+import org.metafacture.io.FileCompression;
 import org.metafacture.metamorph.api.helpers.AbstractReadOnlyMap;
 
 import java.io.Closeable;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.UncheckedIOException;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 
 public final class LMDB extends AbstractReadOnlyMap<String, String> implements AutoCloseable, Closeable {
 
     private static final int SIZE = 10_000;
+
+    private static final String EXTENSION = ".lmdb";
 
     private static final Charset CHARSET = Charset.defaultCharset();
 
@@ -28,7 +38,34 @@ public final class LMDB extends AbstractReadOnlyMap<String, String> implements A
         final File file = new File(aPath);
         final boolean readonly = file.exists();
 
-        mEnv = Env.open(file,
+        final File realFile;
+
+        if (aPath.endsWith(EXTENSION)) {
+            realFile = file;
+        }
+        else if (readonly) {
+            try {
+                final Path tempFile = Files.createTempFile(file.getName(), EXTENSION);
+
+                realFile = tempFile.toFile();
+                realFile.deleteOnExit();
+
+                try (
+                    InputStream stream = new FileInputStream(aPath);
+                    InputStream decompressor = FileCompression.AUTO.createDecompressor(stream, true)
+                ) {
+                    Files.copy(decompressor, tempFile, StandardCopyOption.REPLACE_EXISTING);
+                }
+            }
+            catch (final IOException e) {
+                throw new UncheckedIOException(e);
+            }
+        }
+        else {
+            throw new IllegalArgumentException("Writing to compressed file not supported (yet).");
+        }
+
+        mEnv = Env.open(realFile,
                 readonly ? 0 : SIZE,
                 EnvFlags.MDB_NOLOCK,
                 EnvFlags.MDB_NOSUBDIR,
