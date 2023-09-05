@@ -61,6 +61,7 @@ file('src/conf').eachDir {
 [
     'bgzf'             : 'util.BGZF',
     'filter'           : 'filter.Main',
+    'lmdb'             : 'util.LMDB',
     'sisis-supplement' : 'util.SisisSupplement',
     'transformation'   : 'Main',
     'verify-links'     : 'function.VerifyLinks'

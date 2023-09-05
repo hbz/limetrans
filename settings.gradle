@@ -16,6 +16,7 @@ gradle.rootProject {
             'jackson'       : '2.13.4.2',
             'jdk'           : '17',
             'junit'         : '4.13.1',
+            'lmdb'          : '0.8.3',
             'log4j'         : '2.17.1',
             'metafacture'   : '5.6.0',
             'metafix'       : '0.6.1'

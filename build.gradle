@@ -15,6 +15,15 @@ def passSystemProperties = {
     }
 }
 
+// https://github.com/lmdbjava/lmdbjava/issues/42
+def lmdbJvmArgs = [
+    '--add-opens=java.base/java.nio=ALL-UNNAMED',
+    '--add-opens=java.base/sun.nio.ch=ALL-UNNAMED',
+
+    // Required for ElasticsearchIndexerTest: ShardNotFoundException[no such shard]
+    '--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED'
+]
+
 apply from: 'gradle/tasks.gradle'
 
 repositories {
@@ -45,6 +54,7 @@ dependencies {
     implementation "org.apache.logging.log4j:log4j-core:${versions.log4j}"
     implementation "org.apache.logging.log4j:log4j-slf4j-impl:${versions.log4j}"
     implementation "org.elasticsearch:elasticsearch:${versions.elasticsearch}"
+    implementation "org.lmdbjava:lmdbjava:${versions.lmdb}"
 }
 
 sourceSets {
@@ -89,6 +99,7 @@ tasks.withType(JavaExec) {
         languageVersion = java.toolchain.languageVersion
     }
 
+    jvmArgs = lmdbJvmArgs
     maxHeapSize = '8G'
 
     doFirst { passSystemProperties(systemProperties) }
@@ -101,6 +112,7 @@ test {
         events 'SKIPPED'
     }
 
+    jvmArgs = lmdbJvmArgs
     maxHeapSize = '10G'
     maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
 
