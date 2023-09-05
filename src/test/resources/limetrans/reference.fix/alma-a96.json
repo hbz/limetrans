@@ -34621,3 +34621,141 @@
   } ],
   "TypeMedia" : "Elektronische Ressource"
 }
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "ExtendedType" : [ "Datenbank", "Bibliografie" ],
+  "TypeHeading" : [ {
+    "term" : "Datenbank",
+    "identifier" : "(DE-588)4011119-2"
+  }, {
+    "term" : "Bibliografie",
+    "identifier" : "(DE-588)4006432-3"
+  } ],
+  "Country" : [ {
+    "countryISO" : "US"
+  } ],
+  "IdentifierDNB" : [ {
+    "identifierDNB" : "2056710-8"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT013136273",
+    "identifierHBZ" : "HT013136273"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "1368085745"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2056710-8"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "EBSCO Publishing" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource", "Datenbank" ],
+    "type" : [ "Bibliografie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2001" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource", "Datenbank" ],
+    "subject" : [ "Bibliographie", "Elektronische Publikation", "Wirtschaftswissenschaften" ]
+  },
+  "SubjectDNB" : [ {
+    "subject" : "300",
+    "subject" : "330"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "990114624740206441",
+    "identifierMMSIZ" : "991003362409706444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990114624740206441",
+    "identifierForTheRecord" : "(DE-600)2056710-8"
+  },
+  "DateFirst" : {
+    "date" : "2001"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Business source premier"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Ipswich, Mass" ],
+    "name" : [ "EBSCO Publ" ],
+    "chronology" : [ "2001-" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Ipswich, Mass."
+  } ],
+  "DateProper" : {
+    "date" : [ "2001-" ]
+  },
+  "Extent" : {
+    "extent" : "Online-Ressource"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "Nachgewiesen 1991/2001(2001) -"
+  },
+  "HoldingsStatement" : [ {
+    "note" : [ "Volltext nach Anmeldung" ],
+    "source" : "DE-829",
+    "sortIndicator" : "1"
+  } ],
+  "SupplementSpecialIssueEntry" : [ {
+    "publisherStatement" : "Ipswich, Mass. : EBSCO Publ., 2002-",
+    "physicalDescription" : "Online-Ressource",
+    "relationshipInformation" : "Supplement",
+    "title" : "Regional business news",
+    "controlNumber" : "(DE-600)2161607-3",
+    "identifierForLinkingEntry" : "(DE-600)2161607-3"
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "publisherStatement" : "Ipswich, Mass. : [Verlag nicht ermittelbar], 2006-",
+    "physicalDescription" : "CD-ROMs + DVDs",
+    "relationshipInformation" : "DVD-Ausg.",
+    "title" : "Business periodicals collection",
+    "controlNumber" : "(DE-600)2446849-6",
+    "identifierISSN" : "1543-2610",
+    "identifierForLinkingEntry" : "(DE-600)2446849-6"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://dbis.uni-regensburg.de/frontdoor.php?titel_id=1333",
+    "nonpublicnote" : "DBIS"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : "ZDB-4-BUH"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Bibliographie"
+  }, {
+    "subject" : "Elektronische Publikation"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990114624740206441"
+  }, {
+    "uid" : "(DE-605)HT013136273"
+  }, {
+    "uid" : "(DE-A96)991003362409706444"
+  }, {
+    "uid" : "(DE-A96)673768"
+  }, {
+    "uid" : "(DE-600)2056710-8"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "TitleOther" : {
+    "title" : [ "EBSCO business source premier" ]
+  },
+  "RSWK" : [ {
+    "subjectTopicName" : "Wirtschaftswissenschaften",
+    "combinedLabel" : "Wirtschaftswissenschaften",
+    "subjectIdentifier" : [ "(DE-588)4066528-8", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040665283", "http://viaf.org/viaf/sourceID/DNB|040665283" ],
+    "identifierGND" : [ "4066528-8" ]
+  } ]
+}
