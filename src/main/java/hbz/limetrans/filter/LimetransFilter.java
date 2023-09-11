@@ -158,7 +158,7 @@ public class LimetransFilter {
         final FileQueue inputQueue = new FileQueue(aProcessor, true, aInput);
 
         if (inputQueue.isEmpty()) {
-            throw new IllegalArgumentException("Could not process limetrans filter: no input specified.");
+            throw new IllegalArgumentException("Could not process Limetrans filter: no input specified.");
         }
 
         final JsonEncoder encoder = new JsonEncoder();

@@ -92,7 +92,7 @@ public class LimetransBaseTest extends AbstractLimetransTest {
         final Settings settings = loadSettings("input-queue-" + aName);
         final Throwable ex = Assert.assertThrows(IllegalArgumentException.class, () -> getLimetrans(settings));
 
-        Assert.assertEquals("Could not process limetrans: no input specified.", ex.getMessage());
+        Assert.assertEquals("Could not process Limetrans: no input specified.", ex.getMessage());
     }
 
     private void testInputQueueSize(final String aName, final int aSize) throws IOException {

@@ -18,7 +18,7 @@ public class LimetransFilterTest {
         final Throwable ex = Assert.assertThrows(IllegalArgumentException.class,
                 () -> process(LimetransFilter.any(), "missing-file"));
 
-        Assert.assertEquals("Could not process limetrans filter: no input specified.", ex.getMessage());
+        Assert.assertEquals("Could not process Limetrans filter: no input specified.", ex.getMessage());
     }
 
     @Test

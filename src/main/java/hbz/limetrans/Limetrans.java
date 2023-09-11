@@ -206,7 +206,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         mJsonPath = pathForType(outputSettings.get("json"));
 
         if (mFormetaPath == null && mJsonPath == null && mElasticsearchSettings == null) {
-            throw new IllegalArgumentException("Could not process limetrans: no output specified.");
+            throw new IllegalArgumentException("Could not process Limetrans: no output specified.");
         }
 
         final String defaultRulesPath;
@@ -257,7 +257,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         });
 
         if (mInputQueues.isEmpty()) {
-            throw new IllegalArgumentException("Could not process limetrans: no input specified.");
+            throw new IllegalArgumentException("Could not process Limetrans: no input specified.");
         }
     }
 

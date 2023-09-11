@@ -1,4 +1,4 @@
-# limetrans - Library Metadata Transformation
+# Limetrans - Library Metadata Transformation
 
 [![Travis CI](https://travis-ci.org/hbz/limetrans.svg)](https://travis-ci.org/hbz/limetrans)
 [![SonarCloud](https://sonarcloud.io/api/project_badges/measure?project=hbz.introx.direct%3Alimetrans&metric=alert_status)](https://sonarcloud.io/dashboard?id=hbz.introx.direct:limetrans)
@@ -48,7 +48,7 @@ Input is generally configured like this:
 
 ### Output
 
-By now, limetrans is written to be used with [Elasticsearch](https://www.elastic.co/). Therefore, the output object mainly contains an Elasticsearch configuration, besides a JSON output option.
+By now, Limetrans is written to be used with [Elasticsearch](https://www.elastic.co/). Therefore, the output object mainly contains an Elasticsearch configuration, besides a JSON output option.
 
 ```json
 "output": {
@@ -82,7 +82,7 @@ By now, limetrans is written to be used with [Elasticsearch](https://www.elastic
 "collection" : "choose-your-own-collection"
 ```
 
-Please find examples for the configuration of limetrans in the source code, e.g. [here](https://github.com/hbz/limetrans/blob/master/src/conf/dev/marc21-de836-index.json).
+Please find examples for the configuration of Limetrans in the [source code](https://github.com/hbz/limetrans/tree/master/src/conf).
 
 ## Setup project
 
@@ -108,7 +108,7 @@ Check with `curl -X GET http://localhost:9200/` if all is well.
 
 #### Configure Elasticsearch
 
-Currently, Elasticsearch is configured to run on a cluster named `elasticsearch-01`, see e.g. [here](https://github.com/hbz/limetrans/blob/master/src/conf/dev/marc21-de836-index.json#L14). Make sure you have accordingly configured the cluster name in `/etc/elasticsearch/elasticsearch.yml`.
+Make sure you have configured the cluster name in `/etc/elasticsearch/elasticsearch.yml` according to your Limetrans configuration.
 
 #### Optionally, you may want to install the [head plugin](https://mobz.github.io/elasticsearch-head/)
 

@@ -1,4 +1,4 @@
-# License of limetrans - Library Metadata Transformation
+# License of Limetrans - Library Metadata Transformation
 
     Copyright (C) 2017, hbz - Hochschulbibliothekszentrum NRW, Köln / Library Service Center NRW, Cologne, Germany
 

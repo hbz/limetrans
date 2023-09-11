@@ -133,16 +133,16 @@ public final class Main {
 
     private static Settings setup(final String[] aArgs) throws IOException {
         if (aArgs.length < 1) {
-            throw new IllegalArgumentException("Could not process limetrans: configuration missing.");
+            throw new IllegalArgumentException("Could not process Limetrans: configuration missing.");
         }
 
         if (aArgs.length > 1) {
-            throw new IllegalArgumentException("Could not process limetrans: too many arguments: " + Arrays.toString(aArgs));
+            throw new IllegalArgumentException("Could not process Limetrans: too many arguments: " + Arrays.toString(aArgs));
         }
 
         final String arg = aArgs[0].trim();
         if (arg.isEmpty()) {
-            throw new IllegalArgumentException("Could not process limetrans: empty configuration argument.");
+            throw new IllegalArgumentException("Could not process Limetrans: empty configuration argument.");
         }
 
         return Helpers.getEnumProperty("env", null, Env.ignore, LOGGER::info, null).settings(arg);
