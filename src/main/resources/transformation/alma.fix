@@ -1946,57 +1946,48 @@ do list(path: "880??", "var": "$i")
 
     if is_hash("@linkage")
       if any_equal("@linkage.tag", "100")
-        set_field("@key", "personalName")
+        copy_field("$i.a", "AlternateGraphicRepresentation[].$last.personalName")
       elsif any_equal("@linkage.tag", "110")
-        set_field("@key", "corporateName")
+        copy_field("$i.a", "AlternateGraphicRepresentation[].$last.corporateName")
       elsif any_equal("@linkage.tag", "245")
         if any_equal("$i.9", "F:359")
-          set_field("@key", "creatorStatement")
-          copy_field("$i.c", "@value")
+          copy_field("$i.c", "AlternateGraphicRepresentation[].$last.creatorStatement")
         elsif any_equal("$i.9", "F:335")
-          set_field("@key", "titleAddendum")
-          copy_field("$i.b", "@value")
+          copy_field("$i.b", "AlternateGraphicRepresentation[].$last.titleAddendum")
         else
-          set_field("@key", "titleStatement")
+          copy_field("$i.a", "AlternateGraphicRepresentation[].$last.titleStatement")
         end
       elsif any_equal("@linkage.tag", "246")
-        set_field("@key", "titleOther")
+        copy_field("$i.a", "AlternateGraphicRepresentation[].$last.titleOther")
       elsif any_equal("@linkage.tag", "249")
-        set_field("@key", "compilationTitle")
+        copy_field("$i.a", "AlternateGraphicRepresentation[].$last.compilationTitle")
       elsif any_equal("@linkage.tag", "250")
-        set_field("@key", "editionStatement")
+        copy_field("$i.a", "AlternateGraphicRepresentation[].$last.editionStatement")
       elsif any_equal("@linkage.tag", "264")
-        set_field("@key", "publicationStatement")
+        copy_field("$i.a", "@value")
+        if exists("$i.b")
+          paste("@value", "@value", "~: ", "$i.b", join_char: "")
+        end
+        if exists("$i.c")
+          paste("@value", "@value", "~, ", "$i.c", join_char: "")
+        end
+        move_field("@value", "AlternateGraphicRepresentation[].$last.publicationStatement")
       elsif any_equal("@linkage.tag", "490")
         if any_equal("$i.9", "F:455")
-          set_field("@key", "volumeDesignation")
-          copy_field("$i.v", "@value")
+          copy_field("$i.v", "AlternateGraphicRepresentation[].$last.volumeDesignation")
         else
-          set_field("@key", "seriesStatement")
+          copy_field("$i.a", "AlternateGraphicRepresentation[].$last.seriesStatement")
         end
       elsif any_equal("@linkage.tag", "500")
-        set_field("@key", "description")
+        copy_field("$i.a", "AlternateGraphicRepresentation[].$last.description")
       elsif any_equal("@linkage.tag", "610")
-        set_field("@key", "subjectHeading")
+        copy_field("$i.a", "AlternateGraphicRepresentation[].$last.subjectHeading")
       elsif any_equal("@linkage.tag", "650")
-        set_field("@key", "subjectHeading")
+        copy_field("$i.a", "AlternateGraphicRepresentation[].$last.subjectHeading")
       elsif any_equal("@linkage.tag", "700")
-        set_field("@key", "personalName")
+        copy_field("$i.a", "AlternateGraphicRepresentation[].$last.personalName")
       elsif any_equal("@linkage.tag", "710")
-        set_field("@key", "corporateName")
-      end
-
-      copy_field("@key", "AlternateGraphicRepresentation[].$last.key")
-
-      if exists("@value")
-        move_field("@value", "AlternateGraphicRepresentation[].$last.value")
-      else
-        copy_field("$i.a", "AlternateGraphicRepresentation[].$last.value")
-      end
-
-      if any_equal("@key", "publicationStatement")
-        copy_field("$i.b", "AlternateGraphicRepresentation[].$last.name")
-        copy_field("$i.c", "AlternateGraphicRepresentation[].$last.chronology")
+        copy_field("$i.a", "AlternateGraphicRepresentation[].$last.corporateName")
       end
 
       copy_field("@linkage.script", "AlternateGraphicRepresentation[].$last.scriptSource")
@@ -2004,7 +1995,6 @@ do list(path: "880??", "var": "$i")
       copy_field("@linkage.script", "AlternateGraphicRepresentation[].$last.script")
     end
 
-    remove_field("@key")
     remove_field("@linkage")
   end
 end

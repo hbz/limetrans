@@ -246,6 +246,125 @@
         }
       }
     },
+    "AlternateGraphicRepresentation": {
+      "properties": {
+        "compilationTitle": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "corporateName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "creatorStatement": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "editionStatement": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "personalName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "publicationStatement": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.publisher"
+          ]
+        },
+        "seriesStatement": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
+          ]
+        },
+        "subjectHeading": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "titleAddendum": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
+          ]
+        },
+        "titleOther": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        },
+        "titleStatement": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        },
+        "volumeDesignation": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
+          ]
+        }
+      }
+    },
     "ClassifierDigitization": {
       "properties": {
         "classifier": {
