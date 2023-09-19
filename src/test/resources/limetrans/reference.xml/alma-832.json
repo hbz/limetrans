@@ -216,3 +216,118 @@
   } ],
   "DEL" : "Y"
 }
+{
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : "[Red.: Gisela Lange]"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Festschrift", "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2006" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_THK",
+    "identifierMMS" : "990144760640206441",
+    "identifierMMSIZ" : "991006963919706477"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990144760640206441",
+    "identifierForTheRecord" : "(DE-605)HT014682469"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3931596338" ]
+  }, {
+    "identifierISBN" : [ "3931596338" ]
+  }, {
+    "identifierISBN" : [ "3931596338" ]
+  }, {
+    "identifierISBN" : [ "3931596338" ]
+  }, {
+    "identifierISBN" : [ "3931596338" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Schriftenverzeichnis Friedrich-Wilhelm Henning zum 75. Geburtstag"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Köln" ],
+    "chronology" : [ "2006" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2006" ]
+  },
+  "Extent" : {
+    "extent" : "52 S. : Ill."
+  },
+  "PersonContributor" : [ {
+    "personName" : "Lange, Gisela",
+    "personBio" : "1944-",
+    "personIdentifier" : [ "(DE-588)137655029" ],
+    "identifierGND" : [ "137655029" ]
+  }, {
+    "personName" : "Henning, Friedrich-Wilhelm",
+    "personBio" : "1931-2008",
+    "personIdentifier" : [ "(DE-588)119333287" ],
+    "identifierGND" : [ "119333287" ]
+  } ],
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Kleine Schriften der Universitäts- und Stadtbibliothek Köln" ]
+  }, {
+    "titleSuper" : [ "Kleine Schriften der Universitäts- und Stadtbibliothek Köln" ]
+  }, {
+    "titleSuper" : [ "Kleine Schriften der Universitäts- und Stadtbibliothek Köln" ]
+  }, {
+    "titleSuper" : [ "Kleine Schriften der Universitäts- und Stadtbibliothek Köln" ]
+  }, {
+    "titleSuper" : [ "Kleine Schriften der Universitäts- und Stadtbibliothek Köln" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "17" ]
+  }, {
+    "volumeDesignation" : [ "17" ]
+  }, {
+    "volumeDesignation" : [ "17" ]
+  }, {
+    "volumeDesignation" : [ "17" ]
+  }, {
+    "volumeDesignation" : [ "17" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://digitale-objekte.hbz-nrw.de/storage/2007/02/03/file_412/1736312.pdf",
+    "relatedto" : "Inhaltsverzeichnis"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Henning, Friedrich-Wilhelm"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "subject" : "BAA"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990144760640206441"
+  }, {
+    "uid" : "(DE-605)HT014682469"
+  }, {
+    "uid" : "(DE-832)991006963919706477"
+  }, {
+    "uid" : "(DE-832)293037"
+  } ],
+  "Item" : [ {
+    "callnumber" : "BAA1718"
+  }, {
+    "callnumber" : "63BAA1718"
+  } ],
+  "TitleOther" : {
+    "title" : [ "Friedrich-Wilhelm Henning zum 75. Geburtstag", "Friedrich-Wilhelm Henning zum 75. Geburtstag" ]
+  }
+}

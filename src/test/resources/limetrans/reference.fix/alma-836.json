@@ -247,6 +247,204 @@
 }
 {
   "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "ExtendedType" : [ "Lehrbuch" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
+  "TypeHeading" : [ {
+    "term" : "Lehrbuch",
+    "identifier" : "(DE-588)4123623-3"
+  } ],
+  "Country" : [ {
+    "countryISO" : "DE-BW"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT018902109",
+    "identifierHBZ" : "HT018902109"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "932023789"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Erwin Märtlbauer, Heinz Becker (Hg.)" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Lehrbuch", "Sammelwerk" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2016" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "person" : [ "Märtlbauer, Erwin", "Becker, Heinz (1948-)" ],
+    "subject" : [ "Milch", "Lebensmittelchemie" ]
+  },
+  "SubjectDNB" : [ {
+    "subject" : "630"
+  } ],
+  "SubjectRPB" : [ {
+    "subject" : "760"
+  }, {
+    "subject" : "850"
+  }, {
+    "subject" : "970"
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHM",
+    "identifierMMS" : "990210731060206441",
+    "identifierMMSIZ" : "991000350799706485"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990210731060206441",
+    "identifierForTheRecord" : "(DE-605)HT018902109"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3825286649" ]
+  }, {
+    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3825286649" ]
+  }, {
+    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3825286649" ]
+  }, {
+    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3825286649" ]
+  }, {
+    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3825286649" ]
+  }, {
+    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ]
+  }, {
+    "identifierISBN" : [ "3825286649" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Milchkunde und Milchhygiene"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Stuttgart" ],
+    "name" : [ "Verlag Eugen Ulmer" ],
+    "chronology" : [ "[2016]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Stuttgart"
+  } ],
+  "DateProper" : {
+    "date" : [ "[2016]" ]
+  },
+  "Extent" : {
+    "extent" : "368 Seiten : Illustrationen, Diagramme ; 24 cm x 17 cm"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "utb", "Agrarwissenschaften, Veterinärmedizin, Lebensmittelwissenschaften" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "8664" ]
+  } ],
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : "utb",
+    "title" : "Agrarwissenschaften, Veterinärmedizin, Lebensmittelwissenschaften",
+    "volume" : "8664"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Märtlbauer, Erwin"
+  }, {
+    "personName" : "Becker, Heinz",
+    "personBio" : "1948-",
+    "personIdentifier" : [ "(DE-588)1033629324" ],
+    "identifierGND" : [ "1033629324" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2017/02/07/file_10/7080672.pdf",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "V:DE-605",
+    "contact" : "X:migimw",
+    "format" : "application/pdf"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : "V:DE-605",
+    "contact" : "X:migimw",
+    "format" : "application/pdf"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990210731060206441"
+  }, {
+    "uid" : "(DE-605)HT018902109"
+  }, {
+    "uid" : "(DE-836)991000350799706485"
+  }, {
+    "uid" : "(OCoLC)932023789"
+  }, {
+    "uid" : "(DE-599)DNB1079232362"
+  } ],
+  "Item" : [ {
+    "callnumber" : "RRZ 137+1"
+  }, {
+    "callnumber" : "RRZ 137+2"
+  }, {
+    "callnumber" : "RRZ 137+4"
+  }, {
+    "callnumber" : "RRZ 137+3"
+  }, {
+    "callnumber" : "RRZ 137"
+  }, {
+    "identifier" : "DE-836",
+    "callnumber" : "RRZ 137+3",
+    "callnumber" : "0356674",
+    "shelfmark" : "Freihand_F"
+  }, {
+    "identifier" : "DE-836",
+    "callnumber" : "RRZ 137+4",
+    "callnumber" : "0356675",
+    "shelfmark" : "Freihand_F"
+  }, {
+    "identifier" : "DE-836",
+    "callnumber" : "RRZ 137+2",
+    "callnumber" : "0356673",
+    "shelfmark" : "Freihand_F"
+  }, {
+    "identifier" : "DE-836",
+    "callnumber" : "RRZ 137",
+    "callnumber" : "0333381",
+    "shelfmark" : "Freihand_F"
+  }, {
+    "identifier" : "DE-836",
+    "callnumber" : "RRZ 137+1",
+    "callnumber" : "0356213",
+    "shelfmark" : "Freihand_F"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : "Milch",
+    "combinedLabel" : "Milch",
+    "subjectIdentifier" : [ "(DE-588)4039264-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040392643", "(uri) http://viaf.org/viaf/sourceID/DNB|040392643" ],
+    "identifierGND" : [ "4039264-8" ]
+  }, {
+    "subjectTopicName" : "Lebensmittelchemie",
+    "combinedLabel" : "Lebensmittelchemie",
+    "subjectIdentifier" : [ "(DE-588)4034873-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040348733", "(uri) http://viaf.org/viaf/sourceID/DNB|040348733" ],
+    "identifierGND" : [ "4034873-8" ]
+  } ],
+  "Subject" : [ {
+    "subject" : "Milchhygiene"
+  }, {
+    "subject" : "Milchkunde"
+  }, {
+    "subject" : "Technologie der Milch"
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
   "CarrierType" : [ "Online-Ressource" ],
   "CurrentPublicationFrequency" : [ {
     "frequency" : "Eighteen no. a year"
@@ -441,6 +639,199 @@
     "subjectTopicName" : "Neuropsychology",
     "combinedLabel" : "Neuropsychology",
     "subjectIdentifier" : [ "(OCoLC)fst01036493" ]
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT021573674",
+    "identifierHBZ" : "HT021573674"
+  } ],
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2022" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Ur Rehman" ],
+    "subject" : [ "Electrical & Electronics Engineering" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHM",
+    "identifierMMS" : "99371734302206441",
+    "identifierPID" : "53798390670006441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99371734302206441",
+    "identifierForTheRecord" : "(DE-605)HT021573674"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9781119788829" ]
+  } ],
+  "IdentifierDOI" : [ {
+    "standardNumber" : "10.1002/9781119788829"
+  } ],
+  "Person" : [ {
+    "personName" : "Ur Rehman"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Interference Mitigation in Device-to-Device Communications"
+  } ],
+  "PublisherName" : [ {
+    "name" : [ "John Wiley & Sons, Inc" ],
+    "chronology" : [ "2022-03-18" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2022-03-18" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource"
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISBN" : "9781119788799"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119788829"
+  }, {
+    "publicnote" : "Wiley eBooks EBA bis 31.12.2023 (ZDB-35-Wiley-EBA) [Zugang für alle FH- und Kunstakademie-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=53798390670006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : "ZDB-35-Wiley-EBA"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99371734302206441"
+  }, {
+    "uid" : "(DE-605)HT021573674"
+  }, {
+    "uid" : "(hbzERes_EBA-Wiley)10.1002/9781119788829"
+  }, {
+    "uid" : "(DE-599)HBZHT021573674"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectPersonName" : "Electrical & Electronics Engineering",
+    "combinedLabel" : "Electrical & Electronics Engineering"
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT021864797",
+    "identifierHBZ" : "HT021864797"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : [ "Behavior, Ecology, and Conservation of an Iconic Species" ]
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Craig Packer" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2023" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Packer, Craig" ],
+    "subject" : [ "Lion / Behavior / Africa, East", "NATURE / Animals / Big Cats" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHM",
+    "identifierMMS" : "99372015733106441",
+    "identifierPID" : "53816391610006441",
+    "identifierPID" : "53816391670006441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99372015733106441",
+    "identifierForTheRecord" : "(DE-605)HT021864797"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9780691235950" ]
+  } ],
+  "IdentifierDOI" : [ {
+    "standardNumber" : "10.1515/9780691235950"
+  } ],
+  "Person" : [ {
+    "personName" : "Packer, Craig"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "The Lion"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Princeton, NJ" ],
+    "name" : [ "Princeton University Press" ],
+    "chronology" : [ "[2023]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : "Princeton, NJ"
+  } ],
+  "DateProper" : {
+    "date" : [ "[2023]" ]
+  },
+  "Extent" : {
+    "extent" : "1 online resource (376 p.) : 173 color illus. 5 tables"
+  },
+  "Abstract" : {
+    "abstract" : [ "An authoritative, accessible, and gorgeously illustrated exploration into the lives of these remarkable animalsLions are the only social cat. They hunt together, raise cubs together, and defend territories together against neighbors and strangers. Lions also rest atop their ecological pyramid, with profound impacts on competitors and prey alike, but their future is far from assured. Craig Packer interweaves his discoveries from more than forty years of research—including a substantial body of new findings—to provide an unforgettable portrait of the African lion. He shares insights into the intricacies of lion life from birth until death and describes efforts to conserve lions in an increasingly crowded continent. With a wealth of breathtaking photographs by Daniel Rosengren, The Lion sheds light on a host of intriguing scientific questions, such as why males have manes, why lions are social, how sociality limits and stabilizes lion populations, how close inbreeding affects lion health, why lions become man-eaters, how lions and people can best be protected from each other, and how to ensure the lion’s survival into the next century.Engagingly written by the world’s foremost expert on African lionsIntegrates a wealth of findings from two of the most comprehensive field studies on any animalFeatures hundreds of stunning photographs that capture a broad range of lion behaviors, ecological interactions, and conservation challengesBlends vivid field anecdotes and graphics to give the reader a sense of adventuring into the lion’s world" ]
+  },
+  "OnlineAccess" : [ {
+    "uri" : "https://doi.org/10.1515/9780691235950"
+  }, {
+    "uri" : "https://www.degruyter.com/isbn/9780691235950"
+  }, {
+    "uri" : "https://www.degruyter.com/document/cover/isbn/9780691235950/original",
+    "relatedto" : "Cover"
+  }, {
+    "publicnote" : "De Gruyter E-Books EBA bis 31.12.2023 (ZDB-23-DGG-eba) [Zugang für alle FH- und Kunstakademie-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=53816391610006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  }, {
+    "publicnote" : "De Gruyter E-Books EBA bis 31.12.2023 (ZDB-23-DGG-eba) [Zugang für alle FH- und Kunstakademie-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=53816391670006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : "ZDB-23-DGG-eba"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99372015733106441"
+  }, {
+    "uid" : "(DE-605)HT021864797"
+  }, {
+    "uid" : "(hbzERes_EBA-deGruyter)9780691235950"
+  }, {
+    "uid" : "(DE-599)HBZHT021864797"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : "Lion / Behavior / Africa, East",
+    "combinedLabel" : "Lion / Behavior / Africa, East"
+  }, {
+    "subjectTopicName" : "NATURE / Animals / Big Cats",
+    "combinedLabel" : "NATURE / Animals / Big Cats"
   } ]
 }
 {

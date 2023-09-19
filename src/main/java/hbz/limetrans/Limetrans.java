@@ -34,7 +34,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
-import java.util.function.UnaryOperator;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -135,7 +134,6 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     }
 
     private static final boolean METAFIX_IS_DEFAULT = false;
-    private static final boolean ALMA_HYBRID_DEFAULT = false;
 
     public enum Type {
 
@@ -214,9 +212,9 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         if (aSettings.containsSetting("alma")) {
             mFilter = LimetransFilter.all(filterKey);
 
-            final String rulesSuffix = initializeAlma(aSettings);
+            initializeAlma(aSettings);
 
-            defaultRulesPath = Helpers.CLASSPATH_PREFIX + "/transformation/alma" + rulesSuffix + "%s";
+            defaultRulesPath = Helpers.CLASSPATH_PREFIX + "/transformation/alma%s";
         }
         else {
             mFilter = new LimetransFilter(
@@ -312,10 +310,6 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         loadMap("alma-alias", "alias");
         loadMap("alma-item-callnumber", "callnumber");
 
-        final String rulesSuffix;
-
-        final UnaryOperator<String> sourceSystemFilter = i -> "035  .a=~^\\(" + i + "\\)";
-
         // POR$$A=memberCode
         final LimetransFilter availableForFilter = LimetransFilter.all()
             .add("POR  .A=" + memberCode);
@@ -324,10 +318,6 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         final LimetransFilter memberFilter = LimetransFilter.any()
             .add("MBD  .M|POR  .M=" + memberCode)
             .add(almaSettings.getAsArray("filter"));
-
-        // MBD$$M=49HBZ_NETWORK AND ITM$$M=memberCode
-        final LimetransFilter itemFilter = LimetransFilter.all()
-            .add("MBD  .M=" + networkCode, "ITM  .M=" + memberCode);
 
         // DEL??.a=Y OR leader@05=d
         final LimetransFilter deletionFilter = LimetransFilter.any()
@@ -346,66 +336,35 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
                 "temporaryCallnumberLocation"
         ).forEach(k -> mVars.put("regexp." + k, regexp.get(k, regexpDefault.getOrDefault(k, ".*"))));
 
-        final Consumer<String> setDeletion = deletionLiteral -> {
-            if (deletionLiteral != null) {
-                final String[] deletion = almaDeletion.split("=");
+        final String deletionLiteral = almaSettings.get("deletion-literal",
+                mElasticsearchSettings != null ? mElasticsearchSettings.get("deletionLiteral") : null);
 
-                mVars.put("deletion-enabled", "true");
-                mVars.put("deletion-literal", deletionLiteral);
-                mVars.put("deletion-source", deletion[0]);
-                mVars.put("deletion-value", deletion[1]);
+        if (deletionLiteral != null) {
+            final String[] deletion = almaDeletion.split("=");
 
-                memberFilter
-                    .add(deletionFilter);
-            }
-            else {
-                mVars.put("deletion-enabled", "false");
-                mVars.put("deletion-literal", "-");
-                mVars.put("deletion-source", "-");
-                mVars.put("deletion-value", "-");
+            mVars.put("deletion-enabled", "true");
+            mVars.put("deletion-literal", deletionLiteral);
+            mVars.put("deletion-source", deletion[0]);
+            mVars.put("deletion-value", deletion[1]);
 
-                mFilter
-                    .add(noDeletionFilter);
-            }
-        };
-
-        if (almaSettings.getAsBoolean("supplements", false)) {
-            rulesSuffix = "-supplements";
-
-            mFilter
-                .add(LimetransFilter.any()
-                        .add(availableForFilter)
-                        .add(LimetransFilter.all()
-                            .add(memberFilter)
-                            .add(itemFilter)))
-                .add(sourceSystemFilter.apply(catalogid.getIsil()));
-
-            setDeletion.accept(null);
+            memberFilter
+                .add(deletionFilter);
         }
         else {
-            setDeletion.accept(almaSettings.get("deletion-literal",
-                        mElasticsearchSettings != null ? mElasticsearchSettings.get("deletionLiteral") : null));
+            mVars.put("deletion-enabled", "false");
+            mVars.put("deletion-literal", "-");
+            mVars.put("deletion-source", "-");
+            mVars.put("deletion-value", "-");
 
-            rulesSuffix = "";
-
-            if (almaSettings.getAsBoolean("hybrid", ALMA_HYBRID_DEFAULT)) {
-                mFilter
-                    .add(memberFilter
-                            .add(availableForFilter
-                                .add(sourceSystemFilter.apply("EXLCZ"))))
-                    .add(LimetransFilter.any()
-                            .add(sourceSystemFilter.apply("DE-600"))
-                            .add(LimetransFilter.none()
-                                .add(itemFilter)));
-            }
-            else {
-                mFilter
-                    .add(memberFilter
-                            .add(availableForFilter));
-            }
+            mFilter
+                .add(noDeletionFilter);
         }
 
-        return rulesSuffix;
+        mFilter
+            .add(memberFilter
+                    .add(availableForFilter));
+
+        return "";
     }
 
     public void process() {

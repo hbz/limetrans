@@ -37,26 +37,6 @@ public class AlmaTransformationTest extends LimetransTransformationTest {
     }
 
     @Test
-    public void testAlmaA96Supplements() throws IOException {
-        testAlmaEqualsReference("a96-supplements");
-    }
-
-    @Test
-    public void testAlma468Supplements() throws IOException {
-        testAlmaEqualsReference("468-supplements");
-    }
-
-    @Test
-    public void testAlma832Supplements() throws IOException {
-        testAlmaEqualsReference("832-supplements");
-    }
-
-    @Test
-    public void testAlma836Supplements() throws IOException {
-        testAlmaEqualsReference("836-supplements");
-    }
-
-    @Test
     public void testAlmaA96Postprocess() throws IOException {
         testAlmaEqualsReference("a96-postprocess");
     }
