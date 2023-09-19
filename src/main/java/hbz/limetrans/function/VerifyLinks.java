@@ -148,7 +148,13 @@ public class VerifyLinks implements FixFunction {
                 final Value.Hash hash = value.asHash();
 
                 eachValue(aSource != null ? aRecord : hash, aSource != null ? aSource : field, idValue -> {
-                    if (aPredicate.test(idValue.asString())) {
+                    final boolean verified = idValue.<Boolean>extractType((m, c) -> m
+                        .ifArray(a -> c.accept(a.stream().anyMatch(v -> aPredicate.test(v.asString()))))
+                        .ifString(s -> c.accept(aPredicate.test(s)))
+                        .orElse(v -> c.accept(false))
+                    );
+
+                    if (verified) {
                         hash.add(VERIFIED_PREFIX + suffix, idValue);
                         aCounter.computeIfAbsent(path, k -> new LongAdder()).increment();
                     }
