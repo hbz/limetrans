@@ -1698,14 +1698,6 @@
           "copy_to": [
             "bib.identifierAuthority=mabwhole"
           ]
-        },
-        "verifiedSuperIdentifier": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false,
-          "copy_to": [
-            "bib.identifierAuthority=mabwhole"
-          ]
         }
       }
     },
