@@ -1678,12 +1678,16 @@ do list(path: "POR  ", "var": "$i")
         end
         move_field("@license", "@info.$append")
       end
+      copy_field("$i.l", "@info.$append")
       unless is_empty("@info")
         join_field("@info", "; ")
         unless exists("@publicnote")
           add_field("@publicnote", "Volltext")
+          replace_all("@info", "^Volltext(?:: |$)", "")
         end
-        paste("@publicnote", "@publicnote", "~ [", "@info", "~]", join_char: "")
+        unless is_empty("@info")
+          paste("@publicnote", "@publicnote", "~ [", "@info", "~]", join_char: "")
+        end
       end
       remove_field("@info")
       move_field("@publicnote", "OnlineAccess[].$last.publicnote")
