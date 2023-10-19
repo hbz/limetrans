@@ -404,11 +404,8 @@ include("./marc/creatorStatement.fix")
 
 include("./marc/dc_format.fix")
 include("./marc/dc_type.fix")
-if exists("@language_long")
-  copy_field("@language_long", "dc.language[]")
-else
-  add_field("dc.language[]", "keine Angabe")
-end
+include("./marc/dc_language.fix")
+
 # MARC/260, MARC/264
 unless exists("@date")
   set_array("@date")
