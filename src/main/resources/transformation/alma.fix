@@ -984,47 +984,9 @@ do list(path: "249??.a", "var": "$i")
   end
 end
 
-# MARC/600, MARC/610, MARC/611, MARC/648, MARC/650, MARC/651
-set_array("RSWK[]")
-do list(path: "600??", "var": "$i")
-  call_macro("alma-subject-personal-name")
-end
-do list(path: "610??", "var": "$i")
-  call_macro("alma-subject-corporate-name")
-end
-do list(path: "611??", "var": "$i")
-  call_macro("alma-subject-meeting-name")
-end
-do list(path: "648??", "var": "$i")
-  call_macro("alma-subject-chronological-term")
-end
-do list(path: "650??", "var": "$i")
-  call_macro("alma-subject-topical-term")
-end
-do list(path: "651??", "var": "$i")
-  call_macro("alma-subject-geographic-name")
-end
-# MARC/689
-do list(path: "689??", "var": "$i")
-  if any_equal("$i.D", "p")
-    call_macro("alma-subject-personal-name")
-  elsif any_equal("$i.D", "b")
-    call_macro("alma-subject-corporate-name")
-  elsif any_equal("$i.D", "f")
-    call_macro("alma-subject-meeting-name")
-  elsif any_equal("$i.D", "s")
-    call_macro("alma-subject-topical-term")
-  elsif any_equal("$i.D", "g")
-    call_macro("alma-subject-geographic-name")
-  end
-end
-uniq("RSWK[]")
-do list(path: "RSWK[]", "var": "$i")
-  copy_field("$i.subjectGenre", "introx.subject[].$append")
-  #copy_field("$i.subjectGeoName", "introx.subject[].$append")
-  copy_field("$i.subjectTitleName", "introx.subject[].$append")
-  copy_field("$i.subjectUnit", "introx.subject[].$append")
-end
+# MARC/600, MARC/610, MARC/611, MARC/648, MARC/650, MARC/651, MARC/689
+include("./marc/rswk.fix")
+
 # MARC/653
 set_array("Subject[]")
 do list(path: "653??", "var": "$i")
