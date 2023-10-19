@@ -1,0 +1,7 @@
+# MARC/245, MARC/249
+set_array("TitleAddendum.title[]")
+do list(path: "24[59]??.b", "var": "$i")
+  replace_all("$i", "\\s?[./]\\s?$", "")
+  call_macro("remove-nonsort", source: "$i")
+  copy_field("$i", "TitleAddendum.title[].$append")
+end

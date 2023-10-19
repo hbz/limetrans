@@ -379,12 +379,7 @@ end
 uniq("TitleWork[]")
 
 # MARC/245, MARC/249
-set_array("TitleAddendum.title[]")
-do list(path: "24[59]??.b", "var": "$i")
-  replace_all("$i", "\\s?[./]\\s?$", "")
-  call_macro("remove-nonsort", source: "$i")
-  copy_field("$i", "TitleAddendum.title[].$append")
-end
+include("./marc/titleAddendum.fix")
 
 do list(path: "245??.n", "var": "$i")
   unless exists("VolumeDesignation.volumeDesignation")
@@ -396,6 +391,7 @@ do list(path: "245??.n", "var": "$i")
     copy_field("$i", "VolumeDesignation.volumeDesignation")
   end
 end
+
 # MARC/773
 set_array("@host_callnumber")
 set_array("RecordIdentifierSuper[]")
