@@ -1,0 +1,25 @@
+# MARC/260, MARC/264
+do list(path: "260[ 23] |264[ 23][ 1]", "var": "$i")
+  add_field("PublisherName[].$append.__dummy__", "")
+  set_array("PublisherName[].$last.place[]")
+  do list(path: "$i.a", "var": "$j")
+    replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
+    copy_field("$j", "PublisherName[].$last.place[].$append")
+  end
+  set_array("PublisherName[].$last.name[]")
+  do list(path: "$i.b", "var": "$j")
+    replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
+    call_macro("remove-nonsort", source: "$j")
+    copy_field("$j", "PublisherName[].$last.name[].$append")
+  end
+  set_array("PublisherName[].$last.chronology[]")
+  do list(path: "$i.c", "var": "$j")
+    replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
+    copy_field("$j", "PublisherName[].$last.chronology[].$append")
+    unless exists("DateProper.date[]")
+      set_array("DateProper.date[]")
+    end
+    copy_field("$j", "DateProper.date[].$append")
+  end
+  copy_field("$i.3", "PublisherName[].$last.period")
+end
