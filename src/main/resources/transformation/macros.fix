@@ -12,6 +12,23 @@ do put_macro("copy-substring", length: "1")
   move_field("@copy-substring", "$[target]")
 end
 
+do put_macro("online-access")
+  add_field("OnlineAccess[].$append.__dummy__", "")
+  call_macro("copy-first-item", source: "$i.u", target: "OnlineAccess[].$last.uri")
+  call_macro("copy-first-item", source: "$i.x", target: "OnlineAccess[].$last.nonpublicnote")
+  call_macro("copy-first-item", source: "$i.z", target: "OnlineAccess[].$last.publicnote")
+  copy_field("$i.3", "OnlineAccess[].$last.relatedto")
+  copy_field("$i.m", "$i.@contact")
+  set_array("OnlineAccess[].$last.contact")
+  do list(path: "$i.@contact", "var": "$j")
+    split_field("$j", ";")
+    do list(path: "$j", "var": "$k")
+      copy_field("$k", "OnlineAccess[].$last.contact.$append")
+    end
+  end
+  copy_field("$i.q", "OnlineAccess[].$last.format")
+end
+
 do put_macro("remove-nonsort")
   if is_array("$[source]")
     call_macro("remove-nonsort-string", source: "$[source].*")

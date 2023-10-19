@@ -764,16 +764,11 @@ include("./marc/linkingEntries.fix")
 include("./marc/seriesAddedEntryUniformTitle.fix")
 
 # MARC/856
-set_array("OnlineAccess[]")
-do list(path: "856??", "var": "$i")
-  if hbz.limetrans.function.MemberLocal("$i")
-    call_macro("alma-online-access")
-  end
-end
+include("./marc/onlineAccess.fix")
 # MARC/H56
 do list(path: "H56??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
-    call_macro("alma-online-access")
+    call_macro("online-access")
     add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
   end
 end
