@@ -625,33 +625,7 @@ join_field("ChronologyAndEnumeration.value", " ; ")
 copy_field("3621 .a", "ChronologyAndEnumeration.unformattedValue[]")
 
 # MARC/490
-set_array("TitleSuper[]")
-set_array("TitleSuperVolumeDesignation[]")
-do list(path: "490[01] ", "var": "$i")
-  add_field("TitleSuper[].$append.__dummy__", "")
-  set_array("TitleSuper[].$last.titleSuper[]")
-  do list(path: "$i.a", "var": "$j")
-    copy_field("$j", "@490_a")
-    replace_all("@490_a", "^[©]|\\s?[,.:;/=]?$", "")
-    call_macro("remove-nonsort", source: "@490_a")
-    move_field("@490_a", "TitleSuper[].$last.titleSuper[].$append")
-  end
-  add_field("TitleSuperVolumeDesignation[].$append.__dummy__", "")
-  set_array("TitleSuperVolumeDesignation[].$last.volumeDesignation[]")
-  do list(path: "$i.v", "var": "$j")
-    replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")
-    copy_field("$j", "TitleSuperVolumeDesignation[].$last.volumeDesignation[].$append")
-  end
-  unless exists("830??")
-    unless exists("SeriesAddedEntryUniformTitle[]")
-      set_array("SeriesAddedEntryUniformTitle[]")
-    end
-    add_field("SeriesAddedEntryUniformTitle[].$append.__dummy__", "")
-    call_macro("remove-nonsort", source: "$i.a")
-    copy_field("$i.a", "SeriesAddedEntryUniformTitle[].$last.title")
-    copy_field("$i.v", "SeriesAddedEntryUniformTitle[].$last.volume")
-  end
-end
+include("./marc/titleSuper.fix")
 
 # MARC/989
 set_array("@description")
