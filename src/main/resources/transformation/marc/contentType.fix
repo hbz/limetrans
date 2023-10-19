@@ -1,0 +1,9 @@
+# MARC/336
+set_array("ContentType[]")
+do list(path: "336??.b", "var": "$i")
+  do list(path: "$i", "var": "$j")
+    lookup("$j", "content-type-code", delete: "true")
+    copy_field("$j", "ContentType[].$append")
+  end
+end
+uniq("ContentType[]")
