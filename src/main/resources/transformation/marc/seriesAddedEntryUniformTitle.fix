@@ -1,0 +1,16 @@
+# MARC/830
+unless exists("SeriesAddedEntryUniformTitle[]")
+  set_array("SeriesAddedEntryUniformTitle[]")
+end
+do list(path: "830 ?", "var": "$i")
+  add_field("SeriesAddedEntryUniformTitle[].$append.__dummy__", "")
+  call_macro("remove-nonsort", source: "$i.a")
+  copy_field("$i.a", "SeriesAddedEntryUniformTitle[].$last.title")
+  copy_field("$i.n", "SeriesAddedEntryUniformTitle[].$last.number")
+  copy_field("$i.p", "SeriesAddedEntryUniformTitle[].$last.part")
+  copy_field("$i.v", "SeriesAddedEntryUniformTitle[].$last.volume")
+  do list(path: "$i.w", "var": "$j")
+    copy_field("$j", "SeriesAddedEntryUniformTitle[].$last.designation")
+  end
+end
+uniq("SeriesAddedEntryUniformTitle[]")
