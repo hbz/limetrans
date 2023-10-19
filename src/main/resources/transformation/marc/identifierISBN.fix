@@ -1,0 +1,14 @@
+# MARC/020
+set_array("IdentifierISBN[]")
+do list(path: "020  ", "var": "$i")
+  if exists("$i.a")
+    add_field("IdentifierISBN[].$append.__dummy__", "")
+    set_array("IdentifierISBN[].$last.identifierISBN[]")
+    copy_field("$i.a", "IdentifierISBN[].$last.identifierISBN[].$append")
+    copy_field("$i.c", "IdentifierISBN[].$last.identifierISBN[].$append")
+    do list(path: "$i.q", "var": "$j")
+      replace_all("$j", "^\\(|\\s?[):;,]\\s?$", "")
+      copy_field("$j", "IdentifierISBN[].$last.identifierISBN[].$append")
+    end
+  end
+end
