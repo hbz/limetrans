@@ -1,0 +1,44 @@
+# MARC/084
+set_array("SubjectDNB[]")
+set_array("SubjectNWBIB[]")
+set_array("SubjectRPB[]")
+set_array("SubjectRVK[]")
+set_array("introx.taxonomy[]")
+set_array("introx.taxonomyRVK[]")
+do list(path: "084  ", "var": "$i")
+  if any_equal("$i.2", "ghbs")
+    copy_field("$i.a", "@SubjectGHBLocal.$append")
+  elsif any_equal("$i.2", "nwbib")
+    add_field("SubjectNWBIB[].$append.__dummy__", "")
+    copy_field("$i.a", "SubjectNWBIB[].$last.subject")
+  elsif any_equal("$i.2", "rpb")
+    add_field("SubjectRPB[].$append.__dummy__", "")
+    if any_equal("@current_isil", "DE-107")
+      set_array("SubjectRPB[].$last.subject")
+      do list(path: "$i.a", "var": "$j")
+        copy_field("$j", "@subjectRPB")
+        lookup("@subjectRPB", "alma-rpb-to-taxonomy", delete: "true")
+        move_field("@subjectRPB", "introx.taxonomy[].$append")
+        lookup("$j", "alma-rpb-to-taxonomy")
+        copy_field("$j", "SubjectRPB[].$last.subject.$append")
+      end
+    else
+      copy_field("$i.a", "SubjectRPB[].$last.subject")
+    end
+  elsif any_equal("$i.2", "rvk")
+    add_field("SubjectRVK[].$append.__dummy__", "")
+    set_array("SubjectRVK[].$last.subject")
+    do list(path: "$i.a", "var": "$j")
+      copy_field("$j", "@subjectRVK")
+      lookup("@subjectRVK", "alma-rvk-to-taxonomy", delete: "true")
+      if exists("@subjectRVK")
+        paste("@subjectRVK", "$j", "@subjectRVK")
+      end
+      move_field("@subjectRVK", "introx.taxonomyRVK[].$append")
+      copy_field("$j", "SubjectRVK[].$last.subject.$append")
+    end
+  elsif any_equal("$i.2", "sdnb")
+    add_field("SubjectDNB[].$append.__dummy__", "")
+    copy_field("$i.a", "SubjectDNB[].$last.subject")
+  end
+end
