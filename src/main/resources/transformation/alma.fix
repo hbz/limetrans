@@ -407,26 +407,7 @@ include("./marc/dc_type.fix")
 include("./marc/dc_language.fix")
 
 # MARC/260, MARC/264
-unless exists("@date")
-  set_array("@date")
-end
-copy_field("260[ 23] .c", "@date.$append")
-do list(path: "264[ 23]1.c", "var": "$i")
-  copy_field("$i", "@date.$append")
-end
-copy_field("@date[12]", "@date.$append")
-split_field("@date", "[,-]")
-flatten("@date")
-set_array("dc.date[]")
-do list(path: "@date", "var": "$i")
-  replace_all("$i", ".*?(\\d{4}).*", "$1")
-  if any_match("$i", "\\d{4}")
-    unless any_equal("$i", "9999")
-      copy_field("$i", "dc.date[].$append")
-    end
-  end
-end
-uniq("dc.date[]")
+include("./marc/dc_date.fix")
 
 set_array("introx.access[]")
 set_array("introx.branch[]")
