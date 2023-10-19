@@ -3,7 +3,7 @@ set_array("@person")
 do list(path: "[17]00[013] ", "var": "$i")
   if exists("$i.[4e]")
     if none_match("$i.[4e]", "(?:[Aa]ut|[Cc]re).*")
-      include("./_person.fix")
+      include("./marc/_person.fix")
     end
   end
 end

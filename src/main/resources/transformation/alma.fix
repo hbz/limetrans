@@ -529,32 +529,7 @@ end
 include("./marc/person.fix")
 
 # MARC/110, MARC/111, MARC/710, MARC/711
-set_array("CorporateBody[]")
-do list(path: "[17]1[01][012] ", "var": "$i")
-  add_field("CorporateBody[].$append.__dummy__", "")
-  do list(path: "$i.a", "var": "$j")
-    replace_all("$j", "[.]$", "")
-    call_macro("remove-nonsort", source: "$j")
-    copy_field("$j", "CorporateBody[].$last.corporateBodyName")
-  end
-  set_array("CorporateBody[].$last.corporateBodyNameUnit[]")
-  do list(path: "$i.b", "var": "$j")
-    replace_all("$j", "[.]$", "")
-    copy_field("$j", "CorporateBody[].$last.corporateBodyNameUnit[].$append")
-  end
-  copy_field("$i.d", "CorporateBody[].$last.corporateBodyDate[]")
-  copy_field("$i.g", "CorporateBody[].$last.corporateBodyOther[]")
-  copy_field("$i.n", "CorporateBody[].$last.corporateBodyNumber[]")
-  set_array("CorporateBody[].$last.corporateBodyIdentifier[]")
-  set_array("CorporateBody[].$last.identifierGND[]")
-  do list(path: "$i.0", "var": "$j")
-    if any_match("$j", "\\(DE-588\\).*")
-      copy_field("$j", "CorporateBody[].$last.corporateBodyIdentifier[].$append")
-      replace_all("$j", "^\\(DE-588\\)", "")
-      copy_field("$j", "CorporateBody[].$last.identifierGND[].$append")
-    end
-  end
-end
+include("./marc/corporateBody.fix")
 
 # MARC/111
 do list(path: "111[012] .a", "var": "$i")
