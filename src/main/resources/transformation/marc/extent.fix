@@ -1,0 +1,65 @@
+# MARC/300
+set_array("@300a")
+set_array("@300c")
+do list(path: "300  ", "var": "$i")
+  copy_field("$i.a", "@300a.$append")
+  do list(path: "$i.b", "var": "$j")
+    replace_all("$j", "\\s?[:;+(]?$", "")
+    copy_field("$j", "@300b")
+  end
+  copy_field("$i.c", "@300c.$append")
+  do list(path: "$i.e", "var": "$j")
+    replace_all("$j", "[.]?\\s?\\(?$", "")
+    copy_field("$j", "@300e")
+  end
+end
+if exists("@300a.1")
+  copy_field("@300a.1", "@300a1")
+  replace_all("@300a1", "\\s?[:;+(]?$", "")
+end
+if exists("@300a.2")
+  copy_field("@300a.2", "@300a2")
+  replace_all("@300a2", "\\s?[:;+)]?$", "")
+end
+if exists("@300c.1")
+  copy_field("@300c.1", "@300c1")
+  replace_all("@300c1", "[.]?\\s?[:;+(]?$", "")
+end
+if exists("@300c.2")
+  copy_field("@300c.2", "@300c2")
+  replace_all("@300c2", "[.]?\\s?[:;+)]?$", "")
+end
+if exists("@300a2")
+  if exists("@300c2")
+    paste("@300a2_punct", "@300a2", "~ ; ", join_char: "")
+  else
+    paste("@300a2_punct", "@300a2", "~)", join_char: "")
+  end
+end
+if exists("@300b")
+  if exists("@300a1")
+    paste("@300b_punct", "~ : ", "@300b", join_char: "")
+  else
+    copy_field("@300b", "@300b_punct")
+  end
+end
+if exists("@300c1")
+  if exists("@300a1|@300b")
+    paste("@300c1_punct", "~ ; ", "@300c1", join_char: "")
+  else
+    copy_field("@300c1", "@300c1_punct")
+  end
+end
+copy_field("@300c2", "@300c2_punct")
+if exists("300  .e")
+  if exists("@300[ac]1|@300b")
+    if exists("@300[ac]2")
+      paste("@300e_punct", "~ ; ", "@300e", "~ (", join_char: "")
+    else
+      paste("@300e_punct", "~ ; ", "@300e", join_char: "")
+    end
+  else
+    copy_field("@300e", "@300e_punct")
+  end
+end
+paste("Extent.extent", "@300a1", "@300b_punct", "@300c1_punct", "@300e_punct", "@300a2_punct", "@300c2_punct", join_char: "")
