@@ -505,13 +505,7 @@ include("./marc/identifierISSN.fix")
 
 # MARC/024
 include("./marc/identifierISMN.fix")
-set_array("IdentifierDOI[]")
-do list(path: "0247?", "var": "$i")
-  if any_equal("$i.2", "doi")
-    add_field("IdentifierDOI[].$append.__dummy__", "")
-    copy_field("$i.a", "IdentifierDOI[].$last.standardNumber")
-  end
-end
+include("./marc/identifierDOI.fix")
 
 # MARC/028
 set_array("IdentifierSheetMusic[]")
