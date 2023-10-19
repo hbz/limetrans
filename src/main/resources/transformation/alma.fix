@@ -526,19 +526,7 @@ do list(path: "029[ab]?", "var": "$i")
 end
 
 # MARC/100
-set_array("@person")
-set_array("introx.person[]")
-do list(path: "100[013] ", "var": "$i")
-  if exists("$i.[4e]")
-    if any_match("$i.[4e]", "(?:[Aa]ut|[Cc]re).*")
-      include("./alma/personCreator.fix")
-    end
-  else
-    include("./alma/personCreator.fix")
-  end
-end
-uniq("@person")
-move_field("@person", "Person[]")
+include("./marc/person.fix")
 
 # MARC/110, MARC/111, MARC/710, MARC/711
 set_array("CorporateBody[]")
@@ -916,16 +904,7 @@ do list(path: "HoldingsStatement[]", "var": "$i")
 end
 
 # MARC/100, MARC/700
-set_array("@person")
-do list(path: "[17]00[013] ", "var": "$i")
-  if exists("$i.[4e]")
-    if none_match("$i.[4e]", "(?:[Aa]ut|[Cc]re).*")
-      include("./alma/personCreator.fix")
-    end
-  end
-end
-uniq("@person")
-move_field("@person", "PersonContributor[]")
+include("./marc/personContributor.fix")
 
 # MARC/588
 set_array("SourceOfDescriptionNote[]")
@@ -1188,19 +1167,7 @@ elsif any_equal("@LeaderPos05", "d")
 end
 
 # MARC/700
-set_array("@person")
-do list(path: "700[013] ", "var": "$i")
-  if exists("$i.[4e]")
-    if any_match("$i.[4e]", "(?:[Aa]ut|[Cc]re).*")
-      include("./alma/personCreator.fix")
-    end
-  else
-    include("./alma/personCreator.fix")
-  end
-end
-uniq("@person")
-uniq("introx.person[]")
-move_field("@person", "PersonCreator[]")
+include("./marc/personCreator.fix")
 
 # MARC/246
 set_array("TitleOther.title[]")

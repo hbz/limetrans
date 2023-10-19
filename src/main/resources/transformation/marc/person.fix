@@ -1,0 +1,14 @@
+# MARC/100
+set_array("@person")
+set_array("introx.person[]")
+do list(path: "100[013] ", "var": "$i")
+  if exists("$i.[4e]")
+    if any_match("$i.[4e]", "(?:[Aa]ut|[Cc]re).*")
+      include("./_person.fix")
+    end
+  else
+    include("./_person.fix")
+  end
+end
+uniq("@person")
+move_field("@person", "Person[]")

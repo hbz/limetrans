@@ -1,0 +1,14 @@
+# MARC/700
+set_array("@person")
+do list(path: "700[013] ", "var": "$i")
+  if exists("$i.[4e]")
+    if any_match("$i.[4e]", "(?:[Aa]ut|[Cc]re).*")
+      include("./_person.fix")
+    end
+  else
+    include("./_person.fix")
+  end
+end
+uniq("@person")
+uniq("introx.person[]")
+move_field("@person", "PersonCreator[]")
