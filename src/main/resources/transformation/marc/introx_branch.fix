@@ -1,0 +1,36 @@
+set_array("introx.branch[]")
+# MARC/ITM
+set_array("@current_library")
+do list(path: "ITM  ", "var": "$i")
+  if any_equal("$i.M", "$[member]")
+    copy_field("$i.w", "@current_library.$append")
+  end
+end
+lookup("@current_library.*", "alma-library-to-branch-$[isil]", delete: "true")
+uniq("@current_library")
+move_field("@current_library", "introx.branch[].$append")
+# MARC/ITM
+set_array("@current_location")
+do list(path: "ITM  ", "var": "$i")
+  if any_equal("$i.M", "$[member]")
+    copy_field("$i.x", "@current_location.$append")
+    if all_match("$i.x", "^$[regexp.suppressedLocation]$")
+      add_field("@suppressed", "true")
+    else
+      add_field("@unsuppressed", "true")
+    end
+  end
+end
+# MARC/H52
+do list(path: "H52??", "var": "$i")
+  if any_match("$i.8", ".*$[institution-code]")
+    if all_match("$i.c", "^$[regexp.suppressedLocation]$")
+      add_field("@suppressed", "true")
+    else
+      add_field("@unsuppressed", "true")
+    end
+  end
+end
+lookup("@current_location.*", "alma-location-to-branch-$[isil]", delete: "true")
+uniq("@current_location")
+move_field("@current_location", "introx.branch[].$append")
