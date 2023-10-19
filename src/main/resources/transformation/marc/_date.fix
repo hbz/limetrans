@@ -1,0 +1,11 @@
+# MARC/008
+set_array("@date")
+copy_field("@008Pos07", "@date.$append")
+if any_equal("@type", "CR")
+  if none_equal("@008Pos06", "n")
+    copy_field("@008Pos07", "@date1")
+  end
+  if any_match("@008Pos06", "[^cn]")
+    copy_field("@008Pos11", "@date2")
+  end
+end
