@@ -409,14 +409,9 @@ include("./marc/dc_language.fix")
 # MARC/260, MARC/264
 include("./marc/dc_date.fix")
 
-set_array("introx.access[]")
+include("./marc/introx_access.fix")
 set_array("introx.branch[]")
 set_array("introx.carrier[]")
-if any_equal("@facet_format", "Online-Ressource")
-  add_field("introx.access[].$append", "online")
-else
-  add_field("introx.access[].$append", "local")
-end
 # MARC/ITM
 set_array("@current_library")
 do list(path: "ITM  ", "var": "$i")

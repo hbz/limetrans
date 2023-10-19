@@ -1,0 +1,6 @@
+set_array("introx.access[]")
+if any_equal("@facet_format", "Online-Ressource")
+  add_field("introx.access[].$append", "online")
+else
+  add_field("introx.access[].$append", "local")
+end
