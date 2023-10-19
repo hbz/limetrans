@@ -1,0 +1,6 @@
+# MARC/245
+set_array("CreatorStatement.creatorStatement[]")
+do list(path: "245[01]?.c", "var": "$i")
+  replace_all("$i", "[.]$", "")
+  copy_field("$i", "CreatorStatement.creatorStatement[].$append")
+end

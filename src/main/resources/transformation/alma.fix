@@ -400,11 +400,7 @@ lookup("@host_callnumber.*", "alma-alias")
 lookup("@host_callnumber.*", "alma-item-callnumber", delete: "true")
 
 # MARC/245
-set_array("CreatorStatement.creatorStatement[]")
-do list(path: "245[01]?.c", "var": "$i")
-  replace_all("$i", "[.]$", "")
-  copy_field("$i", "CreatorStatement.creatorStatement[].$append")
-end
+include("./marc/creatorStatement.fix")
 
 if exists("@facet_format")
   uniq("@facet_format")
