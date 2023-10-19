@@ -504,11 +504,7 @@ include("./marc/identifierISBN.fix")
 include("./marc/identifierISSN.fix")
 
 # MARC/024
-set_array("IdentifierISMN[]")
-do list(path: "0242?", "var": "$i")
-  add_field("IdentifierISMN[].$append.__dummy__", "")
-  copy_field("$i.a", "IdentifierISMN[].$last.identifierISMN")
-end
+include("./marc/identifierISMN.fix")
 set_array("IdentifierDOI[]")
 do list(path: "0247?", "var": "$i")
   if any_equal("$i.2", "doi")
