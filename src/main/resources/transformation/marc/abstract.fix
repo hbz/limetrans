@@ -1,0 +1,4 @@
+# MARC/520
+copy_field("5203 .[ab]", "Abstract.abstract[]")
+copy_field("5201 .[ab]", "Recension.abstract[]")
+copy_field("520  .[ab]", "Summary.abstract[]")
