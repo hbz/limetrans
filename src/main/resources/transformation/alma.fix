@@ -28,16 +28,7 @@ include("./marc/_facet_format.fix")
 include("./marc/contentType.fix")
 
 # MARC/338
-set_array("CarrierType[]")
-do list(path: "338??.b", "var": "$i")
-  copy_field("$i", "@carriertype_code")
-  lookup("@carriertype_code", "carrier-type-code", delete: "true")
-  move_field("@carriertype_code", "CarrierType[].$append")
-  copy_field("$i", "@carriertype_facetcode")
-  lookup("@carriertype_facetcode", "carrier-type-facet-code", delete: "true")
-  move_field("@carriertype_facetcode", "@facet_format.$append")
-end
-uniq("CarrierType[]")
+include("./marc/carrierType.fix")
 
 # MARC/964
 set_array("@facet_type")
