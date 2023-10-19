@@ -1,0 +1,10 @@
+# MARC/264
+do list(path: "264?[13]", "var": "$i")
+  add_field("PublicationPlace[].$append.__dummy__", "")
+  set_array("PublicationPlace[].$last.printingPlace")
+  do list(path: "$i.a", "var": "$j")
+    replace_all("$j", " :$", "")
+    copy_field("$j", "PublicationPlace[].$last.printingPlace.$append")
+  end
+end
+uniq("PublicationPlace[]")
