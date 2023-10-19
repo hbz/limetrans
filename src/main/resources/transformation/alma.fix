@@ -403,12 +403,7 @@ lookup("@host_callnumber.*", "alma-item-callnumber", delete: "true")
 include("./marc/creatorStatement.fix")
 
 include("./marc/dc_format.fix")
-if exists("@facet_type")
-  uniq("@facet_type")
-  copy_field("@facet_type", "dc.type[]")
-else
-  add_field("dc.type[]", "keine Angabe")
-end
+include("./marc/dc_type.fix")
 if exists("@language_long")
   copy_field("@language_long", "dc.language[]")
 else

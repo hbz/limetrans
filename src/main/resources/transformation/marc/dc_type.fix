@@ -1,0 +1,6 @@
+if exists("@facet_type")
+  uniq("@facet_type")
+  copy_field("@facet_type", "dc.type[]")
+else
+  add_field("dc.type[]", "keine Angabe")
+end
