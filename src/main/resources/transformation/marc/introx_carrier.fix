@@ -1,0 +1,10 @@
+set_array("introx.carrier[]")
+if exists("@facet_format")
+  do list(path: "@facet_format", "var": "$i")
+    unless any_equal("$i", "Online-Ressource")
+      copy_field("$i", "introx.carrier[].$append")
+    end
+  end
+else
+  add_field("introx.carrier[]", "keine Angabe")
+end
