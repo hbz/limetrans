@@ -972,15 +972,7 @@ end
 include("./marc/personCreator.fix")
 
 # MARC/246
-set_array("TitleOther.title[]")
-do list(path: "246??.a", "var": "$i")
-  do list(path: "$i", "var": "$j")
-    replace_all("$j", "[.]$", "")
-    call_macro("remove-nonsort", source: "$j")
-    copy_field("$j", "TitleOther.title[].$append")
-  end
-end
-uniq("TitleOther.title[]")
+include("./marc/titleOther.fix")
 
 # MARC/249
 set_array("CompilationTitle.title[]")
