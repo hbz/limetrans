@@ -1,0 +1,6 @@
+# MARC/250
+set_array("Edition.edition[]")
+do list(path: "250  .a", "var": "$i")
+  replace_all("$i", "\\s?[=/]$", "")
+  copy_field("$i", "Edition.edition[].$append")
+end
