@@ -17,9 +17,7 @@ do list(path: "$[source][ 0]?", "var": "$i")
   copy_field("$i.z", "$[target][].$last.identifierISBN")
   set_array("$[target][].$last.identifierForLinkingEntry")
   do list(path: "$i.w", "var": "$j")
-    if any_match("$j", "\\((?:$[catalogid]|DE-600)\\).*")
-      copy_field("$j", "$[target][].$last.identifierForLinkingEntry.$append")
-    end
+    copy_field("$j", "$[target][].$last.identifierForLinkingEntry.$append")
   end
 end
 uniq("$[target][]")
