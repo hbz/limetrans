@@ -393,21 +393,8 @@ do list(path: "245??.n", "var": "$i")
 end
 
 # MARC/773
+include("./marc/recordIdentifierSuper.fix")
 set_array("@host_callnumber")
-set_array("RecordIdentifierSuper[]")
-set_array("SortableVolumeDesignation[]")
-do list(path: "7730?", "var": "$i")
-  if exists("$i.q")
-    unless exists("@facet_type")
-      set_array("@facet_type")
-    end
-    add_field("@facet_type.$append", "Teil eines Werkes")
-    add_field("SortableVolumeDesignation[].$append.__dummy__", "")
-    copy_field("$i.q", "SortableVolumeDesignation[].$last.volumeDesignation")
-  end
-  add_field("RecordIdentifierSuper[].$append.__dummy__", "")
-  copy_field("$i.w", "RecordIdentifierSuper[].$last.recordIdentifierSuper")
-end
 copy_field("7731?.w", "@host_callnumber.$append")
 lookup("@host_callnumber.*", "alma-alias")
 lookup("@host_callnumber.*", "alma-item-callnumber", delete: "true")
