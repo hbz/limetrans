@@ -1,0 +1,3 @@
+# MARC/500
+set_array("Description[]")
+copy_field("500  .a", "Description[].$append.description")

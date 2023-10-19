@@ -645,8 +645,7 @@ do list(path: "989  ", "var": "$i")
 end
 filter("@description", "^$[regexp.description]$")
 # MARC/500
-set_array("Description[]")
-copy_field("500  .a", "Description[].$append.description")
+include("./marc/description.fix")
 move_field("@description", "Description[].$append.description")
 copy_field("@sisis_supplement", "@sisis_supplement-0600")
 lookup("@sisis_supplement-0600", "sisis-supplement-0600", delete: "true")
