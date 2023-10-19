@@ -1,0 +1,10 @@
+# MARC/022
+set_array("IdentifierISSN[]")
+do list(path: "022? ", "var": "$i")
+  add_field("IdentifierISSN[].$append.__dummy__", "")
+  do list(path: "$i.a", "var": "$j")
+    copy_field("$j", "IdentifierISSN[].$last.identifierISSN")
+    hbz.limetrans.function.ISSN("$j")
+    move_field("$j", "IdentifierISSN[].$last.identifierISSNNormalized")
+  end
+end
