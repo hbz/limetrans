@@ -1690,7 +1690,11 @@ do list(path: "POR  ", "var": "$i")
         end
       end
       remove_field("@info")
-      move_field("@publicnote", "OnlineAccess[].$last.publicnote")
+      if any_equal("@current_isil", "DE-1866")
+        remove_field("@publicnote")
+      else
+        move_field("@publicnote", "OnlineAccess[].$last.publicnote")
+      end
       move_field("@uri", "OnlineAccess[].$last.uri")
       add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
       add_field("@unsuppressed", "true")
