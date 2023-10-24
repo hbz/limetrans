@@ -531,10 +531,12 @@ elsif any_equal("@type__008Pos30|@type__008Pos31", "Mu#c")
 elsif any_match("@006Pos00__006Pos13|@006Pos00__006Pos14", "[cdij]#c")
   add_field("@facet_type.$append", "Konferenzschrift")
 end
-if any_match("@LeaderPos07", "[adm]")
+if any_match("@LeaderPos07", "[dm]")
   if none_equal("@LeaderPos19", "a")
     add_field("@facet_type.$append", "Monographie")
   end
+elsif any_equal("@LeaderPos07", "a")
+  add_field("@facet_type.$append", "Teil eines Werkes")
 end
 if any_match("@LeaderPos06|@006Pos00", "[cdj]")
   add_field("@facet_type.$append", "Musikalia")
