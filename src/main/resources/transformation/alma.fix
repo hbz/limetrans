@@ -1,4 +1,4 @@
-do once()
+do once("setup")
   include("./macros.fix")
   include("./macros/alma.fix")
 
@@ -168,17 +168,6 @@ include("./marc/_date.fix")
 
 vacuum()
 
-# MARC/MBD
-do list(path: "MBD  ", "var": "$i")
-  if any_equal("$i.M", "$[member]")
-    copy_field("$i.i", "@mmsiz")
-  end
-end
-
-# MARC/001
-call_macro("alma-mms-to-isil", source: "001", target: "@isil")
-call_macro("alma-mms-to-isil", source: "@mmsiz", target: "@isiliz")
-
 # MARC/981
 do list(path: "981  .a", "var": "$i") # SISIS CATKey
   if any_match("$i", "\\($[isil]\\).*")
@@ -263,7 +252,8 @@ do list(path: "035  .a", "var": "$i")
 end
 uniq("IdentifierHBZ[]")
 
-paste("@mmsid", "~(", "@isil", "~)", "001", join_char: "")
+# MARC/001, MARC/MBD
+call_macro("alma-mms-and-isil")
 
 if exists("@hbzid")
   paste("@id", "@hbzid", "$[id-suffix]", join_char: "")
@@ -439,7 +429,7 @@ add_field("IdentifierAlma.identifierMember", "$[member]")
 copy_field("001", "IdentifierAlma.identifierMMS")
 copy_field("@mmsiz", "IdentifierAlma.identifierMMSIZ")
 
-copy_field("@mmsid", "RecordIdentifier.identifierForTheIndex")
+call_macro("alma-index-identifier")
 copy_field("@id", "RecordIdentifier.identifierForTheRecord")
 
 copy_field("@sisis_supplement", "@sisis_supplement-0010")
@@ -963,9 +953,9 @@ uniq("Item[]")
 
 # MARC/DEL
 if any_equal("$[deletion-source]", "$[deletion-value]")
-  add_field("$[deletion-literal]", "$[deletion-value]")
+  call_macro("alma-deletion")
 elsif any_equal("@LeaderPos05", "d")
-  add_field("$[deletion-literal]", "$[deletion-value]")
+  call_macro("alma-deletion")
 end
 
 # MARC/700

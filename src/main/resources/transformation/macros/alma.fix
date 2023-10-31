@@ -1,3 +1,24 @@
+do put_macro("alma-deletion")
+  add_field("$[deletion-literal]", "$[deletion-value]")
+end
+
+do put_macro("alma-index-identifier")
+  copy_field("@mmsid", "RecordIdentifier.identifierForTheIndex")
+end
+
+do put_macro("alma-mms-and-isil")
+  do list(path: "MBD  ", "var": "$i")
+    if any_equal("$i.M", "$[member]")
+      copy_field("$i.i", "@mmsiz")
+    end
+  end
+
+  call_macro("alma-mms-to-isil", source: "001", target: "@isil")
+  call_macro("alma-mms-to-isil", source: "@mmsiz", target: "@isiliz")
+
+  paste("@mmsid", "~(", "@isil", "~)", "001", join_char: "")
+end
+
 do put_macro("alma-mms-to-isil")
   copy_field("$[source]", "@alma-mms-to-isil")
   parse_text("@alma-mms-to-isil", ".*(.{4})$")

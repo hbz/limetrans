@@ -1,0 +1,34 @@
+do once("deletion")
+  include("./macros/alma.fix")
+
+  do put_macro("deletion")
+    call_macro("alma-deletion")
+    call_macro("alma-mms-and-isil")
+    call_macro("alma-index-identifier")
+    retain("$[deletion-literal]", "RecordIdentifier")
+  end
+end
+
+if any_equal("$[deletion-source]", "$[deletion-value]")
+  call_macro("deletion")
+elsif any_match("leader", "^.{5}d.*")
+  call_macro("deletion")
+elsif any_equal("MBD  .M", "$[member]")
+  include("./alma.fix")
+elsif any_equal("POR  .M", "$[member]")
+  include("./alma.fix")
+else
+  do list(path: "POR  ", "var": "$i")
+    if any_equal("$i.A", "$[member]")
+      add_field("@available_for", "true")
+    end
+  end
+
+  if exists("@available_for")
+    include("./alma.fix")
+  elsif str_equal("$[deletion-fallback]", "true")
+    call_macro("deletion")
+  else
+    reject()
+  end
+end

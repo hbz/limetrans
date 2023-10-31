@@ -1,249 +1,32 @@
 {
-  "collection" : "DE-468",
-  "dc" : {
-    "format" : [ "keine Angabe" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "keine Angabe" ],
-    "date" : [ "2011" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "carrier" : [ "keine Angabe" ],
-    "person" : [ "Klemp, Stefan" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_FHM",
-    "identifierMMS" : "990005255180306447"
-  },
+  "DEL" : "Y",
   "RecordIdentifier" : {
-    "identifierForTheIndex" : "(DE-468)990005255180306447",
-    "identifierForTheRecord" : "(DE-468)990005255180306447"
-  },
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "978-3-8375-0663-1" ]
-  } ],
-  "Person" : [ {
-    "personName" : "Klemp, Stefan"
-  } ],
-  "TitleStatement" : [ {
-    "titleMain" : "\"Nicht ermittelt\" : Polizeibataillone und die Nachkriegsjustiz ; ein Handbuch"
-  } ],
-  "Edition" : {
-    "edition" : [ "2., erw. und überarb" ]
-  },
-  "PublisherName" : [ {
-    "place" : [ "Essen" ],
-    "name" : [ "Klartext-Verl." ],
-    "chronology" : [ "2011" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2011" ]
-  },
-  "xbib" : [ {
-    "uid" : "(DE-468)990005255180306447"
-  }, {
-    "uid" : "BC-00338878"
-  }, {
-    "uid" : "(Aleph)000525518WUP40-Aleph"
-  }, {
-    "uid" : "(DE-576)999999999"
-  } ],
-  "DEL" : "Y"
+    "identifierForTheIndex" : "(DE-468)990005255180306447"
+  }
 }
 {
-  "collection" : "DE-A96",
-  "TitleAddendum" : {
-    "title" : [ "EMedien 6-2012" ]
-  },
-  "dc" : {
-    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "keine Angabe" ]
-  },
-  "introx" : {
-    "access" : [ "online" ],
-    "carrier" : [ "Elektronische Ressource" ],
-    "provenance" : [ "Ebook-Paket" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_FHM",
-    "identifierMMS" : "991000065939706444"
-  },
+  "DEL" : "Y",
   "RecordIdentifier" : {
-    "identifierForTheIndex" : "(DE-A96)991000065939706444",
-    "identifierForTheRecord" : "(DE-A96)991000065939706444"
-  },
-  "Language" : [ {
-    "languageSource" : "und"
-  } ],
-  "TitleStatement" : [ {
-    "titleMain" : "UTB-studi-E-Book"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "Stuttgart" ],
-    "name" : [ "UTB" ]
-  } ],
-  "Description" : [ {
-    "description" : "Ebook-Paket"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-A96)991000065939706444"
-  }, {
-    "uid" : "(DE-A96)410543-49hbz_fha"
-  }, {
-    "uid" : "410543"
-  } ],
-  "TypeMedia" : "Elektronische Ressource",
-  "DEL" : "Y"
+    "identifierForTheIndex" : "(DE-A96)991000065939706444"
+  }
 }
 {
-  "collection" : "DE-A96",
-  "dc" : {
-    "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "Englisch" ],
-    "date" : [ "2013" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ],
-    "person" : [ "Beatrice Alemagna" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_FHM",
-    "identifierMMS" : "991004562349606444"
-  },
+  "DEL" : "Y",
   "RecordIdentifier" : {
-    "identifierForTheIndex" : "(DE-A96)991004562349606444",
-    "identifierForTheRecord" : "(DE-A96)991004562349606444"
-  },
-  "Language" : [ {
-    "language" : "Englisch",
-    "languageSource" : "eng"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "978-3407754271" ]
-  } ],
-  "Person" : [ {
-    "personName" : "Beatrice Alemagna"
-  } ],
-  "TitleStatement" : [ {
-    "titleMain" : "Das wundervolle Fluffipuff: Fünffarbiges Bilderbuch mit Ausklappseite"
-  } ],
-  "Edition" : {
-    "edition" : [ "Lizenzausgabe" ]
-  },
-  "PublisherName" : [ {
-    "name" : [ "Beltz & Gelberg" ]
-  } ],
-  "HostItemEntry" : [ {
-    "part" : "p:48 Seiten"
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-A96)991004562349606444"
-  } ],
-  "DEL" : "Y"
+    "identifierForTheIndex" : "(DE-A96)991004562349606444"
+  }
 }
 {
-  "collection" : "DE-465",
-  "dc" : {
-    "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "Deutsch" ],
-    "date" : [ "2021", "2019" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ],
-    "person" : [ "Reger, Jo [Herausgeber]" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_FHM",
-    "identifierMMS" : "99203866538906446"
-  },
+  "DEL" : "Y",
   "RecordIdentifier" : {
-    "identifierForTheIndex" : "(DE-465)99203866538906446",
-    "identifierForTheRecord" : "(DE-465)99203866538906446"
-  },
-  "Language" : [ {
-    "language" : "Deutsch",
-    "languageSource" : "ger"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "978-1-138-30604-2" ]
-  } ],
-  "Person" : [ {
-    "personName" : "Reger, Jo [Herausgeber]"
-  } ],
-  "TitleStatement" : [ {
-    "titleMain" : "Nevertheless they persisted : feminisms and continued resistance in the U.S. women's movement"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "New York" ],
-    "name" : [ "Routledge" ],
-    "chronology" : [ "2019" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2019" ]
-  },
-  "xbib" : [ {
-    "uid" : "(DE-465)99203866538906446"
-  }, {
-    "uid" : "HT019870046"
-  } ],
-  "DEL" : "Y"
+    "identifierForTheIndex" : "(DE-465)99203866538906446"
+  }
 }
 {
-  "collection" : "DE-465",
-  "dc" : {
-    "format" : [ "Gedruckte Ressource" ],
-    "type" : [ "Monographie" ],
-    "language" : [ "Deutsch" ],
-    "date" : [ "2021", "2013" ]
-  },
-  "introx" : {
-    "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ],
-    "person" : [ "Veit, Vivien" ]
-  },
-  "IdentifierAlma" : {
-    "identifierMember" : "49HBZ_FHM",
-    "identifierMMS" : "99203913838706446"
-  },
+  "DEL" : "Y",
   "RecordIdentifier" : {
-    "identifierForTheIndex" : "(DE-465)99203913838706446",
-    "identifierForTheRecord" : "(DE-465)99203913838706446"
-  },
-  "Language" : [ {
-    "language" : "Deutsch",
-    "languageSource" : "ger"
-  } ],
-  "IdentifierISBN" : [ {
-    "identifierISBN" : [ "978-3-631-63463-9" ]
-  } ],
-  "Person" : [ {
-    "personName" : "Veit, Vivien"
-  } ],
-  "TitleStatement" : [ {
-    "titleMain" : "Die gesetzliche Konzeption der Bestechungsdelikte : zugleich ein Vorschlag für eine künftige Fassung der §§ 331 ff. StGB"
-  } ],
-  "PublisherName" : [ {
-    "place" : [ "Frankfurt am Main" ],
-    "name" : [ "Lang" ],
-    "chronology" : [ "2013" ]
-  } ],
-  "DateProper" : {
-    "date" : [ "2013" ]
-  },
-  "HostItemEntry" : [ {
-    "part" : "p:192 S."
-  } ],
-  "xbib" : [ {
-    "uid" : "(DE-465)99203913838706446"
-  }, {
-    "uid" : "HT017565347"
-  } ],
-  "DEL" : "Y"
+    "identifierForTheIndex" : "(DE-465)99203913838706446"
+  }
 }
 {
   "ContentType" : [ "Text" ],

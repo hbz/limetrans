@@ -213,9 +213,9 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         if (aSettings.containsSetting("alma")) {
             mFilter = LimetransFilter.all(filterKey);
 
-            initializeAlma(aSettings);
+            final String infix = initializeAlma(aSettings);
 
-            defaultRulesPath = Helpers.CLASSPATH_PREFIX + "/transformation/alma%s";
+            defaultRulesPath = Helpers.CLASSPATH_PREFIX + "/transformation/alma" + infix + "%s";
         }
         else {
             mFilter = new LimetransFilter(
@@ -347,12 +347,18 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
             final String[] deletion = almaDeletion.split("=");
 
             mVars.put("deletion-enabled", "true");
+            mVars.put("deletion-fallback", String.valueOf(almaSettings.getAsBoolean("deletion-fallback", true)));
             mVars.put("deletion-literal", deletionLiteral);
             mVars.put("deletion-source", deletion[0]);
             mVars.put("deletion-value", deletion[1]);
 
-            memberFilter
-                .add(deletionFilter);
+            if (mType == Type.METAMORPH || almaSettings.containsSetting("filter")) {
+                memberFilter
+                    .add(deletionFilter);
+            }
+            else {
+                return "-deletion";
+            }
         }
         else {
             mVars.put("deletion-enabled", "false");
