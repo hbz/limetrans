@@ -625,7 +625,7 @@ join_field("ChronologyAndEnumeration.value", " ; ")
 copy_field("3621 .a", "ChronologyAndEnumeration.unformattedValue[]")
 
 # MARC/490
-include("./marc/titleSuper.fix")
+include("./marc/seriesStatement.fix")
 
 # MARC/989
 set_array("@description")
@@ -1150,6 +1150,7 @@ retain(
   "SecondaryEditionPublicationDate[]",
   "SecondaryEditionTitleSuper[]",
   "SeriesAddedEntryUniformTitle[]",
+  "SeriesStatement[]",
   "SortableVolumeDesignation[]",
   "SoundCharacteristics[]",
   "SourceOfDescriptionNote[]",
@@ -1170,8 +1171,6 @@ retain(
   "TitleOther",
   "TitlePreferred[]",
   "TitleStatement[]",
-  "TitleSuperVolumeDesignation[]",
-  "TitleSuper[]",
   "TitleUniform",
   "TitleWork[]",
   "TranslatedTitle[]",

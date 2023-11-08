@@ -72,7 +72,7 @@ include("./marc/publisherName.fix")
 include("./marc/publicationPlace.fix")
 
 include("./marc/extent.fix")
-include("./marc/titleSuper.fix")
+include("./marc/seriesStatement.fix")
 include("./marc/description.fix")
 include("./marc/abstract.fix")
 include("./marc/personContributor.fix")
@@ -137,6 +137,7 @@ retain(
   "RecordIdentifier",
   "RecordIdentifierSuper[]",
   "SeriesAddedEntryUniformTitle[]",
+  "SeriesStatement[]",
   "SortableVolumeDesignation[]",
   "SubSeriesEntry[]",
   "SubjectDNB[]",
@@ -147,7 +148,6 @@ retain(
   "TitleAddendum",
   "TitleOther",
   "TitleStatement[]",
-  "TitleSuper[]",
   "TranslatedTitle[]",
   "TranslationEntry[]",
   "collection",

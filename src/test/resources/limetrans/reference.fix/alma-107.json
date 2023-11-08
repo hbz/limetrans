@@ -774,8 +774,8 @@
   "FileCharacteristics" : [ {
     "encodingFormat" : "PDF"
   } ],
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Messen, Bewerten, Beraten" ]
+  "SeriesStatement" : [ {
+    "title" : [ "Messen, Bewerten, Beraten" ]
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Messen, Bewerten, Beraten"
@@ -940,11 +940,9 @@
   "Extent" : {
     "extent" : "S. 240 - 294 : Ill., graph. Darst., Kt."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Geographische Rundschau" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "Jg. 39, H. 5" ]
+  "SeriesStatement" : [ {
+    "title" : [ "Geographische Rundschau" ],
+    "volume" : [ "Jg. 39, H. 5" ]
   } ],
   "PersonContributor" : [ {
     "personName" : "Frankenberg, Peter",
@@ -1050,11 +1048,9 @@
   "Extent" : {
     "extent" : "S. 296 - 369 : Ill., graph. Darst., Kt."
   },
-  "TitleSuper" : [ {
-    "titleSuper" : [ "Geographische Rundschau" ]
-  } ],
-  "TitleSuperVolumeDesignation" : [ {
-    "volumeDesignation" : [ "Jg. 39, H. 6" ]
+  "SeriesStatement" : [ {
+    "title" : [ "Geographische Rundschau" ],
+    "volume" : [ "Jg. 39, H. 6" ]
   } ],
   "PersonContributor" : [ {
     "personName" : "Leipert, Christian"

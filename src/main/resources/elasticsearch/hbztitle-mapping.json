@@ -1805,6 +1805,28 @@
         }
       }
     },
+    "SeriesStatement": {
+      "properties": {
+        "designation": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=mabwhole"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
     "SourceCreator": {
       "properties": {
         "source": {
@@ -3128,44 +3150,6 @@
             "cql.allIndexes",
             "dc.title",
             "introx.titlePhrase"
-          ]
-        }
-      }
-    },
-    "TitleSuper": {
-      "properties": {
-        "titleSuper": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false,
-          "copy_to": [
-            "cql.allIndexes",
-            "dc.title",
-            "introx.titlePhrase"
-          ]
-        }
-      }
-    },
-    "TitleSuperIdentifier": {
-      "properties": {
-        "titleSuperIdentifier": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false,
-          "copy_to": [
-            "bib.identifierAuthority=mabwhole"
-          ]
-        }
-      }
-    },
-    "TitleSuperUniform": {
-      "properties": {
-        "uniformTitle": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false,
-          "copy_to": [
-            "cql.allIndexes"
           ]
         }
       }
