@@ -68,7 +68,6 @@ sourceSets {
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(versions.jdk)
-        vendor = JvmVendorSpec.ADOPTIUM
     }
 }
 
