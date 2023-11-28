@@ -119,7 +119,7 @@ public class SisisSuperFilter extends DefaultStreamPipe<StreamReceiver> {
     protected void onCloseStream() {
         mEntries.forEach((k, v) -> {
             final String refId = mRefIdMap.get(k);
-            if (refId != null) {
+            if (refId != null && !mSupIdMap.containsKey(k)) {
                 v.replay();
 
                 emit(REC_TI_ENTITY, mTiMainMap.get(refId));
