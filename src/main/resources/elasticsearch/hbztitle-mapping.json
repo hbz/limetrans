@@ -852,6 +852,18 @@
         }
       }
     },
+    "Edition": {
+      "properties": {
+        "edition": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
     "ExtendedFormat": {
       "type": "string",
       "index": "no",
