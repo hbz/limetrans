@@ -62,7 +62,8 @@
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Buch - und Bibliothekswesen" ],
     "person" : [ "Lange, Gisela (1944-)", "Henning, Friedrich-Wilhelm (1931-2008)" ],
-    "subject" : [ "Henning, Friedrich-Wilhelm (1931-2008)" ]
+    "subject" : [ "Henning, Friedrich-Wilhelm (1931-2008)" ],
+    "localCallNumber" : [ "BAA1718" ]
   },
   "SubjectNWBIB" : [ {
     "subject" : "Köln"
@@ -161,8 +162,6 @@
     "uid" : "(DE-599)HBZHT014682469"
   } ],
   "Item" : [ {
-    "callnumber" : "BAA1718"
-  }, {
     "identifier" : "DE-832",
     "callnumber" : "63BAA1718",
     "callnumber" : "BAA1718",

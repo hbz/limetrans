@@ -915,17 +915,16 @@ uniq("TypePeriodical[]")
 
 # MARC/H52
 set_array("Item[]")
+set_array("introx.localCallNumber[]")
 do list(path: "H52??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
-    add_field("Item[].$append.__dummy__", "")
-    copy_field("$i.h", "Item[].$last.callnumber")
+    copy_field("$i.h", "introx.localCallNumber[].$append")
   end
 end
 # MARC/992
 do list(path: "992??", "var": "$i")
   if hbz.limetrans.function.MemberLocal("$i")
-    add_field("Item[].$append.__dummy__", "")
-    copy_field("$i.a", "Item[].$last.callnumber")
+    copy_field("$i.a", "introx.localCallNumber[].$append")
   end
 end
 # MARC/ITM
@@ -946,10 +945,10 @@ do list(path: "ITM  ", "var": "$i")
 end
 split_field("@host_callnumber", "\\u001F")
 do list(path: "@host_callnumber", "var": "$i")
-  add_field("Item[].$append.__dummy__", "")
-  copy_field("$i", "Item[].$last.callnumber")
+  copy_field("$i", "introx.localCallNumber[].$append")
 end
 uniq("Item[]")
+uniq("introx.localCallNumber[]")
 
 # MARC/DEL
 if any_equal("$[deletion-source]", "$[deletion-value]")

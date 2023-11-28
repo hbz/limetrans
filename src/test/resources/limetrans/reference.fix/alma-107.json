@@ -287,7 +287,8 @@
     "access" : [ "local" ],
     "carrier" : [ "Elektronische Ressource", "Datenbank" ],
     "taxonomy" : [ "600 Recht", "130 Landeskunde Region Koblenz", "131 Landeskunde Pfalz" ],
-    "subject" : [ "CD-ROM", "Rheinland-Pfalz", "Gemeindeverwaltung" ]
+    "subject" : [ "CD-ROM", "Rheinland-Pfalz", "Gemeindeverwaltung" ],
+    "localCallNumber" : [ "DB 251" ]
   },
   "SubjectDNB" : [ {
     "subject" : "350",
@@ -388,9 +389,6 @@
     "uid" : "(DE-101)025275038"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "Item" : [ {
-    "callnumber" : "DB 251"
-  } ],
   "TitleOther" : {
     "title" : [ "Praxis der Kommunalverwaltung / Landesausgabe Rheinland-Pfalz" ]
   },
@@ -1309,7 +1307,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Mikroform", "Gedruckte Ressource" ]
+    "carrier" : [ "Mikroform", "Gedruckte Ressource" ],
+    "localCallNumber" : [ "Z 187/U" ]
   },
   "SubjectDNB" : [ {
     "subject" : "06",
@@ -1455,9 +1454,6 @@
     "uid" : "(DE-101)982610130"
   } ],
   "TypePeriodical" : [ "Zeitschrift" ],
-  "Item" : [ {
-    "callnumber" : "Z 187/U"
-  } ],
   "TitleOther" : {
     "title" : [ "Die Rheinpfalz <Ludwigshafen> / Pfälzer Tageblatt / R" ]
   }
@@ -1500,7 +1496,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "localCallNumber" : [ "Palat. 210" ]
   },
   "SubjectDNB" : [ {
     "subject" : "070",
@@ -1595,10 +1592,7 @@
   }, {
     "uid" : "(DE-101)014454386"
   } ],
-  "TypePeriodical" : [ "Zeitschrift" ],
-  "Item" : [ {
-    "callnumber" : "Palat. 210"
-  } ]
+  "TypePeriodical" : [ "Zeitschrift" ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -1638,7 +1632,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Mikroform", "Gedruckte Ressource" ]
+    "carrier" : [ "Mikroform", "Gedruckte Ressource" ],
+    "localCallNumber" : [ "Per. 13501", "Palat. 39", "F 356", "F 193" ]
   },
   "SubjectDNB" : [ {
     "subject" : "914.3",
@@ -1733,16 +1728,7 @@
   }, {
     "uid" : "(DE-101)019922906"
   } ],
-  "TypePeriodical" : [ "Zeitschrift" ],
-  "Item" : [ {
-    "callnumber" : "Per. 13501"
-  }, {
-    "callnumber" : "Palat. 39"
-  }, {
-    "callnumber" : "F 356"
-  }, {
-    "callnumber" : "F 193"
-  } ]
+  "TypePeriodical" : [ "Zeitschrift" ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -1777,7 +1763,8 @@
   },
   "introx" : {
     "access" : [ "local" ],
-    "carrier" : [ "Gedruckte Ressource" ]
+    "carrier" : [ "Gedruckte Ressource" ],
+    "localCallNumber" : [ "Per. 17125a", "Per. 17125" ]
   },
   "SubjectDNB" : [ {
     "subject" : "070",
@@ -1856,11 +1843,6 @@
     "uid" : "(DE-101)024248037"
   } ],
   "TypePeriodical" : [ "Zeitschrift" ],
-  "Item" : [ {
-    "callnumber" : "Per. 17125a"
-  }, {
-    "callnumber" : "Per. 17125"
-  } ],
   "TitleOther" : {
     "title" : [ "Piccola / Extra" ]
   }
@@ -1912,7 +1894,8 @@
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomyRVK" : [ "TB 1010 Allgemeine Nachschlagewerke des Fachgebietes" ],
     "person" : [ "Schuh, Frieder" ],
-    "subject" : [ "Wörterbuch", "Naturwissenschaften", "Technik" ]
+    "subject" : [ "Wörterbuch", "Naturwissenschaften", "Technik" ],
+    "localCallNumber" : [ "2a 2193a", "LS NN 20" ]
   },
   "SubjectDNB" : [ {
     "subject" : "500",
@@ -1998,11 +1981,6 @@
     "uid" : "(DE-101)01137683X"
   } ],
   "TypePeriodical" : [ "Zeitschrift" ],
-  "Item" : [ {
-    "callnumber" : "2a 2193a"
-  }, {
-    "callnumber" : "LS NN 20"
-  } ],
   "RSWK" : [ {
     "subjectTopicName" : "Naturwissenschaften",
     "combinedLabel" : "Naturwissenschaften",

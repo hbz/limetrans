@@ -62,7 +62,8 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "person" : [ "Märtlbauer, Erwin", "Becker, Heinz (1948-)" ],
-    "subject" : [ "Milch", "Lebensmittelchemie" ]
+    "subject" : [ "Milch", "Lebensmittelchemie" ],
+    "localCallNumber" : [ "RRZ 137+1", "RRZ 137+2", "RRZ 137+4", "RRZ 137+3", "RRZ 137" ]
   },
   "SubjectDNB" : [ {
     "subject" : "630"
@@ -170,16 +171,6 @@
     "uid" : "(DE-599)DNB1079232362"
   } ],
   "Item" : [ {
-    "callnumber" : "RRZ 137+1"
-  }, {
-    "callnumber" : "RRZ 137+2"
-  }, {
-    "callnumber" : "RRZ 137+4"
-  }, {
-    "callnumber" : "RRZ 137+3"
-  }, {
-    "callnumber" : "RRZ 137"
-  }, {
     "identifier" : "DE-836",
     "callnumber" : "RRZ 137+3",
     "callnumber" : "0356674",
