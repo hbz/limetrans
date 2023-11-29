@@ -4,61 +4,31 @@ import hbz.limetrans.util.Helpers;
 import hbz.limetrans.util.LimetransException;
 import hbz.limetrans.util.Settings;
 
-import com.carrotsearch.hppc.cursors.ObjectCursor;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.elasticsearch.action.ActionRequest;
-import org.elasticsearch.action.admin.cluster.health.ClusterHealthResponse;
-import org.elasticsearch.action.admin.indices.alias.IndicesAliasesRequestBuilder;
-import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
-import org.elasticsearch.action.bulk.BulkProcessor;
-import org.elasticsearch.action.bulk.BulkRequest;
-import org.elasticsearch.action.bulk.BulkResponse;
-import org.elasticsearch.action.delete.DeleteRequest;
-import org.elasticsearch.action.index.IndexRequest;
-import org.elasticsearch.action.update.UpdateRequest;
-import org.elasticsearch.client.Client;
-import org.elasticsearch.client.transport.NoNodeAvailableException;
-import org.elasticsearch.client.transport.TransportClient;
-import org.elasticsearch.cluster.metadata.AliasMetaData;
-import org.elasticsearch.common.transport.InetSocketTransportAddress;
-import org.elasticsearch.common.unit.ByteSizeValue;
-import org.elasticsearch.common.unit.TimeValue;
-import org.elasticsearch.index.IndexNotFoundException;
 
 import java.io.IOException;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.LongAdder;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.regex.Pattern;
 
-public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstractionCoupling|ClassFanOutComplexity
+public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractClass
 
-    public static final String MAX_BULK_SIZE = "-1";
-    public static final int MAX_BULK_ACTIONS = 1000;
-    public static final int MAX_BULK_REQUESTS = 2;
+    protected static final String INDEX_KEY = "index";
+    protected static final String INDEX_NAME_KEY = "name";
+    protected static final String INDEX_TYPE_KEY = "type";
 
-    private static final Logger LOGGER = LogManager.getLogger();
-
-    private static final String INDEX_KEY = "index";
-    private static final String INDEX_NAME_KEY = "name";
-    private static final String INDEX_TYPE_KEY = "type";
-
-    private static final String INDEX_REFRESH_KEY = "refresh_interval";
-    private static final String INDEX_REPLICA_KEY = "number_of_replicas";
+    protected static final String INDEX_REFRESH_KEY = "refresh_interval";
+    protected static final String INDEX_REPLICA_KEY = "number_of_replicas";
 
     private static final String DEFAULT_REFRESH_INTERVAL = "30s";
     private static final Integer DEFAULT_REPLICA_COUNT = 1;
@@ -66,29 +36,30 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
     private static final String BULK_REFRESH_INTERVAL = "-1";
     private static final Integer BULK_REPLICA_COUNT = 0;
 
-    private static final String SETTINGS_SEPARATOR = ".";
+    private static final String MAX_BULK_SIZE = "-1";
+    private static final int MAX_BULK_ACTIONS = 1000;
+    private static final int MAX_BULK_REQUESTS = 2;
 
-    private final ByteSizeValue mBulkSize;
+    private static final Logger LOGGER = LogManager.getLogger();
+
     private final Integer mNumberOfReplicas;
     private final LongAdder mDeletedCounter = new LongAdder();
     private final LongAdder mFailedCounter = new LongAdder();
     private final LongAdder mSucceededCounter = new LongAdder();
     private final Settings mIndexSettings;
     private final Settings mSettings;
-    private final String mAliasName;
-    private final String mIndexName;
+    private final String mBulkSize;
     private final String mRefreshInterval;
     private final int mBulkActions;
     private final int mBulkRequests;
 
-    private BulkProcessor mBulkProcessor;
-    private Client mClient;
-    private ElasticsearchServer mServer;
+    private String mAliasName;
+    private String mIndexName;
     private boolean mDeleteOnExit;
     private boolean mFailed;
     private boolean mIndexCreated;
 
-    public ElasticsearchClient(final Settings aSettings) {
+    protected ElasticsearchClient(final Settings aSettings) {
         LOGGER.debug("Settings: {}", aSettings);
 
         mSettings = aSettings;
@@ -96,7 +67,7 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
 
         mBulkActions = aSettings.getAsInt("maxbulkactions", MAX_BULK_ACTIONS);
         mBulkRequests = aSettings.getAsInt("maxbulkrequests", MAX_BULK_REQUESTS);
-        mBulkSize = ByteSizeValue.parseBytesSizeValue(aSettings.get("maxbulksize", MAX_BULK_SIZE), "maxbulksize");
+        mBulkSize = aSettings.get("maxbulksize", MAX_BULK_SIZE);
 
         mNumberOfReplicas = mIndexSettings.getAsInt(INDEX_REPLICA_KEY, DEFAULT_REPLICA_COUNT);
         mRefreshInterval = mIndexSettings.get(INDEX_REFRESH_KEY, DEFAULT_REFRESH_INTERVAL);
@@ -122,11 +93,11 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
 
         try {
             if (update) {
-                LOGGER.info("Checking index: {}", getIndexName());
+                LOGGER.info("Checking index: {}", mIndexName);
                 checkIndex();
             }
             else if (delete || !indexExists()) {
-                LOGGER.info("Setting up index: {}", getIndexName());
+                LOGGER.info("Setting up index: {}", mIndexName);
                 setupIndex();
             }
         }
@@ -136,70 +107,40 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
         }
     }
 
-    public ElasticsearchClient(final String aIndexName, final String aIndexType) {
-        this(Settings.settingsBuilder()
-                .put(new String[]{INDEX_KEY, INDEX_NAME_KEY}, aIndexName)
-                .put(new String[]{INDEX_KEY, INDEX_TYPE_KEY}, aIndexType)
-                .build());
-    }
-
-    public static Settings getIndexSettings(final Settings aSettings) {
-        return aSettings.getAsSettings(INDEX_KEY);
-    }
-
-    public void setClient(final String[] aHosts, final String aDataDir) {
-        mClient = aDataDir == null && aHosts.length > 0 ?
-            newClient(aHosts) : newClient(aDataDir);
-    }
-
-    public Client getClient() {
-        return mClient;
-    }
-
-    public void setDeleteOnExit(final boolean aDeleteOnExit) {
-        mDeleteOnExit = aDeleteOnExit;
-    }
-
-    public boolean getDeleteOnExit() {
-        return mDeleteOnExit;
-    }
-
-    public String getDocument(final String aId) {
-        return mClient
-            .prepareGet(getIndexName(), getIndexType(), aId).get()
-            .getSourceAsString();
-    }
-
-    public void indexDocument(final String aId, final String aDocument) {
-        mClient.prepareIndex(getIndexName(), getIndexType(), aId)
-            .setSource(aDocument)
-            .get();
-    }
-
     public void reset() {
         mFailed = false;
         mIndexCreated = false;
-        mBulkProcessor = null;
 
-        mFailedCounter.reset();
         mSucceededCounter.reset();
+        mFailedCounter.reset();
+        mDeletedCounter.reset();
 
-        setClient(mSettings.getAsArray("host"), mSettings.get("embeddedPath"));
+        final String[] hosts = mSettings.getAsArray("host");
+        final String dataDir = mSettings.get("embeddedPath");
+
+        if (dataDir == null && hosts.length > 0) {
+            LOGGER.info("Connecting to server: {}", String.join(", ", hosts));
+            setClient(hosts);
+        }
+        else {
+            setClient(dataDir);
+        }
+
         waitForYellowStatus();
     }
 
-    public void flush() {
-        closeBulk();
-        refreshIndex();
-    }
+    protected abstract void setClient(String[] aHosts);
+
+    protected abstract void setClient(String aDataDir);
+
+    protected abstract void closeClient();
 
     public void close() {
         close(false);
     }
 
     public void close(final boolean aSwitchIndex) {
-        closeBulk();
-        refreshIndex();
+        flush();
 
         if (aSwitchIndex) {
             switchIndex();
@@ -208,185 +149,110 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
         closeClient();
     }
 
-    private void closeClient() {
-        mClient.close();
-
-        if (mServer != null) {
-            mServer.shutdown(getDeleteOnExit());
-        }
-    }
-
-    public void addBulkIndex(final String aId, final String aDocument) {
-        addBulk(new IndexRequest(getIndexName(), getIndexType(), aId).source(aDocument));
-    }
-
-    public void addBulkUpdate(final String aId, final String aDocument) {
-        addBulk(new UpdateRequest(getIndexName(), getIndexType(), aId).doc(aDocument));
-    }
-
-    public void addBulkDelete(final String aId) {
-        addBulk(new DeleteRequest(getIndexName(), getIndexType(), aId));
-    }
-
-    private void addBulk(final ActionRequest aRequest) {
-        if (mBulkProcessor == null) {
-            createBulk();
-        }
-
-        mBulkProcessor.add(aRequest);
-    }
-
-    private void createBulk() {
-        LOGGER.info("Creating bulk processor [actions={}, requests={}, size={}]", mBulkActions, mBulkRequests, mBulkSize);
-
-        final BulkProcessor.Listener listener = new BulkProcessor.Listener() { // checkstyle-disable-line AnonInnerLength
-
-            @Override
-            public void beforeBulk(final long aId, final BulkRequest aRequest) {
-                LOGGER.debug("Before bulk {} [actions={}, bytes={}]",
-                        aId, aRequest.numberOfActions(), aRequest.estimatedSizeInBytes());
+    public void flush() {
+        if (!isBulkClosed()) {
+            try {
+                if (closeBulk()) {
+                    LOGGER.info("All bulk requests complete");
+                }
+                else {
+                    LOGGER.warn("Some bulk requests still pending");
+                }
             }
-
-            @Override
-            public void afterBulk(final long aId, final BulkRequest aRequest, final BulkResponse aResponse) {
-                final LongAdder deleted = new LongAdder();
-                final LongAdder failed = new LongAdder();
-                final LongAdder succeeded = new LongAdder();
-
-                aResponse.forEach(r -> {
-                    if ("delete".equals(r.getOpType())) {
-                        deleted.increment();
-                    }
-                    else if (r.isFailed()) {
-                        mFailed = true;
-                        failed.increment();
-                        LOGGER.warn("Bulk {} item {} failed: {}", aId, r.getItemId(), r.getFailureMessage());
-                    }
-                    else {
-                        succeeded.increment();
-                    }
-                });
-
-                mDeletedCounter.add(deleted.sum());
-                mFailedCounter.add(failed.sum());
-                mSucceededCounter.add(succeeded.sum());
-
-                LOGGER.debug("After bulk {} [succeeded={}, failed={}, deleted={}, took={}]",
-                        aId, succeeded.sum(), failed.sum(), deleted.sum(), aResponse.getTook().millis());
-            }
-
-            @Override
-            public void afterBulk(final long aId, final BulkRequest aRequest, final Throwable aThrowable) {
-                LOGGER.error("Bulk " + aId + " failed: " + aThrowable.getMessage(), aThrowable);
+            catch (final InterruptedException e) {
+                LOGGER.error("Flushing bulk processor interrupted", e);
                 mFailed = true;
             }
 
-        };
+            updateIndexSettings(false);
+        }
 
-        mBulkProcessor = BulkProcessor.builder(mClient, listener)
-            .setBulkActions(mBulkActions)
-            .setBulkSize(mBulkSize)
-            .setConcurrentRequests(mBulkRequests)
-            .build();
-
-        updateIndexSettings();
+        refreshIndex(mIndexName);
     }
 
-    private void closeBulk() {
-        if (mBulkProcessor == null) {
+    protected abstract boolean isBulkClosed();
+
+    protected abstract boolean closeBulk() throws InterruptedException;
+
+    protected void createBulk() {
+        if (isBulkClosed()) {
+            LOGGER.info("Creating bulk processor [actions={}, requests={}, size={}]", mBulkActions, mBulkRequests, mBulkSize);
+            createBulk(mBulkActions, mBulkRequests);
+            updateIndexSettings(true);
+        }
+    }
+
+    protected abstract void createBulk(int aBulkActions, int aBulkRequests);
+
+    protected void checkIndex() {
+        if (!indexExists()) {
+            indexNotFound(mIndexName);
+        }
+    }
+
+    protected abstract void indexNotFound(String aIndexName);
+
+    protected void setupIndex() {
+        if (indexExists()) {
+            LOGGER.info("Deleting index: {}", mIndexName);
+            deleteIndex(mIndexName);
+        }
+
+        LOGGER.info("Creating index: {}", mIndexName);
+        createIndex(mIndexName);
+        setIndexCreated(true);
+
+        refreshIndex(mIndexName);
+    }
+
+    protected abstract void deleteIndex(String aIndexName);
+
+    protected abstract void createIndex(String aIndexName);
+
+    protected void withSettingsFile(final String aKey, final IOConsumer<String> aConsumer) {
+        final String path = getIndexSettings().get(aKey);
+        if (path == null) {
             return;
         }
 
         try {
-            mBulkProcessor.flush();
-
-            if (mBulkProcessor.awaitClose(2, TimeUnit.MINUTES)) {
-                LOGGER.info("All bulk requests complete");
-            }
-            else {
-                LOGGER.warn("Some bulk requests still pending");
-            }
+            aConsumer.accept(Helpers.getPath(getClass(), path));
         }
-        catch (final InterruptedException e) {
-            LOGGER.error("Flushing bulk processor interrupted", e);
-            mFailed = true;
-        }
-
-        mBulkProcessor.close();
-        mBulkProcessor = null;
-
-        updateIndexSettings();
-    }
-
-    public long getSucceeded() {
-        return mSucceededCounter.sum();
-    }
-
-    public long getFailed() {
-        return mFailedCounter.sum();
-    }
-
-    public long getDeleted() {
-        return mDeletedCounter.sum();
-    }
-
-    public String getIndexType() {
-        return mIndexSettings.get(INDEX_TYPE_KEY);
-    }
-
-    public String getIndexName() {
-        return mIndexName;
-    }
-
-    private String getAliasName() {
-        return mAliasName;
-    }
-
-    private String getAliasIndex(final String aIndex) {
-        final Pattern pattern = Pattern.compile("^" + Pattern.quote(aIndex) + "\\d+$");
-        final Set<String> indices = new HashSet<>();
-
-        for (final ObjectCursor<String> indexName : mClient.admin().indices()
-                .prepareGetAliases(aIndex).get().getAliases().keys()) {
-            if (pattern.matcher(indexName.value).matches()) {
-                indices.add(indexName.value);
-            }
-        }
-
-        switch (indices.size()) {
-            case 0:
-                return null;
-            case 1:
-                return indices.iterator().next();
-            default:
-                throw new RuntimeException(aIndex + ": too many indices: " + indices);
+        catch (final IOException e) {
+            throw new LimetransException("Failed to read index " + aKey + " file", e);
         }
     }
 
-    private String getTimeWindow() {
-        final String timeWindow = mIndexSettings.get("timewindow");
-
-        if (timeWindow == null || timeWindow.isEmpty()) {
-            return null;
+    protected void withInlineSettings(final String aKey, final IOConsumer<Settings> aConsumer) {
+        try {
+            aConsumer.accept(getIndexSettings().getAsSettings(aKey + "-inline"));
         }
-
-        return DateTimeFormatter.ofPattern(timeWindow)
-            .withZone(ZoneId.systemDefault())
-            .format(LocalDate.now());
+        catch (final IOException e) {
+            throw new LimetransException("Failed to read inline index " + aKey, e);
+        }
     }
 
-    private void switchIndex() { // checkstyle-disable-line CyclomaticComplexity|ReturnCount
-        final String aliasName = getAliasName();
-        if (aliasName == null) {
+    protected abstract void refreshIndex(String aIndexName);
+
+    protected boolean indexExists() {
+        return indexExists(mIndexName);
+    }
+
+    protected abstract boolean indexExists(String aIndexName);
+
+    protected abstract void waitForYellowStatus();
+
+    protected void switchIndex() { // checkstyle-disable-line ReturnCount
+        if (mAliasName == null) {
             return;
         }
 
-        final String newIndex = getIndexName();
-        final String oldIndex = getAliasIndex(aliasName);
+        final String newIndex = mIndexName;
+        final String oldIndex = getAliasIndex(mAliasName);
 
         final BiConsumer<Level, String> log = (l, m) -> LOGGER.log(l, m +
                 ": {} succeeded, {} failed, {} deleted [index={}, alias={}]",
-                getSucceeded(), getFailed(), getDeleted(), newIndex, aliasName);
+                getSucceeded(), getFailed(), getDeleted(), newIndex, mAliasName);
 
         if (mFailed) {
             log.accept(Level.WARN, "Failed, skipping index switch");
@@ -404,191 +270,179 @@ public class ElasticsearchClient { // checkstyle-disable-line ClassDataAbstracti
             return;
         }
 
-        final IndicesAliasesRequestBuilder aliasesRequest = mClient.admin().indices()
-            .prepareAliases();
-
         final Set<String> aliases = new HashSet<>();
-
-        if (oldIndex == null || !indexExists(oldIndex)) {
-            aliasesRequest.addAlias(newIndex, aliasName);
-            aliases.add(aliasName);
-        }
-        else {
-            for (final ObjectCursor<List<AliasMetaData>> aliasMetaDataList : mClient.admin().indices()
-                    .prepareGetAliases().setIndices(oldIndex).get().getAliases().values()) {
-                for (final AliasMetaData aliasMetaData : aliasMetaDataList.value) {
-                    final String alias = aliasMetaData.alias();
-
-                    aliasesRequest.removeAlias(oldIndex, alias);
-                    aliases.add(alias);
-
-                    if (aliasMetaData.filteringRequired()) {
-                        aliasesRequest.addAlias(newIndex, alias,
-                                new String(aliasMetaData.getFilter().uncompressed()));
-                    }
-                    else {
-                        aliasesRequest.addAlias(newIndex, alias);
-                    }
-                }
-            }
-        }
+        final Runnable runnable = switchIndex(oldIndex, newIndex, mAliasName, aliases);
 
         if (!aliases.isEmpty()) {
             LOGGER.info("Adding aliases to index {}: {}", newIndex, aliases);
-            aliasesRequest.get();
+            runnable.run();
         }
     }
 
-    private Client newClient(final String[] aHosts) {
-        LOGGER.info("Connecting to server: {}", String.join(", ", aHosts));
+    protected abstract Runnable switchIndex(String aOldIndex, String aNewIndex, String aAliasName, Set<String> aAliases);
 
-        final TransportClient client = TransportClient.builder().settings(elasticsearchSettings("transport", b -> {
-            b.put(INDEX_KEY + SETTINGS_SEPARATOR + INDEX_TYPE_KEY, getIndexType());
-            b.put("cluster.name", mSettings.get("cluster", "elasticsearch"));
-        })).build();
+    private String getAliasIndex(final String aAliasName) {
+        final Pattern pattern = Pattern.compile("^" + Pattern.quote(aAliasName) + "\\d+$");
+        final Set<String> indices = new HashSet<>();
 
-        addClientTransport(client, aHosts);
-
-        if (client.connectedNodes().isEmpty()) {
-            throw new NoNodeAvailableException("No cluster nodes available: " + client.transportAddresses());
-        }
-
-        return client;
-    }
-
-    private Client newClient(final String aDataDir) {
-        final AtomicReference<ElasticsearchServer> server = new AtomicReference<>();
-        final Client client = ElasticsearchServer.getClient(aDataDir, server::set);
-
-        mServer = server.get();
-        return client;
-    }
-
-    private void checkIndex() {
-        if (!indexExists()) {
-            throw new IndexNotFoundException(getIndexName());
-        }
-    }
-
-    private void setupIndex() {
-        deleteIndex();
-        createIndex();
-        refreshIndex();
-    }
-
-    private void deleteIndex() {
-        if (indexExists()) {
-            LOGGER.info("Deleting index: {}", getIndexName());
-            mClient.admin().indices().prepareDelete(getIndexName()).get();
-        }
-    }
-
-    private void createIndex() {
-        LOGGER.info("Creating index: {}", getIndexName());
-
-        final CreateIndexRequestBuilder createRequest = mClient.admin().indices()
-            .prepareCreate(getIndexName());
-
-        setIndexSettings(createRequest);
-        addIndexMapping(createRequest);
-
-        createRequest.get();
-
-        mIndexCreated = true;
-    }
-
-    private void refreshIndex() {
-        mClient.admin().indices()
-            .prepareRefresh(getIndexName()).get();
-    }
-
-    private boolean indexExists() {
-        return indexExists(getIndexName());
-    }
-
-    private boolean indexExists(final String aIndexName) {
-        return mClient.admin().indices()
-            .prepareExists(aIndexName).get().isExists();
-    }
-
-    private void waitForYellowStatus() {
-        final ClusterHealthResponse healthResponse = mClient.admin().cluster().prepareHealth()
-            .setWaitForYellowStatus().setTimeout(TimeValue.timeValueSeconds(30)).get(); // checkstyle-disable-line MagicNumber
-
-        if (healthResponse.isTimedOut()) {
-            throw new RuntimeException("Cluster unhealthy: status = " + healthResponse.getStatus());
-        }
-    }
-
-    private void addClientTransport(final TransportClient aClient, final String[] aHosts) {
-        for (final String host : aHosts) {
-            final String[] hostWithPort = host.split(":");
-
-            try {
-                aClient.addTransportAddress(new InetSocketTransportAddress(
-                            InetAddress.getByName(hostWithPort[0]),
-                            Integer.valueOf(hostWithPort[1])));
+        getAliasIndexes(aAliasName, i -> {
+            if (pattern.matcher(i).matches()) {
+                indices.add(i);
             }
-            catch (final UnknownHostException e) {
-                throw new LimetransException(e);
-            }
+        });
+
+        switch (indices.size()) {
+            case 0:
+                return null;
+            case 1:
+                return indices.iterator().next();
+            default:
+                throw new RuntimeException(aAliasName + ": too many indices: " + indices);
         }
     }
 
-    private void updateIndexSettings() {
-        final boolean bulk = mBulkProcessor != null;
+    protected abstract void getAliasIndexes(String aAliasName, Consumer<String> aConsumer);
+
+    private String getTimeWindow() {
+        final String timeWindow = mIndexSettings.get("timewindow");
+
+        if (timeWindow == null || timeWindow.isEmpty()) {
+            return null;
+        }
+
+        return DateTimeFormatter.ofPattern(timeWindow)
+            .withZone(ZoneId.systemDefault())
+            .format(LocalDate.now());
+    }
+
+    protected void setIndexCreated(final boolean aIndexCreated) {
+        mIndexCreated = aIndexCreated;
+    }
+
+    protected void setDeleteOnExit(final boolean aDeleteOnExit) {
+        mDeleteOnExit = aDeleteOnExit;
+    }
+
+    protected boolean getDeleteOnExit() {
+        return mDeleteOnExit;
+    }
+
+    public abstract String getDocument(String aId);
+
+    public abstract void indexDocument(String aId, String aDocument);
+
+    public abstract void addBulkIndex(String aId, String aDocument);
+
+    public abstract void addBulkUpdate(String aId, String aDocument);
+
+    public abstract void addBulkDelete(String aId);
+
+    protected void beforeBulk(final long aId, final int aActions, final long aBytes) {
+        LOGGER.debug("Before bulk {} [actions={}, bytes={}]", aId, aActions, aBytes);
+    }
+
+    protected void afterBulk(final long aId, final long aTook, final BulkItemConsumer aConsumer) {
+        final LongAdder deleted = new LongAdder();
+        final LongAdder failed = new LongAdder();
+        final LongAdder succeeded = new LongAdder();
+
+        aConsumer.accept(deleted::increment, succeeded::increment, (i, m) -> {
+            mFailed = true;
+            failed.increment();
+            LOGGER.warn("Bulk {} item {} failed: {}", aId, i, m);
+        });
+
+        mSucceededCounter.add(succeeded.sum());
+        mFailedCounter.add(failed.sum());
+        mDeletedCounter.add(deleted.sum());
+
+        LOGGER.debug("After bulk {} [succeeded={}, failed={}, deleted={}, took={}]",
+                aId, succeeded.sum(), failed.sum(), deleted.sum(), aTook);
+    }
+
+    protected void afterBulk(final long aId, final Throwable aThrowable) {
+        LOGGER.error("Bulk " + aId + " failed: " + aThrowable.getMessage(), aThrowable);
+        mFailed = true;
+    }
+
+    protected String getBulkSize() {
+        return mBulkSize;
+    }
+
+    protected Settings getSettings() {
+        return mSettings;
+    }
+
+    protected Settings getIndexSettings() {
+        return mIndexSettings;
+    }
+
+    public static Settings getIndexSettings(final Settings aSettings) {
+        return aSettings.getAsSettings(INDEX_KEY);
+    }
+
+    public long getSucceeded() {
+        return mSucceededCounter.sum();
+    }
+
+    public long getFailed() {
+        return mFailedCounter.sum();
+    }
+
+    public long getDeleted() {
+        return mDeletedCounter.sum();
+    }
+
+    protected String getIndexType() {
+        return mIndexSettings.get(INDEX_TYPE_KEY);
+    }
+
+    protected String getIndexName() {
+        return mIndexName;
+    }
+
+    public static ElasticsearchClient newClient(final Settings aSettings) {
+        return new ElasticsearchClientV2(aSettings);
+    }
+
+    public static ElasticsearchClient newClient(final String aIndexName, final String aIndexType) {
+        return newClient(Settings.settingsBuilder()
+                .put(new String[]{INDEX_KEY, INDEX_NAME_KEY}, aIndexName)
+                .put(new String[]{INDEX_KEY, INDEX_TYPE_KEY}, aIndexType)
+                .build());
+    }
+
+    private void updateIndexSettings(final boolean aBulk) {
         final Map<String, Object> indexSettings = new HashMap<>();
 
         if (mNumberOfReplicas != null && mIndexCreated) {
-            indexSettings.put(INDEX_REPLICA_KEY, bulk ? BULK_REPLICA_COUNT : mNumberOfReplicas);
+            indexSettings.put(INDEX_REPLICA_KEY, aBulk ? BULK_REPLICA_COUNT : mNumberOfReplicas);
         }
 
         if (mRefreshInterval != null) {
-            indexSettings.put(INDEX_REFRESH_KEY, bulk ? BULK_REFRESH_INTERVAL : mRefreshInterval);
+            indexSettings.put(INDEX_REFRESH_KEY, aBulk ? BULK_REFRESH_INTERVAL : mRefreshInterval);
         }
 
         if (!indexSettings.isEmpty()) {
-            final Map<String, Object> updateSettings = new HashMap<>();
-            updateSettings.put(INDEX_KEY, indexSettings);
-
-            LOGGER.info("Updating index settings {} bulk: {}: {}",
-                    bulk ? "before" : "after", getIndexName(), updateSettings);
-
-            mClient.admin().indices()
-                .prepareUpdateSettings(getIndexName()).setSettings(updateSettings).get();
+            LOGGER.info("Updating index settings {} bulk: {}: {}", aBulk ? "before" : "after", mIndexName, indexSettings);
+            updateIndexSettings(mIndexName, indexSettings);
         }
     }
 
-    private void setIndexSettings(final CreateIndexRequestBuilder aCreateRequest) {
-        aCreateRequest.setSettings(elasticsearchIndexSettings("settings"));
+    protected abstract void updateIndexSettings(String aIndexName, Map<String, Object> aSettings);
+
+    protected static Logger getLogger() {
+        return LOGGER;
     }
 
-    private void addIndexMapping(final CreateIndexRequestBuilder aCreateRequest) {
-        aCreateRequest.addMapping(getIndexType(), elasticsearchIndexSettings("mapping").getAsStructuredMap());
+    @FunctionalInterface
+    protected interface IOConsumer<T> {
+        void accept(T aArg) throws IOException;
     }
 
-    private org.elasticsearch.common.settings.Settings elasticsearchIndexSettings(final String aKey) {
-        return elasticsearchSettings(aKey, b -> {
-            try {
-                b.put(Helpers.loadSettings(Helpers.getPath(getClass(),
-                                mIndexSettings.get(aKey))).getAsFlatMap(SETTINGS_SEPARATOR));
-                b.put(mIndexSettings.getAsSettings(aKey + "-inline").getAsFlatMap(SETTINGS_SEPARATOR));
-            }
-            catch (final IOException e) {
-                throw new LimetransException("Failed to read index " + aKey + " file", e);
-            }
-        });
-    }
-
-    private org.elasticsearch.common.settings.Settings elasticsearchSettings(final String aKey,
-            final Consumer<org.elasticsearch.common.settings.Settings.Builder> aConsumer) {
-        final org.elasticsearch.common.settings.Settings.Builder settingsBuilder =
-            org.elasticsearch.common.settings.Settings.settingsBuilder();
-        aConsumer.accept(settingsBuilder);
-
-        final org.elasticsearch.common.settings.Settings settings = settingsBuilder.build();
-        LOGGER.debug("Elasticsearch {}: {}", aKey, settings.getAsStructuredMap());
-        return settings;
+    @FunctionalInterface
+    protected interface BulkItemConsumer {
+        void accept(Runnable aDeleted, Runnable aSucceeded, BiConsumer<String, String> aFailed);
     }
 
 }

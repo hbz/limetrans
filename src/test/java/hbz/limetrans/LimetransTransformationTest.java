@@ -113,7 +113,7 @@ public class LimetransTransformationTest extends AbstractLimetransTest {
     private void testElasticsearchEqualsReference(final String aName, final String aId) throws IOException {
         final Limetrans limetrans = getLimetrans(aName);
 
-        final ElasticsearchClient client = new ElasticsearchClient(loadSettings(aName).getAsSettings("output").getAsSettings("elasticsearch"));
+        final ElasticsearchClient client = ElasticsearchClient.newClient(loadSettings(aName).getAsSettings("output").getAsSettings("elasticsearch"));
         client.setDeleteOnExit(true);
 
         try {

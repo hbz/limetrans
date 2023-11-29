@@ -482,7 +482,7 @@ public class ElasticsearchIndexerTest {
     }
 
     private void setIndexer(final String aBulkAction) {
-        mClient = new ElasticsearchClient(INDEX_NAME, INDEX_TYPE);
+        mClient = ElasticsearchClient.newClient(INDEX_NAME, INDEX_TYPE);
         mIndexer = new ElasticsearchIndexer(mClient, aBulkAction);
     }
 

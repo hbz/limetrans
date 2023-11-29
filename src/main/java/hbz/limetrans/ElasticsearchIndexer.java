@@ -24,7 +24,7 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
     }
 
     public ElasticsearchIndexer(final Settings aSettings) {
-        this(new ElasticsearchClient(aSettings), aSettings.get("bulkAction"));
+        this(ElasticsearchClient.newClient(aSettings), aSettings.get("bulkAction"));
         mDeletionLiteral = aSettings.get("deletionLiteral");
     }
 
@@ -34,10 +34,6 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
 
     public String getDeletionLiteral() {
         return mDeletionLiteral;
-    }
-
-    public ElasticsearchClient getClient() {
-        return mClient;
     }
 
     public void flush() {
