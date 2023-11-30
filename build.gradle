@@ -10,9 +10,13 @@ println "Versions: JVM=${org.gradle.internal.jvm.Jvm.current()}, Groovy=${Groovy
 group = 'hbz.limetrans'
 
 def passSystemProperties = {
+    def prefix = group + '.'
+
     System.properties.each { k, v ->
-        if (k.startsWith(group + '.')) it[k] = v
+        if (k.startsWith(prefix)) it[k] = v
     }
+
+    it[prefix + 'versions.elasticsearch8'] = versions.elasticsearch8
 }
 
 // https://github.com/lmdbjava/lmdbjava/issues/42
@@ -45,6 +49,7 @@ dependencies {
         }
     }
 
+    implementation "co.elastic.clients:elasticsearch-java:${versions.elasticsearch8}"
     implementation "com.fasterxml.jackson.core:jackson-databind:${versions.jackson}"
     implementation "com.github.samtools:htsjdk:${versions.htsjdk}"
     implementation "commons-cli:commons-cli:${versions['commons-cli']}"
@@ -53,9 +58,10 @@ dependencies {
     implementation "org.apache.logging.log4j:log4j-1.2-api:${versions.log4j}"
     implementation "org.apache.logging.log4j:log4j-core:${versions.log4j}"
     implementation "org.apache.logging.log4j:log4j-slf4j-impl:${versions.log4j}"
-    implementation "org.elasticsearch:elasticsearch:${versions.elasticsearch}"
+    implementation "org.elasticsearch:elasticsearch:${versions.elasticsearch2}"
     implementation "org.lmdbjava:lmdbjava:${versions.lmdb}"
-    implementation files("libs/elasticsearch-plugin-bundle-${versions.elasticsearch}.0.jar")
+    implementation "org.testcontainers:elasticsearch:${versions.testcontainers}"
+    implementation files("libs/elasticsearch-plugin-bundle-${versions.elasticsearch2}.0.jar")
 
     // Required for ElasticsearchClientTest (elasticsearch2 plugin bundle): com.ibm.icu.text.Normalizer2
     testImplementation "org.apache.lucene:lucene-analyzers-icu:${versions.lucene5}"

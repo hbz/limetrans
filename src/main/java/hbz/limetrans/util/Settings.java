@@ -26,6 +26,10 @@ public class Settings {
         }
     }
 
+    private Map<String, Object> getMap() {
+        return mMap;
+    }
+
     public static Builder settingsBuilder() {
         return new Builder();
     }
@@ -42,6 +46,10 @@ public class Settings {
     @Override
     public String toString() {
         return mMap.toString();
+    }
+
+    public String toJson() throws IOException {
+        return Builder.MAPPER.writeValueAsString(mMap);
     }
 
     public void forEach(final BiConsumer<Settings, String> aConsumer) {
@@ -211,6 +219,29 @@ public class Settings {
 
         public Settings build() {
             return new Settings(mMap);
+        }
+
+        private void mergeMap(final Map<String, Object> aOldMap, final Map<String, Object> aNewMap) {
+            aNewMap.forEach((k, v) -> aOldMap.merge(k, v, (o, n) -> {
+                if (o instanceof Map && n instanceof Map) {
+                    @SuppressWarnings("unchecked")
+                    final Map<String, Object> oldMap = (Map) o;
+
+                    @SuppressWarnings("unchecked")
+                    final Map<String, Object> newMap = (Map) n;
+
+                    mergeMap(oldMap, newMap);
+                    return oldMap;
+                }
+                else {
+                    return n;
+                }
+            }));
+        }
+
+        public Builder load(final Settings aSettings) {
+            mergeMap(mMap, aSettings.getMap());
+            return this;
         }
 
         public Builder load(final InputStream aIn) throws IOException {

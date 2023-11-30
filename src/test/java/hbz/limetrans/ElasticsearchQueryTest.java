@@ -20,6 +20,9 @@ public class ElasticsearchQueryTest {
     private static final boolean T = true;
     private static final boolean F = false;
 
+    private static final boolean Y = ElasticsearchClient.isLegacy();
+    private static final boolean N = !Y;
+
     private static final boolean DEFERRED = Helpers.getProperty("elasticsearchQueryTestDeferred", false);
 
     private static final String INDEX_NAME = "index1";
@@ -108,35 +111,35 @@ public class ElasticsearchQueryTest {
         return Arrays.asList(new Object[][] {
             {MATCH_ALL, HOLZBAU_ATLAS, new boolean[]{T, T, T, T, T}},
 
-            {MATCH.formatted("cql.allIndexes", "test"), new String[]{TITLE.formatted("test"), TITLE.formatted("notest")}, new boolean[]{T, F}},
+            {MATCH.formatted("cql.allIndexes", "test"), new String[]{TITLE.formatted("test"), TITLE.formatted("notest")}, new boolean[]{Y, F}},
 
-            {CQL_ALL_INDEXES.formatted("holzbau-atlas"), HOLZBAU_ATLAS, new boolean[]{T, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("holzbauatlas"),  HOLZBAU_ATLAS, new boolean[]{T, T, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("holzbau atlas"), HOLZBAU_ATLAS, new boolean[]{T, F, T, F, F}},
-            {CQL_ALL_INDEXES.formatted("holzbau"),       HOLZBAU_ATLAS, new boolean[]{T, F, T, T, F}},
-            {CQL_ALL_INDEXES.formatted("atlas"),         HOLZBAU_ATLAS, new boolean[]{T, F, T, F, T}},
+            {CQL_ALL_INDEXES.formatted("holzbau-atlas"), HOLZBAU_ATLAS, new boolean[]{Y, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("holzbauatlas"),  HOLZBAU_ATLAS, new boolean[]{Y, Y, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("holzbau atlas"), HOLZBAU_ATLAS, new boolean[]{Y, F, Y, F, F}},
+            {CQL_ALL_INDEXES.formatted("holzbau"),       HOLZBAU_ATLAS, new boolean[]{Y, F, Y, Y, F}},
+            {CQL_ALL_INDEXES.formatted("atlas"),         HOLZBAU_ATLAS, new boolean[]{Y, F, Y, F, Y}},
 
-            {CQL_ALL_INDEXES.formatted("drei-zinnen-gebiet"), DREI_ZINNEN_GEBIET, new boolean[]{T, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("drei-zinnengebiet"),  DREI_ZINNEN_GEBIET, new boolean[]{F, T, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("drei-zinnen gebiet"), DREI_ZINNEN_GEBIET, new boolean[]{F, F, T, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("dreizinnen-gebiet"),  DREI_ZINNEN_GEBIET, new boolean[]{T, F, F, T, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("dreizinnengebiet"),   DREI_ZINNEN_GEBIET, new boolean[]{T, T, F, T, T, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("dreizinnen gebiet"),  DREI_ZINNEN_GEBIET, new boolean[]{T, F, T, T, F, T, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("drei zinnen-gebiet"), DREI_ZINNEN_GEBIET, new boolean[]{T, F, F, F, F, F, T, F, F, F, F, F, F, F, F, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("drei zinnengebiet"),  DREI_ZINNEN_GEBIET, new boolean[]{F, T, F, F, F, F, T, T, F, F, F, F, F, F, F, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("drei zinnen gebiet"), DREI_ZINNEN_GEBIET, new boolean[]{F, F, T, F, F, F, T, F, T, F, F, F, F, F, F, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("drei-zinnen"),        DREI_ZINNEN_GEBIET, new boolean[]{F, F, T, F, F, F, F, F, F, T, F, F, F, F, F, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("drei-gebiet"),        DREI_ZINNEN_GEBIET, new boolean[]{F, F, F, F, F, F, F, F, F, F, T, F, F, F, F, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("dreizinnen"),         DREI_ZINNEN_GEBIET, new boolean[]{T, F, T, T, F, T, F, F, F, T, F, T, F, F, F, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("dreigebiet"),         DREI_ZINNEN_GEBIET, new boolean[]{F, F, F, F, F, F, F, F, F, F, T, F, T, F, F, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("drei zinnen"),        DREI_ZINNEN_GEBIET, new boolean[]{F, F, T, F, F, F, T, F, T, T, F, F, F, T, F, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("drei gebiet"),        DREI_ZINNEN_GEBIET, new boolean[]{T, F, T, F, F, F, T, F, T, F, T, F, F, F, T, F, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("zinnen-gebiet"),      DREI_ZINNEN_GEBIET, new boolean[]{T, F, F, F, F, F, T, F, F, F, F, F, F, F, F, T, F, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("zinnengebiet"),       DREI_ZINNEN_GEBIET, new boolean[]{F, T, F, F, F, F, T, T, F, F, F, F, F, F, F, T, T, F, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("zinnen gebiet"),      DREI_ZINNEN_GEBIET, new boolean[]{F, F, T, F, F, F, T, F, T, F, F, F, F, F, F, T, F, T, F, F, F}},
-            {CQL_ALL_INDEXES.formatted("drei"),               DREI_ZINNEN_GEBIET, new boolean[]{T, T, T, F, F, F, T, T, T, T, T, F, F, T, T, F, F, F, T, F, F}},
-            {CQL_ALL_INDEXES.formatted("zinnen"),             DREI_ZINNEN_GEBIET, new boolean[]{F, F, T, F, F, F, T, F, T, T, F, F, F, T, F, T, F, T, F, T, F}},
-            {CQL_ALL_INDEXES.formatted("gebiet"),             DREI_ZINNEN_GEBIET, new boolean[]{T, F, T, T, F, T, T, F, T, F, T, F, F, F, T, T, F, T, F, F, T}}
+            {CQL_ALL_INDEXES.formatted("drei-zinnen-gebiet"), DREI_ZINNEN_GEBIET, new boolean[]{Y, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("drei-zinnengebiet"),  DREI_ZINNEN_GEBIET, new boolean[]{F, Y, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("drei-zinnen gebiet"), DREI_ZINNEN_GEBIET, new boolean[]{F, F, Y, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("dreizinnen-gebiet"),  DREI_ZINNEN_GEBIET, new boolean[]{Y, F, F, Y, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("dreizinnengebiet"),   DREI_ZINNEN_GEBIET, new boolean[]{Y, Y, F, Y, Y, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("dreizinnen gebiet"),  DREI_ZINNEN_GEBIET, new boolean[]{Y, F, Y, Y, F, Y, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("drei zinnen-gebiet"), DREI_ZINNEN_GEBIET, new boolean[]{Y, F, F, F, F, F, Y, F, F, F, F, F, F, F, F, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("drei zinnengebiet"),  DREI_ZINNEN_GEBIET, new boolean[]{F, Y, F, F, F, F, Y, Y, F, F, F, F, F, F, F, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("drei zinnen gebiet"), DREI_ZINNEN_GEBIET, new boolean[]{F, F, Y, F, F, F, Y, F, Y, F, F, F, F, F, F, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("drei-zinnen"),        DREI_ZINNEN_GEBIET, new boolean[]{F, F, Y, F, F, F, F, F, F, Y, F, F, F, F, F, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("drei-gebiet"),        DREI_ZINNEN_GEBIET, new boolean[]{F, F, F, F, F, F, F, F, F, F, Y, F, F, F, F, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("dreizinnen"),         DREI_ZINNEN_GEBIET, new boolean[]{Y, F, Y, Y, F, Y, F, F, F, Y, F, Y, F, F, F, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("dreigebiet"),         DREI_ZINNEN_GEBIET, new boolean[]{F, F, F, F, F, F, F, F, F, F, Y, F, Y, F, F, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("drei zinnen"),        DREI_ZINNEN_GEBIET, new boolean[]{F, F, Y, F, F, F, Y, F, Y, Y, F, F, F, Y, F, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("drei gebiet"),        DREI_ZINNEN_GEBIET, new boolean[]{Y, F, Y, F, F, F, Y, F, Y, F, Y, F, F, F, Y, F, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("zinnen-gebiet"),      DREI_ZINNEN_GEBIET, new boolean[]{Y, F, F, F, F, F, Y, F, F, F, F, F, F, F, F, Y, F, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("zinnengebiet"),       DREI_ZINNEN_GEBIET, new boolean[]{F, Y, F, F, F, F, Y, Y, F, F, F, F, F, F, F, Y, Y, F, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("zinnen gebiet"),      DREI_ZINNEN_GEBIET, new boolean[]{F, F, Y, F, F, F, Y, F, Y, F, F, F, F, F, F, Y, F, Y, F, F, F}},
+            {CQL_ALL_INDEXES.formatted("drei"),               DREI_ZINNEN_GEBIET, new boolean[]{Y, Y, Y, F, F, F, Y, Y, Y, Y, Y, F, F, Y, Y, F, F, F, Y, F, F}},
+            {CQL_ALL_INDEXES.formatted("zinnen"),             DREI_ZINNEN_GEBIET, new boolean[]{F, F, Y, F, F, F, Y, F, Y, Y, F, F, F, Y, F, Y, F, Y, F, Y, F}},
+            {CQL_ALL_INDEXES.formatted("gebiet"),             DREI_ZINNEN_GEBIET, new boolean[]{Y, F, Y, Y, F, Y, Y, F, Y, F, Y, F, F, F, Y, Y, F, Y, F, F, Y}}
         });
     }
 
@@ -146,6 +149,8 @@ public class ElasticsearchQueryTest {
                 .put(new String[]{"index", "settings"}, "classpath:/elasticsearch/hbztitle-settings-%s.json")
                 .put(new String[]{"index", "mapping"}, "classpath:/elasticsearch/hbztitle-mapping-%s.json")
         );
+
+        Assert.assertEquals("version mismatch", Y, mClient instanceof ElasticsearchClientV2);
     }
 
     @After

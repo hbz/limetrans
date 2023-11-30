@@ -42,6 +42,7 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
     private static final int MAX_BULK_ACTIONS = 1000;
     private static final int MAX_BULK_REQUESTS = 2;
 
+    private static final String DEFAULT_VERSION = "2";
     private static final String VERSION_PREFIX = "V";
 
     private static final Logger LOGGER = LogManager.getLogger();
@@ -213,17 +214,18 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
 
     protected abstract void createIndex(String aIndexName);
 
-    protected void withSettingsFile(final String aKey, final IOConsumer<String> aConsumer) {
+    protected void withSettingsFile(final String aKey, final IOConsumer<Settings> aConsumer) {
         final String path = getIndexSettings().get(aKey);
         if (path == null) {
             return;
         }
 
         try {
-            aConsumer.accept(Helpers.getPath(getClass(), path.formatted(getVersionTag())));
+            aConsumer.accept(Helpers.loadSettings(
+                        Helpers.getPath(getClass(), path.formatted(getVersionTag()))));
         }
         catch (final IOException e) {
-            throw new LimetransException("Failed to read index " + aKey + " file", e);
+            throw new LimetransException("Failed to load index " + aKey + " file", e);
         }
     }
 
@@ -232,7 +234,7 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
             aConsumer.accept(getIndexSettings().getAsSettings(aKey + "-inline"));
         }
         catch (final IOException e) {
-            throw new LimetransException("Failed to read inline index " + aKey, e);
+            throw new LimetransException("Failed to load inline index " + aKey, e);
         }
     }
 
@@ -416,14 +418,54 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         return mIndexName;
     }
 
+    public static String getClientVersion() {
+        final String version = Helpers.getProperty("elasticsearchVersion");
+        return version != null ? version : DEFAULT_VERSION;
+    }
+
+    public static boolean isLegacy() {
+        return DEFAULT_VERSION.equals(getClientVersion());
+    }
+
+    protected static Class<? extends ElasticsearchClient> getClientClass() {
+        final String version = getClientVersion();
+
+        final Class<ElasticsearchClient> baseType = ElasticsearchClient.class;
+        final Class<?> clazz;
+
+        try {
+            clazz = Class.forName(baseType.getName() + VERSION_PREFIX + version);
+        }
+        catch (final ReflectiveOperationException e) {
+            throw new LimetransException(e);
+        }
+
+        if (!baseType.isAssignableFrom(clazz)) {
+            throw new LimetransException(clazz + " must extend " + baseType);
+        }
+
+        @SuppressWarnings("unchecked") // protected by isAssignableFrom check
+        final Class<? extends ElasticsearchClient> clientClass = (Class<? extends ElasticsearchClient>) clazz;
+
+        LOGGER.info("Using Elasticsearch version " + version + ": " + clientClass);
+
+        return clientClass;
+    }
+
     public static ElasticsearchClient newClient(final Settings aSettings) {
-        return new ElasticsearchClientV2(aSettings);
+        try {
+            return getClientClass().getDeclaredConstructor(Settings.class).newInstance(aSettings);
+        }
+        catch (final ReflectiveOperationException e) {
+            throw new LimetransException(e);
+        }
     }
 
     public static ElasticsearchClient newClient(final String aIndexName, final String aIndexType, final Consumer<Settings.Builder> aConsumer) {
         final Settings.Builder settingsBuilder = Settings.settingsBuilder()
             .put(new String[]{INDEX_KEY, INDEX_NAME_KEY}, aIndexName)
-            .put(new String[]{INDEX_KEY, INDEX_TYPE_KEY}, aIndexType);
+            .put(new String[]{INDEX_KEY, INDEX_TYPE_KEY}, aIndexType)
+            .put(new String[]{"delete"}, !isLegacy());
 
         if (aConsumer != null) {
             aConsumer.accept(settingsBuilder);

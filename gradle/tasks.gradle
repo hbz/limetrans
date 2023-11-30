@@ -3,8 +3,8 @@ def (root, extension, skel, required) = [file('.').toPath(), '.json', 'template'
 def camelize = { it.replaceAll(~/\b./) { it[0].toUpperCase() } }
 def taskName = { prefix, list -> prefix + list.collect { camelize(it) }.join('').replaceAll('[^a-zA-Z0-9]', '') }
 
-def propTask = { group, list ->
-    def prop = "${project.group}.${group}"
+def propTask = { group, list, prop = null ->
+    prop = "${project.group}.${prop ?: group}"
 
     list.each { value ->
         task(taskName(group, [value]), group: group, description: "Sets -D${prop}=${value}") {
@@ -18,6 +18,9 @@ propTask('env', ['prod', 'dev', 'd7test', 'local', 'ignore'])
 
 // See hbz.limetrans.Limetrans.Type.
 propTask('type', ['fix', 'morph'])
+
+// See hbz.limetrans.ElasticsearchClientV*.
+propTask('es', ['2', '8'], 'elasticsearchVersion')
 
 file('src/conf').eachDir {
     def (group, path) = [it.getName(), it.toPath()]

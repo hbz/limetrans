@@ -1,6 +1,5 @@
 package hbz.limetrans;
 
-import hbz.limetrans.util.Helpers;
 import hbz.limetrans.util.LimetransException;
 import hbz.limetrans.util.Settings;
 
@@ -133,7 +132,7 @@ public class ElasticsearchClientV2 extends ElasticsearchClient { // checkstyle-d
 
     private org.elasticsearch.common.settings.Settings elasticsearchIndexSettings(final String aKey) {
         return elasticsearchSettings(aKey, b -> {
-            withSettingsFile(aKey, f -> b.put(Helpers.loadSettings(f).getAsFlatMap(SETTINGS_SEPARATOR)));
+            withSettingsFile(aKey, s -> b.put(s.getAsFlatMap(SETTINGS_SEPARATOR)));
             withInlineSettings(aKey, s -> b.put(s.getAsFlatMap(SETTINGS_SEPARATOR)));
         });
     }

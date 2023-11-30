@@ -69,8 +69,13 @@ public final class Main {
         }),
 
         local(settingsBuilder -> {
+            final String port = switch (ElasticsearchClient.getClientVersion()) {
+                case "8" -> "9208";
+                default  -> "9300";
+            };
+
             setCluster(settingsBuilder, "elasticsearch");
-            setHost(settingsBuilder, "localhost:9300");
+            setHost(settingsBuilder, "localhost:" + port);
             setMaxAge(settingsBuilder, -1);
         }),
 
