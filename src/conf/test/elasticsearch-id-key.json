@@ -2,7 +2,7 @@
   "input" : {
     "queue" : {
       "path" : "src/test/resources/limetrans/input/",
-      "pattern" : "elasticsearch.xml"
+      "pattern" : "elasticsearch-id-key.xml"
     }
   },
   "output": {

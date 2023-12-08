@@ -75,7 +75,7 @@ public class LimetransTransformationTest extends AbstractLimetransTest {
 
     @Test
     public void testElasticsearch() throws IOException {
-        testElasticsearchEqualsReference("elasticsearch", "");
+        testElasticsearchEqualsReference("elasticsearch", "1");
     }
 
     @Test

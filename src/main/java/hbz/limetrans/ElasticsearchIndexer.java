@@ -17,6 +17,7 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
     private String mDeletionLiteral;
     private String mId;
     private boolean mIsDeletion;
+    private int mAutoId;
 
     public ElasticsearchIndexer(final ElasticsearchClient aClient, final String aBulkAction) {
         mClient = aClient;
@@ -42,10 +43,10 @@ public class ElasticsearchIndexer extends DefaultStreamReceiver {
 
     @Override
     public void startRecord(final String id) {
-        mId = id;
+        mId = id.isEmpty() ? String.valueOf(++mAutoId) : id;
         mIsDeletion = false;
 
-        mJsonEncoder.startRecord(id);
+        mJsonEncoder.startRecord(mId);
     }
 
     @Override
