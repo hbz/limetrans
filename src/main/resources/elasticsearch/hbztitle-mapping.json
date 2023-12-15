@@ -1200,6 +1200,18 @@
         }
       }
     },
+    "OnlineAccess": {
+      "properties": {
+        "collectionIdentifier": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
     "Person": {
       "properties": {
         "identifierGND": {
