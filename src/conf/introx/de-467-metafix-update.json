@@ -15,8 +15,8 @@
       "index": {
         "type": "titel",
         "name": "${isil}-introx-metafix-",
-        "settings": "classpath:/elasticsearch/hbztitle-settings.json",
-        "mapping": "classpath:/elasticsearch/hbztitle-mapping.json",
+        "settings": "classpath:/elasticsearch/hbztitle-settings-%s.json",
+        "mapping": "classpath:/elasticsearch/hbztitle-mapping-%s.json",
         "idKey": "RecordIdentifier.identifierForTheIndex"
       },
       "deletionLiteral": "DEL",

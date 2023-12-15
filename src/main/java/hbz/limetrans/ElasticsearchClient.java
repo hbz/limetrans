@@ -40,6 +40,8 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
     private static final int MAX_BULK_ACTIONS = 1000;
     private static final int MAX_BULK_REQUESTS = 2;
 
+    private static final String VERSION_PREFIX = "V";
+
     private static final Logger LOGGER = LogManager.getLogger();
 
     private final Integer mNumberOfReplicas;
@@ -216,7 +218,7 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         }
 
         try {
-            aConsumer.accept(Helpers.getPath(getClass(), path));
+            aConsumer.accept(Helpers.getPath(getClass(), path.formatted(getVersionTag())));
         }
         catch (final IOException e) {
             throw new LimetransException("Failed to read index " + aKey + " file", e);
@@ -230,6 +232,11 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         catch (final IOException e) {
             throw new LimetransException("Failed to read inline index " + aKey, e);
         }
+    }
+
+    private String getVersionTag() {
+        final String name = getClass().getSimpleName();
+        return name.substring(name.lastIndexOf(VERSION_PREFIX)).toLowerCase();
     }
 
     protected abstract void refreshIndex(String aIndexName);

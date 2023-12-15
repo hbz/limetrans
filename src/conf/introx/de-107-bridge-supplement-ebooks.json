@@ -18,8 +18,8 @@
         "type": "hbz",
         "name": "${isil}-bridge-introx-supplement-",
         "timewindow": "yyyyMMdd",
-        "settings": "classpath:/elasticsearch/hbztitle-settings.json",
-        "mapping": "classpath:/elasticsearch/hbztitle-mapping.json",
+        "settings": "classpath:/elasticsearch/hbztitle-settings-%s.json",
+        "mapping": "classpath:/elasticsearch/hbztitle-mapping-%s.json",
         "idKey": "RecordIdentifier.identifierForTheRecord"
       }
     }
