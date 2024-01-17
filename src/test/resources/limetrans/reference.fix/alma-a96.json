@@ -440,8 +440,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 EU 14/15-16B",
-    "callnumber" : "61EU14_15-16B"
+    "callnumber" : [ "61 EU 14/15-16B", "61EU14_15-16B" ]
   } ]
 }
 {
@@ -503,8 +502,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 BMT 14-82B",
-    "callnumber" : "60BMT14-82B"
+    "callnumber" : [ "61 BMT 14-82B", "60BMT14-82B" ]
   } ]
 }
 {
@@ -563,8 +561,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 P 15/16-72B",
-    "callnumber" : "61P15_16-72B"
+    "callnumber" : [ "61 P 15/16-72B", "61P15_16-72B" ]
   } ]
 }
 {
@@ -626,8 +623,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 C 15/16-40B",
-    "callnumber" : "61C15_16-40B"
+    "callnumber" : [ "61 C 15/16-40B", "61C15_16-40B" ]
   } ]
 }
 {
@@ -1092,8 +1088,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 OEG 2",
-    "callnumber" : "21OEG2"
+    "callnumber" : [ "21 OEG 2", "21OEG2" ]
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Gruppe",
@@ -1194,8 +1189,7 @@
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBB 134",
-    "callnumber" : "21QBB134"
+    "callnumber" : [ "21 QBB 134", "21QBB134" ]
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Logistik",
@@ -1316,8 +1310,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 UTI 12",
-    "callnumber" : "61UTI12"
+    "callnumber" : [ "61 UTI 12", "61UTI12" ]
   } ],
   "RSWK" : [ {
     "subjectTopicName" : "Microorganisms",
@@ -1605,7 +1598,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 EU 14/15-16B",
+    "callnumber" : [ "61 EU 14/15-16B" ],
     "shelfmark" : "JUE_Abschl"
   } ]
 }
@@ -1788,8 +1781,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "60 BMT 14-82B",
-    "callnumber" : "61 BMT 14-82B",
+    "callnumber" : [ "60 BMT 14-82B", "61 BMT 14-82B" ],
     "shelfmark" : "JUE_Abschl"
   } ]
 }
@@ -1850,12 +1842,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 WAE 4(2020,2)+1",
-    "callnumber" : "21 WAE 4(2020,2)",
+    "callnumber" : [ "21 WAE 4(2020,2)+1", "21 WAE 4(2020,2)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 WAE 4(2020,2)",
+    "callnumber" : [ "21 WAE 4(2020,2)" ],
     "shelfmark" : "EUP_Frei"
   } ]
 }
@@ -2169,12 +2160,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XBT 11(2017)+1",
-    "callnumber" : "11 XBT 11(2017)",
+    "callnumber" : [ "11 XBT 11(2017)+1", "11 XBT 11(2017)" ],
     "shelfmark" : "BAY_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XBT 11(2017)",
+    "callnumber" : [ "11 XBT 11(2017)" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -2426,98 +2416,79 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2002,1",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2002,1", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2005",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2005", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2004",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2004", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2009,2",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2009,2", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2011,2",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2011,2", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2010,1",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2010,1", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2006,1",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2006,1", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2011,1",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2011,1", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2010,2",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2010,2", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2003",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2003", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2001",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2001", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2000",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2000", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2009,1",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2009,1", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2006,2",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2006,2", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2002,2",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2002,2", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2007,2",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2007,2", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2008,1",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2008,1", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2007,1",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2007,1", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "63 ZS 104-2008,2",
-    "callnumber" : "63 ZS 104",
+    "callnumber" : [ "63 ZS 104-2008,2", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   } ],
   "TitleOther" : {
@@ -2886,8 +2857,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 BFG 9",
-    "callnumber" : "BOX-SemApp-Buhl-Drucktechnologie",
+    "callnumber" : [ "51 BFG 9", "BOX-SemApp-Buhl-Drucktechnologie" ],
     "shelfmark" : "BOX_SemApp"
   } ],
   "RSWK" : [ {
@@ -3027,13 +2997,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TWZ 35+1",
-    "callnumber" : "21 TWZ 35",
-    "callnumber" : "EUP-Labor-Höfken-Rechenzentrale",
+    "callnumber" : [ "21 TWZ 35+1", "21 TWZ 35", "EUP-Labor-Höfken-Rechenzentrale" ],
     "shelfmark" : "EUP_LabApp"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TWZ 35",
+    "callnumber" : [ "21 TWZ 35" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -3183,9 +3151,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "20 WBS 1-62443-3-3",
-    "callnumber" : "21 WBS 1-62443-3-3",
-    "callnumber" : "EUP-Labor-Höfken-Rechenzentrale",
+    "callnumber" : [ "20 WBS 1-62443-3-3", "21 WBS 1-62443-3-3", "EUP-Labor-Höfken-Rechenzentrale" ],
     "shelfmark" : "EUP_LabApp"
   } ]
 }
@@ -3322,7 +3288,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 UEC 6",
+    "callnumber" : [ "61 UEC 6" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "PersonCreator" : [ {
@@ -3679,7 +3645,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 TZH 28(2)",
+    "callnumber" : [ "61 TZH 28(2)" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "PersonCreator" : [ {
@@ -4354,7 +4320,7 @@
   "TypeMedia" : "Elektronische Ressource",
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XZM 20-CD",
+    "callnumber" : [ "21 XZM 20-CD" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -4511,8 +4477,7 @@
   "TypeMedia" : "Elektronische Ressource",
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "52 KNLT 59",
-    "callnumber" : "51 KNLT 59",
+    "callnumber" : [ "52 KNLT 59", "51 KNLT 59" ],
     "shelfmark" : "BOX_Filme"
   } ]
 }
@@ -4598,7 +4563,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XDM 9",
+    "callnumber" : [ "11 XDM 9" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "TitleOther" : {
@@ -4723,7 +4688,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KAKD 9",
+    "callnumber" : [ "51 KAKD 9" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -4868,7 +4833,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 JXH 2",
+    "callnumber" : [ "51 JXH 2" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -5032,8 +4997,7 @@
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "20 ZQS 62",
-    "callnumber" : "21 ZQS 62",
+    "callnumber" : [ "20 ZQS 62", "21 ZQS 62" ],
     "shelfmark" : "EUP_Praes"
   } ],
   "TitleOther" : {
@@ -5141,7 +5105,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KAO 6",
+    "callnumber" : [ "51 KAO 6" ],
     "shelfmark" : "BOX_Mag"
   } ],
   "RSWK" : [ {
@@ -5247,7 +5211,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WCJ 8(2)",
+    "callnumber" : [ "11 WCJ 8(2)" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "PersonCreator" : [ {
@@ -5381,7 +5345,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KDLM 8",
+    "callnumber" : [ "51 KDLM 8" ],
     "shelfmark" : "BOX_Mag"
   } ],
   "RSWK" : [ {
@@ -5506,7 +5470,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 UAE 4",
+    "callnumber" : [ "21 UAE 4" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -5624,7 +5588,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KDLP 16",
+    "callnumber" : [ "51 KDLP 16" ],
     "shelfmark" : "BOX_Mag"
   } ]
 }
@@ -5735,8 +5699,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 UIQ 43+1",
-    "callnumber" : "61 UIQ 43",
+    "callnumber" : [ "61 UIQ 43+1", "61 UIQ 43" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "RSWK" : [ {
@@ -5851,8 +5814,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XCA 17+1",
-    "callnumber" : "11 XCA 17",
+    "callnumber" : [ "11 XCA 17+1", "11 XCA 17" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -5967,7 +5929,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WWA 41",
+    "callnumber" : [ "11 WWA 41" ],
     "shelfmark" : "BAY_Frei"
   } ]
 }
@@ -6085,7 +6047,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 JZHF 45",
+    "callnumber" : [ "51 JZHF 45" ],
     "shelfmark" : "BOX_Frei"
   } ]
 }
@@ -6187,7 +6149,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 JYR 3",
+    "callnumber" : [ "51 JYR 3" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -6308,7 +6270,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 UOF 43(2)",
+    "callnumber" : [ "61 UOF 43(2)" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "RSWK" : [ {
@@ -6425,7 +6387,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KDAG 2",
+    "callnumber" : [ "51 KDAG 2" ],
     "shelfmark" : "BOX_Mag"
   } ],
   "RSWK" : [ {
@@ -6526,8 +6488,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "18 WWW 74",
-    "callnumber" : "11 WWW 74",
+    "callnumber" : [ "18 WWW 74", "11 WWW 74" ],
     "shelfmark" : "BAY_Vit"
   } ],
   "RSWK" : [ {
@@ -6674,7 +6635,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KDEM 25",
+    "callnumber" : [ "51 KDEM 25" ],
     "shelfmark" : "BOX_Mag"
   } ],
   "RSWK" : [ {
@@ -6807,7 +6768,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KFK 1",
+    "callnumber" : [ "51 KFK 1" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -6946,7 +6907,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 MKM 3",
+    "callnumber" : [ "51 MKM 3" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -7085,7 +7046,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KDAS 6",
+    "callnumber" : [ "51 KDAS 6" ],
     "shelfmark" : "BOX_Mag"
   } ],
   "CompilationTitle" : {
@@ -7208,7 +7169,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 MKT 1",
+    "callnumber" : [ "51 MKT 1" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -7320,9 +7281,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "18 WTD 34",
-    "callnumber" : "11 WTD 34",
-    "callnumber" : "BAY-Labor-Malecha-Vermessung",
+    "callnumber" : [ "18 WTD 34", "11 WTD 34", "BAY-Labor-Malecha-Vermessung" ],
     "shelfmark" : "BAY_LabApp"
   } ]
 }
@@ -7457,7 +7416,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KBLG 25",
+    "callnumber" : [ "51 KBLG 25" ],
     "shelfmark" : "BOX_Mag"
   } ],
   "RSWK" : [ {
@@ -7590,7 +7549,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 UAE 10",
+    "callnumber" : [ "61 UAE 10" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "RSWK" : [ {
@@ -7737,11 +7696,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WTP 92",
+    "callnumber" : [ "11 WTP 92" ],
     "shelfmark" : "BAY_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "51 WUF 1",
+    "callnumber" : [ "51 WUF 1" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "TitleOther" : {
@@ -7893,8 +7852,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 OBD 1",
-    "callnumber" : "BAY-SemApp-Fissabre-Architekturtheorie",
+    "callnumber" : [ "11 OBD 1", "BAY-SemApp-Fissabre-Architekturtheorie" ],
     "shelfmark" : "BAY_SemApp"
   } ],
   "RSWK" : [ {
@@ -23898,8 +23856,7 @@
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "20 QUFU 1",
-    "callnumber" : "21 QUFU 1",
+    "callnumber" : [ "20 QUFU 1", "21 QUFU 1" ],
     "shelfmark" : "EUP_Praes"
   } ],
   "TitleOther" : {
@@ -24038,12 +23995,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XSH 2-8(2)+1",
-    "callnumber" : "61 XSH 2-8(2)",
+    "callnumber" : [ "61 XSH 2-8(2)+1", "61 XSH 2-8(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XSH 2-8(2)",
+    "callnumber" : [ "61 XSH 2-8(2)" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "RSWK" : [ {
@@ -26205,8 +26161,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "18 KAQ 7-3",
-    "callnumber" : "11 KAQ 7-3",
+    "callnumber" : [ "18 KAQ 7-3", "11 KAQ 7-3" ],
     "shelfmark" : "BAY_Vit"
   } ]
 }
@@ -26337,7 +26292,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 JXY 22-2",
+    "callnumber" : [ "51 JXY 22-2" ],
     "shelfmark" : "BOX_Frei"
   } ]
 }
@@ -26767,7 +26722,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 ZFD 3(7)",
+    "callnumber" : [ "61 ZFD 3(7)" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "RSWK" : [ {
@@ -26941,8 +26896,7 @@
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "20 QUN 89",
-    "callnumber" : "21 QUN 89",
+    "callnumber" : [ "20 QUN 89", "21 QUN 89" ],
     "shelfmark" : "EUP_Praes"
   } ],
   "TitleOther" : {
@@ -27095,7 +27049,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 UUS 4",
+    "callnumber" : [ "61 UUS 4" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "RSWK" : [ {
@@ -27234,7 +27188,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 ZJA 1(5)",
+    "callnumber" : [ "61 ZJA 1(5)" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "PersonCreator" : [ {
@@ -27370,8 +27324,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WWV 1+1",
-    "callnumber" : "11 WWV 1",
+    "callnumber" : [ "11 WWV 1+1", "11 WWV 1" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -27483,7 +27436,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 JZPB 24",
+    "callnumber" : [ "51 JZPB 24" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -30247,12 +30200,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WYX 49",
+    "callnumber" : [ "11 WYX 49" ],
     "shelfmark" : "BAY_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WYX 49+1",
-    "callnumber" : "11 WYX 49",
+    "callnumber" : [ "11 WYX 49+1", "11 WYX 49" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "TitleOther" : {
@@ -30734,7 +30686,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 NXKB 21",
+    "callnumber" : [ "51 NXKB 21" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -33796,8 +33748,7 @@
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "20 QOD 23(4)",
-    "callnumber" : "21 QOD 23(4)",
+    "callnumber" : [ "20 QOD 23(4)", "21 QOD 23(4)" ],
     "shelfmark" : "EUP_Praes"
   } ],
   "TitleOther" : {
@@ -35128,7 +35079,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 ZTL 1(6)",
+    "callnumber" : [ "61 ZTL 1(6)" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "PersonCreator" : [ {
@@ -35641,11 +35592,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TIR 11",
+    "callnumber" : [ "21 TIR 11" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 TIE 22",
+    "callnumber" : [ "61 TIE 22" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "PersonCreator" : [ {
@@ -36078,7 +36029,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 POZ 16(2)",
+    "callnumber" : [ "21 POZ 16(2)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -36191,7 +36142,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 TZU 29(2)",
+    "callnumber" : [ "61 TZU 29(2)" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "RSWK" : [ {
@@ -36597,7 +36548,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PWJ 72",
+    "callnumber" : [ "21 PWJ 72" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -36856,7 +36807,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 ZPL 24(5)",
+    "callnumber" : [ "21 ZPL 24(5)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -37002,17 +36953,15 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 ZEM 11-1+1",
-    "callnumber" : "61 ZEM 11-1",
+    "callnumber" : [ "61 ZEM 11-1+1", "61 ZEM 11-1" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 ZEM 11-1+2",
-    "callnumber" : "61 ZEM 11-1",
+    "callnumber" : [ "61 ZEM 11-1+2", "61 ZEM 11-1" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 ZEM 11-1",
+    "callnumber" : [ "61 ZEM 11-1" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "PersonCreator" : [ {
@@ -37202,8 +37151,7 @@
   "TypePeriodical" : [ "Schriftenreihe" ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "10 XCD 101",
-    "callnumber" : "11 XCD 101",
+    "callnumber" : [ "10 XCD 101", "11 XCD 101" ],
     "shelfmark" : "BAY_Praes"
   } ],
   "RSWK" : [ {
@@ -37593,7 +37541,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 WFC 14-2",
+    "callnumber" : [ "21 WFC 14-2" ],
     "shelfmark" : "EUP_Frei"
   } ]
 }
@@ -37723,21 +37671,19 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 ZJU 14(2)",
+    "callnumber" : [ "61 ZJU 14(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 ZJU 20(2)",
+    "callnumber" : [ "21 ZJU 20(2)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 ZJU 20(2)+2",
-    "callnumber" : "21 ZJU 20(2)",
+    "callnumber" : [ "21 ZJU 20(2)+2", "21 ZJU 20(2)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 ZJU 20(2)+1",
-    "callnumber" : "21 ZJU 20(2)",
+    "callnumber" : [ "21 ZJU 20(2)+1", "21 ZJU 20(2)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -38413,7 +38359,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XRW 40-1997",
+    "callnumber" : [ "21 XRW 40-1997" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -38626,52 +38572,43 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WGN 29(2)+4",
-    "callnumber" : "61 WGN 29(2)",
+    "callnumber" : [ "61 WGN 29(2)+4", "61 WGN 29(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WGN 29(2)",
+    "callnumber" : [ "61 WGN 29(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WGN 29(2)+9",
-    "callnumber" : "61 WGN 29(2)",
+    "callnumber" : [ "61 WGN 29(2)+9", "61 WGN 29(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WGN 29(2)+8",
-    "callnumber" : "61 WGN 29(2)",
+    "callnumber" : [ "61 WGN 29(2)+8", "61 WGN 29(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WGN 29(2)+7",
-    "callnumber" : "61 WGN 29(2)",
+    "callnumber" : [ "61 WGN 29(2)+7", "61 WGN 29(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WGN 29(2)+2",
-    "callnumber" : "61 WGN 29(2)",
+    "callnumber" : [ "61 WGN 29(2)+2", "61 WGN 29(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WGN 29(2)+5",
-    "callnumber" : "61 WGN 29(2)",
+    "callnumber" : [ "61 WGN 29(2)+5", "61 WGN 29(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WGN 29(2)+3",
-    "callnumber" : "61 WGN 29(2)",
+    "callnumber" : [ "61 WGN 29(2)+3", "61 WGN 29(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WGN 29(2)+1",
-    "callnumber" : "61 WGN 29(2)",
+    "callnumber" : [ "61 WGN 29(2)+1", "61 WGN 29(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WGN 29(2)+6",
-    "callnumber" : "61 WGN 29(2)",
+    "callnumber" : [ "61 WGN 29(2)+6", "61 WGN 29(2)" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "TitleOther" : {
@@ -39014,7 +38951,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBW 5",
+    "callnumber" : [ "21 QBW 5" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "PersonCreator" : [ {
@@ -39202,67 +39139,55 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PRH 46(5)+6",
-    "callnumber" : "21 PRH 46(5)",
+    "callnumber" : [ "21 PRH 46(5)+6", "21 PRH 46(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PRH 46(5)+10",
-    "callnumber" : "21 PRH 46(5)",
+    "callnumber" : [ "21 PRH 46(5)+10", "21 PRH 46(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PRH 46(5)+5",
-    "callnumber" : "21 PRH 46(5)",
+    "callnumber" : [ "21 PRH 46(5)+5", "21 PRH 46(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PRH 46(5)+4",
-    "callnumber" : "21 PRH 46(5)",
+    "callnumber" : [ "21 PRH 46(5)+4", "21 PRH 46(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PRH 46(5)+9",
-    "callnumber" : "21 PRH 46(5)",
+    "callnumber" : [ "21 PRH 46(5)+9", "21 PRH 46(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PRH 46(5)+3",
-    "callnumber" : "21 PRH 46(5)",
+    "callnumber" : [ "21 PRH 46(5)+3", "21 PRH 46(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PRH 46(5)+2",
-    "callnumber" : "21 PRH 46(5)",
+    "callnumber" : [ "21 PRH 46(5)+2", "21 PRH 46(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PRH 46(5)",
+    "callnumber" : [ "21 PRH 46(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PRH 46(5)+1",
-    "callnumber" : "21 PRH 46(5)",
+    "callnumber" : [ "21 PRH 46(5)+1", "21 PRH 46(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PRH 46(5)+11",
-    "callnumber" : "21 PRH 46(5)",
+    "callnumber" : [ "21 PRH 46(5)+11", "21 PRH 46(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PRH 46(5)+13",
-    "callnumber" : "21 PRH 46(5)",
+    "callnumber" : [ "21 PRH 46(5)+13", "21 PRH 46(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PRH 46(5)+14",
-    "callnumber" : "21 PRH 46(5)",
+    "callnumber" : [ "21 PRH 46(5)+14", "21 PRH 46(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PRH 46(5)+12",
-    "callnumber" : "21 PRH 46(5)",
+    "callnumber" : [ "21 PRH 46(5)+12", "21 PRH 46(5)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -39550,17 +39475,15 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PZR 94(8)+1",
-    "callnumber" : "21 PZR 94(8)",
+    "callnumber" : [ "21 PZR 94(8)+1", "21 PZR 94(8)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PZR 94(8)+2",
-    "callnumber" : "21 PZR 94(8)",
+    "callnumber" : [ "21 PZR 94(8)+2", "21 PZR 94(8)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PZR 94(8)",
+    "callnumber" : [ "21 PZR 94(8)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -39707,32 +39630,27 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 VOW 7(2)+6",
-    "callnumber" : "61 VOW 7(2)",
+    "callnumber" : [ "61 VOW 7(2)+6", "61 VOW 7(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 VOW 7(2)+5",
-    "callnumber" : "61 VOW 7(2)",
+    "callnumber" : [ "61 VOW 7(2)+5", "61 VOW 7(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 VOW 7(2)+4",
-    "callnumber" : "61 VOW 7(2)",
+    "callnumber" : [ "61 VOW 7(2)+4", "61 VOW 7(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 VOW 7(2)+3",
-    "callnumber" : "61 VOW 7(2)",
+    "callnumber" : [ "61 VOW 7(2)+3", "61 VOW 7(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 VOW 7(2)+1",
-    "callnumber" : "61 VOW 7(2)",
+    "callnumber" : [ "61 VOW 7(2)+1", "61 VOW 7(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 VOW 7(2)",
+    "callnumber" : [ "61 VOW 7(2)" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "RSWK" : [ {
@@ -39875,7 +39793,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PZY 43",
+    "callnumber" : [ "21 PZY 43" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "TitleOther" : {
@@ -40034,7 +39952,7 @@
   "TypeMedia" : "Elektronische Ressource",
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PVK 29",
+    "callnumber" : [ "21 PVK 29" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -40196,7 +40114,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PVK 40",
+    "callnumber" : [ "21 PVK 40" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -40339,7 +40257,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QAT 188",
+    "callnumber" : [ "21 QAT 188" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -40472,27 +40390,23 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBB 52(7)+2",
-    "callnumber" : "21 QBB 52(7)",
+    "callnumber" : [ "21 QBB 52(7)+2", "21 QBB 52(7)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBB 52(7)+1",
-    "callnumber" : "21 QBB 52(7)",
+    "callnumber" : [ "21 QBB 52(7)+1", "21 QBB 52(7)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBB 52(7)+3",
-    "callnumber" : "21 QBB 52(7)",
+    "callnumber" : [ "21 QBB 52(7)+3", "21 QBB 52(7)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBB 52(7)",
+    "callnumber" : [ "21 QBB 52(7)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBB 52(7)+4",
-    "callnumber" : "21 QBB 52(7)",
+    "callnumber" : [ "21 QBB 52(7)+4", "21 QBB 52(7)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -40947,17 +40861,15 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 UPX 3+1",
-    "callnumber" : "61 UPX 3",
+    "callnumber" : [ "61 UPX 3+1", "61 UPX 3" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 UPX 3",
+    "callnumber" : [ "61 UPX 3" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 UPX 3+2",
-    "callnumber" : "61 UPX 3",
+    "callnumber" : [ "61 UPX 3+2", "61 UPX 3" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "RSWK" : [ {
@@ -41060,7 +40972,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XBS 67",
+    "callnumber" : [ "11 XBS 67" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "PersonCreator" : [ {
@@ -41201,7 +41113,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WZN 80",
+    "callnumber" : [ "11 WZN 80" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -41334,7 +41246,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PZY 119",
+    "callnumber" : [ "21 PZY 119" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -41474,7 +41386,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 MKHB 12",
+    "callnumber" : [ "51 MKHB 12" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "PersonCreator" : [ {
@@ -41608,28 +41520,23 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XCQ 40+2",
-    "callnumber" : "11 XCQ 40",
+    "callnumber" : [ "11 XCQ 40+2", "11 XCQ 40" ],
     "shelfmark" : "BAY_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XCQ 40+1",
-    "callnumber" : "11 XCQ 40",
+    "callnumber" : [ "11 XCQ 40+1", "11 XCQ 40" ],
     "shelfmark" : "BAY_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XCQ 40+4",
-    "callnumber" : "11 XCQ 40",
+    "callnumber" : [ "11 XCQ 40+4", "11 XCQ 40" ],
     "shelfmark" : "BAY_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XCQ 40+3",
-    "callnumber" : "11 XCQ 40",
+    "callnumber" : [ "11 XCQ 40+3", "11 XCQ 40" ],
     "shelfmark" : "BAY_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XCQ 40",
-    "callnumber" : "BAY-SemApp-Wollenweber",
+    "callnumber" : [ "11 XCQ 40", "BAY-SemApp-Wollenweber" ],
     "shelfmark" : "BAY_SemApp"
   } ],
   "RSWK" : [ {
@@ -41729,7 +41636,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 JYB 11",
+    "callnumber" : [ "51 JYB 11" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -41846,7 +41753,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KNM 28",
+    "callnumber" : [ "51 KNM 28" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -41979,7 +41886,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 JXY 32",
+    "callnumber" : [ "51 JXY 32" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -42138,12 +42045,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KDZD 3+1",
-    "callnumber" : "51 KDZD 3",
+    "callnumber" : [ "51 KDZD 3+1", "51 KDZD 3" ],
     "shelfmark" : "BOX_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KDZD 3",
+    "callnumber" : [ "51 KDZD 3" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "TitleOther" : {
@@ -42280,7 +42186,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WWLA 50",
+    "callnumber" : [ "11 WWLA 50" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -42407,26 +42313,23 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 YEA 20(5)",
+    "callnumber" : [ "61 YEA 20(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 YEA 20(5)+1",
-    "callnumber" : "61 YEA 20(5)",
+    "callnumber" : [ "61 YEA 20(5)+1", "61 YEA 20(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 YET 16(5)+2",
-    "callnumber" : "21 YET 16(5)",
+    "callnumber" : [ "21 YET 16(5)+2", "21 YET 16(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 YET 16(5)+1",
-    "callnumber" : "21 YET 16(5)",
+    "callnumber" : [ "21 YET 16(5)+1", "21 YET 16(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 YET 16(5)",
+    "callnumber" : [ "21 YET 16(5)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "PersonCreator" : [ {
@@ -42548,7 +42451,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 JYU 9(2)",
+    "callnumber" : [ "11 JYU 9(2)" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -42684,7 +42587,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WWT 7",
+    "callnumber" : [ "11 WWT 7" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -42816,7 +42719,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WZE 21",
+    "callnumber" : [ "11 WZE 21" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -42932,7 +42835,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 ARU 15",
+    "callnumber" : [ "51 ARU 15" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -43058,7 +42961,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KAKC 4",
+    "callnumber" : [ "51 KAKC 4" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -43189,7 +43092,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 JZI 104",
+    "callnumber" : [ "51 JZI 104" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -43314,7 +43217,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TWP 427(4)",
+    "callnumber" : [ "21 TWP 427(4)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "PersonCreator" : [ {
@@ -43425,7 +43328,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WVA 12",
+    "callnumber" : [ "11 WVA 12" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "TitleOther" : {
@@ -43527,7 +43430,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WWW 50",
+    "callnumber" : [ "11 WWW 50" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -43642,7 +43545,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 JZQW 4",
+    "callnumber" : [ "51 JZQW 4" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -43769,7 +43672,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 JXG 9",
+    "callnumber" : [ "51 JXG 9" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -43914,7 +43817,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 TBX 6",
+    "callnumber" : [ "61 TBX 6" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "PersonCreator" : [ {
@@ -44052,7 +43955,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 WZES 6",
+    "callnumber" : [ "51 WZES 6" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -44197,107 +44100,87 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+16",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+16", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+1",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+1", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+10",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+10", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+9",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+9", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+17",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+17", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+11",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+11", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+8",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+8", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+7",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+7", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+12",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+12", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+14",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+14", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+15",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+15", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+19",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+19", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+18",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+18", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+4",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+4", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+13",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+13", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+6",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+6", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+5",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+5", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+3",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+3", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+20",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+20", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)+2",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)+2", "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 256(5)",
+    "callnumber" : [ "21 TXU 256(5)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "PersonCreator" : [ {
@@ -44429,12 +44312,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QCE 4(8)",
+    "callnumber" : [ "21 QCE 4(8)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QCE 4(8)+1",
-    "callnumber" : "21 QCE 4(8)",
+    "callnumber" : [ "21 QCE 4(8)+1", "21 QCE 4(8)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "PersonCreator" : [ {
@@ -44588,13 +44470,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 UNOE 10-1(7)+1",
-    "callnumber" : "61 UNOE 10-1(7)",
+    "callnumber" : [ "61 UNOE 10-1(7)+1", "61 UNOE 10-1(7)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "60 UNOE 10-1(7)",
-    "callnumber" : "61 UNOE 10-1(7)",
+    "callnumber" : [ "60 UNOE 10-1(7)", "61 UNOE 10-1(7)" ],
     "shelfmark" : "JUE_Praes"
   } ],
   "TitleOther" : {
@@ -44725,7 +44605,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TWZ 3(4)",
+    "callnumber" : [ "21 TWZ 3(4)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "PersonCreator" : [ {
@@ -44962,7 +44842,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KDWN 18-1",
+    "callnumber" : [ "51 KDWN 18-1" ],
     "shelfmark" : "BOX_Frei"
   } ]
 }
@@ -45066,7 +44946,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KDWN 18-2",
+    "callnumber" : [ "51 KDWN 18-2" ],
     "shelfmark" : "BOX_Frei"
   } ]
 }
@@ -45208,8 +45088,7 @@
   "TypeMedia" : "Elektronische Ressource",
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "52 KNLK 11",
-    "callnumber" : "51 KNLK 11",
+    "callnumber" : [ "52 KNLK 11", "51 KNLK 11" ],
     "shelfmark" : "BOX_Filme"
   } ],
   "TitleOther" : {
@@ -45330,7 +45209,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KABB 3",
+    "callnumber" : [ "51 KABB 3" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "PersonCreator" : [ {
@@ -45466,17 +45345,15 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 WAP 61-2",
+    "callnumber" : [ "21 WAP 61-2" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 WAP 61-2+2",
-    "callnumber" : "21 WAP 61-2",
+    "callnumber" : [ "21 WAP 61-2+2", "21 WAP 61-2" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 WAP 61-2+1",
-    "callnumber" : "21 WAP 61-2",
+    "callnumber" : [ "21 WAP 61-2+1", "21 WAP 61-2" ],
     "shelfmark" : "EUP_Frei"
   } ]
 }
@@ -45835,7 +45712,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PZU 52",
+    "callnumber" : [ "21 PZU 52" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -45964,7 +45841,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 JZPB 71",
+    "callnumber" : [ "51 JZPB 71" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "TitleOther" : {
@@ -46095,12 +45972,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XEG 59(5)",
+    "callnumber" : [ "11 XEG 59(5)" ],
     "shelfmark" : "BAY_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XEG 59(5)+1",
-    "callnumber" : "11 XEG 59(5)",
+    "callnumber" : [ "11 XEG 59(5)+1", "11 XEG 59(5)" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -46245,8 +46121,7 @@
   "TypeMedia" : "Elektronische Ressource",
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "52 KNLK 3-2",
-    "callnumber" : "51 KNLK 3-2",
+    "callnumber" : [ "52 KNLK 3-2", "51 KNLK 3-2" ],
     "shelfmark" : "BOX_Filme"
   } ],
   "TitleOther" : {
@@ -46356,26 +46231,23 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 WDA 80(5)+1",
-    "callnumber" : "21 WDA 80(5)",
+    "callnumber" : [ "21 WDA 80(5)+1", "21 WDA 80(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WDA 25(5)",
+    "callnumber" : [ "61 WDA 25(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 WDA 80(5)",
+    "callnumber" : [ "21 WDA 80(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WDA 25(5)+2",
-    "callnumber" : "61 WDA 25(5)",
+    "callnumber" : [ "61 WDA 25(5)+2", "61 WDA 25(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WDA 25(5)+1",
-    "callnumber" : "61 WDA 25(5)",
+    "callnumber" : [ "61 WDA 25(5)+1", "61 WDA 25(5)" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "PersonCreator" : [ {
@@ -46509,12 +46381,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WUA 18",
+    "callnumber" : [ "11 WUA 18" ],
     "shelfmark" : "BAY_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WUA 18+1",
-    "callnumber" : "11 WUA 18",
+    "callnumber" : [ "11 WUA 18+1", "11 WUA 18" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -46650,8 +46521,7 @@
   "TypeMedia" : "Elektronische Ressource",
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "52 KNLL 26",
-    "callnumber" : "51 KNLL 26",
+    "callnumber" : [ "52 KNLL 26", "51 KNLL 26" ],
     "shelfmark" : "BOX_Filme"
   } ]
 }
@@ -46785,7 +46655,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XCE 1",
+    "callnumber" : [ "11 XCE 1" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -46966,7 +46836,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 WDR 1",
+    "callnumber" : [ "21 WDR 1" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "PersonCreator" : [ {
@@ -47112,8 +46982,7 @@
   "TypeMedia" : "Elektronische Ressource",
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "52 KNLM 12",
-    "callnumber" : "51 KNLM 12",
+    "callnumber" : [ "52 KNLM 12", "51 KNLM 12" ],
     "shelfmark" : "BOX_Filme"
   } ]
 }
@@ -47247,7 +47116,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XCI 3",
+    "callnumber" : [ "11 XCI 3" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -47387,7 +47256,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 NXKF 10",
+    "callnumber" : [ "51 NXKF 10" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -47519,7 +47388,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WWLE 33",
+    "callnumber" : [ "11 WWLE 33" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -47663,12 +47532,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBK 258(6)",
+    "callnumber" : [ "21 QBK 258(6)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBK 258(6)+1",
-    "callnumber" : "21 QBK 258(6)",
+    "callnumber" : [ "21 QBK 258(6)+1", "21 QBK 258(6)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -47793,7 +47661,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXB 72",
+    "callnumber" : [ "21 TXB 72" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "PersonCreator" : [ {
@@ -47947,7 +47815,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WWP 56",
+    "callnumber" : [ "11 WWP 56" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -48113,7 +47981,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 OLF 11",
+    "callnumber" : [ "51 OLF 11" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "TitleOther" : {
@@ -48282,7 +48150,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 JZHF 106-12",
+    "callnumber" : [ "51 JZHF 106-12" ],
     "shelfmark" : "BOX_Frei"
   } ]
 }
@@ -48422,7 +48290,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 KDWL 46",
+    "callnumber" : [ "51 KDWL 46" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "TitleOther" : {
@@ -48586,8 +48454,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WUBF 118",
-    "callnumber" : "BAY-SemApp-Finkenberger-Städtebau",
+    "callnumber" : [ "11 WUBF 118", "BAY-SemApp-Finkenberger-Städtebau" ],
     "shelfmark" : "BAY_SemApp"
   } ],
   "RSWK" : [ {
@@ -48752,7 +48619,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "51 MKH 245",
+    "callnumber" : [ "51 MKH 245" ],
     "shelfmark" : "BOX_Frei"
   } ],
   "RSWK" : [ {
@@ -48890,12 +48757,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XLV 4(5)+1",
-    "callnumber" : "21 XLV 4(5)",
+    "callnumber" : [ "21 XLV 4(5)+1", "21 XLV 4(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XLV 4(5)",
+    "callnumber" : [ "21 XLV 4(5)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -49054,57 +48920,47 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBR 19-U(3)+8",
-    "callnumber" : "21 QBR 19-U(3)",
+    "callnumber" : [ "21 QBR 19-U(3)+8", "21 QBR 19-U(3)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBR 19-U(3)+7",
-    "callnumber" : "21 QBR 19-U(3)",
+    "callnumber" : [ "21 QBR 19-U(3)+7", "21 QBR 19-U(3)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBR 19-U(3)+4",
-    "callnumber" : "21 QBR 19-U(3)",
+    "callnumber" : [ "21 QBR 19-U(3)+4", "21 QBR 19-U(3)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBR 19-U(3)+5",
-    "callnumber" : "21 QBR 19-U(3)",
+    "callnumber" : [ "21 QBR 19-U(3)+5", "21 QBR 19-U(3)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBR 19-U(3)+6",
-    "callnumber" : "21 QBR 19-U(3)",
+    "callnumber" : [ "21 QBR 19-U(3)+6", "21 QBR 19-U(3)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBR 19-U(3)+3",
-    "callnumber" : "21 QBR 19-U(3)",
+    "callnumber" : [ "21 QBR 19-U(3)+3", "21 QBR 19-U(3)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBR 19-U(3)+2",
-    "callnumber" : "21 QBR 19-U(3)",
+    "callnumber" : [ "21 QBR 19-U(3)+2", "21 QBR 19-U(3)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBR 19-U(3)+1",
-    "callnumber" : "21 QBR 19-U(3)",
+    "callnumber" : [ "21 QBR 19-U(3)+1", "21 QBR 19-U(3)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBR 19-U(3)",
+    "callnumber" : [ "21 QBR 19-U(3)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBR 19-U(3)+10",
-    "callnumber" : "21 QBR 19-U(3)",
+    "callnumber" : [ "21 QBR 19-U(3)+10", "21 QBR 19-U(3)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QBR 19-U(3)+9",
-    "callnumber" : "21 QBR 19-U(3)",
+    "callnumber" : [ "21 QBR 19-U(3)+9", "21 QBR 19-U(3)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "PersonCreator" : [ {
@@ -49239,17 +49095,15 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PZX 100(16)+2",
-    "callnumber" : "21 PZX 100(16)",
+    "callnumber" : [ "21 PZX 100(16)+2", "21 PZX 100(16)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PZX 100(16)",
+    "callnumber" : [ "21 PZX 100(16)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PZX 100(16)+1",
-    "callnumber" : "21 PZX 100(16)",
+    "callnumber" : [ "21 PZX 100(16)+1", "21 PZX 100(16)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "PersonCreator" : [ {
@@ -49415,277 +49269,223 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+26",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+26", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+25",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+25", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+1",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+1", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+43",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+43", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+42",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+42", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XXA 2(5)+7",
-    "callnumber" : "61 XXA 2(5)",
+    "callnumber" : [ "61 XXA 2(5)+7", "61 XXA 2(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+3",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+3", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XXA 2(5)+8",
-    "callnumber" : "61 XXA 2(5)",
+    "callnumber" : [ "61 XXA 2(5)+8", "61 XXA 2(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XXA 2(5)+6",
-    "callnumber" : "61 XXA 2(5)",
+    "callnumber" : [ "61 XXA 2(5)+6", "61 XXA 2(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XXA 2(5)+5",
-    "callnumber" : "61 XXA 2(5)",
+    "callnumber" : [ "61 XXA 2(5)+5", "61 XXA 2(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XXA 2(5)+4",
-    "callnumber" : "61 XXA 2(5)",
+    "callnumber" : [ "61 XXA 2(5)+4", "61 XXA 2(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XXA 2(5)+9",
-    "callnumber" : "61 XXA 2(5)",
+    "callnumber" : [ "61 XXA 2(5)+9", "61 XXA 2(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+37",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+37", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "20 XXA 15(5)",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "20 XXA 15(5)", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Praes"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+39",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+39", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+34",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+34", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+41",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+41", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+31",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+31", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+5",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+5", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+29",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+29", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+2",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+2", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+17",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+17", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+33",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+33", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XXA 2(5)+2",
-    "callnumber" : "61 XXA 2(5)",
+    "callnumber" : [ "61 XXA 2(5)+2", "61 XXA 2(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XXA 2(5)",
+    "callnumber" : [ "61 XXA 2(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+28",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+28", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+24",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+24", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+32",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+32", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+38",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+38", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+8",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+8", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+22",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+22", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+40",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+40", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+36",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+36", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+12",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+12", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+13",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+13", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+9",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+9", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+7",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+7", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+4",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+4", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+18",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+18", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+16",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+16", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+20",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+20", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+19",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+19", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+15",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+15", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+10",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+10", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+11",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+11", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+6",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+6", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+23",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+23", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XXA 2(5)+3",
-    "callnumber" : "61 XXA 2(5)",
+    "callnumber" : [ "61 XXA 2(5)+3", "61 XXA 2(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XXA 2(5)+10",
-    "callnumber" : "61 XXA 2(5)",
+    "callnumber" : [ "61 XXA 2(5)+10", "61 XXA 2(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+30",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+30", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+14",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+14", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XXA 2(5)+1",
-    "callnumber" : "61 XXA 2(5)",
+    "callnumber" : [ "61 XXA 2(5)+1", "61 XXA 2(5)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+35",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+35", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+27",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+27", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XXA 15(5)+21",
-    "callnumber" : "21 XXA 15(5)",
+    "callnumber" : [ "21 XXA 15(5)+21", "21 XXA 15(5)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -49904,12 +49704,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QRI 1(19)",
+    "callnumber" : [ "21 QRI 1(19)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QRI 1(19)+1",
-    "callnumber" : "21 QRI 1(19)",
+    "callnumber" : [ "21 QRI 1(19)+1", "21 QRI 1(19)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "PersonCreator" : [ {
@@ -50082,7 +49881,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WWNA 73",
+    "callnumber" : [ "11 WWNA 73" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "PersonCreator" : [ {
@@ -50724,7 +50523,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 PYH 1(2)",
+    "callnumber" : [ "21 PYH 1(2)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -50862,37 +50661,31 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WCA 42-3(2)+5",
-    "callnumber" : "61 WCA 42-3(2)",
+    "callnumber" : [ "61 WCA 42-3(2)+5", "61 WCA 42-3(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WCA 42-3(2)+6",
-    "callnumber" : "61 WCA 42-3(2)",
+    "callnumber" : [ "61 WCA 42-3(2)+6", "61 WCA 42-3(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WCA 42-3(2)+2",
-    "callnumber" : "61 WCA 42-3(2)",
+    "callnumber" : [ "61 WCA 42-3(2)+2", "61 WCA 42-3(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WCA 42-3(2)+1",
-    "callnumber" : "61 WCA 42-3(2)",
+    "callnumber" : [ "61 WCA 42-3(2)+1", "61 WCA 42-3(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WCA 42-3(2)+4",
-    "callnumber" : "61 WCA 42-3(2)",
+    "callnumber" : [ "61 WCA 42-3(2)+4", "61 WCA 42-3(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WCA 42-3(2)+3",
-    "callnumber" : "61 WCA 42-3(2)",
+    "callnumber" : [ "61 WCA 42-3(2)+3", "61 WCA 42-3(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WCA 42-3(2)",
+    "callnumber" : [ "61 WCA 42-3(2)" ],
     "shelfmark" : "JUE_Frei"
   } ]
 }
@@ -51002,37 +50795,31 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WCA 42-3,U(2)+6",
-    "callnumber" : "61 WCA 42-3,U(2)",
+    "callnumber" : [ "61 WCA 42-3,U(2)+6", "61 WCA 42-3,U(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WCA 42-3,U(2)",
+    "callnumber" : [ "61 WCA 42-3,U(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WCA 42-3,U(2)+5",
-    "callnumber" : "61 WCA 42-3,U(2)",
+    "callnumber" : [ "61 WCA 42-3,U(2)+5", "61 WCA 42-3,U(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WCA 42-3,U(2)+4",
-    "callnumber" : "61 WCA 42-3,U(2)",
+    "callnumber" : [ "61 WCA 42-3,U(2)+4", "61 WCA 42-3,U(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WCA 42-3,U(2)+2",
-    "callnumber" : "61 WCA 42-3,U(2)",
+    "callnumber" : [ "61 WCA 42-3,U(2)+2", "61 WCA 42-3,U(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WCA 42-3,U(2)+3",
-    "callnumber" : "61 WCA 42-3,U(2)",
+    "callnumber" : [ "61 WCA 42-3,U(2)+3", "61 WCA 42-3,U(2)" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 WCA 42-3,U(2)+1",
-    "callnumber" : "61 WCA 42-3,U(2)",
+    "callnumber" : [ "61 WCA 42-3,U(2)+1", "61 WCA 42-3,U(2)" ],
     "shelfmark" : "JUE_Frei"
   } ]
 }
@@ -51168,7 +50955,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WZR 56",
+    "callnumber" : [ "11 WZR 56" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "TitleOther" : {
@@ -53803,7 +53590,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 TXU 162",
+    "callnumber" : [ "21 TXU 162" ],
     "shelfmark" : "EUP_Frei"
   } ]
 }
@@ -54424,7 +54211,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 VZN 11",
+    "callnumber" : [ "61 VZN 11" ],
     "shelfmark" : "JUE_Frei"
   } ]
 }
@@ -54549,7 +54336,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WZJ 29-1",
+    "callnumber" : [ "11 WZJ 29-1" ],
     "shelfmark" : "BAY_Frei"
   } ]
 }
@@ -54670,7 +54457,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WZJ 29-2",
+    "callnumber" : [ "11 WZJ 29-2" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "RSWK" : [ {
@@ -54840,8 +54627,7 @@
   "TypeMedia" : "Elektronische Ressource",
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "52 KNLV 13",
-    "callnumber" : "51 KNLV 13",
+    "callnumber" : [ "52 KNLV 13", "51 KNLV 13" ],
     "shelfmark" : "BOX_Filme"
   } ]
 }
@@ -54982,41 +54768,35 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XVP 52+2",
-    "callnumber" : "61 XVP 52",
+    "callnumber" : [ "61 XVP 52+2", "61 XVP 52" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XVP 52+4",
-    "callnumber" : "61 XVP 52",
+    "callnumber" : [ "61 XVP 52+4", "61 XVP 52" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XVP 52",
+    "callnumber" : [ "61 XVP 52" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XVP 52+3",
-    "callnumber" : "61 XVP 52",
+    "callnumber" : [ "61 XVP 52+3", "61 XVP 52" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 XVP 52+1",
-    "callnumber" : "61 XVP 52",
+    "callnumber" : [ "61 XVP 52+1", "61 XVP 52" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XVP 57+2",
-    "callnumber" : "21 XVP 57",
+    "callnumber" : [ "21 XVP 57+2", "21 XVP 57" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XVP 57+1",
-    "callnumber" : "21 XVP 57",
+    "callnumber" : [ "21 XVP 57+1", "21 XVP 57" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 XVP 57",
+    "callnumber" : [ "21 XVP 57" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -55218,16 +54998,15 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "61 YFB 20+1",
-    "callnumber" : "61 YFB 20",
+    "callnumber" : [ "61 YFB 20+1", "61 YFB 20" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 YFB 151",
+    "callnumber" : [ "21 YFB 151" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 YFB 20",
+    "callnumber" : [ "61 YFB 20" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "RSWK" : [ {
@@ -55380,21 +55159,19 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 YCT 9",
+    "callnumber" : [ "21 YCT 9" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 YCT 9+1",
-    "callnumber" : "21 YCT 9",
+    "callnumber" : [ "21 YCT 9+1", "21 YCT 9" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 YCA 1",
+    "callnumber" : [ "61 YCA 1" ],
     "shelfmark" : "JUE_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "61 YCA 1+1",
-    "callnumber" : "61 YCA 1",
+    "callnumber" : [ "61 YCA 1+1", "61 YCA 1" ],
     "shelfmark" : "JUE_Frei"
   } ],
   "RSWK" : [ {
@@ -55578,7 +55355,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WUJ 43",
+    "callnumber" : [ "11 WUJ 43" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "PersonCreator" : [ {
@@ -56189,7 +55966,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 XBD 21",
+    "callnumber" : [ "11 XBD 21" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "PersonCreator" : [ {
@@ -56478,17 +56255,15 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QOF 59(2)",
+    "callnumber" : [ "21 QOF 59(2)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QOF 59(2)+2",
-    "callnumber" : "21 QOF 59(2)",
+    "callnumber" : [ "21 QOF 59(2)+2", "21 QOF 59(2)" ],
     "shelfmark" : "EUP_Frei"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "21 QOF 59(2)+1",
-    "callnumber" : "21 QOF 59(2)",
+    "callnumber" : [ "21 QOF 59(2)+1", "21 QOF 59(2)" ],
     "shelfmark" : "EUP_Frei"
   } ],
   "RSWK" : [ {
@@ -56930,7 +56705,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 WUBE 139",
+    "callnumber" : [ "11 WUBE 139" ],
     "shelfmark" : "BAY_Frei"
   } ],
   "PersonCreator" : [ {
@@ -59670,8 +59445,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "0303854",
-    "callnumber" : "TWRF 120(6)",
+    "callnumber" : [ "0303854", "TWRF 120(6)" ],
     "shelfmark" : "Freihand_F"
   } ],
   "RSWK" : [ {
@@ -59791,13 +59565,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 IBUA 114",
-    "callnumber" : "013280101",
+    "callnumber" : [ "11 IBUA 114", "013280101" ],
     "shelfmark" : "HB"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "A 256 WEIS",
-    "callnumber" : "52642917",
+    "callnumber" : [ "A 256 WEIS", "52642917" ],
     "shelfmark" : "Freihand"
   } ],
   "RSWK" : [ {
@@ -59901,13 +59673,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 IBUA 114",
-    "callnumber" : "013280101",
+    "callnumber" : [ "11 IBUA 114", "013280101" ],
     "shelfmark" : "HB"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "A 256 WEIS",
-    "callnumber" : "52642917",
+    "callnumber" : [ "A 256 WEIS", "52642917" ],
     "shelfmark" : "SUPPRESSED"
   } ],
   "RSWK" : [ {
@@ -60011,8 +59781,7 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 IBUA 114",
-    "callnumber" : "013280101",
+    "callnumber" : [ "11 IBUA 114", "013280101" ],
     "shelfmark" : "SUPPRESSED"
   } ],
   "RSWK" : [ {
@@ -60123,13 +59892,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 IBUA 114",
-    "callnumber" : "013280101",
+    "callnumber" : [ "11 IBUA 114", "013280101" ],
     "shelfmark" : "SUPPRESSED"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "A 256 WEIS",
-    "callnumber" : "52642917",
+    "callnumber" : [ "A 256 WEIS", "52642917" ],
     "shelfmark" : "SUPPRESSED"
   } ],
   "RSWK" : [ {
@@ -60240,13 +60007,11 @@
   } ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "11 IBUA 114",
-    "callnumber" : "013280101",
+    "callnumber" : [ "11 IBUA 114", "013280101" ],
     "shelfmark" : "SUPPRESSED"
   }, {
     "identifier" : "DE-A96",
-    "callnumber" : "A 256 WEIS",
-    "callnumber" : "52642917",
+    "callnumber" : [ "A 256 WEIS", "52642917" ],
     "shelfmark" : "SUPPRESSED"
   } ],
   "RSWK" : [ {
@@ -61015,8 +60780,7 @@
   "TypePeriodical" : [ "Zeitschrift" ],
   "Item" : [ {
     "identifier" : "DE-A96",
-    "callnumber" : "13 Z 102-S",
-    "callnumber" : "13 Z 102",
+    "callnumber" : [ "13 Z 102-S", "13 Z 102" ],
     "shelfmark" : "BAY_ZSFrei"
   } ],
   "TitleOther" : {

@@ -943,8 +943,11 @@ do list(path: "ITM  ", "var": "$i")
       copy_field("$i.z", "@callnumber.$append")
     end
     uniq("@callnumber")
-    set_array("Item[].$last.callnumber")
-    move_field("@callnumber", "Item[].$last.callnumber.$append")
+    set_array("Item[].$last.callnumber[]")
+    do list(path: "@callnumber", "var": "$j")
+      copy_field("$j", "Item[].$last.callnumber[].$append")
+    end
+    remove_field("@callnumber")
     copy_field("$i.x", "Item[].$last.shelfmark")
   end
 end
