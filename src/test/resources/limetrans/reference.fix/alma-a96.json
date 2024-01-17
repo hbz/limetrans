@@ -3846,9 +3846,9 @@
   "ClassifierDigitization" : [ {
     "classifier" : "ZDB-30-PQE"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "TWP"
@@ -6508,9 +6508,9 @@
   "Extent" : {
     "extent" : "151 S. : zahlr. Ill."
   },
-  "ClassifierLocal" : [ {
-    "classifier" : "vitr"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "vitr" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "WWW"
@@ -7304,9 +7304,9 @@
     "contact" : "B:DE-101",
     "format" : "application/pdf"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "vitr."
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "vitr." ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "WTD"
@@ -19921,9 +19921,9 @@
     "controlNumber" : "(DE-605)HT008165916",
     "identifierForLinkingEntry" : "(DE-605)HT008165916"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "Vitr."
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "Vitr." ]
+  },
   "SubjectHeadings" : [ {
     "subject" : "Entwurf"
   } ],
@@ -26187,9 +26187,9 @@
     "controlNumber" : "(DE-605)CT001009832",
     "identifierForLinkingEntry" : "(DE-605)CT001009832"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "vitr."
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "vitr." ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "KAQ"
@@ -50424,9 +50424,9 @@
   "ClassifierDigitization" : [ {
     "classifier" : "ZDB-89-EBL"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "XZV"
@@ -50552,9 +50552,9 @@
   "ClassifierDigitization" : [ {
     "classifier" : "ZDB-35-WIC"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "wiley"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "wiley" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "UFB"
@@ -51558,9 +51558,9 @@
   }, {
     "classifier" : "ZDB-128-UMM"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "beck"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "beck" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "QBL"
@@ -51795,9 +51795,9 @@
   }, {
     "classifier" : "ZDB-30-PQE"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "TZA"
@@ -51942,9 +51942,9 @@
   "ClassifierDigitization" : [ {
     "classifier" : "ZDB-89-EBL"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "QAJ"
@@ -52062,9 +52062,9 @@
   }, {
     "classifier" : "ZDB-4-NLEBK"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "TWQ"
@@ -52190,9 +52190,9 @@
   }, {
     "classifier" : "ZDB-22-CAN"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "WFM"
@@ -52425,9 +52425,9 @@
   "ClassifierDigitization" : [ {
     "classifier" : "ZDB-89-EBL"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "PUM"
@@ -52552,9 +52552,9 @@
   "ClassifierDigitization" : [ {
     "classifier" : "ZDB-89-EBL"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "ZQS"
@@ -52689,9 +52689,9 @@
   "ClassifierDigitization" : [ {
     "classifier" : "ZDB-89-EBL"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "PZR"
@@ -53051,9 +53051,9 @@
   }, {
     "classifier" : "ZDB-30-PQE"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "PZR"
@@ -53400,9 +53400,9 @@
   }, {
     "classifier" : "ZDB-89-EBL"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "QAT"
@@ -53656,9 +53656,9 @@
   }, {
     "classifier" : "ZDB-30-PQE"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "PTQN"
@@ -53923,9 +53923,9 @@
   "ClassifierDigitization" : [ {
     "classifier" : "ZDB-89-EBL"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "ZJB"
@@ -54165,9 +54165,9 @@
   "ClassifierDigitization" : [ {
     "classifier" : "ZDB-89-EBL"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "QAT"
@@ -54294,9 +54294,9 @@
   "ClassifierDigitization" : [ {
     "classifier" : "ZDB-89-EBL"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "ebc"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "ebc" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "ZSA"
@@ -55733,9 +55733,9 @@
   "ClassifierDigitization" : [ {
     "classifier" : "ZDB-7-CRC"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "taylor francis"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "taylor francis" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "TZU"
@@ -55870,9 +55870,9 @@
   "ClassifierDigitization" : [ {
     "classifier" : "ZDB-7-CRC"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "taylor francis"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "taylor francis" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "TXR"
@@ -56018,9 +56018,9 @@
   "ClassifierDigitization" : [ {
     "classifier" : "ZDB-7-CRC"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "taylor francis"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "taylor francis" ]
+  },
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
     "subject" : "TXU"
@@ -59409,9 +59409,9 @@
   "ClassifierDigitization" : [ {
     "classifier" : "ZDB-95-SFL"
   } ],
-  "ClassifierLocal" : [ {
-    "classifier" : "brill"
-  } ],
+  "ClassifierLocal" : {
+    "classifier" : [ "brill" ]
+  },
   "SubjectHeadings" : [ {
     "subject" : "Ideengeschichte"
   }, {

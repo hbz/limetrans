@@ -834,12 +834,12 @@ do list(path: "962??.e", "var": "$i")
 end
 
 # MARC/980
-set_array("ClassifierLocal[]")
+set_array("ClassifierLocal.classifier[]")
 do list(path: "9801 ", "var": "$i")
   if hbz.limetrans.function.MemberLocal("$i")
-    add_field("ClassifierLocal[].$append.__dummy__", "")
-    set_array("ClassifierLocal[].$last.classifier")
-    copy_field("$i.a", "ClassifierLocal[].$last.classifier.$append")
+    do list(path: "$i.a", "var": "$j")
+      copy_field("$j", "ClassifierLocal.classifier[].$append")
+    end
   end
 end
 
@@ -1075,7 +1075,7 @@ retain(
   "CarrierType[]",
   "ChronologyAndEnumeration",
   "ClassifierDigitization[]",
-  "ClassifierLocal[]",
+  "ClassifierLocal",
   "CompilationTitle",
   "Conference",
   "ConstituentUnitEntry[]",
