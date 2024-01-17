@@ -887,7 +887,9 @@ if exists("@mmsiz")
 end
 copy_field("@sysid", "xbib[].$append.uid")
 copy_field("@id", "xbib[].$append.uid")
-copy_field("035  .a", "xbib[].$append.uid")
+do list(path: "035  .a", "var": "$i")
+  copy_field("$i", "xbib[].$append.uid")
+end
 uniq("xbib[]")
 
 do list(path: "@facet_format", "var": "$i")
