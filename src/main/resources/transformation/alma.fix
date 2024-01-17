@@ -440,32 +440,32 @@ if exists("@sisis_supplement-0010")
 end
 
 # MARC/POC
-set_array("DateFirst.date")
+set_array("DateFirst.date[]")
 do list(path: "POC  ", "var": "$i")
   if any_match("$i.a", ".*$[institution-code]")
-    copy_field("$i.b", "DateFirst.date.$append")
+    copy_field("$i.b", "DateFirst.date[].$append")
   end
 end
-uniq("DateFirst.date")
 if any_match("@date1", "\\d+")
   if none_equal("@date1", "9999")
-    copy_field("@date1", "DateFirst.date.$append")
+    copy_field("@date1", "DateFirst.date[].$append")
   end
 end
+uniq("DateFirst.date[]")
 
 # MARC/POC
-set_array("DateLast.date")
+set_array("DateLast.date[]")
 do list(path: "POC  ", "var": "$i")
   if any_match("$i.a", ".*$[institution-code]")
-    copy_field("$i.c", "DateLast.date.$append")
+    copy_field("$i.c", "DateLast.date[].$append")
   end
 end
-uniq("DateLast.date")
 if any_match("@date2", "\\d+")
   if none_equal("@date2", "9999")
-    copy_field("@date2", "DateLast.date.$append")
+    copy_field("@date2", "DateLast.date[].$append")
   end
 end
+uniq("DateLast.date[]")
 
 set_array("Language[]")
 do list(path: "@language_source", "var": "$i")
