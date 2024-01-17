@@ -763,11 +763,13 @@ do list(path: "H56??", "var": "$i")
   end
 end
 # MARC/POR
-set_array("IdentifierAlma.identifierPID")
+set_array("IdentifierAlma.identifierPID[]")
 do list(path: "POR  ", "var": "$i")
   if any_equal("$i.[MA]", "$[member]")
     if none_equal("$i.b", "Not Available")
-      copy_field("$i.a", "IdentifierAlma.identifierPID.$append")
+      do list(path: "$i.a", "var": "$j")
+        copy_field("$j", "IdentifierAlma.identifierPID[].$append")
+      end
       add_field("OnlineAccess[].$append.__dummy__", "")
       copy_field("$i.D", "@uri")
       replace_all("@uri", "$[network]", "$[member]")
