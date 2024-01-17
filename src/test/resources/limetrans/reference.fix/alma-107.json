@@ -252,7 +252,7 @@
   "ExtendedType" : [ "Datenbank" ],
   "TypeHeading" : [ {
     "term" : "Datenbank",
-    "identifier" : "(DE-588)4011119-2"
+    "identifier" : [ "(DE-588)4011119-2" ]
   } ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -691,10 +691,10 @@
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks", "Konferenzschrift" ],
   "TypeHeading" : [ {
     "term" : "Amtliche Publikation",
-    "identifier" : "(DE-588)4142300-8"
+    "identifier" : [ "(DE-588)4142300-8" ]
   }, {
     "term" : "Bildband",
-    "identifier" : "(DE-588)4145395-5"
+    "identifier" : [ "(DE-588)4145395-5" ]
   } ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -869,7 +869,7 @@
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "TypeHeading" : [ {
     "term" : "Aufsatzsammlung",
-    "identifier" : "(DE-588)4143413-4"
+    "identifier" : [ "(DE-588)4143413-4" ]
   } ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -977,7 +977,7 @@
   "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
   "TypeHeading" : [ {
     "term" : "Aufsatzsammlung",
-    "identifier" : "(DE-588)4143413-4"
+    "identifier" : [ "(DE-588)4143413-4" ]
   } ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -1092,10 +1092,10 @@
   "ExtendedType" : [ "Zeitung", "Regionalzeitung" ],
   "TypeHeading" : [ {
     "term" : "Zeitung",
-    "identifier" : "(DE-588)4067510-5"
+    "identifier" : [ "(DE-588)4067510-5" ]
   }, {
     "term" : "Regionalzeitung",
-    "identifier" : "(DE-588)4177435-8"
+    "identifier" : [ "(DE-588)4177435-8" ]
   } ],
   "TypeMediaSpecialPreservation" : [ "Archivierung/Langzeitarchivierung gewährleistet", "Archivierung/Langzeitarchivierung gewährleistet" ],
   "Country" : [ {
@@ -1259,10 +1259,10 @@
   "ExtendedType" : [ "Zeitung", "Regionalzeitung" ],
   "TypeHeading" : [ {
     "term" : "Zeitung",
-    "identifier" : "(DE-588)4067510-5"
+    "identifier" : [ "(DE-588)4067510-5" ]
   }, {
     "term" : "Regionalzeitung",
-    "identifier" : "(DE-588)4177435-8"
+    "identifier" : [ "(DE-588)4177435-8" ]
   } ],
   "PublicationPlaceOfSecondaryEdition" : [ {
     "name" : "Leipzig ; Frankfurt, M."
@@ -1464,10 +1464,10 @@
   "ExtendedType" : [ "Zeitung", "Regionalzeitung" ],
   "TypeHeading" : [ {
     "term" : "Zeitung",
-    "identifier" : "(DE-588)4067510-5"
+    "identifier" : [ "(DE-588)4067510-5" ]
   }, {
     "term" : "Regionalzeitung",
-    "identifier" : "(DE-588)4177435-8"
+    "identifier" : [ "(DE-588)4177435-8" ]
   } ],
   "Country" : [ {
     "countryISO" : "DXDE"
@@ -1600,10 +1600,10 @@
   "ExtendedType" : [ "Zeitung", "Regionalzeitung" ],
   "TypeHeading" : [ {
     "term" : "Zeitung",
-    "identifier" : "(DE-588)4067510-5"
+    "identifier" : [ "(DE-588)4067510-5" ]
   }, {
     "term" : "Regionalzeitung",
-    "identifier" : "(DE-588)4177435-8"
+    "identifier" : [ "(DE-588)4177435-8" ]
   } ],
   "Country" : [ {
     "countryISO" : "DXDE"
@@ -1736,7 +1736,7 @@
   "ExtendedType" : [ "Zeitschrift" ],
   "TypeHeading" : [ {
     "term" : "Zeitschrift",
-    "identifier" : "(DE-588)4067488-5"
+    "identifier" : [ "(DE-588)4067488-5" ]
   } ],
   "Country" : [ {
     "countryISO" : "DE"
@@ -1853,12 +1853,10 @@
   "ExtendedType" : [ "Zeitschrift", "Wörterbuch" ],
   "TypeHeading" : [ {
     "term" : "Zeitschrift",
-    "identifier" : "(DE-588)4067488-5"
+    "identifier" : [ "(DE-588)4067488-5" ]
   }, {
     "term" : "Wörterbuch",
-    "identifier" : "(DE-588)4066724-8",
-    "identifier" : "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040667243",
-    "identifier" : "http://viaf.org/viaf/sourceID/DNB|040667243"
+    "identifier" : [ "(DE-588)4066724-8", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040667243", "http://viaf.org/viaf/sourceID/DNB|040667243" ]
   } ],
   "Country" : [ {
     "countryISO" : "DE"
