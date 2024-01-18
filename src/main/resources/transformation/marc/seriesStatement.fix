@@ -19,8 +19,11 @@ do list(path: "490[01] ", "var": "$i")
       set_array("SeriesAddedEntryUniformTitle[]")
     end
     add_field("SeriesAddedEntryUniformTitle[].$append.__dummy__", "")
-    call_macro("remove-nonsort", source: "$i.a")
-    copy_field("$i.a", "SeriesAddedEntryUniformTitle[].$last.title")
+    set_array("SeriesAddedEntryUniformTitle[].$last.title[]")
+    do list(path: "$i.a", "var": "$j")
+      call_macro("remove-nonsort", source: "$j")
+      copy_field("$j", "SeriesAddedEntryUniformTitle[].$last.title[].$append")
+    end
     copy_field("$i.v", "SeriesAddedEntryUniformTitle[].$last.volume")
   end
 end
