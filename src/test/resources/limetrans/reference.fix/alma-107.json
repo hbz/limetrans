@@ -329,7 +329,7 @@
     "chronology" : [ "2000-" ]
   } ],
   "PublicationPlace" : [ {
-    "printingPlace" : "Wiesbaden"
+    "printingPlace" : [ "Wiesbaden" ]
   } ],
   "DateProper" : {
     "date" : [ "2000-" ]
@@ -408,15 +408,15 @@
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "PublicationPlaceOfSecondaryEdition" : [ {
-    "name" : "Koblenz"
+    "name" : [ "Koblenz" ]
   } ],
   "PublisherNameOfSecondaryEdition" : [ {
-    "name" : "Landesbibliothekszentrum Rheinland-Pfalz"
+    "name" : [ "Landesbibliothekszentrum Rheinland-Pfalz" ]
   } ],
   "ReproductionNote" : [ {
     "type" : "Digitalisierte Ausg.",
-    "place" : "Koblenz",
-    "agency" : "Landesbibliothekszentrum Rheinland-Pfalz",
+    "place" : [ "Koblenz" ],
+    "agency" : [ "Landesbibliothekszentrum Rheinland-Pfalz" ],
     "date" : "2013",
     "series" : "dilibri - digitale Sammlung Rheinland-Pfalz"
   } ],
@@ -478,7 +478,7 @@
     "chronology" : [ "[1854]" ]
   } ],
   "PublicationPlace" : [ {
-    "printingPlace" : "Neuwied"
+    "printingPlace" : [ "Neuwied" ]
   } ],
   "DateProper" : {
     "date" : [ "[1854]" ]
@@ -539,15 +539,15 @@
   "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
   "PublicationPlaceOfSecondaryEdition" : [ {
-    "name" : "Koblenz"
+    "name" : [ "Koblenz" ]
   } ],
   "PublisherNameOfSecondaryEdition" : [ {
-    "name" : "Landesbibliothekszentrum Rheinland-Pfalz"
+    "name" : [ "Landesbibliothekszentrum Rheinland-Pfalz" ]
   } ],
   "ReproductionNote" : [ {
     "type" : "Digitalisierte Ausg.",
-    "place" : "Koblenz",
-    "agency" : "Landesbibliothekszentrum Rheinland-Pfalz",
+    "place" : [ "Koblenz" ],
+    "agency" : [ "Landesbibliothekszentrum Rheinland-Pfalz" ],
     "date" : "2008",
     "series" : "dilibri - digitale Sammlung Rheinland-Pfalz"
   } ],
@@ -618,7 +618,7 @@
     "chronology" : [ "1911" ]
   } ],
   "PublicationPlace" : [ {
-    "printingPlace" : "Ahrweiler"
+    "printingPlace" : [ "Ahrweiler" ]
   } ],
   "DateProper" : {
     "date" : [ "1911" ]
@@ -761,7 +761,7 @@
     "chronology" : [ "Januar 2017" ]
   } ],
   "PublicationPlace" : [ {
-    "printingPlace" : "Mainz"
+    "printingPlace" : [ "Mainz" ]
   } ],
   "DateProper" : {
     "date" : [ "Januar 2017" ]
@@ -930,7 +930,7 @@
     "chronology" : [ "1987" ]
   } ],
   "PublicationPlace" : [ {
-    "printingPlace" : "Braunschweig"
+    "printingPlace" : [ "Braunschweig" ]
   } ],
   "DateProper" : {
     "date" : [ "1987" ]
@@ -1038,7 +1038,7 @@
     "chronology" : [ "1987" ]
   } ],
   "PublicationPlace" : [ {
-    "printingPlace" : "Braunschweig"
+    "printingPlace" : [ "Braunschweig" ]
   } ],
   "DateProper" : {
     "date" : [ "1987" ]
@@ -1176,7 +1176,7 @@
     "chronology" : [ "2010-[2020]" ]
   } ],
   "PublicationPlace" : [ {
-    "printingPlace" : "Ludwigshafen"
+    "printingPlace" : [ "Ludwigshafen" ]
   } ],
   "DateProper" : {
     "date" : [ "2010-[2020]" ]
@@ -1265,15 +1265,15 @@
     "identifier" : [ "(DE-588)4177435-8" ]
   } ],
   "PublicationPlaceOfSecondaryEdition" : [ {
-    "name" : "Leipzig ; Frankfurt, M."
+    "name" : [ "Leipzig ; Frankfurt, M." ]
   } ],
   "PublisherNameOfSecondaryEdition" : [ {
-    "name" : "Dt. Nationalbibliothek"
+    "name" : [ "Dt. Nationalbibliothek" ]
   } ],
   "ReproductionNote" : [ {
     "type" : "Mikrofilm-Ausg.",
-    "place" : "Leipzig ; Frankfurt, M.",
-    "agency" : "Dt. Nationalbibliothek",
+    "place" : [ "Leipzig ; Frankfurt, M." ],
+    "agency" : [ "Dt. Nationalbibliothek" ],
     "data" : "d20032010"
   } ],
   "Country" : [ {
@@ -1351,7 +1351,7 @@
     "chronology" : [ "2006-[2020]" ]
   } ],
   "PublicationPlace" : [ {
-    "printingPlace" : "Ludwigshafen, Rh."
+    "printingPlace" : [ "Ludwigshafen, Rh." ]
   } ],
   "DateProper" : {
     "date" : [ "2006-[2020]" ]
@@ -1533,7 +1533,7 @@
     "chronology" : [ "1926-1931" ]
   } ],
   "PublicationPlace" : [ {
-    "printingPlace" : "Neustadt, Haardt"
+    "printingPlace" : [ "Neustadt, Haardt" ]
   } ],
   "DateProper" : {
     "date" : [ "1926-1931" ]
@@ -1667,7 +1667,7 @@
     "chronology" : [ "1925-1939" ]
   } ],
   "PublicationPlace" : [ {
-    "printingPlace" : "Pirmasens"
+    "printingPlace" : [ "Pirmasens" ]
   } ],
   "DateProper" : {
     "date" : [ "1925-1939" ]
@@ -1798,7 +1798,7 @@
     "chronology" : [ "2003-2003" ]
   } ],
   "PublicationPlace" : [ {
-    "printingPlace" : "Speyer"
+    "printingPlace" : [ "Speyer" ]
   } ],
   "DateProper" : {
     "date" : [ "2003-2003" ]
@@ -1932,8 +1932,7 @@
     "chronology" : [ "1982-1983" ]
   } ],
   "PublicationPlace" : [ {
-    "printingPlace" : "Landsberg",
-    "printingPlace" : "München"
+    "printingPlace" : [ "Landsberg", "München" ]
   } ],
   "DateProper" : {
     "date" : [ "1982-1983" ]
