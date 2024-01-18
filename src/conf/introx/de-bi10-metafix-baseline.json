@@ -4,7 +4,7 @@
   "postprocess": true,
   "alma": {
     "regexp": {
-      "suppressedLocation": "(?:BiblVerw|CB_ZSReg|CM_Schran|CM_ZSReg|Dauerausl|ILL|ILL_CB|ILL_CM|LAM_ZSReg)"
+      "suppressedLocation": "(?:Auss|BiblVerw|CB_ZSReg|CM_Auss|CM_Schran|CM_ZSReg|Dauerausl|ILL|ILL_CB|ILL_CM|LAM_Auss|LAM_ZSReg)"
     }
   },
   "input": {
