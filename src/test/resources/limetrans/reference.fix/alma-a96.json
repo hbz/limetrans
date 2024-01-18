@@ -177,8 +177,7 @@
     "carrier" : [ "Elektronische Ressource" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "650",
-    "subject" : "340"
+    "subject" : [ "650", "340" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -658,7 +657,7 @@
     "subject" : [ "Wörterbuch", "Gentechnologie" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "780"
+    "subject" : [ "780" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "WB 1415"
@@ -2239,7 +2238,7 @@
     "localCallNumber" : [ "63 ZS 104" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "540"
+    "subject" : [ "540" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "VA 6120"
@@ -2769,7 +2768,7 @@
     "localCallNumber" : [ "51 BFG 9" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "560"
+    "subject" : [ "560" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "AN 17400"
@@ -2909,10 +2908,10 @@
     "localCallNumber" : [ "21 TWZ 35" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "004"
+    "subject" : [ "004" ]
   } ],
   "SubjectRPB" : [ {
-    "subject" : "820"
+    "subject" : [ "820" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -3187,9 +3186,9 @@
     "localCallNumber" : [ "61 UEC 6" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "920"
+    "subject" : [ "920" ]
   }, {
-    "subject" : "900"
+    "subject" : [ "900" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -3417,9 +3416,9 @@
     "subject" : [ "Psychologie" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "860"
+    "subject" : [ "860" ]
   }, {
-    "subject" : "865"
+    "subject" : [ "865" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "CM 1000"
@@ -5362,9 +5361,9 @@
     "localCallNumber" : [ "21 UAE 4" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "830"
+    "subject" : [ "830" ]
   }, {
-    "subject" : "330"
+    "subject" : [ "330" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "NU 2000"
@@ -5601,7 +5600,7 @@
     "localCallNumber" : [ "61 UIQ 43" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "830"
+    "subject" : [ "830" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "UP 1000"
@@ -5826,7 +5825,7 @@
     "localCallNumber" : [ "11 WWA 41" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "510"
+    "subject" : [ "510" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -6054,7 +6053,7 @@
     "localCallNumber" : [ "51 JYR 3" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "500"
+    "subject" : [ "500" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -6288,7 +6287,7 @@
     "localCallNumber" : [ "51 KDAG 2" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "500"
+    "subject" : [ "500" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -6781,7 +6780,7 @@
     "localCallNumber" : [ "51 MKM 3" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "380"
+    "subject" : [ "380" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "LB 41000"
@@ -7284,7 +7283,7 @@
     "localCallNumber" : [ "51 KBLG 25" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "500"
+    "subject" : [ "500" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "LH 70460"
@@ -7427,7 +7426,7 @@
     "localCallNumber" : [ "61 UAE 10" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "830"
+    "subject" : [ "830" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "UB 2800"
@@ -7563,7 +7562,7 @@
     "localCallNumber" : [ "11 WTP 92", "51 WUF 1" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "510"
+    "subject" : [ "510" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -7971,7 +7970,7 @@
     "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "330"
+    "subject" : [ "330" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -8280,7 +8279,7 @@
     "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "920"
+    "subject" : [ "920" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -8567,7 +8566,7 @@
     "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "100"
+    "subject" : [ "100" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -9049,11 +9048,11 @@
     "subject" : [ "Lilienthal, Otto (1848-1896)", "Luftfahrt", "Geschichte" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "700"
+    "subject" : [ "700" ]
   }, {
-    "subject" : "850"
+    "subject" : [ "850" ]
   }, {
-    "subject" : "900"
+    "subject" : [ "900" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "ZO 2050"
@@ -9456,7 +9455,7 @@
     "subject" : [ "Straßenbau", "Straßenverkehrstechnik" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "940"
+    "subject" : [ "940" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "ZI 6400"
@@ -9733,7 +9732,7 @@
     "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "510"
+    "subject" : [ "510" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -9811,7 +9810,7 @@
     "taxonomyRVK" : [ "US 2200 Einzelne Hypothesen und Modelle, z.B. Theorie der Schwarzen Löcher" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "100"
+    "subject" : [ "100" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "AX 11210"
@@ -10144,7 +10143,7 @@
     "subject" : [ "Informatik" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "820"
+    "subject" : [ "820" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -10333,7 +10332,7 @@
     "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "650"
+    "subject" : [ "650" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -11599,7 +11598,7 @@
     "subject" : [ "Deutsch" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "200"
+    "subject" : [ "200" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "GB 1490"
@@ -14686,7 +14685,7 @@
     "subject" : [ "Wissenschaftliche Bibliothek" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "560"
+    "subject" : [ "560" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -19540,7 +19539,7 @@
     "subject" : [ "Analysis", "Lehrbuch" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "800"
+    "subject" : [ "800" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "SK 400"
@@ -19657,7 +19656,7 @@
     "subject" : [ "Deutsch", "Technik", "Englisch" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "900"
+    "subject" : [ "900" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -19768,9 +19767,9 @@
     "subject" : [ "Entwurf", "Architektur" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "450"
+    "subject" : [ "450" ]
   }, {
-    "subject" : "510"
+    "subject" : [ "510" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -20065,7 +20064,7 @@
     "subject" : [ "Technische Mechanik" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "900"
+    "subject" : [ "900" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "UF 1500"
@@ -20309,7 +20308,7 @@
     "person" : [ "Adorno, Theodor W. (1903-1969)", "Tiedemann, Rolf (1932-2018)", "Adorno, Gretel (1902-1993)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "400"
+    "subject" : [ "400" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "MR 1050"
@@ -20439,7 +20438,7 @@
     "subject" : [ "Organische Chemie", "Methode" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "840"
+    "subject" : [ "840" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -20669,7 +20668,7 @@
     "subject" : [ "Elektrotechnik" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "920"
+    "subject" : [ "920" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "ZN 2650"
@@ -20932,7 +20931,7 @@
     "person" : [ "Lueger, Otto (1843-1911)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "900"
+    "subject" : [ "900" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -21022,9 +21021,9 @@
     "subject" : [ "Technik" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "900"
+    "subject" : [ "900" ]
   }, {
-    "subject" : "901"
+    "subject" : [ "901" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "ZG 8550"
@@ -21124,7 +21123,7 @@
     "subject" : [ "Soziologie", "Systemtheorie" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "630"
+    "subject" : [ "630" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -21237,7 +21236,7 @@
     "subject" : [ "Analysis" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "800"
+    "subject" : [ "800" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "SK 400"
@@ -21359,7 +21358,7 @@
     "subject" : [ "Geschichte", "Kunst" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "500"
+    "subject" : [ "500" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -21551,7 +21550,7 @@
     "person" : [ "Marx, Karl (1818-1883)", "Engels, Friedrich (1820-1895)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "610"
+    "subject" : [ "610" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "CG 5340"
@@ -22018,11 +22017,11 @@
     "subject" : [ "Geschichte", "Deutschland", "Kunst" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "500"
+    "subject" : [ "500" ]
   }, {
-    "subject" : "505"
+    "subject" : [ "505" ]
   }, {
-    "subject" : "510"
+    "subject" : [ "510" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "LH 13440"
@@ -22137,7 +22136,7 @@
     "subject" : [ "Geschichte", "Deutschland", "Stadt" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "330"
+    "subject" : [ "330" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "NR 1800"
@@ -22256,9 +22255,9 @@
     "subject" : [ "Künstler" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "500"
+    "subject" : [ "500" ]
   }, {
-    "subject" : "503"
+    "subject" : [ "503" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "LH 13100"
@@ -22550,7 +22549,7 @@
     "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "100"
+    "subject" : [ "100" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -23687,9 +23686,9 @@
     "localCallNumber" : [ "21 QUFU 1" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "600"
+    "subject" : [ "600" ]
   }, {
-    "subject" : "6075"
+    "subject" : [ "6075" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "PP 6843"
@@ -25112,9 +25111,9 @@
     "subject" : [ "Psychologie" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "860"
+    "subject" : [ "860" ]
   }, {
-    "subject" : "865"
+    "subject" : [ "865" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "CM 1000"
@@ -25320,7 +25319,7 @@
     "subject" : [ "Deutschland", "Schuldrecht" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "600"
+    "subject" : [ "600" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -25448,9 +25447,9 @@
     "subject" : [ "Englisch", "Technik", "Deutsch" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "900"
+    "subject" : [ "900" ]
   }, {
-    "subject" : "901"
+    "subject" : [ "901" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "ZG 8540"
@@ -25577,7 +25576,7 @@
     "subject" : [ "Betriebswirtschaftslehre" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "650"
+    "subject" : [ "650" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "QP 100"
@@ -26022,9 +26021,9 @@
     "localCallNumber" : [ "11 KAQ 7-3" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "130"
+    "subject" : [ "130" ]
   }, {
-    "subject" : "510"
+    "subject" : [ "510" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -26257,7 +26256,7 @@
     "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "120"
+    "subject" : [ "120" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -26713,7 +26712,7 @@
     "localCallNumber" : [ "21 QUN 89" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "600"
+    "subject" : [ "600" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "PP 3353"
@@ -27037,7 +27036,7 @@
     "localCallNumber" : [ "61 ZJA 1(5)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "910"
+    "subject" : [ "910" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -27868,7 +27867,7 @@
     "subject" : [ "Physik" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "830"
+    "subject" : [ "830" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "UM 1000"
@@ -28023,7 +28022,7 @@
     "person" : [ "Skira, Albert (1904-1973)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "500"
+    "subject" : [ "500" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -28280,9 +28279,9 @@
     "subject" : [ "Deutschland" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "500"
+    "subject" : [ "500" ]
   }, {
-    "subject" : "510"
+    "subject" : [ "510" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "LH 60370"
@@ -29089,7 +29088,7 @@
     "subject" : [ "Chemistry, Organic", "Chemistry, Analytical", "Chemie" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "840"
+    "subject" : [ "840" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "VC 5010"
@@ -29804,7 +29803,7 @@
     "subject" : [ "Psychology", "Psychologie" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "860"
+    "subject" : [ "860" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "CM 1000"
@@ -30178,7 +30177,7 @@
     "subject" : [ "Abfallbeseitigung", "Abwassertechnologie", "Wasserversorgung", "Ver- und Entsorger" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "930"
+    "subject" : [ "930" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -30292,11 +30291,11 @@
     "subject" : [ "Niederösterreich", "Baudenkmal" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "500"
+    "subject" : [ "500" ]
   }, {
-    "subject" : "518"
+    "subject" : [ "518" ]
   }, {
-    "subject" : "510"
+    "subject" : [ "510" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -30428,7 +30427,7 @@
     "subject" : [ "Werkzeugmaschine" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "910"
+    "subject" : [ "910" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "ZL 6000"
@@ -30659,9 +30658,9 @@
     "subject" : [ "Technische Informatik" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "820"
+    "subject" : [ "820" ]
   }, {
-    "subject" : "920"
+    "subject" : [ "920" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "ST 150"
@@ -30766,7 +30765,7 @@
     "subject" : [ "Grundwasser", "Schadstoffbelastung" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "740"
+    "subject" : [ "740" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "VN 9360"
@@ -31042,9 +31041,9 @@
     "subject" : [ "Elektrotechnik", "Abkürzung", "Elektronik", "Datentechnik", "Informationsverarbeitung" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "920"
+    "subject" : [ "920" ]
   }, {
-    "subject" : "921"
+    "subject" : [ "921" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "ZN 2450"
@@ -31185,9 +31184,9 @@
     "subject" : [ "Geschichte", "Vermessung", "Geodäsie" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "720"
+    "subject" : [ "720" ]
   }, {
-    "subject" : "736"
+    "subject" : [ "736" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -31494,9 +31493,9 @@
     "subject" : [ "Deutschland", "Bürgerliches Gesetzbuch" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "600"
+    "subject" : [ "600" ]
   }, {
-    "subject" : "6020"
+    "subject" : [ "6020" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -32421,9 +32420,9 @@
     "subject" : [ "Finanzierung / Wörterbuch", "Geld / Wörterbuch", "Geldtheorie / Wörterbuch", "Kapitlamarkt / Wörterbuch", "Kreditwesen / Wörterbuch", "Volkswirtschaftslehre / Aufsatzsammlung", "Kapitalmarkt", "Finanzwirtschaft", "Geldwirtschaft" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "650"
+    "subject" : [ "650" ]
   }, {
-    "subject" : "660"
+    "subject" : [ "660" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "QK 000"
@@ -32662,7 +32661,7 @@
     "subject" : [ "Projektmanagement" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "650"
+    "subject" : [ "650" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "QP 360"
@@ -32791,7 +32790,7 @@
     "subject" : [ "Geschichte 950-1150", "Frankreich", "Architektur", "Romanik" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "510"
+    "subject" : [ "510" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -32963,9 +32962,9 @@
     "subject" : [ "Quantenmechanik" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "830"
+    "subject" : [ "830" ]
   }, {
-    "subject" : "831"
+    "subject" : [ "831" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "UC 174"
@@ -33349,7 +33348,7 @@
     "subject" : [ "Geschichte 1989-1992", "Documenta, Kassel (1992)", "Kunst" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "500"
+    "subject" : [ "500" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -33480,9 +33479,9 @@
     "subject" : [ "Experimentalphysik" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "830"
+    "subject" : [ "830" ]
   }, {
-    "subject" : "831"
+    "subject" : [ "831" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "UC 143"
@@ -33602,9 +33601,9 @@
     "localCallNumber" : [ "21 QOD 23(4)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "600"
+    "subject" : [ "600" ]
   }, {
-    "subject" : "6020"
+    "subject" : [ "6020" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -34002,9 +34001,9 @@
     "subject" : [ "Himmelsmechanik" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "830"
+    "subject" : [ "830" ]
   }, {
-    "subject" : "930"
+    "subject" : [ "930" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -34193,7 +34192,7 @@
     "subject" : [ "Geschichte 1960-1989", "Deutschland (Bundesrepublik)", "Hochschule", "Westdeutsche Rektorenkonferenz" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "120"
+    "subject" : [ "120" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -34420,7 +34419,7 @@
     "subject" : [ "Informatik", "MODULA 2" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "820"
+    "subject" : [ "820" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "ST 110"
@@ -34536,7 +34535,7 @@
     "subject" : [ "Elektrizitätslehre" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "920"
+    "subject" : [ "920" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "ZN 2650"
@@ -35058,7 +35057,7 @@
     "subject" : [ "Numerische Mathematik" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "800"
+    "subject" : [ "800" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "SK 900"
@@ -35187,11 +35186,11 @@
     "subject" : [ "Deutsch" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "150"
+    "subject" : [ "150" ]
   }, {
-    "subject" : "200"
+    "subject" : [ "200" ]
   }, {
-    "subject" : "203"
+    "subject" : [ "203" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -35297,7 +35296,7 @@
     "subject" : [ "Staatsrecht" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "600"
+    "subject" : [ "600" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "PL 375"
@@ -35423,7 +35422,7 @@
     "localCallNumber" : [ "61 TIE 22", "21 TIR 11" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "800"
+    "subject" : [ "800" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "SK 450"
@@ -35722,9 +35721,9 @@
     "subject" : [ "Deutschland", "Bürgerliches Gesetzbuch" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "600"
+    "subject" : [ "600" ]
   }, {
-    "subject" : "6020"
+    "subject" : [ "6020" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -36237,9 +36236,9 @@
     "subject" : [ "Markenartikel", "Markenpolitik" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "650"
+    "subject" : [ "650" ]
   }, {
-    "subject" : "671"
+    "subject" : [ "671" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "QP 624"
@@ -36524,9 +36523,9 @@
     "subject" : [ "Analysis" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "800"
+    "subject" : [ "800" ]
   }, {
-    "subject" : "120"
+    "subject" : [ "120" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "SK 400"
@@ -36649,7 +36648,7 @@
     "localCallNumber" : [ "21 ZPL 24(5)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "930"
+    "subject" : [ "930" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "ZI 4060"
@@ -36790,9 +36789,9 @@
     "localCallNumber" : [ "61 ZEM 11-1" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "950"
+    "subject" : [ "950" ]
   }, {
-    "subject" : "952"
+    "subject" : [ "952" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -37257,9 +37256,9 @@
     "subject" : [ "Enzyklopädie" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "100"
+    "subject" : [ "100" ]
   }, {
-    "subject" : "6"
+    "subject" : [ "6" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "AE 11996"
@@ -37391,9 +37390,9 @@
     "localCallNumber" : [ "21 WFC 14-2" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "920"
+    "subject" : [ "920" ]
   }, {
-    "subject" : "927"
+    "subject" : [ "927" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -37505,7 +37504,7 @@
     "localCallNumber" : [ "21 ZJU 20(2)", "61 ZJU 14(2)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "910"
+    "subject" : [ "910" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -38061,9 +38060,9 @@
     "subject" : [ "Mathematik", "Chemie", "Chemometrie", "Stöchiometrie" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "840"
+    "subject" : [ "840" ]
   }, {
-    "subject" : "800"
+    "subject" : [ "800" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "VC 6000"
@@ -38948,7 +38947,7 @@
     "localCallNumber" : [ "21 PRH 46(5)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "650"
+    "subject" : [ "650" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "QC 320"
@@ -39161,9 +39160,9 @@
     "subject" : [ "Chemie" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "840"
+    "subject" : [ "840" ]
   }, {
-    "subject" : "841"
+    "subject" : [ "841" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -39279,7 +39278,7 @@
     "localCallNumber" : [ "21 PZR 94(8)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "650"
+    "subject" : [ "650" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "QP 300"
@@ -39770,7 +39769,7 @@
     "localCallNumber" : [ "21 PVK 29" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "650"
+    "subject" : [ "650" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "QP 650"
@@ -40359,9 +40358,9 @@
     "subject" : [ "Deutschland", "Bürgerliches Gesetzbuch" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "6020"
+    "subject" : [ "6020" ]
   }, {
-    "subject" : "600"
+    "subject" : [ "600" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "PD 2340"
@@ -40574,9 +40573,9 @@
     "subject" : [ "Deutschland", "Bürgerliches Gesetzbuch" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "600"
+    "subject" : [ "600" ]
   }, {
-    "subject" : "6020"
+    "subject" : [ "6020" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -40692,7 +40691,7 @@
     "localCallNumber" : [ "61 UPX 3" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "840"
+    "subject" : [ "840" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "VE 9000"
@@ -41711,9 +41710,9 @@
     "localCallNumber" : [ "51 JXY 32" ]
   },
   "SubjectNWBIB" : [ {
-    "subject" : "Düsseldorf"
+    "subject" : [ "Düsseldorf" ]
   }, {
-    "subject" : "Künstler"
+    "subject" : [ "Künstler" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -42129,7 +42128,7 @@
     "localCallNumber" : [ "61 YEA 20(5)", "21 YET 16(5)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "920"
+    "subject" : [ "920" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -42776,7 +42775,7 @@
     "localCallNumber" : [ "51 KAKC 4" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "33.1;13.1a"
+    "subject" : [ "33.1;13.1a" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -42909,11 +42908,11 @@
     "localCallNumber" : [ "51 JZI 104" ]
   },
   "SubjectNWBIB" : [ {
-    "subject" : "Köln"
+    "subject" : [ "Köln" ]
   }, {
-    "subject" : "Kunstmuseen und Kunstsammlungen"
+    "subject" : [ "Kunstmuseen und Kunstsammlungen" ]
   }, {
-    "subject" : "Kunstausstellungen"
+    "subject" : [ "Kunstausstellungen" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -44264,11 +44263,11 @@
     "localCallNumber" : [ "61 UNOE 10-1(7)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "840"
+    "subject" : [ "840" ]
   }, {
-    "subject" : "841"
+    "subject" : [ "841" ]
   }, {
-    "subject" : "950"
+    "subject" : [ "950" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -45784,7 +45783,7 @@
     "localCallNumber" : [ "11 XEG 59(5)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "930"
+    "subject" : [ "930" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "ZI 6432"
@@ -47459,7 +47458,7 @@
     "localCallNumber" : [ "21 TXB 72" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "820"
+    "subject" : [ "820" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -47744,11 +47743,11 @@
     "localCallNumber" : [ "51 OLF 11" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "500"
+    "subject" : [ "500" ]
   }, {
-    "subject" : "133"
+    "subject" : [ "133" ]
   }, {
-    "subject" : "141"
+    "subject" : [ "141" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -48391,7 +48390,7 @@
     "localCallNumber" : [ "51 MKH 245" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "740"
+    "subject" : [ "740" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -48553,7 +48552,7 @@
     "localCallNumber" : [ "21 XLV 4(5)" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "620"
+    "subject" : [ "620" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -49036,10 +49035,10 @@
     "localCallNumber" : [ "21 XXA 15(5)", "61 XXA 2(5)" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "621.3"
+    "subject" : [ "621.3" ]
   } ],
   "SubjectRPB" : [ {
-    "subject" : "920"
+    "subject" : [ "920" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -49438,7 +49437,7 @@
     "localCallNumber" : [ "21 QRI 1(19)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "600"
+    "subject" : [ "600" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -49855,9 +49854,9 @@
     "person" : [ "Ahrendt, Martina (1967-)", "Schaub, Günter (1933-2013)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "600"
+    "subject" : [ "600" ]
   }, {
-    "subject" : "650"
+    "subject" : [ "650" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -50272,7 +50271,7 @@
     "localCallNumber" : [ "21 PYH 1(2)" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "850"
+    "subject" : [ "850" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "YV 7003"
@@ -52846,7 +52845,7 @@
     "carrier" : [ "Gedruckte Ressource" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "720"
+    "subject" : [ "720" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -54356,7 +54355,7 @@
     "localCallNumber" : [ "51 KNLV 13" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "530"
+    "subject" : [ "530" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -54523,7 +54522,7 @@
     "localCallNumber" : [ "21 XVP 57", "61 XVP 52" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "621.3"
+    "subject" : [ "621.3" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -54754,7 +54753,7 @@
     "localCallNumber" : [ "61 YFB 20", "21 YFB 151" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "621.3"
+    "subject" : [ "621.3" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -54918,7 +54917,7 @@
     "localCallNumber" : [ "61 YCA 1", "21 YCT 9" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "621.3"
+    "subject" : [ "621.3" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -55117,7 +55116,7 @@
     "localCallNumber" : [ "11 WUJ 43" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "720"
+    "subject" : [ "720" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -55700,7 +55699,7 @@
     "localCallNumber" : [ "11 XBD 21" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "624"
+    "subject" : [ "624" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -55990,7 +55989,7 @@
     "localCallNumber" : [ "21 QOF 59(2)" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "340"
+    "subject" : [ "340" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",
@@ -59197,7 +59196,7 @@
     "subject" : [ "Debian GNU/LINUX 8.0" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "004"
+    "subject" : [ "004" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "ST 261"
@@ -60447,10 +60446,9 @@
     "localCallNumber" : [ "13 Z 102" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "624",
-    "subject" : "330"
+    "subject" : [ "624", "330" ]
   }, {
-    "subject" : "690"
+    "subject" : [ "690" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "QR 600"
@@ -60852,8 +60850,7 @@
     "subject" : [ "Bibliographie", "Elektronische Publikation", "Wirtschaftswissenschaften" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "300",
-    "subject" : "330"
+    "subject" : [ "300", "330" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHA",

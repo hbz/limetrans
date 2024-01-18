@@ -66,14 +66,14 @@
     "localCallNumber" : [ "RRZ 137+1", "RRZ 137+2", "RRZ 137+4", "RRZ 137+3", "RRZ 137" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "630"
+    "subject" : [ "630" ]
   } ],
   "SubjectRPB" : [ {
-    "subject" : "760"
+    "subject" : [ "760" ]
   }, {
-    "subject" : "850"
+    "subject" : [ "850" ]
   }, {
-    "subject" : "970"
+    "subject" : [ "970" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_FHM",

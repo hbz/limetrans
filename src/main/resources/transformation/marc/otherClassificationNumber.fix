@@ -10,20 +10,21 @@ do list(path: "084  ", "var": "$i")
     copy_field("$i.a", "@SubjectGHBLocal.$append")
   elsif any_equal("$i.2", "nwbib")
     add_field("SubjectNWBIB[].$append.__dummy__", "")
-    copy_field("$i.a", "SubjectNWBIB[].$last.subject")
+    set_array("SubjectNWBIB[].$last.subject[]")
+    do list(path: "$i.a", "var": "$j")
+      copy_field("$j", "SubjectNWBIB[].$last.subject[].$append")
+    end
   elsif any_equal("$i.2", "rpb")
     add_field("SubjectRPB[].$append.__dummy__", "")
-    if any_equal("@current_isil", "DE-107")
-      set_array("SubjectRPB[].$last.subject")
-      do list(path: "$i.a", "var": "$j")
+    set_array("SubjectRPB[].$last.subject[]")
+    do list(path: "$i.a", "var": "$j")
+      if any_equal("@current_isil", "DE-107")
         copy_field("$j", "@subjectRPB")
         lookup("@subjectRPB", "alma-rpb-to-taxonomy", delete: "true")
         move_field("@subjectRPB", "introx.taxonomy[].$append")
         lookup("$j", "alma-rpb-to-taxonomy")
-        copy_field("$j", "SubjectRPB[].$last.subject.$append")
       end
-    else
-      copy_field("$i.a", "SubjectRPB[].$last.subject")
+      copy_field("$j", "SubjectRPB[].$last.subject[].$append")
     end
   elsif any_equal("$i.2", "rvk")
     add_field("SubjectRVK[].$append.__dummy__", "")
@@ -39,6 +40,9 @@ do list(path: "084  ", "var": "$i")
     end
   elsif any_equal("$i.2", "sdnb")
     add_field("SubjectDNB[].$append.__dummy__", "")
-    copy_field("$i.a", "SubjectDNB[].$last.subject")
+    set_array("SubjectDNB[].$last.subject[]")
+    do list(path: "$i.a", "var": "$j")
+      copy_field("$j", "SubjectDNB[].$last.subject[].$append")
+    end
   end
 end

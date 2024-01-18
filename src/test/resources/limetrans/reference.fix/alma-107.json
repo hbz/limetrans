@@ -291,15 +291,12 @@
     "localCallNumber" : [ "DB 251" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "350",
-    "subject" : "340"
+    "subject" : [ "350", "340" ]
   }, {
-    "subject" : "340"
+    "subject" : [ "340" ]
   } ],
   "SubjectRPB" : [ {
-    "subject" : "600 Recht",
-    "subject" : "130 Landeskunde Region Koblenz",
-    "subject" : "131 Landeskunde Pfalz"
+    "subject" : [ "600 Recht", "130 Landeskunde Region Koblenz", "131 Landeskunde Pfalz" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_BRIDGE_LBZ",
@@ -449,13 +446,13 @@
     "subject" : [ "Online-Ressource", "Sinzig", "Mineralquelle", "Mineralwasser" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "720 Geowissenschaften"
+    "subject" : [ "720 Geowissenschaften" ]
   }, {
-    "subject" : "850 Medizin"
+    "subject" : [ "850 Medizin" ]
   }, {
-    "subject" : "130 Landeskunde Region Koblenz"
+    "subject" : [ "130 Landeskunde Region Koblenz" ]
   }, {
-    "subject" : "140 Pflichtexemplar Region Koblenz"
+    "subject" : [ "140 Pflichtexemplar Region Koblenz" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_BRIDGE_LBZ",
@@ -587,13 +584,13 @@
     "subject" : [ "Geschichte 1910", "Online-Ressource", "Geschichte 1100-1250", "Peter-Joerres-Gymnasium Ahrweiler", "Landkreis Ahrweiler", "Romanik", "Baudenkmal" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "120 Erziehung, Bildung, Unterricht"
+    "subject" : [ "120 Erziehung, Bildung, Unterricht" ]
   }, {
-    "subject" : "130 Landeskunde Region Koblenz"
+    "subject" : [ "130 Landeskunde Region Koblenz" ]
   }, {
-    "subject" : "140 Pflichtexemplar Region Koblenz"
+    "subject" : [ "140 Pflichtexemplar Region Koblenz" ]
   }, {
-    "subject" : "510 Architektur"
+    "subject" : [ "510 Architektur" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_BRIDGE_LBZ",
@@ -720,19 +717,19 @@
     "person" : [ "Weidner, Andreas" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "740 Umweltschutz, Raumordnung, Landschaftsgestaltung"
+    "subject" : [ "740 Umweltschutz, Raumordnung, Landschaftsgestaltung" ]
   }, {
-    "subject" : "106 Amtsdruckschriften allgemein"
+    "subject" : [ "106 Amtsdruckschriften allgemein" ]
   }, {
-    "subject" : "139"
+    "subject" : [ "139" ]
   }, {
-    "subject" : "130 Landeskunde Region Koblenz"
+    "subject" : [ "130 Landeskunde Region Koblenz" ]
   }, {
-    "subject" : "147"
+    "subject" : [ "147" ]
   }, {
-    "subject" : "rpb843020"
+    "subject" : [ "rpb843020" ]
   }, {
-    "subject" : "rpbr_99_o131_"
+    "subject" : [ "rpbr_99_o131_" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_BRIDGE_LBZ",
@@ -815,13 +812,13 @@
     "subject" : [ "Westum, Sinzig, Franken, Koisdorf, Bad-Bodendorf, Löhndorf" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "130 Landeskunde Region Koblenz"
+    "subject" : [ "130 Landeskunde Region Koblenz" ]
   }, {
-    "subject" : "A - Rheinland (geo)"
+    "subject" : [ "A - Rheinland (geo)" ]
   }, {
-    "subject" : "A.100000 - Allgemeine Landeskunde"
+    "subject" : [ "A.100000 - Allgemeine Landeskunde" ]
   }, {
-    "subject" : "rpb100000"
+    "subject" : [ "rpb100000" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_BRIDGE_LBZ",
@@ -902,11 +899,11 @@
     "subject" : [ "Physische Geografie" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "710 Geographie, Heimat- und Länderkunde, Atlanten"
+    "subject" : [ "710 Geographie, Heimat- und Länderkunde, Atlanten" ]
   }, {
-    "subject" : "120 Erziehung, Bildung, Unterricht"
+    "subject" : [ "120 Erziehung, Bildung, Unterricht" ]
   }, {
-    "subject" : "720 Geowissenschaften"
+    "subject" : [ "720 Geowissenschaften" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_BRIDGE_LBZ",
@@ -1010,11 +1007,11 @@
     "subject" : [ "Umweltbelastung", "Umweltschaden", "Umweltschutz" ]
   },
   "SubjectRPB" : [ {
-    "subject" : "710 Geographie, Heimat- und Länderkunde, Atlanten"
+    "subject" : [ "710 Geographie, Heimat- und Länderkunde, Atlanten" ]
   }, {
-    "subject" : "120 Erziehung, Bildung, Unterricht"
+    "subject" : [ "120 Erziehung, Bildung, Unterricht" ]
   }, {
-    "subject" : "740 Umweltschutz, Raumordnung, Landschaftsgestaltung"
+    "subject" : [ "740 Umweltschutz, Raumordnung, Landschaftsgestaltung" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_BRIDGE_LBZ",
@@ -1133,15 +1130,12 @@
     "taxonomy" : [ "100 Wissenschaft und Kultur allgemein", "620 Publizistik", "131 Landeskunde Pfalz", "141 Pflichtexemplar Pfalz" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "070"
+    "subject" : [ "070" ]
   }, {
-    "subject" : "050"
+    "subject" : [ "050" ]
   } ],
   "SubjectRPB" : [ {
-    "subject" : "100 Wissenschaft und Kultur allgemein",
-    "subject" : "620 Publizistik",
-    "subject" : "131 Landeskunde Pfalz",
-    "subject" : "141 Pflichtexemplar Pfalz"
+    "subject" : [ "100 Wissenschaft und Kultur allgemein", "620 Publizistik", "131 Landeskunde Pfalz", "141 Pflichtexemplar Pfalz" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_BRIDGE_LBZ",
@@ -1311,12 +1305,9 @@
     "localCallNumber" : [ "Z 187/U" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "06",
-    "subject" : "050",
-    "subject" : "070",
-    "subject" : "791"
+    "subject" : [ "06", "050", "070", "791" ]
   }, {
-    "subject" : "050"
+    "subject" : [ "050" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_BRIDGE_LBZ",
@@ -1500,10 +1491,7 @@
     "localCallNumber" : [ "Palat. 210" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "070",
-    "subject" : "914.3",
-    "subject" : "943",
-    "subject" : "790"
+    "subject" : [ "070", "914.3", "943", "790" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_BRIDGE_LBZ",
@@ -1636,8 +1624,7 @@
     "localCallNumber" : [ "Per. 13501", "Palat. 39", "F 356", "F 193" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "914.3",
-    "subject" : "943"
+    "subject" : [ "914.3", "943" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_BRIDGE_LBZ",
@@ -1767,8 +1754,7 @@
     "localCallNumber" : [ "Per. 17125a", "Per. 17125" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "070",
-    "subject" : "790"
+    "subject" : [ "070", "790" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_BRIDGE_LBZ",
@@ -1896,8 +1882,7 @@
     "localCallNumber" : [ "2a 2193a", "LS NN 20" ]
   },
   "SubjectDNB" : [ {
-    "subject" : "500",
-    "subject" : "600"
+    "subject" : [ "500", "600" ]
   } ],
   "SubjectRVK" : [ {
     "subject" : "TB 1010"
