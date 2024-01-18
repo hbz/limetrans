@@ -9,6 +9,7 @@ import org.metafacture.metafix.Record;
 import org.metafacture.metafix.Value;
 import org.metafacture.metafix.api.FixFunction;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -141,26 +142,37 @@ public class VerifyLinks implements FixFunction {
     }
 
     private void verifyLinks(final Record aRecord, final Map<String, List<String>> aMap, final String aSource, final Predicate<String> aPredicate, final Map<String, LongAdder> aCounter) {
+        final VerifyingConsumer consumer = (path, verifying, verified, value, string) -> {
+            verifying.add(value);
+
+            if (aPredicate.test(string)) {
+                verified.add(value);
+                aCounter.computeIfAbsent(path, k -> new LongAdder()).increment();
+            }
+        };
+
         aMap.forEach((field, list) -> {
-            final String suffix = field.substring(0, 1).toUpperCase() + field.substring(1);
+            final String suffix = field.substring(0, 1).toUpperCase() + field.substring(1) + Metafix.ARRAY_MARKER;
 
             list.forEach(path -> eachValue(aRecord, path, value -> {
                 final Value.Hash hash = value.asHash();
 
+                final List<Value> verifying = new ArrayList<>();
+                final List<Value> verified = new ArrayList<>();
+
                 eachValue(aSource != null ? aRecord : hash, aSource != null ? aSource : field, idValue -> {
-                    final boolean verified = idValue.<Boolean>extractType((m, c) -> m
-                        .ifArray(a -> c.accept(a.stream().anyMatch(v -> aPredicate.test(v.asString()))))
-                        .ifString(s -> c.accept(aPredicate.test(s)))
-                        .orElse(v -> c.accept(false))
-                    );
-
-                    if (verified) {
-                        hash.add(VERIFIED_PREFIX + suffix, idValue);
-                        aCounter.computeIfAbsent(path, k -> new LongAdder()).increment();
-                    }
-
-                    hash.add(VERIFYING_PREFIX + suffix, idValue);
+                    idValue.matchType()
+                        .ifArray(a -> a.forEach(v -> consumer.accept(path, verifying, verified, v, v.asString())))
+                        .ifString(s -> consumer.accept(path, verifying, verified, new Value(s), s));
                 });
+
+                if (!verifying.isEmpty()) {
+                    hash.add(VERIFYING_PREFIX + suffix, Value.newArray(a -> verifying.forEach(a::add)));
+                }
+
+                if (!verified.isEmpty()) {
+                    hash.add(VERIFIED_PREFIX + suffix, Value.newArray(a -> verified.forEach(a::add)));
+                }
             }));
         });
     }
@@ -172,6 +184,11 @@ public class VerifyLinks implements FixFunction {
     private static Set<String> loadIdSet(final String aPath, final boolean aRequired) {
         final Set<String> set = new HashSet<>();
         return Helpers.loadFile(aPath, aRequired, "ID set", set::add, set::size, LOGGER) ? set : null;
+    }
+
+    @FunctionalInterface
+    private interface VerifyingConsumer {
+        void accept(String aPath, List<Value> aVerifying, List<Value> aVerified, Value aValue, String aString);
     }
 
 }
