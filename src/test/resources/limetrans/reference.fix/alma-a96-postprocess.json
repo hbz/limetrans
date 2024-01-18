@@ -95,9 +95,9 @@
     "publisherStatement" : "Kiel : Weiland, 1965-2007",
     "relationshipInformation" : "Druckausg.",
     "title" : "Amazoniana",
-    "controlNumber" : "(DE-605)HT005072303",
     "identifierISSN" : "0065-6755",
-    "identifierForLinkingEntry" : "(DE-605)HT005072303",
+    "controlNumber" : [ "(DE-605)HT005072303" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT005072303" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT005072303" ]
   } ],
   "OnlineAccess" : [ {
@@ -236,8 +236,8 @@
     "publisherStatement" : "Dortmund ; Berlin ; Dresden : Bundesanst. für Arbeitsschutz und Arbeitsmedizin, 2007-",
     "relationshipInformation" : "Druckausg.",
     "title" : "Gefährliche Produkte ...",
-    "controlNumber" : "(DE-605)HT015879195",
-    "identifierForLinkingEntry" : "(DE-605)HT015879195",
+    "controlNumber" : [ "(DE-605)HT015879195" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015879195" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015879195" ]
   } ],
   "OnlineAccess" : [ {
@@ -833,7 +833,7 @@
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Print version:",
-    "identifierISBN" : "9780980623895"
+    "identifierISBN" : [ "9780980623895" ]
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Reprints collection (University of Adelaide Press).",
@@ -968,7 +968,7 @@
     "note" : "Description based on print version record."
   } ],
   "AdditionalPhysicalFormEntry" : [ {
-    "identifierISBN" : "3-0356-0302-2"
+    "identifierISBN" : [ "3-0356-0302-2" ]
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Basics (Basel, Switzerland)"
@@ -1689,21 +1689,21 @@
   } ],
   "SubSeriesEntry" : [ {
     "title" : "Feminists and Queer Theorists Debate the Future of Critical Management Studies",
-    "controlNumber" : "(CKB)3710000001184621",
-    "identifierISBN" : "1-78635-497-7",
-    "identifierForLinkingEntry" : "(CKB)3710000001184621",
+    "identifierISBN" : [ "1-78635-497-7" ],
+    "controlNumber" : [ "(CKB)3710000001184621" ],
+    "identifierForLinkingEntry" : [ "(CKB)3710000001184621" ],
     "verifyingIdentifierForLinkingEntry" : [ "(CKB)3710000001184621" ]
   }, {
     "title" : "Getting Things Done",
-    "controlNumber" : "(CKB)2670000000421965",
-    "identifierISBN" : "1-78190-955-5",
-    "identifierForLinkingEntry" : "(CKB)2670000000421965",
+    "identifierISBN" : [ "1-78190-955-5" ],
+    "controlNumber" : [ "(CKB)2670000000421965" ],
+    "identifierForLinkingEntry" : [ "(CKB)2670000000421965" ],
     "verifyingIdentifierForLinkingEntry" : [ "(CKB)2670000000421965" ]
   }, {
     "title" : "The Third Sector",
-    "controlNumber" : "(CKB)2550000000075840",
-    "identifierISBN" : "1-283-35481-0",
-    "identifierForLinkingEntry" : "(CKB)2550000000075840",
+    "identifierISBN" : [ "1-283-35481-0" ],
+    "controlNumber" : [ "(CKB)2550000000075840" ],
+    "identifierForLinkingEntry" : [ "(CKB)2550000000075840" ],
     "verifyingIdentifierForLinkingEntry" : [ "(CKB)2550000000075840" ]
   } ],
   "AdditionalPhysicalFormEntry" : [ {
@@ -1991,9 +1991,9 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
     "title" : "Wasserkreislauf im Gebäude",
-    "controlNumber" : "(DE-605)HT018577901",
-    "identifierISBN" : "978-3-0356-0565-5",
-    "identifierForLinkingEntry" : "(DE-605)HT018577901",
+    "identifierISBN" : [ "978-3-0356-0565-5" ],
+    "controlNumber" : [ "(DE-605)HT018577901" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018577901" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018577901" ]
   } ],
   "OnlineAccess" : [ {
@@ -2366,24 +2366,24 @@
     "publisherStatement" : "Frankfurt, M. : Ges. Dt. Chemiker, 1977-2007",
     "relationshipInformation" : "Bis 54.2006 Beil.",
     "title" : "Tätigkeitsbericht / Gesellschaft Deutscher Chemiker",
-    "controlNumber" : "(DE-605)HT003310680",
-    "identifierForLinkingEntry" : "(DE-605)HT003310680",
+    "controlNumber" : [ "(DE-605)HT003310680" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003310680" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003310680" ]
   }, {
     "mainEntryHeading" : "Gesellschaft Deutscher Chemiker",
     "publisherStatement" : "Frankfurt am Main : Gesellschaft Deutscher Chemiker e.V., 2008-",
     "relationshipInformation" : "Ab 55.2007 darin",
     "title" : "Jahresbericht ... / Gesellschaft Deutscher Chemiker, GDCh",
-    "controlNumber" : "(DE-605)HT015594869",
-    "identifierForLinkingEntry" : "(DE-605)HT015594869",
+    "controlNumber" : [ "(DE-605)HT015594869" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015594869" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015594869" ]
   }, {
     "publisherStatement" : "Cambridge, Mass. : CambridgeSoft Corp., 2004-",
     "relationshipInformation" : "Beil.:",
     "title" : "Chem & bio news",
-    "controlNumber" : "(DE-605)HT014825990",
     "identifierISSN" : "1932-0965",
-    "identifierForLinkingEntry" : "(DE-605)HT014825990",
+    "controlNumber" : [ "(DE-605)HT014825990" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014825990" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014825990" ]
   }, {
     "publisherStatement" : "Frankfurt am Main : Gesellschaft Deutscher Chemiker, [2012?]-",
@@ -2391,8 +2391,8 @@
     "relationshipInformation" : "Supplement",
     "note" : [ "2012 [?]-" ],
     "title" : "Nachrichten aus der Chemie. Analytica pro",
-    "controlNumber" : "(DE-605)HT018961311",
-    "identifierForLinkingEntry" : "(DE-605)HT018961311",
+    "controlNumber" : [ "(DE-605)HT018961311" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018961311" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018961311" ]
   } ],
   "AdditionalPhysicalFormEntry" : [ {
@@ -2400,18 +2400,18 @@
     "physicalDescription" : "Online-Ressource",
     "relationshipInformation" : "Online-Ausg.",
     "title" : "Nachrichten aus der Chemie",
-    "controlNumber" : "(DE-605)HT015219020",
     "identifierISSN" : "1868-0054",
-    "identifierForLinkingEntry" : "(DE-605)HT015219020",
+    "controlNumber" : [ "(DE-605)HT015219020" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015219020" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015219020" ]
   } ],
   "PrecedingEntry" : [ {
     "publisherStatement" : "Weinheim [u.a.] : Wiley-VCH, 1977-1999",
     "relationshipInformation" : "Vorg.:",
     "title" : "Nachrichten aus Chemie, Technik und Laboratorium",
-    "controlNumber" : "(DE-605)HT000286865",
     "identifierISSN" : "0341-5163",
-    "identifierForLinkingEntry" : "(DE-605)HT000286865",
+    "controlNumber" : [ "(DE-605)HT000286865" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT000286865" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT000286865" ],
     "verifiedIdentifierForLinkingEntry" : [ "(DE-605)HT000286865" ]
   }, {
@@ -2419,8 +2419,8 @@
     "publisherStatement" : "Weinheim : Wiley-VCH, 2006-[2018]",
     "relationshipInformation" : "Darin aufgegangen",
     "title" : "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker",
-    "controlNumber" : "(DE-605)HT015702445",
-    "identifierForLinkingEntry" : "(DE-605)HT015702445",
+    "controlNumber" : [ "(DE-605)HT015702445" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015702445" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015702445" ]
   } ],
   "NonspecificRelationshipEntry" : [ {
@@ -2428,15 +2428,15 @@
     "publisherStatement" : "Weinheim : Wiley-VCH, 2006-[2018]",
     "relationshipInformation" : "Einzelne H. zugl. H. von",
     "title" : "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker",
-    "controlNumber" : "(DE-605)HT015702445",
-    "identifierForLinkingEntry" : "(DE-605)HT015702445",
+    "controlNumber" : [ "(DE-605)HT015702445" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015702445" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015702445" ]
   }, {
     "publisherStatement" : "Weinheim : Wiley-VCH, 2013-",
     "relationshipInformation" : "Einzelne H. zugl. H. von",
     "title" : "Trendberichte",
-    "controlNumber" : "(DE-605)HT017576091",
-    "identifierForLinkingEntry" : "(DE-605)HT017576091",
+    "controlNumber" : [ "(DE-605)HT017576091" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT017576091" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT017576091" ]
   } ],
   "SubjectHeadings" : [ {
@@ -2742,7 +2742,7 @@
     "abstract" : [ "Das vorliegende Buch gibt eine kompakte Einführung in die Grundlagen der Festkörperphysik, wobei der Schwerpunkt auf den elektrischen und magnetischen Materialeigenschaften liegt. Leser werden nicht nur die kompakte und anschauliche Herangehensweise schätzen, sondern auch die kurzen Abschnitte über die Forschungsgeschichte der Festkörperphysik, die mit wegweisenden Forschern wie Max Planck, Albert Einstein aber auch Heike Kamerlingh Onnes, Eugene Wigner oder Frederick Seitz verbunden ist. Diese helfen dabei, die Entwicklung der Festkörperphysik und ihre unterschiedlichen Theorien und Modelle verstehen und einordnen zu können. Das Buch richtet sich an Studierende der Physik, Ingenieurwissenschaften und Materialwissenschaften bis zum Bachelor. Es kann durch seine anschaulichen Erklärungen und seinen didaktischen Ansatz auch als motivierende Vorstufe und unterstützendes Begleitwerk beim Studium anspruchsvollerer Lehrbücher der Festkörperphysik benutzt werden. Die dritte Auflage enthält eine Reihe von Erweiterungen, besonders im Kapitel über topologische Materialien. Aus dem Inhalt - Kristallgitter - Theorie der Halbleiter, Leiter und Supraleiter - Metalle - Drude-Lorentz-Modell - BCS-Theorie - Hochtemperatur-Supraleiter - Nanostrukturen: Quantenpunkte - Fehler im Kristallgitter Der Autor Rudolf Huebener studierte Physik und Mathematik an der Universität Marburg sowie an den Technischen Hochschulen München und Darmstadt. 1958 promovierte er in Marburg im Fach Experimentalphysik. Nach einer Tätigkeit im Forschungszentrum Karlsruhe und einem Forschungsinstitut bei Albany, New York, USA arbeitete er für 12 Jahre am Argonne National Laboratory bei Chicago, Illinois. 1974 übernahm er einen Lehrstuhl für Experimentalphysik an der Universität Tübingen. Dort lehrte und forschte er bis zu seiner Emeritierung im Jahr 1999." ]
   },
   "AdditionalPhysicalFormEntry" : [ {
-    "identifierISBN" : "3-662-62077-4"
+    "identifierISBN" : [ "3-662-62077-4" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6149677220006444",
@@ -3181,8 +3181,8 @@
     "title" : "Security for industrial automation and control systems"
   } ],
   "HostItemEntry" : [ {
-    "controlNumber" : "991000192569706444",
-    "identifierForLinkingEntry" : "991000192569706444",
+    "controlNumber" : [ "991000192569706444" ],
+    "identifierForLinkingEntry" : [ "991000192569706444" ],
     "verifyingIdentifierForLinkingEntry" : [ "991000192569706444" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -3527,16 +3527,16 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Enzyklopädie der Psychologie",
-    "controlNumber" : "(DE-605)HT019084870",
-    "identifierForLinkingEntry" : "(DE-605)HT019084870",
+    "controlNumber" : [ "(DE-605)HT019084870" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019084870" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019084870" ],
     "verifiedIdentifierForLinkingEntry" : [ "(DE-605)HT019084870" ]
   } ],
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Frühere Ausg. mit teilw. anderer Bandeinteilung u.d.T.",
     "title" : "Enzyklopädie der Psychologie",
-    "controlNumber" : "(DE-605)HT002191371",
-    "identifierForLinkingEntry" : "(DE-605)HT002191371",
+    "controlNumber" : [ "(DE-605)HT002191371" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002191371" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002191371" ]
   } ],
   "xbib" : [ {
@@ -3640,7 +3640,7 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe" ],
-    "identifierISBN" : "9781484261248"
+    "identifierISBN" : [ "9781484261248" ]
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Computer software"
@@ -3854,7 +3854,7 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : "9783864906114"
+    "identifierISBN" : [ "9783864906114" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6187069990006444",
@@ -3990,7 +3990,7 @@
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Printed edition",
-    "identifierISBN" : "9783662616505"
+    "identifierISBN" : [ "9783662616505" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://doi.org/10.1007/978-3-662-61651-2",
@@ -4115,13 +4115,9 @@
   } ],
   "PrecedingEntry" : [ {
     "title" : "Review of Research in Visual Arts Education",
-    "controlNumber" : "(CKB)991042728725970",
-    "controlNumber" : "(DLC)83642038",
-    "controlNumber" : "(OCoLC)671260450",
     "identifierISSN" : "2327-7874",
-    "identifierForLinkingEntry" : "(CKB)991042728725970",
-    "identifierForLinkingEntry" : "(DLC)83642038",
-    "identifierForLinkingEntry" : "(OCoLC)671260450",
+    "controlNumber" : [ "(CKB)991042728725970", "(DLC)83642038", "(OCoLC)671260450" ],
+    "identifierForLinkingEntry" : [ "(CKB)991042728725970", "(DLC)83642038", "(OCoLC)671260450" ],
     "verifyingIdentifierForLinkingEntry" : [ "(CKB)991042728725970", "(DLC)83642038", "(OCoLC)671260450" ],
     "verifiedIdentifierForLinkingEntry" : [ "(DLC)83642038", "(OCoLC)671260450" ]
   } ],
@@ -4236,11 +4232,9 @@
   } ],
   "SucceedingEntry" : [ {
     "title" : "Vakuum in Forschung und Praxis",
-    "controlNumber" : "(CKB)974740734049",
-    "controlNumber" : "(DLC)2001262337",
     "identifierISSN" : "1522-2454",
-    "identifierForLinkingEntry" : "(CKB)974740734049",
-    "identifierForLinkingEntry" : "(DLC)2001262337",
+    "controlNumber" : [ "(CKB)974740734049", "(DLC)2001262337" ],
+    "identifierForLinkingEntry" : [ "(CKB)974740734049", "(DLC)2001262337" ],
     "verifyingIdentifierForLinkingEntry" : [ "(CKB)974740734049", "(DLC)2001262337" ],
     "verifiedIdentifierForLinkingEntry" : [ "(CKB)974740734049" ]
   } ],
@@ -5037,8 +5031,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "CD-ROM-Ausg." ],
     "title" : "Fahrzeugtechnik EWG/ECE",
-    "controlNumber" : "(DE-605)HT013494475",
-    "identifierForLinkingEntry" : "(DE-605)HT013494475",
+    "controlNumber" : [ "(DE-605)HT013494475" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013494475" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013494475" ]
   } ],
   "PrecedingEntry" : [ {
@@ -5261,8 +5255,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "1. Aufl. u.d.T.",
     "title" : "Kollbrunner, Curt Fritz: Knicken",
-    "controlNumber" : "(DE-605)HT002631633",
-    "identifierForLinkingEntry" : "(DE-605)HT002631633",
+    "controlNumber" : [ "(DE-605)HT002631633" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002631633" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002631633" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -8037,8 +8031,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Springer tracts in modern physics",
-    "controlNumber" : "(DE-605)HT019014839",
-    "identifierForLinkingEntry" : "(DE-605)HT019014839",
+    "controlNumber" : [ "(DE-605)HT019014839" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019014839" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019014839" ]
   } ],
   "PrecedingEntry" : [ {
@@ -8140,8 +8134,8 @@
   "NonspecificRelationshipEntry" : [ {
     "relationshipInformation" : "Ab Bd. 10 zugl. Bd. von",
     "title" : "Schwäbische Forschungsgemeinschaft: Veröffentlichungen der Schwäbischen Forschungsgemeinschaft / 4",
-    "controlNumber" : "(DE-605)HT001243680",
-    "identifierForLinkingEntry" : "(DE-605)HT001243680",
+    "controlNumber" : [ "(DE-605)HT001243680" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001243680" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001243680" ]
   } ],
   "xbib" : [ {
@@ -8259,8 +8253,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "SPIE, The International Society for Optical Engineering: Proceedings",
-    "controlNumber" : "(DE-605)HT013601427",
-    "identifierForLinkingEntry" : "(DE-605)HT013601427",
+    "controlNumber" : [ "(DE-605)HT013601427" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013601427" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013601427" ]
   } ],
   "xbib" : [ {
@@ -8352,8 +8346,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Hochschule für Verwaltungswissenschaften Speyer: Schriftenreihe der Hochschule Speyer",
-    "controlNumber" : "(DE-605)HT018796737",
-    "identifierForLinkingEntry" : "(DE-605)HT018796737",
+    "controlNumber" : [ "(DE-605)HT018796737" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018796737" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018796737" ]
   } ],
   "PrecedingEntry" : [ {
@@ -8363,8 +8357,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Deutsche Hochschule für Verwaltungswissenschaften <Speyer>: Schriftenreihe der Hochschule Speyer",
-    "controlNumber" : "(DE-605)HT012956428",
-    "identifierForLinkingEntry" : "(DE-605)HT012956428",
+    "controlNumber" : [ "(DE-605)HT012956428" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT012956428" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT012956428" ]
   } ],
   "xbib" : [ {
@@ -8461,8 +8455,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. und neuere Auflagen einzelner Bände --->",
     "title" : "Verband der Elektrotechnik, Elektronik, Informationstechnik: VDE-Schriftenreihe Normen verständlich",
-    "controlNumber" : "(DE-605)HT013181663",
-    "identifierForLinkingEntry" : "(DE-605)HT013181663",
+    "controlNumber" : [ "(DE-605)HT013181663" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013181663" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013181663" ]
   } ],
   "xbib" : [ {
@@ -8548,8 +8542,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Später u.d.T.",
     "title" : "Verein Deutscher Ingenieure: Fortschritt-Berichte VDI / 9",
-    "controlNumber" : "(DE-605)HT002156557",
-    "identifierForLinkingEntry" : "(DE-605)HT002156557",
+    "controlNumber" : [ "(DE-605)HT002156557" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002156557" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002156557" ]
   } ],
   "xbib" : [ {
@@ -8648,15 +8642,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Ingenieure: VDI-Z / Fortschrittberichte / 12",
-    "controlNumber" : "(DE-605)HT0111911650",
-    "identifierForLinkingEntry" : "(DE-605)HT0111911650",
+    "controlNumber" : [ "(DE-605)HT0111911650" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT0111911650" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT0111911650" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Verein Deutscher Ingenieure: Fortschritt-Berichte VDI / 12",
-    "controlNumber" : "(DE-605)HT002109300",
-    "identifierForLinkingEntry" : "(DE-605)HT002109300",
+    "controlNumber" : [ "(DE-605)HT002109300" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002109300" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002109300" ]
   } ],
   "xbib" : [ {
@@ -8749,8 +8743,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis Bd. 73 u.d.T.",
     "title" : "Wissenschaftliche Forschungsberichte / Naturwissenschaftliche Reihe",
-    "controlNumber" : "(DE-605)HT001247438",
-    "identifierForLinkingEntry" : "(DE-605)HT001247438",
+    "controlNumber" : [ "(DE-605)HT001247438" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001247438" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001247438" ]
   } ],
   "xbib" : [ {
@@ -8856,8 +8850,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Forschung im Bevölkerungsschutz",
-    "controlNumber" : "(DE-605)HT015844775",
-    "identifierForLinkingEntry" : "(DE-605)HT015844775",
+    "controlNumber" : [ "(DE-605)HT015844775" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015844775" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015844775" ]
   } ],
   "xbib" : [ {
@@ -8955,8 +8949,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Ulmer Verein: Kunstwissenschaftliche Untersuchungen des Ulmer Vereins, Verband für Kunst- und Kulturwissenschaften",
-    "controlNumber" : "(DE-605)HT001241311",
-    "identifierForLinkingEntry" : "(DE-605)HT001241311",
+    "controlNumber" : [ "(DE-605)HT001241311" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001241311" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001241311" ]
   } ],
   "xbib" : [ {
@@ -9045,8 +9039,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg.",
     "title" : "Universität <Stuttgart, 1967 -> / Lehrstuhl und Institut für Baubetriebslehre: Schriftenreihe des Institutes für Baubetriebslehre der Universität Stuttgart (TH)",
-    "controlNumber" : "(DE-605)TT001509527",
-    "identifierForLinkingEntry" : "(DE-605)TT001509527",
+    "controlNumber" : [ "(DE-605)TT001509527" ],
+    "identifierForLinkingEntry" : [ "(DE-605)TT001509527" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)TT001509527" ]
   } ],
   "xbib" : [ {
@@ -9149,8 +9143,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. -->",
     "title" : "ZfbF-Sonderheft",
-    "controlNumber" : "(DE-605)HT019527706",
-    "identifierForLinkingEntry" : "(DE-605)HT019527706",
+    "controlNumber" : [ "(DE-605)HT019527706" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019527706" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019527706" ]
   } ],
   "xbib" : [ {
@@ -9244,8 +9238,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Biographien hervorragender Naturwissenschaftler und Techniker",
-    "controlNumber" : "(DE-605)HT004534284",
-    "identifierForLinkingEntry" : "(DE-605)HT004534284",
+    "controlNumber" : [ "(DE-605)HT004534284" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT004534284" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT004534284" ]
   } ],
   "xbib" : [ {
@@ -9358,15 +9352,15 @@
     "publisherStatement" : "Bonn : [Geographisches Institut, Universität Bonn], 2021-",
     "relationshipInformation" : "Elektronische Reproduktion",
     "title" : "Bonner geographische Abhandlungen",
-    "controlNumber" : "(DE-605)HT021181300",
-    "identifierForLinkingEntry" : "(DE-605)HT021181300",
+    "controlNumber" : [ "(DE-605)HT021181300" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT021181300" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT021181300" ]
   } ],
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Beiträge zur Landeskunde der Rheinlande",
-    "controlNumber" : "(DE-605)HT001233360",
-    "identifierForLinkingEntry" : "(DE-605)HT001233360",
+    "controlNumber" : [ "(DE-605)HT001233360" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001233360" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001233360" ]
   } ],
   "xbib" : [ {
@@ -9448,8 +9442,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Electrical and computer engineering",
-    "controlNumber" : "(DE-605)HT014430146",
-    "identifierForLinkingEntry" : "(DE-605)HT014430146",
+    "controlNumber" : [ "(DE-605)HT014430146" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014430146" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014430146" ]
   } ],
   "xbib" : [ {
@@ -9552,8 +9546,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab Bd. 22 u.d.T.",
     "title" : "Energietechnische Gesellschaft <Deutschland, Bundesrepublik>: ETG-Fachbericht",
-    "controlNumber" : "(DE-605)HT004226841",
-    "identifierForLinkingEntry" : "(DE-605)HT004226841",
+    "controlNumber" : [ "(DE-605)HT004226841" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT004226841" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT004226841" ]
   } ],
   "xbib" : [ {
@@ -9667,8 +9661,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis Bd. 192 u.d.T.",
     "title" : "Straßenbau und Straßenverkehrstechnik",
-    "controlNumber" : "(DE-605)HT001237782",
-    "identifierForLinkingEntry" : "(DE-605)HT001237782",
+    "controlNumber" : [ "(DE-605)HT001237782" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001237782" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001237782" ]
   } ],
   "SubjectHeadings" : [ {
@@ -9771,8 +9765,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. bildet",
     "title" : "Akademiereihe",
-    "controlNumber" : "(DE-605)HT015326699",
-    "identifierForLinkingEntry" : "(DE-605)HT015326699",
+    "controlNumber" : [ "(DE-605)HT015326699" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015326699" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015326699" ]
   } ],
   "xbib" : [ {
@@ -9857,8 +9851,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts.",
     "title" : "Bausteine",
-    "controlNumber" : "(DE-605)HT012870861",
-    "identifierForLinkingEntry" : "(DE-605)HT012870861",
+    "controlNumber" : [ "(DE-605)HT012870861" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT012870861" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT012870861" ]
   } ],
   "xbib" : [ {
@@ -9932,8 +9926,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis Bd. 21 u.d.T.",
     "title" : "Kunstdenkmäler des Rheinlandes / Beiheft",
-    "controlNumber" : "(DE-605)HT001233807",
-    "identifierForLinkingEntry" : "(DE-605)HT001233807",
+    "controlNumber" : [ "(DE-605)HT001233807" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001233807" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001233807" ]
   } ],
   "xbib" : [ {
@@ -10038,15 +10032,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis Bd. 203.1970 u.d.T.",
     "title" : "Arbeitsgemeinschaft für Forschung des Landes Nordrhein-Westfalen: Arbeitsgemeinschaft für Forschung des Landes Nordrhein-Westfalen / Natur-, Ingenieur- und Gesellschaftswissenschaften",
-    "controlNumber" : "(DE-605)HT001248017",
-    "identifierForLinkingEntry" : "(DE-605)HT001248017",
+    "controlNumber" : [ "(DE-605)HT001248017" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001248017" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001248017" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab Bd. 400.1993 u.d.T.",
     "title" : "Nordrhein-Westfälische Akademie der Wissenschaften <Düsseldorf>: Vorträge / N",
-    "controlNumber" : "(DE-605)HT006134810",
-    "identifierForLinkingEntry" : "(DE-605)HT006134810",
+    "controlNumber" : [ "(DE-605)HT006134810" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT006134810" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT006134810" ]
   } ],
   "xbib" : [ {
@@ -10148,8 +10142,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Bd. 35 u. 43 u. ab Bd 45 u.d.T.",
     "title" : "Arbeitsheft der rheinischen Denkmalpflege",
-    "controlNumber" : "(DE-605)HT004321623",
-    "identifierForLinkingEntry" : "(DE-605)HT004321623",
+    "controlNumber" : [ "(DE-605)HT004321623" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT004321623" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT004321623" ]
   } ],
   "xbib" : [ {
@@ -10259,8 +10253,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab Bd. 97 u.d.T.",
     "title" : "Karl-Bräuer-Institut <Berlin>: Karl-Bräuer-Institut des Bundes der Steuerzahler",
-    "controlNumber" : "(DE-605)HT014502473",
-    "identifierForLinkingEntry" : "(DE-605)HT014502473",
+    "controlNumber" : [ "(DE-605)HT014502473" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014502473" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014502473" ]
   } ],
   "xbib" : [ {
@@ -10365,8 +10359,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Lecture notes in computer science",
-    "controlNumber" : "(DE-605)HT013005139",
-    "identifierForLinkingEntry" : "(DE-605)HT013005139",
+    "controlNumber" : [ "(DE-605)HT013005139" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013005139" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013005139" ]
   } ],
   "xbib" : [ {
@@ -10465,8 +10459,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Lecture notes in economics and mathematical systems",
-    "controlNumber" : "(DE-605)HT001238804",
-    "identifierForLinkingEntry" : "(DE-605)HT001238804",
+    "controlNumber" : [ "(DE-605)HT001238804" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001238804" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001238804" ]
   } ],
   "xbib" : [ {
@@ -10564,8 +10558,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. bildet",
     "title" : "List-Gesellschaft: Monographien der List-Gesellschaft",
-    "controlNumber" : "(DE-605)HT012211998",
-    "identifierForLinkingEntry" : "(DE-605)HT012211998",
+    "controlNumber" : [ "(DE-605)HT012211998" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT012211998" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT012211998" ]
   } ],
   "xbib" : [ {
@@ -10638,15 +10632,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis Bd. 10 u.d.T.",
     "title" : "Deutschland <Bundesrepublik> / Bundesminister für Wohnungswesen, Städtebau und Raumordnung: Die Demonstrativbauvorhaben des Bundesministeriums für Wohnungswesen, Städtebau und Raumordnung",
-    "controlNumber" : "(DE-605)HT001264660",
-    "identifierForLinkingEntry" : "(DE-605)HT001264660",
+    "controlNumber" : [ "(DE-605)HT001264660" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001264660" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001264660" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab Bd. 40 u.d.T.",
     "title" : "Deutschland <Bundesrepublik> / Bundesminister für Städtebau und Wohnungswesen: Schriftenreihe des Bundesministers für Städtebau und Wohnungswesen / 1",
-    "controlNumber" : "(DE-605)HT001262904",
-    "identifierForLinkingEntry" : "(DE-605)HT001262904",
+    "controlNumber" : [ "(DE-605)HT001262904" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001262904" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001262904" ]
   } ],
   "xbib" : [ {
@@ -10733,8 +10727,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. bildet",
     "title" : "IET telecommunications series",
-    "controlNumber" : "(DE-605)HT015779999",
-    "identifierForLinkingEntry" : "(DE-605)HT015779999",
+    "controlNumber" : [ "(DE-605)HT015779999" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015779999" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015779999" ]
   } ],
   "xbib" : [ {
@@ -10825,8 +10819,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg.",
     "title" : "International Institute of Documentation: Publication",
-    "controlNumber" : "(DE-605)HT012845422",
-    "identifierForLinkingEntry" : "(DE-605)HT012845422",
+    "controlNumber" : [ "(DE-605)HT012845422" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT012845422" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT012845422" ]
   } ],
   "SucceedingEntry" : [ {
@@ -10834,8 +10828,8 @@
   }, {
     "relationshipInformation" : "Forts.",
     "title" : "International Federation for Information and Documentation: FID publication",
-    "controlNumber" : "(DE-605)HT003378076",
-    "identifierForLinkingEntry" : "(DE-605)HT003378076",
+    "controlNumber" : [ "(DE-605)HT003378076" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003378076" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003378076" ]
   } ],
   "xbib" : [ {
@@ -10937,8 +10931,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Später u.d.T.",
     "title" : "Œuvrekataloge Schweizer Künstler und Künstlerinnen",
-    "controlNumber" : "(DE-605)HT018751543",
-    "identifierForLinkingEntry" : "(DE-605)HT018751543",
+    "controlNumber" : [ "(DE-605)HT018751543" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018751543" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018751543" ]
   } ],
   "xbib" : [ {
@@ -11048,8 +11042,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Deutscher Ausschuss für Eisenbeton: Deutscher Ausschuss für Eisenbeton",
-    "controlNumber" : "(DE-605)HT007922202",
-    "identifierForLinkingEntry" : "(DE-605)HT007922202",
+    "controlNumber" : [ "(DE-605)HT007922202" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT007922202" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT007922202" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -11161,8 +11155,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Spätere Aufl. einzelner Bd. und Forts. --->",
     "title" : "Deutsches Institut für Normung: Normenheft",
-    "controlNumber" : "(DE-605)HT001256113",
-    "identifierForLinkingEntry" : "(DE-605)HT001256113",
+    "controlNumber" : [ "(DE-605)HT001256113" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001256113" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001256113" ]
   } ],
   "xbib" : [ {
@@ -11247,8 +11241,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Bergbau-Museum Bochum: Veröffentlichungen aus dem Bergbau-Museum Bochum",
-    "controlNumber" : "(DE-605)HT001266654",
-    "identifierForLinkingEntry" : "(DE-605)HT001266654",
+    "controlNumber" : [ "(DE-605)HT001266654" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001266654" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001266654" ]
   } ],
   "xbib" : [ {
@@ -11336,8 +11330,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Ehemaliges Deutsches Bibliotheksinstitut <Berlin>: dbi-Materialien",
-    "controlNumber" : "(DE-605)HT004155901",
-    "identifierForLinkingEntry" : "(DE-605)HT004155901",
+    "controlNumber" : [ "(DE-605)HT004155901" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT004155901" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT004155901" ]
   } ],
   "xbib" : [ {
@@ -11652,8 +11646,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "DIN-Taschenbuch",
-    "controlNumber" : "(DE-605)HT002156469",
-    "identifierForLinkingEntry" : "(DE-605)HT002156469",
+    "controlNumber" : [ "(DE-605)HT002156469" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002156469" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002156469" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -11741,15 +11735,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis Bd. 38 u.d.T.",
     "title" : "Verein für Kommunalwissenschaften: Schriftenreihe des Vereins für Kommunalwissenschaften e.V., Berlin",
-    "controlNumber" : "(DE-605)HT001231729",
-    "identifierForLinkingEntry" : "(DE-605)HT001231729",
+    "controlNumber" : [ "(DE-605)HT001231729" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001231729" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001231729" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab Bd. 83 u.d.T.",
     "title" : "Deutsches Institut für Urbanistik <Berlin>: Schriften des Deutschen Instituts für Urbanistik",
-    "controlNumber" : "(DE-605)HT004460506",
-    "identifierForLinkingEntry" : "(DE-605)HT004460506",
+    "controlNumber" : [ "(DE-605)HT004460506" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT004460506" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT004460506" ]
   } ],
   "xbib" : [ {
@@ -11860,15 +11854,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Früher u.d.T.",
     "title" : "Der grosse Duden in 10 Bänden",
-    "controlNumber" : "(DE-605)HT002896887",
-    "identifierForLinkingEntry" : "(DE-605)HT002896887",
+    "controlNumber" : [ "(DE-605)HT002896887" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002896887" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002896887" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Später u.d.T.",
     "title" : "Der Duden in 12 Bänden",
-    "controlNumber" : "(DE-605)HT004557447",
-    "identifierForLinkingEntry" : "(DE-605)HT004557447",
+    "controlNumber" : [ "(DE-605)HT004557447" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT004557447" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT004557447" ]
   } ],
   "xbib" : [ {
@@ -12017,8 +12011,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Nordrhein-Westfalen / Minister für Wirtschaft und Verkehr: Forschungsberichte des Wirtschafts- und Verkehrsministeriums Nordrhein-Westfalen",
-    "controlNumber" : "(DE-605)HT001235413",
-    "identifierForLinkingEntry" : "(DE-605)HT001235413",
+    "controlNumber" : [ "(DE-605)HT001235413" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001235413" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001235413" ]
   } ],
   "xbib" : [ {
@@ -12127,8 +12121,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Städteforschung / A",
-    "controlNumber" : "(DE-605)HT018811981",
-    "identifierForLinkingEntry" : "(DE-605)HT018811981",
+    "controlNumber" : [ "(DE-605)HT018811981" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018811981" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018811981" ]
   } ],
   "xbib" : [ {
@@ -12232,14 +12226,14 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Bibliothekar-Lehrinstitut des Landes Nordrhein-Westfalen <Köln>: Arbeiten aus dem Bibliothekar-Lehrinstitut des Landes Nordrhein-Westfalen",
-    "controlNumber" : "(DE-605)HT001237089",
-    "identifierForLinkingEntry" : "(DE-605)HT001237089",
+    "controlNumber" : [ "(DE-605)HT001237089" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001237089" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001237089" ]
   }, {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Bibliothekar-Lehrinstitut des Landes Nordrhein-Westfalen <Köln>: Bibliographische Hefte",
-    "controlNumber" : "(DE-605)HT001237091",
-    "identifierForLinkingEntry" : "(DE-605)HT001237091",
+    "controlNumber" : [ "(DE-605)HT001237091" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001237091" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001237091" ]
   } ],
   "xbib" : [ {
@@ -12344,8 +12338,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Handbooks in economics",
-    "controlNumber" : "(DE-605)HT015348413",
-    "identifierForLinkingEntry" : "(DE-605)HT015348413",
+    "controlNumber" : [ "(DE-605)HT015348413" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015348413" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015348413" ]
   } ],
   "xbib" : [ {
@@ -12433,8 +12427,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab Bd. 68 u.d.T.",
     "title" : "Control engineering series",
-    "controlNumber" : "(DE-605)HT015773416",
-    "identifierForLinkingEntry" : "(DE-605)HT015773416",
+    "controlNumber" : [ "(DE-605)HT015773416" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015773416" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015773416" ]
   } ],
   "xbib" : [ {
@@ -12526,8 +12520,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. und spätere Ausg. früherer Bde --->",
     "title" : "Institution of Engineering and Technology: IET electromagnetic waves series",
-    "controlNumber" : "(DE-605)HT014784510",
-    "identifierForLinkingEntry" : "(DE-605)HT014784510",
+    "controlNumber" : [ "(DE-605)HT014784510" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014784510" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014784510" ]
   } ],
   "xbib" : [ {
@@ -12612,8 +12606,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab Bd. 31 u.d.T.",
     "title" : "Marbacher Kataloge",
-    "controlNumber" : "(DE-605)HT001234037",
-    "identifierForLinkingEntry" : "(DE-605)HT001234037",
+    "controlNumber" : [ "(DE-605)HT001234037" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001234037" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001234037" ]
   } ],
   "xbib" : [ {
@@ -12818,8 +12812,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Institut für Arbeitsmarkt- und Berufsforschung <Nürnberg>: IAB-Bibliothek",
-    "controlNumber" : "(DE-605)HT015337546",
-    "identifierForLinkingEntry" : "(DE-605)HT015337546",
+    "controlNumber" : [ "(DE-605)HT015337546" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015337546" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015337546" ]
   } ],
   "xbib" : [ {
@@ -12903,15 +12897,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Frankfurter Forschungen zur Architekturgeschichte",
-    "controlNumber" : "(DE-605)HT001243780",
-    "identifierForLinkingEntry" : "(DE-605)HT001243780",
+    "controlNumber" : [ "(DE-605)HT001243780" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001243780" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001243780" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Neue Frankfurter Forschungen zur Kunst",
-    "controlNumber" : "(DE-605)HT014587415",
-    "identifierForLinkingEntry" : "(DE-605)HT014587415",
+    "controlNumber" : [ "(DE-605)HT014587415" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014587415" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014587415" ]
   } ],
   "xbib" : [ {
@@ -13002,8 +12996,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg., N.F. 7.1954/55,1-6 u. N.F. 8.1954 - 11.1955 --->",
     "title" : "Verein für Socialpolitik: Schriften des Vereins für Socialpolitik",
-    "controlNumber" : "(DE-605)HT001236338",
-    "identifierForLinkingEntry" : "(DE-605)HT001236338",
+    "controlNumber" : [ "(DE-605)HT001236338" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001236338" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001236338" ]
   } ],
   "xbib" : [ {
@@ -13097,15 +13091,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. ---> Rheinischer Verein für Denkmalpflege und Heimatschutz",
     "title" : "Jahrbuch",
-    "controlNumber" : "(DE-605)HT001236409",
-    "identifierForLinkingEntry" : "(DE-605)HT001236409",
+    "controlNumber" : [ "(DE-605)HT001236409" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001236409" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001236409" ]
   } ],
   "NonspecificRelationshipEntry" : [ {
     "relationshipInformation" : "1988=1 von",
     "title" : "Archäologie im Rheinland",
-    "controlNumber" : "(DE-605)HT003336724",
-    "identifierForLinkingEntry" : "(DE-605)HT003336724",
+    "controlNumber" : [ "(DE-605)HT003336724" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003336724" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003336724" ]
   } ],
   "SubjectHeadings" : [ {
@@ -13210,8 +13204,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Später u.d.T.",
     "title" : "Gabler Research : Unternehmensführung und Marketing",
-    "controlNumber" : "(DE-605)HT017152884",
-    "identifierForLinkingEntry" : "(DE-605)HT017152884",
+    "controlNumber" : [ "(DE-605)HT017152884" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT017152884" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT017152884" ]
   } ],
   "xbib" : [ {
@@ -13355,15 +13349,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Deutsche Luft- und Raumfahrt : Forschungsbericht",
-    "controlNumber" : "(DE-605)HT001236844",
-    "identifierForLinkingEntry" : "(DE-605)HT001236844",
+    "controlNumber" : [ "(DE-605)HT001236844" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001236844" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001236844" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Deutsche Forschungsanstalt für Luft- und Raumfahrt <Köln> : Forschungsbericht",
-    "controlNumber" : "(DE-605)HT003329012",
-    "identifierForLinkingEntry" : "(DE-605)HT003329012",
+    "controlNumber" : [ "(DE-605)HT003329012" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003329012" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003329012" ]
   } ],
   "xbib" : [ {
@@ -13466,8 +13460,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Kölner Arbeiten zum Bibliotheks- und Dokumentationswesen",
-    "controlNumber" : "(DE-605)HT001235505",
-    "identifierForLinkingEntry" : "(DE-605)HT001235505",
+    "controlNumber" : [ "(DE-605)HT001235505" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001235505" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001235505" ]
   } ],
   "xbib" : [ {
@@ -13561,8 +13555,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Nordrhein-Westfälische Akademie der Wissenschaften <Düsseldorf>: Jahresfeier",
-    "controlNumber" : "(DE-605)HT006362942",
-    "identifierForLinkingEntry" : "(DE-605)HT006362942",
+    "controlNumber" : [ "(DE-605)HT006362942" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT006362942" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT006362942" ]
   } ],
   "xbib" : [ {
@@ -13648,8 +13642,8 @@
   }, {
     "relationshipInformation" : "Später u.d.T.",
     "title" : "Strabag AG <Köln>: Schriftenreihe",
-    "controlNumber" : "(DE-605)HT008604881",
-    "identifierForLinkingEntry" : "(DE-605)HT008604881",
+    "controlNumber" : [ "(DE-605)HT008604881" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT008604881" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT008604881" ]
   } ],
   "xbib" : [ {
@@ -13735,8 +13729,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Management und Wirtschaft Studien",
-    "controlNumber" : "(DE-605)HT015391159",
-    "identifierForLinkingEntry" : "(DE-605)HT015391159",
+    "controlNumber" : [ "(DE-605)HT015391159" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015391159" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015391159" ]
   } ],
   "xbib" : [ {
@@ -13830,8 +13824,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab Bd. 193 u.d.T.",
     "title" : "Forschung Straßenbau und Straßenverkehrstechnik",
-    "controlNumber" : "(DE-605)HT001232891",
-    "identifierForLinkingEntry" : "(DE-605)HT001232891",
+    "controlNumber" : [ "(DE-605)HT001232891" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001232891" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001232891" ]
   } ],
   "SubjectHeadings" : [ {
@@ -13931,8 +13925,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Lecture notes in physics",
-    "controlNumber" : "(DE-605)HT013086436",
-    "identifierForLinkingEntry" : "(DE-605)HT013086436",
+    "controlNumber" : [ "(DE-605)HT013086436" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013086436" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013086436" ]
   } ],
   "xbib" : [ {
@@ -14028,15 +14022,15 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe" ],
     "title" : "Bibliothekspraxis",
-    "controlNumber" : "(DE-605)HT020245134",
-    "identifierForLinkingEntry" : "(DE-605)HT020245134",
+    "controlNumber" : [ "(DE-605)HT020245134" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT020245134" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT020245134" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Bibliotheks- und Informationspraxis",
-    "controlNumber" : "(DE-605)HT016652520",
-    "identifierForLinkingEntry" : "(DE-605)HT016652520",
+    "controlNumber" : [ "(DE-605)HT016652520" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT016652520" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT016652520" ]
   } ],
   "xbib" : [ {
@@ -14122,8 +14116,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Blickpunkt Hochschuldidaktik",
-    "controlNumber" : "(DE-605)HT018879417",
-    "identifierForLinkingEntry" : "(DE-605)HT018879417",
+    "controlNumber" : [ "(DE-605)HT018879417" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018879417" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018879417" ]
   } ],
   "xbib" : [ {
@@ -14204,8 +14198,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "1. Aufl. bis Band 4.1940 u.d.T.",
     "title" : "Deutsche Kirchenführer",
-    "controlNumber" : "(DE-605)HT014851220",
-    "identifierForLinkingEntry" : "(DE-605)HT014851220",
+    "controlNumber" : [ "(DE-605)HT014851220" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014851220" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014851220" ]
   } ],
   "xbib" : [ {
@@ -14308,8 +14302,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Lecture notes in operations research and mathematical systems",
-    "controlNumber" : "(DE-605)HT001233854",
-    "identifierForLinkingEntry" : "(DE-605)HT001233854",
+    "controlNumber" : [ "(DE-605)HT001233854" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001233854" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001233854" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -14404,8 +14398,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Deutscher Verband für Schweißen und Verwandte Verfahren: DVS-Berichte",
-    "controlNumber" : "(DE-605)HT011136161",
-    "identifierForLinkingEntry" : "(DE-605)HT011136161",
+    "controlNumber" : [ "(DE-605)HT011136161" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT011136161" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT011136161" ]
   } ],
   "xbib" : [ {
@@ -14495,15 +14489,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Chemie und Technologie der Kunststoffe in Einzeldarstellungen",
-    "controlNumber" : "(DE-605)HT008302211",
-    "identifierForLinkingEntry" : "(DE-605)HT008302211",
+    "controlNumber" : [ "(DE-605)HT008302211" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT008302211" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT008302211" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Polymers",
-    "controlNumber" : "(DE-605)HT001235005",
-    "identifierForLinkingEntry" : "(DE-605)HT001235005",
+    "controlNumber" : [ "(DE-605)HT001235005" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001235005" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001235005" ]
   } ],
   "xbib" : [ {
@@ -14578,15 +14572,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Ulmer Verein für Kunstwissenschaft: Kunstwissenschaftliche Untersuchungen des Ulmer Vereins für Kunstwissenschaft",
-    "controlNumber" : "(DE-605)HT001232099",
-    "identifierForLinkingEntry" : "(DE-605)HT001232099",
+    "controlNumber" : [ "(DE-605)HT001232099" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001232099" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001232099" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Ulmer Verein: Schriftenreihe des Ulmer Vereins, Verband für Kunst- und Kulturwissenschaften e.V.",
-    "controlNumber" : "(DE-605)HT014535135",
-    "identifierForLinkingEntry" : "(DE-605)HT014535135",
+    "controlNumber" : [ "(DE-605)HT014535135" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014535135" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014535135" ]
   } ],
   "xbib" : [ {
@@ -14678,8 +14672,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Berliner Schriften zur Museumsforschung",
-    "controlNumber" : "(DE-605)HT015142942",
-    "identifierForLinkingEntry" : "(DE-605)HT015142942",
+    "controlNumber" : [ "(DE-605)HT015142942" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015142942" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015142942" ]
   } ],
   "xbib" : [ {
@@ -14813,8 +14807,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab 2003 u.d.T.",
     "title" : "Berufsgenossenschaftliches Institut für Arbeitsschutz <Sankt Augustin>: BIA-Report",
-    "controlNumber" : "(DE-605)HT014507736",
-    "identifierForLinkingEntry" : "(DE-605)HT014507736",
+    "controlNumber" : [ "(DE-605)HT014507736" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014507736" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014507736" ]
   } ],
   "xbib" : [ {
@@ -14909,8 +14903,8 @@
   "NonspecificRelationshipEntry" : [ {
     "relationshipInformation" : "Zugl. Bd. von",
     "title" : "Studien zur Fuggergeschichte",
-    "controlNumber" : "(DE-605)HT001231187",
-    "identifierForLinkingEntry" : "(DE-605)HT001231187",
+    "controlNumber" : [ "(DE-605)HT001231187" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001231187" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001231187" ]
   } ],
   "xbib" : [ {
@@ -15020,8 +15014,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Zeitschrift für Bibliothekswesen und Bibliographie / Sonderbände",
-    "controlNumber" : "(DE-605)HT014811530",
-    "identifierForLinkingEntry" : "(DE-605)HT014811530",
+    "controlNumber" : [ "(DE-605)HT014811530" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014811530" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014811530" ]
   } ],
   "xbib" : [ {
@@ -15116,8 +15110,8 @@
   "OtherEditionEntry" : [ {
     "relationshipInformation" : "Leipziger Ausg.",
     "title" : "Ostwalds Klassiker der exakten Wissenschaften",
-    "controlNumber" : "(DE-605)HT001247989",
-    "identifierForLinkingEntry" : "(DE-605)HT001247989",
+    "controlNumber" : [ "(DE-605)HT001247989" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001247989" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001247989" ]
   } ],
   "xbib" : [ {
@@ -15214,8 +15208,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Untersuchungen zur Ordnungstheorie und Ordnungspolitik",
-    "controlNumber" : "(DE-605)HT008070390",
-    "identifierForLinkingEntry" : "(DE-605)HT008070390",
+    "controlNumber" : [ "(DE-605)HT008070390" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT008070390" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT008070390" ]
   } ],
   "xbib" : [ {
@@ -15349,8 +15343,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Untersuchungen zur deutschen Literaturgeschichte",
-    "controlNumber" : "(DE-605)HT018750152",
-    "identifierForLinkingEntry" : "(DE-605)HT018750152",
+    "controlNumber" : [ "(DE-605)HT018750152" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018750152" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018750152" ]
   } ],
   "xbib" : [ {
@@ -15440,8 +15434,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Wissenschaftliche Forschungsberichte / 1",
-    "controlNumber" : "(DE-605)HT001231862",
-    "identifierForLinkingEntry" : "(DE-605)HT001231862",
+    "controlNumber" : [ "(DE-605)HT001231862" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001231862" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001231862" ]
   } ],
   "xbib" : [ {
@@ -15525,8 +15519,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Perspektiven der Humanwissenschaft",
-    "controlNumber" : "(DE-605)HT007235377",
-    "identifierForLinkingEntry" : "(DE-605)HT007235377",
+    "controlNumber" : [ "(DE-605)HT007235377" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT007235377" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT007235377" ]
   } ],
   "xbib" : [ {
@@ -15610,8 +15604,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Bibliothek für Kunst- und Antiquitätensammler",
-    "controlNumber" : "(DE-605)HT001247113",
-    "identifierForLinkingEntry" : "(DE-605)HT001247113",
+    "controlNumber" : [ "(DE-605)HT001247113" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001247113" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001247113" ]
   } ],
   "xbib" : [ {
@@ -15699,8 +15693,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Früher u.d.T.",
     "title" : "Veröffentlichungen des Instituts für Industrieforschung der Freien Universität Berlin",
-    "controlNumber" : "(DE-605)HT001234403",
-    "identifierForLinkingEntry" : "(DE-605)HT001234403",
+    "controlNumber" : [ "(DE-605)HT001234403" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001234403" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001234403" ]
   } ],
   "xbib" : [ {
@@ -15800,8 +15794,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab 204.1970 u.d.T.",
     "title" : "Rheinisch-Westfälische Akademie der Wissenschaften <Düsseldorf>: Vorträge / N",
-    "controlNumber" : "(DE-605)HT001233626",
-    "identifierForLinkingEntry" : "(DE-605)HT001233626",
+    "controlNumber" : [ "(DE-605)HT001233626" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001233626" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001233626" ]
   } ],
   "xbib" : [ {
@@ -15898,15 +15892,15 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Bundeszentrale für Politische Bildung: Schriftenreihe",
-    "controlNumber" : "(DE-605)HT018737151",
-    "identifierForLinkingEntry" : "(DE-605)HT018737151",
+    "controlNumber" : [ "(DE-605)HT018737151" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018737151" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018737151" ]
   } ],
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Bundeszentrale für Heimatdienst <Bonn>: Schriftenreihe der Bundeszentrale für Heimatdienst",
-    "controlNumber" : "(DE-605)HT001236163",
-    "identifierForLinkingEntry" : "(DE-605)HT001236163",
+    "controlNumber" : [ "(DE-605)HT001236163" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001236163" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001236163" ]
   } ],
   "xbib" : [ {
@@ -15987,8 +15981,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Die Zeichner des Volks",
-    "controlNumber" : "(DE-605)HT001239048",
-    "identifierForLinkingEntry" : "(DE-605)HT001239048",
+    "controlNumber" : [ "(DE-605)HT001239048" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001239048" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001239048" ]
   } ],
   "xbib" : [ {
@@ -16079,8 +16073,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab Bd. 78 u.d.T:",
     "title" : "Monographs in mathematics",
-    "controlNumber" : "(DE-605)HT002159877",
-    "identifierForLinkingEntry" : "(DE-605)HT002159877",
+    "controlNumber" : [ "(DE-605)HT002159877" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002159877" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002159877" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -16163,8 +16157,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Heidelberger Musterverträge",
-    "controlNumber" : "(DE-605)HT019059179",
-    "identifierForLinkingEntry" : "(DE-605)HT019059179",
+    "controlNumber" : [ "(DE-605)HT019059179" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019059179" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019059179" ]
   } ],
   "xbib" : [ {
@@ -16256,15 +16250,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Forschungsarbeiten aus dem Straßenwesen",
-    "controlNumber" : "(DE-605)HT010184359",
-    "identifierForLinkingEntry" : "(DE-605)HT010184359",
+    "controlNumber" : [ "(DE-605)HT010184359" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT010184359" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT010184359" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Forschungsarbeiten aus dem Straßen- und Verkehrswesen",
-    "controlNumber" : "(DE-605)HT007720877",
-    "identifierForLinkingEntry" : "(DE-605)HT007720877",
+    "controlNumber" : [ "(DE-605)HT007720877" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT007720877" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT007720877" ]
   } ],
   "xbib" : [ {
@@ -16338,8 +16332,8 @@
   "SupplementParentEntry" : [ {
     "relationshipInformation" : "Forts. von",
     "title" : "Schriften zur Einzelhandels- und Konsumtionsforschung",
-    "controlNumber" : "(DE-605)HT001249102",
-    "identifierForLinkingEntry" : "(DE-605)HT001249102",
+    "controlNumber" : [ "(DE-605)HT001249102" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001249102" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001249102" ]
   } ],
   "xbib" : [ {
@@ -16421,8 +16415,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "75.1975; 79.1975 u. Forts. --->",
     "title" : "International series in natural philosophy",
-    "controlNumber" : "(DE-605)HT001234545",
-    "identifierForLinkingEntry" : "(DE-605)HT001234545",
+    "controlNumber" : [ "(DE-605)HT001234545" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001234545" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001234545" ]
   } ],
   "xbib" : [ {
@@ -16527,15 +16521,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis 164.1970 und 167.1970; 170.1971 - 171.1971; 175.1971 u.d.T.",
     "title" : "Arbeitsgemeinschaft für Forschung des Landes Nordrhein-Westfalen: Arbeitsgemeinschaft für Forschung des Landes Nordrhein-Westfalen / Geisteswissenschaften",
-    "controlNumber" : "(DE-605)HT001247622",
-    "identifierForLinkingEntry" : "(DE-605)HT001247622",
+    "controlNumber" : [ "(DE-605)HT001247622" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001247622" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001247622" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab Bd. 325.1993 u.d.T.",
     "title" : "Nordrhein-Westfälische Akademie der Wissenschaften <Düsseldorf>: Vorträge / G",
-    "controlNumber" : "(DE-605)HT006134780",
-    "identifierForLinkingEntry" : "(DE-605)HT006134780",
+    "controlNumber" : [ "(DE-605)HT006134780" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT006134780" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT006134780" ]
   } ],
   "xbib" : [ {
@@ -16645,8 +16639,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "UTB",
-    "controlNumber" : "(DE-605)HT018989089",
-    "identifierForLinkingEntry" : "(DE-605)HT018989089",
+    "controlNumber" : [ "(DE-605)HT018989089" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018989089" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018989089" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -16749,15 +16743,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis Bd. 21 u.d.T.",
     "title" : "Nordrhein-Westfalen, Minister für Landesplanung, Wohnungsbau und Öffentliche Arbeiten: Schriftenreihe des Ministers für Landesplanung, Wohnungsbau und Öffentliche Arbeiten des Landes Nordrhein-Westfalen",
-    "controlNumber" : "(DE-605)HT001236480",
-    "identifierForLinkingEntry" : "(DE-605)HT001236480",
+    "controlNumber" : [ "(DE-605)HT001236480" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001236480" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001236480" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab Bd. 24 u.d.T.",
     "title" : "Landesentwicklung",
-    "controlNumber" : "(DE-605)HT001235528",
-    "identifierForLinkingEntry" : "(DE-605)HT001235528",
+    "controlNumber" : [ "(DE-605)HT001235528" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001235528" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001235528" ]
   } ],
   "xbib" : [ {
@@ -16857,8 +16851,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "CD-ROM-Ausg. u.d.T." ],
     "title" : "Verein für Wasser-, Boden- und Lufthygiene: Schriftenreihe des Vereins für Wasser-, Boden- und Lufthygiene e.V.",
-    "controlNumber" : "(DE-605)HT014212166",
-    "identifierForLinkingEntry" : "(DE-605)HT014212166",
+    "controlNumber" : [ "(DE-605)HT014212166" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014212166" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014212166" ]
   } ],
   "xbib" : [ {
@@ -16979,8 +16973,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "CD-ROM-Ausg. u.d.T." ],
     "title" : "Deutsche Verkehrswissenschaftliche Gesellschaft: Schriftenreihe der Deutschen Verkehrswissenschaftlichen Gesellschaft / B",
-    "controlNumber" : "(DE-605)HT014964136",
-    "identifierForLinkingEntry" : "(DE-605)HT014964136",
+    "controlNumber" : [ "(DE-605)HT014964136" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014964136" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014964136" ]
   } ],
   "xbib" : [ {
@@ -17064,8 +17058,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Steuerrecht und Steuerberatung",
-    "controlNumber" : "(DE-605)HT014340434",
-    "identifierForLinkingEntry" : "(DE-605)HT014340434",
+    "controlNumber" : [ "(DE-605)HT014340434" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014340434" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014340434" ]
   } ],
   "xbib" : [ {
@@ -17145,8 +17139,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Wirtschaftsrecht und Wirtschaftspolitik",
-    "controlNumber" : "(DE-605)HT019162647",
-    "identifierForLinkingEntry" : "(DE-605)HT019162647",
+    "controlNumber" : [ "(DE-605)HT019162647" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019162647" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019162647" ]
   } ],
   "xbib" : [ {
@@ -17236,8 +17230,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Bochumer Beiträge zur Unternehmensführung",
-    "controlNumber" : "(DE-605)HT014600450",
-    "identifierForLinkingEntry" : "(DE-605)HT014600450",
+    "controlNumber" : [ "(DE-605)HT014600450" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014600450" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014600450" ]
   } ],
   "xbib" : [ {
@@ -17330,8 +17324,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. ab 2006 u.d.T.",
     "title" : "NJW-Praxis",
-    "controlNumber" : "(DE-605)HT014662154",
-    "identifierForLinkingEntry" : "(DE-605)HT014662154",
+    "controlNumber" : [ "(DE-605)HT014662154" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014662154" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014662154" ]
   } ],
   "xbib" : [ {
@@ -17445,8 +17439,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Europäische Hochschulschriften / 5",
-    "controlNumber" : "(DE-605)HT017605717",
-    "identifierForLinkingEntry" : "(DE-605)HT017605717",
+    "controlNumber" : [ "(DE-605)HT017605717" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT017605717" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT017605717" ]
   } ],
   "xbib" : [ {
@@ -17552,15 +17546,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. u. 3.1960 - 4.1968 --->",
     "title" : "Rheinisches Freilichtmuseum und Landesmuseum für Volkskunde: Führer und Schriften des Rheinischen Freilichtmuseums in Kommern",
-    "controlNumber" : "(DE-605)HT004203821",
-    "identifierForLinkingEntry" : "(DE-605)HT004203821",
+    "controlNumber" : [ "(DE-605)HT004203821" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT004203821" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT004203821" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "LVR-Freilichtmuseum Kommern: Führer und Schriften des LVR-Freilichtmuseums Kommern - Rheinisches Landesmuseum für Volkskunde",
-    "controlNumber" : "(DE-605)HT016414152",
-    "identifierForLinkingEntry" : "(DE-605)HT016414152",
+    "controlNumber" : [ "(DE-605)HT016414152" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT016414152" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT016414152" ]
   } ],
   "xbib" : [ {
@@ -17644,8 +17638,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Forschungsgesellschaft für das Straßenwesen <Deutschland, Bundesrepublik> / Arbeitsgruppe Erd- und Grundbau: Schriftenreihe der Arbeitsgruppe Erd- und Grundbau",
-    "controlNumber" : "(DE-605)HT001236298",
-    "identifierForLinkingEntry" : "(DE-605)HT001236298",
+    "controlNumber" : [ "(DE-605)HT001236298" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001236298" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001236298" ]
   } ],
   "xbib" : [ {
@@ -17741,8 +17735,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Hamburgisches Welt-Wirtschafts-Archiv: HWWA-Report",
-    "controlNumber" : "(DE-605)HT012948974",
-    "identifierForLinkingEntry" : "(DE-605)HT012948974",
+    "controlNumber" : [ "(DE-605)HT012948974" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT012948974" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT012948974" ]
   } ],
   "xbib" : [ {
@@ -17840,8 +17834,8 @@
   }, {
     "relationshipInformation" : "Forts. --->",
     "title" : "Industriegewerkschaft Medien, Druck und Papier, Publizistik und Kunst: Fachtechnische Schriftenreihe der Industriegewerkschaft Medien",
-    "controlNumber" : "(DE-605)HT003547023",
-    "identifierForLinkingEntry" : "(DE-605)HT003547023",
+    "controlNumber" : [ "(DE-605)HT003547023" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003547023" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003547023" ]
   } ],
   "xbib" : [ {
@@ -17947,8 +17941,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Früher u.d.T.",
     "title" : "Kieler Diskussionsbeiträge zu aktuellen wirtschaftspolitischen Fragen",
-    "controlNumber" : "(DE-605)HT001240027",
-    "identifierForLinkingEntry" : "(DE-605)HT001240027",
+    "controlNumber" : [ "(DE-605)HT001240027" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001240027" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001240027" ]
   } ],
   "OnlineAccess" : [ {
@@ -18053,8 +18047,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Münchener Schriften zur angewandten Führungslehre",
-    "controlNumber" : "(DE-605)HT003165857",
-    "identifierForLinkingEntry" : "(DE-605)HT003165857",
+    "controlNumber" : [ "(DE-605)HT003165857" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003165857" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003165857" ]
   } ],
   "xbib" : [ {
@@ -18144,15 +18138,15 @@
   "OtherEditionEntry" : [ {
     "relationshipInformation" : "Internet-Ausg. u.d.T.",
     "title" : "Beck'sche Kurz-Kommentare",
-    "controlNumber" : "(DE-605)HT013887286",
-    "identifierForLinkingEntry" : "(DE-605)HT013887286",
+    "controlNumber" : [ "(DE-605)HT013887286" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013887286" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013887286" ]
   } ],
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Liebmanns Kurzkommentare",
-    "controlNumber" : "(DE-605)HT003948483",
-    "identifierForLinkingEntry" : "(DE-605)HT003948483",
+    "controlNumber" : [ "(DE-605)HT003948483" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003948483" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003948483" ]
   } ],
   "xbib" : [ {
@@ -18265,8 +18259,8 @@
   }, {
     "relationshipInformation" : "Forts. --->",
     "title" : "Direkt",
-    "controlNumber" : "(DE-605)HT004435054",
-    "identifierForLinkingEntry" : "(DE-605)HT004435054",
+    "controlNumber" : [ "(DE-605)HT004435054" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT004435054" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT004435054" ]
   } ],
   "SubjectHeadings" : [ {
@@ -18355,8 +18349,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis 11 (1940) u.d.T.",
     "title" : "Deutscher Ausschuß für Stahlbau: Berichte des Deutschen Ausschusses für Stahlbau / B",
-    "controlNumber" : "(DE-605)HT002850110",
-    "identifierForLinkingEntry" : "(DE-605)HT002850110",
+    "controlNumber" : [ "(DE-605)HT002850110" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002850110" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002850110" ]
   } ],
   "xbib" : [ {
@@ -18452,15 +18446,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Früher u.d.T.",
     "title" : "Georg-Michael-Pfaff-Gedächtnisstiftung: Schriftenreihe der Georg-Michael-Pfaff-Gedächtnisstiftung",
-    "controlNumber" : "(DE-605)HT001238262",
-    "identifierForLinkingEntry" : "(DE-605)HT001238262",
+    "controlNumber" : [ "(DE-605)HT001238262" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001238262" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001238262" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Später u.d.T.",
     "title" : "Ökologische Konzepte",
-    "controlNumber" : "(DE-605)HT007554241",
-    "identifierForLinkingEntry" : "(DE-605)HT007554241",
+    "controlNumber" : [ "(DE-605)HT007554241" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT007554241" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT007554241" ]
   } ],
   "xbib" : [ {
@@ -18553,8 +18547,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Deutsche Gesellschaft für Personalführung: Deutsche Gesellschaft für Personalführung",
-    "controlNumber" : "(DE-605)HT001237695",
-    "identifierForLinkingEntry" : "(DE-605)HT001237695",
+    "controlNumber" : [ "(DE-605)HT001237695" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001237695" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001237695" ]
   } ],
   "xbib" : [ {
@@ -18662,27 +18656,27 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. bildet",
     "title" : "Beiträge zur regionalen Architektur und Siedlungsplanung",
-    "controlNumber" : "(DE-605)HT016247422",
-    "identifierForLinkingEntry" : "(DE-605)HT016247422",
+    "controlNumber" : [ "(DE-605)HT016247422" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT016247422" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT016247422" ]
   } ],
   "NonspecificRelationshipEntry" : [ {
     "relationshipInformation" : "12=25; 13=26; 15=30; 17=56 von",
     "title" : "Arbeitsgemeinschaft zur Verbesserung der Agrarstruktur in Hessen: Arbeitsgemeinschaft zur Verbesserung der Agrarstruktur in Hessen",
-    "controlNumber" : "(DE-605)HT011188237",
-    "identifierForLinkingEntry" : "(DE-605)HT011188237",
+    "controlNumber" : [ "(DE-605)HT011188237" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT011188237" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT011188237" ]
   }, {
     "relationshipInformation" : "14=47; 16=54 von",
     "title" : "Arbeitsgemeinschaft zur Verbesserung der Agrarstruktur in Hessen: Sonderheft",
-    "controlNumber" : "(DE-605)HT011188236",
-    "identifierForLinkingEntry" : "(DE-605)HT011188236",
+    "controlNumber" : [ "(DE-605)HT011188236" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT011188236" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT011188236" ]
   }, {
     "relationshipInformation" : "22=2; 25=3 von",
     "title" : "Hochschulseminar zu Aktuellen Fragen der Städtebaulichen Entwicklung Ländlicher Gemeinden: Hochschulseminar zu Aktuellen Fragen der Städtebaulichen Entwicklung Ländlicher Gemeinden",
-    "controlNumber" : "(DE-605)HT012121935",
-    "identifierForLinkingEntry" : "(DE-605)HT012121935",
+    "controlNumber" : [ "(DE-605)HT012121935" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT012121935" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT012121935" ]
   } ],
   "xbib" : [ {
@@ -18800,8 +18794,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab Bd. 89,11 u.d.T.",
     "title" : "Deutsche Forschungsanstalt für Luft- und Raumfahrt <Köln>: Mitteilung",
-    "controlNumber" : "(DE-605)HT011200776",
-    "identifierForLinkingEntry" : "(DE-605)HT011200776",
+    "controlNumber" : [ "(DE-605)HT011200776" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT011200776" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT011200776" ]
   } ],
   "xbib" : [ {
@@ -18923,8 +18917,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Fortges. als",
     "title" : "ATV-DVWK, Deutsche Vereinigung für Wasserwirtschaft, Abwasser und Abfall: ATV-DVWK-Schriftenreihe",
-    "controlNumber" : "(DE-605)HT012913505",
-    "identifierForLinkingEntry" : "(DE-605)HT012913505",
+    "controlNumber" : [ "(DE-605)HT012913505" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT012913505" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT012913505" ]
   } ],
   "xbib" : [ {
@@ -19041,8 +19035,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Zeitschrift für Betriebswirtschaft / Special issue",
-    "controlNumber" : "(DE-605)HT014508023",
-    "identifierForLinkingEntry" : "(DE-605)HT014508023",
+    "controlNumber" : [ "(DE-605)HT014508023" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014508023" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014508023" ]
   } ],
   "xbib" : [ {
@@ -19136,8 +19130,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Campus / Forschung",
-    "controlNumber" : "(DE-605)HT018241747",
-    "identifierForLinkingEntry" : "(DE-605)HT018241747",
+    "controlNumber" : [ "(DE-605)HT018241747" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018241747" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018241747" ]
   } ],
   "xbib" : [ {
@@ -19225,8 +19219,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Wirtschaftsmonographien des Bauwesens",
-    "controlNumber" : "(DE-605)HT001256198",
-    "identifierForLinkingEntry" : "(DE-605)HT001256198",
+    "controlNumber" : [ "(DE-605)HT001256198" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001256198" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001256198" ]
   } ],
   "xbib" : [ {
@@ -19314,15 +19308,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorangegangen ist",
     "title" : "Werkbund-Archiv : Jahrbuch",
-    "controlNumber" : "(DE-605)HT001348949",
-    "identifierForLinkingEntry" : "(DE-605)HT001348949",
+    "controlNumber" : [ "(DE-605)HT001348949" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001348949" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001348949" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Fortgesetzt durch",
     "title" : "Werkbund-Archiv",
-    "controlNumber" : "(DE-605)HT004517762",
-    "identifierForLinkingEntry" : "(DE-605)HT004517762",
+    "controlNumber" : [ "(DE-605)HT004517762" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT004517762" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT004517762" ]
   } ],
   "xbib" : [ {
@@ -19400,8 +19394,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis Bd. 11 u.d.T.",
     "title" : "Technische Universität <Hannover> / Lehrstuhl und Institut für Verkehrswesen, Eisenbahnbau und -Betrieb: Wissenschaftliche Arbeiten",
-    "controlNumber" : "(DE-605)HT001231974",
-    "identifierForLinkingEntry" : "(DE-605)HT001231974",
+    "controlNumber" : [ "(DE-605)HT001231974" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001231974" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001231974" ]
   } ],
   "SucceedingEntry" : [ {
@@ -19511,8 +19505,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Rowohlts Enzyklopädie",
-    "controlNumber" : "(DE-605)HT002140883",
-    "identifierForLinkingEntry" : "(DE-605)HT002140883",
+    "controlNumber" : [ "(DE-605)HT002140883" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002140883" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002140883" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -19596,8 +19590,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Special publication / Royal Society of Chemistry",
-    "controlNumber" : "(DE-605)HT017700774",
-    "identifierForLinkingEntry" : "(DE-605)HT017700774",
+    "controlNumber" : [ "(DE-605)HT017700774" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT017700774" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT017700774" ]
   } ],
   "PrecedingEntry" : [ {
@@ -19684,8 +19678,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "De Gruyter studies in mathematics",
-    "controlNumber" : "(DE-605)HT015769901",
-    "identifierForLinkingEntry" : "(DE-605)HT015769901",
+    "controlNumber" : [ "(DE-605)HT015769901" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015769901" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015769901" ]
   } ],
   "xbib" : [ {
@@ -19777,8 +19771,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Technische Universität <München> / Lehrstuhl für Energiewirtschaft und Anwendungstechnik: IfE-Schriftenreihe",
-    "controlNumber" : "(DE-605)HT015824395",
-    "identifierForLinkingEntry" : "(DE-605)HT015824395",
+    "controlNumber" : [ "(DE-605)HT015824395" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015824395" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015824395" ]
   } ],
   "xbib" : [ {
@@ -19878,15 +19872,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Untersuchungen über das Spar-, Giro- und Kreditwesen",
-    "controlNumber" : "(DE-605)HT001247401",
-    "identifierForLinkingEntry" : "(DE-605)HT001247401",
+    "controlNumber" : [ "(DE-605)HT001247401" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001247401" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001247401" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Studien zur Kredit- und Finanzwirtschaft",
-    "controlNumber" : "(DE-605)HT014478072",
-    "identifierForLinkingEntry" : "(DE-605)HT014478072",
+    "controlNumber" : [ "(DE-605)HT014478072" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014478072" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014478072" ]
   } ],
   "xbib" : [ {
@@ -19989,8 +19983,8 @@
   "SupplementParentEntry" : [ {
     "relationshipInformation" : "Erg. bildet",
     "title" : "Übungsbuch zur Analysis",
-    "controlNumber" : "(DE-605)HT006576418",
-    "identifierForLinkingEntry" : "(DE-605)HT006576418",
+    "controlNumber" : [ "(DE-605)HT006576418" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT006576418" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT006576418" ]
   } ],
   "xbib" : [ {
@@ -20102,8 +20096,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Spätere Ausg. u.d.T.",
     "title" : "Freeman, Henry George: Taschenwörterbuch Technik",
-    "controlNumber" : "(DE-605)HT013025243",
-    "identifierForLinkingEntry" : "(DE-605)HT013025243",
+    "controlNumber" : [ "(DE-605)HT013025243" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013025243" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013025243" ]
   } ],
   "xbib" : [ {
@@ -20215,8 +20209,8 @@
   "SupplementParentEntry" : [ {
     "relationshipInformation" : "Erg.-H. u.d.T.",
     "title" : "Fortschritte auf dem Gebiete der Architektur",
-    "controlNumber" : "(DE-605)HT008165916",
-    "identifierForLinkingEntry" : "(DE-605)HT008165916",
+    "controlNumber" : [ "(DE-605)HT008165916" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT008165916" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT008165916" ]
   } ],
   "ClassifierLocal" : {
@@ -20327,8 +20321,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab 2. Aufl. u.d.T.",
     "title" : "Edition Handbuch der Fertigungstechnik",
-    "controlNumber" : "(DE-605)HT017894602",
-    "identifierForLinkingEntry" : "(DE-605)HT017894602",
+    "controlNumber" : [ "(DE-605)HT017894602" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT017894602" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT017894602" ]
   } ],
   "xbib" : [ {
@@ -20420,8 +20414,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts.",
     "title" : "Werkbund-Archiv <Berlin, West>: Werkbund-Archiv",
-    "controlNumber" : "(DE-605)HT001262548",
-    "identifierForLinkingEntry" : "(DE-605)HT001262548",
+    "controlNumber" : [ "(DE-605)HT001262548" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001262548" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001262548" ]
   } ],
   "xbib" : [ {
@@ -20555,8 +20549,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Technische Mechanik",
-    "controlNumber" : "(DE-605)HT016284122",
-    "identifierForLinkingEntry" : "(DE-605)HT016284122",
+    "controlNumber" : [ "(DE-605)HT016284122" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT016284122" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT016284122" ]
   } ],
   "xbib" : [ {
@@ -20802,8 +20796,8 @@
   "SupplementParentEntry" : [ {
     "relationshipInformation" : "Später auf CD-ROM erschienen u.d.T.",
     "title" : "Theodor W. Adorno, Gesammelte Schriften",
-    "controlNumber" : "(DE-605)HT014205136",
-    "identifierForLinkingEntry" : "(DE-605)HT014205136",
+    "controlNumber" : [ "(DE-605)HT014205136" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014205136" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014205136" ]
   } ],
   "xbib" : [ {
@@ -20907,8 +20901,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Spätere Ausg. u.d.T.",
     "title" : "Science of synthesis",
-    "controlNumber" : "(DE-605)HT012761244",
-    "identifierForLinkingEntry" : "(DE-605)HT012761244",
+    "controlNumber" : [ "(DE-605)HT012761244" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT012761244" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT012761244" ]
   } ],
   "xbib" : [ {
@@ -21015,8 +21009,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Gewässerschutz, Wasser, Abwasser",
-    "controlNumber" : "(DE-605)HT018742824",
-    "identifierForLinkingEntry" : "(DE-605)HT018742824",
+    "controlNumber" : [ "(DE-605)HT018742824" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018742824" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018742824" ]
   } ],
   "xbib" : [ {
@@ -22056,8 +22050,8 @@
   "SupplementParentEntry" : [ {
     "relationshipInformation" : "Erg. bildet",
     "title" : "Marx-Engels-Verzeichnis",
-    "controlNumber" : "(DE-605)HT001330270",
-    "identifierForLinkingEntry" : "(DE-605)HT001330270",
+    "controlNumber" : [ "(DE-605)HT001330270" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001330270" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001330270" ]
   } ],
   "xbib" : [ {
@@ -22266,8 +22260,8 @@
   "SupplementParentEntry" : [ {
     "relationshipInformation" : "Erg. bildet",
     "title" : "Meyberg, Kurt: Aufgaben und Lösungen zur Algebra",
-    "controlNumber" : "(DE-605)HT000271901",
-    "identifierForLinkingEntry" : "(DE-605)HT000271901",
+    "controlNumber" : [ "(DE-605)HT000271901" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT000271901" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT000271901" ]
   } ],
   "xbib" : [ {
@@ -22367,8 +22361,8 @@
   "NonspecificRelationshipEntry" : [ {
     "relationshipInformation" : "Auch u.d.T.",
     "title" : "Psychopathologie und bildnerischer Ausdruck",
-    "controlNumber" : "(DE-605)HT001261184",
-    "identifierForLinkingEntry" : "(DE-605)HT001261184",
+    "controlNumber" : [ "(DE-605)HT001261184" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001261184" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001261184" ]
   } ],
   "xbib" : [ {
@@ -22623,8 +22617,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Vorg. von",
     "title" : "Deutscher historischer Städteatlas",
-    "controlNumber" : "(DE-605)HT014664047",
-    "identifierForLinkingEntry" : "(DE-605)HT014664047",
+    "controlNumber" : [ "(DE-605)HT014664047" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014664047" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014664047" ]
   } ],
   "SubjectHeadings" : [ {
@@ -22742,15 +22736,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Forts. von",
     "title" : "Allgemeines Lexikon der bildenden Künstler von der Antike bis zur Gegenwart",
-    "controlNumber" : "(DE-605)HT001389409",
-    "identifierForLinkingEntry" : "(DE-605)HT001389409",
+    "controlNumber" : [ "(DE-605)HT001389409" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001389409" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001389409" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Daraus hervorgegangen",
     "title" : "Saur, Allgemeines Künstlerlexikon",
-    "controlNumber" : "(DE-605)HT003924961",
-    "identifierForLinkingEntry" : "(DE-605)HT003924961",
+    "controlNumber" : [ "(DE-605)HT003924961" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003924961" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003924961" ]
   } ],
   "xbib" : [ {
@@ -22856,8 +22850,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Teil 3 und 4 u.d.T.",
     "title" : "Grundrißsammlung von Wohnungen",
-    "controlNumber" : "(DE-605)HT001399422",
-    "identifierForLinkingEntry" : "(DE-605)HT001399422",
+    "controlNumber" : [ "(DE-605)HT001399422" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001399422" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001399422" ]
   } ],
   "xbib" : [ {
@@ -22947,8 +22941,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Fortsetzung von",
     "title" : "Merve",
-    "controlNumber" : "(DE-605)HT002850548",
-    "identifierForLinkingEntry" : "(DE-605)HT002850548",
+    "controlNumber" : [ "(DE-605)HT002850548" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002850548" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002850548" ]
   } ],
   "xbib" : [ {
@@ -23021,8 +23015,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "List-Hochschulreihe",
-    "controlNumber" : "(DE-605)HT002969412",
-    "identifierForLinkingEntry" : "(DE-605)HT002969412",
+    "controlNumber" : [ "(DE-605)HT002969412" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002969412" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002969412" ]
   } ],
   "xbib" : [ {
@@ -23107,8 +23101,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Kohlhammer-Urban-Taschenbücher",
-    "controlNumber" : "(DE-605)HT018446210",
-    "identifierForLinkingEntry" : "(DE-605)HT018446210",
+    "controlNumber" : [ "(DE-605)HT018446210" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018446210" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018446210" ]
   } ],
   "xbib" : [ {
@@ -23192,8 +23186,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab Bd. 4001 u.d.T.",
     "title" : "Kleine Reihe V & R",
-    "controlNumber" : "(DE-605)HT009131765",
-    "identifierForLinkingEntry" : "(DE-605)HT009131765",
+    "controlNumber" : [ "(DE-605)HT009131765" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT009131765" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT009131765" ]
   } ],
   "xbib" : [ {
@@ -23277,8 +23271,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Beck'sche Reihe",
-    "controlNumber" : "(DE-605)HT002899484",
-    "identifierForLinkingEntry" : "(DE-605)HT002899484",
+    "controlNumber" : [ "(DE-605)HT002899484" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002899484" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002899484" ]
   } ],
   "xbib" : [ {
@@ -23365,8 +23359,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Goldmann",
-    "controlNumber" : "(DE-605)HT002145083",
-    "identifierForLinkingEntry" : "(DE-605)HT002145083",
+    "controlNumber" : [ "(DE-605)HT002145083" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002145083" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002145083" ]
   } ],
   "xbib" : [ {
@@ -23460,8 +23454,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Sammlung Göschen",
-    "controlNumber" : "(DE-605)HT018808193",
-    "identifierForLinkingEntry" : "(DE-605)HT018808193",
+    "controlNumber" : [ "(DE-605)HT018808193" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018808193" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018808193" ]
   } ],
   "xbib" : [ {
@@ -23597,8 +23591,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Später u.d.T.",
     "title" : "Universität <Kassel> / Fachbereich Stadtplanung, Landschaftsplanung: Arbeitsberichte des Fachbereichs Stadtplanung, Landschaftsplanung",
-    "controlNumber" : "(DE-605)HT013789969",
-    "identifierForLinkingEntry" : "(DE-605)HT013789969",
+    "controlNumber" : [ "(DE-605)HT013789969" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013789969" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013789969" ]
   } ],
   "xbib" : [ {
@@ -23761,8 +23755,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Bundesanstalt für Arbeitsschutz und Arbeitsmedizin: Schriftenreihe der Bundesanstalt für Arbeitsschutz und Arbeitsmedizin / Forschung",
-    "controlNumber" : "(DE-605)HT007581752",
-    "identifierForLinkingEntry" : "(DE-605)HT007581752",
+    "controlNumber" : [ "(DE-605)HT007581752" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT007581752" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT007581752" ]
   } ],
   "xbib" : [ {
@@ -23860,8 +23854,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Verein Deutscher Ingenieure: Fortschrittberichte VDI / 8",
-    "controlNumber" : "(DE-605)HT018435906",
-    "identifierForLinkingEntry" : "(DE-605)HT018435906",
+    "controlNumber" : [ "(DE-605)HT018435906" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018435906" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018435906" ]
   } ],
   "SucceedingEntry" : [ {
@@ -23986,8 +23980,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Verein Deutscher Ingenieure: Fortschritt-Berichte der VDI-Zeitschriften / 4",
-    "controlNumber" : "(DE-605)HT001235491",
-    "identifierForLinkingEntry" : "(DE-605)HT001235491",
+    "controlNumber" : [ "(DE-605)HT001235491" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001235491" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001235491" ]
   } ],
   "xbib" : [ {
@@ -24088,8 +24082,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "The Kluwer international series in engineering and computer science",
-    "controlNumber" : "(DE-605)HT016891834",
-    "identifierForLinkingEntry" : "(DE-605)HT016891834",
+    "controlNumber" : [ "(DE-605)HT016891834" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT016891834" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT016891834" ]
   } ],
   "SucceedingEntry" : [ {
@@ -24239,8 +24233,8 @@
   "SupplementParentEntry" : [ {
     "relationshipInformation" : "Beil. zur Losebl.-Ausg. u.d.T.",
     "title" : "Wassermeyer, Wolf:Doppelbesteuerung, Festgabe zum 75. Geburtstag von Prof. Dr. Dr. h.c. Franz Wassermeyer",
-    "controlNumber" : "(DE-605)HT018740666",
-    "identifierForLinkingEntry" : "(DE-605)HT018740666",
+    "controlNumber" : [ "(DE-605)HT018740666" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018740666" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018740666" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -24381,8 +24375,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "1. Aufl. u.d.T.",
     "title" : "Hausen, Helmuth: Erzeugung sehr tiefer Temperaturen",
-    "controlNumber" : "(DE-605)HT001899136",
-    "identifierForLinkingEntry" : "(DE-605)HT001899136",
+    "controlNumber" : [ "(DE-605)HT001899136" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001899136" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001899136" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -24485,8 +24479,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Rowohlts deutsche Enzyklopädie",
-    "controlNumber" : "(DE-605)HT001264701",
-    "identifierForLinkingEntry" : "(DE-605)HT001264701",
+    "controlNumber" : [ "(DE-605)HT001264701" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001264701" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001264701" ]
   } ],
   "xbib" : [ {
@@ -24567,8 +24561,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Teilw. und später u.d.T.",
     "title" : "Knaur",
-    "controlNumber" : "(DE-605)HT002994275",
-    "identifierForLinkingEntry" : "(DE-605)HT002994275",
+    "controlNumber" : [ "(DE-605)HT002994275" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002994275" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002994275" ]
   } ],
   "xbib" : [ {
@@ -24656,8 +24650,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Goldmann-Taschenbücher",
-    "controlNumber" : "(DE-605)HT002094182",
-    "identifierForLinkingEntry" : "(DE-605)HT002094182",
+    "controlNumber" : [ "(DE-605)HT002094182" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002094182" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002094182" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -24768,8 +24762,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Wirtschaftswissenschaftliches Seminar: Wirtschaftswissenschaftliches Seminar Ottobeuren",
-    "controlNumber" : "(DE-605)HT013127893",
-    "identifierForLinkingEntry" : "(DE-605)HT013127893",
+    "controlNumber" : [ "(DE-605)HT013127893" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013127893" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013127893" ]
   } ],
   "xbib" : [ {
@@ -24882,9 +24876,9 @@
     "publisherStatement" : "London : Wiley-Academy, 1946-",
     "relationshipInformation" : "Nr. zugl. einzelne Nr. von",
     "title" : "Architectural design",
-    "controlNumber" : "(DE-605)HT002183595",
     "identifierISSN" : "0003-8504",
-    "identifierForLinkingEntry" : "(DE-605)HT002183595",
+    "controlNumber" : [ "(DE-605)HT002183595" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002183595" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002183595" ]
   } ],
   "xbib" : [ {
@@ -24974,8 +24968,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Albertina <Wien>: Ausstellung der Albertina",
-    "controlNumber" : "(DE-605)HT015104601",
-    "identifierForLinkingEntry" : "(DE-605)HT015104601",
+    "controlNumber" : [ "(DE-605)HT015104601" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015104601" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015104601" ]
   } ],
   "xbib" : [ {
@@ -25060,8 +25054,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Advances in biochemical engineering",
-    "controlNumber" : "(DE-605)HT002182552",
-    "identifierForLinkingEntry" : "(DE-605)HT002182552",
+    "controlNumber" : [ "(DE-605)HT002182552" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002182552" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002182552" ]
   } ],
   "xbib" : [ {
@@ -25160,15 +25154,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Darin aufgeg. --->",
     "title" : "Hochschul-Informations-System GmbH <Hannover>: HIS-Brief",
-    "controlNumber" : "(DE-605)HT001235752",
-    "identifierForLinkingEntry" : "(DE-605)HT001235752",
+    "controlNumber" : [ "(DE-605)HT001235752" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001235752" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001235752" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Forum Hochschule",
-    "controlNumber" : "(DE-605)HT014874516",
-    "identifierForLinkingEntry" : "(DE-605)HT014874516",
+    "controlNumber" : [ "(DE-605)HT014874516" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014874516" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014874516" ]
   } ],
   "xbib" : [ {
@@ -25257,8 +25251,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Zweites Deutsches Fernsehen <Mainz>: Schriftenreihe des Zweiten Deutschen Fernsehens",
-    "controlNumber" : "(DE-605)HT001250732",
-    "identifierForLinkingEntry" : "(DE-605)HT001250732",
+    "controlNumber" : [ "(DE-605)HT001250732" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001250732" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001250732" ]
   } ],
   "xbib" : [ {
@@ -25356,8 +25350,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Akademiebeiträge zur Lehrerbildung",
-    "controlNumber" : "(DE-605)HT001233059",
-    "identifierForLinkingEntry" : "(DE-605)HT001233059",
+    "controlNumber" : [ "(DE-605)HT001233059" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001233059" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001233059" ]
   } ],
   "xbib" : [ {
@@ -25442,8 +25436,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Beiträge zur Kunstgeschichte",
-    "controlNumber" : "(DE-605)HT002161282",
-    "identifierForLinkingEntry" : "(DE-605)HT002161282",
+    "controlNumber" : [ "(DE-605)HT002161282" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002161282" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002161282" ]
   } ],
   "xbib" : [ {
@@ -25541,15 +25535,15 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Methods in molecular biology",
-    "controlNumber" : "(DE-605)HT019150052",
-    "identifierForLinkingEntry" : "(DE-605)HT019150052",
+    "controlNumber" : [ "(DE-605)HT019150052" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019150052" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019150052" ]
   }, {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "CD-ROM-Ausg." ],
     "title" : "Methods in molecular biology",
-    "controlNumber" : "(DE-605)HT014461075",
-    "identifierForLinkingEntry" : "(DE-605)HT014461075",
+    "controlNumber" : [ "(DE-605)HT014461075" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014461075" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014461075" ]
   } ],
   "xbib" : [ {
@@ -25656,15 +25650,15 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Enzyklopädie der Psychologie",
-    "controlNumber" : "(DE-605)HT019832314",
-    "identifierForLinkingEntry" : "(DE-605)HT019832314",
+    "controlNumber" : [ "(DE-605)HT019832314" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019832314" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019832314" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Neubearb. mit teilw. anderer Bandeinteilung ab 2003 u.d.T.",
     "title" : "Enzyklopädie der Psychologie",
-    "controlNumber" : "(DE-605)HT014051766",
-    "identifierForLinkingEntry" : "(DE-605)HT014051766",
+    "controlNumber" : [ "(DE-605)HT014051766" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014051766" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014051766" ]
   } ],
   "xbib" : [ {
@@ -25767,8 +25761,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Arbeitskreis für Hausforschung Bericht über die Tagung des Arbeitskreises für Hausforschung e.V.",
-    "controlNumber" : "(DE-605)HT004561706",
-    "identifierForLinkingEntry" : "(DE-605)HT004561706",
+    "controlNumber" : [ "(DE-605)HT004561706" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT004561706" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT004561706" ]
   } ],
   "xbib" : [ {
@@ -25885,8 +25879,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Medicus, Dieter: Schuldrecht",
-    "controlNumber" : "(DE-605)HT016845822",
-    "identifierForLinkingEntry" : "(DE-605)HT016845822",
+    "controlNumber" : [ "(DE-605)HT016845822" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT016845822" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT016845822" ]
   } ],
   "xbib" : [ {
@@ -26016,8 +26010,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "CD-ROM-Ausg. u.d.T." ],
     "title" : "WörterCD der modernen Technik",
-    "controlNumber" : "(DE-605)HT014495949",
-    "identifierForLinkingEntry" : "(DE-605)HT014495949",
+    "controlNumber" : [ "(DE-605)HT014495949" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014495949" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014495949" ]
   } ],
   "xbib" : [ {
@@ -26138,8 +26132,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Vahlens Kompendium der Betriebswirtschaftslehre",
-    "controlNumber" : "(DE-605)HT018401351",
-    "identifierForLinkingEntry" : "(DE-605)HT018401351",
+    "controlNumber" : [ "(DE-605)HT018401351" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018401351" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018401351" ]
   } ],
   "xbib" : [ {
@@ -26242,15 +26236,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis 4. Aufl. u.d.T.",
     "title" : "Zurmühl, Rudolf: Matrizen und ihre technischen Anwendungen",
-    "controlNumber" : "(DE-605)HT000887091",
-    "identifierForLinkingEntry" : "(DE-605)HT000887091",
+    "controlNumber" : [ "(DE-605)HT000887091" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT000887091" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT000887091" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab 6. Aufl. u.d.T.",
     "title" : "Zurmühl, Rudolf: Matrizen und ihre Anwendungen",
-    "controlNumber" : "(DE-605)HT004303982",
-    "identifierForLinkingEntry" : "(DE-605)HT004303982",
+    "controlNumber" : [ "(DE-605)HT004303982" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT004303982" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT004303982" ]
   } ],
   "xbib" : [ {
@@ -26365,15 +26359,15 @@
   "OtherEditionEntry" : [ {
     "relationshipInformation" : "Internet-Ausg. u.d.T.",
     "title" : "Comprehensive analytical chemistry",
-    "controlNumber" : "(DE-605)HT015628019",
-    "identifierForLinkingEntry" : "(DE-605)HT015628019",
+    "controlNumber" : [ "(DE-605)HT015628019" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015628019" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015628019" ]
   } ],
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Comprehensive analytical chemistry",
-    "controlNumber" : "(DE-605)HT001392833",
-    "identifierForLinkingEntry" : "(DE-605)HT001392833",
+    "controlNumber" : [ "(DE-605)HT001392833" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001392833" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001392833" ]
   } ],
   "xbib" : [ {
@@ -26473,15 +26467,15 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe" ],
     "title" : "CBMS-NSF regional conference series in applied mathematics",
-    "controlNumber" : "(DE-605)HT018882578",
-    "identifierForLinkingEntry" : "(DE-605)HT018882578",
+    "controlNumber" : [ "(DE-605)HT018882578" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018882578" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018882578" ]
   } ],
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis Vol. 25.1976 und Vol. 29.1978 u.d.T.",
     "title" : "Regional conference series in applied mathematics",
-    "controlNumber" : "(DE-605)HT001254297",
-    "identifierForLinkingEntry" : "(DE-605)HT001254297",
+    "controlNumber" : [ "(DE-605)HT001254297" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001254297" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001254297" ]
   } ],
   "xbib" : [ {
@@ -26586,15 +26580,15 @@
     "extent" : "229 S. : zahlr. Ill."
   },
   "HostItemEntry" : [ {
-    "controlNumber" : "(DE-605)HT002215277",
-    "identifierForLinkingEntry" : "(DE-605)HT002215277",
+    "controlNumber" : [ "(DE-605)HT002215277" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002215277" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002215277" ]
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Reproduktion",
     "title" : "Von Bonn bis Köln",
-    "controlNumber" : "(DE-605)CT001009832",
-    "identifierForLinkingEntry" : "(DE-605)CT001009832",
+    "controlNumber" : [ "(DE-605)CT001009832" ],
+    "identifierForLinkingEntry" : [ "(DE-605)CT001009832" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)CT001009832" ]
   } ],
   "ClassifierLocal" : {
@@ -26724,8 +26718,8 @@
     "identifierGND" : [ "143293133" ]
   } ],
   "HostItemEntry" : [ {
-    "controlNumber" : "(DE-605)HT002272209",
-    "identifierForLinkingEntry" : "(DE-605)HT002272209",
+    "controlNumber" : [ "(DE-605)HT002272209" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002272209" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002272209" ]
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
@@ -26820,8 +26814,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Pädagogische Taschenbücher",
-    "controlNumber" : "(DE-605)HT001250435",
-    "identifierForLinkingEntry" : "(DE-605)HT001250435",
+    "controlNumber" : [ "(DE-605)HT001250435" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001250435" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001250435" ]
   } ],
   "xbib" : [ {
@@ -26903,8 +26897,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg.",
     "title" : "Henkel-GmbH <Düsseldorf> / Werksarchiv: Schriften des Werksarchivs der Henkel-GmbH Düsseldorf",
-    "controlNumber" : "(DE-605)HT001266411",
-    "identifierForLinkingEntry" : "(DE-605)HT001266411",
+    "controlNumber" : [ "(DE-605)HT001266411" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001266411" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001266411" ]
   } ],
   "xbib" : [ {
@@ -26992,8 +26986,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg.",
     "title" : "Studien zu Bildung und Wissenschaft",
-    "controlNumber" : "(DE-605)HT002160866",
-    "identifierForLinkingEntry" : "(DE-605)HT002160866",
+    "controlNumber" : [ "(DE-605)HT002160866" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002160866" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002160866" ]
   } ],
   "SucceedingEntry" : [ {
@@ -27157,8 +27151,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "8. Aufl. u.d.T.",
     "title" : "Wasser",
-    "controlNumber" : "(DE-605)HT013413515",
-    "identifierForLinkingEntry" : "(DE-605)HT013413515",
+    "controlNumber" : [ "(DE-605)HT013413515" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013413515" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013413515" ]
   } ],
   "OnlineAccess" : [ {
@@ -27338,8 +27332,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Abgabenordnung, Finanzgerichtsordnung",
-    "controlNumber" : "(DE-605)HT015996030",
-    "identifierForLinkingEntry" : "(DE-605)HT015996030",
+    "controlNumber" : [ "(DE-605)HT015996030" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015996030" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015996030" ]
   } ],
   "PrecedingEntry" : [ {
@@ -27484,8 +27478,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Erw. Ausg. u.d.T.",
     "title" : "Metals and their compounds in the environment",
-    "controlNumber" : "(DE-605)HT003700933",
-    "identifierForLinkingEntry" : "(DE-605)HT003700933",
+    "controlNumber" : [ "(DE-605)HT003700933" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003700933" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003700933" ]
   } ],
   "OnlineAccess" : [ {
@@ -27635,8 +27629,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "6. Aufl. u.d.T.",
     "title" : "Tschätsch, Heinz: Werkzeugmaschinen",
-    "controlNumber" : "(DE-605)HT003829313",
-    "identifierForLinkingEntry" : "(DE-605)HT003829313",
+    "controlNumber" : [ "(DE-605)HT003829313" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003829313" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003829313" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -27989,15 +27983,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. und 1985,1-5 --->",
     "title" : "Nordrhein-Westfalen, Minister für Landes- und Stadtentwicklung: MLS informiert",
-    "controlNumber" : "(DE-605)HT002110493",
-    "identifierForLinkingEntry" : "(DE-605)HT002110493",
+    "controlNumber" : [ "(DE-605)HT002110493" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002110493" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002110493" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "1990,3-4 und Forts. --->",
     "title" : "Nordrhein-Westfalen, Ministerium für Stadtentwicklung und Verkehr: Das Ministerium für Stadtentwicklung und Verkehr des Landes Nordrhein-Westfalen informiert",
-    "controlNumber" : "(DE-605)HT003780844",
-    "identifierForLinkingEntry" : "(DE-605)HT003780844",
+    "controlNumber" : [ "(DE-605)HT003780844" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003780844" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003780844" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -28079,15 +28073,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis 5.1935 u.d.T.",
     "title" : "Deutscher Stahlbauverband / Ausschuß für Versuche im Stahlbau: Berichte des Ausschusses für Versuche im Stahlbau / B",
-    "controlNumber" : "(DE-605)HT002160085",
-    "identifierForLinkingEntry" : "(DE-605)HT002160085",
+    "controlNumber" : [ "(DE-605)HT002160085" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002160085" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002160085" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab 12.1941 u.d.T.",
     "title" : "Deutscher Ausschuß für Stahlbau : Berichte des Deutschen Ausschusses für Stahlbau",
-    "controlNumber" : "(DE-605)HT001257190",
-    "identifierForLinkingEntry" : "(DE-605)HT001257190",
+    "controlNumber" : [ "(DE-605)HT001257190" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001257190" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001257190" ]
   } ],
   "xbib" : [ {
@@ -28174,15 +28168,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis Bd. 74 u.d.T.",
     "title" : "Internationale marxistische Diskussion",
-    "controlNumber" : "(DE-605)HT001238462",
-    "identifierForLinkingEntry" : "(DE-605)HT001238462",
+    "controlNumber" : [ "(DE-605)HT001238462" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001238462" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001238462" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab Bd. 126 und einzelne frühere Bände u.d.T.",
     "title" : "Internationaler Merve-Diskurs",
-    "controlNumber" : "(DE-605)HT001465710",
-    "identifierForLinkingEntry" : "(DE-605)HT001465710",
+    "controlNumber" : [ "(DE-605)HT001465710" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001465710" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001465710" ]
   } ],
   "xbib" : [ {
@@ -28266,8 +28260,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Aufgeg. in --->",
     "title" : "Rororo",
-    "controlNumber" : "(DE-605)HT002091108",
-    "identifierForLinkingEntry" : "(DE-605)HT002091108",
+    "controlNumber" : [ "(DE-605)HT002091108" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002091108" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002091108" ]
   } ],
   "xbib" : [ {
@@ -28361,8 +28355,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Beck'sche schwarze Reihe",
-    "controlNumber" : "(DE-605)HT002094042",
-    "identifierForLinkingEntry" : "(DE-605)HT002094042",
+    "controlNumber" : [ "(DE-605)HT002094042" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002094042" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002094042" ]
   } ],
   "xbib" : [ {
@@ -28507,8 +28501,8 @@
   "SupplementParentEntry" : [ {
     "relationshipInformation" : "Erg. bildet",
     "title" : "Feynman, Richard Phillips: Tipps zur Physik",
-    "controlNumber" : "(DE-605)HT015703907",
-    "identifierForLinkingEntry" : "(DE-605)HT015703907",
+    "controlNumber" : [ "(DE-605)HT015703907" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015703907" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015703907" ]
   } ],
   "xbib" : [ {
@@ -28620,14 +28614,14 @@
   "OtherEditionEntry" : [ {
     "relationshipInformation" : "Engl. Ausg. u.d.T.",
     "title" : "The great centuries of painting",
-    "controlNumber" : "(DE-605)HT015019135",
-    "identifierForLinkingEntry" : "(DE-605)HT015019135",
+    "controlNumber" : [ "(DE-605)HT015019135" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015019135" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015019135" ]
   }, {
     "relationshipInformation" : "Franz. Ausg. u.d.T.",
     "title" : "Les grands siècles de la peinture",
-    "controlNumber" : "(DE-605)HT002972591",
-    "identifierForLinkingEntry" : "(DE-605)HT002972591",
+    "controlNumber" : [ "(DE-605)HT002972591" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002972591" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002972591" ]
   } ],
   "xbib" : [ {
@@ -28706,8 +28700,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Knaur-Taschenbücher",
-    "controlNumber" : "(DE-605)HT002141329",
-    "identifierForLinkingEntry" : "(DE-605)HT002141329",
+    "controlNumber" : [ "(DE-605)HT002141329" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002141329" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002141329" ]
   } ],
   "xbib" : [ {
@@ -28785,8 +28779,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Schriftenreihe Galvanotechnik",
-    "controlNumber" : "(DE-605)HT001235864",
-    "identifierForLinkingEntry" : "(DE-605)HT001235864",
+    "controlNumber" : [ "(DE-605)HT001235864" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001235864" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001235864" ]
   } ],
   "xbib" : [ {
@@ -28899,8 +28893,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "2. Abt. \"Österreich\" später u.d.T.",
     "title" : "Dehio, Georg: Handbuch der deutschen Kunstdenkmäler in der Ostmark",
-    "controlNumber" : "(DE-605)HT003676997",
-    "identifierForLinkingEntry" : "(DE-605)HT003676997",
+    "controlNumber" : [ "(DE-605)HT003676997" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003676997" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003676997" ]
   }, {
     "relationshipInformation" : "Die ab 1964 erfolgte Neubearb. erschien u.d.T.",
@@ -28998,8 +28992,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Institut für Landes- und Stadtentwicklungsforschung des Landes Nordrhein-Westfalen <Dortmund>: ILS",
-    "controlNumber" : "(DE-605)HT007358630",
-    "identifierForLinkingEntry" : "(DE-605)HT007358630",
+    "controlNumber" : [ "(DE-605)HT007358630" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT007358630" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT007358630" ]
   } ],
   "xbib" : [ {
@@ -29085,8 +29079,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Später u.d.T.",
     "title" : "Skidmore, Owings and Merrill LLP <Chicago, Ill.; New York, NY>: Architektur und Städtebau 1973 - 1983",
-    "controlNumber" : "(DE-605)HT002799673",
-    "identifierForLinkingEntry" : "(DE-605)HT002799673",
+    "controlNumber" : [ "(DE-605)HT002799673" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002799673" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002799673" ]
   } ],
   "xbib" : [ {
@@ -29186,15 +29180,15 @@
   "OtherEditionEntry" : [ {
     "relationshipInformation" : "Engl. Ausg. u.d.T.",
     "title" : "Deutsches Institut für Normung: DIN standardization brochure",
-    "controlNumber" : "(DE-605)HT006825478",
-    "identifierForLinkingEntry" : "(DE-605)HT006825478",
+    "controlNumber" : [ "(DE-605)HT006825478" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT006825478" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT006825478" ]
   } ],
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Deutsches Institut für Normung: Normenheft",
-    "controlNumber" : "(DE-605)HT001256113",
-    "identifierForLinkingEntry" : "(DE-605)HT001256113",
+    "controlNumber" : [ "(DE-605)HT001256113" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001256113" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001256113" ]
   } ],
   "xbib" : [ {
@@ -29267,8 +29261,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Später u.d.T.",
     "title" : "Wallraf-Richartz-Museum - Fondation Corboud <Köln>: Bildhefte zur Sammlung",
-    "controlNumber" : "(DE-605)HT014288640",
-    "identifierForLinkingEntry" : "(DE-605)HT014288640",
+    "controlNumber" : [ "(DE-605)HT014288640" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014288640" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014288640" ]
   } ],
   "xbib" : [ {
@@ -29355,8 +29349,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Planungs- und organisationswissenschaftliche Schriften",
-    "controlNumber" : "(DE-605)HT001255909",
-    "identifierForLinkingEntry" : "(DE-605)HT001255909",
+    "controlNumber" : [ "(DE-605)HT001255909" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001255909" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001255909" ]
   } ],
   "xbib" : [ {
@@ -29435,8 +29429,8 @@
   "OtherEditionEntry" : [ {
     "relationshipInformation" : "Engl. Ausg. u.d.T.",
     "title" : "Strategies and options for the future of Europe / Basic findings",
-    "controlNumber" : "(DE-605)HT003390231",
-    "identifierForLinkingEntry" : "(DE-605)HT003390231",
+    "controlNumber" : [ "(DE-605)HT003390231" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003390231" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003390231" ]
   } ],
   "xbib" : [ {
@@ -29528,8 +29522,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Kunsthistorisches Institut in Florenz: Italienische Forschungen des Kunsthistorischen Institutes in Florenz, Max-Planck-Institut",
-    "controlNumber" : "(DE-605)HT014214520",
-    "identifierForLinkingEntry" : "(DE-605)HT014214520",
+    "controlNumber" : [ "(DE-605)HT014214520" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014214520" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014214520" ]
   } ],
   "xbib" : [ {
@@ -29616,8 +29610,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Das Heyne-Sachbuch",
-    "controlNumber" : "(DE-605)HT007534113",
-    "identifierForLinkingEntry" : "(DE-605)HT007534113",
+    "controlNumber" : [ "(DE-605)HT007534113" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT007534113" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT007534113" ]
   } ],
   "xbib" : [ {
@@ -29733,8 +29727,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Spätere Ausg. in 4 Bd. u.d.T.",
     "title" : "Chemie - Basiswissen",
-    "controlNumber" : "(DE-605)HT016738070",
-    "identifierForLinkingEntry" : "(DE-605)HT016738070",
+    "controlNumber" : [ "(DE-605)HT016738070" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT016738070" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT016738070" ]
   } ],
   "xbib" : [ {
@@ -29845,8 +29839,8 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe" ],
-    "controlNumber" : "(DE-605)HT019183066",
-    "identifierForLinkingEntry" : "(DE-605)HT019183066",
+    "controlNumber" : [ "(DE-605)HT019183066" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019183066" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019183066" ]
   } ],
   "xbib" : [ {
@@ -29930,8 +29924,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Fortschritte der Kraftfahrzeugtechnik",
-    "controlNumber" : "(DE-605)HT003131080",
-    "identifierForLinkingEntry" : "(DE-605)HT003131080",
+    "controlNumber" : [ "(DE-605)HT003131080" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003131080" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003131080" ]
   } ],
   "xbib" : [ {
@@ -30033,15 +30027,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorg. --->",
     "title" : "Deutsche Forschungs- und Versuchsanstalt für Luft- und Raumfahrt <Köln>: Mitteilung",
-    "controlNumber" : "(DE-605)HT001259916",
-    "identifierForLinkingEntry" : "(DE-605)HT001259916",
+    "controlNumber" : [ "(DE-605)HT001259916" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001259916" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001259916" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. --->",
     "title" : "Deutsches Zentrum für Luft- und Raumfahrt: Mitteilung",
-    "controlNumber" : "(DE-605)HT003328397",
-    "identifierForLinkingEntry" : "(DE-605)HT003328397",
+    "controlNumber" : [ "(DE-605)HT003328397" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003328397" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003328397" ]
   } ],
   "xbib" : [ {
@@ -30146,8 +30140,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Monographs on statistics and applied probability",
-    "controlNumber" : "(DE-605)HT019125208",
-    "identifierForLinkingEntry" : "(DE-605)HT019125208",
+    "controlNumber" : [ "(DE-605)HT019125208" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019125208" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019125208" ]
   } ],
   "PrecedingEntry" : [ {
@@ -30249,8 +30243,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. bildet",
     "title" : "Oberösterreichische Landesmuseen <Linz>: Kataloge der Oberösterreichischen Landesmuseen",
-    "controlNumber" : "(DE-605)HT014085279",
-    "identifierForLinkingEntry" : "(DE-605)HT014085279",
+    "controlNumber" : [ "(DE-605)HT014085279" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014085279" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014085279" ]
   } ],
   "xbib" : [ {
@@ -30348,8 +30342,8 @@
   "OtherEditionEntry" : [ {
     "relationshipInformation" : "Internetausg.",
     "title" : "Hamburger Berichte",
-    "controlNumber" : "(DE-605)HT016120158",
-    "identifierForLinkingEntry" : "(DE-605)HT016120158",
+    "controlNumber" : [ "(DE-605)HT016120158" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT016120158" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT016120158" ]
   } ],
   "xbib" : [ {
@@ -30462,8 +30456,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Grundriß der Psychologie",
-    "controlNumber" : "(DE-605)HT017291437",
-    "identifierForLinkingEntry" : "(DE-605)HT017291437",
+    "controlNumber" : [ "(DE-605)HT017291437" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT017291437" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT017291437" ]
   } ],
   "xbib" : [ {
@@ -30590,8 +30584,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "10. Aufl. u.d.T.",
     "title" : "Römpp-Lexikon Chemie",
-    "controlNumber" : "(DE-605)HT007326815",
-    "identifierForLinkingEntry" : "(DE-605)HT007326815",
+    "controlNumber" : [ "(DE-605)HT007326815" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT007326815" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT007326815" ]
   } ],
   "xbib" : [ {
@@ -30706,8 +30700,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Frühere Aufl. u.d.T.",
     "title" : "Architektur im Umbruch",
-    "controlNumber" : "(DE-605)HT000199988",
-    "identifierForLinkingEntry" : "(DE-605)HT000199988",
+    "controlNumber" : [ "(DE-605)HT000199988" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT000199988" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT000199988" ]
   } ],
   "SubjectHeadings" : [ {
@@ -30820,8 +30814,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab 6. Aufl. u.d.T.:",
     "title" : "Handbuch für umwelttechnische Berufe",
-    "controlNumber" : "(DE-605)HT013575747",
-    "identifierForLinkingEntry" : "(DE-605)HT013575747",
+    "controlNumber" : [ "(DE-605)HT013575747" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013575747" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013575747" ]
   } ],
   "xbib" : [ {
@@ -30970,8 +30964,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Früher u.d.T.",
     "title" : "Dehio, Georg: Handbuch der deutschen Kunstdenkmäler in der Ostmark",
-    "controlNumber" : "(DE-605)HT003676997",
-    "identifierForLinkingEntry" : "(DE-605)HT003676997",
+    "controlNumber" : [ "(DE-605)HT003676997" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT003676997" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT003676997" ]
   } ],
   "xbib" : [ {
@@ -31084,8 +31078,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis 3. Aufl. u.d.T.",
     "title" : "Weck, Manfred: Werkzeugmaschinen",
-    "controlNumber" : "(DE-605)HT001348634",
-    "identifierForLinkingEntry" : "(DE-605)HT001348634",
+    "controlNumber" : [ "(DE-605)HT001348634" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001348634" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001348634" ]
   } ],
   "xbib" : [ {
@@ -33926,8 +33920,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe" ],
     "title" : "Gesamtausgabe",
-    "controlNumber" : "(DE-605)HT019544140",
-    "identifierForLinkingEntry" : "(DE-605)HT019544140",
+    "controlNumber" : [ "(DE-605)HT019544140" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019544140" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019544140" ]
   } ],
   "xbib" : [ {
@@ -34174,8 +34168,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Kompaktausg. u.d.T.",
     "title" : "Bergmann/Schaefer kompakt - Lehrbuch der Experimentalphysik",
-    "controlNumber" : "(DE-605)HT017123503",
-    "identifierForLinkingEntry" : "(DE-605)HT017123503",
+    "controlNumber" : [ "(DE-605)HT017123503" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT017123503" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT017123503" ]
   } ],
   "xbib" : [ {
@@ -34295,8 +34289,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe" ],
     "title" : "Aktiengesetz",
-    "controlNumber" : "(DE-605)HT020487739",
-    "identifierForLinkingEntry" : "(DE-605)HT020487739",
+    "controlNumber" : [ "(DE-605)HT020487739" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT020487739" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT020487739" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -35507,8 +35501,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "5. Aufl. u.d.T.",
     "title" : "Zurmühl, Rudolf: Matrizen und ihre Anwendungen für angewandte Mathematiker, Physiker und Ingenieure",
-    "controlNumber" : "(DE-605)HT002213429",
-    "identifierForLinkingEntry" : "(DE-605)HT002213429",
+    "controlNumber" : [ "(DE-605)HT002213429" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002213429" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002213429" ]
   } ],
   "xbib" : [ {
@@ -35632,8 +35626,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "7. Aufl. u.d.T.:",
     "title" : "Handbuch Bauelemente der Optik",
-    "controlNumber" : "(DE-605)HT018217324",
-    "identifierForLinkingEntry" : "(DE-605)HT018217324",
+    "controlNumber" : [ "(DE-605)HT018217324" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018217324" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018217324" ]
   } ],
   "OnlineAccess" : [ {
@@ -35782,8 +35776,8 @@
   "OtherEditionEntry" : [ {
     "relationshipInformation" : "Internet-Ausg. u.d.T.",
     "title" : "Numerische Mathematik",
-    "controlNumber" : "(DE-605)HT015770162",
-    "identifierForLinkingEntry" : "(DE-605)HT015770162",
+    "controlNumber" : [ "(DE-605)HT015770162" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015770162" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015770162" ]
   } ],
   "xbib" : [ {
@@ -35898,8 +35892,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Früher u.d.T.",
     "title" : "Der Duden in 10 Bänden",
-    "controlNumber" : "(DE-605)HT001235337",
-    "identifierForLinkingEntry" : "(DE-605)HT001235337",
+    "controlNumber" : [ "(DE-605)HT001235337" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001235337" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001235337" ]
   } ],
   "xbib" : [ {
@@ -36012,15 +36006,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis 4. Aufl. u.d.T.",
     "title" : "Münch, Ingo von: Grundbegriffe des Staatsrechts",
-    "controlNumber" : "(DE-605)HT001335955",
-    "identifierForLinkingEntry" : "(DE-605)HT001335955",
+    "controlNumber" : [ "(DE-605)HT001335955" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001335955" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001335955" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab 7. Aufl. u.d.T.",
     "title" : "Mager, Ute: Staatsrecht",
-    "controlNumber" : "(DE-605)HT016062063",
-    "identifierForLinkingEntry" : "(DE-605)HT016062063",
+    "controlNumber" : [ "(DE-605)HT016062063" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT016062063" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT016062063" ]
   } ],
   "xbib" : [ {
@@ -36307,8 +36301,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Später u.d.T.",
     "title" : "Götz, Klaus: Zur Evaluierung betrieblicher Weiterbildung",
-    "controlNumber" : "(DE-605)HT013196335",
-    "identifierForLinkingEntry" : "(DE-605)HT013196335",
+    "controlNumber" : [ "(DE-605)HT013196335" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013196335" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013196335" ]
   } ],
   "SubjectHeadings" : [ {
@@ -36458,8 +36452,8 @@
   "OtherEditionEntry" : [ {
     "relationshipInformation" : "Internet-Ausg. u.d.T.",
     "title" : "Staudinger, BGB",
-    "controlNumber" : "(DE-605)HT015720679",
-    "identifierForLinkingEntry" : "(DE-605)HT015720679",
+    "controlNumber" : [ "(DE-605)HT015720679" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015720679" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015720679" ]
   } ],
   "xbib" : [ {
@@ -36592,8 +36586,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "1. Aufl. u.d.T.",
     "title" : "Tichy, Gunther: Konjunkturschwankungen",
-    "controlNumber" : "(DE-605)HT001149816",
-    "identifierForLinkingEntry" : "(DE-605)HT001149816",
+    "controlNumber" : [ "(DE-605)HT001149816" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001149816" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001149816" ]
   } ],
   "OnlineAccess" : [ {
@@ -36837,8 +36831,8 @@
   "NonspecificRelationshipEntry" : [ {
     "relationshipInformation" : "1=214 von",
     "title" : "Graphis publications",
-    "controlNumber" : "(DE-605)HT012497605",
-    "identifierForLinkingEntry" : "(DE-605)HT012497605",
+    "controlNumber" : [ "(DE-605)HT012497605" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT012497605" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT012497605" ]
   } ],
   "xbib" : [ {
@@ -36972,8 +36966,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "2. Aufl. u.d.T.",
     "title" : "Handbuch Markenführung",
-    "controlNumber" : "(DE-605)HT013739037",
-    "identifierForLinkingEntry" : "(DE-605)HT013739037",
+    "controlNumber" : [ "(DE-605)HT013739037" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013739037" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013739037" ]
   } ],
   "xbib" : [ {
@@ -37268,8 +37262,8 @@
   "SupplementParentEntry" : [ {
     "relationshipInformation" : "Erg. zu",
     "title" : "Forster, Otto: Analysis",
-    "controlNumber" : "(DE-605)HT001321758",
-    "identifierForLinkingEntry" : "(DE-605)HT001321758",
+    "controlNumber" : [ "(DE-605)HT001321758" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001321758" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001321758" ]
   } ],
   "xbib" : [ {
@@ -37388,8 +37382,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis 4. Aufl. u.d.T.",
     "title" : "Cammerer, Josef S.: Der Wärme- und Kälteschutz in der Industrie",
-    "controlNumber" : "(DE-605)HT002756715",
-    "identifierForLinkingEntry" : "(DE-605)HT002756715",
+    "controlNumber" : [ "(DE-605)HT002756715" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002756715" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002756715" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -37538,8 +37532,8 @@
   "SupplementParentEntry" : [ {
     "relationshipInformation" : "Erg. bildet",
     "title" : "Goetzel, Claus G.: German English dictionary of materials and process engineering",
-    "controlNumber" : "(DE-605)HT006775610",
-    "identifierForLinkingEntry" : "(DE-605)HT006775610",
+    "controlNumber" : [ "(DE-605)HT006775610" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT006775610" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT006775610" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -38008,15 +38002,15 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "19. Aufl. u.d.T.",
     "title" : "Brockhaus-Enzyklopädie",
-    "controlNumber" : "(DE-605)HT002829218",
-    "identifierForLinkingEntry" : "(DE-605)HT002829218",
+    "controlNumber" : [ "(DE-605)HT002829218" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002829218" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002829218" ]
   } ],
   "SucceedingEntry" : [ {
     "relationshipInformation" : "21. Aufl. u.d.T.",
     "title" : "Brockhaus",
-    "controlNumber" : "(DE-605)HT014217631",
-    "identifierForLinkingEntry" : "(DE-605)HT014217631",
+    "controlNumber" : [ "(DE-605)HT014217631" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014217631" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014217631" ]
   } ],
   "xbib" : [ {
@@ -38133,8 +38127,8 @@
     "personName" : "Baltes, Heinrich P."
   } ],
   "HostItemEntry" : [ {
-    "controlNumber" : "(DE-605)HT007233841",
-    "identifierForLinkingEntry" : "(DE-605)HT007233841",
+    "controlNumber" : [ "(DE-605)HT007233841" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT007233841" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT007233841" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -38267,8 +38261,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "3. Aufl. u.d.T.",
     "title" : "Schulze, Günter: Die Metallurgie des Schweißens",
-    "controlNumber" : "(DE-605)HT014001893",
-    "identifierForLinkingEntry" : "(DE-605)HT014001893",
+    "controlNumber" : [ "(DE-605)HT014001893" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014001893" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014001893" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -39053,8 +39047,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Später u.d.T.",
     "title" : "Bankinnovationen",
-    "controlNumber" : "(DE-605)HT013949001",
-    "identifierForLinkingEntry" : "(DE-605)HT013949001",
+    "controlNumber" : [ "(DE-605)HT013949001" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013949001" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013949001" ]
   } ],
   "xbib" : [ {
@@ -39163,8 +39157,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "3. Aufl. u.d.T.",
     "title" : "SPS-Standard: IEC 61131",
-    "controlNumber" : "(DE-605)HT012748410",
-    "identifierForLinkingEntry" : "(DE-605)HT012748410",
+    "controlNumber" : [ "(DE-605)HT012748410" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT012748410" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT012748410" ]
   } ],
   "OnlineAccess" : [ {
@@ -39435,8 +39429,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Forts. und spätere Aufl. von Bd. 1 - 4 --->",
     "title" : "Chemie, Physik und Technologie der Kunststoffe in Einzeldarstellungen",
-    "controlNumber" : "(DE-605)HT001239857",
-    "identifierForLinkingEntry" : "(DE-605)HT001239857",
+    "controlNumber" : [ "(DE-605)HT001239857" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT001239857" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT001239857" ]
   } ],
   "xbib" : [ {
@@ -39543,8 +39537,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "2. Aufl. u.d.T.",
     "title" : "Leopold, Günter: Private Equity - Venture Capital",
-    "controlNumber" : "(DE-605)HT013707065",
-    "identifierForLinkingEntry" : "(DE-605)HT013707065",
+    "controlNumber" : [ "(DE-605)HT013707065" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013707065" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013707065" ]
   } ],
   "OnlineAccess" : [ {
@@ -39729,8 +39723,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis 4. Aufl. u.d.T.",
     "title" : "Geldtheorie und Geldpolitik",
-    "controlNumber" : "(DE-605)HT004489244",
-    "identifierForLinkingEntry" : "(DE-605)HT004489244",
+    "controlNumber" : [ "(DE-605)HT004489244" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT004489244" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT004489244" ]
   } ],
   "OnlineAccess" : [ {
@@ -39927,8 +39921,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "CD-ROM-Ausg. u.d.T." ],
     "title" : "Lexikon der Chemie",
-    "controlNumber" : "(DE-605)HT013761007",
-    "identifierForLinkingEntry" : "(DE-605)HT013761007",
+    "controlNumber" : [ "(DE-605)HT013761007" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013761007" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013761007" ]
   } ],
   "xbib" : [ {
@@ -40069,8 +40063,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Staehle: Management",
-    "controlNumber" : "(DE-605)HT018401438",
-    "identifierForLinkingEntry" : "(DE-605)HT018401438",
+    "controlNumber" : [ "(DE-605)HT018401438" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018401438" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018401438" ]
   } ],
   "OnlineAccess" : [ {
@@ -40227,8 +40221,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "1. Aufl. u.d.T.",
     "title" : "Biochemisch-mikrobiologisches Praktikum",
-    "controlNumber" : "(DE-605)HT002913338",
-    "identifierForLinkingEntry" : "(DE-605)HT002913338",
+    "controlNumber" : [ "(DE-605)HT002913338" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002913338" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002913338" ]
   } ],
   "OnlineAccess" : [ {
@@ -40390,8 +40384,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Spätere Ausg. u.d.T.",
     "title" : "Business-Knowledge-Management in der Praxis",
-    "controlNumber" : "(DE-605)HT012753928",
-    "identifierForLinkingEntry" : "(DE-605)HT012753928",
+    "controlNumber" : [ "(DE-605)HT012753928" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT012753928" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT012753928" ]
   } ],
   "OnlineAccess" : [ {
@@ -40550,8 +40544,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "2. Aufl. u.d.T.",
     "title" : "Krause, Jörg: E-Commerce und Online-Marketing",
-    "controlNumber" : "(DE-605)HT012829820",
-    "identifierForLinkingEntry" : "(DE-605)HT012829820",
+    "controlNumber" : [ "(DE-605)HT012829820" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT012829820" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT012829820" ]
   } ],
   "OnlineAccess" : [ {
@@ -40706,8 +40700,8 @@
   "SupplementParentEntry" : [ {
     "relationshipInformation" : "Erg. bildet",
     "title" : "Merz, Michael: Elektronische Dienstemärkte",
-    "controlNumber" : "(DE-605)HT008886375",
-    "identifierForLinkingEntry" : "(DE-605)HT008886375",
+    "controlNumber" : [ "(DE-605)HT008886375" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT008886375" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT008886375" ]
   }, {
     "relationshipInformation" : "Erg. bildet",
@@ -41000,8 +40994,8 @@
   "SucceedingEntry" : [ {
     "relationshipInformation" : "Ab 8. Aufl. u.d.T.",
     "title" : "Ebel, Bernd: Produktionswirtschaft",
-    "controlNumber" : "(DE-605)HT013497057",
-    "identifierForLinkingEntry" : "(DE-605)HT013497057",
+    "controlNumber" : [ "(DE-605)HT013497057" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013497057" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013497057" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -41240,8 +41234,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Bis 9. Aufl. u.d.T.",
     "title" : "Handkommentar zum Bürgerlichen Gesetzbuch",
-    "controlNumber" : "(DE-605)HT004501237",
-    "identifierForLinkingEntry" : "(DE-605)HT004501237",
+    "controlNumber" : [ "(DE-605)HT004501237" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT004501237" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT004501237" ]
   } ],
   "xbib" : [ {
@@ -41352,8 +41346,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Münchener Kommentar zum Bürgerlichen Gesetzbuch",
-    "controlNumber" : "(DE-605)HT013904770",
-    "identifierForLinkingEntry" : "(DE-605)HT013904770",
+    "controlNumber" : [ "(DE-605)HT013904770" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013904770" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013904770" ]
   } ],
   "xbib" : [ {
@@ -42931,8 +42925,8 @@
   "SupplementParentEntry" : [ {
     "relationshipInformation" : "Erg. bildet",
     "title" : "Jäger, Rainer: Übungen zur Leistungselektronik",
-    "controlNumber" : "(DE-605)HT011153158",
-    "identifierForLinkingEntry" : "(DE-605)HT011153158",
+    "controlNumber" : [ "(DE-605)HT011153158" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT011153158" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT011153158" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -43840,8 +43834,8 @@
   "PrecedingEntry" : [ {
     "relationshipInformation" : "3. Aufl. u.d.T.",
     "title" : "Eilebrecht, Lars: Apache Web-Server",
-    "controlNumber" : "(DE-605)HT012019503",
-    "identifierForLinkingEntry" : "(DE-605)HT012019503",
+    "controlNumber" : [ "(DE-605)HT012019503" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT012019503" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT012019503" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -45472,8 +45466,8 @@
     "extent" : "127 S. : zahlr. Ill"
   },
   "HostItemEntry" : [ {
-    "controlNumber" : "(DE-605)HT013764753",
-    "identifierForLinkingEntry" : "(DE-605)HT013764753",
+    "controlNumber" : [ "(DE-605)HT013764753" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013764753" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013764753" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -45578,8 +45572,8 @@
     "extent" : "174 S. : zahlr. Ill."
   },
   "HostItemEntry" : [ {
-    "controlNumber" : "(DE-605)HT013764753",
-    "identifierForLinkingEntry" : "(DE-605)HT013764753",
+    "controlNumber" : [ "(DE-605)HT013764753" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013764753" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013764753" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -45981,8 +45975,8 @@
     "extent" : "96 S. : Ill."
   },
   "HostItemEntry" : [ {
-    "controlNumber" : "(DE-605)HT013820788",
-    "identifierForLinkingEntry" : "(DE-605)HT013820788",
+    "controlNumber" : [ "(DE-605)HT013820788" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT013820788" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT013820788" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -47467,8 +47461,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausg." ],
     "title" : "Thermodynamik kompakt",
-    "controlNumber" : "(DE-605)TT050326622",
-    "identifierForLinkingEntry" : "(DE-605)TT050326622",
+    "controlNumber" : [ "(DE-605)TT050326622" ],
+    "identifierForLinkingEntry" : [ "(DE-605)TT050326622" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)TT050326622" ]
   } ],
   "OnlineAccess" : [ {
@@ -48797,8 +48791,8 @@
     "description" : "Gewinner des World Press Photo des Jahres 2011: Samuel Aranda"
   } ],
   "HostItemEntry" : [ {
-    "controlNumber" : "(DE-605)HT006393315",
-    "identifierForLinkingEntry" : "(DE-605)HT006393315",
+    "controlNumber" : [ "(DE-605)HT006393315" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT006393315" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT006393315" ],
     "verifiedIdentifierForLinkingEntry" : [ "(DE-605)HT006393315" ]
   } ],
@@ -49907,7 +49901,7 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe, eBook" ],
-    "identifierISBN" : "9783658157203"
+    "identifierISBN" : [ "9783658157203" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://deposit.d-nb.de/cgi-bin/dokserv?id=4768045&prov=M&dok_var=1&dok_ext=htm",
@@ -50334,17 +50328,17 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe" ],
     "title" : "Allgemeines Verwaltungsrecht",
-    "controlNumber" : "(DE-605)HT019908587",
-    "identifierISBN" : "9783406731129",
-    "identifierForLinkingEntry" : "(DE-605)HT019908587",
+    "identifierISBN" : [ "9783406731129" ],
+    "controlNumber" : [ "(DE-605)HT019908587" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019908587" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019908587" ]
   }, {
     "mainEntryHeading" : "Maurer, Hartmut, 1931-",
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe" ],
     "title" : "Allgemeines Verwaltungsrecht",
-    "controlNumber" : "(DE-605)HT019479259",
-    "identifierForLinkingEntry" : "(DE-605)HT019479259",
+    "controlNumber" : [ "(DE-605)HT019479259" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019479259" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019479259" ]
   } ],
   "OnlineAccess" : [ {
@@ -50523,7 +50517,7 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe" ],
-    "identifierISBN" : "9783816799511"
+    "identifierISBN" : [ "9783816799511" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://deposit.d-nb.de/cgi-bin/dokserv?id=da8a9b31f5f04a478b0852f4f518de76&prov=M&dok_var=1&dok_ext=htm",
@@ -50743,8 +50737,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
     "title" : "Arbeitsrechts-Handbuch",
-    "controlNumber" : "(DE-605)HT019347930",
-    "identifierForLinkingEntry" : "(DE-605)HT019347930",
+    "controlNumber" : [ "(DE-605)HT019347930" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019347930" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019347930" ]
   } ],
   "OnlineAccess" : [ {
@@ -50889,7 +50883,7 @@
     "physicalDescription" : "Druck-Ausgabe",
     "relationshipInformation" : "Erscheint auch als",
     "title" : "Electric motor control",
-    "identifierISBN" : "9780128121382"
+    "identifierISBN" : [ "9780128121382" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6187069990006444",
@@ -51014,8 +51008,8 @@
     "physicalDescription" : "Druckausgabe",
     "relationshipInformation" : "Erscheint auch als",
     "title" : "The physics and technology of ion sources",
-    "controlNumber" : "(DE-605)HT014121978",
-    "identifierForLinkingEntry" : "(DE-605)HT014121978",
+    "controlNumber" : [ "(DE-605)HT014121978" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT014121978" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014121978" ]
   } ],
   "OnlineAccess" : [ {
@@ -51154,22 +51148,22 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe, PDF" ],
     "title" : "Praxisbuch eHealth",
-    "identifierISBN" : "9783170322868"
+    "identifierISBN" : [ "9783170322868" ]
   }, {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe, ePub" ],
     "title" : "Praxisbuch eHealth",
-    "identifierISBN" : "9783170322875"
+    "identifierISBN" : [ "9783170322875" ]
   }, {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe, Mobi" ],
     "title" : "Praxisbuch eHealth",
-    "identifierISBN" : "9783170322882"
+    "identifierISBN" : [ "9783170322882" ]
   } ],
   "PrecedingEntry" : [ {
     "relationshipInformation" : "Vorangegangen ist",
     "title" : "Praxisbuch eHealth",
-    "identifierISBN" : "9783170199880"
+    "identifierISBN" : [ "9783170199880" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://d-nb.info/1144649552/04",
@@ -51324,8 +51318,8 @@
     "extent" : "300 Seiten : Illustrationen"
   },
   "HostItemEntry" : [ {
-    "controlNumber" : "(DE-605)HT019530618",
-    "identifierForLinkingEntry" : "(DE-605)HT019530618",
+    "controlNumber" : [ "(DE-605)HT019530618" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019530618" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019530618" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -51460,8 +51454,8 @@
     "description" : "Vollständig und mit möglichen Lösungsvarianten gelöste Übungsaufgaben"
   } ],
   "HostItemEntry" : [ {
-    "controlNumber" : "(DE-605)HT019530618",
-    "identifierForLinkingEntry" : "(DE-605)HT019530618",
+    "controlNumber" : [ "(DE-605)HT019530618" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019530618" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019530618" ]
   } ],
   "SubjectGHBLocal" : [ {
@@ -51778,7 +51772,7 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : "9783035611212"
+    "identifierISBN" : [ "9783035611212" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://doi.org/10.1515/9783035609004",
@@ -51891,8 +51885,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druckausg." ],
     "title" : "Schriften zum Kunst- und Kulturrecht",
-    "controlNumber" : "(DE-605)HT015600255",
-    "identifierForLinkingEntry" : "(DE-605)HT015600255",
+    "controlNumber" : [ "(DE-605)HT015600255" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT015600255" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015600255" ]
   } ],
   "OnlineAccess" : [ {
@@ -52014,7 +52008,7 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : "9783867648226"
+    "identifierISBN" : [ "9783867648226" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://dx.doi.org/10.24053/9783739803845",
@@ -52257,9 +52251,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "controlNumber" : "(DE-605)HT018233344",
-    "identifierISBN" : "9781466585263",
-    "identifierForLinkingEntry" : "(DE-605)HT018233344",
+    "identifierISBN" : [ "9781466585263" ],
+    "controlNumber" : [ "(DE-605)HT018233344" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018233344" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018233344" ]
   } ],
   "OnlineAccess" : [ {
@@ -52408,9 +52402,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "controlNumber" : "(DE-605)HT019094592",
-    "identifierISBN" : "9783648082577",
-    "identifierForLinkingEntry" : "(DE-605)HT019094592",
+    "identifierISBN" : [ "9783648082577" ],
+    "controlNumber" : [ "(DE-605)HT019094592" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019094592" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019094592" ]
   } ],
   "OnlineAccess" : [ {
@@ -52528,9 +52522,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "controlNumber" : "(DE-605)HT019489555",
-    "identifierISBN" : "9781498782869",
-    "identifierForLinkingEntry" : "(DE-605)HT019489555",
+    "identifierISBN" : [ "9781498782869" ],
+    "controlNumber" : [ "(DE-605)HT019489555" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019489555" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019489555" ]
   } ],
   "OnlineAccess" : [ {
@@ -52658,9 +52652,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "controlNumber" : "(DE-605)HT018337193",
-    "identifierISBN" : "9783319054483",
-    "identifierForLinkingEntry" : "(DE-605)HT018337193",
+    "identifierISBN" : [ "9783319054483" ],
+    "controlNumber" : [ "(DE-605)HT018337193" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018337193" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018337193" ]
   } ],
   "OnlineAccess" : [ {
@@ -52889,7 +52883,7 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : "9781498777391"
+    "identifierISBN" : [ "9781498777391" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2018/02/20/file_112/7557481.pdf",
@@ -53026,7 +53020,7 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : "9780128104347"
+    "identifierISBN" : [ "9780128104347" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6187069990006444",
@@ -53162,9 +53156,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "controlNumber" : "(DE-605)HT018378184",
-    "identifierISBN" : "9783648058831",
-    "identifierForLinkingEntry" : "(DE-605)HT018378184",
+    "identifierISBN" : [ "9783648058831" ],
+    "controlNumber" : [ "(DE-605)HT018378184" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018378184" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018378184" ]
   } ],
   "OnlineAccess" : [ {
@@ -53298,8 +53292,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
     "title" : "Recht der Steuern und der öffentlichen Finanzordnung",
-    "controlNumber" : "(DE-605)HT018291792",
-    "identifierForLinkingEntry" : "(DE-605)HT018291792",
+    "controlNumber" : [ "(DE-605)HT018291792" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018291792" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018291792" ]
   } ],
   "OnlineAccess" : [ {
@@ -53407,8 +53401,8 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
     "title" : "Schriften zur Restrukturierung",
-    "controlNumber" : "(DE-605)HT016838466",
-    "identifierForLinkingEntry" : "(DE-605)HT016838466",
+    "controlNumber" : [ "(DE-605)HT016838466" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT016838466" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT016838466" ]
   } ],
   "OnlineAccess" : [ {
@@ -53528,9 +53522,9 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
     "title" : "Wiley-Schnellkurs Prozessmanagement",
-    "controlNumber" : "(DE-605)HT019161516",
-    "identifierISBN" : "9783527530458",
-    "identifierForLinkingEntry" : "(DE-605)HT019161516",
+    "identifierISBN" : [ "9783527530458" ],
+    "controlNumber" : [ "(DE-605)HT019161516" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019161516" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019161516" ]
   } ],
   "OnlineAccess" : [ {
@@ -53874,9 +53868,9 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
     "title" : "Krise und Gesundheit - Ursachen, Prävention, Bewältigung",
-    "controlNumber" : "(DE-605)HT019437694",
-    "identifierISBN" : "9783662546314",
-    "identifierForLinkingEntry" : "(DE-605)HT019437694",
+    "identifierISBN" : [ "9783662546314" ],
+    "controlNumber" : [ "(DE-605)HT019437694" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019437694" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019437694" ]
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
@@ -54135,9 +54129,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "controlNumber" : "(DE-605)HT019454512",
-    "identifierISBN" : "9783791038193",
-    "identifierForLinkingEntry" : "(DE-605)HT019454512",
+    "identifierISBN" : [ "9783791038193" ],
+    "controlNumber" : [ "(DE-605)HT019454512" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019454512" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019454512" ]
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
@@ -54412,9 +54406,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "controlNumber" : "(DE-605)HT018971352",
-    "identifierISBN" : "9783864903519",
-    "identifierForLinkingEntry" : "(DE-605)HT018971352",
+    "identifierISBN" : [ "9783864903519" ],
+    "controlNumber" : [ "(DE-605)HT018971352" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT018971352" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018971352" ]
   } ],
   "OnlineAccess" : [ {
@@ -54652,9 +54646,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "controlNumber" : "(DE-605)HT019142183",
-    "identifierISBN" : "9781786353542",
-    "identifierForLinkingEntry" : "(DE-605)HT019142183",
+    "identifierISBN" : [ "9781786353542" ],
+    "controlNumber" : [ "(DE-605)HT019142183" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019142183" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019142183" ]
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
@@ -54789,8 +54783,7 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : "9781138558991",
-    "identifierISBN" : "9780209713303"
+    "identifierISBN" : [ "9781138558991", "9780209713303" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6187069990006444",
@@ -55462,9 +55455,9 @@
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe, E-Book" ],
     "title" : "Grundlagen der Elektrotechnik",
-    "controlNumber" : "(DE-605)HT019754259",
-    "identifierISBN" : "9783446456310",
-    "identifierForLinkingEntry" : "(DE-605)HT019754259",
+    "identifierISBN" : [ "9783446456310" ],
+    "controlNumber" : [ "(DE-605)HT019754259" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019754259" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019754259" ]
   } ],
   "OnlineAccess" : [ {
@@ -55693,7 +55686,7 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe, E-Book" ],
-    "identifierISBN" : "9783446456969"
+    "identifierISBN" : [ "9783446456969" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2018/10/11/file_8/8169719.pdf",
@@ -55858,7 +55851,7 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe, E-Book" ],
-    "identifierISBN" : "9783446456952"
+    "identifierISBN" : [ "9783446456952" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2018/09/06/file_8/8149687.pdf",
@@ -56217,11 +56210,11 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : "9781138700109"
+    "identifierISBN" : [ "9781138700109" ]
   }, {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : "9781315204963"
+    "identifierISBN" : [ "9781315204963" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://www.taylorfrancis.com/books/9781351792608",
@@ -56357,9 +56350,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "controlNumber" : "(DE-605)HT019255720",
-    "identifierISBN" : "9781498775717",
-    "identifierForLinkingEntry" : "(DE-605)HT019255720",
+    "identifierISBN" : [ "9781498775717" ],
+    "controlNumber" : [ "(DE-605)HT019255720" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT019255720" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019255720" ]
   } ],
   "OnlineAccess" : [ {
@@ -56501,15 +56494,15 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe, Hardback" ],
-    "identifierISBN" : "9781138627185"
+    "identifierISBN" : [ "9781138627185" ]
   }, {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe, Paperback" ],
-    "identifierISBN" : "9781498736879"
+    "identifierISBN" : [ "9781498736879" ]
   }, {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : "9781315382203"
+    "identifierISBN" : [ "9781315382203" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://www.taylorfrancis.com/books/9781498736886",
@@ -56679,11 +56672,11 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe (Beuth Verlag)" ],
-    "identifierISBN" : "9783410274063"
+    "identifierISBN" : [ "9783410274063" ]
   }, {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Online-Ausgabe, ePDF (Verlag Ernst & Sohn)" ],
-    "identifierISBN" : "9783433609231"
+    "identifierISBN" : [ "9783433609231" ]
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
@@ -59923,7 +59916,7 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Erscheint auch als",
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : "9783770557608"
+    "identifierISBN" : [ "9783770557608" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://doi.org/10.30965/9783846757604",
@@ -60999,11 +60992,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : "Print version:",
     "title" : "Sibirskiĭ matematicheskiĭ zhurnal",
-    "controlNumber" : "(DLC)   63047391",
-    "controlNumber" : "(OCoLC)1716701",
     "identifierISSN" : "0037-4474",
-    "identifierForLinkingEntry" : "(DLC)   63047391",
-    "identifierForLinkingEntry" : "(OCoLC)1716701",
+    "controlNumber" : [ "(DLC)   63047391", "(OCoLC)1716701" ],
+    "identifierForLinkingEntry" : [ "(DLC)   63047391", "(OCoLC)1716701" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DLC)   63047391", "(OCoLC)1716701" ]
   } ],
   "OnlineAccess" : [ {
@@ -61304,7 +61295,7 @@
     "extent" : "1 Online-Ressource"
   },
   "AdditionalPhysicalFormEntry" : [ {
-    "identifierISBN" : "9781119788799"
+    "identifierISBN" : [ "9781119788799" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119788829"
@@ -61576,38 +61567,38 @@
     "publisherStatement" : "München : Oldenbourg, 1975-",
     "relationshipInformation" : "Beil.:",
     "title" : "Jahresbericht / Auszug / Bundesverband der Deutschen Gas- und Wasserwirtschaft e.V., (BGW)",
-    "controlNumber" : "(DE-600)395553-9",
-    "identifierForLinkingEntry" : "(DE-600)395553-9",
+    "controlNumber" : [ "(DE-600)395553-9" ],
+    "identifierForLinkingEntry" : [ "(DE-600)395553-9" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-600)395553-9" ]
   }, {
     "mainEntryHeading" : "Bundesvereinigung der Firmen im Gas- und Wasserfach",
     "publisherStatement" : "München : Oldenburg, 1980-",
     "relationshipInformation" : "Beil.:",
     "title" : "Jahresbericht / Bundesvereinigung der Firmen im Gas- und Wasserfach e.V. Köln-Marienburg",
-    "controlNumber" : "(DE-600)11275-6",
-    "identifierForLinkingEntry" : "(DE-600)11275-6",
+    "controlNumber" : [ "(DE-600)11275-6" ],
+    "identifierForLinkingEntry" : [ "(DE-600)11275-6" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-600)11275-6" ]
   }, {
     "mainEntryHeading" : "Haupttagung des Deutschen Gas- und Wasserfachs",
     "publisherStatement" : "München : Oldenbourg, 1970-",
     "relationshipInformation" : "Beil.:",
     "title" : "Berichte / Haupttagung des Deutschen Gas- und Wasserfaches",
-    "controlNumber" : "(DE-600)395126-1",
-    "identifierForLinkingEntry" : "(DE-600)395126-1",
+    "controlNumber" : [ "(DE-600)395126-1" ],
+    "identifierForLinkingEntry" : [ "(DE-600)395126-1" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-600)395126-1" ]
   }, {
     "publisherStatement" : "Essen : Vulkan-Verlag GmbH, 1970-",
     "relationshipInformation" : "Beil.:",
     "title" : "Recht und Steuern im Gas- und Wasserfach",
-    "controlNumber" : "(DE-600)203652-6",
-    "identifierForLinkingEntry" : "(DE-600)203652-6",
+    "controlNumber" : [ "(DE-600)203652-6" ],
+    "identifierForLinkingEntry" : [ "(DE-600)203652-6" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-600)203652-6" ]
   }, {
     "publisherStatement" : "München : DIV, Dt. Industrie-Verl., 2011-2013",
     "relationshipInformation" : "Ab 2011 Sonderausg.",
     "title" : "Wasserstoff",
-    "controlNumber" : "(DE-600)2636147-4",
-    "identifierForLinkingEntry" : "(DE-600)2636147-4",
+    "controlNumber" : [ "(DE-600)2636147-4" ],
+    "identifierForLinkingEntry" : [ "(DE-600)2636147-4" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-600)2636147-4" ]
   }, {
     "publisherStatement" : "Essen : DIV Deutscher Industrieverlag, [2016-2019]",
@@ -61615,44 +61606,44 @@
     "relationshipInformation" : "Supplement",
     "note" : [ "2016-2019" ],
     "title" : "WaterSolutions",
-    "controlNumber" : "(DE-600)2857091-1",
     "identifierISSN" : "2509-2731",
-    "identifierForLinkingEntry" : "(DE-600)2857091-1",
+    "controlNumber" : [ "(DE-600)2857091-1" ],
+    "identifierForLinkingEntry" : [ "(DE-600)2857091-1" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-600)2857091-1" ]
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "München : Deutscher Industrieverl., 2001-[2015]",
     "relationshipInformation" : "Jubiläumsausg. 2009 ersch. zus. mit",
     "title" : "GWF / Gas, Erdgas. Gas, Erdgas",
-    "controlNumber" : "(DE-600)2134356-1",
     "identifierISSN" : "0016-4909",
-    "identifierForLinkingEntry" : "(DE-600)2134356-1",
+    "controlNumber" : [ "(DE-600)2134356-1" ],
+    "identifierForLinkingEntry" : [ "(DE-600)2134356-1" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-600)2134356-1" ]
   }, {
     "publisherStatement" : "München : Oldenbourg, 1998-2007",
     "physicalDescription" : "CD-ROMs",
     "relationshipInformation" : "CD-ROM-Ausg.",
     "title" : "Das Gas- und Wasserfach / Wasser, Abwasser. Wasser, Abwasser",
-    "controlNumber" : "(DE-600)1469695-2",
-    "identifierForLinkingEntry" : "(DE-600)1469695-2",
+    "controlNumber" : [ "(DE-600)1469695-2" ],
+    "identifierForLinkingEntry" : [ "(DE-600)1469695-2" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-600)1469695-2" ]
   }, {
     "publisherStatement" : "München : Deutscher Industrieverl., 2005-",
     "physicalDescription" : "Online-Ressource",
     "relationshipInformation" : "Online-Ausg.",
     "title" : "GWF / Wasser, Abwasser. Wasser, Abwasser",
-    "controlNumber" : "(DE-600)2376291-3",
     "identifierISSN" : "0016-4909",
-    "identifierForLinkingEntry" : "(DE-600)2376291-3",
+    "controlNumber" : [ "(DE-600)2376291-3" ],
+    "identifierForLinkingEntry" : [ "(DE-600)2376291-3" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-600)2376291-3" ]
   } ],
   "PrecedingEntry" : [ {
     "publisherStatement" : "München : Oldenburg-Industrieverl., 1956-2000",
     "relationshipInformation" : "Fortsetzung von",
     "title" : "Das Gas- und Wasserfach / Wasser, Abwasser. Ausgabe Wasser, Abwasser",
-    "controlNumber" : "(DE-600)512614-9",
     "identifierISSN" : "0016-3651",
-    "identifierForLinkingEntry" : "(DE-600)512614-9",
+    "controlNumber" : [ "(DE-600)512614-9" ],
+    "identifierForLinkingEntry" : [ "(DE-600)512614-9" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-600)512614-9" ]
   } ],
   "SubjectHeadings" : [ {
@@ -61847,8 +61838,8 @@
   } ],
   "HostItemEntry" : [ {
     "mainEntryHeading" : "Dimensionen",
-    "controlNumber" : "991000960579706444",
-    "identifierForLinkingEntry" : "991000960579706444",
+    "controlNumber" : [ "991000960579706444" ],
+    "identifierForLinkingEntry" : [ "991000960579706444" ],
     "verifyingIdentifierForLinkingEntry" : [ "991000960579706444" ]
   } ],
   "PrecedingEntry" : [ {
@@ -61962,8 +61953,8 @@
     "physicalDescription" : "Online-Ressource",
     "relationshipInformation" : "Supplement",
     "title" : "Regional business news",
-    "controlNumber" : "(DE-600)2161607-3",
-    "identifierForLinkingEntry" : "(DE-600)2161607-3",
+    "controlNumber" : [ "(DE-600)2161607-3" ],
+    "identifierForLinkingEntry" : [ "(DE-600)2161607-3" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-600)2161607-3" ]
   } ],
   "AdditionalPhysicalFormEntry" : [ {
@@ -61971,9 +61962,9 @@
     "physicalDescription" : "CD-ROMs + DVDs",
     "relationshipInformation" : "DVD-Ausg.",
     "title" : "Business periodicals collection",
-    "controlNumber" : "(DE-600)2446849-6",
     "identifierISSN" : "1543-2610",
-    "identifierForLinkingEntry" : "(DE-600)2446849-6",
+    "controlNumber" : [ "(DE-600)2446849-6" ],
+    "identifierForLinkingEntry" : [ "(DE-600)2446849-6" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-600)2446849-6" ]
   } ],
   "OnlineAccess" : [ {

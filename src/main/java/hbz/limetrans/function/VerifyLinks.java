@@ -52,7 +52,7 @@ public class VerifyLinks implements FixFunction {
         ));
         */
 
-        LINK_MAP.put("identifierForLinkingEntry", List.of(
+        LINK_MAP.put("identifierForLinkingEntry[]", List.of(
                     "AdditionalPhysicalFormEntry[]",
                     "ConstituentUnitEntry[]",
                     "DataSourceEntry[]",
@@ -152,7 +152,7 @@ public class VerifyLinks implements FixFunction {
         };
 
         aMap.forEach((field, list) -> {
-            final String suffix = field.substring(0, 1).toUpperCase() + field.substring(1) + Metafix.ARRAY_MARKER;
+            final String suffix = field.substring(0, 1).toUpperCase() + field.substring(1) + (field.endsWith(Metafix.ARRAY_MARKER) ? "" : Metafix.ARRAY_MARKER);
 
             list.forEach(path -> eachValue(aRecord, path, value -> {
                 final Value.Hash hash = value.asHash();

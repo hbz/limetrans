@@ -79,9 +79,9 @@ include("./marc/personContributor.fix")
 
 include("./marc/linkingEntries.fix")
 do list(path: "HostItemEntry[]|ConstituentUnitEntry[]|PrecedingEntry[]|SucceedingEntry[]", "var": "$i")
-  if exists("$i.controlNumber")
-    paste("$i.controlNumber", "~(", "@isil", "~)", "$i.controlNumber", join_char: "")
-    copy_field("$i.controlNumber", "$i.verifiedIdentifierForLinkingEntry")
+  set_array("$i.verifiedIdentifierForLinkingEntry[]")
+  do list(path: "$i.controlNumber[]", "var": "$j")
+    paste("$i.verifiedIdentifierForLinkingEntry[].$append", "~(", "@isil", "~)", "$j", join_char: "")
   end
 end
 
