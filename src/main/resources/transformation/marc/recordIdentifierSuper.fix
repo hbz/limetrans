@@ -10,5 +10,8 @@ do list(path: "7730?", "var": "$i")
     copy_field("$i.q", "SortableVolumeDesignation[].$last.volumeDesignation")
   end
   add_field("RecordIdentifierSuper[].$append.__dummy__", "")
-  copy_field("$i.w", "RecordIdentifierSuper[].$last.recordIdentifierSuper")
+  set_array("RecordIdentifierSuper[].$last.recordIdentifierSuper[]")
+  do list(path: "$i.w", "var": "$j")
+    copy_field("$j", "RecordIdentifierSuper[].$last.recordIdentifierSuper[].$append")
+  end
 end

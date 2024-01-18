@@ -37,8 +37,8 @@ include("./marc/titleAddendum.fix")
 
 include("./marc/recordIdentifierSuper.fix")
 do list(path: "RecordIdentifierSuper[]", "var": "$i")
-  if exists("$i.recordIdentifierSuper")
-    paste("$i.recordIdentifierSuper", "~(", "@isil", "~)", "$i.recordIdentifierSuper", join_char: "")
+  if exists("$i.recordIdentifierSuper[].1")
+    paste("$i.recordIdentifierSuper[].1", "~(", "@isil", "~)", "$i.recordIdentifierSuper[].1", join_char: "")
   end
 end
 
