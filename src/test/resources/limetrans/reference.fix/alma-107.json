@@ -398,7 +398,7 @@
     "subjectIdentifier" : [ "(DE-588)4049795-1", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04049795X", "http://viaf.org/viaf/sourceID/DNB|04049795X" ],
     "identifierGND" : [ "4049795-1" ]
   }, {
-    "subjectTopicName" : "Gemeindeverwaltung",
+    "subjectTopicName" : [ "Gemeindeverwaltung" ],
     "combinedLabel" : "Gemeindeverwaltung",
     "subjectIdentifier" : [ "(DE-588)4019990-3", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040199908", "http://viaf.org/viaf/sourceID/DNB|040199908" ],
     "identifierGND" : [ "4019990-3" ]
@@ -524,12 +524,12 @@
     "subjectIdentifier" : [ "(DE-588)4055137-4", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040551377", "http://viaf.org/viaf/sourceID/DNB|040551377" ],
     "identifierGND" : [ "4055137-4" ]
   }, {
-    "subjectTopicName" : "Mineralquelle",
+    "subjectTopicName" : [ "Mineralquelle" ],
     "combinedLabel" : "Mineralquelle",
     "subjectIdentifier" : [ "(DE-588)4170037-5", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041700376", "http://viaf.org/viaf/sourceID/DNB|041700376" ],
     "identifierGND" : [ "4170037-5" ]
   }, {
-    "subjectTopicName" : "Mineralwasser",
+    "subjectTopicName" : [ "Mineralwasser" ],
     "combinedLabel" : "Mineralwasser",
     "subjectIdentifier" : [ "(DE-588)4114605-0", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041146050", "http://viaf.org/viaf/sourceID/DNB|041146050" ],
     "identifierGND" : [ "4114605-0" ]
@@ -672,12 +672,12 @@
     "subjectIdentifier" : [ "(DE-588)4000827-7", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040008274", "http://viaf.org/viaf/sourceID/DNB|040008274" ],
     "identifierGND" : [ "4000827-7" ]
   }, {
-    "subjectTopicName" : "Romanik",
+    "subjectTopicName" : [ "Romanik" ],
     "combinedLabel" : "Romanik",
     "subjectIdentifier" : [ "(DE-588)4050482-7", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040504824", "http://viaf.org/viaf/sourceID/DNB|040504824" ],
     "identifierGND" : [ "4050482-7" ]
   }, {
-    "subjectTopicName" : "Baudenkmal",
+    "subjectTopicName" : [ "Baudenkmal" ],
     "combinedLabel" : "Baudenkmal",
     "subjectIdentifier" : [ "(DE-588)4004973-5", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040049736", "http://viaf.org/viaf/sourceID/DNB|040049736" ],
     "identifierGND" : [ "4004973-5" ]
@@ -965,7 +965,7 @@
     "uid" : "(DE-599)HBZHT016294732"
   } ],
   "RSWK" : [ {
-    "subjectTopicName" : "Physische Geografie",
+    "subjectTopicName" : [ "Physische Geografie" ],
     "combinedLabel" : "Physische Geografie",
     "subjectIdentifier" : [ "(DE-588)4174629-6", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041746295", "http://viaf.org/viaf/sourceID/DNB|041746295" ],
     "identifierGND" : [ "4174629-6" ]
@@ -1070,17 +1070,17 @@
     "uid" : "(DE-599)HBZHT016294743"
   } ],
   "RSWK" : [ {
-    "subjectTopicName" : "Umweltbelastung",
+    "subjectTopicName" : [ "Umweltbelastung" ],
     "combinedLabel" : "Umweltbelastung",
     "subjectIdentifier" : [ "(DE-588)4061619-8", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040616193", "http://viaf.org/viaf/sourceID/DNB|040616193" ],
     "identifierGND" : [ "4061619-8" ]
   }, {
-    "subjectTopicName" : "Umweltschaden",
+    "subjectTopicName" : [ "Umweltschaden" ],
     "combinedLabel" : "Umweltschaden",
     "subjectIdentifier" : [ "(DE-588)4117286-3", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041172868", "http://viaf.org/viaf/sourceID/DNB|041172868" ],
     "identifierGND" : [ "4117286-3" ]
   }, {
-    "subjectTopicName" : "Umweltschutz",
+    "subjectTopicName" : [ "Umweltschutz" ],
     "combinedLabel" : "Umweltschutz",
     "subjectIdentifier" : [ "(DE-588)4061644-7", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040616444", "http://viaf.org/viaf/sourceID/DNB|040616444" ],
     "identifierGND" : [ "4061644-7" ]
@@ -1979,17 +1979,17 @@
   } ],
   "TypePeriodical" : [ "Zeitschrift" ],
   "RSWK" : [ {
-    "subjectTopicName" : "Naturwissenschaften",
+    "subjectTopicName" : [ "Naturwissenschaften" ],
     "combinedLabel" : "Naturwissenschaften",
     "subjectIdentifier" : [ "(DE-588)4041421-8", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040414213", "http://viaf.org/viaf/sourceID/DNB|040414213" ],
     "identifierGND" : [ "4041421-8" ]
   }, {
-    "subjectTopicName" : "Wörterbuch",
+    "subjectTopicName" : [ "Wörterbuch" ],
     "combinedLabel" : "Wörterbuch",
     "subjectIdentifier" : [ "(DE-588)4066724-8", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040667243", "http://viaf.org/viaf/sourceID/DNB|040667243" ],
     "identifierGND" : [ "4066724-8" ]
   }, {
-    "subjectTopicName" : "Technik",
+    "subjectTopicName" : [ "Technik" ],
     "combinedLabel" : "Technik",
     "subjectIdentifier" : [ "(DE-588)4059205-4", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040592057", "http://viaf.org/viaf/sourceID/DNB|040592057" ],
     "identifierGND" : [ "4059205-4" ]
