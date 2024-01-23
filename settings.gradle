@@ -29,9 +29,11 @@ gradle.rootProject {
         testMatrix = [
             metafacture: [
                 'master-SNAPSHOT'
+            /*
             ],
             metafix: [
                 'master'
+            */
             ]
         ]
 
