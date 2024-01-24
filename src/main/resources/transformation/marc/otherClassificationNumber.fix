@@ -10,10 +10,7 @@ do list(path: "084  ", "var": "$i")
     copy_field("$i.a", "@SubjectGHBLocal.$append")
   elsif any_equal("$i.2", "nwbib")
     add_field("SubjectNWBIB[].$append.__dummy__", "")
-    set_array("SubjectNWBIB[].$last.subject[]")
-    do list(path: "$i.a", "var": "$j")
-      copy_field("$j", "SubjectNWBIB[].$last.subject[].$append")
-    end
+    call_macro("copy-all-items", source: "$i.a", target: "SubjectNWBIB[].$last.subject")
   elsif any_equal("$i.2", "rpb")
     add_field("SubjectRPB[].$append.__dummy__", "")
     set_array("SubjectRPB[].$last.subject[]")
@@ -40,9 +37,6 @@ do list(path: "084  ", "var": "$i")
     end
   elsif any_equal("$i.2", "sdnb")
     add_field("SubjectDNB[].$append.__dummy__", "")
-    set_array("SubjectDNB[].$last.subject[]")
-    do list(path: "$i.a", "var": "$j")
-      copy_field("$j", "SubjectDNB[].$last.subject[].$append")
-    end
+    call_macro("copy-all-items", source: "$i.a", target: "SubjectDNB[].$last.subject")
   end
 end
