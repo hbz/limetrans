@@ -829,9 +829,9 @@ hbz.limetrans.function.Dedup("OnlineAccess[].*.uri")
 
 # MARC/962
 set_array("ClassifierDigitization[]")
-do list(path: "962??.e", "var": "$i")
+do list(path: "962??", "var": "$i")
   add_field("ClassifierDigitization[].$append.__dummy__", "")
-  copy_field("$i", "ClassifierDigitization[].$last.classifier")
+  call_macro("copy-all-items", source: "$i.e", target: "ClassifierDigitization[].$last.classifier")
 end
 
 # MARC/980

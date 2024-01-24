@@ -3844,7 +3844,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-30-PQE"
+    "classifier" : [ "ZDB-30-PQE" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -3983,7 +3983,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-2-STI"
+    "classifier" : [ "ZDB-2-STI" ]
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
@@ -50699,11 +50699,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-18-BOH"
-  }, {
-    "classifier" : "ZDB-18-BAR"
-  }, {
-    "classifier" : "ZDB-18-BOP"
+    "classifier" : [ "ZDB-18-BOH", "ZDB-18-BAR", "ZDB-18-BOP" ]
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
@@ -50838,7 +50834,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-89-EBL"
+    "classifier" : [ "ZDB-89-EBL" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -50968,7 +50964,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-35-WIC"
+    "classifier" : [ "ZDB-35-WIC" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "wiley" ]
@@ -51728,7 +51724,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-23-DGG"
+    "classifier" : [ "ZDB-23-DGG" ]
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
@@ -51969,9 +51965,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-128-VEL"
-  }, {
-    "classifier" : "ZDB-128-UMM"
+    "classifier" : [ "ZDB-128-VEL", "ZDB-128-UMM" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "beck" ]
@@ -52206,9 +52200,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-89-EBL"
-  }, {
-    "classifier" : "ZDB-30-PQE"
+    "classifier" : [ "ZDB-89-EBL", "ZDB-30-PQE" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -52357,7 +52349,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-89-EBL"
+    "classifier" : [ "ZDB-89-EBL" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -52475,9 +52467,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-89-EBL"
-  }, {
-    "classifier" : "ZDB-4-NLEBK"
+    "classifier" : [ "ZDB-89-EBL", "ZDB-4-NLEBK" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -52605,9 +52595,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-89-EBL"
-  }, {
-    "classifier" : "ZDB-22-CAN"
+    "classifier" : [ "ZDB-89-EBL", "ZDB-22-CAN" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -52840,7 +52828,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-89-EBL"
+    "classifier" : [ "ZDB-89-EBL" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -52967,7 +52955,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-89-EBL"
+    "classifier" : [ "ZDB-89-EBL" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -53105,7 +53093,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-89-EBL"
+    "classifier" : [ "ZDB-89-EBL" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -53471,9 +53459,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-89-EBL"
-  }, {
-    "classifier" : "ZDB-30-PQE"
+    "classifier" : [ "ZDB-89-EBL", "ZDB-30-PQE" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -53822,11 +53808,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-30-PQE"
-  }, {
-    "classifier" : "ZDB-4-NLEBK"
-  }, {
-    "classifier" : "ZDB-89-EBL"
+    "classifier" : [ "ZDB-30-PQE", "ZDB-4-NLEBK", "ZDB-89-EBL" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -54083,9 +54065,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-89-EBL"
-  }, {
-    "classifier" : "ZDB-30-PQE"
+    "classifier" : [ "ZDB-89-EBL", "ZDB-30-PQE" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -54353,7 +54333,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-89-EBL"
+    "classifier" : [ "ZDB-89-EBL" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -54598,7 +54578,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-89-EBL"
+    "classifier" : [ "ZDB-89-EBL" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -54726,7 +54706,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-89-EBL"
+    "classifier" : [ "ZDB-89-EBL" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "ebc" ]
@@ -56165,7 +56145,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-7-CRC"
+    "classifier" : [ "ZDB-7-CRC" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "taylor francis" ]
@@ -56304,7 +56284,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-7-CRC"
+    "classifier" : [ "ZDB-7-CRC" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "taylor francis" ]
@@ -56453,7 +56433,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-7-CRC"
+    "classifier" : [ "ZDB-7-CRC" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "taylor francis" ]
@@ -56745,7 +56725,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-94-OAB"
+    "classifier" : [ "ZDB-94-OAB" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990229102750206441"
@@ -57045,7 +57025,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-94-OAB"
+    "classifier" : [ "ZDB-94-OAB" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990363877050206441"
@@ -57144,7 +57124,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-94-OAB"
+    "classifier" : [ "ZDB-94-OAB" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990363884010206441"
@@ -57243,7 +57223,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-94-OAB"
+    "classifier" : [ "ZDB-94-OAB" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990363898520206441"
@@ -57473,7 +57453,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364082120206441"
@@ -57578,7 +57558,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364092110206441"
@@ -57680,7 +57660,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364097700206441"
@@ -57780,7 +57760,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364098540206441"
@@ -57880,7 +57860,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364100360206441"
@@ -57997,7 +57977,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364100480206441"
@@ -58102,7 +58082,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364105900206441"
@@ -58202,7 +58182,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364120840206441"
@@ -58297,7 +58277,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364126940206441"
@@ -58404,7 +58384,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364130040206441"
@@ -58506,7 +58486,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364131620206441"
@@ -58611,7 +58591,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364154710206441"
@@ -58720,7 +58700,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364155810206441"
@@ -58827,7 +58807,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364159540206441"
@@ -58931,7 +58911,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364165400206441"
@@ -59035,7 +59015,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364170110206441"
@@ -59135,7 +59115,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364170620206441"
@@ -59240,7 +59220,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364184240206441"
@@ -59337,7 +59317,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364186880206441"
@@ -59437,7 +59417,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364196980206441"
@@ -59537,7 +59517,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364204300206441"
@@ -59639,7 +59619,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364218860206441"
@@ -59739,7 +59719,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-1-IMF"
+    "classifier" : [ "ZDB-1-IMF" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990364229650206441"
@@ -59864,7 +59844,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-95-SFL"
+    "classifier" : [ "ZDB-95-SFL" ]
   } ],
   "ClassifierLocal" : {
     "classifier" : [ "brill" ]
@@ -61237,7 +61217,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-35-Wiley-EBA"
+    "classifier" : [ "ZDB-35-Wiley-EBA" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)99371734302206441"
@@ -61344,7 +61324,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-23-DGG-eba"
+    "classifier" : [ "ZDB-23-DGG-eba" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)99372015733106441"
@@ -61904,7 +61884,7 @@
     "isInternalLinkFor" : "DE-A96"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ZDB-4-BUH"
+    "classifier" : [ "ZDB-4-BUH" ]
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Bibliographie"

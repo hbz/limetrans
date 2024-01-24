@@ -497,9 +497,7 @@
     "format" : "text/html"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ldd"
-  }, {
-    "classifier" : "dilibri"
+    "classifier" : [ "ldd", "dilibri" ]
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Online-Ressource"
@@ -639,9 +637,7 @@
     "format" : "text/html"
   } ],
   "ClassifierDigitization" : [ {
-    "classifier" : "ldd"
-  }, {
-    "classifier" : "dilibri"
+    "classifier" : [ "ldd", "dilibri" ]
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Geschichte 1910"
