@@ -275,8 +275,8 @@ set_array("TitlePreferred[]")
 do list(path: "130??", "var": "$i")
   add_field("TitlePreferred[].$append.__dummy__", "")
   call_macro("remove-nonsort", source: "$i.a")
-  copy_field("$i.a", "TitlePreferred[].$last.title")
-  copy_field("$i.g", "TitlePreferred[].$last.prefix")
+  call_macro("copy-first-item", source: "$i.a", target: "TitlePreferred[].$last.title")
+  call_macro("copy-all-items", source: "$i.g", target: "TitlePreferred[].$last.prefix")
 end
 
 # MARC/240
