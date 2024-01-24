@@ -25,7 +25,7 @@ do list(path: "084  ", "var": "$i")
     end
   elsif any_equal("$i.2", "rvk")
     add_field("SubjectRVK[].$append.__dummy__", "")
-    set_array("SubjectRVK[].$last.subject")
+    set_array("SubjectRVK[].$last.subject[]")
     do list(path: "$i.a", "var": "$j")
       copy_field("$j", "@subjectRVK")
       lookup("@subjectRVK", "alma-rvk-to-taxonomy", delete: "true")
@@ -33,7 +33,7 @@ do list(path: "084  ", "var": "$i")
         paste("@subjectRVK", "$j", "@subjectRVK")
       end
       move_field("@subjectRVK", "introx.taxonomyRVK[].$append")
-      copy_field("$j", "SubjectRVK[].$last.subject.$append")
+      copy_field("$j", "SubjectRVK[].$last.subject[].$append")
     end
   elsif any_equal("$i.2", "sdnb")
     add_field("SubjectDNB[].$append.__dummy__", "")
