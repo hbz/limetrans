@@ -1,3 +1,10 @@
+do put_macro("copy-all-items")
+  set_array("$[target][]")
+  do list(path: "$[source]", "var": "$copy-all-items")
+    copy_field("$copy-all-items", "$[target][].$append")
+  end
+end
+
 do put_macro("copy-first-item")
   if exists("$[source].1")
     copy_field("$[source].1", "@copy-first-item")
