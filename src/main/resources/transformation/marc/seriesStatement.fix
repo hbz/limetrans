@@ -24,7 +24,7 @@ do list(path: "490[01] ", "var": "$i")
       call_macro("remove-nonsort", source: "$j")
       copy_field("$j", "SeriesAddedEntryUniformTitle[].$last.title[].$append")
     end
-    copy_field("$i.v", "SeriesAddedEntryUniformTitle[].$last.volume")
+    call_macro("copy-all-items", source: "$i.v", target: "SeriesAddedEntryUniformTitle[].$last.volume")
   end
 end
 uniq("SeriesStatement[]")

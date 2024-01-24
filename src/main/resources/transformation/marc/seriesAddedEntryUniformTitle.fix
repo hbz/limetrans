@@ -5,12 +5,10 @@ end
 do list(path: "830 ?", "var": "$i")
   add_field("SeriesAddedEntryUniformTitle[].$append.__dummy__", "")
   call_macro("remove-nonsort", source: "$i.a")
-  copy_field("$i.a", "SeriesAddedEntryUniformTitle[].$last.title")
-  copy_field("$i.n", "SeriesAddedEntryUniformTitle[].$last.number")
-  copy_field("$i.p", "SeriesAddedEntryUniformTitle[].$last.part")
-  copy_field("$i.v", "SeriesAddedEntryUniformTitle[].$last.volume")
-  do list(path: "$i.w", "var": "$j")
-    copy_field("$j", "SeriesAddedEntryUniformTitle[].$last.designation")
-  end
+  call_macro("copy-first-item", source: "$i.a", target: "SeriesAddedEntryUniformTitle[].$last.title")
+  call_macro("copy-all-items", source: "$i.n", target: "SeriesAddedEntryUniformTitle[].$last.number")
+  call_macro("copy-all-items", source: "$i.p", target: "SeriesAddedEntryUniformTitle[].$last.part")
+  call_macro("copy-first-item", source: "$i.v", target: "SeriesAddedEntryUniformTitle[].$last.volume")
+  call_macro("copy-all-items", source: "$i.w", target: "SeriesAddedEntryUniformTitle[].$last.designation")
 end
 uniq("SeriesAddedEntryUniformTitle[]")
