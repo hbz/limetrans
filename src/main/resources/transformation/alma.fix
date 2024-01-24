@@ -595,18 +595,18 @@ set_array("SoundCharacteristics[]")
 set_array("VideoCharacteristics[]")
 do list(path: "344??", "var": "$i")
   add_field("SoundCharacteristics[].$append.__dummy__", "")
-  copy_field("$i.a", "SoundCharacteristics[].$last.typeOfRecording")
+  call_macro("copy-all-items", source: "$i.a", target: "SoundCharacteristics[].$last.typeOfRecording")
 end
 # MARC/346
 do list(path: "346??", "var": "$i")
   add_field("VideoCharacteristics[].$append.__dummy__", "")
-  copy_field("$i.b", "VideoCharacteristics[].$last.broadcastStandard")
+  call_macro("copy-all-items", source: "$i.b", target: "VideoCharacteristics[].$last.broadcastStandard")
 end
 # MARC/347
 do list(path: "347??", "var": "$i")
   add_field("FileCharacteristics[].$append.__dummy__", "")
-  copy_field("$i.b", "FileCharacteristics[].$last.encodingFormat")
-  copy_field("$i.e", "FileCharacteristics[].$last.regionalEncoding")
+  call_macro("copy-all-items", source: "$i.b", target: "FileCharacteristics[].$last.encodingFormat")
+  call_macro("copy-all-items", source: "$i.e", target: "FileCharacteristics[].$last.regionalEncoding")
 end
 
 # MARC/362
