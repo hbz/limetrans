@@ -137,7 +137,7 @@
     "name" : [ "Beltz & Gelberg" ]
   } ],
   "HostItemEntry" : [ {
-    "part" : "p:48 Seiten"
+    "part" : [ "p:48 Seiten" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-A96)991004562349606444"
@@ -236,7 +236,7 @@
     "date" : [ "2013" ]
   },
   "HostItemEntry" : [ {
-    "part" : "p:192 S."
+    "part" : [ "p:192 S." ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-465)99203913838706446"
@@ -353,7 +353,7 @@
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "Wiesbaden : Kommunal- und Schul-Verlag, 1959-",
     "physicalDescription" : "Bände (Loseblattsammlung)",
-    "relationshipInformation" : "Erscheint auch als",
+    "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
     "title" : "Praxis der Kommunalverwaltung. Landesausgabe Rheinland-Pfalz",
     "controlNumber" : [ "(DE-600)3053158-5" ],
@@ -361,7 +361,7 @@
   }, {
     "publisherStatement" : "Wiesbaden : Kommunal- und Schulverl., 2002-",
     "physicalDescription" : "Online-Ressource",
-    "relationshipInformation" : "Erscheint auch als",
+    "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Online-Ausgabe" ],
     "title" : "Praxis der Kommunalverwaltung / Rheinland-Pfalz. Rheinland-Pfalz",
     "controlNumber" : [ "(DE-600)2711186-6" ],
@@ -484,7 +484,7 @@
     "extent" : "7 S."
   },
   "AdditionalPhysicalFormEntry" : [ {
-    "relationshipInformation" : "Elektronische Reproduktion von",
+    "relationshipInformation" : [ "Elektronische Reproduktion von" ],
     "title" : "Kurze Nachrichten in Betreff des eisenfreien Mineral-Wassers des Königlich Preußischen concessionierten Sinziger Mineral-Brunnens",
     "controlNumber" : [ "(DE-605)HT017672355" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT017672355" ]
@@ -625,8 +625,8 @@
   },
   "AdditionalPhysicalFormEntry" : [ {
     "mainEntryHeading" : "Irsch, Nikolaus",
-    "relationshipInformation" : "Elektronische Reproduktion von",
-    "seriesStatement" : "Bericht über das Schuljahr / Progymnasium Ahrweiler-Neuenahr mit Ersatzunterricht für das Griechische",
+    "relationshipInformation" : [ "Elektronische Reproduktion von" ],
+    "seriesStatement" : [ "Bericht über das Schuljahr / Progymnasium Ahrweiler-Neuenahr mit Ersatzunterricht für das Griechische" ],
     "title" : "Romanische Bauten im Kreise Ahrweiler",
     "controlNumber" : [ "(DE-605)HT009249129" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT009249129" ]
@@ -1199,13 +1199,13 @@
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "Ludwigshafen : Rheinpfalz Verl. und Dr., 2010-",
     "physicalDescription" : "Online-Ressource",
-    "relationshipInformation" : "Sonntagsausg.",
+    "relationshipInformation" : [ "Sonntagsausg." ],
     "title" : "Die Rheinpfalz am Sonntag",
     "controlNumber" : [ "(DE-600)2581890-9" ],
     "identifierForLinkingEntry" : [ "(DE-600)2581890-9" ]
   }, {
     "publisherStatement" : "Ludwigshafen, Rh. : Rheinpfalz Verl. u. Dr., 2006-[2020]",
-    "relationshipInformation" : "Druckausg.",
+    "relationshipInformation" : [ "Druckausg." ],
     "title" : "Die Rheinpfalz <Ludwigshafen> / Pfälzer Tageblatt / R. Pfälzer Tageblatt. R, [Ausgabe Rhein]",
     "controlNumber" : [ "(DE-600)2265231-0" ],
     "identifierForLinkingEntry" : [ "(DE-600)2265231-0" ]
@@ -1214,7 +1214,7 @@
     "edition" : "Germersheimer Rundschau",
     "publisherStatement" : "Ludwigshafen : Rheinpfalz Verlag und Druckerei GmbH & Co. KG, [2020]-",
     "physicalDescription" : "Online-Ressource",
-    "relationshipInformation" : "Fortgesetzt durch",
+    "relationshipInformation" : [ "Fortgesetzt durch" ],
     "title" : "Die Rheinpfalz",
     "controlNumber" : [ "(DE-600)3021226-1" ],
     "identifierForLinkingEntry" : [ "(DE-600)3021226-1" ]
@@ -1366,33 +1366,33 @@
   } ],
   "SupplementSpecialIssueEntry" : [ {
     "publisherStatement" : "Ludwigshafen : Rheinpfalz-Verl. u. Dr., 1997-[2020]",
-    "relationshipInformation" : "Supplement",
+    "relationshipInformation" : [ "Supplement" ],
     "note" : [ "November 2006-März 2020" ],
     "title" : "Leo / C. C",
     "controlNumber" : [ "(DE-600)1394010-7" ],
     "identifierForLinkingEntry" : [ "(DE-600)1394010-7" ]
   }, {
     "publisherStatement" : "Ludwigshafen : Rheinpfalz Verl. u. Dr., 1999-2006",
-    "relationshipInformation" : "2006,Nov.-Dez. Beil.",
+    "relationshipInformation" : [ "2006,Nov.-Dez. Beil." ],
     "title" : "Sonntag aktuell / Ausgabe Pfalz. Ausgabe Pfalz",
     "controlNumber" : [ "(DE-600)1496099-0" ],
     "identifierForLinkingEntry" : [ "(DE-600)1496099-0" ]
   }, {
     "publisherStatement" : "Ludwigshafen : Rheinpfalz Verl. u. Dr., 2013-2014",
-    "relationshipInformation" : "Bis 2014,Juli Beil.",
+    "relationshipInformation" : [ "Bis 2014,Juli Beil." ],
     "title" : "Erlebniswelt / Region Landau. Region Landau",
     "controlNumber" : [ "(DE-600)2786327-X" ],
     "identifierForLinkingEntry" : [ "(DE-600)2786327-X" ]
   }, {
     "publisherStatement" : "Ludwigshafen : Rheinpfalz Verl. u. Dr., 2014-[2020]",
-    "relationshipInformation" : "Supplement",
+    "relationshipInformation" : [ "Supplement" ],
     "note" : [ "2014, August-2020, März" ],
     "title" : "Rheinpfalz-Card-Magazin / Region Landau. Region Landau",
     "controlNumber" : [ "(DE-600)2786330-X" ],
     "identifierForLinkingEntry" : [ "(DE-600)2786330-X" ]
   }, {
     "publisherStatement" : "Ludwigshafen : Rheinpfalz-Verl. u. Dr., 1997-",
-    "relationshipInformation" : "Supplement",
+    "relationshipInformation" : [ "Supplement" ],
     "note" : [ "April 2020" ],
     "title" : "Leo / A. A",
     "controlNumber" : [ "(DE-600)1380528-9" ],
@@ -1401,14 +1401,14 @@
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "Ludwigshafen : Rheinpfalz Verl. und Dr., 2010-[2020]",
     "physicalDescription" : "Online-Ressource",
-    "relationshipInformation" : "E-Paper",
+    "relationshipInformation" : [ "E-Paper" ],
     "title" : "Die Rheinpfalz <Ludwigshafen> / Pfälzer Tageblatt / R. Pfälzer Tageblatt. R, [Ausgabe Rhein]",
     "controlNumber" : [ "(DE-600)2556980-6" ],
     "identifierForLinkingEntry" : [ "(DE-600)2556980-6" ]
   } ],
   "PrecedingEntry" : [ {
     "publisherStatement" : "Ludwigshafen, Rh. : Rheinpfalz Verl. u. Dr.-GmbH, 1971-2006",
-    "relationshipInformation" : "Vorg.:",
+    "relationshipInformation" : [ "Vorg.:" ],
     "title" : "Die Rheinpfalz <Ludwigshafen> / Pfälzer Tageblatt. Pfälzer Tageblatt",
     "controlNumber" : [ "(DE-600)1028939-2" ],
     "identifierForLinkingEntry" : [ "(DE-600)1028939-2" ]
@@ -1416,14 +1416,14 @@
   "SucceedingEntry" : [ {
     "edition" : "Germersheimer Rundschau",
     "publisherStatement" : "Ludwigshafen : Rheinpfalz Verlag und Druckerei GmbH & Co. KG, [2020]-",
-    "relationshipInformation" : "Fortgesetzt durch",
+    "relationshipInformation" : [ "Fortgesetzt durch" ],
     "title" : "Die Rheinpfalz",
     "controlNumber" : [ "(DE-600)3021828-7" ],
     "identifierForLinkingEntry" : [ "(DE-600)3021828-7" ]
   } ],
   "NonspecificRelationshipEntry" : [ {
     "publisherStatement" : "Ludwigshafen : Rheinpfalz Verl. u. Dr., 2007-",
-    "relationshipInformation" : "In Beziehung stehendes Werk",
+    "relationshipInformation" : [ "In Beziehung stehendes Werk" ],
     "note" : [ "-2020" ],
     "title" : "Die Rheinpfalz am Sonntag",
     "controlNumber" : [ "(DE-600)2265239-5" ],
@@ -1553,14 +1553,14 @@
   } ],
   "SupplementParentEntry" : [ {
     "publisherStatement" : "Neustadt, Haardt : Pfälzische Verl.-Anst., 1923-1933",
-    "relationshipInformation" : "Beil. zu:",
+    "relationshipInformation" : [ "Beil. zu:" ],
     "title" : "Pfälzischer Kurier / B. Ausgabe B",
     "controlNumber" : [ "(DE-600)2193458-7" ],
     "identifierForLinkingEntry" : [ "(DE-600)2193458-7" ]
   } ],
   "SucceedingEntry" : [ {
     "publisherStatement" : "Neustadt, Haardt : Pfälz. Verl.-Anst., 1931-1934",
-    "relationshipInformation" : "Forts.:",
+    "relationshipInformation" : [ "Forts.:" ],
     "title" : "Das Hambacher Schloß",
     "controlNumber" : [ "(DE-600)2274692-4" ],
     "identifierForLinkingEntry" : [ "(DE-600)2274692-4" ]
@@ -1695,7 +1695,7 @@
   } ],
   "SupplementParentEntry" : [ {
     "publisherStatement" : "Pirmasens : Deil, 1884-",
-    "relationshipInformation" : "Beil. zu:",
+    "relationshipInformation" : [ "Beil. zu:" ],
     "title" : "Pirmasenser Zeitung",
     "controlNumber" : [ "(DE-600)726838-5" ],
     "identifierForLinkingEntry" : [ "(DE-600)726838-5" ]
