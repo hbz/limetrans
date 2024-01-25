@@ -434,10 +434,12 @@ copy_field("@id", "RecordIdentifier.identifierForTheRecord")
 
 copy_field("@sisis_supplement", "@sisis_supplement-0010")
 lookup("@sisis_supplement-0010", "sisis-supplement-0010", delete: "true")
-if exists("@sisis_supplement-0010")
-  prepend("@sisis_supplement-0010", "(DE-605)")
-  move_field("@sisis_supplement-0010", "RecordIdentifier.verifiedSuperIdentifier")
+set_array("RecordIdentifier.verifiedSuperIdentifier[]")
+do list(path: "@sisis_supplement-0010", "var": "$i")
+  prepend("$i", "(DE-605)")
+  copy_field("$i", "RecordIdentifier.verifiedSuperIdentifier[].$append")
 end
+remove_field("@sisis_supplement-0010")
 
 # MARC/POC
 set_array("DateFirst.date[]")
