@@ -42944,3 +42944,106 @@
     "title" : [ "EBSCO business source premier" ]
   }
 }
+{
+  "collection" : "DE-605",
+  "TypePeriodical" : "Zeitschrift",
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Ukrainisch" ],
+    "date" : [ "1994" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99370687679406441",
+    "identifierMMSIZ" : "991005848146706444",
+    "identifierPID" : "5394880120006444",
+    "identifierPID" : "53111886530006444",
+    "identifierPID" : "53123016060006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99370687679406441",
+    "identifierForTheRecord" : "(DE-605)99370687679406441"
+  },
+  "DateFirst" : {
+    "date" : "1994",
+    "date" : "2013",
+    "date" : "2013",
+    "date" : "2012"
+  },
+  "DateLast" : {
+    "date" : "2017"
+  },
+  "Language" : [ {
+    "language" : "Ukrainisch",
+    "languageSource" : "ukr"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2269938-7"
+  }, {
+    "identifierZDB" : "2714315-6"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "2308-0019"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Donet͡sʹkyĭ derz͡havnyĭ universytet,"
+  }, {
+    "corporateBodyName" : "Donet͡sʹkyĭ nat͡sionalʹnyĭ universytet,"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Linhvistychni studiï"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "[Donet͡sk]" ],
+    "name" : [ "[Donet͡sʹkyĭ derz͡havnyĭ universytet]" ]
+  }, {
+    "place" : [ "Donet͡sk" ],
+    "name" : [ "Donet͡sʹkyĭ nat͡sionalʹnyĭ universytet" ]
+  }, {
+    "place" : [ "Kyïv", "Vinnyt͡si͡a", "Donet͡sʹkyĭ nat͡sionalʹnyĭ universytet" ]
+  } ],
+  "Extent" : {
+    "extent" : "1 online resource"
+  },
+  "Description" : {
+    "description" : [ "Refereed/Peer-reviewed", "At head of title: Ministerstvo osvity Ukraïny, Donet͡sʹkyĭ derz͡havnyĭ universytet, 1994- ; Ministerstvo osvity Ukraïny, Donet͡sʹkyĭ derz͡havnyĭ universytet, Donet͡sʹkyĭ nat͡sionalʹnyĭ universytet, <2007->" ]
+  },
+  "OnlineAccess" : [ {
+    "publicnote" : "DOAJ",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5394880120006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  }, {
+    "publicnote" : "ROAD",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53111886530006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  }, {
+    "publicnote" : "EZB-FREE-01851 free EZB journals Linguistics Literature",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53123016060006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99370687679406441"
+  }, {
+    "uid" : "(DE-A96)991005848146706444"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "TitleOther" : {
+    "title" : [ "Lìngvìst. stud", "LS", "Linguistic studies" ]
+  },
+  "RSWK" : [ {
+    "subjectTopicName" : "Linguistics",
+    "subjectGenre" : "Periodicals"
+  }, {
+    "subjectTopicName" : "Ukrainian language",
+    "subjectGenre" : "Periodicals"
+  }, {
+    "subjectIdentifier" : [ "(OCoLC)fst00999202" ]
+  }, {
+    "subjectIdentifier" : [ "(OCoLC)fst01160468" ]
+  } ]
+}

@@ -61921,3 +61921,195 @@
     "identifierGND" : [ "4066528-8" ]
   } ]
 }
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "CurrentPublicationFrequency" : [ {
+    "frequency" : "Two issues a year,",
+    "date" : "<2012->"
+  } ],
+  "FormerPublicationFrequency" : [ {
+    "frequency" : "Annual,",
+    "date" : "1994-"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "1040677030"
+  } ],
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Ukrainisch" ],
+    "date" : [ "1994" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "subject" : [ "Linguistics", "Ukrainian language / Grammar", "Periodicals" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99370687679406441",
+    "identifierMMSIZ" : "991005848146706444",
+    "identifierPID" : [ "5394880120006444", "53111886530006444", "53123016060006444" ]
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99370687679406441",
+    "identifierForTheRecord" : "(DE-605)99370687679406441",
+    "verifyingSuperIdentifier" : [ "(DE-605)99370687679406441", "(DE-A96)991005848146706444", "(OCoLC)1040677030", "(CKB)1000000000310612", "(CONSER)--2019263108", "(DE-599)ZDB2714315-6", "(EXLCZ)991000000000310612" ]
+  },
+  "DateFirst" : {
+    "date" : [ "2013", "2012", "1994" ]
+  },
+  "DateLast" : {
+    "date" : [ "2017" ]
+  },
+  "Language" : [ {
+    "language" : "Ukrainisch",
+    "languageSource" : "ukr"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2269938-7"
+  }, {
+    "identifierZDB" : "2714315-6"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "2308-0019",
+    "identifierISSNNormalized" : "23080019"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Donet͡sʹkyĭ derz͡havnyĭ universytet,"
+  }, {
+    "corporateBodyName" : "Donet͡sʹkyĭ nat͡sionalʹnyĭ universytet,"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Linhvistychni studiï"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "[Donet͡sk]" ],
+    "name" : [ "[Donet͡sʹkyĭ derz͡havnyĭ universytet]" ],
+    "period" : [ "[Vyp. 1-] :" ]
+  }, {
+    "place" : [ "Donet͡sk" ],
+    "name" : [ "Donet͡sʹkyĭ nat͡sionalʹnyĭ universytet" ],
+    "period" : [ "<Vyp. 15>-29:" ]
+  }, {
+    "place" : [ "Kyïv", "Vinnyt͡si͡a", "Donet͡sʹkyĭ nat͡sionalʹnyĭ universytet" ],
+    "period" : [ "Vyp. 30- :" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : [ "[Donet͡sk]" ]
+  }, {
+    "printingPlace" : [ "Donet͡sk" ]
+  }, {
+    "printingPlace" : [ "Kyïv", "Vinnyt͡si͡a", "Donet͡sʹkyĭ nat͡sionalʹnyĭ universytet" ]
+  } ],
+  "Extent" : {
+    "extent" : "1 online resource"
+  },
+  "ChronologyAndEnumeration" : {
+    "unformattedValue" : [ "Print began with Vyp. 1 (1994)." ]
+  },
+  "Description" : [ {
+    "description" : "Refereed/Peer-reviewed"
+  }, {
+    "description" : "At head of title: Ministerstvo osvity Ukraïny, Donet͡sʹkyĭ derz͡havnyĭ universytet, 1994- ; Ministerstvo osvity Ukraïny, Donet͡sʹkyĭ derz͡havnyĭ universytet, Donet͡sʹkyĭ nat͡sionalʹnyĭ universytet, <2007->"
+  } ],
+  "DescriptionOfExpression" : [ {
+    "description" : "In Ukrainian, with summaries in English."
+  } ],
+  "SourceOfDescriptionNote" : [ {
+    "note" : "Vypusk 15 (2007); title from PDF cover (mova.dn.ua/, viewed October 17, 2019)."
+  }, {
+    "note" : "Vypusk 36 (2018) (mova.dn.ua/, viewed October 17, 2019)."
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISSN" : "1815-3070"
+  } ],
+  "OnlineAccess" : [ {
+    "collectionIdentifier" : "6190456970006444",
+    "publicnote" : "DOAJ [Available from 2013 until 2017.]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=5394880120006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  }, {
+    "collectionIdentifier" : "6190458260006444",
+    "publicnote" : "ROAD [Available from 2013.]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53111886530006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  }, {
+    "collectionIdentifier" : "61119364730006444",
+    "publicnote" : "EZB-FREE-01851 free EZB journals Linguistics Literature [Available from 2012 volume: 24.]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53123016060006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99370687679406441"
+  }, {
+    "uid" : "(DE-A96)991005848146706444"
+  }, {
+    "uid" : "(OCoLC)1040677030"
+  }, {
+    "uid" : "(CKB)1000000000310612"
+  }, {
+    "uid" : "(CONSER)--2019263108"
+  }, {
+    "uid" : "(DE-599)ZDB2714315-6"
+  }, {
+    "uid" : "(EXLCZ)991000000000310612"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : [ "Zeitschrift" ],
+  "TitleOther" : {
+    "title" : [ "Lìngvìst. stud", "LS", "Linguistic studies" ]
+  },
+  "RSWK" : [ {
+    "subjectTopicName" : [ "Linguistics" ],
+    "subjectGenre" : "Periodicals",
+    "combinedLabel" : "Linguistics"
+  }, {
+    "subjectTopicName" : [ "Ukrainian language" ],
+    "subjectAddendum" : "Grammar",
+    "subjectGenre" : "Periodicals",
+    "combinedLabel" : "Ukrainian language / Grammar"
+  }, {
+    "subjectTopicName" : [ "Linguistics" ],
+    "combinedLabel" : "Linguistics",
+    "subjectIdentifier" : [ "(OCoLC)fst00999202" ]
+  }, {
+    "subjectTopicName" : [ "Ukrainian language" ],
+    "subjectAddendum" : "Grammar",
+    "combinedLabel" : "Ukrainian language / Grammar",
+    "subjectIdentifier" : [ "(OCoLC)fst01160468" ]
+  } ],
+  "AlternateGraphicRepresentation" : [ {
+    "titleStatement" : "Лфнгвфстичнф студфф̈.",
+    "scriptSource" : "(N",
+    "script" : "Kyrillisch"
+  }, {
+    "publicationStatement" : "[Донецк] :: [Донецький державний унфверситет]",
+    "scriptSource" : "(N",
+    "script" : "Kyrillisch"
+  }, {
+    "publicationStatement" : "Донецк :: Донецький нацфональний унфверситет",
+    "scriptSource" : "(N",
+    "script" : "Kyrillisch"
+  }, {
+    "publicationStatement" : "Кигв :",
+    "publicationStatement" : "Вфнниця :",
+    "publicationStatement" : "Донецький нацфональний унфверситет",
+    "scriptSource" : "(N",
+    "script" : "Kyrillisch"
+  }, {
+    "description" : "At head of title: Мфнфстерство освфти Украгни, Донецький державний унфверситет, 1994-; Мфнфстерство освфти Украгни, Донецький державний унфверситет, Донецький нацфональний унфверситет, <2007->",
+    "scriptSource" : "(N",
+    "script" : "Kyrillisch"
+  }, {
+    "corporateName" : "Донецький державний унфверситет,",
+    "scriptSource" : "(N",
+    "script" : "Kyrillisch"
+  }, {
+    "corporateName" : "Донецький нацфональний унфверситет,",
+    "scriptSource" : "(N",
+    "script" : "Kyrillisch"
+  } ]
+}
