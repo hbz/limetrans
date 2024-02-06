@@ -60,11 +60,11 @@ public class ElasticsearchServer {
 
         final ElasticsearchServer server;
         if (CACHE.containsKey(dataDir)) {
-            LOGGER.info("Accessing embedded server: {}", aDataDir);
+            LOGGER.info("Accessing embedded server: {}", dataDir);
             server = CACHE.get(dataDir);
         }
         else {
-            LOGGER.info("Starting embedded server: {}", aDataDir);
+            LOGGER.info("Starting embedded server: {}", dataDir);
             server = new ElasticsearchServer(dataDir, tempDir);
 
             CACHE.put(dataDir, server);
