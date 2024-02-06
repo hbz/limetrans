@@ -382,19 +382,13 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     }
 
     public void process(final StreamReceiver aReceiver) {
+        final Counter counter = new Counter();
         final StreamPipe<StreamReceiver> pipe = getStreamPipe(mRulesPath, mVars,
                 t -> LOGGER.info("Starting {} transformation: {}", t, mRulesPath));
 
         if (mPostprocess) {
             VerifyLinks.setup(mVars);
         }
-
-        final StreamTee streamTee = new StreamTee();
-        final Counter counter = new Counter();
-
-        transformJson(streamTee);
-        transformFormeta(streamTee);
-        transformElasticsearch(streamTee);
 
         if (pipe instanceof final Maps maps) {
             mMaps.forEach(maps::putMap);
@@ -404,12 +398,19 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
             metafix.setStrictness(Metafix.Strictness.EXPRESSION);
         }
 
-        pipe
-            .setReceiver(counter)
-            .setReceiver(streamTee);
-
         if (aReceiver != null) {
             pipe.setReceiver(aReceiver);
+        }
+        else {
+            final StreamTee streamTee = new StreamTee();
+
+            pipe
+                .setReceiver(counter)
+                .setReceiver(streamTee);
+
+            transformJson(streamTee);
+            transformFormeta(streamTee);
+            transformElasticsearch(streamTee);
         }
 
         final Filter filter = mFilter.isEmpty() ? null : mFilter.toFilter();
