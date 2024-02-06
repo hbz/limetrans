@@ -6,6 +6,7 @@ import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.Helpers;
 import hbz.limetrans.util.InputQueue;
 import hbz.limetrans.util.OaiPmhQueue;
+import hbz.limetrans.util.RepeatedFieldsLogger;
 import hbz.limetrans.util.Settings;
 import hbz.limetrans.util.SisisSupplement;
 
@@ -38,7 +39,7 @@ import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
+public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling|ClassFanOutComplexity
 
     private static final Logger LOGGER = LogManager.getLogger();
 
@@ -403,8 +404,17 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         }
         else {
             final StreamTee streamTee = new StreamTee();
+            final StreamPipe<StreamReceiver> sender;
 
-            pipe
+            if (Helpers.getProperty("warnRepeatedFields", false)) {
+                sender = pipe
+                    .setReceiver(new RepeatedFieldsLogger());
+            }
+            else {
+                sender = pipe;
+            }
+
+            sender
                 .setReceiver(counter)
                 .setReceiver(streamTee);
 
