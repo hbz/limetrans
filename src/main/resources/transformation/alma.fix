@@ -717,7 +717,7 @@ do list(path: "H66??", "var": "$i")
             lookup("$j.@source", "alma-library-to-branch-$[isil]", delete: "true")
           end
           copy_field("$j.@source", "HoldingsStatement[].$last.source")
-          copy_field("$j.h", "HoldingsStatement[].$last.callnumber")
+          call_macro("copy-first-item", source: "$j.h", target: "HoldingsStatement[].$last.callnumber")
           copy_field("$j.j", "HoldingsStatement[].$last.shelfmark")
           copy_field("$j.t", "HoldingsStatement[].$last.sortIndicator")
         end
