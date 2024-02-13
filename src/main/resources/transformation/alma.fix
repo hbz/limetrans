@@ -736,7 +736,7 @@ include("./marc/personContributor.fix")
 set_array("SourceOfDescriptionNote[]")
 do list(path: "588??", "var": "$i")
   add_field("SourceOfDescriptionNote[].$append.__dummy__", "")
-  copy_field("$i.a", "SourceOfDescriptionNote[].$last.note")
+  call_macro("copy-first-item", source: "$i.a", target: "SourceOfDescriptionNote[].$last.note")
 end
 
 # MARC/964
