@@ -32,6 +32,7 @@ public final class LMDB extends AbstractReadOnlyMap<String, String> implements A
     private final ByteBuffer mKey;
     private final Dbi<ByteBuffer> mDbi;
     private final Env<ByteBuffer> mEnv;
+    private final File mTempFile;
     private final Txn<ByteBuffer> mTxn;
 
     public LMDB(final String aPath) {
@@ -41,14 +42,17 @@ public final class LMDB extends AbstractReadOnlyMap<String, String> implements A
         final File realFile;
 
         if (aPath.endsWith(EXTENSION)) {
+            mTempFile = null;
             realFile = file;
         }
         else if (readonly) {
             try {
                 final Path tempFile = Files.createTempFile(file.getName(), EXTENSION);
 
-                realFile = tempFile.toFile();
-                realFile.deleteOnExit();
+                mTempFile = tempFile.toFile();
+                mTempFile.deleteOnExit();
+
+                realFile = mTempFile;
 
                 try (
                     InputStream stream = new FileInputStream(aPath);
@@ -103,6 +107,10 @@ public final class LMDB extends AbstractReadOnlyMap<String, String> implements A
         }
         finally {
             mEnv.close();
+
+            if (mTempFile != null) {
+                mTempFile.delete();
+            }
         }
     }
 
