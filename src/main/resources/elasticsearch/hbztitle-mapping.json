@@ -487,15 +487,26 @@
           ]
         },
         "identifierGND": {
-          "type": "ref",
-          "ref_index": "gnd",
-          "ref_type": "gnd",
-          "ref_fields": [
-            "gndo:preferredNameForTheCorporateBody",
-            "gndo:variantNameForTheCorporateBody",
-            "gndo:preferredNameForTheConferenceOrEvent",
-            "gndo:variantNameForTheConferenceOrEvent"
-          ],
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.nameCorporate"
+          ]
+        },
+        "preferredName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "variantName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
           "copy_to": [
             "bib.nameCorporate",
             "cql.allIndexes"
@@ -612,15 +623,26 @@
           ]
         },
         "identifierGND": {
-          "type": "ref",
-          "ref_index": "gnd",
-          "ref_type": "gnd",
-          "ref_fields": [
-            "gndo:preferredNameForTheCorporateBody",
-            "gndo:variantNameForTheCorporateBody",
-            "gndo:preferredNameForTheConferenceOrEvent",
-            "gndo:variantNameForTheConferenceOrEvent"
-          ],
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.nameCorporate"
+          ]
+        },
+        "preferredName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "variantName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
           "copy_to": [
             "bib.nameCorporate",
             "cql.allIndexes"
@@ -921,13 +943,28 @@
           ]
         },
         "identifierGND": {
-          "type": "ref",
-          "ref_index": "gnd",
-          "ref_type": "gnd",
-          "ref_fields": [
-            "gndo:preferredNameForThePlaceOrGeographicName",
-            "gndo:variantNameForThePlaceOrGeographicName"
-          ],
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "dc.subject"
+          ]
+        },
+        "preferredName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "variantName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
           "copy_to": [
             "bib.nameCorporate",
             "cql.allIndexes",
@@ -1215,16 +1252,11 @@
     "Person": {
       "properties": {
         "identifierGND": {
-          "type": "ref",
-          "ref_index": "gnd",
-          "ref_type": "gnd",
-          "ref_fields": [
-            "gndo:preferredNameForThePerson",
-            "gndo:variantNameForThePerson"
-          ],
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
           "copy_to": [
-            "bib.namePersonal",
-            "cql.allIndexes"
+            "bib.namePersonal"
           ]
         },
         "personBio": {
@@ -1245,6 +1277,24 @@
           ]
         },
         "personName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "preferredName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "variantName": {
           "type": "string",
           "index": "no",
           "doc_values": false,
@@ -1258,16 +1308,11 @@
     "PersonAddressee": {
       "properties": {
         "identifierGND": {
-          "type": "ref",
-          "ref_index": "gnd",
-          "ref_type": "gnd",
-          "ref_fields": [
-            "gndo:preferredNameForThePerson",
-            "gndo:variantNameForThePerson"
-          ],
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
           "copy_to": [
-            "bib.namePersonal",
-            "cql.allIndexes"
+            "bib.namePersonal"
           ]
         },
         "personIdentifier": {
@@ -1279,6 +1324,24 @@
           ]
         },
         "personName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "preferredName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "variantName": {
           "type": "string",
           "index": "no",
           "doc_values": false,
@@ -1292,16 +1355,11 @@
     "PersonContributor": {
       "properties": {
         "identifierGND": {
-          "type": "ref",
-          "ref_index": "gnd",
-          "ref_type": "gnd",
-          "ref_fields": [
-            "gndo:preferredNameForThePerson",
-            "gndo:variantNameForThePerson"
-          ],
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
           "copy_to": [
-            "bib.namePersonal",
-            "cql.allIndexes"
+            "bib.namePersonal"
           ]
         },
         "personBio": {
@@ -1322,6 +1380,24 @@
           ]
         },
         "personName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "preferredName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "variantName": {
           "type": "string",
           "index": "no",
           "doc_values": false,
@@ -1335,16 +1411,11 @@
     "PersonCreator": {
       "properties": {
         "identifierGND": {
-          "type": "ref",
-          "ref_index": "gnd",
-          "ref_type": "gnd",
-          "ref_fields": [
-            "gndo:preferredNameForThePerson",
-            "gndo:variantNameForThePerson"
-          ],
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
           "copy_to": [
-            "bib.namePersonal",
-            "cql.allIndexes"
+            "bib.namePersonal"
           ]
         },
         "personBio": {
@@ -1365,6 +1436,24 @@
           ]
         },
         "personName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "preferredName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "variantName": {
           "type": "string",
           "index": "no",
           "doc_values": false,
@@ -1390,16 +1479,11 @@
     "PersonInterpreter": {
       "properties": {
         "identifierGND": {
-          "type": "ref",
-          "ref_index": "gnd",
-          "ref_type": "gnd",
-          "ref_fields": [
-            "gndo:preferredNameForThePerson",
-            "gndo:variantNameForThePerson"
-          ],
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
           "copy_to": [
-            "bib.namePersonal",
-            "cql.allIndexes"
+            "bib.namePersonal"
           ]
         },
         "personIdentifier": {
@@ -1411,6 +1495,24 @@
           ]
         },
         "personName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "preferredName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "variantName": {
           "type": "string",
           "index": "no",
           "doc_values": false,
@@ -1501,28 +1603,23 @@
     "RSWK": {
       "properties": {
         "identifierGND": {
-          "type": "ref",
-          "ref_index": "gnd",
-          "ref_type": "gnd",
-          "ref_fields": [
-            "gndo:variantName",
-            "gndo:preferredNameForTheSubjectHeading",
-            "gndo:variantNameForTheSubjectHeading",
-            "gndo:preferredNameForThePerson",
-            "gndo:variantNameForThePerson",
-            "gndo:preferredNameForTheCorporateBody",
-            "gndo:variantNameForTheCorporateBody",
-            "gndo:preferredNameForTheConferenceOrEvent",
-            "gndo:variantNameForTheConferenceOrEvent",
-            "gndo:preferredNameForThePlaceOrGeographicName",
-            "gndo:variantNameForThePlaceOrGeographicName"
-          ],
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "dc.subject"
+          ]
+        },
+        "combinedLabel": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
           "copy_to": [
             "cql.allIndexes",
             "dc.subject"
           ]
         },
-        "combinedLabel": {
+        "preferredName": {
           "type": "string",
           "index": "no",
           "doc_values": false,
@@ -1693,6 +1790,15 @@
           ]
         },
         "subjectUnit": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "variantName": {
           "type": "string",
           "index": "no",
           "doc_values": false,
@@ -2603,22 +2709,17 @@
     "SubjectRSWK": {
       "properties": {
         "identifierGND": {
-          "type": "ref",
-          "ref_index": "gnd",
-          "ref_type": "gnd",
-          "ref_fields": [
-            "gndo:variantName",
-            "gndo:preferredNameForTheSubjectHeading",
-            "gndo:variantNameForTheSubjectHeading",
-            "gndo:preferredNameForThePerson",
-            "gndo:variantNameForThePerson",
-            "gndo:preferredNameForTheCorporateBody",
-            "gndo:variantNameForTheCorporateBody",
-            "gndo:preferredNameForTheConferenceOrEvent",
-            "gndo:variantNameForTheConferenceOrEvent",
-            "gndo:preferredNameForThePlaceOrGeographicName",
-            "gndo:variantNameForThePlaceOrGeographicName"
-          ],
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "dc.subject"
+          ]
+        },
+        "preferredName": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
           "copy_to": [
             "cql.allIndexes",
             "dc.subject"
@@ -2777,6 +2878,15 @@
           ]
         },
         "subjectUnit": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "variantName": {
           "type": "string",
           "index": "no",
           "doc_values": false,

@@ -32,10 +32,12 @@ do list(path: "$i.e", "var": "$j")
 end
 set_array("@person.$last.personIdentifier[]")
 set_array("@person.$last.identifierGND[]")
+set_array("@person.$last.variantName[]")
 do list(path: "$i.0", "var": "$j")
   if any_match("$j", "\\(DE-588\\).*")
     copy_field("$j", "@person.$last.personIdentifier[].$append")
     replace_all("$j", "^\\(DE-588\\)", "")
     copy_field("$j", "@person.$last.identifierGND[].$append")
+    call_macro("lobid-gnd", source: "$j", target: "@person.$last")
   end
 end

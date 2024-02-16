@@ -120,12 +120,15 @@
     "personName" : "Lange, Gisela",
     "personBio" : "1944-",
     "personIdentifier" : [ "(DE-588)137655029" ],
-    "identifierGND" : [ "137655029" ]
+    "identifierGND" : [ "137655029" ],
+    "preferredName" : "Lange, Gisela"
   }, {
     "personName" : "Henning, Friedrich-Wilhelm",
     "personBio" : "1931-2008",
     "personIdentifier" : [ "(DE-588)119333287" ],
-    "identifierGND" : [ "119333287" ]
+    "identifierGND" : [ "119333287" ],
+    "variantName" : [ "Henning, Friedrich Wilhelm", "Henning, Friedrich W.", "Henning, F.-W." ],
+    "preferredName" : "Henning, Friedrich-Wilhelm"
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Kleine Schriften der Universitäts- und Stadtbibliothek Köln",
@@ -172,6 +175,8 @@
     "subjectPersonName" : "Henning, Friedrich-Wilhelm",
     "combinedLabel" : "Henning, Friedrich-Wilhelm (1931-2008)",
     "subjectIdentifier" : [ "(DE-588)119333287", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=119333287", "http://viaf.org/viaf/sourceID/DNB|119333287" ],
-    "identifierGND" : [ "119333287" ]
+    "identifierGND" : [ "119333287" ],
+    "variantName" : [ "Henning, Friedrich Wilhelm", "Henning, Friedrich W.", "Henning, F.-W." ],
+    "preferredName" : "Henning, Friedrich-Wilhelm"
   } ]
 }

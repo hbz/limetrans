@@ -17,11 +17,13 @@ do list(path: "[17]1[01][012] ", "var": "$i")
   copy_field("$i.n", "CorporateBody[].$last.corporateBodyNumber[]")
   set_array("CorporateBody[].$last.corporateBodyIdentifier[]")
   set_array("CorporateBody[].$last.identifierGND[]")
+  set_array("CorporateBody[].$last.variantName[]")
   do list(path: "$i.0", "var": "$j")
     if any_match("$j", "\\(DE-588\\).*")
       copy_field("$j", "CorporateBody[].$last.corporateBodyIdentifier[].$append")
       replace_all("$j", "^\\(DE-588\\)", "")
       copy_field("$j", "CorporateBody[].$last.identifierGND[].$append")
+      call_macro("lobid-gnd", source: "$j", target: "CorporateBody[].$last")
     end
   end
 end

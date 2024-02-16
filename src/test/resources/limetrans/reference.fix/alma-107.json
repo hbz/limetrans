@@ -393,12 +393,16 @@
     "subjectGeoName" : "Rheinland-Pfalz",
     "combinedLabel" : "Rheinland-Pfalz",
     "subjectIdentifier" : [ "(DE-588)4049795-1", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=04049795X", "http://viaf.org/viaf/sourceID/DNB|04049795X" ],
-    "identifierGND" : [ "4049795-1" ]
+    "identifierGND" : [ "4049795-1" ],
+    "variantName" : [ "Rhineland-Palatinate", "Rhénanie-Palatinat", "Rheinland Pfalz", "Renania-Palatinado" ],
+    "preferredName" : "Rheinland-Pfalz"
   }, {
     "subjectTopicName" : [ "Gemeindeverwaltung" ],
     "combinedLabel" : "Gemeindeverwaltung",
     "subjectIdentifier" : [ "(DE-588)4019990-3", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040199908", "http://viaf.org/viaf/sourceID/DNB|040199908" ],
-    "identifierGND" : [ "4019990-3" ]
+    "identifierGND" : [ "4019990-3" ],
+    "variantName" : [ "Kommunalverwaltung", "Lokalverwaltung", "Kommunale Verwaltung", "Gemeinde / Verwaltung" ],
+    "preferredName" : "Gemeindeverwaltung"
   } ]
 }
 {
@@ -517,17 +521,22 @@
     "subjectGeoName" : "Sinzig",
     "combinedLabel" : "Sinzig",
     "subjectIdentifier" : [ "(DE-588)4055137-4", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040551377", "http://viaf.org/viaf/sourceID/DNB|040551377" ],
-    "identifierGND" : [ "4055137-4" ]
+    "identifierGND" : [ "4055137-4" ],
+    "variantName" : [ "Sinzig/Rhein", "Stadt Sinzig" ],
+    "preferredName" : "Sinzig"
   }, {
     "subjectTopicName" : [ "Mineralquelle" ],
     "combinedLabel" : "Mineralquelle",
     "subjectIdentifier" : [ "(DE-588)4170037-5", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041700376", "http://viaf.org/viaf/sourceID/DNB|041700376" ],
-    "identifierGND" : [ "4170037-5" ]
+    "identifierGND" : [ "4170037-5" ],
+    "variantName" : [ "Mineralquellen" ],
+    "preferredName" : "Mineralquelle"
   }, {
     "subjectTopicName" : [ "Mineralwasser" ],
     "combinedLabel" : "Mineralwasser",
     "subjectIdentifier" : [ "(DE-588)4114605-0", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041146050", "http://viaf.org/viaf/sourceID/DNB|041146050" ],
-    "identifierGND" : [ "4114605-0" ]
+    "identifierGND" : [ "4114605-0" ],
+    "preferredName" : "Mineralwasser"
   } ]
 }
 {
@@ -658,22 +667,30 @@
     "subjectCorporateBodyName" : "Peter-Joerres-Gymnasium Ahrweiler",
     "combinedLabel" : "Peter-Joerres-Gymnasium Ahrweiler",
     "subjectIdentifier" : [ "(DE-588)10065262-1", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=96952711X", "http://viaf.org/viaf/sourceID/DNB|96952711X" ],
-    "identifierGND" : [ "10065262-1" ]
+    "identifierGND" : [ "10065262-1" ],
+    "variantName" : [ "Staatliches Neusprachliches und Mathematisch-Naturwissenschaftliches Gymnasium Ahrweiler", "Peter Joerres Gymnasium", "Staatliches Peter-Joerres-Gymnasium Ahrweiler" ],
+    "preferredName" : "Peter-Joerres-Gymnasium Ahrweiler"
   }, {
     "subjectGeoName" : "Landkreis Ahrweiler",
     "combinedLabel" : "Landkreis Ahrweiler",
     "subjectIdentifier" : [ "(DE-588)4000827-7", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040008274", "http://viaf.org/viaf/sourceID/DNB|040008274" ],
-    "identifierGND" : [ "4000827-7" ]
+    "identifierGND" : [ "4000827-7" ],
+    "variantName" : [ "Landkreis Ahrweiler / Referat für Öffentlichkeitsarbeit", "Kreis Ahrweiler", "Ahrweiler (Kreis)" ],
+    "preferredName" : "Landkreis Ahrweiler"
   }, {
     "subjectTopicName" : [ "Romanik" ],
     "combinedLabel" : "Romanik",
     "subjectIdentifier" : [ "(DE-588)4050482-7", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040504824", "http://viaf.org/viaf/sourceID/DNB|040504824" ],
-    "identifierGND" : [ "4050482-7" ]
+    "identifierGND" : [ "4050482-7" ],
+    "variantName" : [ "Romanischer Stil", "Romanische Kunst" ],
+    "preferredName" : "Romanik"
   }, {
     "subjectTopicName" : [ "Baudenkmal" ],
     "combinedLabel" : "Baudenkmal",
     "subjectIdentifier" : [ "(DE-588)4004973-5", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040049736", "http://viaf.org/viaf/sourceID/DNB|040049736" ],
-    "identifierGND" : [ "4004973-5" ]
+    "identifierGND" : [ "4004973-5" ],
+    "variantName" : [ "Historisches Bauwerk", "Historischer Bau", "Baudenkmäler", "Historisches Gebäude" ],
+    "preferredName" : "Baudenkmal"
   } ]
 }
 {
@@ -830,7 +847,9 @@
   "CorporateBody" : [ {
     "corporateBodyName" : "Sinzig-Westum",
     "corporateBodyIdentifier" : [ "(DE-588)4682533-2" ],
-    "identifierGND" : [ "4682533-2" ]
+    "identifierGND" : [ "4682533-2" ],
+    "variantName" : [ "Westum (Sinzig-Westum)" ],
+    "preferredName" : "Sinzig-Westum"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Westum, ein Ort bei Sinzig"
@@ -939,7 +958,8 @@
     "personName" : "Frankenberg, Peter",
     "personBio" : "1947-",
     "personIdentifier" : [ "(DE-588)123876559" ],
-    "identifierGND" : [ "123876559" ]
+    "identifierGND" : [ "123876559" ],
+    "preferredName" : "Frankenberg, Peter"
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Geographische Rundschau",
@@ -961,7 +981,9 @@
     "subjectTopicName" : [ "Physische Geografie" ],
     "combinedLabel" : "Physische Geografie",
     "subjectIdentifier" : [ "(DE-588)4174629-6", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041746295", "http://viaf.org/viaf/sourceID/DNB|041746295" ],
-    "identifierGND" : [ "4174629-6" ]
+    "identifierGND" : [ "4174629-6" ],
+    "variantName" : [ "Physiographie", "Naturgeografie", "Physikalische Geographie", "Physische Geographie", "Physikalische Geografie", "Physiografie", "Naturgeographie", "Physiogeografie", "Physiogeographie" ],
+    "preferredName" : "Physische Geografie"
   } ]
 }
 {
@@ -1066,17 +1088,23 @@
     "subjectTopicName" : [ "Umweltbelastung" ],
     "combinedLabel" : "Umweltbelastung",
     "subjectIdentifier" : [ "(DE-588)4061619-8", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040616193", "http://viaf.org/viaf/sourceID/DNB|040616193" ],
-    "identifierGND" : [ "4061619-8" ]
+    "identifierGND" : [ "4061619-8" ],
+    "variantName" : [ "Umweltproblem", "Umwelt / Belastung", "Umweltbeeinträchtigung", "Ökologische Belastung" ],
+    "preferredName" : "Umweltbelastung"
   }, {
     "subjectTopicName" : [ "Umweltschaden" ],
     "combinedLabel" : "Umweltschaden",
     "subjectIdentifier" : [ "(DE-588)4117286-3", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=041172868", "http://viaf.org/viaf/sourceID/DNB|041172868" ],
-    "identifierGND" : [ "4117286-3" ]
+    "identifierGND" : [ "4117286-3" ],
+    "variantName" : [ "Zivilisationsschaden <Umweltschaden>", "Ökologischer Schaden", "Umweltzerstörung" ],
+    "preferredName" : "Umweltschaden"
   }, {
     "subjectTopicName" : [ "Umweltschutz" ],
     "combinedLabel" : "Umweltschutz",
     "subjectIdentifier" : [ "(DE-588)4061644-7", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040616444", "http://viaf.org/viaf/sourceID/DNB|040616444" ],
-    "identifierGND" : [ "4061644-7" ]
+    "identifierGND" : [ "4061644-7" ],
+    "variantName" : [ "Ökologie <Umweltschutz>", "Umweltvorsorge" ],
+    "preferredName" : "Umweltschutz"
   } ]
 }
 {
@@ -1963,16 +1991,22 @@
     "subjectTopicName" : [ "Naturwissenschaften" ],
     "combinedLabel" : "Naturwissenschaften",
     "subjectIdentifier" : [ "(DE-588)4041421-8", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040414213", "http://viaf.org/viaf/sourceID/DNB|040414213" ],
-    "identifierGND" : [ "4041421-8" ]
+    "identifierGND" : [ "4041421-8" ],
+    "variantName" : [ "Naturforschung", "Naturlehre", "Naturwissenschaft" ],
+    "preferredName" : "Naturwissenschaften"
   }, {
     "subjectTopicName" : [ "Wörterbuch" ],
     "combinedLabel" : "Wörterbuch",
     "subjectIdentifier" : [ "(DE-588)4066724-8", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040667243", "http://viaf.org/viaf/sourceID/DNB|040667243" ],
-    "identifierGND" : [ "4066724-8" ]
+    "identifierGND" : [ "4066724-8" ],
+    "variantName" : [ "Reallexikon <Formbegriff>", "Wörterbücher", "Sachwörterbuch <Formbegrif>", "Sprachwörterbuch", "Vokabularium", "Vokabular <Wörterbuch>" ],
+    "preferredName" : "Wörterbuch"
   }, {
     "subjectTopicName" : [ "Technik" ],
     "combinedLabel" : "Technik",
     "subjectIdentifier" : [ "(DE-588)4059205-4", "https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040592057", "http://viaf.org/viaf/sourceID/DNB|040592057" ],
-    "identifierGND" : [ "4059205-4" ]
+    "identifierGND" : [ "4059205-4" ],
+    "variantName" : [ "Industrielle Technik" ],
+    "preferredName" : "Technik"
   } ]
 }

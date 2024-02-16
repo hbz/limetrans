@@ -144,7 +144,8 @@
     "personName" : "Becker, Heinz",
     "personBio" : "1948-",
     "personIdentifier" : [ "(DE-588)1033629324" ],
-    "identifierGND" : [ "1033629324" ]
+    "identifierGND" : [ "1033629324" ],
+    "preferredName" : "Becker, Heinz"
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2017/02/07/file_10/7080672.pdf",
@@ -192,12 +193,15 @@
     "subjectTopicName" : [ "Milch" ],
     "combinedLabel" : "Milch",
     "subjectIdentifier" : [ "(DE-588)4039264-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040392643", "(uri) http://viaf.org/viaf/sourceID/DNB|040392643" ],
-    "identifierGND" : [ "4039264-8" ]
+    "identifierGND" : [ "4039264-8" ],
+    "variantName" : [ "Trinkmilch", "Konsummilch", "Kuhmilch" ],
+    "preferredName" : "Milch"
   }, {
     "subjectTopicName" : [ "Lebensmittelchemie" ],
     "combinedLabel" : "Lebensmittelchemie",
     "subjectIdentifier" : [ "(DE-588)4034873-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040348733", "(uri) http://viaf.org/viaf/sourceID/DNB|040348733" ],
-    "identifierGND" : [ "4034873-8" ]
+    "identifierGND" : [ "4034873-8" ],
+    "preferredName" : "Lebensmittelchemie"
   } ],
   "Subject" : [ {
     "subject" : "Milchhygiene"

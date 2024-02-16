@@ -14,6 +14,7 @@ do once("setup")
   put_filemap("$[external-maps]/alma-hbz-to-zdb.tsv.gz", "alma-zdb-to-hbz", sep_char: " ", key_column: "1", value_column: "0")
 
   hbz.limetrans.function.PutLmdbMap("$[external-maps]/alma-rvk-to-taxonomy.lmdb", "alma-rvk-to-taxonomy")
+  hbz.limetrans.function.PutLmdbMap("$[external-maps]/lobid-gnd.lmdb", "lobid-gnd")
 end
 
 hbz.limetrans.function.DropLocal()
@@ -547,11 +548,13 @@ do list(path: "111[012] .c", "var": "$i")
 end
 set_array("Conference.conferenceIdentifier[]")
 set_array("Conference.identifierGND[]")
+set_array("Conference.variantName[]")
 do list(path: "111[012] .0", "var": "$i")
   if any_match("$i", "\\(DE-588\\).*")
     copy_field("$i", "Conference.conferenceIdentifier[].$append")
     replace_all("$i", "^\\(DE-588\\)", "")
     copy_field("$i", "Conference.identifierGND[].$append")
+    call_macro("lobid-gnd", source: "$i", target: "Conference")
   end
 end
 set_array("Conference.conferenceUnit")
