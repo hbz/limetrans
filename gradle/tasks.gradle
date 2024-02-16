@@ -69,6 +69,7 @@ file('src/conf').eachDir {
     task(taskName('exec', [name]), type: JavaExec, group: 'Exec', description: 'Execute ' + main + '.') {
         classpath = sourceSets.main.runtimeClasspath
         mainClass = "${project.group}.${main}"
+        standardInput = System.in
     }
 }
 

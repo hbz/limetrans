@@ -9,27 +9,36 @@ import org.lmdbjava.Txn;
 import org.metafacture.io.FileCompression;
 import org.metafacture.metamorph.api.helpers.AbstractReadOnlyMap;
 
+import java.io.BufferedReader;
 import java.io.Closeable;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.io.UncheckedIOException;
+import java.nio.BufferOverflowException;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import java.util.Objects;
+import java.util.function.Function;
 
 public final class LMDB extends AbstractReadOnlyMap<String, String> implements AutoCloseable, Closeable {
 
-    private static final int SIZE = 10_000;
+    private static final int MAP_SIZE = 10_000; // * 1048576
+    private static final int MAX_VALUE_SIZE = 1024 * MAP_SIZE;
 
     private static final String EXTENSION = ".lmdb";
+    private static final String SEPARATOR = "\u001D";
 
     private static final Charset CHARSET = Charset.defaultCharset();
 
-    private final ByteBuffer mKey;
+    private final ByteBuffer mKeyBuffer;
+    private final ByteBuffer mValueBuffer;
     private final Dbi<ByteBuffer> mDbi;
     private final Env<ByteBuffer> mEnv;
     private final File mTempFile;
@@ -70,14 +79,16 @@ public final class LMDB extends AbstractReadOnlyMap<String, String> implements A
         }
 
         mEnv = Env.open(realFile,
-                readonly ? 0 : SIZE,
+                readonly ? 0 : MAP_SIZE,
                 EnvFlags.MDB_NOLOCK,
                 EnvFlags.MDB_NOSUBDIR,
                 readonly ? EnvFlags.MDB_RDONLY_ENV : null);
 
         mDbi = mEnv.openDbi((byte[]) null);
-        mKey = ByteBuffer.allocateDirect(mEnv.getMaxKeySize());
-        mTxn = mEnv.txnRead();
+        mTxn = readonly ? mEnv.txnRead() : mEnv.txnWrite();
+
+        mKeyBuffer = ByteBuffer.allocateDirect(mEnv.getMaxKeySize());
+        mValueBuffer = ByteBuffer.allocateDirect(MAX_VALUE_SIZE);
     }
 
     public boolean isReadOnly() {
@@ -103,6 +114,7 @@ public final class LMDB extends AbstractReadOnlyMap<String, String> implements A
     @Override
     public void close() {
         try {
+            mTxn.commit();
             mTxn.close();
         }
         finally {
@@ -125,11 +137,29 @@ public final class LMDB extends AbstractReadOnlyMap<String, String> implements A
             return aDefault;
         }
 
-        mKey.put(aKey.toString().getBytes(CHARSET)).flip();
-        final ByteBuffer val = mDbi.get(mTxn, mKey);
-        mKey.clear();
-
+        final ByteBuffer val = withBuffer(mKeyBuffer, aKey, k -> mDbi.get(mTxn, k));
         return val != null ? CHARSET.decode(val).toString() : aDefault;
+    }
+
+    public String putKV(final String aKey, final String aValue) {
+        try {
+            withBuffer(mKeyBuffer, aKey, k ->
+                    withBuffer(mValueBuffer, aValue, v ->
+                            mDbi.put(mTxn, k, v)));
+        }
+        catch (final BufferOverflowException e) {
+            throw new RuntimeException("Failed to add " + aKey + "=" + aValue, e);
+        }
+
+        return null;
+    }
+
+    private <T> T withBuffer(final ByteBuffer aBuffer, final Object aObject, final Function<ByteBuffer, T> aFunction) {
+        aBuffer.put(Objects.requireNonNull(aObject).toString().getBytes(CHARSET)).flip();
+        final T result = aFunction.apply(aBuffer);
+
+        aBuffer.clear();
+        return result;
     }
 
     public static void main(final String[] aArgs) {
@@ -148,7 +178,20 @@ public final class LMDB extends AbstractReadOnlyMap<String, String> implements A
                 }
             }
             else {
-                System.err.println("Writing not supported (yet).");
+                try (
+                    Reader reader = new InputStreamReader(System.in);
+                    BufferedReader bufferedReader = new BufferedReader(reader)
+                ) {
+                    bufferedReader.lines().forEach(l -> {
+                        final String[] parts = l.split(SEPARATOR, 2);
+                        if (parts.length == 2) {
+                            lmdb.putKV(parts[0], parts[1]);
+                        }
+                    });
+                }
+                catch (final IOException e) {
+                    throw new UncheckedIOException(e);
+                }
             }
         }
     }
