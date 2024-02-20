@@ -11,10 +11,10 @@ do once("setup")
   include("./maps/alma-type-monograph.fix")
   include("./maps/alma-type-periodical.fix")
 
-  put_filemap("$[external-maps]/alma-hbz-to-zdb.tsv.gz", "alma-zdb-to-hbz", sep_char: " ", key_column: "1", value_column: "0")
+  put_filemap("$[external-maps]/hbz-to-zdb.tsv.gz", "zdb-to-hbz", sep_char: " ", key_column: "1", value_column: "0")
 
-  hbz.limetrans.function.PutLmdbMap("$[external-maps]/alma-rvk-to-taxonomy.lmdb", "alma-rvk-to-taxonomy")
   hbz.limetrans.function.PutLmdbMap("$[external-maps]/lobid-gnd.lmdb", "lobid-gnd")
+  hbz.limetrans.function.PutLmdbMap("$[external-maps]/rvk.lmdb", "rvk")
 end
 
 hbz.limetrans.function.DropLocal()
@@ -225,7 +225,7 @@ do list(path: "035  .a", "var": "$i")
     replace_all("$i", "^\\(DE-600\\)", "")
     copy_field("$i", "IdentifierDNB[].$last.identifierDNB")
     copy_field("$i", "IdentifierZDB[].$last.identifierZDB")
-    lookup("$i", "alma-zdb-to-hbz", delete: "true")
+    lookup("$i", "zdb-to-hbz", delete: "true")
     if exists("$i")
       unless exists("@sisis_supplement")
         copy_field("$i", "@sisis_supplement")

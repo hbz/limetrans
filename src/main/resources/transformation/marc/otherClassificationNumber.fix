@@ -28,7 +28,7 @@ do list(path: "084  ", "var": "$i")
     set_array("SubjectRVK[].$last.subject[]")
     do list(path: "$i.a", "var": "$j")
       copy_field("$j", "@subjectRVK")
-      lookup("@subjectRVK", "alma-rvk-to-taxonomy", delete: "true")
+      lookup("@subjectRVK", "rvk", delete: "true")
       if exists("@subjectRVK")
         paste("@subjectRVK", "$j", "@subjectRVK")
       end
