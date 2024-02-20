@@ -1,13 +1,14 @@
 {
   "isil": "DE-468",
   "path": "src/test/resources/limetrans/input/",
+  "external-maps": "/data/jenkins/limetrans/maps",
   "alma": {
     "deletion-fallback": false,
     "deletion-literal": "DEL"
   },
   "input": {
     "queue": {
-      "path": "src/test/resources/limetrans/input/",
+      "path": "${path}",
       "pattern": "alma.xml.gz"
     }
   },

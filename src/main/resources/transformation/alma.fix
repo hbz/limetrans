@@ -11,8 +11,9 @@ do once("setup")
   include("./maps/alma-type-monograph.fix")
   include("./maps/alma-type-periodical.fix")
 
-  put_filemap("./maps/alma-hbz-to-zdb.tsv.gz", "alma-zdb-to-hbz", sep_char: " ", key_column: "1", value_column: "0")
-  hbz.limetrans.function.PutLmdbMap("./maps/alma-rvk-to-taxonomy.lmdb.gz", "alma-rvk-to-taxonomy")
+  put_filemap("$[external-maps]/alma-hbz-to-zdb.tsv.gz", "alma-zdb-to-hbz", sep_char: " ", key_column: "1", value_column: "0")
+
+  hbz.limetrans.function.PutLmdbMap("$[external-maps]/alma-rvk-to-taxonomy.lmdb", "alma-rvk-to-taxonomy")
 end
 
 hbz.limetrans.function.DropLocal()

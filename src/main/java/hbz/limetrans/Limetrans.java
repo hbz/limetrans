@@ -306,6 +306,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         mVars.put("network", networkCode);
         mVars.put("institution-code", institutionCode);
         mVars.put("id-suffix", almaSettings.get("id-suffix", ""));
+        mVars.put("external-maps", aSettings.get("external-maps", "./maps"));
 
         mMaps.put("institution-code-to-isil", INSTITUTION_CODE_TO_ISIL);
 
