@@ -89,7 +89,8 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
         final ElasticsearchContainer container = CONTAINER_CACHE.computeIfAbsent(CONTAINER_IMAGE, k -> {
             getLogger().info("Starting embedded server: {}", k);
 
-            final ElasticsearchContainer v = new ElasticsearchContainer(k).withPassword(CONTAINER_SECRET);
+            final ElasticsearchContainer v = new ElasticsearchContainer(k).withPassword(CONTAINER_SECRET).withCreateContainerCmdModifier(c ->
+                    c.withCmd("bash", "-c", "bin/elasticsearch-plugin install analysis-icu && docker-entrypoint.sh eswrapper"));
             v.start();
 
             return v;
