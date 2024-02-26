@@ -137,8 +137,18 @@ public final class LMDB extends AbstractReadOnlyMap<String, String> implements A
             return aDefault;
         }
 
-        final ByteBuffer val = withBuffer(mKeyBuffer, aKey, k -> mDbi.get(mTxn, k));
-        return val != null ? CHARSET.decode(val).toString() : aDefault;
+        final String key = aKey.toString();
+        if (key.isEmpty()) {
+            return aDefault;
+        }
+
+        try {
+            final ByteBuffer val = withBuffer(mKeyBuffer, key, k -> mDbi.get(mTxn, k));
+            return val != null ? CHARSET.decode(val).toString() : aDefault;
+        }
+        catch (final Dbi.BadValueSizeException e) {
+            throw new RuntimeException("Failed to get " + aKey, e);
+        }
     }
 
     public String putKV(final String aKey, final String aValue) {
@@ -154,8 +164,8 @@ public final class LMDB extends AbstractReadOnlyMap<String, String> implements A
         return null;
     }
 
-    private <T> T withBuffer(final ByteBuffer aBuffer, final Object aObject, final Function<ByteBuffer, T> aFunction) {
-        aBuffer.put(Objects.requireNonNull(aObject).toString().getBytes(CHARSET)).flip();
+    private <T> T withBuffer(final ByteBuffer aBuffer, final String aString, final Function<ByteBuffer, T> aFunction) {
+        aBuffer.put(Objects.requireNonNull(aString).getBytes(CHARSET)).flip();
         final T result = aFunction.apply(aBuffer);
 
         aBuffer.clear();
