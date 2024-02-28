@@ -1,6 +1,7 @@
 #! /bin/bash
 
-f=src/main/resources/transformation/maps/alma-rvk-to-taxonomy.lmdb
+d="${OUTPUT_DIRECTORY:-src/main/resources/transformation/maps}"
+f="$d/alma-rvk-to-taxonomy.lmdb"
 
 rm -f "$f"
 

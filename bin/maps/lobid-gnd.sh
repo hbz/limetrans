@@ -1,6 +1,7 @@
 #! /bin/bash
 
-f=src/main/resources/transformation/maps/lobid-gnd.lmdb
+d="${OUTPUT_DIRECTORY:-src/main/resources/transformation/maps}"
+f="$d/lobid-gnd.lmdb"
 
 rm -f "$f"
 
