@@ -973,20 +973,6 @@
         }
       }
     },
-    "Identifier": {
-      "properties": {
-        "identifierZDB": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false,
-          "copy_to": [
-            "bib.identifierAuthority=zdb",
-            "cql.allIndexes",
-            "dc.identifier"
-          ]
-        }
-      }
-    },
     "IdentifierAlma": {
       "properties": {
         "identifierMMS": {
