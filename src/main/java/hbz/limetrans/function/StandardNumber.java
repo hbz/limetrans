@@ -60,7 +60,7 @@ public class StandardNumber implements FixFunction {
 
         }),
 
-        ISSN(new AbstractType("\\b(\\d{4})-(\\d{3})([\\dxX])\\b") {
+        ISSN(new AbstractType("\\b(\\d{4})-?(\\d{3})([\\dxX])\\b") {
 
             @Override
             protected String normalize(final Matcher aMatcher) {
@@ -79,7 +79,7 @@ public class StandardNumber implements FixFunction {
 
         }),
 
-        ZDB(new AbstractType("^(\\d{2,10})-?([\\dxX])\\b") {
+        ZDB(new AbstractType("\\b(\\d{2,10})-?([\\dxX])\\b") {
 
             @Override
             protected String normalize(final Matcher aMatcher) {
