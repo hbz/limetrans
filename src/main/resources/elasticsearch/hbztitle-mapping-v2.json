@@ -19,10 +19,7 @@
         },
         "identifierAuthority=issn": {
           "type": "string",
-          "analyzer": "standardnumber",
-          "norms": {
-            "enabled": false
-          }
+          "index": "not_analyzed"
         },
         "identifierAuthority=mab": {
           "type": "string",
@@ -41,10 +38,7 @@
         },
         "identifierAuthority=zdb": {
           "type": "string",
-          "analyzer": "standardnumber",
-          "norms": {
-            "enabled": false
-          }
+          "index": "not_analyzed"
         },
         "nameCorporate": {
           "type": "string",
@@ -239,6 +233,16 @@
           ]
         },
         "identifierISSN": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "preferredISSN": {
           "type": "string",
           "index": "no",
           "doc_values": false,
@@ -1069,7 +1073,7 @@
             "dc.identifier"
           ]
         },
-        "identifierISSNNormalized": {
+        "preferredISSN": {
           "type": "string",
           "index": "no",
           "doc_values": false,
@@ -1117,16 +1121,6 @@
             "dc.identifier"
           ]
         },
-        "identifierISSNNormalized": {
-          "type": "string",
-          "index": "no",
-          "doc_values": false,
-          "copy_to": [
-            "bib.identifierAuthority=issn",
-            "cql.allIndexes",
-            "dc.identifier"
-          ]
-        },
         "identifierISSNOnline": {
           "type": "string",
           "index": "no",
@@ -1156,6 +1150,16 @@
             "cql.allIndexes",
             "dc.identifier"
           ]
+        },
+        "preferredISSN": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
         }
       }
     },
@@ -1166,6 +1170,17 @@
           "index": "no",
           "doc_values": false,
           "copy_to": [
+            "bib.identifierAuthority=zdb",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "preferredZDB": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=zdb",
             "cql.allIndexes",
             "dc.identifier"
           ]

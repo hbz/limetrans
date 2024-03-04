@@ -19,7 +19,8 @@
     "identifierHBZ" : "HT014786137"
   } ],
   "IdentifierZDB" : [ {
-    "identifierZDB" : "2241653-5"
+    "identifierZDB" : "2241653-5",
+    "preferredZDB" : "22416535"
   } ],
   "collection" : "DE-605",
   "AbbreviatedTitle" : [ {
@@ -54,7 +55,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0065-6755",
-    "identifierISSNNormalized" : "00656755"
+    "preferredISSN" : "00656755"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Instituto Nacional de Pesquisas da Amazônia",
@@ -98,6 +99,7 @@
     "relationshipInformation" : [ "Druckausg." ],
     "title" : "Amazoniana",
     "identifierISSN" : "0065-6755",
+    "preferredISSN" : "00656755",
     "controlNumber" : [ "(DE-605)HT005072303" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT005072303" ]
   } ],
@@ -161,7 +163,8 @@
     "identifierOCLC" : "734085474"
   } ],
   "IdentifierZDB" : [ {
-    "identifierZDB" : "2614647-2"
+    "identifierZDB" : "2614647-2",
+    "preferredZDB" : "26146472"
   } ],
   "collection" : "DE-605",
   "TitleAddendum" : {
@@ -1658,13 +1661,15 @@
     "languageSource" : "eng"
   } ],
   "IdentifierZDB" : [ {
-    "identifierZDB" : "2657415-9"
+    "identifierZDB" : "2657415-9",
+    "preferredZDB" : "26574159"
   }, {
-    "identifierZDB" : "2000386-9"
+    "identifierZDB" : "2000386-9",
+    "preferredZDB" : "20003869"
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "2046-6080",
-    "identifierISSNNormalized" : "20466080"
+    "preferredISSN" : "20466080"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Dialogues in Critical Management Studies"
@@ -1699,7 +1704,8 @@
     "identifierForLinkingEntry" : [ "(CKB)2550000000075840" ]
   } ],
   "AdditionalPhysicalFormEntry" : [ {
-    "identifierISSN" : "2046-6072"
+    "identifierISSN" : "2046-6072",
+    "preferredISSN" : "20466072"
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6149679320006444",
@@ -2256,7 +2262,8 @@
     "identifierOCLC" : "313795126"
   } ],
   "IdentifierZDB" : [ {
-    "identifierZDB" : "2000386-9"
+    "identifierZDB" : "2000386-9",
+    "preferredZDB" : "20003869"
   } ],
   "collection" : "DE-605",
   "TitleAddendum" : {
@@ -2299,10 +2306,10 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1439-9598",
-    "identifierISSNNormalized" : "14399598"
+    "preferredISSN" : "14399598"
   }, {
     "identifierISSN" : "1439-9598",
-    "identifierISSNNormalized" : "14399598"
+    "preferredISSN" : "14399598"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Gesellschaft Deutscher Chemiker",
@@ -2384,6 +2391,7 @@
     "relationshipInformation" : [ "Beil.:" ],
     "title" : "Chem & bio news",
     "identifierISSN" : "1932-0965",
+    "preferredISSN" : "19320965",
     "controlNumber" : [ "(DE-605)HT014825990" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT014825990" ]
   }, {
@@ -2401,6 +2409,7 @@
     "relationshipInformation" : [ "Online-Ausg." ],
     "title" : "Nachrichten aus der Chemie",
     "identifierISSN" : "1868-0054",
+    "preferredISSN" : "18680054",
     "controlNumber" : [ "(DE-605)HT015219020" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT015219020" ]
   } ],
@@ -2409,6 +2418,7 @@
     "relationshipInformation" : [ "Vorg.:" ],
     "title" : "Nachrichten aus Chemie, Technik und Laboratorium",
     "identifierISSN" : "0341-5163",
+    "preferredISSN" : "03415163",
     "controlNumber" : [ "(DE-605)HT000286865" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT000286865" ]
   }, {
@@ -4107,7 +4117,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "2151-8009",
-    "identifierISSNNormalized" : "21518009"
+    "preferredISSN" : "21518009"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Visual arts research"
@@ -4135,11 +4145,13 @@
     "note" : "Latest issue consulted: Vol. 32, no. 2 (2006) = Issue 63 (JSTOR, viewed Oct. 20, 2010)."
   } ],
   "AdditionalPhysicalFormEntry" : [ {
-    "identifierISSN" : "0736-0770"
+    "identifierISSN" : "0736-0770",
+    "preferredISSN" : "07360770"
   } ],
   "PrecedingEntry" : [ {
     "title" : "Review of Research in Visual Arts Education",
     "identifierISSN" : "2327-7874",
+    "preferredISSN" : "23277874",
     "controlNumber" : [ "(CKB)991042728725970", "(DLC)83642038", "(OCoLC)671260450" ],
     "identifierForLinkingEntry" : [ "(CKB)991042728725970", "(DLC)83642038", "(OCoLC)671260450" ]
   } ],
@@ -4220,11 +4232,12 @@
     "languageSource" : "ger"
   } ],
   "IdentifierZDB" : [ {
-    "identifierZDB" : "2045181-7"
+    "identifierZDB" : "2045181-7",
+    "preferredZDB" : "20451817"
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0934-9758",
-    "identifierISSNNormalized" : "09349758"
+    "preferredISSN" : "09349758"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Vakuum in der Praxis"
@@ -4247,13 +4260,16 @@
     "note" : "Description based on: Vol. 1, no. 2 (July 1989); title from cover."
   } ],
   "AdditionalPhysicalFormEntry" : [ {
-    "identifierISSN" : "0934-9758"
+    "identifierISSN" : "0934-9758",
+    "preferredISSN" : "09349758"
   }, {
-    "identifierISSN" : "1522-2454"
+    "identifierISSN" : "1522-2454",
+    "preferredISSN" : "15222454"
   } ],
   "SucceedingEntry" : [ {
     "title" : "Vakuum in Forschung und Praxis",
     "identifierISSN" : "1522-2454",
+    "preferredISSN" : "15222454",
     "controlNumber" : [ "(CKB)974740734049", "(DLC)2001262337" ],
     "identifierForLinkingEntry" : [ "(CKB)974740734049", "(DLC)2001262337" ]
   } ],
@@ -8124,11 +8140,11 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0081-3869",
-    "identifierISSNNormalized" : "00813869"
+    "preferredISSN" : "00813869"
   } ],
   "IdentifierSerial" : [ {
     "identifierISSN" : "1615-0430",
-    "identifierISSNNormalized" : "16150430"
+    "preferredISSN" : "16150430"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Springer tracts in modern physics"
@@ -8331,13 +8347,13 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0038-7355",
-    "identifierISSNNormalized" : "00387355"
+    "preferredISSN" : "00387355"
   }, {
     "identifierISSN" : "0361-0748",
-    "identifierISSNNormalized" : "03610748"
+    "preferredISSN" : "03610748"
   }, {
     "identifierISSN" : "0277-786X",
-    "identifierISSNNormalized" : "0277786X"
+    "preferredISSN" : "0277786X"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Society of Photo-optical Instrumentation Engineers",
@@ -8435,7 +8451,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0561-6271",
-    "identifierISSNNormalized" : "05616271"
+    "preferredISSN" : "05616271"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Hochschule für Verwaltungswissenschaften Speyer",
@@ -8543,7 +8559,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0506-6719",
-    "identifierISSNNormalized" : "05066719"
+    "preferredISSN" : "05066719"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Verband Deutscher Elektrotechniker",
@@ -8637,7 +8653,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0506-3132",
-    "identifierISSNNormalized" : "05063132"
+    "preferredISSN" : "05063132"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Verein Deutscher Ingenieure",
@@ -8736,7 +8752,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0506-3167",
-    "identifierISSNNormalized" : "05063167"
+    "preferredISSN" : "05063167"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Verein Deutscher Ingenieure",
@@ -8933,7 +8949,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0343-5164",
-    "identifierISSNNormalized" : "03435164"
+    "preferredISSN" : "03435164"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Kommission zum Schutze der Zivilbevölkerung",
@@ -9333,7 +9349,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0232-3516",
-    "identifierISSNNormalized" : "02323516"
+    "preferredISSN" : "02323516"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Biographien hervorragender Naturwissenschaftler, Techniker und Mediziner"
@@ -9437,7 +9453,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0373-0468",
-    "identifierISSNNormalized" : "03730468"
+    "preferredISSN" : "03730468"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Rheinische Friedrich-Wilhelms-Universität Bonn",
@@ -9631,7 +9647,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0341-3934",
-    "identifierISSNNormalized" : "03413934"
+    "preferredISSN" : "03413934"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Energietechnische Gesellschaft",
@@ -9746,7 +9762,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0344-0788",
-    "identifierISSNNormalized" : "03440788"
+    "preferredISSN" : "03440788"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Forschung Straßenbau und Straßenverkehrstechnik"
@@ -10116,7 +10132,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0066-5754",
-    "identifierISSNNormalized" : "00665754"
+    "preferredISSN" : "00665754"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Rheinisch-Westfälische Akademie der Wissenschaften",
@@ -10336,7 +10352,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0173-3397",
-    "identifierISSNNormalized" : "01733397"
+    "preferredISSN" : "01733397"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Bund der Steuerzahler",
@@ -10449,7 +10465,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0302-9743",
-    "identifierISSNNormalized" : "03029743"
+    "preferredISSN" : "03029743"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Lecture notes in computer science"
@@ -10904,7 +10920,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1044-0429",
-    "identifierISSNNormalized" : "10440429"
+    "preferredISSN" : "10440429"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "International Federation for Documentation",
@@ -11110,7 +11126,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0171-7197",
-    "identifierISSNNormalized" : "01717197"
+    "preferredISSN" : "01717197"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Deutsches Institut für Normung",
@@ -11517,7 +11533,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0342-801X",
-    "identifierISSNNormalized" : "0342801X"
+    "preferredISSN" : "0342801X"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Deutsches Institut für Normung",
@@ -12120,7 +12136,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0367-2492",
-    "identifierISSNNormalized" : "03672492"
+    "preferredISSN" : "03672492"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Nordrhein-Westfalen",
@@ -12405,7 +12421,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0721-7587",
-    "identifierISSNNormalized" : "07217587"
+    "preferredISSN" : "07217587"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Kölner Arbeiten zum Bibliotheks- und Dokumentationswesen"
@@ -12512,7 +12528,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0169-7218",
-    "identifierISSNNormalized" : "01697218"
+    "preferredISSN" : "01697218"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Handbooks in economics"
@@ -12982,7 +12998,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0173-6574",
-    "identifierISSNNormalized" : "01736574"
+    "preferredISSN" : "01736574"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Institut für Arbeitsmarkt- und Berufsforschung",
@@ -13166,7 +13182,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0505-2777",
-    "identifierISSNNormalized" : "05052777"
+    "preferredISSN" : "05052777"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Gesellschaft für Wirtschafts- und Sozialwissenschaften",
@@ -13261,7 +13277,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0342-0116",
-    "identifierISSNNormalized" : "03420116"
+    "preferredISSN" : "03420116"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Rheinischer Verein für Denkmalpflege und Landschaftsschutz",
@@ -13483,7 +13499,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0171-1342",
-    "identifierISSNNormalized" : "01711342"
+    "preferredISSN" : "01711342"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Deutsche Forschungs- und Versuchsanstalt für Luft- und Raumfahrt",
@@ -13745,7 +13761,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0172-3464",
-    "identifierISSNNormalized" : "01723464"
+    "preferredISSN" : "01723464"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Rheinisch-Westfälische Akademie der Wissenschaften",
@@ -13837,7 +13853,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0562-1488",
-    "identifierISSNNormalized" : "05621488"
+    "preferredISSN" : "05621488"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Strabag-Bau-Aktiengesellschaft",
@@ -13928,7 +13944,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0523-1043",
-    "identifierISSNNormalized" : "05231043"
+    "preferredISSN" : "05231043"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Betriebswirtschaftliche Studien"
@@ -14113,11 +14129,11 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0075-8450",
-    "identifierISSNNormalized" : "00758450"
+    "preferredISSN" : "00758450"
   } ],
   "IdentifierSerial" : [ {
     "identifierISSN" : "1616-6361",
-    "identifierISSNNormalized" : "16166361"
+    "preferredISSN" : "16166361"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Lecture notes in physics"
@@ -14208,7 +14224,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0300-287X",
-    "identifierISSNNormalized" : "0300287X"
+    "preferredISSN" : "0300287X"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Bibliothekspraxis"
@@ -14477,10 +14493,10 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0075-8442",
-    "identifierISSNNormalized" : "00758442"
+    "preferredISSN" : "00758442"
   }, {
     "identifierISSN" : "0075-8450",
-    "identifierISSNNormalized" : "00758450"
+    "preferredISSN" : "00758450"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Lecture notes in economics and mathematical systems"
@@ -14579,7 +14595,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0418-9639",
-    "identifierISSNNormalized" : "04189639"
+    "preferredISSN" : "04189639"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Deutscher Verband für Schweißtechnik",
@@ -14934,7 +14950,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0173-0487",
-    "identifierISSNNormalized" : "01730487"
+    "preferredISSN" : "01730487"
   }, {
     "identifierISSN" : "0173-0387"
   } ],
@@ -15197,7 +15213,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0514-6364",
-    "identifierISSNNormalized" : "05146364"
+    "preferredISSN" : "05146364"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Verein Deutscher Bibliothekare",
@@ -15397,7 +15413,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0083-7113",
-    "identifierISSNNormalized" : "00837113"
+    "preferredISSN" : "00837113"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Walter Eucken Institut",
@@ -15540,7 +15556,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0083-4564",
-    "identifierISSNNormalized" : "00834564"
+    "preferredISSN" : "00834564"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Untersuchungen zur deutschen Literaturgeschichte"
@@ -15889,7 +15905,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0523-1027",
-    "identifierISSNNormalized" : "05231027"
+    "preferredISSN" : "05231027"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Betriebswirtschaftliche Forschungsergebnisse"
@@ -16077,7 +16093,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0435-7604",
-    "identifierISSNNormalized" : "04357604"
+    "preferredISSN" : "04357604"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Bundeszentrale für Politische Bildung",
@@ -16694,7 +16710,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0172-2093",
-    "identifierISSNNormalized" : "01722093"
+    "preferredISSN" : "01722093"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Rheinisch-Westfälische Akademie der Wissenschaften",
@@ -16797,7 +16813,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0340-7225",
-    "identifierISSNNormalized" : "03407225"
+    "preferredISSN" : "03407225"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "UTB"
@@ -17020,7 +17036,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0340-4900",
-    "identifierISSNNormalized" : "03404900"
+    "preferredISSN" : "03404900"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Verein für Wasser-, Boden- und Lufthygiene",
@@ -17147,7 +17163,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0418-9183",
-    "identifierISSNNormalized" : "04189183"
+    "preferredISSN" : "04189183"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Deutsche Verkehrswissenschaftliche Gesellschaft",
@@ -17406,7 +17422,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0175-7105",
-    "identifierISSNNormalized" : "01757105"
+    "preferredISSN" : "01757105"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Bochumer Beiträge zur Unternehmungsführung und Unternehmensforschung"
@@ -17606,7 +17622,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0531-7339",
-    "identifierISSNNormalized" : "05317339"
+    "preferredISSN" : "05317339"
   } ],
   "SubseriesStatement" : [ {
     "title" : "Volks- und Betriebswirtschaft"
@@ -17906,7 +17922,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0179-2253",
-    "identifierISSNNormalized" : "01792253"
+    "preferredISSN" : "01792253"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "HWWA-Institut für Wirtschaftsforschung",
@@ -18109,7 +18125,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0455-0420",
-    "identifierISSNNormalized" : "04550420"
+    "preferredISSN" : "04550420"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Kieler Diskussionsbeiträge"
@@ -18421,7 +18437,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0341-0951",
-    "identifierISSNNormalized" : "03410951"
+    "preferredISSN" : "03410951"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Deutschland",
@@ -18827,7 +18843,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0175-372X",
-    "identifierISSNNormalized" : "0175372X"
+    "preferredISSN" : "0175372X"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Technische Universität Hannover",
@@ -18974,7 +18990,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0176-7739",
-    "identifierISSNNormalized" : "01767739"
+    "preferredISSN" : "01767739"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Deutsche Forschungs- und Versuchsanstalt für Luft- und Raumfahrt",
@@ -19092,7 +19108,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0170-8147",
-    "identifierISSNNormalized" : "01708147"
+    "preferredISSN" : "01708147"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Deutscher Verband für Wasserwirtschaft und Kulturbau",
@@ -19228,7 +19244,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0044-2372",
-    "identifierISSNNormalized" : "00442372"
+    "preferredISSN" : "00442372"
   } ],
   "SubseriesStatement" : [ {
     "title" : "Ergänzungsheft"
@@ -19413,7 +19429,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0540-6803",
-    "identifierISSNNormalized" : "05406803"
+    "preferredISSN" : "05406803"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Monographien des Bauwesens"
@@ -19866,7 +19882,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0179-0986",
-    "identifierISSNNormalized" : "01790986"
+    "preferredISSN" : "01790986"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "De Gruyter studies in mathematics"
@@ -20050,7 +20066,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0720-7336",
-    "identifierISSNNormalized" : "07207336"
+    "preferredISSN" : "07207336"
   } ],
   "SubseriesStatement" : [ {
     "title" : "Wirtschaftswissenschaft"
@@ -21213,7 +21229,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0342-6068",
-    "identifierISSNNormalized" : "03426068"
+    "preferredISSN" : "03426068"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Gewässerschutz, Wasser, Abwasser"
@@ -23943,13 +23959,13 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0932-3856",
-    "identifierISSNNormalized" : "09323856"
+    "preferredISSN" : "09323856"
   }, {
     "identifierISSN" : "0722-6810",
-    "identifierISSNNormalized" : "07226810"
+    "preferredISSN" : "07226810"
   }, {
     "identifierISSN" : "1433-2086",
-    "identifierISSNNormalized" : "14332086"
+    "preferredISSN" : "14332086"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Bundesanstalt für Arbeitsschutz",
@@ -24114,7 +24130,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0178-9546",
-    "identifierISSNNormalized" : "01789546"
+    "preferredISSN" : "01789546"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Verein Deutscher Ingenieure",
@@ -24240,10 +24256,10 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0532-2669",
-    "identifierISSNNormalized" : "05322669"
+    "preferredISSN" : "05322669"
   }, {
     "identifierISSN" : "0178-9511",
-    "identifierISSNNormalized" : "01789511"
+    "preferredISSN" : "01789511"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Verein Deutscher Ingenieure",
@@ -24351,7 +24367,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0893-3405",
-    "identifierISSNNormalized" : "08933405"
+    "preferredISSN" : "08933405"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "The Kluwer international series in engineering and computer science"
@@ -25020,7 +25036,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0340-7187",
-    "identifierISSNNormalized" : "03407187"
+    "preferredISSN" : "03407187"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Wirtschaftswissenschaftliches Seminar",
@@ -25097,7 +25113,8 @@
     "identifierOCLC" : "961370326"
   } ],
   "IdentifierZDB" : [ {
-    "identifierZDB" : "53390-7"
+    "identifierZDB" : "53390-7",
+    "preferredZDB" : "533907"
   } ],
   "collection" : "DE-605",
   "TitleAddendum" : {
@@ -25169,6 +25186,7 @@
     "relationshipInformation" : [ "Nr. zugl. einzelne Nr. von" ],
     "title" : "Architectural design",
     "identifierISSN" : "0003-8504",
+    "preferredISSN" : "00038504",
     "controlNumber" : [ "(DE-605)HT002183595" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT002183595" ]
   } ],
@@ -25322,7 +25340,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0724-6145",
-    "identifierISSNNormalized" : "07246145"
+    "preferredISSN" : "07246145"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Advances in biochemical engineering, biotechnology"
@@ -25702,7 +25720,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0175-7202",
-    "identifierISSNNormalized" : "01757202"
+    "preferredISSN" : "01757202"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Beiträge zur Kunstwissenschaft"
@@ -25789,11 +25807,11 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1064-3745",
-    "identifierISSNNormalized" : "10643745"
+    "preferredISSN" : "10643745"
   } ],
   "IdentifierSerial" : [ {
     "identifierISSN" : "1940-6029",
-    "identifierISSNNormalized" : "19406029"
+    "preferredISSN" : "19406029"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Methods in molecular biology"
@@ -26023,7 +26041,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0172-2727",
-    "identifierISSNNormalized" : "01722727"
+    "preferredISSN" : "01722727"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Arbeitskreis für Hausforschung",
@@ -26641,7 +26659,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0166-526X",
-    "identifierISSNNormalized" : "0166526X"
+    "preferredISSN" : "0166526X"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Wilson & Wilson's comprehensive analytical chemistry"
@@ -27178,7 +27196,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0724-2557",
-    "identifierISSNNormalized" : "07242557"
+    "preferredISSN" : "07242557"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Henkel-Kommanditgesellschaft auf Aktien",
@@ -27268,7 +27286,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0175-8055",
-    "identifierISSNNormalized" : "01758055"
+    "preferredISSN" : "01758055"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Schriftenreihe Studien zu Bildung und Wissenschaft"
@@ -28649,7 +28667,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0932-5352",
-    "identifierISSNNormalized" : "09325352"
+    "preferredISSN" : "09325352"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Beck'sche Reihe"
@@ -29476,7 +29494,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0171-760X",
-    "identifierISSNNormalized" : "0171760X"
+    "preferredISSN" : "0171760X"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Deutsches Institut für Normung",
@@ -30146,7 +30164,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0934-3695",
-    "identifierISSNNormalized" : "09343695"
+    "preferredISSN" : "09343695"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Studien zur Pädagogik, Andragogik und Gerontagogik"
@@ -30319,7 +30337,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0176-7739",
-    "identifierISSNNormalized" : "01767739"
+    "preferredISSN" : "01767739"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Deutsche Forschungsanstalt für Luft- und Raumfahrt",
@@ -37297,7 +37315,8 @@
     "identifierOCLC" : "961370667"
   } ],
   "IdentifierZDB" : [ {
-    "identifierZDB" : "1309161-X"
+    "identifierZDB" : "1309161-X",
+    "preferredZDB" : "1309161X"
   } ],
   "collection" : "DE-605",
   "TitleAddendum" : {
@@ -46813,7 +46832,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1612-7617",
-    "identifierISSNNormalized" : "16127617"
+    "preferredISSN" : "16127617"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Springer series on chemical sensors and biosensors"
@@ -58488,7 +58507,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
-    "identifierISSNNormalized" : "19347685"
+    "preferredISSN" : "19347685"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "International Monetary Fund",
@@ -58593,7 +58612,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
-    "identifierISSNNormalized" : "10185941"
+    "preferredISSN" : "10185941"
   } ],
   "Person" : [ {
     "personName" : "Chelliah, Raja J."
@@ -58694,7 +58713,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
-    "identifierISSNNormalized" : "10185941"
+    "preferredISSN" : "10185941"
   } ],
   "Person" : [ {
     "personName" : "Flanagan, Robert J."
@@ -58794,7 +58813,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
-    "identifierISSNNormalized" : "19347685"
+    "preferredISSN" : "19347685"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "International Monetary Fund"
@@ -58893,7 +58912,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
-    "identifierISSNNormalized" : "19347685"
+    "preferredISSN" : "19347685"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "International Monetary Fund"
@@ -58996,7 +59015,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
-    "identifierISSNNormalized" : "10185941"
+    "preferredISSN" : "10185941"
   } ],
   "Person" : [ {
     "personName" : "Chauvet, Marcelle"
@@ -59112,7 +59131,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
-    "identifierISSNNormalized" : "10185941"
+    "preferredISSN" : "10185941"
   } ],
   "Person" : [ {
     "personName" : "Tolo, Willa Boots J."
@@ -59212,7 +59231,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
-    "identifierISSNNormalized" : "19347685"
+    "preferredISSN" : "19347685"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "International Monetary Fund"
@@ -59308,7 +59327,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0538-8759",
-    "identifierISSNNormalized" : "05388759"
+    "preferredISSN" : "05388759"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "International Monetary Fund"
@@ -59409,7 +59428,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
-    "identifierISSNNormalized" : "10185941"
+    "preferredISSN" : "10185941"
   } ],
   "Person" : [ {
     "personName" : "Das, Udaibir S."
@@ -59512,7 +59531,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
-    "identifierISSNNormalized" : "10185941"
+    "preferredISSN" : "10185941"
   } ],
   "Person" : [ {
     "personName" : "Palomba, Geremia"
@@ -59616,7 +59635,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
-    "identifierISSNNormalized" : "10185941"
+    "preferredISSN" : "10185941"
   } ],
   "Person" : [ {
     "personName" : "Jones, Matthew T."
@@ -59720,7 +59739,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
-    "identifierISSNNormalized" : "10185941"
+    "preferredISSN" : "10185941"
   } ],
   "Person" : [ {
     "personName" : "Kamar, Bassem"
@@ -59828,7 +59847,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7456",
-    "identifierISSNNormalized" : "19347456"
+    "preferredISSN" : "19347456"
   } ],
   "Person" : [ {
     "personName" : "Woo, D."
@@ -59931,7 +59950,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
-    "identifierISSNNormalized" : "10185941"
+    "preferredISSN" : "10185941"
   } ],
   "Person" : [ {
     "personName" : "Peiris, Shanaka J."
@@ -60034,7 +60053,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
-    "identifierISSNNormalized" : "10185941"
+    "preferredISSN" : "10185941"
   } ],
   "Person" : [ {
     "personName" : "Saxena, Sweta Chaman"
@@ -60136,7 +60155,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
-    "identifierISSNNormalized" : "19347685"
+    "preferredISSN" : "19347685"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "International Monetary Fund"
@@ -60239,7 +60258,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1020-8402",
-    "identifierISSNNormalized" : "10208402"
+    "preferredISSN" : "10208402"
   } ],
   "Person" : [ {
     "personName" : "Stone, Mark R."
@@ -60336,7 +60355,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0074-7025",
-    "identifierISSNNormalized" : "00747025"
+    "preferredISSN" : "00747025"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "International Monetary Fund"
@@ -60435,7 +60454,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
-    "identifierISSNNormalized" : "19347685"
+    "preferredISSN" : "19347685"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "International Monetary Fund"
@@ -60534,7 +60553,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
-    "identifierISSNNormalized" : "19347685"
+    "preferredISSN" : "19347685"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "International Monetary Fund"
@@ -60633,7 +60652,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
-    "identifierISSNNormalized" : "19347685"
+    "preferredISSN" : "19347685"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "International Monetary Fund",
@@ -60737,7 +60756,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
-    "identifierISSNNormalized" : "19347685"
+    "preferredISSN" : "19347685"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "International Monetary Fund. Asia and Pacific Dept"
@@ -60993,7 +61012,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "2820-9893",
-    "identifierISSNNormalized" : "28209893"
+    "preferredISSN" : "28209893"
   } ],
   "TitleStatement" : [ {
     "titleMain" : "فصلنامه بورس اوراق بهادار"
@@ -61012,7 +61031,8 @@
     "abstract" : [ "Devoted to research and scholarship in Economics and Finance." ]
   },
   "AdditionalPhysicalFormEntry" : [ {
-    "identifierISSN" : "2228-5431"
+    "identifierISSN" : "2228-5431",
+    "preferredISSN" : "22285431"
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6190456970006444",
@@ -61872,6 +61892,7 @@
     "relationshipInformation" : [ "Print version:" ],
     "title" : "Sibirskiĭ matematicheskiĭ zhurnal",
     "identifierISSN" : "0037-4474",
+    "preferredISSN" : "00374474",
     "controlNumber" : [ "(DLC)   63047391", "(OCoLC)1716701" ],
     "identifierForLinkingEntry" : [ "(DLC)   63047391", "(OCoLC)1716701" ]
   } ],
@@ -61973,11 +61994,12 @@
     "languageSource" : "eng"
   } ],
   "IdentifierZDB" : [ {
-    "identifierZDB" : "2004068-4"
+    "identifierZDB" : "2004068-4",
+    "preferredZDB" : "20040684"
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1873-2747",
-    "identifierISSNNormalized" : "18732747"
+    "preferredISSN" : "18732747"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "International Behavioral Neuroscience Society"
@@ -62004,7 +62026,8 @@
     "note" : "Vol. 61, issue 6 (15 Oct. 2003), viewed October 8, 2003."
   } ],
   "AdditionalPhysicalFormEntry" : [ {
-    "identifierISSN" : "0361-9230"
+    "identifierISSN" : "0361-9230",
+    "preferredISSN" : "03619230"
   } ],
   "OnlineAccess" : [ {
     "publicnote" : "Volltext [Available from 1976 volume: 1 issue: 1 until 2002 volume: 59 issue: 3.]",
@@ -62331,7 +62354,8 @@
     "identifierOCLC" : "1368104929"
   } ],
   "IdentifierZDB" : [ {
-    "identifierZDB" : "2134354-8"
+    "identifierZDB" : "2134354-8",
+    "preferredZDB" : "21343548"
   } ],
   "collection" : "DE-605",
   "AbbreviatedTitle" : [ {
@@ -62384,10 +62408,10 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0016-3651",
-    "identifierISSNNormalized" : "00163651"
+    "preferredISSN" : "00163651"
   }, {
     "identifierISSN" : "0016-3651",
-    "identifierISSNNormalized" : "00163651"
+    "preferredISSN" : "00163651"
   } ],
   "SubseriesStatement" : [ {
     "title" : "Wasser + Abwasser : die technisch-wissenschaftliche Zeitschrift für Wassergewinnung und Wasserversorgung, Gewässerschutz, Wasserreinigung und Abwassertechnik"
@@ -62475,6 +62499,7 @@
     "note" : [ "2016-2019" ],
     "title" : "WaterSolutions",
     "identifierISSN" : "2509-2731",
+    "preferredISSN" : "25092731",
     "controlNumber" : [ "(DE-600)2857091-1" ],
     "identifierForLinkingEntry" : [ "(DE-600)2857091-1" ]
   } ],
@@ -62483,6 +62508,7 @@
     "relationshipInformation" : [ "Jubiläumsausg. 2009 ersch. zus. mit" ],
     "title" : "GWF / Gas, Erdgas. Gas, Erdgas",
     "identifierISSN" : "0016-4909",
+    "preferredISSN" : "00164909",
     "controlNumber" : [ "(DE-600)2134356-1" ],
     "identifierForLinkingEntry" : [ "(DE-600)2134356-1" ]
   }, {
@@ -62498,6 +62524,7 @@
     "relationshipInformation" : [ "Online-Ausg." ],
     "title" : "GWF / Wasser, Abwasser. Wasser, Abwasser",
     "identifierISSN" : "0016-4909",
+    "preferredISSN" : "00164909",
     "controlNumber" : [ "(DE-600)2376291-3" ],
     "identifierForLinkingEntry" : [ "(DE-600)2376291-3" ]
   } ],
@@ -62506,6 +62533,7 @@
     "relationshipInformation" : [ "Fortsetzung von" ],
     "title" : "Das Gas- und Wasserfach / Wasser, Abwasser. Ausgabe Wasser, Abwasser",
     "identifierISSN" : "0016-3651",
+    "preferredISSN" : "00163651",
     "controlNumber" : [ "(DE-600)512614-9" ],
     "identifierForLinkingEntry" : [ "(DE-600)512614-9" ]
   } ],
@@ -62752,7 +62780,8 @@
     "identifierOCLC" : "1368085745"
   } ],
   "IdentifierZDB" : [ {
-    "identifierZDB" : "2056710-8"
+    "identifierZDB" : "2056710-8",
+    "preferredZDB" : "20567108"
   } ],
   "collection" : "DE-605",
   "CreatorStatement" : {
@@ -62827,6 +62856,7 @@
     "relationshipInformation" : [ "DVD-Ausg." ],
     "title" : "Business periodicals collection",
     "identifierISSN" : "1543-2610",
+    "preferredISSN" : "15432610",
     "controlNumber" : [ "(DE-600)2446849-6" ],
     "identifierForLinkingEntry" : [ "(DE-600)2446849-6" ]
   } ],
@@ -62924,13 +62954,15 @@
     "languageSource" : "ukr"
   } ],
   "IdentifierZDB" : [ {
-    "identifierZDB" : "2269938-7"
+    "identifierZDB" : "2269938-7",
+    "preferredZDB" : "22699387"
   }, {
-    "identifierZDB" : "2714315-6"
+    "identifierZDB" : "2714315-6",
+    "preferredZDB" : "27143156"
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "2308-0019",
-    "identifierISSNNormalized" : "23080019"
+    "preferredISSN" : "23080019"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Donet͡sʹkyĭ derz͡havnyĭ universytet,"
@@ -62979,7 +63011,8 @@
     "note" : "Vypusk 36 (2018) (mova.dn.ua/, viewed October 17, 2019)."
   } ],
   "AdditionalPhysicalFormEntry" : [ {
-    "identifierISSN" : "1815-3070"
+    "identifierISSN" : "1815-3070",
+    "preferredISSN" : "18153070"
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6190456970006444",

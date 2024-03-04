@@ -485,8 +485,8 @@ set_array("IdentifierZDB[]")
 do list(path: "0167 ", "var": "$i")
   if any_equal("$i.2", "DE-600")
     add_field("IdentifierZDB[].$append.__dummy__", "")
-    hbz.limetrans.function.StandardNumber("ZDB", "$i.a")
     copy_field("$i.a", "IdentifierZDB[].$last.identifierZDB")
+    hbz.limetrans.function.StandardNumber("ZDB", "IdentifierZDB[].$last")
   end
 end
 uniq("IdentifierZDB[]")
@@ -511,11 +511,10 @@ end
 # MARC/029
 set_array("IdentifierSerial[]")
 do list(path: "029[ab]?", "var": "$i")
-  add_field("IdentifierSerial[].$append.__dummy__", "")
   do list(path: "$i.a", "var": "$j")
+    add_field("IdentifierSerial[].$append.__dummy__", "")
     copy_field("$j", "IdentifierSerial[].$last.identifierISSN")
-    hbz.limetrans.function.StandardNumber("ISSN", "$j")
-    move_field("$j", "IdentifierSerial[].$last.identifierISSNNormalized")
+    hbz.limetrans.function.StandardNumber("ISSN", "IdentifierSerial[].$last")
   end
 end
 

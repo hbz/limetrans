@@ -266,11 +266,12 @@
     "languageSource" : "eng"
   } ],
   "IdentifierZDB" : [ {
-    "identifierZDB" : "2004068-4"
+    "identifierZDB" : "2004068-4",
+    "preferredZDB" : "20040684"
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1873-2747",
-    "identifierISSNNormalized" : "18732747"
+    "preferredISSN" : "18732747"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "International Behavioral Neuroscience Society"
@@ -297,7 +298,8 @@
     "note" : "Vol. 61, issue 6 (15 Oct. 2003), viewed October 8, 2003."
   } ],
   "AdditionalPhysicalFormEntry" : [ {
-    "identifierISSN" : "0361-9230"
+    "identifierISSN" : "0361-9230",
+    "preferredISSN" : "03619230"
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6135705170006485",
@@ -643,7 +645,7 @@
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0096-1639",
-    "identifierISSNNormalized" : "00961639"
+    "preferredISSN" : "00961639"
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Institute of Radio Engineers",
