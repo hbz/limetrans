@@ -251,6 +251,16 @@
             "cql.allIndexes",
             "dc.identifier"
           ]
+        },
+        "variantISSN": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
         }
       }
     },
@@ -1082,6 +1092,16 @@
             "cql.allIndexes",
             "dc.identifier"
           ]
+        },
+        "variantISSN": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
         }
       }
     },
@@ -1160,6 +1180,16 @@
             "cql.allIndexes",
             "dc.identifier"
           ]
+        },
+        "variantISSN": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
         }
       }
     },
@@ -1176,6 +1206,16 @@
           ]
         },
         "preferredZDB": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=zdb",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "variantZDB": {
           "type": "string",
           "index": "no",
           "doc_values": false,

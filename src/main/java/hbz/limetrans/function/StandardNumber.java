@@ -5,6 +5,7 @@ import org.metafacture.metafix.Record;
 import org.metafacture.metafix.Value;
 import org.metafacture.metafix.api.FixFunction;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -15,6 +16,9 @@ public class StandardNumber implements FixFunction {
 
     private static final String IDENTIFIER_FORMAT = "identifier%s";
     private static final String PREFERRED_FORMAT = "preferred%s";
+    private static final String VARIANT_FORMAT = "variant%s[]";
+
+    private static final String HYPHEN = "-";
 
     private static final char LOWER = '0';
     private static final char UPPER = 'X';
@@ -67,13 +71,18 @@ public class StandardNumber implements FixFunction {
             return false;
         }
 
-        protected void put(final Value.Hash aHash, final Type aType, final String aValue, final String aPreferred) {
+        protected void put(final Value.Hash aHash, final Type aType, final String aValue, final String aPreferred, final String... aVariants) {
             if (aHash == null) {
                 return;
             }
 
             if (aPreferred != null) {
                 aHash.put(aType.preferredField(), new Value(aPreferred));
+            }
+
+            if (aVariants.length > 0) {
+                aHash.put(aType.variantField(), Value.newArray(a -> Arrays.stream(aVariants)
+                            .filter(n -> n != null && !n.equals(aValue)).distinct().forEach(n -> a.add(new Value(n)))));
             }
         }
 
@@ -94,7 +103,9 @@ public class StandardNumber implements FixFunction {
 
             @Override
             protected String normalize(final Matcher aMatcher, final Value.Hash aHash, final Type aType, final String aValue) {
-                final String number = aMatcher.group(1) + aMatcher.group(2);
+                final String number1 = aMatcher.group(1);
+                final String number2 = aMatcher.group(2);
+                final String number = number1 + number2;
                 final String checkDigit = aMatcher.group(3).toUpperCase(); // checkstyle-disable-line MagicNumber
 
                 if (!isValid(number, checkDigit)) {
@@ -102,7 +113,10 @@ public class StandardNumber implements FixFunction {
                 }
 
                 final String normalizedNumber = number + checkDigit;
-                put(aHash, aType, aValue, normalizedNumber);
+                final String variantNumber = number1 + HYPHEN + number2 + checkDigit;
+
+                put(aHash, aType, aValue, normalizedNumber, variantNumber);
+
                 return normalizedNumber;
             }
 
@@ -125,7 +139,10 @@ public class StandardNumber implements FixFunction {
                 }
 
                 final String normalizedNumber = number + checkDigit;
-                put(aHash, aType, aValue, normalizedNumber);
+                final String variantNumber = number + HYPHEN + checkDigit;
+
+                put(aHash, aType, aValue, normalizedNumber, variantNumber);
+
                 return normalizedNumber;
             }
 
@@ -152,6 +169,10 @@ public class StandardNumber implements FixFunction {
 
         public String preferredField() {
             return fieldName(PREFERRED_FORMAT);
+        }
+
+        public String variantField() {
+            return fieldName(VARIANT_FORMAT);
         }
 
         private String fieldName(final String aFormat) {
