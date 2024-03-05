@@ -1,9 +1,12 @@
 #! /bin/bash
 
-d="${OUTPUT_DIRECTORY:-src/main/resources/transformation/maps}"
-f="$d/lobid-gnd.lmdb"
+set -e
 
-rm -f "$f"
+d="${OUTPUT_DIRECTORY:-src/main/resources/transformation/maps}"
+p="$d/lobid-gnd"
+
+e=lmdb
+f="$p.$$.$e"
 
 curl --no-progress-meter\
   'https://lobid.org/gnd/search?q=*&format=jsonl' |\
@@ -18,3 +21,5 @@ curl --no-progress-meter\
     }
   ' |\
   ./gradlew execLmdb --args="$f"
+
+[ -s "$f" ] && mv "$f" "$p.$e"

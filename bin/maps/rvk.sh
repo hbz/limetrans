@@ -1,9 +1,12 @@
 #! /bin/bash
 
-d="${OUTPUT_DIRECTORY:-src/main/resources/transformation/maps}"
-f="$d/rvk.lmdb"
+set -e
 
-rm -f "$f"
+d="${OUTPUT_DIRECTORY:-src/main/resources/transformation/maps}"
+p="$d/rvk"
+
+e=lmdb
+f="$p.$$.$e"
 
 curl --no-progress-meter\
   'https://rvk.uni-regensburg.de/downloads/FachA-Z_2023_2.csv.gz' |\
@@ -28,3 +31,5 @@ curl --no-progress-meter\
     }
   ' |\
   ./gradlew execLmdb --args="$f"
+
+[ -s "$f" ] && mv "$f" "$p.$e"
