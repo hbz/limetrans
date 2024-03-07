@@ -12,10 +12,7 @@
       "properties": {
         "identifierAuthority=isbn": {
           "type": "string",
-          "analyzer": "standardnumber",
-          "norms": {
-            "enabled": false
-          }
+          "index": "not_analyzed"
         },
         "identifierAuthority=issn": {
           "type": "string",
@@ -242,12 +239,32 @@
             "dc.identifier"
           ]
         },
+        "preferredISBN": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
         "preferredISSN": {
           "type": "string",
           "index": "no",
           "doc_values": false,
           "copy_to": [
             "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "variantISBN": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
             "cql.allIndexes",
             "dc.identifier"
           ]
@@ -1054,12 +1071,52 @@
             "cql.allIndexes",
             "dc.identifier"
           ]
+        },
+        "preferredISBN": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "variantISBN": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
         }
       }
     },
     "IdentifierISBNParallel": {
       "properties": {
         "identifierISBN": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "preferredISBN": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "variantISBN": {
           "type": "string",
           "index": "no",
           "doc_values": false,

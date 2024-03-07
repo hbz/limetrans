@@ -747,7 +747,9 @@ set_array("IdentifierISBNParallel[]")
 do list(path: "9640s", "var": "$i")
   if any_equal("$i.V", "086a")
     add_field("IdentifierISBNParallel[].$append.__dummy__", "")
-    copy_field("$i.[abcdehnpqs]", "IdentifierISBNParallel[].$last.identifierISBN[]")
+    set_array("IdentifierISBNParallel[].$last.identifierISBN[]")
+    copy_field("$i.[abcdehnpqs]", "IdentifierISBNParallel[].$last.identifierISBN[].$append")
+    hbz.limetrans.function.StandardNumber("ISBN", "IdentifierISBNParallel[].$last", source: "IdentifierISBNParallel[].$last.identifierISBN[].1")
   end
 end
 

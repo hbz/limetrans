@@ -685,7 +685,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3527307656", "Gb. : ca. CHF 442.00 (freier Pr.), ca. EUR 299.00 (freier Pr.)" ]
+    "identifierISBN" : [ "3527307656", "Gb. : ca. CHF 442.00 (freier Pr.), ca. EUR 299.00 (freier Pr.)" ],
+    "preferredISBN" : "9783527307654",
+    "variantISBN" : [ "978-3-527-30765-4", "3-527-30765-6" ]
   } ],
   "Person" : [ {
     "personName" : "Kahl, Günter",
@@ -785,9 +787,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9780980623826  ‡q (ebook)" ]
+    "identifierISBN" : [ "9780980623826  ‡q (ebook)" ],
+    "preferredISBN" : "9780980623826",
+    "variantISBN" : [ "978-0-9806238-2-6" ]
   }, {
-    "identifierISBN" : [ "0980623820 ‡q (ebook)" ]
+    "identifierISBN" : [ "0980623820 ‡q (ebook)" ],
+    "preferredISBN" : "9780980623826",
+    "variantISBN" : [ "978-0-9806238-2-6", "0980623820", "0-9806238-2-0" ]
   }, {
     "invalidISBN" : [ "9780980623895" ]
   } ],
@@ -828,7 +834,9 @@
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Print version:" ],
-    "identifierISBN" : [ "9780980623895" ]
+    "identifierISBN" : [ "9780980623895" ],
+    "preferredISBN" : "9780980623895",
+    "variantISBN" : [ "978-0-9806238-9-5" ]
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Reprints collection (University of Adelaide Press).",
@@ -930,9 +938,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3-0356-1246-3" ]
+    "identifierISBN" : [ "3-0356-1246-3" ],
+    "preferredISBN" : "9783035612462",
+    "variantISBN" : [ "978-3-0356-1246-2", "3035612463" ]
   }, {
-    "identifierISBN" : [ "3-0356-1160-2" ]
+    "identifierISBN" : [ "3-0356-1160-2" ],
+    "preferredISBN" : "9783035611601",
+    "variantISBN" : [ "978-3-0356-1160-1", "3035611602" ]
   } ],
   "Person" : [ {
     "personName" : "Hegger, Manfred",
@@ -962,7 +974,9 @@
     "note" : "Description based on print version record."
   } ],
   "AdditionalPhysicalFormEntry" : [ {
-    "identifierISBN" : [ "3-0356-0302-2" ]
+    "identifierISBN" : [ "3-0356-0302-2" ],
+    "preferredISBN" : "9783035603026",
+    "variantISBN" : [ "978-3-0356-0302-6", "3035603022" ]
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Basics (Basel, Switzerland)"
@@ -1264,9 +1278,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9780841226128" ]
+    "identifierISBN" : [ "9780841226128" ],
+    "preferredISBN" : "9780841226128",
+    "variantISBN" : [ "978-0-8412-2612-8" ]
   }, {
-    "identifierISBN" : [ "0841226121", "(hbk.) No price" ]
+    "identifierISBN" : [ "0841226121", "(hbk.) No price" ],
+    "preferredISBN" : "9780841226128",
+    "variantISBN" : [ "978-0-8412-2612-8", "0-8412-2612-1" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Rapid characterization of microorganisms by mass spectrometry"
@@ -1386,7 +1404,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3598113099", "Gb. : DM 248.00" ]
+    "identifierISBN" : [ "3598113099", "Gb. : DM 248.00" ],
+    "preferredISBN" : "9783598113093",
+    "variantISBN" : [ "978-3-598-11309-3", "3-598-11309-9" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Grundlagen der praktischen Information und Dokumentation"
@@ -1690,16 +1710,22 @@
   "SubSeriesEntry" : [ {
     "title" : "Feminists and Queer Theorists Debate the Future of Critical Management Studies",
     "identifierISBN" : [ "1-78635-497-7" ],
+    "preferredISBN" : "9781786354976",
+    "variantISBN" : [ "978-1-78635-497-6", "1786354977" ],
     "controlNumber" : [ "(CKB)3710000001184621" ],
     "identifierForLinkingEntry" : [ "(CKB)3710000001184621" ]
   }, {
     "title" : "Getting Things Done",
     "identifierISBN" : [ "1-78190-955-5" ],
+    "preferredISBN" : "9781781909553",
+    "variantISBN" : [ "978-1-78190-955-3", "1781909555" ],
     "controlNumber" : [ "(CKB)2670000000421965" ],
     "identifierForLinkingEntry" : [ "(CKB)2670000000421965" ]
   }, {
     "title" : "The Third Sector",
     "identifierISBN" : [ "1-283-35481-0" ],
+    "preferredISBN" : "9781283354813",
+    "variantISBN" : [ "978-1-283-35481-3", "1283354810" ],
     "controlNumber" : [ "(CKB)2550000000075840" ],
     "identifierForLinkingEntry" : [ "(CKB)2550000000075840" ]
   } ],
@@ -1927,9 +1953,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783035612974", "PDF" ]
+    "identifierISBN" : [ "9783035612974", "PDF" ],
+    "preferredISBN" : "9783035612974",
+    "variantISBN" : [ "978-3-0356-1297-4" ]
   }, {
-    "identifierISBN" : [ "9783035613162", "EPUB" ]
+    "identifierISBN" : [ "9783035613162", "EPUB" ],
+    "preferredISBN" : "9783035613162",
+    "variantISBN" : [ "978-3-0356-1316-2" ]
   } ],
   "IdentifierDOI" : [ {
     "standardNumber" : "10.1515/9783035612974"
@@ -1981,6 +2011,7 @@
     "note" : [ "Druck-Ausgabe" ],
     "title" : "Wasserkreislauf im Gebäude",
     "identifierISBN" : [ "978-3-0356-0565-5" ],
+    "preferredISBN" : "9783035605655",
     "controlNumber" : [ "(DE-605)HT018577901" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT018577901" ]
   } ],
@@ -2105,7 +2136,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783811101180", "Broschur" ]
+    "identifierISBN" : [ "9783811101180", "Broschur" ],
+    "preferredISBN" : "9783811101180",
+    "variantISBN" : [ "978-3-8111-0118-0" ]
   } ],
   "Person" : [ {
     "personName" : "Derler, Petra",
@@ -2706,7 +2739,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3-662-62078-2" ]
+    "identifierISBN" : [ "3-662-62078-2" ],
+    "preferredISBN" : "9783662620786",
+    "variantISBN" : [ "978-3-662-62078-6", "3662620782" ]
   } ],
   "IdentifierDOI" : [ {
     "standardNumber" : "10.1007/978-3-662-62078-6"
@@ -2742,7 +2777,9 @@
     "abstract" : [ "Das vorliegende Buch gibt eine kompakte Einführung in die Grundlagen der Festkörperphysik, wobei der Schwerpunkt auf den elektrischen und magnetischen Materialeigenschaften liegt. Leser werden nicht nur die kompakte und anschauliche Herangehensweise schätzen, sondern auch die kurzen Abschnitte über die Forschungsgeschichte der Festkörperphysik, die mit wegweisenden Forschern wie Max Planck, Albert Einstein aber auch Heike Kamerlingh Onnes, Eugene Wigner oder Frederick Seitz verbunden ist. Diese helfen dabei, die Entwicklung der Festkörperphysik und ihre unterschiedlichen Theorien und Modelle verstehen und einordnen zu können. Das Buch richtet sich an Studierende der Physik, Ingenieurwissenschaften und Materialwissenschaften bis zum Bachelor. Es kann durch seine anschaulichen Erklärungen und seinen didaktischen Ansatz auch als motivierende Vorstufe und unterstützendes Begleitwerk beim Studium anspruchsvollerer Lehrbücher der Festkörperphysik benutzt werden. Die dritte Auflage enthält eine Reihe von Erweiterungen, besonders im Kapitel über topologische Materialien. Aus dem Inhalt - Kristallgitter - Theorie der Halbleiter, Leiter und Supraleiter - Metalle - Drude-Lorentz-Modell - BCS-Theorie - Hochtemperatur-Supraleiter - Nanostrukturen: Quantenpunkte - Fehler im Kristallgitter Der Autor Rudolf Huebener studierte Physik und Mathematik an der Universität Marburg sowie an den Technischen Hochschulen München und Darmstadt. 1958 promovierte er in Marburg im Fach Experimentalphysik. Nach einer Tätigkeit im Forschungszentrum Karlsruhe und einem Forschungsinstitut bei Albany, New York, USA arbeitete er für 12 Jahre am Argonne National Laboratory bei Chicago, Illinois. 1974 übernahm er einen Lehrstuhl für Experimentalphysik an der Universität Tübingen. Dort lehrte und forschte er bis zu seiner Emeritierung im Jahr 1999." ]
   },
   "AdditionalPhysicalFormEntry" : [ {
-    "identifierISBN" : [ "3-662-62077-4" ]
+    "identifierISBN" : [ "3-662-62077-4" ],
+    "preferredISBN" : "9783662620779",
+    "variantISBN" : [ "978-3-662-62077-9", "3662620774" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6149677220006444",
@@ -2841,9 +2878,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3893199993", "Pp. : DM 38.00, sfr 39.00, S 296.00" ]
+    "identifierISBN" : [ "3893199993", "Pp. : DM 38.00, sfr 39.00, S 296.00" ],
+    "preferredISBN" : "9783893199990",
+    "variantISBN" : [ "978-3-89319-999-0", "3-89319-999-3" ]
   }, {
-    "identifierISBN" : [ "3893199004" ]
+    "identifierISBN" : [ "3893199004" ],
+    "preferredISBN" : "9783893199006",
+    "variantISBN" : [ "978-3-89319-900-6", "3-89319-900-4" ]
   } ],
   "Person" : [ {
     "personName" : "McLuhan, Marshall",
@@ -2973,9 +3014,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783959821889", ": EUR 19.95 (DE), EUR 20.60 (AT)" ]
+    "identifierISBN" : [ "9783959821889", ": EUR 19.95 (DE), EUR 20.60 (AT)" ],
+    "preferredISBN" : "9783959821889",
+    "variantISBN" : [ "978-3-95982-188-9" ]
   }, {
-    "identifierISBN" : [ "3959821883" ]
+    "identifierISBN" : [ "3959821883" ],
+    "preferredISBN" : "9783959821889",
+    "variantISBN" : [ "978-3-95982-188-9", "3-95982-188-3" ]
   } ],
   "Person" : [ {
     "personName" : "Gieseke, Wolfram",
@@ -3140,7 +3185,9 @@
     "languageSource" : "und"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9780876640395" ]
+    "identifierISBN" : [ "9780876640395" ],
+    "preferredISBN" : "9780876640395",
+    "variantISBN" : [ "978-0-87664-039-5" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "American National Standards Institute",
@@ -3254,7 +3301,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783527413720", "EUR109.00" ]
+    "identifierISBN" : [ "9783527413720", "EUR109.00" ],
+    "preferredISBN" : "9783527413720",
+    "variantISBN" : [ "978-3-527-41372-0" ]
   } ],
   "Person" : [ {
     "personName" : "Lüttgens, Günter",
@@ -3619,7 +3668,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9781484261231" ]
+    "identifierISBN" : [ "9781484261231" ],
+    "preferredISBN" : "9781484261231",
+    "variantISBN" : [ "978-1-4842-6123-1" ]
   } ],
   "Person" : [ {
     "personName" : "Paluszek, Michael"
@@ -3650,7 +3701,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Online-Ausgabe" ],
-    "identifierISBN" : [ "9781484261248" ]
+    "identifierISBN" : [ "9781484261248" ],
+    "preferredISBN" : "9781484261248",
+    "variantISBN" : [ "978-1-4842-6124-8" ]
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Computer software"
@@ -3803,11 +3856,17 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783960886020", "epdf" ]
+    "identifierISBN" : [ "9783960886020", "epdf" ],
+    "preferredISBN" : "9783960886020",
+    "variantISBN" : [ "978-3-96088-602-0" ]
   }, {
-    "identifierISBN" : [ "9783960886037", "epub" ]
+    "identifierISBN" : [ "9783960886037", "epub" ],
+    "preferredISBN" : "9783960886037",
+    "variantISBN" : [ "978-3-96088-603-7" ]
   }, {
-    "identifierISBN" : [ "9783960886044", "mobi" ]
+    "identifierISBN" : [ "9783960886044", "mobi" ],
+    "preferredISBN" : "9783960886044",
+    "variantISBN" : [ "978-3-96088-604-4" ]
   } ],
   "Person" : [ {
     "personName" : "Spichale, Kai",
@@ -3844,7 +3903,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : [ "9783864906114" ]
+    "identifierISBN" : [ "9783864906114" ],
+    "preferredISBN" : "9783864906114",
+    "variantISBN" : [ "978-3-86490-611-4" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6187069990006444",
@@ -3954,7 +4015,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783662616512" ]
+    "identifierISBN" : [ "9783662616512" ],
+    "preferredISBN" : "9783662616512",
+    "variantISBN" : [ "978-3-662-61651-2" ]
   } ],
   "IdentifierDOI" : [ {
     "standardNumber" : "10.1007/978-3-662-61651-2"
@@ -3987,7 +4050,9 @@
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Printed edition" ],
-    "identifierISBN" : [ "9783662616505" ]
+    "identifierISBN" : [ "9783662616505" ],
+    "preferredISBN" : "9783662616505",
+    "variantISBN" : [ "978-3-662-61650-5" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://doi.org/10.1007/978-3-662-61651-2",
@@ -4704,7 +4769,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3766704265" ]
+    "identifierISBN" : [ "3766704265" ],
+    "preferredISBN" : "9783766704269",
+    "variantISBN" : [ "978-3-7667-0426-9", "3-7667-0426-5" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Alte Bestecke"
@@ -4819,7 +4886,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "351807511X" ]
+    "identifierISBN" : [ "351807511X" ],
+    "preferredISBN" : "9783518075111",
+    "variantISBN" : [ "978-3-518-07511-1", "3-518-07511-X" ]
   } ],
   "Person" : [ {
     "personName" : "Dilly, Heinrich",
@@ -4969,11 +5038,17 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3781212327" ]
+    "identifierISBN" : [ "3781212327" ],
+    "preferredISBN" : "9783781212329",
+    "variantISBN" : [ "978-3-7812-1232-9", "3-7812-1232-7" ]
   }, {
-    "identifierISBN" : [ "3781213927" ]
+    "identifierISBN" : [ "3781213927" ],
+    "preferredISBN" : "9783781213920",
+    "variantISBN" : [ "978-3-7812-1392-0", "3-7812-1392-7" ]
   }, {
-    "identifierISBN" : [ "9783781215665" ]
+    "identifierISBN" : [ "9783781215665" ],
+    "preferredISBN" : "9783781215665",
+    "variantISBN" : [ "978-3-7812-1566-5" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Europäische Wirtschaftsgemeinschaft",
@@ -5108,7 +5183,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3763016643" ]
+    "identifierISBN" : [ "3763016643" ],
+    "preferredISBN" : "9783763016648",
+    "variantISBN" : [ "978-3-7630-1664-8", "3-7630-1664-3" ]
   } ],
   "Person" : [ {
     "personName" : "Gombrich, Ernst H.",
@@ -5478,7 +5555,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3534067355" ]
+    "identifierISBN" : [ "3534067355" ],
+    "preferredISBN" : "9783534067350",
+    "variantISBN" : [ "978-3-534-06735-0", "3-534-06735-5" ]
   } ],
   "IdentifierSheetMusic" : [ {
     "standardNumber" : "6735-5"
@@ -5709,7 +5788,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3534074874" ]
+    "identifierISBN" : [ "3534074874" ],
+    "preferredISBN" : "9783534074877",
+    "variantISBN" : [ "978-3-534-07487-7", "3-534-07487-4" ]
   } ],
   "Person" : [ {
     "personName" : "Pick, Heinz"
@@ -5810,9 +5891,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3211816496" ]
+    "identifierISBN" : [ "3211816496" ],
+    "preferredISBN" : "9783211816493",
+    "variantISBN" : [ "978-3-211-81649-3", "3-211-81649-6" ]
   }, {
-    "identifierISBN" : [ "0387816496" ]
+    "identifierISBN" : [ "0387816496" ],
+    "preferredISBN" : "9780387816494",
+    "variantISBN" : [ "978-0-387-81649-4", "0-387-81649-6" ]
   } ],
   "Person" : [ {
     "personName" : "Pilny, Franz"
@@ -6026,7 +6111,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9061820103" ]
+    "identifierISBN" : [ "9061820103" ],
+    "preferredISBN" : "9789061820109",
+    "variantISBN" : [ "978-90-6182-010-9", "90-6182-010-3" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Das Reisephoto"
@@ -6138,7 +6225,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3882190809" ]
+    "identifierISBN" : [ "3882190809" ],
+    "preferredISBN" : "9783882190809",
+    "variantISBN" : [ "978-3-88219-080-9", "3-88219-080-9" ]
   } ],
   "Person" : [ {
     "personName" : "Sedlmayr, Hans",
@@ -6256,7 +6345,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3451164116" ]
+    "identifierISBN" : [ "3451164116" ],
+    "preferredISBN" : "9783451164118",
+    "variantISBN" : [ "978-3-451-16411-8", "3-451-16411-6" ]
   } ],
   "Person" : [ {
     "personName" : "Sehon, Hannes"
@@ -6369,7 +6460,9 @@
     "languageSource" : "###"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3763016902" ]
+    "identifierISBN" : [ "3763016902" ],
+    "preferredISBN" : "9783763016907",
+    "variantISBN" : [ "978-3-7630-1690-7", "3-7630-1690-2" ]
   } ],
   "Person" : [ {
     "personName" : "Bihalji-Merin, Oto",
@@ -6608,7 +6701,9 @@
     "languageSource" : "###"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3770101286" ]
+    "identifierISBN" : [ "3770101286" ],
+    "preferredISBN" : "9783770101283",
+    "variantISBN" : [ "978-3-7701-0128-3", "3-7701-0128-6" ]
   } ],
   "Person" : [ {
     "personName" : "Seitz, William C."
@@ -6733,7 +6828,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3770111877" ]
+    "identifierISBN" : [ "3770111877" ],
+    "preferredISBN" : "9783770111879",
+    "variantISBN" : [ "978-3-7701-1187-9", "3-7701-1187-7" ]
   } ],
   "Person" : [ {
     "personName" : "Selle, Gert",
@@ -6866,7 +6963,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3886800393" ]
+    "identifierISBN" : [ "3886800393" ],
+    "preferredISBN" : "9783886800391",
+    "variantISBN" : [ "978-3-88680-039-1", "3-88680-039-3" ]
   } ],
   "Person" : [ {
     "personName" : "Weber, Annemarie",
@@ -7153,7 +7252,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3765802735" ]
+    "identifierISBN" : [ "3765802735" ],
+    "preferredISBN" : "9783765802737",
+    "variantISBN" : [ "978-3-7658-0273-7", "3-7658-0273-5" ]
   } ],
   "Person" : [ {
     "personName" : "Weber-Kellermann, Ingeborg",
@@ -7378,7 +7479,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3770103548" ]
+    "identifierISBN" : [ "3770103548" ],
+    "preferredISBN" : "9783770103546",
+    "variantISBN" : [ "978-3-7701-0354-6", "3-7701-0354-8" ]
   } ],
   "Person" : [ {
     "personName" : "Wedewer, Rolf",
@@ -7516,7 +7619,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3760803849" ]
+    "identifierISBN" : [ "3760803849" ],
+    "preferredISBN" : "9783760803845",
+    "variantISBN" : [ "978-3-7608-0384-5", "3-7608-0384-9" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Der Weg der Physik"
@@ -7643,7 +7748,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3884350005" ]
+    "identifierISBN" : [ "3884350005" ],
+    "preferredISBN" : "9783884350003",
+    "variantISBN" : [ "978-3-88435-000-3", "3-88435-000-5" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Kunstbibliothek Berlin mit Museum für Architektur, Modebild und Grafik-Design",
@@ -7795,7 +7902,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3570086321" ]
+    "identifierISBN" : [ "3570086321" ],
+    "preferredISBN" : "9783570086322",
+    "variantISBN" : [ "978-3-570-08632-2", "3-570-08632-1" ]
   } ],
   "Person" : [ {
     "personName" : "Schumpp, Mechthild"
@@ -20534,7 +20643,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783486579550" ]
+    "identifierISBN" : [ "9783486579550" ],
+    "preferredISBN" : "9783486579550",
+    "variantISBN" : [ "978-3-486-57955-0" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Technische Mechanik"
@@ -20777,7 +20888,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "351857826X" ]
+    "identifierISBN" : [ "351857826X" ],
+    "preferredISBN" : "9783518578261",
+    "variantISBN" : [ "978-3-518-57826-1", "3-518-57826-X" ]
   } ],
   "Person" : [ {
     "personName" : "Adorno, Theodor W.",
@@ -21595,7 +21708,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783658210694", "Springer-Ausgabe 2018" ]
+    "identifierISBN" : [ "9783658210694", "Springer-Ausgabe 2018" ],
+    "preferredISBN" : "9783658210694",
+    "variantISBN" : [ "978-3-658-21069-4" ]
   } ],
   "Person" : [ {
     "personName" : "Luhmann, Niklas",
@@ -21706,7 +21821,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3411008326" ]
+    "identifierISBN" : [ "3411008326" ],
+    "preferredISBN" : "9783411008322",
+    "variantISBN" : [ "978-3-411-00832-2", "3-411-00832-6" ]
   } ],
   "Person" : [ {
     "personName" : "Martensen, Erich",
@@ -22033,7 +22150,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3320006118" ]
+    "identifierISBN" : [ "3320006118" ],
+    "preferredISBN" : "9783320006112",
+    "variantISBN" : [ "978-3-320-00611-2", "3-320-00611-8" ]
   } ],
   "Person" : [ {
     "personName" : "Marx, Karl",
@@ -24225,9 +24344,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3406303897" ]
+    "identifierISBN" : [ "3406303897" ],
+    "preferredISBN" : "9783406303890",
+    "variantISBN" : [ "978-3-406-30389-0", "3-406-30389-7" ]
   }, {
-    "identifierISBN" : [ "3406527116" ]
+    "identifierISBN" : [ "3406527116" ],
+    "preferredISBN" : "9783406527111",
+    "variantISBN" : [ "978-3-406-52711-1", "3-406-52711-6" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Doppelbesteuerung"
@@ -24364,9 +24487,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3540139729" ]
+    "identifierISBN" : [ "3540139729" ],
+    "preferredISBN" : "9783540139720",
+    "variantISBN" : [ "978-3-540-13972-0", "3-540-13972-9" ]
   }, {
-    "identifierISBN" : [ "0387139729" ]
+    "identifierISBN" : [ "0387139729" ],
+    "preferredISBN" : "9780387139722",
+    "variantISBN" : [ "978-0-387-13972-2", "0-387-13972-9" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Tieftemperaturtechnik"
@@ -26353,7 +26480,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "0444417354", "(Series)" ]
+    "identifierISBN" : [ "0444417354", "(Series)" ],
+    "preferredISBN" : "9780444417350",
+    "variantISBN" : [ "978-0-444-41735-0", "0-444-41735-4" ]
   }, {
     "invalidISBN" : [ "0444417355" ]
   } ],
@@ -26692,7 +26821,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3921640482" ]
+    "identifierISBN" : [ "3921640482" ],
+    "preferredISBN" : "9783921640487",
+    "variantISBN" : [ "978-3-921640-48-7", "3-921640-48-2" ]
   } ],
   "Person" : [ {
     "personName" : "Frutiger, Adrian",
@@ -27134,7 +27265,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3110098121", "Kunststoff : DM 168.00" ]
+    "identifierISBN" : [ "3110098121", "Kunststoff : DM 168.00" ],
+    "preferredISBN" : "9783110098129",
+    "variantISBN" : [ "978-3-11-009812-9", "3-11-009812-1" ]
   } ],
   "Person" : [ {
     "personName" : "Höll, Karl",
@@ -27282,13 +27415,21 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3504221143" ]
+    "identifierISBN" : [ "3504221143" ],
+    "preferredISBN" : "9783504221140",
+    "variantISBN" : [ "978-3-504-22114-0", "3-504-22114-3" ]
   }, {
-    "identifierISBN" : [ "3504221151" ]
+    "identifierISBN" : [ "3504221151" ],
+    "preferredISBN" : "9783504221157",
+    "variantISBN" : [ "978-3-504-22115-7", "3-504-22115-1" ]
   }, {
-    "identifierISBN" : [ "3504221186" ]
+    "identifierISBN" : [ "3504221186" ],
+    "preferredISBN" : "9783504221188",
+    "variantISBN" : [ "978-3-504-22118-8", "3-504-22118-6" ]
   }, {
-    "identifierISBN" : [ "3504221194" ]
+    "identifierISBN" : [ "3504221194" ],
+    "preferredISBN" : "9783504221195",
+    "variantISBN" : [ "978-3-504-22119-5", "3-504-22119-4" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Abgabenordnung, Finanzgerichtsordnung"
@@ -27432,7 +27573,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3527258175" ]
+    "identifierISBN" : [ "3527258175" ],
+    "preferredISBN" : "9783527258178",
+    "variantISBN" : [ "978-3-527-25817-8", "3-527-25817-5" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Metalle in der Umwelt"
@@ -27570,7 +27713,9 @@
     "languageSource" : "###"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3446136592" ]
+    "identifierISBN" : [ "3446136592" ],
+    "preferredISBN" : "9783446136595",
+    "variantISBN" : [ "978-3-446-13659-5", "3-446-13659-2" ]
   } ],
   "Person" : [ {
     "personName" : "Charchut, Werner"
@@ -27708,7 +27853,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3766707167" ]
+    "identifierISBN" : [ "3766707167" ],
+    "preferredISBN" : "9783766707161",
+    "variantISBN" : [ "978-3-7667-0716-1", "3-7667-0716-7" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Brunnen im Garten"
@@ -28416,9 +28563,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3486209493" ]
+    "identifierISBN" : [ "3486209493" ],
+    "preferredISBN" : "9783486209495",
+    "variantISBN" : [ "978-3-486-20949-5", "3-486-20949-3" ]
   }, {
-    "identifierISBN" : [ "9783486589894" ]
+    "identifierISBN" : [ "9783486589894" ],
+    "preferredISBN" : "9783486589894",
+    "variantISBN" : [ "978-3-486-58989-4" ]
   } ],
   "Person" : [ {
     "personName" : "Feynman, Richard P.",
@@ -30619,7 +30770,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3782804597", "brosch. : ca. DM 58.00" ]
+    "identifierISBN" : [ "3782804597", "brosch. : ca. DM 58.00" ],
+    "preferredISBN" : "9783782804592",
+    "variantISBN" : [ "978-3-7828-0459-2", "3-7828-0459-7" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Architekturgeschichte des 20. Jahrhunderts von 1950 bis zur Gegenwart"
@@ -31135,7 +31288,9 @@
     "languageSource" : "###"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3446147071", "Pp. : DM 39.80" ]
+    "identifierISBN" : [ "3446147071", "Pp. : DM 39.80" ],
+    "preferredISBN" : "9783446147072",
+    "variantISBN" : [ "978-3-446-14707-2", "3-446-14707-1" ]
   } ],
   "Person" : [ {
     "personName" : "Berger, John",
@@ -31674,7 +31829,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3598109776", "Gb. : DM 336.00" ]
+    "identifierISBN" : [ "3598109776", "Gb. : DM 336.00" ],
+    "preferredISBN" : "9783598109775",
+    "variantISBN" : [ "978-3-598-10977-5", "3-598-10977-6" ]
   } ],
   "Person" : [ {
     "personName" : "Wennrich, Peter"
@@ -32127,7 +32284,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3406358101" ]
+    "identifierISBN" : [ "3406358101" ],
+    "preferredISBN" : "9783406358104",
+    "variantISBN" : [ "978-3-406-35810-4", "3-406-35810-1" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Münchener Kommentar zum Bürgerlichen Gesetzbuch"
@@ -33082,9 +33241,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "0333527224" ]
+    "identifierISBN" : [ "0333527224" ],
+    "preferredISBN" : "9780333527221",
+    "variantISBN" : [ "978-0-333-52722-1", "0-333-52722-4" ]
   }, {
-    "identifierISBN" : [ "156159041X" ]
+    "identifierISBN" : [ "156159041X" ],
+    "preferredISBN" : "9781561590414",
+    "variantISBN" : [ "978-1-56159-041-4", "1-56159-041-X" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "The new Palgrave dictionary of money & finance"
@@ -33306,9 +33469,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3926984570", "Pp. : DM 298.00" ]
+    "identifierISBN" : [ "3926984570", "Pp. : DM 298.00" ],
+    "preferredISBN" : "9783926984579",
+    "variantISBN" : [ "978-3-926984-57-9", "3-926984-57-0" ]
   }, {
-    "identifierISBN" : [ "9783896735751" ]
+    "identifierISBN" : [ "9783896735751" ],
+    "preferredISBN" : "9783896735751",
+    "variantISBN" : [ "978-3-89673-575-1" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Rationalisierungs-Kuratorium der Deutschen Wirtschaft",
@@ -34007,7 +34174,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3893223800", "Pp. in Schuber : DM 158.00" ]
+    "identifierISBN" : [ "3893223800", "Pp. in Schuber : DM 158.00" ],
+    "preferredISBN" : "9783893223800",
+    "variantISBN" : [ "978-3-89322-380-0", "3-89322-380-0" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Documenta",
@@ -35005,7 +35174,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "0122269306" ]
+    "identifierISBN" : [ "0122269306" ],
+    "preferredISBN" : "9780122269301",
+    "variantISBN" : [ "978-0-12-226930-1", "0-12-226930-6" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Encyclopedia of physical science and technology"
@@ -35628,7 +35799,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3446170367", "DM 98.00" ]
+    "identifierISBN" : [ "3446170367", "DM 98.00" ],
+    "preferredISBN" : "9783446170360",
+    "variantISBN" : [ "978-3-446-17036-0", "3-446-17036-7" ]
   } ],
   "Person" : [ {
     "personName" : "Naumann, Helmut"
@@ -36144,7 +36317,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3519020947" ]
+    "identifierISBN" : [ "3519020947" ],
+    "preferredISBN" : "9783519020943",
+    "variantISBN" : [ "978-3-519-02094-3", "3-519-02094-7" ]
   } ],
   "Person" : [ {
     "personName" : "Louis, Alfred Karl",
@@ -36298,7 +36473,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3892714649", "brosch. : DM 72.00, sfr 73.80, S 562.00" ]
+    "identifierISBN" : [ "3892714649", "brosch. : DM 72.00, sfr 73.80, S 562.00" ],
+    "preferredISBN" : "9783892714644",
+    "variantISBN" : [ "978-3-89271-464-4", "3-89271-464-9" ]
   } ],
   "Person" : [ {
     "personName" : "Götz, Klaus",
@@ -36436,7 +36613,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3805907842" ]
+    "identifierISBN" : [ "3805907842" ],
+    "preferredISBN" : "9783805907842",
+    "variantISBN" : [ "978-3-8059-0784-2", "3-8059-0784-2" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "J. von Staudingers Kommentar zum Bürgerlichen Gesetzbuch"
@@ -36562,7 +36741,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3540574379", "pbk : DM 45.00" ]
+    "identifierISBN" : [ "3540574379", "pbk : DM 45.00" ],
+    "preferredISBN" : "9783540574378",
+    "variantISBN" : [ "978-3-540-57437-8", "3-540-57437-9" ]
   } ],
   "Person" : [ {
     "personName" : "Tichy, Gunther",
@@ -36694,7 +36875,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "0201529831" ]
+    "identifierISBN" : [ "0201529831" ],
+    "preferredISBN" : "9780201529838",
+    "variantISBN" : [ "978-0-201-52983-8", "0-201-52983-1" ]
   } ],
   "Person" : [ {
     "personName" : "Lamport, Leslie",
@@ -36943,7 +37126,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3791007181", "Gb. in Kassette : ca. DM 395.00" ]
+    "identifierISBN" : [ "3791007181", "Gb. in Kassette : ca. DM 395.00" ],
+    "preferredISBN" : "9783791007182",
+    "variantISBN" : [ "978-3-7910-0718-2", "3-7910-0718-1" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Handbuch Markenartikel"
@@ -37065,7 +37250,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3409186980", "brosch. : DM 68.00" ]
+    "identifierISBN" : [ "3409186980", "brosch. : DM 68.00" ],
+    "preferredISBN" : "9783409186988",
+    "variantISBN" : [ "978-3-409-18698-8", "3-409-18698-0" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Öko-Audits nach der Verordnung der EU"
@@ -37351,7 +37538,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3540574263", "Pp. : EUR 139.00" ]
+    "identifierISBN" : [ "3540574263", "Pp. : EUR 139.00" ],
+    "preferredISBN" : "9783540574262",
+    "variantISBN" : [ "978-3-540-57426-2", "3-540-57426-3" ]
   } ],
   "Person" : [ {
     "personName" : "Cammerer, Walter F.",
@@ -37489,9 +37678,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3446175318", "Pp. : DM 168.00, sfr 167.00, S 1311.00" ]
+    "identifierISBN" : [ "3446175318", "Pp. : DM 168.00, sfr 167.00, S 1311.00" ],
+    "preferredISBN" : "9783446175310",
+    "variantISBN" : [ "978-3-446-17531-0", "3-446-17531-8" ]
   }, {
-    "identifierISBN" : [ "1569901481" ]
+    "identifierISBN" : [ "1569901481" ],
+    "preferredISBN" : "9781569901489",
+    "variantISBN" : [ "978-1-56990-148-9", "1-56990-148-1" ]
   } ],
   "Person" : [ {
     "personName" : "Goetzel, Claus G.",
@@ -37699,7 +37892,9 @@
     "languageSource" : "###"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3928737007" ]
+    "identifierISBN" : [ "3928737007" ],
+    "preferredISBN" : "9783928737005",
+    "variantISBN" : [ "978-3-928737-00-5", "3-928737-00-7" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Praxissammlung Holzbau"
@@ -37962,7 +38157,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3765331007" ]
+    "identifierISBN" : [ "3765331007" ],
+    "preferredISBN" : "9783765331008",
+    "variantISBN" : [ "978-3-7653-3100-8", "3-7653-3100-7" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Brockhaus - die Enzyklopädie"
@@ -38077,7 +38274,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3527294325" ]
+    "identifierISBN" : [ "3527294325" ],
+    "preferredISBN" : "9783527294329",
+    "variantISBN" : [ "978-3-527-29432-9", "3-527-29432-5" ]
   } ],
   "SubseriesStatement" : [ {
     "title" : "Sensor technology, applications, markets"
@@ -38181,9 +38380,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "318401584X", "Pp. : DM 88.00" ]
+    "identifierISBN" : [ "318401584X", "Pp. : DM 88.00" ],
+    "preferredISBN" : "9783184015848",
+    "variantISBN" : [ "978-3-18-401584-8", "3-18-401584-X" ]
   }, {
-    "identifierISBN" : [ "3540623701" ]
+    "identifierISBN" : [ "3540623701" ],
+    "preferredISBN" : "9783540623700",
+    "variantISBN" : [ "978-3-540-62370-0", "3-540-62370-1" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Schweißtechnik"
@@ -38406,7 +38609,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3598113099", "Gb. : DM 248.00" ]
+    "identifierISBN" : [ "3598113099", "Gb. : DM 248.00" ],
+    "preferredISBN" : "9783598113093",
+    "variantISBN" : [ "978-3-598-11309-3", "3-598-11309-9" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Grundlagen der praktischen Information und Dokumentation"
@@ -38872,7 +39077,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3540635130" ]
+    "identifierISBN" : [ "3540635130" ],
+    "preferredISBN" : "9783540635130",
+    "variantISBN" : [ "978-3-540-63513-0", "3-540-63513-0" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Fachgespräch Autonome Mobile Systeme",
@@ -39085,7 +39292,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3486241532", ": DM 96.00" ]
+    "identifierISBN" : [ "3486241532", ": DM 96.00" ],
+    "preferredISBN" : "9783486241532",
+    "variantISBN" : [ "978-3-486-24153-2", "3-486-24153-2" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "SPS-Standard: IEC 1131"
@@ -39461,7 +39670,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "340644007X", "kart." ]
+    "identifierISBN" : [ "340644007X", "kart." ],
+    "preferredISBN" : "9783406440076",
+    "variantISBN" : [ "978-3-406-44007-6", "3-406-44007-X" ]
   } ],
   "Person" : [ {
     "personName" : "Leopold, Günter"
@@ -39632,7 +39843,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "354064833X", "pbk : DM 49.90" ]
+    "identifierISBN" : [ "354064833X", "pbk : DM 49.90" ],
+    "preferredISBN" : "9783540648338",
+    "variantISBN" : [ "978-3-540-64833-8", "3-540-64833-X" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Geldtheorie und Geldpolitik in Europa"
@@ -39837,7 +40050,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3827411513", "(Set mit CD-ROM)" ]
+    "identifierISBN" : [ "3827411513", "(Set mit CD-ROM)" ],
+    "preferredISBN" : "9783827411518",
+    "variantISBN" : [ "978-3-8274-1151-8", "3-8274-1151-3" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Lexikon der Chemie"
@@ -39948,7 +40163,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3800623447", "hbk : DM 98.00" ]
+    "identifierISBN" : [ "3800623447", "hbk : DM 98.00" ],
+    "preferredISBN" : "9783800623440",
+    "variantISBN" : [ "978-3-8006-2344-0", "3-8006-2344-7" ]
   } ],
   "Person" : [ {
     "personName" : "Staehle, Wolfgang H.",
@@ -40109,7 +40326,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3136859022", "kart. : DM 49.80" ]
+    "identifierISBN" : [ "3136859022", "kart. : DM 49.80" ],
+    "preferredISBN" : "9783136859025",
+    "variantISBN" : [ "978-3-13-685902-5", "3-13-685902-2" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Mikrobiologisch-biochemisches Praktikum"
@@ -40269,7 +40488,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3540652469", "Gb. : DM 79.00, sfr 72.00, S 577.00, ffr 298.00, L 30.50, lire 87250.00, ¤ 45.15" ]
+    "identifierISBN" : [ "3540652469", "Gb. : DM 79.00, sfr 72.00, S 577.00, ffr 298.00, L 30.50, lire 87250.00, ¤ 45.15" ],
+    "preferredISBN" : "9783540652465",
+    "variantISBN" : [ "978-3-540-65246-5", "3-540-65246-9" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Business-knowledge-Management"
@@ -40428,7 +40649,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3446210989", "brosch. : DM 69.00" ]
+    "identifierISBN" : [ "3446210989", "brosch. : DM 69.00" ],
+    "preferredISBN" : "9783446210981",
+    "variantISBN" : [ "978-3-446-21098-1", "3-446-21098-9" ]
   } ],
   "Person" : [ {
     "personName" : "Krause, Jörg",
@@ -40577,7 +40800,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3932588312", "hbk : DM 98.00" ]
+    "identifierISBN" : [ "3932588312", "hbk : DM 98.00" ],
+    "preferredISBN" : "9783932588310",
+    "variantISBN" : [ "978-3-932588-31-0", "3-932588-31-2" ]
   } ],
   "Person" : [ {
     "personName" : "Merz, Michael",
@@ -40718,7 +40943,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3801712338" ]
+    "identifierISBN" : [ "3801712338" ],
+    "preferredISBN" : "9783801712334",
+    "variantISBN" : [ "978-3-8017-1233-4", "3-8017-1233-8" ]
   } ],
   "Person" : [ {
     "personName" : "Rauen, Christopher",
@@ -40855,7 +41082,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3470704473", "brosch. : DM 44.00, sfr 40.50, S 321.00" ]
+    "identifierISBN" : [ "3470704473", "brosch. : DM 44.00, sfr 40.50, S 321.00" ],
+    "preferredISBN" : "9783470704470",
+    "variantISBN" : [ "978-3-470-70447-0", "3-470-70447-3" ]
   } ],
   "Person" : [ {
     "personName" : "Steinbuch, Pitter A.",
@@ -41001,19 +41230,33 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3933188229", "Pp. in Kassette : EUR 298.00, EUR 248.00 (Subskr.-Pr. bis 30.06.2004)" ]
+    "identifierISBN" : [ "3933188229", "Pp. in Kassette : EUR 298.00, EUR 248.00 (Subskr.-Pr. bis 30.06.2004)" ],
+    "preferredISBN" : "9783933188229",
+    "variantISBN" : [ "978-3-933188-22-9", "3-933188-22-9" ]
   }, {
-    "identifierISBN" : [ "3933188032", "(10. Aufl.)" ]
+    "identifierISBN" : [ "3933188032", "(10. Aufl.)" ],
+    "preferredISBN" : "9783933188038",
+    "variantISBN" : [ "978-3-933188-03-8", "3-933188-03-2" ]
   }, {
-    "identifierISBN" : [ "9783504471002", "(12. Aufl.)" ]
+    "identifierISBN" : [ "9783504471002", "(12. Aufl.)" ],
+    "preferredISBN" : "9783504471002",
+    "variantISBN" : [ "978-3-504-47100-2" ]
   }, {
-    "identifierISBN" : [ "9783504471019", "(13. Aufl.) : Subskriptionspreis bis 3 Monate nach Erscheinen EUR 298.00" ]
+    "identifierISBN" : [ "9783504471019", "(13. Aufl.) : Subskriptionspreis bis 3 Monate nach Erscheinen EUR 298.00" ],
+    "preferredISBN" : "9783504471019",
+    "variantISBN" : [ "978-3-504-47101-9" ]
   }, {
-    "identifierISBN" : [ "9783504471026", "(14. Aufl.)" ]
+    "identifierISBN" : [ "9783504471026", "(14. Aufl.)" ],
+    "preferredISBN" : "9783504471026",
+    "variantISBN" : [ "978-3-504-47102-6" ]
   }, {
-    "identifierISBN" : [ "9783504471033", "(15. Aufl.)" ]
+    "identifierISBN" : [ "9783504471033", "(15. Aufl.)" ],
+    "preferredISBN" : "9783504471033",
+    "variantISBN" : [ "978-3-504-47103-3" ]
   }, {
-    "identifierISBN" : [ "9783504471040", "(16., neu bearbeitete Auflage)" ]
+    "identifierISBN" : [ "9783504471040", "(16., neu bearbeitete Auflage)" ],
+    "preferredISBN" : "9783504471040",
+    "variantISBN" : [ "978-3-504-47104-0" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Bürgerliches Gesetzbuch"
@@ -41271,7 +41514,9 @@
   "IdentifierISBN" : [ {
     "invalidISBN" : [ "3529035308" ]
   }, {
-    "identifierISBN" : [ "3519035308" ]
+    "identifierISBN" : [ "3519035308" ],
+    "preferredISBN" : "9783519035305",
+    "variantISBN" : [ "978-3-519-03530-5", "3-519-03530-8" ]
   } ],
   "Person" : [ {
     "personName" : "Lueken, Heiko"
@@ -41385,7 +41630,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3879050716" ]
+    "identifierISBN" : [ "3879050716" ],
+    "preferredISBN" : "9783879050710",
+    "variantISBN" : [ "978-3-87905-071-0", "3-87905-071-6" ]
   } ],
   "Person" : [ {
     "personName" : "Berg, Jürgen"
@@ -41502,7 +41749,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3345006391", "Pp. : DM 88.00, sfr 80.00, S 642.00" ]
+    "identifierISBN" : [ "3345006391", "Pp. : DM 88.00, sfr 80.00, S 642.00" ],
+    "preferredISBN" : "9783345006395",
+    "variantISBN" : [ "978-3-345-00639-5", "3-345-00639-1" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Das Hansaviertel"
@@ -41643,7 +41892,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3409190163" ]
+    "identifierISBN" : [ "3409190163" ],
+    "preferredISBN" : "9783409190169",
+    "variantISBN" : [ "978-3-409-19016-9", "3-409-19016-3" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Wissen managen mit innovativer Informationstechnologie"
@@ -41776,7 +42027,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3888146283", "Gb. : DM 128.00, sfr 128.00, S 934.00" ]
+    "identifierISBN" : [ "3888146283", "Gb. : DM 128.00, sfr 128.00, S 934.00" ],
+    "preferredISBN" : "9783888146282",
+    "variantISBN" : [ "978-3-88814-628-2", "3-88814-628-3" ]
   } ],
   "Person" : [ {
     "personName" : "Penn, Irving",
@@ -41928,7 +42181,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3766713760" ]
+    "identifierISBN" : [ "3766713760" ],
+    "preferredISBN" : "9783766713766",
+    "variantISBN" : [ "978-3-7667-1376-6", "3-7667-1376-0" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Doppelschalige Fassaden"
@@ -42045,7 +42300,9 @@
     "languageSource" : "###"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3857361867", "kart. : sfr 27.00" ]
+    "identifierISBN" : [ "3857361867", "kart. : sfr 27.00" ],
+    "preferredISBN" : "9783857361869",
+    "variantISBN" : [ "978-3-85736-186-9", "3-85736-186-7" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Subjekte, Stars und Chips - Subjektpositionen in den Künsten"
@@ -42158,7 +42415,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3353011048", "DM 56.00" ]
+    "identifierISBN" : [ "3353011048", "DM 56.00" ],
+    "preferredISBN" : "9783353011046",
+    "variantISBN" : [ "978-3-353-01104-6", "3-353-01104-8" ]
   } ],
   "Person" : [ {
     "personName" : "Bronfen, Elisabeth",
@@ -42290,7 +42549,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3874394948", "DM 68.00" ]
+    "identifierISBN" : [ "3874394948", "DM 68.00" ],
+    "preferredISBN" : "9783874394949",
+    "variantISBN" : [ "978-3-87439-494-9", "3-87439-494-8" ]
   } ],
   "Person" : [ {
     "personName" : "Uebele, Andreas",
@@ -42426,7 +42687,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "377015214X", "Pp. : DM 79.90" ]
+    "identifierISBN" : [ "377015214X", "Pp. : DM 79.90" ],
+    "preferredISBN" : "9783770152148",
+    "variantISBN" : [ "978-3-7701-5214-8", "3-7701-5214-X" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Museum für Neue Kunst",
@@ -42581,7 +42844,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3170160699", "Gewebe" ]
+    "identifierISBN" : [ "3170160699", "Gewebe" ],
+    "preferredISBN" : "9783170160699",
+    "variantISBN" : [ "978-3-17-016069-9", "3-17-016069-9" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Exquisite Villen"
@@ -42704,7 +42969,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3800723433", "kart. : DM 69.00" ]
+    "identifierISBN" : [ "3800723433", "kart. : DM 69.00" ],
+    "preferredISBN" : "9783800723430",
+    "variantISBN" : [ "978-3-8007-2343-0", "3-8007-2343-3" ]
   } ],
   "Person" : [ {
     "personName" : "Jäger, Rainer"
@@ -42848,7 +43115,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3770121929" ]
+    "identifierISBN" : [ "3770121929" ],
+    "preferredISBN" : "9783770121922",
+    "variantISBN" : [ "978-3-7701-2192-2", "3-7701-2192-9" ]
   } ],
   "Person" : [ {
     "personName" : "Küppers, Harald",
@@ -42987,7 +43256,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3766713671" ]
+    "identifierISBN" : [ "3766713671" ],
+    "preferredISBN" : "9783766713674",
+    "variantISBN" : [ "978-3-7667-1367-4", "3-7667-1367-1" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Der Wintergarten"
@@ -43102,7 +43373,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3766714082" ]
+    "identifierISBN" : [ "3766714082" ],
+    "preferredISBN" : "9783766714084",
+    "variantISBN" : [ "978-3-7667-1408-4", "3-7667-1408-2" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Architektinnen bauen Wohnhäuser"
@@ -43231,9 +43504,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3931884678" ]
+    "identifierISBN" : [ "3931884678" ],
+    "preferredISBN" : "9783931884673",
+    "variantISBN" : [ "978-3-931884-67-3", "3-931884-67-8" ]
   }, {
-    "identifierISBN" : [ "4894441365" ]
+    "identifierISBN" : [ "4894441365" ],
+    "preferredISBN" : "9784894441361",
+    "variantISBN" : [ "978-4-89444-136-1", "4-89444-136-5" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Typographic composition"
@@ -43336,9 +43613,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3929085658", "(Ed. Solitude) kart. : DM 68.00 (mit Beiheft)" ]
+    "identifierISBN" : [ "3929085658", "(Ed. Solitude) kart. : DM 68.00 (mit Beiheft)" ],
+    "preferredISBN" : "9783929085655",
+    "variantISBN" : [ "978-3-929085-65-5", "3-929085-65-8" ]
   }, {
-    "identifierISBN" : [ "3923717881", "(Graf. Zentrum Drucktechnik) kart. : DM 68.00 (mit Beiheft)" ]
+    "identifierISBN" : [ "3923717881", "(Graf. Zentrum Drucktechnik) kart. : DM 68.00 (mit Beiheft)" ],
+    "preferredISBN" : "9783923717880",
+    "variantISBN" : [ "978-3-923717-88-0", "3-923717-88-1" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Ausstellung Helfershelfer - Türbremse, Tropfenfänger und Andere Obligate Symbionten",
@@ -43466,7 +43747,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3930054388" ]
+    "identifierISBN" : [ "3930054388" ],
+    "preferredISBN" : "9783930054381",
+    "variantISBN" : [ "978-3-930054-38-1", "3-930054-38-8" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Gegen den Strich"
@@ -43594,7 +43877,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3826608291", "Pp. : EUR 39.95" ]
+    "identifierISBN" : [ "3826608291", "Pp. : EUR 39.95" ],
+    "preferredISBN" : "9783826608292",
+    "variantISBN" : [ "978-3-8266-0829-2", "3-8266-0829-1" ]
   } ],
   "Person" : [ {
     "personName" : "Eilebrecht, Lars",
@@ -43817,7 +44102,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3421034117", "Pp. : EUR 49.90" ]
+    "identifierISBN" : [ "3421034117", "Pp. : EUR 49.90" ],
+    "preferredISBN" : "9783421034113",
+    "variantISBN" : [ "978-3-421-03411-3", "3-421-03411-7" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Moderne Einfamilienhäuser auf dem Land"
@@ -43930,7 +44217,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3931126714", "Pb. : EUR 35.00" ]
+    "identifierISBN" : [ "3931126714", "Pb. : EUR 35.00" ],
+    "preferredISBN" : "9783931126711",
+    "variantISBN" : [ "978-3-931126-71-1", "3-931126-71-4" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Index-A"
@@ -44044,7 +44333,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3893552421" ]
+    "identifierISBN" : [ "3893552421" ],
+    "preferredISBN" : "9783893552429",
+    "variantISBN" : [ "978-3-89355-242-9", "3-89355-242-1" ]
   } ],
   "Person" : [ {
     "personName" : "Gralingen, Christian"
@@ -44191,7 +44482,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3827370612" ]
+    "identifierISBN" : [ "3827370612" ],
+    "preferredISBN" : "9783827370617",
+    "variantISBN" : [ "978-3-8273-7061-7", "3-8273-7061-2" ]
   } ],
   "Person" : [ {
     "personName" : "Küstenmacher, Werner Tiki",
@@ -44325,9 +44618,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "377571006X" ]
+    "identifierISBN" : [ "377571006X" ],
+    "preferredISBN" : "9783775710060",
+    "variantISBN" : [ "978-3-7757-1006-0", "3-7757-1006-X" ]
   }, {
-    "identifierISBN" : [ "3900688508" ]
+    "identifierISBN" : [ "3900688508" ],
+    "preferredISBN" : "9783900688509",
+    "variantISBN" : [ "978-3-900688-50-9", "3-900688-50-8" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Museum of Contemporary Art",
@@ -44470,9 +44767,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3540006788" ]
+    "identifierISBN" : [ "3540006788" ],
+    "preferredISBN" : "9783540006787",
+    "variantISBN" : [ "978-3-540-00678-7", "3-540-00678-8" ]
   }, {
-    "identifierISBN" : [ "0387006788" ]
+    "identifierISBN" : [ "0387006788" ],
+    "preferredISBN" : "9780387006789",
+    "variantISBN" : [ "978-0-387-00678-9", "0-387-00678-8" ]
   } ],
   "Person" : [ {
     "personName" : "Clocksin, William F.",
@@ -44677,9 +44978,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "0130323713" ]
+    "identifierISBN" : [ "0130323713" ],
+    "preferredISBN" : "9780130323712",
+    "variantISBN" : [ "978-0-13-032371-2", "0-13-032371-3" ]
   }, {
-    "identifierISBN" : [ "0130343021", "CD-ROM" ]
+    "identifierISBN" : [ "0130343021", "CD-ROM" ],
+    "preferredISBN" : "9780130343024",
+    "variantISBN" : [ "978-0-13-034302-4", "0-13-034302-1" ]
   } ],
   "Person" : [ {
     "personName" : "Horngren, Charles T.",
@@ -44835,7 +45140,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3861172062", "Gb. : ca. 99.00 EUR" ]
+    "identifierISBN" : [ "3861172062", "Gb. : ca. 99.00 EUR" ],
+    "preferredISBN" : "9783861172062",
+    "variantISBN" : [ "978-3-86117-206-2", "3-86117-206-2" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Technische Universität Dresden",
@@ -44989,7 +45296,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3826613759", ": EUR 39.95" ]
+    "identifierISBN" : [ "3826613759", ": EUR 39.95" ],
+    "preferredISBN" : "9783826613753",
+    "variantISBN" : [ "978-3-8266-1375-3", "3-8266-1375-9" ]
   } ],
   "Person" : [ {
     "personName" : "Mcclure, Stuart"
@@ -45614,7 +45923,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "0714843180", "Gb. : EUR 49.95 (freier Pr.), CHF 89.95 (freier Pr.)" ]
+    "identifierISBN" : [ "0714843180", "Gb. : EUR 49.95 (freier Pr.), CHF 89.95 (freier Pr.)" ],
+    "preferredISBN" : "9780714843186",
+    "variantISBN" : [ "978-0-7148-4318-6", "0-7148-4318-0" ]
   } ],
   "IdentifierSheetMusic" : [ {
     "standardNumber" : "4318"
@@ -46096,7 +46407,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3407361149", "kart. : EUR 14.90 (DE), EUR 15.40 (AT), sfr 26.20" ]
+    "identifierISBN" : [ "3407361149", "kart. : EUR 14.90 (DE), EUR 15.40 (AT), sfr 26.20" ],
+    "preferredISBN" : "9783407361141",
+    "variantISBN" : [ "978-3-407-36114-1", "3-407-36114-9" ]
   } ],
   "Person" : [ {
     "personName" : "Hecht-El Minshawi, Béatrice",
@@ -46237,7 +46550,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3874396460", "Hl. : EUR 75.00, CHF 125.00" ]
+    "identifierISBN" : [ "3874396460", "Hl. : EUR 75.00, CHF 125.00" ],
+    "preferredISBN" : "9783874396462",
+    "variantISBN" : [ "978-3-87439-646-2", "3-87439-646-0" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Geschäftsberichte - finest facts and figures"
@@ -46380,7 +46695,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3345008122", "Pp. : EUR 58.00" ]
+    "identifierISBN" : [ "3345008122", "Pp. : EUR 58.00" ],
+    "preferredISBN" : "9783345008122",
+    "variantISBN" : [ "978-3-345-00812-2", "3-345-00812-2" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Straßenbau"
@@ -46647,7 +46964,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "0471675822" ]
+    "identifierISBN" : [ "0471675822" ],
+    "preferredISBN" : "9780471675822",
+    "variantISBN" : [ "978-0-471-67582-2", "0-471-67582-2" ]
   } ],
   "Person" : [ {
     "personName" : "Munson, Bruce Roy",
@@ -46799,7 +47118,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3421035466", "Pp. : EUR 59.90, sfr 103.00" ]
+    "identifierISBN" : [ "3421035466", "Pp. : EUR 59.90, sfr 103.00" ],
+    "preferredISBN" : "9783421035462",
+    "variantISBN" : [ "978-3-421-03546-2", "3-421-03546-6" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Haus plus"
@@ -47056,9 +47377,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783899321661" ]
+    "identifierISBN" : [ "9783899321661" ],
+    "preferredISBN" : "9783899321661",
+    "variantISBN" : [ "978-3-89932-166-1" ]
   }, {
-    "identifierISBN" : [ "3899321669" ]
+    "identifierISBN" : [ "3899321669" ],
+    "preferredISBN" : "9783899321661",
+    "variantISBN" : [ "978-3-89932-166-1", "3-89932-166-9" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Sanierung und Verstärkung von Massivbauten"
@@ -47222,9 +47547,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783540718659", "Pb. : EUR 29.95" ]
+    "identifierISBN" : [ "9783540718659", "Pb. : EUR 29.95" ],
+    "preferredISBN" : "9783540718659",
+    "variantISBN" : [ "978-3-540-71865-9" ]
   }, {
-    "identifierISBN" : [ "9783540718666" ]
+    "identifierISBN" : [ "9783540718666" ],
+    "preferredISBN" : "9783540718666",
+    "variantISBN" : [ "978-3-540-71866-6" ]
   } ],
   "IdentifierSheetMusic" : [ {
     "standardNumber" : "11589730"
@@ -47509,9 +47838,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783938780510", "Pp. : EUR 39.90 (DE), EUR 41.10 (AT), sfr 67.90 (freier Pr.)" ]
+    "identifierISBN" : [ "9783938780510", "Pp. : EUR 39.90 (DE), EUR 41.10 (AT), sfr 67.90 (freier Pr.)" ],
+    "preferredISBN" : "9783938780510",
+    "variantISBN" : [ "978-3-938780-51-0" ]
   }, {
-    "identifierISBN" : [ "3938780517", "Pp. : EUR 39.90 (DE), EUR 41.10 (AT), sfr 67.90 (freier Pr.)" ]
+    "identifierISBN" : [ "3938780517", "Pp. : EUR 39.90 (DE), EUR 41.10 (AT), sfr 67.90 (freier Pr.)" ],
+    "preferredISBN" : "9783938780510",
+    "variantISBN" : [ "978-3-938780-51-0", "3-938780-51-7" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Pure plastic"
@@ -47651,7 +47984,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783939556077", "kart. : EUR 12.99" ]
+    "identifierISBN" : [ "9783939556077", "kart. : EUR 12.99" ],
+    "preferredISBN" : "9783939556077",
+    "variantISBN" : [ "978-3-939556-07-7" ]
   } ],
   "Person" : [ {
     "personName" : "Bidlo, Oliver",
@@ -47783,7 +48118,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783764389468", "Pp. : EUR 74.79 (freier Pr.), sfr 119.00 (freier Pr.)" ]
+    "identifierISBN" : [ "9783764389468", "Pp. : EUR 74.79 (freier Pr.), sfr 119.00 (freier Pr.)" ],
+    "preferredISBN" : "9783764389468",
+    "variantISBN" : [ "978-3-7643-8946-8" ]
   } ],
   "IdentifierSheetMusic" : [ {
     "standardNumber" : "12464470"
@@ -47931,7 +48268,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783800637171", "hbk : € 49.80" ]
+    "identifierISBN" : [ "9783800637171", "hbk : € 49.80" ],
+    "preferredISBN" : "9783800637171",
+    "variantISBN" : [ "978-3-8006-3717-1" ]
   } ],
   "Person" : [ {
     "personName" : "Esch, Franz-Rudolf",
@@ -48059,7 +48398,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783486587395" ]
+    "identifierISBN" : [ "9783486587395" ],
+    "preferredISBN" : "9783486587395",
+    "variantISBN" : [ "978-3-486-58739-5" ]
   } ],
   "Person" : [ {
     "personName" : "Dornberger, Rolf",
@@ -48194,9 +48535,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783850335362", "Gb. : EUR 39.90 (DE), EUR 39.90 (AT), sfr 56.90 (freier Pr.)" ]
+    "identifierISBN" : [ "9783850335362", "Gb. : EUR 39.90 (DE), EUR 39.90 (AT), sfr 56.90 (freier Pr.)" ],
+    "preferredISBN" : "9783850335362",
+    "variantISBN" : [ "978-3-85033-536-2" ]
   }, {
-    "identifierISBN" : [ "3850335364", "Gb. : EUR 39.90 (DE), EUR 39.90 (AT), sfr 56.90 (freier Pr.)" ]
+    "identifierISBN" : [ "3850335364", "Gb. : EUR 39.90 (DE), EUR 39.90 (AT), sfr 56.90 (freier Pr.)" ],
+    "preferredISBN" : "9783850335362",
+    "variantISBN" : [ "978-3-85033-536-2", "3-85033-536-4" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Die schönsten Passivhäuser"
@@ -48341,7 +48686,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783863350956" ]
+    "identifierISBN" : [ "9783863350956" ],
+    "preferredISBN" : "9783863350956",
+    "variantISBN" : [ "978-3-86335-095-6" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Wilhelm-Hack-Museum",
@@ -48529,7 +48876,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783716517260" ]
+    "identifierISBN" : [ "9783716517260" ],
+    "preferredISBN" : "9783716517260",
+    "variantISBN" : [ "978-3-7165-1726-0" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "World Press Photo Foundation",
@@ -48675,7 +49024,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783863353926" ]
+    "identifierISBN" : [ "9783863353926" ],
+    "preferredISBN" : "9783863353926",
+    "variantISBN" : [ "978-3-86335-392-6" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Kestner Gesellschaft",
@@ -48846,9 +49197,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783034607582", "(hbk.)" ]
+    "identifierISBN" : [ "9783034607582", "(hbk.)" ],
+    "preferredISBN" : "9783034607582",
+    "variantISBN" : [ "978-3-0346-0758-2" ]
   }, {
-    "identifierISBN" : [ "9783034607599", "Pb. : ca. EUR 49.90 (DE), ca. sfr 69.90 (freier Pr.)" ]
+    "identifierISBN" : [ "9783034607599", "Pb. : ca. EUR 49.90 (DE), ca. sfr 69.90 (freier Pr.)" ],
+    "preferredISBN" : "9783034607599",
+    "variantISBN" : [ "978-3-0346-0759-9" ]
   } ],
   "Person" : [ {
     "personName" : "Zimmermann, Astrid",
@@ -48999,9 +49354,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783775740319", "Gb. : ca. EUR 45.00 (DE), ca. EUR 46.30 (AT), ca. sfr 59.90 (freier Pr.)" ]
+    "identifierISBN" : [ "9783775740319", "Gb. : ca. EUR 45.00 (DE), ca. EUR 46.30 (AT), ca. sfr 59.90 (freier Pr.)" ],
+    "preferredISBN" : "9783775740319",
+    "variantISBN" : [ "978-3-7757-4031-9" ]
   }, {
-    "identifierISBN" : [ "3775740317" ]
+    "identifierISBN" : [ "3775740317" ],
+    "preferredISBN" : "9783775740319",
+    "variantISBN" : [ "978-3-7757-4031-9", "3-7757-4031-7" ]
   } ],
   "IdentifierSheetMusic" : [ {
     "standardNumber" : "Best.-Nr.: 317/04031"
@@ -49163,7 +49522,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783816932802", "Kunststoff : EUR 118.00" ]
+    "identifierISBN" : [ "9783816932802", "Kunststoff : EUR 118.00" ],
+    "preferredISBN" : "9783816932802",
+    "variantISBN" : [ "978-3-8169-3280-2" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Innovative Zahnradfertigung"
@@ -49294,9 +49655,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783868942910", "Broschur : EUR 29.95" ]
+    "identifierISBN" : [ "9783868942910", "Broschur : EUR 29.95" ],
+    "preferredISBN" : "9783868942910",
+    "variantISBN" : [ "978-3-86894-291-0" ]
   }, {
-    "identifierISBN" : [ "9783863267834", "E-Book" ]
+    "identifierISBN" : [ "9783863267834", "E-Book" ],
+    "preferredISBN" : "9783863267834",
+    "variantISBN" : [ "978-3-86326-783-4" ]
   } ],
   "Person" : [ {
     "personName" : "Berk, Jonathan B.",
@@ -49486,9 +49851,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9781292148496", "Pbk" ]
+    "identifierISBN" : [ "9781292148496", "Pbk" ],
+    "preferredISBN" : "9781292148496",
+    "variantISBN" : [ "978-1-292-14849-6" ]
   }, {
-    "identifierISBN" : [ "1292148497" ]
+    "identifierISBN" : [ "1292148497" ],
+    "preferredISBN" : "9781292148496",
+    "variantISBN" : [ "978-1-292-14849-6", "1-292-14849-7" ]
   } ],
   "Person" : [ {
     "personName" : "David, Fred R.",
@@ -49633,9 +50002,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783658157197", "Pb. : EUR 39.99 (DE), EUR 35.97 (AT), sfr 44.00 (freier Pr.)" ]
+    "identifierISBN" : [ "9783658157197", "Pb. : EUR 39.99 (DE), EUR 35.97 (AT), sfr 44.00 (freier Pr.)" ],
+    "preferredISBN" : "9783658157197",
+    "variantISBN" : [ "978-3-658-15719-7" ]
   }, {
-    "identifierISBN" : [ "3658157194" ]
+    "identifierISBN" : [ "3658157194" ],
+    "preferredISBN" : "9783658157197",
+    "variantISBN" : [ "978-3-658-15719-7", "3-658-15719-4" ]
   } ],
   "Person" : [ {
     "personName" : "Mühl, Thomas",
@@ -49674,7 +50047,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Online-Ausgabe, eBook" ],
-    "identifierISBN" : [ "9783658157203" ]
+    "identifierISBN" : [ "9783658157203" ],
+    "preferredISBN" : "9783658157203",
+    "variantISBN" : [ "978-3-658-15720-3" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://deposit.d-nb.de/cgi-bin/dokserv?id=4768045&prov=M&dok_var=1&dok_ext=htm",
@@ -50032,9 +50407,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783406681776", "Kt : circa EUR 19.50 (DE), circa EUR 20.10 (AT)" ]
+    "identifierISBN" : [ "9783406681776", "Kt : circa EUR 19.50 (DE), circa EUR 20.10 (AT)" ],
+    "preferredISBN" : "9783406681776",
+    "variantISBN" : [ "978-3-406-68177-6" ]
   }, {
-    "identifierISBN" : [ "3406681778" ]
+    "identifierISBN" : [ "3406681778" ],
+    "preferredISBN" : "9783406681776",
+    "variantISBN" : [ "978-3-406-68177-6", "3-406-68177-8" ]
   } ],
   "Person" : [ {
     "personName" : "Maurer, Hartmut",
@@ -50083,6 +50462,8 @@
     "note" : [ "Online-Ausgabe" ],
     "title" : "Allgemeines Verwaltungsrecht",
     "identifierISBN" : [ "9783406731129" ],
+    "preferredISBN" : "9783406731129",
+    "variantISBN" : [ "978-3-406-73112-9" ],
     "controlNumber" : [ "(DE-605)HT019908587" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019908587" ]
   }, {
@@ -50225,9 +50606,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783816799504", ": EUR 59.00 (DE), EUR 60.70 (AT), CHF 99.20 (freier Preis)" ]
+    "identifierISBN" : [ "9783816799504", ": EUR 59.00 (DE), EUR 60.70 (AT), CHF 99.20 (freier Preis)" ],
+    "preferredISBN" : "9783816799504",
+    "variantISBN" : [ "978-3-8167-9950-4" ]
   }, {
-    "identifierISBN" : [ "3816799507" ]
+    "identifierISBN" : [ "3816799507" ],
+    "preferredISBN" : "9783816799504",
+    "variantISBN" : [ "978-3-8167-9950-4", "3-8167-9950-7" ]
   } ],
   "IdentifierSheetMusic" : [ {
     "standardNumber" : "Bestellnummer: buch_953"
@@ -50259,7 +50644,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Online-Ausgabe" ],
-    "identifierISBN" : [ "9783816799511" ]
+    "identifierISBN" : [ "9783816799511" ],
+    "preferredISBN" : "9783816799511",
+    "variantISBN" : [ "978-3-8167-9951-1" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://deposit.d-nb.de/cgi-bin/dokserv?id=da8a9b31f5f04a478b0852f4f518de76&prov=M&dok_var=1&dok_ext=htm",
@@ -50432,9 +50819,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783406702891" ]
+    "identifierISBN" : [ "9783406702891" ],
+    "preferredISBN" : "9783406702891",
+    "variantISBN" : [ "978-3-406-70289-1" ]
   }, {
-    "identifierISBN" : [ "3406702899" ]
+    "identifierISBN" : [ "3406702899" ],
+    "preferredISBN" : "9783406702891",
+    "variantISBN" : [ "978-3-406-70289-1", "3-406-70289-9" ]
   } ],
   "Person" : [ {
     "personName" : "Ahrendt, Martina",
@@ -50596,7 +50987,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9780128123195" ]
+    "identifierISBN" : [ "9780128123195" ],
+    "preferredISBN" : "9780128123195",
+    "variantISBN" : [ "978-0-12-812319-5" ]
   } ],
   "Person" : [ {
     "personName" : "Kim, Sang-Hoon"
@@ -50629,7 +51022,9 @@
     "physicalDescription" : "Druck-Ausgabe",
     "relationshipInformation" : [ "Erscheint auch als" ],
     "title" : "Electric motor control",
-    "identifierISBN" : [ "9780128121382" ]
+    "identifierISBN" : [ "9780128121382" ],
+    "preferredISBN" : "9780128121382",
+    "variantISBN" : [ "978-0-12-812138-2" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6187069990006444",
@@ -50709,9 +51104,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783527603954", "eBook" ]
+    "identifierISBN" : [ "9783527603954", "eBook" ],
+    "preferredISBN" : "9783527603954",
+    "variantISBN" : [ "978-3-527-60395-4" ]
   }, {
-    "identifierISBN" : [ "3527404104", "Print" ]
+    "identifierISBN" : [ "3527404104", "Print" ],
+    "preferredISBN" : "9783527404100",
+    "variantISBN" : [ "978-3-527-40410-0", "3-527-40410-4" ]
   } ],
   "IdentifierDOI" : [ {
     "standardNumber" : "10.1002/3527603956"
@@ -50851,7 +51250,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783170322851", ": circa EUR 39.00 (DE)" ]
+    "identifierISBN" : [ "9783170322851", ": circa EUR 39.00 (DE)" ],
+    "preferredISBN" : "9783170322851",
+    "variantISBN" : [ "978-3-17-032285-1" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Praxisbuch eHealth"
@@ -50884,22 +51285,30 @@
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Online-Ausgabe, PDF" ],
     "title" : "Praxisbuch eHealth",
-    "identifierISBN" : [ "9783170322868" ]
+    "identifierISBN" : [ "9783170322868" ],
+    "preferredISBN" : "9783170322868",
+    "variantISBN" : [ "978-3-17-032286-8" ]
   }, {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Online-Ausgabe, ePub" ],
     "title" : "Praxisbuch eHealth",
-    "identifierISBN" : [ "9783170322875" ]
+    "identifierISBN" : [ "9783170322875" ],
+    "preferredISBN" : "9783170322875",
+    "variantISBN" : [ "978-3-17-032287-5" ]
   }, {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Online-Ausgabe, Mobi" ],
     "title" : "Praxisbuch eHealth",
-    "identifierISBN" : [ "9783170322882" ]
+    "identifierISBN" : [ "9783170322882" ],
+    "preferredISBN" : "9783170322882",
+    "variantISBN" : [ "978-3-17-032288-2" ]
   } ],
   "PrecedingEntry" : [ {
     "relationshipInformation" : [ "Vorangegangen ist" ],
     "title" : "Praxisbuch eHealth",
-    "identifierISBN" : [ "9783170199880" ]
+    "identifierISBN" : [ "9783170199880" ],
+    "preferredISBN" : "9783170199880",
+    "variantISBN" : [ "978-3-17-019988-0" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://d-nb.info/1144649552/04",
@@ -51030,7 +51439,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783744871334" ]
+    "identifierISBN" : [ "9783744871334" ],
+    "preferredISBN" : "9783744871334",
+    "variantISBN" : [ "978-3-7448-7133-4" ]
   } ],
   "Person" : [ {
     "personName" : "Kunow, Annette",
@@ -51161,7 +51572,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783744819244" ]
+    "identifierISBN" : [ "9783744819244" ],
+    "preferredISBN" : "9783744819244",
+    "variantISBN" : [ "978-3-7448-1924-4" ]
   } ],
   "Person" : [ {
     "personName" : "Kunow, Annette",
@@ -51298,7 +51711,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783709972045" ]
+    "identifierISBN" : [ "9783709972045" ],
+    "preferredISBN" : "9783709972045",
+    "variantISBN" : [ "978-3-7099-7204-5" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Architekturführer Innsbruck"
@@ -51443,9 +51858,13 @@
     "languageSource" : "fre"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783035609004", "E-Book (pdf)" ]
+    "identifierISBN" : [ "9783035609004", "E-Book (pdf)" ],
+    "preferredISBN" : "9783035609004",
+    "variantISBN" : [ "978-3-0356-0900-4" ]
   }, {
-    "identifierISBN" : [ "9783035609035", "print/ebook" ]
+    "identifierISBN" : [ "9783035609035", "print/ebook" ],
+    "preferredISBN" : "9783035609035",
+    "variantISBN" : [ "978-3-0356-0903-5" ]
   } ],
   "IdentifierDOI" : [ {
     "standardNumber" : "10.1515/9783035609004"
@@ -51506,7 +51925,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : [ "9783035611212" ]
+    "identifierISBN" : [ "9783035611212" ],
+    "preferredISBN" : "9783035611212",
+    "variantISBN" : [ "978-3-0356-1121-2" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://doi.org/10.1515/9783035609004",
@@ -51701,7 +52122,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783739803845", "eBook" ]
+    "identifierISBN" : [ "9783739803845", "eBook" ],
+    "preferredISBN" : "9783739803845",
+    "variantISBN" : [ "978-3-7398-0384-5" ]
   } ],
   "IdentifierDOI" : [ {
     "standardNumber" : "10.24053/9783739803845"
@@ -51741,7 +52164,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : [ "9783867648226" ]
+    "identifierISBN" : [ "9783867648226" ],
+    "preferredISBN" : "9783867648226",
+    "variantISBN" : [ "978-3-86764-822-6" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://dx.doi.org/10.24053/9783739803845",
@@ -51950,7 +52375,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9781466585270" ]
+    "identifierISBN" : [ "9781466585270" ],
+    "preferredISBN" : "9781466585270",
+    "variantISBN" : [ "978-1-4665-8527-0" ]
   } ],
   "Person" : [ {
     "personName" : "Telea, Alexandru C.",
@@ -51987,6 +52414,8 @@
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9781466585263" ],
+    "preferredISBN" : "9781466585263",
+    "variantISBN" : [ "978-1-4665-8526-3" ],
     "controlNumber" : [ "(DE-605)HT018233344" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT018233344" ]
   } ],
@@ -52098,9 +52527,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783648082591", "ePDF" ]
+    "identifierISBN" : [ "9783648082591", "ePDF" ],
+    "preferredISBN" : "9783648082591",
+    "variantISBN" : [ "978-3-648-08259-1" ]
   }, {
-    "identifierISBN" : [ "9783648082584", "ePUB" ]
+    "identifierISBN" : [ "9783648082584", "ePUB" ],
+    "preferredISBN" : "9783648082584",
+    "variantISBN" : [ "978-3-648-08258-4" ]
   } ],
   "Person" : [ {
     "personName" : "Singler, Axel",
@@ -52139,6 +52572,8 @@
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9783648082577" ],
+    "preferredISBN" : "9783648082577",
+    "variantISBN" : [ "978-3-648-08257-7" ],
     "controlNumber" : [ "(DE-605)HT019094592" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019094592" ]
   } ],
@@ -52221,7 +52656,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9781351651509" ]
+    "identifierISBN" : [ "9781351651509" ],
+    "preferredISBN" : "9781351651509",
+    "variantISBN" : [ "978-1-351-65150-9" ]
   } ],
   "Person" : [ {
     "personName" : "Harris, Michael D. S."
@@ -52253,6 +52690,8 @@
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9781498782869" ],
+    "preferredISBN" : "9781498782869",
+    "variantISBN" : [ "978-1-4987-8286-9" ],
     "controlNumber" : [ "(DE-605)HT019489555" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019489555" ]
   } ],
@@ -52338,7 +52777,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783319054490" ]
+    "identifierISBN" : [ "9783319054490" ],
+    "preferredISBN" : "9783319054490",
+    "variantISBN" : [ "978-3-319-05449-0" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Steering handbook"
@@ -52381,6 +52822,8 @@
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9783319054483" ],
+    "preferredISBN" : "9783319054483",
+    "variantISBN" : [ "978-3-319-05448-3" ],
     "controlNumber" : [ "(DE-605)HT018337193" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT018337193" ]
   } ],
@@ -52571,7 +53014,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9781498777469" ]
+    "identifierISBN" : [ "9781498777469" ],
+    "preferredISBN" : "9781498777469",
+    "variantISBN" : [ "978-1-4987-7746-9" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Analysis of energy systems"
@@ -52608,7 +53053,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : [ "9781498777391" ]
+    "identifierISBN" : [ "9781498777391" ],
+    "preferredISBN" : "9781498777391",
+    "variantISBN" : [ "978-1-4987-7739-1" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2018/02/20/file_112/7557481.pdf",
@@ -52705,7 +53152,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9780128104354" ]
+    "identifierISBN" : [ "9780128104354" ],
+    "preferredISBN" : "9780128104354",
+    "variantISBN" : [ "978-0-12-810435-4" ]
   } ],
   "Person" : [ {
     "personName" : "Ribbens, William B.",
@@ -52742,7 +53191,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : [ "9780128104347" ]
+    "identifierISBN" : [ "9780128104347" ],
+    "preferredISBN" : "9780128104347",
+    "variantISBN" : [ "978-0-12-810434-7" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6187069990006444",
@@ -52835,9 +53286,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783648058855", "ePDF" ]
+    "identifierISBN" : [ "9783648058855", "ePDF" ],
+    "preferredISBN" : "9783648058855",
+    "variantISBN" : [ "978-3-648-05885-5" ]
   }, {
-    "identifierISBN" : [ "9783648058848", "ePUB" ]
+    "identifierISBN" : [ "9783648058848", "ePUB" ],
+    "preferredISBN" : "9783648058848",
+    "variantISBN" : [ "978-3-648-05884-8" ]
   } ],
   "Person" : [ {
     "personName" : "Häusel, Hans-Georg",
@@ -52877,6 +53332,8 @@
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9783648058831" ],
+    "preferredISBN" : "9783648058831",
+    "variantISBN" : [ "978-3-648-05883-1" ],
     "controlNumber" : [ "(DE-605)HT018378184" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT018378184" ]
   } ],
@@ -53194,9 +53651,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783527816255", "ePub" ]
+    "identifierISBN" : [ "9783527816255", "ePub" ],
+    "preferredISBN" : "9783527816255",
+    "variantISBN" : [ "978-3-527-81625-5" ]
   }, {
-    "identifierISBN" : [ "9783527816262", "eMobi" ]
+    "identifierISBN" : [ "9783527816262", "eMobi" ],
+    "preferredISBN" : "9783527816262",
+    "variantISBN" : [ "978-3-527-81626-2" ]
   } ],
   "Person" : [ {
     "personName" : "Huth, Michael",
@@ -53240,6 +53701,8 @@
     "note" : [ "Druck-Ausgabe" ],
     "title" : "Wiley-Schnellkurs Prozessmanagement",
     "identifierISBN" : [ "9783527530458" ],
+    "preferredISBN" : "9783527530458",
+    "variantISBN" : [ "978-3-527-53045-8" ],
     "controlNumber" : [ "(DE-605)HT019161516" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019161516" ]
   } ],
@@ -53528,7 +53991,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783662546321" ]
+    "identifierISBN" : [ "9783662546321" ],
+    "preferredISBN" : "9783662546321",
+    "variantISBN" : [ "978-3-662-54632-1" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Fehlzeiten-Report 2017: Krise und Gesundheit - Ursachen, Prävention, Bewältigung"
@@ -53594,6 +54059,8 @@
     "note" : [ "Druck-Ausgabe" ],
     "title" : "Krise und Gesundheit - Ursachen, Prävention, Bewältigung",
     "identifierISBN" : [ "9783662546314" ],
+    "preferredISBN" : "9783662546314",
+    "variantISBN" : [ "978-3-662-54631-4" ],
     "controlNumber" : [ "(DE-605)HT019437694" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019437694" ]
   } ],
@@ -53818,7 +54285,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783791038209" ]
+    "identifierISBN" : [ "9783791038209" ],
+    "preferredISBN" : "9783791038209",
+    "variantISBN" : [ "978-3-7910-3820-9" ]
   } ],
   "Person" : [ {
     "personName" : "Meissner, Gabi",
@@ -53860,6 +54329,8 @@
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9783791038193" ],
+    "preferredISBN" : "9783791038193",
+    "variantISBN" : [ "978-3-7910-3819-3" ],
     "controlNumber" : [ "(DE-605)HT019454512" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019454512" ]
   } ],
@@ -53972,7 +54443,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9781498741903" ]
+    "identifierISBN" : [ "9781498741903" ],
+    "preferredISBN" : "9781498741903",
+    "variantISBN" : [ "978-1-4987-4190-3" ]
   } ],
   "Person" : [ {
     "personName" : "Fox, John",
@@ -54085,11 +54558,17 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783864919114", "ePDF" ]
+    "identifierISBN" : [ "9783864919114", "ePDF" ],
+    "preferredISBN" : "9783864919114",
+    "variantISBN" : [ "978-3-86491-911-4" ]
   }, {
-    "identifierISBN" : [ "9783864919121", "ePUB" ]
+    "identifierISBN" : [ "9783864919121", "ePUB" ],
+    "preferredISBN" : "9783864919121",
+    "variantISBN" : [ "978-3-86491-912-1" ]
   }, {
-    "identifierISBN" : [ "9783864919138", "eMOBI" ]
+    "identifierISBN" : [ "9783864919138", "eMOBI" ],
+    "preferredISBN" : "9783864919138",
+    "variantISBN" : [ "978-3-86491-913-8" ]
   } ],
   "Person" : [ {
     "personName" : "Rattat, Christian",
@@ -54128,6 +54607,8 @@
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9783864903519" ],
+    "preferredISBN" : "9783864903519",
+    "variantISBN" : [ "978-3-86490-351-9" ],
     "controlNumber" : [ "(DE-605)HT018971352" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT018971352" ]
   } ],
@@ -54325,7 +54806,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9781786353535" ]
+    "identifierISBN" : [ "9781786353535" ],
+    "preferredISBN" : "9781786353535",
+    "variantISBN" : [ "978-1-78635-353-5" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Global talent management and staffing in MNEs"
@@ -54372,6 +54855,8 @@
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9781786353542" ],
+    "preferredISBN" : "9781786353542",
+    "variantISBN" : [ "978-1-78635-354-2" ],
     "controlNumber" : [ "(DE-605)HT019142183" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019142183" ]
   } ],
@@ -54474,7 +54959,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9781351364225" ]
+    "identifierISBN" : [ "9781351364225" ],
+    "preferredISBN" : "9781351364225",
+    "variantISBN" : [ "978-1-351-36422-5" ]
   } ],
   "Person" : [ {
     "personName" : "Scheinberg, Ronald",
@@ -54508,7 +54995,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : [ "9781138558991", "9780209713303" ]
+    "identifierISBN" : [ "9781138558991", "9780209713303" ],
+    "preferredISBN" : "9781138558991",
+    "variantISBN" : [ "978-1-138-55899-1" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6187069990006444",
@@ -54600,7 +55089,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783778215401", "Broschur" ]
+    "identifierISBN" : [ "9783778215401", "Broschur" ],
+    "preferredISBN" : "9783778215401",
+    "variantISBN" : [ "978-3-7782-1540-1" ]
   } ],
   "Person" : [ {
     "personName" : "Anders, Monika"
@@ -55149,9 +55640,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783446451605", ": EUR 24.00 (DE), EUR 24.70 (AT)" ]
+    "identifierISBN" : [ "9783446451605", ": EUR 24.00 (DE), EUR 24.70 (AT)" ],
+    "preferredISBN" : "9783446451605",
+    "variantISBN" : [ "978-3-446-45160-5" ]
   }, {
-    "identifierISBN" : [ "3446451609" ]
+    "identifierISBN" : [ "3446451609" ],
+    "preferredISBN" : "9783446451605",
+    "variantISBN" : [ "978-3-446-45160-5", "3-446-45160-9" ]
   } ],
   "IdentifierSheetMusic" : [ {
     "standardNumber" : "Bestellnummer: 554/45160"
@@ -55185,6 +55680,8 @@
     "note" : [ "Online-Ausgabe, E-Book" ],
     "title" : "Grundlagen der Elektrotechnik",
     "identifierISBN" : [ "9783446456310" ],
+    "preferredISBN" : "9783446456310",
+    "variantISBN" : [ "978-3-446-45631-0" ],
     "controlNumber" : [ "(DE-605)HT019754259" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019754259" ]
   } ],
@@ -55383,9 +55880,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783446451599", "Broschur : EUR 32.00 (DE), EUR 32.90 (AT)" ]
+    "identifierISBN" : [ "9783446451599", "Broschur : EUR 32.00 (DE), EUR 32.90 (AT)" ],
+    "preferredISBN" : "9783446451599",
+    "variantISBN" : [ "978-3-446-45159-9" ]
   }, {
-    "identifierISBN" : [ "3446451595" ]
+    "identifierISBN" : [ "3446451595" ],
+    "preferredISBN" : "9783446451599",
+    "variantISBN" : [ "978-3-446-45159-9", "3-446-45159-5" ]
   } ],
   "IdentifierSheetMusic" : [ {
     "standardNumber" : "Bestellnummer: 554/45159"
@@ -55416,7 +55917,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Online-Ausgabe, E-Book" ],
-    "identifierISBN" : [ "9783446456969" ]
+    "identifierISBN" : [ "9783446456969" ],
+    "preferredISBN" : "9783446456969",
+    "variantISBN" : [ "978-3-446-45696-9" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2018/10/11/file_8/8169719.pdf",
@@ -55547,9 +56050,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783446453241", ": EUR 30.00 (DE)" ]
+    "identifierISBN" : [ "9783446453241", ": EUR 30.00 (DE)" ],
+    "preferredISBN" : "9783446453241",
+    "variantISBN" : [ "978-3-446-45324-1" ]
   }, {
-    "identifierISBN" : [ "3446453245" ]
+    "identifierISBN" : [ "3446453245" ],
+    "preferredISBN" : "9783446453241",
+    "variantISBN" : [ "978-3-446-45324-1", "3-446-45324-5" ]
   } ],
   "IdentifierSheetMusic" : [ {
     "standardNumber" : "Bestellnummer: 554/45324"
@@ -55580,7 +56087,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Online-Ausgabe, E-Book" ],
-    "identifierISBN" : [ "9783446456952" ]
+    "identifierISBN" : [ "9783446456952" ],
+    "preferredISBN" : "9783446456952",
+    "variantISBN" : [ "978-3-446-45695-2" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2018/09/06/file_8/8149687.pdf",
@@ -55744,9 +56253,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783710601781", ": EUR 50.00 (DE), EUR 50.00 (AT)" ]
+    "identifierISBN" : [ "9783710601781", ": EUR 50.00 (DE), EUR 50.00 (AT)" ],
+    "preferredISBN" : "9783710601781",
+    "variantISBN" : [ "978-3-7106-0178-1" ]
   }, {
-    "identifierISBN" : [ "3710601789" ]
+    "identifierISBN" : [ "3710601789" ],
+    "preferredISBN" : "9783710601781",
+    "variantISBN" : [ "978-3-7106-0178-1", "3-7106-0178-9" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Christian Brandstätter Verlag GmbH & Co KG",
@@ -55905,7 +56418,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9781351792608" ]
+    "identifierISBN" : [ "9781351792608" ],
+    "preferredISBN" : "9781351792608",
+    "variantISBN" : [ "978-1-351-79260-8" ]
   } ],
   "IdentifierDOI" : [ {
     "standardNumber" : "10.1201/9781315204963"
@@ -55943,11 +56458,15 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : [ "9781138700109" ]
+    "identifierISBN" : [ "9781138700109" ],
+    "preferredISBN" : "9781138700109",
+    "variantISBN" : [ "978-1-138-70010-9" ]
   }, {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : [ "9781315204963" ]
+    "identifierISBN" : [ "9781315204963" ],
+    "preferredISBN" : "9781315204963",
+    "variantISBN" : [ "978-1-315-20496-3" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://www.taylorfrancis.com/books/9781351792608",
@@ -56037,7 +56556,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9781498775724" ]
+    "identifierISBN" : [ "9781498775724" ],
+    "preferredISBN" : "9781498775724",
+    "variantISBN" : [ "978-1-4987-7572-4" ]
   } ],
   "IdentifierDOI" : [ {
     "standardNumber" : "10.1201/9781315381305"
@@ -56083,6 +56604,8 @@
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9781498775717" ],
+    "preferredISBN" : "9781498775717",
+    "variantISBN" : [ "978-1-4987-7571-7" ],
     "controlNumber" : [ "(DE-605)HT019255720" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019255720" ]
   } ],
@@ -56187,7 +56710,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9781498736886" ]
+    "identifierISBN" : [ "9781498736886" ],
+    "preferredISBN" : "9781498736886",
+    "variantISBN" : [ "978-1-4987-3688-6" ]
   } ],
   "IdentifierDOI" : [ {
     "standardNumber" : "10.1201/9781315382203"
@@ -56226,15 +56751,21 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe, Hardback" ],
-    "identifierISBN" : [ "9781138627185" ]
+    "identifierISBN" : [ "9781138627185" ],
+    "preferredISBN" : "9781138627185",
+    "variantISBN" : [ "978-1-138-62718-5" ]
   }, {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe, Paperback" ],
-    "identifierISBN" : [ "9781498736879" ]
+    "identifierISBN" : [ "9781498736879" ],
+    "preferredISBN" : "9781498736879",
+    "variantISBN" : [ "978-1-4987-3687-9" ]
   }, {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : [ "9781315382203" ]
+    "identifierISBN" : [ "9781315382203" ],
+    "preferredISBN" : "9781315382203",
+    "variantISBN" : [ "978-1-315-38220-3" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://www.taylorfrancis.com/books/9781498736886",
@@ -56330,11 +56861,17 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783410274056", "Beuth Verlag" ]
+    "identifierISBN" : [ "9783410274056", "Beuth Verlag" ],
+    "preferredISBN" : "9783410274056",
+    "variantISBN" : [ "978-3-410-27405-6" ]
   }, {
-    "identifierISBN" : [ "9783433018354", "Verlag Ernst & Sohn" ]
+    "identifierISBN" : [ "9783433018354", "Verlag Ernst & Sohn" ],
+    "preferredISBN" : "9783433018354",
+    "variantISBN" : [ "978-3-433-01835-4" ]
   }, {
-    "identifierISBN" : [ "3433018359" ]
+    "identifierISBN" : [ "3433018359" ],
+    "preferredISBN" : "9783433018354",
+    "variantISBN" : [ "978-3-433-01835-4", "3-433-01835-9" ]
   } ],
   "IdentifierSheetMusic" : [ {
     "standardNumber" : "Bestellnummer: 1601835 000"
@@ -56388,11 +56925,15 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Online-Ausgabe (Beuth Verlag)" ],
-    "identifierISBN" : [ "9783410274063" ]
+    "identifierISBN" : [ "9783410274063" ],
+    "preferredISBN" : "9783410274063",
+    "variantISBN" : [ "978-3-410-27406-3" ]
   }, {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Online-Ausgabe, ePDF (Verlag Ernst & Sohn)" ],
-    "identifierISBN" : [ "9783433609231" ]
+    "identifierISBN" : [ "9783433609231" ],
+    "preferredISBN" : "9783433609231",
+    "variantISBN" : [ "978-3-433-60923-1" ]
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
@@ -56491,7 +57032,9 @@
     "languageSource" : "###"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9780198732860" ]
+    "identifierISBN" : [ "9780198732860" ],
+    "preferredISBN" : "9780198732860",
+    "variantISBN" : [ "978-0-19-873286-0" ]
   } ],
   "Person" : [ {
     "personName" : "G. Smith, Peter"
@@ -56612,9 +57155,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783406737640", "kartoniert : circa EUR 26.00 (DE)" ]
+    "identifierISBN" : [ "9783406737640", "kartoniert : circa EUR 26.00 (DE)" ],
+    "preferredISBN" : "9783406737640",
+    "variantISBN" : [ "978-3-406-73764-0" ]
   }, {
-    "identifierISBN" : [ "3406737641" ]
+    "identifierISBN" : [ "3406737641" ],
+    "preferredISBN" : "9783406737640",
+    "variantISBN" : [ "978-3-406-73764-0", "3-406-73764-1" ]
   } ],
   "Person" : [ {
     "personName" : "Mock, Sebastian",
@@ -56776,7 +57323,9 @@
     "languageSource" : "###"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9780692652831" ]
+    "identifierISBN" : [ "9780692652831" ],
+    "preferredISBN" : "9780692652831",
+    "variantISBN" : [ "978-0-692-65283-1" ]
   } ],
   "Person" : [ {
     "personName" : "Behar, Katherine"
@@ -56874,7 +57423,9 @@
     "languageSource" : "###"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783731507437" ]
+    "identifierISBN" : [ "9783731507437" ],
+    "preferredISBN" : "9783731507437",
+    "variantISBN" : [ "978-3-7315-0743-7" ]
   } ],
   "Person" : [ {
     "personName" : "Stein, Denis"
@@ -56972,7 +57523,9 @@
     "languageSource" : "###"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783731500094" ]
+    "identifierISBN" : [ "9783731500094" ],
+    "preferredISBN" : "9783731500094",
+    "variantISBN" : [ "978-3-7315-0009-4" ]
   } ],
   "Person" : [ {
     "personName" : "Mennerich, Christian"
@@ -57084,7 +57637,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9781859468616" ]
+    "identifierISBN" : [ "9781859468616" ],
+    "preferredISBN" : "9781859468616",
+    "variantISBN" : [ "978-1-85946-861-6" ]
   } ],
   "Person" : [ {
     "personName" : "Bobisse, Riccardo",
@@ -57195,9 +57750,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1475538901", "18.00 USD" ]
+    "identifierISBN" : [ "1475538901", "18.00 USD" ],
+    "preferredISBN" : "9781475538908",
+    "variantISBN" : [ "978-1-4755-3890-8", "1-4755-3890-1" ]
   }, {
-    "identifierISBN" : [ "9781475538908", "18.00 USD" ]
+    "identifierISBN" : [ "9781475538908", "18.00 USD" ],
+    "preferredISBN" : "9781475538908",
+    "variantISBN" : [ "978-1-4755-3890-8" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
@@ -57300,9 +57859,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1451959028", "15.00 USD" ]
+    "identifierISBN" : [ "1451959028", "15.00 USD" ],
+    "preferredISBN" : "9781451959024",
+    "variantISBN" : [ "978-1-4519-5902-4", "1-4519-5902-8" ]
   }, {
-    "identifierISBN" : [ "9781451959024", "15.00 USD" ]
+    "identifierISBN" : [ "9781451959024", "15.00 USD" ],
+    "preferredISBN" : "9781451959024",
+    "variantISBN" : [ "978-1-4519-5902-4" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
@@ -57401,9 +57964,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1451977999", "15.00 USD" ]
+    "identifierISBN" : [ "1451977999", "15.00 USD" ],
+    "preferredISBN" : "9781451977998",
+    "variantISBN" : [ "978-1-4519-7799-8", "1-4519-7799-9" ]
   }, {
-    "identifierISBN" : [ "9781451977998", "15.00 USD" ]
+    "identifierISBN" : [ "9781451977998", "15.00 USD" ],
+    "preferredISBN" : "9781451977998",
+    "variantISBN" : [ "978-1-4519-7799-8" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
@@ -57501,9 +58068,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1475504128", "18.00 USD" ]
+    "identifierISBN" : [ "1475504128", "18.00 USD" ],
+    "preferredISBN" : "9781475504125",
+    "variantISBN" : [ "978-1-4755-0412-5", "1-4755-0412-8" ]
   }, {
-    "identifierISBN" : [ "9781475504125", "18.00 USD" ]
+    "identifierISBN" : [ "9781475504125", "18.00 USD" ],
+    "preferredISBN" : "9781475504125",
+    "variantISBN" : [ "978-1-4755-0412-5" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
@@ -57600,9 +58171,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1475503237", "18.00 USD" ]
+    "identifierISBN" : [ "1475503237", "18.00 USD" ],
+    "preferredISBN" : "9781475503234",
+    "variantISBN" : [ "978-1-4755-0323-4", "1-4755-0323-7" ]
   }, {
-    "identifierISBN" : [ "9781475503234", "18.00 USD" ]
+    "identifierISBN" : [ "9781475503234", "18.00 USD" ],
+    "preferredISBN" : "9781475503234",
+    "variantISBN" : [ "978-1-4755-0323-4" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
@@ -57703,9 +58278,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "147550330X", "18.00 USD" ]
+    "identifierISBN" : [ "147550330X", "18.00 USD" ],
+    "preferredISBN" : "9781475503302",
+    "variantISBN" : [ "978-1-4755-0330-2", "1-4755-0330-X" ]
   }, {
-    "identifierISBN" : [ "9781475503302", "18.00 USD" ]
+    "identifierISBN" : [ "9781475503302", "18.00 USD" ],
+    "preferredISBN" : "9781475503302",
+    "variantISBN" : [ "978-1-4755-0330-2" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
@@ -57819,9 +58398,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1463927223", "18.00 USD" ]
+    "identifierISBN" : [ "1463927223", "18.00 USD" ],
+    "preferredISBN" : "9781463927226",
+    "variantISBN" : [ "978-1-4639-2722-6", "1-4639-2722-3" ]
   }, {
-    "identifierISBN" : [ "9781463927226", "18.00 USD" ]
+    "identifierISBN" : [ "9781463927226", "18.00 USD" ],
+    "preferredISBN" : "9781463927226",
+    "variantISBN" : [ "978-1-4639-2722-6" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
@@ -57919,9 +58502,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "146233752X", "18.00 USD" ]
+    "identifierISBN" : [ "146233752X", "18.00 USD" ],
+    "preferredISBN" : "9781462337521",
+    "variantISBN" : [ "978-1-4623-3752-1", "1-4623-3752-X" ]
   }, {
-    "identifierISBN" : [ "9781462337521", "18.00 USD" ]
+    "identifierISBN" : [ "9781462337521", "18.00 USD" ],
+    "preferredISBN" : "9781462337521",
+    "variantISBN" : [ "978-1-4623-3752-1" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
@@ -58015,9 +58602,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1557754799", "0.00 USD" ]
+    "identifierISBN" : [ "1557754799", "0.00 USD" ],
+    "preferredISBN" : "9781557754790",
+    "variantISBN" : [ "978-1-55775-479-0", "1-55775-479-9" ]
   }, {
-    "identifierISBN" : [ "9781557754790", "0.00 USD" ]
+    "identifierISBN" : [ "9781557754790", "0.00 USD" ],
+    "preferredISBN" : "9781557754790",
+    "variantISBN" : [ "978-1-55775-479-0" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0538-8759",
@@ -58116,9 +58707,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1451857942", "15.00 USD" ]
+    "identifierISBN" : [ "1451857942", "15.00 USD" ],
+    "preferredISBN" : "9781451857948",
+    "variantISBN" : [ "978-1-4518-5794-8", "1-4518-5794-2" ]
   }, {
-    "identifierISBN" : [ "9781451857948", "15.00 USD" ]
+    "identifierISBN" : [ "9781451857948", "15.00 USD" ],
+    "preferredISBN" : "9781451857948",
+    "variantISBN" : [ "978-1-4518-5794-8" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
@@ -58219,9 +58814,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "145187572X", "15.00 USD" ]
+    "identifierISBN" : [ "145187572X", "15.00 USD" ],
+    "preferredISBN" : "9781451875720",
+    "variantISBN" : [ "978-1-4518-7572-0", "1-4518-7572-X" ]
   }, {
-    "identifierISBN" : [ "9781451875720", "15.00 USD" ]
+    "identifierISBN" : [ "9781451875720", "15.00 USD" ],
+    "preferredISBN" : "9781451875720",
+    "variantISBN" : [ "978-1-4518-7572-0" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
@@ -58323,9 +58922,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1451862385", "15.00 USD" ]
+    "identifierISBN" : [ "1451862385", "15.00 USD" ],
+    "preferredISBN" : "9781451862386",
+    "variantISBN" : [ "978-1-4518-6238-6", "1-4518-6238-5" ]
   }, {
-    "identifierISBN" : [ "9781451862386", "15.00 USD" ]
+    "identifierISBN" : [ "9781451862386", "15.00 USD" ],
+    "preferredISBN" : "9781451862386",
+    "variantISBN" : [ "978-1-4518-6238-6" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
@@ -58427,9 +59030,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "145187331X", "18.00 USD" ]
+    "identifierISBN" : [ "145187331X", "18.00 USD" ],
+    "preferredISBN" : "9781451873313",
+    "variantISBN" : [ "978-1-4518-7331-3", "1-4518-7331-X" ]
   }, {
-    "identifierISBN" : [ "9781451873313", "18.00 USD" ]
+    "identifierISBN" : [ "9781451873313", "18.00 USD" ],
+    "preferredISBN" : "9781451873313",
+    "variantISBN" : [ "978-1-4518-7331-3" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
@@ -58535,9 +59142,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1451970951", "10.00 USD" ]
+    "identifierISBN" : [ "1451970951", "10.00 USD" ],
+    "preferredISBN" : "9781451970951",
+    "variantISBN" : [ "978-1-4519-7095-1", "1-4519-7095-1" ]
   }, {
-    "identifierISBN" : [ "9781451970951", "10.00 USD" ]
+    "identifierISBN" : [ "9781451970951", "10.00 USD" ],
+    "preferredISBN" : "9781451970951",
+    "variantISBN" : [ "978-1-4519-7095-1" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7456",
@@ -58638,9 +59249,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1451865961", "18.00 USD" ]
+    "identifierISBN" : [ "1451865961", "18.00 USD" ],
+    "preferredISBN" : "9781451865967",
+    "variantISBN" : [ "978-1-4518-6596-7", "1-4518-6596-1" ]
   }, {
-    "identifierISBN" : [ "9781451865967", "18.00 USD" ]
+    "identifierISBN" : [ "9781451865967", "18.00 USD" ],
+    "preferredISBN" : "9781451865967",
+    "variantISBN" : [ "978-1-4518-6596-7" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
@@ -58741,9 +59356,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1451857489", "15.00 USD" ]
+    "identifierISBN" : [ "1451857489", "15.00 USD" ],
+    "preferredISBN" : "9781451857481",
+    "variantISBN" : [ "978-1-4518-5748-1", "1-4518-5748-9" ]
   }, {
-    "identifierISBN" : [ "9781451857481", "15.00 USD" ]
+    "identifierISBN" : [ "9781451857481", "15.00 USD" ],
+    "preferredISBN" : "9781451857481",
+    "variantISBN" : [ "978-1-4518-5748-1" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1018-5941",
@@ -58843,9 +59462,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1455206407", "18.00 USD" ]
+    "identifierISBN" : [ "1455206407", "18.00 USD" ],
+    "preferredISBN" : "9781455206407",
+    "variantISBN" : [ "978-1-4552-0640-7", "1-4552-0640-7" ]
   }, {
-    "identifierISBN" : [ "9781455206407", "18.00 USD" ]
+    "identifierISBN" : [ "9781455206407", "18.00 USD" ],
+    "preferredISBN" : "9781455206407",
+    "variantISBN" : [ "978-1-4552-0640-7" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
@@ -58946,9 +59569,13 @@
     "languageSource" : "rus"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1589062019", "0.00 USD" ]
+    "identifierISBN" : [ "1589062019", "0.00 USD" ],
+    "preferredISBN" : "9781589062016",
+    "variantISBN" : [ "978-1-58906-201-6", "1-58906-201-9" ]
   }, {
-    "identifierISBN" : [ "9781589062016", "0.00 USD" ]
+    "identifierISBN" : [ "9781589062016", "0.00 USD" ],
+    "preferredISBN" : "9781589062016",
+    "variantISBN" : [ "978-1-58906-201-6" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1020-8402",
@@ -59043,9 +59670,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1589066480", "0.00 USD" ]
+    "identifierISBN" : [ "1589066480", "0.00 USD" ],
+    "preferredISBN" : "9781589066489",
+    "variantISBN" : [ "978-1-58906-648-9", "1-58906-648-0" ]
   }, {
-    "identifierISBN" : [ "9781589066489", "0.00 USD" ]
+    "identifierISBN" : [ "9781589066489", "0.00 USD" ],
+    "preferredISBN" : "9781589066489",
+    "variantISBN" : [ "978-1-58906-648-9" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "0074-7025",
@@ -59142,9 +59773,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1451822448", "15.00 USD" ]
+    "identifierISBN" : [ "1451822448", "15.00 USD" ],
+    "preferredISBN" : "9781451822441",
+    "variantISBN" : [ "978-1-4518-2244-1", "1-4518-2244-8" ]
   }, {
-    "identifierISBN" : [ "9781451822441", "15.00 USD" ]
+    "identifierISBN" : [ "9781451822441", "15.00 USD" ],
+    "preferredISBN" : "9781451822441",
+    "variantISBN" : [ "978-1-4518-2244-1" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
@@ -59241,9 +59876,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1451834365", "15.00 USD" ]
+    "identifierISBN" : [ "1451834365", "15.00 USD" ],
+    "preferredISBN" : "9781451834369",
+    "variantISBN" : [ "978-1-4518-3436-9", "1-4518-3436-5" ]
   }, {
-    "identifierISBN" : [ "9781451834369", "15.00 USD" ]
+    "identifierISBN" : [ "9781451834369", "15.00 USD" ],
+    "preferredISBN" : "9781451834369",
+    "variantISBN" : [ "978-1-4518-3436-9" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
@@ -59340,9 +59979,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1498308007", "18.00 USD" ]
+    "identifierISBN" : [ "1498308007", "18.00 USD" ],
+    "preferredISBN" : "9781498308007",
+    "variantISBN" : [ "978-1-4983-0800-7", "1-4983-0800-7" ]
   }, {
-    "identifierISBN" : [ "9781498308007", "18.00 USD" ]
+    "identifierISBN" : [ "9781498308007", "18.00 USD" ],
+    "preferredISBN" : "9781498308007",
+    "variantISBN" : [ "978-1-4983-0800-7" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
@@ -59444,9 +60087,13 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "1513512900", "18.00 USD" ]
+    "identifierISBN" : [ "1513512900", "18.00 USD" ],
+    "preferredISBN" : "9781513512907",
+    "variantISBN" : [ "978-1-5135-1290-7", "1-5135-1290-0" ]
   }, {
-    "identifierISBN" : [ "9781513512907", "18.00 USD" ]
+    "identifierISBN" : [ "9781513512907", "18.00 USD" ],
+    "preferredISBN" : "9781513512907",
+    "variantISBN" : [ "978-1-5135-1290-7" ]
   } ],
   "IdentifierISSN" : [ {
     "identifierISSN" : "1934-7685",
@@ -59564,7 +60211,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783846757604", "Online" ]
+    "identifierISBN" : [ "9783846757604", "Online" ],
+    "preferredISBN" : "9783846757604",
+    "variantISBN" : [ "978-3-8467-5760-4" ]
   } ],
   "IdentifierDOI" : [ {
     "standardNumber" : "10.30965/9783846757604"
@@ -59596,7 +60245,9 @@
   "AdditionalPhysicalFormEntry" : [ {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
-    "identifierISBN" : [ "9783770557608" ]
+    "identifierISBN" : [ "9783770557608" ],
+    "preferredISBN" : "9783770557608",
+    "variantISBN" : [ "978-3-7705-5760-8" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://doi.org/10.30965/9783846757604",
@@ -59820,9 +60471,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783836237628" ]
+    "identifierISBN" : [ "9783836237628" ],
+    "preferredISBN" : "9783836237628",
+    "variantISBN" : [ "978-3-8362-3762-8" ]
   }, {
-    "identifierISBN" : [ "3836237628" ]
+    "identifierISBN" : [ "3836237628" ],
+    "preferredISBN" : "9783836237628",
+    "variantISBN" : [ "978-3-8362-3762-8", "3-8362-3762-8" ]
   } ],
   "Person" : [ {
     "personName" : "Jurzik, Heike",
@@ -59971,7 +60626,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3784111394", "Kunststoff : ca. DM 28.00, ca. sfr 26.50, ca. S 205.00" ]
+    "identifierISBN" : [ "3784111394", "Kunststoff : ca. DM 28.00, ca. sfr 26.50, ca. S 205.00" ],
+    "preferredISBN" : "9783784111391",
+    "variantISBN" : [ "978-3-7841-1139-1", "3-7841-1139-4" ]
   } ],
   "Person" : [ {
     "personName" : "Weiss, Gabriele"
@@ -60079,7 +60736,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3784111394", "Kunststoff : ca. DM 28.00, ca. sfr 26.50, ca. S 205.00" ]
+    "identifierISBN" : [ "3784111394", "Kunststoff : ca. DM 28.00, ca. sfr 26.50, ca. S 205.00" ],
+    "preferredISBN" : "9783784111391",
+    "variantISBN" : [ "978-3-7841-1139-1", "3-7841-1139-4" ]
   } ],
   "Person" : [ {
     "personName" : "Weiss, Gabriele"
@@ -60187,7 +60846,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3784111394", "Kunststoff : ca. DM 28.00, ca. sfr 26.50, ca. S 205.00" ]
+    "identifierISBN" : [ "3784111394", "Kunststoff : ca. DM 28.00, ca. sfr 26.50, ca. S 205.00" ],
+    "preferredISBN" : "9783784111391",
+    "variantISBN" : [ "978-3-7841-1139-1", "3-7841-1139-4" ]
   } ],
   "Person" : [ {
     "personName" : "Weiss, Gabriele"
@@ -60292,7 +60953,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3784111394", "Kunststoff : ca. DM 28.00, ca. sfr 26.50, ca. S 205.00" ]
+    "identifierISBN" : [ "3784111394", "Kunststoff : ca. DM 28.00, ca. sfr 26.50, ca. S 205.00" ],
+    "preferredISBN" : "9783784111391",
+    "variantISBN" : [ "978-3-7841-1139-1", "3-7841-1139-4" ]
   } ],
   "Person" : [ {
     "personName" : "Weiss, Gabriele"
@@ -60407,7 +61070,9 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "3784111394", "Kunststoff : ca. DM 28.00, ca. sfr 26.50, ca. S 205.00" ]
+    "identifierISBN" : [ "3784111394", "Kunststoff : ca. DM 28.00, ca. sfr 26.50, ca. S 205.00" ],
+    "preferredISBN" : "9783784111391",
+    "variantISBN" : [ "978-3-7841-1139-1", "3-7841-1139-4" ]
   } ],
   "Person" : [ {
     "personName" : "Weiss, Gabriele"
@@ -60844,7 +61509,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9781119788829" ]
+    "identifierISBN" : [ "9781119788829" ],
+    "preferredISBN" : "9781119788829",
+    "variantISBN" : [ "978-1-119-78882-9" ]
   } ],
   "IdentifierDOI" : [ {
     "standardNumber" : "10.1002/9781119788829"
@@ -60866,7 +61533,9 @@
     "extent" : "1 Online-Ressource"
   },
   "AdditionalPhysicalFormEntry" : [ {
-    "identifierISBN" : [ "9781119788799" ]
+    "identifierISBN" : [ "9781119788799" ],
+    "preferredISBN" : "9781119788799",
+    "variantISBN" : [ "978-1-119-78879-9" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119788829"
@@ -60936,7 +61605,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9780691235950" ]
+    "identifierISBN" : [ "9780691235950" ],
+    "preferredISBN" : "9780691235950",
+    "variantISBN" : [ "978-0-691-23595-0" ]
   } ],
   "IdentifierDOI" : [ {
     "standardNumber" : "10.1515/9780691235950"

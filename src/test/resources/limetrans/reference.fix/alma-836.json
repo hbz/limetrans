@@ -89,9 +89,13 @@
     "languageSource" : "ger"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ]
+    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ],
+    "preferredISBN" : "9783825286644",
+    "variantISBN" : [ "978-3-8252-8664-4" ]
   }, {
-    "identifierISBN" : [ "3825286649" ]
+    "identifierISBN" : [ "3825286649" ],
+    "preferredISBN" : "9783825286644",
+    "variantISBN" : [ "978-3-8252-8664-4", "3-8252-8664-9" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Milchkunde und Milchhygiene"
@@ -425,7 +429,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9781119788829" ]
+    "identifierISBN" : [ "9781119788829" ],
+    "preferredISBN" : "9781119788829",
+    "variantISBN" : [ "978-1-119-78882-9" ]
   } ],
   "IdentifierDOI" : [ {
     "standardNumber" : "10.1002/9781119788829"
@@ -447,7 +453,9 @@
     "extent" : "1 Online-Ressource"
   },
   "AdditionalPhysicalFormEntry" : [ {
-    "identifierISBN" : [ "9781119788799" ]
+    "identifierISBN" : [ "9781119788799" ],
+    "preferredISBN" : "9781119788799",
+    "variantISBN" : [ "978-1-119-78879-9" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119788829"
@@ -517,7 +525,9 @@
     "languageSource" : "eng"
   } ],
   "IdentifierISBN" : [ {
-    "identifierISBN" : [ "9780691235950" ]
+    "identifierISBN" : [ "9780691235950" ],
+    "preferredISBN" : "9780691235950",
+    "variantISBN" : [ "978-0-691-23595-0" ]
   } ],
   "IdentifierDOI" : [ {
     "standardNumber" : "10.1515/9780691235950"

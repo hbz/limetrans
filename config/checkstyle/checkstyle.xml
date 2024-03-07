@@ -12,7 +12,9 @@
         <module name="AnnotationUseStyle"/>
         <module name="AnonInnerLength"/>
         <module name="ArrayTypeStyle"/>
-        <module name="AvoidNestedBlocks"/>
+        <module name="AvoidNestedBlocks">
+            <property name="allowInSwitchCase" value="true"/>
+        </module>
         <module name="AvoidNoArgumentSuperConstructorCall"/>
         <module name="AvoidStarImport"/>
         <module name="AvoidStaticImport"/>

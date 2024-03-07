@@ -15,6 +15,7 @@ do list(path: "$[source][ 0]?", "var": "$i")
   call_macro("copy-first-item", source: "$i.x", target: "$[target][].$last.identifierISSN")
   hbz.limetrans.function.StandardNumber("ISSN", "$[target][].$last")
   call_macro("copy-all-items", source: "$i.z", target: "$[target][].$last.identifierISBN")
+  hbz.limetrans.function.StandardNumber("ISBN", "$[target][].$last", source: "$[target][].$last.identifierISBN[].1") # TODO: multiple ISBNs?
   set_array("$[target][].$last.controlNumber[]")
   set_array("$[target][].$last.identifierForLinkingEntry[]")
   do list(path: "$i.w", "var": "$j")

@@ -212,9 +212,11 @@ end
 set_array("IdentifierISBN[]")
 do list(path: "0540.*", "var": "$i")
   copy_field("$i", "IdentifierISBN[].$append.identifierISBN")
+  hbz.limetrans.function.StandardNumber("ISBN", "IdentifierISBN[].$last", source: "$i")
 end
 do list(path: "0541.*", "var": "$i")
   copy_field("$i", "IdentifierISBN[].$append.identifierISBN")
+  hbz.limetrans.function.StandardNumber("ISBN", "IdentifierISBN[].$last", source: "$i")
 end
 
 # SISIS/0600
