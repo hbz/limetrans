@@ -6,7 +6,8 @@ d="${OUTPUT_DIRECTORY:-src/main/resources/transformation/maps}"
 p="$d/lobid-gnd"
 
 e=lmdb
-f="$p.$$.$e"
+f="$p.$e"
+t="$p.$$.$e"
 
 curl --no-progress-meter\
   'https://lobid.org/gnd/search?q=*&format=jsonl' |\
@@ -20,6 +21,8 @@ curl --no-progress-meter\
       puts "#{k}\u001D#{v.join("\u001F")}" if k && !v.empty?
     }
   ' |\
-  ./gradlew execLmdb --args="$f"
+  ./gradlew execLmdb --args="$t"
 
-[ -s "$f" ] && mv "$f" "$p.$e"
+[ -s "$t" ] && mv "$t" "$f"
+
+./gradlew execLmdb --args="$f"
