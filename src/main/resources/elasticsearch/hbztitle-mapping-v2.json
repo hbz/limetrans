@@ -1030,6 +1030,16 @@
             "cql.allIndexes",
             "dc.identifier"
           ]
+        },
+        "invalidISBN": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
         }
       }
     },
