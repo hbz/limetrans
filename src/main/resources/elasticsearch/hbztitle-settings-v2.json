@@ -8,10 +8,6 @@
           "type" : "snowball",
           "name" : "German2"
         },
-        "isbn" : {
-          "type" : "standardnumber",
-          "number_types" : [ "isbn" ]
-        },
         "simple_hyphen" : {
           "type" : "hyphen",
           "subwords" : false
@@ -107,7 +103,6 @@
             "hyphen",
             "string_normalizer",
             "snowball_german_umlaut",
-            "isbn",
             "unique"
           ]
         },
@@ -122,7 +117,6 @@
             "icu_folding",
             "string_normalizer",
             "snowball_german_umlaut",
-            "isbn",
             "unique"
           ]
         },
