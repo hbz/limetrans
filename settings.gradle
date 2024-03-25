@@ -4,8 +4,6 @@ plugins {
 
 rootProject.name = 'limetrans'
 
-enableFeaturePreview 'STABLE_CONFIGURATION_CACHE'
-
 gradle.rootProject {
     def baseUrl = project.hasProperty('git.baseUrl') ?
         project.getProperty('git.baseUrl') : null
