@@ -154,14 +154,13 @@ public class StandardNumber implements FixFunction {
                         break;
                     }
                     case ISBN13_SIZE: {
-                        // elasticsearch-plugin-bundle: do not create ISBN-10 for an ISBN-13
-                        //final String alternateNumber = isbn13to10(normalizedNumber);
+                        final String alternateNumber = normalizedNumber.startsWith(PREFIX) ? isbn13to10(normalizedNumber) : null;
                         final String hyphenatedNumber = hyphenate13(normalizedNumber);
 
                         put(aHash, aType, aValue, normalizedNumber, // ISBN-13 normalized
-                                hyphenatedNumber                    // ISBN-13 hyphenated
-                                //alternateNumber                   // ISBN-10 normalized
-                                //hyphenate10(alternateNumber)      // ISBN-10 hyphenated
+                                hyphenatedNumber,                   // ISBN-13 hyphenated
+                                alternateNumber,                    // ISBN-10 normalized
+                                hyphenate10(alternateNumber)        // ISBN-10 hyphenated
                         );
 
                         break;
