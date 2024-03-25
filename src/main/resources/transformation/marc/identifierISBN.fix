@@ -16,3 +16,4 @@ do list(path: "020  ", "var": "$i")
     copy_field("$j", "IdentifierISBN[].$last.invalidISBN[].$append")
   end
 end
+uniq("IdentifierISBN[]")
