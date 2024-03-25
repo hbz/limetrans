@@ -700,3 +700,117 @@
     "subjectIdentifier" : [ "(OCoLC)fst01087053" ]
   } ]
 }
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT030648740",
+    "identifierHBZ" : "HT030648740"
+  } ],
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2023" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Stychin, Carl F" ],
+    "subject" : [ "Jurisprudence & general issues", "Public health & safety law" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHM",
+    "identifierMMS" : "99373539869106441",
+    "identifierPID" : [ "53853482000006441", "53853482930006441", "53853482310006441", "53853482230006441" ]
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99373539869106441",
+    "identifierForTheRecord" : "(DE-605)HT030648740"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9781911507390", "9781911507406" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Law, Humanities and the COVID Crisis"
+  } ],
+  "PublisherName" : [ {
+    "name" : [ "University of London Press" ],
+    "chronology" : [ "2023" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2023" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource"
+  },
+  "DescriptionOfExpression" : [ {
+    "description" : "English"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Stychin, Carl F"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://library.oapen.org/bitstream/20.500.12657/76493/1/external_content.pdf",
+    "publicnote" : "DOAB: download the publication"
+  }, {
+    "publicnote" : "DOAB: download the publication"
+  }, {
+    "publicnote" : "DOAB: download the publication"
+  }, {
+    "uri" : "https://directory.doabooks.org/handle/20.500.12854/121575",
+    "publicnote" : "DOAB: description of the publication"
+  }, {
+    "collectionIdentifier" : "61737818980006441",
+    "publicnote" : "DOAB - Directory of Open Access Books (ZDB-94-OAB) [Zugang für alle FH-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=53853482000006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  }, {
+    "collectionIdentifier" : "61737818980006441",
+    "publicnote" : "DOAB - Directory of Open Access Books (ZDB-94-OAB) [Zugang für alle FH-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=53853482930006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  }, {
+    "collectionIdentifier" : "61737818980006441",
+    "publicnote" : "DOAB - Directory of Open Access Books (ZDB-94-OAB) [Zugang für alle FH-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=53853482310006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  }, {
+    "collectionIdentifier" : "61737818980006441",
+    "publicnote" : "DOAB - Directory of Open Access Books (ZDB-94-OAB) [Zugang für alle FH-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=53853482230006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : [ "ZDB-94-OAB" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99373539869106441"
+  }, {
+    "uid" : "(DE-605)HT030648740"
+  }, {
+    "uid" : "(hbzERes_OAPEN)121575"
+  }, {
+    "uid" : "(oapen)doab_121575"
+  }, {
+    "uid" : "(DE-599)HBZHT030648740"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : [ "Jurisprudence & general issues" ],
+    "combinedLabel" : "Jurisprudence & general issues"
+  }, {
+    "subjectTopicName" : [ "Public health & safety law" ],
+    "combinedLabel" : "Public health & safety law"
+  } ],
+  "Subject" : [ {
+    "subject" : "Law"
+  }, {
+    "subject" : "Health"
+  } ]
+}
