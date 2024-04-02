@@ -8,6 +8,7 @@ import com.carrotsearch.hppc.cursors.ObjectCursor;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.elasticsearch.Version;
 import org.elasticsearch.action.ActionRequest;
 import org.elasticsearch.action.admin.cluster.health.ClusterHealthResponse;
 import org.elasticsearch.action.admin.indices.alias.IndicesAliasesRequestBuilder;
@@ -27,12 +28,16 @@ import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.index.IndexNotFoundException;
 import org.elasticsearch.node.Node;
 import org.elasticsearch.node.NodeBuilder;
+import org.elasticsearch.node.internal.InternalSettingsPreparer;
+import org.xbib.elasticsearch.plugin.bundle.BundlePlugin;
 
 import java.io.File;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.nio.file.Files;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -40,6 +45,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Consumer;
+import java.util.stream.Collectors;
 
 public class ElasticsearchClientV2 extends ElasticsearchClient { // checkstyle-disable-line ClassDataAbstractionCoupling|ClassFanOutComplexity
 
@@ -203,6 +209,12 @@ public class ElasticsearchClientV2 extends ElasticsearchClient { // checkstyle-d
     }
 
     @Override
+    public Map<String, String> searchDocuments(final String aQuery) {
+        return Arrays.stream(mClient.prepareSearch(getIndexName()).setQuery(aQuery).setSize(MAX_HITS).get()
+                .getHits().getHits()).collect(Collectors.toMap(h -> h.getId(), h -> h.getSourceAsString()));
+    }
+
+    @Override
     public String getDocument(final String aId) {
         return mClient.prepareGet(getIndexName(), getIndexType(), aId).get().getSourceAsString();
     }
@@ -315,13 +327,15 @@ public class ElasticsearchClientV2 extends ElasticsearchClient { // checkstyle-d
             mDataDir = aDataDir;
             mTempDir = aTempDir;
 
-            mNode = NodeBuilder.nodeBuilder()
-                .settings(org.elasticsearch.common.settings.Settings.settingsBuilder()
-                        .put("http.enabled", false)
-                        .put("path.home", mDataDir)
-                        .build())
-                .local(true)
-                .node();
+            final NodeBuilder nodeBuilder = NodeBuilder.nodeBuilder().settings(
+                    org.elasticsearch.common.settings.Settings.settingsBuilder()
+                .put("http.enabled", false)
+                .put("path.home", mDataDir)
+                .put("node.local", true)
+            );
+
+            mNode = new LocalNode(nodeBuilder); // nodeBuilder.build()
+            mNode.start();
         }
 
         private static Client getClient(final String aDataDir, final Consumer<ElasticsearchServer> aConsumer) {
@@ -386,6 +400,15 @@ public class ElasticsearchClientV2 extends ElasticsearchClient { // checkstyle-d
             catch (final IOException e) {
                 throw new LimetransException("Failed to delete directory", e);
             }
+        }
+
+        private static class LocalNode extends Node {
+
+            private LocalNode(final NodeBuilder aBuilder) {
+                super(InternalSettingsPreparer.prepareEnvironment(aBuilder.settings().build(), null),
+                        Version.CURRENT, Collections.singleton(BundlePlugin.class));
+            }
+
         }
 
     }

@@ -55,6 +55,10 @@ dependencies {
     implementation "org.apache.logging.log4j:log4j-slf4j-impl:${versions.log4j}"
     implementation "org.elasticsearch:elasticsearch:${versions.elasticsearch}"
     implementation "org.lmdbjava:lmdbjava:${versions.lmdb}"
+    implementation files("libs/elasticsearch-plugin-bundle-${versions.elasticsearch}.0.jar")
+
+    // Required for ElasticsearchClientTest (elasticsearch2 plugin bundle): com.ibm.icu.text.Normalizer2
+    testImplementation "org.apache.lucene:lucene-analyzers-icu:${versions.lucene5}"
 }
 
 sourceSets {

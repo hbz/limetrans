@@ -23,6 +23,8 @@ import java.util.regex.Pattern;
 
 public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractClass
 
+    protected static final int MAX_HITS = 1000;
+
     protected static final String INDEX_KEY = "index";
     protected static final String INDEX_NAME_KEY = "name";
     protected static final String INDEX_TYPE_KEY = "type";
@@ -169,7 +171,7 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
             updateIndexSettings(false);
         }
 
-        refreshIndex(mIndexName);
+        refreshIndex();
     }
 
     protected abstract boolean isBulkClosed();
@@ -204,7 +206,7 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         createIndex(mIndexName);
         setIndexCreated(true);
 
-        refreshIndex(mIndexName);
+        refreshIndex();
     }
 
     protected abstract void deleteIndex(String aIndexName);
@@ -237,6 +239,10 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
     private String getVersionTag() {
         final String name = getClass().getSimpleName();
         return name.substring(name.lastIndexOf(VERSION_PREFIX)).toLowerCase();
+    }
+
+    protected void refreshIndex() {
+        refreshIndex(mIndexName);
     }
 
     protected abstract void refreshIndex(String aIndexName);
@@ -334,6 +340,8 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         return mDeleteOnExit;
     }
 
+    public abstract Map<String, String> searchDocuments(String aQuery);
+
     public abstract String getDocument(String aId);
 
     public abstract void indexDocument(String aId, String aDocument);
@@ -412,11 +420,16 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         return new ElasticsearchClientV2(aSettings);
     }
 
-    public static ElasticsearchClient newClient(final String aIndexName, final String aIndexType) {
-        return newClient(Settings.settingsBuilder()
-                .put(new String[]{INDEX_KEY, INDEX_NAME_KEY}, aIndexName)
-                .put(new String[]{INDEX_KEY, INDEX_TYPE_KEY}, aIndexType)
-                .build());
+    public static ElasticsearchClient newClient(final String aIndexName, final String aIndexType, final Consumer<Settings.Builder> aConsumer) {
+        final Settings.Builder settingsBuilder = Settings.settingsBuilder()
+            .put(new String[]{INDEX_KEY, INDEX_NAME_KEY}, aIndexName)
+            .put(new String[]{INDEX_KEY, INDEX_TYPE_KEY}, aIndexType);
+
+        if (aConsumer != null) {
+            aConsumer.accept(settingsBuilder);
+        }
+
+        return newClient(settingsBuilder.build());
     }
 
     private void updateIndexSettings(final boolean aBulk) {
