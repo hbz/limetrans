@@ -4,7 +4,7 @@
   "input": {
     "queue1": {
       "path": "${path}",
-      "pattern": "{hanser_ebooks_LBZ,Kohlhammer_EBS_MARC21_gesamt,NBE_*_gesamt,utb_report,WBG *,zdb41utb-tit}.mrc",
+      "pattern": "{hanser_ebooks_LBZ,Kohlhammer_EBS_MARC21_gesamt,NBE_*_gesamt,utb_report,UTB_scholars,WBG *,zdb41utb-tit}.mrc",
       "processor" : "MARC21RECORDS"
     },
     "queue2": {
