@@ -1,14 +1,15 @@
 {
   "isil": "DE-107",
-  "path": "/mnt/herakles/${isil}/upload/",
+  "external-path": "/data/jenkins/limetrans",
+  "external-data": "${external-path}/data/${isil}",
   "input": {
     "queue-onleihe": {
-      "path": "${path}",
+      "path": "${external-data}",
       "pattern": "unload_Onleihe.TIT",
       "processor" : "SISIS"
     },
     "queue-zeitschriften": {
-      "path": "${path}",
+      "path": "${external-data}",
       "pattern": "unload_ZSBaende.TIT",
       "processor" : "SISIS_SUPER"
     }

@@ -1,14 +1,15 @@
 {
   "isil": "DE-107",
-  "path": "/mnt/herakles/${isil}/upload/",
+  "external-path": "/data/jenkins/limetrans",
+  "external-data": "${external-path}/data/${isil}",
   "input": {
     "queue1": {
-      "path": "${path}",
+      "path": "${external-data}",
       "pattern": "{hanser_ebooks_LBZ,Kohlhammer_EBS_MARC21_gesamt,NBE_*_gesamt,utb_report,UTB_scholars,WBG *,zdb41utb-tit}.mrc",
       "processor" : "MARC21RECORDS"
     },
     "queue2": {
-      "path": "${path}",
+      "path": "${external-data}",
       "pattern": "{Meiner_export_*,Narr_Francke_Attempto_elibrary-marcxml,SpringerNature_Books_MARCXML_*}.xml"
     }
   },

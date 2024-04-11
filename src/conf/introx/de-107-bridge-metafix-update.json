@@ -1,7 +1,9 @@
 {
   "isil": "DE-107",
   "path": "/data/pubhub/export/alma/prod/",
-  "external-maps": "/data/jenkins/limetrans/maps",
+  "external-path": "/data/jenkins/limetrans",
+  "external-data": "${external-path}/data/${isil}",
+  "external-maps": "${external-path}/maps",
   "postprocess": true,
   "alma": {
     "filter": [
@@ -9,9 +11,9 @@
       "85640.u=~www\\.edoweb-rlp\\.de"
     ],
     "sisis-supplements": {
-      "0010": "/mnt/herakles/${isil}/upload/unload_ZSBaende.TIT",
-      "0600": "/mnt/herakles/${isil}/upload/unload_Bemerkungen.TIT",
-      "2662": "/mnt/herakles/${isil}/upload/unload_Links.TIT"
+      "0010": "${external-data}/unload_ZSBaende.TIT",
+      "0600": "${external-data}/unload_Bemerkungen.TIT",
+      "2662": "${external-data}/unload_Links.TIT"
     }
   },
   "input": {
