@@ -5,12 +5,12 @@
   "input": {
     "queue1": {
       "path": "${external-data}",
-      "pattern": "{hanser_ebooks_LBZ,Kohlhammer_EBS_MARC21_gesamt,NBE_*_gesamt,utb_report,UTB_scholars,WBG *,zdb41utb-tit}.mrc",
+      "pattern": "{hanser_ebooks_LBZ,NBE_*_gesamt,utb_report,UTB_scholars,WBG *,zdb41utb-tit}.mrc",
       "processor" : "MARC21RECORDS"
     },
     "queue2": {
       "path": "${external-data}",
-      "pattern": "{Meiner_export_*,Narr_Francke_Attempto_elibrary-marcxml,SpringerNature_Books_MARCXML_*}.xml"
+      "pattern": "{Kohlhammer_EBS_MARCXML_gesamt_*,Kortext_Wiley_WiSo_*,Meiner_export_*,Narr_Francke_Attempto_elibrary-marcxml,SpringerNature_Books_MARCXML_*}.xml"
     }
   },
   "output": {
