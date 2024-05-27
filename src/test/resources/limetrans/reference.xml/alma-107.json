@@ -1159,3 +1159,73 @@
     "callnumber" : "LS NN 20"
   } ]
 }
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "eine Einführung in das volkhafte Schrifttum unserer Zeit"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "von Hellmuth Langenbucher"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1939" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_BRIDGE_LBZ",
+    "identifierMMS" : "990005995790206441",
+    "identifierMMSIZ" : "9912476707506"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990005995790206441",
+    "identifierForTheRecord" : "(DE-605)HT000683102"
+  },
+  "Language" : [ {
+    "languageSource" : "   "
+  } ],
+  "Person" : [ {
+    "personName" : "Langenbucher, Hellmuth",
+    "personBio" : "1905-1980",
+    "personIdentifier" : [ "(DE-588)116707380" ],
+    "identifierGND" : [ "116707380" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "<<Die>> deutsche Gegenwartsdichtung"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Berlin" ],
+    "name" : [ "Junker und Dünnhaupt Verlag" ],
+    "chronology" : [ "1939" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1939" ]
+  },
+  "Extent" : {
+    "extent" : "238 Seiten : 16 Illustrationen ; 22 cm"
+  },
+  "SubjectHeadings" : [ {
+    "subject" : "Deutsch"
+  }, {
+    "subject" : "Nationalsozialismus"
+  }, {
+    "subject" : "Literatur"
+  }, {
+    "subject" : "Geschichte 1920-1939"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990005995790206441"
+  }, {
+    "uid" : "(DE-605)HT000683102"
+  }, {
+    "uid" : "(DE-107)9912476707506"
+  } ],
+  "Item" : [ {
+    "callnumber" : "39.1206"
+  } ]
+}

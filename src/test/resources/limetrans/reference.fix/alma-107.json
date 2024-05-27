@@ -2025,3 +2025,115 @@
     "preferredName" : "Technik"
   } ]
 }
+{
+  "FormatCarrier" : [ "Druckschrift" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT000683102",
+    "identifierHBZ" : "HT000683102"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "1070192217"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : [ "eine Einführung in das volkhafte Schrifttum unserer Zeit" ]
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "von Hellmuth Langenbucher" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "keine Angabe" ],
+    "date" : [ "1939" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Pfälzische LB Speyer" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "person" : [ "Langenbucher, Hellmuth (1905-1980)" ],
+    "subject" : [ "Geschichte 1920-1939", "Deutsch", "Nationalsozialismus", "Literatur" ],
+    "localCallNumber" : [ "39.1206" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_BRIDGE_LBZ",
+    "identifierMMS" : "990005995790206441",
+    "identifierMMSIZ" : "9912476707506"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990005995790206441",
+    "identifierForTheRecord" : "(DE-605)HT000683102"
+  },
+  "Language" : [ {
+    "languageSource" : "   "
+  } ],
+  "Person" : [ {
+    "personName" : "Langenbucher, Hellmuth",
+    "personBio" : "1905-1980",
+    "personIdentifier" : [ "(DE-588)116707380" ],
+    "identifierGND" : [ "116707380" ],
+    "preferredName" : "Langenbucher, Hellmuth"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Die deutsche Gegenwartsdichtung"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Berlin" ],
+    "name" : [ "Junker und Dünnhaupt Verlag" ],
+    "chronology" : [ "1939" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : [ "Berlin" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1939" ]
+  },
+  "Extent" : {
+    "extent" : "238 Seiten : 16 Illustrationen ; 22 cm"
+  },
+  "DescriptionOfExpression" : [ {
+    "description" : "In Fraktur"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Geschichte 1920-1939"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990005995790206441"
+  }, {
+    "uid" : "(DE-605)HT000683102"
+  }, {
+    "uid" : "(DE-107)9912476707506"
+  }, {
+    "uid" : "(OCoLC)1070192217"
+  }, {
+    "uid" : "(DE-599)HBZHT000683102"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-107",
+    "callnumber" : [ "39.1206", "706604784107" ],
+    "shelfmark" : "00001000"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : [ "Deutsch" ],
+    "combinedLabel" : "Deutsch",
+    "subjectIdentifier" : [ "(DE-588)4113292-0" ],
+    "identifierGND" : [ "4113292-0" ],
+    "variantName" : [ "Neuhochdeutsch", "Hochdeutsch", "Deutsche Sprache" ],
+    "preferredName" : "Deutsch"
+  }, {
+    "subjectTopicName" : [ "Nationalsozialismus" ],
+    "combinedLabel" : "Nationalsozialismus",
+    "subjectIdentifier" : [ "(DE-588)4041316-0" ],
+    "identifierGND" : [ "4041316-0" ],
+    "variantName" : [ "NS" ],
+    "preferredName" : "Nationalsozialismus"
+  }, {
+    "subjectTopicName" : [ "Literatur" ],
+    "combinedLabel" : "Literatur",
+    "subjectIdentifier" : [ "(DE-588)4035964-5" ],
+    "identifierGND" : [ "4035964-5" ],
+    "variantName" : [ "Sprachkunst", "Dichtung <Literatur>", "Belletristik", "Schöne Literatur", "Wortkunst" ],
+    "preferredName" : "Literatur"
+  } ]
+}
