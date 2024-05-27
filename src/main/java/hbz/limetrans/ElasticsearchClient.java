@@ -179,12 +179,14 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
 
     protected abstract boolean closeBulk() throws InterruptedException;
 
-    protected void createBulk() {
+    protected boolean createBulk() {
         if (isBulkClosed()) {
             LOGGER.info("Creating bulk processor [actions={}, requests={}, size={}]", mBulkActions, mBulkRequests, mBulkSize);
             createBulk(mBulkActions, mBulkRequests);
             updateIndexSettings(true);
         }
+
+        return !mFailed;
     }
 
     protected abstract void createBulk(int aBulkActions, int aBulkRequests);

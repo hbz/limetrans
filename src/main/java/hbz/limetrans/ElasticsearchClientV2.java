@@ -239,8 +239,9 @@ public class ElasticsearchClientV2 extends ElasticsearchClient { // checkstyle-d
     }
 
     private void addBulk(final ActionRequest aRequest) {
-        createBulk();
-        mBulkProcessor.add(aRequest);
+        if (createBulk()) {
+            mBulkProcessor.add(aRequest);
+        }
     }
 
     @Override

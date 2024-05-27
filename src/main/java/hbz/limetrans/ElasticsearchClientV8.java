@@ -262,8 +262,9 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
     }
 
     private void addBulk(final Function<BulkOperation.Builder, ObjectBuilder<BulkOperation>> aFunction) {
-        createBulk();
-        mBulkIngester.add(aFunction);
+        if (createBulk()) {
+            mBulkIngester.add(aFunction);
+        }
     }
 
     @Override
