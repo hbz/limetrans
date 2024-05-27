@@ -850,6 +850,14 @@ do list(path: "9801 ", "var": "$i")
     end
   end
 end
+set_array("ClassifierLocal.collection[]")
+do list(path: "980  ", "var": "$i")
+  if hbz.limetrans.function.MemberLocal("$i")
+    do list(path: "$i.s", "var": "$j")
+      copy_field("$j", "ClassifierLocal.collection[].$append")
+    end
+  end
+end
 
 # MARC/982
 set_array("@subjectHeadings")

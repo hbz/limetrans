@@ -421,6 +421,14 @@
           "copy_to": [
             "cql.allIndexes"
           ]
+        },
+        "collection": {
+          "type": "string",
+          "index": "no",
+          "doc_values": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
         }
       }
     },

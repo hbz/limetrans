@@ -362,6 +362,13 @@
           "copy_to": [
             "cql.allIndexes"
           ]
+        },
+        "collection": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
         }
       }
     },
