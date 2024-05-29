@@ -12,6 +12,7 @@ do once("setup")
   include("./maps/alma-type-periodical.fix")
 
   put_filemap("$[external-maps]/hbz-to-zdb.tsv.gz", "zdb-to-hbz", sep_char: " ", key_column: "1", value_column: "0")
+  put_filemap("$[external-maps]/lookup-tables/data/almaSublibraryCode2Isil/generated/generatedAlmaSublibraryCode2Isil.tsv", "alma-library-to-isil", sep_char: "\t")
 
   hbz.limetrans.function.PutLmdbMap("$[external-maps]/lobid-gnd.lmdb", "lobid-gnd")
   hbz.limetrans.function.PutLmdbMap("$[external-maps]/rvk.lmdb", "rvk")
@@ -950,7 +951,12 @@ end
 do list(path: "ITM  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
     add_field("Item[].$append.__dummy__", "")
-    add_field("Item[].$last.identifier", "$[isil]")
+    paste("$i.@library", "~$[member]", "$i.w", join_char: "+")
+    lookup("$i.@library", "alma-library-to-isil", delete: "true")
+    unless exists("$i.@library")
+      set_field("$i.@library", "$[isil]")
+    end
+    copy_field("$i.@library", "Item[].$last.identifier")
     set_array("@callnumber")
     copy_field("$i.[bcn]", "@callnumber.$append")
     if any_match("$i.x", "$[regexp.temporaryCallnumberLocation]")
