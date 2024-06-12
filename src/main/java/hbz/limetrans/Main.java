@@ -26,8 +26,6 @@ public final class Main {
     private static final long MS = 1000;
     private static final long MB = 1024 * 1024;
 
-    private static final String[] INDEX_SETTING = new String[]{"output", "elasticsearch", "index"};
-
     private static final Pattern INDEX_NAME_PATTERN = Pattern.compile("([^-]+-[^-]+-)[^-]+-?(.*)");
 
     private static final String[] HOST_V2_PROD = new String[]{
@@ -82,24 +80,17 @@ public final class Main {
 
         d7test(settingsBuilder -> {
             setCluster(settingsBuilder, "zbn");
-            setHost(settingsBuilder, HOST_V2_DEV);
+            setHost(settingsBuilder, HOST_V2_DEV, 0);
             setMaxAge(settingsBuilder, -1);
 
-            final VarargsOperator<String> indexSetting = k -> {
-                final String[] result = Arrays.copyOf(INDEX_SETTING, INDEX_SETTING.length + k.length);
-                System.arraycopy(k, 0, result, INDEX_SETTING.length, k.length);
-                return result;
-            };
-
-            if (settingsBuilder.getSetting(indexSetting.apply("name")) instanceof final String indexName) {
+            if (settingsBuilder.getSetting(new String[]{"output", "elasticsearch", "index", "name"}) instanceof final String indexName) {
                 final Matcher matcher = INDEX_NAME_PATTERN.matcher(indexName);
                 if (!matcher.matches()) {
                     throw new RuntimeException("Invalid index name: " + indexName);
                 }
 
-                settingsBuilder.put(indexSetting.apply("name"), matcher.group(1) + "d7test-" + matcher.group(2));
-                settingsBuilder.put(indexSetting.apply("timewindow"), "");
-                settingsBuilder.put(indexSetting.apply("settings-inline", "index", "number_of_replicas"), 0);
+                settingsBuilder.put(new String[]{"output", "elasticsearch", "index", "name"}, matcher.group(1) + "d7test-" + matcher.group(2));
+                settingsBuilder.put(new String[]{"output", "elasticsearch", "index", "timewindow"}, "");
             }
             else {
                 LOGGER.warn("Missing index name setting.");
@@ -148,8 +139,13 @@ public final class Main {
         }
 
         private static void setHost(final Settings.Builder aSettingsBuilder, final String... aHost) {
+            setHost(aSettingsBuilder, aHost, aHost.length / 2);
+        }
+
+        private static void setHost(final Settings.Builder aSettingsBuilder, final String[] aHost, final int aReplicaCount) {
             if (hasElasticsearchOutput(aSettingsBuilder)) {
                 aSettingsBuilder.put(new String[]{"output", "elasticsearch", "host"}, aHost);
+                aSettingsBuilder.put(new String[]{"output", "elasticsearch", "index", "number_of_replicas"}, aReplicaCount);
             }
         }
 
@@ -197,11 +193,6 @@ public final class Main {
         }
 
         return Helpers.getEnumProperty("env", null, Env.ignore, LOGGER::info, null).settings(arg);
-    }
-
-    private interface VarargsOperator<T> {
-        @SuppressWarnings("unchecked")
-        T[] apply(T... aArgs);
     }
 
     private static class MemLog {
