@@ -30,21 +30,59 @@ public final class Main {
 
     private static final Pattern INDEX_NAME_PATTERN = Pattern.compile("([^-]+-[^-]+-)[^-]+-?(.*)");
 
+    private static final String[] HOST_V2_PROD = new String[]{
+        "hera.hbz-nrw.de:9300",
+        "athene.hbz-nrw.de:9300",
+        "persephone.hbz-nrw.de:9300"
+    };
+
+    private static final String[] HOST_V2_DEV = new String[]{
+        "zephyros.hbz-nrw.de:9300",
+        "boreas.hbz-nrw.de:9300",
+        "notos.hbz-nrw.de:9300"
+    };
+
+    private static final String[] HOST_V8_PROD = new String[]{
+        "digibib-es-prod1.hbz-nrw.de:9218",
+        "digibib-es-prod2.hbz-nrw.de:9218",
+        "digibib-es-prod3.hbz-nrw.de:9218"
+    };
+
+    private static final String[] HOST_V8_DEV = new String[]{
+        "digibib-es-test1.hbz-nrw.de:9228",
+        "digibib-es-test2.hbz-nrw.de:9228",
+        "digibib-es-test3.hbz-nrw.de:9228"
+    };
+
     private enum Env {
 
         prod(settingsBuilder -> {
-            setCluster(settingsBuilder, "hap");
-            setHost(settingsBuilder, "hera.hbz-nrw.de:9300", "athene.hbz-nrw.de:9300", "persephone.hbz-nrw.de:9300");
+            switch (ElasticsearchClient.getClientVersion()) {
+                case "8":
+                    setCluster(settingsBuilder, "digibib-es-prod-8");
+                    setHost(settingsBuilder, HOST_V8_PROD);
+                    break;
+                default:
+                    setCluster(settingsBuilder, "hap");
+                    setHost(settingsBuilder, HOST_V2_PROD);
+            }
         }),
 
         dev(settingsBuilder -> {
-            setCluster(settingsBuilder, "zbn");
-            setHost(settingsBuilder, "zephyros.hbz-nrw.de:9300", "boreas.hbz-nrw.de:9300", "notos.hbz-nrw.de:9300");
+            switch (ElasticsearchClient.getClientVersion()) {
+                case "8":
+                    setCluster(settingsBuilder, "digibib-es-test-8");
+                    setHost(settingsBuilder, HOST_V8_DEV);
+                    break;
+                default:
+                    setCluster(settingsBuilder, "zbn");
+                    setHost(settingsBuilder, HOST_V2_DEV);
+            }
         }),
 
         d7test(settingsBuilder -> {
             setCluster(settingsBuilder, "zbn");
-            setHost(settingsBuilder, "zephyros.hbz-nrw.de:9300", "boreas.hbz-nrw.de:9300", "notos.hbz-nrw.de:9300");
+            setHost(settingsBuilder, HOST_V2_DEV);
             setMaxAge(settingsBuilder, -1);
 
             final VarargsOperator<String> indexSetting = k -> {
