@@ -1,10 +1,19 @@
 #! /bin/bash
 
-f=src/main/resources/transformation/maps/lobid-organisations.lmdb
+set -e
 
-rm -f "$f"
+d="${OUTPUT_DIRECTORY:-src/main/resources/transformation/maps}"
+p="$d/lobid-organisations"
+
+e=lmdb
+f="$p.$e"
+t="$p.$$.$e"
 
 curl --no-progress-meter\
   'https://lobid.org/organisations/search?q=_exists_:isil&format=tsv:isil,name&size=25000' |\
   tr $'\t' '\035' |\
-  ./gradlew execLmdb --args="$f"
+  ./gradlew execLmdb --args="$t"
+
+[ -s "$t" ] && mv "$t" "$f"
+
+./gradlew execLmdb --args="$f"
