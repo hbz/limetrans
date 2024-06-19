@@ -5,7 +5,7 @@
   "postprocess": true,
   "alma": {
     "regexp": {
-      "suppressedLocation": "XXX"
+      "suppressedLocation": "(?:MAK|XXX)"
     }
   },
   "input": {
