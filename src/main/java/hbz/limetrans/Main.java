@@ -99,12 +99,20 @@ public final class Main {
             }
         }
 
+        private static boolean hasElasticsearchOutput(final Settings.Builder aSettingsBuilder) {
+            return aSettingsBuilder.getSetting(new String[]{"output", "elasticsearch"}) != null;
+        }
+
         private static void setCluster(final Settings.Builder aSettingsBuilder, final String aCluster) {
-            aSettingsBuilder.put(new String[]{"output", "elasticsearch", "cluster"}, aCluster);
+            if (hasElasticsearchOutput(aSettingsBuilder)) {
+                aSettingsBuilder.put(new String[]{"output", "elasticsearch", "cluster"}, aCluster);
+            }
         }
 
         private static void setHost(final Settings.Builder aSettingsBuilder, final String... aHost) {
-            aSettingsBuilder.put(new String[]{"output", "elasticsearch", "host"}, aHost);
+            if (hasElasticsearchOutput(aSettingsBuilder)) {
+                aSettingsBuilder.put(new String[]{"output", "elasticsearch", "host"}, aHost);
+            }
         }
 
         private static void setMaxAge(final Settings.Builder aSettingsBuilder, final int aMaxAge) {
