@@ -29,15 +29,15 @@ public final class Main {
     private static final Pattern INDEX_NAME_PATTERN = Pattern.compile("([^-]+-[^-]+-)[^-]+-?(.*)");
 
     private static final String[] HOST_V2_PROD = new String[]{
-        "hera.hbz-nrw.de:9300",
-        "athene.hbz-nrw.de:9300",
-        "persephone.hbz-nrw.de:9300"
-    };
-
-    private static final String[] HOST_V2_DEV = new String[]{
         "zephyros.hbz-nrw.de:9300",
         "boreas.hbz-nrw.de:9300",
         "notos.hbz-nrw.de:9300"
+    };
+
+    private static final String[] HOST_V2_DEV = new String[]{
+        "hera.hbz-nrw.de:9300",
+        "athene.hbz-nrw.de:9300",
+        "persephone.hbz-nrw.de:9300"
     };
 
     private static final String[] HOST_V8_PROD = new String[]{
@@ -61,7 +61,7 @@ public final class Main {
                     setHost(settingsBuilder, HOST_V8_PROD);
                     break;
                 default:
-                    setCluster(settingsBuilder, "hap");
+                    setCluster(settingsBuilder, "zbn");
                     setHost(settingsBuilder, HOST_V2_PROD);
             }
         }),
@@ -73,7 +73,7 @@ public final class Main {
                     setHost(settingsBuilder, HOST_V8_DEV);
                     break;
                 default:
-                    setCluster(settingsBuilder, "zbn");
+                    setCluster(settingsBuilder, "hap");
                     setHost(settingsBuilder, HOST_V2_DEV);
             }
         }),
