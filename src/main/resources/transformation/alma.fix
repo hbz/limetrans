@@ -763,6 +763,13 @@ include("./marc/seriesAddedEntryUniformTitle.fix")
 
 # MARC/856
 include("./marc/onlineAccess.fix")
+# MARC/998
+do list(path: "9984?", "var": "$i")
+  if hbz.limetrans.function.MemberLocal("$i")
+    call_macro("online-access")
+    add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
+  end
+end
 # MARC/H56
 do list(path: "H56??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
