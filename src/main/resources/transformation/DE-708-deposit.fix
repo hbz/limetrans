@@ -1,5 +1,7 @@
 do once()
   include("./macros.fix")
+  include("./macros/alma.fix")
+
   include("./maps.fix")
 
   put_var("catalogid", "")

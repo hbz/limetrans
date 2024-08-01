@@ -26,6 +26,19 @@ do put_macro("alma-mms-to-isil")
   move_field("@alma-mms-to-isil", "$[target]")
 end
 
+do put_macro("alma-mms-with-isil")
+  set_array("$[target][]")
+  do list(path: "$[source]", "var": "$alma-mms-with-isil")
+    if any_match("$alma-mms-with-isil", "99\\d{10,}")
+      call_macro("alma-mms-to-isil", source: "$alma-mms-with-isil", target: "@alma-mms-with-isil")
+      paste("$[target][].$append", "~(", "@alma-mms-with-isil", "~)", "$alma-mms-with-isil", join_char: "")
+      remove_field("@alma-mms-with-isil")
+    else
+      copy_field("$alma-mms-with-isil", "$[target][].$append")
+    end
+  end
+end
+
 do put_macro("alma-format-carrier", length: "1")
   call_macro("substring", source: "$i.A", target: "@alma-format-carrier", start: "$[start]", length: "$[length]")
   copy_field("@alma-format-carrier", "@alma-format-carrier-facet")

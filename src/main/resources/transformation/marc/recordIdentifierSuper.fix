@@ -10,5 +10,5 @@ do list(path: "7730?", "var": "$i")
     copy_field("$i.q", "SortableVolumeDesignation[].$last.volumeDesignation")
   end
   add_field("RecordIdentifierSuper[].$append.__dummy__", "")
-  call_macro("copy-all-items", source: "$i.w", target: "RecordIdentifierSuper[].$last.recordIdentifierSuper")
+  call_macro("alma-mms-with-isil", source: "$i.w", target: "RecordIdentifierSuper[].$last.recordIdentifierSuper")
 end

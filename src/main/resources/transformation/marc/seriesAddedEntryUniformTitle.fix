@@ -9,6 +9,6 @@ do list(path: "830 ?", "var": "$i")
   call_macro("copy-all-items", source: "$i.n", target: "SeriesAddedEntryUniformTitle[].$last.number")
   call_macro("copy-all-items", source: "$i.p", target: "SeriesAddedEntryUniformTitle[].$last.part")
   call_macro("copy-first-item", source: "$i.v", target: "SeriesAddedEntryUniformTitle[].$last.volume")
-  call_macro("copy-all-items", source: "$i.w", target: "SeriesAddedEntryUniformTitle[].$last.designation")
+  call_macro("alma-mms-with-isil", source: "$i.w", target: "SeriesAddedEntryUniformTitle[].$last.designation")
 end
 uniq("SeriesAddedEntryUniformTitle[]")
