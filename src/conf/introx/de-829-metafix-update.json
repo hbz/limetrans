@@ -5,7 +5,8 @@
   "postprocess": true,
   "alma": {
     "regexp": {
-      "suppressedLocation": "ILL"
+      "suppressedLocation": "ILL",
+      "temporaryCallnumberLocation": ".*_(?:Labor|SemApp)"
     }
   },
   "input": {
