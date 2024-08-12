@@ -45,6 +45,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.LongAdder;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -63,7 +68,9 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
     private final long mBulkSizeValue;
 
     private BulkIngester<Void> mBulkIngester;
+    private ElasticsearchBulkListener mBulkListener;
     private RestClientTransport mTransport;
+    private ScheduledExecutorService mBulkScheduler;
     private co.elastic.clients.elasticsearch.ElasticsearchClient mClient;
 
     public ElasticsearchClientV8(final Settings aSettings) {
@@ -75,6 +82,8 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
     @Override
     public void reset() {
         mBulkIngester = null;
+        mBulkListener = null;
+        mBulkScheduler = null;
 
         super.reset();
     }
@@ -269,9 +278,19 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
 
     @Override
     protected void createBulk(final int aBulkActions, final int aBulkRequests) {
+        mBulkScheduler = Executors.newScheduledThreadPool(aBulkRequests + 1, r -> {
+            final Thread t = Executors.defaultThreadFactory().newThread(r);
+            t.setName("bulk-ingester-executor#" + t.getId());
+            t.setDaemon(true);
+            return t;
+        });
+
+        mBulkListener = new ElasticsearchBulkListener(this);
+
         mBulkIngester = BulkIngester.of(b -> b
                 .client(mClient)
-                .listener(new ElasticsearchBulkListener(this))
+                .listener(mBulkListener)
+                .scheduler(mBulkScheduler)
                 .maxOperations(aBulkActions)
                 .maxSize(mBulkSizeValue)
                 .maxConcurrentRequests(aBulkRequests)
@@ -287,10 +306,23 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
     protected boolean closeBulk() throws InterruptedException {
         try {
             mBulkIngester.close();
+
+            if (!mBulkListener.awaitTermination(1, TimeUnit.MINUTES)) {
+                getLogger().warn("Some bulk listener tasks still pending");
+            }
+
+            mBulkScheduler.shutdown();
+
+            if (!mBulkScheduler.awaitTermination(1, TimeUnit.MINUTES)) {
+                getLogger().warn("Some bulk scheduler tasks still pending");
+            }
+
             return mBulkIngester.pendingRequests() == 0;
         }
         finally {
             mBulkIngester = null;
+            mBulkListener = null;
+            mBulkScheduler = null;
         }
     }
 
@@ -349,7 +381,10 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
 
     private static class ElasticsearchBulkListener implements BulkListener<Void> {
 
+        private static final int PENDING_TASKS_WAIT = 100;
+
         private final ElasticsearchClient mClient;
+        private final LongAdder mBulkHandlers = new LongAdder();
 
         private ElasticsearchBulkListener(final ElasticsearchClient aClient) {
             mClient = aClient;
@@ -357,11 +392,13 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
 
         @Override
         public void beforeBulk(final long aId, final BulkRequest aRequest, final List<Void> aContexts) {
+            mBulkHandlers.increment();
             mClient.beforeBulk(aId, aRequest.operations().size(), -1);
         }
 
         @Override
         public void afterBulk(final long aId, final BulkRequest aRequest, final List<Void> aContexts, final BulkResponse aResponse) {
+            mBulkHandlers.decrement();
             mClient.afterBulk(aId, aResponse.took(), (d, s, f) -> aResponse.items().forEach(r -> {
                 if (r.operationType() == OperationType.Delete) {
                     d.run();
@@ -381,7 +418,27 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
 
         @Override
         public void afterBulk(final long aId, final BulkRequest aRequest, final List<Void> aContexts, final Throwable aThrowable) {
+            mBulkHandlers.decrement();
             mClient.afterBulk(aId, aThrowable);
+        }
+
+        public boolean awaitTermination(final long aTimeout, final TimeUnit aUnit) throws InterruptedException {
+            final CountDownLatch latch = new CountDownLatch(1);
+
+            new Thread(() -> {
+                while (mBulkHandlers.sum() != 0) {
+                    try {
+                        Thread.sleep(PENDING_TASKS_WAIT);
+                    }
+                    catch (final InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+
+                latch.countDown();
+            }).start();
+
+            return latch.await(aTimeout, aUnit);
         }
 
     }
