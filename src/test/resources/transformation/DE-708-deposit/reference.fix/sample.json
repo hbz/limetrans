@@ -34,7 +34,8 @@
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Faculty of Cultural and Social Sciences",
-    "corporateBodyNameUnit" : [ "Institut für Bildungswissenschaft und Medienforschung", "Ehemalige Lehrstühle", "Arbeitsbereich Systematische Pädagogik (nur Magister) (Apl.-Prof. Dr. Roland Bast)" ]
+    "corporateBodyNameUnit" : [ "Institut für Bildungswissenschaft und Medienforschung", "Ehemalige Lehrstühle", "Arbeitsbereich Systematische Pädagogik (nur Magister) (Apl.-Prof. Dr. Roland Bast)" ],
+    "corporateBodyRole" : [ "[host institution]" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Marxistisches Denken in der Pädagogik"
@@ -104,7 +105,8 @@
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Faculty of Mathematics and Computer Science",
-    "corporateBodyNameUnit" : [ "Informatik", "Kooperative Systeme (Prof. Dr. Jörg M. Haake)" ]
+    "corporateBodyNameUnit" : [ "Informatik", "Kooperative Systeme (Prof. Dr. Jörg M. Haake)" ],
+    "corporateBodyRole" : [ "[host institution]" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Computerunterstützung für die Organisation menschlicher Kommunikationsprozesse"
@@ -162,7 +164,8 @@
   },
   "CorporateBody" : [ {
     "corporateBodyName" : "FernUniversität in Hagen",
-    "corporateBodyNameUnit" : [ "Fakultät für Mathematik und Informatik" ]
+    "corporateBodyNameUnit" : [ "Fakultät für Mathematik und Informatik" ],
+    "corporateBodyRole" : [ "[Publisher]" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Research Report"
@@ -350,7 +353,8 @@
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Faculty of Mathematics and Computer Science",
-    "corporateBodyNameUnit" : [ "Mathematik", "Ehemalige Lehrstühle", "Komplexe Analysis (Prof. Dr. Andrei Duma)" ]
+    "corporateBodyNameUnit" : [ "Mathematik", "Ehemalige Lehrstühle", "Komplexe Analysis (Prof. Dr. Andrei Duma)" ],
+    "corporateBodyRole" : [ "[host institution]" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Einführung in die Theorie der algebraischen Kurven und deren Eigenschaften"
@@ -424,7 +428,8 @@
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Faculty of Business Administration and Economics",
-    "corporateBodyNameUnit" : [ "Volkswirtschaftslehre", "Makroökonomik (Univ.-Prof. Dr. Helmut Wagner)" ]
+    "corporateBodyNameUnit" : [ "Volkswirtschaftslehre", "Makroökonomik (Univ.-Prof. Dr. Helmut Wagner)" ],
+    "corporateBodyRole" : [ "[host institution]" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Zentralbank-Kommunikation und Finanzstabilität"
@@ -501,7 +506,8 @@
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Faculty of Mathematics and Computer Science",
-    "corporateBodyNameUnit" : [ "Informatik", "Parallelität und VLSI (Prof. Dr. Jörg Keller)" ]
+    "corporateBodyNameUnit" : [ "Informatik", "Parallelität und VLSI (Prof. Dr. Jörg Keller)" ],
+    "corporateBodyRole" : [ "[host institution]" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "A fault-tolerant voting scheme for multithreaded environments"
@@ -567,7 +573,8 @@
   },
   "CorporateBody" : [ {
     "corporateBodyName" : "IEEE Computer Society",
-    "corporateBodyNameUnit" : [ "Technical Committee on Parallel Processing (TCPP)" ]
+    "corporateBodyNameUnit" : [ "Technical Committee on Parallel Processing (TCPP)" ],
+    "corporateBodyRole" : [ "[Publisher]" ]
   }, {
     "corporateBodyName" : "Parallel Computing in Electrical Engineering (4. : 2004 September 7-10 : Dresden, Deustschland)"
   } ],
@@ -732,7 +739,8 @@
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Faculty of Cultural and Social Sciences",
-    "corporateBodyNameUnit" : [ "Institut für Bildungswissenschaft und Medienforschung", "Bildungstheorie und Medienpädagogik (Prof. Dr. Claudia de Witt)" ]
+    "corporateBodyNameUnit" : [ "Institut für Bildungswissenschaft und Medienforschung", "Bildungstheorie und Medienpädagogik (Prof. Dr. Claudia de Witt)" ],
+    "corporateBodyRole" : [ "[host institution]" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Vorwort"
@@ -812,7 +820,8 @@
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Faculty of Cultural and Social Sciences",
-    "corporateBodyNameUnit" : [ "Institut für Bildungswissenschaft und Medienforschung", "Bildungstheorie und Medienpädagogik (Prof. Dr. Claudia de Witt)" ]
+    "corporateBodyNameUnit" : [ "Institut für Bildungswissenschaft und Medienforschung", "Bildungstheorie und Medienpädagogik (Prof. Dr. Claudia de Witt)" ],
+    "corporateBodyRole" : [ "[host institution]" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Editorial der Herausgeber"
@@ -894,9 +903,11 @@
     "identifierGND" : [ "142659266" ]
   } ],
   "CorporateBody" : [ {
-    "corporateBodyName" : "Dozentinnen und Dozenten der Mathematik"
+    "corporateBodyName" : "Dozentinnen und Dozenten der Mathematik",
+    "corporateBodyRole" : [ "[Editor]" ]
   }, {
-    "corporateBodyName" : "Faculty of Mathematics and Computer Science"
+    "corporateBodyName" : "Faculty of Mathematics and Computer Science",
+    "corporateBodyRole" : [ "[host institution]" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Seminarberichte Nr. 75"
@@ -970,7 +981,8 @@
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "Faculty of Law",
-    "corporateBodyNameUnit" : [ "Lehrstühle", "Lehrstuhl für Bürgerliches Recht, Wirtschaftsrecht, Gewerblicher Rechtsschutz, Urheberrecht und Zivilprozessrecht (Prof. Dr. Barbara Völzmann-Stickelbrock)" ]
+    "corporateBodyNameUnit" : [ "Lehrstühle", "Lehrstuhl für Bürgerliches Recht, Wirtschaftsrecht, Gewerblicher Rechtsschutz, Urheberrecht und Zivilprozessrecht (Prof. Dr. Barbara Völzmann-Stickelbrock)" ],
+    "corporateBodyRole" : [ "[host institution]" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Die Patentfähigkeit embryonaler Stammzellen"

@@ -60925,7 +60925,8 @@
     "personRole" : [ "[Verfasser]" ]
   } ],
   "CorporateBody" : [ {
-    "corporateBodyName" : "Galileo Press"
+    "corporateBodyName" : "Galileo Press",
+    "corporateBodyRole" : [ "[Verlag]" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Debian GNU, Linux"
@@ -62760,9 +62761,11 @@
     "preferredISSN" : "23080019"
   } ],
   "CorporateBody" : [ {
-    "corporateBodyName" : "Donet͡sʹkyĭ derz͡havnyĭ universytet,"
+    "corporateBodyName" : "Donet͡sʹkyĭ derz͡havnyĭ universytet,",
+    "corporateBodyRole" : [ "[issuing body.]" ]
   }, {
-    "corporateBodyName" : "Donet͡sʹkyĭ nat͡sionalʹnyĭ universytet,"
+    "corporateBodyName" : "Donet͡sʹkyĭ nat͡sionalʹnyĭ universytet,",
+    "corporateBodyRole" : [ "[issuing body.]" ]
   } ],
   "TitleStatement" : [ {
     "titleMain" : "Linhvistychni studiï"

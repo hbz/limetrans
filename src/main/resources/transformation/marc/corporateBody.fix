@@ -13,6 +13,11 @@ do list(path: "[17]1[01][012] ", "var": "$i")
     copy_field("$j", "CorporateBody[].$last.corporateBodyNameUnit[].$append")
   end
   copy_field("$i.d", "CorporateBody[].$last.corporateBodyDate[]")
+  set_array("CorporateBody[].$last.corporateBodyRole[]")
+  do list(path: "$i.e", "var": "$j")
+    paste("@corporateBodyRole", "~[", "$j", "~]", join_char: "")
+    move_field("@corporateBodyRole", "CorporateBody[].$last.corporateBodyRole[].$append")
+  end
   copy_field("$i.g", "CorporateBody[].$last.corporateBodyOther[]")
   copy_field("$i.n", "CorporateBody[].$last.corporateBodyNumber[]")
   set_array("CorporateBody[].$last.corporateBodyIdentifier[]")
