@@ -39,6 +39,7 @@ import org.testcontainers.elasticsearch.ElasticsearchContainer;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -59,7 +60,10 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
 
     private static final String CONTAINER_IMAGE = "docker.elastic.co/elasticsearch/elasticsearch:" +
         Helpers.getProperty("versions.elasticsearch8", Version.VERSION.toString()); // org.elasticsearch.Version.CURRENT
+
     private static final String CONTAINER_SECRET = "s3cret";
+
+    private static final String CONTAINER_COMMAND = "bin/elasticsearch-plugin install analysis-icu && docker-entrypoint.sh eswrapper";
 
     private static final Map<String, ElasticsearchContainer> CONTAINER_CACHE = new HashMap<>();
 
@@ -98,8 +102,10 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
         final ElasticsearchContainer container = CONTAINER_CACHE.computeIfAbsent(CONTAINER_IMAGE, k -> {
             getLogger().info("Starting embedded server: {}", k);
 
-            final ElasticsearchContainer v = new ElasticsearchContainer(k).withPassword(CONTAINER_SECRET).withCreateContainerCmdModifier(c ->
-                    c.withCmd("bash", "-c", "bin/elasticsearch-plugin install analysis-icu && docker-entrypoint.sh eswrapper"));
+            final ElasticsearchContainer v = new ElasticsearchContainer(k)
+                .withCreateContainerCmdModifier(c -> c.withCmd("bash", "-c", CONTAINER_COMMAND))
+                .withPassword(CONTAINER_SECRET)
+                .withStartupTimeout(Duration.ofMinutes(2));
             v.start();
 
             return v;
