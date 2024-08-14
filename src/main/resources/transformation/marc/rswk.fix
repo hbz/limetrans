@@ -36,6 +36,5 @@ uniq("RSWK[]")
 do list(path: "RSWK[]", "var": "$i")
   copy_field("$i.subjectGenre", "introx.subject[].$append")
   #copy_field("$i.subjectGeoName", "introx.subject[].$append")
-  copy_field("$i.subjectTitleName", "introx.subject[].$append")
   copy_field("$i.subjectUnit", "introx.subject[].$append")
 end

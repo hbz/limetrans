@@ -84,6 +84,9 @@ do put_macro("subject-common")
   if exists("$i.x")
     paste("@combined_label", "@combined_label", "~/", "$i.x")
   end
+  if exists("$i.t")
+    paste("@combined_label", "@combined_label", "~: ", "$i.t", join_char: "")
+  end
   replace_all("@combined_label", "([a-z])[.]$", "$1")
   call_macro("remove-nonsort", source: "@combined_label")
   copy_field("@combined_label", "@rswk.combinedLabel")
