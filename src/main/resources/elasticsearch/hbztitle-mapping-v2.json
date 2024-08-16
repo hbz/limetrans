@@ -121,7 +121,10 @@
         },
         "localCallNumber": {
           "type": "string",
-          "index": "not_analyzed",
+          "analyzer": "keyword_normalized",
+          "norms": {
+            "enabled": false
+          },
           "fields": {
             // TODO: Promote when all users are migrated to HBZ::Indexsearch::Backend::HBZES::ES
             "normalized": {

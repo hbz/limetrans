@@ -99,7 +99,9 @@
           "type": "keyword"
         },
         "localCallNumber": {
-          "type": "keyword",
+          "type": "text",
+          "analyzer": "keyword_normalized",
+          "norms": false,
           "fields": {
             // TODO: Promote when all users are migrated to HBZ::Indexsearch::Backend::HBZES::ES
             "normalized": {
