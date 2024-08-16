@@ -124,16 +124,6 @@
           "analyzer": "keyword_normalized",
           "norms": {
             "enabled": false
-          },
-          "fields": {
-            // TODO: Promote when all users are migrated to HBZ::Indexsearch::Backend::HBZES::ES
-            "normalized": {
-              "type": "string",
-              "analyzer": "keyword_normalized",
-              "norms": {
-                "enabled": false
-              }
-            }
           }
         },
         "localCollection": {
