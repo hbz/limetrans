@@ -624,7 +624,7 @@ copy_field("3621 .a", "ChronologyAndEnumeration.unformattedValue[]")
 # MARC/490
 include("./marc/seriesStatement.fix")
 
-# MARC/989
+# MARC/985, MARC/989
 set_array("@description")
 set_array("DescriptionOfProvenance[]")
 set_array("introx.provenance[]")
