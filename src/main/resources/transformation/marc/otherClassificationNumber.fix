@@ -17,11 +17,19 @@ do list(path: "084  ", "var": "$i")
     do list(path: "$i.a", "var": "$j")
       if any_equal("@current_isil", "DE-107")
         copy_field("$j", "@subjectRPB")
+        prepend("@subjectRPB", "https://w3id.org/lobid/rpb2#n")
         lookup("@subjectRPB", "alma-rpb-to-taxonomy", delete: "true")
-        move_field("@subjectRPB", "introx.taxonomy[].$append")
-        lookup("$j", "alma-rpb-to-taxonomy")
+        if exists("@subjectRPB")
+          paste("@subjectRPB", "$j", "@subjectRPB")
+          copy_field("@subjectRPB", "introx.taxonomy[].$append")
+          copy_field("@subjectRPB", "SubjectRPB[].$last.subject[].$append")
+        else
+          copy_field("$j", "SubjectRPB[].$last.subject[].$append")
+        end
+        remove_field("@subjectRPB")
+      else
+        copy_field("$j", "SubjectRPB[].$last.subject[].$append")
       end
-      copy_field("$j", "SubjectRPB[].$last.subject[].$append")
     end
   elsif any_equal("$i.2", "rvk")
     add_field("SubjectRVK[].$append.__dummy__", "")

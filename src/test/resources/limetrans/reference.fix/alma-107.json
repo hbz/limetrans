@@ -295,7 +295,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Elektronische Ressource", "Datenbank" ],
-    "taxonomy" : [ "600 Recht", "130 Landeskunde Region Koblenz", "131 Landeskunde Pfalz" ],
+    "taxonomy" : [ "600 Rechtswissenschaft", "130 Landeskunde Region Koblenz", "131 Landeskunde Pfalz" ],
     "subject" : [ "CD-ROM", "Rheinland-Pfalz", "Gemeindeverwaltung" ],
     "localCallNumber" : [ "DB 251" ]
   },
@@ -305,7 +305,7 @@
     "subject" : [ "340" ]
   } ],
   "SubjectRPB" : [ {
-    "subject" : [ "600 Recht", "130 Landeskunde Region Koblenz", "131 Landeskunde Pfalz" ]
+    "subject" : [ "600 Rechtswissenschaft", "130 Landeskunde Region Koblenz", "131 Landeskunde Pfalz" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_BRIDGE_LBZ",
@@ -595,12 +595,12 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
-    "taxonomy" : [ "120 Erziehung, Bildung, Unterricht", "130 Landeskunde Region Koblenz", "140 Pflichtexemplar Region Koblenz", "510 Architektur" ],
+    "taxonomy" : [ "120 Erziehung. Bildung. Unterricht. Schulbücher", "130 Landeskunde Region Koblenz", "140 Pflichtexemplar Region Koblenz", "510 Architektur" ],
     "person" : [ "Irsch, Nikolaus" ],
     "subject" : [ "Geschichte 1910", "Online-Ressource", "Geschichte 1100-1250", "Peter-Joerres-Gymnasium Ahrweiler", "Landkreis Ahrweiler", "Romanik", "Baudenkmal" ]
   },
   "SubjectRPB" : [ {
-    "subject" : [ "120 Erziehung, Bildung, Unterricht" ]
+    "subject" : [ "120 Erziehung. Bildung. Unterricht. Schulbücher" ]
   }, {
     "subject" : [ "130 Landeskunde Region Koblenz" ]
   }, {
@@ -735,19 +735,19 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
-    "taxonomy" : [ "740 Umweltschutz, Raumordnung, Landschaftsgestaltung", "106 Amtsdruckschriften allgemein", "130 Landeskunde Region Koblenz" ],
+    "taxonomy" : [ "740 Umweltschutz. Raumordnung. Landschaftsgestaltung", "106 Amtsdruckschriften", "139 Belegexemplare Rheinland-Pfalz", "130 Landeskunde Region Koblenz", "147 Pflichtexemplar Rheinhessen" ],
     "person" : [ "Weidner, Andreas" ]
   },
   "SubjectRPB" : [ {
-    "subject" : [ "740 Umweltschutz, Raumordnung, Landschaftsgestaltung" ]
+    "subject" : [ "740 Umweltschutz. Raumordnung. Landschaftsgestaltung" ]
   }, {
-    "subject" : [ "106 Amtsdruckschriften allgemein" ]
+    "subject" : [ "106 Amtsdruckschriften" ]
   }, {
-    "subject" : [ "139" ]
+    "subject" : [ "139 Belegexemplare Rheinland-Pfalz" ]
   }, {
     "subject" : [ "130 Landeskunde Region Koblenz" ]
   }, {
-    "subject" : [ "147" ]
+    "subject" : [ "147 Pflichtexemplar Rheinhessen" ]
   }, {
     "subject" : [ "rpb843020" ]
   }, {
@@ -918,14 +918,14 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "710 Geographie, Heimat- und Länderkunde, Atlanten", "120 Erziehung, Bildung, Unterricht", "720 Geowissenschaften" ],
+    "taxonomy" : [ "710 Geographie, Heimat- und Länderkunde, Reisen, Atlanten, Geographische Karten", "120 Erziehung. Bildung. Unterricht. Schulbücher", "720 Geowissenschaften" ],
     "person" : [ "Frankenberg, Peter (1947-)" ],
     "subject" : [ "Physische Geografie" ]
   },
   "SubjectRPB" : [ {
-    "subject" : [ "710 Geographie, Heimat- und Länderkunde, Atlanten" ]
+    "subject" : [ "710 Geographie, Heimat- und Länderkunde, Reisen, Atlanten, Geographische Karten" ]
   }, {
-    "subject" : [ "120 Erziehung, Bildung, Unterricht" ]
+    "subject" : [ "120 Erziehung. Bildung. Unterricht. Schulbücher" ]
   }, {
     "subject" : [ "720 Geowissenschaften" ]
   } ],
@@ -1029,16 +1029,16 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomy" : [ "710 Geographie, Heimat- und Länderkunde, Atlanten", "120 Erziehung, Bildung, Unterricht", "740 Umweltschutz, Raumordnung, Landschaftsgestaltung" ],
+    "taxonomy" : [ "710 Geographie, Heimat- und Länderkunde, Reisen, Atlanten, Geographische Karten", "120 Erziehung. Bildung. Unterricht. Schulbücher", "740 Umweltschutz. Raumordnung. Landschaftsgestaltung" ],
     "person" : [ "Leipert, Christian" ],
     "subject" : [ "Umweltbelastung", "Umweltschaden", "Umweltschutz" ]
   },
   "SubjectRPB" : [ {
-    "subject" : [ "710 Geographie, Heimat- und Länderkunde, Atlanten" ]
+    "subject" : [ "710 Geographie, Heimat- und Länderkunde, Reisen, Atlanten, Geographische Karten" ]
   }, {
-    "subject" : [ "120 Erziehung, Bildung, Unterricht" ]
+    "subject" : [ "120 Erziehung. Bildung. Unterricht. Schulbücher" ]
   }, {
-    "subject" : [ "740 Umweltschutz, Raumordnung, Landschaftsgestaltung" ]
+    "subject" : [ "740 Umweltschutz. Raumordnung. Landschaftsgestaltung" ]
   } ],
   "IdentifierAlma" : {
     "identifierMember" : "49HBZ_BRIDGE_LBZ",
