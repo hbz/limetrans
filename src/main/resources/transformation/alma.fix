@@ -484,11 +484,15 @@ end
 
 # MARC/016
 set_array("IdentifierZDB[]")
+set_array("@zdbids")
 do list(path: "0167 ", "var": "$i")
   if any_equal("$i.2", "DE-600")
     add_field("IdentifierZDB[].$append.__dummy__", "")
     copy_field("$i.a", "IdentifierZDB[].$last.identifierZDB")
     hbz.limetrans.function.StandardNumber("ZDB", "IdentifierZDB[].$last")
+    if exists("IdentifierZDB[].$last.preferredZDB")
+      paste("@zdbids.$append", "~(", "$i.2", "~)", "$i.a", join_char: "")
+    end
   end
 end
 uniq("IdentifierZDB[]")
@@ -905,6 +909,9 @@ end
 set_array("xbib[]")
 copy_field("@mmsid", "xbib[].$append.uid")
 do list(path: "@hbzids", "var": "$i")
+  copy_field("$i", "xbib[].$append.uid")
+end
+do list(path: "@zdbids", "var": "$i")
   copy_field("$i", "xbib[].$append.uid")
 end
 if exists("@mmsiz")
