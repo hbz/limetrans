@@ -389,9 +389,13 @@ end
 # MARC/773
 include("./marc/recordIdentifierSuper.fix")
 set_array("@host_callnumber")
-copy_field("7731?.w", "@host_callnumber.$append")
-lookup("@host_callnumber.*", "alma-alias")
-lookup("@host_callnumber.*", "alma-item-callnumber", delete: "true")
+do list(path: "7731?.w", "var": "$i")
+  do list(path: "$i", "var": "$j")
+    lookup("$j", "alma-alias")
+    lookup("$j", "alma-item-callnumber", delete: "true")
+    copy_field("$j", "@host_callnumber.$append")
+  end
+end
 
 # MARC/245
 include("./marc/creatorStatement.fix")
