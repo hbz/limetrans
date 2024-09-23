@@ -48,52 +48,52 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     private enum Isil {
 
         // checkstyle-disable-begin MethodParamPad
-        DE_1010 ("6456", "49HBZ_WHS",        "Westfälische HS Gelsenkirchen"),
-        DE_51   ("6480", "49HBZ_DET",        "HS für Musik Detmold / Lippische LB"),      // DE-51 = Lippische LB, DE-575 = HS für Musik Detmold
-        DE_1032 ("6474", "49HBZ_KHO",        "Katholische HS NRW, Köln"),
-        DE_1044 ("6452", "49HBZ_BRS",        "HS Bonn-Rhein-Sieg"),
+        DE_5    ("6467", "49HBZ_ULB",     "Universität Bonn"),
+        DE_6    ("6449", "49HBZ_ULM",     "Universität Münster"),
+        DE_38   ("6476", "49HBZ_UBK",     "Universität Köln"),
+        DE_38M  ("6472", "49HBZ_ZBM",     "ZB MED"), // DE-38M = Köln, DE-98 = Bonn
+        DE_51   ("6480", "49HBZ_DET",     "Hochschule für Musik Detmold / Lippische Landesbibliothek"), // DE-51 = Lippische LB, DE-575 = HS für Musik Detmold
+        DE_61   ("6443", "49HBZ_DUE",     "Universität Düsseldorf"),
+        DE_82   ("6448", "49HBZ_UBA",     "RWTH Aachen"),
         DE_107  ("7506", "49HBZ_BRIDGE_LBZ", "Landesbibliothekszentrum Rheinland-Pfalz"), // DE-107 = Pfälzische LB, DE-929 = Rheinische LB, DE-Zw1 = Bibliotheca Bipontina
-        DE_1140 ("6484", "49HBZ_RFH",        "Rheinische Fachhochschule Köln"),
-        DE_1156 ("6459", "49HBZ_FUK",        "Folkwang Universität der Künste"),          // DE-1156 = Essen, DE-1156a = Bochum, DE-1156b = Duisburg, DE-1156c = Zollverein
-        DE_1383 ("6479", "49HBZ_RHW",        "HS Rhein-Waal"),                            // DE-1383 = Kleve, DE-1383a = Kamp-Lintfort
-        DE_1393 ("6453", "49HBZ_RUW",        "HS Ruhr West"),                             // DE-1393 = Mülheim, DE-1393-BOT = Bottrop
-        DE_1866 ("6481", "49HBZ_HGB",        "HS für Gesundheit, Bochum"),
-        DE_1972 ("6457", "49HBZ_RSH",        "Robert Schumann HS Düsseldorf"),
-        DE_290  ("6445", "49HBZ_UBD",        "UB Dortmund"),
-        DE_294  ("6471", "49HBZ_UBO",        "Ruhr-Universität Bochum"),
-        DE_361  ("6442", "49HBZ_BIE",        "UB Bielefeld"),
-        DE_38   ("6476", "49HBZ_UBK",        "USB Köln"),
-        DE_385  ("6470", "49HBZ_UBT",        "UB Trier"),
-        DE_386  ("7476", "49HBZ_RTU",        "UB Kaiserslautern-Landau"),                 // DE-386 = Kaiserslautern, DE-Lan1 = Landau
-        DE_38M  ("6472", "49HBZ_ZBM",        "ZB MED, Köln/Bonn"),                        // DE-38M = Köln, DE-98 = Bonn
-        DE_465  ("6446", "49HBZ_UDE",        "UB Duisburg-Essen"),                        // DE-464 = Duisburg, DE-465 = Essen
-        DE_466  ("6463", "49HBZ_PAD",        "UB Paderborn"),
-        DE_467  ("6462", "49HBZ_SIE",        "UB Siegen"),
-        DE_468  ("6447", "49HBZ_WUP",        "UB Wuppertal"),
-        DE_5    ("6467", "49HBZ_ULB",        "ULB Bonn"),
-        DE_583  ("6482", "49HBZ_HHL",        "HS Hamm-Lippstadt"),
-        DE_6    ("6449", "49HBZ_ULM",        "UB Münster"),
-        DE_605  ("6441", "49HBZ_NETWORK",    "hbz NRW"),
-        DE_61   ("6443", "49HBZ_DUE",        "ULB Düsseldorf"),
-        DE_708  ("6464", "49HBZ_FUH",        "Fernuni Hagen"),
-        DE_743  ("6468", "49HBZ_OWL",        "TH Ostwestfalen-Lippe"),
-        DE_82   ("6448", "49HBZ_UBA",        "RWTH Aachen"),
-        DE_829  ("8056", "49HBZ_HSN",        "HS Niederrhein"),
-        DE_832  ("6477", "49HBZ_THK",        "TH Köln"),
-        DE_836  ("6485", "49HBZ_FHM",        "FH Münster / Kunstakademie Münster"),       // DE-836 = FH, DE-Mue301 = Kunstakademie
-        DE_956  ("6483", "49HBZ_EVH",        "Evangelische HS Rheinland-Westfalen-Lippe"),
-        DE_A96  ("6444", "49HBZ_FHA",        "FHB Aachen"),
-        DE_Bi10 ("6450", "49HBZ_HBI",        "HS Bielefeld"),
-        DE_Bm1  ("6469", "49HBZ_TGA",        "TH Georg Agricola, Bochum"),
-        DE_Bm40 ("6454", "49HBZ_HBO",        "HS Bochum"),
-        DE_Dm13 ("6451", "49HBZ_FDO",        "FH Dortmund"),
-        DE_Due18("6458", "49HBZ_KAD",        "Kunstakademie Düsseldorf"),
-        DE_Due62("6455", "49HBZ_HSD",        "HS Düsseldorf"),
-        DE_Hag4 ("6461", "49HBZ_FSW",        "FH Hagen / Südwestfalen"),
-        DE_Kn185("6473", "49HBZ_KHM",        "Kunsthochschule für Medien Köln"),
-        DE_Kn38 ("6460", "49HBZ_HMT",        "HS für Musik und Tanz, Köln"),              // DE-Kn38 = HfMt, DE-Kn38-T = Zentrum für Zeitgenössischen Tanz
-        DE_Kn41 ("6478", "49HBZ_ZBS",        "Deutsche Sporthochschule Köln"),
-        DE_Kob7 ("8057", "49HBZ_UKO",        "UB Koblenz");
+        DE_290  ("6445", "49HBZ_UBD",     "Technische Universität Dortmund"),
+        DE_294  ("6471", "49HBZ_UBO",     "Universität Bochum"),
+        DE_361  ("6442", "49HBZ_BIE",     "Universität Bielefeld"),
+        DE_385  ("6470", "49HBZ_UBT",     "Universität Trier"),
+        DE_386  ("7476", "49HBZ_RTU",     "RPTU Kaiserslautern-Landau"), // DE-386 = Kaiserslautern, DE-Lan1 = Landau
+        DE_465  ("6446", "49HBZ_UDE",     "Universität Duisburg-Essen"), // DE-464 = Duisburg, DE-465 = Essen
+        DE_466  ("6463", "49HBZ_PAD",     "Universitätsbibliothek Paderborn"),
+        DE_467  ("6462", "49HBZ_SIE",     "Universität Siegen"),
+        DE_468  ("6447", "49HBZ_WUP",     "Bergische Universität Wuppertal"),
+        DE_583  ("6482", "49HBZ_HHL",     "Hochschule Hamm-Lippstadt"),
+        DE_605  ("6441", "49HBZ_NETWORK", "hbz NRW"),
+        DE_708  ("6464", "49HBZ_FUH",     "Fernuniversität Hagen"),
+        DE_743  ("6468", "49HBZ_OWL",     "Hochschule Ostwestfalen-Lippe"),
+        DE_829  ("8056", "49HBZ_HSN",     "Hochschule Niederrhein"),
+        DE_832  ("6477", "49HBZ_THK",     "Technische Hochschule Köln (TH Köln)"),
+        DE_836  ("6485", "49HBZ_FHM",     "FH / KA Münster"), // DE-836 = FH, DE-Mue301 = KA
+        DE_956  ("6483", "49HBZ_EVH",     "Evangelische Hochschule Rheinland-Westfalen-Lippe"),
+        DE_1010 ("6456", "49HBZ_WHS",     "Westfälische Hochschule"),
+        DE_1032 ("6474", "49HBZ_KHO",     "Katholische Hochschule Nordrhein-Westfalen"),
+        DE_1044 ("6452", "49HBZ_BRS",     "Hochschule Bonn-Rhein-Sieg"),
+        DE_1140 ("6484", "49HBZ_RFH",     "Rheinische Fachhochschule Köln"),
+        DE_1156 ("6459", "49HBZ_FUK",     "Folkwang Universität der Künste"), // DE-1156 = Essen, DE-1156a = Bochum, DE-1156b = Duisburg, DE-1156c = Zollverein
+        DE_1383 ("6479", "49HBZ_RHW",     "Hochschule Rhein-Waal"), // DE-1383 = Kleve, DE-1383a = Kamp-Lintfort
+        DE_1393 ("6453", "49HBZ_RUW",     "Hochschule Ruhr West"), // DE-1393 = Mülheim, DE-1393-BOT = Bottrop
+        DE_1866 ("6481", "49HBZ_HGB",     "Hochschule für Gesundheit"),
+        DE_1972 ("6457", "49HBZ_RSH",     "Robert Schumann Hochschule Düsseldorf"),
+        DE_A96  ("6444", "49HBZ_FHA",     "Hochschulbibliothek der FH Aachen"),
+        DE_Bi10 ("6450", "49HBZ_HBI",     "Hochschule Bielefeld"),
+        DE_Bm1  ("6469", "49HBZ_TGA",     "Technische Fachhochschule - Georg Agricola"),
+        DE_Bm40 ("6454", "49HBZ_HBO",     "Hochschule Bochum"),
+        DE_Dm13 ("6451", "49HBZ_FDO",     "Fachhochschule Dortmund"),
+        DE_Due18("6458", "49HBZ_KAD",     "Kunstakademie Düsseldorf"),
+        DE_Due62("6455", "49HBZ_HSD",     "Hochschule Düsseldorf"),
+        DE_Hag4 ("6461", "49HBZ_FSW",     "Fachhochschule Südwestfalen"),
+        DE_Kn38 ("6460", "49HBZ_HMT",     "Hochschule für Musik und Tanz Köln"), // DE-Kn38 = HfMt, DE-Kn38-T = Zentrum für Zeitgenössischen Tanz
+        DE_Kn41 ("6478", "49HBZ_ZBS",     "Deutsche Sporthochschule Köln"),
+        DE_Kn185("6473", "49HBZ_KHM",     "Kunsthochschule für Medien Köln"),
+        DE_Kob7 ("8057", "49HBZ_UKO",     "Universität Koblenz");
         // checkstyle-disable-end
 
         private static final String ISIL_SEPARATOR = "-";
