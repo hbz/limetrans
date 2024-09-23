@@ -55,7 +55,9 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         DE_51   ("6480", "49HBZ_DET",     "Hochschule für Musik Detmold / Lippische Landesbibliothek"), // DE-51 = Lippische LB, DE-575 = HS für Musik Detmold
         DE_61   ("6443", "49HBZ_DUE",     "Universität Düsseldorf"),
         DE_82   ("6448", "49HBZ_UBA",     "RWTH Aachen"),
+        //DE_107  ("8973", "49HBZ_LBZ",     "Landesbibliothekszentrum RLP (LBZ)"), // DE-107 = Pfälzische LB, DE-929 = Rheinische LB, DE-Zw1 = Bibliotheca Bipontina
         DE_107  ("7506", "49HBZ_BRIDGE_LBZ", "Landesbibliothekszentrum Rheinland-Pfalz"), // DE-107 = Pfälzische LB, DE-929 = Rheinische LB, DE-Zw1 = Bibliotheca Bipontina
+        DE_121  ("8972", "49HBZ_WBT",     "Wissenschaftliche Bibliothek der Stadt Trier"),
         DE_290  ("6445", "49HBZ_UBD",     "Technische Universität Dortmund"),
         DE_294  ("6471", "49HBZ_UBO",     "Universität Bochum"),
         DE_361  ("6442", "49HBZ_BIE",     "Universität Bielefeld"),
@@ -73,9 +75,13 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         DE_832  ("6477", "49HBZ_THK",     "Technische Hochschule Köln (TH Köln)"),
         DE_836  ("6485", "49HBZ_FHM",     "FH / KA Münster"), // DE-836 = FH, DE-Mue301 = KA
         DE_956  ("6483", "49HBZ_EVH",     "Evangelische Hochschule Rheinland-Westfalen-Lippe"),
+        DE_987  ("8987", "49HBZ_HSK",     "Hochschule Koblenz - RheinAhrCampus"), // DE-987 = RheinMoselCampus, DE-1105 = RheinAhrCampus
         DE_1010 ("6456", "49HBZ_WHS",     "Westfälische Hochschule"),
         DE_1032 ("6474", "49HBZ_KHO",     "Katholische Hochschule Nordrhein-Westfalen"),
         DE_1044 ("6452", "49HBZ_BRS",     "Hochschule Bonn-Rhein-Sieg"),
+        DE_1082 ("8980", "49HBZ_HKL",     "Hochschule Kaiserslautern"), // DE-1082 = Zweibrücken, DE-1082a = Pirmasens, DE-1084 = Kaiserslautern
+        DE_1116 ("8976", "49HBZ_HSL",     "Hochschule Ludwigshafen - DLR Rheinpfalz"), // DE-1116 = HWG, DE-1116-DLR = DLR, DE-Tr7 = DLR (Mosel)
+        DE_1117 ("8977", "49HBZ_HSW",     "Hochschule Worms"),
         DE_1140 ("6484", "49HBZ_RFH",     "Rheinische Fachhochschule Köln"),
         DE_1156 ("6459", "49HBZ_FUK",     "Folkwang Universität der Künste"), // DE-1156 = Essen, DE-1156a = Bochum, DE-1156b = Duisburg, DE-1156c = Zollverein
         DE_1383 ("6479", "49HBZ_RHW",     "Hochschule Rhein-Waal"), // DE-1383 = Kleve, DE-1383a = Kamp-Lintfort
@@ -83,17 +89,21 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         DE_1866 ("6481", "49HBZ_HGB",     "Hochschule für Gesundheit"),
         DE_1972 ("6457", "49HBZ_RSH",     "Robert Schumann Hochschule Düsseldorf"),
         DE_A96  ("6444", "49HBZ_FHA",     "Hochschulbibliothek der FH Aachen"),
+        DE_B23  ("8975", "49HBZ_DWD",     "Deutsche Meteorologische Bibliothek (DWD), Offenbach"),
         DE_Bi10 ("6450", "49HBZ_HBI",     "Hochschule Bielefeld"),
         DE_Bm1  ("6469", "49HBZ_TGA",     "Technische Fachhochschule - Georg Agricola"),
+        DE_Bm3  ("8974", "49HBZ_BDR",     "Haus der Geschichte des Ruhrgebiets"),
         DE_Bm40 ("6454", "49HBZ_HBO",     "Hochschule Bochum"),
         DE_Dm13 ("6451", "49HBZ_FDO",     "Fachhochschule Dortmund"),
         DE_Due18("6458", "49HBZ_KAD",     "Kunstakademie Düsseldorf"),
         DE_Due62("6455", "49HBZ_HSD",     "Hochschule Düsseldorf"),
         DE_Hag4 ("6461", "49HBZ_FSW",     "Fachhochschule Südwestfalen"),
+        DE_Kn28 ("8971", "49HBZ_EDK",     "Erzbischöfliche Diözesan- und Dombibliothek (EDK) - Bibliothek des Priesterseminars (BPS)"), // DE-Kn28 = EDK, DE-Tr2 = BPS
         DE_Kn38 ("6460", "49HBZ_HMT",     "Hochschule für Musik und Tanz Köln"), // DE-Kn38 = HfMt, DE-Kn38-T = Zentrum für Zeitgenössischen Tanz
         DE_Kn41 ("6478", "49HBZ_ZBS",     "Deutsche Sporthochschule Köln"),
         DE_Kn185("6473", "49HBZ_KHM",     "Kunsthochschule für Medien Köln"),
-        DE_Kob7 ("8057", "49HBZ_UKO",     "Universität Koblenz");
+        DE_Kob7 ("8057", "49HBZ_UKO",     "Universität Koblenz"),
+        DE_Tr5  ("8979", "49HBZ_HST",     "Hochschule Trier - Umwelt-Campus"); // DE-Tr5 = Trier, DE-1042 = Birkenfeld
         // checkstyle-disable-end
 
         private static final String ISIL_SEPARATOR = "-";
