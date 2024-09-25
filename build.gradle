@@ -110,7 +110,7 @@ tasks.withType(JavaExec) {
     }
 
     jvmArgs = lmdbJvmArgs
-    maxHeapSize = '8G'
+    maxHeapSize = '12G'
 
     doFirst { passSystemProperties(systemProperties) }
 }

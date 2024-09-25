@@ -55,8 +55,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         DE_51   ("6480", "49HBZ_DET",     "Hochschule für Musik Detmold / Lippische Landesbibliothek"), // DE-51 = Lippische LB, DE-575 = HS für Musik Detmold
         DE_61   ("6443", "49HBZ_DUE",     "Universität Düsseldorf"),
         DE_82   ("6448", "49HBZ_UBA",     "RWTH Aachen"),
-        //DE_107  ("8973", "49HBZ_LBZ",     "Landesbibliothekszentrum RLP (LBZ)"), // DE-107 = Pfälzische LB, DE-929 = Rheinische LB, DE-Zw1 = Bibliotheca Bipontina
-        DE_107  ("7506", "49HBZ_BRIDGE_LBZ", "Landesbibliothekszentrum Rheinland-Pfalz"), // DE-107 = Pfälzische LB, DE-929 = Rheinische LB, DE-Zw1 = Bibliotheca Bipontina
+        DE_107  ("8973", "49HBZ_LBZ",     "Landesbibliothekszentrum RLP (LBZ)"), // DE-107 = Pfälzische LB, DE-929 = Rheinische LB, DE-Zw1 = Bibliotheca Bipontina
         DE_121  ("8972", "49HBZ_WBT",     "Wissenschaftliche Bibliothek der Stadt Trier"),
         DE_290  ("6445", "49HBZ_UBD",     "Technische Universität Dortmund"),
         DE_294  ("6471", "49HBZ_UBO",     "Universität Bochum"),

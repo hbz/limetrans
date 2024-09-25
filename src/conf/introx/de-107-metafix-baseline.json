@@ -1,0 +1,25 @@
+{
+  "isil": "DE-107",
+  "path": "/data/pubhub/export/alma/w4/",
+  "external-maps": "/data/jenkins/limetrans/maps",
+  "postprocess": true,
+  "alma": {},
+  "input": {
+    "queue": {
+      "path": "${path}",
+      "pattern": "baseline.xml.bgzf"
+    }
+  },
+  "output": {
+    "elasticsearch": {
+      "index": {
+        "type": "titel",
+        "name": "${isil}-introx-metafix-",
+        "timewindow": "yyyyMMdd",
+        "settings": "classpath:/elasticsearch/hbztitle-settings-%s.json",
+        "mapping": "classpath:/elasticsearch/hbztitle-mapping-%s.json",
+        "idKey": "RecordIdentifier.identifierForTheIndex"
+      }
+    }
+  }
+}
