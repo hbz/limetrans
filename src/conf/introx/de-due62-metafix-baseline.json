@@ -3,11 +3,7 @@
   "path": "/data/pubhub/export/alma/prod/",
   "external-maps": "/data/jenkins/limetrans/maps",
   "postprocess": true,
-  "alma": {
-    "regexp": {
-      "suppressedLocation": "AusS"
-    }
-  },
+  "alma": {},
   "input": {
     "queue": {
       "path": "${path}",

@@ -7,8 +7,7 @@
     "regexp": {
       "description": ".*vorhanden.*",
       "temporaryCallnumberLocation": ".*_(?:Lab|Sem)App"
-    },
-    "suppressedLocation": "ILL"
+    }
   },
   "input": {
     "queue": {

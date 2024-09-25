@@ -333,12 +333,10 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
             .add(deletionFilter);
 
         final Map<String, String> regexpDefault = new HashMap<>();
-        regexpDefault.put("suppressedLocation", "(?!)");
 
         final Settings regexp = almaSettings.getAsSettings("regexp");
         Stream.of(
                 "description",
-                "suppressedLocation",
                 "temporaryCallnumberLocation"
         ).forEach(k -> mVars.put("regexp." + k, regexp.get(k, regexpDefault.getOrDefault(k, ".*"))));
 

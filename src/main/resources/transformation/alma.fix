@@ -13,6 +13,7 @@ do once("setup")
 
   put_filemap("$[external-maps]/hbz-to-zdb.tsv.gz", "zdb-to-hbz", sep_char: " ", key_column: "1", value_column: "0")
   put_filemap("$[external-maps]/lookup-tables/data/almaSublibraryCode2Isil/generated/generatedAlmaSublibraryCode2Isil.tsv", "alma-library-to-isil", sep_char: "\t")
+  put_filemap("$[external-maps]/lookup-tables/data/almaSuppressedLocations/generated/generatedAlmaSuppressedLocations.tsv", "alma-suppressed-location", sep_char: "\t")
 
   hbz.limetrans.function.PutLmdbMap("$[external-maps]/lobid-gnd.lmdb", "lobid-gnd")
   hbz.limetrans.function.PutLmdbMap("$[external-maps]/lobid-organisations.lmdb", "lobid-organisations")
