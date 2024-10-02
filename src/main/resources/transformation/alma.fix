@@ -222,9 +222,6 @@ do list(path: "035  .a", "var": "$i")
     add_field("IdentifierDNB[].$append.__dummy__", "")
     add_field("IdentifierHBZ[].$append.__dummy__", "")
     add_field("IdentifierZDB[].$append.__dummy__", "")
-    unless exists("@zdbid")
-      copy_field("$i", "@zdbid")
-    end
     replace_all("$i", "^\\(DE-600\\)", "")
     copy_field("$i", "IdentifierDNB[].$last.identifierDNB")
     copy_field("$i", "IdentifierZDB[].$last.identifierZDB")
@@ -262,8 +259,6 @@ call_macro("alma-mms-and-isil")
 
 if exists("@hbzid")
   paste("@id", "@hbzid", "$[id-suffix]", join_char: "")
-elsif exists("@zdbid")
-  paste("@id", "@zdbid", "$[id-suffix]", join_char: "")
 elsif exists("@sysid")
   paste("@id", "@sysid", "$[id-suffix]", join_char: "")
 else
