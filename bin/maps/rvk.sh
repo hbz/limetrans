@@ -33,6 +33,6 @@ curl --no-progress-meter\
   ' |\
   ./gradlew execLmdb --args="$t"
 
-[ -s "$t" ] && mv "$t" "$f"
+[ -s "$t" ] && mv --backup --suffix=.bak "$t" "$f"
 
 ./gradlew execLmdb --args="$f"

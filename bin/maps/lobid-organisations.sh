@@ -14,6 +14,6 @@ curl --no-progress-meter\
   tr $'\t' '\035' |\
   ./gradlew execLmdb --args="$t"
 
-[ -s "$t" ] && mv "$t" "$f"
+[ -s "$t" ] && mv --backup --suffix=.bak "$t" "$f"
 
 ./gradlew execLmdb --args="$f"
