@@ -10,13 +10,15 @@ println "Versions: JVM=${org.gradle.internal.jvm.Jvm.current()}, Groovy=${Groovy
 group = 'hbz.limetrans'
 
 def passSystemProperties = {
-    def prefix = group + '.'
+    def prefix = project.group + '.'
+    def pattern = ~/(?:\Q${prefix}\E|org\.metafacture\.).*/
+
+    it['org.metafacture.metafix.maxEntityCount'] = 6000
+    it[prefix + 'versions.elasticsearch8'] = versions.elasticsearch8
 
     System.properties.each { k, v ->
-        if (k.startsWith(prefix)) it[k] = v
+        if (k.matches(pattern)) it[k] = v
     }
-
-    it[prefix + 'versions.elasticsearch8'] = versions.elasticsearch8
 }
 
 // https://github.com/lmdbjava/lmdbjava/issues/42
