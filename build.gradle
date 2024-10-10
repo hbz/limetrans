@@ -13,7 +13,6 @@ def passSystemProperties = {
     def prefix = project.group + '.'
     def pattern = ~/(?:\Q${prefix}\E|org\.metafacture\.).*/
 
-    it['org.metafacture.metafix.maxEntityCount'] = 6000
     it[prefix + 'versions.elasticsearch8'] = versions.elasticsearch8
 
     System.properties.each { k, v ->
