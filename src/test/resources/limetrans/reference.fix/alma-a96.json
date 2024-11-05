@@ -1011,9 +1011,11 @@
     "personRole" : [ "[author.]" ]
   } ],
   "TitleOther" : [ {
-    "title" : "Basics entwerfen materialität"
+    "title" : "Materialität",
+    "prefix" : "Teil des Titels"
   }, {
-    "title" : "Materialität"
+    "title" : "Basics entwerfen materialität",
+    "prefix" : "Umschlagtitel"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Building materials" ],
@@ -4400,7 +4402,8 @@
   "TypeMedia" : "Elektronische Ressource",
   "TypePeriodical" : [ "Zeitschrift" ],
   "TitleOther" : [ {
-    "title" : "Vakuum"
+    "title" : "Vakuum",
+    "prefix" : "Teil des Titels"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Vacuum technology" ],
@@ -10836,7 +10839,8 @@
     "uid" : "(OCoLC)1067778108"
   } ],
   "TitleOther" : [ {
-    "title" : "Versuchs- und Vergleichsbauten und Demonstrativmaßnahmen des Bundesministeriums für Städtebau und Wohnungswesen"
+    "title" : "Versuchs- und Vergleichsbauten und Demonstrativmaßnahmen des Bundesministeriums für Städtebau und Wohnungswesen",
+    "prefix" : "Teil des Titels"
   } ]
 }
 {
@@ -11139,7 +11143,8 @@
     "uid" : "(DE-599)HBZHT001234839"
   } ],
   "TitleOther" : [ {
-    "title" : "Catalogues raisonnés d'artistes suisses"
+    "title" : "Catalogues raisonnés d'artistes suisses",
+    "prefix" : "Paralleltitel"
   } ]
 }
 {
@@ -11941,13 +11946,16 @@
     "uid" : "(DE-599)HBZHT001235234"
   } ],
   "TitleOther" : [ {
-    "title" : "DIN handbook"
-  }, {
     "title" : "DIN-VDE-Taschenbuch"
   }, {
     "title" : "DIN-VDI-Taschenbuch"
   }, {
     "title" : "DIN-DVS-Taschenbuch"
+  }, {
+    "title" : "DIN handbook"
+  }, {
+    "title" : "DIN handbook",
+    "prefix" : "Paralleltitel"
   } ],
   "RSWK" : [ {
     "subjectGeoName" : "Deutschland",
@@ -13332,6 +13340,9 @@
     "title" : "Schriften des Vereins für Socialpolitik"
   }, {
     "title" : "Schriften des Vereins für Sozialpolitik, Gesellschaft für Wirtschafts- und Sozialwissenschaften"
+  }, {
+    "title" : "SVS",
+    "prefix" : "Paralleltitel"
   } ]
 }
 {
@@ -17853,9 +17864,14 @@
   }, {
     "title" : "Volks- und Betriebswirtschaft"
   }, {
-    "title" : "Publications universitaires européennes"
+    "title" : "Publications universitaires européennes",
+    "prefix" : "Paralleltitel"
   }, {
-    "title" : "European university papers"
+    "title" : "European university papers",
+    "prefix" : "Paralleltitel"
+  }, {
+    "title" : "European university studies / 5",
+    "prefix" : "Paralleltitel"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Volkswirtschaft" ],
@@ -17972,9 +17988,10 @@
     "uid" : "(DE-599)HBZHT001254738"
   } ],
   "TitleOther" : [ {
-    "title" : "Guides and papers of the Rheinisches Freilichtmuseum and the Landesmuseum für Volkskunde at Kommern"
-  }, {
     "title" : "Schriften des Rheinischen Freilichtmuseums und Landesmuseums für Volkskunde in Kommern"
+  }, {
+    "title" : "Guides and papers of the Rheinisches Freilichtmuseum and the Landesmuseum für Volkskunde at Kommern",
+    "prefix" : "Paralleltitel"
   } ]
 }
 {
@@ -18372,9 +18389,10 @@
     "uid" : "(DE-599)HBZHT001255783"
   } ],
   "TitleOther" : [ {
-    "title" : "Kiel discussion papers"
-  }, {
     "title" : "Kieler Diskussionsbeiträge zu aktuellen wirtschaftspolitischen Fragen"
+  }, {
+    "title" : "Kiel discussion papers",
+    "prefix" : "Paralleltitel"
   } ],
   "RSWK" : [ {
     "subjectGeoName" : "Lateinamerika",
@@ -18707,6 +18725,9 @@
   }, {
     "title" : "Mitteilungen über Forschungen zur Verbesserung der Verkehrsverhältnisse der Gemeinden. -",
     "prefix" : "Nebent. teils"
+  }, {
+    "title" : "Urban transport research",
+    "prefix" : "Paralleltitel"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Stadtverkehr" ],
@@ -22853,7 +22874,8 @@
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TitleOther" : [ {
-    "title" : "Psychopathology and pictorial expression"
+    "title" : "Psychopathology and pictorial expression",
+    "prefix" : "Paralleltitel"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Art" ],
@@ -23250,7 +23272,8 @@
     "title" : "Allgemeines Lexikon der bildenden Künstler des 20. Jahrhunderts",
     "prefix" : "Nachdr. u.d.T."
   }, {
-    "title" : "zwanzigsten 20"
+    "title" : "zwanzigsten 20",
+    "prefix" : "Teil des Titels"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Künstler" ],
@@ -26616,7 +26639,8 @@
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TitleOther" : [ {
-    "title" : "Dictionary of modern technology"
+    "title" : "Dictionary of modern technology",
+    "prefix" : "Paralleltitel"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Englisch" ],
@@ -30845,7 +30869,8 @@
     "uid" : "(DE-599)HBZHT003357836"
   } ],
   "TitleOther" : [ {
-    "title" : "Katalog oö Publikationen"
+    "title" : "Katalog oö Publikationen",
+    "prefix" : "Teil des Titels"
   } ]
 }
 {
@@ -31333,7 +31358,8 @@
     "shelfmark" : "BAY_Frei"
   } ],
   "TitleOther" : [ {
-    "title" : "Architektur Umbruch"
+    "title" : "Architektur Umbruch",
+    "prefix" : "Teil des Titels"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Architektur" ],
@@ -32358,7 +32384,8 @@
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TitleOther" : [ {
-    "title" : "Internationales Verzeichnis der Abkürzungen und Akronyme der Elektronik, Elektrotechnik, Computertechnik und Informationsverarbeitung"
+    "title" : "Internationales Verzeichnis der Abkürzungen und Akronyme der Elektronik, Elektrotechnik, Computertechnik und Informationsverarbeitung",
+    "prefix" : "Paralleltitel"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Elektrotechnik" ],
@@ -32510,7 +32537,8 @@
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TitleOther" : [ {
-    "title" : "Bibliography of the history of surveying"
+    "title" : "Bibliography of the history of surveying",
+    "prefix" : "Paralleltitel"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Vermessung" ],
@@ -33181,7 +33209,8 @@
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TitleOther" : [ {
-    "title" : "Sammelmappe Konkurrenzentwürfe"
+    "title" : "Sammelmappe Konkurrenzentwürfe",
+    "prefix" : "Teil des Titels"
   } ]
 }
 {
@@ -33662,7 +33691,8 @@
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TitleOther" : [ {
-    "title" : "Die neuen Wilden"
+    "title" : "Die neuen Wilden",
+    "prefix" : "Paralleltitel"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Neue Wilde" ],
@@ -38277,6 +38307,9 @@
   }, {
     "title" : "Dictionary of materials and process engineering English German. Wörterbuch der industriellen Werkstofftechnik englisch-deutsch",
     "prefix" : "Nebensacht."
+  }, {
+    "title" : "Englisch-deutsches Wörterbuch der industriellen Werkstofftechnik",
+    "prefix" : "Paralleltitel"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Werkstoffkunde" ],
@@ -44555,7 +44588,8 @@
   "TitleOther" : [ {
     "title" : "Apache Webserver"
   }, {
-    "title" : "Web-Server"
+    "title" : "Web-Server",
+    "prefix" : "Teil des Titels"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Apache" ],
@@ -44664,7 +44698,8 @@
     "shelfmark" : "BAY_Frei"
   } ],
   "TitleOther" : [ {
-    "title" : "Architecture and energy"
+    "title" : "Architecture and energy",
+    "prefix" : "Paralleltitel"
   } ]
 }
 {
@@ -45867,7 +45902,11 @@
   }, {
     "title" : "Dictionary of chemistry and chemical technology English German"
   }, {
-    "title" : "Langenscheidt Fachwörterbuch"
+    "title" : "Langenscheidt Fachwörterbuch",
+    "prefix" : "Teil des Titels"
+  }, {
+    "title" : "Langenscheidt dictionary of chemistry and chemical technology English German",
+    "prefix" : "Paralleltitel"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Chemie" ],
@@ -46138,6 +46177,9 @@
   "TypePeriodical" : [ "Schriftenreihe" ],
   "TitleOther" : [ {
     "title" : "The architecture of the O. M. theatre"
+  }, {
+    "title" : "The architecture of the O. M. theatre",
+    "prefix" : "Paralleltitel"
   } ],
   "RSWK" : [ {
     "subjectDate" : "1938-",
@@ -46512,11 +46554,13 @@
     "shelfmark" : "BOX_Filme"
   } ],
   "TitleOther" : [ {
-    "title" : "Der Schatten des Kriegers"
-  }, {
-    "title" : "Der Schatten des Krieges"
-  }, {
     "title" : "La sombra del guerrero"
+  }, {
+    "title" : "Der Schatten des Kriegers",
+    "prefix" : "Paralleltitel"
+  }, {
+    "title" : "Der Schatten des Krieges",
+    "prefix" : "Paralleltitel"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Film" ],
@@ -52586,7 +52630,8 @@
     "shelfmark" : "BAY_Frei"
   } ],
   "TitleOther" : [ {
-    "title" : "Architectural guide Innsbruck"
+    "title" : "Architectural guide Innsbruck",
+    "prefix" : "Paralleltitel"
   } ]
 }
 {
@@ -52759,9 +52804,11 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "TitleOther" : [ {
-    "title" : "Architecture by Dietrich/Untertrifaller"
+    "title" : "Architecture by Dietrich/Untertrifaller",
+    "prefix" : "Paralleltitel"
   }, {
-    "title" : "Architecture de Dietrich/Untertrifaller"
+    "title" : "Architecture de Dietrich/Untertrifaller",
+    "prefix" : "Paralleltitel"
   } ],
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Dietrich-Untertrifaller Architekten",
@@ -52871,6 +52918,9 @@
   "TypeMedia" : "Elektronische Ressource",
   "TitleOther" : [ {
     "title" : "Kunstrecht"
+  }, {
+    "title" : "Kunstrecht",
+    "prefix" : "Teil des Titels"
   } ]
 }
 {
@@ -54330,7 +54380,8 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "TitleOther" : [ {
-    "title" : "Tax law and public finance"
+    "title" : "Tax law and public finance",
+    "prefix" : "Paralleltitel"
   } ]
 }
 {
@@ -54437,7 +54488,8 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "TitleOther" : [ {
-    "title" : "Series on restructuring"
+    "title" : "Series on restructuring",
+    "prefix" : "Paralleltitel"
   } ]
 }
 {
@@ -62824,13 +62876,13 @@
     "shelfmark" : "BAY_ZSFrei"
   } ],
   "TitleOther" : [ {
-    "title" : "GWF / Wasser + Abwasser"
-  }, {
     "title" : "GWF international, the leading specialist journal for water and wastewater"
   }, {
     "title" : "Das Gas- und Wasserfach / Ausgabe Wasser, Abwasser"
   }, {
     "title" : "GWF international"
+  }, {
+    "title" : "GWF / Wasser + Abwasser"
   } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Wasserversorgung" ],
