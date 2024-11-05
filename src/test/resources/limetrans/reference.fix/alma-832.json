@@ -162,9 +162,12 @@
     "callnumber" : [ "63BAA1718", "BAA1718" ],
     "shelfmark" : "63"
   } ],
-  "TitleOther" : {
-    "title" : [ "Friedrich-Wilhelm Henning zum 75. Geburtstag" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Friedrich-Wilhelm Henning zum 75. Geburtstag"
+  }, {
+    "title" : "Friedrich-Wilhelm Henning zum 75. Geburtstag",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectDate" : "1931-2008",
     "subjectPersonName" : "Henning, Friedrich-Wilhelm",

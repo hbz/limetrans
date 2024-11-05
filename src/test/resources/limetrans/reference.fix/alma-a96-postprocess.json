@@ -334,9 +334,9 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "TypePeriodical" : [ "Zeitschrift" ],
-  "TitleOther" : {
-    "title" : [ "Olive Wreath" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Olive Wreath"
+  } ]
 }
 {
   "collection" : "DE-605",
@@ -393,9 +393,9 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "TypePeriodical" : [ "Zeitschrift" ],
-  "TitleOther" : {
-    "title" : [ "Olio" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Olio"
+  } ]
 }
 {
   "collection" : "DE-A96",
@@ -1027,9 +1027,11 @@
     "personName" : "Zeumer, Martin",
     "personRole" : [ "[author.]" ]
   } ],
-  "TitleOther" : {
-    "title" : [ "Basics entwerfen materialität", "Materialität" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Basics entwerfen materialität"
+  }, {
+    "title" : "Materialität"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Building materials" ],
     "combinedLabel" : "Building materials"
@@ -2091,9 +2093,11 @@
     "uid" : "(DE-599)OBVAC13708289"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "Basics Wasserkreislauf im Gebäude", "Basics Haustechnik Wasserkreislauf im Gebäude" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Basics Wasserkreislauf im Gebäude"
+  }, {
+    "title" : "Basics Haustechnik Wasserkreislauf im Gebäude"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Gebäude" ],
     "combinedLabel" : "Gebäude",
@@ -2644,9 +2648,24 @@
     "callnumber" : [ "63 ZS 104-2008,2", "63 ZS 104" ],
     "shelfmark" : "EUP_ZSMag"
   } ],
-  "TitleOther" : {
-    "title" : [ "Analytica pro", "EuCheMS newsletter", "Nachrichten für die Karriere", "Nachrichten für die Chemikerkarriere", "Nachrichten aus der Chemiewirtschaft", "Nano", "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Analytica pro"
+  }, {
+    "title" : "EuCheMS newsletter"
+  }, {
+    "title" : "Nachrichten für die Karriere"
+  }, {
+    "title" : "Nachrichten für die Chemikerkarriere"
+  }, {
+    "title" : "Nachrichten aus der Chemiewirtschaft"
+  }, {
+    "title" : "Nano"
+  }, {
+    "title" : "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker"
+  }, {
+    "title" : "Mitteilungsblatt der Gesellschaft Österreichischer Chemiker",
+    "prefix" : "2. Titelzusatz ab 2019 teils"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Chemie" ],
     "combinedLabel" : "Chemie",
@@ -2762,9 +2781,9 @@
     "uid" : "(DE-599)HBZHT000011758"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "ARH" ]
-  },
+  "TitleOther" : [ {
+    "title" : "ARH"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Hochbau" ],
     "combinedLabel" : "Hochbau",
@@ -3501,9 +3520,9 @@
     "identifierGND" : [ "1026875439" ],
     "preferredName" : "Schubert, Wolfgang"
   } ],
-  "TitleOther" : {
-    "title" : [ "Statische Elektrizität : Durchschauen - Überwachen - Anwenden" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Statische Elektrizität : Durchschauen - Überwachen - Anwenden"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Arbeitssicherheit" ],
     "combinedLabel" : "Arbeitssicherheit"
@@ -4443,9 +4462,9 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "TypePeriodical" : [ "Zeitschrift" ],
-  "TitleOther" : {
-    "title" : [ "Vakuum" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Vakuum"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Vacuum technology" ],
     "subjectGenre" : "Periodicals",
@@ -4820,9 +4839,9 @@
     "callnumber" : [ "11 XDM 9" ],
     "shelfmark" : "BAY_Frei"
   } ],
-  "TitleOther" : {
-    "title" : [ "A Sechsundvierzig, Rheinbrücke Düsseldorf-Neuss" ]
-  },
+  "TitleOther" : [ {
+    "title" : "A Sechsundvierzig, Rheinbrücke Düsseldorf-Neuss"
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Rheinbrücke Düsseldorf-Neuss",
     "combinedLabel" : "Rheinbrücke Düsseldorf-Neuss (Düsseldorf)",
@@ -5258,9 +5277,11 @@
     "callnumber" : [ "20 ZQS 62", "21 ZQS 62" ],
     "shelfmark" : "EUP_Praes"
   } ],
-  "TitleOther" : {
-    "title" : [ "Fahrzeugtechnik EWG, ECE", "FEE" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Fahrzeugtechnik EWG, ECE"
+  }, {
+    "title" : "FEE"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -8002,9 +8023,9 @@
     "callnumber" : [ "51 WUF 1" ],
     "shelfmark" : "BOX_Frei"
   } ],
-  "TitleOther" : {
-    "title" : [ "Architektenzeichnungen, vierzehnhundertneunundsiebzig bis neunzehnhundertneunundsiebzig" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Architektenzeichnungen, vierzehnhundertneunundsiebzig bis neunzehnhundertneunundsiebzig"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Architekturzeichnung" ],
     "combinedLabel" : "Architekturzeichnung",
@@ -8281,9 +8302,14 @@
   }, {
     "uid" : "(DE-599)HBZHT001231105"
   } ],
-  "TitleOther" : {
-    "title" : [ "Tracts in modern physics", "STMP" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Tracts in modern physics"
+  }, {
+    "title" : "STMP"
+  }, {
+    "title" : "STMP",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Moderne Physik" ],
     "combinedLabel" : "Moderne Physik",
@@ -8381,9 +8407,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001231187"
   } ],
-  "TitleOther" : {
-    "title" : [ "Studien zur Fugger-Geschichte" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Studien zur Fugger-Geschichte"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -8500,9 +8526,20 @@
   }, {
     "uid" : "(OCoLC)724237677"
   } ],
-  "TitleOther" : {
-    "title" : [ "SPIE proceedings", "Proceedings of SPIE", "SPIE - the International Society for Optical Engineering", "The journal of vacuum science and technology / Proceedings - Society of Photo-Optical Instrumentation Engineers", "Proceedings series" ]
-  }
+  "TitleOther" : [ {
+    "title" : "SPIE proceedings"
+  }, {
+    "title" : "Proceedings of SPIE"
+  }, {
+    "title" : "SPIE - the International Society for Optical Engineering"
+  }, {
+    "title" : "The journal of vacuum science and technology / Proceedings - Society of Photo-Optical Instrumentation Engineers"
+  }, {
+    "title" : "Proceedings series"
+  }, {
+    "title" : "Proceedings series",
+    "prefix" : "Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -8796,9 +8833,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001231720"
   } ],
-  "TitleOther" : {
-    "title" : [ "Fortschritt-Berichte der VDI-Zeitschriften / 9" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Fortschritt-Berichte der VDI-Zeitschriften / 9"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Elektrotechnik" ],
     "combinedLabel" : "Elektrotechnik",
@@ -8907,9 +8944,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001231723"
   } ],
-  "TitleOther" : {
-    "title" : [ "Fortschritt-Berichte der VDI-Zeitschriften / 12" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Fortschritt-Berichte der VDI-Zeitschriften / 12"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -9001,9 +9038,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001231862"
   } ],
-  "TitleOther" : {
-    "title" : [ "Wissenschaftliche Forschungsberichte / 1" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Wissenschaftliche Forschungsberichte / 1"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -9110,9 +9147,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001231934"
   } ],
-  "TitleOther" : {
-    "title" : [ "Zivilschutz-Forschung" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Zivilschutz-Forschung"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -9303,9 +9340,11 @@
   }, {
     "uid" : "(DE-599)HBZHT001232185"
   } ],
-  "TitleOther" : {
-    "title" : [ "Schriftenreihe des Institutes für Baubetriebslehre der Universität Stuttgart (TH)", "Schriftenreihe des Instituts für Baubetriebslehre der Universität Stuttgart" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Schriftenreihe des Institutes für Baubetriebslehre der Universität Stuttgart (TH)"
+  }, {
+    "title" : "Schriftenreihe des Instituts für Baubetriebslehre der Universität Stuttgart"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -9406,9 +9445,15 @@
   }, {
     "uid" : "(DE-599)HBZHT001232286"
   } ],
-  "TitleOther" : {
-    "title" : [ "Schmalenbachs Zeitschrift für betriebswirtschaftliche Forschung / Sonderheft", "Zeitschrift für betriebswirtschaftliche Forschung / Sonderheft", "ZfbF / Sonderheft", "ZfbF-Sonderheft" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Schmalenbachs Zeitschrift für betriebswirtschaftliche Forschung / Sonderheft"
+  }, {
+    "title" : "Zeitschrift für betriebswirtschaftliche Forschung / Sonderheft"
+  }, {
+    "title" : "ZfbF / Sonderheft"
+  }, {
+    "title" : "ZfbF-Sonderheft"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -10321,9 +10366,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001233626"
   } ],
-  "TitleOther" : {
-    "title" : [ "Vorträge / N" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Vorträge / N"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -10426,9 +10471,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001233628"
   } ],
-  "TitleOther" : {
-    "title" : [ "Arbeitsheft" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Arbeitsheft"
+  } ]
 }
 {
   "ExtendedType" : [ "Monografische Reihe" ],
@@ -10539,9 +10584,14 @@
   }, {
     "uid" : "(DE-599)HBZHT001233673"
   } ],
-  "TitleOther" : {
-    "title" : [ "Schriften des Karl-Bräuer-Instituts des Bundes der Steuerzahler", "Karl-Bräuer-Institut des Bundes der Steuerzahler" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Schriften des Karl-Bräuer-Instituts des Bundes der Steuerzahler"
+  }, {
+    "title" : "Karl-Bräuer-Institut des Bundes der Steuerzahler"
+  }, {
+    "title" : "Schriften des Karl-Bräuer-Instituts des Bundes der Steuerzahler",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Deutschland",
     "combinedLabel" : "Deutschland",
@@ -10648,9 +10698,17 @@
   }, {
     "uid" : "(DE-599)HBZHT001233852"
   } ],
-  "TitleOther" : {
-    "title" : [ "Lecture notes in artificial intelligence", "LNCS", "LNAI", "Lecture notes in bioinformatics", "LNBI" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Lecture notes in artificial intelligence"
+  }, {
+    "title" : "LNCS"
+  }, {
+    "title" : "LNAI"
+  }, {
+    "title" : "Lecture notes in bioinformatics"
+  }, {
+    "title" : "LNBI"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Informatik" ],
     "combinedLabel" : "Informatik",
@@ -10750,9 +10808,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001233854"
   } ],
-  "TitleOther" : {
-    "title" : [ "Lecture notes in operations research and mathematical economics" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Lecture notes in operations research and mathematical economics"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -10930,9 +10988,9 @@
   }, {
     "uid" : "(OCoLC)1067778108"
   } ],
-  "TitleOther" : {
-    "title" : [ "Versuchs- und Vergleichsbauten und Demonstrativmaßnahmen des Bundesministeriums für Städtebau und Wohnungswesen" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Versuchs- und Vergleichsbauten und Demonstrativmaßnahmen des Bundesministeriums für Städtebau und Wohnungswesen"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -11022,9 +11080,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001234499"
   } ],
-  "TitleOther" : {
-    "title" : [ "Telecommunications series" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Telecommunications series"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -11125,9 +11183,19 @@
   }, {
     "uid" : "(DE-599)HBZHT001234529"
   } ],
-  "TitleOther" : {
-    "title" : [ "FID publications", "FID publ", "Publication", "Veröffentlichungen des Internationalen Verbandes für Dokumentation", "Publicações da Federação Internacional de Documentação", "Publications of the International Federation for Documentation" ]
-  }
+  "TitleOther" : [ {
+    "title" : "FID publications"
+  }, {
+    "title" : "FID publ."
+  }, {
+    "title" : "Publication"
+  }, {
+    "title" : "Veröffentlichungen des Internationalen Verbandes für Dokumentation"
+  }, {
+    "title" : "Publicações da Federação Internacional de Documentação"
+  }, {
+    "title" : "Publications of the International Federation for Documentation"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -11230,9 +11298,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001234839"
   } ],
-  "TitleOther" : {
-    "title" : [ "Catalogues raisonnés d'artistes suisses" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Catalogues raisonnés d'artistes suisses"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -11349,9 +11417,12 @@
   }, {
     "uid" : "(DE-599)HBZHT001235205"
   } ],
-  "TitleOther" : {
-    "title" : [ "Schriftenreihe des Deutschen Ausschusses für Stahlbeton" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Schriftenreihe des Deutschen Ausschusses für Stahlbeton"
+  }, {
+    "title" : "Schriftenreihe des Deutschen Ausschusses für Stahlbeton",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Betonrippenstahl" ],
     "combinedLabel" : "Betonrippenstahl",
@@ -11463,9 +11534,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001235213"
   } ],
-  "TitleOther" : {
-    "title" : [ "Normenhefte" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Normenhefte"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -11551,9 +11622,14 @@
   }, {
     "uid" : "(DE-599)HBZHT001235227"
   } ],
-  "TitleOther" : {
-    "title" : [ "Veröffentlichung aus dem Deutschen Bergbau-Museum Bochum", "Veröffentlichungen aus dem Deutschen Bergbaumuseum Bochum" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Veröffentlichung aus dem Deutschen Bergbau-Museum Bochum"
+  }, {
+    "title" : "Veröffentlichungen aus dem Deutschen Bergbaumuseum Bochum"
+  }, {
+    "title" : "Veröffentlichung aus dem Deutschen Bergbau-Museum Bochum",
+    "prefix" : "Nebent. teils"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -12034,9 +12110,15 @@
   }, {
     "uid" : "(DE-599)HBZHT001235234"
   } ],
-  "TitleOther" : {
-    "title" : [ "DIN handbook", "DIN-VDE-Taschenbuch", "DIN-VDI-Taschenbuch", "DIN-DVS-Taschenbuch" ]
-  },
+  "TitleOther" : [ {
+    "title" : "DIN handbook"
+  }, {
+    "title" : "DIN-VDE-Taschenbuch"
+  }, {
+    "title" : "DIN-VDI-Taschenbuch"
+  }, {
+    "title" : "DIN-DVS-Taschenbuch"
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Deutschland",
     "combinedLabel" : "Deutschland",
@@ -12417,9 +12499,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001235411"
   } ],
-  "TitleOther" : {
-    "title" : [ "Forschungsbericht des Landes Nordrhein-Westfalen" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Forschungsbericht des Landes Nordrhein-Westfalen"
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Nordrhein-Westfalen",
     "combinedLabel" : "Nordrhein-Westfalen",
@@ -12531,9 +12613,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001235439"
   } ],
-  "TitleOther" : {
-    "title" : [ "Städteforschung / A" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Städteforschung / A"
+  } ]
 }
 {
   "ExtendedType" : [ "Monografische Reihe" ],
@@ -12843,9 +12925,16 @@
   }, {
     "uid" : "(DE-599)HBZHT001235790"
   } ],
-  "TitleOther" : {
-    "title" : [ "Control engineering series", "IEE control series", "Control series" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Control engineering series"
+  }, {
+    "title" : "IEE control series"
+  }, {
+    "title" : "Control series"
+  }, {
+    "title" : "IEE control series",
+    "prefix" : "Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -12938,9 +13027,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001235792"
   } ],
-  "TitleOther" : {
-    "title" : [ "Electromagnetic waves series" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Electromagnetic waves series"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -13026,9 +13115,18 @@
   }, {
     "uid" : "(DE-599)HBZHT001235840"
   } ],
-  "TitleOther" : {
-    "title" : [ "Sonderausstellung im Schiller-Nationalmuseum Marbach a.N", "Sonderausstellungen aus dem Literaturarchiv der Deutschen Schillergesellschaft", "Kataloge zu Sonder-Ausstellungen des Schiller-Nationalmuseums", "Sonderausstellungen des Schiller-Nationalmuseums", "Sonderausstellung im Schiller-Nationalmuseum Marbach a.N. Sonderausstellungen aus dem Literaturarchiv der Deutschen Schillergesellschaft. Kataloge zu Sonderausstellungen des Schiller-Nationalmuseums" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Sonderausstellung im Schiller-Nationalmuseum Marbach a.N."
+  }, {
+    "title" : "Sonderausstellungen aus dem Literaturarchiv der Deutschen Schillergesellschaft"
+  }, {
+    "title" : "Kataloge zu Sonder-Ausstellungen des Schiller-Nationalmuseums"
+  }, {
+    "title" : "Sonderausstellungen des Schiller-Nationalmuseums"
+  }, {
+    "title" : "Sonderausstellung im Schiller-Nationalmuseum Marbach a.N. Sonderausstellungen aus dem Literaturarchiv der Deutschen Schillergesellschaft. Kataloge zu Sonderausstellungen des Schiller-Nationalmuseums",
+    "prefix" : "Hauptsacht. teilw."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -13117,9 +13215,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001236028"
   } ],
-  "TitleOther" : {
-    "title" : [ "Veröffentlichungen der Staatlichen Archive des Landes Nordrhein-Westfalen / C" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Veröffentlichungen der Staatlichen Archive des Landes Nordrhein-Westfalen / C"
+  } ]
 }
 {
   "ExtendedType" : [ "Aufsatzsammlung" ],
@@ -13234,9 +13332,12 @@
   }, {
     "uid" : "(DE-599)HBZHT001236120"
   } ],
-  "TitleOther" : {
-    "title" : [ "BeitrAB" ]
-  },
+  "TitleOther" : [ {
+    "title" : "BeitrAB"
+  }, {
+    "title" : "BeitrAB",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Deutschland",
     "combinedLabel" : "Deutschland (Bundesrepublik)",
@@ -13424,9 +13525,13 @@
   }, {
     "uid" : "(DE-599)HBZHT001236339"
   } ],
-  "TitleOther" : {
-    "title" : [ "SVS", "Schriften des Vereins für Socialpolitik", "Schriften des Vereins für Sozialpolitik, Gesellschaft für Wirtschafts- und Sozialwissenschaften" ]
-  }
+  "TitleOther" : [ {
+    "title" : "SVS"
+  }, {
+    "title" : "Schriften des Vereins für Socialpolitik"
+  }, {
+    "title" : "Schriften des Vereins für Sozialpolitik, Gesellschaft für Wirtschafts- und Sozialwissenschaften"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -13531,9 +13636,11 @@
   }, {
     "uid" : "(DE-599)HBZHT001236536"
   } ],
-  "TitleOther" : {
-    "title" : [ "Membership directory and annual report", "Jahrbuch" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Membership directory and annual report"
+  }, {
+    "title" : "Jahrbuch"
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Rheinland",
     "combinedLabel" : "Rheinland",
@@ -13640,9 +13747,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001236558"
   } ],
-  "TitleOther" : {
-    "title" : [ "Unternehmensführung und Marketing" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Unternehmensführung und Marketing"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -13806,9 +13913,12 @@
   }, {
     "uid" : "(OCoLC)1070024395"
   } ],
-  "TitleOther" : {
-    "title" : [ "DFVLR-Forschungsbericht" ]
-  },
+  "TitleOther" : [ {
+    "title" : "DFVLR-Forschungsbericht"
+  }, {
+    "title" : "DFVLR-Forschungsbericht",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Kenia",
     "combinedLabel" : "Kenia (Nord)",
@@ -14389,9 +14499,12 @@
   }, {
     "uid" : "(DE-599)HBZHT001237994"
   } ],
-  "TitleOther" : {
-    "title" : [ "LNP" ]
-  }
+  "TitleOther" : [ {
+    "title" : "LNP"
+  }, {
+    "title" : "LNP",
+    "prefix" : "Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -14661,9 +14774,20 @@
   }, {
     "uid" : "(DE-599)HBZHT001238528"
   } ],
-  "TitleOther" : {
-    "title" : [ "Die grossen Kunstführer", "Reihe grosse Kunstführer", "Grosser Kunstführer", "The great art guides", "Großer Kunstführer Schnell & Steiner", "Die großen Kunstführer. Reihe große Kunstführer. Große Kunstführer. Großer Kunstführer Schnell & Steiner" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Die grossen Kunstführer"
+  }, {
+    "title" : "Reihe grosse Kunstführer"
+  }, {
+    "title" : "Grosser Kunstführer"
+  }, {
+    "title" : "The great art guides"
+  }, {
+    "title" : "Großer Kunstführer Schnell & Steiner"
+  }, {
+    "title" : "Die großen Kunstführer. Reihe große Kunstführer. Große Kunstführer. Großer Kunstführer Schnell & Steiner",
+    "prefix" : "Teilw. mit Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -14767,9 +14891,12 @@
   }, {
     "uid" : "(DE-599)HBZHT001238804"
   } ],
-  "TitleOther" : {
-    "title" : [ "LNEMS" ]
-  }
+  "TitleOther" : [ {
+    "title" : "LNEMS"
+  }, {
+    "title" : "LNEMS",
+    "prefix" : "Nebent. teils"
+  } ]
 }
 {
   "ExtendedType" : [ "Bericht" ],
@@ -14861,9 +14988,11 @@
   }, {
     "uid" : "(DE-599)HBZHT001239394"
   } ],
-  "TitleOther" : {
-    "title" : [ "Berichte des Deutschen Verbandes für Schweißtechnik e.V., Düsseldorf", "DVS-Berichte des Deutschen Verbandes für Schweißtechnik e.V., Düsseldorf" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Berichte des Deutschen Verbandes für Schweißtechnik e.V., Düsseldorf"
+  }, {
+    "title" : "DVS-Berichte des Deutschen Verbandes für Schweißtechnik e.V., Düsseldorf"
+  } ],
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Deutscher Verband für Schweißen und Verwandte Verfahren",
     "combinedLabel" : "Deutscher Verband für Schweißen und Verwandte Verfahren",
@@ -15290,9 +15419,11 @@
   }, {
     "uid" : "(OCoLC)1070015909"
   } ],
-  "TitleOther" : {
-    "title" : [ "Report", "BIA-ZefU-Report" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Report"
+  }, {
+    "title" : "BIA-ZefU-Report"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -15390,9 +15521,13 @@
   }, {
     "uid" : "(DE-599)HBZHT001243680"
   } ],
-  "TitleOther" : {
-    "title" : [ "Veröffentlichungen der Schwäbischen Forschungsgemeinschaft / 4", "Schwäbische Forschungsgemeinschaft bei der Kommission für Bayerische Landesgeschichte", "Veröffentlichungen der Schwäbischen Forschungsgemeinschaft bei der Kommission für Bayerische Landesgeschichte" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Veröffentlichungen der Schwäbischen Forschungsgemeinschaft / 4"
+  }, {
+    "title" : "Schwäbische Forschungsgemeinschaft bei der Kommission für Bayerische Landesgeschichte"
+  }, {
+    "title" : "Veröffentlichungen der Schwäbischen Forschungsgemeinschaft bei der Kommission für Bayerische Landesgeschichte"
+  } ]
 }
 {
   "ExtendedType" : [ "Zeitschrift" ],
@@ -15502,9 +15637,13 @@
   }, {
     "uid" : "(OCoLC)610940830"
   } ],
-  "TitleOther" : {
-    "title" : [ "Zeitschrift für Bibliothekswesen und Bibliographie / Sonderhefte", "ZfBB / Sonderhefte", "Zeitschrift für Bibliothekswesen und Bibliographie / Sonderheft" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Zeitschrift für Bibliothekswesen und Bibliographie / Sonderhefte"
+  }, {
+    "title" : "ZfBB / Sonderhefte"
+  }, {
+    "title" : "Zeitschrift für Bibliothekswesen und Bibliographie / Sonderheft"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Wissenschaftliche Bibliothek" ],
     "combinedLabel" : "Wissenschaftliche Bibliothek",
@@ -15849,9 +15988,12 @@
   }, {
     "uid" : "(DE-599)HBZHT001247433"
   } ],
-  "TitleOther" : {
-    "title" : [ "UDL" ]
-  }
+  "TitleOther" : [ {
+    "title" : "UDL"
+  }, {
+    "title" : "UDL",
+    "prefix" : "Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -15940,9 +16082,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001247438"
   } ],
-  "TitleOther" : {
-    "title" : [ "Wissenschaftliche Forschungsberichte / Naturwissenschaftliche Reihe" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Wissenschaftliche Forschungsberichte / Naturwissenschaftliche Reihe"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -16199,9 +16341,12 @@
   }, {
     "uid" : "(DE-599)HBZHT001247953"
   } ],
-  "TitleOther" : {
-    "title" : [ "BFO" ]
-  }
+  "TitleOther" : [ {
+    "title" : "BFO"
+  }, {
+    "title" : "BFO",
+    "prefix" : "Nebent. teils"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -16302,9 +16447,13 @@
   }, {
     "uid" : "(DE-599)HBZHT001248017"
   } ],
-  "TitleOther" : {
-    "title" : [ "Arbeitsgemeinschaft für Forschung des Landes Nordrhein-Westfalen / Natur-, Ingenieur- und Gesellschaftswissenschaften", "Arbeitsgemeinschaft für Forschung des Landes Nordrhein-Westfalen / Naturwissenschaften", "Arbeitsgemeinschaft für Forschung des Landes Nordrhein-Westfalen / Naturwissenschaft" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Arbeitsgemeinschaft für Forschung des Landes Nordrhein-Westfalen / Natur-, Ingenieur- und Gesellschaftswissenschaften"
+  }, {
+    "title" : "Arbeitsgemeinschaft für Forschung des Landes Nordrhein-Westfalen / Naturwissenschaften"
+  }, {
+    "title" : "Arbeitsgemeinschaft für Forschung des Landes Nordrhein-Westfalen / Naturwissenschaft"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -16587,9 +16736,14 @@
   }, {
     "uid" : "(DE-599)HBZHT001248516"
   } ],
-  "TitleOther" : {
-    "title" : [ "Lehrbücher und Monographien aus dem Gebiete der exakten Wissenschaften / Mathematische Reihe", "LMW MA", "LMW/MA" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Lehrbücher und Monographien aus dem Gebiete der exakten Wissenschaften / Mathematische Reihe"
+  }, {
+    "title" : "LMW MA"
+  }, {
+    "title" : "LMW/MA",
+    "prefix" : "Nebent. teilw."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -16924,9 +17078,12 @@
   }, {
     "uid" : "(DE-599)HBZHT001251467"
   } ],
-  "TitleOther" : {
-    "title" : [ "Pergamon Press international series of monographs in natural philosophy" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Pergamon Press international series of monographs in natural philosophy"
+  }, {
+    "title" : "Pergamon Press international series of monographs in natural philosophy",
+    "prefix" : "Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -17039,9 +17196,11 @@
   }, {
     "uid" : "(DE-599)HBZHT001251557"
   } ],
-  "TitleOther" : {
-    "title" : [ "Vorträge / G", "Geisteswissenschaften" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Vorträge / G"
+  }, {
+    "title" : "Geisteswissenschaften"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -17157,9 +17316,20 @@
   }, {
     "uid" : "(DE-599)HBZHT001251637"
   } ],
-  "TitleOther" : {
-    "title" : [ "UTB für Wissenschaft", "UTB für Wissenschaft / Uni-Taschenbücher", "UTB für Wissenschaft / Mittlere Reihe / Uni-Taschenbücher", "Uni-Taschenbücher", "Uni-Taschenbuch" ]
-  }
+  "TitleOther" : [ {
+    "title" : "UTB für Wissenschaft"
+  }, {
+    "title" : "UTB für Wissenschaft / Uni-Taschenbücher"
+  }, {
+    "title" : "UTB für Wissenschaft / Mittlere Reihe / Uni-Taschenbücher"
+  }, {
+    "title" : "Uni-Taschenbücher"
+  }, {
+    "title" : "Uni-Taschenbuch"
+  }, {
+    "title" : "UTB für Wissenschaft",
+    "prefix" : "Nebent. teils"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -17497,9 +17667,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001252350"
   } ],
-  "TitleOther" : {
-    "title" : [ "Schriftenreihe der Deutschen Verkehrswissenschaftlichen Gesellschaft / B" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Schriftenreihe der Deutschen Verkehrswissenschaftlichen Gesellschaft / B"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -17754,9 +17924,14 @@
   }, {
     "uid" : "(DE-599)HBZHT001253283"
   } ],
-  "TitleOther" : {
-    "title" : [ "Bochumer Beiträge zur Unternehmensführung und Unternehmensforschung", "Bochumer Beiträge" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Bochumer Beiträge zur Unternehmensführung und Unternehmensforschung"
+  }, {
+    "title" : "Bochumer Beiträge"
+  }, {
+    "title" : "Bochumer Beiträge",
+    "prefix" : "Nebent. teils"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -17848,9 +18023,18 @@
   }, {
     "uid" : "(DE-599)HBZHT001253357"
   } ],
-  "TitleOther" : {
-    "title" : [ "Neue juristische Wochenschrift / Schriftenreihe", "NJW-Schriften", "NJW-Schriftenreihe", "Schriftenreihe der Neuen juristischen Wochenschrift", "NJW-Schriften. NJW-Schriftenreihe" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Neue juristische Wochenschrift / Schriftenreihe"
+  }, {
+    "title" : "NJW-Schriften"
+  }, {
+    "title" : "NJW-Schriftenreihe"
+  }, {
+    "title" : "Schriftenreihe der Neuen juristischen Wochenschrift"
+  }, {
+    "title" : "NJW-Schriften. NJW-Schriftenreihe",
+    "prefix" : "Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -17960,9 +18144,17 @@
   }, {
     "uid" : "(DE-599)HBZHT001253423"
   } ],
-  "TitleOther" : {
-    "title" : [ "Europäische Hochschulschriften / 5", "European university studies / 5", "Volks- und Betriebswirtschaft", "Publications universitaires européennes", "European university papers" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Europäische Hochschulschriften / 5"
+  }, {
+    "title" : "European university studies / 5"
+  }, {
+    "title" : "Volks- und Betriebswirtschaft"
+  }, {
+    "title" : "Publications universitaires européennes"
+  }, {
+    "title" : "European university papers"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Volkswirtschaft" ],
     "combinedLabel" : "Volkswirtschaft",
@@ -18080,9 +18272,11 @@
   }, {
     "uid" : "(DE-599)HBZHT001254738"
   } ],
-  "TitleOther" : {
-    "title" : [ "Guides and papers of the Rheinisches Freilichtmuseum and the Landesmuseum für Volkskunde at Kommern", "Schriften des Rheinischen Freilichtmuseums und Landesmuseums für Volkskunde in Kommern" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Guides and papers of the Rheinisches Freilichtmuseum and the Landesmuseum für Volkskunde at Kommern"
+  }, {
+    "title" : "Schriften des Rheinischen Freilichtmuseums und Landesmuseums für Volkskunde in Kommern"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -18266,9 +18460,14 @@
   }, {
     "uid" : "(DE-599)HBZHT001255370"
   } ],
-  "TitleOther" : {
-    "title" : [ "HWWA-Reports", "HWWA Report" ]
-  },
+  "TitleOther" : [ {
+    "title" : "HWWA-Reports"
+  }, {
+    "title" : "HWWA Report"
+  }, {
+    "title" : "HWWA-Reports",
+    "prefix" : "Nebent. teils"
+  } ],
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Hamburgisches Welt-Wirtschafts-Archiv",
     "combinedLabel" : "Hamburgisches Welt-Wirtschafts-Archiv",
@@ -18481,9 +18680,11 @@
   }, {
     "uid" : "(DE-599)HBZHT001255783"
   } ],
-  "TitleOther" : {
-    "title" : [ "Kiel discussion papers", "Kieler Diskussionsbeiträge zu aktuellen wirtschaftspolitischen Fragen" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Kiel discussion papers"
+  }, {
+    "title" : "Kieler Diskussionsbeiträge zu aktuellen wirtschaftspolitischen Fragen"
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Lateinamerika",
     "combinedLabel" : "Lateinamerika",
@@ -18688,9 +18889,17 @@
   }, {
     "uid" : "(DE-599)HBZHT001255958"
   } ],
-  "TitleOther" : {
-    "title" : [ "Becksche Kurzkommentare in Baumbachscher Erläuterungsweise", "Kurzkommentare in Baumbachscher Erläuterungsweise", "Kurzkommentare", "Becksche Kurzkommentare", "Becksche Kurz-Kommentare" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Becksche Kurzkommentare in Baumbachscher Erläuterungsweise"
+  }, {
+    "title" : "Kurzkommentare in Baumbachscher Erläuterungsweise"
+  }, {
+    "title" : "Kurzkommentare"
+  }, {
+    "title" : "Becksche Kurzkommentare"
+  }, {
+    "title" : "Becksche Kurz-Kommentare"
+  } ]
 }
 {
   "ExtendedType" : [ "Forschungsbericht" ],
@@ -18807,9 +19016,14 @@
   }, {
     "uid" : "(DE-599)HBZHT001256778"
   } ],
-  "TitleOther" : {
-    "title" : [ "Urban transport research", "Mitteilungen über Forschungen zur Verbesserung der Verkehrsverhältnisse der Gemeinden", "Mitteilungen über Forschungen zur Verbesserung der Verkehrsverhältnisse der Gemeinden. -" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Urban transport research"
+  }, {
+    "title" : "Mitteilungen über Forschungen zur Verbesserung der Verkehrsverhältnisse der Gemeinden"
+  }, {
+    "title" : "Mitteilungen über Forschungen zur Verbesserung der Verkehrsverhältnisse der Gemeinden. -",
+    "prefix" : "Nebent. teils"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Stadtverkehr" ],
     "combinedLabel" : "Stadtverkehr",
@@ -19106,9 +19320,16 @@
   }, {
     "uid" : "(DE-599)HBZHT001257996"
   } ],
-  "TitleOther" : {
-    "title" : [ "Schriftenreihe PraxisEdition", "PraxisEdition", "Schriftenreihe der DGFP" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Schriftenreihe PraxisEdition"
+  }, {
+    "title" : "PraxisEdition"
+  }, {
+    "title" : "Schriftenreihe der DGFP"
+  }, {
+    "title" : "Schriftenreihe PraxisEdition",
+    "prefix" : "Teilw. mit Nebent."
+  } ]
 }
 {
   "ExtendedType" : [ "Zeitschrift" ],
@@ -19363,9 +19584,12 @@
   }, {
     "uid" : "(DE-599)HBZHT001259916"
   } ],
-  "TitleOther" : {
-    "title" : [ "DFVLR-Mitteilung" ]
-  },
+  "TitleOther" : [ {
+    "title" : "DFVLR-Mitteilung"
+  }, {
+    "title" : "DFVLR-Mitteilung",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Luftfahrt" ],
     "combinedLabel" : "Luftfahrt",
@@ -19492,9 +19716,14 @@
   }, {
     "uid" : "(DE-599)HBZHT001260350"
   } ],
-  "TitleOther" : {
-    "title" : [ "DVWK-Schriften", "Schriften" ]
-  },
+  "TitleOther" : [ {
+    "title" : "DVWK-Schriften"
+  }, {
+    "title" : "Schriften"
+  }, {
+    "title" : "DVWK-Schriften",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Wasserwirtschaft" ],
     "combinedLabel" : "Wasserwirtschaft",
@@ -19614,9 +19843,16 @@
   }, {
     "uid" : "(DE-599)HBZHT001260541"
   } ],
-  "TitleOther" : {
-    "title" : [ "Zeitschrift für Betriebswirtschaft / Ergänzungsheft", "ZfB / Ergänzungsheft", "ZfB-Ergänzungshefte" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Zeitschrift für Betriebswirtschaft / Ergänzungsheft"
+  }, {
+    "title" : "ZfB / Ergänzungsheft"
+  }, {
+    "title" : "ZfB-Ergänzungshefte"
+  }, {
+    "title" : "ZfB-Ergänzungshefte",
+    "prefix" : "Nebent. teils"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Betriebswirtschaftslehre" ],
     "combinedLabel" : "Betriebswirtschaftslehre",
@@ -19711,9 +19947,13 @@
   }, {
     "uid" : "(DE-599)HBZHT001260912"
   } ],
-  "TitleOther" : {
-    "title" : [ "Campus / Forschung", "Campus / Research", "Campus-Forschung" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Campus / Forschung"
+  }, {
+    "title" : "Campus / Research"
+  }, {
+    "title" : "Campus-Forschung"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -19983,9 +20223,14 @@
   }, {
     "uid" : "(DE-599)HBZHT001264109"
   } ],
-  "TitleOther" : {
-    "title" : [ "Wissenschaftliche Arbeiten für den Schienenverkehr", "Wissenschaftliche Arbeiten des Instituts für Verkehrswesen, Eisenbahnbau und -betrieb, Universität Hannover" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Wissenschaftliche Arbeiten für den Schienenverkehr"
+  }, {
+    "title" : "Wissenschaftliche Arbeiten des Instituts für Verkehrswesen, Eisenbahnbau und -betrieb, Universität Hannover"
+  }, {
+    "title" : "Wissenschaftliche Arbeiten für den Schienenverkehr",
+    "prefix" : "Teilw. mit Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -20094,9 +20339,12 @@
   }, {
     "uid" : "(DE-599)HBZHT001264701"
   } ],
-  "TitleOther" : {
-    "title" : [ "rde" ]
-  }
+  "TitleOther" : [ {
+    "title" : "rde"
+  }, {
+    "title" : "rde",
+    "prefix" : "Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -20265,9 +20513,14 @@
   }, {
     "uid" : "(DE-599)HBZHT001265665"
   } ],
-  "TitleOther" : {
-    "title" : [ "Studies in mathematics", "De Gruyter studies in mathematics" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Studies in mathematics"
+  }, {
+    "title" : "De Gruyter studies in mathematics"
+  }, {
+    "title" : "Studies in mathematics",
+    "prefix" : "Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -20468,9 +20721,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001266521"
   } ],
-  "TitleOther" : {
-    "title" : [ "Untersuchungen über das Spar-, Giro- und Kreditwesen / A" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Untersuchungen über das Spar-, Giro- und Kreditwesen / A"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -21511,9 +21764,9 @@
     "uid" : "(DE-599)HBZHT001369644"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Methods of organic chemistry" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Methods of organic chemistry"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Organische Chemie" ],
     "combinedLabel" : "Organische Chemie",
@@ -21621,9 +21874,9 @@
   }, {
     "uid" : "(DE-599)HBZHT001370389"
   } ],
-  "TitleOther" : {
-    "title" : [ "GWA" ]
-  },
+  "TitleOther" : [ {
+    "title" : "GWA"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Gewässerschutz" ],
     "combinedLabel" : "Gewässerschutz",
@@ -22005,9 +22258,9 @@
     "uid" : "(OCoLC)176804242"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Lexikon der gesamten Technik und ihrer Hilfswissenschaften" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Lexikon der gesamten Technik und ihrer Hilfswissenschaften"
+  } ]
 }
 {
   "ExtendedType" : [ "Wörterbuch" ],
@@ -22675,9 +22928,9 @@
     "variantName" : [ "En-ke-szu, ...", "Engels, Frigyes", "Ένγκελς, Φρίντριχ", "เอ็งเงิลส์, ฟรีดริช", "Ėngelʹs, Fridrich", "Engels, Frederick", "Engels, Fredrich", "Inǧilz, Frīdrīk", "Enk̇els, ...", "ອັງແກນ, ຟຣິດຣິດ", "Engels, Frederic", "Anǧilz, Frīdirīk", "Eṅgelas, Phreḍerika", "Êngels, F.", "Engelʹs, Fridrich", "En ge si", "Anjilz, Frīdrīk", "ฟรีดริช เอ็งเงิลส์", "Engels, Fridrih", "Engerusu", "Ennkels, Ph.", "Eṅkels, Pireṭerik", "Enk̇als, Pirẹtarik", "Eṅgelsa, Phreḍārika", "إنجلز, فريدريك", "Engels, Frederiko", "Ennkels, Phrintrich", "Engelsi, Pʹ.", "Engels, F.", "F. E.", "Engkels", "Engkels, Fridriγ", "Engels, Frederico", "Engels, Fridrich", "Engels, Bedřich", "Энгельс, Фридрих", "Engels, ...", "Peu li deu li hi Eng gel seu", "Engelss, Frīdrihs", "Ăngghen, PH.", "Engels, Friderik", "Engels, Friederich", "Inǧilz, Frīdirīk", "Enggels, Fridriγ", "エンゲルス, フリードリヒ", "Ăng-Ghen, Ph.", "ຟຣິດຣິດ ອັງແກນ", "Eṅgālasa, Pḥreḍarika", "Ăng-ghen, Phri-đrích", "Enggels, F.", "Eṅgelacha, Phriḍarikha", "Engelʹs, Friedrich", "Inǧils, Frīdrīk", "Engelsas, F.", "Engkels, F.", "Enggelseu, Peulideulihi", "Enk̇els, Pirịt̄ric", "Engels, Federico", "انجلز, فريدريك", "Īngēłs, Frīdrīk", "Ingils, Frīdrīš", "Engels, Fredrik", "Ėngelʹs, F.", "Engels, Freḑrik", "Enggelsŭ, P'ŭridŭrihi", "Anǧilz, Frīdrīk", "Ėngelʹs, Friedrich", "Engels, Frédéric", "Engkles, Phrintrich", "En-ko-szū, ...", "Ēṃgals, ...", "Eenjalis, Feredrig", "Enggels", "Engels, Fryderyk", "انگلس, فردريك", "Eṅgalsa, Phreḍrika", "Eṃgelsa, Phreḍarika", "Engesi", "Eng gel seu, Peu li deu li hi", "Engel's, Fridrich", "ენგელსი, ფრიდრიხ", "Ang-ghên, Phriđrich" ],
     "preferredName" : "Engels, Friedrich"
   } ],
-  "TitleOther" : {
-    "title" : [ "MEW" ]
-  }
+  "TitleOther" : [ {
+    "title" : "MEW"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -22988,9 +23241,9 @@
     "uid" : "(DE-599)HBZHT001384546"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Psychopathology and pictorial expression" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Psychopathology and pictorial expression"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Art" ],
     "combinedLabel" : "Art"
@@ -23130,9 +23383,9 @@
     "uid" : "(DE-599)HBZHT001385495"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "RDK" ]
-  },
+  "TitleOther" : [ {
+    "title" : "RDK"
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Deutschland",
     "combinedLabel" : "Deutschland",
@@ -23388,9 +23641,12 @@
     "uid" : "(DE-599)HBZHT001391350"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Allgemeines Lexikon der bildenden Künstler des 20. Jahrhunderts", "zwanzigsten 20" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Allgemeines Lexikon der bildenden Künstler des 20. Jahrhunderts",
+    "prefix" : "Nachdr. u.d.T."
+  }, {
+    "title" : "zwanzigsten 20"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Künstler" ],
     "combinedLabel" : "Künstler",
@@ -23590,9 +23846,15 @@
   }, {
     "uid" : "(DE-599)HBZHT001465710"
   } ],
-  "TitleOther" : {
-    "title" : [ "Merve", "Merve-Titel", "IMD", "Internationale marxistische Diskussion" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Merve"
+  }, {
+    "title" : "Merve-Titel"
+  }, {
+    "title" : "IMD"
+  }, {
+    "title" : "Internationale marxistische Diskussion"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -23664,9 +23926,15 @@
   }, {
     "uid" : "(DE-599)HBZHT002091131"
   } ],
-  "TitleOther" : {
-    "title" : [ "List-LTW", "Taschenbücher der Wissenschaft", "LTW", "List Taschenbücher der Wissenschaft" ]
-  }
+  "TitleOther" : [ {
+    "title" : "List-LTW"
+  }, {
+    "title" : "Taschenbücher der Wissenschaft"
+  }, {
+    "title" : "LTW"
+  }, {
+    "title" : "List Taschenbücher der Wissenschaft"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -23750,9 +24018,16 @@
   }, {
     "uid" : "(DE-599)HBZHT002093334"
   } ],
-  "TitleOther" : {
-    "title" : [ "Urban-Bücher", "Urban-Taschenbücher", "Kohlhammer-Taschenbücher", "Urban-Taschenbücher. - Teils: Kohlhammer-Taschenbücher" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Urban-Bücher"
+  }, {
+    "title" : "Urban-Taschenbücher"
+  }, {
+    "title" : "Kohlhammer-Taschenbücher"
+  }, {
+    "title" : "Urban-Taschenbücher. - Teils: Kohlhammer-Taschenbücher",
+    "prefix" : "Nebent. teils"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -23835,9 +24110,12 @@
   }, {
     "uid" : "(DE-599)HBZHT002093653"
   } ],
-  "TitleOther" : {
-    "title" : [ "VR" ]
-  }
+  "TitleOther" : [ {
+    "title" : "VR"
+  }, {
+    "title" : "VR",
+    "prefix" : "Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -23920,9 +24198,9 @@
   }, {
     "uid" : "(DE-599)HBZHT002094042"
   } ],
-  "TitleOther" : {
-    "title" : [ "Schwarze Reihe" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Schwarze Reihe"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -24008,9 +24286,13 @@
   }, {
     "uid" : "(DE-599)HBZHT002094182"
   } ],
-  "TitleOther" : {
-    "title" : [ "Ein Goldmann-Taschenbuch", "A Goldmann pocket edition", "Goldmann-Sachbücher" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Ein Goldmann-Taschenbuch"
+  }, {
+    "title" : "A Goldmann pocket edition"
+  }, {
+    "title" : "Goldmann-Sachbücher"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -24251,9 +24533,11 @@
   }, {
     "uid" : "(OCoLC)713667023"
   } ],
-  "TitleOther" : {
-    "title" : [ "Arbeitsbericht des Fachbereichs Stadtplanung und Landschaftsplanung", "Arbeitsbericht des Fachbereichs Stadt- und Landschaftsplanung" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Arbeitsbericht des Fachbereichs Stadtplanung und Landschaftsplanung"
+  }, {
+    "title" : "Arbeitsbericht des Fachbereichs Stadt- und Landschaftsplanung"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Stadtplanung" ],
     "combinedLabel" : "Stadtplanung",
@@ -24436,9 +24720,16 @@
   }, {
     "uid" : "(DE-599)HBZHT002107271"
   } ],
-  "TitleOther" : {
-    "title" : [ "Schriftenreihe der Bundesanstalt für Arbeitsschutz / Forschung", "Forschung", "Fb", "Fb. - Teilw. u.d.T.: Bundesanstalt für Arbeitsschutz <Dortmund>: Schriftenreihe Forschung" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Schriftenreihe der Bundesanstalt für Arbeitsschutz / Forschung"
+  }, {
+    "title" : "Forschung"
+  }, {
+    "title" : "Fb"
+  }, {
+    "title" : "Fb. - Teilw. u.d.T.: Bundesanstalt für Arbeitsschutz <Dortmund>: Schriftenreihe Forschung",
+    "prefix" : "Unterreihe teilw. mit dem Nebent."
+  } ]
 }
 {
   "ExtendedType" : [ "Monografische Reihe" ],
@@ -24541,9 +24832,11 @@
   }, {
     "uid" : "(DE-599)HBZHT002109448"
   } ],
-  "TitleOther" : {
-    "title" : [ "Fortschritt-Berichte VDI / 8", "Meß-, Steuerungs- und Regelungstechnik" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Fortschritt-Berichte VDI / 8"
+  }, {
+    "title" : "Meß-, Steuerungs- und Regelungstechnik"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Regelungstechnik" ],
     "combinedLabel" : "Regelungstechnik",
@@ -24671,9 +24964,11 @@
   }, {
     "uid" : "(DE-599)HBZHT002116645"
   } ],
-  "TitleOther" : {
-    "title" : [ "Fortschritt-Berichte VDI / 4", "Bauingenieurwesen" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Fortschritt-Berichte VDI / 4"
+  }, {
+    "title" : "Bauingenieurwesen"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Bautechnik" ],
     "combinedLabel" : "Bautechnik",
@@ -24779,9 +25074,11 @@
   }, {
     "uid" : "(DE-599)HBZHT002118111"
   } ],
-  "TitleOther" : {
-    "title" : [ "International series in engineering and computer science", "SECS" ]
-  }
+  "TitleOther" : [ {
+    "title" : "International series in engineering and computer science"
+  }, {
+    "title" : "SECS"
+  } ]
 }
 {
   "ExtendedType" : [ "Kommentar" ],
@@ -24928,9 +25225,9 @@
     "callnumber" : [ "20 QUFU 1", "21 QUFU 1" ],
     "shelfmark" : "EUP_Praes"
   } ],
-  "TitleOther" : {
-    "title" : [ "DBA-Texte-CD" ]
-  },
+  "TitleOther" : [ {
+    "title" : "DBA-Texte-CD"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Doppelbesteuerungsabkommen" ],
     "combinedLabel" : "Doppelbesteuerungsabkommen",
@@ -25158,9 +25455,12 @@
   }, {
     "uid" : "(DE-599)HBZHT002140883"
   } ],
-  "TitleOther" : {
-    "title" : [ "re" ]
-  }
+  "TitleOther" : [ {
+    "title" : "re"
+  }, {
+    "title" : "re",
+    "prefix" : "Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -25240,9 +25540,11 @@
   }, {
     "uid" : "(DE-599)HBZHT002141329"
   } ],
-  "TitleOther" : {
-    "title" : [ "Knaur", "Knaur-Taschenbuch" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Knaur"
+  }, {
+    "title" : "Knaur-Taschenbuch"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -25336,9 +25638,42 @@
   }, {
     "uid" : "(DE-599)HBZHT002145083"
   } ],
-  "TitleOther" : {
-    "title" : [ "Ein Goldmann-Buch", "Ein Goldmann-Taschenbuch", "Siedler-Taschenbücher", "Btb-Taschenbücher", "Btb", "Blanvalet", "Goldmann-Arkana", "Goldmann-Krimi", "Goldmann-Ratgeber", "Goldmann Schott", "Goldmann Esoterik", "Goldmann-Klassiker", "Goldmann-Blitz", "Goldmann-Stern-Bücher", "Goldmann-Sachbuch", "Goldmann Magnum", "Goldmann-Krimi.- Goldmann-Ratgeber. - Goldmann Schott. - Goldmann Esoterik. - Goldmann-Klassiker. - Goldmann-Blitz. - Goldmann-Stern-Bücher. - Goldmann-Sachbuch. - Goldmann Magnum" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Ein Goldmann-Buch"
+  }, {
+    "title" : "Ein Goldmann-Taschenbuch"
+  }, {
+    "title" : "Siedler-Taschenbücher"
+  }, {
+    "title" : "Btb-Taschenbücher"
+  }, {
+    "title" : "Btb"
+  }, {
+    "title" : "Blanvalet"
+  }, {
+    "title" : "Goldmann-Arkana"
+  }, {
+    "title" : "Goldmann-Krimi"
+  }, {
+    "title" : "Goldmann-Ratgeber"
+  }, {
+    "title" : "Goldmann Schott"
+  }, {
+    "title" : "Goldmann Esoterik"
+  }, {
+    "title" : "Goldmann-Klassiker"
+  }, {
+    "title" : "Goldmann-Blitz"
+  }, {
+    "title" : "Goldmann-Stern-Bücher"
+  }, {
+    "title" : "Goldmann-Sachbuch"
+  }, {
+    "title" : "Goldmann Magnum"
+  }, {
+    "title" : "Goldmann-Krimi.- Goldmann-Ratgeber. - Goldmann Schott. - Goldmann Esoterik. - Goldmann-Klassiker. - Goldmann-Blitz. - Goldmann-Stern-Bücher. - Goldmann-Sachbuch. - Goldmann Magnum",
+    "prefix" : "Nebent. teils"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -25564,9 +25899,16 @@
   }, {
     "uid" : "(DE-599)ZDB53390-7"
   } ],
-  "TitleOther" : {
-    "title" : [ "Architectural design / Profile", "AD", "AD profile" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Architectural design / Profile"
+  }, {
+    "title" : "AD"
+  }, {
+    "title" : "AD profile"
+  }, {
+    "title" : "AD profile",
+    "prefix" : "Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -25655,9 +25997,11 @@
   }, {
     "uid" : "(DE-599)HBZHT002157576"
   } ],
-  "TitleOther" : {
-    "title" : [ "Ausstellung der Albertina", "Ausstellung der Graphischen Sammlung Albertina" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Ausstellung der Albertina"
+  }, {
+    "title" : "Ausstellung der Graphischen Sammlung Albertina"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -25850,9 +26194,12 @@
   }, {
     "uid" : "(DE-599)HBZHT002158098"
   } ],
-  "TitleOther" : {
-    "title" : [ "Hefte zur Hochschulplanung" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Hefte zur Hochschulplanung"
+  }, {
+    "title" : "Hefte zur Hochschulplanung",
+    "prefix" : "Teilw. mit Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -25942,9 +26289,9 @@
   }, {
     "uid" : "(DE-599)HBZHT002158764"
   } ],
-  "TitleOther" : {
-    "title" : [ "ZDF Schriftenreihe" ]
-  },
+  "TitleOther" : [ {
+    "title" : "ZDF Schriftenreihe"
+  } ],
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Zweites Deutsches Fernsehen",
     "combinedLabel" : "Zweites Deutsches Fernsehen",
@@ -26237,9 +26584,12 @@
   }, {
     "uid" : "(DE-599)HBZHT002181320"
   } ],
-  "TitleOther" : {
-    "title" : [ "MiMB" ]
-  },
+  "TitleOther" : [ {
+    "title" : "MiMB"
+  }, {
+    "title" : "MiMB",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Molekularbiologie" ],
     "combinedLabel" : "Molekularbiologie",
@@ -26725,9 +27075,9 @@
     "uid" : "(DE-599)HBZHT002203090"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Dictionary of modern technology" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Dictionary of modern technology"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Englisch" ],
     "combinedLabel" : "Englisch",
@@ -26856,9 +27206,9 @@
     "uid" : "(DE-599)HBZHT002211455"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Kompendium der Betriebswirtschaftslehre" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Kompendium der Betriebswirtschaftslehre"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Betriebswirtschaftslehre" ],
     "combinedLabel" : "Betriebswirtschaftslehre",
@@ -27088,9 +27438,14 @@
   }, {
     "uid" : "(DE-599)HBZHT002216626"
   } ],
-  "TitleOther" : {
-    "title" : [ "Wilson and Wilson's comprehensive analytical chemistry", "Comprehensive analytical chemistry", "Wilson & Wilson's comprehensive analytical chemistry" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Wilson and Wilson's comprehensive analytical chemistry"
+  }, {
+    "title" : "Comprehensive analytical chemistry"
+  }, {
+    "title" : "Wilson & Wilson's comprehensive analytical chemistry",
+    "prefix" : "Nebent. bis 30.1996"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Analytische Chemie" ],
     "combinedLabel" : "Analytische Chemie",
@@ -27200,9 +27555,9 @@
   }, {
     "uid" : "(DE-599)HBZHT002218150"
   } ],
-  "TitleOther" : {
-    "title" : [ "Regional conference series in applied mathematics" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Regional conference series in applied mathematics"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -27544,9 +27899,9 @@
   }, {
     "uid" : "(DE-599)HBZHT002402955"
   } ],
-  "TitleOther" : {
-    "title" : [ "Pädagogische Taschenbücher" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Pädagogische Taschenbücher"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -27722,9 +28077,16 @@
   }, {
     "uid" : "(DE-599)HBZHT002492938"
   } ],
-  "TitleOther" : {
-    "title" : [ "Studien, Bildung, Wissenschaft", "Schriftenreihe Studien zur Bildung und Wissenschaft", "Studien zu Bildung und Wissenschaft" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Studien, Bildung, Wissenschaft"
+  }, {
+    "title" : "Schriftenreihe Studien zur Bildung und Wissenschaft"
+  }, {
+    "title" : "Studien zu Bildung und Wissenschaft"
+  }, {
+    "title" : "Studien, Bildung, Wissenschaft",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Deutschland",
     "combinedLabel" : "Deutschland (Bundesrepublik)",
@@ -28068,9 +28430,9 @@
     "callnumber" : [ "20 QUN 89", "21 QUN 89" ],
     "shelfmark" : "EUP_Praes"
   } ],
-  "TitleOther" : {
-    "title" : [ "AO FGO Kommentar" ]
-  },
+  "TitleOther" : [ {
+    "title" : "AO FGO Kommentar"
+  } ],
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Deutschland",
     "subjectTitleName" : "Abgabenordnung",
@@ -28814,9 +29176,9 @@
   }, {
     "uid" : "(DE-599)HBZHT002850110"
   } ],
-  "TitleOther" : {
-    "title" : [ "Berichte des Deutschen Ausschusses für Stahlbau / B" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Berichte des Deutschen Ausschusses für Stahlbau / B"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -28909,9 +29271,9 @@
   }, {
     "uid" : "(DE-599)HBZHT002850548"
   } ],
-  "TitleOther" : {
-    "title" : [ "Merve-Titel" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Merve-Titel"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -28994,9 +29356,9 @@
   }, {
     "uid" : "(DE-599)HBZHT002882374"
   } ],
-  "TitleOther" : {
-    "title" : [ "Rororo Rotfuchs" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Rororo Rotfuchs"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -29089,9 +29451,14 @@
   }, {
     "uid" : "(DE-599)HBZHT002899484"
   } ],
-  "TitleOther" : {
-    "title" : [ "BsR", "C.H. Beck" ]
-  }
+  "TitleOther" : [ {
+    "title" : "BsR"
+  }, {
+    "title" : "C.H. Beck"
+  }, {
+    "title" : "BsR",
+    "prefix" : "Nebent."
+  } ]
 }
 {
   "ExtendedType" : [ "Lehrbuch" ],
@@ -29237,9 +29604,16 @@
     "variantName" : [ "Sands, M. L.", "Sands, Matthew", "Sands, Matthew Linzee", "Sėnds, M." ],
     "preferredName" : "Sands, Matthew L."
   } ],
-  "TitleOther" : {
-    "title" : [ "Vorlesungen über Physik", "Feynman-Vorlesungen über Physik", "The Feynman" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Vorlesungen über Physik"
+  }, {
+    "title" : "Feynman-Vorlesungen über Physik"
+  }, {
+    "title" : "The Feynman"
+  }, {
+    "title" : "The Feynman",
+    "prefix" : "Nebent. teilw."
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Physik" ],
     "combinedLabel" : "Physik",
@@ -29506,9 +29880,9 @@
   }, {
     "uid" : "(DE-599)HBZHT003000158"
   } ],
-  "TitleOther" : {
-    "title" : [ "Galvanotechnik und Oberflächenbehandlung" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Galvanotechnik und Oberflächenbehandlung"
+  } ]
 }
 {
   "ExtendedType" : [ "Kunstführer" ],
@@ -30092,9 +30466,9 @@
   }, {
     "uid" : "(DE-599)HBZHT003165857"
   } ],
-  "TitleOther" : {
-    "title" : [ "Münchner Schriften zur angewandten Führungslehre" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Münchner Schriften zur angewandten Führungslehre"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -30170,9 +30544,9 @@
   }, {
     "uid" : "(OCoLC)612178357"
   } ],
-  "TitleOther" : {
-    "title" : [ "Strategien und Optionen für die Zukunft Europas / Grundlagen" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Strategien und Optionen für die Zukunft Europas / Grundlagen"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -30355,9 +30729,13 @@
   }, {
     "uid" : "(DE-599)HBZHT003248293"
   } ],
-  "TitleOther" : {
-    "title" : [ "Heyne-Bücher / 19", "Heyne-Sachbuch", "Heyne" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Heyne-Bücher / 19"
+  }, {
+    "title" : "Heyne-Sachbuch"
+  }, {
+    "title" : "Heyne"
+  } ]
 }
 {
   "ExtendedType" : [ "Lehrbuch" ],
@@ -30480,9 +30858,9 @@
     "uid" : "(DE-599)HBZHT003259296"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Chemie-Basiswissen" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Chemie-Basiswissen"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Chemistry, Organic" ],
     "combinedLabel" : "Chemistry, Organic"
@@ -30593,9 +30971,11 @@
   }, {
     "uid" : "(DE-599)HBZHT003262200"
   } ],
-  "TitleOther" : {
-    "title" : [ "Studies in pedagogy, andragogy and gerontagogy", "Études de pédagogie et de formation d'adultes" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Studies in pedagogy, andragogy and gerontagogy"
+  }, {
+    "title" : "Études de pédagogie et de formation d'adultes"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -30790,9 +31170,14 @@
   }, {
     "uid" : "(DE-599)HBZHT003328397"
   } ],
-  "TitleOther" : {
-    "title" : [ "DLR-Mitteilung", "Forschungsbericht" ]
-  },
+  "TitleOther" : [ {
+    "title" : "DLR-Mitteilung"
+  }, {
+    "title" : "Forschungsbericht"
+  }, {
+    "title" : "DLR-Mitteilung",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Luftfahrt" ],
     "combinedLabel" : "Luftfahrt",
@@ -30904,9 +31289,9 @@
   }, {
     "uid" : "(DE-599)HBZHT003333587"
   } ],
-  "TitleOther" : {
-    "title" : [ "Monographs on applied probability and statistics" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Monographs on applied probability and statistics"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -31005,9 +31390,9 @@
   }, {
     "uid" : "(DE-599)HBZHT003357836"
   } ],
-  "TitleOther" : {
-    "title" : [ "Katalog oö Publikationen" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Katalog oö Publikationen"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -31106,9 +31491,10 @@
   }, {
     "uid" : "(DE-599)HBZHT003362020"
   } ],
-  "TitleOther" : {
-    "title" : [ "Hamburger Berichte zur Abfallwirtschaft" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Hamburger Berichte zur Abfallwirtschaft",
+    "prefix" : "Nebent."
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -31222,9 +31608,12 @@
   }, {
     "uid" : "(DE-599)HBZHT003384905"
   } ],
-  "TitleOther" : {
-    "title" : [ "Grundrisse der Psychologie" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Grundrisse der Psychologie"
+  }, {
+    "title" : "Grundrisse der Psychologie",
+    "prefix" : "Nebent. teils"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Psychology" ],
     "combinedLabel" : "Psychology"
@@ -31357,9 +31746,14 @@
     "uid" : "(DE-599)HBZHT003402432"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Römpp", "Chemie-Lexikon" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Römpp"
+  }, {
+    "title" : "Chemie-Lexikon"
+  }, {
+    "title" : "Römpp",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Chemie" ],
     "combinedLabel" : "Chemie",
@@ -31492,9 +31886,9 @@
     "callnumber" : [ "11 WYX 49+1", "11 WYX 49" ],
     "shelfmark" : "BAY_Frei"
   } ],
-  "TitleOther" : {
-    "title" : [ "Architektur Umbruch" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Architektur Umbruch"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Architektur" ],
     "combinedLabel" : "Architektur",
@@ -31762,9 +32156,9 @@
     "uid" : "(DE-599)HBZHT003520451"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Die Kunstdenkmäler Österreichs" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Die Kunstdenkmäler Österreichs"
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Niederösterreich",
     "combinedLabel" : "Niederösterreich",
@@ -32529,9 +32923,9 @@
     "uid" : "(DE-599)HBZHT004168219"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Internationales Verzeichnis der Abkürzungen und Akronyme der Elektronik, Elektrotechnik, Computertechnik und Informationsverarbeitung" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Internationales Verzeichnis der Abkürzungen und Akronyme der Elektronik, Elektrotechnik, Computertechnik und Informationsverarbeitung"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Elektrotechnik" ],
     "combinedLabel" : "Elektrotechnik",
@@ -32682,9 +33076,9 @@
     "uid" : "(DE-599)HBZHT004172176"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Bibliography of the history of surveying" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Bibliography of the history of surveying"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Vermessung" ],
     "combinedLabel" : "Vermessung",
@@ -32993,9 +33387,12 @@
     "uid" : "(OCoLC)884263870"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Münchener Kommentar, Bürgerliches Gesetzbuch" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Münchener Kommentar, Bürgerliches Gesetzbuch"
+  }, {
+    "title" : "Münchener Kommentar, Bürgerliches Gesetzbuch",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Deutschland",
     "subjectTitleName" : "Bürgerliches Gesetzbuch",
@@ -33357,9 +33754,9 @@
     "uid" : "(DE-599)HBZHT004210923"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Sammelmappe Konkurrenzentwürfe" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Sammelmappe Konkurrenzentwürfe"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -33843,9 +34240,9 @@
     "uid" : "(DE-599)HBZHT004229493"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Die neuen Wilden" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Die neuen Wilden"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Neue Wilde" ],
     "combinedLabel" : "Neue Wilde",
@@ -33967,9 +34364,9 @@
     "uid" : "(OCoLC)642742159"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Dictionary of money & finance" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Dictionary of money & finance"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Kapitalmarkt" ],
     "combinedLabel" : "Kapitalmarkt",
@@ -34589,9 +34986,9 @@
     "uid" : "(DE-599)HBZHT004247626"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Mechatronics and robotics" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Mechatronics and robotics"
+  } ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -35187,9 +35584,12 @@
     "callnumber" : [ "20 QOD 23(4)", "21 QOD 23(4)" ],
     "shelfmark" : "EUP_Praes"
   } ],
-  "TitleOther" : {
-    "title" : [ "AktG" ]
-  },
+  "TitleOther" : [ {
+    "title" : "AktG"
+  }, {
+    "title" : "AktG",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Deutschland",
     "subjectTitleName" : "Aktiengesetz",
@@ -35483,9 +35883,9 @@
     "uid" : "(DE-599)HBZHT004256774"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "PC-Trainer Kfz-Technik, Version 3.0" ]
-  }
+  "TitleOther" : [ {
+    "title" : "PC-Trainer Kfz-Technik, Version 3.0"
+  } ]
 }
 {
   "ExtendedType" : [ "Lehrbuch" ],
@@ -35917,9 +36317,9 @@
     "uid" : "(DE-599)HBZHT004268076"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Physical science and technology" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Physical science and technology"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Physik" ],
     "combinedLabel" : "Physik",
@@ -36836,9 +37236,9 @@
     "uid" : "(DE-599)HBZHT004557447"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Der Duden in zwölf Bänden" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Der Duden in zwölf Bänden"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Deutsch" ],
     "combinedLabel" : "Deutsch",
@@ -37392,9 +37792,20 @@
     "uid" : "(DE-599)HBZHT005017883"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Von Staudingers Kommentar zum Bürgerlichen Gesetzbuch", "Staudingers Kommentar zum Bürgerlichen Gesetzbuch", "Kommentar zum Bürgerlichen Gesetzbuch", "Staudinger, BGB", "BGB" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Von Staudingers Kommentar zum Bürgerlichen Gesetzbuch"
+  }, {
+    "title" : "Staudingers Kommentar zum Bürgerlichen Gesetzbuch"
+  }, {
+    "title" : "Kommentar zum Bürgerlichen Gesetzbuch"
+  }, {
+    "title" : "Staudinger, BGB"
+  }, {
+    "title" : "BGB"
+  }, {
+    "title" : "Staudinger, BGB",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Deutschland",
     "subjectTitleName" : "Bürgerliches Gesetzbuch",
@@ -37772,9 +38183,9 @@
   }, {
     "uid" : "(DE-599)ZDB1309161-X"
   } ],
-  "TitleOther" : {
-    "title" : [ "the international compilation of the best typographic design" ]
-  },
+  "TitleOther" : [ {
+    "title" : "the international compilation of the best typographic design"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Typografie" ],
     "combinedLabel" : "Typografie",
@@ -38489,9 +38900,18 @@
   "PersonCreator" : [ {
     "personName" : "Goetzel, Lilo K."
   } ],
-  "TitleOther" : {
-    "title" : [ "Englisch-deutsches Wörterbuch der industriellen Werkstofftechnik", "Dictionary of materials and process engineering English German", "Wörterbuch der industriellen Werkstofftechnik englisch-deutsch", "English-German dictionary of materials and process engineering", "Dictionary of materials and process engineering English German. Wörterbuch der industriellen Werkstofftechnik englisch-deutsch" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Englisch-deutsches Wörterbuch der industriellen Werkstofftechnik"
+  }, {
+    "title" : "Dictionary of materials and process engineering English German"
+  }, {
+    "title" : "Wörterbuch der industriellen Werkstofftechnik englisch-deutsch"
+  }, {
+    "title" : "English-German dictionary of materials and process engineering"
+  }, {
+    "title" : "Dictionary of materials and process engineering English German. Wörterbuch der industriellen Werkstofftechnik englisch-deutsch",
+    "prefix" : "Nebensacht."
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Werkstoffkunde" ],
     "combinedLabel" : "Werkstoffkunde",
@@ -39297,9 +39717,9 @@
     "uid" : "(DE-599)HBZHT007313206"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Atmospheric electrodynamics" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Atmospheric electrodynamics"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Luftelektrizität" ],
     "combinedLabel" : "Luftelektrizität",
@@ -39552,9 +39972,9 @@
     "uid" : "(DE-599)HBZHT007314026"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Herzog und de Meuron" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Herzog und de Meuron"
+  } ],
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Herzog & de Meuron",
     "combinedLabel" : "Herzog & de Meuron",
@@ -40173,9 +40593,9 @@
     "callnumber" : [ "61 WGN 29(2)+6", "61 WGN 29(2)" ],
     "shelfmark" : "JUE_Frei"
   } ],
-  "TitleOther" : {
-    "title" : [ "IEC 1131" ]
-  },
+  "TitleOther" : [ {
+    "title" : "IEC 1131"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Automatisierungssystem" ],
     "combinedLabel" : "Automatisierungssystem",
@@ -40305,9 +40725,9 @@
     "variantName" : [ "Schrank, K.", "Schrank, Katharina" ],
     "preferredName" : "Schmitz, Katharina"
   } ],
-  "TitleOther" : {
-    "title" : [ "Grundlagen der Fluidtechnik" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Grundlagen der Fluidtechnik"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Fluidtechnik" ],
     "combinedLabel" : "Fluidtechnik",
@@ -41371,9 +41791,9 @@
     "callnumber" : [ "21 PZY 43" ],
     "shelfmark" : "EUP_Frei"
   } ],
-  "TitleOther" : {
-    "title" : [ "Business knowledge management" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Business knowledge management"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Unternehmen" ],
     "combinedLabel" : "Unternehmen",
@@ -42161,9 +42581,14 @@
     "uid" : "(DE-599)HBZHT011077958"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "BGB", "Erman Bürgerliches Gesetzbuch" ]
-  },
+  "TitleOther" : [ {
+    "title" : "BGB"
+  }, {
+    "title" : "Erman Bürgerliches Gesetzbuch"
+  }, {
+    "title" : "BGB",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Deutschland",
     "subjectTitleName" : "Bürgerliches Gesetzbuch",
@@ -42275,9 +42700,12 @@
     "uid" : "(DE-599)HBZHT011104604"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "Münchener Kommentar, Bürgerliches Gesetzbuch" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Münchener Kommentar, Bürgerliches Gesetzbuch"
+  }, {
+    "title" : "Münchener Kommentar, Bürgerliches Gesetzbuch",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Deutschland",
     "subjectTitleName" : "Bürgerliches Gesetzbuch",
@@ -43633,9 +44061,9 @@
     "callnumber" : [ "51 KDZD 3" ],
     "shelfmark" : "BOX_Frei"
   } ],
-  "TitleOther" : {
-    "title" : [ "Video cult/ures" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Video cult/ures"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Video-Installation" ],
     "combinedLabel" : "Video-Installation",
@@ -44826,9 +45254,11 @@
   }, {
     "personName" : "Rohde, Thomas"
   } ],
-  "TitleOther" : {
-    "title" : [ "Apache Webserver", "Web-Server" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Apache Webserver"
+  }, {
+    "title" : "Web-Server"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Apache" ],
     "combinedLabel" : "Apache (Programm)",
@@ -44936,9 +45366,9 @@
     "callnumber" : [ "11 WVA 12" ],
     "shelfmark" : "BAY_Frei"
   } ],
-  "TitleOther" : {
-    "title" : [ "Architecture and energy" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Architecture and energy"
+  } ]
 }
 {
   "ExtendedType" : [ "Bildband" ],
@@ -46141,9 +46571,15 @@
     "callnumber" : [ "60 UNOE 10-1(7)", "61 UNOE 10-1(7)" ],
     "shelfmark" : "JUE_Praes"
   } ],
-  "TitleOther" : {
-    "title" : [ "Langenscheidt dictionary of chemistry and chemical technology English German", "Fachwörterbuch Chemie und chemische Technik Englisch-Deutsch", "Dictionary of chemistry and chemical technology English German", "Langenscheidt Fachwörterbuch" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Langenscheidt dictionary of chemistry and chemical technology English German"
+  }, {
+    "title" : "Fachwörterbuch Chemie und chemische Technik Englisch-Deutsch"
+  }, {
+    "title" : "Dictionary of chemistry and chemical technology English German"
+  }, {
+    "title" : "Langenscheidt Fachwörterbuch"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Chemie" ],
     "combinedLabel" : "Chemie",
@@ -46413,9 +46849,9 @@
     "uid" : "(DE-599)HBZHT013764753"
   } ],
   "TypePeriodical" : [ "Schriftenreihe" ],
-  "TitleOther" : {
-    "title" : [ "The architecture of the O. M. theatre" ]
-  },
+  "TitleOther" : [ {
+    "title" : "The architecture of the O. M. theatre"
+  } ],
   "RSWK" : [ {
     "subjectDate" : "1938-",
     "subjectPersonName" : "Nitsch, Hermann",
@@ -46793,9 +47229,13 @@
     "callnumber" : [ "52 KNLK 11", "51 KNLK 11" ],
     "shelfmark" : "BOX_Filme"
   } ],
-  "TitleOther" : {
-    "title" : [ "Der Schatten des Kriegers", "Der Schatten des Krieges", "La sombra del guerrero" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Der Schatten des Kriegers"
+  }, {
+    "title" : "Der Schatten des Krieges"
+  }, {
+    "title" : "La sombra del guerrero"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Film" ],
     "combinedLabel" : "Film"
@@ -47140,9 +47580,9 @@
   }, {
     "uid" : "(OCoLC)612349165"
   } ],
-  "TitleOther" : {
-    "title" : [ "Series on chemical sensors and biosensors" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Series on chemical sensors and biosensors"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift" ],
@@ -47299,9 +47739,9 @@
   }, {
     "uid" : "(DE-599)HBZHT013858274"
   } ],
-  "TitleOther" : {
-    "title" : [ "Geschichte / Forschung und Wissenschaft" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Geschichte / Forschung und Wissenschaft"
+  } ]
 }
 {
   "FormatCarrier" : [ "Druckschrift", "säurefreies, alterungsbeständiges Papier" ],
@@ -47566,9 +48006,9 @@
     "callnumber" : [ "51 JZPB 71" ],
     "shelfmark" : "BOX_Frei"
   } ],
-  "TitleOther" : {
-    "title" : [ "fff" ]
-  },
+  "TitleOther" : [ {
+    "title" : "fff"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Geschäftsbericht" ],
     "combinedLabel" : "Geschäftsbericht",
@@ -47862,9 +48302,9 @@
     "callnumber" : [ "52 KNLK 3-2", "51 KNLK 3-2" ],
     "shelfmark" : "BOX_Filme"
   } ],
-  "TitleOther" : {
-    "title" : [ "Weiß" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Weiß"
+  } ]
 }
 {
   "ExtendedType" : [ "Einführung" ],
@@ -49774,9 +50214,11 @@
     "callnumber" : [ "51 OLF 11" ],
     "shelfmark" : "BOX_Frei"
   } ],
-  "TitleOther" : {
-    "title" : [ "I love ALDI", "I ALDI" ]
-  },
+  "TitleOther" : [ {
+    "title" : "I love ALDI"
+  }, {
+    "title" : "I ALDI"
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Deutschland",
     "combinedLabel" : "Deutschland",
@@ -50105,9 +50547,9 @@
     "callnumber" : [ "51 KDWL 46" ],
     "shelfmark" : "BOX_Frei"
   } ],
-  "TitleOther" : {
-    "title" : [ "Linder" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Linder"
+  } ],
   "RSWK" : [ {
     "subjectDate" : "1954-",
     "subjectPersonName" : "Linder",
@@ -52000,9 +52442,13 @@
     "uid" : "(DE-599)HBZHT019412349"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "Arbeitsrechts-Handbuch und arbeitsrechtliches Formular- und Verfahrenshandbuch\"", "ArbR", "ArbR-HdB" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Arbeitsrechts-Handbuch und arbeitsrechtliches Formular- und Verfahrenshandbuch\""
+  }, {
+    "title" : "ArbR"
+  }, {
+    "title" : "ArbR-HdB"
+  } ],
   "Subject" : [ {
     "subject" : "Arbeitsrecht"
   }, {
@@ -52906,9 +53352,9 @@
     "callnumber" : [ "11 WZR 56" ],
     "shelfmark" : "BAY_Frei"
   } ],
-  "TitleOther" : {
-    "title" : [ "Architectural guide Innsbruck" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Architectural guide Innsbruck"
+  } ]
 }
 {
   "ContentType" : [ "Text", "unbewegtes Bild" ],
@@ -53080,9 +53526,11 @@
     "uid" : "(DE-599)HBZHT019530740"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "Architecture by Dietrich/Untertrifaller", "Architecture de Dietrich/Untertrifaller" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Architecture by Dietrich/Untertrifaller"
+  }, {
+    "title" : "Architecture de Dietrich/Untertrifaller"
+  } ],
   "RSWK" : [ {
     "subjectCorporateBodyName" : "Dietrich-Untertrifaller Architekten",
     "combinedLabel" : "Dietrich-Untertrifaller Architekten (Bregenz)",
@@ -53191,9 +53639,9 @@
     "uid" : "(DE-599)HBZHT019533415"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "Kunstrecht" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Kunstrecht"
+  } ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -54667,9 +55115,9 @@
     "uid" : "(DE-599)HBZHT019537338"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "Tax law and public finance" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Tax law and public finance"
+  } ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -54776,9 +55224,9 @@
     "uid" : "(DE-599)HBZHT019537714"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "Series on restructuring" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Series on restructuring"
+  } ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -54913,9 +55361,9 @@
     "uid" : "(DE-599)HBZHT019537764"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "Die Grundlagen auf einen Blick; Von der Klassifizierung von Prozessen bis zur Prozesssteuerung; Schnelltest: Mit Übungsaufgaben und Lösungen" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Die Grundlagen auf einen Blick; Von der Klassifizierung von Prozessen bis zur Prozesssteuerung; Schnelltest: Mit Übungsaufgaben und Lösungen"
+  } ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -55019,9 +55467,9 @@
     "variantName" : [ "Herrmann, Eva-Maria", "Herrmann, Eva Maria" ],
     "preferredName" : "Herrmann, Eva"
   } ],
-  "TitleOther" : {
-    "title" : [ "Building Information Modeling I Management" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Building Information Modeling I Management"
+  } ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -55117,9 +55565,12 @@
   }, {
     "uid" : "(DE-599)HBZHT019538885"
   } ],
-  "TitleOther" : {
-    "title" : [ "DBU Bauband" ]
-  }
+  "TitleOther" : [ {
+    "title" : "DBU Bauband"
+  }, {
+    "title" : "DBU Bauband",
+    "prefix" : "Abweichender Titel"
+  } ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -55286,9 +55737,9 @@
     "uid" : "(DE-599)HBZHT019540521"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "Krise und Gesundheit - Ursachen, Prävention, Bewältigung" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Krise und Gesundheit - Ursachen, Prävention, Bewältigung"
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Deutschland",
     "combinedLabel" : "Deutschland",
@@ -55420,9 +55871,9 @@
   }, {
     "uid" : "(DE-599)HBZHT019569791"
   } ],
-  "TitleOther" : {
-    "title" : [ "Dienstleistungsmanagement, Dienstleistungsmarketing" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Dienstleistungsmanagement, Dienstleistungsmarketing"
+  } ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -55956,9 +56407,14 @@
     "uid" : "(DE-599)HBZHT019571602"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "Schriftenreihe Aktuell. Studien zum Journalismus", "Aktuell. Studien zum Journalismus", "Schriftenreihe Aktuell. Studien zum Journalismus. - Aktuell. Studien zum Journalismus" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Schriftenreihe Aktuell. Studien zum Journalismus"
+  }, {
+    "title" : "Aktuell. Studien zum Journalismus"
+  }, {
+    "title" : "Schriftenreihe Aktuell. Studien zum Journalismus. - Aktuell. Studien zum Journalismus",
+    "prefix" : "Nebent."
+  } ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -63238,9 +63694,15 @@
     "callnumber" : [ "13 Z 102-S", "13 Z 102" ],
     "shelfmark" : "BAY_ZSFrei"
   } ],
-  "TitleOther" : {
-    "title" : [ "GWF / Wasser + Abwasser", "GWF international, the leading specialist journal for water and wastewater", "Das Gas- und Wasserfach / Ausgabe Wasser, Abwasser", "GWF international" ]
-  },
+  "TitleOther" : [ {
+    "title" : "GWF / Wasser + Abwasser"
+  }, {
+    "title" : "GWF international, the leading specialist journal for water and wastewater"
+  }, {
+    "title" : "Das Gas- und Wasserfach / Ausgabe Wasser, Abwasser"
+  }, {
+    "title" : "GWF international"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Wasserversorgung" ],
     "combinedLabel" : "Wasserversorgung",
@@ -63576,9 +64038,10 @@
     "uid" : "(DE-101)022560262"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "EBSCO business source premier" ]
-  },
+  "TitleOther" : [ {
+    "title" : "EBSCO business source premier",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Wirtschaftswissenschaften" ],
     "combinedLabel" : "Wirtschaftswissenschaften",
@@ -63735,9 +64198,14 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "TypePeriodical" : [ "Zeitschrift" ],
-  "TitleOther" : {
-    "title" : [ "Lìngvìst. stud", "LS", "Linguistic studies" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Lìngvìst. stud."
+  }, {
+    "title" : "LS"
+  }, {
+    "title" : "Linguistic studies",
+    "prefix" : "Volumes for 2014- have parallel title in English"
+  } ],
   "RSWK" : [ {
     "subjectTopicName" : [ "Linguistics" ],
     "subjectGenre" : "Periodicals",

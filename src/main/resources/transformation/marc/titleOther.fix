@@ -1,10 +1,10 @@
 # MARC/246
-set_array("TitleOther.title[]")
-do list(path: "246??.a", "var": "$i")
-  do list(path: "$i", "var": "$j")
-    replace_all("$j", "[.]$", "")
-    call_macro("remove-nonsort", source: "$j")
-    copy_field("$j", "TitleOther.title[].$append")
-  end
+set_array("TitleOther[]")
+do list(path: "246??", "var": "$i")
+  add_field("TitleOther[].$append.__dummy__", "")
+  call_macro("remove-nonsort", source: "$i.a")
+  copy_field("$i.a", "TitleOther[].$last.title")
+  replace_all("$i.i", ":$", "")
+  copy_field("$i.i", "TitleOther[].$last.prefix")
 end
-uniq("TitleOther.title[]")
+uniq("TitleOther[]")

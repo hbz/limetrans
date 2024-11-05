@@ -395,9 +395,9 @@
     "uid" : "(DE-101)025275038"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "Praxis der Kommunalverwaltung / Landesausgabe Rheinland-Pfalz" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Praxis der Kommunalverwaltung / Landesausgabe Rheinland-Pfalz"
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Rheinland-Pfalz",
     "combinedLabel" : "Rheinland-Pfalz",
@@ -523,9 +523,9 @@
     "uid" : "(DE-599)HBZCT001004925"
   } ],
   "TypeMedia" : "Elektronische Ressource",
-  "TitleOther" : {
-    "title" : [ "konzessionierten" ]
-  },
+  "TitleOther" : [ {
+    "title" : "konzessionierten"
+  } ],
   "RSWK" : [ {
     "subjectGeoName" : "Sinzig",
     "combinedLabel" : "Sinzig",
@@ -1277,9 +1277,9 @@
   } ],
   "TypeMedia" : "Elektronische Ressource",
   "TypePeriodical" : [ "Zeitschrift" ],
-  "TitleOther" : {
-    "title" : [ "Die Rheinpfalz <Ludwigshafen> / Pfälzer Tageblatt / R" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Die Rheinpfalz <Ludwigshafen> / Pfälzer Tageblatt / R"
+  } ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -1480,9 +1480,9 @@
     "uid" : "(DE-101)982610130"
   } ],
   "TypePeriodical" : [ "Zeitschrift" ],
-  "TitleOther" : {
-    "title" : [ "Die Rheinpfalz <Ludwigshafen> / Pfälzer Tageblatt / R" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Die Rheinpfalz <Ludwigshafen> / Pfälzer Tageblatt / R"
+  } ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -1867,9 +1867,9 @@
     "uid" : "(DE-101)024248037"
   } ],
   "TypePeriodical" : [ "Zeitschrift" ],
-  "TitleOther" : {
-    "title" : [ "Piccola / Extra" ]
-  }
+  "TitleOther" : [ {
+    "title" : "Piccola / Extra"
+  } ]
 }
 {
   "ContentType" : [ "Text" ],
@@ -2349,9 +2349,16 @@
     "callnumber" : [ "MUS 590 BachJS/2,5a", "700151750107" ],
     "shelfmark" : "00001004"
   } ],
-  "TitleOther" : {
-    "title" : [ "Passio secundum Matthaeum", "Passion unseres Herrn Jesu Christi nach dem Evangelisten Matthäus", "Passionsmusik nach dem Evangelium Matthaei" ]
-  },
+  "TitleOther" : [ {
+    "title" : "Passio secundum Matthaeum"
+  }, {
+    "title" : "Passion unseres Herrn Jesu Christi nach dem Evangelisten Matthäus"
+  }, {
+    "title" : "Passionsmusik nach dem Evangelium Matthaei"
+  }, {
+    "title" : "Passio secundum Matthaeum",
+    "prefix" : "Nebent."
+  } ],
   "RSWK" : [ {
     "subjectDate" : "1685-1750",
     "subjectPersonName" : "Bach, Johann Sebastian",
