@@ -48,6 +48,20 @@ do put_macro("alma-format-carrier", length: "1")
   move_field("@alma-format-carrier-facet", "@facet_format.$append")
 end
 
+do put_macro("alma-suppressed-location")
+  paste("$i.@suppressedLocation", "~$[member]", "$i.$[library_field]", "$i.$[location_field]", join_char: "+")
+  lookup("$i.@suppressedLocation", "alma-suppressed-location", delete: "true")
+  unless exists("$i.@suppressedLocation")
+    paste("$i.@suppressedLocation", "~$[member]", "$i.$[location_field]", join_char: "+")
+    lookup("$i.@suppressedLocation", "alma-suppressed-location", delete: "true")
+  end
+  if exists("$i.@suppressedLocation")
+    add_field("@suppressed", "true")
+  else
+    add_field("@unsuppressed", "true")
+  end
+end
+
 do put_macro("alma-type-monograph")
   call_macro("substring", source: "$i.A", target: "@alma-type-monograph", start: "$[start]")
   copy_field("@alma-type-monograph", "@alma-type-monograph-facet")

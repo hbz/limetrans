@@ -14,25 +14,13 @@ set_array("@current_location")
 do list(path: "ITM  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
     copy_field("$i.x", "@current_location.$append")
-    paste("$i.@suppressedLocation", "~$[member]", "$i.x", join_char: "+")
-    lookup("$i.@suppressedLocation", "alma-suppressed-location", delete: "true")
-    if exists("$i.@suppressedLocation")
-      add_field("@suppressed", "true")
-    else
-      add_field("@unsuppressed", "true")
-    end
+    call_macro("alma-suppressed-location", library_field: "w", location_field: "x")
   end
 end
 # MARC/H52
 do list(path: "H52??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
-    paste("$i.@suppressedLocation", "~$[member]", "$i.c", join_char: "+")
-    lookup("$i.@suppressedLocation", "alma-suppressed-location", delete: "true")
-    if exists("$i.@suppressedLocation")
-      add_field("@suppressed", "true")
-    else
-      add_field("@unsuppressed", "true")
-    end
+    call_macro("alma-suppressed-location", library_field: "b", location_field: "c")
   end
 end
 lookup("@current_location.*", "alma-location-to-branch-$[isil]", delete: "true")
