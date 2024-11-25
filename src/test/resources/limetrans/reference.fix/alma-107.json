@@ -2371,3 +2371,157 @@
     "preferredName" : "Matthäuspassion. Frühfassung"
   } ]
 }
+{
+  "FormatCarrier" : [ "Druckschrift" ],
+  "TypeMonograph" : [ "Musikalia" ],
+  "Country" : [ {
+    "countryISO" : "US"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT016866133",
+    "identifierHBZ" : "HT016866133"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "1075585272"
+  } ],
+  "collection" : "DE-605",
+  "TitleUniform" : {
+    "titleUniform" : "Werke / Ausw"
+  },
+  "TitleWork" : [ {
+    "titleWork" : "Verdi, Giuseppe (1813-1901). Werke / Ausw."
+  } ],
+  "VolumeDesignation" : {
+    "volumeDesignation" : "Ser. 5. Chamber music = Musica strumentale da camera, Vol. 1 / Ed. by Gundula Kreuzer"
+  },
+  "RecordIdentifierSuper" : [ {
+    "recordIdentifierSuper" : [ "(DE-605)HT002849750" ]
+  } ],
+  "SortableVolumeDesignation" : [ {
+    "volumeDesignation" : "5,1"
+  } ],
+  "CreatorStatement" : {
+    "creatorStatement" : [ "ed. board: Philip Gossett, general ed. .." ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Musikalia", "Monographie", "Teil eines Werkes" ],
+    "language" : [ "Englisch", "Italienisch" ],
+    "date" : [ "2010" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Rheinische LB Koblenz" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "550 Musik", "145 Musiknoten" ],
+    "person" : [ "Verdi, Giuseppe (1813-1901)", "Gossett, Philip (1941-2017)" ],
+    "localCallNumber" : [ "Freihand 550 = FB 12:5,1" ]
+  },
+  "SubjectRPB" : [ {
+    "subject" : [ "550 Musik" ]
+  }, {
+    "subject" : [ "145 Musiknoten" ]
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_LBZ",
+    "identifierMMS" : "990187558780206441",
+    "identifierMMSIZ" : "991003497329708973"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990187558780206441",
+    "identifierForTheRecord" : "(DE-605)HT016866133"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  }, {
+    "language" : "Italienisch",
+    "languageSource" : "ita"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9780226853017" ],
+    "preferredISBN" : "9780226853017",
+    "variantISBN" : [ "978-0-226-85301-7", "0226853012", "0-226-85301-2" ]
+  }, {
+    "identifierISBN" : [ "9788875928797" ],
+    "preferredISBN" : "9788875928797",
+    "variantISBN" : [ "978-88-7592-879-7", "8875928797", "88-7592-879-7" ]
+  }, {
+    "identifierISBN" : [ "0226853012" ],
+    "preferredISBN" : "9780226853017",
+    "variantISBN" : [ "978-0-226-85301-7", "0-226-85301-2" ]
+  }, {
+    "identifierISBN" : [ "9780226853215" ],
+    "preferredISBN" : "9780226853215",
+    "variantISBN" : [ "978-0-226-85321-5", "0226853217", "0-226-85321-7" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "The works of, le opere di Giuseppe Verdi"
+  } ],
+  "Edition" : {
+    "edition" : [ "[Partitur, Stimmen]" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Chicago [u.a.]" ],
+    "name" : [ "Univ. of Chicago Press [u.a.]" ],
+    "chronology" : [ "2010" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : [ "Chicago [u.a.]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2010" ]
+  },
+  "Extent" : {
+    "extent" : "XXXVIII, 6, 120 S. : Faks. ; 4 St"
+  },
+  "DescriptionOfExpression" : [ {
+    "description" : "Einl. und Kritischer Bericht in engl. und ital. Sprache"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Verdi, Giuseppe",
+    "personBio" : "1813-1901",
+    "personIdentifier" : [ "(DE-588)118626523" ],
+    "identifierGND" : [ "118626523" ],
+    "variantName" : [ "Verdi, Fortunato Giuseppe Francesco", "Verdi, G.", "Верди, Джузеппе Фортуни́но Франче́ско", "Verdi, Giuseppe Fortun. Francesco", "Verdi, Joseph", "Verdi, Josef", "Верди, Джузеппе", "Verdi, Džiuzeppe", "Verdy, Giuseppe", "Verdi, Giuseppe Fortunino Francesco", "Verdi, Džuzepe", "Verdi, J.", "Verdi, Guiseppe", "Verdi, Fortunino Giuseppe Francesco", "Verdi, Džuzeppe", "Verdi", "Verdi, Fortunio Giuseppe Francesco", "Verdi, Jos." ],
+    "preferredName" : "Verdi, Giuseppe"
+  }, {
+    "personName" : "Gossett, Philip",
+    "personBio" : "1941-2017",
+    "personIdentifier" : [ "(DE-588)103981756" ],
+    "identifierGND" : [ "103981756" ],
+    "variantName" : [ "Gossett, Philippe" ],
+    "preferredName" : "Gossett, Philip"
+  } ],
+  "HostItemEntry" : [ {
+    "controlNumber" : [ "(DE-605)HT002849750" ],
+    "identifierForLinkingEntry" : [ "(DE-605)HT002849750" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://digitale-objekte.hbz-nrw.de/storage/2011/07/27/file_1/4232169.pdf",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : [ "V:DE-605", "X:casalini" ],
+    "format" : "application/pdf"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : [ "V:DE-605", "X:casalini" ],
+    "format" : "application/pdf"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990187558780206441"
+  }, {
+    "uid" : "(DE-605)HT016866133"
+  }, {
+    "uid" : "(DE-107)991003497329708973"
+  }, {
+    "uid" : "(OCoLC)1075585272"
+  }, {
+    "uid" : "(DE-599)HBZHT016866133"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-929",
+    "label" : "Landesbibliothekszentrum Rheinland-Pfalz / Rheinische Landesbibliothek",
+    "callnumber" : [ "05085925", "Freihand 550 = FB 12:5,1" ],
+    "shelfmark" : "RLB_P"
+  } ]
+}
