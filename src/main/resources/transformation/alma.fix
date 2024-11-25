@@ -144,7 +144,6 @@ uniq("ExtendedType[]")
 uniq("FormatCarrier[]")
 uniq("TypeMediaSpecial[]")
 uniq("TypeMonograph[]")
-uniq("introx.music[]")
 
 include("./marc/_facet_type-2.fix")
 
@@ -425,8 +424,6 @@ do list(path: "@SubjectGHBLocal", "var": "$i")
   lookup("@local_taxonomy", "alma-notation-to-taxonomy-$[isil]", delete: "true")
   move_field("@local_taxonomy", "introx.taxonomy[].$append")
 end
-uniq("introx.taxonomy[]")
-uniq("introx.taxonomyRVK[]")
 
 # MARC/001
 add_field("IdentifierAlma.identifierMember", "$[member]")
@@ -990,7 +987,6 @@ do list(path: "@host_callnumber", "var": "$i")
   copy_field("$i", "introx.localCallNumber[].$append")
 end
 uniq("Item[]")
-uniq("introx.localCallNumber[]")
 
 # MARC/DEL
 if any_equal("$[deletion-source]", "$[deletion-value]")
@@ -1024,7 +1020,6 @@ do list(path: "653??", "var": "$i")
   copy_field("$i.a", "Subject[].$append.subject")
 end
 uniq("Subject[]")
-uniq("introx.subject[]")
 
 # MARC/242
 include("./marc/translatedTitle.fix")
@@ -1100,6 +1095,12 @@ do list(path: "880??", "var": "$i")
   end
 end
 uniq("AlternateGraphicRepresentation[]")
+
+uniq("introx.localCallNumber[]")
+uniq("introx.music[]")
+uniq("introx.subject[]")
+uniq("introx.taxonomyRVK[]")
+uniq("introx.taxonomy[]")
 
 # MARC/DEL
 if exists("@suppressed")

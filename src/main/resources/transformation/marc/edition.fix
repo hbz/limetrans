@@ -1,6 +1,15 @@
 # MARC/250
 set_array("Edition.edition[]")
+unless exists("introx.music[]")
+  set_array("introx.music[]")
+end
 do list(path: "250  .a", "var": "$i")
   replace_all("$i", "\\s?[=/]$", "")
   copy_field("$i", "Edition.edition[].$append")
+  replace_all("$i", "^\\[(.*)\\]$", "$1")
+  split_field("$i", ", ")
+  do list(path: "$i", "var": "$j")
+    lookup("$j", "extended-type-music", delete: "true")
+    copy_field("$j", "introx.music[].$append")
+  end
 end
