@@ -69,6 +69,8 @@ if any_match("@LeaderPos06|@006Pos00", "[cdj]")
   add_field("@facet_type.$append", "Musikalia")
 elsif any_equal("@007Pos00", "q")
   add_field("@facet_type.$append", "Musikalia")
+elsif any_equal("245??.h", "Musikdruck")
+  add_field("@facet_type.$append", "Musikalia")
 end
 if any_match("@type__008Pos24|@type__008Pos25|@type__008Pos26|@type__008Pos27", "(?:B|CR)#[der]")
   add_field("@facet_type.$append", "Nachschlagewerk")
