@@ -18,6 +18,7 @@ import co.elastic.clients.elasticsearch.core.bulk.BulkOperation;
 import co.elastic.clients.elasticsearch.core.bulk.OperationType;
 import co.elastic.clients.elasticsearch.indices.GetAliasRequest;
 import co.elastic.clients.elasticsearch.indices.GetAliasResponse;
+import co.elastic.clients.elasticsearch.indices.get.Feature;
 import co.elastic.clients.elasticsearch.indices.get_alias.IndexAliases;
 import co.elastic.clients.elasticsearch.indices.update_aliases.Action;
 import co.elastic.clients.json.jackson.JacksonJsonpMapper;
@@ -207,6 +208,12 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
         }
 
         return () -> accept(c -> c.indices().updateAliases(b -> b.actions(actions)));
+    }
+
+    @Override
+    protected void getIndexes(final String aIndex, final BiConsumer<String, IndexInfo> aConsumer) {
+        accept(c -> c.indices().get(b -> b.index(aIndex).features(Feature.Aliases))
+                .result().forEach((i, s) -> aConsumer.accept(i, new IndexInfo(!s.aliases().isEmpty()))));
     }
 
     @Override
