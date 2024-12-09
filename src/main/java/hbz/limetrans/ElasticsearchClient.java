@@ -12,8 +12,11 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.LongAdder;
@@ -293,13 +296,59 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         if (!aliases.isEmpty()) {
             LOGGER.info("Adding aliases to index {}: {}", newIndex, aliases);
             runnable.run();
+
+            retainIndexes(mAliasName, newIndex, 2); // TODO: make count configurable
         }
     }
 
     protected abstract Runnable switchIndex(String aOldIndex, String aNewIndex, String aAliasName, Set<String> aAliases);
 
+    private Pattern getIndexPattern(final String aAliasName) {
+        return Pattern.compile("^" + Pattern.quote(aAliasName) + "\\d+$");
+    }
+
+    private void retainIndexes(final String aAliasName, final String aIndexName, final int aKeep) {
+        final Pattern pattern = getIndexPattern(aAliasName);
+
+        final List<String> concrete = new ArrayList<>();
+        final List<String> delete = new ArrayList<>();
+        final List<String> keep = new ArrayList<>();
+
+        getIndexes(aAliasName + "*", (i, a) -> {
+            if (pattern.matcher(i).matches()) {
+                if (a || aIndexName.equals(i)) {
+                    concrete.add(i);
+                }
+                else {
+                    delete.add(i);
+                }
+            }
+        });
+
+        delete.sort(Comparator.reverseOrder());
+
+        if (concrete.isEmpty() && !delete.isEmpty()) {
+            concrete.add(delete.remove(0));
+        }
+
+        for (int i = 0; !delete.isEmpty() && i < aKeep; ++i) {
+            keep.add(delete.remove(0));
+        }
+
+        if (concrete.size() > 1 || !delete.isEmpty()) {
+            LOGGER.info("Index retention: {} [min={}]: concrete={}, keep={}, delete={}",
+                    aAliasName, aKeep, concrete, keep, delete);
+
+            delete.forEach(this::deleteIndex);
+        }
+    }
+
+    protected void getIndexes(final String aIndex, final BiConsumer<String, Boolean> aConsumer) {
+        // default implementation does nothing
+    }
+
     private String getAliasIndex(final String aAliasName) {
-        final Pattern pattern = Pattern.compile("^" + Pattern.quote(aAliasName) + "\\d+$");
+        final Pattern pattern = getIndexPattern(aAliasName);
         final Set<String> indices = new HashSet<>();
 
         getAliasIndexes(aAliasName, i -> {
