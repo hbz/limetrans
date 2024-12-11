@@ -307,17 +307,21 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         return Pattern.compile("^" + Pattern.quote(aAliasName) + "\\d+$");
     }
 
-    private void retainIndexes(final String aAliasName, final String aIndexName, final int aKeep) {
+    private void retainIndexes(final String aAliasName, final String aIndexName, final int aKeep) { // checkstyle-disable-line CyclomaticComplexity
         final Pattern pattern = getIndexPattern(aAliasName);
 
         final List<String> concrete = new ArrayList<>();
         final List<String> delete = new ArrayList<>();
+        final List<String> ignore = new ArrayList<>();
         final List<String> keep = new ArrayList<>();
 
-        getIndexes(aAliasName + "*", (i, a) -> {
+        getIndexes(aAliasName + "*", (i, j) -> {
             if (pattern.matcher(i).matches()) {
-                if (a || aIndexName.equals(i)) {
+                if (j.hasAliases() || aIndexName.equals(i)) {
                     concrete.add(i);
+                }
+                else if (j.isEmpty()) {
+                    ignore.add(i);
                 }
                 else {
                     delete.add(i);
@@ -336,14 +340,14 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         }
 
         if (concrete.size() > 1 || !delete.isEmpty()) {
-            LOGGER.info("Index retention: {} [min={}]: concrete={}, keep={}, delete={}",
-                    aAliasName, aKeep, concrete, keep, delete);
+            LOGGER.info("Index retention: {} [min={}]: concrete={}, keep={}, ignore={}, delete={}",
+                    aAliasName, aKeep, concrete, keep, ignore, delete);
 
             delete.forEach(this::deleteIndex);
         }
     }
 
-    protected void getIndexes(final String aIndex, final BiConsumer<String, Boolean> aConsumer) {
+    protected void getIndexes(final String aIndex, final BiConsumer<String, IndexInfo> aConsumer) {
         // default implementation does nothing
     }
 
@@ -556,6 +560,9 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
     @FunctionalInterface
     protected interface BulkItemConsumer {
         void accept(Runnable aDeleted, Runnable aSucceeded, BiConsumer<String, String> aFailed);
+    }
+
+    protected record IndexInfo(boolean hasAliases, boolean isEmpty) {
     }
 
 }

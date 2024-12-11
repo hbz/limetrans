@@ -211,9 +211,10 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
     }
 
     @Override
-    protected void getIndexes(final String aIndex, final BiConsumer<String, Boolean> aConsumer) {
+    protected void getIndexes(final String aIndex, final BiConsumer<String, IndexInfo> aConsumer) {
         accept(c -> c.indices().get(b -> b.index(aIndex).features(Feature.Aliases))
-                .result().forEach((i, s) -> aConsumer.accept(i, !s.aliases().isEmpty())));
+                .result().forEach((i, s) -> accept(d -> aConsumer.accept(i, new IndexInfo(
+                            !s.aliases().isEmpty(), d.count(b -> b.index(i)).count() == 0)))));
     }
 
     @Override
