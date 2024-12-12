@@ -312,12 +312,16 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
 
         final List<String> concrete = new ArrayList<>();
         final List<String> delete = new ArrayList<>();
+        final List<String> ignore = new ArrayList<>();
         final List<String> keep = new ArrayList<>();
 
         getIndexes(aAliasName + "*", (i, j) -> {
             if (pattern.matcher(i).matches()) {
                 if (j.hasAliases() || aIndexName.equals(i)) {
                     concrete.add(i);
+                }
+                else if (j.isEmpty()) {
+                    ignore.add(i);
                 }
                 else {
                     delete.add(i);
@@ -336,8 +340,8 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         }
 
         if (concrete.size() > 1 || !delete.isEmpty()) {
-            LOGGER.info("Index retention: {} [min={}]: concrete={}, keep={}, delete={}",
-                    aAliasName, aRetain, concrete, keep, delete);
+            LOGGER.info("Index retention: {} [min={}]: concrete={}, keep={}, ignore={}, delete={}",
+                    aAliasName, aRetain, concrete, keep, ignore, delete);
 
             delete.forEach(this::deleteIndex);
         }
@@ -558,7 +562,7 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         void accept(Runnable aDeleted, Runnable aSucceeded, BiConsumer<String, String> aFailed);
     }
 
-    protected record IndexInfo(boolean hasAliases) {
+    protected record IndexInfo(boolean hasAliases, boolean isEmpty) {
     }
 
 }
