@@ -294,7 +294,7 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         final Runnable runnable = switchIndex(oldIndex, newIndex, mAliasName, aliases);
 
         if (!aliases.isEmpty()) {
-            LOGGER.info("Adding aliases to index {}: {}", newIndex, aliases);
+            LOGGER.info("Adding aliases: {}: {}", newIndex, aliases);
             runnable.run();
 
             retainIndexes(mAliasName, newIndex, 2); // TODO: make count configurable
