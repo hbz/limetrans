@@ -22,16 +22,12 @@ gradle.rootProject {
             'lmdb'           : '0.8.3',
             'log4j'          : '2.17.1',
             'lucene5'        : '5.4.1',
-            'metafacture'    : '6.2.0',
-            'metafix'        : '1.2.0',
+            'metafacture'    : '7.0.0',
             'testcontainers' : '1.20.1'
         ]
 
         testMatrix = [
             metafacture: [
-                'master-SNAPSHOT'
-            ],
-            metafix: [
                 'master'
             ]
         ]
@@ -55,19 +51,11 @@ gradle.rootProject {
                     'org.metafacture:metafacture-statistics',
                     'org.metafacture:metafacture-strings',
                     'org.metafacture:metafacture-xml',
+                    'org.metafacture:metafix',
                     'org.metafacture:metamorph'
                 ],
                 dependency: {
                     it.exclude(group: 'org.slf4j', module: 'slf4j-reload4j')
-                }
-            ],
-            metafix: [
-                base: 'https://github.com/metafacture',
-                repo: 'metafacture-fix',
-                modules: [
-                    'org.metafacture:metafix'
-                ],
-                dependency: {
                     it.exclude(group: 'org.slf4j', module: 'slf4j-simple')
                 }
             ]
