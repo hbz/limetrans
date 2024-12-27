@@ -34,7 +34,7 @@ apply from: 'gradle/tasks.gradle'
 repositories {
     mavenCentral()
     maven githubPackage.invoke('metafacture')
-    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 
 dependencies {
@@ -83,7 +83,7 @@ java {
 }
 
 checkstyle {
-    toolVersion versions.checkstyle
+    toolVersion = versions.checkstyle
     checkstyleTest.enabled = false // TODO: Enable
 }
 
