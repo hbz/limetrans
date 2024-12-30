@@ -45,6 +45,8 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
     private static final int MAX_BULK_ACTIONS = 1000;
     private static final int MAX_BULK_REQUESTS = 2;
 
+    private static final int DEFAULT_RETAIN = 2;
+
     private static final String DEFAULT_VERSION = "2";
     private static final String VERSION_PREFIX = "V";
 
@@ -60,6 +62,7 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
     private final String mRefreshInterval;
     private final int mBulkActions;
     private final int mBulkRequests;
+    private final int mRetain;
 
     private String mAliasName;
     private String mIndexName;
@@ -79,6 +82,8 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
 
         mNumberOfReplicas = mIndexSettings.getAsInt(INDEX_REPLICA_KEY, DEFAULT_REPLICA_COUNT);
         mRefreshInterval = mIndexSettings.get(INDEX_REFRESH_KEY, DEFAULT_REFRESH_INTERVAL);
+
+        mRetain = mIndexSettings.getAsInt("retain", DEFAULT_RETAIN);
 
         reset();
 
@@ -297,7 +302,7 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
             LOGGER.info("Adding aliases: {}: {}", newIndex, aliases);
             runnable.run();
 
-            retainIndexes(mAliasName, newIndex, 2); // TODO: make count configurable
+            retainIndexes(mAliasName, newIndex);
         }
     }
 
@@ -307,7 +312,11 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         return Pattern.compile("^" + Pattern.quote(aAliasName) + "\\d+$");
     }
 
-    private void retainIndexes(final String aAliasName, final String aIndexName, final int aRetain) { // checkstyle-disable-line CyclomaticComplexity
+    private void retainIndexes(final String aAliasName, final String aIndexName) { // checkstyle-disable-line CyclomaticComplexity|NPathComplexity
+        if (mRetain < 0) {
+            return;
+        }
+
         final Pattern pattern = getIndexPattern(aAliasName);
 
         final List<String> concrete = new ArrayList<>();
@@ -335,13 +344,13 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
             concrete.add(delete.remove(0));
         }
 
-        for (int i = 0; !delete.isEmpty() && i < aRetain; ++i) {
+        for (int i = 0; !delete.isEmpty() && i < mRetain; ++i) {
             keep.add(delete.remove(0));
         }
 
         if (concrete.size() > 1 || !delete.isEmpty()) {
             LOGGER.info("Index retention: {} [min={}]: concrete={}, keep={}, ignore={}, delete={}",
-                    aAliasName, aRetain, concrete, keep, ignore, delete);
+                    aAliasName, mRetain, concrete, keep, ignore, delete);
 
             delete.forEach(this::deleteIndex);
         }
