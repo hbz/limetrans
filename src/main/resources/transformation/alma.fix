@@ -695,6 +695,42 @@ end
 # MARC/520
 include("./marc/abstract.fix")
 
+# MARC/506, MARC 540, MARC 542
+set_array("InformationRelatingToCopyrightStatus[]")
+set_array("RestrictionsOnAccessNote[]")
+set_array("TermsGoverningUseAndReproductionNote[]")
+do list(path: "506??", "var": "$i")
+  add_field("RestrictionsOnAccessNote[].$append.__dummy__", "")
+  call_macro("copy-first-item", source: "$i.2", target: "RestrictionsOnAccessNote[].$last.source")
+  call_macro("copy-all-items", source: "$i.a", target: "RestrictionsOnAccessNote[].$last.terms")
+  call_macro("copy-all-items", source: "$i.e", target: "RestrictionsOnAccessNote[].$last.authorization")
+  call_macro("copy-all-items", source: "$i.f", target: "RestrictionsOnAccessNote[].$last.statement")
+  call_macro("copy-all-items", source: "$i.g", target: "RestrictionsOnAccessNote[].$last.date")
+  call_macro("copy-first-item", source: "$i.q", target: "RestrictionsOnAccessNote[].$last.agency")
+  call_macro("copy-all-items", source: "$i.u", target: "RestrictionsOnAccessNote[].$last.uri")
+end
+do list(path: "540??", "var": "$i")
+  add_field("TermsGoverningUseAndReproductionNote[].$append.__dummy__", "")
+  call_macro("copy-first-item", source: "$i.2", target: "TermsGoverningUseAndReproductionNote[].$last.source")
+  call_macro("copy-all-items", source: "$i.a", target: "TermsGoverningUseAndReproductionNote[].$last.terms")
+  call_macro("copy-all-items", source: "$i.c", target: "TermsGoverningUseAndReproductionNote[].$last.authorization")
+  call_macro("copy-all-items", source: "$i.f", target: "TermsGoverningUseAndReproductionNote[].$last.statement")
+  call_macro("copy-all-items", source: "$i.g", target: "TermsGoverningUseAndReproductionNote[].$last.date")
+  call_macro("copy-first-item", source: "$i.q", target: "TermsGoverningUseAndReproductionNote[].$last.agency")
+  call_macro("copy-all-items", source: "$i.u", target: "TermsGoverningUseAndReproductionNote[].$last.uri")
+end
+do list(path: "542[ 1]?", "var": "$i")
+  add_field("InformationRelatingToCopyrightStatus[].$append.__dummy__", "")
+  call_macro("copy-first-item", source: "$i.a", target: "InformationRelatingToCopyrightStatus[].$last.personalCreator")
+  call_macro("copy-all-items", source: "$i.f", target: "InformationRelatingToCopyrightStatus[].$last.statement")
+  call_macro("copy-all-items", source: "$i.i", target: "InformationRelatingToCopyrightStatus[].$last.date")
+  call_macro("copy-all-items", source: "$i.k", target: "InformationRelatingToCopyrightStatus[].$last.publisher")
+  call_macro("copy-all-items", source: "$i.n", target: "InformationRelatingToCopyrightStatus[].$last.terms")
+  call_macro("copy-first-item", source: "$i.q", target: "InformationRelatingToCopyrightStatus[].$last.agency")
+  call_macro("copy-first-item", source: "$i.s", target: "InformationRelatingToCopyrightStatus[].$last.source")
+  call_macro("copy-all-items", source: "$i.u", target: "InformationRelatingToCopyrightStatus[].$last.uri")
+end
+
 # MARC/H66
 set_array("HoldingsStatement[]")
 do list(path: "H66??", "var": "$i")
@@ -1164,6 +1200,7 @@ retain(
   "IdentifierSerial[]",
   "IdentifierSheetMusic[]",
   "IdentifierZDB[]",
+  "InformationRelatingToCopyrightStatus[]",
   "IssuedWithEntry[]",
   "Item[]",
   "Language[]",
@@ -1186,6 +1223,7 @@ retain(
   "RecordIdentifier",
   "RecordIdentifierSuper[]",
   "ReproductionNote[]",
+  "RestrictionsOnAccessNote[]",
   "SecondaryEditionPublicationDate[]",
   "SecondaryEditionTitleSuper[]",
   "SeriesAddedEntryUniformTitle[]",
@@ -1206,6 +1244,7 @@ retain(
   "Summary",
   "SupplementParentEntry[]",
   "SupplementSpecialIssueEntry[]",
+  "TermsGoverningUseAndReproductionNote[]",
   "TitleAddendum",
   "TitleOther[]",
   "TitlePreferred[]",
