@@ -329,9 +329,9 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         final LimetransFilter availableForFilter = LimetransFilter.all()
             .add("POR  .A=" + memberCode);
 
-        // MBD$$M=memberCode OR POR$$M=memberCode
+        // MBD$$M=memberCode
         final LimetransFilter memberFilter = LimetransFilter.any()
-            .add("MBD  .M|POR  .M=" + memberCode)
+            .add("MBD  .M=" + memberCode)
             .add(almaSettings.getAsArray("filter"));
 
         // DEL??.a=Y OR leader@05=d
