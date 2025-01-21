@@ -829,3 +829,144 @@
     "subject" : "Health"
   } ]
 }
+{
+  "ExtendedType" : [ "Lehrbuch" ],
+  "FormatCarrier" : [ "Druckschrift" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "TypeHeading" : [ {
+    "term" : "Lehrbuch",
+    "identifier" : [ "(DE-588)4123623-3" ]
+  } ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT012899053",
+    "identifierHBZ" : "HT012899053"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "76209653"
+  } ],
+  "collection" : "DE-605",
+  "TitleUniform" : {
+    "titleUniform" : "Grammar of the film language"
+  },
+  "TitleAddendum" : {
+    "title" : [ "das Handbuch" ]
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Daniel Arijon. Aus dem Amerikan. von Karl Heinz Siber" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2000" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "person" : [ "Arijon, Daniel" ],
+    "subject" : [ "Film", "Erzähltechnik", "Filmtechnik" ],
+    "localCallNumber" : [ "KNN 22" ]
+  },
+  "SubjectRPB" : [ {
+    "subject" : [ "530" ]
+  }, {
+    "subject" : [ "535" ]
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHM",
+    "identifierMMS" : "990112269000206441",
+    "identifierMMSIZ" : "991003382219706485"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990112269000206441",
+    "identifierForTheRecord" : "(DE-605)HT012899053"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3861503360" ],
+    "preferredISBN" : "9783861503361",
+    "variantISBN" : [ "978-3-86150-336-1", "3-86150-336-0" ]
+  }, {
+    "identifierISBN" : [ "3527307656" ],
+    "preferredISBN" : "9783527307654",
+    "variantISBN" : [ "978-3-527-30765-4", "3-527-30765-6" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Arijon, Daniel"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Grammatik der Filmsprache"
+  } ],
+  "Edition" : {
+    "edition" : [ "Dt. Erstausg., 1. Aufl." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Frankfurt am Main" ],
+    "name" : [ "Zweitausendeins" ],
+    "chronology" : [ "2000" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : [ "Frankfurt am Main" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2000" ]
+  },
+  "Extent" : {
+    "extent" : "708 S. : Ill., graph. Darst."
+  },
+  "OnlineAccess" : [ {
+    "uri" : "https://digitale-objekte.hbz-nrw.de/storage/2007/10/15/file_78/2169538.pdf",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : [ "V:DE-605", "X:migimw" ],
+    "format" : "application/pdf"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : [ "V:DE-605", "X:migimw" ],
+    "format" : "application/pdf"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990112269000206441"
+  }, {
+    "uid" : "(DE-605)HT012899053"
+  }, {
+    "uid" : "(DE-836)991003382219706485"
+  }, {
+    "uid" : "(OCoLC)76209653"
+  }, {
+    "uid" : "(DE-599)HBZHT012899053"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-836",
+    "label" : "FH Münster, Hochschulbibliothek",
+    "callnumber" : [ "KNN 22", "0129686" ],
+    "shelfmark" : "Freihand_L"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : [ "Film" ],
+    "combinedLabel" : "Film",
+    "subjectIdentifier" : [ "(DE-588)4017102-4" ],
+    "identifierGND" : [ "4017102-4" ],
+    "variantName" : [ "Kino <Film>", "Filmaufnahme" ],
+    "preferredName" : "Film"
+  }, {
+    "subjectTopicName" : [ "Erzähltechnik" ],
+    "combinedLabel" : "Erzähltechnik",
+    "subjectIdentifier" : [ "(DE-588)4124854-5" ],
+    "identifierGND" : [ "4124854-5" ],
+    "variantName" : [ "Epische Technik", "Erzählstrategie", "Epik / Technik <Kunstfertigkeit>", "Narrativ <Erzähltechnik>", "Erzählstruktur", "Erzählweise", "Erzählstil", "Narrative Struktur" ],
+    "preferredName" : "Erzähltechnik"
+  }, {
+    "subjectTopicName" : [ "Filmtechnik" ],
+    "combinedLabel" : "Filmtechnik",
+    "subjectIdentifier" : [ "(DE-588)4017144-9" ],
+    "identifierGND" : [ "4017144-9" ],
+    "variantName" : [ "Kinematographie", "Kinematografie" ],
+    "preferredName" : "Filmtechnik"
+  } ]
+}

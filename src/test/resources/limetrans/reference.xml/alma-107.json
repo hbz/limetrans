@@ -1534,3 +1534,102 @@
     "callnumber" : "Freihand 550 = FB 12:5,1"
   } ]
 }
+{
+  "collection" : "DE-605",
+  "TitleUniform" : {
+    "titleUniform" : "Grammar of the film language"
+  },
+  "TitleAddendum" : {
+    "title" : "das Handbuch"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "Daniel Arijon. Aus dem Amerikan. von Karl Heinz Siber"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2000" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_LBZ",
+    "identifierMMS" : "990112269000206441",
+    "identifierMMSIZ" : "991011082589708973"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990112269000206441",
+    "identifierForTheRecord" : "(DE-605)HT012899053"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3861503360" ]
+  }, {
+    "identifierISBN" : [ "3527307656" ]
+  }, {
+    "identifierISBN" : [ "3861503360" ]
+  }, {
+    "identifierISBN" : [ "3861503360" ]
+  }, {
+    "identifierISBN" : [ "3861503360" ]
+  }, {
+    "identifierISBN" : [ "3861503360" ]
+  }, {
+    "identifierISBN" : [ "3861503360" ]
+  }, {
+    "identifierISBN" : [ "3861503360" ]
+  }, {
+    "identifierISBN" : [ "3861503360" ]
+  }, {
+    "identifierISBN" : [ "3861503360" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Arijon, Daniel"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Grammatik der Filmsprache"
+  } ],
+  "Edition" : {
+    "edition" : [ "Dt. Erstausg., 1. Aufl." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Frankfurt am Main" ],
+    "name" : [ "Zweitausendeins" ],
+    "chronology" : [ "2000" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2000" ]
+  },
+  "Extent" : {
+    "extent" : "708 S. : Ill., graph. Darst."
+  },
+  "OnlineAccess" : [ {
+    "uri" : "https://digitale-objekte.hbz-nrw.de/storage/2007/10/15/file_78/2169538.pdf",
+    "relatedto" : "Inhaltsverzeichnis"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Film"
+  }, {
+    "subject" : "Erzähltechnik"
+  }, {
+    "subject" : "Filmtechnik"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990112269000206441"
+  }, {
+    "uid" : "(DE-605)HT012899053"
+  }, {
+    "uid" : "(DE-107)991011082589708973"
+  } ],
+  "Item" : [ {
+    "callnumber" : "2001/2375"
+  } ]
+}
