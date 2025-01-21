@@ -66,6 +66,10 @@ dependencies {
 
     // Required for ElasticsearchClientTest (elasticsearch2 plugin bundle): com.ibm.icu.text.Normalizer2
     testImplementation "org.apache.lucene:lucene-analyzers-icu:${versions.lucene5}"
+
+    implementation('org.antlr:antlr-runtime') {
+        version { strictly '3.2' }
+    }
 }
 
 sourceSets {

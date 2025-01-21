@@ -51,11 +51,15 @@ gradle.rootProject {
                     'org.metafacture:metafacture-json',
                     'org.metafacture:metafacture-mangling',
                     'org.metafacture:metafacture-plumbing',
+                    'org.metafacture:metafacture-runner',
                     'org.metafacture:metafacture-statistics',
                     'org.metafacture:metafacture-strings',
                     'org.metafacture:metafacture-xml',
                     'org.metafacture:metamorph'
-                ]
+                ],
+                dependency: {
+                    it.exclude(group: 'org.slf4j', module: 'slf4j-reload4j')
+                }
             ],
             metafix: [
                 base: 'https://github.com/metafacture',
