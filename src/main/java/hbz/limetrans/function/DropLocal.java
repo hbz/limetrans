@@ -13,6 +13,8 @@ import java.util.function.BiConsumer;
 
 public class DropLocal implements FixFunction {
 
+    private static final String LOCAL = "LOCAL";
+
     public DropLocal() {
     }
 
@@ -27,7 +29,8 @@ public class DropLocal implements FixFunction {
                     final Value memberField = h.get("M");
 
                     final boolean isLocal = localField != null && localField.<Boolean>extractType((n, c) -> n
-                            .ifString(s -> c.accept("LOCAL".equals(s)))
+                            .ifArray(a -> c.accept(a.stream().anyMatch(v -> LOCAL.equals(v.asString()))))
+                            .ifString(s -> c.accept(LOCAL.equals(s)))
                             .orElse(v -> c.accept(false)));
 
                     if (isLocal && memberField != null && !memberCode.equals(memberField.asString())) {
