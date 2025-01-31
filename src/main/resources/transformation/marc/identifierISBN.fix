@@ -1,6 +1,6 @@
 # MARC/020
 set_array("IdentifierISBN[]")
-do list(path: "020  ", "var": "$i")
+do list(path: "020??", "var": "$i")
   add_field("IdentifierISBN[].$append.__dummy__", "")
   if exists("$i.a")
     set_array("IdentifierISBN[].$last.identifierISBN[]")

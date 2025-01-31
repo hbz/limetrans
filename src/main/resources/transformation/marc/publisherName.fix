@@ -1,5 +1,5 @@
 # MARC/260, MARC/264
-do list(path: "260[ 23] |264[ 23][ 1]", "var": "$i")
+do list(path: "260??|264?[ 1]", "var": "$i")
   add_field("PublisherName[].$append.__dummy__", "")
   set_array("PublisherName[].$last.place[]")
   do list(path: "$i.a", "var": "$j")
