@@ -2,8 +2,8 @@
 unless exists("@date")
   set_array("@date")
 end
-copy_field("260[ 23] .c", "@date.$append")
-do list(path: "264[ 23]1.c", "var": "$i")
+copy_field("260??.c", "@date.$append")
+do list(path: "264?1.c", "var": "$i")
   copy_field("$i", "@date.$append")
 end
 copy_field("@date[12]", "@date.$append")

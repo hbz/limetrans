@@ -1,6 +1,6 @@
 set_array("RecordIdentifierSuper[]")
 set_array("SortableVolumeDesignation[]")
-do list(path: "7730?", "var": "$i")
+do list(path: "773[ 0]?", "var": "$i")
   if exists("$i.q")
     unless exists("@facet_type")
       set_array("@facet_type")
