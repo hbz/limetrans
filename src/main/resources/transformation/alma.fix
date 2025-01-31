@@ -136,7 +136,7 @@ do list(path: "340??", "var": "$i")
   end
 end
 # MARC/538, MARC/583
-do list(path: "538??|5831?", "var": "$i")
+do list(path: "538??|583[ 1]?", "var": "$i")
   copy_field("$i.a", "TypeMediaSpecialPreservation[].$append")
 end
 uniq("ExtendedFormat[]")
@@ -482,7 +482,7 @@ end
 # MARC/016
 set_array("IdentifierZDB[]")
 set_array("@zdbids")
-do list(path: "0167 ", "var": "$i")
+do list(path: "0167?", "var": "$i")
   if any_equal("$i.2", "DE-600")
     add_field("IdentifierZDB[].$append.__dummy__", "")
     copy_field("$i.a", "IdentifierZDB[].$last.identifierZDB")

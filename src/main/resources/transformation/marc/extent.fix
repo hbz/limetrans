@@ -1,7 +1,7 @@
 # MARC/300
 set_array("@300a")
 set_array("@300c")
-do list(path: "300  ", "var": "$i")
+do list(path: "300??", "var": "$i")
   copy_field("$i.a", "@300a.$append")
   do list(path: "$i.b", "var": "$j")
     replace_all("$j", "\\s?[:;+(]?$", "")
