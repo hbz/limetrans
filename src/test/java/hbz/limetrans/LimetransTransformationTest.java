@@ -6,6 +6,9 @@ import java.io.IOException;
 
 public class LimetransTransformationTest extends AbstractTransformationTest {
 
+    public LimetransTransformationTest() {
+    }
+
     @Test
     public void testUnicodeNormalizationComposed() throws IOException {
         testEqualsReference("unicode-normalization-composed");

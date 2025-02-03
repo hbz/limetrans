@@ -9,6 +9,9 @@ import java.io.IOException;
 
 public class LimetransBaseTest extends AbstractLimetransTest {
 
+    public LimetransBaseTest() {
+    }
+
     @Override
     protected Limetrans.Type getType() {
         return null;

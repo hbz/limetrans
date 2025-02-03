@@ -14,13 +14,13 @@ import java.util.function.Supplier;
 @RunWith(Parameterized.class)
 public abstract class AbstractTransformationTest extends AbstractLimetransTest {
 
-    @Parameterized.Parameters(name="{0}")
+    @Parameterized.Parameter(0)
+    public Limetrans.Type mType; // checkstyle-disable-line VisibilityModifier
+
+    @Parameterized.Parameters(name = "{0}")
     public static Object[] data() {
         return Limetrans.Type.values();
     }
-
-    @Parameterized.Parameter(0)
-    public Limetrans.Type mType;
 
     @Override
     protected Limetrans.Type getType() {

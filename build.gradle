@@ -88,7 +88,6 @@ java {
 
 checkstyle {
     toolVersion = versions.checkstyle
-    checkstyleTest.enabled = false // TODO: Enable
 }
 
 def printVersions = {

@@ -13,6 +13,9 @@ public class LimetransFilterTest {
     private static final String INPUT_PATH = BASE_PATH + "/input/test.xml";
     private static final String OUTPUT_PATH = BASE_PATH + "/output/test.json";
 
+    public LimetransFilterTest() {
+    }
+
     @Test
     public void testMissingFile() throws IOException {
         final Throwable ex = Assert.assertThrows(IllegalArgumentException.class,

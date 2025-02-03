@@ -12,6 +12,9 @@ public class CliTest {
     private static final String PROGRAM = "program";
     private static final String ARGS = "args";
 
+    public CliTest() {
+    }
+
     @Test
     public void testInvalidOption() throws CliException {
         final Throwable ex = Assert.assertThrows(CliException.class,
