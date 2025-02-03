@@ -1,6 +1,6 @@
 # MARC/490
 set_array("SeriesStatement[]")
-do list(path: "490[01] ", "var": "$i")
+do list(path: "490??", "var": "$i")
   add_field("SeriesStatement[].$append.__dummy__", "")
   set_array("SeriesStatement[].$last.title[]")
   do list(path: "$i.a", "var": "$j")
