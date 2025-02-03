@@ -36,6 +36,9 @@ public class ElasticsearchIndexerTest {
     private ElasticsearchClient mClient;
     private ElasticsearchIndexer mIndexer;
 
+    public ElasticsearchIndexerTest() {
+    }
+
     @After
     public void cleanup() {
         if (mIndexer != null) {
@@ -522,8 +525,8 @@ public class ElasticsearchIndexerTest {
      * This allows to specify the JSON output in the test cases without having to wrap
      * each bit of text in escaped double quotes.
      */
-    private String fixQuotes(final String str) {
-        return str.replace('\'', '"');
+    private String fixQuotes(final String aStr) {
+        return aStr.replace('\'', '"');
     }
 
 }
