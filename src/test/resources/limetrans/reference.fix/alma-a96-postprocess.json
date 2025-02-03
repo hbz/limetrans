@@ -790,6 +790,7 @@
   "introx" : {
     "access" : [ "online" ],
     "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Anderson, Kym" ],
     "subject" : [ "Asia Pacific Economic Cooperation (Organization)", "World Trade Organization", "Commerce", "Business & Economics", "Local Commerce", "Papua New Guinea / Commerce", "Papua New Guinea / Commercial policy", "Oceania / Commerce", "Oceania / Commercial policy" ]
   },
   "IdentifierAlma" : {
@@ -816,6 +817,10 @@
     "variantISBN" : [ "978-0-9806238-2-6", "0980623820", "0-9806238-2-0" ]
   }, {
     "invalidISBN" : [ "9780980623895" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Anderson, Kym",
+    "personRole" : [ "[Author]" ]
   } ],
   "CorporateBody" : [ {
     "corporateBodyName" : "University of Adelaide Press,"

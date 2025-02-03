@@ -1,7 +1,7 @@
 # MARC/100
 set_array("@person")
 set_array("introx.person[]")
-do list(path: "100[013] ", "var": "$i")
+do list(path: "100??", "var": "$i")
   if exists("$i.[4e]")
     if any_match("$i.[4e]", "(?:[Aa]ut|[Cc]re).*")
       include("./marc/_person.fix")
