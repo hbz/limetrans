@@ -27,7 +27,7 @@ import java.nio.file.StandardCopyOption;
 import java.util.Objects;
 import java.util.function.Function;
 
-public final class LMDB extends AbstractReadOnlyMap<String, String> implements AutoCloseable, Closeable {
+public final class LMDB extends AbstractReadOnlyMap<String, String> implements Closeable {
 
     private static final int MAP_SIZE = 10_000; // * 1048576
     private static final int MAX_VALUE_SIZE = 1024 * MAP_SIZE;

@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public final class SisisSupplement extends AbstractReadOnlyMap<String, String> implements AutoCloseable, Closeable {
+public final class SisisSupplement extends AbstractReadOnlyMap<String, String> implements Closeable {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
