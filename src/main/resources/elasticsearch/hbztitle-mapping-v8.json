@@ -453,7 +453,8 @@
           "type": "text",
           "index": false,
           "copy_to": [
-            "bib.nameCorporate"
+            "bib.nameCorporate",
+            "cql.allIndexes"
           ]
         },
         "preferredName": {
@@ -574,7 +575,8 @@
           "type": "text",
           "index": false,
           "copy_to": [
-            "bib.nameCorporate"
+            "bib.nameCorporate",
+            "cql.allIndexes"
           ]
         },
         "preferredName": {
@@ -863,6 +865,7 @@
           "index": false,
           "copy_to": [
             "bib.nameCorporate",
+            "cql.allIndexes",
             "dc.subject"
           ]
         },
@@ -1201,7 +1204,8 @@
           "type": "text",
           "index": false,
           "copy_to": [
-            "bib.namePersonal"
+            "bib.namePersonal",
+            "cql.allIndexes"
           ]
         },
         "personBio": {
@@ -1251,7 +1255,8 @@
           "type": "text",
           "index": false,
           "copy_to": [
-            "bib.namePersonal"
+            "bib.namePersonal",
+            "cql.allIndexes"
           ]
         },
         "personIdentifier": {
@@ -1293,7 +1298,8 @@
           "type": "text",
           "index": false,
           "copy_to": [
-            "bib.namePersonal"
+            "bib.namePersonal",
+            "cql.allIndexes"
           ]
         },
         "personBio": {
@@ -1343,7 +1349,8 @@
           "type": "text",
           "index": false,
           "copy_to": [
-            "bib.namePersonal"
+            "bib.namePersonal",
+            "cql.allIndexes"
           ]
         },
         "personBio": {
@@ -1404,7 +1411,8 @@
           "type": "text",
           "index": false,
           "copy_to": [
-            "bib.namePersonal"
+            "bib.namePersonal",
+            "cql.allIndexes"
           ]
         },
         "personIdentifier": {
@@ -1516,6 +1524,7 @@
           "type": "text",
           "index": false,
           "copy_to": [
+            "cql.allIndexes",
             "dc.subject"
           ]
         },
@@ -2511,6 +2520,7 @@
           "type": "text",
           "index": false,
           "copy_to": [
+            "cql.allIndexes",
             "dc.subject"
           ]
         },
