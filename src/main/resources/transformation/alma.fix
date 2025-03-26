@@ -665,6 +665,7 @@ do list(path: "50[15]??", "var": "$i")
   call_macro("copy-all-items", source: "$i.r", target: "DescriptionOfContent[].$last.creator")
   call_macro("copy-all-items", source: "$i.t", target: "DescriptionOfContent[].$last.note")
 end
+uniq("DescriptionOfContent[]")
 
 # MARC/502
 set_array("DescriptionOfThesis[]")
