@@ -10,10 +10,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.BiConsumer;
+import java.util.function.Predicate;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class DropLocal implements FixFunction {
 
     private static final String LOCAL = "LOCAL";
+
+    private static final Matcher MATCHER = Pattern.compile("[A-Z]:[0-9]+[a-z]?").matcher("");
+
+    private static final Predicate<String> PREDICATE = s -> LOCAL.equals(s) || MATCHER.reset(s).matches();
 
     public DropLocal() {
     }
@@ -29,8 +36,8 @@ public class DropLocal implements FixFunction {
                     final Value memberField = h.get("M");
 
                     final boolean isLocal = localField != null && localField.<Boolean>extractType((n, c) -> n
-                            .ifArray(a -> c.accept(a.stream().anyMatch(v -> LOCAL.equals(v.asString()))))
-                            .ifString(s -> c.accept(LOCAL.equals(s)))
+                            .ifArray(a -> c.accept(a.stream().anyMatch(v -> PREDICATE.test(v.asString()))))
+                            .ifString(s -> c.accept(PREDICATE.test(s)))
                             .orElse(v -> c.accept(false)));
 
                     if (isLocal && memberField != null && !memberCode.equals(memberField.asString())) {
