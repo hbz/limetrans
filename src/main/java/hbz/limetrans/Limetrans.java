@@ -85,7 +85,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         DE_1156 ("6459", "49HBZ_FUK",     "Folkwang Universität der Künste"), // DE-1156 = Essen, DE-1156a = Bochum, DE-1156b = Duisburg, DE-1156c = Zollverein
         DE_1383 ("6479", "49HBZ_RHW",     "Hochschule Rhein-Waal"), // DE-1383 = Kleve, DE-1383a = Kamp-Lintfort
         DE_1393 ("6453", "49HBZ_RUW",     "Hochschule Ruhr West"), // DE-1393 = Mülheim, DE-1393-BOT = Bottrop
-        DE_1866 ("6481", "49HBZ_HGB",     "Hochschule für Gesundheit"),
+        DE_1866 ("6481", "49HBZ_HGB",     "Hochschule für Gesundheit"), // merged with DE-Bm40 (2025-04-04)
         DE_1972 ("6457", "49HBZ_RSH",     "Robert Schumann Hochschule Düsseldorf"),
         DE_A96  ("6444", "49HBZ_FHA",     "Hochschulbibliothek der FH Aachen"),
         DE_B23  ("8975", "49HBZ_DWD",     "Deutsche Meteorologische Bibliothek (DWD), Offenbach"),
