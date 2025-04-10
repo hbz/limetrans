@@ -1078,6 +1078,7 @@ do list(path: "880??", "var": "$i")
           call_macro("copy-first-item", source: "$i.b", target: "AlternateGraphicRepresentation[].$last.titleAddendum")
         else
           call_macro("copy-first-item", source: "$i.a", target: "AlternateGraphicRepresentation[].$last.titleStatement")
+          call_macro("copy-first-item", source: "$i.p", target: "AlternateGraphicRepresentation[].$last.subseriesStatement")
         end
       elsif any_equal("@linkage.tag", "246")
         call_macro("copy-first-item", source: "$i.a", target: "AlternateGraphicRepresentation[].$last.titleOther")
