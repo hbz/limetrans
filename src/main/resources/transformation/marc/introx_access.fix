@@ -4,3 +4,7 @@ if any_equal("@facet_format", "Online-Ressource")
 else
   add_field("introx.access[].$append", "local")
 end
+# MARC/506
+if exists("5060?")
+  add_field("introx.access[].$append", "open access")
+end
