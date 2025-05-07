@@ -22,6 +22,7 @@ import co.elastic.clients.elasticsearch.indices.get.Feature;
 import co.elastic.clients.elasticsearch.indices.get_alias.IndexAliases;
 import co.elastic.clients.elasticsearch.indices.update_aliases.Action;
 import co.elastic.clients.json.jackson.JacksonJsonpMapper;
+import co.elastic.clients.transport.BackoffPolicy;
 import co.elastic.clients.transport.Version;
 import co.elastic.clients.transport.rest_client.RestClientTransport;
 import co.elastic.clients.util.BinaryData;
@@ -286,6 +287,7 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
         mBulkIngester = BulkIngester.of(b -> b
                 .client(mClient)
                 .listener(new ElasticsearchBulkListener(this))
+                .backoffPolicy(BackoffPolicy.exponentialBackoff())
                 .maxOperations(aBulkActions)
                 .maxSize(mBulkSizeValue)
                 .maxConcurrentRequests(aBulkRequests)
