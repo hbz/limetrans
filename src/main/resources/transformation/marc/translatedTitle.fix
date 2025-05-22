@@ -1,7 +1,7 @@
 # MARC/242
 set_array("TranslatedTitle[]")
 do list(path: "242??", "var": "$i")
-  add_field("TranslatedTitle[].$append.__dummy__", "")
+  add_hash("TranslatedTitle[].$append")
   call_macro("remove-nonsort", source: "$i.a")
   copy_field("$i.a", "TranslatedTitle[].$last.title")
   copy_field("$i.y", "TranslatedTitle[].$last.languageSource")

@@ -1,7 +1,7 @@
 # MARC/110, MARC/111, MARC/710, MARC/711
 set_array("CorporateBody[]")
 do list(path: "[17]1[01][012] ", "var": "$i")
-  add_field("CorporateBody[].$append.__dummy__", "")
+  add_hash("CorporateBody[].$append")
   do list(path: "$i.a", "var": "$j")
     replace_all("$j", "[.]$", "")
     call_macro("remove-nonsort", source: "$j")

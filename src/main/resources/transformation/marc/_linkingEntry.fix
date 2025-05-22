@@ -1,6 +1,6 @@
 set_array("$[target][]")
 do list(path: "$[source][ 0]?", "var": "$i")
-  add_field("$[target][].$append.__dummy__", "")
+  add_hash("$[target][].$append")
   call_macro("copy-first-item", source: "$i.a", target: "$[target][].$last.mainEntryHeading")
   call_macro("copy-first-item", source: "$i.b", target: "$[target][].$last.edition")
   call_macro("copy-first-item", source: "$i.c", target: "$[target][].$last.qualifyingInformation")

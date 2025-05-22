@@ -2,7 +2,7 @@
 set_array("TypeHeading[]")
 do list(path: "655?7", "var": "$i")
   if any_equal("$i.2", "gnd-content")
-    add_field("TypeHeading[].$append.__dummy__", "")
+    add_hash("TypeHeading[].$append")
     call_macro("copy-first-item", source: "$i.a", target: "TypeHeading[].$last.term")
     call_macro("copy-all-items", source: "$i.v", target: "TypeHeading[].$last.form")
     call_macro("copy-all-items", source: "$i.x", target: "TypeHeading[].$last.general")

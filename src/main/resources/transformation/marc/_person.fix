@@ -1,4 +1,4 @@
-add_field("@person.$append.__dummy__", "")
+add_hash("@person.$append")
 set_array("@combined_label")
 do list(path: "$i.a", "var": "$j")
   replace_all("$j", "(?<!\\p{Upper})[.]$|[,]$", "")

@@ -6,9 +6,9 @@ do list(path: "773[ 0]?", "var": "$i")
       set_array("@facet_type")
     end
     add_field("@facet_type.$append", "Teil eines Werkes")
-    add_field("SortableVolumeDesignation[].$append.__dummy__", "")
+    add_hash("SortableVolumeDesignation[].$append")
     copy_field("$i.q", "SortableVolumeDesignation[].$last.volumeDesignation")
   end
-  add_field("RecordIdentifierSuper[].$append.__dummy__", "")
+  add_hash("RecordIdentifierSuper[].$append")
   call_macro("alma-mms-with-isil", source: "$i.w", target: "RecordIdentifierSuper[].$last.recordIdentifierSuper")
 end

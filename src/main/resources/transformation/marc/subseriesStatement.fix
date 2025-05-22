@@ -3,6 +3,6 @@ set_array("SubseriesStatement[]")
 do list(path: "245??.p", "var": "$i")
   replace_all("$i", "\\s?[.]?\\s?$", "")
   call_macro("remove-nonsort", source: "$i")
-  add_field("SubseriesStatement[].$append.__dummy__", "")
+  add_hash("SubseriesStatement[].$append")
   copy_field("$i", "SubseriesStatement[].$last.title")
 end

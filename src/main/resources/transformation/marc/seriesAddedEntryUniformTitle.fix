@@ -3,7 +3,7 @@ unless exists("SeriesAddedEntryUniformTitle[]")
   set_array("SeriesAddedEntryUniformTitle[]")
 end
 do list(path: "830??", "var": "$i")
-  add_field("SeriesAddedEntryUniformTitle[].$append.__dummy__", "")
+  add_hash("SeriesAddedEntryUniformTitle[].$append")
   call_macro("remove-nonsort", source: "$i.a")
   call_macro("copy-first-item", source: "$i.a", target: "SeriesAddedEntryUniformTitle[].$last.title")
   call_macro("copy-all-items", source: "$i.n", target: "SeriesAddedEntryUniformTitle[].$last.number")

@@ -2,7 +2,7 @@
 set_array("IdentifierDOI[]")
 do list(path: "0247?", "var": "$i")
   if any_equal("$i.2", "doi")
-    add_field("IdentifierDOI[].$append.__dummy__", "")
+    add_hash("IdentifierDOI[].$append")
     copy_field("$i.a", "IdentifierDOI[].$last.standardNumber")
   end
 end
