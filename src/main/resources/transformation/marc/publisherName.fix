@@ -1,6 +1,6 @@
 # MARC/260, MARC/264
 do list(path: "260??|264?[ 1]", "var": "$i")
-  add_field("PublisherName[].$append.__dummy__", "")
+  add_hash("PublisherName[].$append")
   set_array("PublisherName[].$last.place[]")
   do list(path: "$i.a", "var": "$j")
     replace_all("$j", "^[©]|\\s?[,.:;/=]?$", "")

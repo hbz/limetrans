@@ -1,7 +1,7 @@
 # MARC/490
 set_array("SeriesStatement[]")
 do list(path: "490??", "var": "$i")
-  add_field("SeriesStatement[].$append.__dummy__", "")
+  add_hash("SeriesStatement[].$append")
   set_array("SeriesStatement[].$last.title[]")
   do list(path: "$i.a", "var": "$j")
     copy_field("$j", "@490_a")
@@ -18,7 +18,7 @@ do list(path: "490??", "var": "$i")
     unless exists("SeriesAddedEntryUniformTitle[]")
       set_array("SeriesAddedEntryUniformTitle[]")
     end
-    add_field("SeriesAddedEntryUniformTitle[].$append.__dummy__", "")
+    add_hash("SeriesAddedEntryUniformTitle[].$append")
     set_array("SeriesAddedEntryUniformTitle[].$last.title[]")
     do list(path: "$i.a", "var": "$j")
       call_macro("remove-nonsort", source: "$j")

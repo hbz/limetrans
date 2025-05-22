@@ -1,6 +1,6 @@
 # MARC/024
 set_array("IdentifierISMN[]")
 do list(path: "0242?", "var": "$i")
-  add_field("IdentifierISMN[].$append.__dummy__", "")
+  add_hash("IdentifierISMN[].$append")
   copy_field("$i.a", "IdentifierISMN[].$last.identifierISMN")
 end

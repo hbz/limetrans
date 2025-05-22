@@ -1,7 +1,7 @@
 # MARC/210
 set_array("AbbreviatedTitle[]")
 do list(path: "210??", "var": "$i")
-  add_field("AbbreviatedTitle[].$append.__dummy__", "")
+  add_hash("AbbreviatedTitle[].$append")
   copy_field("$i.a", "AbbreviatedTitle[].$last.title")
   copy_field("$i.b", "AbbreviatedTitle[].$last.qualifier")
 end

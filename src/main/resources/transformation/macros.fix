@@ -34,7 +34,7 @@ do put_macro("lobid-gnd")
 end
 
 do put_macro("online-access")
-  add_field("OnlineAccess[].$append.__dummy__", "")
+  add_hash("OnlineAccess[].$append")
   call_macro("copy-first-item", source: "$i.u", target: "OnlineAccess[].$last.uri")
   call_macro("copy-first-item", source: "$i.x", target: "OnlineAccess[].$last.nonpublicnote")
   call_macro("copy-first-item", source: "$i.z", target: "OnlineAccess[].$last.publicnote")
@@ -208,7 +208,7 @@ end
 
 do put_macro("title-other")
   do list(path: "246?$[ind2]", "var": "$i")
-    add_field("TitleOther[].$append.__dummy__", "")
+    add_hash("TitleOther[].$append")
     call_macro("copy-first-item", source: "$i.a", target: "$i.@title")
     call_macro("remove-nonsort", source: "$i.@title")
     copy_field("$i.@title", "TitleOther[].$last.title")
