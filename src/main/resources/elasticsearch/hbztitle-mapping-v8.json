@@ -98,6 +98,9 @@
         "carrier": {
           "type": "keyword"
         },
+        "dateNew": {
+          "type": "date"
+        },
         "localCallNumber": {
           "type": "text",
           "analyzer": "keyword_normalized",
