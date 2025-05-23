@@ -324,6 +324,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
         loadMap("alma-alias", "alias");
         loadMap("alma-item-callnumber", "callnumber");
+        loadMap("alma-new-timestamp", "new");
 
         // POR$$A=memberCode
         final LimetransFilter availableForFilter = LimetransFilter.all()

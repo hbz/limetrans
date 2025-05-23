@@ -442,6 +442,9 @@ do list(path: "@sisis_supplement-0010", "var": "$i")
 end
 remove_field("@sisis_supplement-0010")
 
+copy_field("001", "introx.dateNew")
+lookup("introx.dateNew", "alma-new-timestamp", delete: "true")
+
 # MARC/POC
 set_array("DateFirst.date[]")
 do list(path: "POC  ", "var": "$i")
