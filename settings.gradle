@@ -98,6 +98,7 @@ gradle.rootProject {
 
             it[systemPropertyPrefix + 'projectDir'] = rootProject.projectDir
             it[elasticsearchVersionProperty] = elasticsearchVersion
+            it['jdk.xml.maxGeneralEntitySizeLimit'] = 0
 
             System.properties.each { k, v ->
                 if (k.matches(propertiesPattern)) it[k] = v
