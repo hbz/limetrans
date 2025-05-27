@@ -1,0 +1,17 @@
+hbz.limetrans.function.DropLocal()
+
+unless any_equal("MBD  .M", "$[member]")
+  do list(path: "POR  ", "var": "$i")
+    if any_equal("$i.A", "$[member]")
+      add_field("@available_for", "true")
+    end
+  end
+
+  unless exists("@available_for")
+    if str_equal("$[mode]", "baseline")
+      reject()
+    else
+      replace_all("leader", "^(.{5}).", "$1d")
+    end
+  end
+end
