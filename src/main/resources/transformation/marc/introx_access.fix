@@ -8,3 +8,10 @@ end
 if exists("5060?")
   add_field("introx.access[].$append", "open access")
 end
+# MARC/856
+do list(path: "856??", "var": "$i")
+  if any_equal("$i.7", "0")
+    add_field("introx.access[].$append", "open access")
+  end
+end
+uniq("introx.access[]")
