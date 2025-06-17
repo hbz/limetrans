@@ -43236,3 +43236,82 @@
     "subjectTopicName" : "Language and culture"
   } ]
 }
+{
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Film, Dia, Video", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2025" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource", "Film, Dia, Video" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99375630472306441",
+    "identifierPID" : "53919889430006441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99375630472306441",
+    "identifierForTheRecord" : "(DE-605)HT031106932"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierDOI" : [ {
+    "standardNumber" : "10.5446/70046"
+  } ],
+  "Person" : [ {
+    "personName" : "Christine Buchholz"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "DAViD: 3 Grundlagen der Datenanalyse - 2 Grundbegriffe"
+  } ],
+  "PublisherName" : [ {
+    "name" : [ "Hochschule Bonn-Rhein-Sieg (H-BRS)", "ORCA.nrw" ],
+    "chronology" : [ "2025" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2025" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource"
+  },
+  "OnlineAccess" : [ {
+    "uri" : "https://oersi.org/resources/aHR0cHM6Ly9kb2kub3JnLzEwLjU0NDYvNzAwNDY=",
+    "nonpublicnote" : "Aggregator",
+    "publicnote" : "kostenfrei"
+  }, {
+    "uri" : "https://doi.org/10.5446/70046",
+    "publicnote" : "kostenfrei"
+  }, {
+    "uri" : "https://av.tib.eu/media/70046",
+    "publicnote" : "kostenfrei"
+  }, {
+    "publicnote" : "OERSI (ZDB-OERSI)",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53919889430006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99375630472306441"
+  }, {
+    "uid" : "(DE-605)HT031106932"
+  } ],
+  "TypeMedia" : "Film, Dia, Video",
+  "RSWK" : [ {
+    "subjectTopicName" : "Informations- und Bibliothekswissenschaften",
+    "subjectIdentifier" : [ "https://w3id.org/kim/hochschulfaechersystematik/n06" ]
+  }, {
+    "subjectTopicName" : "Mathematik",
+    "subjectIdentifier" : [ "https://w3id.org/kim/hochschulfaechersystematik/n37" ]
+  }, {
+    "subjectTopicName" : "Mathematik, Naturwissenschaften",
+    "subjectIdentifier" : [ "https://w3id.org/kim/hochschulfaechersystematik/n4" ]
+  }, {
+    "subjectTopicName" : "Geisteswissenschaften",
+    "subjectIdentifier" : [ "https://w3id.org/kim/hochschulfaechersystematik/n1" ]
+  } ]
+}
