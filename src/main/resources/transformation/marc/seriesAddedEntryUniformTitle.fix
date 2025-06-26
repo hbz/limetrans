@@ -1,6 +1,6 @@
 # MARC/830
 unless exists("SeriesAddedEntryUniformTitle[]")
-  set_array("SeriesAddedEntryUniformTitle[]")
+  add_array("SeriesAddedEntryUniformTitle[]")
 end
 do list(path: "830??", "var": "$i")
   add_hash("SeriesAddedEntryUniformTitle[].$append")

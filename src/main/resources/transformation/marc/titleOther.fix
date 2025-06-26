@@ -1,5 +1,5 @@
 # MARC/246
-set_array("TitleOther[]")
+add_array("TitleOther[]")
 call_macro("title-other", ind2: " ", prefix: "")
 call_macro("title-other", ind2: "0", prefix: "Teil des Titels")
 call_macro("title-other", ind2: "1", prefix: "Paralleltitel")

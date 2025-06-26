@@ -1,5 +1,5 @@
 # MARC/245
-set_array("TitleStatement[]")
+add_array("TitleStatement[]")
 do list(path: "245??.a", "var": "$i")
   add_hash("TitleStatement[].$append")
   replace_all("$i", "^[©]|\\s?[,.:;/=]?$", "")

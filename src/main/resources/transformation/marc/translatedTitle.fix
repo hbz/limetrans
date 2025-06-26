@@ -1,5 +1,5 @@
 # MARC/242
-set_array("TranslatedTitle[]")
+add_array("TranslatedTitle[]")
 do list(path: "242??", "var": "$i")
   add_hash("TranslatedTitle[].$append")
   call_macro("remove-nonsort", source: "$i.a")

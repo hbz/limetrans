@@ -1,4 +1,4 @@
-set_array("introx.carrier[]")
+add_array("introx.carrier[]")
 if exists("@facet_format")
   do list(path: "@facet_format", "var": "$i")
     unless any_equal("$i", "Online-Ressource")

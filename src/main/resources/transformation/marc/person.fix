@@ -1,6 +1,6 @@
 # MARC/100
-set_array("@person")
-set_array("introx.person[]")
+add_array("@person")
+add_array("introx.person[]")
 do list(path: "100??", "var": "$i")
   if exists("$i.[4e]")
     if any_match("$i.[4e]", "(?:[Aa]ut|[Cc]re).*")

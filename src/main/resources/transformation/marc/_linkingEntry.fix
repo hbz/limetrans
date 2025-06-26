@@ -1,4 +1,4 @@
-set_array("$[target][]")
+add_array("$[target][]")
 do list(path: "$[source][ 0]?", "var": "$i")
   add_hash("$[target][].$append")
   call_macro("copy-first-item", source: "$i.a", target: "$[target][].$last.mainEntryHeading")

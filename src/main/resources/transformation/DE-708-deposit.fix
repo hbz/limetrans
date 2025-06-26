@@ -22,7 +22,7 @@ include("./marc/_facet_format.fix")
 include("./marc/contentType.fix")
 include("./marc/carrierType.fix")
 
-set_array("@facet_type")
+add_array("@facet_type")
 do list(path: "655 4.a", "var": "$i")
   lookup("$i", "extended-type-content", delete: "true")
   copy_field("$i", "@facet_type.$append")
@@ -68,8 +68,8 @@ include("./marc/edition.fix")
 do list(path: "260??", "var": "$i")
   remove_field("$i.c")
 end
-set_array("PublisherName[]")
-set_array("PublicationPlace[]")
+add_array("PublisherName[]")
+add_array("PublicationPlace[]")
 include("./marc/publisherName.fix")
 include("./marc/publicationPlace.fix")
 
@@ -81,7 +81,7 @@ include("./marc/personContributor.fix")
 
 include("./marc/linkingEntries.fix")
 do list(path: "HostItemEntry[]|ConstituentUnitEntry[]|PrecedingEntry[]|SucceedingEntry[]", "var": "$i")
-  set_array("$i.verifiedIdentifierForLinkingEntry[]")
+  add_array("$i.verifiedIdentifierForLinkingEntry[]")
   do list(path: "$i.controlNumber[]", "var": "$j")
     paste("$i.verifiedIdentifierForLinkingEntry[].$append", "~(", "@isil", "~)", "$j", join_char: "")
   end
@@ -96,7 +96,7 @@ do list(path: "856??", "var": "$i")
 end
 include("./marc/onlineAccess.fix")
 
-set_array("xbib[]")
+add_array("xbib[]")
 copy_field("@id", "xbib[].$append.uid")
 uniq("xbib[]")
 

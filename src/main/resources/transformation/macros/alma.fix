@@ -27,7 +27,7 @@ do put_macro("alma-mms-to-isil")
 end
 
 do put_macro("alma-mms-with-isil")
-  set_array("$[target][]")
+  add_array("$[target][]")
   do list(path: "$[source]", "var": "$alma-mms-with-isil")
     if any_match("$alma-mms-with-isil", "99\\d{10,}")
       call_macro("alma-mms-to-isil", source: "$alma-mms-with-isil", target: "@alma-mms-with-isil")

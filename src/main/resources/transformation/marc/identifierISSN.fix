@@ -1,5 +1,5 @@
 # MARC/022
-set_array("IdentifierISSN[]")
+add_array("IdentifierISSN[]")
 do list(path: "022? ", "var": "$i")
   do list(path: "$i.a", "var": "$j")
     add_hash("IdentifierISSN[].$append")

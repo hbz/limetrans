@@ -1,7 +1,7 @@
 # MARC/250
-set_array("Edition.edition[]")
+add_array("Edition.edition[]")
 unless exists("introx.music[]")
-  set_array("introx.music[]")
+  add_array("introx.music[]")
 end
 do list(path: "250  .a", "var": "$i")
   replace_all("$i", "\\s?[=/]$", "")

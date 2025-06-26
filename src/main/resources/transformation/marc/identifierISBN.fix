@@ -1,9 +1,9 @@
 # MARC/020
-set_array("IdentifierISBN[]")
+add_array("IdentifierISBN[]")
 do list(path: "020??", "var": "$i")
   add_hash("IdentifierISBN[].$append")
   if exists("$i.a")
-    set_array("IdentifierISBN[].$last.identifierISBN[]")
+    add_array("IdentifierISBN[].$last.identifierISBN[]")
     copy_field("$i.a", "IdentifierISBN[].$last.identifierISBN[].$append")
     copy_field("$i.c", "IdentifierISBN[].$last.identifierISBN[].$append")
     do list(path: "$i.q", "var": "$j")
@@ -13,7 +13,7 @@ do list(path: "020??", "var": "$i")
     call_macro("copy-first-item", source: "$i.a", target: "$i.@isbn")
     hbz.limetrans.function.StandardNumber("ISBN", "IdentifierISBN[].$last", source: "$i.@isbn")
   end
-  set_array("IdentifierISBN[].$last.invalidISBN[]")
+  add_array("IdentifierISBN[].$last.invalidISBN[]")
   do list(path: "$i.z", "var": "$j")
     copy_field("$j", "IdentifierISBN[].$last.invalidISBN[].$append")
   end

@@ -39,7 +39,7 @@ include("./marc/carrierType.fix")
 include("./marc/_facet_type-1.fix")
 
 # MARC/348
-set_array("introx.music[]")
+add_array("introx.music[]")
 do list(path: "348??", "var": "$i")
   if any_equal("$i.2", "gnd-music")
     do list(path: "$i.a", "var": "$j")
@@ -54,7 +54,7 @@ end
 include("./marc/typeHeading.fix")
 
 # MARC/310
-set_array("CurrentPublicationFrequency[]")
+add_array("CurrentPublicationFrequency[]")
 do list(path: "310??", "var": "$i")
   add_hash("CurrentPublicationFrequency[].$append")
   copy_field("$i.a", "CurrentPublicationFrequency[].$last.frequency")
@@ -63,7 +63,7 @@ do list(path: "310??", "var": "$i")
 end
 
 # MARC/321
-set_array("FormerPublicationFrequency[]")
+add_array("FormerPublicationFrequency[]")
 do list(path: "321??", "var": "$i")
   add_hash("FormerPublicationFrequency[].$append")
   copy_field("$i.a", "FormerPublicationFrequency[].$last.frequency")
@@ -72,11 +72,11 @@ do list(path: "321??", "var": "$i")
 end
 
 # MARC/533
-set_array("PublicationPlaceOfSecondaryEdition[]")
-set_array("PublisherNameOfSecondaryEdition[]")
-set_array("ReproductionNote[]")
-set_array("SecondaryEditionPublicationDate[]")
-set_array("SecondaryEditionTitleSuper[]")
+add_array("PublicationPlaceOfSecondaryEdition[]")
+add_array("PublisherNameOfSecondaryEdition[]")
+add_array("ReproductionNote[]")
+add_array("SecondaryEditionPublicationDate[]")
+add_array("SecondaryEditionTitleSuper[]")
 do list(path: "533??", "var": "$i")
   add_hash("PublicationPlaceOfSecondaryEdition[].$append")
   call_macro("copy-all-items", source: "$i.b", target: "PublicationPlaceOfSecondaryEdition[].$last.name")
@@ -98,8 +98,8 @@ do list(path: "533??", "var": "$i")
 end
 
 # MARC/340
-set_array("TypeMediaSpecial[]")
-set_array("TypeMediaSpecialPreservation[]")
+add_array("TypeMediaSpecial[]")
+add_array("TypeMediaSpecialPreservation[]")
 do list(path: "340??", "var": "$i")
   do list(path: "$i.a", "var": "$j")
     lookup("$j", "type-media-special", delete: "true")
@@ -148,18 +148,18 @@ uniq("TypeMonograph[]")
 include("./marc/_facet_type-2.fix")
 
 # MARC/008, MARC/041
-set_array("@language_source")
+add_array("@language_source")
 call_macro("substring", source: "008", target: "@language_source.$append", start: "35", length: "3")
 do list(path: "041[ 01] .[adj]", "var": "$i")
   copy_field("$i", "@language_source.$append")
 end
 uniq("@language_source")
-set_array("@language_long")
+add_array("@language_long")
 copy_field("@language_source", "@language_long.$append")
 lookup("@language_long.*", "ISO639-2-to-GND", delete: "true")
 
 # MARC/044
-set_array("Country[]")
+add_array("Country[]")
 do list(path: "044??.c", "var": "$i")
   add_hash("Country[].$append")
   do list(path: "$i", "var": "$j")
@@ -183,11 +183,11 @@ do list(path: "981  .a", "var": "$i") # SISIS CATKey
 end
 
 # MARC/035
-set_array("IdentifierDNB[]")
-set_array("IdentifierGBV[]")
-set_array("IdentifierHBZ[]")
-set_array("IdentifierOCLC[]")
-set_array("@hbzids")
+add_array("IdentifierDNB[]")
+add_array("IdentifierGBV[]")
+add_array("IdentifierHBZ[]")
+add_array("IdentifierOCLC[]")
+add_array("@hbzids")
 do list(path: "035  .a", "var": "$i")
   if any_match("$i", "\\($[catalogid]\\).*")
     if exists("@hbzid")
@@ -270,7 +270,7 @@ copy_field("@isil", "collection")
 include("./marc/abbreviatedTitle.fix")
 
 # MARC/130
-set_array("TitlePreferred[]")
+add_array("TitlePreferred[]")
 do list(path: "130??", "var": "$i")
   add_hash("TitlePreferred[].$append")
   call_macro("remove-nonsort", source: "$i.a")
@@ -286,7 +286,7 @@ do list(path: "240??.a", "var": "$i")
 end
 
 # MARC/100, MARC/240, MARC/700
-set_array("TitleWork[]")
+add_array("TitleWork[]")
 do list(path: "100??", "var": "$i")
   if any_match("$i.4", "cmp|cre")
     copy_field("$i.a", "$i.@title")
@@ -298,13 +298,13 @@ do list(path: "100??", "var": "$i")
       if exists("$j.p")
         paste("$i.@title", "$i.@title", "~ <", "$j.p", "~>", join_char: "")
       end
-      set_array("$j.@medium")
+      add_array("$j.@medium")
       copy_field("$j.m", "$j.@medium.$append")
       join_field("$j.@medium", ", ")
       unless is_empty("$j.@medium")
         paste("$i.@title", "$i.@title", "~ für ", "$j.@medium", join_char: "")
       end
-      set_array("$j.@number")
+      add_array("$j.@number")
       copy_field("$j.n", "$j.@number.$append")
       join_field("$j.@number", ", ")
       unless is_empty("$j.@number")
@@ -316,7 +316,7 @@ do list(path: "100??", "var": "$i")
       if exists("$j.f")
         paste("$i.@title", "$i.@title", "~, ", "$j.f", join_char: "")
       end
-      set_array("$j.@suffix")
+      add_array("$j.@suffix")
       copy_field("$j.k", "$j.@suffix.$append")
       copy_field("$j.o", "$j.@suffix.$append")
       join_field("$j.@suffix", ", ")
@@ -337,13 +337,13 @@ do list(path: "700??", "var": "$i")
     if exists("$i.p")
       paste("$i.@title", "$i.@title", "~ <", "$i.p", "~>", join_char: "")
     end
-    set_array("$i.@medium")
+    add_array("$i.@medium")
     copy_field("$i.m", "$i.@medium.$append")
     join_field("$i.@medium", ", ")
     unless is_empty("$i.@medium")
       paste("$i.@title", "$i.@title", "~ für ", "$i.@medium", join_char: "")
     end
-    set_array("$i.@number")
+    add_array("$i.@number")
     copy_field("$i.n", "$i.@number.$append")
     join_field("$i.@number", ", ")
     unless is_empty("$i.@number")
@@ -355,7 +355,7 @@ do list(path: "700??", "var": "$i")
     if exists("$i.f")
       paste("$i.@title", "$i.@title", "~, ", "$i.f", join_char: "")
     end
-    set_array("$i.@suffix")
+    add_array("$i.@suffix")
     copy_field("$i.k", "$i.@suffix.$append")
     copy_field("$i.o", "$i.@suffix.$append")
     join_field("$i.@suffix", ", ")
@@ -373,7 +373,7 @@ include("./marc/titleAddendum.fix")
 do list(path: "245??.n", "var": "$i")
   unless exists("VolumeDesignation.volumeDesignation")
     unless exists("@facet_type")
-      set_array("@facet_type")
+      add_array("@facet_type")
     end
     add_field("@facet_type.$append", "Teil eines Werkes")
     replace_all("$i", "\\s?[,./:=]?\\s?$", "")
@@ -383,7 +383,7 @@ end
 
 # MARC/773
 include("./marc/recordIdentifierSuper.fix")
-set_array("@host_callnumber")
+add_array("@host_callnumber")
 do list(path: "7731?.w", "var": "$i")
   do list(path: "$i", "var": "$j")
     lookup("$j", "alma-alias")
@@ -407,7 +407,7 @@ include("./marc/introx_branch.fix")
 include("./marc/introx_carrier.fix")
 
 # MARC/983
-set_array("@SubjectGHBLocal")
+add_array("@SubjectGHBLocal")
 do list(path: "983  ", "var": "$i")
   if hbz.limetrans.function.MemberLocal("$i")
     copy_field("$i.[ab]", "@SubjectGHBLocal.$append")
@@ -435,7 +435,7 @@ copy_field("@id", "RecordIdentifier.identifierForTheRecord")
 
 copy_field("@sisis_supplement", "@sisis_supplement-0010")
 lookup("@sisis_supplement-0010", "sisis-supplement-0010", delete: "true")
-set_array("RecordIdentifier.verifiedSuperIdentifier[]")
+add_array("RecordIdentifier.verifiedSuperIdentifier[]")
 do list(path: "@sisis_supplement-0010", "var": "$i")
   prepend("$i", "(DE-605)")
   copy_field("$i", "RecordIdentifier.verifiedSuperIdentifier[].$append")
@@ -446,7 +446,7 @@ copy_field("001", "introx.dateNew")
 lookup("introx.dateNew", "alma-new-timestamp", delete: "true")
 
 # MARC/POC
-set_array("DateFirst.date[]")
+add_array("DateFirst.date[]")
 do list(path: "POC  ", "var": "$i")
   if any_match("$i.a", ".*$[institution-code]")
     copy_field("$i.b", "DateFirst.date[].$append")
@@ -460,7 +460,7 @@ end
 uniq("DateFirst.date[]")
 
 # MARC/POC
-set_array("DateLast.date[]")
+add_array("DateLast.date[]")
 do list(path: "POC  ", "var": "$i")
   if any_match("$i.a", ".*$[institution-code]")
     copy_field("$i.c", "DateLast.date[].$append")
@@ -473,7 +473,7 @@ if any_match("@date2", "\\d+")
 end
 uniq("DateLast.date[]")
 
-set_array("Language[]")
+add_array("Language[]")
 do list(path: "@language_source", "var": "$i")
   add_hash("Language[].$append")
   copy_field("$i", "@language")
@@ -483,8 +483,8 @@ do list(path: "@language_source", "var": "$i")
 end
 
 # MARC/016
-set_array("IdentifierZDB[]")
-set_array("@zdbids")
+add_array("IdentifierZDB[]")
+add_array("@zdbids")
 do list(path: "0167?", "var": "$i")
   if any_equal("$i.2", "DE-600")
     add_hash("IdentifierZDB[].$append")
@@ -508,14 +508,14 @@ include("./marc/identifierISMN.fix")
 include("./marc/identifierDOI.fix")
 
 # MARC/028
-set_array("IdentifierSheetMusic[]")
+add_array("IdentifierSheetMusic[]")
 do list(path: "028[35]2", "var": "$i")
   add_hash("IdentifierSheetMusic[].$append")
   copy_field("$i.a", "IdentifierSheetMusic[].$last.standardNumber")
 end
 
 # MARC/029
-set_array("IdentifierSerial[]")
+add_array("IdentifierSerial[]")
 do list(path: "029[ab]?", "var": "$i")
   do list(path: "$i.a", "var": "$j")
     add_hash("IdentifierSerial[].$append")
@@ -551,9 +551,9 @@ do list(path: "111[012] .c", "var": "$i")
     copy_field("$i", "Conference.conferencePlace")
   end
 end
-set_array("Conference.conferenceIdentifier[]")
-set_array("Conference.identifierGND[]")
-set_array("Conference.variantName[]")
+add_array("Conference.conferenceIdentifier[]")
+add_array("Conference.identifierGND[]")
+add_array("Conference.variantName[]")
 do list(path: "111[012] .0", "var": "$i")
   if any_match("$i", "\\(DE-588\\).*")
     copy_field("$i", "Conference.conferenceIdentifier[].$append")
@@ -562,7 +562,7 @@ do list(path: "111[012] .0", "var": "$i")
     call_macro("lobid-gnd", source: "$i", target: "Conference")
   end
 end
-set_array("Conference.conferenceUnit")
+add_array("Conference.conferenceUnit")
 do list(path: "111[012] .e", "var": "$i")
   replace_all("$i", "[,.]$", "")
   copy_field("$i", "Conference.conferenceUnit.$append")
@@ -577,13 +577,13 @@ include("./marc/titleStatement.fix")
 include("./marc/edition.fix")
 
 # MARC/260, MARC/264
-set_array("PublisherName[]")
-set_array("PublicationPlace[]")
+add_array("PublisherName[]")
+add_array("PublicationPlace[]")
 include("./marc/publisherName.fix")
 include("./marc/publicationPlace.fix")
 
 # MARC/751
-set_array("PublicationPlaceOther[]")
+add_array("PublicationPlaceOther[]")
 do list(path: "751??", "var": "$i")
   add_hash("PublicationPlaceOther[].$append")
   copy_field("$i.a", "PublicationPlaceOther[].$last.publicationPlace")
@@ -591,7 +591,7 @@ end
 uniq("PublicationPlaceOther[]")
 
 # MARC/263
-set_array("DescriptionOfEstimatedPublicationDate[]")
+add_array("DescriptionOfEstimatedPublicationDate[]")
 do list(path: "263??", "var": "$i")
   add_hash("DescriptionOfEstimatedPublicationDate[].$append")
   copy_field("$i.a", "DescriptionOfEstimatedPublicationDate[].$last.description")
@@ -601,9 +601,9 @@ end
 include("./marc/extent.fix")
 
 # MARC/344
-set_array("FileCharacteristics[]")
-set_array("SoundCharacteristics[]")
-set_array("VideoCharacteristics[]")
+add_array("FileCharacteristics[]")
+add_array("SoundCharacteristics[]")
+add_array("VideoCharacteristics[]")
 do list(path: "344??", "var": "$i")
   add_hash("SoundCharacteristics[].$append")
   call_macro("copy-all-items", source: "$i.a", target: "SoundCharacteristics[].$last.typeOfRecording")
@@ -629,9 +629,9 @@ copy_field("3621 .a", "ChronologyAndEnumeration.unformattedValue[]")
 include("./marc/seriesStatement.fix")
 
 # MARC/985, MARC/989
-set_array("@description")
-set_array("DescriptionOfProvenance[]")
-set_array("introx.provenance[]")
+add_array("@description")
+add_array("DescriptionOfProvenance[]")
+add_array("introx.provenance[]")
 do list(path: "985  ", "var": "$i")
   if hbz.limetrans.function.MemberLocal("$i")
     copy_field("$i.a", "DescriptionOfProvenance[].$append.description")
@@ -661,7 +661,7 @@ end
 uniq("Description[]")
 
 # MARC/501, MARC/505
-set_array("DescriptionOfContent[]")
+add_array("DescriptionOfContent[]")
 do list(path: "50[15]??", "var": "$i")
   add_hash("DescriptionOfContent[].$append")
   call_macro("copy-first-item", source: "$i.a", target: "DescriptionOfContent[].$last.description")
@@ -671,7 +671,7 @@ end
 uniq("DescriptionOfContent[]")
 
 # MARC/502
-set_array("DescriptionOfThesis[]")
+add_array("DescriptionOfThesis[]")
 do list(path: "502??", "var": "$i")
   add_hash("DescriptionOfThesis[].$append")
   call_macro("copy-first-item", source: "$i.a", target: "DescriptionOfThesis[].$last.description")
@@ -682,14 +682,14 @@ do list(path: "502??", "var": "$i")
 end
 
 # MARC/515
-set_array("DescriptionOfIssuance[]")
+add_array("DescriptionOfIssuance[]")
 do list(path: "515??", "var": "$i")
   add_hash("DescriptionOfIssuance[].$append")
   call_macro("copy-first-item", source: "$i.a", target: "DescriptionOfIssuance[].$last.description")
 end
 
 # MARC/546
-set_array("DescriptionOfExpression[]")
+add_array("DescriptionOfExpression[]")
 do list(path: "546??", "var": "$i")
   add_hash("DescriptionOfExpression[].$append")
   call_macro("copy-first-item", source: "$i.a", target: "DescriptionOfExpression[].$last.description")
@@ -700,9 +700,9 @@ end
 include("./marc/abstract.fix")
 
 # MARC/506, MARC 540, MARC 542
-set_array("InformationRelatingToCopyrightStatus[]")
-set_array("RestrictionsOnAccessNote[]")
-set_array("TermsGoverningUseAndReproductionNote[]")
+add_array("InformationRelatingToCopyrightStatus[]")
+add_array("RestrictionsOnAccessNote[]")
+add_array("TermsGoverningUseAndReproductionNote[]")
 do list(path: "506??", "var": "$i")
   add_hash("RestrictionsOnAccessNote[].$append")
   call_macro("copy-first-item", source: "$i.2", target: "RestrictionsOnAccessNote[].$last.source")
@@ -736,7 +736,7 @@ do list(path: "542[ 1]?", "var": "$i")
 end
 
 # MARC/H66
-set_array("HoldingsStatement[]")
+add_array("HoldingsStatement[]")
 do list(path: "H66??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
     if in("$i.8", "HoldingsStatement[].*.@id")
@@ -752,7 +752,7 @@ do list(path: "H66??", "var": "$i")
       copy_field("$i.8", "HoldingsStatement[].$last.@id")
       copy_field("$i.9", "HoldingsStatement[].$last.introductoryPhrase")
       copy_field("$i.a", "HoldingsStatement[].$last.holdingsStatement")
-      set_array("HoldingsStatement[].$last.note[]")
+      add_array("HoldingsStatement[].$last.note[]")
       copy_field("$i.z", "HoldingsStatement[].$last.note[].$append")
       do list(path: "H52??", "var": "$j")
         if in("$i.8", "$j.8")
@@ -779,18 +779,18 @@ end
 include("./marc/personContributor.fix")
 
 # MARC/588
-set_array("SourceOfDescriptionNote[]")
+add_array("SourceOfDescriptionNote[]")
 do list(path: "588??", "var": "$i")
   add_hash("SourceOfDescriptionNote[].$append")
   call_macro("copy-first-item", source: "$i.a", target: "SourceOfDescriptionNote[].$last.note")
 end
 
 # MARC/964
-set_array("IdentifierISBNParallel[]")
+add_array("IdentifierISBNParallel[]")
 do list(path: "9640s", "var": "$i")
   if any_equal("$i.V", "086a")
     add_hash("IdentifierISBNParallel[].$append")
-    set_array("IdentifierISBNParallel[].$last.identifierISBN[]")
+    add_array("IdentifierISBNParallel[].$last.identifierISBN[]")
     copy_field("$i.[abcdehnpqs]", "IdentifierISBNParallel[].$last.identifierISBN[].$append")
     hbz.limetrans.function.StandardNumber("ISBN", "IdentifierISBNParallel[].$last", source: "IdentifierISBNParallel[].$last.identifierISBN[].1")
   end
@@ -819,7 +819,7 @@ do list(path: "H56??", "var": "$i")
   end
 end
 # MARC/POR
-set_array("IdentifierAlma.identifierPID[]")
+add_array("IdentifierAlma.identifierPID[]")
 do list(path: "POR  ", "var": "$i")
   if any_equal("$i.[MA]", "$[member]")
     if none_equal("$i.b", "Not Available")
@@ -832,7 +832,7 @@ do list(path: "POR  ", "var": "$i")
       copy_field("$i.p", "OnlineAccess[].$last.collectionIdentifier")
       copy_field("$i.q", "@publicnote")
       call_macro("remove-nonsort", source: "@publicnote")
-      set_array("@info")
+      add_array("@info")
       copy_field("$i.n", "@info.$append")
       copy_field("$i.q", "@collection")
       lookup("@collection", "alma-collection-to-info-$[isil]", delete: "true")
@@ -881,7 +881,7 @@ end
 hbz.limetrans.function.Dedup("OnlineAccess[].*.uri")
 
 # MARC/962
-set_array("ClassifierDigitization[]")
+add_array("ClassifierDigitization[]")
 do list(path: "962??", "var": "$i")
   add_hash("ClassifierDigitization[].$append")
   call_macro("copy-all-items", source: "$i.e", target: "ClassifierDigitization[].$last.classifier")
@@ -891,7 +891,7 @@ do list(path: "962??", "var": "$i")
 end
 
 # MARC/980
-set_array("ClassifierLocal.classifier[]")
+add_array("ClassifierLocal.classifier[]")
 do list(path: "9801 ", "var": "$i")
   if hbz.limetrans.function.MemberLocal("$i")
     do list(path: "$i.a", "var": "$j")
@@ -899,7 +899,7 @@ do list(path: "9801 ", "var": "$i")
     end
   end
 end
-set_array("ClassifierLocal.collection[]")
+add_array("ClassifierLocal.collection[]")
 do list(path: "980  ", "var": "$i")
   if hbz.limetrans.function.MemberLocal("$i")
     do list(path: "$i.s", "var": "$j")
@@ -909,7 +909,7 @@ do list(path: "980  ", "var": "$i")
 end
 
 # MARC/982
-set_array("@subjectHeadings")
+add_array("@subjectHeadings")
 do list(path: "982  ", "var": "$i")
   if hbz.limetrans.function.MemberLocal("$i")
     copy_field("$i.b", "@subjectHeadings.$append")
@@ -926,8 +926,8 @@ do list(path: "68[89]??", "var": "$i")
   end
 end
 uniq("@subjectHeadings")
-set_array("SubjectHeadings[]")
-set_array("introx.subject[]")
+add_array("SubjectHeadings[]")
+add_array("introx.subject[]")
 do list(path: "@subjectHeadings", "var": "$i")
   add_hash("SubjectHeadings[].$append")
   call_macro("remove-nonsort", source: "$i")
@@ -935,14 +935,14 @@ do list(path: "@subjectHeadings", "var": "$i")
   copy_field("$i", "introx.subject[].$append")
 end
 
-set_array("SubjectGHBLocal[]")
+add_array("SubjectGHBLocal[]")
 do list(path: "@SubjectGHBLocal", "var": "$i")
   add_hash("SubjectGHBLocal[].$append")
   add_field("SubjectGHBLocal[].$last.source", "$[isil]")
   copy_field("$i", "SubjectGHBLocal[].$last.subject")
 end
 
-set_array("xbib[]")
+add_array("xbib[]")
 copy_field("@mmsid", "xbib[].$append.uid")
 do list(path: "@hbzids", "var": "$i")
   copy_field("$i", "xbib[].$append.uid")
@@ -974,7 +974,7 @@ unless exists("TypeMedia")
 end
 
 unless exists("TypePeriodical[]")
-  set_array("TypePeriodical[]")
+  add_array("TypePeriodical[]")
 end
 do list(path: "@facet_type", "var": "$i")
   replace_all("$i", ".*?(Schriftenreihe|(?i)zeitschrift).*", "$1")
@@ -985,8 +985,8 @@ end
 uniq("TypePeriodical[]")
 
 # MARC/H52
-set_array("Item[]")
-set_array("introx.localCallNumber[]")
+add_array("Item[]")
+add_array("introx.localCallNumber[]")
 do list(path: "H52??", "var": "$i")
   if any_match("$i.8", ".*$[institution-code]")
     copy_field("$i.h", "introx.localCallNumber[].$append")
@@ -1005,12 +1005,12 @@ do list(path: "ITM  ", "var": "$i")
     paste("$i.@library", "~$[member]", "$i.w", join_char: "+")
     lookup("$i.@library", "alma-library-to-isil", delete: "true")
     unless exists("$i.@library")
-      set_field("$i.@library", "$[isil]")
+      add_field("$i.@library", "$[isil]")
     end
     copy_field("$i.@library", "Item[].$last.identifier")
     lookup("$i.@library", "lobid-organisations")
     copy_field("$i.@library", "Item[].$last.label")
-    set_array("@callnumber")
+    add_array("@callnumber")
     copy_field("$i.[bcn]", "@callnumber.$append")
     if any_match("$i.x", "$[regexp.temporaryCallnumberLocation]")
       copy_field("$i.z", "@callnumber.$append")
@@ -1041,7 +1041,7 @@ include("./marc/personCreator.fix")
 include("./marc/titleOther.fix")
 
 # MARC/249
-set_array("CompilationTitle.title[]")
+add_array("CompilationTitle.title[]")
 do list(path: "249??.a", "var": "$i")
   do list(path: "$i", "var": "$j")
     replace_all("$j", "[.]$", "")
@@ -1054,7 +1054,7 @@ end
 include("./marc/rswk.fix")
 
 # MARC/653
-set_array("Subject[]")
+add_array("Subject[]")
 do list(path: "653??", "var": "$i")
   copy_field("$i.a", "Subject[].$append.subject")
 end
@@ -1064,7 +1064,7 @@ uniq("Subject[]")
 include("./marc/translatedTitle.fix")
 
 # MARC/880
-set_array("AlternateGraphicRepresentation[]")
+add_array("AlternateGraphicRepresentation[]")
 do list(path: "880??", "var": "$i")
   if hbz.limetrans.function.MemberLocal("$i")
     add_hash("AlternateGraphicRepresentation[].$append")

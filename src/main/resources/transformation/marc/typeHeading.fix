@@ -1,5 +1,5 @@
 # MARC/655
-set_array("TypeHeading[]")
+add_array("TypeHeading[]")
 do list(path: "655?7", "var": "$i")
   if any_equal("$i.2", "gnd-content")
     add_hash("TypeHeading[].$append")

@@ -1,7 +1,7 @@
 # MARC/264
 do list(path: "264?[ 13]", "var": "$i")
   add_hash("PublicationPlace[].$append")
-  set_array("PublicationPlace[].$last.printingPlace[]")
+  add_array("PublicationPlace[].$last.printingPlace[]")
   do list(path: "$i.a", "var": "$j")
     replace_all("$j", " :$", "")
     copy_field("$j", "PublicationPlace[].$last.printingPlace[].$append")

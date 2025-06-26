@@ -1,4 +1,4 @@
-set_array("introx.access[]")
+add_array("introx.access[]")
 if any_equal("@facet_format", "Online-Ressource")
   add_field("introx.access[].$append", "online")
 else

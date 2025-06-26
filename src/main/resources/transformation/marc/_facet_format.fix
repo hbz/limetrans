@@ -1,5 +1,5 @@
 # MARC/337, MARC/338
-set_array("@facet_format")
+add_array("@facet_format")
 if any_match("@LeaderPos06", "[ij]")
   add_field("@facet_format.$append", "Audio")
 elsif any_match("@006Pos00", "[ij]")

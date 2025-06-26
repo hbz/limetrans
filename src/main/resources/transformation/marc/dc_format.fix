@@ -1,6 +1,6 @@
 if exists("@facet_format")
   uniq("@facet_format")
-  set_array("dc.format[]")
+  add_array("dc.format[]")
   copy_field("@facet_format", "dc.format[].$append")
   if any_equal("@facet_format", "Online-Ressource")
     if none_equal("@facet_format", "Elektronische Ressource")

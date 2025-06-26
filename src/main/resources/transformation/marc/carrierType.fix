@@ -1,5 +1,5 @@
 # MARC/338
-set_array("CarrierType[]")
+add_array("CarrierType[]")
 do list(path: "338??", "var": "$i")
   do list(path: "$i.b", "var": "$j")
     copy_field("$j", "@carriertype_code")

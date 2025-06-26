@@ -1,5 +1,5 @@
 # MARC/600, MARC/610, MARC/611, MARC/648, MARC/650, MARC/651
-set_array("RSWK[]")
+add_array("RSWK[]")
 do list(path: "600??", "var": "$i")
   call_macro("subject-personal-name")
 end

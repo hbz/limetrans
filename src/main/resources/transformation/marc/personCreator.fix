@@ -1,5 +1,5 @@
 # MARC/700
-set_array("@person")
+add_array("@person")
 do list(path: "700??", "var": "$i")
   if exists("$i.[4e]")
     if any_match("$i.[4e]", "(?:[Aa]ut|[Cc]re).*")

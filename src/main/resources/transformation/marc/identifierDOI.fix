@@ -1,5 +1,5 @@
 # MARC/024
-set_array("IdentifierDOI[]")
+add_array("IdentifierDOI[]")
 do list(path: "0247?", "var": "$i")
   if any_equal("$i.2", "doi")
     add_hash("IdentifierDOI[].$append")

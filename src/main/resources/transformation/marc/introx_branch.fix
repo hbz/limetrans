@@ -1,6 +1,6 @@
-set_array("introx.branch[]")
+add_array("introx.branch[]")
 # MARC/ITM
-set_array("@current_library")
+add_array("@current_library")
 do list(path: "ITM  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
     copy_field("$i.w", "@current_library.$append")
@@ -10,7 +10,7 @@ lookup("@current_library.*", "alma-library-to-branch-$[isil]", delete: "true")
 uniq("@current_library")
 move_field("@current_library", "introx.branch[].$append")
 # MARC/ITM
-set_array("@current_location")
+add_array("@current_location")
 do list(path: "ITM  ", "var": "$i")
   if any_equal("$i.M", "$[member]")
     copy_field("$i.x", "@current_location.$append")
