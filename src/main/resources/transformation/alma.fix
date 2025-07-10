@@ -885,6 +885,9 @@ set_array("ClassifierDigitization[]")
 do list(path: "962??", "var": "$i")
   add_hash("ClassifierDigitization[].$append")
   call_macro("copy-all-items", source: "$i.e", target: "ClassifierDigitization[].$last.classifier")
+  if any_equal("$i.e", "ZDB-OERSI")
+    add_field("dc.type[].$append", "Open Educational Resources")
+  end
 end
 
 # MARC/980
