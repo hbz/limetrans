@@ -1,0 +1,31 @@
+{
+  "isil": "DE-604",
+  "input": {
+    // https://www.bib-bvb.de/web/b3kat/open-data
+    "queue": {
+      "_order": 1,
+      "path": "/data/jenkins/limetrans/data/${isil}/",
+      "pattern": "b3kat_export_2025_05_teil*.xml.gz"
+    },
+    "oaipmh": {
+      "_order": 2,
+      "uri": "http://bvbr.bib-bvb.de:8991/aleph-cgi/oai/oai_opendata.pl",
+      "set": "by",
+      "from": "2025-05-16T22:00:00Z",
+      "metadataPrefix": "marc21"
+    }
+  },
+  "output": {
+    "elasticsearch": {
+      "index": {
+        "type": "titel",
+        "name": "${isil}-baybib-metafix-",
+        "timewindow": "yyyyMMdd",
+        "settings": "classpath:/elasticsearch/hbztitle-settings-%s.json",
+        "mapping": "classpath:/elasticsearch/hbztitle-mapping-%s.json",
+        "idKey": "RecordIdentifier.identifierForTheRecord"
+      }
+    }
+  },
+  "transformation-rules": "classpath:/transformation/${isil}-baybib.fix"
+}

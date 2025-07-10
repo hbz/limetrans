@@ -1,0 +1,151 @@
+do once()
+  include("./macros.fix")
+  include("./macros/alma.fix")
+
+  include("./maps.fix")
+
+  put_var("catalogid", "")
+end
+
+do list(path: "9401?", "var": "$i")
+  if any_equal("$i.n", "by")
+    add_field("@by", "true")
+  end
+end
+
+if exists("@by")
+  include("./marc/fixedLengthDataElements.fix")
+  include("./marc/_facet_format.fix")
+  include("./marc/contentType.fix")
+  include("./marc/carrierType.fix")
+
+  add_array("ExtendedFormat[]")
+  add_array("ExtendedType[]")
+  include("./marc/typeHeading.fix")
+
+  add_array("@facet_type")
+  include("./marc/_facet_type-2.fix")
+
+  vacuum()
+
+  add_field("@isil", "$[isil]")
+  add_field("collection", "Bayerische Bibliographie")
+
+  include("./marc/abbreviatedTitle.fix")
+  include("./marc/titleAddendum.fix")
+
+  include("./marc/recordIdentifierSuper.fix")
+  include("./marc/creatorStatement.fix")
+  include("./marc/dc_format.fix")
+  include("./marc/dc_type.fix")
+  include("./marc/dc_language.fix")
+  include("./marc/dc_date.fix")
+  include("./marc/introx_access.fix")
+  include("./marc/introx_carrier.fix")
+  include("./marc/otherClassificationNumber.fix")
+  uniq("introx.taxonomy[]")
+
+  paste("@id", "~(", "@isil", "~)", "001", join_char: "")
+  copy_field("@id", "RecordIdentifier.identifierForTheRecord")
+
+  include("./marc/identifierISBN.fix")
+  include("./marc/identifierISSN.fix")
+  include("./marc/identifierDOI.fix")
+  include("./marc/person.fix")
+  include("./marc/corporateBody.fix")
+  include("./marc/titleStatement.fix")
+  include("./marc/edition.fix")
+
+  add_array("PublisherName[]")
+  add_array("PublicationPlace[]")
+  include("./marc/publisherName.fix")
+  include("./marc/publicationPlace.fix")
+
+  include("./marc/extent.fix")
+  include("./marc/seriesStatement.fix")
+  include("./marc/description.fix")
+  include("./marc/abstract.fix")
+  include("./marc/personContributor.fix")
+
+  include("./marc/linkingEntries.fix")
+  do list(path: "HostItemEntry[]|ConstituentUnitEntry[]|PrecedingEntry[]|SucceedingEntry[]", "var": "$i")
+    add_array("$i.verifiedIdentifierForLinkingEntry[]")
+    do list(path: "$i.controlNumber[]", "var": "$j")
+      copy_field("$j", "$i.verifiedIdentifierForLinkingEntry[].$append")
+    end
+  end
+
+  include("./marc/seriesAddedEntryUniformTitle.fix")
+  include("./marc/onlineAccess.fix")
+
+  add_array("xbib[]")
+  copy_field("@id", "xbib[].$append.uid")
+  uniq("xbib[]")
+
+  include("./marc/personCreator.fix")
+  include("./marc/titleOther.fix")
+  include("./marc/rswk.fix")
+  include("./marc/translatedTitle.fix")
+
+  hbz.limetrans.function.Dedup("OnlineAccess[].*.uri")
+
+  retain(
+    "AbbreviatedTitle[]",
+    "Abstract",
+    "AdditionalPhysicalFormEntry[]",
+    "CarrierType[]",
+    "ConstituentUnitEntry[]",
+    "ContentType[]",
+    "CorporateBody[]",
+    "CreatorStatement",
+    "DataSourceEntry[]",
+    "Description[]",
+    "Edition",
+    "ExtendedFormat[]",
+    "ExtendedType[]",
+    "Extent",
+    "HostItemEntry[]",
+    "IdentifierDOI[]",
+    "IdentifierISBN[]",
+    "IdentifierISSN[]",
+    "IssuedWithEntry[]",
+    "MainSeriesEntry[]",
+    "NonspecificRelationshipEntry[]",
+    "OnlineAccess[]",
+    "OriginalLanguageEntry[]",
+    "OtherEditionEntry[]",
+    "PersonContributor[]",
+    "PersonCreator[]",
+    "Person[]",
+    "PrecedingEntry[]",
+    "PublicationPlace[]",
+    "PublisherName[]",
+    "RSWK[]",
+    "Recension",
+    "RecordIdentifier",
+    "RecordIdentifierSuper[]",
+    "SeriesAddedEntryUniformTitle[]",
+    "SeriesStatement[]",
+    "SortableVolumeDesignation[]",
+    "SubSeriesEntry[]",
+    "SubjectDNB[]",
+    "SucceedingEntry[]",
+    "Summary",
+    "SupplementParentEntry[]",
+    "SupplementSpecialIssueEntry[]",
+    "TitleAddendum",
+    "TitleOther[]",
+    "TitleStatement[]",
+    "TranslatedTitle[]",
+    "TranslationEntry[]",
+    "TypeHeading[]",
+    "collection",
+    "dc",
+    "introx",
+    "xbib[]"
+  )
+
+  vacuum()
+else
+  reject()
+end

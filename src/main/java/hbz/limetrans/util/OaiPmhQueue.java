@@ -9,13 +9,19 @@ import org.metafacture.xml.XmlDecoder;
 
 public class OaiPmhQueue extends AbstractInputQueue {
 
+    private final String mDateFrom;
+    private final String mDateUntil;
     private final String mMetadataPrefix;
+    private final String mSetSpec;
     private final String mUri;
 
     public OaiPmhQueue(final Settings aSettings) {
         init(aSettings);
 
+        mDateFrom = aSettings.get("from");
+        mDateUntil = aSettings.get("until");
         mMetadataPrefix = aSettings.get("metadataPrefix", "marcxml");
+        mSetSpec = aSettings.get("set");
         mUri = aSettings.get("uri");
     }
 
@@ -27,7 +33,11 @@ public class OaiPmhQueue extends AbstractInputQueue {
     @Override
     public <T extends StreamReceiver & Sender<StreamReceiver>> LifeCycle process(final StreamReceiver aReceiver, final T aSender) {
         final OaiPmhOpener opener = new OaiPmhOpener();
+
+        opener.setDateFrom(mDateFrom);
+        opener.setDateUntil(mDateUntil);
         opener.setMetadataPrefix(mMetadataPrefix);
+        opener.setSetSpec(mSetSpec);
 
         Sender<StreamReceiver> result = opener
             .setReceiver(new XmlDecoder())
