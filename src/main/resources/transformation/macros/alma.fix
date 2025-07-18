@@ -33,8 +33,10 @@ do put_macro("alma-mms-with-isil")
       call_macro("alma-mms-to-isil", source: "$alma-mms-with-isil", target: "@alma-mms-with-isil")
       paste("$[target][].$append", "~(", "@alma-mms-with-isil", "~)", "$alma-mms-with-isil", join_char: "")
       remove_field("@alma-mms-with-isil")
-    else
+    elsif any_match("$alma-mms-with-isil", "\\(.*")
       copy_field("$alma-mms-with-isil", "$[target][].$append")
+    else
+      paste("$[target][].$append", "~(", "@isil", "~)", "$alma-mms-with-isil", join_char: "")
     end
   end
 end
