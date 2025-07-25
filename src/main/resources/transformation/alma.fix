@@ -506,6 +506,7 @@ include("./marc/identifierISSN.fix")
 # MARC/024
 include("./marc/identifierISMN.fix")
 include("./marc/identifierDOI.fix")
+include("./marc/identifierVD.fix")
 
 # MARC/028
 add_array("IdentifierSheetMusic[]")
@@ -1203,6 +1204,7 @@ retain(
   "IdentifierOCLC[]",
   "IdentifierSerial[]",
   "IdentifierSheetMusic[]",
+  "IdentifierVD[]",
   "IdentifierZDB[]",
   "InformationRelatingToCopyrightStatus[]",
   "IssuedWithEntry[]",

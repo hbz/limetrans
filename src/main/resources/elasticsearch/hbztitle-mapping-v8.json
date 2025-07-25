@@ -1116,6 +1116,17 @@
         }
       }
     },
+    "IdentifierVD": {
+      "properties": {
+        "identifierVD": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.localCallNumber"
+          ]
+        }
+      }
+    },
     "IdentifierZDB": {
       "properties": {
         "identifierZDB": {

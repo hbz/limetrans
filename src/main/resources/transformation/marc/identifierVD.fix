@@ -1,0 +1,8 @@
+# MARC/024
+add_array("IdentifierVD[]")
+do list(path: "0247?", "var": "$i")
+  if any_match("$i.2", "vd\\d+")
+    add_hash("IdentifierVD[].$append")
+    copy_field("$i.a", "IdentifierVD[].$last.identifierVD")
+  end
+end
