@@ -664,6 +664,10 @@ do list(path: "H52??", "var": "$i")
 end
 uniq("Description[]")
 
+# MARC/591
+add_array("DescriptionLocal[]")
+copy_field("591  .a", "DescriptionLocal[].$append.description")
+
 # MARC/501, MARC/505
 add_array("DescriptionOfContent[]")
 do list(path: "50[15]??", "var": "$i")
@@ -1180,6 +1184,7 @@ retain(
   "DateLast",
   "DateProper",
   "Description[]",
+  "DescriptionLocal[]",
   "DescriptionOfContent[]",
   "DescriptionOfEstimatedPublicationDate[]",
   "DescriptionOfExpression[]",
