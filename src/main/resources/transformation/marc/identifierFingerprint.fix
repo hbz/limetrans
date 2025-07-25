@@ -1,0 +1,18 @@
+# MARC/026
+add_array("IdentifierFingerprint[]")
+do list(path: "026??", "var": "$i")
+  add_hash("IdentifierFingerprint[].$append")
+  add_array("@fingerprint")
+  if exists("$i.e")
+    copy_field("$i.e", "@fingerprint.$append")
+  else
+    copy_field("$i.a", "@fingerprint.$append")
+    copy_field("$i.b", "@fingerprint.$append")
+    copy_field("$i.c", "@fingerprint.$append")
+    do list(path: "$i.d", "var": "$j")
+      copy_field("$j", "@fingerprint.$append")
+    end
+  end
+  join_field("@fingerprint", " ")
+  move_field("@fingerprint", "IdentifierFingerprint[].$last.identifierFingerprint")
+end
