@@ -1633,3 +1633,70 @@
     "callnumber" : "2001/2375"
   } ]
 }
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Bericht über meine Forschungen und Entdeckungen in Mykenae und Tiryns"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "von Heinrich Schliemann"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1878" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_LBZ",
+    "identifierMMS" : "990005108810206441",
+    "identifierMMSIZ" : "991014527769708973"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990005108810206441",
+    "identifierForTheRecord" : "(DE-605)HT000582849"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Schliemann, Heinrich",
+    "personBio" : "1822-1890",
+    "personIdentifier" : [ "(DE-588)118608215" ],
+    "identifierGND" : [ "118608215" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Mykenae"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Leipzig" ],
+    "name" : [ "Brockhaus" ],
+    "chronology" : [ "1878" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1878" ]
+  },
+  "Extent" : {
+    "extent" : "LXVI, 447 S., XXI Bl. : zahlr. Ill., graph. Darst."
+  },
+  "SubjectHeadings" : [ {
+    "subject" : "Mykene"
+  }, {
+    "subject" : "Ausgrabung"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990005108810206441"
+  }, {
+    "uid" : "(DE-605)HT000582849"
+  }, {
+    "uid" : "(DE-107)991014527769708973"
+  } ],
+  "Item" : [ {
+    "callnumber" : "22.1466"
+  } ]
+}

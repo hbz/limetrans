@@ -2689,3 +2689,108 @@
     "preferredName" : "Filmtechnik"
   } ]
 }
+{
+  "FormatCarrier" : [ "Druckschrift" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "Country" : [ {
+    "countryISO" : "DXDE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT000582849",
+    "identifierHBZ" : "HT000582849"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "312381983"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : [ "Bericht über meine Forschungen und Entdeckungen in Mykenae und Tiryns" ]
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "von Heinrich Schliemann" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "1878" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Pfälzische LB Speyer" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "person" : [ "Schliemann, Heinrich (1822-1890)" ],
+    "subject" : [ "Mykene", "Ausgrabung" ],
+    "localCallNumber" : [ "22.1466" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_LBZ",
+    "identifierMMS" : "990005108810206441",
+    "identifierMMSIZ" : "991014527769708973"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990005108810206441",
+    "identifierForTheRecord" : "(DE-605)HT000582849"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "Person" : [ {
+    "personName" : "Schliemann, Heinrich",
+    "personBio" : "1822-1890",
+    "personIdentifier" : [ "(DE-588)118608215" ],
+    "identifierGND" : [ "118608215" ],
+    "variantName" : [ "Slēman, Herrikos", "Schliemann, Henri", "Schliemann, Enrico", "Schliemann, Henry", "Schlēman, Herrikos", "Šliman, Genrich", "Schliemann, Johann Ludwig Heinrich Julius", "Schliemann, H.", "Shliman, Genrikh" ],
+    "preferredName" : "Schliemann, Heinrich"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Mykenae"
+  } ],
+  "PublisherName" : [ {
+    "place" : [ "Leipzig" ],
+    "name" : [ "Brockhaus" ],
+    "chronology" : [ "1878" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : [ "Leipzig" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1878" ]
+  },
+  "Extent" : {
+    "extent" : "LXVI, 447 S., XXI Bl. : zahlr. Ill., graph. Darst."
+  },
+  "xbib" : [ {
+    "uid" : "(DE-605)990005108810206441"
+  }, {
+    "uid" : "(DE-605)HT000582849"
+  }, {
+    "uid" : "(DE-107)991014527769708973"
+  }, {
+    "uid" : "(OCoLC)312381983"
+  }, {
+    "uid" : "(DE-599)HBZHT000582849"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-107",
+    "label" : "Landesbibliothekszentrum Rheinland-Pfalz / Pfälzische Landesbibliothek",
+    "callnumber" : [ "011057534107", "22.1466" ],
+    "shelfmark" : "PLB_INT"
+  } ],
+  "RSWK" : [ {
+    "subjectGeoName" : "Mykene",
+    "combinedLabel" : "Mykene",
+    "subjectIdentifier" : [ "(DE-588)4040975-2" ],
+    "identifierGND" : [ "4040975-2" ],
+    "variantName" : [ "Mikenai", "Mykenä", "Mikinä" ],
+    "preferredName" : "Mykene"
+  }, {
+    "subjectTopicName" : [ "Ausgrabung" ],
+    "combinedLabel" : "Ausgrabung",
+    "subjectIdentifier" : [ "(DE-588)4129464-6" ],
+    "identifierGND" : [ "4129464-6" ],
+    "variantName" : [ "Archäologische Grabung", "Grabungen", "Ausgrabungen", "Grabung" ],
+    "preferredName" : "Ausgrabung"
+  } ]
+}
