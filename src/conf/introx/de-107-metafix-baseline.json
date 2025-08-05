@@ -3,7 +3,11 @@
   "path": "/data/pubhub/export/alma/prod/",
   "external-maps": "/data/jenkins/limetrans/maps",
   "postprocess": true,
-  "alma": {},
+  "alma": {
+    "regexp": {
+      "isil": "${isil}|DE-929|DE-Zw1"
+    }
+  },
   "input": {
     "queue": {
       "path": "${path}",

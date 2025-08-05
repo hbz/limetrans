@@ -36,6 +36,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -342,11 +343,14 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         final LimetransFilter noDeletionFilter = LimetransFilter.none()
             .add(deletionFilter);
 
-        final Map<String, String> regexpDefault = new HashMap<>();
+        final Map<String, String> regexpDefault = Map.of(
+                "isil", Pattern.quote(isil.getIsil())
+        );
 
         final Settings regexp = almaSettings.getAsSettings("regexp");
         Stream.of(
-                "description"
+                "description",
+                "isil"
         ).forEach(k -> mVars.put("regexp." + k, regexp.get(k, regexpDefault.getOrDefault(k, ".*"))));
 
         final String deletionLiteral = almaSettings.get("deletion-literal",

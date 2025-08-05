@@ -1916,6 +1916,45 @@
         }
       }
     },
+    "StructuredOwnershipAndCustodialHistory": {
+      "properties": {
+        "authorityRecordControlNumberOrStandardNumber": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.provenance"
+          ]
+        },
+        "name": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.provenance"
+          ]
+        },
+        "ownershipAndCustodialHistoryEvidenceTerm": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.provenance"
+          ]
+        },
+        "publicNote": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.provenance"
+          ]
+        },
+        "shelfMarkOfCopyDescribed": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.provenance"
+          ]
+        }
+      }
+    },
     "Subject": {
       "properties": {
         "subject": {

@@ -6,7 +6,10 @@
     "filter": [
       "962??.e=dilibri",
       "85640.u=~www\\.edoweb-rlp\\.de"
-    ]
+    ],
+    "regexp": {
+      "isil": "${isil}|DE-929|DE-Zw1"
+    }
   },
   "input": {
     "queue": {
