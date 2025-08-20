@@ -3,8 +3,7 @@
   "external-maps": "/data/jenkins/limetrans/maps/test",
   "alma": {
     "regexp": {
-      "description": ".*vorhanden.*",
-      "temporaryCallnumberLocation": ".*_(?:Lab|Sem)App"
+      "description": ".*vorhanden.*"
     }
   },
   "input": {

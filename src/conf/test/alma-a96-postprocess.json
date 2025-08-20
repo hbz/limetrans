@@ -5,8 +5,7 @@
   "postprocess": true,
   "alma": {
     "regexp": {
-      "description": ".*vorhanden.*",
-      "temporaryCallnumberLocation": ".*_(?:Lab|Sem)App"
+      "description": ".*vorhanden.*"
     }
   },
   "input": {

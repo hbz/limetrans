@@ -1020,7 +1020,7 @@ do list(path: "ITM  ", "var": "$i")
     copy_field("$i.@library", "Item[].$last.label")
     add_array("@callnumber")
     copy_field("$i.[bcn]", "@callnumber.$append")
-    if any_match("$i.x", "$[regexp.temporaryCallnumberLocation]")
+    unless in("$i.x", "$i.v")
       copy_field("$i.z", "@callnumber.$append")
     end
     uniq("@callnumber")
