@@ -1,7 +1,7 @@
 # MARC/856
 add_array("OnlineAccess[]")
 do list(path: "856??", "var": "$i")
-  if hbz.limetrans.function.MemberLocal("$i")
+  if member_local("$i")
     call_macro("online-access")
   end
 end

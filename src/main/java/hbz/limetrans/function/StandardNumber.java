@@ -1,5 +1,6 @@
 package hbz.limetrans.function;
 
+import org.metafacture.metafix.FixCommand;
 import org.metafacture.metafix.Metafix;
 import org.metafacture.metafix.Record;
 import org.metafacture.metafix.Value;
@@ -19,6 +20,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 
+@FixCommand("standard_number")
 public class StandardNumber implements FixFunction {
 
     private static final String IDENTIFIER_FORMAT = "identifier%s";

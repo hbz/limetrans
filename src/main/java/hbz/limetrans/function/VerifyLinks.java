@@ -4,6 +4,7 @@ import hbz.limetrans.util.Helpers;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.metafacture.metafix.FixCommand;
 import org.metafacture.metafix.Metafix;
 import org.metafacture.metafix.Record;
 import org.metafacture.metafix.Value;
@@ -20,6 +21,7 @@ import java.util.concurrent.atomic.LongAdder;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
+@FixCommand("verify_links")
 public class VerifyLinks implements FixFunction {
 
     private static final Logger LOGGER = LogManager.getLogger();

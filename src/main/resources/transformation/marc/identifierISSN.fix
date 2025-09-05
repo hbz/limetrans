@@ -4,6 +4,6 @@ do list(path: "022? ", "var": "$i")
   do list(path: "$i.a", "var": "$j")
     add_hash("IdentifierISSN[].$append")
     copy_field("$j", "IdentifierISSN[].$last.identifierISSN")
-    hbz.limetrans.function.StandardNumber("ISSN", "IdentifierISSN[].$last")
+    standard_number("ISSN", "IdentifierISSN[].$last")
   end
 end
