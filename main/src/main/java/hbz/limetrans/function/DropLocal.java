@@ -1,5 +1,6 @@
 package hbz.limetrans.function;
 
+import org.metafacture.metafix.FixCommand;
 import org.metafacture.metafix.Metafix;
 import org.metafacture.metafix.Record;
 import org.metafacture.metafix.Value;
@@ -14,6 +15,7 @@ import java.util.function.Predicate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+@FixCommand("drop_local")
 public class DropLocal implements FixFunction {
 
     private static final String LOCAL = "LOCAL";

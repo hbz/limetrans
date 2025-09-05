@@ -105,7 +105,7 @@ include("./marc/titleOther.fix")
 include("./marc/rswk.fix")
 include("./marc/translatedTitle.fix")
 
-hbz.limetrans.function.Dedup("OnlineAccess[].*.uri")
+dedup("OnlineAccess[].*.uri")
 
 retain(
   "AbbreviatedTitle[]",

@@ -11,7 +11,7 @@ do list(path: "020??", "var": "$i")
       copy_field("$j", "IdentifierISBN[].$last.identifierISBN[].$append")
     end
     call_macro("copy-first-item", source: "$i.a", target: "$i.@isbn")
-    hbz.limetrans.function.StandardNumber("ISBN", "IdentifierISBN[].$last", source: "$i.@isbn")
+    standard_number("ISBN", "IdentifierISBN[].$last", source: "$i.@isbn")
   end
   add_array("IdentifierISBN[].$last.invalidISBN[]")
   do list(path: "$i.z", "var": "$j")
