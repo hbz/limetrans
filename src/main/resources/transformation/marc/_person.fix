@@ -18,7 +18,7 @@ do list(path: "$i.c", "var": "$j")
   copy_field("$j", "@person.$last.personTitle[].$append")
   paste("@combined_label", "@combined_label", "~, ", "$j", join_char: "")
 end
-hbz.limetrans.function.DropRepeated("$i.d", index: "2")
+drop_repeated("$i.d", index: "2")
 replace_all("$i.d", "[.]$", "")
 copy_field("$i.d", "@person.$last.personBio")
 if exists("$i.d")

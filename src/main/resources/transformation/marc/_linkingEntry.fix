@@ -13,9 +13,9 @@ do list(path: "$[source][ 0]?", "var": "$i")
   call_macro("remove-nonsort", source: "$i.t")
   call_macro("copy-first-item", source: "$i.t", target: "$[target][].$last.title")
   call_macro("copy-first-item", source: "$i.x", target: "$[target][].$last.identifierISSN")
-  hbz.limetrans.function.StandardNumber("ISSN", "$[target][].$last")
+  standard_number("ISSN", "$[target][].$last")
   call_macro("copy-all-items", source: "$i.z", target: "$[target][].$last.identifierISBN")
-  hbz.limetrans.function.StandardNumber("ISBN", "$[target][].$last", source: "$[target][].$last.identifierISBN[].1") # TODO: multiple ISBNs?
+  standard_number("ISBN", "$[target][].$last", source: "$[target][].$last.identifierISBN[].1") # TODO: multiple ISBNs?
   call_macro("copy-all-items", source: "$i.w", target: "$[target][].$last.controlNumber")
   call_macro("alma-mms-with-isil", source: "$i.w", target: "$[target][].$last.identifierForLinkingEntry")
 end
