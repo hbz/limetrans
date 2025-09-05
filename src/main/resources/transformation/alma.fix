@@ -15,13 +15,13 @@ do once("setup")
   put_filemap("$[external-maps]/lookup-tables/data/almaSublibraryCode2Isil/generated/generatedAlmaSublibraryCode2Isil.tsv", "alma-library-to-isil", sep_char: "\t")
   put_filemap("$[external-maps]/lookup-tables/data/almaSuppressedLocations/generated/generatedAlmaSuppressedLocations.tsv", "alma-suppressed-location", sep_char: "\t")
 
-  hbz.limetrans.function.PutLmdbMap("$[external-maps]/lobid-gnd.lmdb", "lobid-gnd")
-  hbz.limetrans.function.PutLmdbMap("$[external-maps]/lobid-organisations.lmdb", "lobid-organisations")
-  hbz.limetrans.function.PutLmdbMap("$[external-maps]/rvk.lmdb", "rvk")
+  put_lmdbmap("$[external-maps]/lobid-gnd.lmdb", "lobid-gnd")
+  put_lmdbmap("$[external-maps]/lobid-organisations.lmdb", "lobid-organisations")
+  put_lmdbmap("$[external-maps]/rvk.lmdb", "rvk")
 end
 
-hbz.limetrans.function.DropLocal()
-hbz.limetrans.function.DropRepeated("008")
+drop_local()
+drop_repeated("008")
 
 # MARC/leader, MARC/006, MARC/007, MARC/008
 include("./marc/fixedLengthDataElements.fix")
@@ -409,7 +409,7 @@ include("./marc/introx_carrier.fix")
 # MARC/983
 add_array("@SubjectGHBLocal")
 do list(path: "983  ", "var": "$i")
-  if hbz.limetrans.function.MemberLocal("$i")
+  if member_local("$i")
     copy_field("$i.[ab]", "@SubjectGHBLocal.$append")
   end
 end
@@ -488,7 +488,7 @@ do list(path: "0167?", "var": "$i")
   if any_equal("$i.2", "DE-600")
     add_hash("IdentifierZDB[].$append")
     copy_field("$i.a", "IdentifierZDB[].$last.identifierZDB")
-    hbz.limetrans.function.StandardNumber("ZDB", "IdentifierZDB[].$last")
+    standard_number("ZDB", "IdentifierZDB[].$last")
     if exists("IdentifierZDB[].$last.preferredZDB")
       paste("@zdbids.$append", "~(", "$i.2", "~)", "$i.a", join_char: "")
     end
@@ -523,7 +523,7 @@ do list(path: "029[ab]?", "var": "$i")
   do list(path: "$i.a", "var": "$j")
     add_hash("IdentifierSerial[].$append")
     copy_field("$j", "IdentifierSerial[].$last.identifierISSN")
-    hbz.limetrans.function.StandardNumber("ISSN", "IdentifierSerial[].$last")
+    standard_number("ISSN", "IdentifierSerial[].$last")
   end
 end
 
@@ -639,13 +639,13 @@ add_array("@description")
 add_array("DescriptionOfProvenance[]")
 add_array("introx.provenance[]")
 do list(path: "985  ", "var": "$i")
-  if hbz.limetrans.function.MemberLocal("$i")
+  if member_local("$i")
     copy_field("$i.a", "DescriptionOfProvenance[].$append.description")
     copy_field("$i.a", "introx.provenance[].$append")
   end
 end
 do list(path: "989  ", "var": "$i")
-  if hbz.limetrans.function.MemberLocal("$i")
+  if member_local("$i")
     copy_field("$i.a", "@description.$append")
     copy_field("$i.a", "introx.provenance[].$append")
   end
@@ -802,7 +802,7 @@ do list(path: "9640s", "var": "$i")
     add_hash("IdentifierISBNParallel[].$append")
     add_array("IdentifierISBNParallel[].$last.identifierISBN[]")
     copy_field("$i.[abcdehnpqs]", "IdentifierISBNParallel[].$last.identifierISBN[].$append")
-    hbz.limetrans.function.StandardNumber("ISBN", "IdentifierISBNParallel[].$last", source: "IdentifierISBNParallel[].$last.identifierISBN[].1")
+    standard_number("ISBN", "IdentifierISBNParallel[].$last", source: "IdentifierISBNParallel[].$last.identifierISBN[].1")
   end
 end
 
@@ -816,7 +816,7 @@ include("./marc/seriesAddedEntryUniformTitle.fix")
 include("./marc/onlineAccess.fix")
 # MARC/998
 do list(path: "9984?", "var": "$i")
-  if hbz.limetrans.function.MemberLocal("$i")
+  if member_local("$i")
     call_macro("online-access")
     add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
   end
@@ -888,7 +888,7 @@ do list(path: "@sisis_supplement-2662", "var": "$i")
   copy_field("$i", "OnlineAccess[].$last.uri")
   add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
 end
-hbz.limetrans.function.Dedup("OnlineAccess[].*.uri")
+dedup("OnlineAccess[].*.uri")
 
 # MARC/962
 add_array("ClassifierDigitization[]")
@@ -903,7 +903,7 @@ end
 # MARC/980
 add_array("ClassifierLocal.classifier[]")
 do list(path: "9801 ", "var": "$i")
-  if hbz.limetrans.function.MemberLocal("$i")
+  if member_local("$i")
     do list(path: "$i.a", "var": "$j")
       copy_field("$j", "ClassifierLocal.classifier[].$append")
     end
@@ -911,7 +911,7 @@ do list(path: "9801 ", "var": "$i")
 end
 add_array("ClassifierLocal.collection[]")
 do list(path: "980  ", "var": "$i")
-  if hbz.limetrans.function.MemberLocal("$i")
+  if member_local("$i")
     do list(path: "$i.s", "var": "$j")
       copy_field("$j", "ClassifierLocal.collection[].$append")
     end
@@ -921,7 +921,7 @@ end
 # MARC/982
 add_array("@subjectHeadings")
 do list(path: "982  ", "var": "$i")
-  if hbz.limetrans.function.MemberLocal("$i")
+  if member_local("$i")
     copy_field("$i.b", "@subjectHeadings.$append")
     copy_field("$i.a", "@subjectTopicName")
     split_field("@subjectTopicName", ";|\\*")
@@ -1004,7 +1004,7 @@ do list(path: "H52??", "var": "$i")
 end
 # MARC/992
 do list(path: "992??", "var": "$i")
-  if hbz.limetrans.function.MemberLocal("$i")
+  if member_local("$i")
     copy_field("$i.a", "introx.localCallNumber[].$append")
   end
 end
@@ -1076,7 +1076,7 @@ include("./marc/translatedTitle.fix")
 # MARC/880
 add_array("AlternateGraphicRepresentation[]")
 do list(path: "880??", "var": "$i")
-  if hbz.limetrans.function.MemberLocal("$i")
+  if member_local("$i")
     add_hash("AlternateGraphicRepresentation[].$append")
 
     copy_field("$i.6", "@linkage")
@@ -1288,4 +1288,4 @@ retain(
 
 vacuum()
 
-hbz.limetrans.function.VerifyLinks()
+verify_links()

@@ -1,5 +1,6 @@
 package hbz.limetrans.function;
 
+import org.metafacture.metafix.FixCommand;
 import org.metafacture.metafix.Metafix;
 import org.metafacture.metafix.Record;
 import org.metafacture.metafix.api.FixPredicate;
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+@FixCommand("member_local")
 public class MemberLocal implements FixPredicate {
 
     private static final String SUBFIELD = "M";
