@@ -3,11 +3,14 @@ unless exists("@date")
   add_array("@date")
 end
 copy_field("260??.c", "@date.$append")
-do list(path: "264?[ 1].c", "var": "$i")
+do list(path: "264?1.c", "var": "$i")
   copy_field("$i", "@date.$append")
 end
 copy_field("@date[12]", "@date.$append")
+#hbzfix
+if in("@date", "[,-]")
 split_field("@date", "[,-]")
+end
 flatten("@date")
 add_array("dc.date[]")
 do list(path: "@date", "var": "$i")
