@@ -1,12 +1,14 @@
 {
   "isil": "DE-Bm40",
   "path": "/data/pubhub/export/alma/prod/",
-  "external-maps": "/data/jenkins/limetrans/maps",
   "postprocess": true,
   "alma": {
     "regexp": {
       "isil": "${isil}|DE-1866(?:-1)?"
     }
+  },
+  "vars": {
+    "external-maps": "/data/jenkins/limetrans/maps"
   },
   "input": {
     "queue": {

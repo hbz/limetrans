@@ -1,7 +1,9 @@
 {
   "isil": "DE-605",
-  "external-maps": "/data/jenkins/limetrans/maps/test",
   "alma": {},
+  "vars": {
+    "external-maps": "/data/jenkins/limetrans/maps/test"
+  },
   "input": {
     "queue": {
       "path": "src/test/resources/limetrans/input/",

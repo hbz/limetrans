@@ -288,6 +288,11 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
                 mVars.put("isil-path", Paths.get(aSettings.get("path"), isil).toString());
             }
         }
+
+        mVars.put("external-maps", "./maps");
+        mVars.put("id-suffix", "");
+
+        aSettings.getAsSettings("vars").forEach((s, k) -> mVars.put(k, s.get(k)));
     }
 
     private String initializeAlma(final Settings aSettings) { // checkstyle-disable-line JavaNCSS
@@ -315,8 +320,6 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         mVars.put("member", memberCode);
         mVars.put("network", networkCode);
         mVars.put("institution-code", institutionCode);
-        mVars.put("id-suffix", almaSettings.get("id-suffix", ""));
-        mVars.put("external-maps", aSettings.get("external-maps", "./maps"));
 
         mMaps.put("institution-code-to-isil", INSTITUTION_CODE_TO_ISIL);
 

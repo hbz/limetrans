@@ -1,9 +1,11 @@
 {
   "isil": "DE-832",
   "path": "/data/pubhub/export/alma/prod/",
-  "external-maps": "/data/jenkins/limetrans/maps",
   "postprocess": true,
   "alma": {},
+  "vars": {
+    "external-maps": "/data/jenkins/limetrans/maps"
+  },
   "input": {
     "queue": {
       "path": "${path}",

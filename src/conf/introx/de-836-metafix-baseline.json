@@ -1,12 +1,14 @@
 {
   "isil": "DE-836",
   "path": "/data/pubhub/export/alma/prod/",
-  "external-maps": "/data/jenkins/limetrans/maps",
   "postprocess": true,
   "alma": {
     "regexp": {
       "isil": "${isil}|DE-Mue301"
     }
+  },
+  "vars": {
+    "external-maps": "/data/jenkins/limetrans/maps"
   },
   "input": {
     "queue": {
