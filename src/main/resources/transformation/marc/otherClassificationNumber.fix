@@ -1,4 +1,5 @@
 # MARC/084
+add_array("SubjectBB[]")
 add_array("SubjectDNB[]")
 add_array("SubjectNWBIB[]")
 add_array("SubjectRPB[]")
@@ -43,6 +44,9 @@ do list(path: "084??", "var": "$i")
       move_field("@subjectRVK", "introx.taxonomyRVK[].$append")
       copy_field("$j", "SubjectRVK[].$last.subject[].$append")
     end
+  elsif any_equal("$i.2", "sbb")
+    add_hash("SubjectBB[].$append")
+    call_macro("copy-all-items", source: "$i.a", target: "SubjectBB[].$last.subject")
   elsif any_equal("$i.2", "sdnb")
     add_hash("SubjectDNB[].$append")
     call_macro("copy-all-items", source: "$i.a", target: "SubjectDNB[].$last.subject")
