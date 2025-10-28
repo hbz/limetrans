@@ -124,6 +124,8 @@ public class FileQueue extends AbstractInputQueue implements Iterable<String> {
     private final boolean mNormalizeUnicode;
 
     public FileQueue(final Settings aSettings) throws IOException {
+        init(aSettings);
+
         if (aSettings != null) {
             mProcessor = Processor.valueOf(aSettings.get("processor", "MARCXML"));
             mNormalizeUnicode = aSettings.getAsBoolean("normalize-unicode", true);

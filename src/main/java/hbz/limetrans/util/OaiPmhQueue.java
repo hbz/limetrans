@@ -13,6 +13,8 @@ public class OaiPmhQueue extends AbstractInputQueue {
     private final String mUri;
 
     public OaiPmhQueue(final Settings aSettings) {
+        init(aSettings);
+
         mMetadataPrefix = aSettings.get("metadataPrefix", "marcxml");
         mUri = aSettings.get("uri");
     }

@@ -32,6 +32,7 @@ import java.io.UncheckedIOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -272,6 +273,8 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         if (mInputQueues.isEmpty()) {
             throw new IllegalArgumentException("Could not process Limetrans: no input specified.");
         }
+
+        Collections.sort(mInputQueues, Comparator.comparingInt(AbstractInputQueue::getOrder));
     }
 
     private void initializeVars(final Settings aSettings) {

@@ -11,8 +11,18 @@ public abstract class AbstractInputQueue {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
+    private int mOrder;
+
+    protected void init(final Settings aSettings) {
+        mOrder = aSettings.getAsInt("_order", 0);
+    }
+
     protected static Logger getLogger() {
         return LOGGER;
+    }
+
+    public int getOrder() {
+        return mOrder;
     }
 
     public boolean isEmpty() {
