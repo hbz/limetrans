@@ -3,23 +3,23 @@ do once("setup")
   include("./macros/alma.fix")
 
   include("./maps.fix")
-  #include("./maps/alma-branches.fix")
+  include("./maps/alma-branches.fix")
   include("./maps/alma-extended-type.fix")
   include("./maps/alma-format-carrier.fix")
-  #include("./maps/alma-license-to-info.fix")
+  include("./maps/alma-license-to-info.fix")
   #include("./maps/alma-taxonomy.fix")
   include("./maps/alma-type-monograph.fix")
   include("./maps/alma-type-periodical.fix")
 
-  #put_filemap("$[external-maps]/hbz-to-zdb.tsv.gz", "zdb-to-hbz", sep_char: " ", key_column: "1", value_column: "0")
-  #put_filemap("$[external-maps]/lookup-tables/data/almaSublibraryCode2Isil/generated/generatedAlmaSublibraryCode2Isil.tsv", "alma-library-to-isil", sep_char: "\t")
+  put_filemap("$[external-maps]/hbz-to-zdb.tsv.gz", "zdb-to-hbz", sep_char: " ", key_column: "1", value_column: "0")
+  put_filemap("$[external-maps]/lookup-tables/data/almaSublibraryCode2Isil/generated/generatedAlmaSublibraryCode2Isil.tsv", "alma-library-to-isil", sep_char: "\t")
 
-  #hbz.limetrans.function.PutLmdbMap("$[external-maps]/lobid-gnd.lmdb", "lobid-gnd")
-  #hbz.limetrans.function.PutLmdbMap("$[external-maps]/lobid-organisations.lmdb", "lobid-organisations")
-  #hbz.limetrans.function.PutLmdbMap("$[external-maps]/rvk.lmdb", "rvk") 
+  hbz.limetrans.function.PutLmdbMap("$[external-maps]/lobid-gnd.lmdb", "lobid-gnd")
+  hbz.limetrans.function.PutLmdbMap("$[external-maps]/lobid-organisations.lmdb", "lobid-organisations")
+  hbz.limetrans.function.PutLmdbMap("$[external-maps]/rvk.lmdb", "rvk")
 end
 
-#hbz.limetrans.function.DropLocal()
+#hbz.limetrans.function.DropLocal()+
 #hbz.limetrans.function.DropRepeated("008")
 
 
