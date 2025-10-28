@@ -2,9 +2,9 @@ package hbz.limetrans;
 
 import hbz.limetrans.filter.LimetransFilter;
 import hbz.limetrans.function.VerifyLinks;
+import hbz.limetrans.util.AbstractInputQueue;
 import hbz.limetrans.util.FileQueue;
 import hbz.limetrans.util.Helpers;
-import hbz.limetrans.util.InputQueue;
 import hbz.limetrans.util.OaiPmhQueue;
 import hbz.limetrans.util.RepeatedFieldsLogger;
 import hbz.limetrans.util.Settings;
@@ -182,7 +182,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     }
 
     private final LimetransFilter mFilter;
-    private final List<InputQueue> mInputQueues = new ArrayList<>();
+    private final List<AbstractInputQueue> mInputQueues = new ArrayList<>();
     private final Map<String, Map<String, String>> mMaps = new HashMap<>();
     private final Map<String, String> mVars = new HashMap<>();
     private final Settings mElasticsearchSettings;
@@ -243,7 +243,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     private void initializeInput(final Settings aSettings) {
         aSettings.getAsSettings("input").forEach((s, k) -> {
             final Settings settings = s.getAsSettings(k);
-            final InputQueue inputQueue;
+            final AbstractInputQueue inputQueue;
 
             if (k.startsWith("queue")) {
                 try {
@@ -538,7 +538,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     }
 
     /*package-private*/ int getInputQueueSize() {
-        return mInputQueues.stream().mapToInt(InputQueue::size).sum();
+        return mInputQueues.stream().mapToInt(AbstractInputQueue::size).sum();
     }
 
     private void loadMap(final String aName, final String aKey) {

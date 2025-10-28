@@ -1,7 +1,5 @@
 package hbz.limetrans.util;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.metafacture.biblio.OaiPmhOpener;
 import org.metafacture.biblio.marc21.MarcXmlHandler;
 import org.metafacture.framework.LifeCycle;
@@ -9,9 +7,7 @@ import org.metafacture.framework.Sender;
 import org.metafacture.framework.StreamReceiver;
 import org.metafacture.xml.XmlDecoder;
 
-public class OaiPmhQueue implements InputQueue {
-
-    private static final Logger LOGGER = LogManager.getLogger();
+public class OaiPmhQueue extends AbstractInputQueue {
 
     private final String mMetadataPrefix;
     private final String mUri;
@@ -19,11 +15,6 @@ public class OaiPmhQueue implements InputQueue {
     public OaiPmhQueue(final Settings aSettings) {
         mMetadataPrefix = aSettings.get("metadataPrefix", "marcxml");
         mUri = aSettings.get("uri");
-    }
-
-    @Override
-    public boolean isEmpty() {
-        return size() == 0;
     }
 
     @Override
@@ -47,17 +38,10 @@ public class OaiPmhQueue implements InputQueue {
         result.setReceiver(aReceiver);
 
         if (!isEmpty()) {
-            LOGGER.info("Processing OAI-PMH URI: " + mUri);
-
-            try {
-                opener.process(mUri);
-            }
-            catch (final Exception e) { // checkstyle-disable-line IllegalCatch
-                LOGGER.error("Processing failed:", e);
-            }
+            process("OAI-PMH URI: " + mUri, opener, mUri);
         }
 
-        LOGGER.info("Finished processing OAI-PMH URI");
+        getLogger().info("Finished processing OAI-PMH URI");
 
         return opener;
     }

@@ -1,7 +1,5 @@
 package hbz.limetrans.util;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.metafacture.biblio.marc21.Marc21Decoder;
 import org.metafacture.biblio.marc21.MarcXmlHandler;
 import org.metafacture.formeta.FormetaDecoder;
@@ -37,7 +35,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
-public class FileQueue implements InputQueue, Iterable<String> {
+public class FileQueue extends AbstractInputQueue implements Iterable<String> {
 
     private enum Processor { // checkstyle-disable-line ClassDataAbstractionCoupling
 
@@ -116,8 +114,6 @@ public class FileQueue implements InputQueue, Iterable<String> {
         }
 
     }
-
-    private static final Logger LOGGER = LogManager.getLogger();
 
     private static final String GROUP_MARKER = "%GROUP_MARKER%";
 
@@ -198,27 +194,20 @@ public class FileQueue implements InputQueue, Iterable<String> {
                     FileTime.fromMillis(file.lastModified()), Helpers.byteCountToDisplaySize(file.length()));
 
             if (file.length() > 0) {
-                LOGGER.info("Processing " + msg);
-
-                try {
-                    opener.process(fileName);
-                }
-                catch (final Exception e) { // checkstyle-disable-line IllegalCatch
-                    LOGGER.error("Processing failed:", e);
-                }
+                process(msg, opener, fileName);
             }
             else {
-                LOGGER.warn("Skipping empty " + msg);
+                getLogger().warn("Skipping empty " + msg);
             }
         }
 
-        LOGGER.info("Finished processing {} files", mProcessor);
+        getLogger().info("Finished processing {} files", mProcessor);
 
         return opener;
     }
 
     private void add(final Settings aSettings) throws IOException {
-        LOGGER.debug("Settings: {}", aSettings);
+        getLogger().debug("Settings: {}", aSettings);
 
         if (aSettings.containsSetting("patterns")) {
             for (final String pattern : aSettings.getAsArray("patterns")) {
@@ -240,7 +229,7 @@ public class FileQueue implements InputQueue, Iterable<String> {
                 final String suffix = aPattern.substring(index + GROUP_MARKER.length());
 
                 final String groupPattern = prefix + "*" + suffix;
-                LOGGER.debug("Finding groups: {}", groupPattern);
+                getLogger().debug("Finding groups: {}", groupPattern);
 
                 final Path file = find(aSettings, groupPattern).reduce(null, (a, b) -> b);
                 if (file != null) {
@@ -252,7 +241,7 @@ public class FileQueue implements InputQueue, Iterable<String> {
                             .replace(GROUP_MARKER, "(.*)"));
 
                     final String name = file.getFileName().toString();
-                    LOGGER.debug("Extracting group: {}: {}", p, name);
+                    getLogger().debug("Extracting group: {}: {}", p, name);
 
                     final Matcher m = p.matcher(name);
                     if (m.matches()) {
@@ -278,10 +267,10 @@ public class FileQueue implements InputQueue, Iterable<String> {
             return;
         }
 
-        LOGGER.debug("Finding pattern: {}", pattern);
+        getLogger().debug("Finding pattern: {}", pattern);
 
         find(aSettings, pattern).forEachOrdered(p -> {
-            LOGGER.debug("Adding file: {}", p);
+            getLogger().debug("Adding file: {}", p);
             mQueue.add(p.toString());
         });
     }
