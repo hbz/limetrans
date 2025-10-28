@@ -1,10 +1,12 @@
 {
   "isil": "DE-60",
-  "external-maps": "/data/jenkins/limetrans/maps",
+  "vars": {
+   "external-maps": "/data/jenkins/limetrans/maps"
+   },
   "input": {
     "queue": {
       "path": "/mnt/datenportal/hbzfix",
-      "pattern": "de60tit"
+      "pattern": "de60"
     }
   },
   "output": {
@@ -20,5 +22,5 @@
       }
     }
   },
-  "transformation-rules": "classpath:/transformation/${isil}.fix"
+  "transformation-rules": "classpath:/transformation/DE-60.fix"
 }
