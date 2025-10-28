@@ -36,6 +36,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Consumer;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -396,11 +397,11 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         return "";
     }
 
-    public void process() {
-        process(null);
+    public boolean process() {
+        return process(null);
     }
 
-    public void process(final StreamReceiver aReceiver) {
+    public boolean process(final StreamReceiver aReceiver) { // checkstyle-disable-line NPathComplexity
         final Counter counter = new Counter();
         final StreamPipe<StreamReceiver> pipe = getStreamPipe(mRulesPath, mVars,
                 t -> LOGGER.info("Starting {} transformation: {}", t, mRulesPath));
@@ -442,14 +443,30 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         }
 
         final Filter filter = mFilter.isEmpty() ? null : mFilter.toFilter();
-        mInputQueues.stream().map(i -> i.process(pipe, filter))
-            .collect(Collectors.toList()).forEach(LifeCycle::closeStream);
+        final AtomicBoolean failed = new AtomicBoolean();
+
+        mInputQueues.stream().map(i -> {
+            final LifeCycle lifeCycle = i.process(pipe, filter);
+
+            if (i.isFailed()) {
+                failed.set(true);
+            }
+
+            return lifeCycle;
+        }).collect(Collectors.toList()).forEach(LifeCycle::closeStream);
 
         if (mPostprocess) {
             VerifyLinks.reset();
         }
 
-        LOGGER.info("Finished transformation ({})", counter);
+        if (failed.get()) {
+            LOGGER.error("Finished transformation: FAILED ({})", counter);
+            return false;
+        }
+        else {
+            LOGGER.info("Finished transformation: SUCCESSFUL ({})", counter);
+            return true;
+        }
     }
 
     public static StreamPipe<StreamReceiver> getStreamPipe(final String aRulesPath, final Map<String, String> aVars, final Consumer<Type> aConsumer) {

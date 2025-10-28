@@ -163,8 +163,11 @@ public final class Main {
         final Integer interval = Helpers.getProperty(MEMLOG, Integer::parseInt, 10);
         final MemLog memlog = interval != null ? new MemLog(interval) : null;
 
+        boolean failed = false;
         try {
-            new Limetrans(setup(aArgs)).process();
+            if (!new Limetrans(setup(aArgs)).process()) {
+                failed = true;
+            }
         }
         finally {
             final Long rss = Helpers.getRss();
@@ -176,6 +179,8 @@ public final class Main {
                     (memlog != null ? String.format(" [%s]", memlog) : ""),
                     (heap.getUsed() + nonHeap.getUsed()) / MB, (heap.getCommitted() + nonHeap.getCommitted()) / MB);
         }
+
+        System.exit(failed ? 1 : 0);
     }
 
     private static Settings setup(final String[] aArgs) throws IOException {

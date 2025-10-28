@@ -11,6 +11,7 @@ public abstract class AbstractInputQueue {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
+    private boolean mFailed;
     private int mOrder;
 
     protected void init(final Settings aSettings) {
@@ -29,6 +30,10 @@ public abstract class AbstractInputQueue {
         return size() == 0;
     }
 
+    public boolean isFailed() {
+        return mFailed;
+    }
+
     public abstract int size();
 
     public LifeCycle process(final StreamReceiver aReceiver) {
@@ -45,6 +50,7 @@ public abstract class AbstractInputQueue {
         }
         catch (final Exception e) { // checkstyle-disable-line IllegalCatch
             LOGGER.error("Processing failed:", e);
+            mFailed = true;
         }
     }
 
