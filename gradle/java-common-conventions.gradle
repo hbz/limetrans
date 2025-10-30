@@ -1,0 +1,77 @@
+repositories {
+    mavenCentral()
+    maven githubPackage.invoke('metafacture')
+    maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
+}
+
+dependencies {
+    gitModules.each { key, args ->
+        args.modules.each {
+            implementation(it) {
+                version(args.version)
+
+                if (args.containsKey('dependency')) {
+                    args.dependency(it)
+                }
+            }
+        }
+    }
+}
+
+sourceSets {
+    test {
+        resources {
+            exclude '**/output/'
+        }
+    }
+}
+
+checkstyle {
+    toolVersion = versions.checkstyle
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(versions.jdk)
+    }
+}
+
+test {
+    testLogging {
+        showStandardStreams = true
+        exceptionFormat = 'full'
+        events 'SKIPPED'
+    }
+
+    jvmArgs = lmdbJvmArgs
+    maxHeapSize = '8G'
+    maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+
+    passSystemProperties(systemProperties)
+}
+
+clean {
+    delete 'build.log'
+}
+
+tasks.withType(JavaCompile) {
+    'all -processing -rawtypes -serial'.split().each {
+        options.compilerArgs << "-Xlint:${it}"
+    }
+
+    options.compilerArgs << '-Werror'
+}
+
+tasks.withType(JavaExec) {
+    javaLauncher = javaToolchains.launcherFor {
+        languageVersion = java.toolchain.languageVersion
+    }
+
+    jvmArgs = lmdbJvmArgs
+    maxHeapSize = project.hasProperty('maxHeapSize') ?
+        project.getProperty('maxHeapSize') : '12G'
+
+    doFirst { passSystemProperties(systemProperties) }
+}
+
+compileJava.doFirst { printVersions() }

@@ -1,8 +1,5 @@
-*.iml
-/.gradle/
-/.idea/
-/build.log
-/build/
-/src/test/resources/*/output*/
-/src/test/resources/output/test-*.jsonl
-/target/
+.gradle/
+build/
+/*/build.log
+/*/src/test/resources/*/output*/
+/*/src/test/resources/output/test-*.jsonl

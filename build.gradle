@@ -1,5 +1,4 @@
 plugins {
-  id 'java'
   id 'checkstyle'
   id 'io.github.0ffz.github-packages' version '1.2.1'
 }
@@ -7,133 +6,10 @@ plugins {
 println "Timestamp: ${java.time.Instant.now().atZone(java.time.ZoneId.systemDefault())}, Host: ${java.net.InetAddress.getLocalHost()}"
 println "Versions: JVM=${org.gradle.internal.jvm.Jvm.current()}, Groovy=${GroovySystem.getVersion()}, Gradle=${gradle.gradleVersion}"
 
-group = 'hbz.limetrans'
-
-def passSystemProperties = {
-    def prefix = project.group + '.'
-    def pattern = ~/(?:\Q${prefix}\E|org\.metafacture\.).*/
-
-    it[prefix + 'versions.elasticsearch8'] = versions.elasticsearch8
-
-    System.properties.each { k, v ->
-        if (k.matches(pattern)) it[k] = v
-    }
+allprojects {
+    group = 'hbz.limetrans'
 }
 
-// https://github.com/lmdbjava/lmdbjava/issues/42
-def lmdbJvmArgs = [
-    '--add-opens=java.base/java.nio=ALL-UNNAMED',
-    '--add-opens=java.base/sun.nio.ch=ALL-UNNAMED',
-
-    // Required for ElasticsearchIndexerTest: ShardNotFoundException[no such shard]
-    '--add-opens=java.base/jdk.internal.ref=ALL-UNNAMED'
-]
-
-apply from: 'gradle/tasks.gradle'
-
-repositories {
-    mavenCentral()
-    maven githubPackage.invoke('metafacture')
-    maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
-}
-
-dependencies {
-    gitModules.each { key, args ->
-        args.modules.each {
-            implementation(it) {
-                version(args.version)
-
-                if (args.containsKey('dependency')) {
-                    args.dependency(it)
-                }
-            }
-        }
-    }
-
-    implementation "co.elastic.clients:elasticsearch-java:${versions.elasticsearch8}"
-    implementation "com.fasterxml.jackson.core:jackson-databind:${versions.jackson}"
-    implementation "com.github.samtools:htsjdk:${versions.htsjdk}"
-    implementation "commons-cli:commons-cli:${versions['commons-cli']}"
-    implementation "commons-io:commons-io:${versions['commons-io']}"
-    implementation "junit:junit:${versions.junit}"
-    implementation "org.apache.logging.log4j:log4j-1.2-api:${versions.log4j}"
-    implementation "org.apache.logging.log4j:log4j-core:${versions.log4j}"
-    implementation "org.apache.logging.log4j:log4j-slf4j-impl:${versions.log4j}"
-    implementation "org.elasticsearch:elasticsearch:${versions.elasticsearch2}"
-    implementation "org.lmdbjava:lmdbjava:${versions.lmdb}"
-    implementation "org.testcontainers:testcontainers-elasticsearch:${versions.testcontainers}"
-    implementation files("libs/elasticsearch-plugin-bundle-${versions.elasticsearch2}.0.jar")
-
-    // Required for ElasticsearchClientTest (elasticsearch2 plugin bundle): com.ibm.icu.text.Normalizer2
-    testImplementation "org.apache.lucene:lucene-analyzers-icu:${versions.lucene5}"
-
-    implementation('org.antlr:antlr-runtime') {
-        version { strictly '3.2' }
-    }
-}
-
-sourceSets {
-    test {
-        resources {
-            exclude '**/output/'
-        }
-    }
-}
-
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(versions.jdk)
-    }
-}
-
-checkstyle {
-    toolVersion = versions.checkstyle
-}
-
-def printVersions = {
-    versions.sort().each { key, value -> println "- ${key}=${value}" }
-}
-
-task versions(description: 'Prints dependency versions.') {
+task printVersions(description: 'Prints dependency versions.') {
     doFirst { printVersions() }
-}
-
-compileJava.doFirst { printVersions() }
-
-tasks.withType(JavaCompile) {
-    'all -processing -rawtypes -serial'.split().each {
-        options.compilerArgs << "-Xlint:${it}"
-    }
-
-    options.compilerArgs << '-Werror'
-}
-
-tasks.withType(JavaExec) {
-    javaLauncher = javaToolchains.launcherFor {
-        languageVersion = java.toolchain.languageVersion
-    }
-
-    jvmArgs = lmdbJvmArgs
-    maxHeapSize = project.hasProperty('maxHeapSize') ?
-        project.getProperty('maxHeapSize') : '12G'
-
-    doFirst { passSystemProperties(systemProperties) }
-}
-
-test {
-    testLogging {
-        showStandardStreams = true
-        exceptionFormat = 'full'
-        events 'SKIPPED'
-    }
-
-    jvmArgs = lmdbJvmArgs
-    maxHeapSize = '8G'
-    maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
-
-    passSystemProperties(systemProperties)
-}
-
-clean {
-    delete 'build.log'
 }

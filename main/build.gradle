@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'java-library'
+}
+
+apply from: "${rootProject.projectDir}/gradle/java-common-conventions.gradle"
+apply from: "${rootProject.projectDir}/gradle/tasks.gradle"
+
+dependencies {
+    implementation project(':core')
+    implementation project(':es2')
+    implementation project(':es8')
+
+    implementation "junit:junit:${versions.junit}"
+    implementation "org.apache.logging.log4j:log4j-1.2-api:${versions.log4j}"
+    implementation "org.apache.logging.log4j:log4j-slf4j-impl:${versions.log4j}"
+}

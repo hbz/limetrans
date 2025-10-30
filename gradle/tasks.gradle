@@ -1,4 +1,4 @@
-def (root, extension, skel, required) = [file('.').toPath(), '.json', 'template', ['isil']]
+def (root, extension, skel, required) = [rootProject.projectDir.toPath(), '.json', 'template', ['isil']]
 
 def camelize = { it.replaceAll(~/\b./) { it[0].toUpperCase() } }
 def taskName = { prefix, list -> prefix + list.collect { camelize(it) }.join('').replaceAll('[^a-zA-Z0-9]', '') }
@@ -22,11 +22,11 @@ propTask('type', ['fix', 'morph'])
 // See hbz.limetrans.ElasticsearchClientV*.
 propTask('es', ['2', '8'], 'elasticsearchVersion')
 
-file('src/conf').eachDir {
-    def (group, path) = [it.getName(), it.toPath()]
+root.resolve('config').eachDir { path ->
+    def group = path.getFileName().toString()
 
     def indexTask = { name, list ->
-        task(taskName(group, [name]), type: JavaExec, group: group, description: list.collect { root.relativize(it.toPath()) }) {
+        task(taskName(group, [name]), type: JavaExec, group: group, description: list.collect { root.relativize(it) }) {
             classpath = sourceSets.main.runtimeClasspath
             mainClass = "${project.group}.Main"
             args list
@@ -55,8 +55,8 @@ file('src/conf').eachDir {
         }
     }
 
-    it.eachFileMatch(~/.*\Q${extension}\E/) {
-        def name = it.getName().minus(extension)
+    path.eachFileMatch(~/.*\Q${extension}\E/) {
+        def name = it.getFileName().toString().minus(extension)
         name.startsWith(skel) ? newTask(it) : indexTask(name, [it])
     }
 }
