@@ -26,6 +26,7 @@ end
 # hbzfix ISIL !!!
 add_field("@isil", "DE-60")
 copy_field("@isil", "collection")
+lookup("collection", "lobid-organisations")
 
 
 # MARC/leader, MARC/006, MARC/007, MARC/008
