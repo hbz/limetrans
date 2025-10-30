@@ -125,6 +125,11 @@ elsif any_match("@006Pos00__006Pos06", "[acdijpstm]#o")
   add_field("@facet_format.$append", "Online-Ressource")
 elsif any_match("@006Pos00__006Pos12", "[efgkor]#o")
   add_field("@facet_format.$append", "Online-Ressource")
+#hbzfix DE-60
+elsif any_equal("@007Pos00__007Pos01", "cr")
+  add_field("@facet_format.$append", "Online-Ressource")
+elsif any_equal("245??.h", "Elektronische Ressource")
+  add_field("@facet_format.$append", "Online-Ressource")
 end
 
 if any_match("338  .a", "Gegenstand|Karte")

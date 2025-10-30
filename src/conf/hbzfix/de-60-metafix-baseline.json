@@ -1,0 +1,26 @@
+{
+  "isil": "DE-60",
+  "vars": {
+   "external-maps": "/data/jenkins/limetrans/maps"
+   },
+  "input": {
+    "queue": {
+      "path": "/mnt/datenportal/hbzfix",
+      "pattern": "de60"
+    }
+  },
+  "output": {
+   "#json": "${isil}_1.jsonl.gz",
+   "elasticsearch": {
+      "index": {
+        "type": "title",
+        "name": "${isil}-katalog",
+        "timewindow": "yyyyMMdd",
+        "settings": "classpath:/elasticsearch/hbztitle-settings-%s.json",
+        "mapping": "classpath:/elasticsearch/hbztitle-mapping-%s.json",
+        "idKey": "RecordIdentifier.identifierForTheIndex"
+      }
+    }
+  },
+  "transformation-rules": "classpath:/transformation/DE-60.fix"
+}
