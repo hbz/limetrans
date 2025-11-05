@@ -43315,3 +43315,88 @@
     "subjectIdentifier" : [ "https://w3id.org/kim/hochschulfaechersystematik/n1" ]
   } ]
 }
+{
+  "collection" : "DE-A96",
+  "CreatorStatement" : {
+    "creatorStatement" : "Sophie Maas"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Hochschulschrift", "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2025" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "991006131433506444",
+    "identifierMMSIZ" : "991006131433506444",
+    "identifierPID" : "53151045870006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991006131433506444",
+    "identifierForTheRecord" : "(DE-A96)991006131433506444"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierDOI" : [ {
+    "standardNumber" : "10.21269/13263"
+  } ],
+  "Person" : [ {
+    "personName" : "Maas, Sophie"
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Zürich : Entwicklung eines neuen visuellen Erscheinungsbildes für die Stadt Zürich"
+  } ],
+  "PublisherName" : [ {
+    "chronology" : [ "2025" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2025" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource (160 Seiten)"
+  },
+  "Description" : {
+    "description" : [ "Volltext weltweit freigegeben" ]
+  },
+  "Summary" : {
+    "abstract" : [ "Zürich vereint Geschichte, kulturelle Vielfalt und eine hohe Lebensqualität. Die Stadt ist geprägt von klaren Strukturen, einem starken Selbstverständnis und internationaler Offenheit. Im Rahmen der Bachelorarbeit wurde ein neues Erscheinungsbild entwickelt, das diese Qualitäten sichtbar macht und Zürich gestalterisch neu positioniert. Das klassische Züriblau, das Stadtwappen sowie ein flexibles Rastersystem bilden die Grundlage. Horizontale Linien und markante Schrägen greifen die besondere Topografie auf und verleihen dem Auftritt eine eigene Dynamik. Klare Flächen, reduzierte Farben und subtile grafische Details sorgen für Wiedererkennbarkeit und visuelle Ordnung. Das Erscheinungsbild verbindet präzise Gestaltung mit emotionaler Nähe und schafft eine Identität, die Zürichs Haltung nach außen trägt." ]
+  },
+  "PersonContributor" : [ {
+    "personName" : "Weißmantel, Ralf",
+    "personIdentifier" : [ "(DE-588)1033682659" ],
+    "identifierGND" : [ "1033682659" ]
+  }, {
+    "personName" : "Fabo, Sabine",
+    "personIdentifier" : [ "(DE-588)1030243743" ],
+    "identifierGND" : [ "1030243743" ]
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "Opus Abschlussarbeiten FB4",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53151045870006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-A96)991006131433506444"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : "Zürich"
+  }, {
+    "subjectTopicName" : "Visuelle Identität"
+  }, {
+    "subjectTopicName" : "Markenentwicklung"
+  }, {
+    "subjectTopicName" : "Erscheinungsbild"
+  }, {
+    "subjectTopicName" : "Designstrategie"
+  }, {
+    "subjectTopicName" : "Corporate Design"
+  } ]
+}
