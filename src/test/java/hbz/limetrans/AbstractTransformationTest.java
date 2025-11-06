@@ -38,13 +38,18 @@ public abstract class AbstractTransformationTest extends AbstractLimetransTest {
         final String referenceFile = getReferenceFile(limetrans, aName, aExt);
 
         Helpers.updateTestFile(referenceFile, () -> {
-            limetrans.process();
+            try {
+                getLimetrans(aName).process();
+            }
+            catch (final IOException e) {
+                throw new UncheckedIOException(e);
+            }
             return outputFile;
         });
 
         TransformationTestCase.evaluateTransformation(referenceFile, limetrans::process);
 
-        testLimetransEqualsReference(limetrans, aName, referenceFile, () -> {
+        testLimetransEqualsReference(getLimetrans(aName), aName, referenceFile, () -> {
             try {
                 return Helpers.slurpFile(outputFile);
             }

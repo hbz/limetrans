@@ -281,7 +281,7 @@ public class FileQueue extends AbstractInputQueue implements Iterable<String> {
         final Path path;
 
         if (aSettings.containsSetting("base")) {
-            path = findFiles(FILE_SYSTEM.getPath(aSettings.get("base")), aSettings,
+            path = findFiles(FILE_SYSTEM.getPath(aSettings.get("base")),
                     aSettings.get("basepattern", "*"), File::isDirectory, "name", true).iterator().next();
         }
         else {
@@ -295,7 +295,7 @@ public class FileQueue extends AbstractInputQueue implements Iterable<String> {
         final int maxAge = aSettings.getAsInt("max-age", -1);
         final long threshold = System.currentTimeMillis() - maxAge * 24 * 60 * 60 * 1000;
 
-        return findFiles(path, aSettings, aPattern, File::isFile,
+        return findFiles(path, aPattern, File::isFile,
                 aSettings.get("sort_by", "lastmodified"), "desc".equals(aSettings.get("order")))
             .limit(aSettings.getAsInt("max", Integer.MAX_VALUE))
             .peek(p -> {
@@ -305,26 +305,36 @@ public class FileQueue extends AbstractInputQueue implements Iterable<String> {
             });
     }
 
-    private static Stream<Path> findFiles(final Path aPath, final Settings aSettings, final String aPattern,
+    private static Stream<Path> findFiles(final Path aPath, final String aPattern,
             final Predicate<File> aPredicate, final String aSort, final boolean aReversed) throws IOException {
-        final Comparator<Path> comparator;
-
-        switch (aSort) {
-            case "lastmodified":
-                comparator = Comparator.comparing(p -> p.toFile().lastModified());
-                break;
-            case "name":
-                comparator = Comparator.comparing(Path::toString);
-                break;
-            default:
-                throw new RuntimeException("invalid sort parameter: " + aSort);
-        }
-
         final PathMatcher m = FILE_SYSTEM.getPathMatcher("glob:" + aPattern);
 
-        return Files.find(aPath, Integer.MAX_VALUE,
-            (p, a) -> aPredicate.test(p.toFile()) && m.matches(p.getFileName()), FileVisitOption.FOLLOW_LINKS)
-            .sorted(aReversed ? comparator.reversed() : comparator);
+        final Stream<Path> stream = Files.find(aPath, Integer.MAX_VALUE,
+            (p, a) -> aPredicate.test(p.toFile()) && m.matches(p.getFileName()), FileVisitOption.FOLLOW_LINKS);
+
+        if (aSort != null) {
+            final Comparator<Path> comparator;
+
+            switch (aSort) {
+                case "lastmodified":
+                    comparator = Comparator.comparing(p -> p.toFile().lastModified());
+                    break;
+                case "name":
+                    comparator = Comparator.comparing(Path::toString);
+                    break;
+                default:
+                    throw new RuntimeException("invalid sort parameter: " + aSort);
+            }
+
+            return stream.sorted(aReversed ? comparator.reversed() : comparator);
+        }
+        else {
+            return stream;
+        }
+    }
+
+    public static Stream<Path> findFiles(final Path aPath, final String aPattern) throws IOException {
+        return findFiles(aPath, aPattern, File::isFile, null, false);
     }
 
 }

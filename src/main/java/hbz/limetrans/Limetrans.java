@@ -24,12 +24,17 @@ import org.metafacture.metafix.Metafix;
 import org.metafacture.metamorph.Filter;
 import org.metafacture.metamorph.Metamorph;
 import org.metafacture.metamorph.api.Maps;
+import org.metafacture.metamorph.maps.FileMap;
 import org.metafacture.plumbing.StreamTee;
 import org.metafacture.statistics.Counter;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.UncheckedIOException;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.attribute.FileTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -332,7 +337,31 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
 
         loadMap("alma-alias", "alias");
         loadMap("alma-item-callnumber", "callnumber");
-        loadMap("alma-new-timestamp", "new");
+
+        final FileMap almaNewTimestampMap = new FileMap();
+        mMaps.put("alma-new-timestamp", almaNewTimestampMap);
+
+        almaNewTimestampMap.setSeparator(",");
+        almaNewTimestampMap.setExpectedColumns(-1);
+
+        final Path almaMapsPath = Paths.get("%s/alma/%s".formatted(
+                    mVars.get("external-maps"), isil.getIsil()));
+
+        try {
+            FileQueue.findFiles(almaMapsPath, "Neuerwerbungsliste*.csv")
+                .map(Path::toFile)
+                .peek(f -> LOGGER.info("Loaded new map: {} [mtime={}, size={}]", f,
+                            FileTime.fromMillis(f.lastModified()),
+                            Helpers.byteCountToDisplaySize(f.length())))
+                .map(File::getPath)
+                .forEach(almaNewTimestampMap::setFile);
+        }
+        catch (final NoSuchFileException e) {
+            // ignore
+        }
+        catch (final IOException e) {
+            LOGGER.warn("Failed to load new map: " + e.getMessage(), e);
+        }
 
         // POR$$A=memberCode
         final LimetransFilter availableForFilter = LimetransFilter.all()

@@ -443,6 +443,10 @@ remove_field("@sisis_supplement-0010")
 
 copy_field("001", "introx.dateNew")
 lookup("introx.dateNew", "alma-new-timestamp", delete: "true")
+unless exists("introx.dateNew")
+  copy_field("@mmsiz", "introx.dateNew")
+  lookup("introx.dateNew", "alma-new-timestamp", delete: "true")
+end
 
 # MARC/POC
 add_array("DateFirst.date[]")
