@@ -23,7 +23,7 @@ gradle.rootProject {
             'log4j'          : '2.17.1',
             'lucene5'        : '5.4.1',
             'metafacture'    : '7.0.0',
-            'testcontainers' : '1.21.1'
+            'testcontainers' : '2.0.2'
         ]
 
         testMatrix = [
