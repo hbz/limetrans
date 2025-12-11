@@ -1,15 +1,23 @@
-set_array("RecordIdentifierSuper[]")
-set_array("SortableVolumeDesignation[]")
-#do list(path: "7730?", "var": "$i")
+add_array("RecordIdentifierSuper[]")
+add_array("SortableVolumeDesignation[]")
 do list(path: "773??", "var": "$i")
   if exists("$i.q")
     unless exists("@facet_type")
       set_array("@facet_type")
     end
     add_field("@facet_type.$append", "Teil eines Werkes")
-    add_field("SortableVolumeDesignation[].$append.__dummy__", "")
+    add_hash("SortableVolumeDesignation[].$append")
     copy_field("$i.q", "SortableVolumeDesignation[].$last.volumeDesignation")
+  else if exists("$i.g")
+    unless exists("@facet_type")
+      set_array("@facet_type")
+    end
+    add_field("@facet_type.$append", "Teil eines Werkes")
+    add_hash("SortableVolumeDesignation[].$append")
+    copy_field("$i.g", "SortableVolumeDesignation[].$last.volumeDesignation")
+   end
   end
-  add_field("RecordIdentifierSuper[].$append.__dummy__", "")
-  call_macro("copy-all-items", source: "$i.w", target: "RecordIdentifierSuper[].$last.recordIdentifierSuper")
+   add_hash("RecordIdentifierSuper[].$append")
+   call_macro("alma-mms-with-isil", source: "$i.w", target: "RecordIdentifierSuper[].$last.recordIdentifierSuper")
+   #call_macro("copy-all-items", source: "$i.w", target: "RecordIdentifierSuper[].$last.recordIdentifierSuper")
 end

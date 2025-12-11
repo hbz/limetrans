@@ -1,5 +1,6 @@
 {
   "isil": "DE-60",
+  "#postprocess": true,
   "vars": {
    "external-maps": "/data/jenkins/limetrans/maps"
    },
@@ -22,5 +23,5 @@
       }
     }
   },
-  "transformation-rules": "classpath:/transformation/DE-60.fix"
+  "transformation-rules": "classpath:/transformation/hbzfix.fix"
 }
