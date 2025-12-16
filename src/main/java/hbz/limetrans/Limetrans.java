@@ -75,7 +75,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         DE_743  ("6468", "49HBZ_OWL",     "Hochschule Ostwestfalen-Lippe"),
         DE_829  ("8056", "49HBZ_HSN",     "Hochschule Niederrhein"),
         DE_832  ("6477", "49HBZ_THK",     "Technische Hochschule Köln (TH Köln)"),
-        DE_836  ("6485", "49HBZ_FHM",     "FH / KA Münster"), // DE-836 = FH, DE-Mue301 = KA
+        DE_836  ("6485", "49HBZ_FHM",     "FH Münster"), // DE-836 = FH, DE-Mue301 = KA
         DE_956  ("6483", "49HBZ_EVH",     "Evangelische Hochschule Rheinland-Westfalen-Lippe"),
         DE_987  ("8987", "49HBZ_HSK",     "Hochschule Koblenz - RheinAhrCampus"), // DE-987 = RheinMoselCampus, DE-1105 = RheinAhrCampus
         DE_1010 ("6456", "49HBZ_WHS",     "Westfälische Hochschule"),
