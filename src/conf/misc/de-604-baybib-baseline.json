@@ -5,13 +5,13 @@
     "queue": {
       "_order": 1,
       "path": "/data/jenkins/limetrans/data/${isil}/",
-      "pattern": "b3kat_export_2025_05_teil*.xml.gz"
+      "pattern": "b3kat_export_2025_11_teil*.xml.gz"
     },
     "oaipmh": {
       "_order": 2,
       "uri": "http://bvbr.bib-bvb.de:8991/aleph-cgi/oai/oai_opendata.pl",
       "set": "by",
-      "from": "2025-05-16T22:00:00Z",
+      "from": "2025-10-31T23:00:00Z",
       "metadataPrefix": "marc21"
     }
   },
