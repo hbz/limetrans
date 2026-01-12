@@ -7,7 +7,7 @@ do once("setup")
   include("./maps/alma-extended-type.fix")
   include("./maps/alma-format-carrier.fix")
   include("./maps/alma-license-to-info.fix")
-  #include("./maps/alma-taxonomy.fix")
+  include("./maps/alma-taxonomy.fix")
   include("./maps/alma-type-monograph.fix")
   include("./maps/alma-type-periodical.fix")
 
@@ -16,18 +16,18 @@ do once("setup")
 
   hbz.limetrans.function.PutLmdbMap("$[external-maps]/lobid-gnd.lmdb", "lobid-gnd")
   hbz.limetrans.function.PutLmdbMap("$[external-maps]/lobid-organisations.lmdb", "lobid-organisations")
-  hbz.limetrans.function.PutLmdbMap("$[external-maps]/rvk.lmdb", "rvk")
+  hbz.limetrans.function.PutLmdbMap("$[external-maps]/rvk.lmdb", "rvk") 
 end
 
-#hbz.limetrans.function.DropLocal()+
-#hbz.limetrans.function.DropRepeated("008")
+hbz.limetrans.function.DropLocal()
+hbz.limetrans.function.DropRepeated("008")
 
 
-# hbzfix ISIL !!!
-add_field("@isil", "DE-60")
+
+#hbzfix ISIL !!!
+add_field("@isil", "$[isil]")
 copy_field("@isil", "collection")
 lookup("collection", "lobid-organisations")
-
 
 # MARC/leader, MARC/006, MARC/007, MARC/008
 include("./marc/fixedLengthDataElements.fix")
@@ -230,7 +230,7 @@ do list(path: "100??", "var": "$i")
   end
 end
 do list(path: "700??", "var": "$i")
-  #if exists("$i.t")
+  if exists("$i.t")
     copy_field("$i.a", "$i.@title")
     if exists("$i.d")
       paste("$i.@title", "$i.@title", "~ (", "$i.d", "~)", join_char: "")
@@ -265,7 +265,7 @@ do list(path: "700??", "var": "$i")
       paste("$i.@title", "$i.@title", "~ (", "$i.@suffix", "~)", join_char: "")
     end
     copy_field("$i.@title", "TitleWork[].$append.titleWork")
-  #end
+  end
 end
 uniq("TitleWork[]")
 
@@ -296,16 +296,27 @@ end
 
 # MARC/773
 #HBZFIX
+#include("./marc/recordIdentifierSuper.fix")
 include("./marc/recordIdentifierSuperHbzfix.fix")
-do list(path: "RecordIdentifierSuper[]", "var": "$i")
-  if exists("$i.recordIdentifierSuper[].1")
-    paste("$i.recordIdentifierSuper[].1", "~(", "@isil", "~)", "$i.recordIdentifierSuper[].1", join_char: "")
+
+#do list(path: "RecordIdentifierSuper[]", "var": "$i")
+#  if exists("$i.recordIdentifierSuper[].1")
+#    paste("$i.recordIdentifierSuper[].1", "~(", "@isil", "~)", "$i.recordIdentifierSuper[].1", join_char: "")
+#  end
+#end
+#set_array("@host_callnumber")
+#copy_field("7731?.w", "@host_callnumber.$append")
+#lookup("@host_callnumber.*", "alma-alias")
+#lookup("@host_callnumber.*", "alma-item-callnumber", delete: "true")
+
+add_array("@host_callnumber")
+do list(path: "7731?.w", "var": "$i")
+  do list(path: "$i", "var": "$j")
+    lookup("$j", "alma-alias")
+    lookup("$j", "alma-item-callnumber", delete: "true")
+    copy_field("$j", "@host_callnumber.$append")
   end
 end
-set_array("@host_callnumber")
-copy_field("7731?.w", "@host_callnumber.$append")
-lookup("@host_callnumber.*", "alma-alias")
-lookup("@host_callnumber.*", "alma-item-callnumber", delete: "true")
 
 
 # MARC/245
@@ -338,7 +349,7 @@ include("./marc/otherClassificationNumber.fix")
 # HBZFIX MARC/001
 paste("@id", "~(", "@isil", "~)", "001", join_char: "")
 copy_field("@id", "RecordIdentifier.identifierForTheRecord")
-
+copy_field("@id", "RecordIdentifier.isContextLocal")
 
 # MARC/POC
 set_array("DateFirst.date[]")
