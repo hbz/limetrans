@@ -774,9 +774,9 @@ do list(path: "H66??", "var": "$i")
       do list(path: "H52??", "var": "$j")
         if in("$i.8", "$j.8")
           if exists("$j.a")
-            copy_field("$j.a", "$j.@source")
+            call_macro("copy-first-item", source: "$j.a", target: "$j.@source")
           else
-            copy_field("$j.b", "$j.@source")
+            call_macro("copy-first-item", source: "$j.b", target: "$j.@source")
             lookup("$j.@source", "alma-library-to-branch-$[isil]", delete: "true")
           end
           copy_field("$j.@source", "HoldingsStatement[].$last.source")
