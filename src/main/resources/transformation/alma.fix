@@ -106,11 +106,11 @@ do list(path: "340??", "var": "$i")
     copy_field("$j", "TypeMediaSpecial[].$append")
     copy_field("$j", "@facet_format.$append")
   end
-  if any_match("$i.a", ".*(?:Audio|CD|Compact-Disc|Compact-Disk|Kompaktkassette|Magnetbandkassette|Schallpl\\.|Schallplatte|Tonkassette).*")
+  if any_match("$i.a", ".*(?:Audio|CD(?!-ROM)|Compact-Disc|Compact-Disk|Kompaktkassette|Magnetbandkassette|Schallpl\\.|Schallplatte|Tonkassette).*")
     add_field("TypeMediaSpecial[].$append", "Audio")
     add_field("@facet_format.$append", "Audio")
   end
-  if any_match("$i.a", ".*(?:Computerdatei|Diskette|E-Books|Einsteckmodul|Elektron\\. Ressource|Funknetz-Karte|Optische Speicherplatte|Optischer Datentraeger|Optischer Datenträger|USB-Stick).*")
+  if any_match("$i.a", ".*(?:CD-ROM|Computerdatei|Diskette|E-Books|Einsteckmodul|Elektron\\. Ressource|Funknetz-Karte|Optische Speicherplatte|Optischer Datentraeger|Optischer Datenträger|USB-Stick).*")
     add_field("TypeMediaSpecial[].$append", "Elektronische Ressource")
     add_field("@facet_format.$append", "Elektronische Ressource")
   end

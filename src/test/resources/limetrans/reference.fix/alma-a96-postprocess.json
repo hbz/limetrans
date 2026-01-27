@@ -4499,7 +4499,7 @@
   "ExtendedFormat" : [ "CD-ROM" ],
   "FormatCarrier" : [ "Optische Speicherplatte(n)" ],
   "TypeMonograph" : [ "einbändiges Werk" ],
-  "TypeMediaSpecial" : [ "Audio" ],
+  "TypeMediaSpecial" : [ "Elektronische Ressource" ],
   "Country" : [ {
     "countryISO" : "DE"
   } ],
@@ -4518,7 +4518,7 @@
     "creatorStatement" : [ "Hrsg.: ASUE, Arbeitsgemeinschaft für sparsamen und umweltfreundlichen Energieverbrauch e.V" ]
   },
   "dc" : {
-    "format" : [ "Elektronische Ressource", "Audio" ],
+    "format" : [ "Elektronische Ressource" ],
     "type" : [ "Monographie" ],
     "language" : [ "Deutsch" ],
     "date" : [ "2004" ]
@@ -4526,7 +4526,7 @@
   "introx" : {
     "access" : [ "local" ],
     "branch" : [ "Eupener Straße" ],
-    "carrier" : [ "Elektronische Ressource", "Audio" ],
+    "carrier" : [ "Elektronische Ressource" ],
     "taxonomy" : [ "Elektrotechnik" ],
     "provenance" : [ "neu0405" ],
     "subject" : [ "Brennstoffzelle" ],
