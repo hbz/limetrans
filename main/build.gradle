@@ -8,8 +8,7 @@ apply from: "${rootProject.projectDir}/gradle/tasks.gradle"
 
 dependencies {
     implementation project(':core')
-    implementation project(':es2')
-    implementation project(':es8')
+    implementation project(":es$elasticsearchVersion")
 
     implementation "junit:junit:${versions.junit}"
     implementation "org.apache.logging.log4j:log4j-1.2-api:${versions.log4j}"

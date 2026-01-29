@@ -52,10 +52,26 @@ public final class Main {
         "digibib-es-test3.hbz-nrw.de:9228"
     };
 
+    private static final String[] HOST_V9_PROD = new String[]{
+        "digibib-es-prod1.hbz-nrw.de:9219",
+        "digibib-es-prod2.hbz-nrw.de:9219",
+        "digibib-es-prod3.hbz-nrw.de:9219"
+    };
+
+    private static final String[] HOST_V9_DEV = new String[]{
+        "digibib-es-test1.hbz-nrw.de:9229",
+        "digibib-es-test2.hbz-nrw.de:9229",
+        "digibib-es-test3.hbz-nrw.de:9229"
+    };
+
     private enum Env {
 
         prod(settingsBuilder -> {
             switch (ElasticsearchClient.getClientVersion()) {
+                case "9":
+                    setCluster(settingsBuilder, "digibib-es-prod-9");
+                    setHost(settingsBuilder, HOST_V9_PROD);
+                    break;
                 case "8":
                     setCluster(settingsBuilder, "digibib-es-prod-8");
                     setHost(settingsBuilder, HOST_V8_PROD);
@@ -68,6 +84,10 @@ public final class Main {
 
         dev(settingsBuilder -> {
             switch (ElasticsearchClient.getClientVersion()) {
+                case "9":
+                    setCluster(settingsBuilder, "digibib-es-test-9");
+                    setHost(settingsBuilder, HOST_V9_DEV);
+                    break;
                 case "8":
                     setCluster(settingsBuilder, "digibib-es-test-8");
                     setHost(settingsBuilder, HOST_V8_DEV);
@@ -99,6 +119,7 @@ public final class Main {
 
         local(settingsBuilder -> {
             final String port = switch (ElasticsearchClient.getClientVersion()) {
+                case "9" -> "9209";
                 case "8" -> "9208";
                 default  -> "9300";
             };

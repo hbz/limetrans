@@ -19,9 +19,6 @@ propTask('env', ['prod', 'dev', 'd7test', 'local', 'ignore'])
 // See hbz.limetrans.Limetrans.Type.
 propTask('type', ['fix', 'morph'])
 
-// See hbz.limetrans.ElasticsearchClientV*.
-propTask('es', ['2', '8'], 'elasticsearchVersion')
-
 root.resolve('config').eachDir { path ->
     def group = path.getFileName().toString()
 

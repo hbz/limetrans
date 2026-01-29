@@ -1,0 +1,3122 @@
+{
+  "date_detection": false,
+  "dynamic": false,
+  "properties": {
+    "bib": {
+      "properties": {
+        "identifierAuthority=isbn": {
+          "type": "keyword"
+        },
+        "identifierAuthority=issn": {
+          "type": "keyword"
+        },
+        "identifierAuthority=mab": {
+          "type": "keyword"
+        },
+        "identifierAuthority=mabwhole": {
+          "type": "keyword"
+        },
+        "identifierAuthority=oclc": {
+          "type": "text",
+          "analyzer": "ocn",
+          "norms": false
+        },
+        "identifierAuthority=zdb": {
+          "type": "keyword"
+        },
+        "nameCorporate": {
+          "type": "text",
+          "analyzer": "default",
+          "search_analyzer": "search",
+          "store": true
+        },
+        "namePersonal": {
+          "type": "text",
+          "analyzer": "unstemmed",
+          "store": true
+        }
+      }
+    },
+    "collection": {
+      "type": "keyword"
+    },
+    "cql": {
+      "properties": {
+        "allIndexes": {
+          "type": "text",
+          "analyzer": "default",
+          "search_analyzer": "search",
+          "store": true
+        }
+      }
+    },
+    "dc": {
+      "properties": {
+        "date": {
+          "type": "short"
+        },
+        "format": {
+          "type": "keyword"
+        },
+        "identifier": {
+          "type": "keyword"
+        },
+        "language": {
+          "type": "keyword"
+        },
+        "publisher": {
+          "type": "text",
+          "analyzer": "default",
+          "search_analyzer": "search",
+          "store": true
+        },
+        "subject": {
+          "type": "text",
+          "analyzer": "default",
+          "search_analyzer": "search",
+          "store": true
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "default",
+          "search_analyzer": "search",
+          "store": true
+        },
+        "type": {
+          "type": "keyword"
+        }
+      }
+    },
+    "introx": {
+      "properties": {
+        "access": {
+          "type": "keyword"
+        },
+        "branch": {
+          "type": "keyword"
+        },
+        "carrier": {
+          "type": "keyword"
+        },
+        "dateNew": {
+          "type": "date"
+        },
+        "localCallNumber": {
+          "type": "text",
+          "analyzer": "keyword_normalized",
+          "norms": false
+        },
+        "localCollection": {
+          "type": "keyword"
+        },
+        "music": {
+          "type": "keyword",
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "person": {
+          "type": "keyword"
+        },
+        "provenance": {
+          "type": "text",
+          "analyzer": "default",
+          "search_analyzer": "search"
+        },
+        "shelfmark": {
+          "type": "keyword"
+        },
+        "subject": {
+          "type": "keyword"
+        },
+        "subjectRVK": {
+          "type": "text",
+          "analyzer": "keyword_normalized",
+          "norms": false
+        },
+        "taxonomy": {
+          "type": "keyword"
+        },
+        "taxonomyRVK": {
+          "type": "keyword"
+        },
+        "titlePhrase": {
+          "type": "text",
+          "analyzer": "keyword_normalized",
+          "norms": false
+        }
+      }
+    },
+    "xbib": {
+      "properties": {
+        "uid": {
+          "type": "keyword"
+        }
+      }
+    },
+    "Abstract": {
+      "properties": {
+        "abstract": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "AbstractCreator": {
+      "properties": {
+        "abstract": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "AdditionalPhysicalFormEntry": {
+      "properties": {
+        "identifierISBN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "identifierISSN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "preferredISBN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "preferredISSN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "variantISBN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "variantISSN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        }
+      }
+    },
+    "AlternateGraphicRepresentation": {
+      "properties": {
+        "compilationTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "corporateName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "creatorStatement": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "description": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "editionStatement": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "personalName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "publicationStatement": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.publisher"
+          ]
+        },
+        "seriesStatement": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
+          ]
+        },
+        "subjectHeading": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "titleAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
+          ]
+        },
+        "titleOther": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        },
+        "titleStatement": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        },
+        "volumeDesignation": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
+          ]
+        }
+      }
+    },
+    "ClassifierDigitization": {
+      "properties": {
+        "classifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "ClassifierLocal": {
+      "properties": {
+        "classifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "collection": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "CompilationTitle": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "Conference": {
+      "properties": {
+        "conferenceDate": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "conferenceIdentifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "dc.identifier"
+          ]
+        },
+        "conferenceName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "conferencePlace": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "conferenceUnit": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "corporateBodyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "corporateBodyNameAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "corporateBodyNameeNumber": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "geoName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "identifierGND": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "preferredName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "variantName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "ContentType": {
+      "type": "text",
+      "index": false,
+      "copy_to": [
+        "cql.allIndexes"
+      ]
+    },
+    "CorporateBody": {
+      "properties": {
+        "corporateBodyDate": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "corporateBodyIdentifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "dc.identifier"
+          ]
+        },
+        "corporateBodyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "corporateBodyNameAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "corporateBodyNameExtra": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "corporateBodyNameSection": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "corporateBodyNameTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "corporateBodyNameUnit": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "corporateBodyNameVersion": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "corporateBodyNumber": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "corporateBodyOther": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "identifierGND": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "preferredName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        },
+        "variantName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "CreatorStatement": {
+      "properties": {
+        "creatorStatement": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "Date": {
+      "properties": {
+        "date": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "firstDate": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "publicationDate": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "DateFirst": {
+      "properties": {
+        "date": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "firstDate": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "publicationDate": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "DateLast": {
+      "properties": {
+        "date": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "firstDate": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "publicationDate": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "DateOther": {
+      "properties": {
+        "date": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "DateProper": {
+      "properties": {
+        "date": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "DatePublished": {
+      "properties": {
+        "date": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "firstDate": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "publicationDate": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "DateStatement": {
+      "properties": {
+        "date": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "Description": {
+      "properties": {
+        "description": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "DescriptionOfContent": {
+      "properties": {
+        "creator": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "description": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "note": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "DescriptionOfCreationStatement": {
+      "properties": {
+        "description": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "DescriptionOfEstimatedPublicationDate": {
+      "properties": {
+        "description": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "Edition": {
+      "properties": {
+        "edition": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "ExtendedFormat": {
+      "type": "text",
+      "index": false,
+      "copy_to": [
+        "cql.allIndexes"
+      ]
+    },
+    "ExtendedType": {
+      "type": "text",
+      "index": false,
+      "copy_to": [
+        "cql.allIndexes"
+      ]
+    },
+    "Geo": {
+      "properties": {
+        "geoIdentifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "dc.identifier"
+          ]
+        },
+        "geoName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "geoOtherInformation": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "geoSubUnit": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "identifierGND": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "preferredName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "variantName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.nameCorporate",
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        }
+      }
+    },
+    "IdentifierAlma": {
+      "properties": {
+        "identifierMMS": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=mab",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "identifierMMSIZ": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=mab",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        }
+      }
+    },
+    "IdentifierHBZ": {
+      "properties": {
+        "identifierHBZ": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "identifierHBZFull": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=mab",
+            "dc.identifier"
+          ]
+        }
+      }
+    },
+    "IdentifierISBN": {
+      "properties": {
+        "identifierISBN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "invalidISBN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "preferredISBN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "variantISBN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        }
+      }
+    },
+    "IdentifierISBNParallel": {
+      "properties": {
+        "identifierISBN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "preferredISBN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "variantISBN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=isbn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        }
+      }
+    },
+    "IdentifierISSN": {
+      "properties": {
+        "identifierISSN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "preferredISSN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "variantISSN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        }
+      }
+    },
+    "IdentifierOCLC": {
+      "properties": {
+        "identifierOCLC": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=oclc",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        }
+      }
+    },
+    "IdentifierSerial": {
+      "properties": {
+        "identifierISSN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "identifierISSNElectronicMedia": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "identifierISSNOnline": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "identifierISSNOther": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "identifierISSNPrint": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "preferredISSN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "variantISSN": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=issn",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        }
+      }
+    },
+    "IdentifierVD": {
+      "properties": {
+        "identifierVD": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.localCallNumber"
+          ]
+        }
+      }
+    },
+    "IdentifierZDB": {
+      "properties": {
+        "identifierZDB": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=zdb",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "preferredZDB": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=zdb",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        },
+        "variantZDB": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=zdb",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        }
+      }
+    },
+    "Item": {
+      "properties": {
+        "callnumber": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.localCallNumber"
+          ]
+        },
+        "shelfmark": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.shelfmark"
+          ]
+        }
+      }
+    },
+    "NonstandardAddedEntryPerson": {
+      "properties": {
+        "personName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "NonstandardAddedEntryTitle": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "OnlineAccess": {
+      "properties": {
+        "collectionIdentifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "Person": {
+      "properties": {
+        "identifierGND": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "personBio": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "personIdentifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "dc.identifier"
+          ]
+        },
+        "personName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "preferredName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "variantName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "PersonAddressee": {
+      "properties": {
+        "identifierGND": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "personIdentifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "dc.identifier"
+          ]
+        },
+        "personName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "preferredName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "variantName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "PersonContributor": {
+      "properties": {
+        "identifierGND": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "personBio": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "personIdentifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "dc.identifier"
+          ]
+        },
+        "personName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "preferredName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "variantName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "PersonCreator": {
+      "properties": {
+        "identifierGND": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "personBio": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "personIdentifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "dc.identifier"
+          ]
+        },
+        "personName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "preferredName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "variantName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "PersonIdentifier": {
+      "properties": {
+        "personIdentifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "dc.identifier"
+          ]
+        }
+      }
+    },
+    "PersonInterpreter": {
+      "properties": {
+        "identifierGND": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "personIdentifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "dc.identifier"
+          ]
+        },
+        "personName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "preferredName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        },
+        "variantName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "PublicationPlace": {
+      "properties": {
+        "printingPlace": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.publisher"
+          ]
+        },
+        "salesPlace": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.publisher"
+          ]
+        }
+      }
+    },
+    "PublicationPlaceOther": {
+      "properties": {
+        "institutionPlace": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        },
+        "publicationPlace": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "PublisherName": {
+      "properties": {
+        "name": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.publisher"
+          ]
+        },
+        "place": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.publisher"
+          ]
+        }
+      }
+    },
+    "PublisherNameOfSecondaryEdition": {
+      "properties": {
+        "name": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.publisher"
+          ]
+        }
+      }
+    },
+    "RSWK": {
+      "properties": {
+        "identifierGND": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "combinedLabel": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "preferredName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectChronological": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectConference": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectCorporateBodyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectCorporateBodySubUnit": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectDate": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectGenre": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectGeoName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectIdentifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "dc.identifier"
+          ]
+        },
+        "subjectMusic": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectMusicArrangement": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectMusicKey": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectNameAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectNumbering": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectPersonName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTitleName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTopicName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectUnit": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "variantName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        }
+      }
+    },
+    "RecordIdentifier": {
+      "properties": {
+        "identifierForTheRecord": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=mab",
+            "cql.allIndexes",
+            "dc.identifier"
+          ]
+        }
+      }
+    },
+    "RecordIdentifierSuper": {
+      "properties": {
+        "recordIdentifierSuper": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=mabwhole"
+          ]
+        }
+      }
+    },
+    "SecondaryEditionFirstCreator": {
+      "properties": {
+        "secondaryEdition": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "SecondaryEditionIdentifierISSN": {
+      "properties": {
+        "secondaryEdition": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "SecondaryEditionPublicationDate": {
+      "properties": {
+        "secondaryEdition": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "SecondaryEditionSecondCreator": {
+      "properties": {
+        "secondaryEdition": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "SecondaryEditionTitleAlternative": {
+      "properties": {
+        "secondaryEdition": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "SecondaryEditionTitleSuper": {
+      "properties": {
+        "secondaryEdition": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "SeriesAddedEntryUniformTitle": {
+      "properties": {
+        "designation": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=mabwhole"
+          ]
+        },
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "SeriesStatement": {
+      "properties": {
+        "designation": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.identifierAuthority=mabwhole"
+          ]
+        },
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "SourceCreator": {
+      "properties": {
+        "source": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "bib.namePersonal",
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "SourceDateIssued": {
+      "properties": {
+        "source": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "SourceTitle": {
+      "properties": {
+        "source": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "SourceTitleSub": {
+      "properties": {
+        "source": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
+          ]
+        }
+      }
+    },
+    "SourceTitleWhole": {
+      "properties": {
+        "source": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "StructuredOwnershipAndCustodialHistory": {
+      "properties": {
+        "authorityRecordControlNumberOrStandardNumber": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.provenance"
+          ]
+        },
+        "name": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.provenance"
+          ]
+        },
+        "ownershipAndCustodialHistoryEvidenceTerm": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.provenance"
+          ]
+        },
+        "publicNote": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.provenance"
+          ]
+        },
+        "shelfMarkOfCopyDescribed": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.provenance"
+          ]
+        }
+      }
+    },
+    "Subject": {
+      "properties": {
+        "subject": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        }
+      }
+    },
+    "SubjectClassification": {
+      "properties": {
+        "subjectIdentifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "dc.identifier"
+          ]
+        }
+      }
+    },
+    "SubjectCorporateBodyName": {
+      "properties": {
+        "subject": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectCorporateBodyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectFamilyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectGeo": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectHeading": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectNameTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectOther": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectPersonalName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTopic": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        }
+      }
+    },
+    "SubjectDNB": {
+      "properties": {
+        "subjectIdentifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "dc.identifier"
+          ]
+        }
+      }
+    },
+    "SubjectFamilyName": {
+      "properties": {
+        "subject": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectCorporateBodyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectHeading": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        }
+      }
+    },
+    "SubjectGHBLocal": {
+      "properties": {
+        "subject": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.localCallNumber"
+          ]
+        }
+      }
+    },
+    "SubjectGeo": {
+      "properties": {
+        "subject": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectCorporateBodyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectFamilyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectGeo": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectHeading": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectNameTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectOther": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectPersonalName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTopic": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        }
+      }
+    },
+    "SubjectHeadings": {
+      "properties": {
+        "subject": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectCorporateBodyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectFamilyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectGeo": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectHeading": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectNameTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectOther": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectPersonalName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTopic": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        }
+      }
+    },
+    "SubjectNameTitle": {
+      "properties": {
+        "subjectAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectCorporateBodyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectFamilyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectHeading": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectNameTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectPersonalName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTopic": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        }
+      }
+    },
+    "SubjectOther": {
+      "properties": {
+        "subject": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectCorporateBodyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectFamilyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectGeo": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectHeading": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectNameTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectOther": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectPersonalName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTopic": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        }
+      }
+    },
+    "SubjectPersonalName": {
+      "properties": {
+        "subject": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectCorporateBodyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectFamilyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectGeo": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectHeading": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectNameTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectOther": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectPersonalName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTopic": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        }
+      }
+    },
+    "SubjectRPB": {
+      "properties": {
+        "subject": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.localCallNumber"
+          ]
+        }
+      }
+    },
+    "SubjectRSWK": {
+      "properties": {
+        "identifierGND": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "preferredName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectChronological": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectConference": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectCorporateBodyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectCorporateBodySubUnit": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectDate": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectGenre": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectGeoName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectIdentifier": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "dc.identifier"
+          ]
+        },
+        "subjectMusic": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectMusicKey": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectNameAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectNumbering": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectPersonName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTitleName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTopicName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectUnit": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "variantName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        }
+      }
+    },
+    "SubjectRVK": {
+      "properties": {
+        "subject": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "introx.subjectRVK"
+          ]
+        }
+      }
+    },
+    "SubjectTitle": {
+      "properties": {
+        "subject": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectCorporateBodyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectFamilyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectGeo": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectHeading": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectNameTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectOther": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectPersonalName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTopic": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        }
+      }
+    },
+    "SubjectTopic": {
+      "properties": {
+        "subject": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectAddendum": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectCorporateBodyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectFamilyName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectGeo": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectHeading": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectNameTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectOther": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectPersonalName": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTitle": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        },
+        "subjectTopic": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.subject"
+          ]
+        }
+      }
+    },
+    "SubseriesStatement": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
+          ]
+        }
+      }
+    },
+    "Supplements": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
+          ]
+        }
+      }
+    },
+    "Title": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "TitleAddendum": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
+          ]
+        }
+      }
+    },
+    "TitleCreationStatement": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "TitleOther": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "TitleParallel": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "TitleParallelCreationStatement": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes"
+          ]
+        }
+      }
+    },
+    "TitleParallelOther": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "TitleParallelStatement": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
+          ]
+        }
+      }
+    },
+    "TitlePreferred": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
+          ]
+        }
+      }
+    },
+    "TitleProper": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "TitleStatement": {
+      "properties": {
+        "titleMain": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "TitleUniform": {
+      "properties": {
+        "titleUniform": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title",
+            "introx.titlePhrase"
+          ]
+        }
+      }
+    },
+    "VolumeDesignation": {
+      "properties": {
+        "volumeDesignation": {
+          "type": "text",
+          "index": false,
+          "copy_to": [
+            "cql.allIndexes",
+            "dc.title"
+          ]
+        }
+      }
+    }
+  }
+}

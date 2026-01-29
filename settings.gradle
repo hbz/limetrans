@@ -4,12 +4,9 @@ plugins {
 
 rootProject.name = 'limetrans'
 
-include ':core'
-include ':es2'
-include ':es8'
-include ':main'
-
 gradle.rootProject {
+    group = 'hbz.' + name
+
     def baseUrl = project.hasProperty('git.baseUrl') ?
         project.getProperty('git.baseUrl') : null
 
@@ -18,8 +15,10 @@ gradle.rootProject {
             checkstyle:     '10.25.0',
             commons_cli:    '1.3.1',
             commons_io:     '2.14.0',
+            elasticsearch:  '2',
             elasticsearch2: '2.2.1',
             elasticsearch8: '8.19.10',
+            elasticsearch9: '9.2.4',
             htsjdk:         '4.3.0',
             jackson:        '2.13.4.2',
             jdk:            '17',
@@ -84,18 +83,23 @@ gradle.rootProject {
             versions.sort().each { key, value -> println "- ${key}=${value}" }
         }
 
+        def systemPropertyPrefix = group + '.'
+        def elasticsearchVersionProperty = systemPropertyPrefix + 'elasticsearchVersion'
+
+        elasticsearchVersion = System.getProperty(elasticsearchVersionProperty) ?: versions.elasticsearch
+
         passSystemProperties = {
-            def prefix = project.group + '.'
-            def versionsPrefix = prefix + versionsProperty.prefix + versionsProperty.separator
+            def versionsPrefix = systemPropertyPrefix + versionsProperty.prefix + versionsProperty.separator
 
             def versionsPattern = ~/elasticsearch\d+/
-            def propertiesPattern = ~/(?:\Q${prefix}\E|org\.metafacture\.).*/
+            def propertiesPattern = ~/(?:\Q${systemPropertyPrefix}\E|org\.metafacture\.).*/
 
             versions.each { k, v ->
                 if (k.matches(versionsPattern)) it[versionsPrefix + k] = v
             }
 
-            it[prefix + 'projectDir'] = rootProject.projectDir
+            it[systemPropertyPrefix + 'projectDir'] = rootProject.projectDir
+            it[elasticsearchVersionProperty] = elasticsearchVersion
 
             System.properties.each { k, v ->
                 if (k.matches(propertiesPattern)) it[k] = v
@@ -129,3 +133,9 @@ gradle.rootProject {
         }
     }
 }
+
+include ':core'
+include ':es2'
+include ':es8'
+include ':es9'
+include ':main'

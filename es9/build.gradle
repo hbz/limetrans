@@ -1,0 +1,15 @@
+plugins {
+    id 'java-library'
+}
+
+apply from: "${rootProject.projectDir}/gradle/java-common-conventions.gradle"
+
+dependencies {
+    implementation project(':core')
+
+    implementation "co.elastic.clients:elasticsearch-java:${versions.elasticsearch9}"
+    implementation "com.fasterxml.jackson.core:jackson-databind:${versions.jackson}"
+    implementation "org.apache.logging.log4j:log4j-1.2-api:${versions.log4j}"
+    implementation "org.elasticsearch.client:elasticsearch-rest-client:${versions.elasticsearch9}"
+    implementation "org.testcontainers:testcontainers-elasticsearch:${versions.testcontainers}"
+}

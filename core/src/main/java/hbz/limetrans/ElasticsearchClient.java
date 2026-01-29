@@ -18,6 +18,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.atomic.LongAdder;
 import java.util.function.BiConsumer;
@@ -47,7 +48,6 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
 
     private static final int DEFAULT_RETAIN = 2;
 
-    private static final String DEFAULT_VERSION = "2";
     private static final String VERSION_PREFIX = "V";
 
     private static final Logger LOGGER = LogManager.getLogger();
@@ -483,8 +483,7 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
     }
 
     public static String getClientVersion() {
-        final String version = Helpers.getProperty("elasticsearchVersion");
-        return version != null ? version : DEFAULT_VERSION;
+        return Objects.requireNonNull(Helpers.getProperty("elasticsearchVersion"));
     }
 
     public static boolean isLegacy() {
