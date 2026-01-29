@@ -20,7 +20,7 @@ public class ElasticsearchQueryTest {
     private static final boolean T = true;
     private static final boolean F = false;
 
-    private static final boolean Y = ElasticsearchClient.isLegacy();
+    private static final boolean Y = false; // "legacy" (2.x)
     private static final boolean N = !Y;
 
     private static final boolean DEFERRED = Helpers.getProperty("elasticsearchQueryTestDeferred", false);
@@ -303,8 +303,6 @@ public class ElasticsearchQueryTest {
                 .put(new String[]{"index", "settings"}, "classpath:/elasticsearch/hbztitle-settings-%s.json")
                 .put(new String[]{"index", "mapping"}, "classpath:/elasticsearch/hbztitle-mapping-%s.json")
         );
-
-        Assert.assertEquals("version mismatch", Y, mClient instanceof ElasticsearchClientV2);
     }
 
     @After

@@ -486,10 +486,6 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         return Objects.requireNonNull(Helpers.getProperty("elasticsearchVersion"));
     }
 
-    public static boolean isLegacy() {
-        return DEFAULT_VERSION.equals(getClientVersion());
-    }
-
     protected static Class<? extends ElasticsearchClient> getClientClass() {
         final String version = getClientVersion();
 
@@ -528,7 +524,7 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         final Settings.Builder settingsBuilder = Settings.settingsBuilder()
             .put(new String[]{INDEX_KEY, INDEX_NAME_KEY}, aIndexName)
             .put(new String[]{INDEX_KEY, INDEX_TYPE_KEY}, aIndexType)
-            .put(new String[]{"delete"}, !isLegacy());
+            .put(new String[]{"delete"}, true);
 
         if (aConsumer != null) {
             aConsumer.accept(settingsBuilder);

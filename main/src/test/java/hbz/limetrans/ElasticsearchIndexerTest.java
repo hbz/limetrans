@@ -8,8 +8,6 @@ import org.junit.Test;
 
 public class ElasticsearchIndexerTest {
 
-    private static final boolean LEGACY = ElasticsearchClient.isLegacy();
-
     private static final String ID1 = "ID1";
     private static final String ID2 = "ID2";
 
@@ -192,15 +190,9 @@ public class ElasticsearchIndexerTest {
 
         mIndexer.flush();
 
-        if (LEGACY) {
-            assertDocument(ID1, "{'L1':'V1','L1':'V2'}");
-            assertBulkCounts(1, 0, 0);
-        }
-        else {
-            // https://github.com/elastic/elasticsearch/issues/60222#issuecomment-702890063
-            // 7.0: Remove hand-coded XContent duplicate checks #34588 (issues: #22073, #22225, #22253)
-            assertMissing(ID1); // "failed to parse: Duplicate field 'L1'"
-        }
+        // https://github.com/elastic/elasticsearch/issues/60222#issuecomment-702890063
+        // 7.0: Remove hand-coded XContent duplicate checks #34588 (issues: #22073, #22225, #22253)
+        assertMissing(ID1); // "failed to parse: Duplicate field 'L1'"
     }
 
     @Test
@@ -298,9 +290,7 @@ public class ElasticsearchIndexerTest {
         setIndexer("update");
 
         final String doc1 = "{'L1':'V1','L2':'V2','L3':'V3'}";
-        final String doc2 = LEGACY ?
-            "{'L1':'V2','L2':'V2','L3':'V3','L4':'V4'}" :
-            "{'L1':'V1','L2':'V2','L3':'V3','repeatable':true}"; // TODO: not updating (currently unused, but should be fixed)
+        final String doc2 = "{'L1':'V1','L2':'V2','L3':'V3','repeatable':true}"; // TODO: not updating (currently unused, but should be fixed)
 
         assertMissing(ID1);
         insertDocument(ID1, doc1);
@@ -498,8 +488,6 @@ public class ElasticsearchIndexerTest {
     private void setIndexer(final String aBulkAction) {
         mClient = ElasticsearchClient.newClient(INDEX_NAME, INDEX_TYPE, null);
         mIndexer = new ElasticsearchIndexer(mClient, aBulkAction);
-
-        Assert.assertEquals("version mismatch", LEGACY, mClient instanceof ElasticsearchClientV2);
     }
 
     private void assertBulkCounts(final long aSucceeded, final long aFailed, final long aDeleted) {

@@ -14,8 +14,8 @@ import java.util.Arrays;
 import java.util.concurrent.atomic.LongAccumulator;
 import java.util.concurrent.atomic.LongAdder;
 import java.util.function.Consumer;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.IntStream;
 
 public final class Main {
 
@@ -26,103 +26,17 @@ public final class Main {
     private static final long MS = 1000;
     private static final long MB = 1024 * 1024;
 
-    private static final Pattern INDEX_NAME_PATTERN = Pattern.compile("([^-]+-[^-]+-)[^-]+-?(.*)");
-
-    private static final String[] HOST_V2_PROD = new String[]{
-        "zephyros.hbz-nrw.de:9300",
-        "boreas.hbz-nrw.de:9300",
-        "notos.hbz-nrw.de:9300"
-    };
-
-    private static final String[] HOST_V2_DEV = new String[]{
-        "hera.hbz-nrw.de:9300",
-        "athene.hbz-nrw.de:9300",
-        "persephone.hbz-nrw.de:9300"
-    };
-
-    private static final String[] HOST_V8_PROD = new String[]{
-        "digibib-es-prod1.hbz-nrw.de:9218",
-        "digibib-es-prod2.hbz-nrw.de:9218",
-        "digibib-es-prod3.hbz-nrw.de:9218"
-    };
-
-    private static final String[] HOST_V8_DEV = new String[]{
-        "digibib-es-test1.hbz-nrw.de:9228",
-        "digibib-es-test2.hbz-nrw.de:9228",
-        "digibib-es-test3.hbz-nrw.de:9228"
-    };
-
-    private static final String[] HOST_V9_PROD = new String[]{
-        "digibib-es-prod1.hbz-nrw.de:9219",
-        "digibib-es-prod2.hbz-nrw.de:9219",
-        "digibib-es-prod3.hbz-nrw.de:9219"
-    };
-
-    private static final String[] HOST_V9_DEV = new String[]{
-        "digibib-es-test1.hbz-nrw.de:9229",
-        "digibib-es-test2.hbz-nrw.de:9229",
-        "digibib-es-test3.hbz-nrw.de:9229"
-    };
+    private static final String CLUSTER = "digibib-es-%s-%d";
+    private static final String HOST = "digibib-es-%s%d.hbz-nrw.de:92%d%d";
 
     private enum Env {
 
-        prod(settingsBuilder -> {
-            switch (ElasticsearchClient.getClientVersion()) {
-                case "9":
-                    setCluster(settingsBuilder, "digibib-es-prod-9");
-                    setHost(settingsBuilder, HOST_V9_PROD);
-                    break;
-                case "8":
-                    setCluster(settingsBuilder, "digibib-es-prod-8");
-                    setHost(settingsBuilder, HOST_V8_PROD);
-                    break;
-                default:
-                    setCluster(settingsBuilder, "zbn");
-                    setHost(settingsBuilder, HOST_V2_PROD);
-            }
-        }),
+        prod(settingsBuilder -> setClusterAndHost(settingsBuilder, "prod", 1)),
 
-        dev(settingsBuilder -> {
-            switch (ElasticsearchClient.getClientVersion()) {
-                case "9":
-                    setCluster(settingsBuilder, "digibib-es-test-9");
-                    setHost(settingsBuilder, HOST_V9_DEV);
-                    break;
-                case "8":
-                    setCluster(settingsBuilder, "digibib-es-test-8");
-                    setHost(settingsBuilder, HOST_V8_DEV);
-                    break;
-                default:
-                    setCluster(settingsBuilder, "hap");
-                    setHost(settingsBuilder, HOST_V2_DEV);
-            }
-        }),
-
-        d7test(settingsBuilder -> {
-            setCluster(settingsBuilder, "zbn");
-            setHost(settingsBuilder, HOST_V2_DEV, 0);
-            setMaxAge(settingsBuilder, -1);
-
-            if (settingsBuilder.getSetting(new String[]{"output", "elasticsearch", "index", "name"}) instanceof final String indexName) {
-                final Matcher matcher = INDEX_NAME_PATTERN.matcher(indexName);
-                if (!matcher.matches()) {
-                    throw new RuntimeException("Invalid index name: " + indexName);
-                }
-
-                settingsBuilder.put(new String[]{"output", "elasticsearch", "index", "name"}, matcher.group(1) + "d7test-" + matcher.group(2));
-                settingsBuilder.put(new String[]{"output", "elasticsearch", "index", "timewindow"}, "");
-            }
-            else {
-                LOGGER.warn("Missing index name setting.");
-            }
-        }),
+        dev(settingsBuilder -> setClusterAndHost(settingsBuilder, "test", 2)),
 
         local(settingsBuilder -> {
-            final String port = switch (ElasticsearchClient.getClientVersion()) {
-                case "9" -> "9209";
-                case "8" -> "9208";
-                default  -> "9300";
-            };
+            final String port = "92%02d".formatted(getClientVersion());
 
             setCluster(settingsBuilder, "elasticsearch");
             setHost(settingsBuilder, "localhost:" + port);
@@ -149,8 +63,21 @@ public final class Main {
             }
         }
 
+        private static int getClientVersion() {
+            return Integer.parseInt(ElasticsearchClient.getClientVersion());
+        }
+
         private static boolean hasElasticsearchOutput(final Settings.Builder aSettingsBuilder) {
             return aSettingsBuilder.getSetting(new String[]{"output", "elasticsearch"}) != null;
+        }
+
+        private static void setClusterAndHost(final Settings.Builder aSettingsBuilder, final String aClusterName, final int aClusterIndex) {
+            final int elasticsearchVersion = getClientVersion();
+            final int clusterVersion = elasticsearchVersion % 10;
+
+            setCluster(aSettingsBuilder, CLUSTER.formatted(aClusterName, elasticsearchVersion));
+            setHost(aSettingsBuilder, IntStream.rangeClosed(1, 3).mapToObj(i -> HOST.formatted(
+                            aClusterName, i, aClusterIndex, clusterVersion)).toArray(String[]::new));
         }
 
         private static void setCluster(final Settings.Builder aSettingsBuilder, final String aCluster) {
