@@ -24,6 +24,11 @@ put_map("alma-license-to-info-DE-836",
   "__missing":       "Zugang für alle FH-Angehörigen"
 )
 
+put_map("alma-collection-to-info-DE-1383",
+  "Beck online - Hochschulmodul (Books ZDB-18-BOH)":                      "Zugriff nur innerhalb des Hochschulnetzes",
+  "Beck online - Hochschulmodul (Integrierende Ressourcen) (ZDB-18-BOH)": "Zugriff nur innerhalb des Hochschulnetzes"
+)
+
 put_map("alma-collection-to-info-DE-836",
   "Bloomsbury eBooks EBA bis 31.12.2023 (ZDB-162-Bloom-EBA)":             "Zugang für alle FH-Angehörigen",
   "De Gruyter E-Books EBA bis 31.12.2023 (ZDB-23-DGG-eba)":               "Zugang für alle FH-Angehörigen",
