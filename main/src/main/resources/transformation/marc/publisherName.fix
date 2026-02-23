@@ -1,5 +1,5 @@
 # MARC/260, MARC/264
-do list(path: "260??|264?[ 1]", "var": "$i")
+do list(path: "260??|264?[ 13]", "var": "$i")
   add_hash("PublisherName[].$append")
   add_array("PublisherName[].$last.place[]")
   do list(path: "$i.a", "var": "$j")
@@ -23,3 +23,4 @@ do list(path: "260??|264?[ 1]", "var": "$i")
   end
   call_macro("copy-all-items", source: "$i.3", target: "PublisherName[].$last.period")
 end
+uniq("DateProper.date[]")
