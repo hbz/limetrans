@@ -32,6 +32,24 @@ public class VerifyLinks implements FixFunction {
     private static final String VERIFYING_PREFIX = "verifying";
     private static final String VERIFIED_PREFIX = "verified";
 
+    private static final List<String> LINKING_ENTRIES = List.of(
+            "AdditionalPhysicalFormEntry[]",
+            "ConstituentUnitEntry[]",
+            "DataSourceEntry[]",
+            "HostItemEntry[]",
+            "IssuedWithEntry[]",
+            "MainSeriesEntry[]",
+            "NonspecificRelationshipEntry[]",
+            "OriginalLanguageEntry[]",
+            "OtherEditionEntry[]",
+            "PrecedingEntry[]",
+            "SubSeriesEntry[]",
+            "SucceedingEntry[]",
+            "SupplementParentEntry[]",
+            "SupplementSpecialIssueEntry[]",
+            "TranslationEntry[]"
+    );
+
     private static final Map<String, List<String>> SUPER_MAP = new HashMap<>();
     private static final Map<String, LongAdder> SUPER_COUNTER = new HashMap<>();
 
@@ -51,23 +69,7 @@ public class VerifyLinks implements FixFunction {
         ));
         */
 
-        Link.ID.getMap().put("identifierForLinkingEntry[]", List.of(
-                    "AdditionalPhysicalFormEntry[]",
-                    "ConstituentUnitEntry[]",
-                    "DataSourceEntry[]",
-                    "HostItemEntry[]",
-                    "IssuedWithEntry[]",
-                    "MainSeriesEntry[]",
-                    "NonspecificRelationshipEntry[]",
-                    "OriginalLanguageEntry[]",
-                    "OtherEditionEntry[]",
-                    "PrecedingEntry[]",
-                    "SubSeriesEntry[]",
-                    "SucceedingEntry[]",
-                    "SupplementParentEntry[]",
-                    "SupplementSpecialIssueEntry[]",
-                    "TranslationEntry[]"
-        ));
+        Link.ID.getMap().put("identifierForLinkingEntry[]", LINKING_ENTRIES);
 
         /*
         Link.ID.getMap().put("identifierOfTheSource", List.of(
@@ -80,6 +82,10 @@ public class VerifyLinks implements FixFunction {
                     "SecondaryEditionReproduction[]" // TODO
         ));
         */
+
+        Link.ISBN.getMap().put("preferredISBN", LINKING_ENTRIES);
+
+        Link.ISSN.getMap().put("preferredISSN", LINKING_ENTRIES);
 
         SUPER_MAP.put("superIdentifier", List.of(
                     "RecordIdentifier"
@@ -202,7 +208,7 @@ public class VerifyLinks implements FixFunction {
 
     private enum Link {
 
-        ID(true);
+        ID(true), ISBN(false), ISSN(false);
 
         private final Map<String, List<String>> mMap = new HashMap<>();
         private final Map<String, LongAdder> mCounter = new HashMap<>();

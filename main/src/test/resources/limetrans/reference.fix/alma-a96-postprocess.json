@@ -104,7 +104,8 @@
     "preferredISSN" : "00656755",
     "controlNumber" : [ "(DE-605)HT005072303" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT005072303" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT005072303" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT005072303" ],
+    "verifyingPreferredISSN" : [ "00656755" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://www.bibliothek.uni-regensburg.de/ezeit/?2241653",
@@ -868,7 +869,8 @@
     "relationshipInformation" : [ "Print version:" ],
     "identifierISBN" : [ "9780980623895" ],
     "preferredISBN" : "9780980623895",
-    "variantISBN" : [ "978-0-9806238-9-5", "0980623898", "0-9806238-9-8" ]
+    "variantISBN" : [ "978-0-9806238-9-5", "0980623898", "0-9806238-9-8" ],
+    "verifyingPreferredISBN" : [ "9780980623895" ]
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Reprints collection (University of Adelaide Press).",
@@ -1009,7 +1011,8 @@
   "AdditionalPhysicalFormEntry" : [ {
     "identifierISBN" : [ "3-0356-0302-2" ],
     "preferredISBN" : "9783035603026",
-    "variantISBN" : [ "978-3-0356-0302-6", "3035603022" ]
+    "variantISBN" : [ "978-3-0356-0302-6", "3035603022" ],
+    "verifyingPreferredISBN" : [ "9783035603026" ]
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Basics (Basel, Switzerland)"
@@ -1764,7 +1767,8 @@
     "variantISBN" : [ "978-1-78635-497-6", "1786354977" ],
     "controlNumber" : [ "(CKB)3710000001184621" ],
     "identifierForLinkingEntry" : [ "(CKB)3710000001184621" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(CKB)3710000001184621" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(CKB)3710000001184621" ],
+    "verifyingPreferredISBN" : [ "9781786354976" ]
   }, {
     "title" : "Getting Things Done",
     "identifierISBN" : [ "1-78190-955-5" ],
@@ -1772,7 +1776,8 @@
     "variantISBN" : [ "978-1-78190-955-3", "1781909555" ],
     "controlNumber" : [ "(CKB)2670000000421965" ],
     "identifierForLinkingEntry" : [ "(CKB)2670000000421965" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(CKB)2670000000421965" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(CKB)2670000000421965" ],
+    "verifyingPreferredISBN" : [ "9781781909553" ]
   }, {
     "title" : "The Third Sector",
     "identifierISBN" : [ "1-283-35481-0" ],
@@ -1780,11 +1785,13 @@
     "variantISBN" : [ "978-1-283-35481-3", "1283354810" ],
     "controlNumber" : [ "(CKB)2550000000075840" ],
     "identifierForLinkingEntry" : [ "(CKB)2550000000075840" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(CKB)2550000000075840" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(CKB)2550000000075840" ],
+    "verifyingPreferredISBN" : [ "9781283354813" ]
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "identifierISSN" : "2046-6072",
-    "preferredISSN" : "20466072"
+    "preferredISSN" : "20466072",
+    "verifyingPreferredISSN" : [ "20466072" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6149679320006444",
@@ -2078,7 +2085,8 @@
     "variantISBN" : [ "3035605653", "3-0356-0565-3" ],
     "controlNumber" : [ "(DE-605)HT018577901" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT018577901" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018577901" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018577901" ],
+    "verifyingPreferredISBN" : [ "9783035605655" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://dx.doi.org/10.1515/9783035612974",
@@ -2493,7 +2501,8 @@
     "preferredISSN" : "19320965",
     "controlNumber" : [ "(DE-605)HT014825990" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT014825990" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014825990" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT014825990" ],
+    "verifyingPreferredISSN" : [ "19320965" ]
   }, {
     "publisherStatement" : "Frankfurt am Main : Gesellschaft Deutscher Chemiker, [2012?]-",
     "physicalDescription" : "Bände",
@@ -2513,7 +2522,8 @@
     "preferredISSN" : "18680054",
     "controlNumber" : [ "(DE-605)HT015219020" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT015219020" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015219020" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT015219020" ],
+    "verifyingPreferredISSN" : [ "18680054" ]
   } ],
   "PrecedingEntry" : [ {
     "publisherStatement" : "Weinheim [u.a.] : Wiley-VCH, 1977-1999",
@@ -2524,7 +2534,8 @@
     "controlNumber" : [ "(DE-605)HT000286865" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT000286865" ],
     "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT000286865" ],
-    "verifiedIdentifierForLinkingEntry" : [ "(DE-605)HT000286865" ]
+    "verifiedIdentifierForLinkingEntry" : [ "(DE-605)HT000286865" ],
+    "verifyingPreferredISSN" : [ "03415163" ]
   }, {
     "mainEntryHeading" : "Gesellschaft Österreichischer Chemiker",
     "publisherStatement" : "Weinheim : Wiley-VCH, 2006-[2018]",
@@ -2899,7 +2910,8 @@
   "AdditionalPhysicalFormEntry" : [ {
     "identifierISBN" : [ "3-662-62077-4" ],
     "preferredISBN" : "9783662620779",
-    "variantISBN" : [ "978-3-662-62077-9", "3662620774" ]
+    "variantISBN" : [ "978-3-662-62077-9", "3662620774" ],
+    "verifyingPreferredISBN" : [ "9783662620779" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6149677220006444",
@@ -3838,7 +3850,8 @@
     "note" : [ "Online-Ausgabe" ],
     "identifierISBN" : [ "9781484261248" ],
     "preferredISBN" : "9781484261248",
-    "variantISBN" : [ "978-1-4842-6124-8", "1484261240", "1-4842-6124-0" ]
+    "variantISBN" : [ "978-1-4842-6124-8", "1484261240", "1-4842-6124-0" ],
+    "verifyingPreferredISBN" : [ "9781484261248" ]
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Computer software"
@@ -4042,7 +4055,8 @@
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9783864906114" ],
     "preferredISBN" : "9783864906114",
-    "variantISBN" : [ "978-3-86490-611-4", "3864906113", "3-86490-611-3" ]
+    "variantISBN" : [ "978-3-86490-611-4", "3864906113", "3-86490-611-3" ],
+    "verifyingPreferredISBN" : [ "9783864906114" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://ebookcentral.proquest.com/lib/aachen/detail.action?docID=5764425",
@@ -4194,7 +4208,8 @@
     "relationshipInformation" : [ "Printed edition" ],
     "identifierISBN" : [ "9783662616505" ],
     "preferredISBN" : "9783662616505",
-    "variantISBN" : [ "978-3-662-61650-5", "3662616505", "3-662-61650-5" ]
+    "variantISBN" : [ "978-3-662-61650-5", "3662616505", "3-662-61650-5" ],
+    "verifyingPreferredISBN" : [ "9783662616505" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://doi.org/10.1007/978-3-662-61651-2",
@@ -4316,7 +4331,8 @@
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "identifierISSN" : "0736-0770",
-    "preferredISSN" : "07360770"
+    "preferredISSN" : "07360770",
+    "verifyingPreferredISSN" : [ "07360770" ]
   } ],
   "PrecedingEntry" : [ {
     "title" : "Review of Research in Visual Arts Education",
@@ -4325,7 +4341,8 @@
     "controlNumber" : [ "(CKB)991042728725970", "(DLC)83642038", "(OCoLC)671260450" ],
     "identifierForLinkingEntry" : [ "(CKB)991042728725970", "(DLC)83642038", "(OCoLC)671260450" ],
     "verifyingIdentifierForLinkingEntry" : [ "(CKB)991042728725970", "(DLC)83642038", "(OCoLC)671260450" ],
-    "verifiedIdentifierForLinkingEntry" : [ "(DLC)83642038", "(OCoLC)671260450" ]
+    "verifiedIdentifierForLinkingEntry" : [ "(DLC)83642038", "(OCoLC)671260450" ],
+    "verifyingPreferredISSN" : [ "23277874" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6185054320006444",
@@ -4434,10 +4451,12 @@
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "identifierISSN" : "0934-9758",
-    "preferredISSN" : "09349758"
+    "preferredISSN" : "09349758",
+    "verifyingPreferredISSN" : [ "09349758" ]
   }, {
     "identifierISSN" : "1522-2454",
-    "preferredISSN" : "15222454"
+    "preferredISSN" : "15222454",
+    "verifyingPreferredISSN" : [ "15222454" ]
   } ],
   "SucceedingEntry" : [ {
     "title" : "Vakuum in Forschung und Praxis",
@@ -4446,7 +4465,8 @@
     "controlNumber" : [ "(CKB)974740734049", "(DLC)2001262337" ],
     "identifierForLinkingEntry" : [ "(CKB)974740734049", "(DLC)2001262337" ],
     "verifyingIdentifierForLinkingEntry" : [ "(CKB)974740734049", "(DLC)2001262337" ],
-    "verifiedIdentifierForLinkingEntry" : [ "(CKB)974740734049" ]
+    "verifiedIdentifierForLinkingEntry" : [ "(CKB)974740734049" ],
+    "verifyingPreferredISSN" : [ "15222454" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6185053060006444",
@@ -25519,7 +25539,8 @@
     "preferredISSN" : "00038504",
     "controlNumber" : [ "(DE-605)HT002183595" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT002183595" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002183595" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT002183595" ],
+    "verifyingPreferredISSN" : [ "00038504" ]
   } ],
   "xbib" : [ {
     "uid" : "(DE-605)990052918280206441"
@@ -51166,7 +51187,8 @@
     "note" : [ "Online-Ausgabe, eBook" ],
     "identifierISBN" : [ "9783658157203" ],
     "preferredISBN" : "9783658157203",
-    "variantISBN" : [ "978-3-658-15720-3", "3658157208", "3-658-15720-8" ]
+    "variantISBN" : [ "978-3-658-15720-3", "3658157208", "3-658-15720-8" ],
+    "verifyingPreferredISBN" : [ "9783658157203" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://deposit.d-nb.de/cgi-bin/dokserv?id=4768045&prov=M&dok_var=1&dok_ext=htm",
@@ -51639,7 +51661,8 @@
     "variantISBN" : [ "978-3-406-73112-9", "3406731120", "3-406-73112-0" ],
     "controlNumber" : [ "(DE-605)HT019908587" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019908587" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019908587" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019908587" ],
+    "verifyingPreferredISBN" : [ "9783406731129" ]
   }, {
     "mainEntryHeading" : "Maurer, Hartmut, 1931-",
     "relationshipInformation" : [ "Erscheint auch als" ],
@@ -51824,7 +51847,8 @@
     "note" : [ "Online-Ausgabe" ],
     "identifierISBN" : [ "9783816799511" ],
     "preferredISBN" : "9783816799511",
-    "variantISBN" : [ "978-3-8167-9951-1", "3816799515", "3-8167-9951-5" ]
+    "variantISBN" : [ "978-3-8167-9951-1", "3816799515", "3-8167-9951-5" ],
+    "verifyingPreferredISBN" : [ "9783816799511" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://deposit.d-nb.de/cgi-bin/dokserv?id=da8a9b31f5f04a478b0852f4f518de76&prov=M&dok_var=1&dok_ext=htm",
@@ -52210,7 +52234,8 @@
     "title" : "Electric motor control",
     "identifierISBN" : [ "9780128121382" ],
     "preferredISBN" : "9780128121382",
-    "variantISBN" : [ "978-0-12-812138-2", "0128121386", "0-12-812138-6" ]
+    "variantISBN" : [ "978-0-12-812138-2", "0128121386", "0-12-812138-6" ],
+    "verifyingPreferredISBN" : [ "9780128121382" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://ebookcentral.proquest.com/lib/aachen/detail.action?docID=4857262",
@@ -52484,28 +52509,32 @@
     "title" : "Praxisbuch eHealth",
     "identifierISBN" : [ "9783170322868" ],
     "preferredISBN" : "9783170322868",
-    "variantISBN" : [ "978-3-17-032286-8", "3170322869", "3-17-032286-9" ]
+    "variantISBN" : [ "978-3-17-032286-8", "3170322869", "3-17-032286-9" ],
+    "verifyingPreferredISBN" : [ "9783170322868" ]
   }, {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Online-Ausgabe, ePub" ],
     "title" : "Praxisbuch eHealth",
     "identifierISBN" : [ "9783170322875" ],
     "preferredISBN" : "9783170322875",
-    "variantISBN" : [ "978-3-17-032287-5", "3170322877", "3-17-032287-7" ]
+    "variantISBN" : [ "978-3-17-032287-5", "3170322877", "3-17-032287-7" ],
+    "verifyingPreferredISBN" : [ "9783170322875" ]
   }, {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Online-Ausgabe, Mobi" ],
     "title" : "Praxisbuch eHealth",
     "identifierISBN" : [ "9783170322882" ],
     "preferredISBN" : "9783170322882",
-    "variantISBN" : [ "978-3-17-032288-2", "3170322885", "3-17-032288-5" ]
+    "variantISBN" : [ "978-3-17-032288-2", "3170322885", "3-17-032288-5" ],
+    "verifyingPreferredISBN" : [ "9783170322882" ]
   } ],
   "PrecedingEntry" : [ {
     "relationshipInformation" : [ "Vorangegangen ist" ],
     "title" : "Praxisbuch eHealth",
     "identifierISBN" : [ "9783170199880" ],
     "preferredISBN" : "9783170199880",
-    "variantISBN" : [ "978-3-17-019988-0", "3170199889", "3-17-019988-9" ]
+    "variantISBN" : [ "978-3-17-019988-0", "3170199889", "3-17-019988-9" ],
+    "verifyingPreferredISBN" : [ "9783170199880" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://d-nb.info/1144649552/04",
@@ -53147,7 +53176,8 @@
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9783035611212" ],
     "preferredISBN" : "9783035611212",
-    "variantISBN" : [ "978-3-0356-1121-2", "3035611211", "3-0356-1121-1" ]
+    "variantISBN" : [ "978-3-0356-1121-2", "3035611211", "3-0356-1121-1" ],
+    "verifyingPreferredISBN" : [ "9783035611212" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://doi.org/10.1515/9783035609004",
@@ -53399,7 +53429,8 @@
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9783867648226" ],
     "preferredISBN" : "9783867648226",
-    "variantISBN" : [ "978-3-86764-822-6", "3867648220", "3-86764-822-0" ]
+    "variantISBN" : [ "978-3-86764-822-6", "3867648220", "3-86764-822-0" ],
+    "verifyingPreferredISBN" : [ "9783867648226" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://dx.doi.org/10.24053/9783739803845",
@@ -53655,7 +53686,8 @@
     "variantISBN" : [ "978-1-4665-8526-3", "1466585269", "1-4665-8526-9" ],
     "controlNumber" : [ "(DE-605)HT018233344" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT018233344" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018233344" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018233344" ],
+    "verifyingPreferredISBN" : [ "9781466585263" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://ebookcentral.proquest.com/lib/aachen/detail.action?docID=1605634",
@@ -53819,7 +53851,8 @@
     "variantISBN" : [ "978-3-648-08257-7", "3648082574", "3-648-08257-4" ],
     "controlNumber" : [ "(DE-605)HT019094592" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019094592" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019094592" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019094592" ],
+    "verifyingPreferredISBN" : [ "9783648082577" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://ebookcentral.proquest.com/lib/aachen/detail.action?docID=4404044",
@@ -53943,7 +53976,8 @@
     "variantISBN" : [ "978-1-4987-8286-9", "1498782868", "1-4987-8286-8" ],
     "controlNumber" : [ "(DE-605)HT019489555" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019489555" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019489555" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019489555" ],
+    "verifyingPreferredISBN" : [ "9781498782869" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://ebookcentral.proquest.com/lib/aachen/detail.action?docID=5014907",
@@ -54081,7 +54115,8 @@
     "variantISBN" : [ "978-3-319-05448-3", "3319054481", "3-319-05448-1" ],
     "controlNumber" : [ "(DE-605)HT018337193" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT018337193" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018337193" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018337193" ],
+    "verifyingPreferredISBN" : [ "9783319054483" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://ebookcentral.proquest.com/lib/aachen/detail.action?docID=4570787",
@@ -54317,7 +54352,8 @@
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9781498777391" ],
     "preferredISBN" : "9781498777391",
-    "variantISBN" : [ "978-1-4987-7739-1", "1498777392", "1-4987-7739-2" ]
+    "variantISBN" : [ "978-1-4987-7739-1", "1498777392", "1-4987-7739-2" ],
+    "verifyingPreferredISBN" : [ "9781498777391" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2018/02/20/file_112/7557481.pdf",
@@ -54460,7 +54496,8 @@
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9780128104347" ],
     "preferredISBN" : "9780128104347",
-    "variantISBN" : [ "978-0-12-810434-7", "0128104341", "0-12-810434-1" ]
+    "variantISBN" : [ "978-0-12-810434-7", "0128104341", "0-12-810434-1" ],
+    "verifyingPreferredISBN" : [ "9780128104347" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://ebookcentral.proquest.com/lib/aachen/detail.action?docID=4882541",
@@ -54608,7 +54645,8 @@
     "variantISBN" : [ "978-3-648-05883-1", "3648058835", "3-648-05883-5" ],
     "controlNumber" : [ "(DE-605)HT018378184" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT018378184" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018378184" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018378184" ],
+    "verifyingPreferredISBN" : [ "9783648058831" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://ebookcentral.proquest.com/lib/aachen/detail.action?docID=1781453",
@@ -54989,7 +55027,8 @@
     "variantISBN" : [ "978-3-527-53045-8", "3527530452", "3-527-53045-2" ],
     "controlNumber" : [ "(DE-605)HT019161516" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019161516" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019161516" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019161516" ],
+    "verifyingPreferredISBN" : [ "9783527530458" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://ebookcentral.proquest.com/lib/aachen/detail.action?docID=5182377",
@@ -55358,7 +55397,8 @@
     "variantISBN" : [ "978-3-662-54631-4", "3662546310", "3-662-54631-0" ],
     "controlNumber" : [ "(DE-605)HT019437694" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019437694" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019437694" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019437694" ],
+    "verifyingPreferredISBN" : [ "9783662546314" ]
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Fehlzeiten-Report",
@@ -55635,7 +55675,8 @@
     "variantISBN" : [ "978-3-7910-3819-3", "3791038192", "3-7910-3819-2" ],
     "controlNumber" : [ "(DE-605)HT019454512" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019454512" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019454512" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019454512" ],
+    "verifyingPreferredISBN" : [ "9783791038193" ]
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "Grundkurs des Steuerrechts",
@@ -55921,7 +55962,8 @@
     "variantISBN" : [ "978-3-86490-351-9", "3864903513", "3-86490-351-3" ],
     "controlNumber" : [ "(DE-605)HT018971352" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT018971352" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018971352" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT018971352" ],
+    "verifyingPreferredISBN" : [ "9783864903519" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://ebookcentral.proquest.com/lib/aachen/detail.action?docID=4471155",
@@ -56181,7 +56223,8 @@
     "variantISBN" : [ "978-1-78635-354-2", "1786353547", "1-78635-354-7" ],
     "controlNumber" : [ "(DE-605)HT019142183" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019142183" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019142183" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019142183" ],
+    "verifyingPreferredISBN" : [ "9781786353542" ]
   } ],
   "SeriesAddedEntryUniformTitle" : [ {
     "title" : "International business & management",
@@ -56325,7 +56368,8 @@
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9781138558991", "9780209713303" ],
     "preferredISBN" : "9781138558991",
-    "variantISBN" : [ "978-1-138-55899-1", "1138558990", "1-138-55899-0" ]
+    "variantISBN" : [ "978-1-138-55899-1", "1138558990", "1-138-55899-0" ],
+    "verifyingPreferredISBN" : [ "9781138558991" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://ebookcentral.proquest.com/lib/aachen/detail.action?docID=5185426",
@@ -57025,7 +57069,8 @@
     "variantISBN" : [ "978-3-446-45631-0", "3446456317", "3-446-45631-7" ],
     "controlNumber" : [ "(DE-605)HT019754259" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019754259" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019754259" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019754259" ],
+    "verifyingPreferredISBN" : [ "9783446456310" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2019/05/03/file_92/8433191.pdf",
@@ -57270,7 +57315,8 @@
     "note" : [ "Online-Ausgabe, E-Book" ],
     "identifierISBN" : [ "9783446456969" ],
     "preferredISBN" : "9783446456969",
-    "variantISBN" : [ "978-3-446-45696-9", "3446456961", "3-446-45696-1" ]
+    "variantISBN" : [ "978-3-446-45696-9", "3446456961", "3-446-45696-1" ],
+    "verifyingPreferredISBN" : [ "9783446456969" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2018/10/11/file_8/8169719.pdf",
@@ -57444,7 +57490,8 @@
     "note" : [ "Online-Ausgabe, E-Book" ],
     "identifierISBN" : [ "9783446456952" ],
     "preferredISBN" : "9783446456952",
-    "variantISBN" : [ "978-3-446-45695-2", "3446456953", "3-446-45695-3" ]
+    "variantISBN" : [ "978-3-446-45695-2", "3446456953", "3-446-45695-3" ],
+    "verifyingPreferredISBN" : [ "9783446456952" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2018/09/06/file_8/8149687.pdf",
@@ -57822,13 +57869,15 @@
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9781138700109" ],
     "preferredISBN" : "9781138700109",
-    "variantISBN" : [ "978-1-138-70010-9", "113870010X", "1-138-70010-X" ]
+    "variantISBN" : [ "978-1-138-70010-9", "113870010X", "1-138-70010-X" ],
+    "verifyingPreferredISBN" : [ "9781138700109" ]
   }, {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9781315204963" ],
     "preferredISBN" : "9781315204963",
-    "variantISBN" : [ "978-1-315-20496-3", "1315204967", "1-315-20496-7" ]
+    "variantISBN" : [ "978-1-315-20496-3", "1315204967", "1-315-20496-7" ],
+    "verifyingPreferredISBN" : [ "9781315204963" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://www.taylorfrancis.com/books/9781351792608",
@@ -57974,7 +58023,8 @@
     "variantISBN" : [ "978-1-4987-7571-7", "1498775713", "1-4987-7571-3" ],
     "controlNumber" : [ "(DE-605)HT019255720" ],
     "identifierForLinkingEntry" : [ "(DE-605)HT019255720" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019255720" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-605)HT019255720" ],
+    "verifyingPreferredISBN" : [ "9781498775717" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://www.taylorfrancis.com/books/9781498775724",
@@ -58125,19 +58175,22 @@
     "note" : [ "Druck-Ausgabe, Hardback" ],
     "identifierISBN" : [ "9781138627185" ],
     "preferredISBN" : "9781138627185",
-    "variantISBN" : [ "978-1-138-62718-5", "1138627186", "1-138-62718-6" ]
+    "variantISBN" : [ "978-1-138-62718-5", "1138627186", "1-138-62718-6" ],
+    "verifyingPreferredISBN" : [ "9781138627185" ]
   }, {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe, Paperback" ],
     "identifierISBN" : [ "9781498736879" ],
     "preferredISBN" : "9781498736879",
-    "variantISBN" : [ "978-1-4987-3687-9", "1498736874", "1-4987-3687-4" ]
+    "variantISBN" : [ "978-1-4987-3687-9", "1498736874", "1-4987-3687-4" ],
+    "verifyingPreferredISBN" : [ "9781498736879" ]
   }, {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9781315382203" ],
     "preferredISBN" : "9781315382203",
-    "variantISBN" : [ "978-1-315-38220-3", "1315382202", "1-315-38220-2" ]
+    "variantISBN" : [ "978-1-315-38220-3", "1315382202", "1-315-38220-2" ],
+    "verifyingPreferredISBN" : [ "9781315382203" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://www.taylorfrancis.com/books/9781498736886",
@@ -58303,13 +58356,15 @@
     "note" : [ "Online-Ausgabe (Beuth Verlag)" ],
     "identifierISBN" : [ "9783410274063" ],
     "preferredISBN" : "9783410274063",
-    "variantISBN" : [ "978-3-410-27406-3", "3410274065", "3-410-27406-5" ]
+    "variantISBN" : [ "978-3-410-27406-3", "3410274065", "3-410-27406-5" ],
+    "verifyingPreferredISBN" : [ "9783410274063" ]
   }, {
     "relationshipInformation" : [ "Erscheint auch als" ],
     "note" : [ "Online-Ausgabe, ePDF (Verlag Ernst & Sohn)" ],
     "identifierISBN" : [ "9783433609231" ],
     "preferredISBN" : "9783433609231",
-    "variantISBN" : [ "978-3-433-60923-1", "3433609233", "3-433-60923-3" ]
+    "variantISBN" : [ "978-3-433-60923-1", "3433609233", "3-433-60923-3" ],
+    "verifyingPreferredISBN" : [ "9783433609231" ]
   } ],
   "SubjectGHBLocal" : [ {
     "source" : "DE-A96",
@@ -61658,7 +61713,8 @@
     "note" : [ "Druck-Ausgabe" ],
     "identifierISBN" : [ "9783770557608" ],
     "preferredISBN" : "9783770557608",
-    "variantISBN" : [ "978-3-7705-5760-8", "3770557603", "3-7705-5760-3" ]
+    "variantISBN" : [ "978-3-7705-5760-8", "3770557603", "3-7705-5760-3" ],
+    "verifyingPreferredISBN" : [ "9783770557608" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://doi.org/10.30965/9783846757604",
@@ -61794,7 +61850,8 @@
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "identifierISSN" : "2228-5431",
-    "preferredISSN" : "22285431"
+    "preferredISSN" : "22285431",
+    "verifyingPreferredISSN" : [ "22285431" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6190456970006444",
@@ -62673,7 +62730,8 @@
     "preferredISSN" : "00374474",
     "controlNumber" : [ "(DLC)   63047391", "(OCoLC)1716701" ],
     "identifierForLinkingEntry" : [ "(DLC)   63047391", "(OCoLC)1716701" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DLC)   63047391", "(OCoLC)1716701" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DLC)   63047391", "(OCoLC)1716701" ],
+    "verifyingPreferredISSN" : [ "00374474" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "61102775010006444",
@@ -62807,7 +62865,8 @@
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "identifierISSN" : "0361-9230",
-    "preferredISSN" : "03619230"
+    "preferredISSN" : "03619230",
+    "verifyingPreferredISSN" : [ "03619230" ]
   } ],
   "OnlineAccess" : [ {
     "publicnote" : "Volltext [Available from 1976 volume: 1 issue: 1 until 2002 volume: 59 issue: 3.]",
@@ -62981,7 +63040,8 @@
   "AdditionalPhysicalFormEntry" : [ {
     "identifierISBN" : [ "9781119788799" ],
     "preferredISBN" : "9781119788799",
-    "variantISBN" : [ "978-1-119-78879-9", "111978879X", "1-119-78879-X" ]
+    "variantISBN" : [ "978-1-119-78879-9", "111978879X", "1-119-78879-X" ],
+    "verifyingPreferredISBN" : [ "9781119788799" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119788829"
@@ -63307,7 +63367,8 @@
     "preferredISSN" : "25092731",
     "controlNumber" : [ "(DE-600)2857091-1" ],
     "identifierForLinkingEntry" : [ "(DE-600)2857091-1" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-600)2857091-1" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-600)2857091-1" ],
+    "verifyingPreferredISSN" : [ "25092731" ]
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "publisherStatement" : "München : Deutscher Industrieverl., 2001-[2015]",
@@ -63317,7 +63378,8 @@
     "preferredISSN" : "00164909",
     "controlNumber" : [ "(DE-600)2134356-1" ],
     "identifierForLinkingEntry" : [ "(DE-600)2134356-1" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-600)2134356-1" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-600)2134356-1" ],
+    "verifyingPreferredISSN" : [ "00164909" ]
   }, {
     "publisherStatement" : "München : Oldenbourg, 1998-2007",
     "physicalDescription" : "CD-ROMs",
@@ -63335,7 +63397,8 @@
     "preferredISSN" : "00164909",
     "controlNumber" : [ "(DE-600)2376291-3" ],
     "identifierForLinkingEntry" : [ "(DE-600)2376291-3" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-600)2376291-3" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-600)2376291-3" ],
+    "verifyingPreferredISSN" : [ "00164909" ]
   } ],
   "PrecedingEntry" : [ {
     "publisherStatement" : "München : Oldenburg-Industrieverl., 1956-2000",
@@ -63345,7 +63408,8 @@
     "preferredISSN" : "00163651",
     "controlNumber" : [ "(DE-600)512614-9" ],
     "identifierForLinkingEntry" : [ "(DE-600)512614-9" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-600)512614-9" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-600)512614-9" ],
+    "verifyingPreferredISSN" : [ "00163651" ]
   } ],
   "SubjectHeadings" : [ {
     "subject" : "Zeitschrift"
@@ -63681,7 +63745,8 @@
     "preferredISSN" : "15432610",
     "controlNumber" : [ "(DE-600)2446849-6" ],
     "identifierForLinkingEntry" : [ "(DE-600)2446849-6" ],
-    "verifyingIdentifierForLinkingEntry" : [ "(DE-600)2446849-6" ]
+    "verifyingIdentifierForLinkingEntry" : [ "(DE-600)2446849-6" ],
+    "verifyingPreferredISSN" : [ "15432610" ]
   } ],
   "OnlineAccess" : [ {
     "uri" : "http://dbis.uni-regensburg.de/frontdoor.php?titel_id=1333",
@@ -63843,7 +63908,8 @@
   } ],
   "AdditionalPhysicalFormEntry" : [ {
     "identifierISSN" : "1815-3070",
-    "preferredISSN" : "18153070"
+    "preferredISSN" : "18153070",
+    "verifyingPreferredISSN" : [ "18153070" ]
   } ],
   "OnlineAccess" : [ {
     "collectionIdentifier" : "6190456970006444",
