@@ -11,6 +11,7 @@ import org.metafacture.metafix.Value;
 import org.metafacture.metafix.api.FixFunction;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -26,25 +27,21 @@ public class VerifyLinks implements FixFunction {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
-    private static final String ISIL_PATH_FORMAT = "%s.%sid.bgzf";
+    private static final String ISIL_PATH_FORMAT = "%s.%s.bgzf";
 
     private static final String VERIFYING_PREFIX = "verifying";
     private static final String VERIFIED_PREFIX = "verified";
 
-    private static final Map<String, List<String>> LINK_MAP = new HashMap<>();
     private static final Map<String, List<String>> SUPER_MAP = new HashMap<>();
+    private static final Map<String, LongAdder> SUPER_COUNTER = new HashMap<>();
 
     private static final String SUPER_SOURCE = "xbib[].uid";
 
-    private static final Map<String, LongAdder> LINK_COUNTER = new HashMap<>();
-    private static final Map<String, LongAdder> SUPER_COUNTER = new HashMap<>();
-
-    private static Predicate<String> linkPredicate; // checkstyle-disable-line StaticVariableName
     private static Predicate<String> superPredicate; // checkstyle-disable-line StaticVariableName
 
     static {
         /*
-        LINK_MAP.put("identifierForDescription", List.of(
+        Link.ID.getMap().put("identifierForDescription", List.of(
                     "DescriptionOfContinuingEditionsOrVolumes[]",
                     "DescriptionOfFormerEditionsOrVolumes[]",
                     "DescriptionOfPeriodicSupplements[]", // TODO
@@ -54,7 +51,7 @@ public class VerifyLinks implements FixFunction {
         ));
         */
 
-        LINK_MAP.put("identifierForLinkingEntry[]", List.of(
+        Link.ID.getMap().put("identifierForLinkingEntry[]", List.of(
                     "AdditionalPhysicalFormEntry[]",
                     "ConstituentUnitEntry[]",
                     "DataSourceEntry[]",
@@ -73,14 +70,14 @@ public class VerifyLinks implements FixFunction {
         ));
 
         /*
-        LINK_MAP.put("relationIdentifier", List.of(
-                    "SecondaryEditionReproduction[]" // TODO
+        Link.ID.getMap().put("identifierOfTheSource", List.of(
+                    "SourceIdentifier[]" // TODO
         ));
         */
 
         /*
-        LINK_MAP.put("identifierOfTheSource", List.of(
-                    "SourceIdentifier[]" // TODO
+        Link.ID.getMap().put("relationIdentifier", List.of(
+                    "SecondaryEditionReproduction[]" // TODO
         ));
         */
 
@@ -95,13 +92,13 @@ public class VerifyLinks implements FixFunction {
     public static void main(final String[] aArgs) {
         final int argc = aArgs.length;
         if (argc < 1) {
-            throw new IllegalArgumentException("Usage: " + VerifyLinks.class + " <path> [<id>...]");
+            throw new IllegalArgumentException("Usage: " + VerifyLinks.class + " <path> [<value>...]");
         }
 
-        final Set<String> idSet = loadIdSet(aArgs[0], true);
-        if (idSet != null) {
+        final Set<String> set = loadSet(aArgs[0], "link", true);
+        if (set != null) {
             for (int i = 1; i < argc; ++i) {
-                System.out.println(aArgs[i] + "=" + idSet.contains(aArgs[i]));
+                System.out.println(aArgs[i] + "=" + set.contains(aArgs[i]));
             }
         }
     }
@@ -109,34 +106,44 @@ public class VerifyLinks implements FixFunction {
     public static void setup(final Map<String, String> aVars) {
         final String isilPath = Objects.requireNonNull(aVars.get("isil-path"));
 
-        final Set<String> idSet = loadIdSet(ISIL_PATH_FORMAT.formatted(isilPath, ""), true);
-        final Set<String> skipIdSet = loadIdSet(ISIL_PATH_FORMAT.formatted(isilPath, "skip"), false);
-        final Set<String> superIdSet = loadIdSet(ISIL_PATH_FORMAT.formatted(isilPath, "super"), true);
+        Link.forEach(l -> {
+            final String name = l.name();
+            final String key = name.toLowerCase();
 
-        linkPredicate = idSet != null ? id -> idSet.contains(id) && !skipIdSet.contains(id) : null;
+            final Set<String> set = loadSet(ISIL_PATH_FORMAT.formatted(isilPath, key), name, l.getRequired());
+            final Set<String> skipSet = loadSet(ISIL_PATH_FORMAT.formatted(isilPath, "skip" + key), name, false);
+
+            l.setPredicate(set != null ? v -> set.contains(v) && !skipSet.contains(v) : null);
+
+            l.getCounter().clear();
+        });
+
+        final Set<String> superIdSet = loadSet(ISIL_PATH_FORMAT.formatted(isilPath, "superid"), "super ID", true);
         superPredicate = superIdSet != null ? superIdSet::contains : null;
-
-        LINK_COUNTER.clear();
         SUPER_COUNTER.clear();
     }
 
     public static void reset() {
-        if (linkPredicate != null) {
-            linkPredicate = null;
-            LOGGER.info("Verified links: {}", LINK_COUNTER);
-        }
+        Link.forEach(l -> {
+            if (l.getPredicate() != null) {
+                l.setPredicate(null);
+                LOGGER.info("Verified {}s: {}", l.name(), l.getCounter());
+            }
+        });
 
         if (superPredicate != null) {
             superPredicate = null;
-            LOGGER.info("Verified super identifiers: {}", SUPER_COUNTER);
+            LOGGER.info("Verified super IDs: {}", SUPER_COUNTER);
         }
     }
 
     @Override
     public void apply(final Metafix aMetafix, final Record aRecord, final List<String> aParams, final Map<String, String> aOptions) {
-        if (linkPredicate != null) {
-            verifyLinks(aRecord, LINK_MAP, null, linkPredicate, LINK_COUNTER);
-        }
+        Link.forEach(l -> {
+            if (l.getPredicate() != null) {
+                verifyLinks(aRecord, l.getMap(), null, l.getPredicate(), l.getCounter());
+            }
+        });
 
         if (superPredicate != null) {
             verifyLinks(aRecord, SUPER_MAP, SUPER_SOURCE, superPredicate, SUPER_COUNTER);
@@ -162,8 +169,8 @@ public class VerifyLinks implements FixFunction {
                 final List<Value> verifying = new ArrayList<>();
                 final List<Value> verified = new ArrayList<>();
 
-                eachValue(aSource != null ? aRecord : hash, aSource != null ? aSource : field, idValue -> {
-                    idValue.matchType()
+                eachValue(aSource != null ? aRecord : hash, aSource != null ? aSource : field, fieldValue -> {
+                    fieldValue.matchType()
                         .ifArray(a -> a.forEach(v -> consumer.accept(path, verifying, verified, v, v.asString())))
                         .ifString(s -> consumer.accept(path, verifying, verified, new Value(s), s));
                 });
@@ -183,14 +190,54 @@ public class VerifyLinks implements FixFunction {
         Value.asList(aHash.get(aPath), a -> a.forEach(aConsumer));
     }
 
-    private static Set<String> loadIdSet(final String aPath, final boolean aRequired) {
+    private static Set<String> loadSet(final String aPath, final String aType, final boolean aRequired) {
         final Set<String> set = new HashSet<>();
-        return Helpers.loadFile(aPath, aRequired, "ID set", set::add, set::size, LOGGER) ? set : null;
+        return Helpers.loadFile(aPath, aRequired, aType + " set", set::add, set::size, LOGGER) ? set : null;
     }
 
     @FunctionalInterface
     private interface VerifyingConsumer {
         void accept(String aPath, List<Value> aVerifying, List<Value> aVerified, Value aValue, String aString);
+    }
+
+    private enum Link {
+
+        ID(true);
+
+        private final Map<String, List<String>> mMap = new HashMap<>();
+        private final Map<String, LongAdder> mCounter = new HashMap<>();
+        private final boolean mRequired;
+
+        private Predicate<String> mPredicate;
+
+        Link(final boolean aRequired) {
+            mRequired = aRequired;
+        }
+
+        private static void forEach(final Consumer<Link> aConsumer) {
+            Arrays.stream(values()).forEach(aConsumer);
+        }
+
+        private Map<String, LongAdder> getCounter() {
+            return mCounter;
+        }
+
+        private Map<String, List<String>> getMap() {
+            return mMap;
+        }
+
+        private Predicate<String> getPredicate() {
+            return mPredicate;
+        }
+
+        private void setPredicate(final Predicate<String> aPredicate) {
+            mPredicate = aPredicate;
+        }
+
+        private boolean getRequired() {
+            return mRequired;
+        }
+
     }
 
 }
