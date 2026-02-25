@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public abstract class AbstractLimetransTest {
 
-    private final String SETTINGS_PATH = Helpers.getProperty("projectDir") + "/config/test/%s.json";
+    private static final String SETTINGS_PATH = Helpers.getProperty("projectDir") + "/config/test/%s.json";
 
     protected abstract Limetrans.Type getType();
 

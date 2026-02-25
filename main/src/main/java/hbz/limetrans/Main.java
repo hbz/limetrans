@@ -14,7 +14,6 @@ import java.util.Arrays;
 import java.util.concurrent.atomic.LongAccumulator;
 import java.util.concurrent.atomic.LongAdder;
 import java.util.function.Consumer;
-import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 
 public final class Main {
@@ -28,6 +27,8 @@ public final class Main {
 
     private static final String CLUSTER = "digibib-es-%s-%d";
     private static final String HOST = "digibib-es-%s%d.hbz-nrw.de:92%d%d";
+
+    private static final int CLUSTER_HOSTS = 3;
 
     private enum Env {
 
@@ -76,8 +77,8 @@ public final class Main {
             final int clusterVersion = elasticsearchVersion % 10;
 
             setCluster(aSettingsBuilder, CLUSTER.formatted(aClusterName, elasticsearchVersion));
-            setHost(aSettingsBuilder, IntStream.rangeClosed(1, 3).mapToObj(i -> HOST.formatted(
-                            aClusterName, i, aClusterIndex, clusterVersion)).toArray(String[]::new));
+            setHost(aSettingsBuilder, IntStream.rangeClosed(1, CLUSTER_HOSTS).mapToObj(i -> HOST
+                        .formatted(aClusterName, i, aClusterIndex, clusterVersion)).toArray(String[]::new));
         }
 
         private static void setCluster(final Settings.Builder aSettingsBuilder, final String aCluster) {
