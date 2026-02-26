@@ -9,6 +9,5 @@ dependencies {
     implementation "com.fasterxml.jackson.core:jackson-databind:${versions.jackson}"
     implementation "com.github.samtools:htsjdk:${versions.htsjdk}"
     implementation "commons-cli:commons-cli:${versions.commons_cli}"
-    implementation "org.apache.logging.log4j:log4j-1.2-api:${versions.log4j}"
     implementation "org.lmdbjava:lmdbjava:${versions.lmdb}"
 }
