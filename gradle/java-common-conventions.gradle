@@ -1,4 +1,5 @@
 repositories {
+    if (enableMavenLocal) mavenLocal()
     mavenCentral()
     maven githubPackage.invoke('metafacture')
     maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }

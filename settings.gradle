@@ -102,6 +102,8 @@ gradle.rootProject {
                 if (k.matches(propertiesPattern)) it[k] = v
             }
         }
+
+        enableMavenLocal = false
     }
 
     def separator = "\\Q${versionsProperty.separator}\\E"
@@ -119,6 +121,10 @@ gradle.rootProject {
             def version = versions[key]
             if (version.matches(~/\d+(?:\..*)?|.*-rc\d+|.*-SNAPSHOT/)) {
                 args.version = { prefer version }
+
+                if (version.matches(~/.*-SNAPSHOT/)) {
+                    enableMavenLocal = true
+                }
             }
             else {
                 args.version = { branch = version }
