@@ -1,5 +1,4 @@
 # MARC/245
-add_array("TitleStatement[]")
-call_macro("copy-first-item", source: "245??.a", target: "TitleStatement[].$append.titleMain")
-replace_all("TitleStatement[].$last.titleMain", "^[©]|\\s?[,.:;/=]?$", "")
-call_macro("remove-nonsort", source: "TitleStatement[].$last.titleMain")
+call_macro("copy-first-item", source: "245??.a", target: "TitleStatement.titleMain")
+replace_all("TitleStatement.titleMain", "^[©]|\\s?[,.:;/=]?$", "")
+call_macro("remove-nonsort", source: "TitleStatement.titleMain")

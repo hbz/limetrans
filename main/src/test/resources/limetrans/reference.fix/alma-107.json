@@ -27,9 +27,9 @@
   "Person" : [ {
     "personName" : "Klemp, Stefan"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "\"Nicht ermittelt\" : Polizeibataillone und die Nachkriegsjustiz ; ein Handbuch"
-  } ],
+  },
   "Edition" : {
     "edition" : [ "2., erw. und überarb" ]
   },
@@ -78,9 +78,9 @@
   "Language" : [ {
     "languageSource" : "und"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "UTB-studi-E-Book"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Stuttgart" ],
     "name" : [ "UTB" ]
@@ -134,9 +134,9 @@
   "Person" : [ {
     "personName" : "Beatrice Alemagna"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Das wundervolle Fluffipuff: Fünffarbiges Bilderbuch mit Ausklappseite"
-  } ],
+  },
   "Edition" : {
     "edition" : [ "Lizenzausgabe" ]
   },
@@ -184,9 +184,9 @@
   "Person" : [ {
     "personName" : "Reger, Jo [Herausgeber]"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Nevertheless they persisted : feminisms and continued resistance in the U.S. women's movement"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "New York" ],
     "name" : [ "Routledge" ],
@@ -235,9 +235,9 @@
   "Person" : [ {
     "personName" : "Veit, Vivien"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Die gesetzliche Konzeption der Bestechungsdelikte : zugleich ein Vorschlag für eine künftige Fassung der §§ 331 ff. StGB"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Frankfurt am Main" ],
     "name" : [ "Lang" ],
@@ -329,9 +329,9 @@
   "SubseriesStatement" : [ {
     "title" : "Landesausgabe Rheinland-Pfalz"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Praxis der Kommunalverwaltung"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Wiesbaden" ],
     "name" : [ "Kommunal- und Schulverl" ],
@@ -485,9 +485,9 @@
     "language" : "Deutsch",
     "languageSource" : "ger"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Kurze Nachrichten in Betreff des eisenfreien Mineral-Wassers des Königlich Preußischen concessionierten Sinziger Mineral-Brunnens"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Neuwied" ],
     "name" : [ "Strüder" ],
@@ -630,9 +630,9 @@
   "Person" : [ {
     "personName" : "Irsch, Nikolaus"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Romanische Bauten im Kreise Ahrweiler"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Ahrweiler" ],
     "chronology" : [ "1911" ]
@@ -775,9 +775,9 @@
   "Person" : [ {
     "personName" : "Weidner, Andreas"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Gebiets-Album Schenkenberg bei Sinzig"
-  } ],
+  },
   "Edition" : {
     "edition" : [ "Stand: Jan. 2017" ]
   },
@@ -867,9 +867,9 @@
     "variantName" : [ "Westum (Sinzig-Westum)" ],
     "preferredName" : "Sinzig-Westum"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Westum, ein Ort bei Sinzig"
-  } ],
+  },
   "Description" : [ {
     "description" : "Westum, ein Ort bei Sinzig"
   } ],
@@ -949,9 +949,9 @@
     "language" : "Deutsch",
     "languageSource" : "ger"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Fallstudien Physische Geographie"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Braunschweig" ],
     "name" : [ "Westermann" ],
@@ -1060,9 +1060,9 @@
     "language" : "Deutsch",
     "languageSource" : "ger"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Umwelt aktuell"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Braunschweig" ],
     "name" : [ "Westermann" ],
@@ -1202,9 +1202,9 @@
   }, {
     "title" : "[Ausgabe Rhein]"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Die Rheinpfalz"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Ludwigshafen" ],
     "name" : [ "Rheinpfalz Verl. und Dr" ],
@@ -1378,9 +1378,9 @@
   }, {
     "title" : "[Ausgabe Rhein]"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Die Rheinpfalz"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Ludwigshafen, Rh" ],
     "name" : [ "Rheinpfalz Verl. u. Dr" ],
@@ -1561,9 +1561,9 @@
     "language" : "Deutsch",
     "languageSource" : "ger"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Pfälzer Heimat"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Neustadt, Haardt" ],
     "name" : [ "Pfälz. Verl.-Anst" ],
@@ -1698,9 +1698,9 @@
     "language" : "Deutsch",
     "languageSource" : "ger"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Pfälzer Heimat"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Pirmasens" ],
     "name" : [ "Deil" ],
@@ -1832,9 +1832,9 @@
     "language" : "Deutsch",
     "languageSource" : "ger"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Piccola"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Speyer" ],
     "name" : [ "Klambt" ],
@@ -1969,9 +1969,9 @@
     "language" : "Deutsch",
     "languageSource" : "ger"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Enzyklopädie Naturwissenschaft und Technik"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Landsberg", "München" ],
     "name" : [ "Verl. Moderne Industrie" ],
@@ -2100,9 +2100,9 @@
     "identifierGND" : [ "116707380" ],
     "preferredName" : "Langenbucher, Hellmuth"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Die deutsche Gegenwartsdichtung"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Berlin" ],
     "name" : [ "Junker und Dünnhaupt Verlag" ],
@@ -2300,9 +2300,9 @@
   "SubseriesStatement" : [ {
     "title" : "Matthäus-Passion : Frühfassung ; BWV 244b"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Neue Ausgabe sämtlicher Werke"
-  } ],
+  },
   "Edition" : {
     "edition" : [ "[Partitur], kommentierte Faks.-Ausg. der Abschrift Johann Christoph Altnickols" ]
   },
@@ -2480,9 +2480,9 @@
     "preferredISBN" : "9780226853215",
     "variantISBN" : [ "978-0-226-85321-5", "0226853217", "0-226-85321-7" ]
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "The works of, le opere di Giuseppe Verdi"
-  } ],
+  },
   "Edition" : {
     "edition" : [ "[Partitur, Stimmen]" ]
   },
@@ -2619,9 +2619,9 @@
   "Person" : [ {
     "personName" : "Arijon, Daniel"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Grammatik der Filmsprache"
-  } ],
+  },
   "Edition" : {
     "edition" : [ "Dt. Erstausg., 1. Aufl." ]
   },
@@ -2744,9 +2744,9 @@
     "variantName" : [ "Slēman, Herrikos", "Schliemann, Henri", "Schliemann, Enrico", "Schliemann, Henry", "Schlēman, Herrikos", "Šliman, Genrich", "Schliemann, Johann Ludwig Heinrich Julius", "Schliemann, H.", "Shliman, Genrikh" ],
     "preferredName" : "Schliemann, Heinrich"
   } ],
-  "TitleStatement" : [ {
+  "TitleStatement" : {
     "titleMain" : "Mykenae"
-  } ],
+  },
   "PublisherName" : [ {
     "place" : [ "Leipzig" ],
     "name" : [ "Brockhaus" ],
