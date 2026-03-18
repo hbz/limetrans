@@ -3067,19 +3067,6 @@
         }
       }
     },
-    "TitleProper": {
-      "properties": {
-        "title": {
-          "type": "text",
-          "index": false,
-          "copy_to": [
-            "cql.allIndexes",
-            "dc.title",
-            "introx.titlePhrase"
-          ]
-        }
-      }
-    },
     "TitleStatement": {
       "properties": {
         "titleMain": {
