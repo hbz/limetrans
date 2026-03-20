@@ -68,13 +68,8 @@ public class EventStackEntry {
         if (type != event.getType()) {
             result = Mismatch.TYPE;
         }
-        else if (name != null && !name.equals(event.getName())) {
-            if ("".equals(name) && ignoreMissingName(type)) {
-                result = null;
-            }
-            else {
-                result = Mismatch.NAME;
-            }
+        else if (name != null && !name.equals(event.getName()) && !("".equals(name) && ignoreMissingName(type))) {
+            result = Mismatch.NAME;
         }
         else if (value != null && !value.equals(event.getValue())) {
             result = Mismatch.VALUE;
