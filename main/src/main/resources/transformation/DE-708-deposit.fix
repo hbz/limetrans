@@ -38,11 +38,6 @@ include("./marc/abbreviatedTitle.fix")
 include("./marc/titleAddendum.fix")
 
 include("./marc/recordIdentifierSuper.fix")
-do list(path: "RecordIdentifierSuper[]", "var": "$i")
-  if exists("$i.recordIdentifierSuper[].1")
-    paste("$i.recordIdentifierSuper[].1", "~(", "@isil", "~)", "$i.recordIdentifierSuper[].1", join_char: "")
-  end
-end
 
 include("./marc/creatorStatement.fix")
 include("./marc/dc_format.fix")
