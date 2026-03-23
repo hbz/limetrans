@@ -63545,3 +63545,142 @@
     "combinedLabel" : "Corporate Design"
   } ]
 }
+{
+  "Country" : [ {
+    "countryISO" : "JP"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT030129968",
+    "identifierHBZ" : "HT030129968"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Atarashi Masayuki cho", "Atarashi Masayuki cho" ]
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Sammelwerk" ],
+    "language" : [ "Japanisch" ],
+    "date" : [ "1992" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ],
+    "taxonomy" : [ "Rechtswissenschaft" ],
+    "person" : [ "Atarashi, Masayuki (1945-)" ],
+    "subject" : [ "Kelsen, Hans", "Kelsen, Hans, 1881-1973", "Kenpō" ],
+    "localCallNumber" : [ "QRGT/ATAR" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99372757280506441",
+    "identifierMMSIZ" : "99381910973206444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99372757280506441",
+    "identifierForTheRecord" : "(DE-605)HT030129968"
+  },
+  "Language" : [ {
+    "language" : "Japanisch",
+    "languageSource" : "jpn"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "4535580030", "7600円" ],
+    "preferredISBN" : "9784535580039",
+    "variantISBN" : [ "978-4-535-58003-9", "4-535-58003-0" ]
+  } ],
+  "TitleStatement" : {
+    "titleMain" : "Junsui hōgaku to kenpō riron",
+    "titleMain" : "Junsui hōgaku to kenpō riron"
+  },
+  "PublisherName" : [ {
+    "place" : [ "Tōkyō" ],
+    "name" : [ "Nihon Hyōronsha" ],
+    "chronology" : [ "1992" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : [ "Tōkyō" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "1992" ]
+  },
+  "Extent" : {
+    "extent" : "ix, 402 Seiten ; 22cm"
+  },
+  "SeriesStatement" : [ {
+    "title" : [ "Gendai kenpō riron sōsho" ]
+  } ],
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : [ "Gendai kenpō riron sōsho" ]
+  } ],
+  "Description" : [ {
+    "description" : "Index: Seite 396-402"
+  } ],
+  "DescriptionOfExpression" : [ {
+    "note" : [ "In japanischer Schrift" ]
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Atarashi, Masayuki",
+    "personBio" : "1945-"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-A96",
+    "subject" : "QRGT"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99372757280506441"
+  }, {
+    "uid" : "(DE-605)HT030129968"
+  }, {
+    "uid" : "(DE-A96)99381910973206444"
+  }, {
+    "uid" : "(NII)BN0750399X"
+  }, {
+    "uid" : "(DE-599)HBZHT030129968"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-A96",
+    "label" : "Hochschulbibliothek der Fachhochschule Aachen",
+    "callnumber" : [ "QRGT/ATAR", "230233401" ],
+    "shelfmark" : "203"
+  } ],
+  "TitleOther" : [ {
+    "title" : "Reine Rechtswissenschaft und Verfassungstheorie",
+    "prefix" : "Übers. d. Hauptsacht."
+  } ],
+  "RSWK" : [ {
+    "subjectPersonName" : "Kelsen, Hans",
+    "combinedLabel" : "Kelsen, Hans"
+  }, {
+    "subjectPersonName" : "Kelsen, Hans, 1881-1973",
+    "combinedLabel" : "Kelsen, Hans, 1881-1973"
+  }, {
+    "subjectTopicName" : [ "Kenpō" ],
+    "combinedLabel" : "Kenpō"
+  } ],
+  "AlternateGraphicRepresentation" : [ {
+    "titleStatement" : "純粋法学と憲法理論",
+    "scriptSource" : "Jpan",
+    "script" : "Japanisch (Kanji, Hiragana und Katakana)"
+  }, {
+    "publicationStatement" : "東京: 日本評論社, 1992",
+    "scriptSource" : "Jpan",
+    "script" : "Japanisch (Kanji, Hiragana und Katakana)"
+  }, {
+    "seriesStatement" : [ "現代憲法理論叢書" ],
+    "scriptSource" : "Jpan",
+    "script" : "Japanisch (Kanji, Hiragana und Katakana)"
+  }, {
+    "subjectHeading" : "憲法.",
+    "scriptSource" : "Jpan",
+    "script" : "Japanisch (Kanji, Hiragana und Katakana)"
+  }, {
+    "subjectHeading" : "憲法",
+    "scriptSource" : "Jpan",
+    "script" : "Japanisch (Kanji, Hiragana und Katakana)"
+  }, {
+    "personalName" : "新, 正幸",
+    "scriptSource" : "Jpan",
+    "script" : "Japanisch (Kanji, Hiragana und Katakana)"
+  } ]
+}
