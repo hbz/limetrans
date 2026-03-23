@@ -6,12 +6,13 @@ do put_macro("copy-all-items")
 end
 
 do put_macro("copy-first-item")
-  if exists("$[source].1")
-    copy_field("$[source].1", "@copy-first-item")
+  copy_field("$[source]", "@copy-first-item")
+  if is_array("@copy-first-item")
+    copy_field("@copy-first-item.1", "$[target]")
+    remove_field("@copy-first-item")
   else
-    copy_field("$[source]", "@copy-first-item")
+    move_field("@copy-first-item", "$[target]")
   end
-  move_field("@copy-first-item", "$[target]")
 end
 
 do put_macro("copy-substring", length: "1")
