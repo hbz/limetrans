@@ -65,16 +65,12 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
 
     private static final int STATUS_NOT_FOUND = 404;
 
-    private final long mBulkSizeValue;
-
     private BulkIngester<Void> mBulkIngester;
     private RestClientTransport mTransport;
     private co.elastic.clients.elasticsearch.ElasticsearchClient mClient;
 
     public ElasticsearchClientV8(final Settings aSettings) {
         super(aSettings);
-
-        mBulkSizeValue = Long.parseLong(getBulkSize());
     }
 
     @Override
@@ -287,7 +283,7 @@ public class ElasticsearchClientV8 extends ElasticsearchClient { // checkstyle-d
                 .client(mClient)
                 .listener(new ElasticsearchBulkListener(this))
                 .maxOperations(aBulkActions)
-                .maxSize(mBulkSizeValue)
+                .maxSize(getBulkSize())
                 .maxConcurrentRequests(aBulkRequests)
         );
     }

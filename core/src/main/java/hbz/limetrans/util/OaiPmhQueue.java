@@ -16,7 +16,7 @@ public class OaiPmhQueue extends AbstractInputQueue {
     private final String mUri;
 
     public OaiPmhQueue(final Settings aSettings) {
-        init(aSettings);
+        super(aSettings);
 
         mDateFrom = aSettings.get("from");
         mDateUntil = aSettings.get("until");

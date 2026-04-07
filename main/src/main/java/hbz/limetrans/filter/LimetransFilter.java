@@ -67,7 +67,7 @@ public class LimetransFilter {
         return this;
     }
 
-    public LimetransFilter add(final String... aValues) {
+    public final LimetransFilter add(final String... aValues) {
         Arrays.stream(aValues).filter(v -> v != null).forEach(mValues::add);
         return this;
     }

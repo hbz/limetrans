@@ -307,8 +307,10 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     private String initializeAlma(final Settings aSettings) { // checkstyle-disable-line JavaNCSS
         // Export ("PubHub") BGZF contains a large XML file; increase limits for XML parser.
         // »The accumulated size of entities is "50,000,001" that exceeded the "50,000,000" limit set by "FEATURE_SECURE_PROCESSING".«
-        // https://docs.oracle.com/en/java/javase/13/security/java-api-xml-processing-jaxp-security-guide.html#GUID-82F8C206-F2DF-4204-9544-F96155B1D258__TABLE_RQ1_3PY_HHB
+        // »JAXP00010003: The length of entity "[xml]" is "100,001" that exceeds the "100,000" limit set by "jdk.xml.maxGeneralEntitySizeLimit".«
+        // https://docs.oracle.com/en/java/javase/25/security/java-api-xml-processing-jaxp-security-guide.html#GUID-82F8C206-F2DF-4204-9544-F96155B1D258__TABLE_YH5_5R4_1VB
         System.setProperty("jdk.xml.totalEntitySizeLimit", "0");
+        System.setProperty("jdk.xml.maxGeneralEntitySizeLimit", "0");
 
         final Settings almaSettings = aSettings.getAsSettings("alma");
 
@@ -582,7 +584,7 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
         recordIdChanger.setReceiver(elasticsearchIndexer);
     }
 
-    /*package-private*/ String pathForType(final String aPath) {
+    /*package-private*/ final String pathForType(final String aPath) {
         return aPath != null ? mType != null ? String.format(aPath, mType.getExtension()) : aPath : null;
     }
 

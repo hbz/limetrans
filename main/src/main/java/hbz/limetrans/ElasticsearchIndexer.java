@@ -9,7 +9,7 @@ import org.metafacture.framework.helpers.DefaultStreamReceiver;
 import org.metafacture.json.JsonEncoder;
 
 @Description("Indexes an object into Elasticsearch")
-public class ElasticsearchIndexer extends DefaultStreamReceiver {
+public final class ElasticsearchIndexer extends DefaultStreamReceiver {
 
     private final ElasticsearchClient mClient;
     private final JsonEncoder mJsonEncoder = new JsonEncoder();

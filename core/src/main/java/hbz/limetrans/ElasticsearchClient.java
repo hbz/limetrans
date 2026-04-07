@@ -58,11 +58,11 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
     private final LongAdder mSucceededCounter = new LongAdder();
     private final Settings mIndexSettings;
     private final Settings mSettings;
-    private final String mBulkSize;
     private final String mRefreshInterval;
     private final int mBulkActions;
     private final int mBulkRequests;
     private final int mRetain;
+    private final long mBulkSize;
 
     private String mAliasName;
     private String mIndexName;
@@ -78,13 +78,15 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
 
         mBulkActions = aSettings.getAsInt("maxbulkactions", MAX_BULK_ACTIONS);
         mBulkRequests = aSettings.getAsInt("maxbulkrequests", MAX_BULK_REQUESTS);
-        mBulkSize = aSettings.get("maxbulksize", MAX_BULK_SIZE);
+        mBulkSize = Long.parseLong(aSettings.get("maxbulksize", MAX_BULK_SIZE));
 
         mNumberOfReplicas = mIndexSettings.getAsInt(INDEX_REPLICA_KEY, DEFAULT_REPLICA_COUNT);
         mRefreshInterval = mIndexSettings.get(INDEX_REFRESH_KEY, DEFAULT_REFRESH_INTERVAL);
 
         mRetain = mIndexSettings.getAsInt("retain", DEFAULT_RETAIN);
+    }
 
+    private void initialize(final Settings aSettings) {
         reset();
 
         final boolean update = aSettings.getAsBoolean("update", false);
@@ -446,7 +448,7 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
         mFailed = true;
     }
 
-    protected String getBulkSize() {
+    protected long getBulkSize() {
         return mBulkSize;
     }
 
@@ -513,7 +515,9 @@ public abstract class ElasticsearchClient { // checkstyle-disable-line AbstractC
 
     public static ElasticsearchClient newClient(final Settings aSettings) {
         try {
-            return getClientClass().getDeclaredConstructor(Settings.class).newInstance(aSettings);
+            final ElasticsearchClient client = getClientClass().getDeclaredConstructor(Settings.class).newInstance(aSettings);
+            client.initialize(aSettings);
+            return client;
         }
         catch (final ReflectiveOperationException e) {
             throw new LimetransException(e);

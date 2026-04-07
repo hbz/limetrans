@@ -46,7 +46,7 @@ test {
         events 'SKIPPED'
     }
 
-    jvmArgs = lmdbJvmArgs
+    jvmArgs = extraJvmArgs
     maxHeapSize = '8G'
     maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
 
@@ -70,7 +70,7 @@ tasks.withType(JavaExec) {
         languageVersion = java.toolchain.languageVersion
     }
 
-    jvmArgs = lmdbJvmArgs
+    jvmArgs = extraJvmArgs
     maxHeapSize = project.hasProperty('maxHeapSize') ?
         project.getProperty('maxHeapSize') : '12G'
 

@@ -11,11 +11,18 @@ public abstract class AbstractInputQueue {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
-    private boolean mFailed;
-    private int mOrder;
+    private static final int DEFAULT_ORDER = 0;
 
-    protected void init(final Settings aSettings) {
-        mOrder = aSettings.getAsInt("_order", 0);
+    private final int mOrder;
+
+    private boolean mFailed;
+
+    public AbstractInputQueue() {
+        mOrder = DEFAULT_ORDER;
+    }
+
+    public AbstractInputQueue(final Settings aSettings) {
+        mOrder = aSettings.getAsInt("_order", DEFAULT_ORDER);
     }
 
     protected static Logger getLogger() {
