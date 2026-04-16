@@ -43484,3 +43484,94 @@
     "subjectTopicName" : "Kenpō"
   } ]
 }
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "Appunti Trascritti e Commentati Dal Fondo Paribeni Della Biblioteca Umanistica Dell'Università Di Firenze"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Italienisch" ],
+    "date" : [ "2024" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHA",
+    "identifierMMS" : "99375462605306441",
+    "identifierMMSIZ" : "991006084042906444",
+    "identifierPID" : "53140919730006444",
+    "identifierPID" : "53139264070006444"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99375462605306441",
+    "identifierForTheRecord" : "(DE-605)99375462605306441"
+  },
+  "Language" : [ {
+    "language" : "Italienisch",
+    "languageSource" : "ita"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9791221504538", "electronic bk." ]
+  } ],
+  "Person" : [ {
+    "personName" : "Maioli, Martino",
+    "personRole" : [ "[author.]" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Enrico Paribeni e la Ceramica Attica Di Populonia"
+  } ],
+  "Edition" : {
+    "edition" : [ "1st ed." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Florence" ],
+    "name" : [ "Firenze University Press" ],
+    "chronology" : [ "2024" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2024" ]
+  },
+  "Extent" : {
+    "extent" : "1 online resource (302 pages)"
+  },
+  "Description" : {
+    "description" : [ "Revised thesis.", "E. Paribeni (1911-1993), archaeologist.", "Populonia, near Livorno (Tuscany).", "Titolo in Open Access", "02" ]
+  },
+  "Summary" : {
+    "abstract" : [ "The notes presented are part of the Paribeni Fund, received as a bequest from the University of Florence after the death of the illustrious scholar. This is a group of documents containing notes and photographs dedicated to the study of Attic pottery from Populonia, examined by Paribeni between 1982 and 1993, the year of his death. The manuscripts contain notes on materials and lists in which the published vases and materials preserved in Populonia are recorded. The most significant nucleus is made up of the figured Attic vases, mostly unpublished, currently preserved in the basement of the Archaeological National Museum in Florence. The files are enriched by photographs of the recorded materials." ]
+  },
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Print version",
+    "description" : "Maioli, Martino: Enrico Paribeni e la Ceramica Attica Di Populonia"
+  } ],
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "9791221504521" ]
+  } ],
+  "TitleSuper" : [ {
+    "titleSuper" : [ "Biblioteca Di Storia Series" ]
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "OAPEN",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53140919730006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  }, {
+    "publicnote" : "Proquest",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHA/openurl?u.ignore_date_coverage=true&portfolio_pid=53139264070006444&Force_direct=true",
+    "isInternalLinkFor" : "DE-A96"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99375462605306441"
+  }, {
+    "uid" : "(DE-A96)991006084042906444"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : "Manuscripts"
+  }, {
+    "subjectTopicName" : "Photographs"
+  } ]
+}
