@@ -1,3 +1,6 @@
 # MARC/500
 add_array("Description[]")
-copy_field("500  .a", "Description[].$append.description")
+do list(path: "500  ", "var": "$i")
+  add_hash("Description[].$append")
+  call_macro("copy-first-item", source: "$i.a", target: "Description[].$last.description")
+end
