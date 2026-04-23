@@ -21,7 +21,7 @@ gradle.rootProject {
             jackson:        '2.21.2',
             jdk:            '25',
             junit:          '4.13.1',
-            lmdb:           '0.8.3',
+            lmdb:           '0.9.3',
             log4j:          '2.25.4',
             metafacture:    '8.0.0',
             testcontainers: '2.0.2'
