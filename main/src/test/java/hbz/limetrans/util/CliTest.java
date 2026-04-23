@@ -11,6 +11,7 @@ public class CliTest {
 
     private static final String PROGRAM = "program";
     private static final String ARGS = "args";
+    private static final String HELP = " usage:  %s %s\n\n Options     Description\n\n";
 
     public CliTest() {
     }
@@ -20,7 +21,7 @@ public class CliTest {
         final Throwable ex = Assert.assertThrows(CliException.class,
                 () -> assertCli(c -> {}, s -> {}, "-o", "value"));
 
-        Assert.assertEquals("Unrecognized option: -o\nusage: " + PROGRAM + " " + ARGS + "\n\n", ex.getMessage());
+        Assert.assertEquals("Unrecognized option: -o\n" + HELP.formatted(PROGRAM, ARGS), ex.getMessage());
     }
 
     @Test

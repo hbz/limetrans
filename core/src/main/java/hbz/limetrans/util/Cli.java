@@ -2,18 +2,23 @@ package hbz.limetrans.util;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.DefaultParser;
-import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
+import org.apache.commons.cli.help.HelpFormatter;
+import org.apache.commons.cli.help.TextHelpAppendable;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintWriter;
+import java.io.UncheckedIOException;
 
 public class Cli {
 
     private static final char VALUE_SEPARATOR = ',';
+
+    private static final int HELP_INDENT = 8;
 
     private final Options mOptions = new Options();
     private final String mArgsLine;
@@ -47,7 +52,7 @@ public class Cli {
             builder.hasArg();
         }
 
-        mOptions.addOption(builder.build());
+        mOptions.addOption(builder.get());
         mHasOptions = true;
         return this;
     }
@@ -61,20 +66,22 @@ public class Cli {
     }
 
     public void printHelp(final OutputStream aOutputStream) {
-        final PrintWriter pw = new PrintWriter(aOutputStream);
+        try (PrintWriter pw = new PrintWriter(aOutputStream)) {
+            final StringBuilder cmdLineSyntax = new StringBuilder(mProgram);
+            if (mArgsLine != null) {
+                cmdLineSyntax.append(" ").append(mArgsLine);
+            }
 
-        String cmdLineSyntax = mProgram;
-        if (mArgsLine != null) {
-            cmdLineSyntax += " " + mArgsLine;
+            final TextHelpAppendable appendable = new TextHelpAppendable(pw);
+            appendable.setIndent(HELP_INDENT);
+
+            HelpFormatter.builder()
+                .setHelpAppendable(appendable).setShowSince(false).get()
+                .printHelp(cmdLineSyntax.toString(), null, mOptions, null, true);
         }
-
-        final int helpWidth = 80;
-        final int helpDescPad = 3;
-
-        new HelpFormatter().printHelp(pw, helpWidth, cmdLineSyntax,
-                mHasOptions ? "\nOptions:" : null, mOptions, 1, helpDescPad, null, true);
-
-        pw.close();
+        catch (final IOException e) {
+            throw new UncheckedIOException(e);
+        }
     }
 
     public boolean parse(final String[] aArgs) throws CliException {
