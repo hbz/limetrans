@@ -1,0 +1,1299 @@
+do once("setup")
+  include("./macros.fix")
+  include("./macros/alma.fix")
+
+  include("./maps.fix")
+  include("./maps/alma-branches.fix")
+  include("./maps/alma-extended-type.fix")
+  include("./maps/alma-format-carrier.fix")
+  include("./maps/alma-license-to-info.fix")
+  include("./maps/alma-taxonomy.fix")
+  include("./maps/alma-type-monograph.fix")
+  include("./maps/alma-type-periodical.fix")
+
+  put_filemap("$[external-maps]/hbz-to-zdb.tsv.gz", "zdb-to-hbz", sep_char: " ", key_column: "1", value_column: "0")
+  put_filemap("$[external-maps]/lookup-tables/data/almaSublibraryCode2Isil/generated/generatedAlmaSublibraryCode2Isil.tsv", "alma-library-to-isil", sep_char: "\t")
+  put_filemap("$[external-maps]/lookup-tables/data/almaSuppressedLocations/generated/generatedAlmaSuppressedLocations.tsv", "alma-suppressed-location", sep_char: "\t")
+
+  put_lmdbmap("$[external-maps]/lobid-gnd.lmdb", "lobid-gnd")
+  put_lmdbmap("$[external-maps]/lobid-organisations.lmdb", "lobid-organisations")
+  put_lmdbmap("$[external-maps]/rvk.lmdb", "rvk")
+end
+
+drop_local()
+drop_repeated("008")
+
+# MARC/leader, MARC/006, MARC/007, MARC/008
+include("./marc/fixedLengthDataElements.fix")
+
+# MARC/337, MARC/338
+include("./marc/_facet_format.fix")
+
+# MARC/336
+include("./marc/contentType.fix")
+
+# MARC/338
+include("./marc/carrierType.fix")
+
+# MARC/964
+include("./marc/_facet_type-1.fix")
+
+# MARC/348
+add_array("introx.music[]")
+do list(path: "348??", "var": "$i")
+  if any_equal("$i.2", "gnd-music")
+    do list(path: "$i.a", "var": "$j")
+      copy_field("$j", "ExtendedType[].$append")
+      lookup("$j", "extended-type-music", delete: "true")
+      copy_field("$j", "introx.music[].$append")
+    end
+  end
+end
+
+# MARC/655
+include("./marc/typeHeading.fix")
+
+# MARC/310
+add_array("CurrentPublicationFrequency[]")
+do list(path: "310??", "var": "$i")
+  add_hash("CurrentPublicationFrequency[].$append")
+  copy_field("$i.a", "CurrentPublicationFrequency[].$last.frequency")
+  copy_field("$i.b", "CurrentPublicationFrequency[].$last.date")
+  copy_field("$i.0", "CurrentPublicationFrequency[].$last.identifier")
+end
+
+# MARC/321
+add_array("FormerPublicationFrequency[]")
+do list(path: "321??", "var": "$i")
+  add_hash("FormerPublicationFrequency[].$append")
+  copy_field("$i.a", "FormerPublicationFrequency[].$last.frequency")
+  copy_field("$i.b", "FormerPublicationFrequency[].$last.date")
+  copy_field("$i.0", "FormerPublicationFrequency[].$last.identifier")
+end
+
+# MARC/533
+add_array("PublicationPlaceOfSecondaryEdition[]")
+add_array("PublisherNameOfSecondaryEdition[]")
+add_array("ReproductionNote[]")
+add_array("SecondaryEditionPublicationDate[]")
+add_array("SecondaryEditionTitleSuper[]")
+do list(path: "533??", "var": "$i")
+  add_hash("PublicationPlaceOfSecondaryEdition[].$append")
+  call_macro("copy-all-items", source: "$i.b", target: "PublicationPlaceOfSecondaryEdition[].$last.name")
+  add_hash("PublisherNameOfSecondaryEdition[].$append")
+  call_macro("copy-all-items", source: "$i.c", target: "PublisherNameOfSecondaryEdition[].$last.name")
+  add_hash("SecondaryEditionPublicationDate[].$append")
+  call_macro("copy-first-item", source: "$i.d", target: "SecondaryEditionPublicationDate[].$last.secondaryEdition")
+  add_hash("SecondaryEditionTitleSuper[].$append")
+  call_macro("remove-nonsort", source: "$i.f")
+  call_macro("copy-all-items", source: "$i.f", target: "SecondaryEditionTitleSuper[].$last.secondaryEdition")
+  add_hash("ReproductionNote[].$append")
+  call_macro("copy-first-item", source: "$i.a", target: "ReproductionNote[].$last.type")
+  call_macro("copy-all-items", source: "$i.b", target: "ReproductionNote[].$last.place")
+  call_macro("copy-all-items", source: "$i.c", target: "ReproductionNote[].$last.agency")
+  call_macro("copy-first-item", source: "$i.d", target: "ReproductionNote[].$last.date")
+  call_macro("copy-first-item", source: "$i.e", target: "ReproductionNote[].$last.description")
+  call_macro("copy-all-items", source: "$i.f", target: "ReproductionNote[].$last.series")
+  call_macro("copy-first-item", source: "$i.7", target: "ReproductionNote[].$last.data")
+end
+
+# MARC/340
+add_array("TypeMediaSpecial[]")
+add_array("TypeMediaSpecialPreservation[]")
+do list(path: "340??", "var": "$i")
+  do list(path: "$i.a", "var": "$j")
+    lookup("$j", "type-media-special", delete: "true")
+    copy_field("$j", "TypeMediaSpecial[].$append")
+    copy_field("$j", "@facet_format.$append")
+  end
+  if any_match("$i.a", ".*(?:Audio|CD(?!-ROM)|Compact-Disc|Compact-Disk|Kompaktkassette|Magnetbandkassette|Schallpl\\.|Schallplatte|Tonkassette).*")
+    add_field("TypeMediaSpecial[].$append", "Audio")
+    add_field("@facet_format.$append", "Audio")
+  end
+  if any_match("$i.a", ".*(?:CD-ROM|Computerdatei|Diskette|E-Books|Einsteckmodul|Elektron\\. Ressource|Funknetz-Karte|Optische Speicherplatte|Optischer Datentraeger|Optischer Datenträger|USB-Stick).*")
+    add_field("TypeMediaSpecial[].$append", "Elektronische Ressource")
+    add_field("@facet_format.$append", "Elektronische Ressource")
+  end
+  if any_match("$i.a", ".*(?:Blu-ray Disc|Blu-ray-Disc|Blue-Ray|BlueRay|Tonbildreihe|VHS|Video).*")
+    add_field("TypeMediaSpecial[].$append", "Film, Dia, Video")
+    add_field("@facet_format.$append", "Film, Dia, Video")
+  end
+  if any_match("$i.a", ".*Musikdruck.*")
+    add_field("TypeMediaSpecial[].$append", "Gedruckte Ressource")
+    add_field("@facet_format.$append", "Gedruckte Ressource")
+  end
+  if any_match("$i.a", ".*(?:Microfiche|Mikrofiche|Mikrofilm).*")
+    add_field("TypeMediaSpecial[].$append", "Mikroform")
+    add_field("@facet_format.$append", "Mikroform")
+  end
+  if any_match("$i.a", ".*(?:Computerdatei im Fernzugriff|Internet|Online Ressource|Online-Ausg\\.|Online-Resource|Online-Ressource).*")
+    add_field("TypeMediaSpecial[].$append", "Online-Ressource")
+    add_field("@facet_format.$append", "Online-Ressource")
+  end
+  if any_match("$i.a", ".*Arbeitstransparent.*")
+    add_field("TypeMediaSpecial[].$append", "Sonstiges")
+    add_field("@facet_format.$append", "Sonstiges")
+  end
+end
+# MARC/538, MARC/583
+do list(path: "538??|583[ 1]?", "var": "$i")
+  copy_field("$i.a", "TypeMediaSpecialPreservation[].$append")
+end
+uniq("ExtendedFormat[]")
+uniq("ExtendedType[]")
+uniq("FormatCarrier[]")
+uniq("TypeMediaSpecial[]")
+uniq("TypeMonograph[]")
+
+include("./marc/_facet_type-2.fix")
+
+# MARC/008, MARC/041
+add_array("@language_source")
+call_macro("substring", source: "008", target: "@language_source.$append", start: "35", length: "3")
+do list(path: "041[ 01] .[adj]", "var": "$i")
+  copy_field("$i", "@language_source.$append")
+end
+uniq("@language_source")
+add_array("@language_long")
+copy_field("@language_source", "@language_long.$append")
+lookup("@language_long.*", "ISO639-2-to-GND", delete: "true")
+
+# MARC/044
+add_array("Country[]")
+do list(path: "044??.c", "var": "$i")
+  add_hash("Country[].$append")
+  do list(path: "$i", "var": "$j")
+    replace_all("$j", "^X[A-Z]-", "")
+    copy_field("$j", "Country[].$last.countryISO")
+  end
+end
+
+include("./marc/_date.fix")
+
+vacuum()
+
+# MARC/981
+do list(path: "981  .a", "var": "$i") # SISIS CATKey
+  if any_match("$i", "\\($[isil]\\).*")
+    copy_field("$i", "@sysid")
+  elsif any_match("$i", "\\($[sigel]\\).*")
+    replace_all("$i", "^\\($[sigel]\\)", "($[isil])")
+    copy_field("$i", "@sysid")
+  end
+end
+
+# MARC/035
+add_array("IdentifierDNB[]")
+add_array("IdentifierGBV[]")
+add_array("IdentifierHBZ[]")
+add_array("IdentifierOCLC[]")
+add_array("@hbzids")
+do list(path: "035  .a", "var": "$i")
+  if any_match("$i", "\\($[catalogid]\\).*")
+    if exists("@hbzid")
+      remove_field("@hbzid")
+    end
+    copy_field("$i", "@hbzid")
+    copy_field("$i", "@hbzids.$append")
+    unless exists("@sisis_supplement")
+      copy_field("$i", "@sisis_supplement")
+      replace_all("@sisis_supplement", "^\\($[catalogid]\\)", "")
+    end
+  elsif any_match("$i", "\\(DE-836\\).*")
+    unless exists("@sysid")
+      copy_field("$i", "@sysid")
+      replace_all("@sysid", "^\\(DE-836\\)(\\d{7})-49hbz_fhm$", "(DE-836)ocm0$1")
+      replace_all("@sysid", "^\\(DE-836\\)(\\d{8})-49hbz_fhm$", "(DE-836)ocm$1")
+      replace_all("@sysid", "^\\(DE-836\\)(\\d{9})-49hbz_fhm$", "(DE-836)ocn$1")
+      replace_all("@sysid", "^\\(DE-836\\)(\\d{10,})-49hbz_fhm$", "(DE-836)on$1")
+      copy_field("@sysid", "bib.identifierAuthority=mab")
+    end
+  elsif any_match("$i", "\\($[isil]\\).*")
+    if any_match("@sysid", ".*-49hbz_.*")
+      remove_field("@sysid")
+    end
+
+    unless exists("@sysid")
+      copy_field("$i", "@sysid")
+    end
+  end
+  if any_match("$i", "\\(DE-600\\).*")
+    add_hash("IdentifierDNB[].$append")
+    add_hash("IdentifierHBZ[].$append")
+    add_hash("IdentifierZDB[].$append")
+    replace_all("$i", "^\\(DE-600\\)", "")
+    copy_field("$i", "IdentifierDNB[].$last.identifierDNB")
+    copy_field("$i", "IdentifierZDB[].$last.identifierZDB")
+    lookup("$i", "zdb-to-hbz", delete: "true")
+    if exists("$i")
+      unless exists("@sisis_supplement")
+        copy_field("$i", "@sisis_supplement")
+      end
+      paste("IdentifierHBZ[].$last.identifierHBZFull", "~(DE-605)", "$i", join_char: "")
+      copy_field("IdentifierHBZ[].$last.identifierHBZFull", "@hbzids.$append")
+      copy_field("$i", "IdentifierHBZ[].$last.identifierHBZ")
+    end
+  elsif any_match("$i", "\\(DE-601\\).*")
+    add_hash("IdentifierGBV[].$append")
+    replace_all("$i", "^\\(DE-601\\)", "")
+    copy_field("$i", "IdentifierGBV[].$last.identifierGBV")
+  elsif any_match("$i", "\\(DE-605\\).*")
+    add_hash("IdentifierHBZ[].$append")
+    copy_field("$i", "IdentifierHBZ[].$last.identifierHBZFull")
+    copy_field("$i", "@hbzids.$append")
+    replace_all("$i", "^\\(DE-605\\)", "")
+    copy_field("$i", "IdentifierHBZ[].$last.identifierHBZ")
+  elsif any_match("$i", "\\(OCoLC\\).*")
+    add_hash("IdentifierOCLC[].$append")
+    do list(path: "$i", "var": "$j")
+      replace_all("$j", "^\\(OCoLC\\)", "")
+      copy_field("$j", "IdentifierOCLC[].$last.identifierOCLC")
+    end
+  end
+end
+uniq("IdentifierHBZ[]")
+
+# MARC/001, MARC/MBD
+call_macro("alma-mms-and-isil")
+
+if exists("@hbzid")
+  paste("@id", "@hbzid", "$[id-suffix]", join_char: "")
+elsif exists("@sysid")
+  paste("@id", "@sysid", "$[id-suffix]", join_char: "")
+else
+  copy_field("@mmsid", "@id")
+end
+
+copy_field("@isil", "collection")
+
+# MARC/210
+include("./marc/abbreviatedTitle.fix")
+
+# MARC/130
+add_array("TitlePreferred[]")
+do list(path: "130??", "var": "$i")
+  add_hash("TitlePreferred[].$append")
+  call_macro("remove-nonsort", source: "$i.a")
+  call_macro("copy-first-item", source: "$i.a", target: "TitlePreferred[].$last.title")
+  call_macro("copy-all-items", source: "$i.g", target: "TitlePreferred[].$last.prefix")
+end
+
+# MARC/240
+do list(path: "240??.a", "var": "$i")
+  replace_all("$i", "[.]$", "")
+  call_macro("remove-nonsort", source: "$i")
+  copy_field("$i", "TitleUniform.titleUniform")
+end
+
+# MARC/100, MARC/240, MARC/700
+add_array("TitleWork[]")
+do list(path: "100??", "var": "$i")
+  if any_match("$i.4", "cmp|cre")
+    copy_field("$i.a", "$i.@title")
+    if exists("$i.d")
+      paste("$i.@title", "$i.@title", "~ (", "$i.d", "~)", join_char: "")
+    end
+    do list(path: "240??", "var": "$j")
+      paste("$i.@title", "$i.@title", "~. ", "$j.a", join_char: "")
+      if exists("$j.p")
+        paste("$i.@title", "$i.@title", "~ <", "$j.p", "~>", join_char: "")
+      end
+      add_array("$j.@medium")
+      copy_field("$j.m", "$j.@medium.$append")
+      join_field("$j.@medium", ", ")
+      unless is_empty("$j.@medium")
+        paste("$i.@title", "$i.@title", "~ für ", "$j.@medium", join_char: "")
+      end
+      add_array("$j.@number")
+      copy_field("$j.n", "$j.@number.$append")
+      join_field("$j.@number", ", ")
+      unless is_empty("$j.@number")
+        paste("$i.@title", "$i.@title", "~, ", "$j.@number", join_char: "")
+      end
+      if exists("$j.r")
+        paste("$i.@title", "$i.@title", "~, ", "$j.r", join_char: "")
+      end
+      if exists("$j.f")
+        paste("$i.@title", "$i.@title", "~, ", "$j.f", join_char: "")
+      end
+      add_array("$j.@suffix")
+      copy_field("$j.k", "$j.@suffix.$append")
+      copy_field("$j.o", "$j.@suffix.$append")
+      join_field("$j.@suffix", ", ")
+      unless is_empty("$j.@suffix")
+        paste("$i.@title", "$i.@title", "~ (", "$j.@suffix", "~)", join_char: "")
+      end
+    end
+    copy_field("$i.@title", "TitleWork[].$append.titleWork")
+  end
+end
+do list(path: "700??", "var": "$i")
+  if exists("$i.t")
+    copy_field("$i.a", "$i.@title")
+    if exists("$i.d")
+      paste("$i.@title", "$i.@title", "~ (", "$i.d", "~)", join_char: "")
+    end
+    paste("$i.@title", "$i.@title", "~. ", "$i.t", join_char: "")
+    if exists("$i.p")
+      paste("$i.@title", "$i.@title", "~ <", "$i.p", "~>", join_char: "")
+    end
+    add_array("$i.@medium")
+    copy_field("$i.m", "$i.@medium.$append")
+    join_field("$i.@medium", ", ")
+    unless is_empty("$i.@medium")
+      paste("$i.@title", "$i.@title", "~ für ", "$i.@medium", join_char: "")
+    end
+    add_array("$i.@number")
+    copy_field("$i.n", "$i.@number.$append")
+    join_field("$i.@number", ", ")
+    unless is_empty("$i.@number")
+      paste("$i.@title", "$i.@title", "~, ", "$i.@number", join_char: "")
+    end
+    if exists("$i.r")
+      paste("$i.@title", "$i.@title", "~, ", "$i.r", join_char: "")
+    end
+    if exists("$i.f")
+      paste("$i.@title", "$i.@title", "~, ", "$i.f", join_char: "")
+    end
+    add_array("$i.@suffix")
+    copy_field("$i.k", "$i.@suffix.$append")
+    copy_field("$i.o", "$i.@suffix.$append")
+    join_field("$i.@suffix", ", ")
+    unless is_empty("$i.@suffix")
+      paste("$i.@title", "$i.@title", "~ (", "$i.@suffix", "~)", join_char: "")
+    end
+    copy_field("$i.@title", "TitleWork[].$append.titleWork")
+  end
+end
+uniq("TitleWork[]")
+
+# MARC/245, MARC/249
+include("./marc/titleAddendum.fix")
+
+do list(path: "245??.n", "var": "$i")
+  unless exists("VolumeDesignation.volumeDesignation")
+    unless exists("@facet_type")
+      add_array("@facet_type")
+    end
+    add_field("@facet_type.$append", "Teil eines Werkes")
+    replace_all("$i", "\\s?[,./:=]?\\s?$", "")
+    copy_field("$i", "VolumeDesignation.volumeDesignation")
+  end
+end
+
+# MARC/773
+include("./marc/recordIdentifierSuper.fix")
+add_array("@host_callnumber")
+do list(path: "7731?.w", "var": "$i")
+  do list(path: "$i", "var": "$j")
+    lookup("$j", "alma-alias")
+    lookup("$j", "alma-item-callnumber", delete: "true")
+    copy_field("$j", "@host_callnumber.$append")
+  end
+end
+
+# MARC/245
+include("./marc/creatorStatement.fix")
+
+include("./marc/dc_format.fix")
+include("./marc/dc_type.fix")
+include("./marc/dc_language.fix")
+
+# MARC/260, MARC/264
+include("./marc/dc_date.fix")
+
+include("./marc/introx_access.fix")
+include("./marc/introx_branch.fix")
+include("./marc/introx_carrier.fix")
+
+# MARC/983
+add_array("@SubjectGHBLocal")
+do list(path: "983  ", "var": "$i")
+  if member_local("$i")
+    copy_field("$i.[ab]", "@SubjectGHBLocal.$append")
+  end
+end
+# MARC/084
+include("./marc/otherClassificationNumber.fix")
+do list(path: "@SubjectGHBLocal", "var": "$i")
+  call_macro("substring", source: "$i", target: "@taxonomy", start: "0", length: "3")
+  copy_field("@taxonomy", "@local_taxonomy")
+  lookup("@taxonomy", "alma-notation-to-taxonomy", delete: "true")
+  move_field("@taxonomy", "introx.taxonomy[].$append")
+  lookup("@local_taxonomy", "alma-notation-to-taxonomy-$[isil]", delete: "true")
+  move_field("@local_taxonomy", "introx.taxonomy[].$append")
+end
+
+# MARC/001
+add_field("IdentifierAlma.identifierMember", "$[member]")
+copy_field("001", "IdentifierAlma.identifierMMS")
+copy_field("@mmsiz", "IdentifierAlma.identifierMMSIZ")
+
+call_macro("alma-index-identifier")
+copy_field("@id", "RecordIdentifier.identifierForTheRecord")
+
+copy_field("@sisis_supplement", "@sisis_supplement-0010")
+lookup("@sisis_supplement-0010", "sisis-supplement-0010", delete: "true")
+add_array("RecordIdentifier.verifiedSuperIdentifier[]")
+do list(path: "@sisis_supplement-0010", "var": "$i")
+  prepend("$i", "(DE-605)")
+  copy_field("$i", "RecordIdentifier.verifiedSuperIdentifier[].$append")
+end
+remove_field("@sisis_supplement-0010")
+
+copy_field("001", "introx.dateNew")
+lookup("introx.dateNew", "alma-new-timestamp", delete: "true")
+unless exists("introx.dateNew")
+  copy_field("@mmsiz", "introx.dateNew")
+  lookup("introx.dateNew", "alma-new-timestamp", delete: "true")
+end
+
+# MARC/POC
+add_array("DateFirst.date[]")
+do list(path: "POC  ", "var": "$i")
+  if any_match("$i.a", ".*$[institution-code]")
+    copy_field("$i.b", "DateFirst.date[].$append")
+  end
+end
+if any_match("@date1", "\\d+")
+  if none_equal("@date1", "9999")
+    copy_field("@date1", "DateFirst.date[].$append")
+  end
+end
+uniq("DateFirst.date[]")
+
+# MARC/POC
+add_array("DateLast.date[]")
+do list(path: "POC  ", "var": "$i")
+  if any_match("$i.a", ".*$[institution-code]")
+    copy_field("$i.c", "DateLast.date[].$append")
+  end
+end
+if any_match("@date2", "\\d+")
+  if none_equal("@date2", "9999")
+    copy_field("@date2", "DateLast.date[].$append")
+  end
+end
+uniq("DateLast.date[]")
+
+add_array("Language[]")
+do list(path: "@language_source", "var": "$i")
+  add_hash("Language[].$append")
+  copy_field("$i", "@language")
+  lookup("@language", "ISO639-2-to-GND", delete: "true")
+  move_field("@language", "Language[].$last.language")
+  copy_field("$i", "Language[].$last.languageSource")
+end
+
+# MARC/016
+add_array("IdentifierZDB[]")
+add_array("@zdbids")
+do list(path: "0167?", "var": "$i")
+  if any_equal("$i.2", "DE-600")
+    add_hash("IdentifierZDB[].$append")
+    copy_field("$i.a", "IdentifierZDB[].$last.identifierZDB")
+    standard_number("ZDB", "IdentifierZDB[].$last")
+    if exists("IdentifierZDB[].$last.preferredZDB")
+      paste("@zdbids.$append", "~(", "$i.2", "~)", "$i.a", join_char: "")
+    end
+  end
+end
+uniq("IdentifierZDB[]")
+
+# MARC/020
+include("./marc/identifierISBN.fix")
+
+# MARC/022
+include("./marc/identifierISSN.fix")
+
+# MARC/024
+include("./marc/identifierISMN.fix")
+include("./marc/identifierDOI.fix")
+include("./marc/identifierVD.fix")
+
+# MARC/026
+include("./marc/identifierFingerprint.fix")
+
+# MARC/028
+add_array("IdentifierSheetMusic[]")
+do list(path: "028[35]2", "var": "$i")
+  add_hash("IdentifierSheetMusic[].$append")
+  copy_field("$i.a", "IdentifierSheetMusic[].$last.standardNumber")
+end
+
+# MARC/029
+add_array("IdentifierSerial[]")
+do list(path: "029[ab]?", "var": "$i")
+  do list(path: "$i.a", "var": "$j")
+    add_hash("IdentifierSerial[].$append")
+    copy_field("$j", "IdentifierSerial[].$last.identifierISSN")
+    standard_number("ISSN", "IdentifierSerial[].$last")
+  end
+end
+
+# MARC/100
+include("./marc/person.fix")
+
+# MARC/110, MARC/111, MARC/710, MARC/711
+include("./marc/corporateBody.fix")
+
+# MARC/111
+do list(path: "111[012] .a", "var": "$i")
+  replace_all("$i", "[.,]$", "")
+  copy_field("$i", "Conference.conferenceName")
+end
+do list(path: "111[012] .n", "var": "$i")
+  unless exists("Conference.corporateBodyNameeNumber")
+    replace_all("$i", "\\(|\\)?[,]?$|\\s?:$", "")
+    copy_field("$i", "Conference.corporateBodyNameeNumber") # sic!
+  end
+end
+do list(path: "111[012] .d", "var": "$i")
+  replace_all("$i", "\\(|\\)?[,]?$|\\s?:$", "")
+  copy_field("$i", "Conference.conferenceDate")
+end
+do list(path: "111[012] .c", "var": "$i")
+  unless exists("Conference.conferencePlace")
+    replace_all("$i", "\\(|\\)?[;.,]?$", "")
+    copy_field("$i", "Conference.conferencePlace")
+  end
+end
+add_array("Conference.conferenceIdentifier[]")
+add_array("Conference.identifierGND[]")
+add_array("Conference.variantName[]")
+do list(path: "111[012] .0", "var": "$i")
+  if any_match("$i", "\\(DE-588\\).*")
+    copy_field("$i", "Conference.conferenceIdentifier[].$append")
+    replace_all("$i", "^\\(DE-588\\)", "")
+    copy_field("$i", "Conference.identifierGND[].$append")
+    call_macro("lobid-gnd", source: "$i", target: "Conference")
+  end
+end
+add_array("Conference.conferenceUnit")
+do list(path: "111[012] .e", "var": "$i")
+  replace_all("$i", "[,.]$", "")
+  copy_field("$i", "Conference.conferenceUnit.$append")
+end
+join_field("Conference.conferenceUnit", ". ")
+
+# MARC/245
+include("./marc/subseriesStatement.fix")
+include("./marc/titleStatement.fix")
+
+# MARC/250
+include("./marc/edition.fix")
+
+# MARC/260, MARC/264
+add_array("PublisherName[]")
+add_array("PublicationPlace[]")
+include("./marc/publisherName.fix")
+include("./marc/publicationPlace.fix")
+
+# MARC/751
+add_array("PublicationPlaceOther[]")
+do list(path: "751??", "var": "$i")
+  add_hash("PublicationPlaceOther[].$append")
+  copy_field("$i.a", "PublicationPlaceOther[].$last.publicationPlace")
+end
+uniq("PublicationPlaceOther[]")
+
+# MARC/263
+add_array("DescriptionOfEstimatedPublicationDate[]")
+do list(path: "263??", "var": "$i")
+  add_hash("DescriptionOfEstimatedPublicationDate[].$append")
+  copy_field("$i.a", "DescriptionOfEstimatedPublicationDate[].$last.description")
+end
+
+# MARC/300
+include("./marc/extent.fix")
+
+# MARC/344
+add_array("FileCharacteristics[]")
+add_array("SoundCharacteristics[]")
+add_array("VideoCharacteristics[]")
+do list(path: "344??", "var": "$i")
+  add_hash("SoundCharacteristics[].$append")
+  call_macro("copy-all-items", source: "$i.a", target: "SoundCharacteristics[].$last.typeOfRecording")
+end
+# MARC/346
+do list(path: "346??", "var": "$i")
+  add_hash("VideoCharacteristics[].$append")
+  call_macro("copy-all-items", source: "$i.b", target: "VideoCharacteristics[].$last.broadcastStandard")
+end
+# MARC/347
+do list(path: "347??", "var": "$i")
+  add_hash("FileCharacteristics[].$append")
+  call_macro("copy-all-items", source: "$i.b", target: "FileCharacteristics[].$last.encodingFormat")
+  call_macro("copy-all-items", source: "$i.e", target: "FileCharacteristics[].$last.regionalEncoding")
+end
+
+# MARC/361
+include("./marc/structuredOwnershipAndCustodialHistory.fix")
+
+# MARC/362
+copy_field("3620 .a", "ChronologyAndEnumeration.value")
+join_field("ChronologyAndEnumeration.value", " ; ")
+copy_field("3621 .a", "ChronologyAndEnumeration.unformattedValue[]")
+
+# MARC/490
+include("./marc/seriesStatement.fix")
+
+# MARC/985, MARC/989
+add_array("@description")
+add_array("DescriptionOfProvenance[]")
+add_array("introx.provenance[]")
+do list(path: "985  ", "var": "$i")
+  if member_local("$i")
+    copy_field("$i.a", "DescriptionOfProvenance[].$append.description")
+    copy_field("$i.a", "introx.provenance[].$append")
+  end
+end
+do list(path: "989  ", "var": "$i")
+  if member_local("$i")
+    copy_field("$i.a", "@description.$append")
+    copy_field("$i.a", "introx.provenance[].$append")
+  end
+end
+filter("@description", "^$[regexp.description]$")
+# MARC/500
+include("./marc/description.fix")
+move_field("@description", "Description[].$append.description")
+copy_field("@sisis_supplement", "@sisis_supplement-0600")
+lookup("@sisis_supplement-0600", "sisis-supplement-0600", delete: "true")
+split_field("@sisis_supplement-0600", "\\u001F")
+move_field("@sisis_supplement-0600", "Description[].$append.description")
+# MARC/H52
+do list(path: "H52??", "var": "$i")
+  if any_match("$i.8", ".*$[institution-code]")
+    copy_field("$i.z", "Description[].$append.description")
+  end
+end
+uniq("Description[]")
+
+# MARC/591
+if str_equal("$[isil]", "DE-107")
+  add_array("DescriptionLocal[]")
+  copy_field("591  .a", "DescriptionLocal[].$append.description")
+end
+
+# MARC/501, MARC/505
+add_array("DescriptionOfContent[]")
+do list(path: "50[15]??", "var": "$i")
+  add_hash("DescriptionOfContent[].$append")
+  call_macro("copy-first-item", source: "$i.a", target: "DescriptionOfContent[].$last.description")
+  call_macro("copy-all-items", source: "$i.r", target: "DescriptionOfContent[].$last.creator")
+  call_macro("copy-all-items", source: "$i.t", target: "DescriptionOfContent[].$last.note")
+end
+uniq("DescriptionOfContent[]")
+
+# MARC/502
+add_array("DescriptionOfThesis[]")
+do list(path: "502??", "var": "$i")
+  add_hash("DescriptionOfThesis[].$append")
+  call_macro("copy-first-item", source: "$i.a", target: "DescriptionOfThesis[].$last.description")
+  call_macro("copy-first-item", source: "$i.b", target: "DescriptionOfThesis[].$last.type")
+  call_macro("copy-first-item", source: "$i.c", target: "DescriptionOfThesis[].$last.place")
+  call_macro("copy-first-item", source: "$i.d", target: "DescriptionOfThesis[].$last.year")
+  call_macro("copy-all-items", source: "$i.g", target: "DescriptionOfThesis[].$last.note")
+end
+
+# MARC/515
+add_array("DescriptionOfIssuance[]")
+do list(path: "515??", "var": "$i")
+  add_hash("DescriptionOfIssuance[].$append")
+  call_macro("copy-first-item", source: "$i.a", target: "DescriptionOfIssuance[].$last.description")
+end
+
+# MARC/546
+add_array("DescriptionOfExpression[]")
+do list(path: "546??", "var": "$i")
+  add_hash("DescriptionOfExpression[].$append")
+  call_macro("copy-first-item", source: "$i.a", target: "DescriptionOfExpression[].$last.description")
+  call_macro("copy-all-items", source: "$i.b", target: "DescriptionOfExpression[].$last.note")
+end
+
+# MARC/520
+include("./marc/abstract.fix")
+
+# MARC/506, MARC 540, MARC 542
+add_array("InformationRelatingToCopyrightStatus[]")
+add_array("RestrictionsOnAccessNote[]")
+add_array("TermsGoverningUseAndReproductionNote[]")
+do list(path: "506??", "var": "$i")
+  add_hash("RestrictionsOnAccessNote[].$append")
+  call_macro("copy-first-item", source: "$i.2", target: "RestrictionsOnAccessNote[].$last.source")
+  call_macro("copy-all-items", source: "$i.a", target: "RestrictionsOnAccessNote[].$last.terms")
+  call_macro("copy-all-items", source: "$i.e", target: "RestrictionsOnAccessNote[].$last.authorization")
+  call_macro("copy-all-items", source: "$i.f", target: "RestrictionsOnAccessNote[].$last.statement")
+  call_macro("copy-all-items", source: "$i.g", target: "RestrictionsOnAccessNote[].$last.date")
+  call_macro("copy-first-item", source: "$i.q", target: "RestrictionsOnAccessNote[].$last.agency")
+  call_macro("copy-all-items", source: "$i.u", target: "RestrictionsOnAccessNote[].$last.uri")
+end
+do list(path: "540??", "var": "$i")
+  add_hash("TermsGoverningUseAndReproductionNote[].$append")
+  call_macro("copy-first-item", source: "$i.2", target: "TermsGoverningUseAndReproductionNote[].$last.source")
+  call_macro("copy-all-items", source: "$i.a", target: "TermsGoverningUseAndReproductionNote[].$last.terms")
+  call_macro("copy-all-items", source: "$i.c", target: "TermsGoverningUseAndReproductionNote[].$last.authorization")
+  call_macro("copy-all-items", source: "$i.f", target: "TermsGoverningUseAndReproductionNote[].$last.statement")
+  call_macro("copy-all-items", source: "$i.g", target: "TermsGoverningUseAndReproductionNote[].$last.date")
+  call_macro("copy-first-item", source: "$i.q", target: "TermsGoverningUseAndReproductionNote[].$last.agency")
+  call_macro("copy-all-items", source: "$i.u", target: "TermsGoverningUseAndReproductionNote[].$last.uri")
+end
+do list(path: "542[ 1]?", "var": "$i")
+  add_hash("InformationRelatingToCopyrightStatus[].$append")
+  call_macro("copy-first-item", source: "$i.a", target: "InformationRelatingToCopyrightStatus[].$last.personalCreator")
+  call_macro("copy-all-items", source: "$i.f", target: "InformationRelatingToCopyrightStatus[].$last.statement")
+  call_macro("copy-all-items", source: "$i.i", target: "InformationRelatingToCopyrightStatus[].$last.date")
+  call_macro("copy-all-items", source: "$i.k", target: "InformationRelatingToCopyrightStatus[].$last.publisher")
+  call_macro("copy-first-item", source: "$i.l", target: "InformationRelatingToCopyrightStatus[].$last.status")
+  call_macro("copy-all-items", source: "$i.n", target: "InformationRelatingToCopyrightStatus[].$last.terms")
+  call_macro("copy-first-item", source: "$i.q", target: "InformationRelatingToCopyrightStatus[].$last.agency")
+  call_macro("copy-first-item", source: "$i.s", target: "InformationRelatingToCopyrightStatus[].$last.source")
+  call_macro("copy-all-items", source: "$i.u", target: "InformationRelatingToCopyrightStatus[].$last.uri")
+end
+
+# MARC/H66
+add_array("HoldingsStatement[]")
+do list(path: "H66??", "var": "$i")
+  if any_match("$i.8", ".*$[institution-code]")
+    if in("$i.8", "HoldingsStatement[].*.@id")
+      do list(path: "HoldingsStatement[]", "var": "$j")
+        if in("$i.8", "$j.@id")
+          copy_field("$i.9", "$j.introductoryPhrase")
+          copy_field("$i.a", "$j.holdingsStatement")
+          copy_field("$i.z", "$j.note[].$append")
+        end
+      end
+    else
+      add_hash("HoldingsStatement[].$append")
+      copy_field("$i.8", "HoldingsStatement[].$last.@id")
+      copy_field("$i.9", "HoldingsStatement[].$last.introductoryPhrase")
+      copy_field("$i.a", "HoldingsStatement[].$last.holdingsStatement")
+      add_array("HoldingsStatement[].$last.note[]")
+      copy_field("$i.z", "HoldingsStatement[].$last.note[].$append")
+      do list(path: "H52??", "var": "$j")
+        if in("$i.8", "$j.8")
+          if exists("$j.a")
+            call_macro("copy-first-item", source: "$j.a", target: "$j.@source")
+          else
+            call_macro("copy-first-item", source: "$j.b", target: "$j.@source")
+            lookup("$j.@source", "alma-library-to-branch-$[isil]", delete: "true")
+          end
+          copy_field("$j.@source", "HoldingsStatement[].$last.source")
+          call_macro("copy-first-item", source: "$j.h", target: "HoldingsStatement[].$last.callnumber")
+          copy_field("$j.j", "HoldingsStatement[].$last.shelfmark")
+          copy_field("$j.t", "HoldingsStatement[].$last.sortIndicator")
+        end
+      end
+    end
+  end
+end
+do list(path: "HoldingsStatement[]", "var": "$i")
+  remove_field("$i.@id")
+end
+
+# MARC/100, MARC/700
+include("./marc/personContributor.fix")
+
+# MARC/588
+add_array("SourceOfDescriptionNote[]")
+do list(path: "588??", "var": "$i")
+  add_hash("SourceOfDescriptionNote[].$append")
+  call_macro("copy-first-item", source: "$i.a", target: "SourceOfDescriptionNote[].$last.note")
+end
+
+# MARC/964
+add_array("IdentifierISBNParallel[]")
+do list(path: "9640s", "var": "$i")
+  if any_equal("$i.V", "086a")
+    add_hash("IdentifierISBNParallel[].$append")
+    add_array("IdentifierISBNParallel[].$last.identifierISBN[]")
+    copy_field("$i.[abcdehnpqs]", "IdentifierISBNParallel[].$last.identifierISBN[].$append")
+    standard_number("ISBN", "IdentifierISBNParallel[].$last", source: "IdentifierISBNParallel[].$last.identifierISBN[].1")
+  end
+end
+
+# MARC/760, MARC/762, MARC/765, MARC/767, MARC/770, MARC/772, MARC/773, MARC/774, MARC/775, MARC/776, MARC/777, MARC/780, MARC/785, MARC/786, MARC/787
+include("./marc/linkingEntries.fix")
+
+# MARC/830
+include("./marc/seriesAddedEntryUniformTitle.fix")
+
+# MARC/856
+include("./marc/onlineAccess.fix")
+# MARC/998
+do list(path: "9984?", "var": "$i")
+  if member_local("$i")
+    call_macro("online-access")
+    add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
+  end
+end
+# MARC/H56
+do list(path: "H56??", "var": "$i")
+  if any_match("$i.8", ".*$[institution-code]")
+    call_macro("online-access")
+    add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
+  end
+end
+# MARC/POR
+add_array("IdentifierAlma.identifierPID[]")
+do list(path: "POR  ", "var": "$i")
+  if any_equal("$i.[MA]", "$[member]")
+    if none_equal("$i.b", "Not Available")
+      do list(path: "$i.a", "var": "$j")
+        copy_field("$j", "IdentifierAlma.identifierPID[].$append")
+      end
+      add_hash("OnlineAccess[].$append")
+      copy_field("$i.D", "@uri")
+      replace_all("@uri", "$[network]", "$[member]")
+      copy_field("$i.p", "OnlineAccess[].$last.collectionIdentifier")
+      copy_field("$i.q", "@publicnote")
+      call_macro("remove-nonsort", source: "@publicnote")
+      add_array("@info")
+      copy_field("$i.n", "@info.$append")
+      copy_field("$i.q", "@collection")
+      lookup("@collection", "alma-collection-to-info-$[isil]", delete: "true")
+      if exists("@collection")
+        move_field("@collection", "@info.$append")
+      else
+        if exists("$i.s")
+          copy_field("$i.s", "@license")
+          lookup("@license", "alma-license-to-info-$[isil]")
+        else
+          add_field("@license", "__missing")
+          lookup("@license", "alma-license-to-info-$[isil]", delete: "true")
+        end
+        move_field("@license", "@info.$append")
+      end
+      copy_field("$i.l", "@info.$append")
+      unless is_empty("@info")
+        join_field("@info", "; ")
+        unless exists("@publicnote")
+          add_field("@publicnote", "Volltext")
+          replace_all("@info", "^Volltext(?:: |$)", "")
+        end
+        unless is_empty("@info")
+          paste("@publicnote", "@publicnote", "~ [", "@info", "~]", join_char: "")
+        end
+      end
+      remove_field("@info")
+      move_field("@publicnote", "OnlineAccess[].$last.publicnote")
+      move_field("@uri", "OnlineAccess[].$last.uri")
+      add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
+      add_field("@unsuppressed", "true")
+    else
+      add_field("@suppressed", "true")
+    end
+  end
+end
+copy_field("@sisis_supplement", "@sisis_supplement-2662")
+lookup("@sisis_supplement-2662", "sisis-supplement-2662", delete: "true")
+split_field("@sisis_supplement-2662", "\\u001F")
+do list(path: "@sisis_supplement-2662", "var": "$i")
+  add_hash("OnlineAccess[].$append")
+  add_field("OnlineAccess[].$last.publicnote", "Zugang für Kunden des LBZ")
+  copy_field("$i", "OnlineAccess[].$last.uri")
+  add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
+end
+dedup("OnlineAccess[].*.uri")
+
+# MARC/962
+add_array("ClassifierDigitization[]")
+do list(path: "962??", "var": "$i")
+  add_hash("ClassifierDigitization[].$append")
+  call_macro("copy-all-items", source: "$i.e", target: "ClassifierDigitization[].$last.classifier")
+  if any_equal("$i.e", "ZDB-OERSI")
+    add_field("dc.type[].$append", "Open Educational Resources")
+  end
+end
+
+# MARC/980
+add_array("ClassifierLocal.classifier[]")
+do list(path: "9801 ", "var": "$i")
+  if member_local("$i")
+    do list(path: "$i.a", "var": "$j")
+      copy_field("$j", "ClassifierLocal.classifier[].$append")
+    end
+  end
+end
+add_array("ClassifierLocal.collection[]")
+do list(path: "980  ", "var": "$i")
+  if member_local("$i")
+    do list(path: "$i.s", "var": "$j")
+      copy_field("$j", "ClassifierLocal.collection[].$append")
+    end
+  end
+end
+
+# MARC/982
+add_array("@subjectHeadings")
+do list(path: "982  ", "var": "$i")
+  if member_local("$i")
+    copy_field("$i.b", "@subjectHeadings.$append")
+    copy_field("$i.a", "@subjectTopicName")
+    split_field("@subjectTopicName", ";|\\*")
+    flatten("@subjectTopicName")
+    move_field("@subjectTopicName", "@subjectHeadings.$append")
+  end
+end
+# MARC/688, MARC/689
+do list(path: "68[89]??", "var": "$i")
+  unless any_match("$i.D", "[pbsfg]")
+    copy_field("$i.a", "@subjectHeadings.$append")
+  end
+end
+uniq("@subjectHeadings")
+add_array("SubjectHeadings[]")
+add_array("introx.subject[]")
+do list(path: "@subjectHeadings", "var": "$i")
+  add_hash("SubjectHeadings[].$append")
+  call_macro("remove-nonsort", source: "$i")
+  copy_field("$i", "SubjectHeadings[].$last.subject")
+  copy_field("$i", "introx.subject[].$append")
+end
+
+add_array("SubjectGHBLocal[]")
+do list(path: "@SubjectGHBLocal", "var": "$i")
+  add_hash("SubjectGHBLocal[].$append")
+  add_field("SubjectGHBLocal[].$last.source", "$[isil]")
+  copy_field("$i", "SubjectGHBLocal[].$last.subject")
+end
+
+add_array("xbib[]")
+copy_field("@mmsid", "xbib[].$append.uid")
+do list(path: "@hbzids", "var": "$i")
+  copy_field("$i", "xbib[].$append.uid")
+end
+do list(path: "@zdbids", "var": "$i")
+  copy_field("$i", "xbib[].$append.uid")
+end
+if exists("@mmsiz")
+  paste("xbib[].$append.uid", "~(", "@isiliz", "~)", "@mmsiz", join_char: "")
+end
+copy_field("@sysid", "xbib[].$append.uid")
+copy_field("@id", "xbib[].$append.uid")
+do list(path: "035  .a", "var": "$i")
+  copy_field("$i", "xbib[].$append.uid")
+end
+uniq("xbib[]")
+
+do list(path: "@facet_format", "var": "$i")
+  unless exists("TypeMedia")
+    if any_match("$i", "[BAFE].*")
+      copy_field("$i", "TypeMedia")
+    end
+  end
+end
+unless exists("TypeMedia")
+  if any_equal("@facet_format", "Online-Ressource")
+    add_field("TypeMedia", "Elektronische Ressource")
+  end
+end
+
+unless exists("TypePeriodical[]")
+  add_array("TypePeriodical[]")
+end
+do list(path: "@facet_type", "var": "$i")
+  replace_all("$i", ".*?(Schriftenreihe|(?i)zeitschrift).*", "$1")
+  if any_match("$i", "Schriftenreihe|(?i)zeitschrift")
+    copy_field("$i", "TypePeriodical[].$append")
+  end
+end
+uniq("TypePeriodical[]")
+
+# MARC/H52
+add_array("Item[]")
+add_array("introx.localCallNumber[]")
+do list(path: "H52??", "var": "$i")
+  if any_match("$i.8", ".*$[institution-code]")
+    copy_field("$i.h", "introx.localCallNumber[].$append")
+  end
+end
+# MARC/992
+do list(path: "992??", "var": "$i")
+  if member_local("$i")
+    copy_field("$i.a", "introx.localCallNumber[].$append")
+  end
+end
+# MARC/ITM
+do list(path: "ITM  ", "var": "$i")
+  if any_equal("$i.M", "$[member]")
+    add_hash("Item[].$append")
+    paste("$i.@library", "~$[member]", "$i.w", join_char: "+")
+    lookup("$i.@library", "alma-library-to-isil", delete: "true")
+    unless exists("$i.@library")
+      add_field("$i.@library", "$[isil]")
+    end
+    copy_field("$i.@library", "Item[].$last.identifier")
+    lookup("$i.@library", "lobid-organisations")
+    copy_field("$i.@library", "Item[].$last.label")
+    add_array("@callnumber")
+    copy_field("$i.[bcn]", "@callnumber.$append")
+    unless in("$i.x", "$i.v")
+      copy_field("$i.z", "@callnumber.$append")
+    end
+    uniq("@callnumber")
+    call_macro("copy-all-items", source: "@callnumber", target: "Item[].$last.callnumber")
+    remove_field("@callnumber")
+    copy_field("$i.x", "Item[].$last.shelfmark")
+  end
+end
+split_field("@host_callnumber", "\\u001F")
+do list(path: "@host_callnumber", "var": "$i")
+  copy_field("$i", "introx.localCallNumber[].$append")
+end
+uniq("Item[]")
+
+# MARC/DEL
+if any_equal("$[deletion-source]", "$[deletion-value]")
+  call_macro("alma-deletion")
+elsif any_equal("@LeaderPos05", "d")
+  call_macro("alma-deletion")
+end
+
+# MARC/700
+include("./marc/personCreator.fix")
+
+# MARC/246
+include("./marc/titleOther.fix")
+
+# MARC/249
+add_array("CompilationTitle.title[]")
+do list(path: "249??.a", "var": "$i")
+  do list(path: "$i", "var": "$j")
+    replace_all("$j", "[.]$", "")
+    call_macro("remove-nonsort", source: "$j")
+    copy_field("$j", "CompilationTitle.title[].$append")
+  end
+end
+
+# MARC/600, MARC/610, MARC/611, MARC/648, MARC/650, MARC/651, MARC/689
+include("./marc/rswk.fix")
+
+# MARC/653
+add_array("Subject[]")
+do list(path: "653??", "var": "$i")
+  copy_field("$i.a", "Subject[].$append.subject")
+end
+uniq("Subject[]")
+
+# MARC/242
+include("./marc/translatedTitle.fix")
+
+# MARC/880
+add_array("AlternateGraphicRepresentation[]")
+do list(path: "880??", "var": "$i")
+  if member_local("$i")
+    add_hash("AlternateGraphicRepresentation[].$append")
+
+    copy_field("$i.6", "@linkage")
+    parse_text("@linkage", "(?<tag>...)-(?<occurrence>..)(?:/(?<script>.*))?(?:/(?<orientation>.*))?")
+
+    if is_hash("@linkage")
+      if any_equal("@linkage.tag", "100")
+        call_macro("copy-first-item", source: "$i.a", target: "AlternateGraphicRepresentation[].$last.personalName")
+      elsif any_equal("@linkage.tag", "110")
+        call_macro("copy-first-item", source: "$i.a", target: "AlternateGraphicRepresentation[].$last.corporateName")
+      elsif any_equal("@linkage.tag", "245")
+        if any_equal("$i.9", "F:359")
+          call_macro("copy-first-item", source: "$i.c", target: "AlternateGraphicRepresentation[].$last.creatorStatement")
+        elsif any_equal("$i.9", "F:335")
+          call_macro("copy-first-item", source: "$i.b", target: "AlternateGraphicRepresentation[].$last.titleAddendum")
+        else
+          call_macro("copy-first-item", source: "$i.a", target: "AlternateGraphicRepresentation[].$last.titleStatement")
+          call_macro("copy-first-item", source: "$i.p", target: "AlternateGraphicRepresentation[].$last.subseriesStatement")
+        end
+      elsif any_equal("@linkage.tag", "246")
+        call_macro("copy-first-item", source: "$i.a", target: "AlternateGraphicRepresentation[].$last.titleOther")
+      elsif any_equal("@linkage.tag", "249")
+        call_macro("copy-all-items", source: "$i.a", target: "AlternateGraphicRepresentation[].$last.compilationTitle")
+      elsif any_equal("@linkage.tag", "250")
+        call_macro("copy-first-item", source: "$i.a", target: "AlternateGraphicRepresentation[].$last.editionStatement")
+      elsif any_equal("@linkage.tag", "264")
+        copy_field("$i.a", "@value")
+        join_field("@value", " ")
+        if exists("$i.b")
+          copy_field("$i.b", "@value_b")
+          join_field("@value_b", " ")
+          paste("@value", "@value", "~: ", "@value_b", join_char: "")
+          remove_field("@value_b")
+        end
+        if exists("$i.c")
+          copy_field("$i.c", "@value_c")
+          join_field("@value_c", " ")
+          paste("@value", "@value", "~, ", "@value_c", join_char: "")
+          remove_field("@value_c")
+        end
+        move_field("@value", "AlternateGraphicRepresentation[].$last.publicationStatement")
+      elsif any_equal("@linkage.tag", "490")
+        if any_equal("$i.9", "F:455")
+          call_macro("copy-all-items", source: "$i.v", target: "AlternateGraphicRepresentation[].$last.volumeDesignation")
+        else
+          call_macro("copy-all-items", source: "$i.a", target: "AlternateGraphicRepresentation[].$last.seriesStatement")
+        end
+      elsif any_equal("@linkage.tag", "500")
+        call_macro("copy-first-item", source: "$i.a", target: "AlternateGraphicRepresentation[].$last.description")
+      elsif any_equal("@linkage.tag", "610")
+        call_macro("copy-first-item", source: "$i.a", target: "AlternateGraphicRepresentation[].$last.subjectHeading")
+      elsif any_equal("@linkage.tag", "650")
+        call_macro("copy-first-item", source: "$i.a", target: "AlternateGraphicRepresentation[].$last.subjectHeading")
+      elsif any_equal("@linkage.tag", "700")
+        call_macro("copy-first-item", source: "$i.a", target: "AlternateGraphicRepresentation[].$last.personalName")
+      elsif any_equal("@linkage.tag", "710")
+        call_macro("copy-first-item", source: "$i.a", target: "AlternateGraphicRepresentation[].$last.corporateName")
+      end
+
+      copy_field("@linkage.script", "AlternateGraphicRepresentation[].$last.scriptSource")
+      lookup("@linkage.script", "ISO15924-to-script", delete: "true")
+      copy_field("@linkage.script", "AlternateGraphicRepresentation[].$last.script")
+    end
+
+    remove_field("@linkage")
+  end
+end
+uniq("AlternateGraphicRepresentation[]")
+
+uniq("introx.localCallNumber[]")
+uniq("introx.music[]")
+uniq("introx.subject[]")
+uniq("introx.taxonomyRVK[]")
+uniq("introx.taxonomy[]")
+
+# MARC/DEL
+if exists("@suppressed")
+  unless exists("@unsuppressed")
+    if str_equal("$[deletion-enabled]", "true")
+      add_field("$[deletion-literal]", "$[deletion-value]")
+    else
+      reject()
+    end
+  end
+end
+
+retain(
+  "$[deletion-literal]",
+  "AbbreviatedTitle[]",
+  "Abstract",
+  "AdditionalPhysicalFormEntry[]",
+  "AlternateGraphicRepresentation[]",
+  "CarrierType[]",
+  "ChronologyAndEnumeration",
+  "ClassifierDigitization[]",
+  "ClassifierLocal",
+  "CompilationTitle",
+  "Conference",
+  "ConstituentUnitEntry[]",
+  "ContentType[]",
+  "CorporateBody[]",
+  "Country[]",
+  "CreatorStatement",
+  "CurrentPublicationFrequency[]",
+  "DataSourceEntry[]",
+  "DateFirst",
+  "DateLast",
+  "DateProper",
+  "Description[]",
+  "DescriptionLocal[]",
+  "DescriptionOfContent[]",
+  "DescriptionOfEstimatedPublicationDate[]",
+  "DescriptionOfExpression[]",
+  "DescriptionOfIssuance[]",
+  "DescriptionOfProvenance[]",
+  "DescriptionOfThesis[]",
+  "Edition",
+  "ExtendedFormat[]",
+  "ExtendedType[]",
+  "Extent",
+  "FileCharacteristics[]",
+  "FormatCarrier[]",
+  "FormerPublicationFrequency[]",
+  "HoldingsStatement[]",
+  "HostItemEntry[]",
+  "IdentifierAlma",
+  "IdentifierDNB[]",
+  "IdentifierDOI[]",
+  "IdentifierFingerprint[]",
+  "IdentifierGBV[]",
+  "IdentifierHBZ[]",
+  "IdentifierISBNParallel[]",
+  "IdentifierISBN[]",
+  "IdentifierISMN[]",
+  "IdentifierISSN[]",
+  "IdentifierOCLC[]",
+  "IdentifierSerial[]",
+  "IdentifierSheetMusic[]",
+  "IdentifierVD[]",
+  "IdentifierZDB[]",
+  "InformationRelatingToCopyrightStatus[]",
+  "IssuedWithEntry[]",
+  "Item[]",
+  "Language[]",
+  "MainSeriesEntry[]",
+  "NonspecificRelationshipEntry[]",
+  "OnlineAccess[]",
+  "OriginalLanguageEntry[]",
+  "OtherEditionEntry[]",
+  "PersonContributor[]",
+  "PersonCreator[]",
+  "Person[]",
+  "PrecedingEntry[]",
+  "PublicationPlaceOfSecondaryEdition[]",
+  "PublicationPlace[]",
+  "PublicationPlaceOther[]",
+  "PublisherNameOfSecondaryEdition[]",
+  "PublisherName[]",
+  "RSWK[]",
+  "Recension",
+  "RecordIdentifier",
+  "RecordIdentifierSuper[]",
+  "ReproductionNote[]",
+  "RestrictionsOnAccessNote[]",
+  "SecondaryEditionPublicationDate[]",
+  "SecondaryEditionTitleSuper[]",
+  "SeriesAddedEntryUniformTitle[]",
+  "SeriesStatement[]",
+  "SortableVolumeDesignation[]",
+  "SoundCharacteristics[]",
+  "SourceOfDescriptionNote[]",
+  "StructuredOwnershipAndCustodialHistory[]",
+  "SubSeriesEntry[]",
+  "SubjectBB[]",
+  "SubjectDNB[]",
+  "SubjectGHBLocal[]",
+  "SubjectHeadings[]",
+  "SubjectNWBIB[]",
+  "SubjectRPB[]",
+  "SubjectRVK[]",
+  "Subject[]",
+  "SubseriesStatement[]",
+  "SucceedingEntry[]",
+  "Summary",
+  "SupplementParentEntry[]",
+  "SupplementSpecialIssueEntry[]",
+  "TermsGoverningUseAndReproductionNote[]",
+  "TitleAddendum",
+  "TitleOther[]",
+  "TitlePreferred[]",
+  "TitleStatement",
+  "TitleUniform",
+  "TitleWork[]",
+  "TranslatedTitle[]",
+  "TranslationEntry[]",
+  "TypeHeading[]",
+  "TypeMedia",
+  "TypeMediaSpecialPreservation[]",
+  "TypeMediaSpecial[]",
+  "TypeMonograph[]",
+  "TypePeriodical[]",
+  "VideoCharacteristics[]",
+  "VolumeDesignation",
+  "bib",
+  "collection",
+  "dc",
+  "introx",
+  "xbib[]"
+)
+
+vacuum()
+
+verify_links()

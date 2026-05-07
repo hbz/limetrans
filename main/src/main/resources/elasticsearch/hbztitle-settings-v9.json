@@ -1,0 +1,200 @@
+{
+  "index": {
+    "number_of_shards": 1,
+    "analysis": {
+      "char_filter": {
+        "hyphen_protect": {
+          "type": "mapping",
+          "mappings": [
+            // TODO: more hyphen chars?
+            "- => __HYPHEN_PROTECT__"
+          ]
+        }
+      },
+      "filter": {
+        "hyphen_replace": {
+          "type": "pattern_replace",
+          "pattern": "__HYPHEN_PROTECT__",
+          "replacement": "-"
+        },
+        "hyphen_remove": {
+          "type": "pattern_replace",
+          "pattern": "__HYPHEN_PROTECT__",
+          "replacement": ""
+        },
+        "hyphen_multiplexer": {
+          "type": "multiplexer",
+          "filters": [
+            "hyphen_replace",
+            "hyphen_remove"
+          ],
+          "preserve_original": false
+        },
+        "hyphen_graph": {
+          "type": "word_delimiter_graph",
+          "catenate_all": true,
+          "ignore_keywords": true,
+          "preserve_original": true,
+          "split_on_case_change": false,
+          "split_on_numerics": false,
+          "stem_english_possessive": false
+        },
+        "snowball_german_umlaut": {
+          "type": "snowball",
+          "language": "German2"
+        },
+        "string_normalizer": {
+          "type": "pattern_replace",
+          "pattern": "'",
+          "replacement": ""
+        },
+        "keyword_normalizer": {
+          "type": "pattern_replace",
+          "pattern": "[^a-zA-Z 0-9]",
+          "replacement": ""
+        },
+        "ocn_normalizer": {
+          "type": "pattern_replace",
+          "pattern": "^[^0-9]*0*",
+          "replacement": ""
+        },
+        "squeeze_whitespace": {
+          "type": "pattern_replace",
+          "pattern": " +",
+          "replacement": " "
+        },
+        "german_stop_words": {
+          "type": "stop",
+          "stopwords": [
+            "and",
+            "the",
+            "of",
+            "to",
+            "als",
+            "am",
+            "an",
+            "auf",
+            "aus",
+            "bei",
+            "bis",
+            "da",
+            "das",
+            "dass",
+            "daß",
+            "dem",
+            "den",
+            "der",
+            "des",
+            "die",
+            "dir",
+            "du",
+            "durch",
+            "ein",
+            "eine",
+            "einem",
+            "einen",
+            "einer",
+            "eines",
+            "er",
+            "es",
+            "für",
+            "hat",
+            "ihre",
+            "im",
+            "in",
+            "ist",
+            "mit",
+            "nach",
+            "nicht",
+            "oder",
+            "um",
+            "und",
+            "vom",
+            "von",
+            "vor",
+            "was",
+            "wie",
+            "zu",
+            "zum",
+            "zur",
+            "über"
+          ]
+        }
+      },
+      "analyzer": {
+        // "search" + "flatten_graph"
+        "default": {
+          "type": "custom",
+          "char_filter": [
+            "hyphen_protect"
+          ],
+          "tokenizer": "standard",
+          "filter": [
+            "hyphen_replace",
+            "lowercase",
+            "german_stop_words",
+            "keyword_repeat",
+            "icu_folding",
+            "hyphen_graph",
+            "flatten_graph",
+            "string_normalizer",
+            "snowball_german_umlaut",
+            "unique"
+          ]
+        },
+        "search": {
+          "type": "custom",
+          "char_filter": [
+            "hyphen_protect"
+          ],
+          "tokenizer": "standard",
+          "filter": [
+            "hyphen_replace",
+            "lowercase",
+            "german_stop_words",
+            "keyword_repeat",
+            "icu_folding",
+            "hyphen_graph",
+            "string_normalizer",
+            "snowball_german_umlaut",
+            "unique"
+          ]
+        },
+        // "search" w/o subwords (parts) and stemming
+        "unstemmed": {
+          "type": "custom",
+          "char_filter": [
+            "hyphen_protect"
+          ],
+          "tokenizer": "standard",
+          "filter": [
+            "hyphen_multiplexer",
+            "lowercase",
+            "german_stop_words",
+            "keyword_repeat",
+            "icu_folding",
+            "german_normalization",
+            "unique"
+          ]
+        },
+        "keyword_normalized": {
+          "type": "custom",
+          "tokenizer": "keyword",
+          "filter": [
+            "icu_folding",
+            "keyword_normalizer",
+            "squeeze_whitespace",
+            "trim"
+          ]
+        },
+        "ocn": {
+          "type": "custom",
+          "tokenizer": "keyword",
+          "filter": [
+            "ocn_normalizer"
+          ]
+        }
+      }
+    }
+  }
+}

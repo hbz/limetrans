@@ -1,0 +1,6 @@
+# MARC/500
+add_array("Description[]")
+do list(path: "500  ", "var": "$i")
+  add_hash("Description[].$append")
+  call_macro("copy-first-item", source: "$i.a", target: "Description[].$last.description")
+end

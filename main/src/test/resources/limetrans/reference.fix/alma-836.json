@@ -1,0 +1,968 @@
+{
+  "DEL" : "Y",
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-468)990005255180306447"
+  }
+}
+{
+  "DEL" : "Y",
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991000065939706444"
+  }
+}
+{
+  "DEL" : "Y",
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-A96)991004562349606444"
+  }
+}
+{
+  "DEL" : "Y",
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-465)99203866538906446"
+  }
+}
+{
+  "DEL" : "Y",
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-465)99203913838706446"
+  }
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "ExtendedType" : [ "Lehrbuch" ],
+  "FormatCarrier" : [ "Druckschrift", "Papier" ],
+  "TypeMonograph" : [ "einbändiges Werk und Teil eines Gesamtwerks" ],
+  "TypeHeading" : [ {
+    "term" : "Lehrbuch",
+    "identifier" : [ "(DE-588)4123623-3" ]
+  } ],
+  "Country" : [ {
+    "countryISO" : "DE-BW"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT018902109",
+    "identifierHBZ" : "HT018902109"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "932023789"
+  } ],
+  "collection" : "DE-605",
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Erwin Märtlbauer, Heinz Becker (Hg.)" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Lehrbuch", "Sammelwerk" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2016" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "person" : [ "Märtlbauer, Erwin", "Becker, Heinz (1948-)" ],
+    "subject" : [ "Milch", "Lebensmittelchemie" ],
+    "localCallNumber" : [ "RRZ 137+1", "RRZ 137+2", "RRZ 137+4", "RRZ 137+3", "RRZ 137" ]
+  },
+  "SubjectDNB" : [ {
+    "subject" : [ "630" ]
+  } ],
+  "SubjectRPB" : [ {
+    "subject" : [ "760" ]
+  }, {
+    "subject" : [ "850" ]
+  }, {
+    "subject" : [ "970" ]
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHM",
+    "identifierMMS" : "990210731060206441",
+    "identifierMMSIZ" : "991000350799706485"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990210731060206441",
+    "identifierForTheRecord" : "(DE-605)HT018902109"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783825286644", "Pb. : ca. EUR 51.40 (AT), ca. sfr 61.00 (freier Pr.), ca. EUR 49.99 (DE)" ],
+    "preferredISBN" : "9783825286644",
+    "variantISBN" : [ "978-3-8252-8664-4", "3825286649", "3-8252-8664-9" ]
+  }, {
+    "identifierISBN" : [ "3825286649" ],
+    "preferredISBN" : "9783825286644",
+    "variantISBN" : [ "978-3-8252-8664-4", "3-8252-8664-9" ]
+  } ],
+  "TitleStatement" : {
+    "titleMain" : "Milchkunde und Milchhygiene"
+  },
+  "PublisherName" : [ {
+    "place" : [ "Stuttgart" ],
+    "name" : [ "Verlag Eugen Ulmer" ],
+    "chronology" : [ "[2016]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : [ "Stuttgart" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2016]" ]
+  },
+  "Extent" : {
+    "extent" : "368 Seiten : Illustrationen, Diagramme ; 24 cm x 17 cm"
+  },
+  "SeriesStatement" : [ {
+    "title" : [ "utb", "Agrarwissenschaften, Veterinärmedizin, Lebensmittelwissenschaften" ],
+    "volume" : [ "8664" ]
+  } ],
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : [ "utb", "Agrarwissenschaften, Veterinärmedizin, Lebensmittelwissenschaften" ],
+    "volume" : [ "8664" ]
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Märtlbauer, Erwin"
+  }, {
+    "personName" : "Becker, Heinz",
+    "personBio" : "1948-",
+    "personIdentifier" : [ "(DE-588)1033629324" ],
+    "identifierGND" : [ "1033629324" ],
+    "preferredName" : "Becker, Heinz"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "http://digitale-objekte.hbz-nrw.de/storage2/2017/02/07/file_10/7080672.pdf",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : [ "V:DE-605", "X:migimw" ],
+    "format" : "application/pdf"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : [ "V:DE-605", "X:migimw" ],
+    "format" : "application/pdf"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990210731060206441"
+  }, {
+    "uid" : "(DE-605)HT018902109"
+  }, {
+    "uid" : "(DE-836)991000350799706485"
+  }, {
+    "uid" : "(OCoLC)932023789"
+  }, {
+    "uid" : "(DE-599)DNB1079232362"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-836",
+    "label" : "FH Münster, Hochschulbibliothek",
+    "callnumber" : [ "RRZ 137+3", "0356674" ],
+    "shelfmark" : "Freihand_F"
+  }, {
+    "identifier" : "DE-836",
+    "label" : "FH Münster, Hochschulbibliothek",
+    "callnumber" : [ "RRZ 137+4", "0356675" ],
+    "shelfmark" : "Freihand_F"
+  }, {
+    "identifier" : "DE-836",
+    "label" : "FH Münster, Hochschulbibliothek",
+    "callnumber" : [ "RRZ 137+2", "0356673" ],
+    "shelfmark" : "Freihand_F"
+  }, {
+    "identifier" : "DE-836",
+    "label" : "FH Münster, Hochschulbibliothek",
+    "callnumber" : [ "RRZ 137", "0333381" ],
+    "shelfmark" : "Freihand_F"
+  }, {
+    "identifier" : "DE-836",
+    "label" : "FH Münster, Hochschulbibliothek",
+    "callnumber" : [ "RRZ 137+1", "0356213" ],
+    "shelfmark" : "Freihand_F"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : [ "Milch" ],
+    "combinedLabel" : "Milch",
+    "subjectIdentifier" : [ "(DE-588)4039264-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040392643", "(uri) http://viaf.org/viaf/sourceID/DNB|040392643" ],
+    "identifierGND" : [ "4039264-8" ],
+    "variantName" : [ "Trinkmilch", "Konsummilch", "Kuhmilch" ],
+    "preferredName" : "Milch"
+  }, {
+    "subjectTopicName" : [ "Lebensmittelchemie" ],
+    "combinedLabel" : "Lebensmittelchemie",
+    "subjectIdentifier" : [ "(DE-588)4034873-8", "(uri) https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=idn=040348733", "(uri) http://viaf.org/viaf/sourceID/DNB|040348733" ],
+    "identifierGND" : [ "4034873-8" ],
+    "preferredName" : "Lebensmittelchemie"
+  } ],
+  "Subject" : [ {
+    "subject" : "Milchhygiene"
+  }, {
+    "subject" : "Milchkunde"
+  }, {
+    "subject" : "Technologie der Milch"
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "CurrentPublicationFrequency" : [ {
+    "frequency" : "Eighteen no. a year"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "38871200"
+  } ],
+  "collection" : "DE-605",
+  "AbbreviatedTitle" : [ {
+    "title" : "BRAIN RES BULL"
+  }, {
+    "title" : "BRAIN RES B"
+  }, {
+    "title" : "BRAIN RES. BULL"
+  }, {
+    "title" : "Brain res. bull.",
+    "qualifier" : "(Online)"
+  } ],
+  "TitlePreferred" : [ {
+    "title" : "Brain research bulletin (Online)"
+  } ],
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Zeitschrift" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "1976" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "subject" : [ "Brain", "Neurochemistry", "Neuropsychology", "Research", "Brain / Periodicals", "Neurochemistry / Periodicals", "Neuropsychology / Periodicals", "Cerveau / Périodiques", "Neurochimie / Périodiques", "Neuropsychologie / Périodiques", "Cerveau", "Neurochimie", "Recherche", "brains", "research (function)", "Periodicals", "Périodiques" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHM",
+    "identifierMMS" : "99370671252306441",
+    "identifierMMSIZ" : "991006386334606485",
+    "identifierPID" : [ "5336184850006485", "5336225490006485" ]
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99370671252306441",
+    "identifierForTheRecord" : "(DE-605)99370671252306441"
+  },
+  "DateFirst" : {
+    "date" : [ "1995", "1976" ]
+  },
+  "DateLast" : {
+    "date" : [ "2017", "2002" ]
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierZDB" : [ {
+    "identifierZDB" : "2004068-4",
+    "preferredZDB" : "20040684"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "1873-2747",
+    "preferredISSN" : "18732747"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "International Behavioral Neuroscience Society"
+  } ],
+  "TitleStatement" : {
+    "titleMain" : "Brain research bulletin"
+  },
+  "PublisherName" : [ {
+    "place" : [ "[New York, NY]" ],
+    "name" : [ "Elsevier Inc" ]
+  } ],
+  "ChronologyAndEnumeration" : {
+    "unformattedValue" : [ "Began with vol. 1, issue 1 (Jan./Feb. 1976)." ]
+  },
+  "Description" : [ {
+    "description" : "Some issues also have distinctive titles."
+  } ],
+  "DescriptionOfIssuance" : [ {
+    "description" : "Some issues combined."
+  } ],
+  "SourceOfDescriptionNote" : [ {
+    "note" : "Vol. 36, issue 1 (1995); title from contents screen (ScienceDirect, viewed October 8, 2003)."
+  }, {
+    "note" : "Vol. 61, issue 6 (15 Oct. 2003), viewed October 8, 2003."
+  } ],
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISSN" : "0361-9230",
+    "preferredISSN" : "03619230"
+  } ],
+  "OnlineAccess" : [ {
+    "collectionIdentifier" : "6135705170006485",
+    "publicnote" : "Elsevier ScienceDirect Journals Complete [Available from 1995 volume: 36 issue: 1 until 2017.; Zugang für alle FH-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=5336184850006485&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  }, {
+    "collectionIdentifier" : "6135703610006485",
+    "publicnote" : "EZB-NALI5-00465 Elsevier Archive NL [Available from 1976 volume: 1 issue: 1 until 2002 volume: 59 issue: 3.; Zugang für alle FH-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=5336225490006485&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99370671252306441"
+  }, {
+    "uid" : "(DE-600)2004068-4"
+  }, {
+    "uid" : "(DE-836)991006386334606485"
+  }, {
+    "uid" : "(DE-599)ZDB2004068-4"
+  }, {
+    "uid" : "(OCoLC)38871200"
+  }, {
+    "uid" : "(CKB)954925522699"
+  }, {
+    "uid" : "(CONSER)--2003233151"
+  }, {
+    "uid" : "(EXLCZ)99954925522699"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "TypePeriodical" : [ "Zeitschrift" ],
+  "RSWK" : [ {
+    "subjectTopicName" : [ "Brain" ],
+    "subjectGenre" : "Periodicals",
+    "combinedLabel" : "Brain"
+  }, {
+    "subjectTopicName" : [ "Neurochemistry" ],
+    "subjectGenre" : "Periodicals",
+    "combinedLabel" : "Neurochemistry"
+  }, {
+    "subjectTopicName" : [ "Neuropsychology" ],
+    "subjectGenre" : "Periodicals",
+    "combinedLabel" : "Neuropsychology"
+  }, {
+    "subjectTopicName" : [ "Brain" ],
+    "combinedLabel" : "Brain"
+  }, {
+    "subjectTopicName" : [ "Research" ],
+    "combinedLabel" : "Research"
+  }, {
+    "subjectTopicName" : [ "Brain" ],
+    "subjectAddendum" : "Periodicals",
+    "combinedLabel" : "Brain / Periodicals"
+  }, {
+    "subjectTopicName" : [ "Neurochemistry" ],
+    "subjectAddendum" : "Periodicals",
+    "combinedLabel" : "Neurochemistry / Periodicals"
+  }, {
+    "subjectTopicName" : [ "Neuropsychology" ],
+    "subjectAddendum" : "Periodicals",
+    "combinedLabel" : "Neuropsychology / Periodicals"
+  }, {
+    "subjectTopicName" : [ "Cerveau" ],
+    "subjectAddendum" : "Périodiques",
+    "combinedLabel" : "Cerveau / Périodiques"
+  }, {
+    "subjectTopicName" : [ "Neurochimie" ],
+    "subjectAddendum" : "Périodiques",
+    "combinedLabel" : "Neurochimie / Périodiques"
+  }, {
+    "subjectTopicName" : [ "Neuropsychologie" ],
+    "subjectAddendum" : "Périodiques",
+    "combinedLabel" : "Neuropsychologie / Périodiques"
+  }, {
+    "subjectTopicName" : [ "Cerveau" ],
+    "subjectGenre" : "Périodiques",
+    "combinedLabel" : "Cerveau"
+  }, {
+    "subjectTopicName" : [ "Neurochimie" ],
+    "subjectGenre" : "Périodiques",
+    "combinedLabel" : "Neurochimie"
+  }, {
+    "subjectTopicName" : [ "Cerveau" ],
+    "combinedLabel" : "Cerveau"
+  }, {
+    "subjectTopicName" : [ "Recherche" ],
+    "combinedLabel" : "Recherche"
+  }, {
+    "subjectTopicName" : [ "brains" ],
+    "combinedLabel" : "brains"
+  }, {
+    "subjectTopicName" : [ "research (function)" ],
+    "combinedLabel" : "research (function)"
+  }, {
+    "subjectTopicName" : [ "Research" ],
+    "combinedLabel" : "Research",
+    "subjectIdentifier" : [ "(OCoLC)fst01095153" ]
+  }, {
+    "subjectTopicName" : [ "Brain" ],
+    "combinedLabel" : "Brain",
+    "subjectIdentifier" : [ "(OCoLC)fst00837570" ]
+  }, {
+    "subjectTopicName" : [ "Neurochemistry" ],
+    "combinedLabel" : "Neurochemistry",
+    "subjectIdentifier" : [ "(OCoLC)fst01036329" ]
+  }, {
+    "subjectTopicName" : [ "Neuropsychology" ],
+    "combinedLabel" : "Neuropsychology",
+    "subjectIdentifier" : [ "(OCoLC)fst01036493" ]
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT021573674",
+    "identifierHBZ" : "HT021573674"
+  } ],
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2022" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Ur Rehman" ],
+    "subject" : [ "Electrical & Electronics Engineering" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHM",
+    "identifierMMS" : "99371734302206441",
+    "identifierPID" : [ "53798390670006441" ]
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99371734302206441",
+    "identifierForTheRecord" : "(DE-605)HT021573674"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9781119788829" ],
+    "preferredISBN" : "9781119788829",
+    "variantISBN" : [ "978-1-119-78882-9", "111978882X", "1-119-78882-X" ]
+  } ],
+  "IdentifierDOI" : [ {
+    "standardNumber" : "10.1002/9781119788829"
+  } ],
+  "Person" : [ {
+    "personName" : "Ur Rehman"
+  } ],
+  "TitleStatement" : {
+    "titleMain" : "Interference Mitigation in Device-to-Device Communications"
+  },
+  "PublisherName" : [ {
+    "name" : [ "John Wiley & Sons, Inc" ],
+    "chronology" : [ "2022-03-18" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2022-03-18" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource"
+  },
+  "AdditionalPhysicalFormEntry" : [ {
+    "identifierISBN" : [ "9781119788799" ],
+    "preferredISBN" : "9781119788799",
+    "variantISBN" : [ "978-1-119-78879-9", "111978879X", "1-119-78879-X" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119788829"
+  }, {
+    "collectionIdentifier" : "61767497870006441",
+    "publicnote" : "Wiley eBooks EBA bis 31.12.2023 (ZDB-35-Wiley-EBA) [Zugang für alle FH-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=53798390670006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : [ "ZDB-35-Wiley-EBA" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99371734302206441"
+  }, {
+    "uid" : "(DE-605)HT021573674"
+  }, {
+    "uid" : "(hbzERes_EBA-Wiley)10.1002/9781119788829"
+  }, {
+    "uid" : "(DE-599)HBZHT021573674"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectPersonName" : "Electrical & Electronics Engineering",
+    "combinedLabel" : "Electrical & Electronics Engineering"
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "FormatCarrier" : [ "Computerdatei(en) im Fernzugriff" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT021864797",
+    "identifierHBZ" : "HT021864797"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : [ "Behavior, Ecology, and Conservation of an Iconic Species" ]
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Craig Packer" ]
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2023" ]
+  },
+  "introx" : {
+    "access" : [ "online", "open access" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Packer, Craig" ],
+    "subject" : [ "Lion / Behavior / Africa, East", "NATURE / Animals / Big Cats" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHM",
+    "identifierMMS" : "99372015733106441",
+    "identifierPID" : [ "53816391610006441", "53816391670006441" ]
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99372015733106441",
+    "identifierForTheRecord" : "(DE-605)HT021864797"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9780691235950" ],
+    "preferredISBN" : "9780691235950",
+    "variantISBN" : [ "978-0-691-23595-0", "0691235953", "0-691-23595-3" ]
+  } ],
+  "IdentifierDOI" : [ {
+    "standardNumber" : "10.1515/9780691235950"
+  } ],
+  "Person" : [ {
+    "personName" : "Packer, Craig"
+  } ],
+  "TitleStatement" : {
+    "titleMain" : "The Lion"
+  },
+  "PublisherName" : [ {
+    "place" : [ "Princeton, NJ" ],
+    "name" : [ "Princeton University Press" ],
+    "chronology" : [ "[2023]" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : [ "Princeton, NJ" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2023]" ]
+  },
+  "Extent" : {
+    "extent" : "1 online resource (376 p.) : 173 color illus. 5 tables"
+  },
+  "Abstract" : {
+    "abstract" : [ "An authoritative, accessible, and gorgeously illustrated exploration into the lives of these remarkable animalsLions are the only social cat. They hunt together, raise cubs together, and defend territories together against neighbors and strangers. Lions also rest atop their ecological pyramid, with profound impacts on competitors and prey alike, but their future is far from assured. Craig Packer interweaves his discoveries from more than forty years of research—including a substantial body of new findings—to provide an unforgettable portrait of the African lion. He shares insights into the intricacies of lion life from birth until death and describes efforts to conserve lions in an increasingly crowded continent. With a wealth of breathtaking photographs by Daniel Rosengren, The Lion sheds light on a host of intriguing scientific questions, such as why males have manes, why lions are social, how sociality limits and stabilizes lion populations, how close inbreeding affects lion health, why lions become man-eaters, how lions and people can best be protected from each other, and how to ensure the lion’s survival into the next century.Engagingly written by the world’s foremost expert on African lionsIntegrates a wealth of findings from two of the most comprehensive field studies on any animalFeatures hundreds of stunning photographs that capture a broad range of lion behaviors, ecological interactions, and conservation challengesBlends vivid field anecdotes and graphics to give the reader a sense of adventuring into the lion’s world" ]
+  },
+  "RestrictionsOnAccessNote" : [ {
+    "source" : "star",
+    "terms" : [ "restricted access" ],
+    "statement" : [ "online access with authorization" ],
+    "uri" : [ "http://purl.org/coar/access_right/c_16ec" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://doi.org/10.1515/9780691235950"
+  }, {
+    "uri" : "https://www.degruyter.com/isbn/9780691235950"
+  }, {
+    "uri" : "https://www.degruyter.com/document/cover/isbn/9780691235950/original",
+    "relatedto" : "Cover"
+  }, {
+    "collectionIdentifier" : "61738769180006441",
+    "publicnote" : "De Gruyter E-Books EBA bis 31.12.2023 (ZDB-23-DGG-eba) [Zugang für alle FH-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=53816391610006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  }, {
+    "collectionIdentifier" : "61738769180006441",
+    "publicnote" : "De Gruyter E-Books EBA bis 31.12.2023 (ZDB-23-DGG-eba) [Zugang für alle FH-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=53816391670006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : [ "ZDB-23-DGG-eba" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99372015733106441"
+  }, {
+    "uid" : "(DE-605)HT021864797"
+  }, {
+    "uid" : "(hbzERes_EBA-deGruyter)9780691235950"
+  }, {
+    "uid" : "(DE-599)HBZHT021864797"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : [ "Lion / Behavior / Africa, East" ],
+    "combinedLabel" : "Lion / Behavior / Africa, East"
+  }, {
+    "subjectTopicName" : [ "NATURE / Animals / Big Cats" ],
+    "combinedLabel" : "NATURE / Animals / Big Cats"
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "02262727"
+  } ],
+  "bib" : {
+    "identifierAuthority=mab" : "(DE-836)ocm02262727"
+  },
+  "collection" : "DE-836",
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "keine Angabe" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "1954", "1960" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ],
+    "subject" : [ "Electronics", "Radio", "Électronique", "electronic engineering", "Periodicals", "Périodiques" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHM",
+    "identifierMMS" : "991000000629706485",
+    "identifierMMSIZ" : "991000000629706485"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-836)991000000629706485",
+    "identifierForTheRecord" : "(DE-836)ocm02262727"
+  },
+  "DateFirst" : {
+    "date" : [ "1954" ]
+  },
+  "DateLast" : {
+    "date" : [ "1960" ]
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISSN" : [ {
+    "identifierISSN" : "0096-1639",
+    "preferredISSN" : "00961639"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Institute of Radio Engineers",
+    "corporateBodyNameUnit" : [ "Professional Group on Aerospace and Navigational Electronics" ]
+  }, {
+    "corporateBodyName" : "Institute of Radio Engineers",
+    "corporateBodyNameUnit" : [ "Professional Group on Aerospace and Navigational Electronics" ]
+  } ],
+  "TitleStatement" : {
+    "titleMain" : "IRE transactions on aeronautical and navigational electronics"
+  },
+  "PublisherName" : [ {
+    "place" : [ "[New York]" ],
+    "name" : [ "[Institute of Radio Engineers]" ]
+  } ],
+  "Extent" : {
+    "extent" : "illustrations ; 28 cm"
+  },
+  "ChronologyAndEnumeration" : {
+    "value" : "v. ANE-1-7; Mar. 1954-Dec. 1960."
+  },
+  "PrecedingEntry" : [ {
+    "mainEntryHeading" : "Institute of Radio Engineers. Professional Group on Airborne Electronics.",
+    "title" : "Transactions. PGAE"
+  } ],
+  "SucceedingEntry" : [ {
+    "mainEntryHeading" : "IRE transactions on aerospace and navigational electronics"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-836)991000000629706485"
+  }, {
+    "uid" : "(DE-836)ocm02262727"
+  }, {
+    "uid" : "(DE-836)2262727-49hbz_fhm"
+  }, {
+    "uid" : "(OCoLC)02262727"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : [ "Electronics" ],
+    "combinedLabel" : "Electronics"
+  }, {
+    "subjectTopicName" : [ "Radio" ],
+    "subjectGenre" : "Periodicals",
+    "combinedLabel" : "Radio"
+  }, {
+    "subjectTopicName" : [ "Électronique" ],
+    "combinedLabel" : "Électronique"
+  }, {
+    "subjectTopicName" : [ "Radio" ],
+    "subjectGenre" : "Périodiques",
+    "combinedLabel" : "Radio"
+  }, {
+    "subjectTopicName" : [ "electronic engineering" ],
+    "combinedLabel" : "electronic engineering"
+  }, {
+    "subjectTopicName" : [ "Electronics" ],
+    "combinedLabel" : "Electronics",
+    "subjectIdentifier" : [ "(OCoLC)fst00907538" ]
+  }, {
+    "subjectTopicName" : [ "Radio" ],
+    "combinedLabel" : "Radio",
+    "subjectIdentifier" : [ "(OCoLC)fst01087053" ]
+  } ]
+}
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Online-Ressource" ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT030648740",
+    "identifierHBZ" : "HT030648740"
+  } ],
+  "collection" : "DE-605",
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2023" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ],
+    "person" : [ "Stychin, Carl F" ],
+    "subject" : [ "Jurisprudence & general issues", "Public health & safety law" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHM",
+    "identifierMMS" : "99373539869106441",
+    "identifierPID" : [ "53853482000006441", "53853482930006441", "53853482310006441", "53853482230006441" ]
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99373539869106441",
+    "identifierForTheRecord" : "(DE-605)HT030648740"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9781911507390", "9781911507406" ],
+    "preferredISBN" : "9781911507390",
+    "variantISBN" : [ "978-1-911507-39-0", "1911507397", "1-911507-39-7" ]
+  } ],
+  "TitleStatement" : {
+    "titleMain" : "Law, Humanities and the COVID Crisis"
+  },
+  "PublisherName" : [ {
+    "name" : [ "University of London Press" ],
+    "chronology" : [ "2023" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2023" ]
+  },
+  "Extent" : {
+    "extent" : "1 Online-Ressource"
+  },
+  "DescriptionOfExpression" : [ {
+    "description" : "English"
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Stychin, Carl F"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://library.oapen.org/bitstream/20.500.12657/76493/1/external_content.pdf",
+    "publicnote" : "DOAB: download the publication"
+  }, {
+    "publicnote" : "DOAB: download the publication"
+  }, {
+    "publicnote" : "DOAB: download the publication"
+  }, {
+    "uri" : "https://directory.doabooks.org/handle/20.500.12854/121575",
+    "publicnote" : "DOAB: description of the publication"
+  }, {
+    "collectionIdentifier" : "61737818980006441",
+    "publicnote" : "DOAB - Directory of Open Access Books (ZDB-94-OAB) [Zugang für alle FH-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=53853482000006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  }, {
+    "collectionIdentifier" : "61737818980006441",
+    "publicnote" : "DOAB - Directory of Open Access Books (ZDB-94-OAB) [Zugang für alle FH-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=53853482930006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  }, {
+    "collectionIdentifier" : "61737818980006441",
+    "publicnote" : "DOAB - Directory of Open Access Books (ZDB-94-OAB) [Zugang für alle FH-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=53853482310006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  }, {
+    "collectionIdentifier" : "61737818980006441",
+    "publicnote" : "DOAB - Directory of Open Access Books (ZDB-94-OAB) [Zugang für alle FH-Angehörigen]",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_FHM/openurl?u.ignore_date_coverage=true&portfolio_pid=53853482230006441&Force_direct=true",
+    "isInternalLinkFor" : "DE-836"
+  } ],
+  "ClassifierDigitization" : [ {
+    "classifier" : [ "ZDB-94-OAB" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99373539869106441"
+  }, {
+    "uid" : "(DE-605)HT030648740"
+  }, {
+    "uid" : "(hbzERes_OAPEN)121575"
+  }, {
+    "uid" : "(oapen)doab_121575"
+  }, {
+    "uid" : "(DE-599)HBZHT030648740"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : [ "Jurisprudence & general issues" ],
+    "combinedLabel" : "Jurisprudence & general issues"
+  }, {
+    "subjectTopicName" : [ "Public health & safety law" ],
+    "combinedLabel" : "Public health & safety law"
+  } ],
+  "Subject" : [ {
+    "subject" : "Law"
+  }, {
+    "subject" : "Health"
+  } ]
+}
+{
+  "ExtendedType" : [ "Lehrbuch" ],
+  "FormatCarrier" : [ "Druckschrift" ],
+  "TypeMonograph" : [ "einbändiges Werk" ],
+  "TypeHeading" : [ {
+    "term" : "Lehrbuch",
+    "identifier" : [ "(DE-588)4123623-3" ]
+  } ],
+  "Country" : [ {
+    "countryISO" : "DE"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT012899053",
+    "identifierHBZ" : "HT012899053"
+  } ],
+  "IdentifierOCLC" : [ {
+    "identifierOCLC" : "76209653"
+  } ],
+  "collection" : "DE-605",
+  "TitleUniform" : {
+    "titleUniform" : "Grammar of the film language"
+  },
+  "TitleAddendum" : {
+    "title" : [ "das Handbuch" ]
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : [ "Daniel Arijon. Aus dem Amerikan. von Karl Heinz Siber" ]
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie", "Lehrbuch" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2000" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "person" : [ "Arijon, Daniel" ],
+    "subject" : [ "Film", "Erzähltechnik", "Filmtechnik" ],
+    "localCallNumber" : [ "KNN 22" ]
+  },
+  "SubjectRPB" : [ {
+    "subject" : [ "530" ]
+  }, {
+    "subject" : [ "535" ]
+  } ],
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_FHM",
+    "identifierMMS" : "990112269000206441",
+    "identifierMMSIZ" : "991003382219706485"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)990112269000206441",
+    "identifierForTheRecord" : "(DE-605)HT012899053"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3861503360" ],
+    "preferredISBN" : "9783861503361",
+    "variantISBN" : [ "978-3-86150-336-1", "3-86150-336-0" ]
+  } ],
+  "Person" : [ {
+    "personName" : "Arijon, Daniel"
+  } ],
+  "TitleStatement" : {
+    "titleMain" : "Grammatik der Filmsprache"
+  },
+  "Edition" : {
+    "edition" : [ "Dt. Erstausg., 1. Aufl." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Frankfurt am Main" ],
+    "name" : [ "Zweitausendeins" ],
+    "chronology" : [ "2000" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : [ "Frankfurt am Main" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "2000" ]
+  },
+  "Extent" : {
+    "extent" : "708 S. : Ill., graph. Darst."
+  },
+  "OnlineAccess" : [ {
+    "uri" : "https://digitale-objekte.hbz-nrw.de/storage/2007/10/15/file_78/2169538.pdf",
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : [ "V:DE-605", "X:migimw" ],
+    "format" : "application/pdf"
+  }, {
+    "relatedto" : "Inhaltsverzeichnis",
+    "contact" : [ "V:DE-605", "X:migimw" ],
+    "format" : "application/pdf"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)990112269000206441"
+  }, {
+    "uid" : "(DE-605)HT012899053"
+  }, {
+    "uid" : "(DE-836)991003382219706485"
+  }, {
+    "uid" : "(OCoLC)76209653"
+  }, {
+    "uid" : "(DE-599)HBZHT012899053"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-836",
+    "label" : "FH Münster, Hochschulbibliothek",
+    "callnumber" : [ "KNN 22", "0129686" ],
+    "shelfmark" : "Freihand_L"
+  } ],
+  "RSWK" : [ {
+    "subjectTopicName" : [ "Film" ],
+    "combinedLabel" : "Film",
+    "subjectIdentifier" : [ "(DE-588)4017102-4" ],
+    "identifierGND" : [ "4017102-4" ],
+    "variantName" : [ "Kino <Film>", "Filmaufnahme" ],
+    "preferredName" : "Film"
+  }, {
+    "subjectTopicName" : [ "Erzähltechnik" ],
+    "combinedLabel" : "Erzähltechnik",
+    "subjectIdentifier" : [ "(DE-588)4124854-5" ],
+    "identifierGND" : [ "4124854-5" ],
+    "variantName" : [ "Epische Technik", "Erzählstrategie", "Epik / Technik <Kunstfertigkeit>", "Narrativ <Erzähltechnik>", "Erzählstruktur", "Erzählweise", "Erzählstil", "Narrative Struktur" ],
+    "preferredName" : "Erzähltechnik"
+  }, {
+    "subjectTopicName" : [ "Filmtechnik" ],
+    "combinedLabel" : "Filmtechnik",
+    "subjectIdentifier" : [ "(DE-588)4017144-9" ],
+    "identifierGND" : [ "4017144-9" ],
+    "variantName" : [ "Kinematographie", "Kinematografie" ],
+    "preferredName" : "Filmtechnik"
+  } ]
+}

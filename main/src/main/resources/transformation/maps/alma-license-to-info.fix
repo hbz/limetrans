@@ -1,0 +1,46 @@
+put_map("alma-license-to-info-DE-467",
+  "1 User":          "gleichzeitiger Zugriff für 1 Benutzer",
+  "10 User":         "gleichzeitiger Zugriff für 10 Benutzer",
+  "2 User":          "gleichzeitiger Zugriff für 2 Benutzer",
+  "20 User":         "gleichzeitiger Zugriff für 20 Benutzer",
+  "3 User":          "gleichzeitiger Zugriff für 3 Benutzer",
+  "5 User":          "gleichzeitiger Zugriff für 5 Benutzer",
+  "Beck":            "Für den Zugriff wird ein eigenes Benutzerkonto benötigt",
+  "Open Access":     "Open Access",
+  "Passwort Theke":  "Zugriffsbeschränkt. Für weitere Informationen wenden Sie sich bitte an eine der Auskunftstheken",
+  "Passwort":        "Für den Zugriff benötigen Sie Nutzername und Passwort"
+)
+
+put_map("alma-license-to-info-DE-836",
+  "1 User":          "gleichzeitiger Zugang für 1 Benutzer",
+  "2 User":          "gleichzeitiger Zugang für 2 Benutzer",
+  "20 User":         "gleichzeitiger Zugang für 20 Benutzer",
+  "3 User":          "gleichzeitiger Zugang für 3 Benutzer",
+  "4 User":          "gleichzeitiger Zugang für 4 Benutzer",
+  "5 User":          "gleichzeitiger Zugang für 5 Benutzer",
+  "8 User":          "gleichzeitiger Zugang für 8 Benutzer",
+  "KA Campuslizenz": "Zugang für alle Angehörigen der Kunstakademie",
+  "Sonderlizenz":    "begrenzte Anzahl von Zugängen",
+  "__missing":       "Zugang für alle FH-Angehörigen"
+)
+
+put_map("alma-collection-to-info-DE-1383",
+  "Beck online - Hochschulmodul (Books ZDB-18-BOH)":                      "Zugriff nur innerhalb des Hochschulnetzes",
+  "Beck online - Hochschulmodul (Integrierende Ressourcen) (ZDB-18-BOH)": "Zugriff nur innerhalb des Hochschulnetzes"
+)
+
+put_map("alma-collection-to-info-DE-836",
+  "Bloomsbury eBooks EBA bis 31.12.2023 (ZDB-162-Bloom-EBA)":             "Zugang für alle FH-Angehörigen",
+  "De Gruyter E-Books EBA bis 31.12.2023 (ZDB-23-DGG-eba)":               "Zugang für alle FH-Angehörigen",
+  "Duncker & Humblot eLibrary EBS bis 31.12.2023 (ZDB-54-Duncker-EBA)":   "Zugang für alle FH-Angehörigen",
+  "Elsevier Freedom Collection EBS bis 30.04.2024 (ZDB-33-Elsevier-EBA)": "Zugang für alle FH-Angehörigen",
+  "Hanser eBooks EBA bis 31.12.2023 (ZDB-16-Hanser-EBA)":                 "Zugang für alle FH-Angehörigen",
+  "Meiner eLibrary EBS bis 31.12.2023 (ZDB-196-Meiner-EBA)":              "Zugang für alle FH-Angehörigen",
+  "Narr Francke Attempto EBS bis 31.12.2023 (ZDB-71-Narr-EBA)":           "Zugang für alle FH-Angehörigen",
+  "Nomos VDI eBooks NRW bis 31.12.2023 (ZDB-18-Nomos-VDI-NRW)":           "Zugang für alle FH-Angehörigen",
+  "Nomos eBooks NRW bis 31.12.2023 (ZDB-18-Nomos-NRW)":                   "Zugang für alle FH-Angehörigen",
+  "Preselect EBA bis 31.12.2023 (ZDB-605-Preselect)":                     "Zugang für alle FH-Angehörigen",
+  "Taylor & Francis eBooks EBS bis 31.12.2024 (ZDB-7-taylorfra-EBA)":     "Zugang für alle FH-Angehörigen",
+  "Wiley eBooks EBA bis 31.12.2023 (ZDB-35-Wiley-EBA)":                   "Zugang für alle FH-Angehörigen",
+  "utb elibrary scholars ebs bis 31.12.2023 (ZDB-41-UTB-EBA)":            "Zugang für alle FH-Angehörigen"
+)

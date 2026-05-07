@@ -1,0 +1,4 @@
+# MARC/245
+call_macro("copy-first-item", source: "245??.a", target: "TitleStatement.titleMain")
+replace_all("TitleStatement.titleMain", "^[©]|\\s?[,.:;/=]?$", "")
+call_macro("remove-nonsort", source: "TitleStatement.titleMain")

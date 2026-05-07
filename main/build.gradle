@@ -1,0 +1,16 @@
+plugins {
+    id 'checkstyle'
+    id 'java'
+    id 'java-library'
+}
+
+apply from: "${rootProject.projectDir}/gradle/java-common-conventions.gradle"
+apply from: "${rootProject.projectDir}/gradle/tasks.gradle"
+
+dependencies {
+    implementation project(':core')
+    implementation project(":es$elasticsearchVersion")
+
+    implementation "junit:junit:${versions.junit}"
+    runtimeOnly "org.apache.logging.log4j:log4j-slf4j2-impl:${versions.log4j}"
+}
