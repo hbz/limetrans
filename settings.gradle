@@ -109,10 +109,10 @@ gradle.rootProject {
     }
 
     def separator = "\\Q${versionsProperty.separator}\\E"
-    rootProject.properties.each { key, value ->
+    providers.gradlePropertiesPrefixedBy(versionsProperty.prefix + versionsProperty.separator).get().each { key, value ->
         if (value instanceof String && !value.isEmpty()) {
             def parts = key.split(separator)
-            if (parts.size() == 2 && parts[0] == versionsProperty.prefix) {
+            if (parts.size() == 2) {
                 versions[parts[1]] = value
             }
         }

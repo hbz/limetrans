@@ -1,7 +1,9 @@
+rootProject.ext.properties.each(ext::set)
+
 repositories {
     if (enableMavenLocal) mavenLocal()
     mavenCentral()
-    maven githubPackage.invoke('metafacture')
+    //maven rootProject.githubPackage.invoke('metafacture')
     maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 
@@ -77,4 +79,4 @@ tasks.withType(JavaExec) {
     doFirst { passSystemProperties(systemProperties) }
 }
 
-compileJava.doFirst { printVersions() }
+compileJava.doFirst { rootProject.printVersions() }
