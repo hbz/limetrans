@@ -12,7 +12,7 @@ gradle.rootProject {
 
     ext {
         versions = [
-            checkstyle:     '13.4.2',
+            checkstyle:     '13.7.0',
             commons_cli:    '1.11.0',
             elasticsearch:  '9',
             elasticsearch8: '8.19.16',
