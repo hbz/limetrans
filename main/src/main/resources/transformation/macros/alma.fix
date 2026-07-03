@@ -50,6 +50,38 @@ do put_macro("alma-format-carrier", length: "1")
   move_field("@alma-format-carrier-facet", "@facet_format.$append")
 end
 
+do put_macro("alma-portfolio")
+  do list(path: "$i.a", "var": "$j")
+    copy_field("$j", "IdentifierAlma.identifierPID[].$append")
+  end
+  add_hash("OnlineAccess[].$append")
+  copy_field("$i.k", "OnlineAccess[].$last.authenticationNote")
+  copy_field("$i.l", "OnlineAccess[].$last.publicNote")
+  copy_field("$i.n", "OnlineAccess[].$last.coverageStatement")
+  copy_field("$i.p", "OnlineAccess[].$last.collectionIdentifier")
+  copy_field("$i.q", "OnlineAccess[].$last.collectionName")
+  call_macro("remove-nonsort", source: "OnlineAccess[].$last.collectionName")
+  replace_all("OnlineAccess[].$last.collectionName", "\\s+\\(ZDB-.+?\\)$", "")
+  copy_field("$i.q", "@collection_info")
+  lookup("@collection_info", "alma-collection-to-info-$[isil]", delete: "true")
+  if exists("@collection_info")
+    move_field("@collection_info", "OnlineAccess[].$last.collectionInfo")
+  else
+    if exists("$i.s")
+      copy_field("$i.s", "@license_info")
+      lookup("@license_info", "alma-license-to-info-$[isil]")
+    else
+      add_field("@license_info", "__missing")
+      lookup("@license_info", "alma-license-to-info-$[isil]", delete: "true")
+    end
+    move_field("@license_info", "OnlineAccess[].$last.licenseInfo")
+  end
+  copy_field("$i.D", "OnlineAccess[].$last.uri")
+  replace_all("OnlineAccess[].$last.uri", "$[network]", "$[member]")
+  add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
+  add_field("@unsuppressed", "true")
+end
+
 do put_macro("alma-suppressed-location")
   paste("$i.@suppressedLocation", "~$[member]", "$i.$[library_field]", "$i.$[location_field]", join_char: "+")
   lookup("$i.@suppressedLocation", "alma-suppressed-location", delete: "true")
