@@ -4,7 +4,8 @@
   "postprocess": true,
   "alma": {},
   "vars": {
-    "external-maps": "/data/jenkins/limetrans/maps"
+    "external-maps": "/data/jenkins/limetrans/maps",
+    "path": "${path}"
   },
   "input": {
     "queue": {

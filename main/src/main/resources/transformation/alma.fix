@@ -900,6 +900,8 @@ do list(path: "980  ", "var": "$i")
 end
 if str_equal("$[isil]", "DE-38M")
   if any_equal("introx.localCollection[]", "digibib-ebooks")
+    call_macro("alma-local-collection", isil: "DE-836")
+    call_macro("alma-local-collection", isil: "DE-A96")
     add_field("@unsuppressed", "true")
   else
     add_field("@suppressed", "true")

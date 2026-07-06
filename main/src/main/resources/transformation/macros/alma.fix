@@ -6,6 +6,19 @@ do put_macro("alma-index-identifier")
   copy_field("@mmsid", "RecordIdentifier.identifierForTheIndex")
 end
 
+do put_macro("alma-local-collection")
+  do once("alma-local-collection-$[isil]")
+    put_filemap("$[path]/$[isil].id.bgzf", "alma-local-collection-$[isil]", value_column: "0", decompress_concatenated: "true")
+  end
+  copy_field("001", "@alma-local-collection")
+  lookup("@alma-local-collection", "alma-local-collection-$[isil]", delete: "true")
+  if exists("@alma-local-collection")
+    remove_field("@alma-local-collection")
+  else
+    add_field("introx.localCollection[].$append", "digibib-ebooks-$[isil]")
+  end
+end
+
 do put_macro("alma-mms-and-isil")
   do list(path: "MBD  ", "var": "$i")
     if any_equal("$i.M", "$[member]")
