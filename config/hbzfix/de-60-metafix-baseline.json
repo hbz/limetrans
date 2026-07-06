@@ -1,0 +1,29 @@
+{
+  "isil": "DE-60",
+  "#postprocess": true,
+  "vars": {
+   "external-maps": "/data/jenkins/limetrans/maps",
+   "#external-maps": "/home/rdk/hbzfix/external-maps/maps"
+   },
+  "input": {
+    "queue": {
+      "path": "/mnt/datenportal/hbzfix",
+      "#path": "/home/rdk/hbzfix/data",
+      "pattern": "de60"
+    }
+  },
+  "output": {
+   "#json": "${isil}_1.jsonl.gz",
+   "elasticsearch": {
+      "index": {
+        "type": "title",
+        "name": "${isil}-katalog",
+        "timewindow": "yyyyMMdd",
+        "settings": "classpath:/elasticsearch/hbztitle-settings-%s.json",
+        "mapping": "classpath:/elasticsearch/hbztitle-mapping-%s.json",
+        "idKey": "RecordIdentifier.identifierForTheIndex"
+      }
+    }
+  },
+  "transformation-rules": "classpath:/transformation/DE-60.fix"
+}
