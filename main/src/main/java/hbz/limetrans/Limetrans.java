@@ -248,6 +248,10 @@ public class Limetrans { // checkstyle-disable-line ClassDataAbstractionCoupling
     }
 
     private void initializeInput(final Settings aSettings) {
+    
+    System.setProperty("jdk.xml.totalEntitySizeLimit", "0");
+        System.setProperty("jdk.xml.maxGeneralEntitySizeLimit", "0");
+    
         aSettings.getAsSettings("input").forEach((s, k) -> {
             final Settings settings = s.getAsSettings(k);
             final AbstractInputQueue inputQueue;
