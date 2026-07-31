@@ -2,6 +2,6 @@
 add_array("AbbreviatedTitle[]")
 do list(path: "210??", "var": "$i")
   add_hash("AbbreviatedTitle[].$append")
-  copy_field("$i.a", "AbbreviatedTitle[].$last.title")
-  copy_field("$i.b", "AbbreviatedTitle[].$last.qualifier")
+  call_macro("copy-first-item", source: "$i.a", target: "AbbreviatedTitle[].$last.title")
+  call_macro("copy-first-item", source: "$i.b", target: "AbbreviatedTitle[].$last.qualifier")
 end
