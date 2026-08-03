@@ -246890,3 +246890,80 @@
     "subjectTopicName" : "Photographs"
   } ]
 }
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "applications in nanomaterials"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "edited by Mario Lanza"
+  },
+  "dc" : {
+    "format" : [ "Elektronische Ressource", "Online-Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Englisch" ],
+    "date" : [ "2017" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_NETWORK",
+    "identifierMMS" : "99370698281006441",
+    "identifierMMSIZ" : "99370698281006441"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99370698281006441",
+    "identifierForTheRecord" : "(DE-605)99370698281006441"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "3-527-69978-3" ]
+  }, {
+    "identifierISBN" : [ "3-527-69979-1" ]
+  }, {
+    "identifierISBN" : [ "3-527-69977-5" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Conductive atomic force microscopy"
+  } ],
+  "Edition" : {
+    "edition" : [ "1st ed." ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "[2017]" ]
+  }, {
+    "place" : [ "Weinheim" ],
+    "name" : [ "Wiley-VCH" ],
+    "chronology" : [ "[2017].", "c2017" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2017]", "[2017].", "c2017" ]
+  },
+  "Extent" : {
+    "extent" : "1 online resource (99 pages)"
+  },
+  "Description" : {
+    "description" : [ "Content Type: text (ncrcontent), Media Type: computer (ncrmedia), Carrier Type: online resource (ncrcarrier)", "Includes bibliographical references and index" ]
+  },
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "3-527-34091-2" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99370698281006441"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : "Nanostructured materials -- Microscopy"
+  }, {
+    "subjectTopicName" : "Nanostructured materials -- Electric properties"
+  }, {
+    "subjectTopicName" : "Atomic force microscopy"
+  } ]
+}
