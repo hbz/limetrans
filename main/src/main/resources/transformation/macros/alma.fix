@@ -68,7 +68,7 @@ do put_macro("alma-portfolio")
     copy_field("$j", "IdentifierAlma.identifierPID[].$append")
   end
   add_hash("OnlineAccess[].$append")
-  copy_field("$i.k", "OnlineAccess[].$last.authenticationNote")
+  call_macro("copy-first-item", source: "$i.k", target: "OnlineAccess[].$last.authenticationNote")
   copy_field("$i.l", "OnlineAccess[].$last.publicNote")
   copy_field("$i.n", "OnlineAccess[].$last.coverageStatement")
   copy_field("$i.p", "OnlineAccess[].$last.collectionIdentifier")
