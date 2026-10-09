@@ -857,6 +857,23 @@ do list(path: "POR  ", "var": "$i")
     end
   end
 end
+# MARC/AVD
+do list(path: "AVD? ", "var": "$i")
+  if any_equal("$i.M", "$[member]")
+    do list(path: "$i.a", "var": "$j")
+      copy_field("$j", "IdentifierAlma.identifierPID[].$append")
+    end
+    add_hash("OnlineAccess[].$append")
+    copy_field("$i.e", "OnlineAccess[].$last.collectionName")
+    copy_field("$i.f", "OnlineAccess[].$last.publicNote")
+    copy_field("$i.s", "OnlineAccess[].$last.collectionInfo")
+    copy_field("$i.c", "OnlineAccess[].$last.uri")
+    replace_all("OnlineAccess[].$last.uri", "$[network]", "$[member]")
+    replace_all("OnlineAccess[].$last.uri", "hbz-network", "hbz-hbo") # XXX
+    add_field("OnlineAccess[].$last.isInternalLinkFor", "$[isil]")
+    add_field("@unsuppressed", "true")
+  end
+end
 copy_field("@sisis_supplement", "@sisis_supplement-2662")
 lookup("@sisis_supplement-2662", "sisis-supplement-2662", delete: "true")
 split_field("@sisis_supplement-2662", "\\u001F")
