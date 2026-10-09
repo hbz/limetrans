@@ -17,6 +17,8 @@ elsif any_equal("MBD  .M", "$[member]")
   include("./alma.fix")
 elsif any_equal("POR  .M", "$[member]")
   include("./alma.fix")
+elsif any_equal("AVD? .M", "$[member]")
+  include("./alma.fix")
 else
   do list(path: "POR  ", "var": "$i")
     if any_equal("$i.A", "$[member]")
