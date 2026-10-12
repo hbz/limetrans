@@ -793,3 +793,90 @@
     "subjectIdentifier" : [ "https://w3id.org/kim/hochschulfaechersystematik/n1" ]
   } ]
 }
+{
+  "collection" : "DE-Bm40",
+  "TitleAddendum" : {
+    "title" : "TITELZUSATZ : ZWEITER TITELZUSATZ"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "VERANTWORTLICHKEITSANGABEN"
+  },
+  "dc" : {
+    "format" : [ "Gedruckte Ressource" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "Gedruckte Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_HBO",
+    "identifierMMS" : "991000408945506454",
+    "identifierMMSIZ" : "991000408945506454"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-Bm40)991000408945506454",
+    "identifierForTheRecord" : "(DE-Bm40)991000408945506454"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "ISBN OHNE BINDESTRICHE" ]
+  } ],
+  "Person" : [ {
+    "personName" : "NACHNAME, VORNAME F3"
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "KÖRPERSCHAFT F3"
+  }, {
+    "corporateBodyName" : "KÖRPERSCHAFTSNAME (2. KÖRPERSCHAFT) F3"
+  } ],
+  "Conference" : {
+    "conferenceName" : "KONFERENZNAME F3"
+  },
+  "TitleStatement" : [ {
+    "titleMain" : "<<DER>> TITEL"
+  } ],
+  "Edition" : {
+    "edition" : [ "AUFLAGE" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "ORT 1", "ORT 2" ],
+    "name" : [ "VERLAG" ],
+    "chronology" : [ "JAHR" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "JAHR" ]
+  },
+  "Extent" : {
+    "extent" : "SEITENZAHL : ILLUSTRATIONEN, DIAGRAMME, ..."
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "REIHE" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "ZÄHLUNG" ]
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "NACHNAME, VORNAME (1. HERAUSGEBER) F3"
+  } ],
+  "DescriptionOfRelatedEditions" : [ {
+    "prefix" : "Erscheint auch als",
+    "note" : [ "Online-Ausgabe" ]
+  } ],
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "ISBN OHNE BINDESTRICHE" ]
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-Bm40)991000408945506454"
+  } ],
+  "PersonCreator" : [ {
+    "personName" : "NACHNAME, VORNAME (2. AUTOR) F3"
+  } ],
+  "TitleOther" : {
+    "title" : [ "ABWEICHENDER TITEL" ]
+  }
+}
