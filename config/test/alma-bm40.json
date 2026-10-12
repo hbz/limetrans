@@ -1,0 +1,21 @@
+{
+  "isil": "DE-Bm40",
+  "path": "src/test/resources/limetrans/input/",
+  "alma": {
+    "deletion-fallback": false,
+    "deletion-literal": "DEL"
+  },
+  "vars": {
+    "external-maps": "/data/jenkins/limetrans/maps/test"
+  },
+  "input": {
+    "queue": {
+      "path": "${path}",
+      "pattern": "alma.xml.gz"
+    }
+  },
+  "output": {
+    "json": "src/test/resources/limetrans/output%s/alma-bm40.json",
+    "pretty-printing": true
+  }
+}
