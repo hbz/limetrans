@@ -20824,7 +20824,7 @@
     "branch" : [ "Magazin" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Kommunikationswissenschaften / Publizistik" ],
-    "taxonomyRVK" : [ "AP 12600 Fachwörterbücher einsprachig", "AP 12650 Fachwörterbücher mehrsprachig", "AP 12700 Lexika", "EC 1020 Reallexika. Fachwörterbücher" ],
+    "taxonomyRVK" : [ "AP 12600 Fachwörterbücher einsprachig", "AP 12650 Fachwörterbücher mehrsprachig", "AP 12700 Lexika und Nachschlagewerke", "EC 1020 Reallexika. Fachwörterbücher" ],
     "person" : [ "Döhn, Lothar (1937-)", "Klöckner, Klaus (1926-)" ],
     "subject" : [ "Gesellschaft", "Kommunikation", "Medienlexikon", "Staat", "Massenmedien", "Wörterbuch" ]
   },
@@ -38999,7 +38999,7 @@
     "branch" : [ "Campus Grifflenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Pädagogik" ],
-    "taxonomyRVK" : [ "DX 1000 Primärliteratur", "GE 6268 Jugendliteratur", "EC 8300 Gesamtdarstellungen" ],
+    "taxonomyRVK" : [ "DX 1000 Allgemeines", "GE 6268 Jugendliteratur", "EC 8300 Gesamtdarstellungen" ],
     "person" : [ "Maier, Karl Ernst (1920-2011)" ],
     "subject" : [ "Jugendliteratur", "Kinderliteratur", "Pädagogik" ]
   },
@@ -94218,7 +94218,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomyRVK" : [ "AP 14100 Kommunikation und Staat", "QR 700 Allgemeines" ],
+    "taxonomyRVK" : [ "AP 14100 Kommunikation, Medien und Staat", "QR 700 Allgemeines" ],
     "subject" : [ "Telekommunikation", "Privatisierung", "Entstaatlichung", "Wettbewerb", "Telekommunikationspolitik", "USA", "Privates Fernsehen", "Deutschland (Bundesrepublik)" ]
   },
   "SubjectRVK" : [ {
@@ -96891,7 +96891,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomyRVK" : [ "LP 67100 Sonstige (CSN des Namens)", "LC 87050 Nordrhein-Westfalen" ]
+    "taxonomyRVK" : [ "LP 67100 Sonstige", "LC 87050 Nordrhein-Westfalen" ]
   },
   "SubjectRVK" : [ {
     "subject" : [ "LP 67100" ]
@@ -111317,7 +111317,7 @@
   "introx" : {
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
-    "taxonomyRVK" : [ "NC 7300 Historische Atlanten", "BO 1050 Atlanten und Karten", "NC 1400 Allgemeine Geschichte", "CB 5100 Fachlich unspezifische Darstellungen, Essays" ],
+    "taxonomyRVK" : [ "NC 7300 Historische Atlanten, Geschichtsatlanten", "BO 1050 Atlanten und Karten", "NC 1400 Allgemeine Geschichte", "CB 5100 Fachlich unspezifische Darstellungen, Essays" ],
     "person" : [ "Kinder, Hermann (1920-1968)", "Hilgemann, Werner (1921-2004)" ],
     "subject" : [ "Weltgeschichte" ]
   },
@@ -120178,7 +120178,7 @@
     "branch" : [ "Campus Haspel" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
-    "taxonomyRVK" : [ "ZH 3150 Bauästhetik", "ZH 3700 Plastisches und räumliches Gestalten", "LI 99999 Sonstige (CSN der Person)" ],
+    "taxonomyRVK" : [ "ZH 3150 Bauästhetik", "ZH 3700 Plastisches und räumliches Gestalten", "LI 99999 Sonstige" ],
     "person" : [ "Wienands, Rudolf" ],
     "subject" : [ "Architektur", "Städtebau" ]
   },
@@ -147436,7 +147436,7 @@
     "branch" : [ "Campus Freudenberg" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Ingenieurwissenschaft / Technik", "Elektrotechnik" ],
-    "taxonomyRVK" : [ "ZN 2450 Fachwörterbücher für Elektrotechnik und Elektronik, allgemein oder mehrere Teilgebiete umfassend, einsprachig", "SR 200 Fachwörterbücher", "ZN 2455 Fachwörterbücher für Elektrotechnik und Elektronik allgemein oder mehrere Teilgebiete umfassend, mehrsprachig", "AB 59900 Abkürzungen von Zeitschriften- und Serientiteln", "ZG 8520 Abkürzungsverzeichnisse" ],
+    "taxonomyRVK" : [ "ZN 2450 Fachwörterbücher für Elektrotechnik und Elektronik, allgemein oder mehrere Teilgebiete umfassend, einsprachig", "ZN 2455 Fachwörterbücher für Elektrotechnik und Elektronik allgemein oder mehrere Teilgebiete umfassend, mehrsprachig", "AB 59900 Abkürzungen von Zeitschriften- und Serientiteln", "ZG 8520 Abkürzungsverzeichnisse" ],
     "person" : [ "Wennrich, Peter" ],
     "subject" : [ "Elektrotechnik", "Abkürzung", "Elektronik", "Datentechnik", "Informationsverarbeitung" ]
   },
@@ -158516,7 +158516,7 @@
     "access" : [ "local" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
-    "taxonomyRVK" : [ "ZH 4800 Leben und Werk einzelner Architekten (CSN des Namens)", "LI 99999 Sonstige (CSN der Person)" ],
+    "taxonomyRVK" : [ "ZH 4800 Leben und Werk einzelner Architekten", "LI 99999 Sonstige" ],
     "person" : [ "Mack, Gerhard (1956-)", "Herzog, Jacques (1950-)", "Meuron, Pierre de (1950-)" ],
     "subject" : [ "Herzog & de Meuron", "Architektur" ]
   },
@@ -167601,7 +167601,7 @@
     "branch" : [ "Campus Haspel" ],
     "carrier" : [ "Gedruckte Ressource" ],
     "taxonomy" : [ "Architektur und Bauingenieurwesen" ],
-    "taxonomyRVK" : [ "ZH 8780 Wintergarten", "ZH 4350 Glasbauten" ],
+    "taxonomyRVK" : [ "ZH 8780 Innenraumbegrünung", "ZH 4350 Glasbauten" ],
     "person" : [ "Timm, Ulrich" ],
     "subject" : [ "Wintergarten" ]
   },
