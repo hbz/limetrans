@@ -2,7 +2,7 @@
 
 set -e
 
-d="${OUTPUT_DIRECTORY:-src/main/resources/transformation/maps}"
+d="${OUTPUT_DIRECTORY:-$PWD/main/src/main/resources/transformation/maps}"
 p="$d/lobid-organisations"
 
 e=lmdb

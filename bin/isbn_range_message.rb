@@ -2,7 +2,7 @@
 
 require 'nokogiri'
 
-dir  = ENV['OUTPUT_DIRECTORY'] || 'src/main/resources/standardnumber'
+dir  = ENV['OUTPUT_DIRECTORY'] || 'main/src/main/resources/standardnumber'
 path = File.join(dir, 'RangeMessage.%s')
 
 File.open(path % :csv, 'w') { |f|
