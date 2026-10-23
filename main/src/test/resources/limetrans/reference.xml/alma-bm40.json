@@ -880,3 +880,76 @@
     "title" : [ "ABWEICHENDER TITEL" ]
   }
 }
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "technology for the intelligent factory"
+  },
+  "CreatorStatement" : {
+    "creatorStatement" : "IEEE International Workshop on Emerging Technologies and Factory Automation, August 11-14, 1992, World Congress Centre Melbourne Australia ; editors, R. Zurawski, T.S. Dillon"
+  },
+  "dc" : {
+    "format" : [ "Online-Ressource", "Elektronische Ressource" ],
+    "type" : [ "Konferenzschrift", "Monographie" ],
+    "language" : [ "Englisch" ]
+  },
+  "introx" : {
+    "access" : [ "online" ],
+    "carrier" : [ "Elektronische Ressource" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_HBO",
+    "identifierMMS" : "99370795702906441",
+    "identifierMMSIZ" : "991000417920706454",
+    "identifierPID" : "5320121750006454"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99370795702906441",
+    "identifierForTheRecord" : "(DE-605)99370795702906441"
+  },
+  "Language" : [ {
+    "language" : "Englisch",
+    "languageSource" : "eng"
+  } ],
+  "Conference" : {
+    "conferenceName" : "IEEE International Workshop on Emerging Technologies and Factory Automation",
+    "corporateBodyNameeNumber" : "1st",
+    "conferenceDate" : "1992",
+    "conferencePlace" : "Melbourne, Vic."
+  },
+  "TitleStatement" : [ {
+    "titleMain" : "Proceedings"
+  } ],
+  "PublisherName" : [ {
+    "name" : [ "IEEE" ]
+  } ],
+  "Extent" : {
+    "extent" : "1 online resource"
+  },
+  "IdentifierISBNParallel" : [ {
+    "identifierISBN" : [ "9780780308862" ]
+  }, {
+    "identifierISBN" : [ "0780308867" ]
+  } ],
+  "OnlineAccess" : [ {
+    "publicnote" : "IEEE Electronic Library (IEL)",
+    "uri" : "https://eu04.alma.exlibrisgroup.com/view/uresolver/49HBZ_HBO/openurl?u.ignore_date_coverage=true&portfolio_pid=5320121750006454&Force_direct=true",
+    "isInternalLinkFor" : "DE-Bm40"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99370795702906441"
+  }, {
+    "uid" : "(DE-Bm40)991000417920706454"
+  } ],
+  "TypeMedia" : "Elektronische Ressource",
+  "RSWK" : [ {
+    "subjectTopicName" : "Automation",
+    "subjectGenre" : "Congresses"
+  }, {
+    "subjectTopicName" : "Artificial intelligence",
+    "subjectGenre" : "Congresses"
+  }, {
+    "subjectTopicName" : "Robotics",
+    "subjectGenre" : "Congresses"
+  } ]
+}
