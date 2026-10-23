@@ -286,7 +286,7 @@ do list(path: "240??.a", "var": "$i")
   copy_field("$i", "TitleUniform.titleUniform")
 end
 
-# MARC/100, MARC/240, MARC/700
+# MARC/100, MARC/240, MARC/700, MARC/710, MARC/711
 add_array("TitleWork[]")
 do list(path: "100??", "var": "$i")
   if any_match("$i.4", "cmp|cre")
@@ -328,7 +328,7 @@ do list(path: "100??", "var": "$i")
     copy_field("$i.@title", "TitleWork[].$append.titleWork")
   end
 end
-do list(path: "700?2", "var": "$i")
+do list(path: "700?2|71[01]?2", "var": "$i")
   copy_field("$i.a", "$i.@title")
   if exists("$i.d")
     paste("$i.@title", "$i.@title", "~ (", "$i.d", "~)", join_char: "")
