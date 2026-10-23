@@ -396,7 +396,6 @@ end
 # MARC/245
 include("./marc/creatorStatement.fix")
 
-include("./marc/dc_format.fix")
 include("./marc/dc_type.fix")
 include("./marc/dc_language.fix")
 

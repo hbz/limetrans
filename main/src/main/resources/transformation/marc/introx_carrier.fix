@@ -1,5 +1,9 @@
 add_array("introx.carrier[]")
 if exists("@facet_format")
+  if any_equal("@facet_format", "Online-Ressource")
+    add_field("@facet_format.$append", "Elektronische Ressource")
+  end
+  uniq("@facet_format")
   do list(path: "@facet_format", "var": "$i")
     unless any_equal("$i", "Online-Ressource")
       copy_field("$i", "introx.carrier[].$append")

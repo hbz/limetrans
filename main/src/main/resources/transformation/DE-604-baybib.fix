@@ -36,7 +36,6 @@ if exists("@by")
 
   include("./marc/recordIdentifierSuper.fix")
   include("./marc/creatorStatement.fix")
-  include("./marc/dc_format.fix")
   include("./marc/dc_type.fix")
   include("./marc/dc_language.fix")
   include("./marc/dc_date.fix")
