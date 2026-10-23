@@ -526,3 +526,112 @@
     "callnumber" : "99KNO2048"
   } ]
 }
+{
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : "mit Menschenrechtskonvention, Verfahrensordnung des Europäischen Gerichtshofs für Menschenrechte, Bundesverfassungsgerichtsgesetz, Parteiengesetz, Untersuchungsausschussgesetz, Gesetz über den Petitionsausschuss, Vertrag über die Europäische Union, Vertrag über die Arbeitsweise der Europäischen Union, Charta der Grundrechte der Europäischen Union : Textausgabe mit ausführlichem Sachverzeichnis und einer Einführung von Professor Dr. Dr. Udo Di Fabio"
+  },
+  "dc" : {
+    "format" : [ "keine Angabe" ],
+    "type" : [ "Monographie" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2025" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "carrier" : [ "keine Angabe" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_THK",
+    "identifierMMS" : "99376179336606441",
+    "identifierMMSIZ" : "991008607540506477"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99376179336606441",
+    "identifierForTheRecord" : "(DE-605)HT031297814"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783423533287", "dtv", "Broschur : EUR 10.90 (DE), EUR 11.30 (AT), circa CHF 15.50 (freier Preis)" ]
+  }, {
+    "identifierISBN" : [ "9783406845192", "C.H. Beck" ]
+  }, {
+    "identifierISBN" : [ "3423533285" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Deutschland",
+    "corporateBodyIdentifier" : [ "(DE-588)4011882-4" ],
+    "identifierGND" : [ "4011882-4" ]
+  }, {
+    "corporateBodyName" : "Europäische Union",
+    "corporateBodyIdentifier" : [ "(DE-588)5098525-5" ],
+    "identifierGND" : [ "5098525-5" ]
+  }, {
+    "corporateBodyName" : "Deutscher Taschenbuch-Verlag",
+    "corporateBodyIdentifier" : [ "(DE-588)2008574-6" ],
+    "identifierGND" : [ "2008574-6" ]
+  } ],
+  "TitleStatement" : [ {
+    "titleMain" : "Grundgesetz"
+  } ],
+  "Edition" : {
+    "edition" : [ "55. Auflage, Stand: 11. August 2025, Sonderausgabe" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "München" ],
+    "name" : [ "dtv" ],
+    "chronology" : [ "[2025]" ]
+  }, {
+    "place" : [ "[München]" ],
+    "name" : [ "C.H. Beck" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2025]" ]
+  },
+  "Extent" : {
+    "extent" : "XIX, 422 Seiten ; 19.1 cm"
+  },
+  "TitleSuper" : [ {
+    "titleSuper" : [ "dtv", "Beck-Texte im dtv" ]
+  } ],
+  "TitleSuperVolumeDesignation" : [ {
+    "volumeDesignation" : [ "5003" ]
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Di Fabio, Udo",
+    "personBio" : "1954-",
+    "personIdentifier" : [ "(DE-588)120561530" ],
+    "identifierGND" : [ "120561530" ]
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://deposit.dnb.de/cgi-bin/dokserv?id=6d18fecb06b242bdad3e980589f52b79",
+    "nonpublicnote" : "Verlag",
+    "relatedto" : "Inhaltstext"
+  } ],
+  "SubjectHeadings" : [ {
+    "subject" : "Deutschland"
+  }, {
+    "subject" : "Staatsrecht"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "subject" : "QPUB"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99376179336606441"
+  }, {
+    "uid" : "(DE-605)HT031297814"
+  }, {
+    "uid" : "(DE-832)991008607540506477"
+  } ],
+  "Item" : [ {
+    "callnumber" : "QPUB1476(55)"
+  }, {
+    "callnumber" : "63QPUB1476(55)"
+  } ],
+  "TitleOther" : {
+    "title" : [ "GG", "Menschenrechtskonvention, Europäischer Gerichtshof, Bundesverfassungsgerichtsgesetz, Parteiengesetz, Untersuchungsausschussgesetz, EUV - AEUV - EU-GR-Charta" ]
+  }
+}

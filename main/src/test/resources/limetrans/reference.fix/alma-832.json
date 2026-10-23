@@ -443,3 +443,178 @@
     "preferredName" : "Filmtechnik"
   } ]
 }
+{
+  "ContentType" : [ "Text" ],
+  "CarrierType" : [ "Band" ],
+  "ExtendedType" : [ "Quelle" ],
+  "TypeHeading" : [ {
+    "term" : "Quelle",
+    "identifier" : [ "(DE-588)4135952-5" ]
+  } ],
+  "Country" : [ {
+    "countryISO" : "DE-BY"
+  } ],
+  "IdentifierHBZ" : [ {
+    "identifierHBZFull" : "(DE-605)HT031297814",
+    "identifierHBZ" : "HT031297814"
+  } ],
+  "collection" : "DE-605",
+  "TitleAddendum" : {
+    "title" : [ "mit Menschenrechtskonvention, Verfahrensordnung des Europäischen Gerichtshofs für Menschenrechte, Bundesverfassungsgerichtsgesetz, Parteiengesetz, Untersuchungsausschussgesetz, Gesetz über den Petitionsausschuss, Vertrag über die Europäische Union, Vertrag über die Arbeitsweise der Europäischen Union, Charta der Grundrechte der Europäischen Union : Textausgabe mit ausführlichem Sachverzeichnis und einer Einführung von Professor Dr. Dr. Udo Di Fabio" ]
+  },
+  "dc" : {
+    "type" : [ "Quelle", "Sammelwerk" ],
+    "language" : [ "Deutsch" ],
+    "date" : [ "2025" ]
+  },
+  "introx" : {
+    "access" : [ "local" ],
+    "branch" : [ "Südstadt" ],
+    "carrier" : [ "Gedruckte Ressource" ],
+    "taxonomy" : [ "Rechtswissenschaft" ],
+    "person" : [ "Di Fabio, Udo (1954-)" ],
+    "subject" : [ "Deutschland", "Staatsrecht" ],
+    "localCallNumber" : [ "QPUB1476(55)" ]
+  },
+  "IdentifierAlma" : {
+    "identifierMember" : "49HBZ_THK",
+    "identifierMMS" : "99376179336606441",
+    "identifierMMSIZ" : "991008607540506477"
+  },
+  "RecordIdentifier" : {
+    "identifierForTheIndex" : "(DE-605)99376179336606441",
+    "identifierForTheRecord" : "(DE-605)HT031297814"
+  },
+  "Language" : [ {
+    "language" : "Deutsch",
+    "languageSource" : "ger"
+  } ],
+  "IdentifierISBN" : [ {
+    "identifierISBN" : [ "9783423533287", "Broschur : EUR 10.90 (DE), EUR 11.30 (AT), circa CHF 15.50 (freier Preis)", "dtv" ],
+    "preferredISBN" : "9783423533287",
+    "variantISBN" : [ "978-3-423-53328-7", "3423533285", "3-423-53328-5" ]
+  }, {
+    "identifierISBN" : [ "9783406845192", "C.H. Beck" ],
+    "preferredISBN" : "9783406845192",
+    "variantISBN" : [ "978-3-406-84519-2", "3406845193", "3-406-84519-3" ]
+  }, {
+    "identifierISBN" : [ "3423533285" ],
+    "preferredISBN" : "9783423533287",
+    "variantISBN" : [ "978-3-423-53328-7", "3-423-53328-5" ]
+  } ],
+  "CorporateBody" : [ {
+    "corporateBodyName" : "Deutschland",
+    "corporateBodyRole" : [ "Normerlassende Gebietskörperschaft" ],
+    "corporateBodyIdentifier" : [ "(DE-588)4011882-4" ],
+    "identifierGND" : [ "4011882-4" ],
+    "variantName" : [ "Deyizhi-Lianbang-Gongheguo", "BRD (1990-)", "République Fédérale d'Allemagne (Deutschland)", "Ǧumhūrīyat Almāniyā al-Ittiḥādīya", "Deutschland (Bundesrepublik, 1990-)", "Heiliges Römisches Reich", "Deutscher Bund", "Bundesrepublik Deutschland (1990-)", "Repubblica Federale di Germania (Deutschland)", "Germany (Deutschland)", "Federativnaja Respublika Germanija", "Rheinbund", "Federal Republic of Germany (Deutschland)", "Germanija", "Deutsche Länder", "Republic of Germany (Deutschland)", "Deutsches Reich", "Allemagne (Deutschland)", "Niemcy", "Deutschland (Gebiet unter Alliierter Besatzung)", "Norddeutscher Bund" ],
+    "preferredName" : "Deutschland"
+  }, {
+    "corporateBodyName" : "Europäische Union",
+    "corporateBodyRole" : [ "Normerlassende Gebietskörperschaft" ],
+    "corporateBodyIdentifier" : [ "(DE-588)5098525-5" ],
+    "identifierGND" : [ "5098525-5" ],
+    "variantName" : [ "Aontas Eorpach", "Europese Unie", "Unió Europea", "Union européenne", "Evropejskoe Soobščestvo", "Evropská Unie", "Avrupa Birliği", "Europska Unija", "Europos Sa̜junga", "Uniunea Europeană", "Europaeiske Union", "Eiropas Savienība", "Union Europea", "Unione Europea", "Európai Unió", "União Europeia", "European Union", "Unión Europea", "Eurōpai͏̈ke Enōsē", "Unia Europejska" ],
+    "preferredName" : "Europäische Union"
+  }, {
+    "corporateBodyName" : "Deutscher Taschenbuch-Verlag",
+    "corporateBodyRole" : [ "Verlag" ],
+    "corporateBodyOther" : [ "München" ],
+    "corporateBodyIdentifier" : [ "(DE-588)2008574-6" ],
+    "identifierGND" : [ "2008574-6" ],
+    "variantName" : [ "dtv Verlagsgesellschaft mbH & Co. KG", "Deutscher Taschenbuch Verlag", "DTV (Deutscher Taschenbuch Verlag)", "Dtv (Deutscher Taschenbuch-Verlag, München)", "Deutscher Taschenbuch Verlag (München)", "Deutscher Taschenbuchverlag", "Taschenbuch-Verlag (München)" ],
+    "preferredName" : "Deutscher Taschenbuch-Verlag (München)"
+  } ],
+  "TitleStatement" : {
+    "titleMain" : "Grundgesetz"
+  },
+  "Edition" : {
+    "edition" : [ "55. Auflage, Stand: 11. August 2025, Sonderausgabe" ]
+  },
+  "PublisherName" : [ {
+    "place" : [ "München" ],
+    "name" : [ "dtv" ],
+    "chronology" : [ "[2025]" ]
+  }, {
+    "place" : [ "[München]" ],
+    "name" : [ "C.H. Beck" ]
+  } ],
+  "PublicationPlace" : [ {
+    "printingPlace" : [ "München" ]
+  }, {
+    "printingPlace" : [ "[München]" ]
+  } ],
+  "DateProper" : {
+    "date" : [ "[2025]" ]
+  },
+  "Extent" : {
+    "extent" : "XIX, 422 Seiten ; 19.1 cm"
+  },
+  "SeriesStatement" : [ {
+    "title" : [ "dtv", "Beck-Texte im dtv" ],
+    "volume" : [ "5003" ]
+  } ],
+  "SeriesAddedEntryUniformTitle" : [ {
+    "title" : [ "dtv", "Beck-Texte im dtv" ],
+    "volume" : [ "5003" ]
+  } ],
+  "PersonContributor" : [ {
+    "personName" : "Di Fabio, Udo",
+    "personBio" : "1954-",
+    "personRole" : [ "Einleitung" ],
+    "personIdentifier" : [ "(DE-588)120561530" ],
+    "identifierGND" : [ "120561530" ],
+    "variantName" : [ "Fabio, Udo di", "Di Fabio, U.", "DiFabio, Udo", "Fabio, U. di" ],
+    "preferredName" : "Di Fabio, Udo"
+  } ],
+  "OnlineAccess" : [ {
+    "uri" : "https://deposit.dnb.de/cgi-bin/dokserv?id=6d18fecb06b242bdad3e980589f52b79",
+    "nonpublicnote" : "Verlag",
+    "relatedto" : "Inhaltstext",
+    "contact" : [ "X:MVB" ],
+    "format" : "text/html"
+  } ],
+  "SubjectGHBLocal" : [ {
+    "source" : "DE-832",
+    "subject" : "QPUB"
+  } ],
+  "xbib" : [ {
+    "uid" : "(DE-605)99376179336606441"
+  }, {
+    "uid" : "(DE-605)HT031297814"
+  }, {
+    "uid" : "(DE-832)991008607540506477"
+  }, {
+    "uid" : "(DE-599)DNB1375627953"
+  }, {
+    "uid" : "(DE-604)BV050488177"
+  }, {
+    "uid" : "(ELiSA)ELiSA-9783423533287"
+  } ],
+  "Item" : [ {
+    "identifier" : "DE-832",
+    "label" : "Technische Hochschule Köln, Hochschulbibliothek",
+    "callnumber" : [ "63QPUB1476(55)", "QPUB1476(55)" ],
+    "shelfmark" : "63"
+  } ],
+  "TitleOther" : [ {
+    "title" : "GG"
+  }, {
+    "title" : "Menschenrechtskonvention, Europäischer Gerichtshof, Bundesverfassungsgerichtsgesetz, Parteiengesetz, Untersuchungsausschussgesetz, EUV - AEUV - EU-GR-Charta",
+    "prefix" : "Zusatz auf dem Einband"
+  } ],
+  "RSWK" : [ {
+    "subjectGeoName" : "Deutschland",
+    "combinedLabel" : "Deutschland",
+    "subjectIdentifier" : [ "(DE-588)4011882-4" ],
+    "identifierGND" : [ "4011882-4" ],
+    "variantName" : [ "Deyizhi-Lianbang-Gongheguo", "BRD (1990-)", "République Fédérale d'Allemagne (Deutschland)", "Ǧumhūrīyat Almāniyā al-Ittiḥādīya", "Deutschland (Bundesrepublik, 1990-)", "Heiliges Römisches Reich", "Deutscher Bund", "Bundesrepublik Deutschland (1990-)", "Repubblica Federale di Germania (Deutschland)", "Germany (Deutschland)", "Federativnaja Respublika Germanija", "Rheinbund", "Federal Republic of Germany (Deutschland)", "Germanija", "Deutsche Länder", "Republic of Germany (Deutschland)", "Deutsches Reich", "Allemagne (Deutschland)", "Niemcy", "Deutschland (Gebiet unter Alliierter Besatzung)", "Norddeutscher Bund" ],
+    "preferredName" : "Deutschland"
+  }, {
+    "subjectTopicName" : [ "Staatsrecht" ],
+    "combinedLabel" : "Staatsrecht",
+    "subjectIdentifier" : [ "(DE-588)4056666-3" ],
+    "identifierGND" : [ "4056666-3" ],
+    "preferredName" : "Staatsrecht"
+  } ]
+}
