@@ -328,43 +328,43 @@ do list(path: "100??", "var": "$i")
     copy_field("$i.@title", "TitleWork[].$append.titleWork")
   end
 end
-do list(path: "700??", "var": "$i")
-  if exists("$i.t")
-    copy_field("$i.a", "$i.@title")
-    if exists("$i.d")
-      paste("$i.@title", "$i.@title", "~ (", "$i.d", "~)", join_char: "")
-    end
-    paste("$i.@title", "$i.@title", "~. ", "$i.t", join_char: "")
-    if exists("$i.p")
-      paste("$i.@title", "$i.@title", "~ <", "$i.p", "~>", join_char: "")
-    end
-    add_array("$i.@medium")
-    copy_field("$i.m", "$i.@medium.$append")
-    join_field("$i.@medium", ", ")
-    unless is_empty("$i.@medium")
-      paste("$i.@title", "$i.@title", "~ für ", "$i.@medium", join_char: "")
-    end
-    add_array("$i.@number")
-    copy_field("$i.n", "$i.@number.$append")
-    join_field("$i.@number", ", ")
-    unless is_empty("$i.@number")
-      paste("$i.@title", "$i.@title", "~, ", "$i.@number", join_char: "")
-    end
-    if exists("$i.r")
-      paste("$i.@title", "$i.@title", "~, ", "$i.r", join_char: "")
-    end
-    if exists("$i.f")
-      paste("$i.@title", "$i.@title", "~, ", "$i.f", join_char: "")
-    end
-    add_array("$i.@suffix")
-    copy_field("$i.k", "$i.@suffix.$append")
-    copy_field("$i.o", "$i.@suffix.$append")
-    join_field("$i.@suffix", ", ")
-    unless is_empty("$i.@suffix")
-      paste("$i.@title", "$i.@title", "~ (", "$i.@suffix", "~)", join_char: "")
-    end
-    copy_field("$i.@title", "TitleWork[].$append.titleWork")
+do list(path: "700?2", "var": "$i")
+  copy_field("$i.a", "$i.@title")
+  if exists("$i.d")
+    paste("$i.@title", "$i.@title", "~ (", "$i.d", "~)", join_char: "")
   end
+  if exists("$i.t")
+    paste("$i.@title", "$i.@title", "~. ", "$i.t", join_char: "")
+  end
+  if exists("$i.p")
+    paste("$i.@title", "$i.@title", "~ <", "$i.p", "~>", join_char: "")
+  end
+  add_array("$i.@medium")
+  copy_field("$i.m", "$i.@medium.$append")
+  join_field("$i.@medium", ", ")
+  unless is_empty("$i.@medium")
+    paste("$i.@title", "$i.@title", "~ für ", "$i.@medium", join_char: "")
+  end
+  add_array("$i.@number")
+  copy_field("$i.n", "$i.@number.$append")
+  join_field("$i.@number", ", ")
+  unless is_empty("$i.@number")
+    paste("$i.@title", "$i.@title", "~, ", "$i.@number", join_char: "")
+  end
+  if exists("$i.r")
+    paste("$i.@title", "$i.@title", "~, ", "$i.r", join_char: "")
+  end
+  if exists("$i.f")
+    paste("$i.@title", "$i.@title", "~, ", "$i.f", join_char: "")
+  end
+  add_array("$i.@suffix")
+  copy_field("$i.k", "$i.@suffix.$append")
+  copy_field("$i.o", "$i.@suffix.$append")
+  join_field("$i.@suffix", ", ")
+  unless is_empty("$i.@suffix")
+    paste("$i.@title", "$i.@title", "~ (", "$i.@suffix", "~)", join_char: "")
+  end
+  copy_field("$i.@title", "TitleWork[].$append.titleWork")
 end
 uniq("TitleWork[]")
 
