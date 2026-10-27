@@ -3,8 +3,8 @@ package hbz.limetrans.util;
 import htsjdk.samtools.util.BlockCompressedInputStream;
 import htsjdk.samtools.util.BlockCompressedStreamConstants;
 
-import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 
 public final class BGZF {
 
@@ -18,7 +18,7 @@ public final class BGZF {
             throw new IllegalArgumentException("Usage: " + BGZF.class + " <path> [<offset> <length>]");
         }
 
-        try (BlockCompressedInputStream bgzf = new BlockCompressedInputStream(new File(aArgs[0]))) {
+        try (BlockCompressedInputStream bgzf = new BlockCompressedInputStream(Paths.get(aArgs[0]))) {
             if (argc == 1) {
                 int read = 0;
                 long total = 0;
