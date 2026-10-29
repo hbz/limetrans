@@ -22,7 +22,7 @@ gradle.rootProject {
             junit:          '4.13.1',
             lmdb:           '0.9.3',
             log4j:          '2.25.4',
-            metafacture:    '8.0.0',
+            metafacture:    '9.0.0',
             testcontainers: '2.0.2'
         ]
 
