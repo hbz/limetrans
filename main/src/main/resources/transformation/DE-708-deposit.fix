@@ -86,6 +86,10 @@ include("./marc/seriesAddedEntryUniformTitle.fix")
 do list(path: "856??", "var": "$i")
   if any_equal("$i.y", "preview")
     remove_field("$i.*")
+  elsif any_equal("$i.y", "raw object")
+    if any_match("$i.u", ".*\\.pdf")
+      add_field("@unsuppressed", "true")
+    end
   end
 end
 include("./marc/onlineAccess.fix")
@@ -100,6 +104,10 @@ include("./marc/rswk.fix")
 include("./marc/translatedTitle.fix")
 
 dedup("OnlineAccess[].*.uri")
+
+unless exists("@unsuppressed")
+  reject()
+end
 
 retain(
   "AbbreviatedTitle[]",
