@@ -74,7 +74,7 @@ include("./marc/abstract.fix")
 include("./marc/personContributor.fix")
 
 include("./marc/linkingEntries.fix")
-do list(path: "HostItemEntry[]|ConstituentUnitEntry[]|PrecedingEntry[]|SucceedingEntry[]", "var": "$i")
+do list(path: "ConstituentUnitEntry[]|PrecedingEntry[]|SucceedingEntry[]", "var": "$i")
   add_array("$i.verifiedIdentifierForLinkingEntry[]")
   do list(path: "$i.controlNumber[]", "var": "$j")
     paste("$i.verifiedIdentifierForLinkingEntry[].$append", "~(", "@isil", "~)", "$j", join_char: "")
